@@ -12,7 +12,7 @@ Follow the underlying template when creating new dataset issue entry
 ### Dataset Name
 Dataset description and any detailed citation and DOI and license information.
 
-Thumbnail or Snapshot if possible
+Thumbnail or Snapshot (Optional)
 
 #### Earth Engine Snippet
 ```js
