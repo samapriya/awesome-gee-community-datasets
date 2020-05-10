@@ -6,7 +6,7 @@ Community Datasets added by users and made available for use at large
 
 ### High Resolution Settlement Layer
 
-To reference this data, please use the following citation: 
+To reference this data, please use the following citation:
 
 ```
 Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. High Resolution Settlement Layer (HRSL). Source imagery for HRSL Copyright 2016 DigitalGlobe. Accessed DAY MONTH YEAR. Data shared under: Creative Commons Attribution International.
@@ -38,3 +38,5 @@ Download Tool/Code snippets if any: [hdxpop](https://github.com/samapriya/hdxpop
 Curated by: Samapriya Roy
 
 Last updated: 2020-03-31
+
+
