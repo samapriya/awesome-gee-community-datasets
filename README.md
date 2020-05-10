@@ -36,7 +36,7 @@ var HRSL = ee.ImageCollection("projects/sat-io/open-datasets/hrslpop")
 
 Sample Code: https://code.earthengine.google.com/cc202df2d11ecd32960d414949996402
 
-Extra Bit: [Medium Article here](https://medium.com/@samapriyaroy/community-datasets-in-google-earth-engine-an-experiment-b72daa474819)
+Extra Info: [Medium Article here](https://medium.com/@samapriyaroy/community-datasets-in-google-earth-engine-an-experiment-b72daa474819)
 
 Download Tool/Code snippets if any: [hdxpop](https://github.com/samapriya/hdxpop)
 
@@ -71,7 +71,7 @@ var small_islands = ee.FeatureCollection('projects/sat-io/open-datasets/shorelin
 
 Sample Code: https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814
 
-Extra Bit: Over 100 Million+ vertices
+Extra Info: Over 100 Million+ vertices
 
 Curated by: Samapriya Roy
 
