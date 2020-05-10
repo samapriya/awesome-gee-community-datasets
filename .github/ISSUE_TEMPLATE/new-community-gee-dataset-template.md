@@ -29,7 +29,7 @@ var asset_name = ee.FeatureCollection("path to your table/feature collection")
 
 Sample Code: Add a sample code maybe just adding your datasets in code editor and visualizing or summarizing
 
-Extra Bit: Feel free to add any optional details 
+Extra Info: Feel free to add any optional details 
 
 Download Tool/Code snippets if any: If source is specialized or you have an associated tool
 
