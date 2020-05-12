@@ -9,6 +9,14 @@ Community Datasets added by users and made available for use at large
 
 ****
 
+## Table of Contents
+* [High Resolution Settlement Layer](#high-resolution-settlement-layer)
+* [Global Shoreline Dataset](#global-shoreline-dataset)
+* [Mapbiomas Annual land cover and use maps](#mapbiomas-annual-land-cover-and-use-maps)
+* [Planet Open CA Subset](#planet-open-ca-subset)
+* [Planet Open CA UDM2 Subset](#planet-open-ca-udm2-subset)
+
+
 ### High Resolution Settlement Layer
 
 To reference this data, please use the following citation:
@@ -78,7 +86,7 @@ Curated by: Samapriya Roy
 Last updated: 2020-05-08
 ****
 
-### Mapbiomas: Annual land cover and use maps
+### Mapbiomas Annual land cover and use maps
 
 The Brazilian Annual Land Use and Land Cover Mapping Project is an initiative that involves a collaborative network of biomes, land use, remote sensing, GIS and computer science experts that rely on Google Earth Engine platform and its cloud processing and automated classifiers capabilities to generate Brazil’s annual land use and land cover time series. MapBiomas Project - is a multi-institutional initiative to generate annual land cover and use maps using automatic classification processes applied to satellite images. The complete description of the project can be [found here](http://mapbiomas.org).
 
