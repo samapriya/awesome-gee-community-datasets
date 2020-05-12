@@ -126,7 +126,7 @@ Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
 var udm2 = ee.ImageCollection("projects/sat-io/open-datasets/udm2-tests/ps4bsr_udm2");
 ```
 
-Sample Code: https://code.earthengine.google.com/47b1ba27d7de0e467164bde18bee56a5
+Sample Code: https://code.earthengine.google.com/10420481bb8cc8b4d7d258eb55e3ef67
 
 Extra Info: [Medium Article](https://medium.com/@samapriyaroy/cloud-filter-the-cloud-native-way-planet-udm2-in-google-earth-engine-208502a99483)
 
