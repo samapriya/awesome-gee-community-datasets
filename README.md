@@ -78,3 +78,59 @@ Curated by: Samapriya Roy
 Last updated: 2020-05-08
 ****
 
+### Planet Open CA Subset
+
+A sample dataset from Planet's open california project for 2018. Include PlanetScope 4 Band Surface Reflectance data.
+
+Resolution: 3 m
+
+Please use Citation:
+```
+Planet Team (2017). Planet Application Program Interface: In Space for Life on Earth. San Francisco, CA. https://api.planet.com.
+```
+
+Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
+
+![dark_openca](https://user-images.githubusercontent.com/6677629/81646337-0e0b9000-93f9-11ea-92b2-242058cbab07.gif)
+
+#### Earth Engine Snippet
+```js
+var ps4bsr = ee.ImageCollection("projects/sat-io/open-ca/ps4bsr");
+```
+
+Sample Code: https://code.earthengine.google.com/47b1ba27d7de0e467164bde18bee56a5
+
+Curated by: Samapriya Roy
+
+Last updated: 2019-02-01
+****
+
+### Planet Open CA UDM2 Subset
+
+A sample dataset from Planet's open california project for 2018. Include UDM2 dataset for PlanetScope 4 Band data.
+
+Resolution: 3 m, 
+Data Type: 8 band and 8 bit data
+
+Please use Citation:
+```
+Planet Team (2017). Planet Application Program Interface: In Space for Life on Earth. San Francisco, CA. https://api.planet.com.
+```
+
+Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
+
+![dyanmic_cloud_export](https://user-images.githubusercontent.com/6677629/81249836-a535a980-8fed-11ea-97c8-757e71bb6a64.gif)
+
+#### Earth Engine Snippet
+```js
+var udm2 = ee.ImageCollection("projects/sat-io/open-datasets/udm2-tests/ps4bsr_udm2");
+```
+
+Sample Code: https://code.earthengine.google.com/47b1ba27d7de0e467164bde18bee56a5
+
+Extra Info: [Medium Article](https://medium.com/@samapriyaroy/cloud-filter-the-cloud-native-way-planet-udm2-in-google-earth-engine-208502a99483)
+
+Curated by: Samapriya Roy
+
+Last updated: 2020-05-01
+****
