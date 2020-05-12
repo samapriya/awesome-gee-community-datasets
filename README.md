@@ -80,7 +80,7 @@ Last updated: 2020-05-08
 
 ### Planet Open CA Subset
 
-A sample dataset from Planet's open california project for 2018. Include PlanetScope 4 Band Surface Reflectance data.
+A sample dataset from Planet's open california project for 2018. Includes PlanetScope 4 Band Surface Reflectance data.
 
 Resolution: 3 m
 
@@ -107,7 +107,7 @@ Last updated: 2019-02-01
 
 ### Planet Open CA UDM2 Subset
 
-A sample dataset from Planet's open california project for 2018. Include UDM2 dataset for PlanetScope 4 Band data.
+A sample dataset from Planet's open california project for 2018. Includes UDM2 dataset for PlanetScope 4 Band data.
 
 Resolution: 3 m, 
 Data Type: 8 band and 8 bit data
