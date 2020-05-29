@@ -17,6 +17,8 @@ Community Datasets added by users and made available for use at large
 * [Planet Open CA Subset](#planet-open-ca-subset)
 * [Planet Open CA UDM2 Subset](#planet-open-ca-udm2-subset)
 * [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
+* [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
+* [Global Mangrove Watch](#global-mangrove-watch)
 
 
 ### High Resolution Settlement Layer
@@ -267,7 +269,7 @@ Created by: [Wilson AM, Jetz W 2016](http://www.earthenv.org/cloud)
 Last updated: [Refer to webpage](http://www.earthenv.org/cloud)
 ****
 
-### Global 30m Height Above the Nearest Drainage (HAND)
+### Global 30m Height Above the Nearest Drainage
 
 Read about the [methodology here](https://www.researchgate.net/publication/301559649_Global_30m_Height_Above_the_Nearest_Drainage)
 
@@ -303,9 +305,9 @@ Source and Curated by: Donchyts/Deltares/Google
 Last updated: ~2017
 ****
 
-### Global Mangrove Watch (1996 - 2016)
+### Global Mangrove Watch
 
-From the Global Mangrove Dataset website:
+From the Global Mangrove Dataset (1996 - 2016) website:
 
 **The GMW has generated a global baseline map of mangroves for 2010 using ALOS PALSAR and Landsat (optical) data, and changes from this baseline for six epochs between 1996 and 2016 derived from JERS-1 SAR, ALOS PALSAR and ALOS-2 PALSAR-2. Annual maps are planned from 2018 and onwards.**
 
