@@ -10,15 +10,15 @@ Community Datasets added by users and made available for use at large
 ****
 
 ## Table of Contents
-* [High Resolution Settlement Layer](#high-resolution-settlement-layer)
-* [Global Shoreline Dataset](#global-shoreline-dataset)
-* [OSM Water Layer Surface Waters in OpenStreetMap](#osm-water-layer-surface-waters-in-openstreetmap)
-* [Mapbiomas Annual land cover and use maps](#mapbiomas-annual-land-cover-and-use-maps)
-* [Planet Open CA Subset](#planet-open-ca-subset)
-* [Planet Open CA UDM2 Subset](#planet-open-ca-udm2-subset)
-* [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
-* [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
-* [Global Mangrove Watch](#global-mangrove-watch)
+1. [High Resolution Settlement Layer](#high-resolution-settlement-layer)
+2. [Global Shoreline Dataset](#global-shoreline-dataset)
+3. [OSM Water Layer Surface Waters in OpenStreetMap](#osm-water-layer-surface-waters-in-openstreetmap)
+4. [Mapbiomas Annual land cover and use maps](#mapbiomas-annual-land-cover-and-use-maps)
+5. [Planet Open CA Subset](#planet-open-ca-subset)
+6. [Planet Open CA UDM2 Subset](#planet-open-ca-udm2-subset)
+7. [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
+8. [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
+9. [Global Mangrove Watch](#global-mangrove-watch)
 
 
 ### High Resolution Settlement Layer
