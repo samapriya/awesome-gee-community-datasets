@@ -264,7 +264,7 @@ Curated by: Samapriya Roy
 
 Created by: [Wilson AM, Jetz W 2016](http://www.earthenv.org/cloud)
 
-Last updated: [Refer to webpage](https://mapbiomas.org/)
+Last updated: [Refer to webpage](http://www.earthenv.org/cloud)
 ****
 
 ### Global 30m Height Above the Nearest Drainage (HAND)
