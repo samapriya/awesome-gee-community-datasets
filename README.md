@@ -14,11 +14,9 @@ Community Datasets added by users and made available for use at large
 2. [Global Shoreline Dataset](#global-shoreline-dataset)
 3. [OSM Water Layer Surface Waters in OpenStreetMap](#osm-water-layer-surface-waters-in-openstreetmap)
 4. [Mapbiomas Annual land cover and use maps](#mapbiomas-annual-land-cover-and-use-maps)
-5. [Planet Open CA Subset](#planet-open-ca-subset)
-6. [Planet Open CA UDM2 Subset](#planet-open-ca-udm2-subset)
-7. [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
-8. [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
-9. [Global Mangrove Watch](#global-mangrove-watch)
+5. [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
+6. [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
+7. [Global Mangrove Watch](#global-mangrove-watch)
 
 
 ### High Resolution Settlement Layer
@@ -167,64 +165,6 @@ Extra Info: [GitHub Tutorial](https://github.com/mapbiomas-brazil/user-toolkit)
 Curated by: [MapBiomas](https://mapbiomas.org/)
 
 Last updated: [Refer to webpage](https://mapbiomas.org/)
-****
-
-
-### Planet Open CA Subset
-
-A sample dataset from Planet's open california project for 2018. Includes PlanetScope 4 Band Surface Reflectance data.
-
-Scale: 3 m
-
-Please use Citation:
-```
-Planet Team (2017). Planet Application Program Interface: In Space for Life on Earth. San Francisco, CA. https://api.planet.com.
-```
-
-Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
-
-![dark_openca](https://user-images.githubusercontent.com/6677629/81646337-0e0b9000-93f9-11ea-92b2-242058cbab07.gif)
-
-#### Earth Engine Snippet
-```js
-var ps4bsr = ee.ImageCollection("projects/sat-io/open-ca/ps4bsr");
-```
-
-Sample Code: https://code.earthengine.google.com/47b1ba27d7de0e467164bde18bee56a5
-
-Curated by: Samapriya Roy
-
-Last updated: 2019-02-01
-****
-
-### Planet Open CA UDM2 Subset
-
-A sample dataset from Planet's open california project for 2018. Includes UDM2 dataset for PlanetScope 4 Band data.
-
-Scale: 3 m,
-Data Type: 8 band and 8 bit data
-
-Please use Citation:
-```
-Planet Team (2017). Planet Application Program Interface: In Space for Life on Earth. San Francisco, CA. https://api.planet.com.
-```
-
-Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
-
-![dyanmic_cloud_export](https://user-images.githubusercontent.com/6677629/81249836-a535a980-8fed-11ea-97c8-757e71bb6a64.gif)
-
-#### Earth Engine Snippet
-```js
-var udm2 = ee.ImageCollection("projects/sat-io/open-datasets/udm2-tests/ps4bsr_udm2");
-```
-
-Sample Code: https://code.earthengine.google.com/10420481bb8cc8b4d7d258eb55e3ef67
-
-Extra Info: [Medium Article](https://medium.com/@samapriyaroy/cloud-filter-the-cloud-native-way-planet-udm2-in-google-earth-engine-208502a99483)
-
-Curated by: Samapriya Roy
-
-Last updated: 2020-05-01
 ****
 ### EarthEnv Global 1-km Cloud Frequency Version 1
 
