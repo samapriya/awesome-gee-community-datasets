@@ -296,7 +296,7 @@ No additional restrictions — You may not apply legal terms or technological me
 
 Website:  https://data.unep-wcmc.org/datasets/45
 
-Source and Curated by: Samapriya Roy
+Curated by: Samapriya Roy
 
 Last updated: 2019-06-14
 ****
