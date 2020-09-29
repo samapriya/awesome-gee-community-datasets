@@ -35,4 +35,6 @@ Download Tool/Code snippets if any: If source is specialized or you have an asso
 
 Curated by: Uploaders and curators name(s) include all you think helped
 
+Keywords: For example Global Shoreline, Coastline, Oceans
+
 Last updated: Last date you updated the dataset
