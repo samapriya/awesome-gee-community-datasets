@@ -7,6 +7,8 @@ Community Datasets added by users and made available for use at large
 
 ![new_issue_datasets](https://user-images.githubusercontent.com/6677629/81495266-2eaedb00-927d-11ea-849f-af017ac7b32a.gif)
 
+Copy this badge as you contribute: ![Awesome](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
+
 ****
 
 ## Table of Contents
@@ -52,6 +54,8 @@ Download Tool/Code snippets if any: [hdxpop](https://github.com/samapriya/hdxpop
 
 Curated by: Samapriya Roy
 
+Keywords: High Density Population, Population, Facebook
+
 Last updated: 2020-03-31
 ****
 
@@ -84,6 +88,8 @@ Sample Code: https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f81
 Extra Info: Over 100 Million+ vertices
 
 Curated by: Samapriya Roy
+
+Keywords: Global Shoreline, Shoreline, Oceans
 
 Last updated: 2020-05-08
 ****
@@ -121,6 +127,8 @@ Sample Code: https://code.earthengine.google.com/cab4e587c9fa6d86e9d848432efe874
 Extra Info: [Go to the OSM Water Layer webpage](http://hydro.iis.u-tokyo.ac.jp/~yamadai/OSM_water/)
 
 Curated by: Samapriya Roy and Erin Trochim
+
+Keywords: Global water layer, Open Street Map, OSM
 
 Last updated: 2020-04-28
 ****
@@ -164,8 +172,11 @@ Extra Info: [GitHub Tutorial](https://github.com/mapbiomas-brazil/user-toolkit)
 
 Curated by: [MapBiomas](https://mapbiomas.org/)
 
+Keywords: Mapbiomas, Land Use, Land Cover
+
 Last updated: [Refer to webpage](https://mapbiomas.org/)
 ****
+
 ### EarthEnv Global 1-km Cloud Frequency Version 1
 
 The Cloud Cover Frequency dataset v1.0 measures over 15 years of twice daily MODIS images to analyze and quantify cloud dynamics and cloud predictions over areas. This allows us to understand global cloud heterogeneity over a spatial and temporal scale. The study establises a baseline for temporal variability of cloud forest, dynamics and allows for users to determine temporal windows of imaging and cloud free snapshots. The complete description of the project can be [found here](http://www.earthenv.org/cloud).
@@ -206,6 +217,8 @@ Curated by: Samapriya Roy
 
 Created by: [Wilson AM, Jetz W 2016](http://www.earthenv.org/cloud)
 
+Keywords: Earthenv, cloud concentration, seasonality, MODIS, Global Cloud
+
 Last updated: [Refer to webpage](http://www.earthenv.org/cloud)
 ****
 
@@ -241,6 +254,8 @@ Shared License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
 Source and Curated by: Donchyts/Deltares/Google
+
+Keywords: Global Hand, Hydrology, drainage
 
 Last updated: ~2017
 ****
@@ -297,6 +312,8 @@ No additional restrictions — You may not apply legal terms or technological me
 Website:  https://data.unep-wcmc.org/datasets/45
 
 Curated by: Samapriya Roy
+
+Keywords: Global, Mangrove, GMW
 
 Last updated: 2019-06-14
 ****
