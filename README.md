@@ -1,13 +1,14 @@
 # awesome-gee-community-datasets
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
+Copy this badge as you contribute datasets: ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
+
 Community Datasets added by users and made available for use at large
 
 ## [Submit your Dataset as Issue Now using Template Link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=&template=new-community-gee-dataset-template.md&title=Dataset+%26+Curator+Name)
 
 ![new_issue_datasets](https://user-images.githubusercontent.com/6677629/81495266-2eaedb00-927d-11ea-849f-af017ac7b32a.gif)
 
-Copy this badge as you contribute: ![Awesome](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 
 ****
 
