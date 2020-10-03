@@ -254,7 +254,7 @@ Sample Code: https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f4
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Source and Curated by: Donchyts/Deltares/Google
+Source and Curated by: Donchyts/Deltares
 
 Keywords: Global Hand, Hydrology, drainage
 
