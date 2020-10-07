@@ -22,7 +22,7 @@ Community Datasets added by users and made available for use at large
 5. [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
 6. [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
 7. [Global Mangrove Watch](#global-mangrove-watch)
-8. [ISRIC SoilGrids250m 2.0 - Sand content](#soilgrids250m_2.0_sand_content)
+8. [SoilGrids250m_2.0_Sand_content](#SoilGrids250m_2.0_Sand_content)
 
 
 ### High Resolution Settlement Layer
