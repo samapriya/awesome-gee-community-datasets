@@ -33,6 +33,9 @@ Extra Info: Feel free to add any optional details
 
 Download Tool/Code snippets if any: If source is specialized or you have an associated tool
 
+#### Required
+License Information: License type and information
+
 Curated by: Uploaders and curators name(s) include all you think helped
 
 Keywords: For example Global Shoreline, Coastline, Oceans
