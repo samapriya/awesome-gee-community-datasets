@@ -1,6 +1,8 @@
 # awesome-gee-community-datasets
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
+Read the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
+
 Copy this badge as you contribute datasets: ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 
 Community Datasets added by users and made available for use at large
@@ -20,6 +22,7 @@ Community Datasets added by users and made available for use at large
 5. [EarthEnv Global 1-km Cloud Frequency Version 1](#earthenv-global-1-km-cloud-frequency-version-1)
 6. [Global 30m Height Above the Nearest Drainage](#global-30m-height-above-the-nearest-drainage)
 7. [Global Mangrove Watch](#global-mangrove-watch)
+8. [ISRIC SoilGrids250m 2.0 - Sand content](#soilgrids250m_2.0_sand_content)
 
 
 ### High Resolution Settlement Layer
@@ -317,4 +320,62 @@ Curated by: Samapriya Roy
 Keywords: Global, Mangrove, GMW
 
 Last updated: 2019-06-14
+****
+
+### SoilGrids250m_2.0_Sand_content
+
+Sand content (50-2000 micro meter) mass fraction in ‰ at 6 standard depths predicted using the global compilation of soil ground observations. The ‘mean’ and ‘median (0.5 quantile)’ may both be used as predictions of the soil property for a given cell. The mean represents the ‘expected value’ and provides an unbiased prediction of the soil property.
+
+
+| Name | Description | Mapped units | Conversion factor | Conventional units |
+|----------|------------------------------------------------------------------------------------|----------------|-------------------|--------------------|
+| bdod | Bulk density of the fine earth fraction | cg/cm³ | 100 | kg/dm³ |
+| cec | Cation Exchange Capacity of the soil | mmol(c)/kg | 10 | cmol(c)/kg |
+| cfvo | Volumetric fraction of coarse fragments (> 2 mm) | cm3/dm3 (vol‰) | 10 | cm3/100cm3 (vol%) |
+| clay | Proportion of clay particles (< 0.002 mm) in the fine earth fraction | g/kg | 10 | g/100g (%) |
+| nitrogen | Total nitrogen (N) | cg/kg | 100 | g/kg |
+| phh2o | Soil pH | pHx10 | 10 | pH |
+| sand | Proportion of sand particles (> 0.05 mm) in the fine earth fraction | g/kg | 10 | g/100g (%) |
+| silt | Proportion of silt particles (≥ 0.002 mm and ≤ 0.05 mm) in the fine earth fraction | g/kg | 10 | g/100g (%) |
+| soc | Soil organic carbon content in the fine earth fraction | dg/kg | 10 | g/kg |
+| ocd | Organic carbon density | hg/dm³ | 10 | kg/dm³ |
+| ocs | Organic carbon stocks | t/ha | 10 | kg/m² |
+
+
+![gee_isric](https://user-images.githubusercontent.com/6677629/95350803-2f788700-0886-11eb-8d81-2b4b2769c4db.gif)
+
+#### Earth Engine Snippet
+```js
+var isric_05 = ee.Image("projects/sat-io/open-datasets/isric-soilgrid-sand/sand_0-5_mean"),
+var isric_515 = ee.Image("projects/sat-io/open-datasets/isric-soilgrid-sand/sand_5-15_mean"),
+var isric_1530 = ee.Image("projects/sat-io/open-datasets/isric-soilgrid-sand/sand_15-30_mean"),
+var isric_3060 = ee.Image("projects/sat-io/open-datasets/isric-soilgrid-sand/sand_30-60_mean"),
+var isric_60100 = ee.Image("projects/sat-io/open-datasets/isric-soilgrid-sand/sand_60-100_mean");
+```
+
+Sample Code: https://code.earthengine.google.com/37ba987334396365d0cd5bc05c25de4b
+
+#### Data available from
+www.soilgrids.org.
+
+#### Publication date
+2020-05-04
+
+#### Period
+Fri Mar 31 1905 19:00:00 GMT-0500 Mon Jul 04 2016 20:00:00 GMT-0400
+
+#### Provided by :
+International Soil Reference and Information Centre (ISRIC)
+
+#### License
+Attribution 4.0 International (CC BY 4.0)
+
+#### DOI
+https://doi.org/10.17027/isric-soilgrids.713396fa-1687-11ea-a7c0-a0481ca9e724
+
+Curated by: Samapriya Roy
+
+Keywords: For example Global Soilgrid, Sandy Soil, ISRIC
+
+Last updated: 2020-10-07
 ****
