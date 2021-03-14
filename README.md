@@ -57,12 +57,12 @@ https://dataforgood.fb.com/docs/high-resolution-population-density-maps-demograp
 
 #### Earth Engine Snippet
 ```js
-var HRSL = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrslpop"),
-var HRSL_men = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_men"),
-var HRSL_women = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women"),
-var HRSL_youth = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_youth"),
-var HRSL_children_under_five = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_children_under_five"),
-var HRSL_women_reproductive_age = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women_reproductive_age"),
+var HRSL = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrslpop");
+var HRSL_men = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_men");
+var HRSL_women = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women");
+var HRSL_youth = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_youth");
+var HRSL_children_under_five = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_children_under_five");
+var HRSL_women_reproductive_age = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women_reproductive_age");
 var HRSL_elderly_over_sixty = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_elderly_over_sixty");
 ```
 
