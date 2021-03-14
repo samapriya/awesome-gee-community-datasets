@@ -1,0 +1,329 @@
+[{
+        "title": "Global Shoreline Dataset",
+        "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/shoreline/mainlands",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "Global Shoreline, Shoreline, mainlands, Oceans"
+    },
+    {
+        "title": "Global Shoreline Dataset",
+        "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/shoreline/big_islands",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "Global Shoreline, Shoreline, big islands, Oceans"
+    },
+    {
+        "title": "Global Shoreline Dataset Small Islands",
+        "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/shoreline/small_islands",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "Global Shoreline, Shoreline, small islands, Oceans"
+    },
+    {
+        "title": "OSM Water Layer Surface Waters",
+        "sample_code": "https://code.earthengine.google.com/cab4e587c9fa6d86e9d848432efe874b",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/shoreline/small_islands",
+        "provider": "Institute of Industrial Sciences, Open Street Map, OSM",
+        "tags": "Global water layer, Open Street Map, OSM, Surface Water"
+    },
+    {
+        "title": "Global 30m Height Above the Nearest Drainage with Number of River head threshold cells 100",
+        "sample_code": "https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f43",
+        "type": "image_collection",
+        "id": "users/gena/global-hand/hand-100",
+        "provider": "Gennaddi Donchyts, Deltares",
+        "tags": "Global Hand, Hydrology, drainage, hand"
+    },
+    {
+        "title": "Global 30m Height Above the Nearest Drainage with Number of River head threshold cells 1000",
+        "sample_code": "https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f43",
+        "type": "image",
+        "id": "users/gena/GlobalHAND/30m/hand-1000",
+        "provider": "Gennaddi Donchyts, Deltares",
+        "tags": "Global Hand, Hydrology, drainage, hand"
+    },
+    {
+        "title": "Global 90m Height Above the Nearest Drainage with Number of River head threshold cells 1000",
+        "sample_code": "https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f43",
+        "type": "image",
+        "id": "users/gena/GlobalHAND/90m-global/hand-1000",
+        "provider": "Gennaddi Donchyts, Deltares",
+        "tags": "Global Hand, Hydrology, drainage, hand"
+    },
+    {
+        "title": "Global Mangrove Extent 1996",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_1996_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2007",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2007_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2008",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2008_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2009",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2009_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2010",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2010_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2015",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2015_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Global Mangrove Extent 2016",
+        "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GMW/GMW_2016_v2",
+        "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+        "tags": "Global, Mangrove, GMW"
+    },
+    {
+        "title": "Cloud Forest Prediction",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_CloudForestPrediction",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud forest prediction, MODIS, Global Cloud"
+    },
+    {
+        "title": "Mean between-year seasonality",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_interannualSD",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, mean, seasonality, between year, MODIS, Global Cloud"
+    },
+    {
+        "title": "Within-year seasonality",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_intraannualSD",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, seasonality, within year, MODIS, Global Cloud"
+    },
+    {
+        "title": "Mean annual cloud frequency",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_meanannual",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud frequency, annual, MODIS, Global Cloud"
+    },
+    {
+        "title": "Mean monthly cloud frequency",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image_collection",
+        "id": ["projects/sat-io/open-datasets/gcc/MODCF_monthlymean"],
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud frequency, monthly, MODIS, Global Cloud"
+    },
+    {
+        "title": "Seasonality concentration and angle (theta)",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_seasonality_rgb",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud concentration, seasonality, angle, MODIS,Global Cloud"
+    },
+    {
+        "title": "Timing of peak seasonal cloud concentration",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_seasonality_theta",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud concentration, seasonality, MODIS, Global Cloud"
+    },
+    {
+        "title": "Seasonality single band with color table",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_seasonality_visct",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, cloud concentration, seasonality, MODIS, Global Cloud"
+    },
+    {
+        "title": "Spatial variability (1 degree SD)",
+        "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_spatialSD_1deg",
+        "provider": "Earthenv, Wilson AM, Jetz W",
+        "tags": "Earthenv, spatial variability, seasonality, MODIS, Global Cloud"
+    },
+    {
+        "title": "Bulk density of the fine earth fraction",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/bdod_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, bulk density, ISRIC"
+    },
+    {
+        "title": "Cation Exchange Capacity of the soil",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/cec_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Cation Exchange Capacity, ISRIC"
+    },
+    {
+        "title": "Volumetric fraction of coarse fragments",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/cfvo_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid,Volumetric fraction, coarse fragments, ISRIC"
+    },
+    {
+        "title": "Proportion of clay particles (lt 0.002 mm) in the fine earth fraction",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/clay_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, clay, ISRIC"
+    },
+    {
+        "title": "Total nitrogen",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/nitrogen_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Nitrogen, ISRIC"
+    },
+    {
+        "title": "Soil pH",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/phh20_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, ph, ISRIC"
+    },
+    {
+        "title": "Proportion of sand particles (gt 0.05 mm) in the fine earth fraction",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/sand_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Sand, ISRIC"
+    },
+    {
+        "title": "Proportion of silt particles (gte 0.002 mm and lte 0.05 mm) in the fine earth fraction",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/silt_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Silt, ISRIC"
+    },
+    {
+        "title": "Soil organic carbon content in the fine earth fraction",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/soc_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Organic carbon content, ISRIC"
+    },
+    {
+        "title": "Organic carbon density",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/ocd_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Organic carbon density, ISRIC"
+    },
+    {
+        "title": "Organic carbon stocks",
+        "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+        "type": "image",
+        "id": "projects/soilgrids-isric/ocs_mean",
+        "provider": "International Soil Reference and Information Centre (ISRIC)",
+        "tags": "Global Soilgrid, Organic carbon stocks, ISRIC"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Overall Population",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collectione",
+        "id": "projects/sat-io/open-datasets/hrsl/hrslpop",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Men",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_men",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Women",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_women",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian, women"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Youth",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_youth",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian, youth"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Children under five",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_children_under_five",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian, children"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Women of reproductive age",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_women_reproductive_age",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian, women, reproductive"
+    },
+    {
+        "title": "High Resolution Settlement Layer: Elderly over sixty",
+        "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/hrsl/hrsl_elderly_over_sixty",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian, elderly"
+    }
+]
