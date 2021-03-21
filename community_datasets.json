@@ -349,5 +349,5 @@
         "id": "projects/mapbiomas-workspace/MOSAICOS/workspace-c3",
         "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
         "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
-    },
+    }
 ]
