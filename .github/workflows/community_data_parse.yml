@@ -1,0 +1,59 @@
+name: gee_catalog
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.7' # install the python version needed
+          
+      - name: upgrade pip and install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U pip setuptools
+      - name: json2csv
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import csv
+            import json
+            with open('community_datasets.json') as f:
+              data = json.load(f)
+            with open('community_datasets.csv','w') as csvfile:
+                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code"], delimiter=',',lineterminator='\n')
+                writer.writeheader()
+            for datasets in data:
+                gee_id = datasets['id']
+                gee_provider = datasets['provider']
+                gee_title = datasets['title']
+                gee_type = datasets['type']
+                gee_tags = datasets['tags']
+                sample_code = datasets['sample_code']
+                with open('community_datasets.csv','a') as csvfile:
+                    writer=csv.writer(csvfile,delimiter=',',lineterminator='\n')
+                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code])
+                csvfile.close()
+      - name: commit files
+        continue-on-error: true
+        run: |
+          today=$(date +"%Y-%m-%d")
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "updated datasets ${today} UTC" -a
+      - name: push changes
+        continue-on-error: true
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
