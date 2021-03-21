@@ -28,9 +28,8 @@ jobs:
           script: |
             import csv
             import json
-            import requests
-            r= requests.get('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/community_datasets.json')
-            data = r.json()
+            with open('community_datasets.json') as f:
+              data = json.load(f)
             with open('community_datasets.csv','w') as csvfile:
                 writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code"], delimiter=',',lineterminator='\n')
                 writer.writeheader()
