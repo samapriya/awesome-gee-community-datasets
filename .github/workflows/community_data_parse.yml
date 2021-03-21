@@ -29,22 +29,9 @@ jobs:
           script: |
             import csv
             import json
-            with open('community_datasets.json') as f:
+            with open('./community_datasets.json') as f:
               data = json.load(f)
-            with open('community_datasets.csv','w') as csvfile:
-                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code"], delimiter=',',lineterminator='\n')
-                writer.writeheader()
-            for datasets in data:
-                gee_id = datasets['id']
-                gee_provider = datasets['provider']
-                gee_title = datasets['title']
-                gee_type = datasets['type']
-                gee_tags = datasets['tags']
-                sample_code = datasets['sample_code']
-                with open('community_datasets.csv','a') as csvfile:
-                    writer=csv.writer(csvfile,delimiter=',',lineterminator='\n')
-                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code])
-                csvfile.close()
+            print(data)
       - name: commit files
         continue-on-error: true
         run: |
