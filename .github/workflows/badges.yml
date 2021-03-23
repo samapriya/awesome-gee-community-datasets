@@ -1,0 +1,28 @@
+name: Badges
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-badges:
+    name: Update Badges
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Download jq
+        run: sudo apt-get update -y && sudo apt-get install -y jq
+      - name: Get the Numbers
+        run: |
+          echo "JSON_COUNT=$(jq length community_datasets.json)" >> $GITHUB_ENV
+      - name: JSON counter
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 34bc0c1280d475d3a69e3b60a706226e
+          filename: community.json
+          label: Community Datasets
+          message: ${{ env.JSON_COUNT }}
+          color: orange
