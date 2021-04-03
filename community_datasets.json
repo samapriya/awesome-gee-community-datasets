@@ -349,5 +349,101 @@
         "id": "projects/mapbiomas-workspace/MOSAICOS/workspace-c3",
         "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
         "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+    },
+    {
+        "title": "Global Mining Polygons",
+        "sample_code": "https://code.earthengine.google.com/21caa84d736a622b9de9c760c266e3d9",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-mining/global_mining_polygons",
+        "provider": "FINEPRINT project, European Research Council, European Union's Horizon 2020",
+        "tags": "Mining, High Resolution, Global, coal, land-use, metal ores, minerals, raw material extraction"
+    },
+    {
+        "title": "Global Mining Validation Points",
+        "sample_code": "https://code.earthengine.google.com/21caa84d736a622b9de9c760c266e3d9",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-mining/global_mining_validation",
+        "provider": "FINEPRINT project, European Research Council, European Union's Horizon 2020",
+        "tags": "Mining, High Resolution, Global, coal, land-use, metal ores, minerals, raw material extraction"
+    },
+    {
+        "title": "Predicted Distribution and Transmission Lines",
+        "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/predictive-global-power-system/distribution-transmission-lines",
+        "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks",
+        "tags": "Global transmission lines, electricity, infrastructure, power"
+    },
+    {
+        "title": "Predicted low-voltage infrastructure in kilometres per cell",
+        "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/predictive-global-power-system/lv",
+        "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks ",
+        "tags": "Global transmission lines, electricity, infrastructure, power"
+    },
+    {
+        "title": "Locations predicted to be connected to distribution grid",
+        "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/predictive-global-power-system/targets",
+        "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks",
+        "tags": "Global transmission lines, electricity, infrastructure, power"
+    },
+    {
+        "title": "GRIP4: Africa",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/Africa",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: Central and South America",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/Central-South-America",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: Europe",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/Europe",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: North America",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/North-America",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: Oceania",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/Oceania",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: South East Asia",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/South-East-Asia",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "GRIP4: Middle East and Central Asia",
+        "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia",
+        "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
+        "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
     }
 ]
