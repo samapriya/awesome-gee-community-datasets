@@ -25,7 +25,7 @@ Community Datasets added by users and made available for use at large
 7. [Global Mangrove Watch](#global-mangrove-watch)
 8. [SoilGrids250m_2.0](#soilgrids250m_20)
 9. [Global Mining Areas and Validation Datasets](#global-mining-areas-and-validation-datasets)
-10.[Predictive mapping of the global power system using open data](#predictive-mapping-of-the-global-power-system-using-open-data)
+10. [Predictive mapping of the global power system using open data](#predictive-mapping-of-the-global-power-system-using-open-data)
 11. [Global Roads Inventory Project global roads database](#global-roads-inventory-project-global-roads-database)
 
 ### High Resolution Settlement Layer
