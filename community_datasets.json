@@ -445,5 +445,29 @@
         "id": "projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia",
         "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
         "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
+    },
+    {
+        "title": "Geomorpho90m: Compound Topographic Index",
+        "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/cti",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
+    },
+    {
+        "title": "Geomorpho90m: Slope",
+        "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/slope",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
+    },
+    {
+        "title": "Geomorpho90m: Terrain Ruggedness Index",
+        "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
     }
 ]
