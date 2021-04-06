@@ -34,7 +34,7 @@ In partnership with the Center for International Earth Science Information Netwo
 
 * Overall population density
 * Male
-*Female
+* Female
 * Women of reproductive age (ages 15-49)
 * Children (ages 0-5)
 * Youth (ages 15-24)
@@ -56,6 +56,7 @@ and step by step download here
 
 https://dataforgood.fb.com/docs/high-resolution-population-density-maps-demographic-estimates-documentation/
 
+License: Creative Commons Attribution International
 
 ![HRSL_pop](https://user-images.githubusercontent.com/6677629/110987570-e648c980-8334-11eb-8615-535114fde903.gif)
 
@@ -371,15 +372,15 @@ de Sousa, L., Poggio, L., Batjes, N.H., Heuvelink, G.B.M., Kempen, B., Ribeiro, 
 
 #### Earth Engine Snippet
 ```js
-var isric_bdod_mean = ee.Image("projects/soilgrids-isric/bdod_mean"),
-var isric_cec = ee.Image("projects/soilgrids-isric/cec_mean"),
-var isric_cfvo = ee.Image("projects/soilgrids-isric/cfvo_mean"),
-var isric_clay = ee.Image("projects/soilgrids-isric/clay_mean")
-var isric_sand = ee.Image("projects/soilgrids-isric/sand_mean")
-var isric_silt = ee.Image("projects/soilgrids-isric/silt_mean")
-var isric_nitrogen = ee.Image("projects/soilgrids-isric/nitrogen_mean")
-var isric_phh20 = ee.Image("projects/soilgrids-isric/phh20_mean")
-var isric_soc = ee.Image("projects/soilgrids-isric/soc_mean"),
+var isric_bdod_mean = ee.Image("projects/soilgrids-isric/bdod_mean");
+var isric_cec = ee.Image("projects/soilgrids-isric/cec_mean");
+var isric_cfvo = ee.Image("projects/soilgrids-isric/cfvo_mean");
+var isric_clay = ee.Image("projects/soilgrids-isric/clay_mean");
+var isric_sand = ee.Image("projects/soilgrids-isric/sand_mean");
+var isric_silt = ee.Image("projects/soilgrids-isric/silt_mean");
+var isric_nitrogen = ee.Image("projects/soilgrids-isric/nitrogen_mean");
+var isric_phh20 = ee.Image("projects/soilgrids-isric/phh20_mean");
+var isric_soc = ee.Image("projects/soilgrids-isric/soc_mean");
 var isric_ocd = ee.Image("projects/soilgrids-isric/ocd_mean");
 var isric_ocs = ee.Image("projects/soilgrids-isric/ocs_mean");
 ```
