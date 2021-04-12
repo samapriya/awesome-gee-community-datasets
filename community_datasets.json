@@ -452,7 +452,7 @@
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/Geomorpho90m/cti",
         "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
     },
     {
         "title": "Geomorpho90m: Slope",
@@ -460,7 +460,7 @@
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/Geomorpho90m/slope",
         "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
     },
     {
         "title": "Geomorpho90m: Terrain Ruggedness Index",
@@ -468,6 +468,70 @@
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
         "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, cti, tri"
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, tri, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    },
+    {
+        "title": "Geomorpho90m: Vector Ruggedness Measure",
+        "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/vrm",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, vrm, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    },
+    {
+        "title": "Geomorpho90m: Roughness",
+        "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/roughness",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, roughness, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    },
+    {
+        "title": "Geomorpho90m: Topographic Position Index",
+        "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/tpi",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, tpi, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    },
+    {
+        "title": "Geomorpho90m: Stream Power Index",
+        "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/Geomorpho90m/spi",
+        "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+        "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index,spi, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    },
+    {
+        "title": "Gridded Population of the World, Version 4 (GPWv4): Administrative Unit Center Points with Population Estimates",
+        "sample_code": "https://code.earthengine.google.com/00a4d124364828026daa89aa40fdd0cf",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/sedac/gpw-v4-admin-unit-center-points-population-estimates-rev11",
+        "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
+        "tags": "census geography, GPWv4, gridded population, uniform distribution, CIESIN, SEDAC"
+    },
+    {
+        "title": "West Africa Coastal Vulnerability Mapping: Population Exposure Index (PEI)",
+        "sample_code": "https://code.earthengine.google.com/d6d07d10eafabbdcb57c7965f0b984dc",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-pei",
+        "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
+        "tags": "West Africa, Exposure Index, Population, CIESIN, SEDAC, PEI"
+    },
+    {
+        "title": "West Africa Coastal Vulnerability Mapping: Poverty and Adaptive Capacity Index (PACI)",
+        "sample_code": "https://code.earthengine.google.com/d6d07d10eafabbdcb57c7965f0b984dc",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-paci",
+        "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
+        "tags": "West Africa, Poverty and Adaptive Capacity Index, PACI, Poverty, Capacity, Population, CIESIN, SEDAC"
+    },
+    {
+        "title": "West Africa Coastal Vulnerability Mapping: Social Vulnerability Index (SVI)",
+        "sample_code": "https://code.earthengine.google.com/d6d07d10eafabbdcb57c7965f0b984dc",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-svi",
+        "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
+        "tags": "West Africa, Social Vulnerability Index, SVI, Population, CIESIN, SEDAC"
     }
 ]

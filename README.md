@@ -28,6 +28,8 @@ Community Datasets added by users and made available for use at large
 10. [Predictive mapping of the global power system using open data](#predictive-mapping-of-the-global-power-system-using-open-data)
 11. [Global Roads Inventory Project global roads database](#global-roads-inventory-project-global-roads-database)
 12. [Geomorpho90m Geomorphometric Layers](#geomorpho90m-geomorphometric-layers)
+13. [Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates](#gridded-population-of-the-world-version-4-administrative-unit-center-points-with-population-estimates)
+14. [West Africa Coastal Vulnerability Mapping](#west-africa-coastal-vulnerability-mapping)
 
 ### High Resolution Settlement Layer
 In partnership with the Center for International Earth Science Information Network (CIESIN) at Columbia University, Facebook used state-of-the-art computer vision techniques to identify buildings from publicly accessible mapping services to create the world's most accurate population datasets. You can [read about their project here](https://dataforgood.fb.com/tools/population-density-maps/). These are the datasets available for download on the Humanitarian Data Exchange for nearly every country in the world:
@@ -565,6 +567,10 @@ Amatulli, Giuseppe, Daniel McInerney, Tushar Sethi, Peter Strobl, and Sami Domis
 var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti");
 var tri = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tri");
 var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope");
+var vrm = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/vrm");
+var roughness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/roughness");
+var tpi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tpi");
+var spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi");
 ```
 
 Sample Code: https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b
@@ -578,3 +584,75 @@ Keywords: Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, te
 
 Last updated: 2021-04-04
 ****
+
+### Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates
+
+The Gridded Population of the World, Version 4 (GPWv4): Administrative Unit Center Points with Population Estimates, Revision 11 consists of UN WPP-adjusted population estimates and densities for the years 2000, 2005, 2010, 2015 and 2020, as well as the basic demographic characteristics (age and sex) for the year 2010. The data set also includes administrative name, land and water area, and data context by administrative unit center point (centroid) location. The center points are based on approximately 13.5 million input administrative units used in GPWv4, therefore, these files require hardware and software that can read large amounts of data into memory.
+
+Purpose:
+To provide a vector (point) version of the input administrative units used in GPWv4 with population estimates, densities, 2010 basic demographic characteristics, and administrative name, area, and data context for use in data integration.
+
+The documentation for this data set is available [here](http://sedac.ciesin.columbia.edu/data/set/gpw-v4-admin-unit-center-points-population-estimates-rev11/docs)
+
+Use the following citation
+
+```
+Doxsey-Whitfield, Erin, Kytt MacManus, Susana B. Adamo, Linda Pistolesi, John Squires, Olena Borkovska, and Sandra R. Baptista. "Taking advantage of the improved availability of census data: a first look at the gridded population of the world, version 4." Papers in Applied Geography 1, no. 3 (2015): 226-234.
+```
+
+![gpw](https://user-images.githubusercontent.com/6677629/113961052-1330b500-97eb-11eb-927e-00737e522592.gif)
+
+#### Earth Engine Snippet
+
+```js
+var gpw = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/gpw-v4-admin-unit-center-points-population-estimates-rev11");
+```
+
+Sample Code: https://code.earthengine.google.com/00a4d124364828026daa89aa40fdd0cf
+
+Shared License:
+This work is licensed under a Creative Commons Attribution 4.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+Curated by: Samapriya Roy
+
+Keywords: census geography, GPWv4, gridded population, uniform distribution
+
+Last updated: 2021-04-07
+***
+
+### West Africa Coastal Vulnerability Mapping
+
+The West Africa Coastal Vulnerability Mapping: Social Vulnerability Indices data set includes three indices: Social Vulnerability, Population Exposure, and Poverty and Adaptive Capacity. The Social Vulnerability Index (SVI) was developed using six indicators: population density (2010), population growth (2000-2010), subnational poverty and extreme poverty (2005), maternal education levels circa 2008, market accessibility (travel time to markets) circa 2000, and conflict data for political violence (1997-2013). Because areas of high population density and growth (high vulnerability) are generally associated with urban areas that have lower levels of poverty and higher degrees of adaptive capacity (low vulnerability), to some degree, the population factors cancel out the poverty and adaptive capacity indicators. To account for this, the data set includes two sub-indices, a Population Exposure Index (PEI), which only includes population density and population growth; and a Poverty and Adaptive Capacity Index (PACI), composed of subnational poverty, maternal education levels, market accessibility, and conflict. These sub-indices are able to isolate the population indicators from the poverty and conflict metrics. The indices represent Social Vulnerability in the West Africa region within 200 kilometers of the coast.
+
+Purpose:
+To provide a measure of social vulnerability and "defenselessness" in the face of climate stressors in the coastal zone of West Africa.
+
+The documentation for this dataset is [available here](https://sedac.ciesin.columbia.edu/data/set/wacvm-social-vulnerability-indices/docs)
+
+Use the following citation
+
+```
+Center for International Earth Science Information Network - CIESIN - Columbia University. 2018. West Africa Coastal Vulnerability Mapping: Social Vulnerability Indices. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/H4H41PCK. Accessed DAY MONTH YEAR.
+```
+
+![wacvm_svi](https://user-images.githubusercontent.com/6677629/114324581-7de63700-9af0-11eb-82ea-d70cf71c47ea.gif)
+
+#### Earth Engine Snippet
+
+```js
+var wacvm_paci = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-paci");
+var wacvm_pei = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-pei");
+var wacvm_svi = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-svi");
+```
+
+Sample Code: https://code.earthengine.google.com/d6d07d10eafabbdcb57c7965f0b984dc
+
+Shared License:
+This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
+
+Curated by: Samapriya Roy
+
+Keywords: census geography, GPWv4, gridded population, uniform distribution
+
+Last updated: 2021-04-11
+***
