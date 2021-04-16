@@ -40,4 +40,5 @@ Community Datasets added by users and made available for use at large
 14. [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
 
 ## Community Catalog Site
+
 Online Awesome Google Earth Engine Community Catalog: https://samapriya.github.io/awesome-gee-community-datasets/
