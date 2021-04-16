@@ -12,8 +12,6 @@ Use this in your Readme.md file
 ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 ```
 
-![awesome_gee_community_datasets](https://user-images.githubusercontent.com/6677629/114970650-70a6b080-9e40-11eb-9be1-1cbbfe9a96f2.jpg)
-
 Community Datasets added by users and made available for use at large
 
 ## [Submit your Datasets to be included in the list: Using the template Link here](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=&template=new-community-gee-dataset-template.md&title=Dataset+%26+Curator+Name)
