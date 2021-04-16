@@ -6,6 +6,11 @@ Read the [Medium Post article here](https://medium.com/geospatial-processing-at-
 
 Copy this badge as you contribute datasets: ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 
+Use this in your Readme.md file
+
+```
+![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
+```
 
 ![awesome_gee_community_datasets](https://user-images.githubusercontent.com/6677629/114970650-70a6b080-9e40-11eb-9be1-1cbbfe9a96f2.jpg)
 
