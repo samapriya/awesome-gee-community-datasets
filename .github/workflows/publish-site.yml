@@ -16,6 +16,6 @@ jobs:
         run: |
           rm -Rf requirements.txt
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@1.19
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
