@@ -533,5 +533,205 @@
         "id": "projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-svi",
         "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
         "tags": "West Africa, Social Vulnerability Index, SVI, Population, CIESIN, SEDAC"
+    },
+    {
+        "title": "Vegetation Condition Class (VCC) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vcc",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Vegetation Departure Index (VDep) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vdep",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Succession Classes (SClass) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/sclass",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Fuel Disturbance (FDist) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/fdist",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Forest Canopy Height (CH) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/ch",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Forest Canopy Cover (CC) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/cc",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Forest Canopy Base Height (CBH) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/cbh",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Forest Canopy Bulk Density (CBD) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/cbd",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Fuel Vegetation Cover (FVC) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/fvc",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Fuel Vegetation Height (FVH) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/fvh",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Fuel Vegetation Type (FVT) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/fvt",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Biophysical Settings (BPS) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vegetation/bps_v2_0_0",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Existing Vegetation Cover (EVC) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vegetation/evc_v2_0_0",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Existing Vegetation Height (EVH) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vegetation/evh_v2_0_0",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Existing Vegetation Type (EVT) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vegetation/evt_v2_0_0",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "National Vegetation Classification (NVC) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/vegetation/nvc_v2_0_0",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
+        "title": "Global River Width from Landsat (GRWL) Simplified Vector Product V01.01",
+        "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRWL/grwl_SummaryStats_v01_01",
+        "provider": "Allen, George H., & Pavelsky, Tamlin M",
+        "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+    },
+    {
+        "title": "Global River Width from Landsat (GRWL) Vector Product V01.01",
+        "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRWL/water_vector_v01_01",
+        "provider": "Allen, George H., & Pavelsky, Tamlin M",
+        "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+    },
+    {
+        "title": "River and stream surface area totals by drainage basin",
+        "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRWL/rssa_basins",
+        "provider": "Allen, George H., & Pavelsky, Tamlin M",
+        "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+    },
+    {
+        "title": "Location map of the individual GRWL tiles",
+        "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/GRWL/grwl_tiles",
+        "provider": "Allen, George H., & Pavelsky, Tamlin M",
+        "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+    },
+    {
+        "title": "Global River Width from Landsat (GRWL) Mask V01.01",
+        "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/GRWL/grwl_tiles",
+        "provider": "Allen, George H., & Pavelsky, Tamlin M",
+        "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+    },
+    {
+        "title": "Global coastal rivers and environmental variables",
+        "sample_code": "https://code.earthengine.google.com/8dd904e9d95fe96fa058571b27f25f40",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/delta/global-costal-rivers-points",
+        "provider": "Caldwell, R. L., Edmonds, D. A., Baumgardner, S., Paola, C., Roy, S., and Nienhuis, J. H.",
+        "tags": "Fluvial Geomorphology, Hydrology, Rivers, Coastal Rivers, Tidal, River Mouth"
+    },
+    {
+        "title": "Relative Wealth Index (RWI)",
+        "sample_code": "https://code.earthengine.google.com/ce70f96b62203b44da0c224a10dc3eab",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/facebook/relative_wealth_index",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "Relative Wealth Index, RWI, Facebook, CIESIN, gridded"
+    },
+    {
+        "title": "Social Connectedness Index First Location(SCI)",
+        "sample_code": "https://code.earthengine.google.com/4dadf30cb45f181e301fcd4f17dfdb2d",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/facebook/sci_user_loc",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "Social Connectedness Index, SCI, Facebook, CIESIN, country,first location"
+    },
+    {
+        "title": "Social Connectedness Index Second Location(SCI)",
+        "sample_code": "https://code.earthengine.google.com/4dadf30cb45f181e301fcd4f17dfdb2d",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/facebook/sci_fr_loc",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "Social Connectedness Index, SCI, Facebook, CIESIN, country, second location"
     }
 ]

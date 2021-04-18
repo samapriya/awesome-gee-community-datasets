@@ -106,15 +106,21 @@ nav:
     - High Resolution Settlement Layer: projects/hrsl.md
     - GPW Version 4 Admin Units: projects/GPWv4.md
     - West Africa Coastal Vulnerability Mapping: projects/wacvm.md
+    - Relative Wealth Index (RWI): projects/rwi.md
+    - Social Connectedness Index (SCI): projects/sci.md
   - Geophysical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Soil Grids 250m v2.0: projects/isric.md
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - Global Mangrove Project: projects/mangrove.md
+    - Global coastal rivers and environmental variables: projects/rivermouth.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
+    - Global River Width from Landsat (GRWL): projects/grwl.md
+  - Vegetation and Forestry:
+    - Landfire Mosaics LF v2.0.0: projects/landfire.md
   - Utilities:
     - Global Power: projects/global_power.md
     - Global Roads Inventory Project: projects/grip.md
