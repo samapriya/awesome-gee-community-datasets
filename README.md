@@ -36,6 +36,11 @@ Community Datasets added by users and made available for use at large
 12. [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
 13. [Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates](https://samapriya.github.io/awesome-gee-community-datasets/projects/GPWv4/)
 14. [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
+15. [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
+16. [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
+17. [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
+18. [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
+19. [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
 
 ## Community Catalog Site
 
