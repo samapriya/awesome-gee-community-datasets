@@ -534,27 +534,27 @@
         "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
         "tags": "West Africa, Social Vulnerability Index, SVI, Population, CIESIN, SEDAC"
     },
-    {
+   {
         "title": "Vegetation Condition Class (VCC) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/vcc",
+        "id": "projects/sat-io/open-datasets/landfire/fire-regime/vcc",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
     {
         "title": "Vegetation Departure Index (VDep) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/vdep",
+        "id": "projects/sat-io/open-datasets/landfire/fire-regime/vdep",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
     {
         "title": "Succession Classes (SClass) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/sclass",
+        "id": "projects/sat-io/open-datasets/landfire/fire-regime/sclass",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -562,7 +562,7 @@
         "title": "Fuel Disturbance (FDist) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/fdist",
+        "id": "projects/sat-io/open-datasets/landfire/disturbance/fdist",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -570,7 +570,7 @@
         "title": "Forest Canopy Height (CH) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/ch",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/ch",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -578,7 +578,7 @@
         "title": "Forest Canopy Cover (CC) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/cc",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/cc",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -586,7 +586,7 @@
         "title": "Forest Canopy Base Height (CBH) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/cbh",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/cbh",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -594,7 +594,7 @@
         "title": "Forest Canopy Bulk Density (CBD) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/cbd",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/cbd",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -602,7 +602,7 @@
         "title": "Fuel Vegetation Cover (FVC) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/fvc",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/fvc",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -610,7 +610,7 @@
         "title": "Fuel Vegetation Height (FVH) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/fvh",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/fvh",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -618,7 +618,7 @@
         "title": "Fuel Vegetation Type (FVT) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/fvt",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/fvt",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
@@ -733,5 +733,13 @@
         "id": "projects/sat-io/open-datasets/facebook/sci_fr_loc",
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "Social Connectedness Index, SCI, Facebook, CIESIN, country, second location"
-    }
+    },
+   {
+        "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/fire-regime/fccs",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
 ]

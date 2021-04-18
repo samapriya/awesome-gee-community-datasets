@@ -13,27 +13,28 @@ Currently included layers are
 #### Earth Engine Snippet: Fire Regime
 
 ```js
-var sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/sclass");
-var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vcc");
-var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vdep");
+var sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/sclass");
+var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vcc");
+var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vdep");
 ```
 
 #### Earth Engine Snippet: Disturbance
 
 ```js
-var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fdist");
+var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/fdist");
 ```
 
 #### Earth Engine Snippet: Fuel
 
 ```js
-var ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ch");
-var cc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/cc");
-var cbh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/cbh");
-var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/cbd");
-var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fvc");
-var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fvh");
-var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fvt");
+var ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/ch");
+var cc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cc");
+var cbh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cbh");
+var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cbd");
+var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvc");
+var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvh");
+var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvt");
+var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fccs");
 ```
 Sample Code: https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666
 
