@@ -18,11 +18,28 @@ var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime
 var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vdep");
 ```
 
+Sample Code: https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709
+
 #### Earth Engine Snippet: Disturbance
 
 ```js
 var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/fdist");
+var hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/hdist")
 ```
+
+Sample Code: https://code.earthengine.google.com/5b1706ec636eb864a273b0cef18a1786
+
+#### Earth Engine Snippet: Topographic
+
+```js
+var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/aspect");
+var aspect = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/elevation");
+```
+
+Sample Code: https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3
+
+![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
+
 
 #### Earth Engine Snippet: Fuel
 
@@ -36,11 +53,11 @@ var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvh");
 var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvt");
 var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fccs");
 ```
-Sample Code: https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666
+Sample Code: https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac
 
 ![lf_veg](https://user-images.githubusercontent.com/6677629/115133326-e3449700-9fcc-11eb-81bf-450c622ca166.gif)
 
-### Earth Engine Snippet: Vegetation
+#### Earth Engine Snippet: Vegetation
 
 ```js
 var bps = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/bps_v2_0_0");

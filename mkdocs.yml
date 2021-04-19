@@ -123,6 +123,7 @@ nav:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
   - Utilities:
     - Global Power: projects/global_power.md
+    - Facebook Electrical Distribution Grid Maps: projects/electric_grid
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
   - Weather:

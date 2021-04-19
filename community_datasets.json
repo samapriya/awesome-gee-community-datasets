@@ -560,15 +560,23 @@
     },
     {
         "title": "Fuel Disturbance (FDist) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/5b1706ec636eb864a273b0cef18a1786",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/disturbance/fdist",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
     {
+        "title": "Fuel Disturbance (HDist) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/5b1706ec636eb864a273b0cef18a1786",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/disturbance/hdist",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+    {
         "title": "Forest Canopy Height (CH) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/ch",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -576,7 +584,7 @@
     },
     {
         "title": "Forest Canopy Cover (CC) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/cc",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -584,7 +592,7 @@
     },
     {
         "title": "Forest Canopy Base Height (CBH) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/cbh",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -592,7 +600,7 @@
     },
     {
         "title": "Forest Canopy Bulk Density (CBD) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/cbd",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -600,7 +608,7 @@
     },
     {
         "title": "Fuel Vegetation Cover (FVC) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/fvc",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -608,7 +616,7 @@
     },
     {
         "title": "Fuel Vegetation Height (FVH) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/fvh",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -616,7 +624,7 @@
     },
     {
         "title": "Fuel Vegetation Type (FVT) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landfire/fuel/fvt",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -736,10 +744,42 @@
     },
    {
         "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.0.0",
-        "sample_code": "https://code.earthengine.google.com/d09b7d9bbe78a41182cfb661810092d8",
+        "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
-        "id": "projects/sat-io/open-datasets/landfire/fire-regime/fccs",
+        "id": "projects/sat-io/open-datasets/landfire/fuel/fccs",
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
+   {
+        "title": "Elevation (ELEV) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/topographic/elevation",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+   {
+        "title": "Aspect (ASP) LF v2.0.0",
+        "sample_code": "https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landfire/topographic/aspect",
+        "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+        "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    },
+   {
+        "title": "Electrical Distribution Grid Maps: Raster",
+        "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/facebook/global_medium_voltage_grid",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
+    },
+   {
+        "title": "Electrical Distribution Grid Maps: Vector",
+        "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/facebook/gmv_grid",
+        "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
+        "tags": "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
+    }
 ]
