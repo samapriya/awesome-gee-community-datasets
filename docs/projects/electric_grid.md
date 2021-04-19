@@ -26,3 +26,9 @@ Côte d'Ivoire,  Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  
 #### License
 
 This work is distributed under the Creative Commons Attribution 4.0 License.
+
+Curated by: Samapriya Roy
+
+Keywords: Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia
+
+Last updated: 2021-04-17

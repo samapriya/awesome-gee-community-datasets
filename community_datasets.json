@@ -781,5 +781,29 @@
         "id": "projects/sat-io/open-datasets/facebook/gmv_grid",
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
+    },
+   {
+        "title": "West Africa Land Use and Land Cover 1975",
+        "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_1975",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
+    },
+   {
+        "title": "West Africa Land Use and Land Cover 2000",
+        "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2000",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
+    },
+   {
+        "title": "West Africa Land Use and Land Cover 2013",
+        "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2013",
+        "provider": "United States Geological Survey, USGS",
+        "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
     }
 ]
