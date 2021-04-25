@@ -6,7 +6,7 @@ This page would include layers made available as a result of publications from t
 ## 2020.Rapid Response Crop Maps in Data Sparse Regions
 
 We present a method for rapid mapping of croplands in regions where little to no ground data is available. We present results for this method in Togo, where we delivered a high-resolution (10 m) cropland map in under 10 days to facilitate rapid response to the COVID-19 pandemic by the Togolese government. This demonstrated a successful transition of machine learning applications research to operational rapid response in a real humanitarian crisis. All maps, data, and code are publicly available to enable future
-research and operational systems in data-sparse regions.
+research and operational systems in data-sparse regions. [Read the paper here](https://arxiv.org/pdf/2006.16866.pdf)
 
 #### Earth Engine Snippet
 
@@ -30,7 +30,7 @@ Sample code: https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc
 
 ## Annual and in-season mapping of cropland at field scale with sparse labels
 
-Previously, we developed a method for binary classification of cropland that learns from sparse local labels and abundant global labels using a multi-headed LSTM and timeseries multispectral satellite inputs over one year. In this work, we present a new method that uses an autoregressive LSTM to classify cropland during the growing season (i.e., partially-observed time series). We used these methods to produce publicly-available 10m-resolution cropland maps in Kenya for the 2019-2020 and 2020-2021 growing seasons. These are the highest-resolution and most recent cropland maps publicly available for Kenya. These methods and associated maps are critical for scientific studies and decision-making at the intersection of food security and climate change.
+Previously, we developed a method for binary classification of cropland that learns from sparse local labels and abundant global labels using a multi-headed LSTM and timeseries multispectral satellite inputs over one year. In this work, we present a new method that uses an autoregressive LSTM to classify cropland during the growing season (i.e., partially-observed time series). We used these methods to produce publicly-available 10m-resolution cropland maps in Kenya for the 2019-2020 and 2020-2021 growing seasons. These are the highest-resolution and most recent cropland maps publicly available for Kenya. These methods and associated maps are critical for scientific studies and decision-making at the intersection of food security and climate change. [Read the paper here](https://www.climatechange.ai/papers/neurips2020/29/paper.pdf)
 
 
 ![kenya_binary_probability](https://user-images.githubusercontent.com/6677629/116005494-cdd2fc80-a5cc-11eb-8d2d-eec240680174.gif)
