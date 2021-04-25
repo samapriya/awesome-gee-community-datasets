@@ -44,6 +44,11 @@ Community Datasets added by users and made available for use at large
 20. [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
 21. [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
 22. [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
+23. [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
+24. [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+25. [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
+26. [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
+
 
 ## Community Catalog Site
 
