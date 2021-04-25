@@ -115,19 +115,23 @@ nav:
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - Global Mangrove Project: projects/mangrove.md
     - Global coastal rivers and environmental variables: projects/rivermouth.md
+    - Global River Deltas and vulnerability: projects/river_deltas.md
+    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
-  - Vegetation and Forestry:
+  - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Rangeland Analysis Platform layers: projects/rap.md
+    - NASA Harvest Layers: projects/harvest.md
   - Utilities:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
-  - Weather:
+  - Weather & Climate:
     - EarthEnv Global 1-km Cloud Frequency Version 1: projects/earthenv.md
+    - United States Drought Monitor Layers: projects/usdm.md
   - License: license.md
