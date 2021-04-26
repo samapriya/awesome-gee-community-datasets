@@ -9,7 +9,7 @@ Unlike most of the weather maps people see in the news, the U.S. Drought Monitor
 ![drought_large](https://user-images.githubusercontent.com/6677629/115971804-31e3bb00-a510-11eb-80db-cab7cd0e77fb.gif)
 
 #### Preprocessing
-Drought Monitor GIS Data is [available as shapefiles](https://droughtmonitor.unl.edu/Data/GISData.aspx). To create a consistent data structure, the shapefiles are ingested for all years starting from 2000 and with a weekly cadence. These has can 5 different drought classes and this is converted into a raster with the DM(Drought Monitor class values). This makes using it as collection and analysis of the data much easier. Start and end dates are added with the release week date as the end date and a week ago as a start date. **For now the goal is to keep this collection updated so that this dataset is consistently synced with the source dataset.**
+Drought Monitor GIS Data is [available as shapefiles](https://droughtmonitor.unl.edu/Data/GISData.aspx). To create a consistent data structure, the shapefiles are ingested for all years starting from 2000 and with a weekly cadence. These have 5 different drought classes/categories and are converted into a raster with the DM(Drought Monitor class/category values) as raster property. This makes using it as collection and analysis of the data much easier. Start and end dates are added with the release week date as the end date and a week ago as a start date. **For now the goal is to keep this collection updated so that this dataset is consistently synced with the source dataset.**
 
 #### Earth Engine Snippet
 
