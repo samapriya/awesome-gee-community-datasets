@@ -12,6 +12,10 @@ Use this in your Readme.md file
 ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 ```
 
+## Community Catalog Site
+
+Online Awesome Google Earth Engine Community Catalog: https://samapriya.github.io/awesome-gee-community-datasets/
+
 Community Datasets added by users and made available for use at large
 
 ## [Submit your Datasets to be included in the list: Using the template Link here](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=&template=new-community-gee-dataset-template.md&title=Dataset+%26+Curator+Name)
@@ -60,6 +64,3 @@ Community Datasets added by users and made available for use at large
    * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
-## Community Catalog Site
-
-Online Awesome Google Earth Engine Community Catalog: https://samapriya.github.io/awesome-gee-community-datasets/
