@@ -1,9 +1,9 @@
 # NASA Harvest Layers
 
-This page would include layers made available as a result of publications from the NASA Harvest group members and will include further layers as newer and updated studies get published.
+This page includes studies and geospatial layers made available as a result of publications from the NASA Harvest group members and made available in Google Earth Engine. This will be updated as newer and updated studies get published.
 
 
-## 2020.Rapid Response Crop Maps in Data Sparse Regions
+## Rapid Response Crop Maps in Data Sparse Regions
 
 We present a method for rapid mapping of croplands in regions where little to no ground data is available. We present results for this method in Togo, where we delivered a high-resolution (10 m) cropland map in under 10 days to facilitate rapid response to the COVID-19 pandemic by the Togolese government. This demonstrated a successful transition of machine learning applications research to operational rapid response in a real humanitarian crisis. All maps, data, and code are publicly available to enable future
 research and operational systems in data-sparse regions. [Read the paper here](https://arxiv.org/pdf/2006.16866.pdf)
