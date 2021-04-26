@@ -22,33 +22,43 @@ Community Datasets added by users and made available for use at large
 ****
 
 ## Table of Contents
-1. [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
-2. [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
-3. [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
-4. [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
-5. [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
-6. [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
-7. [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
-8. [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
-9. [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
-10. [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
-11. [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
-12. [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
-13. [Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates](https://samapriya.github.io/awesome-gee-community-datasets/projects/GPWv4/)
-14. [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
-15. [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
-16. [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
-17. [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
-18. [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
-19. [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
-20. [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
-21. [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
-22. [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
-23. [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
-24. [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
-25. [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
-26. [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
 
+1. Population & Socioeconomic
+   * [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+   * [Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates](https://samapriya.github.io/awesome-gee-community-datasets/projects/GPWv4/)
+   * [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
+   * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
+   * [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
+   * [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
+2. Geophysical
+   * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
+   * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
+   * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
+   * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
+   * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
+   * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
+   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
+
+3. Hydrology
+   * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
+   * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
+   * [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
+   * [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
+
+4. Agriculture, Vegetation and Forestry
+   * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
+   * [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
+   * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
+
+5. Utilities
+   * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
+   * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
+   * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
+   * [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
+
+6. Weather & Climate
+   * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
+   * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 ## Community Catalog Site
 
