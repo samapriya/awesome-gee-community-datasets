@@ -917,5 +917,37 @@
         "id": "projects/sat-io/open-datasets/nasa-harvest/busia_cropland_probability",
         "provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
         "tags": "agriculture, Africa, Busia, crops, crop classification, food security, satellite data, Earth observation, GIS"
+    },
+    {
+        "title": "Soil Organic Carbon Stocks 30m",
+        "sample_code": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_mean",
+        "provider": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
+        "tags": "carbon stocks, land degradation, natural climate solutions, remote sensing, soil mapping, spatial prediction, soil carbon, carbon sequestration"
+    },
+    {
+        "title": "Soil Organic Carbon Stocks Trends 30m",
+        "sample_code": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_trend",
+        "provider": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
+        "tags": "carbon stocks, land degradation, natural climate solutions, remote sensing, soil mapping, spatial prediction, soil carbon, carbon sequestration"
+    },
+    {
+        "title": "Continental Scale Land Cover Mapping at 10m Europe",
+        "sample_code": "https://code.earthengine.google.com/1036fae2f580c7d644be300c3c2a043f",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/NINA/ELC10",
+        "provider": "Venter, Zander S., & Sydenham, Markus A.K.",
+        "tags": "land use, europe, land cover, remote sensing, copernicus, sentinel, satellite"
+    },
+    {
+        "title": "Types of large flood events (1985-2016): Archive",
+        "sample_code": "https://code.earthengine.google.com/499185d77dfff0a2330c54d69b0b5fed",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/hydrology/large_flood_events_1985-2016",
+        "provider": "Dartmouth Flood Observatory, Intergovernmental Hydrologic Programme",
+        "tags": "flood events, flood type, flood cause, Dartmouth Flood Observatory, Intergovernmental Hydrologic Programme"
     }
 ]

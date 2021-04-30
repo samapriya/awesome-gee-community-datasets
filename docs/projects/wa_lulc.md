@@ -19,6 +19,8 @@ var wa2000 = ee.Image("projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2000
 var wa2013 = ee.Image("projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2013");
 ```
 
+Sample Code: https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d
+
 #### License
 
 Creative Commons Attribution-Share Alike 4.0 International License
