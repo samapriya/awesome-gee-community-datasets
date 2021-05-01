@@ -957,5 +957,13 @@
         "id": "projects/sat-io/open-datasets/events/global_landslide_1970-2019",
         "provider": "NASA Goddard Space Flight Center",
         "tags": "landslide, rainfall, NASA, GLC"
+    },
+    {
+        "title": "Global Healthsites Mapping Project",
+        "sample_code": "https://code.earthengine.google.com/cdbb2c8043d9a6b8622e5030aec8764b",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/health-sites",
+        "provider": "Global Healthsites Mapping Project",
+        "tags": "Global Healthsites Mapping Project, Healthsites, Health, GLC"
     }
 ]
