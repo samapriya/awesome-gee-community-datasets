@@ -125,7 +125,6 @@ nav:
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
-    - Types of large flood events (1985-2016) : projects/flood.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Rangeland Analysis Platform layers: projects/rap.md
@@ -135,7 +134,10 @@ nav:
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
-  - Weather & Climate:
+    - Global Healthsites Mapping Project: projects/health_sites.md
+  - Weather, Climate and Events:
     - EarthEnv Global 1-km Cloud Frequency Version 1: projects/earthenv.md
     - United States Drought Monitor Layers: projects/usdm.md
+    - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
+    - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
   - License: license.md

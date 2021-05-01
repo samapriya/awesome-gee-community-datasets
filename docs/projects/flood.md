@@ -1,4 +1,4 @@
-# Types of large flood events (1985-2016)
+# Global large flood events : Dartmouth Flood Observatory (1985-2016)
 
 
 #### Abstract
@@ -12,15 +12,19 @@ G.R.Brakenridge (2017). Global Active Archive of Large Flood Events.
 Dartmouth Flood Observatory, University of Colorado.
 ```
 
-Retrieved from floodobservatory.colorado.edu/Archives/index.html
+Retrieved from https://floodobservatory.colorado.edu/Archives/index.html
 
 ![flood_events](https://user-images.githubusercontent.com/6677629/116651458-dfa7fd00-a948-11eb-9764-c93c8aa42771.gif)
 
 #### Earth Engine Snippet
 
 ```js
-var flood_events = ee.FeatureCollection("projects/sat-io/open-datasets/hydrology/large_flood_events_1985-2016")
+var flood_events = ee.FeatureCollection("projects/sat-io/open-datasets/events/large_flood_events_1985-2016")
 ```
+
+
+Sample Code: https://code.earthengine.google.com/4058ef8c0f4d98a1444c9c03327878e3
+
 
 #### Data Quality
 Each entry in the table and related "area affected" map outline represents a discrete flood event. However, repeated flooding in some regions is a complex phenomenon and may require a compromise between aggregating and dividing such events. The listing is comprehensive and global in scope. Deaths and damage estimates for tropical storms are totals from all causes, but tropical storms without significant river flooding are not included.

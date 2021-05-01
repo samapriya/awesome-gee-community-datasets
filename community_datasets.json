@@ -943,11 +943,19 @@
         "tags": "land use, europe, land cover, remote sensing, copernicus, sentinel, satellite"
     },
     {
-        "title": "Types of large flood events (1985-2016): Archive",
-        "sample_code": "https://code.earthengine.google.com/499185d77dfff0a2330c54d69b0b5fed",
+        "title": "Global large flood events- Dartmouth Flood Observatory (1985-2016)",
+        "sample_code": "https://code.earthengine.google.com/4058ef8c0f4d98a1444c9c03327878e3",
         "type": "table",
-        "id": "projects/sat-io/open-datasets/hydrology/large_flood_events_1985-2016",
+        "id": "projects/sat-io/open-datasets/events/large_flood_events_1985-2016",
         "provider": "Dartmouth Flood Observatory, Intergovernmental Hydrologic Programme",
         "tags": "flood events, flood type, flood cause, Dartmouth Flood Observatory, Intergovernmental Hydrologic Programme"
+    },
+    {
+        "title": "Global Landslide Catalog - NASA Goddard (1970-2019)",
+        "sample_code": "https://code.earthengine.google.com/fc05547a9058948eae9b7782ee07cf22",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/events/global_landslide_1970-2019",
+        "provider": "NASA Goddard Space Flight Center",
+        "tags": "landslide, rainfall, NASA, GLC"
     }
 ]
