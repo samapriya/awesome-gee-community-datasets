@@ -50,7 +50,6 @@ Community Datasets added by users and made available for use at large
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
    * [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
    * [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
-   * [Types of large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
 
 5. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
@@ -62,8 +61,10 @@ Community Datasets added by users and made available for use at large
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
    * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
    * [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
+   * [Global Healthsites Mapping Project](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
 
-7. Weather & Climate
+7. Weather, Climate and Events
    * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
-
+   * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
+   * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)
