@@ -111,6 +111,7 @@ nav:
   - Geophysical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Soil Grids 250m v2.0: projects/isric.md
+    - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
     - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
     - Global Mangrove Project: projects/mangrove.md
     - Global coastal rivers and environmental variables: projects/rivermouth.md
