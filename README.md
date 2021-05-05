@@ -36,6 +36,7 @@ Community Datasets added by users and made available for use at large
 2. Geophysical
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
+   * [HiHydroSoil v2.0 layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hihydro_soil/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
    * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
