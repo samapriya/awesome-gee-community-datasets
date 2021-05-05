@@ -51,6 +51,18 @@ var hydrologic_soil_group = ee.Image('projects/sat-io/open-datasets/HiHydroSoilv
 
 ![soil_hydro_group](https://user-images.githubusercontent.com/6677629/117184621-87d12200-ad9e-11eb-9cdc-fb371b810d93.gif)
 
+#### Raster Value Map
+
+|ClassValue|Hydrologic Soil Group                                                                                              |
+|:---------|:------------------------------------------------------------------------------------------------------------------|
+|1         | A (low runoff potential when thoroughly wet) water transmitted freely                                             |
+|2         | B (moderately low runoff when thoroughly wet) transmission unimpeded                                              |
+|3         | C (moderately high Runoff when thoroughly wet) transmission somewhat restricted                                   |
+|4         | D (High Runoff potential when thoroughly wet) water movement restricted                                           |
+|14        | A/D Dual hydrologic group soils with 60cm from surface. First letter drained condition, second undrained condition|
+|24        | B/D Dual hydrologic group soils with 60cm from surface. First letter drained condition, second undrained condition|
+|34        | C/D Dual hydrologic group soils with 60cm from surface. First letter drained condition, second undrained condition|
+
 
 Sample Code: https://code.earthengine.google.com/4da512c4c0785ef2767f159028579fc6
 
