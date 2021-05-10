@@ -1085,5 +1085,677 @@
         "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/Hydrologic_Soil_Group_250m",
         "provider": "Future Water",
         "tags": "Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle"
+    },
+    {
+        "title": "Global Aridity Index",
+        "sample_code": "https://code.earthengine.google.com/04adb1bfeaf55b95bc2070edd228da73",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_ai_et0",
+        "provider": "CGIAR Platform for Big Data in Agriculture",
+        "tags": "aridity index, geospatial modeling"
+    },
+    {
+        "title": "Global Reference Evapotranspiration Monthly",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/global_et0/global_et0_monthly",
+        "provider": "CGIAR Platform for Big Data in Agriculture",
+        "tags": "evapotranspiration, geospatial modeling"
+    },
+    {
+        "title": "Global Reference Evapotranspiration Yearly",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly",
+        "provider": "CGIAR Platform for Big Data in Agriculture",
+        "tags": "evapotranspiration, geospatial modeling"
+    },
+    {
+        "title": "Annual Air Temperature Range Avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/annual_air_temperature_range_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "annual air temperature, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Annual Sum of precipitation- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/annual_sum_of_precipitation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "annual sum of precipitation, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Barren Lands Sparse Vegetation- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/barren_lands_sparse_vegetation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Barren Lands Sparse Vegetation, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Catchment Size Sum- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/catchment_size_sum",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "catchment size sum, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Cultivated and Management Vegetation Avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/cultivated_and_managed_vegetation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Cultivated and Management Vegetation Avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Deciduous Broadleaf Trees Avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/deciduous_broadleaf_trees_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Deciduous Broadleaf Trees Avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Elevation Average- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/elevation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Elevation Average, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Elevation Range- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/elevation_range",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Elevation Range, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Evergreen Broadleaf Trees avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_broadleaf_trees_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Evergreen Broadleaf Trees avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Evergreen Deciduous Needleleaf Trees avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_broadleaf_trees_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Evergreen Deciduous Needleleaf Trees avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Herbaceous Vegetation avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/herbaceous_vegetation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Evergreen Deciduous Needleleaf Trees avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Mean annual air temperature avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/mean_annual_air_temperature_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mean annual air temperature avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Mixed other trees avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/mixed_other_trees_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mixed other trees avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Open Water avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/open_water_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Open water avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Precambrian Surface Lithology- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/precambrian_surface_lithology_wsum",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Precambrian Surface Lithology, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Precipitation Seasonality avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/precipitation_seasonality_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Precipitation Seasonality avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Quaternary Surface Lithology wsum- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/quaternary_surface_lithology_wsum",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Quaternary Surface Lithology wsum, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Regularly flooded shrub herbaceous vegetation avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/regularly_flooded_shrub_herbaceous_vegetation_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Regularly flooded shrub herbaceous vegetation avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Shrubs avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/shrubs_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Shrubs avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Slope Avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/slope_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Slope avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Slope Range- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/slope_range",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Slope range, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Snow ice avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/snow-ice_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Snow ice avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Stream length sum- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/stream_length_sum",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Stream length sum, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Urban Builtup Avg- Global Freshwater Variables",
+        "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_freshwater_variables/urban_builtup_avg",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Urban Builtup Avg, EarthEnv, global freshwater"
+    },
+    {
+        "title": "Barren- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/barren",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Barren, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Cultivated and managed vegetation- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/cultivated_and_managed_vegetation",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Cultivated and managed vegetation, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Deciduous Broadleaf Trees- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/deciduous_broadleaf_trees",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Deciduous Broadleaf trees, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Evergreen deciduous needleleaf trees- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/evergreen-deciduous_needleleaf_trees",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Evergreen deciduous needleleaf trees, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Evergreen broadleaf trees- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/evergreen_broadleaf_trees",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Evergreen broadleaf trees, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Herbaceous vegetation- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/herbaceous_vegetation",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Herbaceous vegetation, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Mixed other trees- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/mixed-other_trees",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mixed other trees, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Open water- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/open_water",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Open water, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Regularly_flooded_vegetation- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/regularly_flooded_vegetation",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Regularly_flooded_vegetation, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Shrubs- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/shrubs",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Shrubs, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Snow-ice- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/snow-ice",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Snow-ice, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Urban built up- Global Consensus Landcover",
+        "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/urban-built-up",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Urban built up, EarthEnv, Global Consensus Landcover"
+    },
+    {
+        "title": "Coefficient of variation 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Coefficient of variation 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Coefficient of variation 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Coefficient of variation 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Coefficient of variation 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Coefficient of variation 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Contrast 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Contrast 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Contrast 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Contrast 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Contrast 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Contrast 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Correlation 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Correlation 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Correlation 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Correlation 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Correlation 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Correlation 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Dissimilarity 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Dissimilarity 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Dissimilarity 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Entropy 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Entropy 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Entropy 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Dissimilarity 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Homogeneity 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Homogeneity 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Homogeneity 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Homogeneity 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Homogeneity 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Homogeneity 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Maximum 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Maximum 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Maximum 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Maximum 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Maximum 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Maximum 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Mean 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mean 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Mean 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mean 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Mean 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Mean 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Pielou 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Pielou 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Pielou 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Pielou 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Pielou 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Pielou 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Range 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/range_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Range 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Range 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/range_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Range 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Range 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/range_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Range 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Shannon 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Shannon 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Shannon 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Shannon 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Shannon 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Shannon 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Simpson 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Simpson 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Simpson 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Simpson 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Simpson 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Simpson 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Standard Deviation 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Standard Deviation 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Standard Deviation 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Standard Deviation 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Standard Deviation 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Standard Deviation 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Uniformity 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Uniformity 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Uniformity 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Uniformity 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Uniformity 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Uniformity 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Variance 1km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_1km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Variance 1km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Variance 5km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_5km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Variance 5km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Variance 25km- Global Habitat Heterogeneity",
+        "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_25km",
+        "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
+        "tags": "Variance 25km, EarthEnv, Global Habitat Heterogeneity"
     }
 ]

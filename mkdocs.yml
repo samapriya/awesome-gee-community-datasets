@@ -136,8 +136,14 @@ nav:
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
     - Global Healthsites Mapping Project: projects/health_sites.md
+  - EarthEnv Biodiversity ecosystems & climate Layers:
+    - Global Consensus Landcover: projects/gcl.md
+    - Global Freshwater Variables: projects/gfv.md
+    - Global Habitat Heterogeneity: projects/ghh.md
+    - Global 1-km Cloud Cover: projects/gcc.md
   - Weather, Climate and Events:
-    - EarthEnv Global 1-km Cloud Frequency Version 1: projects/earthenv.md
+    - Global Reference Evapotranspiration Layers: projects/et0.md
+    - Global Aridity Index: projects/ai0.md
     - United States Drought Monitor Layers: projects/usdm.md
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
     - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md

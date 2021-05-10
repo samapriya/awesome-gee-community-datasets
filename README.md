@@ -63,8 +63,12 @@ Community Datasets added by users and made available for use at large
    * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
    * [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
    * [Global Healthsites Mapping Project](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
-
-7. Weather, Climate and Events
+7. EarthEnv Biodiversity ecosystems & climate Layers
+   * [Global Consensus Landcover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcl/)
+   * [Global Freshwater Variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfv/)
+   * [Global Habitat Heterogeneity](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghh/)
+   * [Global 1-km Cloud Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcc/)
+8. Weather, Climate and Events
    * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
