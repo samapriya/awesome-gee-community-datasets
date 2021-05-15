@@ -13,7 +13,7 @@ https://doi.org/10.1038/s41597-020-00600-4
 
 You can access the dataset here: https://doi.org/10.5281/zenodo.3928660
 
-**The updated v3 of the dataset is available directly as earthengine collections**
+**The updated v3 of the dataset is available directly as GEE collections**
 
 #### Dataset Citation
 
@@ -28,10 +28,10 @@ Luiz E. O. C. Aragão. (2020). Benchmark maps of 33 years of secondary forest ag
 #### Earth Engine Snippet
 
 ```js
-var forest_age = ee.Image('users/celsohlsj/public/secondary_forest_age_collection5_v3')
-var forest_extent = ee.Image('users/celsohlsj/public/secondary_forest_extent_collection5_v3')
-var forest_increment = ee.Image('users/celsohlsj/public/secondary_forest_increment_collection5_v3')
-var forest_loss = ee.Image('users/celsohlsj/public/secondary_forest_loss_collection5_v3')
+var forest_age = ee.Image('users/celsohlsj/public/secondary_forest_age_collection5_v3');
+var forest_extent = ee.Image('users/celsohlsj/public/secondary_forest_extent_collection5_v3');
+var forest_increment = ee.Image('users/celsohlsj/public/secondary_forest_increment_collection5_v3');
+var forest_loss = ee.Image('users/celsohlsj/public/secondary_forest_loss_collection5_v3');
 ```
 
 Sample Code: https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed
