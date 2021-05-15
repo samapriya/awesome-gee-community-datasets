@@ -1757,5 +1757,37 @@
         "id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_25km",
         "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
         "tags": "Variance 25km, EarthEnv, Global Habitat Heterogeneity"
+    },
+    {
+        "title": "Secondary Forest Age: Collection5_v3",
+        "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+        "type": "image",
+        "id": "users/celsohlsj/public/secondary_forest_age_collection5_v3",
+        "provider": "Celso H. L. Silva Junior",
+        "tags": "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
+    },
+    {
+        "title": "Secondary Forest Extent: Collection5_v3",
+        "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+        "type": "image",
+        "id": "users/celsohlsj/public/secondary_forest_extent_collection5_v3",
+        "provider": "Celso H. L. Silva Junior",
+        "tags": "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
+    },
+    {
+        "title": "Secondary Forest Increment: Collection5_v3",
+        "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+        "type": "image",
+        "id": "users/celsohlsj/public/secondary_forest_increment_collection5_v3",
+        "provider": "Celso H. L. Silva Junior",
+        "tags": "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
+    },
+    {
+        "title": "Secondary Forest Loss: Collection5_v3",
+        "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+        "type": "image",
+        "id": "users/celsohlsj/public/secondary_forest_loss_collection5_v3",
+        "provider": "Celso H. L. Silva Junior",
+        "tags": "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
     }
 ]

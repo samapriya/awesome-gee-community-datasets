@@ -56,6 +56,7 @@ Community Datasets added by users and made available for use at large
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
    * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
+   * [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
 
 6. Utilities
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
