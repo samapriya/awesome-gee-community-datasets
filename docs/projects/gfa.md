@@ -37,6 +37,8 @@ Sample Code: https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb9
 
 The shapefiles of ignition locations (point) and fire perimeters (polygon) contain attribute tables with summary information for each individual fire
 
+![gfa_vector](https://user-images.githubusercontent.com/6677629/118384021-99999d00-b5c8-11eb-8f89-d7c6ca9bcf88.gif)
+
 #### Global Fire Atlas: Earth Engine Snippet
 
 ```js
