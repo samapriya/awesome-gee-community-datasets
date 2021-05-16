@@ -146,6 +146,7 @@ nav:
     - Global Reference Evapotranspiration Layers: projects/et0.md
     - Global Aridity Index: projects/ai0.md
     - United States Drought Monitor Layers: projects/usdm.md
+    - Global Fire Atlas (2003-2016): projects/gfa.md
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
     - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
   - License: license.md

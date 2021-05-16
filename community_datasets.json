@@ -1789,5 +1789,261 @@
         "id": "users/celsohlsj/public/secondary_forest_loss_collection5_v3",
         "provider": "Celso H. L. Silva Junior",
         "tags": "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
+    },
+    {
+        "title": "Global Fire Atlas: Day of Burn",
+        "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/day_of_burn",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+        "title": "Global Fire Atlas: Fire Direction",
+        "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_direction",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+        "title": "Global Fire Atlas: Fire Line",
+        "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_line",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+        "title": "Global Fire Atlas: Fire Speed",
+        "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_speed",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2003",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2003",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2004",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2004",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2005",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2005",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2006",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2006",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2007",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2007",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2008",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2008",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2009",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2009",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2010",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2010",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2011",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2011",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2012",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2012",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2013",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2013",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2014",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2014",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2015",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2015",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: ignitions_2016",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2016",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2003",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2003",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2004",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2004",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2005",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2005",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2006",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2006",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2007",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2007",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2008",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2008",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2009",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2009",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2010",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2010",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2011",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2011",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2012",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2012",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2013",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2013",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2014",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2014",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2015",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2015",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global Fire Atlas: perimeter_2016",
+      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016",
+      "provider": "Niels Andela",
+      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     }
 ]

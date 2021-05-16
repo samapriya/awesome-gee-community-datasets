@@ -72,5 +72,6 @@ Community Datasets added by users and made available for use at large
 8. Weather, Climate and Events
    * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+   * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
    * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)
