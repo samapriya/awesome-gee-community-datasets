@@ -131,6 +131,7 @@ nav:
     - Rangeland Analysis Platform layers: projects/rap.md
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
+    - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
   - Utilities:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md

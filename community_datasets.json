@@ -2045,5 +2045,13 @@
       "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016",
       "provider": "Niels Andela",
       "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+    },
+    {
+      "title": "Global irrigation areas (2001 to 2015)",
+      "sample_code": "https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3",
+      "type": "image_collection",
+      "id": "users/deepakna/global_irrigation_maps",
+      "provider": "Deepak Nagaraj",
+      "tags": "Global irrigation, agriculture, water sustainability, machine learning"
     }
 ]
