@@ -37,11 +37,9 @@ Community Datasets added by users and made available for use at large
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
    * [HiHydroSoil v2.0 layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hihydro_soil/)
+   * [Polaris 30m Probabilistic Soil Properties US]((https://samapriya.github.io/awesome-gee-community-datasets/projects/polaris/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
-   * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
-   * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
-   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
 3. Land Use and Land Cover:
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
@@ -51,7 +49,9 @@ Community Datasets added by users and made available for use at large
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
    * [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
    * [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
-
+   * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
+   * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
+   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
 5. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)

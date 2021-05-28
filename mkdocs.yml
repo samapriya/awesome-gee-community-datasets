@@ -111,12 +111,10 @@ nav:
   - Geophysical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Soil Grids 250m v2.0: projects/isric.md
+    - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
     - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
     - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
     - Global Mangrove Project: projects/mangrove.md
-    - Global coastal rivers and environmental variables: projects/rivermouth.md
-    - Global River Deltas and vulnerability: projects/river_deltas.md
-    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
   - Land Use and Land Cover:
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - West Africa Land Use Land Cover: projects/wa_lulc.md
@@ -126,6 +124,9 @@ nav:
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
+    - Global coastal rivers and environmental variables: projects/rivermouth.md
+    - Global River Deltas and vulnerability: projects/river_deltas.md
+    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Rangeland Analysis Platform layers: projects/rap.md
