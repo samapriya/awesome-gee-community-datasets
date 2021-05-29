@@ -57,20 +57,24 @@ Overall datasets include processing approximately 80,000 files which have been c
 #### Earth Engine Snippet: HiHydro Additional Layers
 
 ```js
-var bd_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/bd_mean');
-var ksat_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/ksat_mean');
-var n_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/n_mean');
-var om_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/om_mean');
-var ph_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/ph_mean');
-var sand_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/sand_mean');
-var silt_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/silt_mean');
-var theta_r_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/theta_r_mean');
-var theta_s_mean = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/polaris/theta_s_mean');
+var bd_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/bd_mean');
+var clay_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/clay_mean');
+var ksat_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/ksat_mean');
+var n_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/n_mean');
+var om_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/om_mean');
+var ph_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/ph_mean');
+var sand_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/sand_mean');
+var silt_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/silt_mean');
+var theta_r_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/theta_r_mean');
+var theta_s_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/theta_s_mean');
+var lambda_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/lambda_mean');
+var hb_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/hb_mean');
+var alpha_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/alpha_mean');
 ```
 
 ![polaris_layers](https://user-images.githubusercontent.com/6677629/119921913-7231c100-bf34-11eb-9efc-fede2f162272.gif)
 
-Sample Code: https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5
+Sample Code: https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616
 
 You can download the datasets here: http://hydrology.cee.duke.edu/POLARIS/
 

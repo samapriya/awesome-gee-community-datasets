@@ -2056,7 +2056,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: Bulk Density",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/bd_mean",
       "provider": "USGS",
@@ -2064,7 +2064,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: Clay Percentage",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/clay_mean",
       "provider": "USGS",
@@ -2072,7 +2072,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: Sand Percentage",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/sand_mean",
       "provider": "USGS",
@@ -2080,7 +2080,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: Silt Percentage",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/silt_mean",
       "provider": "USGS",
@@ -2088,7 +2088,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: Organic Matter",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/om_mean",
       "provider": "USGS",
@@ -2096,7 +2096,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: soil pH in H20",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/ph_mean",
       "provider": "USGS",
@@ -2104,7 +2104,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/theta_s_mean",
       "provider": "USGS",
@@ -2112,7 +2112,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: residual water content",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/theta_r_mean",
       "provider": "USGS",
@@ -2120,7 +2120,7 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties: saturated hydraulic conductivity",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/ksat_mean",
       "provider": "USGS",
@@ -2128,10 +2128,34 @@
     },
     {
       "title": "Polaris 30m Probabilistic Soil Properties:  pore size distribution",
-      "sample_code": "https://code.earthengine.google.com/70044f7c50660194dd94158d916ba2f5",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
       "type": "image_collection",
       "id": "projects/sat-io/open-datasets/polaris/n_mean",
       "provider": "USGS",
       "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size, n"
+    },
+    {
+      "title": "Polaris 30m Probabilistic Soil Properties: pore size distribution index (brooks corey)",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/polaris/lambda_mean",
+      "provider": "USGS",
+      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size distribution, lambda"
+    },
+    {
+      "title": "Polaris 30m Probabilistic Soil Properties: scale parameter inversely proportional to mean pore diameter (van genuchten)",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/polaris/alpha_mean",
+      "provider": "USGS",
+      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore diameter, alpha"
+    },
+    {
+      "title": "Polaris 30m Probabilistic Soil Properties: bubbling pressure (brooks corey)",
+      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/polaris/hb_mean",
+      "provider": "USGS",
+      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, bubbling pressure, hb"
     }
 ]
