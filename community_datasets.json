@@ -534,7 +534,7 @@
         "provider": "NASA Socioeconomic Data and Applications Center (SEDAC), Center for International Earth Science Information Network (CIESIN)",
         "tags": "West Africa, Social Vulnerability Index, SVI, Population, CIESIN, SEDAC"
     },
-   {
+    {
         "title": "Vegetation Condition Class (VCC) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709",
         "type": "image_collection",
@@ -742,7 +742,7 @@
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "Social Connectedness Index, SCI, Facebook, CIESIN, country, second location"
     },
-   {
+    {
         "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
         "type": "image_collection",
@@ -750,7 +750,7 @@
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
-   {
+    {
         "title": "Elevation (ELEV) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3",
         "type": "image_collection",
@@ -758,7 +758,7 @@
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
-   {
+    {
         "title": "Aspect (ASP) LF v2.0.0",
         "sample_code": "https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3",
         "type": "image_collection",
@@ -766,7 +766,7 @@
         "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
         "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
     },
-   {
+    {
         "title": "Electrical Distribution Grid Maps: Raster",
         "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
         "type": "image_collection",
@@ -774,7 +774,7 @@
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
     },
-   {
+    {
         "title": "Electrical Distribution Grid Maps: Vector",
         "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
         "type": "table",
@@ -782,7 +782,7 @@
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
     },
-   {
+    {
         "title": "West Africa Land Use and Land Cover 1975",
         "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
         "type": "image",
@@ -790,7 +790,7 @@
         "provider": "United States Geological Survey, USGS",
         "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
     },
-   {
+    {
         "title": "West Africa Land Use and Land Cover 2000",
         "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
         "type": "image",
@@ -798,7 +798,7 @@
         "provider": "United States Geological Survey, USGS",
         "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
     },
-   {
+    {
         "title": "West Africa Land Use and Land Cover 2013",
         "sample_code": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
         "type": "image",
@@ -806,7 +806,7 @@
         "provider": "United States Geological Survey, USGS",
         "tags": "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
     },
-   {
+    {
         "title": "Rangeland-Analysis-Platform: Vegetation Cover v2",
         "sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
         "type": "image_collection",
@@ -814,7 +814,7 @@
         "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
         "tags": "rangelands, vegetation, time-series, machine learning, landsat"
     },
-   {
+    {
         "title": "Rangeland-Analysis-Platform: NPP partitioned v2",
         "sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
         "type": "image_collection",
@@ -822,7 +822,7 @@
         "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
         "tags": "rangelands, vegetation, time-series, machine learning, landsat"
     },
-   {
+    {
         "title": "Rangeland-Analysis-Platform: NPP partitioned 16 day v2",
         "sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
         "type": "image_collection",
@@ -830,7 +830,7 @@
         "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
         "tags": "rangelands, vegetation, time-series, machine learning, landsat"
     },
-   {
+    {
         "title": "United States Drought Monitor (USDM)",
         "sample_code": "https://code.earthengine.google.com/f120cc4eb8fcbeffbc4a7fc13a5c57b0",
         "type": "image_collection",
@@ -838,7 +838,7 @@
         "provider": "National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC",
         "tags": "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
     },
-   {
+    {
         "title": "GEBCO 2020 Grid",
         "sample_code": "https://code.earthengine.google.com/448583e4ee5facdd9c23916b65aaf8a6",
         "type": "image_collection",
@@ -846,7 +846,7 @@
         "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
         "tags": "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
     },
-   {
+    {
         "title": "GEBCO 2020 Type Identifier (TID) Grid",
         "sample_code": "https://code.earthengine.google.com/448583e4ee5facdd9c23916b65aaf8a6",
         "type": "image_collection",
@@ -1823,339 +1823,443 @@
         "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2003",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2003",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2003",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2003",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2004",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2004",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2004",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2004",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2005",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2005",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2005",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2005",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2006",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2006",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2006",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2006",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2007",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2007",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2007",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2007",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2008",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2008",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2008",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2008",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2009",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2009",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2009",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2009",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2010",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2010",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2010",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2010",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2011",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2011",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2011",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2011",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2012",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2012",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2012",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2012",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2013",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2013",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2013",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2013",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2014",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2014",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2014",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2014",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2015",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2015",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2015",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2015",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: ignitions_2016",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2016",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: ignitions_2016",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2016",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2003",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2003",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2003",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2003",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2004",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2004",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2004",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2004",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2005",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2005",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2005",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2005",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2006",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2006",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2006",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2006",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2007",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2007",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2007",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2007",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2008",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2008",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2008",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2008",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2009",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2009",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2009",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2009",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2010",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2010",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2010",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2010",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2011",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2011",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2011",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2011",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2012",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2012",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2012",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2012",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2013",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2013",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2013",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2013",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2014",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2014",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2014",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2014",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2015",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2015",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2015",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2015",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global Fire Atlas: perimeter_2016",
-      "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
-      "type": "table",
-      "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016",
-      "provider": "Niels Andela",
-      "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
+        "title": "Global Fire Atlas: perimeter_2016",
+        "sample_code": "https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016",
+        "provider": "Niels Andela",
+        "tags": "Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence"
     },
     {
-      "title": "Global irrigation areas (2001 to 2015)",
-      "sample_code": "https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3",
-      "type": "image_collection",
-      "id": "users/deepakna/global_irrigation_maps",
-      "provider": "Deepak Nagaraj",
-      "tags": "Global irrigation, agriculture, water sustainability, machine learning"
+        "title": "Global irrigation areas (2001 to 2015)",
+        "sample_code": "https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3",
+        "type": "image_collection",
+        "id": "users/deepakna/global_irrigation_maps",
+        "provider": "Deepak Nagaraj",
+        "tags": "Global irrigation, agriculture, water sustainability, machine learning"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: Bulk Density",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/bd_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Bulk Density"
+        "title": "Polaris 30m Probabilistic Soil Properties: Bulk Density",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/bd_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Bulk Density"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: Clay Percentage",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/clay_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Clay Percentage"
+        "title": "Polaris 30m Probabilistic Soil Properties: Clay Percentage",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/clay_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Clay Percentage"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: Sand Percentage",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/sand_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Sand Percentage"
+        "title": "Polaris 30m Probabilistic Soil Properties: Sand Percentage",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/sand_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Sand Percentage"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: Silt Percentage",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/silt_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Silt Percentage"
+        "title": "Polaris 30m Probabilistic Soil Properties: Silt Percentage",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/silt_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Silt Percentage"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: Organic Matter",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/om_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Organic Matter"
+        "title": "Polaris 30m Probabilistic Soil Properties: Organic Matter",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/om_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Organic Matter"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: soil pH in H20",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/ph_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Soil pH"
+        "title": "Polaris 30m Probabilistic Soil Properties: soil pH in H20",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/ph_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, Soil pH"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/theta_s_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, saturated soil, theta s"
+        "title": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/theta_s_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, saturated soil, theta s"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: residual water content",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/theta_r_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, residual soil, theta r"
+        "title": "Polaris 30m Probabilistic Soil Properties: residual water content",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/theta_r_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, residual soil, theta r"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: saturated hydraulic conductivity",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/ksat_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, hydraulic conductivity, ksat"
+        "title": "Polaris 30m Probabilistic Soil Properties: saturated hydraulic conductivity",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/ksat_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, hydraulic conductivity, ksat"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties:  pore size distribution",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/n_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size, n"
+        "title": "Polaris 30m Probabilistic Soil Properties:  pore size distribution",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/n_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size, n"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: pore size distribution index (brooks corey)",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/lambda_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size distribution, lambda"
+        "title": "Polaris 30m Probabilistic Soil Properties: pore size distribution index (brooks corey)",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/lambda_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore size distribution, lambda"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: scale parameter inversely proportional to mean pore diameter (van genuchten)",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/alpha_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore diameter, alpha"
+        "title": "Polaris 30m Probabilistic Soil Properties: scale parameter inversely proportional to mean pore diameter (van genuchten)",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/alpha_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, pore diameter, alpha"
     },
     {
-      "title": "Polaris 30m Probabilistic Soil Properties: bubbling pressure (brooks corey)",
-      "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
-      "type": "image_collection",
-      "id": "projects/sat-io/open-datasets/polaris/hb_mean",
-      "provider": "USGS",
-      "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, bubbling pressure, hb"
+        "title": "Polaris 30m Probabilistic Soil Properties: bubbling pressure (brooks corey)",
+        "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/polaris/hb_mean",
+        "provider": "USGS",
+        "tags": "Digital soil mapping, Soil, Environmental modeling, High performance computing, bubbling pressure, hb"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bedrock_depth",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, bedrock_depth"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bulk density",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bulk_density",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, bulk_density"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_organic",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, carbon_organic"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon total",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_total",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, carbon_total"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Cation exchange capacity",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/cation_exchange_capacity",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, cation_exchange_capacity"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Clay content",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/clay_content",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, clay_content"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Fcc",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/fcc",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, fcc"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/nitrogen_total",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, nitrogen_total"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Ph",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/ph",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, ph"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Sand content",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/sand_content",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, sand_content"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Silt content",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/silt_content",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, silt_content"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Stone content",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/stone_content",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, stone_content"
+    },
+    {
+        "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Texture class",
+        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/texture_class",
+        "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+        "tags": "soil, Africa, iSDA, texture_class"
     }
 ]

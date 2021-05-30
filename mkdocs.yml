@@ -111,6 +111,7 @@ nav:
   - Geophysical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Soil Grids 250m v2.0: projects/isric.md
+    - iSDAsoil Predicted Soil Properties for Africa 30m: projects/isda.md
     - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
     - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
     - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
