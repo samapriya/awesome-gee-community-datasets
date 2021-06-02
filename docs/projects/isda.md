@@ -50,7 +50,7 @@ var stone_content = ee.Image("projects/sat-io/open-datasets/iSDAsoil_Africa_30m/
 var texture_class = ee.Image("projects/sat-io/open-datasets/iSDAsoil_Africa_30m/texture_class");
 ```
 
-Sample Code: https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8
+Sample Code: https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b
 
 #### Data available from
 https://www.isda-africa.com/isdasoil/
