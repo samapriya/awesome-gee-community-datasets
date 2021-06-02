@@ -19,12 +19,12 @@ Probabilistic Remapping of SSURGO (POLARIS) soil properties—a database of 30-m
 
 #### Citation & Related Publications
 
-[Read the original paper here](https://www.sciencedirect.com/science/article/abs/pii/S0016706116301434?via%3Dihub) and cite the work using
+[Read the original paper here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018WR022797) and cite the work using
 
 ```
-Chaney, Nathaniel W., Eric F. Wood, Alexander B. McBratney, Jonathan W. Hempel, Travis W. Nauman, Colby W. Brungard,
-and Nathan P. Odgers. "POLARIS: A 30-meter probabilistic soil series map of the contiguous United States."
-Geoderma 274 (2016): 54-67.
+Chaney, Nathaniel W., Budiman Minasny, Jonathan D. Herman, Travis W. Nauman, Colby W. Brungard, Cristine LS Morgan
+Alexander B. McBratney, Eric F. Wood, and Yohannes Yimam. "POLARIS soil properties: 30‐m probabilistic maps of soil properties
+over the contiguous United States." Water Resources Research 55, no. 4 (2019): 2916-2938.
 ```
 
 #### Data characteristics
