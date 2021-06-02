@@ -2160,7 +2160,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bedrock_depth",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2168,7 +2168,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bulk density",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bulk_density",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2176,7 +2176,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_organic",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2184,7 +2184,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon total",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_total",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2192,7 +2192,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Cation exchange capacity",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/cation_exchange_capacity",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2200,7 +2200,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Clay content",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/clay_content",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2208,7 +2208,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Fcc",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/fcc",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2216,7 +2216,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/nitrogen_total",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2224,7 +2224,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Ph",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/ph",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2232,7 +2232,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Sand content",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/sand_content",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2240,7 +2240,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Silt content",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/silt_content",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2248,7 +2248,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Stone content",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/stone_content",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
@@ -2256,7 +2256,7 @@
     },
     {
         "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Texture class",
-        "sample_code": "https://code.earthengine.google.com/9e2768b077b61a084aec8996e9889cf8",
+        "sample_code": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
         "type": "image",
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/texture_class",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
