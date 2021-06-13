@@ -2261,5 +2261,22 @@
         "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/texture_class",
         "provider": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
         "tags": "soil, Africa, iSDA, texture_class"
+    },
+    {
+        "title": "Bare Surface Layer 1980-2019",
+        "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+        "type": "image",
+        "id": "users/geocis/BareSurfaces/BS_1980_2019",
+        "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
+        "tags": "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency"
+    },
+    {
+        "title": "Bare Surface Frequency 1980-2019",
+        "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+        "type": "image",
+        "id": "users/geocis/BareSurfaces/BF_1980_2019",
+        "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
+        "tags": "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency"
     }
 ]
+
