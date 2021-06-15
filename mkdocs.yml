@@ -120,6 +120,7 @@ nav:
   - Land Use and Land Cover:
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - West Africa Land Use Land Cover: projects/wa_lulc.md
+    - South African National Land Cover 2018: projects/sa_nlc2018.md
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
     - Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017: projects/oil-palm.md
   - Hydrology:

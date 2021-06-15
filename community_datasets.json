@@ -2285,5 +2285,14 @@
         "id": "projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017",
         "provider": "Olga Danylo, et al, International Institute for Applied Systems Analysis",
         "tags": "Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1"
+    },
+    {
+        "title": "South African National Land Cover 2018",
+        "sample_code": "https://code.earthengine.google.com/0c9d51577e15437d2b17728079bb01f2",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2018",
+        "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
+        "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
     }
 ]
+
