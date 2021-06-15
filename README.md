@@ -46,7 +46,7 @@ Community Datasets added by users and made available for use at large
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
-   * [Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017] (https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
+   * [Oil Palm Plantation Indonesia, Malaysia, Thailand 1984-2017](https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
    * [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
 4. Hydrology
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
