@@ -39,12 +39,14 @@ Community Datasets added by users and made available for use at large
    * [HiHydroSoil v2.0 layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hihydro_soil/)
    * [Polaris 30m Probabilistic Soil Properties US](https://samapriya.github.io/awesome-gee-community-datasets/projects/polaris/)
    * [iSDAsoil Predicted Soil Properties for Africa 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/isda/)
+   * [Bare Earth’s Surface Spectra 1980-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/bss/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
 3. Land Use and Land Cover:
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
+   * [Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017] (https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
 4. Hydrology
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)

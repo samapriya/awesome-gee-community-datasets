@@ -2277,6 +2277,13 @@
         "id": "users/geocis/BareSurfaces/BF_1980_2019",
         "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
         "tags": "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency"
+    },
+    {
+        "title": "Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017",
+        "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017",
+        "provider": "Olga Danylo, et al, International Institute for Applied Systems Analysis",
+        "tags": "Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1"
     }
 ]
-

@@ -121,6 +121,7 @@ nav:
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - West Africa Land Use Land Cover: projects/wa_lulc.md
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
+    - Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017: projects/oil-palm.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
