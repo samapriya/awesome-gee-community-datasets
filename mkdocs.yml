@@ -151,6 +151,7 @@ nav:
   - Weather, Climate and Events:
     - Global Reference Evapotranspiration Layers: projects/et0.md
     - Global Aridity Index: projects/ai0.md
+    - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
     - United States Drought Monitor Layers: projects/usdm.md
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md

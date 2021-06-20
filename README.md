@@ -63,7 +63,6 @@ Community Datasets added by users and made available for use at large
    * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
    * [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
    * [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
-
 6. Utilities
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
@@ -76,7 +75,9 @@ Community Datasets added by users and made available for use at large
    * [Global Habitat Heterogeneity](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghh/)
    * [Global 1-km Cloud Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcc/)
 8. Weather, Climate and Events
-   * [EarthEnv Global 1-km Cloud Frequency Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/earthenv/)
+   * [Global Reference Evapotranspiration Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/et0/)
+   * [Global Aridity Index](https://samapriya.github.io/awesome-gee-community-datasets/projects/ai0/)
+   * [Current and projected climate data for North America (CMIP6 scenarios)](https://samapriya.github.io/awesome-gee-community-datasets/projects/aogcm_cmip6/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)

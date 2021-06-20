@@ -2293,6 +2293,101 @@
         "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2018",
         "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
         "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
+    },
+    {
+        "title": "Projections from individual AOGCMs: Total Precipitation monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_ppt",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from individual AOGCMs: Average Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tave",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from individual AOGCMs: Maximum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmax",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from individual AOGCMs: Minimum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmin",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from AOGCM Ensemble: Total Precipitation monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_ppt",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from AOGCM Ensemble: Average Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tave",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from AOGCM Ensemble: Maximum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmax",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from AOGCM Ensemble: Minimum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmin",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Climate Normals: Total Precipitation monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_ppt",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Climate Normals: Average Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tave",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Climate Normals: Maximum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmax",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Climate Normals: Minimum Temperature monthly",
+        "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmin",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
     }
 ]
-
