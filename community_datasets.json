@@ -2389,5 +2389,29 @@
         "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmin",
         "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
         "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Climate Normals: Bioclimatic Variables",
+        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from AOGCM Ensemble: Bioclimatic Variables",
+        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "Projections from individual AOGCM models: Bioclimatic Variables",
+        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_bioclim",
+        "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+        "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
     }
 ]
