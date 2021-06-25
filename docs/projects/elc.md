@@ -14,9 +14,13 @@ over Europe (ELC10)." arXiv preprint arXiv:2104.10922 (2021).
 
 ![elc10](https://user-images.githubusercontent.com/6677629/116647370-0150b680-a940-11eb-823f-b3c9a6bf9804.gif)
 
+#### Earth Engine Snippet
+
 ```js
 var elc10= ee.ImageCollection("projects/sat-io/open-datasets/NINA/ELC10")
 ```
+
+Sample Code: https://code.earthengine.google.com/1036fae2f580c7d644be300c3c2a043f
 
 |Category|Land Cover Class        |Hex Code|
 |:------:|:----------------------:|:------:|

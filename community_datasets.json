@@ -2392,7 +2392,7 @@
     },
     {
         "title": "Climate Normals: Bioclimatic Variables",
-        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim",
         "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2400,7 +2400,7 @@
     },
     {
         "title": "Projections from AOGCM Ensemble: Bioclimatic Variables",
-        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim",
         "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2408,10 +2408,19 @@
     },
     {
         "title": "Projections from individual AOGCM models: Bioclimatic Variables",
-        "sample_code": " https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+        "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_bioclim",
         "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
         "tags": "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    },
+    {
+        "title": "ESRI Global Land Use Land Cover from Sentinel-2",
+        "sample_code": "https://code.earthengine.google.com/07f7dd19521a0efdce7a79022825fccb",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
+        "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
+        "tags": "land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning"
     }
 ]
+

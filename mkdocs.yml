@@ -122,6 +122,7 @@ nav:
     - West Africa Land Use Land Cover: projects/wa_lulc.md
     - South African National Land Cover 2018: projects/sa_nlc2018.md
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
+    - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
     - Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017: projects/oil-palm.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
