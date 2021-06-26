@@ -2416,7 +2416,7 @@
     },
     {
         "title": "ESRI Global Land Use Land Cover from Sentinel-2",
-        "sample_code": "https://code.earthengine.google.com/07f7dd19521a0efdce7a79022825fccb",
+        "sample_code": "https://code.earthengine.google.com/514a294747ee5e7a136372b7e947d7bc",
         "type": "image_collection",
         "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
         "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
