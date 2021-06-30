@@ -54,6 +54,8 @@ Map.setCenter(-113.03, 38, 5);
 
 **Earth Engine App Code** https://code.earthengine.google.com/e6b336fa58124f4f8cda2b3be76d156f
 
+The scripts supporting the analysis can be found at https://github.com/kkraoj/lfmc_from_sar
+
 #### License Information
 
 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) Under which you can copy and redistribute the material in any medium or format.
