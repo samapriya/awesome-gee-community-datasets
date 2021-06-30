@@ -134,6 +134,7 @@ nav:
     - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
+    - Vegetation dryness for western USA: projects/veg_dry.md
     - Rangeland Analysis Platform layers: projects/rap.md
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md

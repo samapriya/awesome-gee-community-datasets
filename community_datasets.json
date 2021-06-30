@@ -2421,6 +2421,14 @@
         "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
         "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
         "tags": "land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning"
+    },
+    {
+        "title": "Vegetation dryness for western USA",
+        "sample_code": "https://code.earthengine.google.com/02f3f4401475dc5081ce707e37bdeac9",
+        "type": "image_collection",
+        "id": "users/kkraoj/lfm-mapper/lfmc_col_25_may_2021",
+        "provider": "KrishnaRao, A. ParkWilliams, Jacqueline Fortin Flefil, Alexandra G.Konings",
+        "tags": "vegetation, dryness, drought, wildfire, USA, live fuel moisture content"
     }
 ]
 
