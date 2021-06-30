@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "JSON_COUNT=$(jq length community_datasets.json)" >> $GITHUB_ENV
       - name: JSON counter
-        uses: schneegans/dynamic-badges-action@v1.0.0
+        uses: schneegans/dynamic-badges-action@v1.1.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 34bc0c1280d475d3a69e3b60a706226e
