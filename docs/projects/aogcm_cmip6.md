@@ -41,6 +41,8 @@ Wang, T., A. Hamann, D. Spittlehouse, C. Carroll. 2016. Locally Downscaled and S
 for Historical and Future Periods for North America. PLoS One 11(6): e0156720.
 ```
 
+You can also [read the preprint: A CMIP6 ensemble for downscaled monthly climate normals over North America](https://eartharxiv.org/repository/view/2510/)
+
 The current climatic variables included in the datasets for climate normals, AOGCM models and AOGCM ensemble model are listed below
 
 <center>
