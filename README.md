@@ -43,8 +43,8 @@ Community Datasets added by users and made available for use at large
    * [iSDAsoil Predicted Soil Properties for Africa 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/isda/)
    * [Bare Earth’s Surface Spectra 1980-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/bss/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
+3. Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
-3. Land Use and Land Cover:
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
@@ -66,7 +66,7 @@ Community Datasets added by users and made available for use at large
    * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
    * [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
    * [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
-6. Utilities
+6. Global Utilities and Amenities Layers
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
    * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
@@ -77,11 +77,13 @@ Community Datasets added by users and made available for use at large
    * [Global Freshwater Variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfv/)
    * [Global Habitat Heterogeneity](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghh/)
    * [Global 1-km Cloud Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcc/)
-8. Weather, Climate and Events
+8. Weather and Climate Layers
    * [Global Reference Evapotranspiration Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/et0/)
    * [Global Aridity Index](https://samapriya.github.io/awesome-gee-community-datasets/projects/ai0/)
+   * [Global Wind Atlas Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gwa/)
    * [Current and projected climate data for North America (CMIP6 scenarios)](https://samapriya.github.io/awesome-gee-community-datasets/projects/aogcm_cmip6/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+9. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
    * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)

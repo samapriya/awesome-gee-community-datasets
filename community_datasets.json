@@ -2613,5 +2613,45 @@
         "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM2",
         "provider": "William & Mary geoLab",
         "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+    },
+    {
+        "title": "Global Wind Atlas: Air Density",
+        "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+        "type": "image_collection",
+        "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/air-density",
+        "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+        "tags": "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
+    },
+    {
+        "title": "Global Wind Atlas: Capacity Factor",
+        "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+        "type": "image_collection",
+        "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/capacity-factor",
+        "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+        "tags": "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
+    },
+    {
+        "title": "Global Wind Atlas: Power Density",
+        "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+        "type": "image_collection",
+        "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/power-density",
+        "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+        "tags": "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
+    },
+    {
+        "title": "Global Wind Atlas: Wind Speed",
+        "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+        "type": "image_collection",
+        "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed",
+        "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+        "tags": "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
+    },
+    {
+        "title": "Global Wind Atlas: Ruggedness Index",
+        "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+        "type": "image",
+        "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/ruggedness-index",
+        "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+        "tags": "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
     }
 ]

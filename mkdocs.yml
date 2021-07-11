@@ -117,8 +117,8 @@ nav:
     - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
     - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
     - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
-    - Global Mangrove Project: projects/mangrove.md
   - Land Use and Land Cover:
+    - Global Mangrove Project: projects/mangrove.md
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - West Africa Land Use Land Cover: projects/wa_lulc.md
     - South African National Land Cover 2018: projects/sa_nlc2018.md
@@ -140,7 +140,7 @@ nav:
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
     - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
-  - Utilities:
+  - Global Utilities and Amenities Layers:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
     - Global Roads Inventory Project: projects/grip.md
@@ -151,11 +151,13 @@ nav:
     - Global Freshwater Variables: projects/gfv.md
     - Global Habitat Heterogeneity: projects/ghh.md
     - Global 1-km Cloud Cover: projects/gcc.md
-  - Weather, Climate and Events:
+  - Weather and Climate Layers:
     - Global Reference Evapotranspiration Layers: projects/et0.md
     - Global Aridity Index: projects/ai0.md
+    - Global Wind Atlas Datasets: projects/gwa.md
     - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
     - United States Drought Monitor Layers: projects/usdm.md
+  - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
     - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
