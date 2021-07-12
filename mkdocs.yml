@@ -162,3 +162,4 @@ nav:
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
     - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
   - License: license.md
+  - Changelog: changelog.md
