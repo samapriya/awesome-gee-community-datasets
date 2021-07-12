@@ -22,14 +22,15 @@ where AEP is annual energy production, Prated is rated power, and CF is capacity
 
 <center>
 
-|Variable Name       |Version|
-|--------------------|-------|
-|Wind Speed          |3      |
-|Power Density       |3      |
-|Ruggedness Index    |3      |
-|Capacity Factor IEC1|3      |
-|Capacity Factor IEC2|3      |
-|Capacity Factor IEC3|3      |
+|Variable Name       |Version|Heights(in m)    |
+|--------------------|-------|-----------------|
+|Wind Speed          |3      |10,50,100,150,200|
+|Power Density       |3      |10,50,100,150,200|
+|Air Density         |3      |10,50,100,150,200|
+|Capacity Factor IEC1|3      |NA               |
+|Capacity Factor IEC2|3      |NA               |
+|Capacity Factor IEC3|3      |NA               |
+|Ruggedness Index    |3      |NA               |
 
 
 </center>
