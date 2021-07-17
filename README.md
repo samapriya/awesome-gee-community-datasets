@@ -66,12 +66,15 @@ Community Datasets added by users and made available for use at large
    * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
    * [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
    * [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
-6. Global Utilities and Amenities Layers
+6. Global Utilities, Assets and Amenities Layers
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
    * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
    * [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
    * [Global Healthsites Mapping Project](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
+   * [Global Power Plant Database](https://samapriya.github.io/awesome-gee-community-datasets/projects/pwplants)
+   * [Global Database of Cement Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/projects/gcd)
+   * [Global Database of Iron and Steel Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gid)
 7. EarthEnv Biodiversity ecosystems & climate Layers
    * [Global Consensus Landcover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcl/)
    * [Global Freshwater Variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfv/)

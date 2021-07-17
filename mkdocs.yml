@@ -140,12 +140,15 @@ nav:
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
     - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
-  - Global Utilities and Amenities Layers:
+  - Global Utilities, Assets and Amenities Layers:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
     - Global Healthsites Mapping Project: projects/health_sites.md
+    - Global Power Plant Database: projects/pwplants.md
+    - Global Database of Cement Production Assets: projects/gcd.md
+    - Global Database of Iron and Steel Production Assets: projects/gid.md
   - EarthEnv Biodiversity ecosystems & climate Layers:
     - Global Consensus Landcover: projects/gcl.md
     - Global Freshwater Variables: projects/gfv.md

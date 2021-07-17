@@ -2661,5 +2661,29 @@
         "id": "projects/sat-io/open-datasets/landcover/oil_palm_industrial_smallholder_2019",
         "provider": "Adrià Descals et al 2021",
         "tags": "industrial, smallholder, oil palm, deep learning, global, remote sensing, Sentinel-1, Sentinel-2, convolutional neural network"
+    },
+    {
+        "title": "Global Database of Cement Production Assets",
+        "sample_code": "https://code.earthengine.google.com/287d38f2aab08f8e01847092b7c36ffd",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/SFI/global_cement_database_20210701",
+        "provider": "McCarten et al 2021",
+        "tags": "GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , cement , Global database"
+    },
+    {
+        "title": "Global Database of Iron and Steel Production Assets",
+        "sample_code": "https://code.earthengine.google.com/599f1159ef75427d407f4f464530c46b",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/SFI/global_steel_database_20210701",
+        "provider": "McCarten et al 2021",
+        "tags": "GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , Iron ,Steel, Global database"
+    },
+    {
+        "title": "Global Power Plant Database",
+        "sample_code": "https://code.earthengine.google.com/1ee7aca214940accbabf7f968770f481",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/global_power_plant_DB_1-3",
+        "provider": "World Resources Institute",
+        "tags": "infrastructure, energy, climate, power, power-plants, wri"
     }
 ]
