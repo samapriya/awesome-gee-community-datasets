@@ -69,6 +69,20 @@ Earth Engine files for mobile and fixed tiles across different quarters are arra
 * ee.FeatureCollection("projects/sat-io/open-datasets/network/fixed_tiles/Year-month-01_performance_mobile_tiles")
 ```
 
+#### Raster Datasets
+As part of processing this datasets I further converted these datasets into 32 bit float rasters , these are produced at 610m resolution and feature property such as avg_d_kbps,avg_u_kbps,avg_lat_ms,devices,tests are converted in Bands for these images. The start and end date for each quarter are further added to the images however the quad information is not retained from vector to raster conversion. The result are two image collections for fixed and mobile datasets.
+
+![network_rasters](https://user-images.githubusercontent.com/6677629/126076187-cdab105f-2ebc-4639-91ba-b0ffa6d6b76c.gif)
+
+#### Earth Engine Snippet
+
+```js
+var fixed = ee.ImageCollection("projects/sat-io/open-datasets/network/raster_tiles/performance_fixed_tiles");
+var mobile = ee.ImageCollection("projects/sat-io/open-datasets/network/raster_tiles/performance_mobile_tiles");
+```
+
+Sample Code: https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1
+
 #### License
 These datasets are made available under a Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 

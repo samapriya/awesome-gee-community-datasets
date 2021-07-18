@@ -2845,5 +2845,21 @@
         "id": "projects/sat-io/open-datasets/network/fixed_tiles/2021-04-01_performance_fixed_tiles",
         "provider": "Ookla",
         "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps Raster Tiles",
+        "sample_code": "https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global Mobile Network Performance Maps Raster Tiles",
+        "sample_code": "https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1",
+        "type": "image",
+        "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
     }
 ]
