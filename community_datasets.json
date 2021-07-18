@@ -2685,5 +2685,165 @@
         "id": "projects/sat-io/open-datasets/global_power_plant_DB_1-3",
         "provider": "World Resources Institute",
         "tags": "infrastructure, energy, climate, power, power-plants, wri"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2019-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-01-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2019-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-04-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2019-07-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-07-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2019-10-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-10-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2019-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-01-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2019-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-04-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2019-07-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-07-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2019-10-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-10-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2020-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-01-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2020-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-04-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2020-07-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-07-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2020-10-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-10-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2020-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-01-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2020-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-04-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2020-07-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-07-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2020-10-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-10-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2021-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-01-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global mobile Network Performance Maps: 2021-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-04-01_performance_mobile_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2021-01-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2021-01-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+        "title": "Global fixed Network Performance Maps: 2021-04-01",
+        "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/network/fixed_tiles/2021-04-01_performance_fixed_tiles",
+        "provider": "Ookla",
+        "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
     }
 ]

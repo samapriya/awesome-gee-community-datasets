@@ -146,6 +146,7 @@ nav:
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
     - Global Healthsites Mapping Project: projects/health_sites.md
+    - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
     - Global Power Plant Database: projects/pwplants.md
     - Global Database of Cement Production Assets: projects/gcd.md
     - Global Database of Iron and Steel Production Assets: projects/gid.md
