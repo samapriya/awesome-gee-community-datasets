@@ -2861,5 +2861,309 @@
         "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_mobile_tiles",
         "provider": "Ookla",
         "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    },
+    {
+      "title": "Soil 800m Grid: caco3",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/caco3",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: cec",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/cec",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: cec_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/cec_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ec",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ec",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ec_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ec_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ph",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ph",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ph_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ph_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: sar",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/sar",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: som",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/som",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: som_max",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/som_max",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: hydrologic_group",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/hydrologic_group",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: kw_025",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/kw_025",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: lcc_i",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/lcc_i",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: lcc_ni",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/lcc_ni",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: resdept",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/resdept",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: soil_depth",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: soil_order",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_order",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: soil_temp_regime",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_temp_regime",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: survey_type",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/survey_type",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: wind_erodibility_group",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/wind_erodibility_group",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: wind_erodibility_index",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/wind_erodibility_index",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: bulk_density",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/bulk_density",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: clay",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/clay",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: clay_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/clay_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: drainage_class",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/drainage_class",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ksat_05",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_05",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ksat_max",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_max",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ksat_mean",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_mean",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: ksat_min",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_min",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: rf_025",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/rf_025",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: sand",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/sand",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: sand_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/sand_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: silt",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/silt",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: silt_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/silt_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: soil_texture_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/soil_texture_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: water_storage",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/water_storage",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: water_storage_profile",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/water_storage_profile",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "Soil 800m Grid: soil_color",
+      "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+      "type": "image_collection",
+      "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/soil_color",
+      "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+      "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
     }
 ]

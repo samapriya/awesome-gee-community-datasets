@@ -38,6 +38,7 @@ Community Datasets added by users and made available for use at large
 2. Geophysical
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
+   * [Soil Properties 800m](https://samapriya.github.io/awesome-gee-community-datasets/projects/soilprop)
    * [HiHydroSoil v2.0 layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hihydro_soil/)
    * [Polaris 30m Probabilistic Soil Properties US](https://samapriya.github.io/awesome-gee-community-datasets/projects/polaris/)
    * [iSDAsoil Predicted Soil Properties for Africa 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/isda/)
