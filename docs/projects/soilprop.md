@@ -128,6 +128,9 @@ var  soil_color = ee.ImageCollection('projects/earthengine-legacy/assets/project
 
 ```
 
+Sample Code: https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b
+
+
 #### Soil Texture Palette
 Palettes have been created for variable types and these are the Soil Texture Palette is included below and in the rgb values for each variable type can be extraced from the app page and from a few are included in the sample code.
 
@@ -198,7 +201,7 @@ Palettes have been created for variable types and these are the Soil Texture Pal
 </center>
 
 
-Sample Code with Soil Texture Class: https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b
+Sample Code with Soil Texture Class:https://code.earthengine.google.com/bb16ef5adbd5711d9fcb77ce7705618e
 
 
 #### Shared License
