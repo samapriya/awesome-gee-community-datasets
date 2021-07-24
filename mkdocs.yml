@@ -104,6 +104,7 @@ nav:
   - Introduction: index.md
   - Population & Socioeconomic:
     - High Resolution Settlement Layers: projects/hrsl.md
+    - World Settlement Footprint (2015): projects/wsf2015.md
     - GPW Version 4 Admin Units: projects/GPWv4.md
     - geoBoundaries Global Database of Political Administrative Boundaries: projects/geoboundary.md
     - West Africa Coastal Vulnerability Mapping: projects/wacvm.md

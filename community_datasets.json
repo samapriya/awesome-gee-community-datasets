@@ -3165,5 +3165,13 @@
       "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/soil_color",
       "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
       "tags": "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+    },
+    {
+      "title": "World Settlement Footprint (2015)",
+      "sample_code": "https://code.earthengine.google.com/9e2a8618c90218d34bfe16535e09f96f",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/wsf2015",
+      "provider": "Marconcini, et al",
+      "tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"
     }
 ]

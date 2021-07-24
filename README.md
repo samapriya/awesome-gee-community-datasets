@@ -30,6 +30,7 @@ Community Datasets added by users and made available for use at large
 
 1. Population & Socioeconomic
    * [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+   * [World Settlement Footprint (2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf2015)
    * [Gridded Population of the World Version 4 Administrative Unit Center Points with Population Estimates](https://samapriya.github.io/awesome-gee-community-datasets/projects/GPWv4/)
    * [geoBoundaries Global Database of Political Administrative Boundaries](https://samapriya.github.io/awesome-gee-community-datasets/projects/geoboundary)
    * [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
