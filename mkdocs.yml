@@ -135,6 +135,7 @@ nav:
     - Global coastal rivers and environmental variables: projects/rivermouth.md
     - Global River Deltas and vulnerability: projects/river_deltas.md
     - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
+    - Global georeferenced Database of Dams(GOODD): projects/goodd.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Vegetation dryness for western USA: projects/veg_dry.md
