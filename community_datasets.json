@@ -3173,5 +3173,21 @@
       "id": "projects/sat-io/open-datasets/wsf2015",
       "provider": "Marconcini, et al",
       "tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"
+    },
+    {
+      "title": "Global georeferenced Database of Dams(GOODD): Catchments",
+      "sample_code": "https://code.earthengine.google.com/a168dcd1f992cf60c16e64e03e1bc842",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/GOODD/GOOD2_catchments",
+      "provider": "Mulligan, Mark, Arnout van Soesbergen, and Leonardo Saenz",
+      "tags": "Global dams, global catchments, vector, Hydrology"
+    },
+    {
+      "title": "Global georeferenced Database of Dams(GOODD): Dams",
+      "sample_code": "https://code.earthengine.google.com/a168dcd1f992cf60c16e64e03e1bc842",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/GOODD/GOOD2_dams",
+      "provider": "Mulligan, Mark, Arnout van Soesbergen, and Leonardo Saenz",
+      "tags": "Global dams, global catchments, vector, Hydrology"
     }
 ]
