@@ -50,4 +50,7 @@ Curated by: Samapriya Roy
 
 Keywords: High Density Population, Population, Facebook
 
-Last updated: 2021-03-12
+#### Changelog
+* Now includes data from HRSL v1.5+
+
+Last updated: 2021-07-27
