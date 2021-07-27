@@ -3189,5 +3189,13 @@
       "id": "projects/sat-io/open-datasets/GOODD/GOOD2_dams",
       "provider": "Mulligan, Mark, Arnout van Soesbergen, and Leonardo Saenz",
       "tags": "Global dams, global catchments, vector, Hydrology"
+    },
+    {
+      "title": "Global offshore wind turbine dataset v1.3",
+      "sample_code": "https://code.earthengine.google.com/d2a2479e7dd57a59f009d7eb19e40f1b",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global_offshore_wind_turbine_v1-3",
+      "provider": "Zhang, T., Tian, B., Sengupta, D. et al",
+      "tags": "Offshore energy systems, Coastal engineering, Google Earth Engine Platform, Ocean engineering, Marine planning, Coastal management, Sentinel-1"
     }
 ]

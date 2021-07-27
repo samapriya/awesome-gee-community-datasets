@@ -25,8 +25,6 @@ Scientific Data 7, no. 1 (2020): 1-8.
 
 #### Earth Engine Snippet
 
-The dataset is single value only with a value of 255
-
 ```js
 var catchments = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2_catchments");
 var dams = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2_dams");

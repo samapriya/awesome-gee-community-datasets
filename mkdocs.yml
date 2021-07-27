@@ -151,6 +151,7 @@ nav:
     - Global Healthsites Mapping Project: projects/health_sites.md
     - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
     - Global Power Plant Database: projects/pwplants.md
+    - Global offshore wind turbine dataset: projects/gowt.md
     - Global Database of Cement Production Assets: projects/gcd.md
     - Global Database of Iron and Steel Production Assets: projects/gid.md
   - EarthEnv Biodiversity ecosystems & climate Layers:
