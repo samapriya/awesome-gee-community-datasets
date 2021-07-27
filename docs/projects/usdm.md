@@ -23,6 +23,8 @@ var usdm = ee.ImageCollection("projects/sat-io/open-datasets/us-drought-monitor"
 
 Sample Code: https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46
 
+Earth Engine App: https://sat-io.earthengine.app/view/usdm-explorer
+
 #### License
 The work is licensed under an Open data license for use.
 
