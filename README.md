@@ -62,6 +62,7 @@ Community Datasets added by users and made available for use at large
    * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
    * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
    * [Global georeferenced Database of Dams(GOODD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/goodd)
+   * [Argo Float Data(Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
 5. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
