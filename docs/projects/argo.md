@@ -18,7 +18,7 @@ Argo (2020). Argo float data and metadata from Global Data Assembly Centre (Argo
 
 #### Argo Float data tables
 
-Argo float dataset has been parsed into a small subset of about 10,000 feature collections flattened into a single collection with over 6.5 million features with total distinct argo float count at 881. The argo float property variables and GEE property names are listed below
+Argo float dataset has been parsed into a small subset of about 20,000 feature collections flattened into a single collection with over 12.1 million features with total distinct argo float count at 866. The argo float property variables and GEE property names are listed below
 
 <center>
 
