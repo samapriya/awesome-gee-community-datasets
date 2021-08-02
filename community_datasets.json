@@ -3205,5 +3205,13 @@
       "id": "projects/sat-io/open-datasets/argo-subset",
       "provider": "International Argo Program, Global Data Assembly Centre",
       "tags": "float, Argo, global ocean observing system, ocean circulation, in-situ, ocean pressure, sea water salinity, sea water temperature, multi-year, weather climate and seasonal observation, global-ocean"
+    },
+    {
+        "title": "Global Impervious Surface Area (1972-2019)",
+        "sample_code": "https://code.earthengine.google.com/09c11e2bfe98a654cfb63cc88fb13e23",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/GISA_1972_2019",
+        "provider": "Xin Huang, Jiayi Li, Jie Yang, Zhen Zhang, Dongrui Li, & Xiaoping Liu",
+        "tags": "Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion"
     }
 ]

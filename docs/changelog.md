@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### New or Updated datasets 2021-08-01
+* [Global offshore wind turbine dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/gowt)
+* [Global Impervious Surface Area (1972-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisa)
+* [Argo Float Data(Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
+
 #### New or Updated datasets 2021-07-26
 * [World Settlement Footprint (2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf2015)
 * [Soil Properties 800m](https://samapriya.github.io/awesome-gee-community-datasets/projects/soilprop)
