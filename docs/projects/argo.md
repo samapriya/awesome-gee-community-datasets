@@ -16,6 +16,15 @@ If you used data from a particular month, please add the month key to the end of
 
 Argo (2020). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC) – Snapshot of Argo GDAC of August 2020. SEANOE. https://doi.org/10.17882/42182#76230
 
+#### ArgoVis citation
+Argovis API was used to parse through and get to the datasets, you can cite argovis using the following
+
+```
+Tucker, T., D. Giglio, M. Scanderbeg, and S.S. Shen, 2020: Argovis: A Web Application for Fast Delivery,
+Visualization, and Analysis of Argo Data. J. Atmos. Oceanic Technol., 37 (3), 401-416
+https://doi.org/10.1175/JTECH-D-19-0041.1
+```
+
 #### Argo Float data tables
 
 Argo float dataset has been parsed into a small subset of about 10,000 feature collections flattened into a single collection with over 6.5 million features with total distinct argo float count at 881. The argo float property variables and GEE property names are listed below
