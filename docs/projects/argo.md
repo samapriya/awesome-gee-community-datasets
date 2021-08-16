@@ -33,7 +33,7 @@ Argo float dataset has been parsed into a small subset of about 20,000 feature c
 
 |Property         |GEE Property  |Property Type|
 |-----------------|--------------|-------------|
-|pid              |Platform ID   |integer      |
+|Platform ID      |pid           |integer      |
 |Instrument Type  |inst_typ      |integer      |
 |date             |date          |integer      |
 |date added       |date_added    |integer      |
