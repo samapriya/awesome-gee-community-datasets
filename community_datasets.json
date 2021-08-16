@@ -3213,5 +3213,13 @@
         "id": "projects/sat-io/open-datasets/GISA_1972_2019",
         "provider": "Xin Huang, Jiayi Li, Jie Yang, Zhen Zhang, Dongrui Li, & Xiaoping Liu",
         "tags": "Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion"
+    },
+    {
+      "title": "Soil nematode abundance & functional group composition",
+      "sample_code": "https://code.earthengine.google.com/dff3040051231efbb999ea8f2403add0",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global-nematode",
+      "provider": "Hoogen et al",
+      "tags": "nematode,soil ecology,biogeographic studies,soil biotic community"
     }
 ]

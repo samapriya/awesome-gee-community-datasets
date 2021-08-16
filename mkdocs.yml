@@ -110,7 +110,7 @@ nav:
     - West Africa Coastal Vulnerability Mapping: projects/wacvm.md
     - Relative Wealth Index (RWI): projects/rwi.md
     - Social Connectedness Index (SCI): projects/sci.md
-  - Geophysical:
+  - Geophysical, Biological & Biogeochemical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Soil Grids 250m v2.0: projects/isric.md
     - Soil Properties 800m: projects/soilprop.md
@@ -119,6 +119,7 @@ nav:
     - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
     - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
     - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
+    - Soil nematode abundance & functional group composition: projects/soil_nematode.md
   - Land Use and Land Cover:
     - Global Mangrove Project: projects/mangrove.md
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md

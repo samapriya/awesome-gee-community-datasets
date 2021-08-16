@@ -36,7 +36,7 @@ Community Datasets added by users and made available for use at large
    * [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
    * [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
    * [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
-2. Geophysical
+2. Geophysical, Biological & Biogeochemical
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
    * [Soil Properties 800m](https://samapriya.github.io/awesome-gee-community-datasets/projects/soilprop)
@@ -45,6 +45,7 @@ Community Datasets added by users and made available for use at large
    * [iSDAsoil Predicted Soil Properties for Africa 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/isda/)
    * [Bare Earth’s Surface Spectra 1980-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/bss/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
+   * [Soil nematode abundance & functional group composition](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_nematode)
 3. Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
