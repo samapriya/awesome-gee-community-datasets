@@ -146,6 +146,7 @@ nav:
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
     - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
+    - Tile Drained Croplands (30m): projects/tile.md
   - Global Utilities, Assets and Amenities Layers:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
@@ -172,5 +173,6 @@ nav:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
     - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
+    - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
   - License: license.md
   - Changelog: changelog.md

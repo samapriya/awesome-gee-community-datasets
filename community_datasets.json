@@ -3221,5 +3221,21 @@
       "id": "projects/sat-io/open-datasets/global-nematode",
       "provider": "Hoogen et al",
       "tags": "nematode,soil ecology,biogeographic studies,soil biotic community"
+    },
+    {
+      "title": "Geocoded Disasters (GDIS) Dataset (1960 – 2018)",
+      "sample_code": "https://code.earthengine.google.com/b2f8a05b881ab9f09df3b304d6801f4e",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/gdis_1960-2018",
+      "provider": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+      "tags": "droughts,earthquakes,floods,landslides,cyclones,volcanic eruptions"
+    },
+    {
+      "title": "Tile Drained Croplands (30m)",
+      "sample_code": "https://code.earthengine.google.com/0b9bed4ff747bb4d13e6eb5a3d1c24a3",
+      "type": "image",
+      "id": "projects/sat-io/open-datasets/agtile/AgTile-US",
+      "provider": "Valayamkunnath, P., Barlage, M., Chen, F. et al.",
+      "tags": "Agriculture,Tile Drainage,Subsurface,USA,CONUS,GIS,30 meter,data,gridded,raster"
     }
 ]

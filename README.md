@@ -72,6 +72,7 @@ Community Datasets added by users and made available for use at large
    * [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
    * [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
    * [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
+   * [Tile Drained Croplands (30m)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tile/)
 6. Global Utilities, Assets and Amenities Layers
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
@@ -98,3 +99,4 @@ Community Datasets added by users and made available for use at large
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
    * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)
+   * [Geocoded Disasters (GDIS) Dataset (1960 – 2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gdis/)
