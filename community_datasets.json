@@ -959,10 +959,18 @@
         "tags": "landslide, rainfall, NASA, GLC"
     },
     {
-        "title": "Global Healthsites Mapping Project",
-        "sample_code": "https://code.earthengine.google.com/cdbb2c8043d9a6b8622e5030aec8764b",
+        "title": "Global Healthsites Mapping Project: nodes",
+        "sample_code": "https://code.earthengine.google.com/300ff48b6bc77713b051d33b3fae55b9",
         "type": "table",
-        "id": "projects/sat-io/open-datasets/health-sites",
+        "id": "projects/sat-io/open-datasets/health-site-node",
+        "provider": "Global Healthsites Mapping Project",
+        "tags": "Global Healthsites Mapping Project, Healthsites, Health, GLC"
+    },
+    {
+        "title": "Global Healthsites Mapping Project: ways",
+        "sample_code": "https://code.earthengine.google.com/300ff48b6bc77713b051d33b3fae55b9",
+        "type": "table",
+        "id": "projects/sat-io/open-datasets/health-site-way",
         "provider": "Global Healthsites Mapping Project",
         "tags": "Global Healthsites Mapping Project, Healthsites, Health, GLC"
     },
@@ -3237,5 +3245,13 @@
       "id": "projects/sat-io/open-datasets/agtile/AgTile-US",
       "provider": "Valayamkunnath, P., Barlage, M., Chen, F. et al.",
       "tags": "Agriculture,Tile Drainage,Subsurface,USA,CONUS,GIS,30 meter,data,gridded,raster"
+    },
+    {
+      "title": "Global crop production tillage practices",
+      "sample_code": "https://code.earthengine.google.com/05bf7cb3bef5175f3f7c9aa46d29a046",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global_tillage_production",
+      "provider": "Yang Su et al.",
+      "tags": "Conservation agriculture, Conventional tillage, crop yield, No tillage, No-till"
     }
 ]
