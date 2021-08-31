@@ -83,6 +83,7 @@ Community Datasets added by users and made available for use at large
    * [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest)
    * [Global Power Plant Database](https://samapriya.github.io/awesome-gee-community-datasets/projects/pwplants)
    * [Global offshore wind turbine dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/gowt)
+   * [Harmonised global datasets of wind and solar farm locations and power](https://samapriya.github.io/awesome-gee-community-datasets/projects/energy_farms)
    * [Global Database of Cement Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/projects/gcd)
    * [Global Database of Iron and Steel Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gid)
 7. EarthEnv Biodiversity ecosystems & climate Layers

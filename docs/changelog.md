@@ -2,9 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
-#### New or Updated datasets 2021-08-30
+#### New or Updated datasets 2021-08-31
 * [Updated Nodes and ways datasets from Global Health sites Mapping Projects](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
 * [Global crop production tillage practices](https://samapriya.github.io/awesome-gee-community-datasets/projects/tillage/)
+* [Harmonised global datasets of wind and solar farm locations and power](https://samapriya.github.io/awesome-gee-community-datasets/projects/energy_farms)
 
 #### New or Updated datasets 2021-08-16
 * [Soil nematode abundance & functional group composition](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_nematode)

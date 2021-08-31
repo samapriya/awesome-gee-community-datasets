@@ -3253,5 +3253,21 @@
       "id": "projects/sat-io/open-datasets/global_tillage_production",
       "provider": "Yang Su et al.",
       "tags": "Conservation agriculture, Conventional tillage, crop yield, No tillage, No-till"
+    },
+    {
+      "title": "Harmonised global datasets of wind farm locations",
+      "sample_code": "https://code.earthengine.google.com/718924e9af8848afa8327a45533866c1",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global_wind_farms_2020",
+      "provider": "Dunnett et al.",
+      "tags": "solar, wind, energy, renewable"
+    },
+    {
+      "title": "Harmonised global datasets of solar farm locations",
+      "sample_code": "https://code.earthengine.google.com/718924e9af8848afa8327a45533866c1",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/global_solar_farms_2020",
+      "provider": "Dunnett et al.",
+      "tags": "solar, wind, energy, renewable"
     }
 ]
