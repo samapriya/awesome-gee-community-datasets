@@ -3269,5 +3269,125 @@
       "id": "projects/sat-io/open-datasets/global_solar_farms_2020",
       "provider": "Dunnett et al.",
       "tags": "solar, wind, energy, renewable"
+    },
+    {
+      "title": "HydroLAKES v1.0: Polygons",
+      "sample_code": "https://code.earthengine.google.com/c94f1bd8e4e18641ec7f4fc5592e7a63",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/HydroLakes/lake_poly_v10",
+      "provider": "Messager, M. L., Lehner, B., Grill, G., Nedeva, I., & Schmitt, O",
+      "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes"
+    },
+    {
+      "title": "HydroLAKES v1.0: Polygons",
+      "sample_code": "https://code.earthengine.google.com/c94f1bd8e4e18641ec7f4fc5592e7a63",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/HydroLakes/lake_points_v10",
+      "provider": "Messager, M. L., Lehner, B., Grill, G., Nedeva, I., & Schmitt, O",
+      "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes"
+    },
+    {
+      "title": "Monitoring Trends in Burn Severity 1984-2019: Burned area boundaries",
+      "sample_code": "https://code.earthengine.google.com/0f71c9417a141c674c8dbf55f60a6f65",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/MTBS/burned_area_boundaries",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
+      "tags": "burned area, fire occurrence, fire area, burn severity,MTBS, EROS, GTAC, USGS, USDA"
+    },
+    {
+      "title": "Monitoring Trends in Burn Severity 1984-2019: Fire Occurrence",
+      "sample_code": "https://code.earthengine.google.com/0f71c9417a141c674c8dbf55f60a6f65",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/MTBS/fire_occurrence",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
+      "tags": "burned area, fire occurrence, fire area, burn severity,MTBS, EROS, GTAC, USGS, USDA"
+    },
+    {
+      "title": "LCMAP v1.1: LCACHG",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCACHG",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS, LCACHG"
+    },
+    {
+      "title": "LCMAP v1.1: LCPCONF",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCPCONF",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS, LCPCONF"
+    },
+    {
+      "title": "LCMAP v1.1: LCPRI",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCPRI",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: LCSCONF",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCSCONF",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: LCSEC",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCSEC",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: SCLAST",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/SCLAST",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: SCMAG",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/SCMAG",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: SCMQA",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/SCMQA",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: SCSTAB",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/SCSTAB",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP v1.1: SCTIME",
+      "sample_code": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+      "type": "image_collection",
+      "id": "projects/sat-io/open-datasets/LCMAP/SCTIME",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    },
+    {
+      "title": "LCMAP Reference Dataset",
+      "sample_code": "https://code.earthengine.google.com/729f0a1a2fa4e04f8c034b4228da164b",
+      "type": "table",
+      "id": "projects/sat-io/open-datasets/LCMAP/LCMAP_CU_20200414_V01_REF",
+      "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+      "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
     }
 ]

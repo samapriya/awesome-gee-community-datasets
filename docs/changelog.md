@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### New or Updates datasets 2021-09-05
+* [HydroLAKES v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydrolakes/)
+* [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)
+* [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.1](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+
 #### New or Updated datasets 2021-08-31
 * [Updated Nodes and ways datasets from Global Health sites Mapping Projects](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
 * [Global crop production tillage practices](https://samapriya.github.io/awesome-gee-community-datasets/projects/tillage/)

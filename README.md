@@ -49,6 +49,7 @@ Community Datasets added by users and made available for use at large
 3. Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
+   * [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.1](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
    * [ESRI 2020 Global Land Use Land Cover from Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/esrilc2020)
@@ -59,6 +60,7 @@ Community Datasets added by users and made available for use at large
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
    * [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
+   * [HydroLAKES v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydrolakes/)
    * [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
    * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
    * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
@@ -99,6 +101,7 @@ Community Datasets added by users and made available for use at large
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 9. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
+   * [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
    * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)
    * [Geocoded Disasters (GDIS) Dataset (1960 – 2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gdis/)
