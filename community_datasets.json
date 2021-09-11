@@ -146,7 +146,7 @@
         "title": "Mean monthly cloud frequency",
         "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
         "type": "image_collection",
-        "id": ["projects/sat-io/open-datasets/gcc/MODCF_monthlymean"],
+        "id": "projects/sat-io/open-datasets/gcc/MODCF_monthlymean",
         "provider": "Earthenv, Wilson AM, Jetz W",
         "tags": "Earthenv, cloud frequency, monthly, MODIS, Global Cloud"
     },
