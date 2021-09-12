@@ -226,7 +226,7 @@
         "title": "Soil pH",
         "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
         "type": "image",
-        "id": "projects/soilgrids-isric/phh20_mean",
+        "id": "projects/soilgrids-isric/phh2o_mean",
         "provider": "International Soil Reference and Information Centre (ISRIC)",
         "tags": "Global Soilgrid, ph, ISRIC"
     },
@@ -273,7 +273,7 @@
     {
         "title": "High Resolution Settlement Layer: Overall Population",
         "sample_code": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
-        "type": "image_collectione",
+        "type": "image_collection",
         "id": "projects/sat-io/open-datasets/hrsl/hrslpop",
         "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
         "tags": "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian"
