@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/landfire/fuel/fvt",
+    "title": "Fuel Vegetation Type (FVT) LF v2.0.0",
+    "description": "Fuel Vegetation Type (FVT) LF v2.0.0",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/fuel_fvt.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Fuel Vegetation Type (FVT) LF v2.0.0 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.99241017182325,
+                    22.765552291772075,
+                    -65.2367369813682,
+                    51.698207138848396
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 11,
+            "max": 2969,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "154207",
+        "ysize": "97283"
+    }
+}

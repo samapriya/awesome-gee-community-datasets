@@ -1,0 +1,90 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/polaris/theta_s_mean",
+    "title": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
+    "description": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
+    "license": "CC-BY-NC-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_theta_s_mean.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Polaris 30m Probabilistic Soil Properties: saturated soil water content in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -126.56195534507968,
+                    24.449970804753388,
+                    -66.44386823247609,
+                    50.87168216433331
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Digital soil mapping, Soil, Environmental modeling, High performance computing, saturated soil, theta s"
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30.000000000000004,
+            "min": 0.25,
+            "max": 0.81,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {}
+}

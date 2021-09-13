@@ -823,14 +823,6 @@
         "tags": "rangelands, vegetation, time-series, machine learning, landsat"
     },
     {
-        "title": "Rangeland-Analysis-Platform: NPP partitioned 16 day v2",
-        "sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
-        "type": "image_collection",
-        "id": "projects/rangeland-analysis-platform/npp-partitioned-16day-v2",
-        "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
-        "tags": "rangelands, vegetation, time-series, machine learning, landsat"
-    },
-    {
         "title": "United States Drought Monitor (USDM)",
         "sample_code": "https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46",
         "type": "image_collection",

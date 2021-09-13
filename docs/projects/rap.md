@@ -16,8 +16,6 @@ var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetatio
 // Net Primary Production (annual)
 var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v2")
 
-// Net Primary Production (16-day)
-var RAP_npp_16d = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-16day-v2")
 ```
 
 #### Citation
@@ -55,4 +53,4 @@ Brady Allred and Matthew Jones, University of Montana, Data producers; Eric Jens
 
 Keywords: rangelands, vegetation, time-series, machine learning, landsat
 
-Last updated: 3/31/2021
+Last updated: 2021-09-12

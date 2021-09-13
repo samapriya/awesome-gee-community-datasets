@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/hrsl/hrslpop",
+    "title": "High Resolution Settlement Layer: Overall Population",
+    "description": "High Resolution Settlement Layer: Overall Population",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/hrsl_hrslpop.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for High Resolution Settlement Layer: Overall Population in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -56.0041752674343,
+                    180.0,
+                    71.33231415347204
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "High Resolution Settlement Layer, Facebook, population, CIESIN, humanitarian"
+    ],
+    "providers": [
+        {
+            "name": "Center for International Earth Science Information Network(CIESIN), Facebook",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30.92208077593419,
+            "min": 0.0,
+            "max": 91737.4,
+            "gee:estimated_range": false
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "7200,50400,10800,21600,14400,3600,32400,18000,25200,28800,36000,46800,61200,86400,43200,97200,39600,169200,115200,26304,6784,26240,28480,23040,28096,32384,36032,8448,45210,73353,50625,44216,36213,40478,73377,73187,1804,42855,35438,32907,65414,7925,43031,24884,25092,48109,32906,46616,41364,62967,63962,53308,58590,73108,37967,64246,71377,62528,141056,83136,82240,58344,81596,44302,34163,68614,26685,29184,52853,4699,6080,33024,13120,74021,43811,53824,17472,52928,37504,2176,22336,21440,10240,24320,16832,35072,39744,42816,7680,15616,146496,28676,39232,119872,1152,22784,7488,5504,14589,56593,704,576,8064,8704,21248,26176,256,128,12736,26254,113856,40000,9088,59313,1408,115264,2560,38208,43747,320,24879,11428,70592,1024,48640,16192,56844,17280,14080,29312,192,64704,28160,20480,45585,34752,58240,36160,9536,90304,30088,71296,3328,2209,33920,75904,22158,1728,51456,10944,8768,448,14976,3584,14596,20544,11328,4864,36283,37776,7040,27904,51136,6976,5184,14399,11264,19392,39033,19584,18850,16704,17920,64,10432,13376,17856,17088,11008,18944,35840,28288,19648,33216,21760,31296,26816,10752,61696,1216,1664,13312,7424,4992,59072,41984,54000,72000",
+        "ysize": "3600,54000,14400,18000,10800,25200,7200,28800,21600,50400,36000,32400,140400,43200,61200,64800,79200,35328,14144,36032,27904,31680,33664,3008,28448,33872,32781,36778,43032,35224,32844,30373,11582,40003,38623,40245,27844,22759,23265,25221,27241,40501,32905,37969,43031,43026,53156,44391,78706,22780,43453,119786,60416,56128,103616,33088,60797,68892,62323,71076,66954,31380,42944,63425,3643,1792,28032,8384,64853,34752,41216,30848,35136,39616,1472,15936,15040,7488,10240,14464,30144,11392,41728,2880,14912,53504,36455,14592,30272,1152,19776,5632,5888,46858,832,9216,8704,384,128,10880,49057,65472,25728,5440,53256,1088,37632,58944,45003,512,36652,27921,23360,1280,43136,10944,41795,15424,10112,14272,192,84160,35392,8768,65867,58368,4352,38016,20992,2304,34688,29829,67840,1857,16640,57600,15696,28288,11136,4672,14208,6144,14911,6720,5248,5760,23048,2496,56733,18112,15744,27520,21184,26227,10752,20480,38508,20416,17594,11072,2688,11968,704,64,15808,27328,18048,22592,22400,27968,33728,1728,15296,5120,34176,9984,4928,6528,3264,29952,1600,2560,53376,4224,2240,45760,24320"
+    }
+}

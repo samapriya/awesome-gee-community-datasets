@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/landfire/disturbance/hdist",
+    "title": "Fuel Disturbance (HDist) LF v2.0.0",
+    "description": "Fuel Disturbance (HDist) LF v2.0.0",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/disturbance_hdist.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Fuel Disturbance (HDist) LF v2.0.0 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/5b1706ec636eb864a273b0cef18a1786",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -160.6051534144912,
+                    18.839791601174092,
+                    -65.23635754136117,
+                    51.69820853816292
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 0,
+            "max": 20161113,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "154208,20385",
+        "ysize": "97283,12602"
+    }
+}

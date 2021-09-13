@@ -1,0 +1,116 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_organic",
+    "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic",
+    "description": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/iSDAsoil_Africa_30m_carbon_organic.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.464442926199478,
+                    -35.22457492453981,
+                    57.08191893272471,
+                    37.980102953653464
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "soil, Africa, iSDA, carbon_organic"
+    ],
+    "providers": [
+        {
+            "name": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 2,
+            "max": 43,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 30,
+            "min": 0,
+            "max": 42,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 30,
+            "min": 0,
+            "max": 10,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b4",
+            "gsd": 30,
+            "min": 0,
+            "max": 10,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "description": "## Carbon Organic\n\n\n|Bands|Description |\n|:----|:-----------------------------------------------------|\n|b1 |predicted mean at 0-20 cm depth |\n|b2 |predicted mean at 20-50 cm depth |\n|b3 |standard deviation at 0-20 cm depth |\n|b4 |standard deviation at 20-50 cm depth |\n",
+        "num_bands": "4",
+        "xsize": "328563",
+        "ysize": "289306"
+    }
+}

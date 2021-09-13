@@ -1,0 +1,129 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/soilgrids-isric/silt_mean",
+    "title": "Proportion of silt particles (gte 0.002 mm and lte 0.05 mm) in the fine earth fraction",
+    "description": "Proportion of silt particles (gte 0.002 mm and lte 0.05 mm) in the fine earth fraction",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/soilgrids-isric_silt_mean.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Proportion of silt particles (gte 0.002 mm and lte 0.05 mm) in the fine earth fraction in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Global Soilgrid, Silt, ISRIC"
+    ],
+    "providers": [
+        {
+            "name": "International Soil Reference and Information Centre (ISRIC)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "silt_0-5cm_mean",
+            "gsd": 250,
+            "min": 7,
+            "max": 900,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "silt_5-15cm_mean",
+            "gsd": 250,
+            "min": 6,
+            "max": 899,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "silt_15-30cm_mean",
+            "gsd": 250,
+            "min": 6,
+            "max": 902,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "silt_30-60cm_mean",
+            "gsd": 250,
+            "min": 6,
+            "max": 902,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "silt_60-100cm_mean",
+            "gsd": 250,
+            "min": 7,
+            "max": 904,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "silt_100-200cm_mean",
+            "gsd": 250,
+            "min": 7,
+            "max": 905,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "Mapped_units": "g/kg",
+        "description": "Silt content in g/kg at 6 standard depths. Predictions were derived using a digital soil mapping approach based on Quantile Random Forest, drawing on a global compilation of soil profile data and environmental layers. \n\n**Soil Property DOI**\n[https://doi.org/10.17027/isric-soilgrids.713396fb-1687-11ea-a7c0-a0481ca9e724](https://doi.org/10.17027/isric-soilgrids.713396fb-1687-11ea-a7c0-a0481ca9e724)\n\n**Terms of use**\nThis version of SoilGrids is available to you by [ISRIC \u2014 World Soil Information](isric.org) under the CC-BY 4.0 License.\n\n**Important notice**\n[SoilGrids](https://www.isric.org/explore/soilgrids/) is designed as a globally consistent, data-driven system that predicts soil properties and classes using global covariates and globally fitted models. If you are looking for soil information on national and/or local levels we advise to compare SoilGrids predictions with soil maps derived from national and local soil geographical databases. National soil maps are usually based on more detailed input soil information and therefore are often more accurate than SoilGrids (within the local coverage area). For an overview of national and regional soil databases, please refer to the Soil Geographic Databases compendium.\n\n**Citation**\nde Sousa, L.,  Poggio, L.,  Batjes, N.H., Heuvelink, G.B.M., Kempen, B., Ribeiro, E.,  Rossiter, D. SoilGrids 2.0: producing quality-assessed soil information for the globe. Under submission to SOIL\n\n\n",
+        "title": "Silt content, mean"
+    }
+}

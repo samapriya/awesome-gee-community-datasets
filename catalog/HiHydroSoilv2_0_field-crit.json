@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/field-crit",
+    "title": "Water content between field capacity (pF2_ and wilting point (pF3)- Field Wilt",
+    "description": "Water content between field capacity (pF2_ and wilting point (pF3)- Field Wilt",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HiHydroSoilv2_0_field-crit.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Water content between field capacity (pF2_ and wilting point (pF3)- Field Wilt in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle"
+    ],
+    "providers": [
+        {
+            "name": "Future Water",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 253.38411539957406,
+            "min": 0,
+            "max": 3683,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "158159",
+        "ysize": "60934"
+    }
+}

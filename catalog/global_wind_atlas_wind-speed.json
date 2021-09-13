@@ -1,0 +1,95 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed",
+    "title": "Global Wind Atlas: Wind Speed",
+    "description": "Global Wind Atlas: Wind Speed",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/global_wind_atlas_wind-speed.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Global Wind Atlas: Wind Speed in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Wind, energy, ruggedness index, capacity factor, wind speed, power density"
+    ],
+    "providers": [
+        {
+            "name": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 278.29872698319775,
+            "min": 0.07,
+            "max": 57.32,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "height": "100,10,150,200,50",
+        "num_bands": "1",
+        "xsize": "144263",
+        "ysize": "55933"
+    }
+}

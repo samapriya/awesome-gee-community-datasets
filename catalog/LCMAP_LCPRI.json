@@ -1,0 +1,95 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/LCMAP/LCPRI",
+    "title": "LCMAP v1.1: LCPRI",
+    "description": "LCMAP v1.1: LCPRI",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/LCMAP_LCPRI.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for LCMAP v1.1: LCPRI in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -128.10424188007147,
+                    22.635827942665504,
+                    -65.01009516809988,
+                    51.74882527492793
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T19:25:42Z",
+                    "2019-12-31T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 1,
+            "max": 8,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "version": "1.1",
+        "xsize": "154977",
+        "ysize": "97889"
+    }
+}

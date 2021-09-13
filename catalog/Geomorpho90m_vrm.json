@@ -1,0 +1,95 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/vrm",
+    "title": "Geomorpho90m: Vector Ruggedness Measure",
+    "description": "Geomorpho90m: Vector Ruggedness Measure",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/Geomorpho90m_vrm.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Geomorpho90m: Vector Ruggedness Measure in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -60.00189662796161,
+                    180.0,
+                    85.00049212164053
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-12T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, vrm, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    ],
+    "providers": [
+        {
+            "name": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 92.76624232772798,
+            "min": -0.0,
+            "max": 0.31,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "num_bands": "1",
+        "pixel_resolution": "90",
+        "xsize": "6000",
+        "ysize": "6000"
+    }
+}

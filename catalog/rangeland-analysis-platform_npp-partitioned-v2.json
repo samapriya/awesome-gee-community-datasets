@@ -1,0 +1,118 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/rangeland-analysis-platform/npp-partitioned-v2",
+    "title": "Rangeland-Analysis-Platform: NPP partitioned v2",
+    "description": "Rangeland-Analysis-Platform: NPP partitioned v2",
+    "license": "CC-BY-NC-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/rangeland-analysis-platform_npp-partitioned-v2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Rangeland-Analysis-Platform: NPP partitioned v2 in the Google Playground",
+            "rel": "related",
+            "href": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.77061095912012,
+                    25.794212684756758,
+                    -93.49655712991022,
+                    49.140220525417455
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-12-31T19:25:42Z",
+                    "2021-09-12T19:25:42Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "rangelands, vegetation, time-series, machine learning, landsat"
+    ],
+    "providers": [
+        {
+            "name": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "afgNPP",
+            "gsd": 30.000000000000004,
+            "min": 0,
+            "max": 9744,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "pfgNPP",
+            "gsd": 30.000000000000004,
+            "min": 0,
+            "max": 9378,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "shrNPP",
+            "gsd": 30.000000000000004,
+            "min": 0,
+            "max": 5978,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "treeNPP",
+            "gsd": 30.000000000000004,
+            "min": 0,
+            "max": 15937,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "QC",
+            "gsd": 30.000000000000004,
+            "min": 0,
+            "max": 255,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {}
+}

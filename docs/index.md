@@ -14,3 +14,9 @@ Community Datasets added by users and made available for use at large
 ## [Submit your Datasets to be included in the list: Using the template Link here](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=&template=new-community-gee-dataset-template.md&title=Dataset+%26+Curator+Name)
 
 ![new_issue_datasets](https://user-images.githubusercontent.com/6677629/81495266-2eaedb00-927d-11ea-849f-af017ac7b32a.gif)
+
+## [Submit a request for datasets to be updated](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=&template=Update-dataset.md&title=Dataset+Name)
+
+![update_datasets](https://user-images.githubusercontent.com/6677629/133027662-685ab13d-40e9-4a11-adf1-935e059dd6cf.gif)
+
+## [STAC Dataset subset in progress](https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json) 
