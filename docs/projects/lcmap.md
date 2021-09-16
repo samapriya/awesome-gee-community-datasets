@@ -4,6 +4,20 @@ Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new gene
 
 LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-11-science-product-guide)
 
+<center>
+
+|Additional Resources| Links |
+|---------------------------|-------|
+|LCMAP website|https://www.usgs.gov/core-science-systems/eros/lcmap|
+|Algorithm description document|https://www.usgs.gov/media/files/lcmap-ccdc-add|
+|RSS Feed|https://www.usgs.gov/core-science-systems/eros/lcmap/news|
+|Validation (these are tables)|https://www.sciencebase.gov/catalog/item/5f86f28682cebef40f170771|
+|Reference data (these are points)|https://www.sciencebase.gov/catalog/item/5e42e54be4b0edb47be84535|
+|USGS LCMAP Publications|https://www.usgs.gov/core-science-systems/eros/lcmap/publications   |
+
+</center>
+
+
 #### LCMAP Products
 
 LCMAP provides 10 science products based on the USGS implementation of CCDC. The science products provide annual products for the years 1985-2019 for each CONUS ARD tile and CONUS level downloads are available which is used for the GEE collection. Land surface change products, denoted by the “SC” prefix in the short name, are produced directly from CCDC time series models. Land cover products, denoted by the “LC” prefix in the short name, are produced by the classification of the time series models. Note to optimize size GeoTiff files were run through a lossless LZW compression.
@@ -92,6 +106,14 @@ var reference = ee.FeatureCollection("projects/sat-io/open-datasets/LCMAP/LCMAP_
 Sample code: https://code.earthengine.google.com/729f0a1a2fa4e04f8c034b4228da164b
 
 ![reference_points](https://user-images.githubusercontent.com/6677629/132157362-a921f5bd-50b9-4cca-8746-7e8004eafb67.PNG)
+
+#### Reference Publications: [Find additional publications here](https://www.usgs.gov/core-science-systems/eros/lcmap/publications)
+
+* Brown, Jesslyn F., Heather J. Tollerud, Christopher P. Barber, Qiang Zhou, John L. Dwyer, James E. Vogelmann, Thomas R. Loveland et al. "Lessons learned implementing an operational continuous United States national land change monitoring capability: The Land Change Monitoring, Assessment, and Projection (LCMAP) approach." Remote Sensing of Environment 238 (2020): 111356.
+* Zhu, Zhe, and Curtis E. Woodcock. "Continuous change detection and classification of land cover using all available Landsat data." Remote sensing of Environment 144 (2014): 152-171.
+* Zhou, Qiang, Heather Tollerud, Christopher Barber, Kelcy Smith, and Daniel Zelenak. "Training data selection for annual land cover classification for the land change monitoring, assessment, and projection (LCMAP) initiative." Remote Sensing 12, no. 4 (2020): 699.
+* Stehman, Stephen V., Bruce W. Pengra, Josephine A. Horton, and Danika F. Wellington. "Validation of the US Geological Survey's Land Change Monitoring, Assessment and Projection (LCMAP) Collection 1.0 annual land cover products 1985–2017." Remote Sensing of Environment 265 (2021): 112646.
+
 
 #### License
 
