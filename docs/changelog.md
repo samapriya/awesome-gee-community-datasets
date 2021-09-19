@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-09-19
+- [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
+- [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
+- Updates to [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.1](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+
 #### Updates 2021-09-12
 - [Subset release of STAC Catalog v1.0.0](https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json)
 

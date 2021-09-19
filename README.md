@@ -41,6 +41,7 @@ Community Datasets added by users and made available for use at large
    * [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
    * [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
    * [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
+   * [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
 2. Geophysical, Biological & Biogeochemical
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [SoilGrids250m_2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric/)
