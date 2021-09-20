@@ -95,7 +95,7 @@ var scstab = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCSTAB");
 var sctime = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCTIME");
 ```
 
-Sample code: https://code.earthengine.google.com/0f71c9417a141c674c8dbf55f60a6f65
+Sample code: https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7
 
 **I have also added the reference dataset to be used with the other 10 LCMAP products, which is about 25000 plot level datasets.**
 
