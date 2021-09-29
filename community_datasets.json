@@ -831,16 +831,24 @@
 		"tags": "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
 	},
 	{
-		"title": "GEBCO 2020 Grid",
-		"sample_code": "https://code.earthengine.google.com/448583e4ee5facdd9c23916b65aaf8a6",
+		"title": "GEBCO 2021 Grid",
+		"sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/gebco/gebco_grid",
 		"provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
 		"tags": "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
 	},
 	{
-		"title": "GEBCO 2020 Type Identifier (TID) Grid",
-		"sample_code": "https://code.earthengine.google.com/448583e4ee5facdd9c23916b65aaf8a6",
+		"title": "GEBCO 2021 sub-ice topo/bathy",
+		"sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo",
+		"provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
+		"tags": "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
+	},
+	{
+		"title": "GEBCO 2021 Type Identifier (TID) Grid",
+		"sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/gebco/gebco_tid_grid",
 		"provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",

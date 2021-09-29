@@ -1,13 +1,18 @@
 # General Bathymetric Chart of the Oceans (GEBCO)
 
-The GEBCO_2020 Grid is the latest global bathymetric product released by the General Bathymetric Chart of the Oceans (GEBCO) and has been developed through the Nippon Foundation-GEBCO Seabed 2030 Project.
+The GEBCO_2021 Grid is the latest global bathymetric product released by the General Bathymetric Chart of the Oceans (GEBCO) and has been developed through the Nippon Foundation-GEBCO Seabed 2030 Project.
 
-The GEBCO_2020 Grid provides global coverage on a 15 arc-second grid of 43200 rows x 86400 columns, giving 3,732,480,000 data points. The GEBCO_2020 Grid is a continuous, global terrain model for ocean and land with a spatial resolution of 15 arc seconds. The grid uses as a ‘base’ Version 2 of the SRTM15+ data set (Tozer et al, 2019). This data set is a fusion of land topography with measured and estimated seafloor topography. It is augmented with the gridded bathymetric data sets developed by the four Seabed 2030 Regional Centers. The Regional Centers have compiled gridded bathymetric data sets, largely based on multibeam data, for their areas of responsibility. These regional grids were then provided to the Global Center.
+The GEBCO_2021 Grid provides global coverage of elevation data in meters on a 15 arc-second grid of 43200 rows x 86400 columns, giving 3,732,480,000 data points. The GEBCO_2021 Grid is a continuous, global terrain model for ocean and land with a spatial resolution of 15 arc seconds. The grid uses as a ‘base’ Version 2 of the SRTM15+ data set (Tozer et al, 2019). This data set is a fusion of land topography with measured and estimated seafloor topography. It is augmented with the gridded bathymetric data sets developed by the four Seabed 2030 Regional Centers. The Regional Centers have compiled gridded bathymetric data sets, largely based on multibeam data, for their areas of responsibility. These regional grids were then provided to the Global Center.
 
 For areas outside of the polar regions (primarily south of 60°N and north of 50°S), these data sets are in the form of 'sparse grids', i.e. only grid cells that contain data were populated. For the polar regions, complete grids were provided due to the complexities of incorporating data held in polar coordinates.
 
-The compilation of the GEBCO_2020 Grid from these regional data grids was carried out at the Global Center, with the aim of producing a seamless global terrain model. The GEBCO_2020 Grid includes data sets from a number of international and national data repositories and regional mapping initiatives. For information on the data sets included in the GEBCO_2020 Grid, please see the [list of contributions included in this release of the grid.](https://www.gebco.net/data_and_products/gridded_bathymetry_data/gebco_2020/#compilations)
+The compilation of the GEBCO_2021 Grid from these regional data grids was carried out at the Global Center, with the aim of producing a seamless global terrain model. The GEBCO_2021 Grid includes data sets from a number of international and national data repositories and regional mapping initiatives. For information on the data sets included in the GEBCO_2021 Grid, please see the [list of contributions included in this release of the grid.](https://www.gebco.net/data_and_products/gridded_bathymetry_data/gebco_2021/)
 
+#### Data Citation & Attribution
+
+```
+GEBCO Compilation Group (2021) GEBCO 2021 Grid (doi:10.5285/c6612cbe-50b3-0cff-e053-6c86abc09f8f)
+```
 
 ![gebco_grids](https://user-images.githubusercontent.com/6677629/115973752-0c10e300-a51d-11eb-8858-16f51762a948.gif)
 
@@ -15,10 +20,11 @@ The compilation of the GEBCO_2020 Grid from these regional data grids was carrie
 
 ```js
 var gebco_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_grid");
+var gebco_sub_ice_topo = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo");
 var gebco_tid_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_tid_grid");
 ```
 
-Sample Code: https://code.earthengine.google.com/448583e4ee5facdd9c23916b65aaf8a6
+Sample Code: https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe
 
 #### GEBCO Type Identifier (TID) grid coding
 
@@ -55,4 +61,4 @@ Curated by: Samapriya Roy
 
 Keywords: :"Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
 
-Last updated: 2021-04-24
+Last updated: 2021-09-29
