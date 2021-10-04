@@ -4898,5 +4898,21 @@
 		"id": "projects/sat-io/open-datasets/native-land/indigenousTreaties",
 		"provider": "Native Land CA",
 		"tags": "native lands, indigenousTreaties, indigenousLanguages, indigenousTerritories, Indigenous, land rights"
+	},
+	{
+		"title": "MODIS Gap filled Long-term Land Surface Temperature Daily Daytime",
+		"sample_code": "https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/gap-filled-lst/gf_day_1km",
+		"provider": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
+		"tags": "Land Surface Temperature, LST, MODIS, gapfilled"
+	},
+	{
+		"title": "MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime",
+		"sample_code": "https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km",
+		"provider": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
+		"tags": "Land Surface Temperature, LST, MODIS, gapfilled"
 	}
 ]

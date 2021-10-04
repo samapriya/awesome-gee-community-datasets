@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-10-04
+- Updates to [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/) 2021 datasets available.
+- [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
+- Daily updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2021-09-19
 - [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
 - [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
