@@ -5,6 +5,7 @@
 #### Updates 2021-10-04
 - Updates to [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/) 2021 datasets available.
 - [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
+- [Global maps of habitat types](https://samapriya.github.io/awesome-gee-community-datasets/projects/habitat)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 #### Updates 2021-09-19

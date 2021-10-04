@@ -54,6 +54,7 @@ Community Datasets added by users and made available for use at large
    * [Bare Earth’s Surface Spectra 1980-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/bss/)
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
    * [Soil nematode abundance & functional group composition](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_nematode)
+   * [Global maps of habitat types](https://samapriya.github.io/awesome-gee-community-datasets/projects/habitat)
 3. Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)

@@ -4914,5 +4914,53 @@
 		"id": "projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km",
 		"provider": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
 		"tags": "Land Surface Temperature, LST, MODIS, gapfilled"
+	},
+	{
+		"title": "Global maps of habitat types Composite: Level 1 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl1_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "Global maps of habitat types Composite: Level 2 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl2_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "Global maps of habitat types Changemask 2016: Level 1 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/changemasks2016/iucn_habitatclassification_2016changemask_lvl1_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "Global maps of habitat types Changemask 2017: Level 1 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/changemasks2017/iucn_habitatclassification_2017changemask_lvl1_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "Global maps of habitat types Changemask 2018: Level 1 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/changemasks2018/iucn_habitatclassification_2018changemask_lvl1_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "Global maps of habitat types Changemask 2019: Level 1 v004",
+		"sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+		"type": "image",
+		"id": "users/Uploads/habitattypes/changemasks2019/iucn_habitatclassification_2019changemask_lvl1_ver004",
+		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
 	}
 ]
