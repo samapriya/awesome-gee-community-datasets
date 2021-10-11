@@ -4,15 +4,15 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
-    "title": "Soil 800m Grid: soil_depth",
-    "description": "Soil 800m Grid: soil_depth",
-    "license": "CC-BY-4.0",
-    "gee:type": "image",
+    "id": "projects/sat-io/open-datasets/us-drought-monitor",
+    "title": "United States Drought Monitor (USDM)",
+    "description": "United States Drought Monitor (USDM)",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
     "links": [
         {
             "rel": "self",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_soil_depth.json",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_us-drought-monitor.json",
             "type": "application/json"
         },
         {
@@ -26,9 +26,9 @@
             "type": "application/json"
         },
         {
-            "title": "Run the example for Soil 800m Grid: soil_depth in the Google Playground",
+            "title": "Run the example for United States Drought Monitor (USDM) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+            "href": "https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -41,30 +41,30 @@
         "spatial": {
             "bbox": [
                 [
-                    -127.91053497881238,
-                    22.92893621974852,
-                    -65.32898236243004,
-                    51.626130233958015
+                    -180,
+                    -90,
+                    180,
+                    90
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2021-10-10T19:25:42Z",
-                    "2021-10-10T19:25:42Z"
+                    "1999-12-27T19:25:42Z",
+                    "2021-10-04T19:25:42Z"
                 ]
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+        "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
     ],
     "providers": [
         {
-            "name": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+            "name": "National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC",
             "roles": [
                 "producer",
                 "licensor"
@@ -79,10 +79,10 @@
     ],
     "eo:bands": [
         {
-            "name": "b1",
-            "gsd": 800,
-            "min": 3,
-            "max": 983.37,
+            "name": "DM",
+            "gsd": 250,
+            "min": 0,
+            "max": 4,
             "gee:estimated_range": true
         }
     ],

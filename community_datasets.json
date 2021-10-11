@@ -4962,5 +4962,13 @@
 		"id": "users/Uploads/habitattypes/changemasks2019/iucn_habitatclassification_2019changemask_lvl1_ver004",
 		"provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
 		"tags": "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+	},
+	{
+		"title": "International Satellite Cloud Climatology Project: HXG Cloud Cover",
+		"sample_code": "https://code.earthengine.google.com/105c4ec360cacddf6ccf3435c7b6047b",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/isccp/hxg",
+		"provider": "International Satellite Cloud Climatology Project",
+		"tags": "ISCCP, Clouds,  International Satellite Cloud Climatology Project, WCRP, World Climate Research Program"
 	}
 ]

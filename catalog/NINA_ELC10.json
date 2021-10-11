@@ -4,15 +4,15 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
-    "title": "Soil 800m Grid: soil_depth",
-    "description": "Soil 800m Grid: soil_depth",
+    "id": "projects/sat-io/open-datasets/NINA/ELC10",
+    "title": "Continental Scale Land Cover Mapping at 10m Europe",
+    "description": "Continental Scale Land Cover Mapping at 10m Europe",
     "license": "CC-BY-4.0",
-    "gee:type": "image",
+    "gee:type": "image_collection",
     "links": [
         {
             "rel": "self",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_soil_depth.json",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/NINA_ELC10.json",
             "type": "application/json"
         },
         {
@@ -26,9 +26,9 @@
             "type": "application/json"
         },
         {
-            "title": "Run the example for Soil 800m Grid: soil_depth in the Google Playground",
+            "title": "Run the example for Continental Scale Land Cover Mapping at 10m Europe in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+            "href": "https://code.earthengine.google.com/1036fae2f580c7d644be300c3c2a043f",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -41,10 +41,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -127.91053497881238,
-                    22.92893621974852,
-                    -65.32898236243004,
-                    51.626130233958015
+                    -18.08493149238998,
+                    31.831570289012713,
+                    41.52099272237581,
+                    73.61762353111294
                 ]
             ]
         },
@@ -60,11 +60,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+        "land use, europe, land cover, remote sensing, copernicus, sentinel, satellite"
     ],
     "providers": [
         {
-            "name": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+            "name": "Venter, Zander S., & Sydenham, Markus A.K.",
             "roles": [
                 "producer",
                 "licensor"
@@ -80,11 +80,15 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 800,
-            "min": 3,
-            "max": 983.37,
+            "gsd": 10,
+            "min": 1,
+            "max": 8,
             "gee:estimated_range": true
         }
     ],
-    "eo:properties": {}
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "39936",
+        "ysize": "39936,38542"
+    }
 }

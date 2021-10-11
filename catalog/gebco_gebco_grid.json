@@ -4,15 +4,15 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
-    "title": "Soil 800m Grid: soil_depth",
-    "description": "Soil 800m Grid: soil_depth",
-    "license": "CC-BY-4.0",
-    "gee:type": "image",
+    "id": "projects/sat-io/open-datasets/gebco/gebco_grid",
+    "title": "GEBCO 2021 Grid",
+    "description": "GEBCO 2021 Grid",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
     "links": [
         {
             "rel": "self",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_soil_depth.json",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gebco_gebco_grid.json",
             "type": "application/json"
         },
         {
@@ -26,9 +26,9 @@
             "type": "application/json"
         },
         {
-            "title": "Run the example for Soil 800m Grid: soil_depth in the Google Playground",
+            "title": "Run the example for GEBCO 2021 Grid in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+            "href": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -41,10 +41,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -127.91053497881238,
-                    22.92893621974852,
-                    -65.32898236243004,
-                    51.626130233958015
+                    -180,
+                    -90,
+                    180,
+                    90
                 ]
             ]
         },
@@ -57,14 +57,14 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+        "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
     ],
     "providers": [
         {
-            "name": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+            "name": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
             "roles": [
                 "producer",
                 "licensor"
@@ -80,11 +80,15 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 800,
-            "min": 3,
-            "max": 983.37,
+            "gsd": 463.83121163863984,
+            "min": -10915,
+            "max": 8438,
             "gee:estimated_range": true
         }
     ],
-    "eo:properties": {}
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "21600",
+        "ysize": "21600"
+    }
 }

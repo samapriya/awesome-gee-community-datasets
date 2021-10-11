@@ -251,6 +251,36 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/gap-filled-lst/gf_day_1km",
+            "title": "MODIS Gap filled Long-term Land Surface Temperature Daily Daytime",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gap-filled-lst_gf_day_1km.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km",
+            "title": "MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gap-filled-lst_gf_night_1km.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/gebco/gebco_grid",
+            "title": "GEBCO 2021 Grid",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gebco_gebco_grid.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo",
+            "title": "GEBCO 2021 sub-ice topo/bathy",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gebco_gebco_sub-ice-topo.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/gebco/gebco_tid_grid",
+            "title": "GEBCO 2021 Type Identifier (TID) Grid",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/gebco_gebco_tid_grid.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/Geomorpho90m/cti",
             "title": "Geomorpho90m: Compound Topographic Index",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/Geomorpho90m_cti.json"
@@ -557,6 +587,18 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
+            "title": "ESRI Global Land Use Land Cover from Sentinel-2",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/landcover_ESRI_Global-LULC_10m.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017",
+            "title": "Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/landcover_oil-palm-plantation-1984_2017.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/hydrologic_group",
             "title": "Soil 800m Grid: hydrologic_group",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_hydrologic_group.json"
@@ -683,6 +725,30 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/NINA/ELC10",
+            "title": "Continental Scale Land Cover Mapping at 10m Europe",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/NINA_ELC10.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_mean",
+            "title": "Soil Organic Carbon Stocks 30m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/NINA_SOC30_SA_mean.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_trend",
+            "title": "Soil Organic Carbon Stocks Trends 30m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/NINA_SOC30_SA_trend.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/us-drought-monitor",
+            "title": "United States Drought Monitor (USDM)",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_us-drought-monitor.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/bulk_density",
             "title": "Soil 800m Grid: bulk_density",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/physical_bulk_density.json"
@@ -785,6 +851,12 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/polaris/clay_mean",
+            "title": "Polaris 30m Probabilistic Soil Properties: Clay Percentage",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_clay_mean.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/polaris/hb_mean",
             "title": "Polaris 30m Probabilistic Soil Properties: bubbling pressure (brooks corey)",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_hb_mean.json"
@@ -818,6 +890,18 @@
             "id": "projects/sat-io/open-datasets/polaris/ph_mean",
             "title": "Polaris 30m Probabilistic Soil Properties: soil pH in H20",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_ph_mean.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/polaris/sand_mean",
+            "title": "Polaris 30m Probabilistic Soil Properties: Sand Percentage",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_sand_mean.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/polaris/silt_mean",
+            "title": "Polaris 30m Probabilistic Soil Properties: Silt Percentage",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/polaris_silt_mean.json"
         },
         {
             "rel": "child",

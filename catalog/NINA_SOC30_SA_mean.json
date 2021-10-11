@@ -4,15 +4,15 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
-    "title": "Soil 800m Grid: soil_depth",
-    "description": "Soil 800m Grid: soil_depth",
+    "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_mean",
+    "title": "Soil Organic Carbon Stocks 30m",
+    "description": "Soil Organic Carbon Stocks 30m",
     "license": "CC-BY-4.0",
-    "gee:type": "image",
+    "gee:type": "image_collection",
     "links": [
         {
             "rel": "self",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_soil_depth.json",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/NINA_SOC30_SA_mean.json",
             "type": "application/json"
         },
         {
@@ -26,9 +26,9 @@
             "type": "application/json"
         },
         {
-            "title": "Run the example for Soil 800m Grid: soil_depth in the Google Playground",
+            "title": "Run the example for Soil Organic Carbon Stocks 30m in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+            "href": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -41,10 +41,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -127.91053497881238,
-                    22.92893621974852,
-                    -65.32898236243004,
-                    51.626130233958015
+                    15.92451002965716,
+                    -34.92371726909486,
+                    33.51103771275848,
+                    -21.95528271309792
                 ]
             ]
         },
@@ -60,11 +60,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+        "carbon stocks, land degradation, natural climate solutions, remote sensing, soil mapping, spatial prediction, soil carbon, carbon sequestration"
     ],
     "providers": [
         {
-            "name": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+            "name": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
             "roles": [
                 "producer",
                 "licensor"
@@ -80,11 +80,15 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 800,
-            "min": 3,
-            "max": 983.37,
+            "gsd": 29.999999999999996,
+            "min": 68.65,
+            "max": 1687.54,
             "gee:estimated_range": true
         }
     ],
-    "eo:properties": {}
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "32488,32768",
+        "ysize": "15333,32768"
+    }
 }

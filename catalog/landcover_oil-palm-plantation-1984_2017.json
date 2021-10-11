@@ -4,15 +4,15 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
     ],
-    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
-    "title": "Soil 800m Grid: soil_depth",
-    "description": "Soil 800m Grid: soil_depth",
-    "license": "CC-BY-4.0",
-    "gee:type": "image",
+    "id": "projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017",
+    "title": "Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017",
+    "description": "Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017",
+    "license": "CC-BY-3.0",
+    "gee:type": "image_collection",
     "links": [
         {
             "rel": "self",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/land_use_soil_depth.json",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/landcover_oil-palm-plantation-1984_2017.json",
             "type": "application/json"
         },
         {
@@ -26,9 +26,9 @@
             "type": "application/json"
         },
         {
-            "title": "Run the example for Soil 800m Grid: soil_depth in the Google Playground",
+            "title": "Run the example for Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+            "href": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -41,10 +41,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -127.91053497881238,
-                    22.92893621974852,
-                    -65.32898236243004,
-                    51.626130233958015
+                    94.99964263679419,
+                    -10.001707000326677,
+                    130.00030859499395,
+                    25.005777052380846
                 ]
             ]
         },
@@ -57,14 +57,14 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-3.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse"
+        "Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1"
     ],
     "providers": [
         {
-            "name": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
+            "name": "Olga Danylo, et al, International Institute for Applied Systems Analysis",
             "roles": [
                 "producer",
                 "licensor"
@@ -80,11 +80,15 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 800,
-            "min": 3,
-            "max": 983.37,
+            "gsd": 30.000000000000004,
+            "min": 7,
+            "max": 37,
             "gee:estimated_range": true
         }
     ],
-    "eo:properties": {}
+    "eo:properties": {
+        "num_bands": "1",
+        "xsize": "46592,36690",
+        "ysize": "46592,36690"
+    }
 }
