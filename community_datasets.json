@@ -858,7 +858,7 @@
 		"title": "Global River Deltas and vulnerability (Convex Hull)",
 		"sample_code": "https://code.earthengine.google.com/ee82002bc3038f30e5a04c41b6567a05",
 		"type": "table",
-		"id": "pprojects/sat-io/open-datasets/delta/delta-convex-hull",
+		"id": "projects/sat-io/open-datasets/delta/delta-convex-hull",
 		"provider": "Edmonds, Douglas A., Rebecca L. Caldwell, Eduardo S. Brondizio, and Sacha MO Siani",
 		"tags": "Fluvial Geomorphology, Hydrology, Rivers, Coastal Rivers, Tidal, River Mouth, Vulnerability, Poverty"
 	},
@@ -906,7 +906,7 @@
 		"title": "Busia Cropland Binary",
 		"sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
 		"type": "image",
-		"id": "pprojects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary",
+		"id": "projects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary",
 		"provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
 		"tags": "agriculture, Africa, Busia, crops, crop classification, food security, satellite data, Earth observation, GIS"
 	},
@@ -4965,7 +4965,7 @@
 	},
 	{
 		"title": "International Satellite Cloud Climatology Project: HXG Cloud Cover",
-		"sample_code": "https://code.earthengine.google.com/105c4ec360cacddf6ccf3435c7b6047b",
+		"sample_code": "https://code.earthengine.google.com/b322661badd81a08a13d5ad8b5822089",
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/isccp/hxg",
 		"provider": "International Satellite Cloud Climatology Project",

@@ -32,7 +32,7 @@ METEOROLOGICAL SOCIETY, 80, 2261-2287.
 var isccp = ee.ImageCollection('projects/sat-io/open-datasets/isccp/hxg');
 ```
 
-Sample Code: https://code.earthengine.google.com/105c4ec360cacddf6ccf3435c7b6047b
+Sample Code: https://code.earthengine.google.com/b322661badd81a08a13d5ad8b5822089
 
 #### License
 Public Domain/No restrictions (CC0): Under the terms of this license you are free to use the material for any purpose without any restrictions.
