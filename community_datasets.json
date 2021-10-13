@@ -4887,7 +4887,7 @@
 		"title": "Native Land (Indigenous Land Maps): Languages",
 		"sample_code": "https://code.earthengine.google.com/0c664cc64c35a964de7e36ffe54b41d4",
 		"type": "table",
-		"id": "projects/sat-io/open-datasets/native-land/indigenousLanguage",
+		"id": "projects/sat-io/open-datasets/native-land/indigenousLanguages",
 		"provider": "Native Land CA",
 		"tags": "native lands, indigenousTreaties, indigenousLanguages, indigenousTerritories, Indigenous, land rights"
 	},
