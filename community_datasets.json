@@ -1410,7 +1410,7 @@
 		"title": "Coefficient of variation 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Coefficient of variation 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1418,7 +1418,7 @@
 		"title": "Coefficient of variation 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Coefficient of variation 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1426,7 +1426,7 @@
 		"title": "Coefficient of variation 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/coefficient_of_variation_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Coefficient of variation 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1434,7 +1434,7 @@
 		"title": "Contrast 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Contrast 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1442,7 +1442,7 @@
 		"title": "Contrast 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Contrast 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1450,7 +1450,7 @@
 		"title": "Contrast 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/contrast_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Contrast 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1458,7 +1458,7 @@
 		"title": "Correlation 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Correlation 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1466,7 +1466,7 @@
 		"title": "Correlation 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Correlation 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1474,7 +1474,7 @@
 		"title": "Correlation 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/correlation_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Correlation 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1482,7 +1482,7 @@
 		"title": "Dissimilarity 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1490,7 +1490,7 @@
 		"title": "Dissimilarity 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1498,7 +1498,7 @@
 		"title": "Dissimilarity 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/dissimilarity_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1506,7 +1506,7 @@
 		"title": "Entropy 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1514,7 +1514,7 @@
 		"title": "Entropy 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1522,7 +1522,7 @@
 		"title": "Entropy 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/entropy_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Dissimilarity 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1530,7 +1530,7 @@
 		"title": "Homogeneity 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Homogeneity 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1538,7 +1538,7 @@
 		"title": "Homogeneity 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Homogeneity 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1546,7 +1546,7 @@
 		"title": "Homogeneity 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/homogeneity_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Homogeneity 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1554,7 +1554,7 @@
 		"title": "Maximum 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Maximum 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1562,7 +1562,7 @@
 		"title": "Maximum 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Maximum 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1570,7 +1570,7 @@
 		"title": "Maximum 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/maximum_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Maximum 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1578,7 +1578,7 @@
 		"title": "Mean 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Mean 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1586,7 +1586,7 @@
 		"title": "Mean 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Mean 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1594,7 +1594,7 @@
 		"title": "Mean 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/mean_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Mean 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1602,7 +1602,7 @@
 		"title": "Pielou 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Pielou 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1610,7 +1610,7 @@
 		"title": "Pielou 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Pielou 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1618,7 +1618,7 @@
 		"title": "Pielou 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/pielou_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Pielou 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1626,7 +1626,7 @@
 		"title": "Range 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/range_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Range 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1634,7 +1634,7 @@
 		"title": "Range 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/range_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Range 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1642,7 +1642,7 @@
 		"title": "Range 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/range_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Range 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1650,7 +1650,7 @@
 		"title": "Shannon 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Shannon 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1658,7 +1658,7 @@
 		"title": "Shannon 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Shannon 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1666,7 +1666,7 @@
 		"title": "Shannon 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/shannon_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Shannon 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1674,7 +1674,7 @@
 		"title": "Simpson 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Simpson 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1682,7 +1682,7 @@
 		"title": "Simpson 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Simpson 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1690,7 +1690,7 @@
 		"title": "Simpson 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/simpson_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Simpson 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1698,7 +1698,7 @@
 		"title": "Standard Deviation 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Standard Deviation 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1706,7 +1706,7 @@
 		"title": "Standard Deviation 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Standard Deviation 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1714,7 +1714,7 @@
 		"title": "Standard Deviation 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/standard_deviation_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Standard Deviation 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1722,7 +1722,7 @@
 		"title": "Uniformity 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Uniformity 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1730,7 +1730,7 @@
 		"title": "Uniformity 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Uniformity 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1738,7 +1738,7 @@
 		"title": "Uniformity 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/uniformity_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Uniformity 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1746,7 +1746,7 @@
 		"title": "Variance 1km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_1km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_1km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Variance 1km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1754,7 +1754,7 @@
 		"title": "Variance 5km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_5km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_5km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Variance 5km, EarthEnv, Global Habitat Heterogeneity"
 	},
@@ -1762,7 +1762,7 @@
 		"title": "Variance 25km- Global Habitat Heterogeneity",
 		"sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
 		"type": "image",
-		"id": "projects/sat-io/open-datasets/global_consensus_landcover/variance_25km",
+		"id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_25km",
 		"provider": "Domisch, S., Amatulli, G., and Jetz, W.",
 		"tags": "Variance 25km, EarthEnv, Global Habitat Heterogeneity"
 	},
