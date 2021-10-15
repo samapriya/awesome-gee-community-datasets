@@ -1,4 +1,4 @@
-### Mississippi River Basin Floodplain Land Use Change (1941-2000)
+# Mississippi River Basin Floodplain Land Use Change (1941-2000)
 
 A comprehensive dataset quantifying floodplain land use change along the 3.3 million km2 Mississippi River Basin (MRB) covering 60 years (1941–2000) at 250-m resolution.
 
