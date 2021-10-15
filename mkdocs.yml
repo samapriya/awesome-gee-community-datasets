@@ -182,8 +182,8 @@ nav:
   - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
-    - Global large flood events <Dartmouth Flood Observatory> (1985-2016) : projects/flood.md
-    - Global Landslide Catalog <NASA Goddard> (1970-2019): projects/landslide.md
+    - Global large flood events (1985-2016) : projects/flood.md
+    - Global Landslide Catalog (1970-2019): projects/landslide.md
     - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
   - License: license.md
   - Changelog: changelog.md
