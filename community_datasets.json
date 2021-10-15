@@ -4970,5 +4970,69 @@
 		"id": "projects/sat-io/open-datasets/isccp/hxg",
 		"provider": "International Satellite Cloud Climatology Project",
 		"tags": "ISCCP, Clouds,  International Satellite Cloud Climatology Project, WCRP, World Climate Research Program"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1950)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_1950",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1960)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_1960",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1970)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_1970",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1980)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_1980",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1990)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_1990",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1990)",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/Major_Transitions_1941_2000",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: MRB_Boundary",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "table",
+		"id": "users/giswqs/MRB/MRB_Boundary",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Mississippi River Basin Floodplain Land Use Change: Floodplain",
+		"sample_code": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+		"type": "image",
+		"id": "users/giswqs/MRB/USGS_Floodplain",
+		"provider": "Rajib et al 2021",
+		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
 	}
 ]
