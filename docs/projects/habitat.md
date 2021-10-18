@@ -1,4 +1,4 @@
-### Global maps of habitat types
+# Global maps of habitat types
 
 We provide a global, spatially explicit characterization of terrestrial and marine habitat types, as defined in the International Union for Conservation of Nature (IUCN) habitat classification scheme, which is widely used in ecological analyses, including for quantifying species’ Area of Habitat. We produced this novel habitat map for the years 2015-2019 by creating a global decision tree that intersects the best currently available global data on elevation and bathymetry, land and ocean cover, climate and land use.
 
