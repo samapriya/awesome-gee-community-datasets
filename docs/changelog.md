@@ -4,6 +4,7 @@
 
 #### Updates 2021-10-18
 - [Mississippi River Basin Floodplain Land Use Change (1941-2000)](https://samapriya.github.io/awesome-gee-community-datasets/projects/floodplain_lc.md)
+- [Landsat Burned Area](https://samapriya.github.io/awesome-gee-community-datasets/projects/lba)
 - Updated projection date and time for [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 

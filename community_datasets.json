@@ -5034,5 +5034,13 @@
 		"id": "users/giswqs/MRB/USGS_Floodplain",
 		"provider": "Rajib et al 2021",
 		"tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+	},
+	{
+		"title": "Landsat Burned Area",
+		"sample_code": "https://code.earthengine.google.com/34a2a4df430c5e7c8a6e5073cd66175c",
+		"type": "image",
+		"id": "users/keikonomura/fire/LBA_CU_2019_20200415_C01_V01_BP_L8",
+		"provider": "U.S. Geological Survey",
+		"tags": "Wildfire, Burned Area, Burn Probability, Burned Classification, Landsat"
 	}
 ]

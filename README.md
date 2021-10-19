@@ -115,6 +115,7 @@ Community Datasets added by users and made available for use at large
 9. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)
+   * [Landsat Burned Area](https://samapriya.github.io/awesome-gee-community-datasets/projects/lba)
    * [Global large flood events (1985-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/flood/)
    * [Global Landslide Catalog (1970-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/landslide/)
    * [Geocoded Disasters (GDIS) Dataset (1960 – 2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gdis/)
