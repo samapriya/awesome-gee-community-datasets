@@ -5042,5 +5042,13 @@
 		"id": "users/keikonomura/fire/LBA_CU_2019_20200415_C01_V01_BP_L8",
 		"provider": "U.S. Geological Survey",
 		"tags": "Wildfire, Burned Area, Burn Probability, Burned Classification, Landsat"
+	},
+	{
+		"title": "Tensor Flow Hydra Flood Models",
+		"sample_code": "https://code.earthengine.google.com/09c4f203ccab064d0acdfa55dfdad9f7",
+		"type": "image",
+		"id": "users/tjm0042/Hydrafloods_Outputs/TensorFlow_Surface_Water_Model_Mosaic",
+		"provider": "Tim Mayer, Kel Markert, Biplov Bhandari, Ate Poortinga, NASA SERVIR",
+		"tags": "Surface Water Mapping, Floods, Deep Learning TensorFlow, SERVIR"
 	}
 ]

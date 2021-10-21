@@ -78,6 +78,7 @@ Community Datasets added by users and made available for use at large
    * [Global georeferenced Database of Dams(GOODD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/goodd)
    * [Argo Float Data(Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
    * [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
+   * [Tensor Flow Hydra Flood Models](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydra_water)
 5. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
