@@ -100,6 +100,7 @@ Community Datasets added by users and made available for use at large
    * [Harmonised global datasets of wind and solar farm locations and power](https://samapriya.github.io/awesome-gee-community-datasets/projects/energy_farms)
    * [Global Database of Cement Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/projects/gcd)
    * [Global Database of Iron and Steel Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gid)
+   * [Global Photovoltaics Inventory (2016-2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_pv)
 7. EarthEnv Biodiversity ecosystems & climate Layers
    * [Global Consensus Landcover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcl/)
    * [Global Freshwater Variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfv/)

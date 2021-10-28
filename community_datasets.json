@@ -5050,5 +5050,61 @@
 		"id": "users/tjm0042/Hydrafloods_Outputs/TensorFlow_Surface_Water_Model_Mosaic",
 		"provider": "Tim Mayer, Kel Markert, Biplov Bhandari, Ate Poortinga, NASA SERVIR",
 		"tags": "Surface Water Mapping, Floods, Deep Learning TensorFlow, SERVIR"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): Predicted set",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/predicted_set",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): CV polygons",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/cv_polygons",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): CV tiles",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/cv_tiles",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): Test polygons",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/test_polygons",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): Test tiles",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/test_tiles",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): Trn tiles",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/trn_tiles",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
+	},
+	{
+		"title": "Global Photovoltaics Inventory (2016-2018): Trn polygons",
+		"sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_photovoltaic/trn_polygons",
+		"provider": "Kruitwagen et al",
+		"tags": "photovoltaic solar remote sensing geospatial data computer vision"
 	}
 ]
