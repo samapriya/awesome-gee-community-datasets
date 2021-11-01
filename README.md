@@ -66,6 +66,7 @@ Community Datasets added by users and made available for use at large
    * [Global Impervious Surface Area (1972-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisa)
    * [Oil Palm Plantation Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
    * [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
+   * [ESA WorldCover 10 m 2020 V100 InputQuality](https://samapriya.github.io/awesome-gee-community-datasets/projects/esa_iq)
 4. Hydrology
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)

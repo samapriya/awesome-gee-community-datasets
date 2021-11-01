@@ -133,6 +133,7 @@ nav:
     - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
     - Global Impervious Surface Area (1972-2019): projects/gisa.md
     - Oil Palm Plantation Layers: projects/oil-palm.md
+    - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md

@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-11-01
+- [Global Solar Atlas Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gsa)
+- [Global Photovoltaics Inventory (2016-2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_pv)
+- [ESA WorldCover 10 m 2020 V100 InputQuality](https://samapriya.github.io/awesome-gee-community-datasets/projects/esa_iq)
+
 #### Updates 2021-10-25
 - [Tensor Flow Hydra Flood Models](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydra_water/)
 - Dynamic Reprojection & updated projection date and time for [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)

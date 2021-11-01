@@ -5178,5 +5178,13 @@
 		"id": "projects/sat-io/open-datasets/global_solar_atlas/temp_2m_agl",
 		"provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
 		"tags": "Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential"
+	},
+	{
+		"title": "ESA WorldCover 10 m 2020 V100 InputQuality",
+		"sample_code": "https://code.earthengine.google.com/3f28ba413eb5f85cbc414f827c206a84",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality",
+		"provider": "Zanaga et al, ESA WorldCover consortium",
+		"tags": "land, cover, land use, land cover, lulc, 10m, global, world, sentinel-1, sentinel 2, ESA"
 	}
 ]
