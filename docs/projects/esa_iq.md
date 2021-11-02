@@ -37,7 +37,7 @@ https://doi.org/10.5281/zenodo.5571936
 ```js
 var esa_iq = ee.ImageCollection("projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality");
 ```
-Sample Code: https://code.earthengine.google.com/3f28ba413eb5f85cbc414f827c206a84
+Sample Code: https://code.earthengine.google.com/47f7d56aa50aad4c991f677cefdf5f11
 
 Data access page: [ESA_WorldCover_v100](https://esa-worldcover.org/en/data-access)
 

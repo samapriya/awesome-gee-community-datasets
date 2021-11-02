@@ -5181,7 +5181,7 @@
 	},
 	{
 		"title": "ESA WorldCover 10 m 2020 V100 InputQuality",
-		"sample_code": "https://code.earthengine.google.com/3f28ba413eb5f85cbc414f827c206a84",
+		"sample_code": "https://code.earthengine.google.com/47f7d56aa50aad4c991f677cefdf5f11",
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality",
 		"provider": "Zanaga et al, ESA WorldCover consortium",
