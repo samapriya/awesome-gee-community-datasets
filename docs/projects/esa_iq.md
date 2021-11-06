@@ -29,7 +29,7 @@ Linlin, Tsendbazar, N.E., Ramoino, F., Arino, O., 2021. ESA WorldCover 10 m 2020
 https://doi.org/10.5281/zenodo.5571936
 ```
 
-![esa_iq](https://user-images.githubusercontent.com/6677629/139628031-9ce7c97a-c472-424f-8a41-3a70a177d2c5.gif)
+![iq_layer_esa_complete](https://user-images.githubusercontent.com/6677629/140617033-0eba7cfa-9b5f-4518-b765-0e03139bf8b7.gif)
 
 
 #### Earth Engine Snippet
