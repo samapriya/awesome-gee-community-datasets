@@ -5186,5 +5186,77 @@
 		"id": "projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality",
 		"provider": "Zanaga et al, ESA WorldCover consortium",
 		"tags": "land, cover, land use, land cover, lulc, 10m, global, world, sentinel-1, sentinel 2, ESA"
+	},
+	{
+		"title": "Normalized Sentinel-1 Global Backscatter Model Land Surface: VV",
+		"sample_code": "https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/S1GBM/normalized_s1_backscatter_VV",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Normalized Sentinel-1 Global Backscatter Model Land Surface: VH",
+		"sample_code": "https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/S1GBM/normalized_s1_backscatter_VH",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: AF Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AF_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: AN Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AN_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: AS Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AS_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: EU Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_EU_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: NA Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_NA_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: OC Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_OC_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Equi7Grid: SA Tile T1",
+		"sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_SA_GEOG_TILE_T1",
+		"provider": "Bernhard et al, European Space Agency",
+		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
 	}
 ]

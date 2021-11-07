@@ -134,6 +134,7 @@ nav:
     - Global Impervious Surface Area (1972-2019): projects/gisa.md
     - Oil Palm Plantation Layers: projects/oil-palm.md
     - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
+    - Normalized Sentinel-1 Global Backscatter Model Land Surface: projects/s1gbm.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
