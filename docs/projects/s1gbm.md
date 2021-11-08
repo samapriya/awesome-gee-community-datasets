@@ -19,7 +19,7 @@ The VV and VH mosaics are sampled at 10 m pixel spacing, georeferenced to the Eq
 The tiles' file-format is a LZW-compressed GeoTIFF holding 16-bit integer values, with tagged metadata on encoding and georeference. Compatibility with common geographic information systems as QGIS or ArcGIS, and geodata libraries as GDAL is given.
 
 #### GEE Pre Processing
-The main file rather than the preview files are ingested and file name is used to create the complete metadata structure for each of these tiled images. While all attempts were made for completeness of tiles, the extremely large volume of each zipfile caused multiple failed attempts and broken link issues. However attempts were made to retry for failures at both download and ingest stages into GEE. At the time of posting this dataset, VV for Asia at a single zipped file of 400+ GB has faced multiple failures and has not been ingested.
+The main file rather than the preview files are ingested and file name is used to create the complete metadata structure for each of these tiled images. While all attempts were made for completeness of tiles, the extremely large volume of each zipfile caused multiple failed attempts and broken link issues. However attempts were made to retry for failures at both download and ingest stages into GEE. 
 
 A filename of one tile of a mosaic may be for example:
 
