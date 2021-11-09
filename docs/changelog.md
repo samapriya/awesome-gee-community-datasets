@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-11-09
+- [Normalized Sentinel-1 Global Backscatter Model Land Surface](https://samapriya.github.io/awesome-gee-community-datasets/projects/s1gbm)
+- [Global urban extents from 1870 to 2100](https://samapriya.github.io/awesome-gee-community-datasets/projects/gue)
+- [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
+
 #### Updates 2021-11-01
 - [Global Solar Atlas Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gsa)
 - [Global Photovoltaics Inventory (2016-2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_pv)

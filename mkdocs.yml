@@ -132,6 +132,7 @@ nav:
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
     - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
     - Global Impervious Surface Area (1972-2019): projects/gisa.md
+    - Global urban extents from 1870 to 2100: projects/gue.md
     - Oil Palm Plantation Layers: projects/oil-palm.md
     - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
     - Normalized Sentinel-1 Global Backscatter Model Land Surface: projects/s1gbm.md
@@ -184,6 +185,7 @@ nav:
     - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
     - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
     - United States Drought Monitor Layers: projects/usdm.md
+    - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
   - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md

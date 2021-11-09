@@ -5258,5 +5258,125 @@
 		"id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_SA_GEOG_TILE_T1",
 		"provider": "Bernhard et al, European Space Agency",
 		"tags": "Mosaic, Sentinel-1, Backscatter, Normalized, VV, VH, polarization, S1GBM, European Space Agency, ESA"
+	},
+	{
+		"title": "Global urban extents from 1870 to 2100: hindcast_extent",
+		"sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global-urban-extents/hindcast_urban_extent",
+		"provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
+		"tags": "Cellular Automata, Urban sprawl, temporal trend, Nighttime lights, hindcasts, Forecast"
+	},
+	{
+		"title": "Global urban extents from 1870 to 2100: observed_extent",
+		"sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global-urban-extents/observed_urban_extentt",
+		"provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
+		"tags": "Cellular Automata, Urban sprawl, temporal trend, Nighttime lights, hindcasts, Forecast"
+	},
+	{
+		"title": "Global urban extents from 1870 to 2100: hindcast_extent",
+		"sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global-urban-extents/project_urban_scenarios",
+		"provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
+		"tags": "Cellular Automata, Urban sprawl, temporal trend, Nighttime lights, hindcasts, Forecast"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: AT",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/AT",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: ESI",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/ESI",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: MRT",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/MRT",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: UTCI",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/UTCI",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: UTCI2",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/UTCI2",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: UTCI3",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/UTCI3",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: HI",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/HI",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: Humidex",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/Humidex",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: WBGT",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/WBGT",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: WBT",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/WBT",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: WCT",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/WCT",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "High-spatial-resolution Thermal-stress Indices: NET",
+		"sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/HITISEA/NET",
+		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
+		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
 	}
 ]

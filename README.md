@@ -64,9 +64,11 @@ Community Datasets added by users and made available for use at large
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
    * [ESRI 2020 Global Land Use Land Cover from Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/esrilc2020)
    * [Global Impervious Surface Area (1972-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisa)
+   * [Global urban extents from 1870 to 2100](https://samapriya.github.io/awesome-gee-community-datasets/projects/gue)
    * [Oil Palm Plantation Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
    * [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
    * [ESA WorldCover 10 m 2020 V100 InputQuality](https://samapriya.github.io/awesome-gee-community-datasets/projects/esa_iq)
+   * [Normalized Sentinel-1 Global Backscatter Model Land Surface](https://samapriya.github.io/awesome-gee-community-datasets/projects/s1gbm)
 4. Hydrology
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
@@ -116,6 +118,7 @@ Community Datasets added by users and made available for use at large
    * [Current and projected climate data for North America (CMIP6 scenarios)](https://samapriya.github.io/awesome-gee-community-datasets/projects/aogcm_cmip6/)
    * [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+   * [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
 9. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)
