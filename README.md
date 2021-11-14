@@ -55,6 +55,7 @@ Community Datasets added by users and made available for use at large
    * [Soil Organic Carbon Stocks & Trends South Africa](https://samapriya.github.io/awesome-gee-community-datasets/projects/soc)
    * [Soil nematode abundance & functional group composition](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_nematode)
    * [Global maps of habitat types](https://samapriya.github.io/awesome-gee-community-datasets/projects/habitat)
+   * [Soil carbon storage in terrestrial ecosystems of Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/scs)
 3. Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
@@ -69,6 +70,7 @@ Community Datasets added by users and made available for use at large
    * [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
    * [ESA WorldCover 10 m 2020 V100 InputQuality](https://samapriya.github.io/awesome-gee-community-datasets/projects/esa_iq)
    * [Normalized Sentinel-1 Global Backscatter Model Land Surface](https://samapriya.github.io/awesome-gee-community-datasets/projects/s1gbm)
+   * [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_lc)
 4. Hydrology
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)

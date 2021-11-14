@@ -5378,5 +5378,37 @@
 		"id": "projects/sat-io/open-datasets/HITISEA/NET",
 		"provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
 		"tags": "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+	},
+	{
+		"title": "Soil carbon storage in terrestrial ecosystems of Canada: Canopy Height",
+		"sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/carbon_stocks_ca/ch",
+		"provider": "Sothe et al 2021",
+		"tags": "soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling"
+	},
+	{
+		"title": "Soil carbon storage in terrestrial ecosystems of Canada: Forest Carbon Stock",
+		"sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/carbon_stocks_ca/fc",
+		"provider": "Sothe et al 2021",
+		"tags": "soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling"
+	},
+	{
+		"title": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Stock",
+		"sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/carbon_stocks_ca/sc",
+		"provider": "Sothe et al 2021",
+		"tags": "soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling"
+	},
+	{
+		"title": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Concentration",
+		"sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/carbon_stocks_ca/scc",
+		"provider": "Sothe et al 2021",
+		"tags": "soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling"
 	}
 ]

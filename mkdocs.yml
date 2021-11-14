@@ -102,7 +102,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Introduction: index.md
-  - Catalog Stats: stats.md 
+  - Catalog Stats: stats.md
   - Population & Socioeconomic:
     - High Resolution Settlement Layers: projects/hrsl.md
     - World Settlement Footprint (2015): projects/wsf2015.md
@@ -123,6 +123,7 @@ nav:
     - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
     - Soil nematode abundance & functional group composition: projects/soil_nematode.md
     - Global maps of habitat types: projects/habitat.md
+    - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
   - Land Use and Land Cover:
     - Global Mangrove Project: projects/mangrove.md
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
@@ -137,6 +138,7 @@ nav:
     - Oil Palm Plantation Layers: projects/oil-palm.md
     - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
     - Normalized Sentinel-1 Global Backscatter Model Land Surface: projects/s1gbm.md
+    - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
