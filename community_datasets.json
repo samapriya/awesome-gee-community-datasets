@@ -5413,7 +5413,7 @@
 	},
 	{
 		"title": "High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)",
-		"sample_code": "https://code.earthengine.google.com/234358f143618b85178a9e7461afbd6b",
+		"sample_code": "https://code.earthengine.google.com/54c9f53ea9c44a6f4a3ecbbcdcf57e73",
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2",
 		"provider": "Hermosilla et al. 2022",
