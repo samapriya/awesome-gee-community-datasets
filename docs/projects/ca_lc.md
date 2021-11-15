@@ -8,6 +8,15 @@ The data represents annual forest land cover of Canada's forested ecosystems for
 
 
 #### Citation
+
+Paper citation
+
+```
+Hermosilla, T., Wulder, M.A., White, J.C., Coops, N.C., 2022. Land cover classification in an era of big and open data: Optimizing localized
+implementation and training data selection to improve mapping outcomes. Remote Sensing of Environment. No. 112780.
+[Hermosilla et al. 2022](https://www.sciencedirect.com/science/article/pii/S0034425721005009)
+```
+
 When using this data, please cite as:
 
 ```
@@ -18,21 +27,94 @@ DOI: https://doi.org/10.1016/j.rse.2022.112780 [Open Access]
 
 #### Class Schema
 
-|Class Code                                        |Class                    |
-|--------------------------------------------------|-------------------------|
-|0                                                 | no change               |
-|20                                                | water                   |
-|31                                                | snow_ice                |
-|32                                                | rock_rubble             |
-|33                                                | exposed_barren_land     |
-|40                                                | bryoids                 |
-|50                                                | shrubs                  |
-|80                                                | wetland                 |
-|81                                                | wetland-treed           |
-|100                                               | herbs                   |
-|210                                               | coniferous              |
-|220                                               | broadleaf               |
-|230                                               | mixedwood               |
+<center>
+
+<table width="500" border="1">
+	<tr bgcolor="#686868">
+		<td>#686868</td>
+    <td>Class Code: 0</td>
+    <td>Unclassified</td>
+	</tr>
+
+	<tr bgcolor="#3333ff">
+    <td>#3333ff</td>
+    <td>Class Code: 20</td>
+		<td>Water</td>
+	</tr>
+
+  <tr bgcolor="#ccffff">
+    <td>#ccffff</td>
+    <td>Class Code: 31</td>
+		<td>Snow/Ice</td>
+	</tr>
+
+	<tr bgcolor="#cccccc">
+    <td>#cccccc</td>
+    <td>Class Code: 32</td>
+		<td>Rock/Rubble</td>
+	</tr>
+  <tr bgcolor="#996633">
+    <td>#996633</td>
+    <td>Class Code: 33</td>
+		<td>Exposed/Barren Land</td>
+	</tr>
+
+	<tr bgcolor="#ffccff">
+    <td>#ffccff</td>
+    <td>Class Code: 40</td>
+		<td>Bryoids</td>
+	</tr>
+
+  <tr bgcolor="#ffff00">
+    <td>#ffff00</td>
+    <td>Class Code: 50</td>
+		<td>Shrubs</td>
+	</tr>
+
+	<tr bgcolor="#993399">
+    <td>#993399</td>
+    <td>Class Code: 80</td>
+		<td>Wetland</td>
+	</tr>
+
+  <tr bgcolor="#9933cc">
+    <td>#9933cc</td>
+    <td>Class Code: 81</td>
+		<td>Wetland Treed</td>
+	</tr>
+
+  <tr bgcolor="#ccff33">
+    <td>#ccff33</td>
+    <td>Class Code: 100</td>
+		<td>Herbs</td>
+	</tr>
+
+  <tr bgcolor="#006600">
+    <td>#006600</td>
+    <td>Class Code: 210</td>
+		<td>Coniferous</td>
+	</tr>
+
+  <tr bgcolor="#00cc00">
+    <td>#00cc00</td>
+    <td>Class Code: 220</td>
+		<td>Broad Leaf</td>
+	</tr>
+
+  <tr bgcolor="#cc9900">
+    <td>#cc9900</td>
+    <td>Class Code: 230</td>
+		<td>Mixedwood</td>
+	</tr>
+
+
+</table>
+
+</center>
+
+
+![ca_lc_map](https://user-images.githubusercontent.com/6677629/141745218-48410de0-0956-4da9-b90b-05d0c1bd485f.gif)
+
 
 #### Earth Engine Snippet
 
@@ -40,16 +122,16 @@ DOI: https://doi.org/10.1016/j.rse.2022.112780 [Open Access]
 var forest_lc = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2");
 ```
 
-Sample code: https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb
+Sample code: https://code.earthengine.google.com/234358f143618b85178a9e7461afbd6b
 
 
 #### License
 This work is licensed under and freely available to the public Open Government Licence - Canada (http://open.canada.ca/en/open-government-licence-canada).
 
-Created by: Sothe et al 2021
+Created by: Hermosilla et al. 2022
 
 Curated in GEE by : Samapriya Roy
 
-keywords: soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling
+keywords: Land cover; Classification; Machine learning; Land cover change; Landsat; Lidar; ICESat-2
 
 Last updated on GEE: 2021-11-14
