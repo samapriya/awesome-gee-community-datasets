@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-11-15
+- [Soil carbon storage in terrestrial ecosystems of Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/scs)
+- [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_lc)
+- Upated [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
+
 #### Updates 2021-11-09
 - [Normalized Sentinel-1 Global Backscatter Model Land Surface](https://samapriya.github.io/awesome-gee-community-datasets/projects/s1gbm)
 - [Global urban extents from 1870 to 2100](https://samapriya.github.io/awesome-gee-community-datasets/projects/gue)
