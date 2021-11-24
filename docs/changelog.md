@@ -3,8 +3,9 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
 #### Updates 2021-11-22
+ - [World Settlement Footprint & Evolution](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf/) now included World Settlement Footprint 2015, 2019 and World Settlement Footprint Evolution 1985-2015
  - Updated [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae) for all 39 years of daily data.
- - Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/) now also includes version as properties and is drawn from Amazon S3 COGs rather than humanitarian data exchange. 
+ - Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/) now also includes version as properties and is drawn from Amazon S3 COGs rather than humanitarian data exchange.
 
 #### Updates 2021-11-15
 - [Soil carbon storage in terrestrial ecosystems of Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/scs)
