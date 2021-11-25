@@ -119,6 +119,7 @@ nav:
     - Soil nematode abundance & functional group composition: projects/soil_nematode.md
     - Global maps of habitat types: projects/habitat.md
     - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
+    - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
   - Soil Properties:
     - Soil Grids 250m v2.0: projects/isric.md
     - Soil Properties 800m: projects/soilprop.md
@@ -141,7 +142,6 @@ nav:
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
     - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
     - Oil Palm Plantation Layers: projects/oil-palm.md
-
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md

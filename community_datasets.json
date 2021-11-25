@@ -5434,5 +5434,29 @@
 		"id": "projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2",
 		"provider": "Hermosilla et al. 2022",
 		"tags": "Land cover; Classification; Machine learning; Land cover change; Landsat; Lidar; ICESat-2"
+	},
+	{
+		"title": "Global Lakes and Reservoirs salinity measurements (1980-2019)",
+		"sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_water_salinity/lakes_reservoirs_database",
+		"provider": "Thorslund et al",
+		"tags": "electrical conductivity, Salinity, surface water, lakes, reservoirs"
+	},
+	{
+		"title": "Global Rivers salinity measurements (1980-2019)",
+		"sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_water_salinity/rivers_database",
+		"provider": "Thorslund et al",
+		"tags": "electrical conductivity, Salinity, surface water, lakes, reservoirs, rivers"
+	},
+	{
+		"title": "Global Groundwater salinity measurements (1980-2019)",
+		"sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_water_salinity/groundwaters_database",
+		"provider": "Thorslund et al",
+		"tags": "electrical conductivity, Salinity, surface water, lakes, reservoirs, rivers"
 	}
 ]
