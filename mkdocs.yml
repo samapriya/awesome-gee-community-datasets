@@ -142,6 +142,7 @@ nav:
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
     - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
     - Oil Palm Plantation Layers: projects/oil-palm.md
+    - Rasterized building footprint dataset for the US: projects/usbuild_raster.md
   - Hydrology:
     - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md

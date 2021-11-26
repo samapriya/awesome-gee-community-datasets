@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-11-29
+- Added [Global Surface water and groundwater salinity measurements (1980-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/salinity)
+- Added [Rasterized building footprint dataset for the US](https://samapriya.github.io/awesome-gee-community-datasets/projects/usbuild_raster)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest) to include Q3 2021-07-01 to 2021-10-01
+
 #### Updates 2021-11-22
  - [World Settlement Footprint & Evolution](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf/) now included World Settlement Footprint 2015, 2019 and World Settlement Footprint Evolution 1985-2015
  - Updated [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae) for all 39 years of daily data.

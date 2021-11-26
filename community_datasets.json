@@ -5458,5 +5458,53 @@
 		"id": "projects/sat-io/open-datasets/global_water_salinity/groundwaters_database",
 		"provider": "Thorslund et al",
 		"tags": "electrical conductivity, Salinity, surface water, lakes, reservoirs, rivers"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Average Area",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_avg_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Max Area",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_max_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Min Area",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_min_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Total Area",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Count",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Rasterized building footprint US: Building Centroid Count",
+		"sample_code": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+		"type": "image",
+		"id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
+		"provider": "Heris et al, NASA, USGS",
+		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
 	}
 ]
