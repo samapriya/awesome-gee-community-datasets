@@ -9,6 +9,11 @@ Spatial resolution: 30 arc-seconds (~1km)
 
 **The authors suggest using pixels with DN values greater than 7.**
 
+You can [read the paper here](https://www.nature.com/articles/s41597-020-0510-y#Sec8)
+
+You can [download the datasets here](https://figshare.com/articles/dataset/Harmonization_of_DMSP_and_VIIRS_nighttime_light_data_from_1992-2018_at_the_global_scale/9828827/5)
+
+
 #### Data Citation
 
 ```
