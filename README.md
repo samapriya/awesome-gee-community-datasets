@@ -100,6 +100,7 @@ Community Datasets added by users and made available for use at large
 8. Global Utilities, Assets and Amenities Layers
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
+   * [Harmonized Global Night Time Lights (1992-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hntl/)
    * [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
    * [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
    * [Global Healthsites Mapping Project](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)

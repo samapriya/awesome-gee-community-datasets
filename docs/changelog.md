@@ -5,6 +5,7 @@
 #### Updates 2021-11-29
 - Added [Global Surface water and groundwater salinity measurements (1980-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/salinity)
 - Added [Rasterized building footprint dataset for the US](https://samapriya.github.io/awesome-gee-community-datasets/projects/usbuild_raster)
+- Added [Harmonized Global Night Time Lights (1992-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hntl/)
 - Updated [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest) to include Q3 2021-07-01 to 2021-10-01
 
 #### Updates 2021-11-22

@@ -168,6 +168,7 @@ nav:
   - Global Utilities, Assets and Amenities Layers:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
+    - Harmonized Global Night Time Lights (1992-2020): projects/hntl.md
     - Global Roads Inventory Project: projects/grip.md
     - Global Mining Areas and Validation Datasets: projects/global_mining.md
     - Global Healthsites Mapping Project: projects/health_sites.md

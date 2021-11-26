@@ -5506,5 +5506,21 @@
 		"id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
 		"provider": "Heris et al, NASA, USGS",
 		"tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+	},
+	{
+		"title": "Harmonized Global Night Time Lights (1992-2020): DMSP",
+		"sample_code": "https://code.earthengine.google.com/420044652df8ec8ab29beb194be6df52",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/Harmonized_NTL/dmsp",
+		"provider": "Xuecao Li et al",
+		"tags": "DMSP/OLS data, VIIRS, nighttime light, calibration, consistent, global"
+	},
+	{
+		"title": "Harmonized Global Night Time Lights (1992-2020): VIIRS",
+		"sample_code": "https://code.earthengine.google.com/420044652df8ec8ab29beb194be6df52",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/Harmonized_NTL/viirs",
+		"provider": "Xuecao Li et al",
+		"tags": "DMSP/OLS data, VIIRS, nighttime light, calibration, consistent, global"
 	}
 ]
