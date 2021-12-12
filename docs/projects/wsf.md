@@ -27,6 +27,12 @@ The dataset is organized in 5138 GeoTIFF files (EPSG4326 projection) each one re
 
 Values range between 1985 and 2015 corresponding to the estimated year of settlement detection, whereas 0 is no data.
 
+#### World Settlement Footprint Evolution: Input Data Consistency Score
+
+This repository contains the Input Data Consistency (IDC) score, which provides a suitable and intuitive measure that accounts for the goodness of the Landsat imagery used for generating the WSF evolution and supports a proper interpretation of the product.
+
+The dataset is organized in 5138 GeoTIFF files (EPSG4326 projection) each one referring to a portion of 2x2 degree size (~222x222km on the ground) with an extra buffer of 0.1 degree to avoid any discontinuity between neighbour tiles. Each tile is identified by the lower-left corner coordinates specified in the file name [e.g., the tile IDC_Score_12_18.tif covers the area between (12E;18N) and (14E;20N)].
+Values range from 6 to 1 with: 6) very good; 5) good; 4) fair; 3) moderate; 2) low; 1) very low. You can [download the files here](https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/)
 
 
 #### Data Citation
@@ -65,7 +71,20 @@ var wsf2019 = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_2019");
 var wsf_evo = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO");
 ```
 
+
 Sample Code: https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268
+
+
+the IDC Score is a measure of goodness of imagery used for evolution layers
+
+![idc_score](https://user-images.githubusercontent.com/6677629/145706624-62d588c6-eb88-4483-8638-243a8a7f697e.png)
+
+
+```js
+var wsf_evo_idc = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO_IDC");
+```
+
+Sample Code: https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6
 
 #### License
 The World Settlement Footprint 2015 is released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
@@ -80,4 +99,4 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8
 
-Last updated : 2021-11-23
+Last updated : 2021-12-12

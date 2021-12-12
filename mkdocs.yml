@@ -126,6 +126,7 @@ nav:
     - iSDAsoil Predicted Soil Properties for Africa 30m: projects/isda.md
     - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
     - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
+    - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
   - Global Land Use and Land Cover:
     - Global Mangrove Project: projects/mangrove.md
     - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md

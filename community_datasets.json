@@ -3199,6 +3199,14 @@
 		"tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"
 	},
 	{
+		"title": "World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)",
+		"sample_code": "https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/WSF/WSF_EVO_IDC",
+		"provider": "Marconcini, et al",
+		"tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8","IDC"
+	},
+	{
 		"title": "Global georeferenced Database of Dams(GOODD): Catchments",
 		"sample_code": "https://code.earthengine.google.com/a168dcd1f992cf60c16e64e03e1bc842",
 		"type": "table",
@@ -5522,5 +5530,13 @@
 		"id": "projects/sat-io/open-datasets/Harmonized_NTL/viirs",
 		"provider": "Xuecao Li et al",
 		"tags": "DMSP/OLS data, VIIRS, nighttime light, calibration, consistent, global"
+	},
+	{
+		"title": "Global Soil Salinity 1986-2016",
+		"sample_code": "https://code.earthengine.google.com/eb155a39ed8a1ec45fe9f85534d5794c",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global_soil_salinity",
+		"provider": "Ivushkin et al",
+		"tags": "salinity, digital soil mapping, electrical conductivity, global map, soilgrids, landsat, thermal, salinisation"
 	}
 ]

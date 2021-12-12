@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-12-12
+- Added [Global Soil Salinity Maps (1986-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_salinity)
+- Added [World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf)
+
 #### Updates 2021-11-29
 - Added [Global Surface water and groundwater salinity measurements (1980-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/salinity)
 - Added [Rasterized building footprint dataset for the US](https://samapriya.github.io/awesome-gee-community-datasets/projects/usbuild_raster)
