@@ -3204,7 +3204,7 @@
 		"type": "image_collection",
 		"id": "projects/sat-io/open-datasets/WSF/WSF_EVO_IDC",
 		"provider": "Marconcini, et al",
-		"tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8","IDC"
+		"tags": "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8, IDC"
 	},
 	{
 		"title": "Global georeferenced Database of Dams(GOODD): Catchments",
