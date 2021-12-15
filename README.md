@@ -62,6 +62,7 @@ Community Datasets added by users and made available for use at large
    * [Global Soil Salinity Maps (1986-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_salinity)
 4. Global Land Use and Land Cover
    * [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
+   * [Global Mangrove Distribution, Aboveground Biomass, and Canopy Height](https://samapriya.github.io/awesome-gee-community-datasets/projects/gmd/)
    * [ESRI 2020 Global Land Use Land Cover from Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/esrilc2020)
    * [ESA WorldCover 10 m 2020 V100 InputQuality](https://samapriya.github.io/awesome-gee-community-datasets/projects/esa_iq)
    * [Global Impervious Surface Area (1972-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisa)

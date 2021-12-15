@@ -5618,5 +5618,37 @@
 		"id": "projects/sat-io/open-datasets/ecosystem_extent",
 		"provider": "Noon et al",
 		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Global Mangrove Distribution: Above Ground Biomass",
+		"sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global_mangrove_distribution/agb",
+		"provider": "Simard et al",
+		"tags": "global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves"
+	},
+	{
+		"title": "Global Mangrove Distribution: Mangrove basal-area weighted height",
+		"sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global_mangrove_distribution/hba95",
+		"provider": "Simard et al",
+		"tags": "global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves"
+	},
+	{
+		"title": "Global Mangrove Distribution: Mangrove canopy maximum height",
+		"sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/global_mangrove_distribution/hmax95",
+		"provider": "Simard et al",
+		"tags": "global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves"
+	},
+	{
+		"title": "Global Mangrove Distribution: In situ mangrove tree measurements Americas",
+		"sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements",
+		"provider": "Simard et al",
+		"tags": "global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves"
 	}
 ]
