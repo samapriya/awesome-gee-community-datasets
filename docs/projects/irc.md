@@ -2,7 +2,7 @@
 
 These datasets provide global maps of carbon density (aboveground, belowground biomass carbon and soil organic carbon stocks) for the year 2010 and 2018 at ~300-m spatial resolution in Mg ha-1 (Coordinate System: WGS 1984, float format). Input maps were collected from published literature, and where necessary, updated to cover the focal time period. These updates were applied to the manageable carbon, vulnerable carbon and irrecoverable carbon maps. Manageable carbon is carbon in terrestrial and coastal ecosystems that could experience an anthropogenic land-use conversion event . Vulnerable carbon is the carbon that would be that would be released in a typical land-use conversion. Irrecoverable carbon is  the carbon that, if lost, would not recover by mid-century.  Datasets are disaggregated for carbon density in biomass or soils. To view these datasets, go to:  https://irrecoverable.resilienceatlas.org/map. You can read the [open sourced paper here](https://www.nature.com/articles/s41893-021-00803-6)
 
-### Preprocessing
+#### Preprocessing
 All datasets tif files were ingested in Google Earth Engine, Ecosystem layers were ingested after removing the no data value to avoid conflict with a -128 no data value. The ecosystem categorical layers were also ingested with a mode sampling as recommended by GEE.
 
 #### Paper Citation
