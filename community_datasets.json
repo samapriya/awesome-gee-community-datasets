@@ -5538,5 +5538,85 @@
 		"id": "projects/sat-io/open-datasets/global_soil_salinity",
 		"provider": "Ivushkin et al",
 		"tags": "salinity, digital soil mapping, electrical conductivity, global map, soilgrids, landsat, thermal, salinisation"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Irrecoverable total",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_total",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Irrecoverable soil",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_soil",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Irrecoverable biomass",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_biomass",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Vulnerable total",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_total",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Vulnerable soil",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_soil",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Vulnerable biomass",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_biomass",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Manageable total",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/manageable_carbon/carbon_total",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Manageable soil",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/manageable_carbon/carbon_soil",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Manageable biomass",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/manageable_carbon/carbon_biomass",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
+	},
+	{
+		"title": "Carbon in Earth’s ecosystems: Ecosystem Extent",
+		"sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/ecosystem_extent",
+		"provider": "Noon et al",
+		"tags": "irrecoverable carbon, vulnerable carbon, manageable carbon, global map, ecosystem"
 	}
 ]
