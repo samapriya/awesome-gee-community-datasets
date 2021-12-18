@@ -5650,5 +5650,45 @@
 		"id": "projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements",
 		"provider": "Simard et al",
 		"tags": "global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves"
+	},
+	{
+		"title": "Global snow cover monthly long-term (2000–2012) P90",
+		"sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_p90",
+		"provider": "Hengl 2021",
+		"tags": "snow cover, global, openlandmap"
+	},
+	{
+		"title": "Global snow cover monthly long-term (2000–2012) SD",
+		"sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_sd",
+		"provider": "Hengl 2021",
+		"tags": "snow cover, global, openlandmap"
+	},
+	{
+		"title": "Global snow cover monthly values P05, P50 and P95 (2000-2020)",
+		"sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_snow_quantile",
+		"provider": "Hengl 2021",
+		"tags": "snow cover, global, openlandmap"
+	},
+	{
+		"title": "Global max geometric temperatures for the mid-month",
+		"sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmax",
+		"provider": "Hengl 2021",
+		"tags": "snow cover, global, openlandmap"
+	},
+	{
+		"title": "Global min geometric temperatures for the mid-month",
+		"sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmin",
+		"provider": "Hengl 2021",
+		"tags": "snow cover, global, openlandmap"
 	}
 ]

@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2021-12-20
+- Added [Global Mangrove Distribution, Aboveground Biomass, and Canopy Height](https://samapriya.github.io/awesome-gee-community-datasets/projects/gmd/)
+- Added [Irrecoverable carbon in Earth’s ecosystems](https://samapriya.github.io/awesome-gee-community-datasets/projects/irc)
+- Added [Global MODIS-based snow cover monthly values (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/snow_cover)
+
 #### Updates 2021-12-12
 - Added [Global Soil Salinity Maps (1986-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_salinity)
 - Added [World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf)

@@ -120,6 +120,7 @@ nav:
     - Global maps of habitat types: projects/habitat.md
     - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
     - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
+    - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
     - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
   - Soil Properties:
     - Soil Grids 250m v2.0: projects/isric.md
