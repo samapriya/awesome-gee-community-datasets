@@ -88,8 +88,8 @@ Community Datasets added by users and made available for use at large
    * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
    * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
    * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
-   * [Global georeferenced Database of Dams(GOODD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/goodd)
-   * [Argo Float Data(Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
+   * [Global georeferenced Database of Dams (GOODD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/goodd)
+   * [Argo Float Data (Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
    * [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
    * [Tensor Flow Hydra Flood Models](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydra_water)
 7. Agriculture, Vegetation and Forestry
