@@ -2,6 +2,9 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-01-02
+- Added [High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_ppt)
+
 #### Updates 2021-12-20
 - Added [Global Mangrove Distribution, Aboveground Biomass, and Canopy Height](https://samapriya.github.io/awesome-gee-community-datasets/projects/gmd/)
 - Added [Irrecoverable carbon in Earth’s ecosystems](https://samapriya.github.io/awesome-gee-community-datasets/projects/irc)
