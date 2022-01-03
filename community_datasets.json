@@ -5716,18 +5716,10 @@
 		"tags": "precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS"
 	},
 	{
-		"title": "Gridded precipitation dataset for Peruvian and Ecuadorian watersheds: Daily data 1981-2001",
-		"sample_code": "https://code.earthengine.google.com/f62690ab93a65964ce753f080309e9eb",
+		"title": "Gridded precipitation dataset for Peruvian and Ecuadorian watersheds: Daily data",
+		"sample_code": "https://code.earthengine.google.com/b47746a9e13a42d10537f1ac4f92475b",
 		"type": "image_collection",
-		"id": "users/csaybar/rainpe/daily",
-		"provider": "Fernandez-Palomino et al 2021, Cesar Aybar",
-		"tags": "precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS"
-	},
-	{
-		"title": "Gridded precipitation dataset for Peruvian and Ecuadorian watersheds: Daily data 2002-2015",
-		"sample_code": "https://code.earthengine.google.com/f62690ab93a65964ce753f080309e9eb",
-		"type": "image_collection",
-		"id": "users/ryali93/rainpe/daily",
+		"id": "projects/sat-io/open-datasets/rainpe/daily",
 		"provider": "Fernandez-Palomino et al 2021, Cesar Aybar",
 		"tags": "precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS"
 	}

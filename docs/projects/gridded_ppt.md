@@ -36,12 +36,10 @@ Sample Code: https://code.earthengine.google.com/3374b08b0eacaf0a4003d9098a4d56b
 #### Earth Engine Snippet: Daily data
 
 ```js
-var rain4pe_daily01 = ee.ImageCollection('users/csaybar/rainpe/daily') // 1981-2001
-var rain4pe_daily02 = ee.ImageCollection('users/ryali93/rainpe/daily') // 2002-2015
-var rain4pe_daily = rain4pe_daily01.merge(rain4pe_daily02)
+var rain4pe_daily = ee.ImageCollection('projects/sat-io/open-datasets/rainpe/daily')
 ```
 
-Sample Code: https://code.earthengine.google.com/f62690ab93a65964ce753f080309e9eb
+Sample Code: https://code.earthengine.google.com/b47746a9e13a42d10537f1ac4f92475b
 
 
 #### Resolution: 0.1° (or roughly 10km x 10km)
@@ -69,6 +67,6 @@ Hydrometeorology. https://doi.org/10.1175/jhm-d-20-0285.1
 
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Curated by: Cesar Aybar
+Curated by: Cesar Aybar & Samapriya Roy
 
 Keywords: precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS.
