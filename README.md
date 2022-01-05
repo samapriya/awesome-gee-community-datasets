@@ -95,6 +95,7 @@ Community Datasets added by users and made available for use at large
    * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
    * [Argo Float Data (Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
    * [Global Storm Surge Reconstruction (GSSR) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/gssr)
+   * [Aqualink ocean surface and subsurface temperature subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/aqualink)
 8. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)

@@ -5762,5 +5762,21 @@
 		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-5_surge_reconstruction",
 		"provider": "Tadesse, M.G., Wahl, T.",
 		"tags": "ERA-Five, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
+	},
+	{
+		"title": "Aqualink ocean surface temperature subset",
+		"sample_code": "https://code.earthengine.google.com/820a54b5b6b02c6367e142aa206bf78c",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/aqualink_top_temp_2020",
+		"provider": "aqualink org",
+		"tags": "aqualink, buoy, temperature, sea surface temperature, sst, wave, oceans, bleaching, coral reefs, extreme-sea-level"
+	},
+	{
+		"title": "Aqualink ocean subsurface temperature subset",
+		"sample_code": "https://code.earthengine.google.com/820a54b5b6b02c6367e142aa206bf78c",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/aqualink_bottom_temp_2020",
+		"provider": "aqualink org",
+		"tags": "aqualink, buoy, temperature, sea surface temperature, sst, wave, oceans, bleaching, coral reefs, extreme-sea-level"
 	}
 ]

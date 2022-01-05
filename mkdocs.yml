@@ -163,6 +163,7 @@ nav:
     - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
     - Argo Float Data(Subset): projects/argo.md
     - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
+    - Aqualink ocean surface and subsurface temperature subset: projects/aqualink.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Vegetation dryness for western USA: projects/veg_dry.md
