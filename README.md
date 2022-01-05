@@ -80,20 +80,22 @@ Community Datasets added by users and made available for use at large
    * [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_lc)
    * [Rasterized building footprint dataset for the US](https://samapriya.github.io/awesome-gee-community-datasets/projects/usbuild_raster)
 6. Hydrology
-   * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
    * [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
    * [HydroLAKES v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydrolakes/)
    * [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
    * [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
    * [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)
-   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
    * [Global georeferenced Database of Dams (GOODD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/goodd)
-   * [Argo Float Data (Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
    * [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
    * [Tensor Flow Hydra Flood Models](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydra_water)
    * [High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_ppt)
-7. Agriculture, Vegetation and Forestry
+7. Oceans and Shorelines
+   * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
+   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
+   * [Argo Float Data (Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
+   * [Global Storm Surge Reconstruction (GSSR) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/gssr)
+8. Agriculture, Vegetation and Forestry
    * [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
    * [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
    * [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
@@ -102,7 +104,7 @@ Community Datasets added by users and made available for use at large
    * [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
    * [Tile Drained Croplands (30m)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tile/)
    * [Global crop production tillage practices](https://samapriya.github.io/awesome-gee-community-datasets/projects/tillage/)
-8. Global Utilities, Assets and Amenities Layers
+9. Global Utilities, Assets and Amenities Layers
    * [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
    * [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
    * [Harmonized Global Night Time Lights (1992-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hntl/)
@@ -116,12 +118,12 @@ Community Datasets added by users and made available for use at large
    * [Global Database of Cement Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/projects/gcd)
    * [Global Database of Iron and Steel Production Assets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gid)
    * [Global Photovoltaics Inventory (2016-2018)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_pv)
-9. EarthEnv Biodiversity ecosystems & climate Layers
+10. EarthEnv Biodiversity ecosystems & climate Layers
    * [Global Consensus Landcover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcl/)
    * [Global Freshwater Variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfv/)
    * [Global Habitat Heterogeneity](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghh/)
    * [Global 1-km Cloud Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcc/)
-10. Weather and Climate Layers
+11. Weather and Climate Layers
    * [Global Reference Evapotranspiration Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/et0/)
    * [Global Aridity Index](https://samapriya.github.io/awesome-gee-community-datasets/projects/ai0/)
    * [Global Wind Atlas Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gwa/)
@@ -131,7 +133,7 @@ Community Datasets added by users and made available for use at large
    * [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
    * [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
-11. Global Events Layers
+12. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)
    * [Landsat Burned Area](https://samapriya.github.io/awesome-gee-community-datasets/projects/lba)

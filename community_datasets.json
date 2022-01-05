@@ -5722,5 +5722,45 @@
 		"id": "projects/sat-io/open-datasets/rainpe/daily",
 		"provider": "Fernandez-Palomino et al 2021, Cesar Aybar",
 		"tags": "precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS"
+	},
+	{
+		"title": "Global Storm Surge Reconstruction (GSSR) database: 20-CR",
+		"sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/20-CR_surge_reconstruction",
+		"provider": "Tadesse, M.G., Wahl, T.",
+		"tags": "20-CR, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
+	},
+	{
+		"title": "Global Storm Surge Reconstruction (GSSR) database: ERA 20C",
+		"sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-20C_surge_reconstruction",
+		"provider": "Tadesse, M.G., Wahl, T.",
+		"tags": "ERA-20C, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
+	},
+	{
+		"title": "Global Storm Surge Reconstruction (GSSR) database: ERA interim",
+		"sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-Interim_surge_reconstruction",
+		"provider": "Tadesse, M.G., Wahl, T.",
+		"tags": "ERA-Interim, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
+	},
+	{
+		"title": "Global Storm Surge Reconstruction (GSSR) database: MERRA-2",
+		"sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/merra-2_surge_reconstruction",
+		"provider": "Tadesse, M.G., Wahl, T.",
+		"tags": "MERAA-2, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
+	},
+	{
+		"title": "Global Storm Surge Reconstruction (GSSR) database: ERA 5",
+		"sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-5_surge_reconstruction",
+		"provider": "Tadesse, M.G., Wahl, T.",
+		"tags": "ERA-Five, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level"
 	}
 ]

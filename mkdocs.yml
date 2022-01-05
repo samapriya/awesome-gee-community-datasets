@@ -148,19 +148,21 @@ nav:
     - Oil Palm Plantation Layers: projects/oil-palm.md
     - Rasterized building footprint dataset for the US: projects/usbuild_raster.md
   - Hydrology:
-    - Global Shoreline Dataset: projects/shoreline.md
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - HydroLAKES v1.0: projects/hydrolakes.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
     - Global coastal rivers and environmental variables: projects/rivermouth.md
     - Global River Deltas and vulnerability: projects/river_deltas.md
-    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
     - Global georeferenced Database of Dams(GOODD): projects/goodd.md
-    - Argo Float Data(Subset): projects/argo.md
     - National Wetland Inventory (Surface Water and Wetlands): projects/nwi.md
     - Tensor Flow Hydra Flood Models: projects/hydra_water.md
     - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
+  - Oceans and Shorelines:
+    - Global Shoreline Dataset: projects/shoreline.md
+    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
+    - Argo Float Data(Subset): projects/argo.md
+    - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
   - Agriculture, Vegetation and Forestry:
     - Landfire Mosaics LF v2.0.0: projects/landfire.md
     - Vegetation dryness for western USA: projects/veg_dry.md
