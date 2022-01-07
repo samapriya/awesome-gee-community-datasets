@@ -7,6 +7,7 @@
 - Added new subsection for Ocean and Shoreline datasets
 - Added [Global Storm Surge Reconstruction (GSSR) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/gssr)
 - Added [Aqualink ocean surface and subsurface temperature subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/aqualink)
+- Updated [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap) to v3
 
 #### Updates 2021-12-20
 - Added [Global Mangrove Distribution, Aboveground Biomass, and Canopy Height](https://samapriya.github.io/awesome-gee-community-datasets/projects/gmd/)

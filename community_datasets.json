@@ -808,17 +808,17 @@
 	},
 	{
 		"title": "Rangeland-Analysis-Platform: Vegetation Cover v2",
-		"sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
+		"sample_code": "https://code.earthengine.google.com/b635021d91b3b913ac05387ae19907fc?noload=true",
 		"type": "image_collection",
-		"id": "projects/rangeland-analysis-platform/vegetation-cover-v2",
+		"id": "projects/rangeland-analysis-platform/vegetation-cover-v3",
 		"provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
 		"tags": "rangelands, vegetation, time-series, machine learning, landsat"
 	},
 	{
 		"title": "Rangeland-Analysis-Platform: NPP partitioned v2",
-		"sample_code": "https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine",
+		"sample_code": "https://code.earthengine.google.com/d1ace5ba4e7a1484d5486f83576ac5a4?noload=true",
 		"type": "image_collection",
-		"id": "projects/rangeland-analysis-platform/npp-partitioned-v2",
+		"id": "projects/rangeland-analysis-platform/npp-partitioned-v3",
 		"provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
 		"tags": "rangelands, vegetation, time-series, machine learning, landsat"
 	},

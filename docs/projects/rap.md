@@ -5,18 +5,22 @@ Rangeland Analysis Platform data products are available as GEE assets and are ma
 
 **Herbaceous Biomass:** Rangeland Analysis Platform (RAP) Herbaceous Biomass, version 1.0 consists of gridded estimates of herbaceous aboveground biomass, partitioned by annual forbs and grasses and perennial forbs and grasses. The estimates are produced at 30m spatial resolution from 1986-present. Estimates are provided annually and at 16-day intervals. Values are reported in pounds per acre and represent new growth of biomass – estimates do not reflect standing biomass from previous years. Estimates are calculated using a light use efficiency model (to estimate net primary production in terms of carbon) which is then allocated to above ground and below ground pools (based on mean annual temperature) and further converted to biomass using a carbon-to-dry matter ratio.
 
-![Capture](https://user-images.githubusercontent.com/33233973/115937318-eddfb000-a454-11eb-8646-7d220ea19c6b.JPG)
+Dataset was updated based on specifications provided in changelog below. Updated validation statistics provided here: https://rangelands.app/products/rapV3/
+
+![RAP_v3](https://user-images.githubusercontent.com/33233973/148469528-e8e45e3b-bee6-4c00-907e-4f3b3dfb35c1.JPG)
 
 #### Earth Engine Asset Snippets
 
 ```js
 // Vegetation Cover
-var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v2")
+var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v3")
 
 // Net Primary Production (annual)
-var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v2")
+var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v3")
 
 ```
+
+Code Snippets: https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine
 
 #### Citation
 
@@ -53,4 +57,15 @@ Brady Allred and Matthew Jones, University of Montana, Data producers; Eric Jens
 
 Keywords: rangelands, vegetation, time-series, machine learning, landsat
 
-Last updated: 2021-09-12
+Last updated: 2022-01-06
+
+#### Changelog
+
+RAP v3 was released on 2022-01-01
+
+Primary changes include:
+
+* Use of Landsat Collection 2
+* Addition of the National Park Service Northern Colorado Plateau Network (NCPN) monitoring data for cover training
+* Identify agriculture, development, and water
+* Addition of the eastern states
