@@ -5778,5 +5778,13 @@
 		"id": "projects/sat-io/open-datasets/open-ocean/aqualink_bottom_temp_2020",
 		"provider": "aqualink org",
 		"tags": "aqualink, buoy, temperature, sea surface temperature, sst, wave, oceans, bleaching, coral reefs, extreme-sea-level"
+	},
+	{
+		"title": "Plastic Inputs from Rivers into Oceans",
+		"sample_code": "https://code.earthengine.google.com/b1a97a8988c176ff7fa4df5ee6509c5d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/open-ocean/river_plastic_emissions",
+		"provider": "Ocean Cleanup Foundation",
+		"tags": "Pollution, Society, Coral Reefs, SDG 14, Life below Water, Cities, Reefs Water, Oceans Waste, hydrology, waste management, marine plastic"
 	}
 ]

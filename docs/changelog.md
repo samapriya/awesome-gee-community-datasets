@@ -2,6 +2,9 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-01-10
+- Added [Plastic Inputs from Rivers into Oceans](https://samapriya.github.io/awesome-gee-community-datasets/projects/plastic]
+
 #### Updates 2022-01-02
 - Added [High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_ppt)
 - Added new subsection for Ocean and Shoreline datasets
