@@ -19,6 +19,8 @@ In total the dataset includes information for 40,760 watersheds worldwide. For t
 lebreton, laurent; Reisser, Julia (2018): Supplementary data for 'River plastic emissions to the world's oceans'. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4725541
 ```
 
+![plastic_rivers](https://user-images.githubusercontent.com/6677629/148834056-18f0dbea-52cf-4bc8-af54-e078a8f80b21.gif)
+
 #### Earth Engine Snippet
 
 ```js
