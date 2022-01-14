@@ -1,8 +1,8 @@
-# Land Change Monitoring, Assessment, and Projection (LCMAP) v1.1
+# Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2
 
-Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts.
+Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. LCMAP Collection 1.2 products were released in November 2021, including LCMAP products for 1985-2020.
 
-LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-11-science-product-guide)
+LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-12-science-product-guide)
 
 <center>
 
@@ -74,8 +74,13 @@ There are no restrictions on the use of the LCMAP Reference Data Products. It is
 LCMAP Reference Data products courtesy of the U.S. Geological Survey Earth Resources Observation and Science Center.
 
 ```
-Pengra, B. W., Stehman, S. V., Horton, J. A., Dockter, D. J., Schroeder, T. A., Yang, Z., Hernandez, A. J., Healey, S. P., Cohen, W. B., Finco, M. V., Gay, C., Houseman, I. W. (2020). LCMAP Reference Data
-Product 1984-2018 land cover, land use and change process attributes: U.S. Geological Survey data release, https://doi.org/10.5066/P9ZWOXJ7
+Brown, J.F., Tollerud, H.J., Barber, C.P., Zhou, Q., Dwyer, J.L., Vogelmann, J.E., Loveland, T.R., Woodcock, C.E., Stehman, S.V., Zhu, Z.,
+Pengra, B.W., Smith, K., Horton, J.A., Xian, G., Auch, R.F., Sohl, T.L., Sayler, K.L., Gallant, A.L., Zelenak, D., Reker, R.R., and Rover, J.,
+2020 Lessons learned implementing an operational continuous United States national land change monitoring capability—The Land Change Monitoring,
+Assessment, and Projection (LCMAP) approach: Remote Sensing of Environment, v. 238, article 111356, at https://doi.org/10.1016/j.rse.2019.111356.
+
+Zhu, Z., and Woodcock, C.E., 2014, Continuous change detection and classification of land cover using all available Landsat data: Remote Sensing
+of Environment, v. 144, p. 152–171, at https://doi.org/10.1016/j.rse.2014.01.011.
 ```
 
 ![lcmap](https://user-images.githubusercontent.com/6677629/132149114-1fc74475-6991-4336-b2e6-1f7c3df4e5fc.gif)
@@ -125,4 +130,4 @@ Curated by: Samapriya Roy
 
 Keywords: Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
 
-Last updated: 2021-09-05
+Last updated: 2022-01-14

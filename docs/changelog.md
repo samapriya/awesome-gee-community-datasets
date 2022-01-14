@@ -4,6 +4,7 @@
 
 #### Updates 2022-01-10
 - Added [Plastic Inputs from Rivers into Oceans](https://samapriya.github.io/awesome-gee-community-datasets/projects/plastic]
+- Updated [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
 
 #### Updates 2022-01-02
 - Added [High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_ppt)

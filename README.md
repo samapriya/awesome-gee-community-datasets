@@ -71,7 +71,7 @@ Community Datasets added by users and made available for use at large
    * [World Settlement Footprint & Evolution](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf/)
 5. Regional Land Use and Land Cover
    * [Mapbiomas Annual land cover and use maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/mapbiomas/)
-   * [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.1](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+   * [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Mississippi River Basin Floodplain Land Use Change (1941-2000)](https://samapriya.github.io/awesome-gee-community-datasets/projects/floodplain_lc.md)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
