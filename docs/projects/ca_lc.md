@@ -122,7 +122,7 @@ DOI: https://doi.org/10.1016/j.rse.2022.112780 [Open Access]
 var forest_lc = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2");
 ```
 
-Sample code: https://code.earthengine.google.com/54c9f53ea9c44a6f4a3ecbbcdcf57e73
+Sample code: https://code.earthengine.google.com/77c8d6c058c492fb71e0c2d439345952
 
 
 #### License
