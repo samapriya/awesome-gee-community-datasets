@@ -2,7 +2,7 @@
 
 Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. LCMAP Collection 1.2 products were released in November 2021, including LCMAP products for 1985-2020.
 
-LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-12-science-product-guide)
+LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-12-science-product-guide). Collection 1.0 for Hawaii was made available Jan 19 and [more information can be found here](https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products)
 
 <center>
 
@@ -130,4 +130,4 @@ Curated by: Samapriya Roy
 
 Keywords: Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
 
-Last updated: 2022-01-14
+Last updated: 2022-01-20

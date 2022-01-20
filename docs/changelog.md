@@ -2,6 +2,9 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-01-20
+- LCMAP Hawaii collection 1.0 now part of overall [LCMAP collection](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+
 #### Updates 2022-01-10
 - Added [Plastic Inputs from Rivers into Oceans](https://samapriya.github.io/awesome-gee-community-datasets/projects/plastic)
 - Updated [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
