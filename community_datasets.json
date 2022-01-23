@@ -5786,5 +5786,125 @@
 		"id": "projects/sat-io/open-datasets/open-ocean/river_plastic_emissions",
 		"provider": "Ocean Cleanup Foundation",
 		"tags": "Pollution, Society, Coral Reefs, SDG 14, Life below Water, Cities, Reefs Water, Oceans Waste, hydrology, waste management, marine plastic"
+	},
+	{
+		"title": "Global Curve Number (GCN250) Average conditions",
+		"sample_code": "https://code.earthengine.google.com/65fd6cfd746e4a1dc13b1c2b5ed86d40",
+		"type": "image",
+		"id": "users/jaafarhadi/GCN250/GCN250Average",
+		"provider": "Hadi H. Jaafar, Farah A. Ahmad, Naji El Beyrouthy",
+		"tags": "Curve Number, Runoff, Hydrology"
+	},
+	{
+		"title": "Global Curve Number (GCN250) Dry conditions",
+		"sample_code": "https://code.earthengine.google.com/65fd6cfd746e4a1dc13b1c2b5ed86d40",
+		"type": "image",
+		"id": "users/jaafarhadi/GCN250/GCN250Dry",
+		"provider": "Hadi H. Jaafar, Farah A. Ahmad, Naji El Beyrouthy",
+		"tags": "Curve Number, Runoff, Hydrology"
+	},
+	{
+		"title": "Global Curve Number (GCN250) Wet conditions",
+		"sample_code": "https://code.earthengine.google.com/65fd6cfd746e4a1dc13b1c2b5ed86d40",
+		"type": "image",
+		"id": "users/jaafarhadi/GCN250/GCN250Wet",
+		"provider": "Hadi H. Jaafar, Farah A. Ahmad, Naji El Beyrouthy",
+		"tags": "Curve Number, Runoff, Hydrology"
+	},
+	{
+		"title": "Global gridded sea surface temperature (SSTG)",
+		"sample_code": "https://code.earthengine.google.com/8a984f0e27a35fae4418aef1b9ceb4df",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/sstg",
+		"provider": "Mengmeng cao, Kebiao Mao, Yibo Yan, Jiancheng Shi, Han Wang, Tongren Xu, Shu Fang, & Zijin Yuan",
+		"tags": "Sea Surface Temperature, SST, Gridded"
+	},
+	{
+		"title": "Global high-resolution floodplains (GFPLAIN250m)",
+		"sample_code": "https://code.earthengine.google.com/526ae3267c01917d2d429d31a39096cd",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/GFPLAIN250",
+		"provider": "Nardi, F. et al",
+		"tags": "Floodplain, Digital Elevation Model (DEM), Terrain analysis, river networks, landscape features"
+	},
+	{
+		"title": "Global river networks: Africa",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/af_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global river networks: Australia",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/au_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global river networks: Asia",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/as_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global river networks: Europe",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/eu_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global river networks: North America",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/na_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global river networks: South America",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/GRN/sa_river",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global Water resources zones: L1",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/WRZ/WRZ_L1",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global Water resources zones: L2",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/WRZ/WRZ_L2",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global Water resources zones: L3",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/WRZ/WRZ_L3",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Global Water resources zones: L4",
+		"sample_code": "https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d",
+		"type": "table",
+		"id": "projects/sat-io/open-datasets/WRZ/WRZ_L4",
+		"provider": "Yan, D., Wang, K., Qin, T. et al.",
+		"tags": "River networks, Water Resources, Hydrology"
 	}
 ]

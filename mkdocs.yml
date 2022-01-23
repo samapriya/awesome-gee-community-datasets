@@ -155,6 +155,9 @@ nav:
     - Global coastal rivers and environmental variables: projects/rivermouth.md
     - Global River Deltas and vulnerability: projects/river_deltas.md
     - Global georeferenced Database of Dams(GOODD): projects/goodd.md
+    - Global Hydrologic Curve Number(GCN250): projects/gcn250.md
+    - Global high-resolution floodplains (GFPLAIN250m): projects/gfplain250.md
+    - Global river networks & Corresponding Water resources zones: projects/grn_wrz.md
     - National Wetland Inventory (Surface Water and Wetlands): projects/nwi.md
     - Tensor Flow Hydra Flood Models: projects/hydra_water.md
     - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
@@ -162,6 +165,7 @@ nav:
     - Global Shoreline Dataset: projects/shoreline.md
     - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
     - Argo Float Data(Subset): projects/argo.md
+    - Global gridded sea surface temperature (SSTG): projects/sstg.md
     - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
     - Aqualink ocean surface and subsurface temperature subset: projects/aqualink.md
     - Plastic Inputs from Rivers into Oceans: projects/plastic.md

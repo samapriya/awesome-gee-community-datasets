@@ -2,6 +2,14 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-01-24
+- Added [Global Hydrologic Curve Number(GCN250)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcn250)
+- Added [Global high-resolution floodplains (GFPLAIN250m)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfplain250)
+- Added [Global river networks & Corresponding Water resources zones](https://samapriya.github.io/awesome-gee-community-datasets/projects/grn_wrz)
+- Added [Global gridded sea surface temperature (SSTG)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sstg)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-01-20
 - LCMAP Hawaii collection 1.0 now part of overall [LCMAP collection](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
 
