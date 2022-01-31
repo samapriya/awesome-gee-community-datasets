@@ -139,6 +139,7 @@ Community Datasets added by users and made available for use at large
    * [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
    * [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
+   * [Long-term Gap-free High-resolution Air Pollutants (LGHAP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/lghap)
 12. Global Events Layers
    * [Global Fire Atlas (2003-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa/)
    * [Monitoring Trends in Burn Severity (MTBS) 1984-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/mtbs)

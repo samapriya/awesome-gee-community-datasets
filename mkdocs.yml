@@ -207,6 +207,7 @@ nav:
     - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
     - United States Drought Monitor Layers: projects/usdm.md
     - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
+    - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
   - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md

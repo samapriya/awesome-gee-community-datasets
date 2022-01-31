@@ -5906,5 +5906,77 @@
 		"id": "projects/sat-io/open-datasets/WRZ/WRZ_L4",
 		"provider": "Yan, D., Wang, K., Qin, T. et al.",
 		"tags": "River networks, Water Resources, Hydrology"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: AOD Daily",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/AOD_daily",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: AOD Monthly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/AOD_monthly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: AOD Yearly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/AOD_yearly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Daily",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM25_daily",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Monthly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM25_monthly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Yearly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM25_yearly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Daily",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM10_daily",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Monthly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM10_monthly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Yearly Average",
+		"sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/LGHAP/PM10_yearly_avg",
+		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+		"tags": " AOD, PM2.5, PM10, Gap free"
 	}
 ]
