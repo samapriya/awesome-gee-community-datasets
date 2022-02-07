@@ -5978,5 +5978,13 @@
 		"id": "projects/sat-io/open-datasets/LGHAP/PM10_yearly_avg",
 		"provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
 		"tags": " AOD, PM2.5, PM10, Gap free"
+	},
+	{
+		"title": "FABDEM (Forest And Buildings removed Copernicus 30m DEM)",
+		"sample_code": "https://code.earthengine.google.com/3b707220090f78a6db806f1086de9bef",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/FABDEM",
+		"provider": " Hawker, L., Uhe, P., Paulo, L., Sosa, J., Savage, J., Sampson, C., & Neal, J",
+		"tags": "digital elevation model, bare-earth, terrain, remote sensing, machine learning"
 	}
 ]

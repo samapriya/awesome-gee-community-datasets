@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-02-07
+- Added [FABDEM (Forest And Buildings removed Copernicus 30m DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/fabdem)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-01-31
 - Added [Long-term Gap-free High-resolution Air Pollutants (LGHAP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/lghap)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
