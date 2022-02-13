@@ -43,6 +43,7 @@ Community Datasets added by users and made available for use at large
    * [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
    * [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
    * [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
+   * [Gridded Sex-Disaggregated School-Age Population (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wpschool)
 2. Geophysical, Biological & Biogeochemical
    * [Geomorpho90m Geomorphometric Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/geomorpho90/)
    * [Bare Earth’s Surface Spectra 1980-2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/bss/)
@@ -54,6 +55,7 @@ Community Datasets added by users and made available for use at large
    * [Irrecoverable carbon in Earth’s ecosystems](https://samapriya.github.io/awesome-gee-community-datasets/projects/irc)
    * [Global MODIS-based snow cover monthly values (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/snow_cover)
    * [Global Surface water and groundwater salinity measurements (1980-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/salinity)
+   * [Copernicus Digital Elevation Model (GLO-30 DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glo30)
    * [FABDEM (Forest And Buildings removed Copernicus 30m DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/fabdem)
 3. Soil Properties:
    * [Soil Grids 250m v2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric)

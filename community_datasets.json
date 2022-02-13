@@ -5986,5 +5986,61 @@
 		"id": "projects/sat-io/open-datasets/FABDEM",
 		"provider": " Hawker, L., Uhe, P., Paulo, L., Sosa, J., Savage, J., Sampson, C., & Neal, J",
 		"tags": "digital elevation model, bare-earth, terrain, remote sensing, machine learning"
+	},
+	{
+		"title": "Copernicus Digital Elevation Model (GLO-30 DEM)",
+		"sample_code": "https://code.earthengine.google.com/8611724dc2ed93d377dee0ab6064c79e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/GLO-30",
+		"provider": " European Space Agency, COPERNICUS",
+		"tags": "digital elevation model, terrain, remote sensing, esa, copernicus"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Female Primary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_F_PRIMARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Female Secondary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_F_SECONDARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Male Primary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_M_PRIMARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Male Secondary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_M_SECONDARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Female-Male Primary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_F_M_PRIMARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
+	},
+	{
+		"title": "Gridded Sex-Disaggregated School-Age Population: Female-Male Secondary",
+		"sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+		"type": "image_collection",
+		"id": "projects/sat-io/open-datasets/worldpop/africa_F_M_SECONDARY",
+		"provider": "WorldPop (University of Southampton)",
+		"tags": "gridded model, population data, school age, disaggregated, worldpop"
 	}
 ]

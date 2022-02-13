@@ -111,6 +111,7 @@ nav:
     - Relative Wealth Index (RWI): projects/rwi.md
     - Social Connectedness Index (SCI): projects/sci.md
     - Native Land (Indigenous Land Maps): projects/native.md
+    - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
   - Geophysical, Biological & Biogeochemical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
@@ -122,6 +123,7 @@ nav:
     - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
     - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
     - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
+    - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
     - FABDEM (Forest And Buildings removed Copernicus 30m DEM): projects/fabdem.md
   - Soil Properties:
     - Soil Grids 250m v2.0: projects/isric.md
