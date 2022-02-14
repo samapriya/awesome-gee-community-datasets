@@ -1,5 +1,5 @@
 # Catalog Stats
 
-#### Last updated 2022-01-14
+#### Last updated 2022-02-14
 
-![catalog_stats_2022-01-14](https://user-images.githubusercontent.com/6677629/149471228-18c1fa19-c2f1-43c5-8eb6-6078eeaf7842.PNG)
+![catalog_20220214](https://user-images.githubusercontent.com/6677629/153801136-a010a52c-245c-48a9-8160-92a94aae22e2.PNG)
