@@ -25,6 +25,11 @@ GLO-30 Public is available on a free basis for the general public under the term
 
 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.
 
+#### Disclaimer
+"The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use
+of the Copernicus WorldDEM-30"." See Article 6(c) in https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf
+
+
 Created by: European Space Agency, COPERNICUS
 
 Curated in GEE by: Samapriya Roy
