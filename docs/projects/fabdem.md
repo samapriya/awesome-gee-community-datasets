@@ -25,7 +25,7 @@ forests and buildings removed." Environmental Research Letters (2022).
 var fabdem = ee.ImageCollection("projects/sat-io/open-datasets/FABDEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/3b707220090f78a6db806f1086de9bef
+Sample Code: https://code.earthengine.google.com/2e4110a0e6769825650a1b98ec4cf38e
 
 #### License
 
