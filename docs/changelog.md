@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-02-28
+- Updated [Global Mangrove Watch 2010 Baseline](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-02-14
 - Added [Copernicus Digital Elevation Model (GLO-30 DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glo30)
 - Added [Gridded Sex-Disaggregated School-Age Population for Countries and Dependent Territories in Africa in 2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/wpschool)
