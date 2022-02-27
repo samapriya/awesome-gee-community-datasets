@@ -99,6 +99,8 @@ Community Datasets added by users and made available for use at large
 7. Oceans and Shorelines
    * [Global Shoreline Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/shoreline/)
    * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
+   * [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
+   * [NOAA Sea-Level Rise Digital Elevation Models (DEMs)]((https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
    * [Argo Float Data (Subset)](https://samapriya.github.io/awesome-gee-community-datasets/projects/argo)
    * [Global gridded sea surface temperature (SSTG)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sstg)
    * [Global Storm Surge Reconstruction (GSSR) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/gssr)

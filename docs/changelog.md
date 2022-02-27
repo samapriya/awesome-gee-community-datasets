@@ -3,6 +3,8 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
 #### Updates 2022-02-28
+- Added [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
+- Added [NOAA Sea-Level Rise Digital Elevation Models (DEMs)]((https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
 - Updated [Global Mangrove Watch 2010 Baseline](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 

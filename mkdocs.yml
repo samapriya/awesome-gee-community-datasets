@@ -167,6 +167,8 @@ nav:
   - Oceans and Shorelines:
     - Global Shoreline Dataset: projects/shoreline.md
     - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
+    - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
+    - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
     - Argo Float Data(Subset): projects/argo.md
     - Global gridded sea surface temperature (SSTG): projects/sstg.md
     - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
