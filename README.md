@@ -78,6 +78,7 @@ Community Datasets added by users and made available for use at large
    * [West Africa Land Use Land Cover Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/wa_lulc)
    * [Mississippi River Basin Floodplain Land Use Change (1941-2000)](https://samapriya.github.io/awesome-gee-community-datasets/projects/floodplain_lc.md)
    * [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
+   * [Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/dea_lc)
    * [Oil Palm Plantation Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
    * [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
    * [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_lc)

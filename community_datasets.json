@@ -6278,5 +6278,13 @@
     "id": "projects/sat-io/open-datasets/NOAA/CoNED_TBDEM",
     "provider": "USGS, CMGP, NGP, NOAA and NGDC",
     "tags": "Elevation, topography, topobathymetric, bathymetry"
+  },
+  {
+    "title": "Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0",
+    "sample_code": "https://code.earthengine.google.com/b247d52328c81cc578d787d031a2c807",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DEA/landcover_v100",
+    "provider": "Geoscience Australia and Digital Earth Australia",
+    "tags": "Australia, land cover, remote sensing, landsat, satellite"
   }
 ]

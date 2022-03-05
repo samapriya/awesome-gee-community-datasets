@@ -87,4 +87,4 @@ Keywords: Digital soil mapping, Soil, Environmental modeling, High performance c
 
 Last updated dataset: 2019-05-04
 
-Last curated: 2021-05-27
+Last curated: 2022-03-05

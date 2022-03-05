@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-03-07
+- Updated [Polaris 30m Probabilistic Soil Properties US](https://samapriya.github.io/awesome-gee-community-datasets/projects/polaris) to include minimum and maximum soil depths.
+- Added [Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/dea_lc)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-02-28
 - Added [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
 - Added [NOAA Sea-Level Rise Digital Elevation Models (DEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
