@@ -6281,7 +6281,7 @@
   },
   {
     "title": "Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0",
-    "sample_code": "https://code.earthengine.google.com/b247d52328c81cc578d787d031a2c807",
+    "sample_code": "https://code.earthengine.google.com/d87964128fd461d5e64a3e564cfd925b",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/DEA/landcover_v100",
     "provider": "Geoscience Australia and Digital Earth Australia",

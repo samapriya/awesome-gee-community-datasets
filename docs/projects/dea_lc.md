@@ -31,7 +31,7 @@ Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Carole Planque, Suvarna 
 var dea_lcv100 = ee.ImageCollection("projects/sat-io/open-datasets/DEA/landcover_v100")
 ```
 
-Sample Code: https://code.earthengine.google.com/b247d52328c81cc578d787d031a2c807
+Sample Code: https://code.earthengine.google.com/d87964128fd461d5e64a3e564cfd925b
 
 
 #### License
