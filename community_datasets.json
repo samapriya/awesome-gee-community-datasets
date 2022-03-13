@@ -6286,5 +6286,13 @@
     "id": "projects/sat-io/open-datasets/DEA/landcover_v100",
     "provider": "Geoscience Australia and Digital Earth Australia",
     "tags": "Australia, land cover, remote sensing, landsat, satellite"
+  },
+  {
+    "title": "ASTER Global Digital Elevation Model (GDEM) v3",
+    "sample_code": "https://code.earthengine.google.com/7592ab36de453d718aab7291692abb88",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/ASTER/GDEM",
+    "provider": "NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team",
+    "tags": "ASTER, DEM, elevation, remote sensing"
   }
 ]

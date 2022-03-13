@@ -123,8 +123,13 @@ nav:
     - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
     - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
     - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
+  - Elevation and Bathymetry:
     - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
     - FABDEM (Forest And Buildings removed Copernicus 30m DEM): projects/fabdem.md
+    - ASTER Global Digital Elevation Model (GDEM) v3: projects/aster.md
+    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
+    - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
+    - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
   - Soil Properties:
     - Soil Grids 250m v2.0: projects/isric.md
     - Soil Properties 800m: projects/soilprop.md
@@ -167,9 +172,6 @@ nav:
     - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
   - Oceans and Shorelines:
     - Global Shoreline Dataset: projects/shoreline.md
-    - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
-    - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
-    - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
     - Argo Float Data(Subset): projects/argo.md
     - Global gridded sea surface temperature (SSTG): projects/sstg.md
     - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
