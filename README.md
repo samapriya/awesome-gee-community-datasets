@@ -59,6 +59,7 @@ Community Datasets added by users and made available for use at large
   * [Copernicus Digital Elevation Model (GLO-30 DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glo30)
   * [FABDEM (Forest And Buildings removed Copernicus 30m DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/fabdem)
   * [ASTER Global Digital Elevation Model (GDEM) v3](https://samapriya.github.io/awesome-gee-community-datasets/projects/aster)
+  * [ASTER Global Water Bodies Database (ASTWBD) Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/astwbd)
   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
   * [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
   * [NOAA Sea-Level Rise Digital Elevation Models (DEMs)]((https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)

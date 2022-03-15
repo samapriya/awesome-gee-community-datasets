@@ -22,7 +22,7 @@ https://doi.org/10.5067/ASTER/ASTGTM.003
 #### Earth Engine Snippet
 
 ```js
-var fabdem = ee.ImageCollection("projects/sat-io/open-datasets/ASTER/GDEM");
+var fabdem = ee.Image("projects/sat-io/open-datasets/ASTER/GDEM");
 ```
 
 Sample Code: https://code.earthengine.google.com/7592ab36de453d718aab7291692abb88

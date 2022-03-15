@@ -4,6 +4,7 @@
 
 #### Updates 2022-03-14
 - Added [ASTER Global Digital Elevation Model (GDEM) v3](https://samapriya.github.io/awesome-gee-community-datasets/projects/aster)
+- Added [ASTER Global Water Bodies Database (ASTWBD) Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/astwbd)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 - Updates [catalog stats for 2022-03-14](https://samapriya.github.io/awesome-gee-community-datasets/stats/)
 
