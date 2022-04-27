@@ -5,7 +5,9 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream](https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg)](https://jetstream-cloud.org/)
 
-Read the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
+The awesome-gee-community-datasets are community sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that a lot of research datasets are often unavailable for direct use and require preprocessing before use. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are often requested by the community and under a variety of open license.
+
+You can read about the history and more in the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
 
 Copy this badge as you contribute datasets: ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 
@@ -56,13 +58,13 @@ Community Datasets added by users and made available for use at large
    * [Global MODIS-based snow cover monthly values (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/snow_cover)
    * [Global Surface water and groundwater salinity measurements (1980-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/salinity)
 3. Elevation and Bathymetry
-  * [Copernicus Digital Elevation Model (GLO-30 DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glo30)
-  * [FABDEM (Forest And Buildings removed Copernicus 30m DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/fabdem)
-  * [ASTER Global Digital Elevation Model (GDEM) v3](https://samapriya.github.io/awesome-gee-community-datasets/projects/aster)
-  * [ASTER Global Water Bodies Database (ASTWBD) Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/astwbd)
-  * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
-  * [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
-  * [NOAA Sea-Level Rise Digital Elevation Models (DEMs)]((https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
+   * [Copernicus Digital Elevation Model (GLO-30 DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glo30)
+   * [FABDEM (Forest And Buildings removed Copernicus 30m DEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/fabdem)
+   * [ASTER Global Digital Elevation Model (GDEM) v3](https://samapriya.github.io/awesome-gee-community-datasets/projects/aster)
+   * [ASTER Global Water Bodies Database (ASTWBD) Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/astwbd)
+   * [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/)
+   * [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
+   * [NOAA Sea-Level Rise Digital Elevation Models (DEMs)]((https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
 4. Soil Properties:
    * [Soil Grids 250m v2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric)
    * [Soil Properties 800m](https://samapriya.github.io/awesome-gee-community-datasets/projects/soilprop)
@@ -145,6 +147,7 @@ Community Datasets added by users and made available for use at large
    * [Global Solar Atlas Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/gsa)
    * [International Satellite Cloud Climatology Project HXG Cloud Cover](https://samapriya.github.io/awesome-gee-community-datasets/isccp_hxg)
    * [Current and projected climate data for North America (CMIP6 scenarios)](https://samapriya.github.io/awesome-gee-community-datasets/projects/aogcm_cmip6/)
+   * [Terraclimate Individual years for +2C and +4C climate futures](https://samapriya.github.io/awesome-gee-community-datasets/projects/terraclim/)
    * [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
    * [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
    * [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)

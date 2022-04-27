@@ -213,6 +213,7 @@ nav:
     - Global Solar Atlas Datasets: projects/gsa.md
     - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
     - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
+    - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
     - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
     - United States Drought Monitor Layers: projects/usdm.md
     - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md

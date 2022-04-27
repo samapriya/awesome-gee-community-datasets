@@ -6302,5 +6302,165 @@
     "id": "projects/sat-io/open-datasets/ASTER/ASTWBD_ATT",
     "provider": "NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team",
     "tags": "ASTER, DEM, elevation, remote sensing, Water Bodies Database"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : aet",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/aet",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : def",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/def",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : pet",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/pet",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : ppt",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/ppt",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : soil",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/soil",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : srad",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/srad",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : swe",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/swe",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : tmax",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/tmax",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : tmin",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/tmin",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : vap",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/vap",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +2C : vpd",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/vpd",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : aet",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/aet",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : def",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/def",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : pet",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/pet",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : ppt",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/ppt",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : soil",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/soil",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : swe",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/swe",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : tmax",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/tmax",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : tmin",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/tmin",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
+  },
+  {
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : vpd",
+    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/vpd",
+    "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+    "tags": "Climate futures, +2C, +4C, TerraClimate"
   }
 ]
