@@ -42,6 +42,9 @@ Terraclimate variables and units can be found in the table below. As noted from 
 
 </center>
 
+![terraclimate](https://user-images.githubusercontent.com/6677629/165516012-0a573b1e-3cee-44f5-a515-1a02da419c6b.gif)
+
+
 #### Earth Engine Snippet
 
 ```js
