@@ -2,7 +2,8 @@
 
 TerraClimate layers commensurate with global mean temperatures +2C and +4C above preindustrial levels. These data are available for pseudo years 1985-2015. Future climate projections were developed for two different climate futures: (1) when global mean temperatures are 2C warmer than pre-industrial, and (2) when global mean temperatures are 4C above preindustrial. We use a pattern scaling approach that makes use of monthly projections from 23 CMIP5 global climate models as described in Qin et al., 2020 and provide projections for monthly climate by imposing projected changes in means and variance from the modes scalable to the change in global temperature. You can find [more information here](https://www.climatologylab.org/terraclimate.html)
 
-This data is at two links;
+This data is at two links
+
 * [+2C data](http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/data_plus2C/catalog.html)
 * [+4C data](http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/data_plus4C/catalog.html)
 
