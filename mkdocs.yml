@@ -220,6 +220,7 @@ nav:
     - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
   - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
+    - Archival NRT FIRMS Global VIIRS and MODIS vector data: projects/firms_vector.md
     - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
     - Landsat Burned Area: projects/lba.md
     - Global large flood events (1985-2016) : projects/flood.md
