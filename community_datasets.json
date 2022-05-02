@@ -6478,5 +6478,117 @@
     "id": "projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012",
     "provider": "Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA",
     "tags": "Archival fire, MODIS, VIIRS, Daytime, Nigh time, Thermal anomalies, FIRMS, LANCE, NASA, vector"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDArea",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDArea",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDFlowline",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDFlowline",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDLine",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDLine",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDPoint",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDPoint",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDPointEventFC",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDPointEventFC",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : NHDWaterbody",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/NHDWaterbody",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU10",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU10",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU12",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU12",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU14",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU14",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU2",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU2",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU4",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU4",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU6",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU6",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDHU8",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU8",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "National Hydrography Dataset(NHD) : WBDLine",
+    "sample_code": "https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDLine",
+    "provider": "United States Geological Survey (USGS)",
+    "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
   }
 ]

@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-05-02
+- Added [Terraclimate Individual years for +2C and +4C climate futures](https://samapriya.github.io/awesome-gee-community-datasets/projects/terraclim/)
+- Added [Archival NRT FIRMS Global VIIRS and MODIS vector data](https://samapriya.github.io/awesome-gee-community-datasets/projects/firms_vector)
+- Added [National Hydrography Dataset (NHD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nhd)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-03-14
 - Added [ASTER Global Digital Elevation Model (GDEM) v3](https://samapriya.github.io/awesome-gee-community-datasets/projects/aster)
 - Added [ASTER Global Water Bodies Database (ASTWBD) Version 1](https://samapriya.github.io/awesome-gee-community-datasets/projects/astwbd)

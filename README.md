@@ -112,6 +112,7 @@ Community Datasets added by users and made available for use at large
 -   [Global high-resolution floodplains (GFPLAIN250m)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfplain250)
 -   [Global river networks & Corresponding Water resources zones](https://samapriya.github.io/awesome-gee-community-datasets/projects/grn_wrz)
 -   [National Wetland Inventory (Surface Water and Wetlands)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nwi)
+-   [National Hydrography Dataset (NHD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nhd)
 -   [Tensor Flow Hydra Flood Models](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydra_water)
 -   [High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_ppt)
 

@@ -169,6 +169,7 @@ nav:
     - Global high-resolution floodplains (GFPLAIN250m): projects/gfplain250.md
     - Global river networks & Corresponding Water resources zones: projects/grn_wrz.md
     - National Wetland Inventory (Surface Water and Wetlands): projects/nwi.md
+    - National Hydrography Dataset (NHD): projects/nhd.md
     - Tensor Flow Hydra Flood Models: projects/hydra_water.md
     - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
   - Oceans and Shorelines:
