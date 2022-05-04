@@ -80,4 +80,10 @@ Curated in GEE by : Samapriya Roy
 
 Keywords: Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset
 
-Last updated on GEE: 2022-05-01
+Last updated on GEE: 2022-05-04
+
+
+#### Data changelog
+
+* Fixed property field permanent post reprocessing entire dataset and change field permanent_id listed as Permanent_ to permanent for reference.
+* Merged all flowlines and waterbodies to be single objects
