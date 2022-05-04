@@ -130,4 +130,17 @@ Curated by: Samapriya Roy
 
 Keywords: Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
 
-Last updated: 2022-01-20
+Last updated: 2022-05-04
+
+#### Changelog
+
+USGS posted a notification for v1.2, so datasets were reprocessed and ingested
+
+```
+A processing issue was found in LCMAP Conterminous United States (CONUS) Collection 1.2 product mosaics in March 2022. The CONUS Collection 1.2 mosaics have been
+reprocessed as of April 14, 2022, and users who downloaded CONUS Collection 1.2 mosaics before that date are encouraged to redownload the reprocessed data. CONUS
+Collection 1.2 tiled data were unaffected and are available on EarthExplorer. LCMAP Conterminous United States (CONUS) Collection 1.2 products are available on
+EarthExplorer, the LCMAP Web Viewer, and the LCMAP Mosaic Download website as of December 2021. CONUS Collection 1.2 includes LCMAP products for 1985-2020. Previous
+LCMAP collections will remain available on EarthExplorer; however, user are encouraged to use the most recent release. LCMAP Hawaii (HI) Collection 1.0 products are also
+available on EarthExplorer, the LCMAP Web Viewer, and the LCMAP Mosaic Download website as of January 2022. HI Collection 1.0 includes LCMAP products for 2000-2020.
+```
