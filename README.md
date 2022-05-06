@@ -129,6 +129,7 @@ Community Datasets added by users and made available for use at large
 
 -   [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
 -   [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
+-   [ETH Global Sentinel-2 10m Canopy Height (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/canopy)
 -   [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
 -   [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
 -   [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)

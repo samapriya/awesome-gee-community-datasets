@@ -6590,5 +6590,21 @@
     "id": "projects/sat-io/open-datasets/NHD/NHD_MO/WBDLine",
     "provider": "United States Geological Survey (USGS)",
     "tags": "Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset"
+  },
+  {
+    "title": "ETH_GlobalCanopyHeight_2020_10m_v1",
+    "sample_code": "https://code.earthengine.google.com/126c172d63e7ce780596c8d26f06d384",
+    "type": "image",
+    "id": "users/nlang/ETH_GlobalCanopyHeight_2020_10m_v1",
+    "provider": "Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner",
+    "tags": "Sentinel-2, Forest, Canopy Height, Machine Learning, CNN"
+  },
+  {
+    "title": "ETH_GlobalCanopyHeightSD_2020_10m_v1",
+    "sample_code": "https://code.earthengine.google.com/126c172d63e7ce780596c8d26f06d384",
+    "type": "image",
+    "id": "users/nlang/ETH_GlobalCanopyHeightSD_2020_10m_v1",
+    "provider": "Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner",
+    "tags": "Sentinel-2, Forest, Canopy Height, Machine Learning, CNN"
   }
 ]
