@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-05-08
+- Reprocessed and updated [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+- Reprocessed and updated [National Hydrography Dataset (NHD)](https://samapriya.github.io/awesome-gee-community-datasets/projects/nhd)
+- Added [Global Forest Carbon Fluxes (2001-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cflux)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+ 
 #### Updates 2022-05-02
 - Added [Terraclimate Individual years for +2C and +4C climate futures](https://samapriya.github.io/awesome-gee-community-datasets/projects/terraclim/)
 - Added [Archival NRT FIRMS Global VIIRS and MODIS vector data](https://samapriya.github.io/awesome-gee-community-datasets/projects/firms_vector)

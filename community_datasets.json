@@ -6606,5 +6606,29 @@
     "id": "users/nlang/ETH_GlobalCanopyHeightSD_2020_10m_v1",
     "provider": "Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner",
     "tags": "Sentinel-2, Forest, Canopy Height, Machine Learning, CNN"
+  },
+  {
+    "title": "Global Forest Carbon Fluxes: Gross Emissions",
+    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions",
+    "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
+    "tags": "Carbon emissions, forest change, climate, carbon"
+  },
+  {
+    "title": "Global Forest Carbon Fluxes: Gross Removals",
+    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals",
+    "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
+    "tags": "Carbon emissions, forest change, climate, carbon"
+  },
+  {
+    "title": "Global Forest Carbon Fluxes: Net Flux",
+    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux",
+    "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
+    "tags": "Carbon emissions, forest change, climate, carbon"
   }
 ]
