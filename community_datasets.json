@@ -833,7 +833,7 @@
   },
   {
     "title": "GEBCO 2021 Grid",
-    "sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
+    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_grid",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
@@ -841,7 +841,7 @@
   },
   {
     "title": "GEBCO 2021 sub-ice topo/bathy",
-    "sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
+    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
@@ -849,7 +849,7 @@
   },
   {
     "title": "GEBCO 2021 Type Identifier (TID) Grid",
-    "sample_code": "https://code.earthengine.google.com/ce7efb01d2de4848e61cf499da800dfe",
+    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_tid_grid",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
