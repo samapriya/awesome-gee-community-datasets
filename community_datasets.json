@@ -5587,7 +5587,7 @@
     "title": "Global urban extents from 1870 to 2100: observed_extent",
     "sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/global-urban-extents/observed_urban_extentt",
+    "id": "projects/sat-io/open-datasets/global-urban-extents/observed_urban_extent",
     "provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
     "tags": "Cellular Automata, Urban sprawl, temporal trend, Nighttime lights, hindcasts, Forecast"
   },
