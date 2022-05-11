@@ -331,7 +331,7 @@
     "title": "Mapbiomas: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection5/mapbiomas_collection50_integration_v1",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon"
   },
@@ -339,15 +339,95 @@
     "title": "Mapbiomas: Maps of transition areas (change in coverage or use) between selected years",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection5/mapbiomas_collection50_transitions_v1",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_transitions_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
   },
   {
-    "title": "Mapbiomas: Mosaic of Landsat Images for each year of Collection 5",
+    "title": "Mapbiomas: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-workspace/public/collection5/mapbiomas_collection50_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
+  },
+  {
+    "title": "Mapbiomas: Maps of irrigated agriculture",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_irrigated_agriculture_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
+  },
+  {
+    "title": "Mapbiomas: Mosaic of Landsat Images for each year of Collection 6",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/MOSAICOS/workspace-c3",
+    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/mosaics",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of Mined substances Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_mined_substance_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of Pasture quality Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_pasture_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of Annual water coverage Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-water-collection1-annual-water-coverage-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of Annual water frequency Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-water-collection1-water-frequency-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of annual burned coverage Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-annual-burned-coverage-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of monthly burned coverage Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-monthly-burned-coverage-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of fire frequency Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-fire-frequency-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+  },
+  {
+    "title": "Mapbiomas: Maps of Deforestation Regeneration Collection 6",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_deforestation_regeneration_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },

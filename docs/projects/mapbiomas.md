@@ -16,10 +16,10 @@ Shared Under: Creative Commons Attribution-Share Alike 4.0 International License
 
 #### Earth Engine Snippet
 ```js
-//From downloader v 1.1.4
+//From collection 6
 assets: {
-    integration: 'projects/mapbiomas-workspace/public/collection4_1/mapbiomas_collection41_integration_v1',
-    transitions: 'projects/mapbiomas-workspace/public/collection4_1/mapbiomas_collection41_transitions_v1',
+    integration: 'projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1',
+    transitions: 'projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_transitions_v1',
     vectors: [
         'projects/mapbiomas-workspace/AUXILIAR/areas-protegidas',
         'projects/mapbiomas-workspace/AUXILIAR/municipios-2016',
@@ -40,3 +40,10 @@ Curated by: [MapBiomas](https://mapbiomas.org/)
 Keywords: Mapbiomas, Land Use, Land Cover
 
 Last updated: [Refer to webpage](https://mapbiomas.org/)
+
+Last updated on GEE community datasets: 2022-05-10
+
+
+#### Changelog
+
+* Catalog links updated to v6 additional dataset links were added.
