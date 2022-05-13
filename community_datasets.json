@@ -6710,5 +6710,13 @@
     "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux",
     "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
     "tags": "Carbon emissions, forest change, climate, carbon"
+  },
+  {
+    "title": "Iceland DEM v1.0 10m",
+    "sample_code": "https://code.earthengine.google.com/34517ab5c05be78e5f7d9227a4ca7b7e",
+    "type": "image",
+    "id": "projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93",
+    "provider": "National Land Survey of Iceland & PGC",
+    "tags": "Elevation, DEM, ArticDEM, Iceland, Geophysical"
   }
 ]
