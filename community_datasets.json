@@ -6718,5 +6718,61 @@
     "id": "projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93",
     "provider": "National Land Survey of Iceland & PGC",
     "tags": "Elevation, DEM, ArticDEM, Iceland, Geophysical"
+  },
+  {
+    "title": "Gridded GDP PPP 5arcmin v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_1990_2015_5arcmin_v2",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Gridded GDP PPP 30arcsec v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_30arcsec_v3",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "GDP per capita v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_per_capita_PPP_1990_2015_v2",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Gridded HDI v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/HDI_1990_2015_v2",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Administrative area Gridded GDP & HDI",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/admin_areas_GDP_HDI",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Pedigree GDP per capita 1990-2015 v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_GDP_per_capita_PPP_1990_2015_v2",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Pedigree HDI per capita 1990-2015 v2",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2",
+    "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+    "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
   }
 ]

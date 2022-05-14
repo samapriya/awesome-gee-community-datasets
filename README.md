@@ -41,6 +41,7 @@ Community Datasets added by users and made available for use at large
 -   [West Africa Coastal Vulnerability Mapping](https://samapriya.github.io/awesome-gee-community-datasets/projects/wacvm/)
 -   [Relative Wealth Index (RWI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/rwi/)
 -   [Social Connectedness Index (SCI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/sci/)
+-   [Gridded Global GDP and HDI (1990-2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gridded_gdp_hdi)
 -   [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
 -   [Gridded Sex-Disaggregated School-Age Population (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wpschool)
 
