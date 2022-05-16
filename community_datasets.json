@@ -6774,5 +6774,21 @@
     "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2",
     "provider": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
     "tags": "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+  },
+  {
+    "title": "Critical Infrastructure Spatial Index 2021",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CISI/global_CISI",
+    "provider": "Nirandjan, S., Koks, E.E., Ward, P.J. et al",
+    "tags": "Development indicator, global spatial data, gridded data, critical infrastructure, spatial index"
+  },
+  {
+    "title": "Harmonized Global Critical Infrastructure 2021",
+    "sample_code": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/CISI/amount_infrastructure",
+    "provider": "Nirandjan, S., Koks, E.E., Ward, P.J. et al",
+    "tags": "Development indicator, global spatial data, gridded data, critical infrastructure, spatial index"
   }
 ]
