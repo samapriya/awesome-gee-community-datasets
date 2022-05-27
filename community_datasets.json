@@ -6790,5 +6790,13 @@
     "id": "projects/sat-io/open-datasets/CISI/amount_infrastructure",
     "provider": "Nirandjan, S., Koks, E.E., Ward, P.J. et al",
     "tags": "Development indicator, global spatial data, gridded data, critical infrastructure, spatial index"
+  },
+  {
+    "title": "DEM France (Continental) 5m IGN RGE Alti",
+    "sample_code": "https://code.earthengine.google.com/b9054b6d5c4d7de1a4af39ff307e73d7",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/IGN_RGE_Alti_5m",
+    "provider": "National Institute of Geographic and Forest Information (IGN)",
+    "tags": "digital elevation model, terrain, remote sensing, France"
   }
 ]

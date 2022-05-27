@@ -69,6 +69,7 @@ Community Datasets added by users and made available for use at large
 -   [Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tbdem)
 -   [NOAA Sea-Level Rise Digital Elevation Models (DEMs)](https://samapriya.github.io/awesome-gee-community-datasets/projects/slrdem)
 -   [Iceland DEM v1.0 10m](https://samapriya.github.io/awesome-gee-community-datasets/projects/iceland_dem)
+-   [DEM France (Continental) 5m IGN RGE Alti](https://samapriya.github.io/awesome-gee-community-datasets/projects/france5m)
 
 4.  Soil Properties:
 

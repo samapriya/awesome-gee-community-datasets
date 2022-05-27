@@ -134,6 +134,7 @@ nav:
     - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
     - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
     - ÍslandsDEM v1.0 10m: projects/iceland_dem.md
+    - DEM France (Continental) 5m IGN RGE Alti: projects/france5m.md
   - Soil Properties:
     - Soil Grids 250m v2.0: projects/isric.md
     - Soil Properties 800m: projects/soilprop.md
