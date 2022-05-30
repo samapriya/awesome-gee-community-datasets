@@ -27,7 +27,7 @@
     "title": "OSM Water Layer Surface Waters",
     "sample_code": "https://code.earthengine.google.com/cab4e587c9fa6d86e9d848432efe874b",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/shoreline/small_islands",
+    "id": "projects/sat-io/open-datasets/OSM_waterLayer",
     "provider": "Institute of Industrial Sciences, Open Street Map, OSM",
     "tags": "Global water layer, Open Street Map, OSM, Surface Water"
   },
