@@ -5451,7 +5451,7 @@
     "title": "Global Solar Atlas Datasets: GHI",
     "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/global_solar_atlas/ghi",
+    "id": "projects/sat-io/open-datasets/global_solar_atlas/ghi_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
     "tags": "Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential"
   },
@@ -5459,7 +5459,7 @@
     "title": "Global Solar Atlas Datasets: GTI",
     "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/global_solar_atlas/gti",
+    "id": "projects/sat-io/open-datasets/global_solar_atlas/gti_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
     "tags": "Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential"
   },
