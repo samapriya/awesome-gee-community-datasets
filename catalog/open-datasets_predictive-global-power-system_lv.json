@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/predictive-global-power-system/lv",
+    "title": "Predicted low-voltage infrastructure in kilometres per cell",
+    "description": "Predicted low-voltage infrastructure in kilometres per cell",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_predictive-global-power-system_lv.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Predicted low-voltage infrastructure in kilometres per cell in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-03T11:09:03.244351Z",
+                    "2021-04-03T11:09:03.244351Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Global transmission lines, electricity, infrastructure, power"
+    ],
+    "providers": [
+        {
+            "name": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks ",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 250,
+            "min": 0.01,
+            "max": 112.01,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "description": "### Distribution Transmission Line: predicted low-voltage infrastructure in kilometres per cell\n\n\n[![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)](https://github.com/samapriya/awesome-gee-community-datasets)\u00a0 \u00a0 \u00a0\n\n\nRaster of predicted low-voltage infrastructure in kilometres per cell\n\n\nCite using:\u00a0\u00a0\n\n\n```Arderne, Christopher, NIcolas, Claire, Zorn, Conrad, & Koks, Elco E. (2020). Data from: Predictive mapping of the global power system using open data (Version 1.1.1) [Data set]. Nature Scientific Data. Zenodo. http://doi.org/10.5281/zenodo.3628142```\u00a0 \u00a0\n\n\nThis data was created with code in the following three repositories:\n\nhttps://github.com/carderne/gridfinder\n\nhttps://github.com/carderne/predictive-mapping-global-power\n\n\nhttps://github.com/carderne/access-estimator\n\nFull steps to reproduce are contained in this file:\n\nhttps://github.com/carderne/predictive-mapping-global-power/blob/master/README.md\n\nThe data can be visualized at the following location:\n\nhttps://gridfinder.org\n\n\u00a0License: **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA-4.0)**"
+    }
+}

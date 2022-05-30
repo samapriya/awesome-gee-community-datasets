@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km",
+    "title": "MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime",
+    "description": "MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_gap-filled-lst_gf_night_1km.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-12-31T00:00:00Z",
+                    "2020-12-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Land Surface Temperature, LST, MODIS, gapfilled"
+    ],
+    "providers": [
+        {
+            "name": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 797,
+            "min": -630,
+            "max": 332,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

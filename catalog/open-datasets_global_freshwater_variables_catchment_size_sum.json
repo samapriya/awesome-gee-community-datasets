@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/global_freshwater_variables/catchment_size_sum",
+    "title": "Catchment Size Sum- Global Freshwater Variables",
+    "description": "Catchment Size Sum- Global Freshwater Variables",
+    "license": "CC-BY-NC-SA-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_freshwater_variables_catchment_size_sum.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Catchment Size Sum- Global Freshwater Variables in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -145.01252734731847,
+                    -59.99562884972075,
+                    180.01252734617626,
+                    64.3322919657949
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-03-09T00:00:00Z",
+                    "2015-03-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "catchment size sum, EarthEnv, global freshwater"
+    ],
+    "providers": [
+        {
+            "name": "Domisch, S., Amatulli, G., and Jetz, W.",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 928,
+            "min": 1,
+            "max": 9458928,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

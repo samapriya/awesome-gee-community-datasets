@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/keikonomura/fire/LBA_CU_2019_20200415_C01_V01_BP_L8",
+    "title": "Landsat Burned Area",
+    "description": "Landsat Burned Area",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/fire_LBA_CU_2019_20200415_C01_V01_BP_L8.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Landsat Burned Area in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/34a2a4df430c5e7c8a6e5073cd66175c",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -128.60120085790723,
+                    21.804933923004686,
+                    -63.78772788970821,
+                    51.5851362773356
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-29T15:06:09.669786Z",
+                    "2021-09-29T15:06:09.669786Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Wildfire, Burned Area, Burn Probability, Burned Classification, Landsat"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Geological Survey",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 0,
+            "max": 253,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

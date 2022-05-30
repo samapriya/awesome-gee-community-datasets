@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_mean",
+    "title": "Soil Organic Carbon Stocks 30m",
+    "description": "Soil Organic Carbon Stocks 30m",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NINA_SOC30_SA_mean.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Soil Organic Carbon Stocks 30m in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    15.92451002965716,
+                    -34.92371726909486,
+                    33.51103771275848,
+                    -21.95528271309792
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-30T04:04:50.988799Z",
+                    "2021-04-30T04:04:50.988799Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "carbon stocks, land degradation, natural climate solutions, remote sensing, soil mapping, spatial prediction, soil carbon, carbon sequestration"
+    ],
+    "providers": [
+        {
+            "name": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 199.52,
+            "max": 1389.61,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

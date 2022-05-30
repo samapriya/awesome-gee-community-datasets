@@ -1,0 +1,107 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_30arcsec_v3",
+    "title": "Gridded GDP PPP 30arcsec v2",
+    "description": "Gridded GDP PPP 30arcsec v2",
+    "license": "PDDL-1.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GRIDDED_HDI_GDP_GDP_PPP_30arcsec_v3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Gridded GDP PPP 30arcsec v2 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-04-30T22:08:37.612865Z",
+                    "2022-04-30T22:08:37.612865Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+    ],
+    "providers": [
+        {
+            "name": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 928,
+            "min": 0.06,
+            "max": 2152303872,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 928,
+            "min": 0.06,
+            "max": 3099760640,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 928,
+            "min": 0.1,
+            "max": 2552919552,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "3"
+    }
+}

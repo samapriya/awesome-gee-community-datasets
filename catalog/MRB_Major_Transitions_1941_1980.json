@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/giswqs/MRB/Major_Transitions_1941_1980",
+    "title": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1980)",
+    "description": "Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1980)",
+    "license": "CC-BY-SA-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/MRB_Major_Transitions_1941_1980.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1980) in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -114.91916949921072,
+                    27.97896956753614,
+                    -75.78006290283541,
+                    50.400593537862505
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-11-30T23:01:35.922729Z",
+                    "2020-11-30T23:01:35.922729Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
+    ],
+    "providers": [
+        {
+            "name": "Rajib et al 2021",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 250,
+            "min": 34,
+            "max": 62,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

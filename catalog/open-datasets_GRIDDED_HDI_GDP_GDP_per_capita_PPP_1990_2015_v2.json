@@ -1,0 +1,268 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_per_capita_PPP_1990_2015_v2",
+    "title": "GDP per capita v2",
+    "description": "GDP per capita v2",
+    "license": "PDDL-1.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GRIDDED_HDI_GDP_GDP_per_capita_PPP_1990_2015_v2.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for GDP per capita v2 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-04-30T22:09:40.753320Z",
+                    "2022-04-30T22:09:40.753320Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+    ],
+    "providers": [
+        {
+            "name": "Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 9277,
+            "min": 188.48,
+            "max": 183725.47,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 9277,
+            "min": 193.04,
+            "max": 212258.83,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 9277,
+            "min": 177.0,
+            "max": 354765.12,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b4",
+            "gsd": 9277,
+            "min": 185.36,
+            "max": 427366.94,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b5",
+            "gsd": 9277,
+            "min": 189.53,
+            "max": 459271.44,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b6",
+            "gsd": 9277,
+            "min": 187.34,
+            "max": 436184.81,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b7",
+            "gsd": 9277,
+            "min": 230.73,
+            "max": 370809.16,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b8",
+            "gsd": 9277,
+            "min": 256.81,
+            "max": 292445.84,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b9",
+            "gsd": 9277,
+            "min": 240.54,
+            "max": 192460.14,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b10",
+            "gsd": 9277,
+            "min": 254.43,
+            "max": 148257.8,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b11",
+            "gsd": 9277,
+            "min": 278.97,
+            "max": 154620.89,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b12",
+            "gsd": 9277,
+            "min": 301.12,
+            "max": 149251.09,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b13",
+            "gsd": 9277,
+            "min": 337.77,
+            "max": 144750.62,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b14",
+            "gsd": 9277,
+            "min": 351.38,
+            "max": 153300.86,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b15",
+            "gsd": 9277,
+            "min": 364.9,
+            "max": 163951.8,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b16",
+            "gsd": 9277,
+            "min": 389.0,
+            "max": 161750,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b17",
+            "gsd": 9277,
+            "min": 422.36,
+            "max": 160642.73,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b18",
+            "gsd": 9277,
+            "min": 443.35,
+            "max": 139218.75,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b19",
+            "gsd": 9277,
+            "min": 466.56,
+            "max": 147678.42,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b20",
+            "gsd": 9277,
+            "min": 484.59,
+            "max": 118453.29,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b21",
+            "gsd": 9277,
+            "min": 502.67,
+            "max": 127670.61,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b22",
+            "gsd": 9277,
+            "min": 523.48,
+            "max": 134117.44,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b23",
+            "gsd": 9277,
+            "min": 495.65,
+            "max": 132972.31,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b24",
+            "gsd": 9277,
+            "min": 439.18,
+            "max": 137164.38,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b25",
+            "gsd": 9277,
+            "min": 376.44,
+            "max": 134447.77,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b26",
+            "gsd": 9277,
+            "min": 378.14,
+            "max": 135321.69,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "26"
+    }
+}

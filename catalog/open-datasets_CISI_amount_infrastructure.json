@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/CISI/amount_infrastructure",
+    "title": "Harmonized Global Critical Infrastructure 2021",
+    "description": "Harmonized Global Critical Infrastructure 2021",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_CISI_amount_infrastructure.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Harmonized Global Critical Infrastructure 2021 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-05-15T22:07:11.958047Z",
+                    "2022-05-15T22:07:11.958047Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Development indicator, global spatial data, gridded data, critical infrastructure, spatial index"
+    ],
+    "providers": [
+        {
+            "name": "Nirandjan, S., Koks, E.E., Ward, P.J. et al",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 11132,
+            "min": 0.0,
+            "max": 78.75,
+            "gee:estimated_range": false
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

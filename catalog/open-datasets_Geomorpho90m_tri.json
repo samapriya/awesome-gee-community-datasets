@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
+    "title": "Geomorpho90m: Terrain Ruggedness Index",
+    "description": "Geomorpho90m: Terrain Ruggedness Index",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_Geomorpho90m_tri.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Geomorpho90m: Terrain Ruggedness Index in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -60.00189662796161,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-04T23:37:32.064543Z",
+                    "2021-04-04T23:37:32.064543Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, tri, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    ],
+    "providers": [
+        {
+            "name": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 93,
+            "min": 0.01,
+            "max": 42.74,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1",
+        "pixel_resolution": "90"
+    }
+}

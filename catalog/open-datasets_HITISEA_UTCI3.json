@@ -1,0 +1,107 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/HITISEA/UTCI3",
+    "title": "High-spatial-resolution Thermal-stress Indices: UTCI3",
+    "description": "High-spatial-resolution Thermal-stress Indices: UTCI3",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_HITISEA_UTCI3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for High-spatial-resolution Thermal-stress Indices: UTCI3 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    64.81061202486457,
+                    2.8993207452661216,
+                    155.18938798694901,
+                    58.486436971874085
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-02T00:00:00Z",
+                    "2019-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature"
+    ],
+    "providers": [
+        {
+            "name": "Yechao Yan; Yangyang Xu; Shuping Yue",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 11132,
+            "min": -50.35,
+            "max": 26.71,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 11132,
+            "min": -48.96,
+            "max": 28.96,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 11132,
+            "min": -46.32,
+            "max": 37.94,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "3"
+    }
+}

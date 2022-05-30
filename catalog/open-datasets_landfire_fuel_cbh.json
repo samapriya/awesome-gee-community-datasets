@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/landfire/fuel/cbh",
+    "title": "Forest Canopy Base Height (CBH) LF v2.0.0",
+    "description": "Forest Canopy Base Height (CBH) LF v2.0.0",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_cbh.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Forest Canopy Base Height (CBH) LF v2.0.0 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.99241017182325,
+                    22.765552291772075,
+                    -65.23635754136117,
+                    51.69820853816292
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-18T21:22:58.880095Z",
+                    "2021-04-18T21:22:58.880095Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 0,
+            "max": 32767,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

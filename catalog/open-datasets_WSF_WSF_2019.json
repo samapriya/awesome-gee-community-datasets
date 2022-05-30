@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/WSF/WSF_2019",
+    "title": "World Settlement Footprint (2019)",
+    "description": "World Settlement Footprint (2019)",
+    "license": "CC-PDDC",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_WSF_WSF_2019.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for World Settlement Footprint (2019) in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -60.01035199246944,
+                    180.0,
+                    78.01021692855726
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-11-24T02:54:38.357869Z",
+                    "2021-11-24T02:54:38.357869Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"
+    ],
+    "providers": [
+        {
+            "name": "Marconcini, et al",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 10,
+            "min": 255,
+            "max": 255,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

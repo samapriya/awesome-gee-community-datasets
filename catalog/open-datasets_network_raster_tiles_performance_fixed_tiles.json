@@ -1,0 +1,120 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_fixed_tiles",
+    "title": "Global fixed Network Performance Maps Raster Tiles",
+    "description": "Global fixed Network Performance Maps Raster Tiles",
+    "license": "CC-BY-NC-SA-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_network_raster_tiles_performance_fixed_tiles.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Global fixed Network Performance Maps Raster Tiles in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-31T00:00:00Z",
+                    "2021-09-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+    ],
+    "providers": [
+        {
+            "name": "Ookla",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "avg_u_kbps",
+            "gsd": 610,
+            "min": 1,
+            "max": 556913,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "avg_d_kbps",
+            "gsd": 610,
+            "min": 1,
+            "max": 639148,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "avg_lat_ms",
+            "gsd": 610,
+            "min": 0,
+            "max": 9438.28,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "devices",
+            "gsd": 610,
+            "min": 1,
+            "max": 253.75,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "tests",
+            "gsd": 610,
+            "min": 1,
+            "max": 1539,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/LCMAP/SCTIME",
+    "title": "LCMAP v1.2: SCTIME",
+    "description": "LCMAP v1.2: SCTIME",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LCMAP_SCTIME.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for LCMAP v1.2: SCTIME in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -129.29283234093083,
+                    21.804933923004686,
+                    -63.08238364975314,
+                    52.97597035086875
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2020-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
+    ],
+    "providers": [
+        {
+            "name": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 1,
+            "max": 346,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1",
+        "version": "1.2"
+    }
+}

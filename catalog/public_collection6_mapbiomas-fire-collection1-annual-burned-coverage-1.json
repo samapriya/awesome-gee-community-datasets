@@ -1,0 +1,343 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-annual-burned-coverage-1",
+    "title": "Mapbiomas: Maps of annual burned coverage Collection 6",
+    "description": "Mapbiomas: Maps of annual burned coverage Collection 6",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/public_collection6_mapbiomas-fire-collection1-annual-burned-coverage-1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Mapbiomas: Maps of annual burned coverage Collection 6 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -75.49532815369625,
+                    -34.60370035013549,
+                    -32.25264946944471,
+                    7.896235389139227
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-05-14T22:21:46.077439Z",
+                    "2022-05-14T22:21:46.077439Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+    ],
+    "providers": [
+        {
+            "name": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "burned_coverage_1985",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1986",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1987",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1988",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1989",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1990",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1991",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1992",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1993",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1994",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1995",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1996",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1997",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1998",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_1999",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2000",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2001",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2002",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2003",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2004",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2005",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2006",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2007",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2008",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2009",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2010",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2011",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2012",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2013",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2014",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2015",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2016",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2017",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2018",
+            "gsd": 30,
+            "min": 3,
+            "max": 49,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2019",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "burned_coverage_2020",
+            "gsd": 30,
+            "min": 3,
+            "max": 48,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "collection_id": "",
+        "source": "",
+        "territory": "",
+        "theme": "",
+        "version": "",
+        "year": ""
+    }
+}

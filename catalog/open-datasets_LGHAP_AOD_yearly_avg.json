@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/LGHAP/AOD_yearly_avg",
+    "title": "Long-term Gap-free High-resolution Air Pollutants: AOD Yearly Average",
+    "description": "Long-term Gap-free High-resolution Air Pollutants: AOD Yearly Average",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LGHAP_AOD_yearly_avg.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Long-term Gap-free High-resolution Air Pollutants: AOD Yearly Average in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    70.99208424018849,
+                    14.930702571604538,
+                    139.01791027666837,
+                    56.13862099175991
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-31T00:00:00Z",
+                    "2020-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        " AOD, PM2.5, PM10, Gap free"
+    ],
+    "providers": [
+        {
+            "name": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1113,
+            "min": 0.06,
+            "max": 0.96,
+            "gee:estimated_range": false
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

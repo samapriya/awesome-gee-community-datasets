@@ -1,0 +1,645 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-fire-frequency-1",
+    "title": "Mapbiomas: Maps of fire frequency Collection 6",
+    "description": "Mapbiomas: Maps of fire frequency Collection 6",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/public_collection6_mapbiomas-fire-collection1-fire-frequency-1.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Mapbiomas: Maps of fire frequency Collection 6 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -74.54375056278695,
+                    -36.49590933059827,
+                    -30.685800103778433,
+                    6.794498358147986
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-08-16T13:21:43.979331Z",
+                    "2021-08-16T13:21:43.979331Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
+    ],
+    "providers": [
+        {
+            "name": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "fire_frequency_1985_1985",
+            "gsd": 30,
+            "min": 103,
+            "max": 149,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1986",
+            "gsd": 30,
+            "min": 103,
+            "max": 241,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1987",
+            "gsd": 30,
+            "min": 103,
+            "max": 341,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1988",
+            "gsd": 30,
+            "min": 103,
+            "max": 441,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1989",
+            "gsd": 30,
+            "min": 103,
+            "max": 541,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1990",
+            "gsd": 30,
+            "min": 103,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1991",
+            "gsd": 30,
+            "min": 103,
+            "max": 741,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1992",
+            "gsd": 30,
+            "min": 103,
+            "max": 841,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1993",
+            "gsd": 30,
+            "min": 103,
+            "max": 941,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1994",
+            "gsd": 30,
+            "min": 103,
+            "max": 1030,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1995",
+            "gsd": 30,
+            "min": 103,
+            "max": 1130,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1996",
+            "gsd": 30,
+            "min": 103,
+            "max": 1241,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1997",
+            "gsd": 30,
+            "min": 103,
+            "max": 1330,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1998",
+            "gsd": 30,
+            "min": 103,
+            "max": 1430,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_1999",
+            "gsd": 30,
+            "min": 103,
+            "max": 1530,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2000",
+            "gsd": 30,
+            "min": 103,
+            "max": 1630,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2001",
+            "gsd": 30,
+            "min": 103,
+            "max": 1730,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2002",
+            "gsd": 30,
+            "min": 100,
+            "max": 1830,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2003",
+            "gsd": 30,
+            "min": 100,
+            "max": 1941,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2004",
+            "gsd": 30,
+            "min": 100,
+            "max": 2041,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2005",
+            "gsd": 30,
+            "min": 100,
+            "max": 2141,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2006",
+            "gsd": 30,
+            "min": 103,
+            "max": 2241,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2007",
+            "gsd": 30,
+            "min": 103,
+            "max": 2341,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2008",
+            "gsd": 30,
+            "min": 103,
+            "max": 2441,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2009",
+            "gsd": 30,
+            "min": 103,
+            "max": 2541,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2010",
+            "gsd": 30,
+            "min": 100,
+            "max": 2641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2011",
+            "gsd": 30,
+            "min": 100,
+            "max": 2741,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2012",
+            "gsd": 30,
+            "min": 103,
+            "max": 2841,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2013",
+            "gsd": 30,
+            "min": 103,
+            "max": 2930,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2014",
+            "gsd": 30,
+            "min": 103,
+            "max": 3030,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2015",
+            "gsd": 30,
+            "min": 103,
+            "max": 3130,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2016",
+            "gsd": 30,
+            "min": 100,
+            "max": 3230,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2017",
+            "gsd": 30,
+            "min": 100,
+            "max": 3330,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2018",
+            "gsd": 30,
+            "min": 100,
+            "max": 3429,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2019",
+            "gsd": 30,
+            "min": 100,
+            "max": 3530,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3630,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2020_2020",
+            "gsd": 30,
+            "min": 103,
+            "max": 149,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2019_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 247,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2018_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 341,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2017_2020",
+            "gsd": 30,
+            "min": 103,
+            "max": 441,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2016_2020",
+            "gsd": 30,
+            "min": 103,
+            "max": 541,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2015_2020",
+            "gsd": 30,
+            "min": 103,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2014_2020",
+            "gsd": 30,
+            "min": 21,
+            "max": 741,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2013_2020",
+            "gsd": 30,
+            "min": 21,
+            "max": 841,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2012_2020",
+            "gsd": 30,
+            "min": 21,
+            "max": 941,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2011_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1041,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2010_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1141,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2009_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1241,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2008_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1341,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2007_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1441,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2006_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1541,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2005_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1630,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2004_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1741,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2003_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1830,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2002_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 1930,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2001_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2030,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2000_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2130,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1999_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2230,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1998_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2330,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1997_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2430,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1996_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2541,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1995_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1994_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2730,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1993_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2830,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1992_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 2930,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1991_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3030,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1990_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3130,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1989_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3230,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1988_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3330,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1987_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3430,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1986_2020",
+            "gsd": 30,
+            "min": 100,
+            "max": 3530,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1985_2020_1",
+            "gsd": 30,
+            "min": 100,
+            "max": 3630,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1990_1995",
+            "gsd": 30,
+            "min": 103,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1995_2000",
+            "gsd": 30,
+            "min": 103,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2000_2005",
+            "gsd": 30,
+            "min": 100,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2005_2010",
+            "gsd": 30,
+            "min": 100,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2010_2015",
+            "gsd": 30,
+            "min": 103,
+            "max": 641,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_1995_2005",
+            "gsd": 30,
+            "min": 100,
+            "max": 1141,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2005_2015",
+            "gsd": 30,
+            "min": 103,
+            "max": 1141,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "fire_frequency_2000_2015",
+            "gsd": 30,
+            "min": 103,
+            "max": 1641,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

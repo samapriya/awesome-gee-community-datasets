@@ -1,0 +1,172 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/def",
+    "title": "TerraClimate layer commensurate with global mean temperatures +4C : def",
+    "description": "TerraClimate layer commensurate with global mean temperatures +4C : def",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_TERRACLIMATE_4C_def.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for TerraClimate layer commensurate with global mean temperatures +4C : def in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-12-31T00:00:00Z",
+                    "2015-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Climate futures, +2C, +4C, TerraClimate"
+    ],
+    "providers": [
+        {
+            "name": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3418,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 4638,
+            "min": 0,
+            "max": 2653,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 4638,
+            "min": 0,
+            "max": 2794,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b4",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3016,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b5",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3516,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b6",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3943,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b7",
+            "gsd": 4638,
+            "min": 0,
+            "max": 4141,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b8",
+            "gsd": 4638,
+            "min": 0,
+            "max": 4126,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b9",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3553,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b10",
+            "gsd": 4638,
+            "min": 0,
+            "max": 2960,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b11",
+            "gsd": 4638,
+            "min": 0,
+            "max": 2833,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b12",
+            "gsd": 4638,
+            "min": 0,
+            "max": 3420,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "12",
+        "offset": "0",
+        "scale": "0.1"
+    }
+}

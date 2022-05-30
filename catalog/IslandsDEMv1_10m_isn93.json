@@ -1,0 +1,97 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93",
+    "title": "Iceland DEM v1.0 10m",
+    "description": "Iceland DEM v1.0 10m",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/IslandsDEMv1_10m_isn93.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Iceland DEM v1.0 10m in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/34517ab5c05be78e5f7d9227a4ca7b7e",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -24.849473696511296,
+                    63.20020972291457,
+                    -13.150526169847502,
+                    66.61425193845162
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-03-29T10:52:30.707535Z",
+                    "2022-03-29T10:52:30.707535Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Elevation, DEM, ArticDEM, Iceland, Geophysical"
+    ],
+    "providers": [
+        {
+            "name": "National Land Survey of Iceland & PGC",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 10,
+            "min": -4.16,
+            "max": 1938.68,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "Contact": "lmi@lmi.is",
+        "Keywords": "Elevation, DEM, ArticDEM, Iceland, Geophysical",
+        "Rights": "Landm\u00e6lingar \u00cdslands",
+        "all_users_can_read": true,
+        "description": "# \u00cdslandsDEM v1.0\u00a0\n\n\n![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)\n\n\u00a0\nSince 2015, elevation data from the Arctic (north of 60\u00b0N, including Iceland) started to be openly available through the ArcticDEM project, led by the Polar Geospatial Center, University of Minnesota (https://www.pgc.umn.edu/data/arcticdem/).\u00a0\n\n\n\n\nThis data consists of a large amount of Digital Elevation Models (DEMs) repeatedly acquired (multitemporal), typically from 2012-present, and the oldest data reaching back to 2008. The DEMs are derived from satellite sub-meter stereo imagery, particularly from WorldView 1-3 and GeoEye-1. The processing of the DEMs was done using SETSM, an open-source digital photogrammetric software, in the Bluewaters supercomputer (University of Ilinois). Each DEM has 2x2m resolution and a footprint of ~18x100km.\u00a0\u00a0\n\n\nIn a collaborative effort between the National Land Survey of Iceland, the Icelandic Meteorological Office and the Polar Geospatial Center, we developed methods to handle and process a large amount of data available for Iceland. The methods developed consisted of:\u00a0\n> - Spatial adjustment of all the available DEMs, for homogeneity and consistency in the location of each individual DEM.\n\n>\n> - Robust mosaicking into one single DEM of Iceland, by taking advantage of the multi-temporal coverage of DEMs. Each pixel of the mosaic corresponds to a median elevation value from the possible elevations available from the ArcticDEM.\u00a0\n\n\nThis DEM is resampled for 10x10m resolution.\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0\n\n\n_________________\n\u00a0For visualization use code:\u00a0https://code.earthengine.google.com/2254120a9fb2d553c150e2eb8212ab6e?hideCode=true",
+        "url": "https://gatt.lmi.is/geonetwork/srv/eng/catalog.search#/metadata/e6712430-a63c-4ae5-9158-c89d16da6361"
+    }
+}

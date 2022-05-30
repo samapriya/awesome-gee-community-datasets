@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/agtile/AgTile-US",
+    "title": "Tile Drained Croplands (30m)",
+    "description": "Tile Drained Croplands (30m)",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_agtile_AgTile-US.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Tile Drained Croplands (30m) in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/0b9bed4ff747bb4d13e6eb5a3d1c24a3",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.90461523469027,
+                    22.861277772648926,
+                    -65.32841953834823,
+                    51.65286192095169
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-08-15T22:54:05.721630Z",
+                    "2021-08-15T22:54:05.721630Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Agriculture,Tile Drainage,Subsurface,USA,CONUS,GIS,30 meter,data,gridded,raster"
+    ],
+    "providers": [
+        {
+            "name": "Valayamkunnath, P., Barlage, M., Chen, F. et al.",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 1,
+            "max": 1,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

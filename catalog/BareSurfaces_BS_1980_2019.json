@@ -1,0 +1,127 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/geocis/BareSurfaces/BS_1980_2019",
+    "title": "Bare Surface Layer 1980-2019",
+    "description": "Bare Surface Layer 1980-2019",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/BareSurfaces_BS_1980_2019.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Bare Surface Layer 1980-2019 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-05T01:29:56.578622Z",
+                    "2019-04-05T01:29:56.578622Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency"
+    ],
+    "providers": [
+        {
+            "name": "Dematt\u00ea, Jos\u00e9 AM, et al, Geotechnologies in Soil Science Group",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "blue",
+            "gsd": 250,
+            "min": 1,
+            "max": 3299,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "green",
+            "gsd": 250,
+            "min": -663,
+            "max": 20000,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "red",
+            "gsd": 250,
+            "min": -921,
+            "max": 20000,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "nir",
+            "gsd": 250,
+            "min": -674,
+            "max": 20000,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "swir1",
+            "gsd": 250,
+            "min": 303,
+            "max": 20000,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "swir2",
+            "gsd": 250,
+            "min": 331,
+            "max": 17504,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

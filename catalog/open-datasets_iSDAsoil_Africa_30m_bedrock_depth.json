@@ -1,0 +1,101 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bedrock_depth",
+    "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth",
+    "description": "iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_bedrock_depth.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.464442926199478,
+                    -35.22457492453981,
+                    57.08191893272471,
+                    37.980102953653464
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-05-25T02:51:31.781647Z",
+                    "2021-05-25T02:51:31.781647Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "soil, Africa, iSDA, bedrock_depth"
+    ],
+    "providers": [
+        {
+            "name": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 30,
+            "max": 200,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 30,
+            "min": 13,
+            "max": 153,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "description": "## Bedrock Depth\n\n\n\n\n|Bands|Description |\n|:----|:-----------------------------------------------------|\n|b1 |Depth to bedrock, predicted mean at 0-200 cm depth |\n|b2 |Depth to bedrock, standard deviation at 0-200 cm depth|\n",
+        "num_bands": "2"
+    }
+}

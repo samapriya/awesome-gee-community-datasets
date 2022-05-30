@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_1975",
+    "title": "West Africa Land Use and Land Cover 1975",
+    "description": "West Africa Land Use and Land Cover 1975",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_wa-datasets_wa_lc_usgs_1975.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for West Africa Land Use and Land Cover 1975 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -25.42484545043656,
+                    3.255211850756556,
+                    24.25599209656625,
+                    18.919251970325103
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-19T03:28:43.979167Z",
+                    "2021-04-19T03:28:43.979167Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
+    ],
+    "providers": [
+        {
+            "name": "United States Geological Survey, USGS",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 2000,
+            "min": 1,
+            "max": 99,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "description": "## West Africa Land Use Land Cover Time Series 1975\n\n\n[![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)](https://github.com/samapriya/awesome-gee-community-datasets)\u00a0\n\n\nStarted in 1999, the West Africa Land Use Dynamics project represents an effort to map land use and land cover, characterize the trends in time and space, and understand their effects on the environment across West Africa. The outcome of the West Africa Land Use Dynamics project is the production of a three-time period (1975, 2000, and 2013) land use and land cover dataset for the Sub-Saharan region of West Africa, including the Cabo Verde archipelago. The West Africa Land Use Land Cover Time Series dataset offers a unique basis for characterizing and analyzing land changes across the region, systematically and at an unprecedented level of detail.\n\n\n```Tappan, G. G., Cushing, W.M., Cotillon, S.E., Mathis, M.L., Hutchinson, J.A., Herrmann, S.M., and Dalsted, K.J., 2016, West Africa Land Use Land Cover Time Series: U.S. Geological Survey data release, http://dx.doi.org/10.5066/F73N21JF```\n\n\n\n#### License\u00a0\u00a0\nCreative Commons Attribution-Share Alike 4.0 International License\n"
+    }
+}

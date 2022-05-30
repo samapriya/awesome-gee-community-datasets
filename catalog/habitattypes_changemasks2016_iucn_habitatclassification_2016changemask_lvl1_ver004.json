@@ -1,0 +1,99 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/Uploads/habitattypes/changemasks2016/iucn_habitatclassification_2016changemask_lvl1_ver004",
+    "title": "Global maps of habitat types Changemask 2016: Level 1 v004",
+    "description": "Global maps of habitat types Changemask 2016: Level 1 v004",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/habitattypes_changemasks2016_iucn_habitatclassification_2016changemask_lvl1_ver004.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Global maps of habitat types Changemask 2016: Level 1 v004 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-20T18:15:51.284215Z",
+                    "2020-09-20T18:15:51.284215Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Global habitats, Ecosystems, Integrated map, IUCN, Biodiversity, Species"
+    ],
+    "providers": [
+        {
+            "name": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "comp2015",
+            "gsd": 100,
+            "min": 0,
+            "max": 1400,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "comp2016",
+            "gsd": 100,
+            "min": 0,
+            "max": 1400,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

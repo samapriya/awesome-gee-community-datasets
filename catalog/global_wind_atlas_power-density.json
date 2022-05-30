@@ -51,8 +51,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2021-09-12T19:25:42Z",
-                    "2021-09-12T19:25:42Z"
+                    "2021-07-08T07:13:24.758032Z",
+                    "2021-07-08T07:13:24.758032Z"
                 ]
             ]
         }
@@ -80,16 +80,15 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 278.29872698319775,
-            "min": 0.0,
-            "max": 320140.78,
+            "gsd": 278,
+            "min": 0.58,
+            "max": 24763.56,
             "gee:estimated_range": true
         }
     ],
     "eo:properties": {
+        "all_users_can_read": true,
         "height": "100,10,150,200,50",
-        "num_bands": "1",
-        "xsize": "144263",
-        "ysize": "55933"
+        "num_bands": "1"
     }
 }

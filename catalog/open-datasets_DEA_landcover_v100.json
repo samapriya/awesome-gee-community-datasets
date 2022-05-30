@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/DEA/landcover_v100",
+    "title": "Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0",
+    "description": "Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0",
+    "license": "CC-BY-SA-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_DEA_landcover_v100.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/d87964128fd461d5e64a3e564cfd925b",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    109.23592475766476,
+                    -44.91980859297896,
+                    158.26796173050317,
+                    -8.920054636488466
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-12-31T00:00:00Z",
+                    "2020-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Australia, land cover, remote sensing, landsat, satellite"
+    ],
+    "providers": [
+        {
+            "name": "Geoscience Australia and Digital Earth Australia",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 25,
+            "min": 14,
+            "max": 104,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

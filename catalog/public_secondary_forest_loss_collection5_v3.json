@@ -1,0 +1,316 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/celsohlsj/public/secondary_forest_loss_collection5_v3",
+    "title": "Secondary Forest Loss: Collection5_v3",
+    "description": "Secondary Forest Loss: Collection5_v3",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/public_secondary_forest_loss_collection5_v3.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Secondary Forest Loss: Collection5_v3 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -73.99046731095738,
+                    -33.79009365773179,
+                    -32.39063372966332,
+                    5.291502402201872
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-10-21T20:43:00.107718Z",
+                    "2020-10-21T20:43:00.107718Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration"
+    ],
+    "providers": [
+        {
+            "name": "Celso H. L. Silva Junior",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "classification_1987",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1988",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1989",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1990",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1991",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1992",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1993",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1994",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1995",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1996",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1997",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1998",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_1999",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2000",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2001",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2002",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2003",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2004",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2005",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2006",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2007",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2008",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2009",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2010",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2011",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2012",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2013",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2014",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2015",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2016",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2017",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2018",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "classification_2019",
+            "gsd": 30,
+            "min": 0,
+            "max": 1,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

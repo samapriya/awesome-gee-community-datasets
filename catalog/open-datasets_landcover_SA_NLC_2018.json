@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2018",
+    "title": "South African National Land Cover 2018",
+    "description": "South African National Land Cover 2018",
+    "license": "PDDL-1.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landcover_SA_NLC_2018.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for South African National Land Cover 2018 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/0c9d51577e15437d2b17728079bb01f2",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    16.350106813381313,
+                    -34.93944772003564,
+                    33.04591500337181,
+                    -22.120248633946005
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-06-15T07:53:49.601042Z",
+                    "2021-06-15T07:53:49.601042Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
+    ],
+    "providers": [
+        {
+            "name": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 20,
+            "min": 1,
+            "max": 73,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

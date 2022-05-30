@@ -1,0 +1,114 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/nitrogen_total",
+    "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total",
+    "description": "iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total",
+    "license": "CC-BY-4.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_nitrogen_total.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/9e34fbee9d350b1371f6a8deedcf601b",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.464442926199478,
+                    -35.22457492453981,
+                    57.08191893272471,
+                    37.980102953653464
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-05-25T01:37:19.385823Z",
+                    "2021-05-25T01:37:19.385823Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "soil, Africa, iSDA, nitrogen_total"
+    ],
+    "providers": [
+        {
+            "name": "iSDAsoil, Hengl, T., Miller, M.A.E., Krizan, J. et al 2021",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 6,
+            "max": 201,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 30,
+            "min": 2,
+            "max": 175,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 30,
+            "min": 3,
+            "max": 109,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b4",
+            "gsd": 30,
+            "min": 4,
+            "max": 110,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "4"
+    }
+}

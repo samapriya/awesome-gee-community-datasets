@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/GMW/GMW_2010_v25",
+    "title": "Global Mangrove Forest Baseline 2010 v2.5",
+    "description": "Global Mangrove Forest Baseline 2010 v2.5",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_GMW_2010_v25.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Global Mangrove Forest Baseline 2010 v2.5 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/713555a5cc2f2d0c8e9f305aeb9625ba",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -114.00014103777421,
+                    -39.00012819283852,
+                    211.00012297483903,
+                    33.000127088368686
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-02-26T19:47:11.193313Z",
+                    "2022-02-26T19:47:11.193313Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Global Mangrove Watch, GMW, Mangroves"
+    ],
+    "providers": [
+        {
+            "name": "Bunting et al 2022",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 25,
+            "min": 1,
+            "max": 1,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

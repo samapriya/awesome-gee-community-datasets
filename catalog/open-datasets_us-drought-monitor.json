@@ -51,8 +51,8 @@
         "temporal": {
             "interval": [
                 [
-                    "1999-12-27T19:25:42Z",
-                    "2021-10-04T19:25:42Z"
+                    "1999-12-27T00:00:00Z",
+                    "2022-05-23T00:00:00Z"
                 ]
             ]
         }
@@ -82,9 +82,11 @@
             "name": "DM",
             "gsd": 250,
             "min": 0,
-            "max": 4,
+            "max": 2,
             "gee:estimated_range": true
         }
     ],
-    "eo:properties": {}
+    "eo:properties": {
+        "all_users_can_read": true
+    }
 }

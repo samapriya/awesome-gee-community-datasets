@@ -1,0 +1,96 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmax",
+    "title": "Projections from individual AOGCMs: Maximum Temperature monthly",
+    "description": "Projections from individual AOGCMs: Maximum Temperature monthly",
+    "license": "CC-BY-SA-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_CMIP6-scenarios-NA_Climate-Models_tmax.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Projections from individual AOGCMs: Maximum Temperature monthly in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    166.91311808983235,
+                    6.2420680083555,
+                    347.21655823329036,
+                    84.4279266725495
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2040-12-31T00:00:00Z",
+                    "2100-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    ],
+    "providers": [
+        {
+            "name": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1000,
+            "min": -34.41,
+            "max": 38.28,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "emission_scenario": "SSP2-4.5,SSP3-7.0,SSP5-8.5",
+        "global_climate_model": "ACCESS-ESM1-5,CNRM-ESM2-1,EC-Earth3,GFDL-ESM4,GISS-E2-1-G,MIROC6,MPI-ESM1-2-HR,MRI-ESM2-0,UKESM1-0-LL",
+        "month": "1,2,3,4,5,6,7,8,9,10,11,12",
+        "num_bands": "1"
+    }
+}

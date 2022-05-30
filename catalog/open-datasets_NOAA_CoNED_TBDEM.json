@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/NOAA/CoNED_TBDEM",
+    "title": "CoNED Project -Topobathymetric digital elevation models",
+    "description": "CoNED Project -Topobathymetric digital elevation models",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_CoNED_TBDEM.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for CoNED Project -Topobathymetric digital elevation models in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/bbf21c4acf7eede5140dd08fac8f913e",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    171.02102805015994,
+                    7.0147258594820805,
+                    290.1721575639539,
+                    49.05181193415665
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-02-27T07:24:27.503980Z",
+                    "2022-02-27T07:24:27.503980Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Elevation, topography, topobathymetric, bathymetry"
+    ],
+    "providers": [
+        {
+            "name": "USGS, CMGP, NGP, NOAA and NGDC",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1,
+            "min": -44.45,
+            "max": 26.47,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim",
+    "title": "Climate Normals: Bioclimatic Variables",
+    "description": "Climate Normals: Bioclimatic Variables",
+    "license": "CC-BY-SA-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_CMIP6-scenarios-NA_Climate-Normals_bioclim.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Climate Normals: Bioclimatic Variables in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    166.91311808983235,
+                    6.2420680083555,
+                    347.21655823329036,
+                    84.4279266725495
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1960-12-31T00:00:00Z",
+                    "2020-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+    ],
+    "providers": [
+        {
+            "name": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1000,
+            "min": -196.25,
+            "max": 880,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "bioclim_variable": "AHM,CMD,CMI,DD1040,DD18,DD5,DD_0,DD_18,EMT,EXT,Eref,FFP,MAP,MAR,MAT,MCMT,MSP,MWMT,NFFD,PAS,PPT_at,PPT_sm,PPT_sp,PPT_wt,RH,SHM,TD,Tave_at,Tave_sm,Tave_sp,Tave_wt,bFFP,eFFP",
+        "num_bands": "1"
+    }
+}

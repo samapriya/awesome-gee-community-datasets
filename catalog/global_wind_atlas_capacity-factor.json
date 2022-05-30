@@ -51,8 +51,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2021-09-12T19:25:42Z",
-                    "2021-09-12T19:25:42Z"
+                    "2021-07-11T07:47:07.422017Z",
+                    "2021-07-11T07:47:07.422017Z"
                 ]
             ]
         }
@@ -80,17 +80,16 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 278.29872698319775,
+            "gsd": 278,
             "min": 0.0,
-            "max": 0.95,
+            "max": 0.92,
             "gee:estimated_range": true
         }
     ],
     "eo:properties": {
+        "all_users_can_read": true,
         "hub_height": "100",
         "num_bands": "1",
-        "rotor_diameters": "112,126,136",
-        "xsize": "144263",
-        "ysize": "55933"
+        "rotor_diameters": "112,126,136"
     }
 }

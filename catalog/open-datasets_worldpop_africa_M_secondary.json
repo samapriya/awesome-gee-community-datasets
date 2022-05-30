@@ -1,0 +1,93 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/worldpop/africa_M_secondary",
+    "title": "Gridded Sex-Disaggregated School-Age Population: Male Secondary",
+    "description": "Gridded Sex-Disaggregated School-Age Population: Male Secondary",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_worldpop_africa_M_secondary.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Gridded Sex-Disaggregated School-Age Population: Male Secondary in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.28334497018367,
+                    -47.01950248193501,
+                    63.5118300985383,
+                    43.81489299195817
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-02-12T19:40:14.434055Z",
+                    "2022-02-12T19:40:14.434055Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "gridded model, population data, school age, disaggregated, worldpop"
+    ],
+    "providers": [
+        {
+            "name": "WorldPop (University of Southampton)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 928,
+            "min": 0.0,
+            "max": 3544.78,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
+    }
+}

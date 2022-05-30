@@ -51,8 +51,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2021-09-12T19:25:42Z",
-                    "2021-09-12T19:25:42Z"
+                    "2021-07-21T15:01:47.704073Z",
+                    "2021-07-21T15:01:47.704073Z"
                 ]
             ]
         }
@@ -80,37 +80,36 @@
     "eo:bands": [
         {
             "name": "b1",
-            "gsd": 203.948243779212,
+            "gsd": 204,
             "min": 1,
-            "max": 245,
+            "max": 214,
             "gee:estimated_range": true
         },
         {
             "name": "b2",
-            "gsd": 203.948243779212,
+            "gsd": 204,
             "min": 1,
-            "max": 204,
+            "max": 198,
             "gee:estimated_range": true
         },
         {
             "name": "b3",
-            "gsd": 203.948243779212,
-            "min": 7,
-            "max": 204,
+            "gsd": 204,
+            "min": 9,
+            "max": 174,
             "gee:estimated_range": true
         },
         {
             "name": "b4",
-            "gsd": 203.948243779212,
+            "gsd": 204,
             "min": 255,
             "max": 255,
             "gee:estimated_range": true
         }
     ],
     "eo:properties": {
+        "all_users_can_read": true,
         "depth": "10,25,75,125",
-        "num_bands": "4",
-        "xsize": "24182",
-        "ysize": "14732"
+        "num_bands": "4"
     }
 }

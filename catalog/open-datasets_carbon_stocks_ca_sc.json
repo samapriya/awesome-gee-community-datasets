@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/carbon_stocks_ca/sc",
+    "title": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Stock",
+    "description": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Stock",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_carbon_stocks_ca_sc.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Stock in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -141.03896788079953,
+                    41.53412038666736,
+                    -52.34377206385828,
+                    83.898560262023
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-11-13T22:05:54.133873Z",
+                    "2021-11-13T22:05:54.133873Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling"
+    ],
+    "providers": [
+        {
+            "name": "Sothe et al 2021",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 249,
+            "min": 1.34,
+            "max": 492.17,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

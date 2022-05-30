@@ -1,0 +1,303 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/WSF/WSF_EVO_IDC",
+    "title": "World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)",
+    "description": "World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)",
+    "license": "CC-PDDC",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_WSF_WSF_EVO_IDC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC) in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -60.01044122142464,
+                    180.0,
+                    78.01022213230299
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-12-12T02:19:32.247606Z",
+                    "2021-12-12T02:19:32.247606Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8, IDC"
+    ],
+    "providers": [
+        {
+            "name": "Marconcini, et al",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 30,
+            "min": 0,
+            "max": 5,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b4",
+            "gsd": 30,
+            "min": 0,
+            "max": 5,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b5",
+            "gsd": 30,
+            "min": 0,
+            "max": 4,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b6",
+            "gsd": 30,
+            "min": 0,
+            "max": 3,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b7",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b8",
+            "gsd": 30,
+            "min": 0,
+            "max": 5,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b9",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b10",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b11",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b12",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b13",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b14",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b15",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b16",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b17",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b18",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b19",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b20",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b21",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b22",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b23",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b24",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b25",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b26",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b27",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b28",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b29",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b30",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b31",
+            "gsd": 30,
+            "min": 0,
+            "max": 6,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "31"
+    }
+}

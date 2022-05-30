@@ -1,0 +1,92 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/IGN_RGE_Alti_5m",
+    "title": "DEM France (Continental) 5m IGN RGE Alti",
+    "description": "DEM France (Continental) 5m IGN RGE Alti",
+    "license": "etalab-2.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_IGN_RGE_Alti_5m.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for DEM France (Continental) 5m IGN RGE Alti in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/b9054b6d5c4d7de1a4af39ff307e73d7",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -6.4862102519986875,
+                    41.73734416862753,
+                    8.910960399710461,
+                    51.514992599647755
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-05-27T13:46:48.545279Z",
+                    "2022-05-27T13:46:48.545279Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "digital elevation model, terrain, remote sensing, France"
+    ],
+    "providers": [
+        {
+            "name": "National Institute of Geographic and Forest Information (IGN)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 5,
+            "min": -99999,
+            "max": 3035.23,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}
