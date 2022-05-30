@@ -6299,7 +6299,7 @@
     "title": "Gridded Sex-Disaggregated School-Age Population: Female Secondary",
     "sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/worldpop/africa_F_SECONDARY",
+    "id": "projects/sat-io/open-datasets/worldpop/africa_F_secondary",
     "provider": "WorldPop (University of Southampton)",
     "tags": "gridded model, population data, school age, disaggregated, worldpop"
   },
@@ -6315,7 +6315,7 @@
     "title": "Gridded Sex-Disaggregated School-Age Population: Male Secondary",
     "sample_code": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/worldpop/africa_M_SECONDARY",
+    "id": "projects/sat-io/open-datasets/worldpop/africa_M_secondary",
     "provider": "WorldPop (University of Southampton)",
     "tags": "gridded model, population data, school age, disaggregated, worldpop"
   },
