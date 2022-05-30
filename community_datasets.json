@@ -787,7 +787,7 @@
     "title": "Global River Width from Landsat (GRWL) Mask V01.01",
     "sample_code": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/GRWL/grwl_tiles",
+    "id": "projects/sat-io/open-datasets/GRWL/water_mask_v01_01",
     "provider": "Allen, George H., & Pavelsky, Tamlin M",
     "tags": "GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
   },
