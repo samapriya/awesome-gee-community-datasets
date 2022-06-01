@@ -45,6 +45,7 @@ Community Datasets added by users and made available for use at large
 -   [Harmonized Global Critical infrastructure & Index (CISI)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cisi)
 -   [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
 -   [Gridded Sex-Disaggregated School-Age Population (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wpschool)
+-   [Global ML Building Footprints](https://samapriya.github.io/awesome-gee-community-datasets/projects/msbuildings)
 
 2.  Geophysical, Biological & Biogeochemical
 

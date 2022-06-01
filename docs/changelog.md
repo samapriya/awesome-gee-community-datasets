@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-06-01
+- Added [Global ML Building Footprints](https://samapriya.github.io/awesome-gee-community-datasets/projects/msbuildings)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-05-27
 - Added [DEM France (Continental) 5m IGN RGE Alti](https://samapriya.github.io/awesome-gee-community-datasets/projects/france5m)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)

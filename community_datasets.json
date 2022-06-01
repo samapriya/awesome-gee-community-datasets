@@ -6798,5 +6798,21 @@
     "id": "projects/sat-io/open-datasets/IGN_RGE_Alti_5m",
     "provider": "National Institute of Geographic and Forest Information (IGN)",
     "tags": "digital elevation model, terrain, remote sensing, France"
+  },
+  {
+    "title": "Global ML Building Footprints: Australia",
+    "sample_code": "https://code.earthengine.google.com/34a8f7bc4a37260c0164768a1dfa673b",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/MSBuildings/Australia",
+    "provider": "Microsoft & Bing Maps",
+    "tags": "building footprint, machine learning, remote sensing, global"
+  },
+  {
+    "title": "Global ML Building Footprints: Chile",
+    "sample_code": "https://code.earthengine.google.com/34a8f7bc4a37260c0164768a1dfa673b",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/MSBuildings/Chile",
+    "provider": "Microsoft & Bing Maps",
+    "tags": "building footprint, machine learning, remote sensing, global"
   }
 ]
