@@ -33,6 +33,11 @@
             "code": "JavaScript"
         },
         {
+        "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-thumbnails/main/src/glo30_dem_512.png",
+        "rel": "preview",
+        "type": "image/png"
+        },
+        {
             "rel": "license",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
         }
