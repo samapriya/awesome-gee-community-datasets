@@ -34,7 +34,8 @@
         },
         {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/PDDL-1.0.html",
+            "type": "text/html"
         }
     ],
     "extent": {
@@ -52,7 +53,7 @@
             "interval": [
                 [
                     "1999-12-27T00:00:00Z",
-                    "2022-05-23T00:00:00Z"
+                    "2022-05-30T00:00:00Z"
                 ]
             ]
         }

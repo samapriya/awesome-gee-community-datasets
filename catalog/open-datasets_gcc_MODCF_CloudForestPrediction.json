@@ -34,7 +34,8 @@
         },
         {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/CC-BY-NC-4.0.html",
+            "type": "text/html"
         }
     ],
     "extent": {
@@ -57,7 +58,7 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
         "Earthenv, cloud forest prediction, MODIS, Global Cloud"

@@ -34,7 +34,8 @@
         },
         {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
         }
     ],
     "extent": {
@@ -51,8 +52,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2022-01-23T17:38:44.489064Z",
-                    "2022-01-23T17:38:44.489064Z"
+                    "2022-06-03T18:28:52.692567Z",
+                    "2022-06-03T18:28:52.692567Z"
                 ]
             ]
         }

@@ -34,7 +34,8 @@
         },
         {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/PDDL-1.0.html",
+            "type": "text/html"
         }
     ],
     "extent": {

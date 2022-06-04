@@ -34,7 +34,8 @@
         },
         {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/CC-PDDC.html",
+            "type": "text/html"
         }
     ],
     "extent": {
@@ -57,7 +58,7 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under CC-PDDC.",
     "gee:user_uploaded": true,
     "keywords": [
         "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"

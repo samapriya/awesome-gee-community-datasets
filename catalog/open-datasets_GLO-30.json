@@ -33,13 +33,9 @@
             "code": "JavaScript"
         },
         {
-        "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-thumbnails/main/src/glo30_dem_512.png",
-        "rel": "preview",
-        "type": "image/png"
-        },
-        {
             "rel": "license",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/LICENSE"
+            "href": "https://spdx.org/licenses/CC-PDDC.html",
+            "type": "text/html"
         }
     ],
     "extent": {
@@ -62,7 +58,7 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:terms_of_use": "This dataset is made available publicly under CC-PDDC.",
     "gee:user_uploaded": true,
     "keywords": [
         "digital elevation model, terrain, remote sensing, esa, copernicus"
