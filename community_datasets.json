@@ -6814,5 +6814,149 @@
     "id": "projects/sat-io/open-datasets/MSBuildings/Chile",
     "provider": "Microsoft & Bing Maps",
     "tags": "building footprint, machine learning, remote sensing, global"
+  },
+  {
+    "title": "Urban Watch 1m Land Cover & Land Use",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HRLC/urban-watch-cities",
+    "provider": "Laboratory for Remote Sensing and Environmental Change (LRSEC) at the University of North Carolina",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, FLUTE"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP High-Resolution Land Cover : WA",
+    "sample_code": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "Vermont High Resolution Land Cover 2016",
+    "sample_code": "https://code.earthengine.google.com/e8f0bdb6d396570d6dab019de0160826",
+    "type": "image",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016",
+    "provider": "University of Vermont Spatial Analysis Laboratory, VT Center for Geographic Information",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, Vermont"
+  },
+  {
+    "title": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
+    "sample_code": "https://code.earthengine.google.com/5d6ecc3a93350f9670f063b7f3c0fe6c",
+    "type": "image",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014",
+    "provider": "Conservation Innovation Center at the Chesapeake Conservancy",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, Chesapeake Bay"
   }
 ]

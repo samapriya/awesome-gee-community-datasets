@@ -40,4 +40,4 @@ Curated by: Samapriya Roy
 
 Keywords: :"Global Healthsites Mapping Project, Healthsites, Health, GLC"
 
-Last updated: 2021-08-30
+Last updated: 2022-06-08
