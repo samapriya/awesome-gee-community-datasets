@@ -2,6 +2,18 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-06-14
+
+- Added [Urban Watch 1m Land Cover & Land Use](https://samapriya.github.io/awesome-gee-community-datasets/projects/urban-watch)
+- Added [Vermont High Resolution Land Cover 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/vt_lc)
+- Added [Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cc)
+- Added [C-CAP High-Resolution Land Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_lc)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Updated [Nodes and ways datasets from Global Health sites Mapping Projects](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+- Updated [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
+
 #### Updates 2022-06-01
 - Added [Global ML Building Footprints](https://samapriya.github.io/awesome-gee-community-datasets/projects/msbuildings)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
