@@ -61,7 +61,12 @@
     "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)"
+        "Development indicator",
+        " global spatial data",
+        " gridded data",
+        " Gross Domestic Product (GDP)",
+        " Human Development Index (HDI)",
+        " Purchasing Power Parity (PPP)"
     ],
     "providers": [
         {

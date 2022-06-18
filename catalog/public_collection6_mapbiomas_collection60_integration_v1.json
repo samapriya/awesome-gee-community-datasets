@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Mapbiomas, Land Use, Land Cover, Brazil,Amazon"
+        "Mapbiomas",
+        " Land Use",
+        " Land Cover",
+        " Brazil",
+        "Amazon"
     ],
     "providers": [
         {

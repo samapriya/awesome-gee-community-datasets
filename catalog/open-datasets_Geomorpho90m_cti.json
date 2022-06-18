@@ -61,7 +61,21 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+        "Geomorpho90m",
+        " geomorphometric layers",
+        " MERIT DEM",
+        " topographic index",
+        " terrain ruggedness index",
+        " cti",
+        " global",
+        " topography",
+        " MERIT",
+        " SRTM",
+        " ALOS",
+        " DEM",
+        " terrain",
+        " shuttle",
+        " radar"
     ],
     "providers": [
         {

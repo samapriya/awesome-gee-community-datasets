@@ -61,7 +61,12 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-ND-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "vegetation, dryness, drought, wildfire, USA, live fuel moisture content"
+        "vegetation",
+        " dryness",
+        " drought",
+        " wildfire",
+        " USA",
+        " live fuel moisture content"
     ],
     "providers": [
         {

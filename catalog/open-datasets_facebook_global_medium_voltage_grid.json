@@ -61,7 +61,14 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Electrical Distribution Grid, Facebook, Ivory Coast, Democratic Republic of the Congo,  Malawi,  Nigeria,  Uganda,  Zambia"
+        "Electrical Distribution Grid",
+        " Facebook",
+        " Ivory Coast",
+        " Democratic Republic of the Congo",
+        "  Malawi",
+        "  Nigeria",
+        "  Uganda",
+        "  Zambia"
     ],
     "providers": [
         {

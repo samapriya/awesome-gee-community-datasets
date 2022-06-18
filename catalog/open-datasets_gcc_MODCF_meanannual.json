@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Earthenv, cloud frequency, annual, MODIS, Global Cloud"
+        "Earthenv",
+        " cloud frequency",
+        " annual",
+        " MODIS",
+        " Global Cloud"
     ],
     "providers": [
         {

@@ -61,7 +61,14 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "salinity, digital soil mapping, electrical conductivity, global map, soilgrids, landsat, thermal, salinisation"
+        "salinity",
+        " digital soil mapping",
+        " electrical conductivity",
+        " global map",
+        " soilgrids",
+        " landsat",
+        " thermal",
+        " salinisation"
     ],
     "providers": [
         {

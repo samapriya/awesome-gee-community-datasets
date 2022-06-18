@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "digital elevation model, bare-earth, terrain, remote sensing, machine learning"
+        "digital elevation model",
+        " bare-earth",
+        " terrain",
+        " remote sensing",
+        " machine learning"
     ],
     "providers": [
         {

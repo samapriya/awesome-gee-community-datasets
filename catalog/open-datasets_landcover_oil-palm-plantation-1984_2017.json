@@ -61,7 +61,12 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-3.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1"
+        "Oil palm plantations",
+        " Indonesia",
+        " Malaysia",
+        " Thailand",
+        " Landsat",
+        " Sentinel-1"
     ],
     "providers": [
         {

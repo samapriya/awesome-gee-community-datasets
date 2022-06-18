@@ -61,7 +61,13 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-PDDC.",
     "gee:user_uploaded": true,
     "keywords": [
-        "World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8"
+        "World Settlement Footprint",
+        " Settlement Extent",
+        " Urbanization",
+        " Earth Observation",
+        " Remote Sensing",
+        " Sentinel-1",
+        " Landsat-8"
     ],
     "providers": [
         {

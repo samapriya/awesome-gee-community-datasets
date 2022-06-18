@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "gridded model, population data, school age, disaggregated, worldpop"
+        "gridded model",
+        " population data",
+        " school age",
+        " disaggregated",
+        " worldpop"
     ],
     "providers": [
         {

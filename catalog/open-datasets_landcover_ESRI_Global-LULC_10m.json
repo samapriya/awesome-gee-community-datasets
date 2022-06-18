@@ -61,7 +61,21 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning"
+        "land",
+        " cover",
+        " land use",
+        " land cover",
+        " lulc",
+        " 10m",
+        " global",
+        " world",
+        " sentinel",
+        " sentinel-2",
+        " sentinel 2",
+        " impact observatory",
+        " impact",
+        " 2020",
+        " deep learning"
     ],
     "providers": [
         {

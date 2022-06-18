@@ -407,6 +407,102 @@
         },
         {
             "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014",
+            "title": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_Baywide_13Class_20132014.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_AS_LC",
+            "title": "C-CAP High-Resolution Land Cover : AS",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_AS_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_CA_LC",
+            "title": "C-CAP High-Resolution Land Cover : CA",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_CA_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_CT_LC",
+            "title": "C-CAP High-Resolution Land Cover : CT",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_CT_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_GU_LC",
+            "title": "C-CAP High-Resolution Land Cover : GU",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_GU_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_HI_LC",
+            "title": "C-CAP High-Resolution Land Cover : HI",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_HI_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_LA_LC",
+            "title": "C-CAP High-Resolution Land Cover : LA",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_LA_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_MA_LC",
+            "title": "C-CAP High-Resolution Land Cover : MA",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_MA_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_ME_LC",
+            "title": "C-CAP High-Resolution Land Cover : ME",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_ME_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_MP_LC",
+            "title": "C-CAP High-Resolution Land Cover : MP",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_MP_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_OH_LC",
+            "title": "C-CAP High-Resolution Land Cover : OH",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_OH_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_OR_LC",
+            "title": "C-CAP High-Resolution Land Cover : OR",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_OR_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_PR_LC",
+            "title": "C-CAP High-Resolution Land Cover : PR",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_PR_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_VI_LC",
+            "title": "C-CAP High-Resolution Land Cover : VI",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_VI_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC",
+            "title": "C-CAP High-Resolution Land Cover : WA",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_WA_LC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016",
+            "title": "Vermont High Resolution Land Cover 2016",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_VT_BaseLC_2016.json"
+        },
+        {
+            "rel": "child",
             "id": "users/tjm0042/Hydrafloods_Outputs/TensorFlow_Surface_Water_Model_Mosaic",
             "title": "Tensor Flow Hydra Flood Models",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/Hydrafloods_Outputs_TensorFlow_Surface_Water_Model_Mosaic.json"
@@ -1685,6 +1781,12 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/HRLC/urban-watch-cities",
+            "title": "Urban Watch 1m Land Cover & Land Use",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_HRLC_urban-watch-cities.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/hrsl/hrslpop",
             "title": "High Resolution Settlement Layer: Overall Population",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_hrsl_hrslpop.json"
@@ -2736,7 +2838,7 @@
         {
             "rel": "child",
             "id": "projects/rangeland-analysis-platform/vegetation-cover-v3",
-            "title": "Rangeland-Analysis-Platform: Vegetation Cover v2",
+            "title": "Rangeland-Analysis-Platform: Vegetation Cover v3",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/vegetation-cover-v3.json"
         }
     ]

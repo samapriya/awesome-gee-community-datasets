@@ -61,7 +61,9 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Global Mangrove Watch, GMW, Mangroves"
+        "Global Mangrove Watch",
+        " GMW",
+        " Mangroves"
     ],
     "providers": [
         {

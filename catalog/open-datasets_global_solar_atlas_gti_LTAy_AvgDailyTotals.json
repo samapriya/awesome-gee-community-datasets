@@ -61,7 +61,12 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential"
+        "Solar",
+        " energy",
+        " photovoltaic capacity",
+        " irradiation",
+        " optimally tilted surface",
+        " Photovoltaic power potential"
     ],
     "providers": [
         {

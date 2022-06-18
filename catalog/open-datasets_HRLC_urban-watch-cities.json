@@ -1,0 +1,115 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/sat-io/open-datasets/HRLC/urban-watch-cities",
+    "title": "Urban Watch 1m Land Cover & Land Use",
+    "description": "Urban Watch 1m Land Cover & Land Use",
+    "license": "CC-BY-NC-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_HRLC_urban-watch-cities.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Urban Watch 1m Land Cover & Land Use in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-NC-4.0.html",
+            "type": "text/html"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -122.52989006980506,
+                    25.708725758258232,
+                    -70.95066690179429,
+                    47.73467522703849
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-12-31T00:00:00Z",
+                    "2017-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Land Use",
+        " Land Cover",
+        " Urban Watch",
+        " Remote Sensing",
+        " High Resolution",
+        " FLUTE"
+    ],
+    "providers": [
+        {
+            "name": "Laboratory for Remote Sensing and Environmental Change (LRSEC) at the University of North Carolina",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1,
+            "min": 142,
+            "max": 142,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b2",
+            "gsd": 1,
+            "min": 99,
+            "max": 99,
+            "gee:estimated_range": true
+        },
+        {
+            "name": "b3",
+            "gsd": 1,
+            "min": 117,
+            "max": 117,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "abbreviation": "ATL,BOS,CHI,CLT,DALL,DC,DEN,DET,DM,HOU,LA,MIA,MINN,NY,PHI,PHX,RAL,RVRSD,SD,SEA,SF,STL,TAM",
+        "all_users_can_read": true,
+        "city": "Atlanta,Boston,Chicago,Charlotte,Dallas,Washington DC,Denver,Detroit,Des Moines,Houston,Los Angeles,Miami,Minneapolis,New York City,Philadelphia,Phoenix,Raleigh,Riverside,San Diego,Seattle,San Francisco,St. Louis,Tampa",
+        "num_bands": "3"
+    }
+}

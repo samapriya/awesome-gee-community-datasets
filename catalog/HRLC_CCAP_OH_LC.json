@@ -1,0 +1,88 @@
+{
+  "stac_version": "1.0.0",
+  "type": "Collection",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+  ],
+  "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_OH_LC",
+  "title": "C-CAP High-Resolution Land Cover : OH",
+  "description": "C-CAP High-Resolution Land Cover : OH",
+  "license": "PDDL-1.0",
+  "gee:type": "image_collection",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_OH_LC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+      "type": "application/json"
+    },
+    {
+      "title": "Run the example for C-CAP High-Resolution Land Cover : OH in the Google Playground",
+      "rel": "related",
+      "href": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+      "type": "text/html",
+      "code": "JavaScript"
+    },
+    {
+      "rel": "license",
+      "href": "https://spdx.org/licenses/PDDL-1.0.html",
+      "type": "text/html"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -82.95024104910864, 41.243428498256726, -82.33196950369145,
+          41.50493541738844
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [["2018-12-31T00:00:00Z", "2006-12-30T00:00:00Z"]]
+    }
+  },
+  "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+  "gee:user_uploaded": true,
+  "keywords": [
+    "Land Use",
+    " Land Cover",
+    " Urban Watch",
+    " Remote Sensing",
+    " High Resolution",
+    " OBIA",
+    " NOAA"
+  ],
+  "providers": [
+    {
+      "name": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+      "roles": ["producer", "licensor"]
+    },
+    {
+      "name": "Samapriya Roy",
+      "roles": ["processor"]
+    }
+  ],
+  "eo:bands": [
+    {
+      "name": "b1",
+      "gsd": 1,
+      "min": 0,
+      "max": 21,
+      "gee:estimated_range": true
+    }
+  ],
+  "eo:properties": {
+    "all_users_can_read": true,
+    "num_bands": "1"
+  }
+}

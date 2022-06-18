@@ -53,7 +53,7 @@
             "interval": [
                 [
                     "2018-12-31T00:00:00Z",
-                    "2021-09-30T00:00:00Z"
+                    "2022-03-31T00:00:00Z"
                 ]
             ]
         }
@@ -61,7 +61,15 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+        "analytics",
+        "broadband",
+        "cities",
+        "civic",
+        "infrastructure",
+        "internet",
+        "network traffic",
+        " telecommunications",
+        "tiles"
     ],
     "providers": [
         {

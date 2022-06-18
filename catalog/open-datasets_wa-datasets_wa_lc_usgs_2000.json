@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "United States Geological Survey, USGS, Land Use, Land Cover, West Africa"
+        "United States Geological Survey",
+        " USGS",
+        " Land Use",
+        " Land Cover",
+        " West Africa"
     ],
     "providers": [
         {

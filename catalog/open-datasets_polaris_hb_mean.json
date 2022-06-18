@@ -61,7 +61,12 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Digital soil mapping, Soil, Environmental modeling, High performance computing, bubbling pressure, hb"
+        "Digital soil mapping",
+        " Soil",
+        " Environmental modeling",
+        " High performance computing",
+        " bubbling pressure",
+        " hb"
     ],
     "providers": [
         {

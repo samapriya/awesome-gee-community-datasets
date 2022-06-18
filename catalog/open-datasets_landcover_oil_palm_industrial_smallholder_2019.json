@@ -61,7 +61,15 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "industrial, smallholder, oil palm, deep learning, global, remote sensing, Sentinel-1, Sentinel-2, convolutional neural network"
+        "industrial",
+        " smallholder",
+        " oil palm",
+        " deep learning",
+        " global",
+        " remote sensing",
+        " Sentinel-1",
+        " Sentinel-2",
+        " convolutional neural network"
     ],
     "providers": [
         {

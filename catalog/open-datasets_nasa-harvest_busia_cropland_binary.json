@@ -61,7 +61,15 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "agriculture, Africa, Busia, crops, crop classification, food security, satellite data, Earth observation, GIS"
+        "agriculture",
+        " Africa",
+        " Busia",
+        " crops",
+        " crop classification",
+        " food security",
+        " satellite data",
+        " Earth observation",
+        " GIS"
     ],
     "providers": [
         {

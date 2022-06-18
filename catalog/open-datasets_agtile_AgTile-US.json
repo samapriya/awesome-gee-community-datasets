@@ -61,7 +61,16 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Agriculture,Tile Drainage,Subsurface,USA,CONUS,GIS,30 meter,data,gridded,raster"
+        "Agriculture",
+        "Tile Drainage",
+        "Subsurface",
+        "USA",
+        "CONUS",
+        "GIS",
+        "30 meter",
+        "data",
+        "gridded",
+        "raster"
     ],
     "providers": [
         {

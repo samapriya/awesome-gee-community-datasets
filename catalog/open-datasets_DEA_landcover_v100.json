@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Australia, land cover, remote sensing, landsat, satellite"
+        "Australia",
+        " land cover",
+        " remote sensing",
+        " landsat",
+        " satellite"
     ],
     "providers": [
         {

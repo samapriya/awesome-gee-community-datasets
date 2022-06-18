@@ -61,7 +61,9 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Evergreen Deciduous Needleleaf Trees avg, EarthEnv, global freshwater"
+        "Evergreen Deciduous Needleleaf Trees avg",
+        " EarthEnv",
+        " global freshwater"
     ],
     "providers": [
         {

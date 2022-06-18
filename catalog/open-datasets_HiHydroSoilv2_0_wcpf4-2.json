@@ -61,7 +61,16 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle"
+        "Global Hydrologic Soil Group",
+        " Hydrology",
+        " Hydrological",
+        " Soil",
+        " Hydraulic",
+        " Conductivity",
+        " Runoff",
+        " Run-off",
+        " Water",
+        " Water Cycle"
     ],
     "providers": [
         {

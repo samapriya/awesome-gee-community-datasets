@@ -61,7 +61,16 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "precipitation, streamflow, Peru, Ecuador, random forest, SWAT, reverse hydrology, satellite data, Earth observation, GIS"
+        "precipitation",
+        " streamflow",
+        " Peru",
+        " Ecuador",
+        " random forest",
+        " SWAT",
+        " reverse hydrology",
+        " satellite data",
+        " Earth observation",
+        " GIS"
     ],
     "providers": [
         {

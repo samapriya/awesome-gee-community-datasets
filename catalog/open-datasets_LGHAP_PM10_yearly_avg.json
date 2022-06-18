@@ -61,7 +61,10 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        " AOD, PM2.5, PM10, Gap free"
+        " AOD",
+        " PM2.5",
+        " PM10",
+        " Gap free"
     ],
     "providers": [
         {

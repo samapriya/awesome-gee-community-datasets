@@ -61,7 +61,14 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "carbon stocks, land degradation, natural climate solutions, remote sensing, soil mapping, spatial prediction, soil carbon, carbon sequestration"
+        "carbon stocks",
+        " land degradation",
+        " natural climate solutions",
+        " remote sensing",
+        " soil mapping",
+        " spatial prediction",
+        " soil carbon",
+        " carbon sequestration"
     ],
     "providers": [
         {

@@ -61,7 +61,13 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-SA-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables,precipitation"
+        "climate change",
+        " global circulation models",
+        " gridded climate data",
+        " north america",
+        "emission scenarios",
+        "climate variables",
+        "precipitation"
     ],
     "providers": [
         {

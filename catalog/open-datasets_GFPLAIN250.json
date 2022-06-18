@@ -61,7 +61,11 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Floodplain, Digital Elevation Model (DEM), Terrain analysis, river networks, landscape features"
+        "Floodplain",
+        " Digital Elevation Model (DEM)",
+        " Terrain analysis",
+        " river networks",
+        " landscape features"
     ],
     "providers": [
         {

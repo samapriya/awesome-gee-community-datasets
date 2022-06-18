@@ -61,7 +61,9 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-NC-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "Standard Deviation 5km, EarthEnv, Global Habitat Heterogeneity"
+        "Standard Deviation 5km",
+        " EarthEnv",
+        " Global Habitat Heterogeneity"
     ],
     "providers": [
         {

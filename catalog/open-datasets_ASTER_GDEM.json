@@ -61,7 +61,10 @@
     "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "ASTER, DEM, elevation, remote sensing"
+        "ASTER",
+        " DEM",
+        " elevation",
+        " remote sensing"
     ],
     "providers": [
         {

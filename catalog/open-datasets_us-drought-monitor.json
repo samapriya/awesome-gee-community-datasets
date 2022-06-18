@@ -53,7 +53,7 @@
             "interval": [
                 [
                     "1999-12-27T00:00:00Z",
-                    "2022-05-30T00:00:00Z"
+                    "2022-06-06T00:00:00Z"
                 ]
             ]
         }
@@ -61,7 +61,15 @@
     "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
+        "National Drought Mitigation Center",
+        " NDMC",
+        " Drought",
+        " University of Nebraska-Lincoln",
+        " United States Department of Agriculture",
+        " USDA",
+        " National Oceanic and Atmospheric Administration",
+        " NOAA",
+        " USDM"
     ],
     "providers": [
         {
