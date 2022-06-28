@@ -113,6 +113,7 @@ Community Datasets added by users and made available for use at large
 -   [OSM Water Layer Surface Waters in OpenStreetMap](https://samapriya.github.io/awesome-gee-community-datasets/projects/osm_water/)
 -   [Global 30m Height Above the Nearest Drainage](https://samapriya.github.io/awesome-gee-community-datasets/projects/hand/)
 -   [HydroLAKES v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydrolakes/)
+-   [GLOBathy (Global lakes bathymetry dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/globathy)
 -   [Global River Width from Landsat (GRWL)](https://samapriya.github.io/awesome-gee-community-datasets/projects/grwl/)
 -   [Global coastal rivers and environmental variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/rivermouth/)
 -   [Global River Deltas and vulnerability](https://samapriya.github.io/awesome-gee-community-datasets/projects/river_deltas/)

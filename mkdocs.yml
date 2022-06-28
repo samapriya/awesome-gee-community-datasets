@@ -170,6 +170,7 @@ nav:
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - HydroLAKES v1.0: projects/hydrolakes.md
+    - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
     - Global coastal rivers and environmental variables: projects/rivermouth.md
     - Global River Deltas and vulnerability: projects/river_deltas.md

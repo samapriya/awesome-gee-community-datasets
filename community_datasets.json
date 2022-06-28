@@ -6982,5 +6982,21 @@
     "id": "users/lgutierrezlf/PISCOeo_pm/daily",
     "provider": "Huerta et al 2022",
     "tags": "reference evapotranspiration, FAO Penman Monteith, Peru, hydrology, satellite data, Earth observation"
+  },
+  {
+    "title": "GLOBathy (Global lakes bathymetry dataset) : Bathymetry",
+    "sample_code": "https://code.earthengine.google.com/1b440cac2b9e8cd3ece21f9a021cd3a3",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_bathymetry",
+    "provider": "Khazaei, B., Read, L.K., Casali, M. et al.",
+    "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis"
+  },
+  {
+    "title": "GLOBathy (Global lakes bathymetry dataset) : GLOBathy Basic Parameters",
+    "sample_code": "https://code.earthengine.google.com/1b440cac2b9e8cd3ece21f9a021cd3a3",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_basic_parameters",
+    "provider": "Khazaei, B., Read, L.K., Casali, M. et al.",
+    "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis"
   }
 ]
