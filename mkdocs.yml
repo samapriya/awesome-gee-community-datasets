@@ -230,6 +230,7 @@ nav:
     - United States Drought Monitor Layers: projects/usdm.md
     - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
     - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
+    - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
   - Global Events Layers:
     - Global Fire Atlas (2003-2016): projects/gfa.md
     - Archival NRT FIRMS Global VIIRS and MODIS vector data: projects/firms_vector.md

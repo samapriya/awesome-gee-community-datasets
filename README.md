@@ -183,6 +183,7 @@ Community Datasets added by users and made available for use at large
 -   [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 -   [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
 -   [Long-term Gap-free High-resolution Air Pollutants (LGHAP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/lghap)
+-   [Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm)](https://samapriya.github.io/awesome-gee-community-datasets/projects/piscoeo)
 
 13. Global Events Layers
 

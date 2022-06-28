@@ -6950,5 +6950,37 @@
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014",
     "provider": "Conservation Innovation Center at the Chesapeake Conservancy",
     "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, Chesapeake Bay"
+  },
+  {
+    "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Yearly mean data",
+    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "type": "image_collection",
+    "id": "users/lgutierrezlf/PISCOeo_pm/yearly",
+    "provider": "Huerta et al 2022",
+    "tags": "reference evapotranspiration, FAO Penman Monteith, Peru, hydrology, satellite data, Earth observation"
+  },
+  {
+    "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data",
+    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "type": "image_collection",
+    "id": "users/lgutierrezlf/PISCOeo_pm/climatology",
+    "provider": "Huerta et al 2022",
+    "tags": "reference evapotranspiration, FAO Penman Monteith, Peru, hydrology, satellite data, Earth observation"
+  },
+  {
+    "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly data",
+    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "type": "image_collection",
+    "id": "users/lgutierrezlf/PISCOeo_pm/monthly",
+    "provider": "Huerta et al 2022",
+    "tags": "reference evapotranspiration, FAO Penman Monteith, Peru, hydrology, satellite data, Earth observation"
+  },
+  {
+    "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Daily data",
+    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "type": "image_collection",
+    "id": "users/lgutierrezlf/PISCOeo_pm/daily",
+    "provider": "Huerta et al 2022",
+    "tags": "reference evapotranspiration, FAO Penman Monteith, Peru, hydrology, satellite data, Earth observation"
   }
 ]
