@@ -7,7 +7,7 @@
     "id": "projects/sat-io/open-datasets/GLO-30",
     "title": "Copernicus Digital Elevation Model (GLO-30 DEM)",
     "description": "Copernicus Digital Elevation Model (GLO-30 DEM)",
-    "license": "CC-PDDC",
+    "license": "proprietary",
     "gee:type": "image_collection",
     "links": [
         {
@@ -34,7 +34,7 @@
         },
         {
             "rel": "license",
-            "href": "https://spdx.org/licenses/CC-PDDC.html",
+            "href": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
             "type": "text/html"
         }
     ],
@@ -58,7 +58,7 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available publicly under CC-PDDC.",
+    "gee:terms_of_use": "This dataset is made available under a proprietary license.",
     "gee:user_uploaded": true,
     "keywords": [
         "digital elevation model",
