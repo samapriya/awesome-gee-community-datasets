@@ -1,4 +1,4 @@
-# Urban Watch 1m Land Cover & Land Use
+# UrbanWatch 1m Land Cover & Land Use
 
 Very-high-resolution (VHR) land cover and land use (LCLU) is an essential baseline data for understanding fine-scale interactions between humans and the heterogeneous landscapes of urban environments. In this study, we developed a **Fine-resolution, Large-area Urban Thematic information Extraction (FLUTE)** framework to address multiple challenges facing large-area, high-resolution urban mapping, including the view angle effect, high intraclass and low interclass variation, and multiscale land cover types. FLUTE builds upon a teacher-student deep learning architecture and includes two new feature extraction modules – Scale-aware Parsing Module
 (SPM) and View-aware Embedding Module (VEM).

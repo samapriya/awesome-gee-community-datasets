@@ -99,7 +99,7 @@ Community Datasets added by users and made available for use at large
 -   [Mississippi River Basin Floodplain Land Use Change (1941-2000)](https://samapriya.github.io/awesome-gee-community-datasets/projects/floodplain_lc.md)
 -   [Continental-scale land cover mapping at 10 m resolution over Europe](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc)
 -   [Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/dea_lc)
--   [Urban Watch 1m Land Cover & Land Use](https://samapriya.github.io/awesome-gee-community-datasets/projects/urban-watch)
+-   [UrbanWatch 1m Land Cover & Land Use](https://samapriya.github.io/awesome-gee-community-datasets/projects/urban-watch)
 -   [Vermont High Resolution Land Cover 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/vt_lc)
 -   [Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cc)
 -   [C-CAP High-Resolution Land Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_lc)
