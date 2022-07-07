@@ -23,7 +23,9 @@ The following additional statements further clarify the nature of the products d
 * Longer term effects are controlled by variables that evolve after a fire and are beyond the scope of this program.
 * Burn severity is mappable and remotely sensed data provide a measurement framework.
 
-#### Overview Paper Citation
+The area occurence layer is now part of [official GEE catalog offering, you can find it here](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_MTBS_burned_area_boundaries_v1)
+
+### Paper citation
 
 ```
 Eidenshink, Jeff, Brian Schwind, Ken Brewer, Zhi-Liang Zhu, Brad Quayle, and Stephen Howard. "
