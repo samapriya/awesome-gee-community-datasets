@@ -103,6 +103,8 @@ Community Datasets added by users and made available for use at large
 -   [Vermont High Resolution Land Cover 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/vt_lc)
 -   [Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cc)
 -   [C-CAP High-Resolution Land Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_lc)
+-   [C-CAP Medium-Resolution Land Cover - Beta](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_mlc)
+-   [C-CAP Wetland Potential 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_wpotential)
 -   [Oil Palm Plantation Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/oil-palm)
 -   [South African National Land Cover 2018](https://samapriya.github.io/awesome-gee-community-datasets/projects/sa_nlc2018)
 -   [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_lc)

@@ -6998,5 +6998,37 @@
     "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_basic_parameters",
     "provider": "Khazaei, B., Read, L.K., Casali, M. et al.",
     "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis"
+  },
+  {
+    "title": "C-CAP Wetland Potential 30m",
+    "sample_code": "https://code.earthengine.google.com/c16cd4e019e7e44e3c66924f8fba0677",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/NOAA/conus_ccap_wetland_potential",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Wetland, Coastal data, NOAA, Remote Sensing"
+  },
+  {
+    "title": "C-CAP Medium-Resolution Land Cover - Beta 10m",
+    "sample_code": "https://code.earthengine.google.com/e7180cf756bdb8593c479f0da91e8118",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NOAA/ccap_10m",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP Medium-Resolution Land Cover - Beta 30m",
+    "sample_code": "https://code.earthengine.google.com/e7180cf756bdb8593c479f0da91e8118",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NOAA/ccap_30m",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+  },
+  {
+    "title": "C-CAP Medium-Resolution Impervious - Beta 30m",
+    "sample_code": "https://code.earthengine.google.com/f8f1636a5ae3b0b03715c805ec436f67",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NOAA/ccap_30m_impervious",
+    "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA, Impervious"
   }
 ]

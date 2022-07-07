@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-07-07
+- Added [C-CAP Medium-Resolution Land Cover - Beta](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_mlc)
+- Added [C-CAP Wetland Potential 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/ccap_wpotential)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+
 #### Updates 2022-06-28
 
 - Added [Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm)](https://samapriya.github.io/awesome-gee-community-datasets/projects/piscoeo)
