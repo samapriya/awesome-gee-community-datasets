@@ -7013,7 +7013,7 @@
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NOAA/ccap_10m",
     "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
-    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+    "tags": "Land Use, Land Cover, Remote Sensing, High Resolution, OBIA, NOAA"
   },
   {
     "title": "C-CAP Medium-Resolution Land Cover - Beta 30m",
@@ -7021,7 +7021,7 @@
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NOAA/ccap_30m",
     "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
-    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA"
+    "tags": "Land Use, Land Cover, Remote Sensing, High Resolution, OBIA, NOAA"
   },
   {
     "title": "C-CAP Medium-Resolution Impervious - Beta 30m",
@@ -7029,6 +7029,54 @@
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NOAA/ccap_30m_impervious",
     "provider": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
-    "tags": "Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA, Impervious"
+    "tags": "Land Use, Land Cover, Remote Sensing, High Resolution, OBIA, NOAA, Impervious"
+  },
+  {
+    "title": "LandCoverNet v1.0 - Australia",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_au_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "LandCoverNet v1.0 - Africa",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_af_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "LandCoverNet v1.0 - Asia",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_as_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "LandCoverNet v1.0 - Europe",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_eu_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "LandCoverNet v1.0 - North America",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_na_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "LandCoverNet v1.0 - South America",
+    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_sa_v1_labels",
+    "provider": "Radiant Earth Foundation",
+    "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
   }
 ]

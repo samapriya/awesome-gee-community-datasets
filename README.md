@@ -90,6 +90,7 @@ Community Datasets added by users and made available for use at large
 -   [Global Impervious Surface Area (1972-2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisa)
 -   [Global urban extents from 1870 to 2100](https://samapriya.github.io/awesome-gee-community-datasets/projects/gue)
 -   [World Settlement Footprint & Evolution](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf/)
+-   [LandCoverNet Training Labels v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcnet/)
 
 6.  Regional Land Use and Land Cover
 
