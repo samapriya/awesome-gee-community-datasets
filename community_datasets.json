@@ -7078,5 +7078,157 @@
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_sa_v1_labels",
     "provider": "Radiant Earth Foundation",
     "tags": "Land Use, Land Cover, Remote Sensing, landsat-8, sentinel-1, sentinel-2, segmentation"
+  },
+  {
+    "title": "Global River Classification (GloRiC)",
+    "sample_code": "https://code.earthengine.google.com/03b29dc3ed6b68d21cb3924ab66a8b73",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GloRiC/GloRiC_v10",
+    "provider": "Ouellet Dallaire, C., Lehner, B., Sayre, R., Thieme, M. & Schmitt, O",
+    "tags": "water,hydrology, rivers, discharge, depth, volume, area, gloric"
+  },
+  {
+    "title": "Global River Classification (GloRiC) Canada",
+    "sample_code": "https://code.earthengine.google.com/03b29dc3ed6b68d21cb3924ab66a8b73",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GloRiC/GloRiC_Canada_v10",
+    "provider": "Ouellet Dallaire, C., Lehner, B., Sayre, R., Thieme, M. & Schmitt, O",
+    "tags": "water,hydrology, rivers, discharge, depth, volume, area, gloric"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev01",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev01",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev02",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev02",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev03",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev03",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev04",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev04",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev05",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev05",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev06",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev06",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev07",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev07",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev08",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev08",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev09",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev09",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev10",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev10",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev11",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev11",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS BasinAtlas : BasinATLAS_v10_lev12",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev12",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS LakeAtlas : LakeAtlas_v10_point",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/LakeAtlas/LakeAtlas_v10_point",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS LakeAtlas : LakeAtlas_v10_polygon",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/LakeAtlas/LakeAtlas_v10_polygon",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroATLAS HydroAtlas : RiverAtlas_v10",
+    "sample_code": "https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HydroAtlas/RiverAtlas_v10",
+    "provider": "Linke et al and Lehner et al",
+    "tags": "water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers"
+  },
+  {
+    "title": "HydroWASTE v1.0",
+    "sample_code": "https://code.earthengine.google.com/761bd1c4fc4ad6c91286b035ef4d1a0b",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/HydroWaste/HydroWASTE_v10",
+    "provider": "Ehalt Macedo, H., Lehner, B., Nicell, J., Grill, G., Li, J., Limtong, A., Shakya, R.",
+    "tags": "water,hydrology, rivers, discharge, depth, volume, area, hydrowaste, wastewater"
+  },
+  {
+    "title": "RealSAT Global Dataset of Reservoir and Lake Surface Area",
+    "sample_code": "https://code.earthengine.google.com/726c44a5b0252c26082064d14844bd01",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ReaLSAT/ReaLSAT-1_4",
+    "provider": "Khandelwal, A., Karpatne, A., Ravirathinam, P. et al.",
+    "tags": "water,hydrology, lakes, global lake surface, ReaLSAT, Surface water monitoring, Lakes and reservoirs, Hydrology, Landsat"
   }
 ]

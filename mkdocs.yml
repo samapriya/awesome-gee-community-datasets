@@ -173,11 +173,15 @@ nav:
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
     - HydroLAKES v1.0: projects/hydrolakes.md
+    - HydroATLAS v1.0: projects/hydroatlas.md
+    - HydroWaste v1.0: projects/hydrowaste.md
+    - Global River Classification (GloRiC): projects/gloric.md
     - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
     - Global River Width from Landsat (GRWL): projects/grwl.md
     - Global coastal rivers and environmental variables: projects/rivermouth.md
     - Global River Deltas and vulnerability: projects/river_deltas.md
     - Global georeferenced Database of Dams(GOODD): projects/goodd.md
+    - RealSAT Global Dataset of Reservoir and Lake Surface Area: projects/realsat.md
     - Global Hydrologic Curve Number(GCN250): projects/gcn250.md
     - Global high-resolution floodplains (GFPLAIN250m): projects/gfplain250.md
     - Global river networks & Corresponding Water resources zones: projects/grn_wrz.md
