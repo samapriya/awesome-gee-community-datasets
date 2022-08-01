@@ -3,7 +3,12 @@
 This collection contains datasets with the spatial distribution of carbon stock in soil and plants of Canada and canopy heights. It is being made public to act as supplementary data for the publication 'Large soil carbon storage in terrestrial ecosystems of Canada', currently under review.
 The maps were produced in the Remote Sensing Lab, McMaster University, between January and December 2020. This research project was made possible by a grant from the World Wildlife Fund (WWF)- Canada. This project aimed to produce the first wall-to-wall estimate of carbon stocks in plants and soils of Canada at 250 m spatial resolution using multisource satellite, climate and topographic data and a machine-learning algorithm.
 
-You can read the [preprint of the paper here](https://www.essoar.org/doi/10.1002/essoar.10507117.2) and [download the datasets from collection here](https://data.4tu.nl/collections/Carbon_storage_and_distribution_in_terrestrial_ecosystems_of_Canada/5421810)
+You can read the [paper here](https://doi.org/10.1029/2021GB007213) and download the datasets: 
+
+- Spatial distribution of maximum canopy height and heights percentiles (https://doi.org/10.4121/14573079.v1)
+- Forest carbon stock and uncertainty maps (https://doi.org/10.4121/14572929.v1)
+- Soil carbon stock and uncertainty maps (https://doi.org/10.4121/16686154.v3)
+
 
 #### Dataset descriptors
 
@@ -30,8 +35,7 @@ To generate the soil carbon stock map, we used 6,490 ground samples of soil orga
 #### Data Citation
 
 ```
-Sothe, Camile; Gonsamo, Alemu; Arabian, Joyce; Kurz, Werner A.; Finkelstein, Sarah; Snider, James (2021): Soil organic carbon stock and
-uncertainties, 1m depth, at 250m spatial resolution in Canada, version 2.0. 4TU.ResearchData. Dataset. https://doi.org/10.4121/16686154.v1
+Sothe, C., Gonsamo, A., Arabian, J., Kurz, W. A., Finkelstein, S. A., & Snider, J. (2022). Large soil carbon storage in terrestrial ecosystems of Canada. Global Biogeochemical Cycles, 36, e2021GB007213. https://doi.org/10.1029/2021GB007213 
 ```
 
 ![ca_carbon](https://user-images.githubusercontent.com/6677629/141673532-bfd657f7-941a-4687-948e-fab97102908b.gif)
@@ -52,7 +56,7 @@ Sample code: https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63a
 #### License
 This work is licensed under and freely available to the public (similar to a CC0 license).
 
-Created by: Sothe et al 2021
+Created by: Sothe et al 2022
 
 Curated in GEE by : Samapriya Roy
 
