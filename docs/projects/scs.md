@@ -6,7 +6,7 @@ The maps were produced in the Remote Sensing Lab, McMaster University, between J
 You can read the [paper here](https://doi.org/10.1029/2021GB007213) and download the datasets: 
 
 - Spatial distribution of maximum canopy height and heights percentiles (https://doi.org/10.4121/14573079.v1)
-- Forest carbon stock and uncertainty maps (https://doi.org/10.4121/14572929.v1)
+- Forest carbon stock and uncertainty maps (https://data.4tu.nl/articles/dataset/Carbon_map_and_uncertainty_in_forested_areas_of_Canada_250m_spatial_resolution/14572929/2)
 - Soil carbon stock and uncertainty maps (https://doi.org/10.4121/16686154.v3)
 
 
