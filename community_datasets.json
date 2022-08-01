@@ -7225,7 +7225,7 @@
   },
   {
     "title": "RealSAT Global Dataset of Reservoir and Lake Surface Area",
-    "sample_code": "https://code.earthengine.google.com/726c44a5b0252c26082064d14844bd01",
+    "sample_code": "https://code.earthengine.google.com/acedad57b233b5c69993f79f344f5194",
     "type": "table",
     "id": "projects/sat-io/open-datasets/ReaLSAT/ReaLSAT-1_4",
     "provider": "Khandelwal, A., Karpatne, A., Ravirathinam, P. et al.",
