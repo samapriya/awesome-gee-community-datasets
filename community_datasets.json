@@ -7230,5 +7230,45 @@
     "id": "projects/sat-io/open-datasets/ReaLSAT/ReaLSAT-1_4",
     "provider": "Khandelwal, A., Karpatne, A., Ravirathinam, P. et al.",
     "tags": "water,hydrology, lakes, global lake surface, ReaLSAT, Surface water monitoring, Lakes and reservoirs, Hydrology, Landsat"
+  },
+  {
+    "title": "Global Daily near-surface air temperature (2003-2020): Africa",
+    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-daily-air-temp/africa",
+    "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
+    "tags": "Air Temperature, land surface temperature (LST), SVCM-SP, MODIS, Global"
+  },
+  {
+    "title": "Global Daily near-surface air temperature (2003-2020): Australia",
+    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-daily-air-temp/australia",
+    "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
+    "tags": "Air Temperature, land surface temperature (LST), SVCM-SP, MODIS, Global"
+  },
+  {
+    "title": "Global Daily near-surface air temperature (2003-2020): Eurasia",
+    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-daily-air-temp/europe_asia",
+    "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
+    "tags": "Air Temperature, land surface temperature (LST), SVCM-SP, MODIS, Global"
+  },
+  {
+    "title": "Global Daily near-surface air temperature (2003-2020): North America",
+    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-daily-air-temp/north_america",
+    "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
+    "tags": "Air Temperature, land surface temperature (LST), SVCM-SP, MODIS, Global"
+  },
+  {
+    "title": "Global Daily near-surface air temperature (2003-2020): Latin America",
+    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-daily-air-temp/latin_america",
+    "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
+    "tags": "Air Temperature, land surface temperature (LST), SVCM-SP, MODIS, Global"
   }
 ]

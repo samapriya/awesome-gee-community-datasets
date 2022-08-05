@@ -2,6 +2,9 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-08-05
+- Added [Global Daily near-surface air temperature (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/airtemp)
+
 #### Updates 2022-08-01
 - Added [HydroATLAS v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydroatlas)
 - Added [HydroWaste v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydrowaste)

@@ -188,6 +188,7 @@ Community Datasets added by users and made available for use at large
 -   [Current and projected climate data for North America (CMIP6 scenarios)](https://samapriya.github.io/awesome-gee-community-datasets/projects/aogcm_cmip6/)
 -   [Terraclimate Individual years for +2C and +4C climate futures](https://samapriya.github.io/awesome-gee-community-datasets/projects/terraclim/)
 -   [MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/daily_lst/)
+-   [Global Daily near-surface air temperature (2003-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/airtemp)
 -   [United States Drought Monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 -   [High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hitisae)
 -   [Long-term Gap-free High-resolution Air Pollutants (LGHAP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/lghap)

@@ -8,7 +8,7 @@ repo_name: awesome-gee-community-datasets
 repo_url: https://github.com/samapriya/awesome-gee-community-datasets
 
 # Copyright
-copyright: 'Copyright &copy; 2021 - 2022 Samapriya Roy'
+copyright: 'Copyright &copy; 2022 - 2023 Samapriya Roy'
 
 
 # Configuration
@@ -235,6 +235,7 @@ nav:
     - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
     - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
     - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
+    - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
     - United States Drought Monitor Layers: projects/usdm.md
     - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
     - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
