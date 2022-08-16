@@ -144,7 +144,7 @@ Community Datasets added by users and made available for use at large
 
 9.  Agriculture, Vegetation and Forestry
 
--   [Landfire Mosaics LF v2.0.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
+-   [Landfire Mosaics LF v2.2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
 -   [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
 -   [ETH Global Sentinel-2 10m Canopy Height (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/canopy)
 -   [Global Forest Carbon Fluxes (2001-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cflux)

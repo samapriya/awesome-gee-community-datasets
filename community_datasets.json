@@ -753,7 +753,7 @@
   },
   {
     "title": "Existing Vegetation Cover (EVC) LF v2.2.0",
-    "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+    "sample_code": "https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd3",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVC",
     "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -761,7 +761,7 @@
   },
   {
     "title": "Existing Vegetation Height (EVH) LF v2.2.0",
-    "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+    "sample_code": "https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd3",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVH",
     "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
@@ -769,7 +769,7 @@
   },
   {
     "title": "Existing Vegetation Type (EVT) LF v2.2.0",
-    "sample_code": "https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666",
+    "sample_code": "https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd3",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVT",
     "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",

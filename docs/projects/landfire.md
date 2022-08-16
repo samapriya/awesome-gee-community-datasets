@@ -1,4 +1,4 @@
-# Landfire Mosaics LF v2.0.0
+# Landfire Mosaics LF v2.2.0
 
 LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a shared program between the wildland fire management programs of the U.S. Department of Agriculture's Forest Service, U.S. Department of the Interior's Geological Survey, and The Nature Conservancy.
 
@@ -10,7 +10,7 @@ LF Remap is a comprehensive mapping effort that uses recent data to create a new
 
 Currently included layers are
 
-#### Earth Engine Snippet: Fire Regime
+#### Earth Engine Snippet: Fire Regime v2.0.0
 
 ```js
 var sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/sclass");
@@ -20,55 +20,67 @@ var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regim
 
 Sample Code: https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709
 
-#### Earth Engine Snippet: Disturbance
+#### Earth Engine Snippet: Disturbance 2.2.0
 
 ```js
-var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/fdist");
-var hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/hdist")
+var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/FDIST");
+var hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/HDIST");
+var distyear = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR");
 ```
 
-Sample Code: https://code.earthengine.google.com/5b1706ec636eb864a273b0cef18a1786
+Sample Code: https://code.earthengine.google.com/63b6e1b40d7996cea4efadc371efa573
 
-#### Earth Engine Snippet: Topographic
+#### Earth Engine Snippet: Topographic 2.2.0
 
 ```js
-var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/aspect");
-var aspect = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/elevation");
+var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ELEV");
+var aspect = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ASP");
+var slope_degrees = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SLP");
+var slope_perc_rise = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SlpP");
 ```
 
-Sample Code: https://code.earthengine.google.com/b162248aa8a2495648f10baed01e7ef3
+Sample Code: https://code.earthengine.google.com/3f30203a14f746ba9cbd288affe6e9c0
 
 ![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
 
 
-#### Earth Engine Snippet: Fuel
+#### Earth Engine Snippet: Fuel 2.2.0
 
 ```js
-var ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/ch");
-var cc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cc");
-var cbh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cbh");
-var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/cbd");
-var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvc");
-var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvh");
-var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fvt");
-var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/fccs");
+var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBD");
+var cbh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBH");
+var cc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CC");
+var cffdrs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CFFDRS");
+var ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CH");
+var fbfm13 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM13");
+var fbfm40 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM40");
+var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FCCS");
+var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVC");
+var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVH");
+var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVT");
 ```
-Sample Code: https://code.earthengine.google.com/e4a9120382b0fdfb9c0a7e75405711ac
+Sample Code: https://code.earthengine.google.com/79ed0fdc4b116189a01488f666680aa7
 
 ![lf_veg](https://user-images.githubusercontent.com/6677629/115133326-e3449700-9fcc-11eb-81bf-450c622ca166.gif)
 
-#### Earth Engine Snippet: Vegetation
+#### Earth Engine Snippet: Vegetation 2.2.0
 
 ```js
-var bps = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/bps_v2_0_0");
-var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/evc_v2_0_0");
-var evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/evh_v2_0_0");
-var evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/evt_v2_0_0");
-var nvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/nvc_v2_0_0");
+var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVC");
+var evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVH");
+var evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVT");
 ```
 
 
-Sample Code: https://code.earthengine.google.com/76c6cbf1f4c837f48ae6d080b15e1666
+Sample Code: https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd3
+
+#### Earth Engine Snippet: Transportation 2.2.0
+
+```js
+var roads = ee.ImageCollection("projects/sat-io/open-datasets/landfire/transportation/ROADS");
+```
+
+Sample Code: https://code.earthengine.google.com/b378e2ec07797174980fdb8d7a197fc5
 
 Resolution:
 approx 30m
@@ -90,4 +102,4 @@ Curated by: Samapriya Roy
 
 Keywords: doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire
 
-Last updated: 2021-04-17
+Last updated: 2022-08-16
