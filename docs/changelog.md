@@ -2,6 +2,9 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-08-22
+- Added [Global NPP-VIIRS-like nighttime light (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/npp_viirs_ntl)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 #### Updates 2022-08-16
 - Updated [Landfire Mosaics LF v2.2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/landfire/)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)

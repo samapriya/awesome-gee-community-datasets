@@ -160,6 +160,7 @@ Community Datasets added by users and made available for use at large
 -   [Predictive mapping of the global power system using open data](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_power/)
 -   [Facebook Electrical Distribution Grid Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/electric_grid/)
 -   [Harmonized Global Night Time Lights (1992-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hntl/)
+-   [Global NPP-VIIRS-like nighttime light (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/npp_viirs_ntl)
 -   [Global Roads Inventory Project global roads database](https://samapriya.github.io/awesome-gee-community-datasets/projects/grip/)
 -   [Global Mining Areas and Validation Datasets](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_mining/)
 -   [Global Healthsites Mapping Project](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
