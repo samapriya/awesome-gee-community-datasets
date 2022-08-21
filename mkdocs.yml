@@ -246,6 +246,7 @@ nav:
     - Archival NRT FIRMS Global VIIRS and MODIS vector data: projects/firms_vector.md
     - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
     - Landsat Burned Area: projects/lba.md
+    - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
     - Global large flood events (1985-2016) : projects/flood.md
     - Global Landslide Catalog (1970-2019): projects/landslide.md
     - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md

@@ -7327,5 +7327,13 @@
     "id": "projects/sat-io/open-datasets/npp-viirs-ntl",
     "provider": "Chen, Zuoqi et al",
     "tags": "Nighttime light, VIIRS, NTL, NPP-VIIRS"
+  },
+  {
+    "title": "30m Global Annual Burned Area Maps (GABAM)",
+    "sample_code": "https://code.earthengine.google.com/5f9aa1c500ff4ba49a7c101abb753148",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GABAM",
+    "provider": "Long Tengfei; Zhang Zhaoming; He Guojin",
+    "tags": "Global Fire, burned area, GABAM, remote sensing, Earth Engine"
   }
 ]
