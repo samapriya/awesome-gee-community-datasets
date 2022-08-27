@@ -56,4 +56,4 @@ Keywords: High Density Population, Population, Facebook
 * Now includes data version as metadata & uses global COGs
 * Now includes data from HRSL v1.5+
 
-Last updated: 2022-06-11
+Last updated: 2022-08-27

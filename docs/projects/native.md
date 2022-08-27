@@ -41,4 +41,4 @@ Curated by: Samapriya Roy
 
 Keywords: native lands, indigenousTreaties, indigenousLanguages, indigenousTerritories, Indigenous, land rights
 
-Last updated: 2022-06-12
+Last updated: 2022-08-27
