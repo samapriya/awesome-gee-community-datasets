@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-08-30
+- Added [ESRI 10m Annual Land Use Land Cover (2017-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Updated [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
+- Updated [Nodes and ways datasets from Global Health sites Mapping Projects](https://samapriya.github.io/awesome-gee-community-datasets/projects/health_sites/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-08-22
 - Added [Global NPP-VIIRS-like nighttime light (2000-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/npp_viirs_ntl)
 - Added [30m Global Annual Burned Area Maps (GABAM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gabam)

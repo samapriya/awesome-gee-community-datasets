@@ -2558,7 +2558,7 @@
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
-    "tags": "land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning"
+    "tags": "landcover, landuse, lulc, 10m, global, world, sentinel, sentinel 2, impact observatory, deep learning"
   },
   {
     "title": "Vegetation dryness for western USA",
@@ -7335,5 +7335,13 @@
     "id": "projects/sat-io/open-datasets/GABAM",
     "provider": "Long Tengfei; Zhang Zhaoming; He Guojin",
     "tags": "Global Fire, burned area, GABAM, remote sensing, Earth Engine"
+  },
+  {
+    "title": "ESRI 10m Annual Land Use Land Cover (2017-2021)",
+    "sample_code": "https://code.earthengine.google.com/59d1cbd7920b683654f91eb3d852169d",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
+    "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
+    "tags": "landcover, landuse, lulc, 10m, global, world, sentinel, sentinel 2, impact observatory"
   }
 ]

@@ -147,6 +147,7 @@ nav:
     - Global Mangrove Project: projects/mangrove.md
     - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
     - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
+    - ESRI 10m Annual Land Use Land Cover (2017-2021): projects/S2TSLULC.md
     - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
     - Global Impervious Surface Area (1972-2019): projects/gisa.md
     - Global urban extents from 1870 to 2100: projects/gue.md
