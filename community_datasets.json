@@ -1225,16 +1225,24 @@
     "tags": "Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle"
   },
   {
-    "title": "Global Aridity Index",
+    "title": "Global Aridity Index Yearly",
     "sample_code": "https://code.earthengine.google.com/04adb1bfeaf55b95bc2070edd228da73",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/global_ai_et0",
+    "id": "projects/sat-io/open-datasets/global_ai/global_ai_yearly",
+    "provider": "CGIAR Platform for Big Data in Agriculture",
+    "tags": "aridity index, geospatial modeling"
+  },
+  {
+    "title": "Global Aridity Index Monthly",
+    "sample_code": "https://code.earthengine.google.com/04adb1bfeaf55b95bc2070edd228da73",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global_ai/global_ai_monthly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
     "tags": "aridity index, geospatial modeling"
   },
   {
     "title": "Global Reference Evapotranspiration Monthly",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_et0/global_et0_monthly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -1242,9 +1250,17 @@
   },
   {
     "title": "Global Reference Evapotranspiration Yearly",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly",
+    "provider": "CGIAR Platform for Big Data in Agriculture",
+    "tags": "evapotranspiration, geospatial modeling"
+  },
+  {
+    "title": "Global Reference Evapotranspiration Yearly SD",
+    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly_sd",
     "provider": "CGIAR Platform for Big Data in Agriculture",
     "tags": "evapotranspiration, geospatial modeling"
   },
