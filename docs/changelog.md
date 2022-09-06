@@ -2,6 +2,14 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-09-06
+- Added [Aboveground carbon accumulation in global monoculture plantation forests](https://samapriya.github.io/awesome-gee-community-datasets/projects/monoculture]
+- Added [NAFD Forest Disturbance History 1986-2010](https://samapriya.github.io/awesome-gee-community-datasets/projects/nafd/)
+- Added [Global Fertilizer usage by crop & country](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_fertilizer/)
+- Updated [Global Aridity Index](https://samapriya.github.io/awesome-gee-community-datasets/projects/ai0/) to v3.
+- Updated [Global Reference Evapotranspiration Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/et0/) to v3.
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-08-30
 - Added [ESRI 10m Annual Land Use Land Cover (2017-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC)
 - Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)

@@ -7359,5 +7359,45 @@
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
     "tags": "landcover, landuse, lulc, 10m, global, world, sentinel, sentinel 2, impact observatory"
+  },
+  {
+    "title": "NAFD Forest Disturbance History 1986-2010: Annual",
+    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NAFD/vct_annual",
+    "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
+    "tags": "NAFD, Forest Dynamics, NAFD-NEX, Landsat"
+  },
+  {
+    "title": "NAFD Forest Disturbance History 1986-2010 time integrated: First",
+    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_first",
+    "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
+    "tags": "NAFD, Forest Dynamics, NAFD-NEX, Landsat"
+  },
+  {
+    "title": "NAFD Forest Disturbance History 1986-2010 time integrated: Last",
+    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_last",
+    "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
+    "tags": "NAFD, Forest Dynamics, NAFD-NEX, Landsat"
+  },
+  {
+    "title": "Global Fertilizer Use by crop & country",
+    "sample_code": "https://code.earthengine.google.com/e0869dccc3b869ecc365470afdc55c7a",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/global_fertilizer_use_centroid",
+    "provider": "Ludemann, Cameron; Gruere, Armelle; Heffer, Patrick; Dobermann, Achim",
+    "tags": "Global fertilizer use, agriculture, FAO, crop"
+  },
+  {
+    "title": "Aboveground carbon accumulation in global monoculture plantation forests",
+    "sample_code": "https://code.earthengine.google.com/243774c7f7cdbec21c3450c4fa8a64fb",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/global-monoculture-plantations",
+    "provider": "Bukoski, Jacob et al 2022",
+    "tags": "Forests, Aboveground carbon stocks, Climate change, Reforestation, Plantations, Aboveground biomass"
   }
 ]

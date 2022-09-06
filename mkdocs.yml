@@ -202,12 +202,15 @@ nav:
     - Vegetation dryness for western USA: projects/veg_dry.md
     - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
     - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
+    - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
     - Rangeland Analysis Platform layers: projects/rap.md
     - NASA Harvest Layers: projects/harvest.md
     - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
+    - NAFD Forest Disturbance History 1986-2010: projects/nafd.md
     - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
     - Tile Drained Croplands (30m): projects/tile.md
     - Global crop production tillage practices: projects/tillage.md
+    - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
   - Global Utilities, Assets and Amenities Layers:
     - Global Power: projects/global_power.md
     - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md

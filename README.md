@@ -149,10 +149,13 @@ Community Datasets added by users and made available for use at large
 -   [Vegetation dryness for western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/veg_dry)
 -   [ETH Global Sentinel-2 10m Canopy Height (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/canopy)
 -   [Global Forest Carbon Fluxes (2001-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cflux)
+-   [Aboveground carbon accumulation in global monoculture plantation forests](https://samapriya.github.io/awesome-gee-community-datasets/projects/monoculture]
 -   [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
 -   [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
 -   [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
+-   [NAFD Forest Disturbance History 1986-2010](https://samapriya.github.io/awesome-gee-community-datasets/projects/nafd/)
 -   [Global irrigation areas (2001 to 2015)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_irrigation/)
+-   [Global Fertilizer usage by crop & country](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_fertilizer/)
 -   [Tile Drained Croplands (30m)](https://samapriya.github.io/awesome-gee-community-datasets/projects/tile/)
 -   [Global crop production tillage practices](https://samapriya.github.io/awesome-gee-community-datasets/projects/tillage/)
 
