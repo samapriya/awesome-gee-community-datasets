@@ -7354,7 +7354,7 @@
   },
   {
     "title": "ESRI 10m Annual Land Use Land Cover (2017-2021)",
-    "sample_code": "https://code.earthengine.google.com/59d1cbd7920b683654f91eb3d852169d",
+    "sample_code": "https://code.earthengine.google.com/661d065b89e0beeb4b454f0c88e6096b",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
