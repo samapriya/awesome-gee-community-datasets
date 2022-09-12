@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-09-12
+- Added [Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10)](https://samapriya.github.io/awesome-gee-community-datasets/projects/glc10)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-09-06
 - Added [Aboveground carbon accumulation in global monoculture plantation forests](https://samapriya.github.io/awesome-gee-community-datasets/projects/monoculture)
 - Added [NAFD Forest Disturbance History 1986-2010](https://samapriya.github.io/awesome-gee-community-datasets/projects/nafd/)
