@@ -7399,5 +7399,13 @@
     "id": "projects/sat-io/open-datasets/global-monoculture-plantations",
     "provider": "Bukoski, Jacob et al 2022",
     "tags": "Forests, Aboveground carbon stocks, Climate change, Reforestation, Plantations, Aboveground biomass"
+  },
+  {
+    "title": "Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10)",
+    "sample_code": "https://code.earthengine.google.com/69a783764fa5b37b23b275ba1eabe006",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/FROM-GLC10",
+    "provider": "Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang.",
+    "tags": "landcover, landuse, lulc, 10m, global, world, sentinel 2, FROM-GLC"
   }
 ]
