@@ -56,50 +56,226 @@
     "tags": "Global Hand, Hydrology, drainage, hand"
   },
   {
-    "title": "Global Mangrove Extent 1996",
+    "title": "Global Mangrove Watch v3 Change-change_f1996  : Raster",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
-    "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_1996_v2",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GMW/change/change_f1996",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2007",
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2007_vec : Vector",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2007_v2",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2007_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2008",
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2008_vec : Vector",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2008_v2",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2008_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2009",
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2009_vec : Vector",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2009_v2",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2009_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2010",
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2010_vec : Vector",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2010_v2",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2010_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2015",
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2015_vec : Vector",
     "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2015_v2",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2015_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2016_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2016_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2017_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2017_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2018_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2018_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2019_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2019_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2020_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2020_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Core-gmw_v3_core_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/core/gmw_v3_core_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Core-gmw_v3_mng_core  : Raster",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GMW/core/gmw_v3_mng_core",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3  : Raster",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GMW/extent/GMW_V3",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_1996_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_1996_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2007_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2007_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2008_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2008_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2009_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2009_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2010_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2010_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2015_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2015_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2016_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2016_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2017_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2017_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2018_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2018_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2019_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2019_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Extent-gmw_v3_2020_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2020_vec",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Gmw-gmw_v3_tiles : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/gmw_v3_tiles",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Union-gmw_v3_mng_union  : Raster",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GMW/union/gmw_v3_mng_union",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW"
+  },
+  {
+    "title": "Global Mangrove Watch v3 Union-gmw_v3_union_vec : Vector",
+    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/union/gmw_v3_union_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
     "tags": "Global, Mangrove, GMW"
   },

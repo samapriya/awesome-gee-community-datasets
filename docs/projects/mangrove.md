@@ -1,103 +1,100 @@
 # Global Mangrove Watch
 
-From the Global Mangrove Dataset (1996 - 2016) website:
+This study has used L-band Synthetic Aperture Radar (SAR) global mosaic datasets from the Japan Aerospace Exploration Agency (JAXA) for 11 epochs from 1996 to 2020 to develop a long-term time-series of global mangrove extent and change. The study used a map-to-image approach to change detection where the baseline map (GMW v2.5) was updated using thresholding and a contextual mangrove change mask. This approach was applied between all image-date pairs producing 10 maps for each epoch, which were summarised to produce the global mangrove time-series. The resulting mangrove extent maps had an estimated accuracy of 87.4 % (95th conf. int.: 86.2 - 88.6 %), although the accuracies of the individual gain and loss change classes were lower at 58.1 % (52.4 - 63.9 %) and 60.6 % (56.1 - 64.8 %), respectively.
 
-**The GMW has generated a global baseline map of mangroves for 2010 using ALOS PALSAR and Landsat (optical) data, and changes from this baseline for six epochs between 1996 and 2016 derived from JERS-1 SAR, ALOS PALSAR and ALOS-2 PALSAR-2. Annual maps are planned from 2018 and onwards.**
+Sources of error included a mis-registration in the SAR mosaic datasets, which could only be partially corrected for, but also confusion in fragmented areas of mangroves, such as around aquaculture ponds. Overall, 152,604 km2 (133,996 - 176,910) of mangroves were identified for 1996, with this decreasing by -5,245 km2 (-13,587 - 3686) resulting in a total extent of 147,359 km2 (127,925 - 168,895) in 2020, and representing an estimated loss of 3.4 % over the 24-year time period. The Global Mangrove Watch Version 3.0 represents the most comprehensive record of global mangrove change achieved to date and is expected to support a wide range of activities, including the ongoing monitoring of the global coastal environment, defining and assessments of progress towards conservation targets, protected area planning and risk assessments of mangrove ecosystems worldwide.
 
-Updated dataset: https://www.globalmangrovewatch.org/datasets/
+You can [download the dataset here](https://zenodo.org/record/6894273#.YyMn4tXMKdw) and [read the paper here](https://www.mdpi.com/2072-4292/14/15/3657)
 
-#### Citation:
+Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-```
-Bunting P., Rosenqvist A., Lucas R., Rebelo L-M., Hilarides L., Thomas N., Hardy A., Itoh T., Shimada M. and Finlayson C.M. (2018). The Global Mangrove Watch – a New 2010 Global Baseline of Mangrove Extent. Remote Sensing 10(10): 1669. doi: 10.3390/rs1010669.
+#### Preprocessing
 
-
-Thomas N, Lucas R, Bunting P, Hardy A, Rosenqvist A, Simard M. (2017). Distribution and drivers of global mangrove forest change, 1996-2010. PLOS ONE 12: e0179302. doi: 10.1371/journal.pone.0179302
-```
-
-![mangrove](https://user-images.githubusercontent.com/6677629/83225702-598aa180-a14e-11ea-9dce-65c46278531f.gif)
-
-#### Earth Engine Snippet
-
-```js
-var gmw2007 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2007_v2");
-var gmw2008 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2008_v2");
-var gmw2009 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2009_v2");
-var gmw2010 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2010_v2");
-var gmw2015 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2015_v2");
-var gmw2016 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_2016_v2");
-var gmw1996 = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/GMW_1996_v2");
-```
-
-Sample Code: https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2
-
-Resolution:
-0.8 degee approx 30m
-
-#### License & Usage
-Attribution 4.0 International (CC BY 4.0)
-https://creativecommons.org/licenses/by/4.0/.
-
-You are free to:
-Share — copy and redistribute the material in any medium or format
-Adapt — remix, transform, and build upon the material for any purpose, even commercially.
-
-Under the following terms:
-Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-Website:  https://data.unep-wcmc.org/datasets/45
-
-Curated by: Samapriya Roy
-
-Keywords: Global, Mangrove, GMW
-
-Last updated: 2019-06-14
-
-## Global Mangrove Watch 2010 Baseline (v2.5)
-
-This study presents an updated global mangrove forest baseline for 2010: Global Mangrove Watch (GMW) v2.5. The previous GMW maps (v2.0) of the mangrove extent are currently considered the most comprehensive available global products, however areas were identified as missing or poorly mapped. Therefore, this study has updated the 2010 baseline map to increase the mapping quality and completeness of the mangrove extent. This revision resulted in an additional 2660 km2 of mangroves being mapped yielding a revised global mangrove extent for 2010 of some 140,260 km2. The overall map accuracy was estimated to be 95.1% with a 95th confidence interval of 93.8–96.5%, as assessed using 50,750 reference points located across 60 globally distributed sites. Of these 60 validation sites, 26 were located in areas that were remapped to produce the v2.5 map and the overall accuracy for these was found to have increased from 82.6% (95th confidence interval: 80.1–84.9) for the v2.0 map to 95.0% (95th confidence interval: 93.7–96.4) for the v2.5 map. Overall, the improved GMW v2.5 map provides a more robust product to support the conservation and sustainable use of mangroves globally. Read the full [paper here](https://www.mdpi.com/2072-4292/14/4/1034/htm?s=09)
-
-Disclaimer: Whole or parts of the dataset description was provided by the author(s) or their works.
-
-You can download the [datasets here](https://doi.org/10.5281/zenodo.5828339) and the [github page with code here](https://github.com/globalmangrovewatch/gmw_gap_fill_2020).
+Raster tiles were mosaiced so that all extents and allied rasters can fit into single collections. Date ranges were added later to the raster and the vector layers.
 
 #### Citation:
 
 ```
-Bunting P., Rosenqvist A., Lucas R., Rebelo L-M., Hilarides L., Thomas N., Hardy A., Itoh T., Shimada M. and Finlayson C.M. (2018). The Global Mangrove
-Watch – a New 2010 Global Baseline of Mangrove Extent. Remote Sensing 10(10): 1669. doi: 10.3390/rs1010669.
+Bunting, P.; Rosenqvist, A.; Hilarides, L.; Lucas, R.M.; Thomas, T.; Tadono, T.; Worthington, T.A.; Spalding, M.; Murray, N.J.; Rebelo, L-M. Global
+Mangrove Extent Change 1996 – 2020: Global Mangrove Watch Version 3.0. Remote Sensing. 2022
 ```
 
-![gmw25](https://user-images.githubusercontent.com/6677629/155864712-809e190f-4e58-4bc9-8ae9-66d9d6cd4716.gif)
+#### Dataset citation
 
-#### Earth Engine Snippet
+```
+Bunting, Pete, Rosenqvist, Ake, Hilarides, Lammert, Lucas, Richard, Thomas, Nathan, Tadono , Takeo, Worthington, Thomas, Spalding , Mark, Murray,
+Nicholas, & Rebelo, Lisa-Maria. (2022). Global Mangrove Watch (1996 - 2020) Version 3.0 Dataset (3.0) [Data set]. Zenodo. https://doi.org/10.5281/
+zenodo.6894273
+```
+
+![gmw_small](https://user-images.githubusercontent.com/6677629/190841060-d939cc7d-f3ce-499f-8411-623806936bc8.gif)
+
+#### Earth Engine Snippet: Extent
 
 ```js
-var gmw_2010_v25 = ee.ImageCollection("projects/sat-io/open-datasets/GMW/GMW_2010_v25");
+var extent_raster = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/GMW_V3");
+var extent_1996 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_1996_vec");
+var extent_2007 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2007_vec");
+var extent_2008 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2008_vec");
+var extent_2009 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2009_vec");
+var extent_2010 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2010_vec");
+var extent_2011 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2015_vec");
+var extent_2012 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2016_vec");
+var extent_2013 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2017_vec");
+var extent_2014 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2018_vec");
+var extent_2015 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2019_vec");
+var extent_2016 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2020_vec");
 ```
 
-Sample Code: https://code.earthengine.google.com/713555a5cc2f2d0c8e9f305aeb9625ba
+#### Earth Engine Snippet: Change from 1996
 
-Resolution:
-0.8 degee approx 30m
+```js
+var change_f1996_raster = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/change_f1996");
+var change_f1996_2007 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2007_vec");
+var change_f1996_2008 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2008_vec");
+var change_f1996_2009 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2009_vec");
+var change_f1996_2010 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2010_vec");
+var change_f1996_2015 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2015_vec");
+var change_f1996_2016 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2016_vec");
+var change_f1996_2017 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2017_vec");
+var change_f1996_2018 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2018_vec");
+var change_f1996_2019 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2019_vec");
+var change_f1996_2020 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2020_vec");
+```
+#### Earth Engine Snippet: Union
+
+Single layer of pixels which were mangroves at any date in the time series
+
+```js
+var gmw_union_raster = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/union/gmw_v3_mng_union");
+var gmw_union_vector = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/union/gmw_v3_union_vec");
+```
+
+#### Earth Engine Snippet: Core
+
+Single layer of pixels which were mangroves at all dates within the time series
+
+```js
+var gmw_core_raster = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/core/gmw_v3_mng_core");
+var gmw_core_vector = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/core/gmw_v3_core_vec");
+```
+
+#### Earth Engine Snippet: Tiles
+Vector layer with the 1x1 degree tiles used for the analysis
+
+```js
+var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
+```
+
+Sample Code: https://code.earthengine.google.com/fd1ec9e0585972baa1dd5ed86b7dc990
+
+Resolution: approx 30m
 
 #### License & Usage
-Attribution 4.0 International (CC BY 4.0)
-https://creativecommons.org/licenses/by/4.0/.
+Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-You are free to:
-Share — copy and redistribute the material in any medium or format
-Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+Curated in GEE by: Samapriya Roy
 
-Under the following terms:
-Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+Keywords: Global, Mangrove, GMW, 1996, 2020
 
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-Curated by: Samapriya Roy
-
-Keywords: Global, Mangrove, GMW
-
-Last updated: 2022-01-07
+Last updated: 2022-09-16
