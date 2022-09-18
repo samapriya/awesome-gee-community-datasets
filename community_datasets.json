@@ -7583,5 +7583,77 @@
     "id": "projects/sat-io/open-datasets/FROM-GLC10",
     "provider": "Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang.",
     "tags": "landcover, landuse, lulc, 10m, global, world, sentinel 2, FROM-GLC"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_YEARLY-GPP_V21_2020",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_yearly/GPP_v21_2020",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SHADED_YEARLY-SHADE_GPP_V21_2020",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_yearly/Shade_GPP_v21_2020",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SUNLIT_YEARLY-SUN_GPP_V21_2020",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_yearly/Sun_GPP_v21_2020",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_MONTHLY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_monthly",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_MONTHLY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_monthly",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_MONTHLY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_monthly",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_8DAY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_8day",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_8DAY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_8day",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_8DAY",
+    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day",
+    "provider": "Wenjun, Bi; Yanlian, Zhou et al",
+    "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
   }
 ]

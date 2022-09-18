@@ -203,6 +203,7 @@ nav:
     - Vegetation dryness for western USA: projects/veg_dry.md
     - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
     - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
+    - Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): projects/shd_sun_gpp.md
     - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
     - Rangeland Analysis Platform layers: projects/rap.md
     - NASA Harvest Layers: projects/harvest.md
