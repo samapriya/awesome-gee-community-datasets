@@ -151,7 +151,7 @@ Community Datasets added by users and made available for use at large
 -   [ETH Global Sentinel-2 10m Canopy Height (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/canopy)
 -   [Global Forest Carbon Fluxes (2001-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/cflux)
 -   [Global Sunlit and Shaded GPP for vegetation canopies (1992-2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/shd_sun_gpp)
--   [Aboveground carbon accumulation in global monoculture plantation forests](https://samapriya.github.io/awesome-gee-community-datasets/projects/monoculture]
+-   [Aboveground carbon accumulation in global monoculture plantation forests](https://samapriya.github.io/awesome-gee-community-datasets/projects/monoculture)
 -   [Rangeland Analysis Platform layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/rap)
 -   [NASA Harvest Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/harvest/)
 -   [Benchmark maps Secondary Forest Brazil](https://samapriya.github.io/awesome-gee-community-datasets/projects/secondary_forest/)
