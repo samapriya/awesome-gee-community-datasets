@@ -1,4 +1,4 @@
-## Global coastal rivers and environmental variables
+# Global coastal rivers and environmental variables
 
 A global dataset of 5399 coastal rivers and data on eight environmental variables. Of these rivers, 40 % (n=2174) have geomorphic deltas defined either by a protrusion from the regional shoreline, a distributary channel network, or both. Globally, coastlines average one delta for every ∼300 km of shoreline, but there are hotspots of delta formation, for example in Southeast Asia where there is one delta per 100 km of shoreline. Our analysis shows that the likelihood of a river to form a delta increases with increasing water discharge, sediment discharge, and drainage basin area. On the other hand, delta likelihood decreases with increasing wave height and tidal range. Delta likelihood has a non-monotonic relationship with receiving-basin slope: it decreases with steeper slopes, but for slopes >0.006 delta likelihood increases. This reflects different controls on delta formation on active versus passive margins.
 
