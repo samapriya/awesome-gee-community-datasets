@@ -27,7 +27,7 @@ var highly_irrigated_areas_2001 = ee.Image("users/deepakna/global_irrigation_map
 Map.addLayer(highly_irrigated_areas_2001.updateMask(highly_irrigated_areas_2001.neq(0))
 ```
 
-Sample code: https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-IRRIGATION-AREAS
 
 #### Band Info: Irrigation classes are present in the band "classification"
 

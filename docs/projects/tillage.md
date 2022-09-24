@@ -23,7 +23,7 @@ Su, Y., Gabrielle, B. & Makowski, D. A global dataset for crop production under 
 var tillage = ee.FeatureCollection("projects/sat-io/open-datasets/global_tillage_production");
 ```
 
-Sample Code: https://code.earthengine.google.com/05bf7cb3bef5175f3f7c9aa46d29a046
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-CROP-PRODUCTION-TILLAGE-PRACTICES
 
 #### Property Mapping
 

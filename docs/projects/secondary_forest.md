@@ -34,7 +34,7 @@ var forest_increment = ee.Image('users/celsohlsj/public/secondary_forest_increme
 var forest_loss = ee.Image('users/celsohlsj/public/secondary_forest_loss_collection5_v3');
 ```
 
-Sample Code: https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE
 
 #### Technical Validation
 This dataset was based on the Collection 4.1 of MapBiomas Project (Annual Land-Use and Land-Cover Maps of Brazil)1; thus, the accuracy of the secondary forest increment, extension and age maps presented here is anchored to the accuracy of the MapBiomas land-use and land-cover dataset. The MapBiomas analyses of accuracy were performed using the Pontius Jr and Millones (2011) method23. For the entire Brazil24, the MapBiomas dataset has an average of 86.40 ± 0.46% of overall accuracy, 11.06 ± 0.67% of allocation disagreement, and 2.5 ± 0.29% of area disagreement between 1985 and 2018, considering the land-use and land-cover classes from the legend level with the greatest detail (level 3).The accuracy assessment for the Brazilian biomes can be found in the MapBiomas accuracy statistics web page (https://mapbiomas.org/en/accuracy-analysis).

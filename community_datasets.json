@@ -2090,7 +2090,7 @@
   },
   {
     "title": "Secondary Forest Age: Collection5_v3",
-    "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE",
     "type": "image",
     "id": "users/celsohlsj/public/secondary_forest_age_collection5_v3",
     "provider": "Celso H. L. Silva Junior",
@@ -2098,7 +2098,7 @@
   },
   {
     "title": "Secondary Forest Extent: Collection5_v3",
-    "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE",
     "type": "image",
     "id": "users/celsohlsj/public/secondary_forest_extent_collection5_v3",
     "provider": "Celso H. L. Silva Junior",
@@ -2106,7 +2106,7 @@
   },
   {
     "title": "Secondary Forest Increment: Collection5_v3",
-    "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE",
     "type": "image",
     "id": "users/celsohlsj/public/secondary_forest_increment_collection5_v3",
     "provider": "Celso H. L. Silva Junior",
@@ -2114,7 +2114,7 @@
   },
   {
     "title": "Secondary Forest Loss: Collection5_v3",
-    "sample_code": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE",
     "type": "image",
     "id": "users/celsohlsj/public/secondary_forest_loss_collection5_v3",
     "provider": "Celso H. L. Silva Junior",
@@ -2378,7 +2378,7 @@
   },
   {
     "title": "Global irrigation areas (2001 to 2015)",
-    "sample_code": "https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-IRRIGATION-AREAS",
     "type": "image_collection",
     "id": "users/deepakna/global_irrigation_maps",
     "provider": "Deepak Nagaraj",
@@ -3594,7 +3594,7 @@
   },
   {
     "title": "Global crop production tillage practices",
-    "sample_code": "https://code.earthengine.google.com/05bf7cb3bef5175f3f7c9aa46d29a046",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-CROP-PRODUCTION-TILLAGE-PRACTICES",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_tillage_production",
     "provider": "Yang Su et al.",
@@ -6914,7 +6914,7 @@
   },
   {
     "title": "ETH_GlobalCanopyHeight_2020_10m_v1",
-    "sample_code": "https://code.earthengine.google.com/126c172d63e7ce780596c8d26f06d384",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-10m-CANOPY-HEIGHT",
     "type": "image",
     "id": "users/nlang/ETH_GlobalCanopyHeight_2020_10m_v1",
     "provider": "Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner",
@@ -6922,7 +6922,7 @@
   },
   {
     "title": "ETH_GlobalCanopyHeightSD_2020_10m_v1",
-    "sample_code": "https://code.earthengine.google.com/126c172d63e7ce780596c8d26f06d384",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-10m-CANOPY-HEIGHT",
     "type": "image",
     "id": "users/nlang/ETH_GlobalCanopyHeightSD_2020_10m_v1",
     "provider": "Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner",
@@ -6930,7 +6930,7 @@
   },
   {
     "title": "Global Forest Carbon Fluxes: Gross Emissions",
-    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions",
     "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
@@ -6938,7 +6938,7 @@
   },
   {
     "title": "Global Forest Carbon Fluxes: Gross Removals",
-    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals",
     "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
@@ -6946,7 +6946,7 @@
   },
   {
     "title": "Global Forest Carbon Fluxes: Net Flux",
-    "sample_code": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux",
     "provider": "Harris, N.L., Gibbs, D.A., Baccini, A. et al",
@@ -7562,7 +7562,7 @@
   },
   {
     "title": "Global Fertilizer Use by crop & country",
-    "sample_code": "https://code.earthengine.google.com/e0869dccc3b869ecc365470afdc55c7a",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FERTILIZER-USE-CROP-COUNTRY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_fertilizer_use_centroid",
     "provider": "Ludemann, Cameron; Gruere, Armelle; Heffer, Patrick; Dobermann, Achim",
@@ -7570,7 +7570,7 @@
   },
   {
     "title": "Aboveground carbon accumulation in global monoculture plantation forests",
-    "sample_code": "https://code.earthengine.google.com/243774c7f7cdbec21c3450c4fa8a64fb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ABOVEGROUND-CARBON-GLOBAL-MONOCULTURE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-monoculture-plantations",
     "provider": "Bukoski, Jacob et al 2022",
@@ -7586,7 +7586,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_YEARLY-GPP_V21_2020",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_yearly/GPP_v21_2020",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7594,7 +7594,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SHADED_YEARLY-SHADE_GPP_V21_2020",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_yearly/Shade_GPP_v21_2020",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7602,7 +7602,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SUNLIT_YEARLY-SUN_GPP_V21_2020",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_yearly/Sun_GPP_v21_2020",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7610,7 +7610,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_MONTHLY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_monthly",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7618,7 +7618,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_MONTHLY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_monthly",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7626,7 +7626,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_MONTHLY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_monthly",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7634,7 +7634,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_8DAY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_8day",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7642,7 +7642,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_8DAY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_8day",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
@@ -7650,7 +7650,7 @@
   },
   {
     "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_8DAY",
-    "sample_code": "https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",

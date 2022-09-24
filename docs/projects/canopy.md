@@ -22,7 +22,7 @@ var canopy_height = ee.Image("users/nlang/ETH_GlobalCanopyHeight_2020_10m_v1");
 var standard_deviation = ee.Image("users/nlang/ETH_GlobalCanopyHeightSD_2020_10m_v1");
 ```
 
-Sample code: https://code.earthengine.google.com/126c172d63e7ce780596c8d26f06d384
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-10m-CANOPY-HEIGHT
 
 GEE app link: https://nlang.users.earthengine.app/view/global-canopy-height-2020
 

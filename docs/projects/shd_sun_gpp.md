@@ -42,7 +42,7 @@ var shaded_8day = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_S
 var sunlit_8day = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day");
 ```
 
-Sample Code: https://code.earthengine.google.com/ff4fd2e3a9ee2d6c1b928356d90eb59b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-SUNLIT-SHADED-GPP-VEG-CANOPIES
 
 #### License & Usage
 

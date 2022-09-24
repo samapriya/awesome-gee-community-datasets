@@ -27,7 +27,7 @@ Dataset, https://doi.org/10.5061/dryad.2rbnzs7qh
 var global_fertilizer_use = ee.FeatureCollection("projects/sat-io/open-datasets/global_fertilizer_use_centroid");
 ```
 
-Sample code: https://code.earthengine.google.com/e0869dccc3b869ecc365470afdc55c7a
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FERTILIZER-USE-CROP-COUNTRY
 
 #### License
 

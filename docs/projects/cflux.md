@@ -29,7 +29,7 @@ var removals = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gros
 var net_flux = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux");
 ```
 
-Sample code: https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES
 
 #### License
 
