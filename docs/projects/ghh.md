@@ -31,7 +31,7 @@ var uniformity = ee.Image("projects/sat-io/open-datasets/global_habitat_heteroge
 var variance = ee.Image("projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_1km");
 ```
 
-Sample Script: https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9
+Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY
 
 
 #### License

@@ -29,7 +29,7 @@ var asset_name = ee.ImageCollection("users/kkraoj/lfm-mapper/lfmc_col_25_may_202
 **Sample Code**
 
 This script imports and visualizes average vegetation dryness for 2019,
-[go to script](https://code.earthengine.google.com/02f3f4401475dc5081ce707e37bdeac9)
+[go to script](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/VEGETATION-DRYNESS-WESTERN-US)
 
 ```js
 var start_date = '2019-01-01';

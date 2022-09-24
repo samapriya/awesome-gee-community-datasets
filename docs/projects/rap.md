@@ -20,7 +20,7 @@ var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-parti
 
 ```
 
-Code Snippets: https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine
+Code Snippets: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE
 
 #### Citation
 

@@ -42,7 +42,7 @@ var stream_length_sum = ee.Image("projects/sat-io/open-datasets/global_freshwate
 var urban_builtup_avg = ee.Image("projects/sat-io/open-datasets/global_freshwater_variables/urban_builtup_avg");
 ```
 
-Sample Code: https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES
 
 
 #### License

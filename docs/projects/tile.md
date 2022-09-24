@@ -17,7 +17,7 @@ geospatial modeling approach. Sci Data 7, 257 (2020). https://doi.org/10.1038/s4
 var tile30m = ee.Image("projects/sat-io/open-datasets/agtile/AgTile-US");
 ```
 
-Sample Code: https://code.earthengine.google.com/0b9bed4ff747bb4d13e6eb5a3d1c24a3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-TILE-DRAINED-CROPLANDS
 
 #### License
 

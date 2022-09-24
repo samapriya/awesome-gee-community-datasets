@@ -25,7 +25,7 @@ Madhava Paliyam, and Mehdi Hosseini. 2020.Rapid Response Crop Maps in Data Spars
 KDD ’20: ACMSIGKDDConference on Knowledge Discovery and Data Mining Workshops, August22–27, 2020, San Diego, CA.
 ```
 
-Sample code: https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9
+Sample code:https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND
 
 
 ## Annual and in-season mapping of cropland at field scale with sparse labels
@@ -52,7 +52,7 @@ Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef.
 "Annual and in-season mapping of cropland at field scale with sparse labels."
 ```
 
-Sample code: https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9
+Sample code:https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND
 
 #### License
 

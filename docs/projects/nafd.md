@@ -45,7 +45,7 @@ var nafd_first = ee.Image("projects/sat-io/open-datasets/NAFD/VCT_30m_first");
 var nafd_last = ee.Image("projects/sat-io/open-datasets/NAFD/VCT_30m_last");
 ```
 
-Sample code: https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NAFD-FOREST-DISTURBANCE
 
 #### License
 

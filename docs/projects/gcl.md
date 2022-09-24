@@ -28,7 +28,7 @@ var snow_ice = ee.Image("projects/sat-io/open-datasets/global_consensus_landcove
 var urban_built_up = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/urban-built-up");
 ```
 
-Sample Code: https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER
 
 
 #### License

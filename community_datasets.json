@@ -1114,7 +1114,7 @@
   },
   {
     "title": "Rangeland-Analysis-Platform: Vegetation Cover v2",
-    "sample_code": "https://code.earthengine.google.com/b635021d91b3b913ac05387ae19907fc?noload=true",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE",
     "type": "image_collection",
     "id": "projects/rangeland-analysis-platform/vegetation-cover-v3",
     "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
@@ -1122,7 +1122,7 @@
   },
   {
     "title": "Rangeland-Analysis-Platform: NPP partitioned v2",
-    "sample_code": "https://code.earthengine.google.com/d1ace5ba4e7a1484d5486f83576ac5a4?noload=true",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE",
     "type": "image_collection",
     "id": "projects/rangeland-analysis-platform/npp-partitioned-v3",
     "provider": "USDA NRCS Working Lands for Wildlife, Brady Allred, Matthew Jones, Eric Jensen",
@@ -1178,7 +1178,7 @@
   },
   {
     "title": "Togo Cropland Binary",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/togo_cropland_binary",
     "provider": "Hannah Kerner, Gabriel Tseng, Inbal Becker-Reshef, Catherine Nakalembe,Brian Barker, Blake Munshell,Madhava Paliyam, and Mehdi Hosseini",
@@ -1186,7 +1186,7 @@
   },
   {
     "title": "Togo Cropland Probability",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/togo_cropland_probability",
     "provider": "Hannah Kerner, Gabriel Tseng, Inbal Becker-Reshef, Catherine Nakalembe,Brian Barker, Blake Munshell,Madhava Paliyam, and Mehdi Hosseini",
@@ -1194,7 +1194,7 @@
   },
   {
     "title": "Kenya Cropland Binary",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/kenya_cropland_binary",
     "provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
@@ -1202,7 +1202,7 @@
   },
   {
     "title": "Kenya Cropland Probability",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/kenya_2019_cropland_probability",
     "provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
@@ -1210,7 +1210,7 @@
   },
   {
     "title": "Busia Cropland Binary",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary",
     "provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
@@ -1218,7 +1218,7 @@
   },
   {
     "title": "Busia Cropland Probability",
-    "sample_code": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
     "type": "image",
     "id": "projects/sat-io/open-datasets/nasa-harvest/busia_cropland_probability",
     "provider": "Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef",
@@ -1442,7 +1442,7 @@
   },
   {
     "title": "Annual Air Temperature Range Avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/annual_air_temperature_range_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1450,7 +1450,7 @@
   },
   {
     "title": "Annual Sum of precipitation- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/annual_sum_of_precipitation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1458,7 +1458,7 @@
   },
   {
     "title": "Barren Lands Sparse Vegetation- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/barren_lands_sparse_vegetation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1466,7 +1466,7 @@
   },
   {
     "title": "Catchment Size Sum- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/catchment_size_sum",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1474,7 +1474,7 @@
   },
   {
     "title": "Cultivated and Management Vegetation Avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/cultivated_and_managed_vegetation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1482,7 +1482,7 @@
   },
   {
     "title": "Deciduous Broadleaf Trees Avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/deciduous_broadleaf_trees_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1490,7 +1490,7 @@
   },
   {
     "title": "Elevation Average- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/elevation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1498,7 +1498,7 @@
   },
   {
     "title": "Elevation Range- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/elevation_range",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1506,7 +1506,7 @@
   },
   {
     "title": "Evergreen Broadleaf Trees avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_broadleaf_trees_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1514,7 +1514,7 @@
   },
   {
     "title": "Evergreen Deciduous Needleleaf Trees avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_broadleaf_trees_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1522,7 +1522,7 @@
   },
   {
     "title": "Herbaceous Vegetation avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/herbaceous_vegetation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1530,7 +1530,7 @@
   },
   {
     "title": "Mean annual air temperature avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/mean_annual_air_temperature_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1538,7 +1538,7 @@
   },
   {
     "title": "Mixed other trees avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/mixed_other_trees_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1546,7 +1546,7 @@
   },
   {
     "title": "Open Water avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/open_water_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1554,7 +1554,7 @@
   },
   {
     "title": "Precambrian Surface Lithology- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/precambrian_surface_lithology_wsum",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1562,7 +1562,7 @@
   },
   {
     "title": "Precipitation Seasonality avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/precipitation_seasonality_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1570,7 +1570,7 @@
   },
   {
     "title": "Quaternary Surface Lithology wsum- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/quaternary_surface_lithology_wsum",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1578,7 +1578,7 @@
   },
   {
     "title": "Regularly flooded shrub herbaceous vegetation avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/regularly_flooded_shrub_herbaceous_vegetation_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1586,7 +1586,7 @@
   },
   {
     "title": "Shrubs avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/shrubs_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1594,7 +1594,7 @@
   },
   {
     "title": "Slope Avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/slope_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1602,7 +1602,7 @@
   },
   {
     "title": "Slope Range- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/slope_range",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1610,7 +1610,7 @@
   },
   {
     "title": "Snow ice avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/snow-ice_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1618,7 +1618,7 @@
   },
   {
     "title": "Stream length sum- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/stream_length_sum",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1626,7 +1626,7 @@
   },
   {
     "title": "Urban Builtup Avg- Global Freshwater Variables",
-    "sample_code": "https://code.earthengine.google.com/9d8642769f76a2b79f192cd7df4a2183",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_freshwater_variables/urban_builtup_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1634,7 +1634,7 @@
   },
   {
     "title": "Barren- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/barren",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1642,7 +1642,7 @@
   },
   {
     "title": "Cultivated and managed vegetation- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/cultivated_and_managed_vegetation",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1650,7 +1650,7 @@
   },
   {
     "title": "Deciduous Broadleaf Trees- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/deciduous_broadleaf_trees",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1658,7 +1658,7 @@
   },
   {
     "title": "Evergreen deciduous needleleaf trees- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/evergreen-deciduous_needleleaf_trees",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1666,7 +1666,7 @@
   },
   {
     "title": "Evergreen broadleaf trees- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/evergreen_broadleaf_trees",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1674,7 +1674,7 @@
   },
   {
     "title": "Herbaceous vegetation- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/herbaceous_vegetation",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1682,7 +1682,7 @@
   },
   {
     "title": "Mixed other trees- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/mixed-other_trees",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1690,7 +1690,7 @@
   },
   {
     "title": "Open water- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/open_water",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1698,7 +1698,7 @@
   },
   {
     "title": "Regularly_flooded_vegetation- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/regularly_flooded_vegetation",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1706,7 +1706,7 @@
   },
   {
     "title": "Shrubs- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/shrubs",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1714,7 +1714,7 @@
   },
   {
     "title": "Snow-ice- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/snow-ice",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1722,7 +1722,7 @@
   },
   {
     "title": "Urban built up- Global Consensus Landcover",
-    "sample_code": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-CONSENSUS-LANDCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_consensus_landcover/urban-built-up",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1730,7 +1730,7 @@
   },
   {
     "title": "Coefficient of variation 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1738,7 +1738,7 @@
   },
   {
     "title": "Coefficient of variation 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1746,7 +1746,7 @@
   },
   {
     "title": "Coefficient of variation 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1754,7 +1754,7 @@
   },
   {
     "title": "Contrast 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1762,7 +1762,7 @@
   },
   {
     "title": "Contrast 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1770,7 +1770,7 @@
   },
   {
     "title": "Contrast 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/contrast_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1778,7 +1778,7 @@
   },
   {
     "title": "Correlation 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1786,7 +1786,7 @@
   },
   {
     "title": "Correlation 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1794,7 +1794,7 @@
   },
   {
     "title": "Correlation 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/correlation_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1802,7 +1802,7 @@
   },
   {
     "title": "Dissimilarity 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1810,7 +1810,7 @@
   },
   {
     "title": "Dissimilarity 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1818,7 +1818,7 @@
   },
   {
     "title": "Dissimilarity 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/dissimilarity_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1826,7 +1826,7 @@
   },
   {
     "title": "Entropy 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1834,7 +1834,7 @@
   },
   {
     "title": "Entropy 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1842,7 +1842,7 @@
   },
   {
     "title": "Entropy 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/entropy_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1850,7 +1850,7 @@
   },
   {
     "title": "Homogeneity 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1858,7 +1858,7 @@
   },
   {
     "title": "Homogeneity 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1866,7 +1866,7 @@
   },
   {
     "title": "Homogeneity 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/homogeneity_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1874,7 +1874,7 @@
   },
   {
     "title": "Maximum 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1882,7 +1882,7 @@
   },
   {
     "title": "Maximum 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1890,7 +1890,7 @@
   },
   {
     "title": "Maximum 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/maximum_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1898,7 +1898,7 @@
   },
   {
     "title": "Mean 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1906,7 +1906,7 @@
   },
   {
     "title": "Mean 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1914,7 +1914,7 @@
   },
   {
     "title": "Mean 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/mean_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1922,7 +1922,7 @@
   },
   {
     "title": "Pielou 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1930,7 +1930,7 @@
   },
   {
     "title": "Pielou 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1938,7 +1938,7 @@
   },
   {
     "title": "Pielou 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/pielou_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1946,7 +1946,7 @@
   },
   {
     "title": "Range 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1954,7 +1954,7 @@
   },
   {
     "title": "Range 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1962,7 +1962,7 @@
   },
   {
     "title": "Range 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/range_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1970,7 +1970,7 @@
   },
   {
     "title": "Shannon 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1978,7 +1978,7 @@
   },
   {
     "title": "Shannon 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1986,7 +1986,7 @@
   },
   {
     "title": "Shannon 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/shannon_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -1994,7 +1994,7 @@
   },
   {
     "title": "Simpson 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2002,7 +2002,7 @@
   },
   {
     "title": "Simpson 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2010,7 +2010,7 @@
   },
   {
     "title": "Simpson 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/simpson_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2018,7 +2018,7 @@
   },
   {
     "title": "Standard Deviation 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2026,7 +2026,7 @@
   },
   {
     "title": "Standard Deviation 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2034,7 +2034,7 @@
   },
   {
     "title": "Standard Deviation 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/standard_deviation_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2042,7 +2042,7 @@
   },
   {
     "title": "Uniformity 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2050,7 +2050,7 @@
   },
   {
     "title": "Uniformity 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2058,7 +2058,7 @@
   },
   {
     "title": "Uniformity 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/uniformity_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2066,7 +2066,7 @@
   },
   {
     "title": "Variance 1km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_1km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2074,7 +2074,7 @@
   },
   {
     "title": "Variance 5km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_5km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2082,7 +2082,7 @@
   },
   {
     "title": "Variance 25km- Global Habitat Heterogeneity",
-    "sample_code": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_25km",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
@@ -2754,7 +2754,7 @@
   },
   {
     "title": "Vegetation dryness for western USA",
-    "sample_code": "https://code.earthengine.google.com/02f3f4401475dc5081ce707e37bdeac9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/VEGETATION-DRYNESS-WESTERN-US",
     "type": "image_collection",
     "id": "users/kkraoj/lfm-mapper/lfmc_col_25_may_2021",
     "provider": "KrishnaRao, A. ParkWilliams, Jacqueline Fortin Flefil, Alexandra G.Konings",
@@ -3586,7 +3586,7 @@
   },
   {
     "title": "Tile Drained Croplands (30m)",
-    "sample_code": "https://code.earthengine.google.com/0b9bed4ff747bb4d13e6eb5a3d1c24a3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-TILE-DRAINED-CROPLANDS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/agtile/AgTile-US",
     "provider": "Valayamkunnath, P., Barlage, M., Chen, F. et al.",
@@ -7538,7 +7538,7 @@
   },
   {
     "title": "NAFD Forest Disturbance History 1986-2010: Annual",
-    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NAFD-FOREST-DISTURBANCE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NAFD/vct_annual",
     "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
@@ -7546,7 +7546,7 @@
   },
   {
     "title": "NAFD Forest Disturbance History 1986-2010 time integrated: First",
-    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NAFD-FOREST-DISTURBANCE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_first",
     "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
@@ -7554,7 +7554,7 @@
   },
   {
     "title": "NAFD Forest Disturbance History 1986-2010 time integrated: Last",
-    "sample_code": "https://code.earthengine.google.com/612c37872b82bddc7ec71b7bb97e0895",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NAFD-FOREST-DISTURBANCE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_last",
     "provider": "Goward, S.N., C. Huang, F. Zhao, K. Schleeweis, K. Rishmawi, M. Lindsey, J.L. Dungan, and A. Michaelis",
