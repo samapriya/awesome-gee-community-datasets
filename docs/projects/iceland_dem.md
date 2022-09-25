@@ -22,7 +22,7 @@ var DEM_10m_isn93 = ee.Image("projects/ee-landmaelingar/assets/IslandsDEMv1_10m_
 
 Projection used: EPSG 3057 (ISN93/Lambert 1993)
 
-Sample Code: https://code.earthengine.google.com/34517ab5c05be78e5f7d9227a4ca7b7e
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ICELAND-DEM-10m
 
 
 #### License

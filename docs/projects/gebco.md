@@ -24,7 +24,7 @@ var gebco_sub_ice_topo = ee.ImageCollection("projects/sat-io/open-datasets/gebco
 var gebco_tid_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_tid_grid");
 ```
 
-Sample Code: https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO
 
 #### GEBCO Type Identifier (TID) grid coding
 

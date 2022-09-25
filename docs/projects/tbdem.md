@@ -27,7 +27,7 @@ The datasets were collected and made available with 3 meter, 2 meter, or 1 meter
 var tb_dem = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/CoNED_TBDEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/bbf21c4acf7eede5140dd08fac8f913e
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-CoNED-TBDEM
 
 #### License
 The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. Depending on the product source, we request that the following statements be used when citing, copying, or reprinting data: Data available from the U.S. Geological Survey.

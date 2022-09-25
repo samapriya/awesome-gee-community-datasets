@@ -20,13 +20,18 @@ Amatulli, Giuseppe, Daniel McInerney, Tushar Sethi, Peter Strobl, and Sami Domis
 var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti");
 var tri = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tri");
 var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES
+
+```js
 var vrm = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/vrm");
 var roughness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/roughness");
 var tpi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tpi");
 var spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi");
 ```
 
-Sample Code: https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90
 
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

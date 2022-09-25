@@ -21,7 +21,7 @@ Ministry of xxx—Original data downloaded from http://www.data.gouv.fr/fr/ data
 var rge_alti5 = ee.Image("projects/sat-io/open-datasets/IGN_RGE_Alti_5m");
 ```
 
-Sample Code: https://code.earthengine.google.com/b9054b6d5c4d7de1a4af39ff307e73d7
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/IGN-RGE-France-DEM-5m
 
 #### License
 

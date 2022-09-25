@@ -16,7 +16,7 @@ Copernicus Digital Elevation Model (DEM) was accessed on DATE from
 var glo30 = ee.ImageCollection("projects/sat-io/open-datasets/GLO-30");
 ```
 
-Sample Code: https://code.earthengine.google.com/f6479dc43ab9c13dd1cc9bd527cf0c01
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/COPERNICUS_GLO30
 
 Earth Engine comparison app: https://samapriya.users.earthengine.app/view/glob-elevation
 

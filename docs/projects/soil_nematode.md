@@ -25,7 +25,7 @@ composition. Sci Data 7, 103 (2020). https://doi.org/10.1038/s41597-020-0437-3
 var nematode= ee.FeatureCollection("projects/sat-io/open-datasets/global-nematode")
 ```
 
-Sample Code: https://code.earthengine.google.com/dff3040051231efbb999ea8f2403add0
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-NEMATODE-ABUNDANCE
 
 |Property Name  |GEE_Property    |Description                                        |Units                        |Source                              |
 |---------------|----------------|---------------------------------------------------|-----------------------------|------------------------------------|

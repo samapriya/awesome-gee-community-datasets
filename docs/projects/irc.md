@@ -39,7 +39,7 @@ var manageable_carbon_biomass = ee.ImageCollection("projects/sat-io/open-dataset
 var ecosystem_extent = ee.ImageCollection("projects/sat-io/open-datasets/ecosystem_extent");
 ```
 
-Sample Code: https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON
 
 #### License
 

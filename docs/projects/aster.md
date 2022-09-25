@@ -25,7 +25,7 @@ https://doi.org/10.5067/ASTER/ASTGTM.003
 var fabdem = ee.Image("projects/sat-io/open-datasets/ASTER/GDEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/7592ab36de453d718aab7291692abb88
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTER-GDEM
 
 #### License
 

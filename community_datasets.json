@@ -705,7 +705,7 @@
   },
   {
     "title": "Geomorpho90m: Compound Topographic Index",
-    "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/cti",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -713,7 +713,7 @@
   },
   {
     "title": "Geomorpho90m: Slope",
-    "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/slope",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -721,7 +721,7 @@
   },
   {
     "title": "Geomorpho90m: Terrain Ruggedness Index",
-    "sample_code": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -729,7 +729,7 @@
   },
   {
     "title": "Geomorpho90m: Vector Ruggedness Measure",
-    "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/vrm",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -737,7 +737,7 @@
   },
   {
     "title": "Geomorpho90m: Roughness",
-    "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/roughness",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -745,7 +745,7 @@
   },
   {
     "title": "Geomorpho90m: Topographic Position Index",
-    "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/tpi",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -753,7 +753,7 @@
   },
   {
     "title": "Geomorpho90m: Stream Power Index",
-    "sample_code": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/spi",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
@@ -1138,7 +1138,7 @@
   },
   {
     "title": "GEBCO 2021 Grid",
-    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_grid",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
@@ -1146,7 +1146,7 @@
   },
   {
     "title": "GEBCO 2021 sub-ice topo/bathy",
-    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
@@ -1154,7 +1154,7 @@
   },
   {
     "title": "GEBCO 2021 Type Identifier (TID) Grid",
-    "sample_code": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_tid_grid",
     "provider": "General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project",
@@ -1226,7 +1226,7 @@
   },
   {
     "title": "Soil Organic Carbon Stocks 30m",
-    "sample_code": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-ORGANIC-CARBON-SA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_mean",
     "provider": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
@@ -1234,7 +1234,7 @@
   },
   {
     "title": "Soil Organic Carbon Stocks Trends 30m",
-    "sample_code": "https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-ORGANIC-CARBON-SA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NINA/SOC30_SA_trend",
     "provider": "Venter, Zander S, Hawkins, Heidi-Jayne, Cramer, Michael D, & Mills, Anthony J",
@@ -2594,7 +2594,7 @@
   },
   {
     "title": "Bare Surface Layer 1980-2019",
-    "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA",
     "type": "image",
     "id": "users/geocis/BareSurfaces/BS_1980_2019",
     "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
@@ -2602,7 +2602,7 @@
   },
   {
     "title": "Bare Surface Frequency 1980-2019",
-    "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA",
     "type": "image",
     "id": "users/geocis/BareSurfaces/BF_1980_2019",
     "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
@@ -2610,7 +2610,7 @@
   },
   {
     "title": "Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017",
-    "sample_code": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+    "sample_code": "https://code.earthengine.google.com/28d034a4dbe01de5e8ca781ea2712b24",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017",
     "provider": "Olga Danylo, et al, International Institute for Applied Systems Analysis",
@@ -3570,7 +3570,7 @@
   },
   {
     "title": "Soil nematode abundance & functional group composition",
-    "sample_code": "https://code.earthengine.google.com/dff3040051231efbb999ea8f2403add0",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-NEMATODE-ABUNDANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-nematode",
     "provider": "Hoogen et al",
@@ -5474,7 +5474,7 @@
   },
   {
     "title": "Global maps of habitat types Composite: Level 1 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl1_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5482,7 +5482,7 @@
   },
   {
     "title": "Global maps of habitat types Composite: Level 2 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl2_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5490,7 +5490,7 @@
   },
   {
     "title": "Global maps of habitat types Changemask 2016: Level 1 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/changemasks2016/iucn_habitatclassification_2016changemask_lvl1_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5498,7 +5498,7 @@
   },
   {
     "title": "Global maps of habitat types Changemask 2017: Level 1 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/changemasks2017/iucn_habitatclassification_2017changemask_lvl1_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5506,7 +5506,7 @@
   },
   {
     "title": "Global maps of habitat types Changemask 2018: Level 1 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/changemasks2018/iucn_habitatclassification_2018changemask_lvl1_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5514,7 +5514,7 @@
   },
   {
     "title": "Global maps of habitat types Changemask 2019: Level 1 v004",
-    "sample_code": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
     "type": "image",
     "id": "users/Uploads/habitattypes/changemasks2019/iucn_habitatclassification_2019changemask_lvl1_ver004",
     "provider": "Jung, M., Dahal, P.R., Butchart, S.H.M. et al.",
@@ -5746,7 +5746,7 @@
   },
   {
     "title": "Normalized Sentinel-1 Global Backscatter Model Land Surface: VV",
-    "sample_code": "https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/S1-GLOBAL-BACKSCATTER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/S1GBM/normalized_s1_backscatter_VV",
     "provider": "Bernhard et al, European Space Agency",
@@ -5754,7 +5754,7 @@
   },
   {
     "title": "Normalized Sentinel-1 Global Backscatter Model Land Surface: VH",
-    "sample_code": "https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/S1-GLOBAL-BACKSCATTER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/S1GBM/normalized_s1_backscatter_VH",
     "provider": "Bernhard et al, European Space Agency",
@@ -5762,7 +5762,7 @@
   },
   {
     "title": "Equi7Grid: AF Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AF_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5770,7 +5770,7 @@
   },
   {
     "title": "Equi7Grid: AN Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AN_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5778,7 +5778,7 @@
   },
   {
     "title": "Equi7Grid: AS Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AS_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5786,7 +5786,7 @@
   },
   {
     "title": "Equi7Grid: EU Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_EU_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5794,7 +5794,7 @@
   },
   {
     "title": "Equi7Grid: NA Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_NA_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5802,7 +5802,7 @@
   },
   {
     "title": "Equi7Grid: OC Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_OC_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5810,7 +5810,7 @@
   },
   {
     "title": "Equi7Grid: SA Tile T1",
-    "sample_code": "https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID",
     "type": "table",
     "id": "projects/sat-io/open-datasets/equi7grid/EQUI7_V14_SA_GEOG_TILE_T1",
     "provider": "Bernhard et al, European Space Agency",
@@ -5938,7 +5938,7 @@
   },
   {
     "title": "Soil carbon storage in terrestrial ecosystems of Canada: Canopy Height",
-    "sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/carbon_stocks_ca/ch",
     "provider": "Sothe et al 2021",
@@ -5946,7 +5946,7 @@
   },
   {
     "title": "Soil carbon storage in terrestrial ecosystems of Canada: Forest Carbon Stock",
-    "sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/carbon_stocks_ca/fc",
     "provider": "Sothe et al 2021",
@@ -5954,7 +5954,7 @@
   },
   {
     "title": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Stock",
-    "sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/carbon_stocks_ca/sc",
     "provider": "Sothe et al 2021",
@@ -5962,7 +5962,7 @@
   },
   {
     "title": "Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Concentration",
-    "sample_code": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/carbon_stocks_ca/scc",
     "provider": "Sothe et al 2021",
@@ -5978,7 +5978,7 @@
   },
   {
     "title": "Global Lakes and Reservoirs salinity measurements (1980-2019)",
-    "sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+    "sample_code": "https://code.earthengine.google.com/https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-WATER-SALINITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_water_salinity/lakes_reservoirs_database",
     "provider": "Thorslund et al",
@@ -5986,7 +5986,7 @@
   },
   {
     "title": "Global Rivers salinity measurements (1980-2019)",
-    "sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+    "sample_code": "https://code.earthengine.google.com/https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-WATER-SALINITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_water_salinity/rivers_database",
     "provider": "Thorslund et al",
@@ -5994,7 +5994,7 @@
   },
   {
     "title": "Global Groundwater salinity measurements (1980-2019)",
-    "sample_code": "https://code.earthengine.google.com/e49f67214364657a53276752089a60a7",
+    "sample_code": "https://code.earthengine.google.com/https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-WATER-SALINITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_water_salinity/groundwaters_database",
     "provider": "Thorslund et al",
@@ -6074,7 +6074,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Irrecoverable total",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_total",
     "provider": "Noon et al",
@@ -6082,7 +6082,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Irrecoverable soil",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_soil",
     "provider": "Noon et al",
@@ -6090,7 +6090,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Irrecoverable biomass",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_biomass",
     "provider": "Noon et al",
@@ -6098,7 +6098,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Vulnerable total",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_total",
     "provider": "Noon et al",
@@ -6106,7 +6106,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Vulnerable soil",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_soil",
     "provider": "Noon et al",
@@ -6114,7 +6114,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Vulnerable biomass",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_biomass",
     "provider": "Noon et al",
@@ -6122,7 +6122,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Manageable total",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_total",
     "provider": "Noon et al",
@@ -6130,7 +6130,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Manageable soil",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_soil",
     "provider": "Noon et al",
@@ -6138,7 +6138,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Manageable biomass",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_biomass",
     "provider": "Noon et al",
@@ -6146,7 +6146,7 @@
   },
   {
     "title": "Carbon in Earth’s ecosystems: Ecosystem Extent",
-    "sample_code": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ecosystem_extent",
     "provider": "Noon et al",
@@ -6186,7 +6186,7 @@
   },
   {
     "title": "Global snow cover monthly long-term (2000–2012) P90",
-    "sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_p90",
     "provider": "Hengl 2021",
@@ -6194,7 +6194,7 @@
   },
   {
     "title": "Global snow cover monthly long-term (2000–2012) SD",
-    "sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_sd",
     "provider": "Hengl 2021",
@@ -6202,7 +6202,7 @@
   },
   {
     "title": "Global snow cover monthly values P05, P50 and P95 (2000-2020)",
-    "sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_snow_quantile",
     "provider": "Hengl 2021",
@@ -6210,7 +6210,7 @@
   },
   {
     "title": "Global max geometric temperatures for the mid-month",
-    "sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmax",
     "provider": "Hengl 2021",
@@ -6218,7 +6218,7 @@
   },
   {
     "title": "Global min geometric temperatures for the mid-month",
-    "sample_code": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmin",
     "provider": "Hengl 2021",
@@ -6514,7 +6514,7 @@
   },
   {
     "title": "FABDEM (Forest And Buildings removed Copernicus 30m DEM)",
-    "sample_code": "https://code.earthengine.google.com/2e4110a0e6769825650a1b98ec4cf38e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/FABDEM",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/FABDEM",
     "provider": " Hawker, L., Uhe, P., Paulo, L., Sosa, J., Savage, J., Sampson, C., & Neal, J",
@@ -6522,7 +6522,7 @@
   },
   {
     "title": "Copernicus Digital Elevation Model (GLO-30 DEM)",
-    "sample_code": "https://code.earthengine.google.com/f6479dc43ab9c13dd1cc9bd527cf0c01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/COPERNICUS_GLO30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GLO-30",
     "provider": " European Space Agency, COPERNICUS",
@@ -6586,7 +6586,7 @@
   },
   {
     "title": "NOAA Sea-Level Rise Digital Elevation Models",
-    "sample_code": "https://code.earthengine.google.com/716e711368f4df16a5f61356691cb610",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-SLR-DEM",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NOAA/SLR_DEM",
     "provider": "NOAA",
@@ -6594,7 +6594,7 @@
   },
   {
     "title": "CoNED Project -Topobathymetric digital elevation models",
-    "sample_code": "https://code.earthengine.google.com/bbf21c4acf7eede5140dd08fac8f913e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-CoNED-TBDEM",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/NOAA/CoNED_TBDEM",
     "provider": "USGS, CMGP, NGP, NOAA and NGDC",
@@ -6610,7 +6610,7 @@
   },
   {
     "title": "ASTER Global Digital Elevation Model (GDEM) v3",
-    "sample_code": "https://code.earthengine.google.com/7592ab36de453d718aab7291692abb88",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTER-GDEM",
     "type": "image",
     "id": "projects/sat-io/open-datasets/ASTER/GDEM",
     "provider": "NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team",
@@ -6618,7 +6618,7 @@
   },
   {
     "title": "ASTER Global Water Bodies Database (ASTWBD) Version 1",
-    "sample_code": "https://code.earthengine.google.com/52693ef5d22167a7283fb4e9da60f11f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTWBD",
     "type": "image",
     "id": "projects/sat-io/open-datasets/ASTER/ASTWBD_ATT",
     "provider": "NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team",
@@ -6954,7 +6954,7 @@
   },
   {
     "title": "Iceland DEM v1.0 10m",
-    "sample_code": "https://code.earthengine.google.com/34517ab5c05be78e5f7d9227a4ca7b7e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ICELAND-DEM-10m",
     "type": "image",
     "id": "projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93",
     "provider": "National Land Survey of Iceland & PGC",
@@ -7034,7 +7034,7 @@
   },
   {
     "title": "DEM France (Continental) 5m IGN RGE Alti",
-    "sample_code": "https://code.earthengine.google.com/b9054b6d5c4d7de1a4af39ff307e73d7",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/IGN-RGE-France-DEM-5m",
     "type": "image",
     "id": "projects/sat-io/open-datasets/IGN_RGE_Alti_5m",
     "provider": "National Institute of Geographic and Forest Information (IGN)",

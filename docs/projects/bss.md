@@ -25,7 +25,7 @@ var bare_surface = ee.Image('users/geocis/BareSurfaces/BS_1980_2019');
 var bare_frequency = ee.Image('users/geocis/BareSurfaces/BF_1980_2019');
 ```
 
-Sample Code: https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA
 
 App Website: [App link here](https://geocis.users.earthengine.app/view/bare-surfaces)
 

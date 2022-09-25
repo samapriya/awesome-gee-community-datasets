@@ -19,7 +19,7 @@ While the datasets were collected and made available from NOAA different collect
 var slrdem = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/SLR_DEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/716e711368f4df16a5f61356691cb610
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-SLR-DEM
 
 #### License
 The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. Depending on the product source, we request that the following statements be used when citing, copying, or reprinting data: Data available from the U.S. Geological Survey.

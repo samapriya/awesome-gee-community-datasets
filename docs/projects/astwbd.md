@@ -24,10 +24,10 @@ https://doi.org/10.5067/ASTER/ASTGTM.003
 #### Earth Engine Snippet
 
 ```js
-var fabdem = ee.Image("projects/sat-io/open-datasets/ASTER/ASTWBD_ATT");
+var astwbd_att = ee.Image("projects/sat-io/open-datasets/ASTER/ASTWBD_ATT");
 ```
 
-Sample Code: https://code.earthengine.google.com/52693ef5d22167a7283fb4e9da60f11f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTWBD
 
 #### License
 

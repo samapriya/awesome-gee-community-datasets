@@ -33,7 +33,7 @@ var rivers = ee.FeatureCollection("projects/sat-io/open-datasets/global_water_sa
 var lakes_reservoir = ee.FeatureCollection("projects/sat-io/open-datasets/global_water_salinity/lakes_reservoirs_database");
 ```
 
-Sample Code: https://code.earthengine.google.com/e49f67214364657a53276752089a60a7
+Sample Code: https://code.earthengine.google.com/https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-WATER-SALINITY
 
 #### License
 

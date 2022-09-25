@@ -20,7 +20,7 @@ var SOC30_mean = ee.ImageCollection("projects/sat-io/open-datasets/NINA/SOC30_SA
 var SOC30_trend = ee.ImageCollection("projects/sat-io/open-datasets/NINA/SOC30_SA_trend");
 ```
 
-Sample Script: https://code.earthengine.google.com/4e15cc9ee4fe5b43cac46cfbe28f2a5e
+Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-ORGANIC-CARBON-SA
 
 #### Dataset Details
 

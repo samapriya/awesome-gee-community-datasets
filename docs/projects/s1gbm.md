@@ -14,12 +14,12 @@ Sentinel-1 Global Backscatter Model, mapping Earth’s land surface with C-band 
 ```
 
 #### Dataset Record
-The VV and VH mosaics are sampled at 10 m pixel spacing, georeferenced to the Equi7Grid and divided into six continental zones (Africa, Asia, Europe, North America, Oceania, South America), which are further divided into square tiles of 100 km extent ("T1"-tiles). With this setup, the S1GBM consists of 16071 tiles over six continents, for VV and VH each, totaling to a compressed data volume of 2.67 TB. The files were distributed as aggregated zipfiles with a total of 12 zip files.  
+The VV and VH mosaics are sampled at 10 m pixel spacing, georeferenced to the Equi7Grid and divided into six continental zones (Africa, Asia, Europe, North America, Oceania, South America), which are further divided into square tiles of 100 km extent ("T1"-tiles). With this setup, the S1GBM consists of 16071 tiles over six continents, for VV and VH each, totaling to a compressed data volume of 2.67 TB. The files were distributed as aggregated zipfiles with a total of 12 zip files.
 
 The tiles' file-format is a LZW-compressed GeoTIFF holding 16-bit integer values, with tagged metadata on encoding and georeference. Compatibility with common geographic information systems as QGIS or ArcGIS, and geodata libraries as GDAL is given.
 
 #### GEE Pre Processing
-The main file rather than the preview files are ingested and file name is used to create the complete metadata structure for each of these tiled images. While all attempts were made for completeness of tiles, the extremely large volume of each zipfile caused multiple failed attempts and broken link issues. However attempts were made to retry for failures at both download and ingest stages into GEE. 
+The main file rather than the preview files are ingested and file name is used to create the complete metadata structure for each of these tiled images. While all attempts were made for completeness of tiles, the extremely large volume of each zipfile caused multiple failed attempts and broken link issues. However attempts were made to retry for failures at both download and ingest stages into GEE.
 
 A filename of one tile of a mosaic may be for example:
 
@@ -60,7 +60,7 @@ var OC_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_
 var SA_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_SA_GEOG_TILE_T1");
 ```
 
-Sample Code Equi7Grid: https://code.earthengine.google.com/2dc9079800c2b160620a5277c8592da4
+Sample Code Equi7Grid: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/EQUI7-GRID
 
 ![backscatter](https://user-images.githubusercontent.com/6677629/140654055-383c84eb-926c-47b7-8615-fe74396439f3.gif)
 
@@ -71,7 +71,7 @@ var VH = ee.ImageCollection("projects/sat-io/open-datasets/S1GBM/normalized_s1_b
 var VV = ee.ImageCollection("projects/sat-io/open-datasets/S1GBM/normalized_s1_backscatter_VV");
 ```
 
-Sample code: https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/S1-GLOBAL-BACKSCATTER
 
 
 #### Web-Based Data Viewer

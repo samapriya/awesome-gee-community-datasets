@@ -28,6 +28,9 @@ var change2016_lvl1 = ee.Image("users/Uploads/habitattypes/changemasks2016/iucn_
 print(change2016_lvl1)
 
 ```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES
+
 Extra Info:
 Code to reproduce the maps can be found [here](https://github.com/Martin-Jung/Habitatmapping) and be visualized [here](https://uploads.users.earthengine.app/view/habitat-types-map). Default Maps are for the year 2015. Change maps are also available for later years (2016-2019) based on Copernicus only. Note that provided changemasks are cumulative (e.g. the year 2019 includes changes up to 2019). They can be used to `updateMask` the 2015 image.
 
