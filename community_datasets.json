@@ -7534,5 +7534,37 @@
     "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day",
     "provider": "Wenjun, Bi; Yanlian, Zhou et al",
     "tags": "carbon flux, global changes, long-time series, shaded GPP, sunlit GPP"
+  },
+  {
+    "title": "LANDSCAN GLOBAL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-GLOBAL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_GLOBAL",
+    "provider": "Oakridge National Laboratory",
+    "tags": "Global Population, Population count, Diurnal population, remote sensing, machine learning"
+  },
+  {
+    "title": "LANDSCAN USA DAY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-USA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_USA_DAY",
+    "provider": "Oakridge National Laboratory",
+    "tags": "Global Population, Population count, Diurnal population, remote sensing, machine learning"
+  },
+  {
+    "title": "LANDSCAN USA NIGHT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-USA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_USA_NIGHT",
+    "provider": "Oakridge National Laboratory",
+    "tags": "Global Population, Population count, Diurnal population, remote sensing, machine learning"
+  },
+  {
+    "title": "LANDSCAN HD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-HD",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_HD",
+    "provider": "Oakridge National Laboratory",
+    "tags": "Global Population, Population count, Diurnal population, remote sensing, machine learning"
   }
 ]
