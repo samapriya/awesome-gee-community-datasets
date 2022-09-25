@@ -71,7 +71,7 @@ var tmin_4c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/4C/
 var vpd_4c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/4C/vpd");
 ```
 
-Sample code: https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES
 
 
 #### License

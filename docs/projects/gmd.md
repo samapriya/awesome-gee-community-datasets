@@ -78,7 +78,7 @@ var hmax95 = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_d
 var americas_tree = ee.FeatureCollection("projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements");
 ```
 
-Sample Code: https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT
 
 #### License
 

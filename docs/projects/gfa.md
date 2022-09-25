@@ -26,7 +26,7 @@ var fire_line = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-at
 var fire_speed = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/fire_speed");
 ```
 
-Sample Code: https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS
 
 |Data                       |Location                                                                  |
 |:--------------------------|:-------------------------------------------------------------------------|

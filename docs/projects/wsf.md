@@ -72,7 +72,7 @@ var wsf_evo = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO");
 ```
 
 
-Sample Code: https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT
 
 
 the IDC Score is a measure of goodness of imagery used for evolution layers
@@ -84,7 +84,7 @@ the IDC Score is a measure of goodness of imagery used for evolution layers
 var wsf_evo_idc = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO_IDC");
 ```
 
-Sample Code: https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT-IDC
 
 #### License
 The World Settlement Footprint 2015 is released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.

@@ -46,7 +46,7 @@ Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, a
 ```js
 var GLC10 = ee.ImageCollection("projects/sat-io/open-datasets/FROM-GLC10");
 ```
-Sample Code: https://code.earthengine.google.com/69a783764fa5b37b23b275ba1eabe006
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC10
 
 #### Credits, Attributions and License
 

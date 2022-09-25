@@ -62,7 +62,7 @@ var rix= ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datas
 var wind_speed= ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed');
 ```
 
-Sample Code: https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS
 
 
 Produced and maintained by the [Global Wind Atlas](https://globalwindatlas.info/), Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)

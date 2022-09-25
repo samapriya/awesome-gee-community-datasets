@@ -40,7 +40,7 @@ var isric_ocd = ee.Image("projects/soilgrids-isric/ocd_mean");
 var isric_ocs = ee.Image("projects/soilgrids-isric/ocs_mean");
 ```
 
-Sample Code: https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250
 
 #### Data available from
 www.soilgrids.org.

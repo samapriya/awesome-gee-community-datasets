@@ -21,7 +21,7 @@ var usdm = ee.ImageCollection("projects/sat-io/open-datasets/us-drought-monitor"
 
 ![drought_categories](https://user-images.githubusercontent.com/6677629/115967546-ccd09b00-a4f8-11eb-9ca9-e969f58f0085.png)
 
-Sample Code: https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/UNITED-STATES-DROUGHT-MONITOR
 
 Earth Engine App: https://sat-io.earthengine.app/view/usdm-explorer
 

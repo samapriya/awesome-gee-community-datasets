@@ -73,7 +73,7 @@ For Accuracy Assesment information visit the [ESRI release page](https://www.arc
 ```js
 var esri_lulc_ts= ee.ImageCollection("projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS");
 ```
-Sample Code: https://code.earthengine.google.com/661d065b89e0beeb4b454f0c88e6096b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2017-2021
 
 #### Credits, Attributions and License
 

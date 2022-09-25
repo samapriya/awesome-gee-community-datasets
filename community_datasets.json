@@ -57,7 +57,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-change_f1996  : Raster",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GMW/change/change_f1996",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -65,7 +65,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2007_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2007_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2008_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2008_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2009_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2009_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -89,7 +89,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2010_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2010_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -97,7 +97,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2015_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2015_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -105,7 +105,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2016_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2016_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -113,7 +113,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2017_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2017_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -121,7 +121,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2018_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2018_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -129,7 +129,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2019_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2019_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -137,7 +137,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Change-gmw_v3_f1996_t2020_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2020_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -145,7 +145,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Core-gmw_v3_core_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/core/gmw_v3_core_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -153,7 +153,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Core-gmw_v3_mng_core  : Raster",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GMW/core/gmw_v3_mng_core",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3  : Raster",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GMW/extent/GMW_V3",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -169,7 +169,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_1996_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_1996_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -177,7 +177,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2007_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2007_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -185,7 +185,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2008_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2008_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -193,7 +193,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2009_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2009_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -201,7 +201,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2010_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2010_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -209,7 +209,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2015_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2015_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -217,7 +217,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2016_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2016_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -225,7 +225,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2017_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2017_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -233,7 +233,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2018_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2018_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -241,7 +241,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2019_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2019_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -249,7 +249,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Extent-gmw_v3_2020_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/extent/gmw_v3_2020_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -257,7 +257,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Gmw-gmw_v3_tiles : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/gmw_v3_tiles",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -265,7 +265,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Union-gmw_v3_mng_union  : Raster",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GMW/union/gmw_v3_mng_union",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -273,7 +273,7 @@
   },
   {
     "title": "Global Mangrove Watch v3 Union-gmw_v3_union_vec : Vector",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/union/gmw_v3_union_vec",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -281,7 +281,7 @@
   },
   {
     "title": "Global Mangrove Extent 2016",
-    "sample_code": "https://code.earthengine.google.com/ded574858c353cac4df6652e14f501b2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GMW/GMW_2016_v2",
     "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
@@ -361,7 +361,7 @@
   },
   {
     "title": "Bulk density of the fine earth fraction",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/bdod_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -369,7 +369,7 @@
   },
   {
     "title": "Cation Exchange Capacity of the soil",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/cec_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -377,7 +377,7 @@
   },
   {
     "title": "Volumetric fraction of coarse fragments",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/cfvo_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -385,7 +385,7 @@
   },
   {
     "title": "Proportion of clay particles (lt 0.002 mm) in the fine earth fraction",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/clay_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -393,7 +393,7 @@
   },
   {
     "title": "Total nitrogen",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/nitrogen_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -401,7 +401,7 @@
   },
   {
     "title": "Soil pH",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/phh2o_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -409,7 +409,7 @@
   },
   {
     "title": "Proportion of sand particles (gt 0.05 mm) in the fine earth fraction",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/sand_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -417,7 +417,7 @@
   },
   {
     "title": "Proportion of silt particles (gte 0.002 mm and lte 0.05 mm) in the fine earth fraction",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/silt_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -425,7 +425,7 @@
   },
   {
     "title": "Soil organic carbon content in the fine earth fraction",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/soc_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -433,7 +433,7 @@
   },
   {
     "title": "Organic carbon density",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/ocd_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -441,7 +441,7 @@
   },
   {
     "title": "Organic carbon stocks",
-    "sample_code": "https://code.earthengine.google.com/6618d200de937bb5b0325235d52d690f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250",
     "type": "image",
     "id": "projects/soilgrids-isric/ocs_mean",
     "provider": "International Soil Reference and Information Centre (ISRIC)",
@@ -1130,7 +1130,7 @@
   },
   {
     "title": "United States Drought Monitor (USDM)",
-    "sample_code": "https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/UNITED-STATES-DROUGHT-MONITOR",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/us-drought-monitor",
     "provider": "National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC",
@@ -1250,7 +1250,7 @@
   },
   {
     "title": "Global large flood events- Dartmouth Flood Observatory (1985-2016)",
-    "sample_code": "https://code.earthengine.google.com/4058ef8c0f4d98a1444c9c03327878e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-LARGE-FLOOD-EVENTS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/events/large_flood_events_1985-2016",
     "provider": "Dartmouth Flood Observatory, Intergovernmental Hydrologic Programme",
@@ -1258,7 +1258,7 @@
   },
   {
     "title": "Global Landslide Catalog - NASA Goddard (1970-2019)",
-    "sample_code": "https://code.earthengine.google.com/fc05547a9058948eae9b7782ee07cf22",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-LANDSLIDE-CATALOG",
     "type": "table",
     "id": "projects/sat-io/open-datasets/events/global_landslide_1970-2019",
     "provider": "NASA Goddard Space Flight Center",
@@ -1282,7 +1282,7 @@
   },
   {
     "title": "Saturated Hydraulic Conductivity- Ksat",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/ksat",
     "provider": "Future Water",
@@ -1290,7 +1290,7 @@
   },
   {
     "title": "Water content between saturation point and field capacity (pF2)- sat-field",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/sat-field",
     "provider": "Future Water",
@@ -1298,7 +1298,7 @@
   },
   {
     "title": "N parameter for Mualem Van Genuchten Equation",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/N",
     "provider": "Future Water",
@@ -1306,7 +1306,7 @@
   },
   {
     "title": "Alpha parameter for Mualem Van Genuchten Equation",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/alpha",
     "provider": "Future Water",
@@ -1314,7 +1314,7 @@
   },
   {
     "title": "Water content between wilting point (pF3)- Wilt Perm",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/crit-wilt",
     "provider": "Future Water",
@@ -1322,7 +1322,7 @@
   },
   {
     "title": "Water content between field capacity (pF2_ and wilting point (pF3)- Field Wilt",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/field-crit",
     "provider": "Future Water",
@@ -1330,7 +1330,7 @@
   },
   {
     "title": "Organic Matter Content- ORMC",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/ormc",
     "provider": "Future Water",
@@ -1338,7 +1338,7 @@
   },
   {
     "title": "Soil Texture Class- STC",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/stc",
     "provider": "Future Water",
@@ -1346,7 +1346,7 @@
   },
   {
     "title": "Available water content- wcavail",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcavail",
     "provider": "Future Water",
@@ -1354,7 +1354,7 @@
   },
   {
     "title": "Water content at pF2 (field capacity)- wcpf2",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf2",
     "provider": "Future Water",
@@ -1362,7 +1362,7 @@
   },
   {
     "title": "Water content at pF3 (wilting point)- wcpf3",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf3",
     "provider": "Future Water",
@@ -1370,7 +1370,7 @@
   },
   {
     "title": "Water content at pF4.2 (permanent wilting point)- wcpf4.2",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf4-2",
     "provider": "Future Water",
@@ -1378,7 +1378,7 @@
   },
   {
     "title": "Residual Water Content- wcres",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcres",
     "provider": "Future Water",
@@ -1386,7 +1386,7 @@
   },
   {
     "title": "Saturated water content- wcsat",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/wcsat",
     "provider": "Future Water",
@@ -1394,7 +1394,7 @@
   },
   {
     "title": "Hydrologic Soil Group",
-    "sample_code": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/HiHydroSoilv2_0/Hydrologic_Soil_Group_250m",
     "provider": "Future Water",
@@ -1402,7 +1402,7 @@
   },
   {
     "title": "Global Aridity Index Yearly",
-    "sample_code": "https://code.earthengine.google.com/04adb1bfeaf55b95bc2070edd228da73",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_ai/global_ai_yearly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -1410,7 +1410,7 @@
   },
   {
     "title": "Global Aridity Index Monthly",
-    "sample_code": "https://code.earthengine.google.com/04adb1bfeaf55b95bc2070edd228da73",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_ai/global_ai_monthly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -1418,7 +1418,7 @@
   },
   {
     "title": "Global Reference Evapotranspiration Monthly",
-    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ET0",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_et0/global_et0_monthly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -1426,7 +1426,7 @@
   },
   {
     "title": "Global Reference Evapotranspiration Yearly",
-    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ET0",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -1434,7 +1434,7 @@
   },
   {
     "title": "Global Reference Evapotranspiration Yearly SD",
-    "sample_code": "https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ET0",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly_sd",
     "provider": "CGIAR Platform for Big Data in Agriculture",
@@ -2122,7 +2122,7 @@
   },
   {
     "title": "Global Fire Atlas: Day of Burn",
-    "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/day_of_burn",
     "provider": "Niels Andela",
@@ -2130,7 +2130,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Direction",
-    "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_direction",
     "provider": "Niels Andela",
@@ -2138,7 +2138,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Line",
-    "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_line",
     "provider": "Niels Andela",
@@ -2146,7 +2146,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Speed",
-    "sample_code": "https://code.earthengine.google.com/20d059ee5819d2fbb7e0de398f70eb90",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_speed",
     "provider": "Niels Andela",
@@ -2386,7 +2386,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: Bulk Density",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/bd_mean",
     "provider": "USGS",
@@ -2394,7 +2394,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: Clay Percentage",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/clay_mean",
     "provider": "USGS",
@@ -2402,7 +2402,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: Sand Percentage",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/sand_mean",
     "provider": "USGS",
@@ -2410,7 +2410,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: Silt Percentage",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/silt_mean",
     "provider": "USGS",
@@ -2418,7 +2418,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: Organic Matter",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/om_mean",
     "provider": "USGS",
@@ -2426,7 +2426,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: soil pH in H20",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/ph_mean",
     "provider": "USGS",
@@ -2434,7 +2434,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: saturated soil water content",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/theta_s_mean",
     "provider": "USGS",
@@ -2442,7 +2442,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: residual water content",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/theta_r_mean",
     "provider": "USGS",
@@ -2450,7 +2450,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: saturated hydraulic conductivity",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/ksat_mean",
     "provider": "USGS",
@@ -2458,7 +2458,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties:  pore size distribution",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/n_mean",
     "provider": "USGS",
@@ -2466,7 +2466,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: pore size distribution index (brooks corey)",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/lambda_mean",
     "provider": "USGS",
@@ -2474,7 +2474,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: scale parameter inversely proportional to mean pore diameter (van genuchten)",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/alpha_mean",
     "provider": "USGS",
@@ -2482,7 +2482,7 @@
   },
   {
     "title": "Polaris 30m Probabilistic Soil Properties: bubbling pressure (brooks corey)",
-    "sample_code": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/polaris/hb_mean",
     "provider": "USGS",
@@ -2626,7 +2626,7 @@
   },
   {
     "title": "Projections from individual AOGCMs: Total Precipitation monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_ppt",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2634,7 +2634,7 @@
   },
   {
     "title": "Projections from individual AOGCMs: Average Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tave",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2642,7 +2642,7 @@
   },
   {
     "title": "Projections from individual AOGCMs: Maximum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmax",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2650,7 +2650,7 @@
   },
   {
     "title": "Projections from individual AOGCMs: Minimum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmin",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2658,7 +2658,7 @@
   },
   {
     "title": "Projections from AOGCM Ensemble: Total Precipitation monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_ppt",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2666,7 +2666,7 @@
   },
   {
     "title": "Projections from AOGCM Ensemble: Average Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tave",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2674,7 +2674,7 @@
   },
   {
     "title": "Projections from AOGCM Ensemble: Maximum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmax",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2682,7 +2682,7 @@
   },
   {
     "title": "Projections from AOGCM Ensemble: Minimum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmin",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2690,7 +2690,7 @@
   },
   {
     "title": "Climate Normals: Total Precipitation monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_ppt",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2698,7 +2698,7 @@
   },
   {
     "title": "Climate Normals: Average Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tave",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2706,7 +2706,7 @@
   },
   {
     "title": "Climate Normals: Maximum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmax",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2714,7 +2714,7 @@
   },
   {
     "title": "Climate Normals: Minimum Temperature monthly",
-    "sample_code": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmin",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2722,7 +2722,7 @@
   },
   {
     "title": "Climate Normals: Bioclimatic Variables",
-    "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2730,7 +2730,7 @@
   },
   {
     "title": "Projections from AOGCM Ensemble: Bioclimatic Variables",
-    "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2738,7 +2738,7 @@
   },
   {
     "title": "Projections from individual AOGCM models: Bioclimatic Variables",
-    "sample_code": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_bioclim",
     "provider": "AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll",
@@ -2746,7 +2746,7 @@
   },
   {
     "title": "ESRI Global Land Use Land Cover from Sentinel-2",
-    "sample_code": "https://code.earthengine.google.com/514a294747ee5e7a136372b7e947d7bc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2020",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
@@ -2946,7 +2946,7 @@
   },
   {
     "title": "Global Wind Atlas: Air Density",
-    "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/air-density",
     "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
@@ -2954,7 +2954,7 @@
   },
   {
     "title": "Global Wind Atlas: Capacity Factor",
-    "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/capacity-factor",
     "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
@@ -2962,7 +2962,7 @@
   },
   {
     "title": "Global Wind Atlas: Power Density",
-    "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/power-density",
     "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
@@ -2970,7 +2970,7 @@
   },
   {
     "title": "Global Wind Atlas: Wind Speed",
-    "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed",
     "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
@@ -2978,7 +2978,7 @@
   },
   {
     "title": "Global Wind Atlas: Ruggedness Index",
-    "sample_code": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/ruggedness-index",
     "provider": "Global Wind Atlas, Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)",
@@ -3194,7 +3194,7 @@
   },
   {
     "title": "Soil 800m Grid: caco3",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/caco3",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3202,7 +3202,7 @@
   },
   {
     "title": "Soil 800m Grid: cec",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/cec",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3210,7 +3210,7 @@
   },
   {
     "title": "Soil 800m Grid: cec_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/cec_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3218,7 +3218,7 @@
   },
   {
     "title": "Soil 800m Grid: ec",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ec",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3226,7 +3226,7 @@
   },
   {
     "title": "Soil 800m Grid: ec_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ec_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3234,7 +3234,7 @@
   },
   {
     "title": "Soil 800m Grid: ph",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ph",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3242,7 +3242,7 @@
   },
   {
     "title": "Soil 800m Grid: ph_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/ph_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3250,7 +3250,7 @@
   },
   {
     "title": "Soil 800m Grid: sar",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/sar",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3258,7 +3258,7 @@
   },
   {
     "title": "Soil 800m Grid: som",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/som",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3266,7 +3266,7 @@
   },
   {
     "title": "Soil 800m Grid: som_max",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/chemical/som_max",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3274,7 +3274,7 @@
   },
   {
     "title": "Soil 800m Grid: hydrologic_group",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/hydrologic_group",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3282,7 +3282,7 @@
   },
   {
     "title": "Soil 800m Grid: kw_025",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/kw_025",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3290,7 +3290,7 @@
   },
   {
     "title": "Soil 800m Grid: lcc_i",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/lcc_i",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3298,7 +3298,7 @@
   },
   {
     "title": "Soil 800m Grid: lcc_ni",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/lcc_ni",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3306,7 +3306,7 @@
   },
   {
     "title": "Soil 800m Grid: resdept",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/resdept",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3314,7 +3314,7 @@
   },
   {
     "title": "Soil 800m Grid: soil_depth",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_depth",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3322,7 +3322,7 @@
   },
   {
     "title": "Soil 800m Grid: soil_order",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_order",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3330,7 +3330,7 @@
   },
   {
     "title": "Soil 800m Grid: soil_temp_regime",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/soil_temp_regime",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3338,7 +3338,7 @@
   },
   {
     "title": "Soil 800m Grid: survey_type",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/survey_type",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3346,7 +3346,7 @@
   },
   {
     "title": "Soil 800m Grid: wind_erodibility_group",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/wind_erodibility_group",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3354,7 +3354,7 @@
   },
   {
     "title": "Soil 800m Grid: wind_erodibility_index",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/land_use/wind_erodibility_index",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3362,7 +3362,7 @@
   },
   {
     "title": "Soil 800m Grid: bulk_density",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/bulk_density",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3370,7 +3370,7 @@
   },
   {
     "title": "Soil 800m Grid: clay",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/clay",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3378,7 +3378,7 @@
   },
   {
     "title": "Soil 800m Grid: clay_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/clay_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3386,7 +3386,7 @@
   },
   {
     "title": "Soil 800m Grid: drainage_class",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/drainage_class",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3394,7 +3394,7 @@
   },
   {
     "title": "Soil 800m Grid: ksat_05",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_05",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3402,7 +3402,7 @@
   },
   {
     "title": "Soil 800m Grid: ksat_max",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_max",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3410,7 +3410,7 @@
   },
   {
     "title": "Soil 800m Grid: ksat_mean",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_mean",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3418,7 +3418,7 @@
   },
   {
     "title": "Soil 800m Grid: ksat_min",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/ksat_min",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3426,7 +3426,7 @@
   },
   {
     "title": "Soil 800m Grid: rf_025",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/rf_025",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3434,7 +3434,7 @@
   },
   {
     "title": "Soil 800m Grid: sand",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/sand",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3442,7 +3442,7 @@
   },
   {
     "title": "Soil 800m Grid: sand_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/sand_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3450,7 +3450,7 @@
   },
   {
     "title": "Soil 800m Grid: silt",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/silt",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3458,7 +3458,7 @@
   },
   {
     "title": "Soil 800m Grid: silt_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/silt_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3466,7 +3466,7 @@
   },
   {
     "title": "Soil 800m Grid: soil_texture_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/soil_texture_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3474,7 +3474,7 @@
   },
   {
     "title": "Soil 800m Grid: water_storage",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/water_storage",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3482,7 +3482,7 @@
   },
   {
     "title": "Soil 800m Grid: water_storage_profile",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/physical/water_storage_profile",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3490,7 +3490,7 @@
   },
   {
     "title": "Soil 800m Grid: soil_color",
-    "sample_code": "https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800",
     "type": "image_collection",
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/CSRL_soil_properties/soil_color",
     "provider": "California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service",
@@ -3498,7 +3498,7 @@
   },
   {
     "title": "World Settlement Footprint (2015)",
-    "sample_code": "https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/WSF/WSF_2015",
     "provider": "Marconcini, et al",
@@ -3506,7 +3506,7 @@
   },
   {
     "title": "World Settlement Footprint (2019)",
-    "sample_code": "https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/WSF/WSF_2019",
     "provider": "Marconcini, et al",
@@ -3514,7 +3514,7 @@
   },
   {
     "title": "World Settlement Footprint Evolution (1985-2015)",
-    "sample_code": "https://code.earthengine.google.com/2f94935ff4d43327ae10677f5c08e268",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/WSF/WSF_EVO",
     "provider": "Marconcini, et al",
@@ -3522,7 +3522,7 @@
   },
   {
     "title": "World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC)",
-    "sample_code": "https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT-IDC",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/WSF/WSF_EVO_IDC",
     "provider": "Marconcini, et al",
@@ -3562,7 +3562,7 @@
   },
   {
     "title": "Global Impervious Surface Area (1972-2019)",
-    "sample_code": "https://code.earthengine.google.com/09c11e2bfe98a654cfb63cc88fb13e23",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-IMPERVIOUS-SURFACE-AREA",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GISA_1972_2019",
     "provider": "Xin Huang, Jiayi Li, Jie Yang, Zhen Zhang, Dongrui Li, & Xiaoping Liu",
@@ -3578,7 +3578,7 @@
   },
   {
     "title": "Geocoded Disasters (GDIS) Dataset (1960 – 2018)",
-    "sample_code": "https://code.earthengine.google.com/b2f8a05b881ab9f09df3b304d6801f4e",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GEOCODED-DISASTERS-DATASET",
     "type": "table",
     "id": "projects/sat-io/open-datasets/gdis_1960-2018",
     "provider": "NASA Socioeconomic Data and Applications Center (SEDAC)",
@@ -3634,7 +3634,7 @@
   },
   {
     "title": "Monitoring Trends in Burn Severity 1984-2019: Burned area boundaries",
-    "sample_code": "https://code.earthengine.google.com/0f71c9417a141c674c8dbf55f60a6f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MONITORING-TRENDS-BURN-SEVERITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MTBS/burned_area_boundaries",
     "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
@@ -3642,7 +3642,7 @@
   },
   {
     "title": "Monitoring Trends in Burn Severity 1984-2019: Fire Occurrence",
-    "sample_code": "https://code.earthengine.google.com/0f71c9417a141c674c8dbf55f60a6f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MONITORING-TRENDS-BURN-SEVERITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MTBS/fire_occurrence",
     "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
@@ -5458,7 +5458,7 @@
   },
   {
     "title": "MODIS Gap filled Long-term Land Surface Temperature Daily Daytime",
-    "sample_code": "https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/MODIS-GAPFILLED-LST-DAILY",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gap-filled-lst/gf_day_1km",
     "provider": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
@@ -5466,7 +5466,7 @@
   },
   {
     "title": "MODIS Gap filled Long-term Land Surface Temperature Daily Nighttime",
-    "sample_code": "https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/MODIS-GAPFILLED-LST-DAILY",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km",
     "provider": "Zhang, Tao; Zhou, Yuyu; Zhu, Zhengyuan; Li, Xiaoma; Asrar, Ghassem",
@@ -5522,7 +5522,7 @@
   },
   {
     "title": "International Satellite Cloud Climatology Project: HXG Cloud Cover",
-    "sample_code": "https://code.earthengine.google.com/b322661badd81a08a13d5ad8b5822089",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HXG-CLOUD-COVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/isccp/hxg",
     "provider": "International Satellite Cloud Climatology Project",
@@ -5593,14 +5593,6 @@
     "tags": "land use, floodplain, Mississippi River Basin, hydrology, river basin, ecysostems"
   },
   {
-    "title": "Landsat Burned Area",
-    "sample_code": "https://code.earthengine.google.com/34a2a4df430c5e7c8a6e5073cd66175c",
-    "type": "image",
-    "id": "users/keikonomura/fire/LBA_CU_2019_20200415_C01_V01_BP_L8",
-    "provider": "U.S. Geological Survey",
-    "tags": "Wildfire, Burned Area, Burn Probability, Burned Classification, Landsat"
-  },
-  {
     "title": "Tensor Flow Hydra Flood Models",
     "sample_code": "https://code.earthengine.google.com/09c4f203ccab064d0acdfa55dfdad9f7",
     "type": "image",
@@ -5666,7 +5658,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: DIF",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/dif_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5674,7 +5666,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: DNI",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/dni_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5682,7 +5674,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: Elevation above sea Level",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/ele_asl",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5690,7 +5682,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: GHI",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/ghi_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5698,7 +5690,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: GTI",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/gti_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5706,7 +5698,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: OPTA",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/opta_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5714,7 +5706,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: PVOUT LTAm",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/pvout_LTAm_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5722,7 +5714,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: PVOUT LTAy",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/pvout_LTAy_AvgDailyTotals",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5730,7 +5722,7 @@
   },
   {
     "title": "Global Solar Atlas Datasets: Temperature at 2m above ground level",
-    "sample_code": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/global_solar_atlas/temp_2m_agl",
     "provider": "GSA, ESMAP, Solargis, Worldbank, IFC",
@@ -5738,7 +5730,7 @@
   },
   {
     "title": "ESA WorldCover 10 m 2020 V100 InputQuality",
-    "sample_code": "https://code.earthengine.google.com/47f7d56aa50aad4c991f677cefdf5f11",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-10m-WORLDCOVER-IQ",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality",
     "provider": "Zanaga et al, ESA WorldCover consortium",
@@ -5818,7 +5810,7 @@
   },
   {
     "title": "Global urban extents from 1870 to 2100: hindcast_extent",
-    "sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-EXTENTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-urban-extents/hindcast_urban_extent",
     "provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
@@ -5826,7 +5818,7 @@
   },
   {
     "title": "Global urban extents from 1870 to 2100: observed_extent",
-    "sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-EXTENTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-urban-extents/observed_urban_extent",
     "provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
@@ -5834,7 +5826,7 @@
   },
   {
     "title": "Global urban extents from 1870 to 2100: hindcast_extent",
-    "sample_code": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-EXTENTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-urban-extents/project_urban_scenarios",
     "provider": " Li, Xuecao, Yuyu Zhou, Mohamad Hejazi, Marshall Wise, Chris Vernon, Gokul Iyer, and Wei Chen",
@@ -5842,7 +5834,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: AT",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/AT",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5850,7 +5842,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: ESI",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/ESI",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5858,7 +5850,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: MRT",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/MRT",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5866,7 +5858,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: UTCI",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/UTCI",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5874,7 +5866,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: UTCI2",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/UTCI2",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5882,7 +5874,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: UTCI3",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/UTCI3",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5890,7 +5882,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: HI",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/HI",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5898,7 +5890,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: Humidex",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/Humidex",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5906,7 +5898,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: WBGT",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/WBGT",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5914,7 +5906,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: WBT",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/WBT",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5922,7 +5914,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: WCT",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/WCT",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -5930,7 +5922,7 @@
   },
   {
     "title": "High-spatial-resolution Thermal-stress Indices: NET",
-    "sample_code": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HITISEA/NET",
     "provider": "Yechao Yan; Yangyang Xu; Shuping Yue",
@@ -6066,7 +6058,7 @@
   },
   {
     "title": "Global Soil Salinity 1986-2016",
-    "sample_code": "https://code.earthengine.google.com/eb155a39ed8a1ec45fe9f85534d5794c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/GLOBAL-SOIL-SALINITY",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_soil_salinity",
     "provider": "Ivushkin et al",
@@ -6154,7 +6146,7 @@
   },
   {
     "title": "Global Mangrove Distribution: Above Ground Biomass",
-    "sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_mangrove_distribution/agb",
     "provider": "Simard et al",
@@ -6162,7 +6154,7 @@
   },
   {
     "title": "Global Mangrove Distribution: Mangrove basal-area weighted height",
-    "sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_mangrove_distribution/hba95",
     "provider": "Simard et al",
@@ -6170,7 +6162,7 @@
   },
   {
     "title": "Global Mangrove Distribution: Mangrove canopy maximum height",
-    "sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global_mangrove_distribution/hmax95",
     "provider": "Simard et al",
@@ -6178,7 +6170,7 @@
   },
   {
     "title": "Global Mangrove Distribution: In situ mangrove tree measurements Americas",
-    "sample_code": "https://code.earthengine.google.com/61a2c6295e4ef37ffc17dd5e0dbbd396",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements",
     "provider": "Simard et al",
@@ -6442,7 +6434,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: AOD Daily",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/AOD_daily",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6450,7 +6442,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: AOD Monthly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/AOD_monthly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6458,7 +6450,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: AOD Yearly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/AOD_yearly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6466,7 +6458,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Daily",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM25_daily",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6474,7 +6466,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Monthly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM25_monthly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6482,7 +6474,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM2.5 Yearly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM25_yearly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6490,7 +6482,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Daily",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM10_daily",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6498,7 +6490,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Monthly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM10_monthly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6506,7 +6498,7 @@
   },
   {
     "title": "Long-term Gap-free High-resolution Air Pollutants: PM10 Yearly Average",
-    "sample_code": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LGHAP/PM10_yearly_avg",
     "provider": "Kaixu Bai; Ke Li; Zhuo Tan; Di Han; Jianping Guo",
@@ -6626,7 +6618,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : aet",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/aet",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6634,7 +6626,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : def",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/def",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6642,7 +6634,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : pet",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/pet",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6650,7 +6642,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : ppt",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/ppt",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6658,7 +6650,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : soil",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/soil",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6666,7 +6658,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : srad",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/srad",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6674,7 +6666,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : swe",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/swe",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6682,7 +6674,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : tmax",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/tmax",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6690,7 +6682,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : tmin",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/tmin",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6698,7 +6690,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : vap",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/vap",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6706,7 +6698,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +2C : vpd",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/2C/vpd",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6714,7 +6706,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : aet",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/aet",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6722,7 +6714,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : def",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/def",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6730,7 +6722,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : pet",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/pet",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6738,7 +6730,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : ppt",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/ppt",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6746,7 +6738,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : soil",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/soil",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6754,7 +6746,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : swe",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/swe",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6762,7 +6754,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : tmax",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/tmax",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6770,7 +6762,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : tmin",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/tmin",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6778,7 +6770,7 @@
   },
   {
     "title": "TerraClimate layer commensurate with global mean temperatures +4C : vpd",
-    "sample_code": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/TERRACLIMATE/4C/vpd",
     "provider": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch",
@@ -6786,7 +6778,7 @@
   },
   {
     "title": "MODIS MCD14ML (standard quality) active fire vector data",
-    "sample_code": "https://code.earthengine.google.com/39646c35f93d2af31a6993db773dac8d",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2012",
     "provider": "Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA",
@@ -6794,7 +6786,7 @@
   },
   {
     "title": "VIIRS VNP14IMGTDL_NRT active fire vector data",
-    "sample_code": "https://code.earthengine.google.com/39646c35f93d2af31a6993db773dac8d",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
     "type": "table",
     "id": "projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012",
     "provider": "Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA",
@@ -7194,7 +7186,7 @@
   },
   {
     "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Yearly mean data",
-    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "sample_code": "https://code.earthehttps://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU",
     "type": "image_collection",
     "id": "users/lgutierrezlf/PISCOeo_pm/yearly",
     "provider": "Huerta et al 2022",
@@ -7202,7 +7194,7 @@
   },
   {
     "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data",
-    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "sample_code": "https://code.earthehttps://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU",
     "type": "image_collection",
     "id": "users/lgutierrezlf/PISCOeo_pm/climatology",
     "provider": "Huerta et al 2022",
@@ -7210,7 +7202,7 @@
   },
   {
     "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly data",
-    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "sample_code": "https://code.earthehttps://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU",
     "type": "image_collection",
     "id": "users/lgutierrezlf/PISCOeo_pm/monthly",
     "provider": "Huerta et al 2022",
@@ -7218,7 +7210,7 @@
   },
   {
     "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Daily data",
-    "sample_code": "https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5",
+    "sample_code": "https://code.earthehttps://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU",
     "type": "image_collection",
     "id": "users/lgutierrezlf/PISCOeo_pm/daily",
     "provider": "Huerta et al 2022",
@@ -7274,7 +7266,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - Australia",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_au_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7282,7 +7274,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - Africa",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_af_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7290,7 +7282,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - Asia",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_as_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7298,7 +7290,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - Europe",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_eu_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7306,7 +7298,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - North America",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_na_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7314,7 +7306,7 @@
   },
   {
     "title": "LandCoverNet v1.0 - South America",
-    "sample_code": "https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_sa_v1_labels",
     "provider": "Radiant Earth Foundation",
@@ -7474,7 +7466,7 @@
   },
   {
     "title": "Global Daily near-surface air temperature (2003-2020): Africa",
-    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-daily-air-temp/africa",
     "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
@@ -7482,7 +7474,7 @@
   },
   {
     "title": "Global Daily near-surface air temperature (2003-2020): Australia",
-    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-daily-air-temp/australia",
     "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
@@ -7490,7 +7482,7 @@
   },
   {
     "title": "Global Daily near-surface air temperature (2003-2020): Eurasia",
-    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-daily-air-temp/europe_asia",
     "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
@@ -7498,7 +7490,7 @@
   },
   {
     "title": "Global Daily near-surface air temperature (2003-2020): North America",
-    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-daily-air-temp/north_america",
     "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
@@ -7506,7 +7498,7 @@
   },
   {
     "title": "Global Daily near-surface air temperature (2003-2020): Latin America",
-    "sample_code": "https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-daily-air-temp/latin_america",
     "provider": "Zhang, T., Zhou, Y., Zhao, K., Zhu, Z., Chen, G., Hu, J., and Wang, L.",
@@ -7522,7 +7514,7 @@
   },
   {
     "title": "30m Global Annual Burned Area Maps (GABAM)",
-    "sample_code": "https://code.earthengine.google.com/5f9aa1c500ff4ba49a7c101abb753148",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-ANNUAL-BURNED-AREA-MAPS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GABAM",
     "provider": "Long Tengfei; Zhang Zhaoming; He Guojin",
@@ -7530,7 +7522,7 @@
   },
   {
     "title": "ESRI 10m Annual Land Use Land Cover (2017-2021)",
-    "sample_code": "https://code.earthengine.google.com/661d065b89e0beeb4b454f0c88e6096b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2017-2021",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
@@ -7578,7 +7570,7 @@
   },
   {
     "title": "Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10)",
-    "sample_code": "https://code.earthengine.google.com/69a783764fa5b37b23b275ba1eabe006",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC10",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/FROM-GLC10",
     "provider": "Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang.",

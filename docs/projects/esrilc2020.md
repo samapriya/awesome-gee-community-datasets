@@ -78,7 +78,7 @@ For Accuracy Assesment information visit the [ESRI release page](https://www.arc
 ```js
 var esri_lulc2020= ee.ImageCollection("projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m")
 ```
-Sample Code: https://code.earthengine.google.com/514a294747ee5e7a136372b7e947d7bc
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2020
 
 #### Acknowledgements
 

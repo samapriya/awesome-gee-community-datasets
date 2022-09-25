@@ -65,7 +65,7 @@ var na = ee.ImageCollection("projects/sat-io/open-datasets/LandCoverNet/LABELS/r
 var sa = ee.ImageCollection("projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_sa_v1_labels");
 ```
 
-Sample Code: https://code.earthengine.google.com/a042b202b2912c8e3abe0b4f42bceb2f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/LANDCOVERNET_V1
 
 
 #### License

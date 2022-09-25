@@ -60,7 +60,7 @@ var WCT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/WCT");
 var NET = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/NET");
 ```
 
-Sample code: https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES
 
 
 #### License

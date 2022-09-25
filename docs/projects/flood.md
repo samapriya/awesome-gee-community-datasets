@@ -23,7 +23,7 @@ var flood_events = ee.FeatureCollection("projects/sat-io/open-datasets/events/la
 ```
 
 
-Sample Code: https://code.earthengine.google.com/4058ef8c0f4d98a1444c9c03327878e3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-LARGE-FLOOD-EVENTS
 
 
 #### Data Quality

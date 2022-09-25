@@ -93,7 +93,7 @@ var viirs_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/VIIRS/VNP14
 var modis_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2012");
 ```
 
-Sample code: https://code.earthengine.google.com/39646c35f93d2af31a6993db773dac8d
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/ARCHIVAL-NRT-FIRMS-VIIRS-DATA
 
 
 #### License

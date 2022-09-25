@@ -37,7 +37,7 @@ https://doi.org/10.5281/zenodo.5571936
 ```js
 var esa_iq = ee.ImageCollection("projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality");
 ```
-Sample Code: https://code.earthengine.google.com/47f7d56aa50aad4c991f677cefdf5f11
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-10m-WORLDCOVER-IQ
 
 Data access page: [ESA_WorldCover_v100](https://esa-worldcover.org/en/data-access)
 

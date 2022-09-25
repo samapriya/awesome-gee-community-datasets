@@ -33,7 +33,7 @@ var observed_extent = ee.ImageCollection("projects/sat-io/open-datasets/global-u
 var projected_extent = ee.ImageCollection("projects/sat-io/open-datasets/global-urban-extents/project_urban_scenarios");
 ```
 
-Sample code: https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-EXTENTS
 
 
 #### License

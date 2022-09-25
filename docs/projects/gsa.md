@@ -58,7 +58,7 @@ var pvout_ltay = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/op
 var temp_agl = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/temp_2m_agl');
 ```
 
-Sample Code: https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS
 
 Produced and maintained by the [Global Solar Atlas](https://globalsolaratlas.info), ESMAP, Solargis and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)
 

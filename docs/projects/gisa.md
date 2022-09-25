@@ -38,7 +38,7 @@ by Landsat satellites: from 1972 to 2019 (Version 1.0.0)
 var gisa = ee.ImageCollection("projects/sat-io/open-datasets/GISA_1972_2019");
 ```
 
-Sample Code: https://code.earthengine.google.com/09c11e2bfe98a654cfb63cc88fb13e23
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-IMPERVIOUS-SURFACE-AREA
 
 #### License
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

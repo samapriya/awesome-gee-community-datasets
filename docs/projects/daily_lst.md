@@ -40,7 +40,7 @@ var gf_day_1km = ee.ImageCollection("projects/sat-io/open-datasets/gap-filled-ls
 var gf_night_1km = ee.ImageCollection("projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km");
 ```
 
-Sample Code: https://code.earthengine.google.com/feec2f9bffd7c7e4e2383b730bfa674f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/MODIS-GAPFILLED-LST-DAILY
 
 #### License
 These datasets  are made available under the CC BY 4.0 Attribution 4.0 International license. This license allows users to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.

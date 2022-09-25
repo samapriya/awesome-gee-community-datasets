@@ -4,7 +4,7 @@ The data consists of one variable 'cloud' from the  ISCCP HXG, dataset as retrie
 
 The International Satellite Cloud Climatology Project (ISCCP) was established in 1982 as part of the World Climate Research Program (WCRP) to collect weather satellite radiance measurements and to analyze them to infer the global distribution of clouds, their properties, and their diurnal, seasonal and interannual variations. The resulting datasets and analysis products are being used to study the role of clouds in climate, both their effects on radiative energy exchanges and their role in the global water cycle.
 
-The "H" series of data products is a high spatial resolution (0.1 degree) version of the ISCCCP dataset which is documented at:  
+The "H" series of data products is a high spatial resolution (0.1 degree) version of the ISCCCP dataset which is documented at:
 https://data.amerigeoss.org/es/dataset/97db2b39-9602-4501-a3de-421ab2375027
 
 The ISCCP H-Series Climate Data Record consists of several parts
@@ -32,7 +32,7 @@ METEOROLOGICAL SOCIETY, 80, 2261-2287.
 var isccp = ee.ImageCollection('projects/sat-io/open-datasets/isccp/hxg');
 ```
 
-Sample Code: https://code.earthengine.google.com/b322661badd81a08a13d5ad8b5822089
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HXG-CLOUD-COVER
 
 #### License
 Public Domain/No restrictions (CC0): Under the terms of this license you are free to use the material for any purpose without any restrictions.

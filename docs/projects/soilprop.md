@@ -128,7 +128,7 @@ var  soil_color = ee.ImageCollection('projects/earthengine-legacy/assets/project
 
 ```
 
-Sample Code: https://code.earthengine.google.com/3a1cfb868beb449683f32bdd77f65f1b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800
 
 
 #### Soil Texture Palette

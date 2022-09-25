@@ -89,7 +89,7 @@ var wcsat = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wc
 
 ![hihydro_layers](https://user-images.githubusercontent.com/6677629/117179637-ef846e80-ad98-11eb-967f-e169fe7d84ba.gif)
 
-Sample Code: https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS
 
 #### License Information
 HiHydroSoil v2.0 can be used freely and redistributed with attribution. No additional information made available by authors.

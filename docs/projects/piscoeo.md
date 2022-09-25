@@ -54,7 +54,7 @@ https://lgutierrezlf.users.earthengine.app/view/piscoeopmts
 
 **Resolution: 0.01° (or roughly 1km x 1km)**
 
-app code : https://code.earthengine.google.com/345fa07d279e29d1597e0ddddbaffff5
+app code : https://code.earthehttps://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU
 
 #### License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

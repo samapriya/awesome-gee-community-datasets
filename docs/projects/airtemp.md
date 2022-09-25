@@ -36,7 +36,7 @@ var latin_america = ee.ImageCollection("projects/sat-io/open-datasets/global-dai
 var north_america = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/north_america");
 ```
 
-Sample code: https://code.earthengine.google.com/69487e636785d5c440259f018b7b8ed6
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-DAILY-NEAR-SURFACE-AIR-TEMP
 
 
 #### License

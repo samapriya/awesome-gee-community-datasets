@@ -22,7 +22,7 @@ Landslide Catalog. Geomorphology. doi:10.1016/j.geomorph.2015.03.016.
 var glc = ee.FeatureCollection("projects/sat-io/open-datasets/events/global_landslide_1970-2019");
 ```
 
-Sample code: https://code.earthengine.google.com/fc05547a9058948eae9b7782ee07cf22
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-LANDSLIDE-CATALOG
 
 #### License
 

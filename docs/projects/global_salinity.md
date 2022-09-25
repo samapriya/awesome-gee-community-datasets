@@ -18,7 +18,7 @@ Remote sensing of environment 231 (2019): 111260.
 var soil_salinity = ee.ImageCollection("projects/sat-io/open-datasets/global_soil_salinity");
 ```
 
-Sample Code: https://code.earthengine.google.com/eb155a39ed8a1ec45fe9f85534d5794c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/GLOBAL-SOIL-SALINITY
 
 #### License
 

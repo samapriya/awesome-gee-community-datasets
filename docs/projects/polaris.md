@@ -74,7 +74,7 @@ var alpha_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/alpha
 
 ![polaris_layers](https://user-images.githubusercontent.com/6677629/119921913-7231c100-bf34-11eb-9efc-fede2f162272.gif)
 
-Sample Code: https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30
 
 You can download the datasets here: http://hydrology.cee.duke.edu/POLARIS/
 

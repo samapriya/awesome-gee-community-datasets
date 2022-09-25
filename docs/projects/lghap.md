@@ -68,7 +68,7 @@ var pm25_monthly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/P
 var pm25_yearly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM25_yearly_avg");
 ```
 
-Sample Code: https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS
 
 #### License
 This work is distributed under the Creative Commons Attribution 4.0 International License

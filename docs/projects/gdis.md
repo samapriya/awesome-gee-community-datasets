@@ -24,7 +24,7 @@ https://doi.org/10.1038/s41597-021-00846-6
 var gdis= ee.FeatureCollection("projects/sat-io/open-datasets/gdis_1960-2018");
 ```
 
-Sample Code: https://code.earthengine.google.com/b2f8a05b881ab9f09df3b304d6801f4e
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GEOCODED-DISASTERS-DATASET
 
 #### License
 

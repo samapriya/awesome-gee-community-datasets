@@ -86,7 +86,7 @@ Vector layer with the 1x1 degree tiles used for the analysis
 var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
 ```
 
-Sample Code: https://code.earthengine.google.com/fd1ec9e0585972baa1dd5ed86b7dc990
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH
 
 Resolution: approx 30m
 

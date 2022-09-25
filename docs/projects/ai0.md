@@ -29,7 +29,7 @@ var aridity_index_yearly = ee.Image("projects/sat-io/open-datasets/global_ai/glo
 var aridity_index_monthly = ee.Image("projects/sat-io/open-datasets/global_ai/global_ai_monthly")
 ```
 
-Sample Code: https://code.earthengine.google.com/c256ad3f90a656a2edccb6d7d2453c19
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX
 
 <center>
 

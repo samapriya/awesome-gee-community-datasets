@@ -75,7 +75,7 @@ var aogcm_ensemble_tmax = ee.ImageCollection("projects/sat-io/open-datasets/CMIP
 var aogcm_ensemble_tmin = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmin");
 ```
 
-Sample Code: https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS
 
 #### Post processing for Google Earth Engine
 * All of the 9 individual AOGCM models are added to the collection pertaining to each climate variable and named Climate-Models_(Variable Name). The ensemble models are ingested as along with the climate normals.
@@ -93,7 +93,7 @@ var aogcm_ensemble_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/C
 var climate_normals_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim");
 ```
 
-Sample Code: https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC
 
 There are a total of 33 bioclimatic variables included for the collections and models , the reference table is included below and you can filter using the metadata property **bioclim_variable** and the property names from the table.
 

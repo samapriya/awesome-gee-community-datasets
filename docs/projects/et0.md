@@ -32,7 +32,7 @@ var et_yearly = ee.Image("projects/sat-io/open-datasets/global_et0/global_et0_ye
 var et_yearly_sd = ee.Image("projects/sat-io/open-datasets/global_et0/global_et0_yearly_sd");
 ```
 
-Sample Code: https://code.earthengine.google.com/7e435e4cd241fec0d8bb65045d35b9e5
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ET0
 
 #### License
 
