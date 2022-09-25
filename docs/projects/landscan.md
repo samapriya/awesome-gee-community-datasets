@@ -10,21 +10,21 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 
 #### Paper Citation
 
-** LandScan Global 2021 for [other years find citation information here](https://landscan.ornl.gov/citations)**
+**LandScan Global 2021 for [other years find citation information here](https://landscan.ornl.gov/citations)**
 
 ```
 Sims, K., Reith, A., Bright, E., McKee, J., & Rose, A. (2022). LandScan Global 2021 [Data set]. Oak Ridge National Laboratory. https://doi.org/10.
 48690/1527702
 ```
 
-** LandScan USA 2021 for [other years find citation information here](https://landscan.ornl.gov/citations)**
+**LandScan USA 2021 for [other years find citation information here](https://landscan.ornl.gov/citations)**
 
 ```
 Weber, E., Moehl, J., Weston, S., Rose, A., Brelsford, C., & Hauser, T. (2022). LandScan USA 2021 [Data set]. Oak Ridge National Laboratory. https://
 doi.org/10.48690/1527701
 ```
 
-** LandScan HD 2021 for [find citation information for each country here](https://landscan.ornl.gov/citations)**
+**LandScan HD 2021 for [find citation information for each country here](https://landscan.ornl.gov/citations)**
 
 
 ![landscan_global](https://user-images.githubusercontent.com/6677629/192157803-149b5efe-4aba-4e39-848b-de9fdf964f1b.gif)
