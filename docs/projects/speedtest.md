@@ -60,7 +60,7 @@ var mobile_20210101 = ee.FeatureCollection("projects/sat-io/open-datasets/networ
 var fixed_20210101 = ee.FeatureCollection("projects/sat-io/open-datasets/network/fixed_tiles/2022-01-01_performance_fixed_tiles");
 ```
 
-Sample Code: https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE
 
 Earth Engine files for mobile and fixed tiles across different quarters are arranged in the format, since quarters are 3 month intervals replace month variable by 01,04,07,10 which represents 3 month intervals
 
@@ -81,7 +81,7 @@ var fixed = ee.ImageCollection("projects/sat-io/open-datasets/network/raster_til
 var mobile = ee.ImageCollection("projects/sat-io/open-datasets/network/raster_tiles/performance_mobile_tiles");
 ```
 
-Sample Code: https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERF-RASTER
 
 #### License
 These datasets are made available under a Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)

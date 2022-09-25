@@ -28,7 +28,7 @@ var grip4_south_east_asia = ee.FeatureCollection("projects/sat-io/open-datasets/
 var grip4_middle_east_central_asia = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia");
 ```
 
-Sample Code: https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT
 
 Total features: 25,758,453
 

@@ -32,7 +32,7 @@ var transmission = ee.FeatureCollection("projects/sat-io/open-datasets/predictiv
 #### Resolutions
 lv is at 250m, targets at 463.83 m
 
-Sample Code: https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/PREDICTED-GLOBAL-POWER-SYSTEMS
 
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

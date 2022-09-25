@@ -56,7 +56,7 @@ Argo float dataset has been parsed into a small subset of about 20,000 feature c
 var argo = ee.FeatureCollection("projects/sat-io/open-datasets/argo-subset");
 ```
 
-Sample Code: https://code.earthengine.google.com/f43b787ef6890302b01e7f87e40dd8e2
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/ARGOFLOAT-SUBSET
 
 ![argo_floats_10000](https://user-images.githubusercontent.com/6677629/127728608-08ed871a-bab4-46df-9cad-628760e6b335.png)
 

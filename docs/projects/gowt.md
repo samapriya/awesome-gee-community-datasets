@@ -29,7 +29,7 @@ https://doi.org/10.6084/m9.figshare.13280252.v5
 var gowt = ee.FeatureCollection("projects/sat-io/open-datasets/global_offshore_wind_turbine_v1-3");
 ```
 
-Sample Code: https://code.earthengine.google.com/d2a2479e7dd57a59f009d7eb19e40f1b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-OFFSHORE-WIND-TURBINES
 
 #### License
 The dataset is released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.

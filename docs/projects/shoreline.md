@@ -22,7 +22,7 @@ var big_islands = ee.FeatureCollection('projects/sat-io/open-datasets/shoreline/
 var small_islands = ee.FeatureCollection('projects/sat-io/open-datasets/shoreline/small_islands');
 ```
 
-Sample Code: https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL_SHORELINES
 
 Extra Info: Over 100 Million+ vertices
 

@@ -41,7 +41,7 @@ var surge_merra_2 =  ee.FeatureCollection("projects/sat-io/open-datasets/open-oc
 var surge_era_5 =  ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-5_surge_reconstruction");
 ```
 
-Sample Code: https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC
 
 #### License
 

@@ -58,7 +58,7 @@ Additional Information about the [Spatial Finance Initiative can be found here](
 var global_cement = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_cement_database_20210701")
 ```
 
-Sample Code: https://code.earthengine.google.com/287d38f2aab08f8e01847092b7c36ffd
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-PRODUCTION-ASSETS
 
 #### Acknowledgements
 

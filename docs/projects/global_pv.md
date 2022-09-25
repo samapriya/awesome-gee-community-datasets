@@ -33,7 +33,7 @@ var trn_tiles = ee.FeatureCollection("projects/sat-io/open-datasets/global_photo
 var trn_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/global_photovoltaic/trn_polygons");
 ```
 
-Sample code: https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY
 
 #### Layer name and description table
 

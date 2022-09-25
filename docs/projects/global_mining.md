@@ -30,7 +30,7 @@ var validation = ee.FeatureCollection("projects/sat-io/open-datasets/global-mini
 #### Additional Info
 21,000 main polygons and 1000 validation polygons
 
-Sample Code: https://code.earthengine.google.com/21caa84d736a622b9de9c760c266e3d9
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-AND-VALIDATION
 
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

@@ -61,7 +61,7 @@ Additional Information about the [Spatial Finance Initiative can be found here](
 var global_steel = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_steel_database_20210701")
 ```
 
-Sample Code: https://code.earthengine.google.com/599f1159ef75427d407f4f464530c46b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-IRON-STEEL-PRODUCTION-ASSETS
 
 #### Acknowledgements
 

@@ -1,7 +1,7 @@
 [
   {
     "title": "Global Shoreline Dataset",
-    "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL_SHORELINES",
     "type": "table",
     "id": "projects/sat-io/open-datasets/shoreline/mainlands",
     "provider": "United States Geological Survey, USGS",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Global Shoreline Dataset",
-    "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL_SHORELINES",
     "type": "table",
     "id": "projects/sat-io/open-datasets/shoreline/big_islands",
     "provider": "United States Geological Survey, USGS",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Global Shoreline Dataset Small Islands",
-    "sample_code": "https://code.earthengine.google.com/609a16955ed07b282fcd4bff4750f814",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL_SHORELINES",
     "type": "table",
     "id": "projects/sat-io/open-datasets/shoreline/small_islands",
     "provider": "United States Geological Survey, USGS",
@@ -609,7 +609,7 @@
   },
   {
     "title": "Global Mining Polygons",
-    "sample_code": "https://code.earthengine.google.com/21caa84d736a622b9de9c760c266e3d9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-AND-VALIDATION",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-mining/global_mining_polygons",
     "provider": "FINEPRINT project, European Research Council, European Union's Horizon 2020",
@@ -617,7 +617,7 @@
   },
   {
     "title": "Global Mining Validation Points",
-    "sample_code": "https://code.earthengine.google.com/21caa84d736a622b9de9c760c266e3d9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-AND-VALIDATION",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-mining/global_mining_validation",
     "provider": "FINEPRINT project, European Research Council, European Union's Horizon 2020",
@@ -625,7 +625,7 @@
   },
   {
     "title": "Predicted Distribution and Transmission Lines",
-    "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/PREDICTED-GLOBAL-POWER-SYSTEMS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/predictive-global-power-system/distribution-transmission-lines",
     "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks",
@@ -633,7 +633,7 @@
   },
   {
     "title": "Predicted low-voltage infrastructure in kilometres per cell",
-    "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/PREDICTED-GLOBAL-POWER-SYSTEMS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/predictive-global-power-system/lv",
     "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks ",
@@ -641,7 +641,7 @@
   },
   {
     "title": "Locations predicted to be connected to distribution grid",
-    "sample_code": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/PREDICTED-GLOBAL-POWER-SYSTEMS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/predictive-global-power-system/targets",
     "provider": "C. Arderne, C. Zorn, C. Nicolas & E. E. Koks",
@@ -649,7 +649,7 @@
   },
   {
     "title": "GRIP4: Africa",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/Africa",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -657,7 +657,7 @@
   },
   {
     "title": "GRIP4: Central and South America",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/Central-South-America",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -665,7 +665,7 @@
   },
   {
     "title": "GRIP4: Europe",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/Europe",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -673,7 +673,7 @@
   },
   {
     "title": "GRIP4: North America",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/North-America",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -681,7 +681,7 @@
   },
   {
     "title": "GRIP4: Oceania",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/Oceania",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -689,7 +689,7 @@
   },
   {
     "title": "GRIP4: South East Asia",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/South-East-Asia",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -697,7 +697,7 @@
   },
   {
     "title": "GRIP4: Middle East and Central Asia",
-    "sample_code": "https://code.earthengine.google.com/2557707383c16bb212eeb7f358d753a8",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-ROADS-INVENTORY-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia",
     "provider": "Global Biodiversity Model for Policy Support, GLOBIO, PBL Netherlands Environmental Assessment Agency",
@@ -1074,7 +1074,7 @@
   },
   {
     "title": "Electrical Distribution Grid Maps: Raster",
-    "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/FACEBOOK-ELECTRICAL-DIST-GRID-MAPS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/facebook/global_medium_voltage_grid",
     "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
@@ -1082,7 +1082,7 @@
   },
   {
     "title": "Electrical Distribution Grid Maps: Vector",
-    "sample_code": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/FACEBOOK-ELECTRICAL-DIST-GRID-MAPS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/facebook/gmv_grid",
     "provider": "Center for International Earth Science Information Network(CIESIN), Facebook",
@@ -1266,7 +1266,7 @@
   },
   {
     "title": "Global Healthsites Mapping Project: nodes",
-    "sample_code": "https://code.earthengine.google.com/300ff48b6bc77713b051d33b3fae55b9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-HEALTHSITES-MAPPING-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/health-site-node",
     "provider": "Global Healthsites Mapping Project",
@@ -1274,7 +1274,7 @@
   },
   {
     "title": "Global Healthsites Mapping Project: ways",
-    "sample_code": "https://code.earthengine.google.com/300ff48b6bc77713b051d33b3fae55b9",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-HEALTHSITES-MAPPING-PROJECT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/health-site-way",
     "provider": "Global Healthsites Mapping Project",
@@ -2994,7 +2994,7 @@
   },
   {
     "title": "Global Database of Cement Production Assets",
-    "sample_code": "https://code.earthengine.google.com/287d38f2aab08f8e01847092b7c36ffd",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-PRODUCTION-ASSETS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/SFI/global_cement_database_20210701",
     "provider": "McCarten et al 2021",
@@ -3002,7 +3002,7 @@
   },
   {
     "title": "Global Database of Iron and Steel Production Assets",
-    "sample_code": "https://code.earthengine.google.com/599f1159ef75427d407f4f464530c46b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-IRON-STEEL-PRODUCTION-ASSETS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/SFI/global_steel_database_20210701",
     "provider": "McCarten et al 2021",
@@ -3010,7 +3010,7 @@
   },
   {
     "title": "Global Power Plant Database",
-    "sample_code": "https://code.earthengine.google.com/1ee7aca214940accbabf7f968770f481",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-POWERPLANT-DATABASE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_power_plant_DB_1-3",
     "provider": "World Resources Institute",
@@ -3018,7 +3018,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2019-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-01-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3026,7 +3026,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2019-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-04-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3034,7 +3034,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2019-07-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-07-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3042,7 +3042,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2019-10-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-10-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3050,7 +3050,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2019-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-01-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3058,7 +3058,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2019-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-04-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3066,7 +3066,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2019-07-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-07-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3074,7 +3074,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2019-10-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2019-10-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3082,7 +3082,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2020-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-01-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3090,7 +3090,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2020-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-04-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3098,7 +3098,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2020-07-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-07-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3106,7 +3106,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2020-10-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-10-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3114,7 +3114,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2020-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-01-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3122,7 +3122,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2020-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-04-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3130,7 +3130,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2020-07-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-07-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3138,7 +3138,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2020-10-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2020-10-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3146,7 +3146,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2021-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-01-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3154,7 +3154,7 @@
   },
   {
     "title": "Global mobile Network Performance Maps: 2021-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-04-01_performance_mobile_tiles",
     "provider": "Ookla",
@@ -3162,7 +3162,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2021-01-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2021-01-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3170,7 +3170,7 @@
   },
   {
     "title": "Global fixed Network Performance Maps: 2021-04-01",
-    "sample_code": "https://code.earthengine.google.com/5c5c27dfc533ebd768a34aa4f004e71c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/fixed_tiles/2021-04-01_performance_fixed_tiles",
     "provider": "Ookla",
@@ -3178,16 +3178,16 @@
   },
   {
     "title": "Global fixed Network Performance Maps Raster Tiles",
-    "sample_code": "https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1",
-    "type": "image",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERF-RASTER",
+    "type": "image_collection",
     "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_fixed_tiles",
     "provider": "Ookla",
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
     "title": "Global Mobile Network Performance Maps Raster Tiles",
-    "sample_code": "https://code.earthengine.google.com/45addac3470657c7759dd39e5185eef1",
-    "type": "image",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERF-RASTER",
+    "type": "image_collection",
     "id": "projects/sat-io/open-datasets/network/raster_tiles/performance_mobile_tiles",
     "provider": "Ookla",
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
@@ -3546,7 +3546,7 @@
   },
   {
     "title": "Global offshore wind turbine dataset v1.3",
-    "sample_code": "https://code.earthengine.google.com/d2a2479e7dd57a59f009d7eb19e40f1b",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-OFFSHORE-WIND-TURBINES",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_offshore_wind_turbine_v1-3",
     "provider": "Zhang, T., Tian, B., Sengupta, D. et al",
@@ -3554,7 +3554,7 @@
   },
   {
     "title": "Argo Float Data(Subset)",
-    "sample_code": "https://code.earthengine.google.com/f43b787ef6890302b01e7f87e40dd8e2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/ARGOFLOAT-SUBSET",
     "type": "table",
     "id": "projects/sat-io/open-datasets/argo-subset",
     "provider": "International Argo Program, Global Data Assembly Centre",
@@ -3602,7 +3602,7 @@
   },
   {
     "title": "Harmonised global datasets of wind farm locations",
-    "sample_code": "https://code.earthengine.google.com/718924e9af8848afa8327a45533866c1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_wind_farms_2020",
     "provider": "Dunnett et al.",
@@ -3610,7 +3610,7 @@
   },
   {
     "title": "Harmonised global datasets of solar farm locations",
-    "sample_code": "https://code.earthengine.google.com/718924e9af8848afa8327a45533866c1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_solar_farms_2020",
     "provider": "Dunnett et al.",
@@ -5602,7 +5602,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): Predicted set",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/predicted_set",
     "provider": "Kruitwagen et al",
@@ -5610,7 +5610,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): CV polygons",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/cv_polygons",
     "provider": "Kruitwagen et al",
@@ -5618,7 +5618,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): CV tiles",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/cv_tiles",
     "provider": "Kruitwagen et al",
@@ -5626,7 +5626,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): Test polygons",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/test_polygons",
     "provider": "Kruitwagen et al",
@@ -5634,7 +5634,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): Test tiles",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/test_tiles",
     "provider": "Kruitwagen et al",
@@ -5642,7 +5642,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): Trn tiles",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/trn_tiles",
     "provider": "Kruitwagen et al",
@@ -5650,7 +5650,7 @@
   },
   {
     "title": "Global Photovoltaics Inventory (2016-2018): Trn polygons",
-    "sample_code": "https://code.earthengine.google.com/0577d22ed1d7bacba8a27bc31e306f65",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-PHOTOVOLTAICS-INVENTORY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global_photovoltaic/trn_polygons",
     "provider": "Kruitwagen et al",
@@ -6042,7 +6042,7 @@
   },
   {
     "title": "Harmonized Global Night Time Lights (1992-2020): DMSP",
-    "sample_code": "https://code.earthengine.google.com/420044652df8ec8ab29beb194be6df52",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-GLOBAL-NTL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Harmonized_NTL/dmsp",
     "provider": "Xuecao Li et al",
@@ -6050,7 +6050,7 @@
   },
   {
     "title": "Harmonized Global Night Time Lights (1992-2020): VIIRS",
-    "sample_code": "https://code.earthengine.google.com/420044652df8ec8ab29beb194be6df52",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-GLOBAL-NTL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Harmonized_NTL/viirs",
     "provider": "Xuecao Li et al",
@@ -6250,7 +6250,7 @@
   },
   {
     "title": "Global Storm Surge Reconstruction (GSSR) database: 20-CR",
-    "sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/20-CR_surge_reconstruction",
     "provider": "Tadesse, M.G., Wahl, T.",
@@ -6258,7 +6258,7 @@
   },
   {
     "title": "Global Storm Surge Reconstruction (GSSR) database: ERA 20C",
-    "sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-20C_surge_reconstruction",
     "provider": "Tadesse, M.G., Wahl, T.",
@@ -6266,7 +6266,7 @@
   },
   {
     "title": "Global Storm Surge Reconstruction (GSSR) database: ERA interim",
-    "sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-Interim_surge_reconstruction",
     "provider": "Tadesse, M.G., Wahl, T.",
@@ -6274,7 +6274,7 @@
   },
   {
     "title": "Global Storm Surge Reconstruction (GSSR) database: MERRA-2",
-    "sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/merra-2_surge_reconstruction",
     "provider": "Tadesse, M.G., Wahl, T.",
@@ -6282,7 +6282,7 @@
   },
   {
     "title": "Global Storm Surge Reconstruction (GSSR) database: ERA 5",
-    "sample_code": "https://code.earthengine.google.com/95f76e127f7afec9858b8f5dd3f86066",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-5_surge_reconstruction",
     "provider": "Tadesse, M.G., Wahl, T.",
@@ -6290,7 +6290,7 @@
   },
   {
     "title": "Aqualink ocean surface temperature subset",
-    "sample_code": "https://code.earthengine.google.com/820a54b5b6b02c6367e142aa206bf78c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/AQUALINK-SUBSET-2020",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/aqualink_top_temp_2020",
     "provider": "aqualink org",
@@ -6298,7 +6298,7 @@
   },
   {
     "title": "Aqualink ocean subsurface temperature subset",
-    "sample_code": "https://code.earthengine.google.com/820a54b5b6b02c6367e142aa206bf78c",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/AQUALINK-SUBSET-2020",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/aqualink_bottom_temp_2020",
     "provider": "aqualink org",
@@ -6306,7 +6306,7 @@
   },
   {
     "title": "Plastic Inputs from Rivers into Oceans",
-    "sample_code": "https://code.earthengine.google.com/b1a97a8988c176ff7fa4df5ee6509c5d",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/PLASTIC-INPUT-RIVERS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/open-ocean/river_plastic_emissions",
     "provider": "Ocean Cleanup Foundation",
@@ -6338,7 +6338,7 @@
   },
   {
     "title": "Global gridded sea surface temperature (SSTG)",
-    "sample_code": "https://code.earthengine.google.com/8a984f0e27a35fae4418aef1b9ceb4df",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-GRIDDED-SST",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/sstg",
     "provider": "Mengmeng cao, Kebiao Mao, Yibo Yan, Jiancheng Shi, Han Wang, Tongren Xu, Shu Fang, & Zijin Yuan",
@@ -7506,7 +7506,7 @@
   },
   {
     "title": "Global NPP-VIIRS-like nighttime light (2000-2020)",
-    "sample_code": "https://code.earthengine.google.com/d128452c77a5595929a040ccca848d3f",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-NPP-VIIRS-LIKE-NTL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/npp-viirs-ntl",
     "provider": "Chen, Zuoqi et al",

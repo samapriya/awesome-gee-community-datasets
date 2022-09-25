@@ -27,7 +27,7 @@ lebreton, laurent; Reisser, Julia (2018): Supplementary data for 'River plastic 
 var plastic = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/river_plastic_emissions");
 ```
 
-Sample Code: https://code.earthengine.google.com/b1a97a8988c176ff7fa4df5ee6509c5d
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/PLASTIC-INPUT-RIVERS
 
 #### License
 

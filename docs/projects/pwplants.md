@@ -18,7 +18,7 @@ You can find the dataset and related details at https://datasets.wri.org/dataset
 ```
 Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia,
 World Resources Institute. 2019. Global Power Plant Database.
-Published on Resource Watch and Google Earth Engine. http://resourcewatch.org/ https://earthengine.google.com/  
+Published on Resource Watch and Google Earth Engine. http://resourcewatch.org/ https://earthengine.google.com/
 ```
 
 ![power_plant](https://user-images.githubusercontent.com/6677629/126026014-ea9b2332-6b0b-4be6-b781-a02faea490b5.gif)
@@ -67,7 +67,7 @@ Published on Resource Watch and Google Earth Engine. http://resourcewatch.org/ h
 var global_power_plants = ee.FeatureCollection("projects/sat-io/open-datasets/global_power_plant_DB_1-3")
 ```
 
-Sample Code: https://code.earthengine.google.com/1ee7aca214940accbabf7f968770f481
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-POWERPLANT-DATABASE
 
 #### License
 The Global Power Planet Database is available under a CC BY 4.0 license

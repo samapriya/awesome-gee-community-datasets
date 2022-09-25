@@ -23,10 +23,10 @@ Dunnett, S., Sorichetta, A., Taylor, G. et al. Harmonised global datasets of win
 
 ```js
 var wind_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_wind_farms_2020");
-    solar_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_solar_farms_2020");
+var solar_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_solar_farms_2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/718924e9af8848afa8327a45533866c1
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS
 
 #### Property Mapping
 

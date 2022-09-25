@@ -25,7 +25,7 @@ var top_temp = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/aq
 var bottom_temp = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/aqualink_bottom_temp_2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/820a54b5b6b02c6367e142aa206bf78c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/AQUALINK-SUBSET-2020
 
 #### License
 

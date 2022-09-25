@@ -22,7 +22,7 @@ light data from a cross-sensor calibration, Earth Syst. Sci. Data, 13, 889–906
 var viirs_ntl = ee.ImageCollection("projects/sat-io/open-datasets/npp-viirs-ntl");
 ```
 
-Sample code: https://code.earthengine.google.com/d128452c77a5595929a040ccca848d3f
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-NPP-VIIRS-LIKE-NTL
 
 #### License
 

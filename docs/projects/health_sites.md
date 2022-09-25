@@ -15,7 +15,7 @@ var node = ee.FeatureCollection("projects/sat-io/open-datasets/health-site-node"
 var way = ee.FeatureCollection("projects/sat-io/open-datasets/health-site-way");
 ```
 
-Sample code: https://code.earthengine.google.com/300ff48b6bc77713b051d33b3fae55b9
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-HEALTHSITES-MAPPING-PROJECT
 
 
 #### License

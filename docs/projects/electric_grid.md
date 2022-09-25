@@ -15,7 +15,7 @@ var gmv_raster = ee.ImageCollection("projects/sat-io/open-datasets/facebook/glob
 var gmv_vector = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/gmv_grid");
 ```
 
-Sample Code: https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/FACEBOOK-ELECTRICAL-DIST-GRID-MAPS
 
 #### Resolution:
 geotiff is provided at Bing Tile Level 20

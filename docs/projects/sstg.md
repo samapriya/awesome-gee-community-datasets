@@ -29,7 +29,7 @@ var sstg =  ee.ImageCollection("projects/sat-io/open-datasets/sstg")
 
 ```
 
-Sample Code: https://code.earthengine.google.com/8a984f0e27a35fae4418aef1b9ceb4df
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-GRIDDED-SST
 
 #### License
 This work is distributed under the Creative Commons Attribution 4.0 International License

@@ -37,7 +37,7 @@ var dmsp = ee.ImageCollection("projects/sat-io/open-datasets/Harmonized_NTL/dmsp
 var viirs = ee.ImageCollection("projects/sat-io/open-datasets/Harmonized_NTL/viirs");
 ```
 
-Sample Code: https://code.earthengine.google.com/420044652df8ec8ab29beb194be6df52
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-GLOBAL-NTL
 
 #### License
 
