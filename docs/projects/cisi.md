@@ -27,11 +27,11 @@ Nirandjan, Sadhana, Koks, Elco E., Ward, Philip J., & Aerts, Jeroen C.J.H. (2021
 #### Earth Engine Snippet
 
 ```js
-var global_CISI = ee.Image("projects/sat-io/open-datasets/CISI/global_CISI"),
+var global_CISI = ee.Image("projects/sat-io/open-datasets/CISI/global_CISI");
 var infrastructure = ee.ImageCollection("projects/sat-io/open-datasets/CISI/amount_infrastructure");
 ```
 
-Sample Code: https://code.earthengine.google.com/b4dbaceee9c3f46599a6f2f921042b13
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI)
 
 
 #### License

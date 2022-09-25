@@ -33,7 +33,7 @@ Year] at https://geodata.vermont.gov/pages/land-cover
 var VT_baseLC2016 = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016");
 ```
 
-Sample Code: https://code.earthengine.google.com/e8f0bdb6d396570d6dab019de0160826
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/VT-BASE-LC-2016
 
 #### License
 

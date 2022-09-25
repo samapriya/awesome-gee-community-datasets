@@ -55,7 +55,7 @@ var basin_l10 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/B
 var basin_l11 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev11");
 var basin_l12 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev12");
 ```
-Sample code: https://code.earthengine.google.com/9bc272d8183275bcbc6d2f89e3361485
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROATLAS
 
 Created by: Linke et al and Lehner et al
 

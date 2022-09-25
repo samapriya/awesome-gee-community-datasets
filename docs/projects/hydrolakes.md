@@ -41,7 +41,7 @@ var lake_poly = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/l
 var lake_points = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_points_v10");
 ```
 
-Sample code: https://code.earthengine.google.com/c94f1bd8e4e18641ec7f4fc5592e7a63
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROLAKES
 
 
 #### Attribute table of HydroLAKES polygon and point layers

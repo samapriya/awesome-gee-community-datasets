@@ -17,15 +17,28 @@ The MSBuildings dataset that I have ingested into Google Earth Engine includes e
 ![msbuildings_small](https://user-images.githubusercontent.com/6677629/171283064-28f4b19d-2356-4b42-aa90-5f6781a8695d.gif)
 
 
-#### Earth Engine Snippet
+#### Earth Engine Snippet : Sample
+
+All datasets are in the format
+
+```js
+var country  = ee.FeatureCollection('projects/sat-io/open-datasets/MSBuildings/{country_name}');
+```
+
+for a list of all countries and assets use this
 
 ```js
 var ee_folder = ee.data.listAssets("projects/sat-io/open-datasets/MSBuildings");
+```
+
+Here are some example setups for two countries
+
+```js
 var australia = ee.FeatureCollection('projects/sat-io/open-datasets/MSBuildings/Australia');
 var chile = ee.FeatureCollection('projects/sat-io/open-datasets/MSBuildings/Chile')
 ```
 
-Sample Code: https://code.earthengine.google.com/34a8f7bc4a37260c0164768a1dfa673b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-ML-BUILDINGS
 
 
 #### License

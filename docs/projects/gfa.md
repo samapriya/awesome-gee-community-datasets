@@ -72,7 +72,7 @@ var perimeter_2015 = ee.FeatureCollection("projects/sat-io/open-datasets/global-
 var perimeter_2016 = ee.FeatureCollection("projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016");
 ```
 
-Sample code: https://code.earthengine.google.com/bfc8e17388e4d003f3ae8fd5753e4f72
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS
 
 
 |GEE_Property_Name|Property_Name                   |Property_Example|

@@ -76,12 +76,11 @@ Community Datasets added by users and made available for use at large
 
 -   [Soil Grids 250m v2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/isric)
 -   [Soil Properties 800m](https://samapriya.github.io/awesome-gee-community-datasets/projects/soilprop)
--   [iSDAsoil Predicted Soil Properties for Africa 30m](https://samapriya.github.io/awesome-gee-community-datasets/projects/isda)
 -   [Polaris 30m Probabilistic Soil Properties US](https://samapriya.github.io/awesome-gee-community-datasets/projects/polaris)
 -   [HiHydroSoil v2.0 layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hihydro_soil)
 -   [Global Soil Salinity Maps (1986-2016)](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_salinity)
 
-5.  Global Land Use and Land Cover
+1.  Global Land Use and Land Cover
 
 -   [Global Mangrove Watch](https://samapriya.github.io/awesome-gee-community-datasets/projects/mangrove/)
 -   [Global Mangrove Distribution, Aboveground Biomass, and Canopy Height](https://samapriya.github.io/awesome-gee-community-datasets/projects/gmd/)

@@ -26,7 +26,7 @@ License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 var mainlands = ee.ImageCollection("projects/sat-io/open-datasets/OSM_waterLayer");
 ```
 
-Sample Code: https://code.earthengine.google.com/cab4e587c9fa6d86e9d848432efe874b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/OSM-WATER-SURFACE
 
 Extra Info: [Go to the OSM Water Layer webpage](http://hydro.iis.u-tokyo.ac.jp/~yamadai/OSM_water/)
 

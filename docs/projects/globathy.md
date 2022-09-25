@@ -31,7 +31,7 @@ var globathy = ee.Image("projects/sat-io/open-datasets/GLOBathy/GLOBathy_bathyme
 var globathy_param = ee.FeatureCollection("projects/sat-io/open-datasets/GLOBathy/GLOBathy_basic_parameters");
 ```
 
-Sample Code: https://code.earthengine.google.com/1b440cac2b9e8cd3ece21f9a021cd3a3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBathy
 
 
 #### License

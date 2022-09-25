@@ -23,7 +23,7 @@ Year] at https://www.chesapeakeconservancy.org/conservation-innovation-center/hi
 var chesapeake = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014");
 ```
 
-Sample Code: https://code.earthengine.google.com/5d6ecc3a93350f9670f063b7f3c0fe6c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CHESEPEAKE_BAY_2013-2014
 
 
 #### License

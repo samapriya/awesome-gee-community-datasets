@@ -24,7 +24,7 @@ var HYDRAFloods = ee.Image("users/tjm0042/Hydrafloods_Outputs/TensorFlow_Surface
 
 ```
 
-Sample code: https://code.earthengine.google.com/09c4f203ccab064d0acdfa55dfdad9f7
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/TENSORFLOW-HYDRA-FLOOD-MODELS
 
 #### License
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

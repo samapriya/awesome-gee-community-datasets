@@ -21,7 +21,7 @@ Doxsey-Whitfield, Erin, Kytt MacManus, Susana B. Adamo, Linda Pistolesi, John Sq
 var gpw = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/gpw-v4-admin-unit-center-points-population-estimates-rev11");
 ```
 
-Sample Code: https://code.earthengine.google.com/00a4d124364828026daa89aa40fdd0cf
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GPW-v4
 
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

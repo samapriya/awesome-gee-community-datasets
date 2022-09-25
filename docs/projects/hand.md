@@ -24,7 +24,7 @@ var hand90_1000 = ee.Image("users/gena/GlobalHAND/90m-global/hand-1000")
 #### Resolutions
 30 and 90 - cell resolution, 100 and 1000 - number of river head threshold cells
 
-Sample Code: https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f43
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-HEIGHT-ABV-NEAREST-DRAINAGE
 
 Shared License:
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

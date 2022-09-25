@@ -28,7 +28,7 @@ var languages = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/
 var treaties = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousTreaties");
 ```
 
-Sample code: https://code.earthengine.google.com/0c664cc64c35a964de7e36ffe54b41d4
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/INDIGENOUS-LAND-MAPS
 
 
 #### License

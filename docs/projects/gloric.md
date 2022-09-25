@@ -50,7 +50,7 @@ var gloric_canada = ee.FeatureCollection("projects/sat-io/open-datasets/GloRiC/G
 |Reach_type|Combined river reach type (4 classes)                                                                                                                                                                                                      |
 |Kmeans_30 |Classes of k-means statistical clustering (30 classes)                                                                                                                                                                                     |
 
-Sample Code: https://code.earthengine.google.com/03b29dc3ed6b68d21cb3924ab66a8b73
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-CLASSIFICATION(GLORIC)
 
 
 #### License

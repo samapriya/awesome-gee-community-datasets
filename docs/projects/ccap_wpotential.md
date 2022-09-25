@@ -30,7 +30,7 @@ CAP) Wetland Potential Layer: NOAA Office for Coastal Management. Accessed [Mont
 var ccap_wetland_potential = ee.Image("projects/sat-io/open-datasets/NOAA/conus_ccap_wetland_potential");
 ```
 
-Sample Code: https://code.earthengine.google.com/c16cd4e019e7e44e3c66924f8fba0677
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-WETLAND-POTENTIAL
 
 
 #### License

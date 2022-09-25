@@ -20,7 +20,7 @@ over Europe (ELC10)." arXiv preprint arXiv:2104.10922 (2021).
 var elc10= ee.ImageCollection("projects/sat-io/open-datasets/NINA/ELC10")
 ```
 
-Sample Code: https://code.earthengine.google.com/1036fae2f580c7d644be300c3c2a043f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/EUROPE-10m-LULC
 
 |Category|Land Cover Class        |Hex Code|
 |:------:|:----------------------:|:------:|

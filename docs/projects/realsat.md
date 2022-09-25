@@ -20,7 +20,7 @@ Khandelwal, A., Karpatne, A., Ravirathinam, P. et al. ReaLSAT, a global dataset 
 ```js
 var realsat = ee.FeatureCollection("projects/sat-io/open-datasets/ReaLSAT/ReaLSAT-1_4");
 ```
-Sample code: https://code.earthengine.google.com/acedad57b233b5c69993f79f344f5194
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RealSAT-GLOBAL-RESERVOIRS-LAKES
 
 #### License
 The database is licensed under a Creative Commons Attribution (CC-BY) 4.0 International License.

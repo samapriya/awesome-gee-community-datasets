@@ -30,7 +30,7 @@ var catchments = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2
 var dams = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2_dams");
 ```
 
-Sample Code: https://code.earthengine.google.com/a168dcd1f992cf60c16e64e03e1bc842
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-GEOREF-DATABASE-DAMS
 
 #### License
 The dataset is released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.

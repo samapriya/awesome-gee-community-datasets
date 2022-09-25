@@ -71,7 +71,7 @@ var SSCU_ADM3 = ee.FeatureCollection('projects/earthengine-legacy/assets/project
 var SSCU_ADM4 = ee.FeatureCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/geoboundaries/SSCU-ADM4');
 ```
 
-Sample Code: https://code.earthengine.google.com/a39fcd4dd46185a8f7846c66b6efe63c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES
 
 
 #### License

@@ -40,7 +40,7 @@ var HRSL_women_reproductive_age = ee.ImageCollection("projects/sat-io/open-datas
 var HRSL_elderly_over_sixty = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_elderly_over_sixty");
 ```
 
-Sample Code: https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/FACEBOOK-HRSL-30m
 
 Extra Info: [Medium Article here](https://medium.com/@samapriyaroy/community-datasets-in-google-earth-engine-an-experiment-b72daa474819)
 

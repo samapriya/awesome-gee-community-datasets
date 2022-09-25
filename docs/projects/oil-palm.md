@@ -26,7 +26,7 @@ Since the dataset was categorical the no data value was use for masking and a Mo
 var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017");
 ```
 
-Sample Code: https://code.earthengine.google.com/28d034a4dbe01de5e8ca781ea2712b24
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/OIL-PALM-PLANTATION-LAYERS
 
 App Website: [App link here](https://olhadanylo.users.earthengine.app/view/oilpalmseasia)
 
@@ -77,7 +77,7 @@ Since the dataset was categorical the no data value was use for masking and a Mo
 var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil_palm_industrial_smallholder_2019");
 ```
 
-Sample Code: https://code.earthengine.google.com/a4f48493ef6cbbc1f1fc990f6d7e03ac
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/GLOBAL-INDUSTRIAL-SMALLHOLDER-OIL-PALM
 
 #### Shared License
 This work is licensed under a Creative Commons Attribution 4.0 International. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose. You must give appropriate credit, provide a link to the license, and indicate if changes were made.

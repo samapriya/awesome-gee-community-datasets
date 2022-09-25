@@ -38,7 +38,7 @@ var CCAP_LC10 = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/ccap_10m"
 var CCAP_LC30 = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/ccap_30m");
 ```
 
-Sample Code LC: https://code.earthengine.google.com/e7180cf756bdb8593c479f0da91e8118
+Sample Code LC: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-LC-BETA
 
 
 ![impervious_30m](https://user-images.githubusercontent.com/6677629/177843948-f47ce3d6-9dd7-43bc-a99e-f8f68d544925.gif)
@@ -47,7 +47,7 @@ Sample Code LC: https://code.earthengine.google.com/e7180cf756bdb8593c479f0da91e
 var CCAP_IMP30 = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/ccap_30m_impervious");
 ```
 
-Sample Code Impervious: https://code.earthengine.google.com/f8f1636a5ae3b0b03715c805ec436f67
+Sample Code Impervious: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-IMPERVIOUS
 
 #### License
 

@@ -21,7 +21,7 @@ The datasets are provided as CSV files with lat long Relative Wealth Index (RWI)
 var rwi = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/relative_wealth_index");
 ```
 
-Sample Code: https://code.earthengine.google.com/ce70f96b62203b44da0c224a10dc3eab
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RELATIVE-WEALTH-INDEX(RWI)
 
 Interactive Map: http://beta.povertymaps.net/
 

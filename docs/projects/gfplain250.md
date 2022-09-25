@@ -30,7 +30,7 @@ var gfplain250 =  ee.ImageCollection("projects/sat-io/open-datasets/GFPLAIN250")
 
 ```
 
-Sample Code: https://code.earthengine.google.com/526ae3267c01917d2d429d31a39096cd
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-HIGHRES-FLOODPLAINS
 
 #### License
 This work is distributed under the Creative Commons Attribution 4.0 International License

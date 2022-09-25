@@ -81,7 +81,7 @@ I added additional metadata to the images, including city names and abbreviation
 var urban_watch = ee.ImageCollection("projects/sat-io/open-datasets/HRLC/urban-watch-cities");
 ```
 
-Sample Code: https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/URBAN-WATCH-CITIES
 
 
 #### License

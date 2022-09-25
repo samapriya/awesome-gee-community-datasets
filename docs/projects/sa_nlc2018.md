@@ -12,7 +12,7 @@ The SANLC 2018 data was launched on the 1st October 2019 and is now available fo
 var sa_nlc2018 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2018');
 ```
 
-Sample Code: https://code.earthengine.google.com/0c9d51577e15437d2b17728079bb01f2
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC
 
 
 |No.|Legend Colour|2018 NLC Class Name                                              |

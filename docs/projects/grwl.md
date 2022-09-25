@@ -71,7 +71,7 @@ var grwl_tiles = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/grwl_t
 var grwl_rssa_basins = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/rssa_basins");
 ```
 
-Sample Code: https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-WIDTH-LANDSAT
 
 Resolution:
 approx 30m

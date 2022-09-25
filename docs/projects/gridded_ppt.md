@@ -15,7 +15,7 @@ Currently included layers are:
 ```js
 var rain4pe_clim = ee.ImageCollection('users/csaybar/rainpe/annual_mean')
 ```
-Sample Code: https://code.earthengine.google.com/35895dc6b3dda529d308673018cadced
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RAIN4PE-GRIDDED-PRECIP-YEARLY
 
 #### Earth Engine Snippet: Monthly climatology
 
@@ -23,7 +23,7 @@ Sample Code: https://code.earthengine.google.com/35895dc6b3dda529d308673018cadce
 var rain4pe_clim = ee.ImageCollection('users/csaybar/rainpe/monthly_clim')
 ```
 
-Sample Code: https://code.earthengine.google.com/5f88fb66ff5d9799c0bcd9ab7bccd200
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RAIN4PE-GRIDDED-PRECIP-MONTHLY-CLIM
 
 #### Earth Engine Snippet: Monthly data
 
@@ -31,7 +31,7 @@ Sample Code: https://code.earthengine.google.com/5f88fb66ff5d9799c0bcd9ab7bccd20
 var rain4pe_clim = ee.ImageCollection('users/csaybar/rainpe/monthly')
 ```
 
-Sample Code: https://code.earthengine.google.com/3374b08b0eacaf0a4003d9098a4d56b3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RAIN4PE-GRIDDED-PRECIP-MONTHLY
 
 #### Earth Engine Snippet: Daily data
 
@@ -39,7 +39,7 @@ Sample Code: https://code.earthengine.google.com/3374b08b0eacaf0a4003d9098a4d56b
 var rain4pe_daily = ee.ImageCollection('projects/sat-io/open-datasets/rainpe/daily')
 ```
 
-Sample Code: https://code.earthengine.google.com/b47746a9e13a42d10537f1ac4f92475b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RAIN4PE-GRIDDED-PRECIP-DAILY
 
 
 #### Resolution: 0.1° (or roughly 10km x 10km)

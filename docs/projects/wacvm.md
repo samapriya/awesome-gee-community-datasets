@@ -23,7 +23,7 @@ var wacvm_pei = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/wacvm-
 var wacvm_svi = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-svi");
 ```
 
-Sample Code: https://code.earthengine.google.com/d6d07d10eafabbdcb57c7965f0b984dc
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WEST_AFRICA-COASTAL-VULN
 
 Shared License:
 This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.

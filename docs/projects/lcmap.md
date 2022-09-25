@@ -100,7 +100,7 @@ var scstab = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCSTAB");
 var sctime = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCTIME");
 ```
 
-Sample code: https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP
 
 **I have also added the reference dataset to be used with the other 10 LCMAP products, which is about 25000 plot level datasets.**
 
@@ -108,7 +108,7 @@ Sample code: https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d
 var reference = ee.FeatureCollection("projects/sat-io/open-datasets/LCMAP/LCMAP_CU_20200414_V01_REF");
 ```
 
-Sample code: https://code.earthengine.google.com/729f0a1a2fa4e04f8c034b4228da164b
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP-REFERENCE
 
 ![reference_points](https://user-images.githubusercontent.com/6677629/132157362-a921f5bd-50b9-4cca-8746-7e8004eafb67.PNG)
 

@@ -41,7 +41,7 @@ var sci_user_loc = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/
 var sci_fr_loc = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/sci_fr_loc");
 ```
 
-Sample Code: https://code.earthengine.google.com/4dadf30cb45f181e301fcd4f17dfdb2d
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/SOCIAL-CONNECTEDNESS-INDEX(SCI)
 
 Interactive Map: http://beta.povertymaps.net/
 

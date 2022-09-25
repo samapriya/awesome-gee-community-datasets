@@ -28,7 +28,7 @@ var fm_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/afri
 var fm_secondary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_M_SECONDARY");
 ```
 
-Sample Code: https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-GRIDDED-SCHOOL-AGE
 
 #### License
 WorldPop datasets are available under the Creative Commons Attribution 4.0 International License. This means that you are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially, provided attribution is included (appropriate credit and a link to the licence).

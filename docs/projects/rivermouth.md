@@ -11,7 +11,7 @@ A global dataset of 5399 coastal rivers and data on eight environmental variable
 var global_costal_rivers = ee.FeatureCollection("projects/sat-io/open-datasets/delta/global-costal-rivers-points");
 ```
 
-Sample Code: https://code.earthengine.google.com/8dd904e9d95fe96fa058571b27f25f40
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-COASTAL-RIVERS-ENV-VARIABLES
 
 
 #### Citation

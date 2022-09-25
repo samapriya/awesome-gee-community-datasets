@@ -15,7 +15,7 @@ Datasets were downloaded from Amazon S3 buckets and each years tiles were compos
 
 ```
 Lucas R, Mueller N, Siggins A, Owers C, Clewley D, Bunting P, Kooymans C, Tissott B, Lewis B, Lymburner L, Metternicht G. Land Cover Mapping using Digital Earth Australia. Data.
-2019; 4(4):143. https://doi.org/10.3390/data4040143  
+2019; 4(4):143. https://doi.org/10.3390/data4040143
 
 Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Carole Planque, Suvarna Punalekar, Belle Tissott, Sean M. T. Chua, Pete Bunting, Norman Mueller & Graciela Metternicht
 (2021) Living Earth: Implementing national standardised land cover classification systems for Earth Observation in support of sustainable development, Big Earth Data, 5:3, 368-
@@ -31,7 +31,7 @@ Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Carole Planque, Suvarna 
 var dea_lcv100 = ee.ImageCollection("projects/sat-io/open-datasets/DEA/landcover_v100")
 ```
 
-Sample Code: https://code.earthengine.google.com/d87964128fd461d5e64a3e564cfd925b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/DEA-LANDSAT-LC
 
 
 #### License

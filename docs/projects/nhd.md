@@ -68,7 +68,7 @@ var nhd_wbdhu8 = ee.FeatureCollection("projects/sat-io/open-datasets/NHD/NHD_MO/
 var nhd_wbdline = ee.FeatureCollection("projects/sat-io/open-datasets/NHD/NHD_MO/WBDLine");
 ```
 
-Sample code: https://code.earthengine.google.com/3811f6aab0c7b6035494f8c804956e30
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/NATIONAL-HYDROGRAPHY-DATASET
 
 
 #### License

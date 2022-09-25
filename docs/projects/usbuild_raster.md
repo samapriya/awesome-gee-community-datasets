@@ -46,7 +46,7 @@ var building_count = ee.Image("projects/sat-io/open-datasets/us_building_raster/
 var centroid_count = ee.Image("projects/sat-io/open-datasets/us_building_raster/building_centroid_count");
 ```
 
-Sample Code: https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US
 
 #### License
 

@@ -80,7 +80,7 @@ var WRZ_L3 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L3");
 var WRZ_L4 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L4");
 ```
 
-Sample Code: https://code.earthengine.google.com/74a0d0f6991b7bbcf3e66de416b5a24d
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-NETWORKS-WATER-RESOURCE-ZONES
 
 #### Data subsets
 The Water Resources Zones are also available as level based extracts for each countinent. Use the prefix and the level to get to each feature collection. The format is

@@ -19,7 +19,7 @@ The US Fish and Wildlife Service (FWS) is the principal US Federal agency tasked
 #### Data Preprocessing
 The datasets are provided by states and some states are split into multiparts. The shapefile consists of multiple geometry types including but not limited to points an linestring apart from polygons and multipolygons. Attempt was made to combine multiple parts from each state into a single feature collection within earthengine, since GEE will not work with a zero area object during a featurecollection export, a filter was created to tag each feature type and calculate area. Also zero area features were then excluded. Currently the wetlands datasets is the only one where this transformation was applied.
 
-Currently these wetlands files are complete and are present in the folder with naming State-Abbreviation_Wetlands so for example for Florida , FL_Wetlands and so on. Other datasets are not present for all states and you can get a list of assets by simply running an ```earthengine ls``` on the objects or by using the catalog. Since this is an immensely large dataset collection, no attempt was made to create a country wide composite. A single JSON file is also created to allow you to asses which datasets contain which state as an easy reference, [you can find it here](https://gist.githubusercontent.com/samapriya/6263500764bdaef178b0c16ef6849104/raw/8031ca02f0509e82f4908d7a14d68d2b97d93771/nwi_assets.json).   
+Currently these wetlands files are complete and are present in the folder with naming State-Abbreviation_Wetlands so for example for Florida , FL_Wetlands and so on. Other datasets are not present for all states and you can get a list of assets by simply running an ```earthengine ls``` on the objects or by using the catalog. Since this is an immensely large dataset collection, no attempt was made to create a country wide composite. A single JSON file is also created to allow you to asses which datasets contain which state as an easy reference, [you can find it here](https://gist.githubusercontent.com/samapriya/6263500764bdaef178b0c16ef6849104/raw/8031ca02f0509e82f4908d7a14d68d2b97d93771/nwi_assets.json).
 
 
 #### Suggested Citation
@@ -27,6 +27,8 @@ Currently these wetlands files are complete and are present in the folder with n
 (dataset) U.S. Fish & Wildlife Service. (2018). National Wetlands Inventory. U.S. Fish & Wildlife Service. https://data.nal.usda.gov/dataset/national-wetlands-inventory. Accessed 2021-09-19.
 
 #### Earth Engine Snippet
+
+The dataset templates underneath can be simply replaced by the state code/territory code to get to the state/region of interest.
 
 ```js
 var wetlands = ee.FeatureCollection("projects/sat-io/open-datasets/NWI/wetlands/FL_Wetlands");
@@ -38,7 +40,7 @@ var co_riparian_metadata = ee.FeatureCollection("projects/sat-io/open-datasets/N
 var wetlands_metadata = ee.FeatureCollection("projects/sat-io/open-datasets/NWI/wpm/FL_Wetlands_Project_Metadata");
 ```
 
-Sample code: https://code.earthengine.google.com/74ffc1eb0caabbbfaea535537829dda5
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/NATIONAL-WETLANDS-INVENTORY
 
 
 #### Wetlands Layer Legend

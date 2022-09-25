@@ -23,7 +23,7 @@ treatment plants within the global river network. Earth System Science Data, 14(
 var hydrowaste = ee.FeatureCollection("projects/sat-io/open-datasets/HydroWaste/HydroWASTE_v10");
 ```
 
-Sample Code: https://code.earthengine.google.com/761bd1c4fc4ad6c91286b035ef4d1a0b
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROWASTE
 
 
 #### License

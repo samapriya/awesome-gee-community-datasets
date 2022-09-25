@@ -43,7 +43,7 @@ var CCAP_VI_LC = ee.ImageCollection("projects/earthengine-legacy/assets/projects
 var CCAP_WA_LC = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC");
 ```
 
-Sample Code: https://code.earthengine.google.com/6672cd3e711d0ab48089a6946aa4ea0c
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-HRLC-HI
 
 
 #### License

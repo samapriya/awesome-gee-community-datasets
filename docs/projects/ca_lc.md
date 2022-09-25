@@ -122,7 +122,7 @@ DOI: https://doi.org/10.1016/j.rse.2022.112780 [Open Access]
 var forest_lc = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2");
 ```
 
-Sample code: https://code.earthengine.google.com/77c8d6c058c492fb71e0c2d439345952
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CANADA-FORESTED-ECOSYSTEM-LC
 
 
 #### License

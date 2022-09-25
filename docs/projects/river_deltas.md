@@ -11,7 +11,7 @@ var convex_hull = ee.FeatureCollection("projects/sat-io/open-datasets/delta/delt
 var convex_hull_bound = ee.FeatureCollection("projects/sat-io/open-datasets/delta/delta-convex-bounds");
 ```
 
-Sample Code: https://code.earthengine.google.com/ee82002bc3038f30e5a04c41b6567a05
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-DELTAS-VULNERABILITY
 
 
 #### Citation

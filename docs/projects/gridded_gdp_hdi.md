@@ -58,7 +58,7 @@ var pedigree_gdp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedig
 var pedigree_hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2");
 ```
 
-Sample Code: https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-GDP-HDI
 
 
 #### License

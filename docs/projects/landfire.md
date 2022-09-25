@@ -28,7 +28,7 @@ var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime
 var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vdep");
 ```
 
-Sample Code: https://code.earthengine.google.com/769befc4e306957b0824e3668fbba709
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME
 
 #### Earth Engine Snippet: Disturbance 2.2.0
 
@@ -38,7 +38,7 @@ var hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturban
 var distyear = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR");
 ```
 
-Sample Code: https://code.earthengine.google.com/63b6e1b40d7996cea4efadc371efa573
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE
 
 #### Earth Engine Snippet: Topographic 2.2.0
 
@@ -49,7 +49,7 @@ var slope_degrees = ee.ImageCollection("projects/sat-io/open-datasets/landfire/t
 var slope_perc_rise = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SlpP");
 ```
 
-Sample Code: https://code.earthengine.google.com/3f30203a14f746ba9cbd288affe6e9c0
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TOPOGRAPHIC
 
 ![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
 
@@ -69,7 +69,7 @@ var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVC");
 var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVH");
 var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVT");
 ```
-Sample Code: https://code.earthengine.google.com/79ed0fdc4b116189a01488f666680aa7
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL
 
 ![lf_veg](https://user-images.githubusercontent.com/6677629/115133326-e3449700-9fcc-11eb-81bf-450c622ca166.gif)
 
@@ -82,7 +82,7 @@ var evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/
 ```
 
 
-Sample Code: https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd3
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION
 
 #### Earth Engine Snippet: Transportation 2.2.0
 
@@ -90,7 +90,7 @@ Sample Code: https://code.earthengine.google.com/ec41730e00de3dc9e50223cbdc886bd
 var roads = ee.ImageCollection("projects/sat-io/open-datasets/landfire/transportation/ROADS");
 ```
 
-Sample Code: https://code.earthengine.google.com/b378e2ec07797174980fdb8d7a197fc5
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TRANSPORTATION
 
 Resolution:
 approx 30m
