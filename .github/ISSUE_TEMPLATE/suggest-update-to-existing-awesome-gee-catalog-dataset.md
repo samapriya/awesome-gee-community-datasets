@@ -1,5 +1,5 @@
 ---
-name: Suggest update to existing awesome-gee-community catalog dataset
+name: Suggest update to existing awesome-gee-catalog dataset
 about: This template can be issued to create an issue to update an existing dataset
   in the catalog
 title: Add existing Dataset Title/Name
