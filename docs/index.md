@@ -5,13 +5,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream](https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg)](https://jetstream-cloud.org/)
 
-The awesome-gee-community-datasets are community sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that a lot of research datasets are often unavailable for direct use and require preprocessing before use. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are often requested by the community and under a variety of open license. 
+The awesome-gee-community-datasets are community sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that a lot of research datasets are often unavailable for direct use and require preprocessing before use. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are often requested by the community and under a variety of open license.
 
 You can read about the history and more in the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
 
 Copy this badge as you contribute datasets: ![contributor](https://img.shields.io/badge/gee--awesome--datasets-data%20commons%20contributor-green)
 
-![awesome_gee_community_datasets](https://user-images.githubusercontent.com/6677629/114970650-70a6b080-9e40-11eb-9be1-1cbbfe9a96f2.jpg)
+![awesome-gee](https://user-images.githubusercontent.com/6677629/193480583-8f403475-7325-4b9e-b24d-222b46517512.png)
 
 Community Datasets added by users and made available for use at large
 
