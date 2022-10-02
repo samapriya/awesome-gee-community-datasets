@@ -7566,5 +7566,37 @@
     "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_HD",
     "provider": "Oakridge National Laboratory",
     "tags": "Global Population, Population count, Diurnal population, remote sensing, machine learning"
+  },
+  {
+    "title": "CloudSEN12 High Quality labels",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/CloudSEN12-HIGH-QUALITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/cloudsen12/high",
+    "provider": "Cesar Aybar et al 2022",
+    "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
+  },
+  {
+    "title": "CloudSEN12 Scribble labels",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/CloudSEN12-SCRIBBLE-QUALITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/cloudsen12/scribble",
+    "provider": "Cesar Aybar et al 2022",
+    "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
+  },
+  {
+    "title": "CloudSEN12 No labels",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/CloudSEN12-NO_LABELS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/cloudsen12/nolabels",
+    "provider": "Cesar Aybar et al 2022",
+    "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
+  },
+  {
+    "title": "CloudSEN12 Image Patch Footprints",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/CloudSEN12-FOOTPRINT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/cloudsen12/footprint",
+    "provider": "Cesar Aybar et al 2022",
+    "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
   }
 ]

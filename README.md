@@ -93,6 +93,7 @@ Community Datasets added by users and made available for use at large
 -   [Global urban extents from 1870 to 2100](https://samapriya.github.io/awesome-gee-community-datasets/projects/gue)
 -   [World Settlement Footprint & Evolution](https://samapriya.github.io/awesome-gee-community-datasets/projects/wsf/)
 -   [LandCoverNet Training Labels v1.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcnet/)
+-   [CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/cloudsen12/)
 
 6.  Regional Land Use and Land Cover
 

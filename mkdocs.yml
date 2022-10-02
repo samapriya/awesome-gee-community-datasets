@@ -154,6 +154,7 @@ nav:
     - Global urban extents from 1870 to 2100: projects/gue.md
     - World Settlement Footprint & Evolution: projects/wsf.md
     - LandCoverNet Training Labels v1.0: projects/lcnet.md
+    - CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
   - Regional Land Use and Land Cover:
     - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
     - Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2: projects/lcmap.md
