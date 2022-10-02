@@ -1,7 +1,7 @@
 ---
 name: Bring your own data to awesome -gee-catalog
 about: This template allows the owners or creators or datasets to submit their data
-title: ''
+title: Add your Dataset Title/Name
 labels: BYOD
 assignees: samapriya, valpasq, edtrochim
 
