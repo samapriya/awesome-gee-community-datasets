@@ -127,6 +127,7 @@ nav:
     - Native Land (Indigenous Land Maps): projects/native.md
     - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
     - Global ML Building Footprints: projects/msbuildings.md
+    - Global Electric Consumption revised GDP: projects/elc_gdp.md
   - Geophysical, Biological & Biogeochemical:
     - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
     - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md

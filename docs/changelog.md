@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-10-03
+- Added [CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/cloudsen12/)
+- Added [Global Electric Consumption revised GDP](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc_gdp/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
+
 #### Updates 2022-09-26
 - Added [LandScan Population Data](https://samapriya.github.io/awesome-gee-community-datasets/projects/landscan)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)

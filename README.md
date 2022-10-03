@@ -47,6 +47,7 @@ Community Datasets added by users and made available for use at large
 -   [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
 -   [Gridded Sex-Disaggregated School-Age Population (2020)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wpschool)
 -   [Global ML Building Footprints](https://samapriya.github.io/awesome-gee-community-datasets/projects/msbuildings)
+-   [Global Electric Consumption revised GDP](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc_gdp/)
 
 2.  Geophysical, Biological & Biogeochemical
 

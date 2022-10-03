@@ -7598,5 +7598,21 @@
     "id": "projects/sat-io/open-datasets/cloudsen12/footprint",
     "provider": "Cesar Aybar et al 2022",
     "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
+  },
+  {
+    "title": "GRIDDED Electricity Consumption",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GRIDDED-ELECTRICITY-CONSUMPTION",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GRIDDED_EC",
+    "provider": "Chen, J., Gao, M., Cheng, S. et al 2022",
+    "tags": "GDP, Electricity Consumption, Night Lights"
+  },
+  {
+    "title": "GRIDDED GDP based on Electricity Consumption",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GRIDDED-ELECTRICITY-CONSUMPTION-GDP",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GRIDDED_EC-GDP",
+    "provider": "Chen, J., Gao, M., Cheng, S. et al 2022",
+    "tags": "GDP, Electricity Consumption, Night Lights"
   }
 ]
