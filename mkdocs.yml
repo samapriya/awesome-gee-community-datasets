@@ -1,4 +1,4 @@
-site_name: awesome-gee-community-datasets
+site_name: awesome-gee-community-catalog
 site_description: Community Datasets in Google Earth Engine
 site_author: Samapriya Roy
 site_url: https://github.com/samapriya
@@ -27,7 +27,7 @@ theme:
   language: en
   palette:
     - scheme: default
-      primary: indigo
+      primary: yellow
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
@@ -42,8 +42,7 @@ theme:
     text: Google Sans
     code: Regular
   favicon: assets/favicon.png
-  icon:
-    logo: logo
+  logo: 'https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png'
 
 # Options
 extra:
@@ -56,6 +55,15 @@ extra:
       link: https://twitter.com/samapriyaroy
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/samapriya
+  analytics:
+    provider: google
+    property: G-G7SXDJEWXV
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+    - git-revision-date
 
 # Extensions
 markdown_extensions:
@@ -78,6 +86,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys

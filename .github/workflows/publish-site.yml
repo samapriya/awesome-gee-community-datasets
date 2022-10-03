@@ -15,6 +15,7 @@ jobs:
       - name: remove requirements file
         run: |
           rm -Rf requirements.txt
+          pip3 install mkdocs-git-revision-date-plugin
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
