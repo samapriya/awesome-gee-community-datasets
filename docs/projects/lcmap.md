@@ -37,7 +37,7 @@ LCMAP provides 10 science products based on the USGS implementation of CCDC. The
 
 #### Product Specifications
 
-The product specifications allows for understanding categorical vs continious datasets and informed pyramid policy for ingest into Google Earth Engine.
+The product specifications allows for understanding categorical vs continuous datasets and informed pyramid policy for ingest into Google Earth Engine.
 
 |Short Name|Data Type|Units              |Range              |Valid Range         |Fill Value|
 |----------|---------|-------------------|-------------------|--------------------|----------|

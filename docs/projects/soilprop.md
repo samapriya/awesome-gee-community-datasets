@@ -132,7 +132,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 
 #### Soil Texture Palette
-Palettes have been created for variable types and a palette for Soil Texture is included below. Some palettes include rgb values and can be converted in hex codes for each variable type. These can be extraced from the app page and a few are included in the sample code.
+Palettes have been created for variable types and a palette for Soil Texture is included below. Some palettes include rgb values and can be converted in hex codes for each variable type. These can be extracted from the app page and a few are included in the sample code.
 
 <center>
 

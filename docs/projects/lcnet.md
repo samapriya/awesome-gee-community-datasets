@@ -12,7 +12,7 @@ One of the strongest feature of this dataset is Consensus labeling where each im
 
 You can read a [sample detailed methodology here](https://radiantearth.blob.core.windows.net/mlhub/landcovernet_af/Documentation.pdf) and you can go to the [sample dataset page here](https://mlhub.earth/data/ref_landcovernet_af_v1). You can read about the [approach in the paper here](https://arxiv.org/abs/2012.03111)
 
-Tutorials on [this can be further accesed here](https://nbviewer.org/github/radiantearth/mlhub-tutorials/blob/main/notebooks/radiant-mlhub-landcovernet.ipynb)
+Tutorials on [this can be further accessed here](https://nbviewer.org/github/radiantearth/mlhub-tutorials/blob/main/notebooks/radiant-mlhub-landcovernet.ipynb)
 
 **Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.**
 

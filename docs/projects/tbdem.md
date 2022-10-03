@@ -16,7 +16,7 @@ Digital Object Identifier (DOI) number: /10.5066/F7Z60MHJ
 ```
 
 #### Dataset setup and preprocessing
-The datasets were collected and made available with 3 meter, 2 meter, or 1 meter and different no data values. While GEE collections will allow for variable values for all of those, the nominal resolution and native CRS was left intact was no data value was reprocessed to -9999 by simply using gdalwarp. Some of the datasets were single mosaics with filesizes upward of 4GB to 200+GB, for efficiency and better handling of these gdal_retile tool was used to retile these into subparts while maintaining the file name for data tracing. I have added a function onto the example script which allows you to add the nominal scale as a property to the collection incase the user would like to split and apply different methods on top.
+The datasets were collected and made available with 3 meter, 2 meter, or 1 meter and different no data values. While GEE collections will allow for variable values for all of those, the nominal resolution and native CRS was left intact was no data value was reprocessed to -9999 by simply using gdalwarp. Some of the datasets were single mosaics with filesizes upward of 4GB to 200+GB, for efficiency and better handling of these gdal_retile tool was used to retile these into subparts while maintaining the file name for data tracing. I have added a function onto the example script which allows you to add the nominal scale as a property to the collection in case the user would like to split and apply different methods on top.
 
 
 ![tbdem](https://user-images.githubusercontent.com/6677629/155889584-6e32112b-faf5-493c-aee5-a69e5d14f99d.gif)

@@ -9,7 +9,7 @@ URL(s) of [dataset description can be found here](https://coast.noaa.gov/digital
 Disclaimer: Whole or parts of the dataset description was provided by the author(s) or their works.
 
 #### Preprocessing
-While the datasets were collected and made available from NOAA different collects do have varying nominal resolutions , different CRS and different no data values. While GEE collections will allow for variable values for all of those, the nominal resolution and native CRS was left intact was no data value was reprocessed to -9999 by simply using gdalwarp. I have added a function onto the example script which allows you to add the nominal scale as a property to the collection incase the user would like to split and apply different methods on top.
+While the datasets were collected and made available from NOAA different collects do have varying nominal resolutions , different CRS and different no data values. While GEE collections will allow for variable values for all of those, the nominal resolution and native CRS was left intact was no data value was reprocessed to -9999 by simply using gdalwarp. I have added a function onto the example script which allows you to add the nominal scale as a property to the collection in case the user would like to split and apply different methods on top.
 
 ![slrdem](https://user-images.githubusercontent.com/6677629/155890474-b2fe6e10-58d7-4d67-b251-98e47100868b.gif)
 

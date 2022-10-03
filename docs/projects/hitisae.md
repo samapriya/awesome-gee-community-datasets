@@ -18,7 +18,7 @@ figshare. Collection. https://doi.org/10.6084/m9.figshare.c.5196296
 ```
 
 #### Data Preprocessing for GEE
-The dataset contains 14242 daily NetCDF files which are archived by month and compressed into tar.gz files with a total volume of 450 GB. The netcdf files for each subvariable was converted into Geotifs with Minimum, Mean and Maximum value for each parameter. To reduce the overall index size, a band order was constructed with b1, b2,b3 for each variable coresponding to Min, Mean and Maximum value for the same parameter.
+The dataset contains 14242 daily NetCDF files which are archived by month and compressed into tar.gz files with a total volume of 450 GB. The netcdf files for each subvariable was converted into Geotifs with Minimum, Mean and Maximum value for each parameter. To reduce the overall index size, a band order was constructed with b1, b2,b3 for each variable corresponding to Min, Mean and Maximum value for the same parameter.
 
 For example HiTiSea_1981-01-03_AT contains 3 bands with b1 with AT_min, b2 as AT_mean and b3 as AT_max
 
@@ -37,7 +37,7 @@ Included indices, names and GEE Variable are included in the table below
 |WBT                  | wet bulb temperature              |WBT         |Min,Mean, Max |
 |WCT                  | wind chill temperature            |WCT         |Min,Mean, Max |
 |AT                   | apparent temperature              |AT          |Min,Mean, Max |
-|NET                  | net efective temperature          |NET         |Min,Mean, Max |
+|NET                  | net effective temperature          |NET         |Min,Mean, Max |
 
 
 ![HiTiSAE](https://user-images.githubusercontent.com/6677629/140878970-6164d58d-1c60-4e81-b119-b88ed454dda0.gif)

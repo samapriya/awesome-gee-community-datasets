@@ -98,7 +98,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 There are a total of 33 bioclimatic variables included for the collections and models , the reference table is included below and you can filter using the metadata property **bioclim_variable** and the property names from the table.
 
 
-|Bioclimatic Vaiables|Description                                                                                       |
+|Bioclimatic Variables|Description                                                                                       |
 |--------------------|--------------------------------------------------------------------------------------------------|
 |MAT                 |mean annual temperature (°C)                                                                      |
 |MWMT                |mean temperature of the warmest month (°C)                                                        |

@@ -3,7 +3,7 @@
 The Relative Wealth Index predicts the relative standard of living within countries using de-identified connectivity data, satellite imagery and other nontraditional data sources. This index is built using nontraditional data sources, including satellite imagery and de-identified Facebook connectivity data. The index is validated using ground truth measurements from the Demographic and Health Surveys. The data is provided for 93 low and middle-income countries at 2.4km resolution.
 
 #### Extra processing
-The datasets are provided as CSV files with lat long Relative Wealth Index (RWI) and error. The CSV files are converted to Shapefiles and ingested as tables for each of the countries. A master feature collection is then created to combine all feature collections across low and middle-income countries (LMICs) countries. Currently only 92 countires are made available from Facebook. You can download the updated dataset from the [Humanitarian Data Exchange website](https://data.humdata.org/dataset/relative-wealth-index) or from [Facebook's data for Good website](https://dataforgood.fb.com/tools/relative-wealth-index/).
+The datasets are provided as CSV files with lat long Relative Wealth Index (RWI) and error. The CSV files are converted to Shapefiles and ingested as tables for each of the countries. A master feature collection is then created to combine all feature collections across low and middle-income countries (LMICs) countries. Currently only 92 countries are made available from Facebook. You can download the updated dataset from the [Humanitarian Data Exchange website](https://data.humdata.org/dataset/relative-wealth-index) or from [Facebook's data for Good website](https://dataforgood.fb.com/tools/relative-wealth-index/).
 
 #### Steps
 
