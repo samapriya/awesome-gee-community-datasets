@@ -63,6 +63,7 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
+    - search
     - git-revision-date
 
 # Extensions
