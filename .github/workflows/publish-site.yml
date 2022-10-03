@@ -15,8 +15,8 @@ jobs:
       - name: remove requirements file
         run: |
           rm -Rf requirements.txt
-      - run: pip install -r reqs.txt
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUIREMENTS: reqs.txt
