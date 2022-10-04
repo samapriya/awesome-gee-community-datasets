@@ -7587,7 +7587,7 @@
     "title": "CloudSEN12 No labels",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/CloudSEN12-NO_LABELS",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/cloudsen12/nolabels",
+    "id": "projects/sat-io/open-datasets/cloudsen12/nolabel",
     "provider": "Cesar Aybar et al 2022",
     "tags": "cloud, deep learning, Sentinel-2, Sentinel-1, U-Net"
   },

@@ -64,7 +64,10 @@ extra_css:
 
 plugins:
     - search
-    - git-revision-date
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: timeago
+
 
 # Extensions
 markdown_extensions:
@@ -114,6 +117,11 @@ markdown_extensions:
 # Page tree
 nav:
   - Introduction: index.md
+  - Getting Started:
+    - Submit or bring your data request to community catalog: startup/submit.md
+    - Submit update request for dataset in community catalog: startup/update.md
+    - Bug report for dataset in community catalog: startup/bug.md
+    - Submit example for dataset in community catalog: startup/example.md
   - Catalog Stats: stats.md
   - Population & Socioeconomic:
     - High Resolution Settlement Layers: projects/hrsl.md
