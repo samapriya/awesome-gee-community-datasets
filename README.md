@@ -4,6 +4,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream](https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg)](https://jetstream-cloud.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7144934.svg)](https://doi.org/10.5281/zenodo.7144934)
 
 The awesome-gee-community-datasets are community-sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that a lot of research datasets are often unavailable for direct use and require preprocessing before use. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are often requested by the community and under a variety of open license.
 
@@ -19,7 +20,18 @@ Use this in your Readme.md file
 
 Online Awesome Google Earth Engine Community Catalog:
 
-Community Datasets added by users and made available for use at large
+Community Datasets added by users and made available for use at large.
+
+
+Like, share and support the Github project. And you can now cite it too
+
+#### Citation
+
+```
+Samapriya Roy, Erin Trochim, Alec L. Robitaille, & Valerie Pasquarella. (2022). samapriya/awesome-gee-community-datasets: Community Catalog(1.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.7144934
+```
+
 
 ## Table of Contents
 
