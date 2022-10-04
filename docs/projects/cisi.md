@@ -31,7 +31,7 @@ var global_CISI = ee.Image("projects/sat-io/open-datasets/CISI/global_CISI");
 var infrastructure = ee.ImageCollection("projects/sat-io/open-datasets/CISI/amount_infrastructure");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI)
+Sample Code: [https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI)](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI))
 
 
 #### License
