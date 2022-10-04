@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Carbon in Earth\u2019s ecosystems: Ecosystem Extent in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/e166302e9534c3ee55aec98d883221bd",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
             "type": "text/html",
             "code": "JavaScript"
         },

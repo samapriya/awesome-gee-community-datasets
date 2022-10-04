@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/d87964128fd461d5e64a3e564cfd925b",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/DEA-LANDSAT-LC",
             "type": "text/html",
             "code": "JavaScript"
         },

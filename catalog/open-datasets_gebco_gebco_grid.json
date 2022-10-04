@@ -28,7 +28,7 @@
         {
             "title": "Run the example for GEBCO 2021 Grid in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/c1ddba42c1a75fd43fe0d6a38046e0a4",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
             "type": "text/html",
             "code": "JavaScript"
         },

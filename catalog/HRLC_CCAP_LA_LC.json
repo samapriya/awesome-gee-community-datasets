@@ -1,88 +1,100 @@
 {
-  "stac_version": "1.0.0",
-  "type": "Collection",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
-  ],
-  "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_LA_LC",
-  "title": "C-CAP High-Resolution Land Cover : LA",
-  "description": "C-CAP High-Resolution Land Cover : LA",
-  "license": "PDDL-1.0",
-  "gee:type": "image_collection",
-  "links": [
-    {
-      "rel": "self",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_LA_LC.json",
-      "type": "application/json"
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_LA_LC",
+    "title": "C-CAP High-Resolution Land Cover : LA",
+    "description": "C-CAP High-Resolution Land Cover : LA",
+    "license": "PDDL-1.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_CCAP_LA_LC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for C-CAP High-Resolution Land Cover : LA in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-HRLC-LA",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/PDDL-1.0.html",
+            "type": "text/html"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -90.75923873954238,
+                    28.818186795462072,
+                    -88.6702084488791,
+                    31.01422655148521
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-12-31T00:00:00Z",
+                    "2017-12-30T00:00:00Z"
+                ]
+            ]
+        }
     },
-    {
-      "rel": "parent",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "root",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "title": "Run the example for C-CAP High-Resolution Land Cover : LA in the Google Playground",
-      "rel": "related",
-      "href": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
-      "type": "text/html",
-      "code": "JavaScript"
-    },
-    {
-      "rel": "license",
-      "href": "https://spdx.org/licenses/PDDL-1.0.html",
-      "type": "text/html"
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Land Use",
+        " Land Cover",
+        " Urban Watch",
+        " Remote Sensing",
+        " High Resolution",
+        " OBIA",
+        " NOAA"
+    ],
+    "providers": [
+        {
+            "name": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1,
+            "min": 0,
+            "max": 22,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
     }
-  ],
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -90.75923873954238, 28.818186795462072, -88.6702084488791,
-          31.01422655148521
-        ]
-      ]
-    },
-    "temporal": {
-      "interval": [["2016-12-31T00:00:00Z", "2017-12-30T00:00:00Z"]]
-    }
-  },
-  "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
-  "gee:user_uploaded": true,
-  "keywords": [
-    "Land Use",
-    " Land Cover",
-    " Urban Watch",
-    " Remote Sensing",
-    " High Resolution",
-    " OBIA",
-    " NOAA"
-  ],
-  "providers": [
-    {
-      "name": "NOAA's Ocean Service, Office for Coastal Management (OCM)",
-      "roles": ["producer", "licensor"]
-    },
-    {
-      "name": "Samapriya Roy",
-      "roles": ["processor"]
-    }
-  ],
-  "eo:bands": [
-    {
-      "name": "b1",
-      "gsd": 1,
-      "min": 0,
-      "max": 22,
-      "gee:estimated_range": true
-    }
-  ],
-  "eo:properties": {
-    "all_users_can_read": true,
-    "num_bands": "1"
-  }
 }

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for TerraClimate layer commensurate with global mean temperatures +2C : swe in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/a229056c55d1fa89dfd01acbea0f6515",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES",
             "type": "text/html",
             "code": "JavaScript"
         },

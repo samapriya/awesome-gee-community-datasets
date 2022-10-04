@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Reference Evapotranspiration Yearly in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/897fe233f179e611d1cec8ade96942c3",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ET0",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -52,8 +52,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2021-05-08T18:54:46.330943Z",
-                    "2021-05-08T18:54:46.330943Z"
+                    "2022-09-02T21:26:28.911815Z",
+                    "2022-09-02T21:26:28.911815Z"
                 ]
             ]
         }
@@ -83,8 +83,8 @@
         {
             "name": "b1",
             "gsd": 928,
-            "min": 4,
-            "max": 4130,
+            "min": 0,
+            "max": 4091,
             "gee:estimated_range": true
         }
     ],

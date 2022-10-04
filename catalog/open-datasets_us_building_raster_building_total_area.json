@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Rasterized building footprint US: Building Centroid Count in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/084178bccbca747184eb2eb2759e4a5f",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US",
             "type": "text/html",
             "code": "JavaScript"
         },

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for World Settlement Footprint Evolution (1985-2015): Input Data Consistency Score (IDC) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/e9f7fc6b2179651d30c350895da96be6",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT-IDC",
             "type": "text/html",
             "code": "JavaScript"
         },

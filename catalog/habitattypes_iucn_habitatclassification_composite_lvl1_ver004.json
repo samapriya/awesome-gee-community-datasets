@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global maps of habitat types Composite: Level 1 v004 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/38048829f4dc2ff2652a2d4953082dbc",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES",
             "type": "text/html",
             "code": "JavaScript"
         },

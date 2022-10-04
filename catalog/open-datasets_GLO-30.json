@@ -28,13 +28,13 @@
         {
             "title": "Run the example for Copernicus Digital Elevation Model (GLO-30 DEM) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/f6479dc43ab9c13dd1cc9bd527cf0c01",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/COPERNICUS_GLO30",
             "type": "text/html",
             "code": "JavaScript"
         },
         {
             "rel": "license",
-            "href": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+            "href": null,
             "type": "text/html"
         }
     ],
@@ -58,7 +58,7 @@
             ]
         }
     },
-    "gee:terms_of_use": "This dataset is made available under a proprietary license.",
+    "gee:terms_of_use": "This dataset is made available publicly under proprietary.",
     "gee:user_uploaded": true,
     "keywords": [
         "digital elevation model",

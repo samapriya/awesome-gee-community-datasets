@@ -28,7 +28,7 @@
         {
             "title": "Run the example for ASTER Global Digital Elevation Model (GDEM) v3 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/7592ab36de453d718aab7291692abb88",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTER-GDEM",
             "type": "text/html",
             "code": "JavaScript"
         },

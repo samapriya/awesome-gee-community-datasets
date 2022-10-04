@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global urban extents from 1870 to 2100: hindcast_extent in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/ca5b1a99dc41f3b3daf8661ea3d32291",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-EXTENTS",
             "type": "text/html",
             "code": "JavaScript"
         },

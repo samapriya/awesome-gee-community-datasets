@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Forest Carbon Fluxes: Gross Removals in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/d6d6390f0a9eafdaeb9766022b64065e",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES",
             "type": "text/html",
             "code": "JavaScript"
         },

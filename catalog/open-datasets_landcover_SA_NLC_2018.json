@@ -28,7 +28,7 @@
         {
             "title": "Run the example for South African National Land Cover 2018 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/0c9d51577e15437d2b17728079bb01f2",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC",
             "type": "text/html",
             "code": "JavaScript"
         },

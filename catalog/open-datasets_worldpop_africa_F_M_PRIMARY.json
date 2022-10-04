@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Gridded Sex-Disaggregated School-Age Population: Female-Male Primary in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/fe362e62a7f6a39e502c11b64ae1c84e",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-GRIDDED-SCHOOL-AGE",
             "type": "text/html",
             "code": "JavaScript"
         },

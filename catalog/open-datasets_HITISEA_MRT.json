@@ -28,7 +28,7 @@
         {
             "title": "Run the example for High-spatial-resolution Thermal-stress Indices: MRT in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/c962180f9229986e9e19d141166479bb",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES",
             "type": "text/html",
             "code": "JavaScript"
         },

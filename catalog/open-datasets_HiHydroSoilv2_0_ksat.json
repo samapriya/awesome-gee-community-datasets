@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Saturated Hydraulic Conductivity- Ksat in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/2b6f1aaf0b2acbf74a06144ed26ad606",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS",
             "type": "text/html",
             "code": "JavaScript"
         },

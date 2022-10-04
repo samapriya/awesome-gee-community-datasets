@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Solar Atlas Datasets: Elevation above sea Level in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/d8964dead482e8dbbe5d9c97b41d68e3",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS",
             "type": "text/html",
             "code": "JavaScript"
         },

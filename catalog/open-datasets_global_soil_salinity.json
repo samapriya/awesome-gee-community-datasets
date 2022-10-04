@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Soil Salinity 1986-2016 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/eb155a39ed8a1ec45fe9f85534d5794c",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/GLOBAL-SOIL-SALINITY",
             "type": "text/html",
             "code": "JavaScript"
         },

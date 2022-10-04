@@ -28,7 +28,7 @@
         {
             "title": "Run the example for High Resolution Smallholder & Industrial Closed Canopy Oil Palm plantations in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/a4f48493ef6cbbc1f1fc990f6d7e03ac",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/GLOBAL-INDUSTRIAL-SMALLHOLDER-OIL-PALM",
             "type": "text/html",
             "code": "JavaScript"
         },

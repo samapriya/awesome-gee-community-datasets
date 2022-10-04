@@ -1,89 +1,99 @@
 {
-  "stac_version": "1.0.0",
-  "type": "Collection",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
-  ],
-  "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014",
-  "title": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
-  "description": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
-  "license": "PDDL-1.0",
-  "gee:type": "image",
-  "links": [
-    {
-      "rel": "self",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_Baywide_13Class_20132014.json",
-      "type": "application/json"
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/Baywide_13Class_20132014",
+    "title": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
+    "description": "Chesapeake Bay High Resolution Land Cover Dataset (2013-2014)",
+    "license": "PDDL-1.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_Baywide_13Class_20132014.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Chesapeake Bay High Resolution Land Cover Dataset (2013-2014) in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CHESEPEAKE_BAY_2013-2014",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/PDDL-1.0.html",
+            "type": "text/html"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -81.1465909219971,
+                    36.21291667427687,
+                    -73.27327256044578,
+                    44.77822048612967
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-06-08T14:59:41.349866Z",
+                    "2022-06-08T14:59:41.349866Z"
+                ]
+            ]
+        }
     },
-    {
-      "rel": "parent",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "root",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "title": "Run the example for Chesapeake Bay High Resolution Land Cover Dataset (2013-2014) in the Google Playground",
-      "rel": "related",
-      "href": "https://code.earthengine.google.com/5d6ecc3a93350f9670f063b7f3c0fe6c",
-      "type": "text/html",
-      "code": "JavaScript"
-    },
-    {
-      "rel": "license",
-      "href": "https://spdx.org/licenses/PDDL-1.0.html",
-      "type": "text/html"
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Land Use",
+        " Land Cover",
+        " Urban Watch",
+        " Remote Sensing",
+        " High Resolution",
+        " Chesapeake Bay"
+    ],
+    "providers": [
+        {
+            "name": "Conservation Innovation Center at the Chesapeake Conservancy",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1,
+            "min": 1,
+            "max": 12,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true,
+        "num_bands": "1"
     }
-  ],
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -81.1465909219971, 36.21291667427687, -73.27327256044578,
-          44.77822048612967
-        ]
-      ]
-    },
-    "temporal": {
-      "interval": [
-        ["2022-06-08T14:59:41.349866Z", "2022-06-08T14:59:41.349866Z"]
-      ]
-    }
-  },
-  "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
-  "gee:user_uploaded": true,
-  "keywords": [
-    "Land Use",
-    " Land Cover",
-    " Urban Watch",
-    " Remote Sensing",
-    " High Resolution",
-    " Chesapeake Bay"
-  ],
-  "providers": [
-    {
-      "name": "Conservation Innovation Center at the Chesapeake Conservancy",
-      "roles": ["producer", "licensor"]
-    },
-    {
-      "name": "Samapriya Roy",
-      "roles": ["processor"]
-    }
-  ],
-  "eo:bands": [
-    {
-      "name": "b1",
-      "gsd": 1,
-      "min": 1,
-      "max": 12,
-      "gee:estimated_range": true
-    }
-  ],
-  "eo:properties": {
-    "all_users_can_read": true,
-    "num_bands": "1"
-  }
 }

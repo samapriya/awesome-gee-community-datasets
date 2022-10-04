@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Long-term Gap-free High-resolution Air Pollutants: PM10 Yearly Average in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/dd31cd3ab59bf2a1333a596b0bf44884",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/LONG-TERM-HIGHRES-AIR-POLLUTANTS",
             "type": "text/html",
             "code": "JavaScript"
         },

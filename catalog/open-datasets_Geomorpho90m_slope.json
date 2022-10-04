@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Geomorpho90m: Slope in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/3efd5e8c5f2f02e637cdbfeedd1d968b",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
             "type": "text/html",
             "code": "JavaScript"
         },

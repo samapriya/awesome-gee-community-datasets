@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Urban Watch 1m Land Cover & Land Use in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/2661b87b5fb16598cfdb4b1ba510617d",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/URBAN-WATCH-CITIES",
             "type": "text/html",
             "code": "JavaScript"
         },

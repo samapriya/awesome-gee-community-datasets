@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Projections from individual AOGCM models: Bioclimatic Variables in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/0f08660af8efc2087de1da68b5ae53b4",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC",
             "type": "text/html",
             "code": "JavaScript"
         },

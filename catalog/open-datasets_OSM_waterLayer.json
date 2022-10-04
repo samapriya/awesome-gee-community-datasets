@@ -28,7 +28,7 @@
         {
             "title": "Run the example for OSM Water Layer Surface Waters in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/cab4e587c9fa6d86e9d848432efe874b",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/OSM-WATER-SURFACE",
             "type": "text/html",
             "code": "JavaScript"
         },

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for DEM France (Continental) 5m IGN RGE Alti in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/b9054b6d5c4d7de1a4af39ff307e73d7",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/IGN-RGE-France-DEM-5m",
             "type": "text/html",
             "code": "JavaScript"
         },

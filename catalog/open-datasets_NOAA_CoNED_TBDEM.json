@@ -28,7 +28,7 @@
         {
             "title": "Run the example for CoNED Project -Topobathymetric digital elevation models in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/bbf21c4acf7eede5140dd08fac8f913e",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-CoNED-TBDEM",
             "type": "text/html",
             "code": "JavaScript"
         },

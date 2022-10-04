@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global River Width from Landsat (GRWL) Mask V01.01 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/66543f94dcb97a8d27de1d6e128fe064",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-WIDTH-LANDSAT",
             "type": "text/html",
             "code": "JavaScript"
         },

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Gridded precipitation dataset for Peruvian and Ecuadorian watersheds: Daily data in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/b47746a9e13a42d10537f1ac4f92475b",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/RAIN4PE-GRIDDED-PRECIP-DAILY",
             "type": "text/html",
             "code": "JavaScript"
         },

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Pielou 1km- Global Habitat Heterogeneity in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/dc1de49163e171394f2cac9713ef90f9",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY",
             "type": "text/html",
             "code": "JavaScript"
         },

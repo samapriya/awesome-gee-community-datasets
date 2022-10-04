@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Normalized Sentinel-1 Global Backscatter Model Land Surface: VV in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/f2c958a9b126f432c8418a6adf671789",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/S1-GLOBAL-BACKSCATTER",
             "type": "text/html",
             "code": "JavaScript"
         },

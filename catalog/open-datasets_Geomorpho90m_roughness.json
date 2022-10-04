@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Geomorpho90m: Roughness in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/2dfc4b537801e2430b14b8d6851564be",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
             "type": "text/html",
             "code": "JavaScript"
         },

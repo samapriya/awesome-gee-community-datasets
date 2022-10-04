@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Electrical Distribution Grid Maps: Raster in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/679d2b03fb371331f1823d7b0a51f9fd",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/FACEBOOK-ELECTRICAL-DIST-GRID-MAPS",
             "type": "text/html",
             "code": "JavaScript"
         },

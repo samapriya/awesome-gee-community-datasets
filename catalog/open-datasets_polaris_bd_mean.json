@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Polaris 30m Probabilistic Soil Properties: Bulk Density in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/8fe0fcfacbef1072b8cc7a2b68391616",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30",
             "type": "text/html",
             "code": "JavaScript"
         },

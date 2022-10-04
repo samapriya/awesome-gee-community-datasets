@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global 30m Height Above the Nearest Drainage with Number of River head threshold cells 1000 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/ed75ecef7fcf94897b74ac56bfbb3f43",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-HEIGHT-ABV-NEAREST-DRAINAGE",
             "type": "text/html",
             "code": "JavaScript"
         },

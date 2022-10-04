@@ -28,7 +28,7 @@
         {
             "title": "Run the example for ASTER Global Water Bodies Database (ASTWBD) Version 1 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/52693ef5d22167a7283fb4e9da60f11f",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTWBD",
             "type": "text/html",
             "code": "JavaScript"
         },

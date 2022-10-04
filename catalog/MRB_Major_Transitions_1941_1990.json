@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Mississippi River Basin Floodplain Land Use Change: Transitions (1941-1990) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/MISSISSIPPI-RIVER-BASIN-LUC",
             "type": "text/html",
             "code": "JavaScript"
         },

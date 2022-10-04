@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Rangeland-Analysis-Platform: Vegetation Cover v2 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/b635021d91b3b913ac05387ae19907fc?noload=true",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE",
             "type": "text/html",
             "code": "JavaScript"
         },

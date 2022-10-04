@@ -1,0 +1,98 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "users/lgutierrezlf/PISCOeo_pm/climatology",
+    "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data",
+    "description": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data",
+    "license": "CC-BY-4.0",
+    "gee:type": "image_collection",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/PISCOeo_pm_climatology.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/REFERENCE-ET-GRIDDED-PERU",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "type": "text/html"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -81.4105688980355,
+                    -18.60209864208647,
+                    -67.17943099374807,
+                    1.2323848877633867
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-12-31T00:00:00Z",
+                    "2022-07-04T01:24:40.943476Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "reference evapotranspiration",
+        " FAO Penman Monteith",
+        " Peru",
+        " hydrology",
+        " satellite data",
+        " Earth observation"
+    ],
+    "providers": [
+        {
+            "name": "Huerta et al 2022",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 1113,
+            "min": 0,
+            "max": 198.93,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
+    }
+}

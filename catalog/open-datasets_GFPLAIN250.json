@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global high-resolution floodplains (GFPLAIN250m) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/526ae3267c01917d2d429d31a39096cd",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-HIGHRES-FLOODPLAINS",
             "type": "text/html",
             "code": "JavaScript"
         },

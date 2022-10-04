@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Wind Atlas: Wind Speed in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/8c3d27d67a2e7d9bda015c325d505409",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS",
             "type": "text/html",
             "code": "JavaScript"
         },

@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global irrigation areas (2001 to 2015) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/e83b163b0a1b2d61244269ce5993e8b3",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-IRRIGATION-AREAS",
             "type": "text/html",
             "code": "JavaScript"
         },

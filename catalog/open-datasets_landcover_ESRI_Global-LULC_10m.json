@@ -28,7 +28,7 @@
         {
             "title": "Run the example for ESRI Global Land Use Land Cover from Sentinel-2 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/514a294747ee5e7a136372b7e947d7bc",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2020",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -61,20 +61,15 @@
     "gee:terms_of_use": "This dataset is made available publicly under CC-BY-4.0.",
     "gee:user_uploaded": true,
     "keywords": [
-        "land",
-        " cover",
-        " land use",
-        " land cover",
+        "landcover",
+        " landuse",
         " lulc",
         " 10m",
         " global",
         " world",
         " sentinel",
-        " sentinel-2",
         " sentinel 2",
         " impact observatory",
-        " impact",
-        " 2020",
         " deep learning"
     ],
     "providers": [

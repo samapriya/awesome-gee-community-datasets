@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Impervious Surface Area (1972-2019) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/09c11e2bfe98a654cfb63cc88fb13e23",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-IMPERVIOUS-SURFACE-AREA",
             "type": "text/html",
             "code": "JavaScript"
         },

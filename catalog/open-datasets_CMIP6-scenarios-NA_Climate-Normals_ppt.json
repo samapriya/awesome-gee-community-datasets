@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Climate Normals: Total Precipitation monthly in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/f1a7a341371b4a9a6ea441f2f307f323",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS",
             "type": "text/html",
             "code": "JavaScript"
         },

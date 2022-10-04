@@ -1,87 +1,99 @@
 {
-  "stac_version": "1.0.0",
-  "type": "Collection",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
-  ],
-  "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016",
-  "title": "Vermont High Resolution Land Cover 2016",
-  "description": "Vermont High Resolution Land Cover 2016",
-  "license": "PDDL-1.0",
-  "gee:type": "image",
-  "links": [
-    {
-      "rel": "self",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_VT_BaseLC_2016.json",
-      "type": "application/json"
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016",
+    "title": "Vermont High Resolution Land Cover 2016",
+    "description": "Vermont High Resolution Land Cover 2016",
+    "license": "PDDL-1.0",
+    "gee:type": "image",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/HRLC_VT_BaseLC_2016.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for Vermont High Resolution Land Cover 2016 in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/VT-BASE-LC-2016",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/PDDL-1.0.html",
+            "type": "text/html"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -73.48584966568423,
+                    42.70042854733823,
+                    -71.45588699711725,
+                    45.02245151202532
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-12-31T00:00:00Z",
+                    "2017-12-30T00:00:00Z"
+                ]
+            ]
+        }
     },
-    {
-      "rel": "parent",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "root",
-      "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/stac_catalog.json",
-      "type": "application/json"
-    },
-    {
-      "title": "Run the example for Vermont High Resolution Land Cover 2016 in the Google Playground",
-      "rel": "related",
-      "href": "https://code.earthengine.google.com/e8f0bdb6d396570d6dab019de0160826",
-      "type": "text/html",
-      "code": "JavaScript"
-    },
-    {
-      "rel": "license",
-      "href": "https://spdx.org/licenses/PDDL-1.0.html",
-      "type": "text/html"
+    "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
+    "gee:user_uploaded": true,
+    "keywords": [
+        "Land Use",
+        " Land Cover",
+        " Urban Watch",
+        " Remote Sensing",
+        " High Resolution",
+        " OBIA",
+        " Vermont"
+    ],
+    "providers": [
+        {
+            "name": "University of Vermont Spatial Analysis Laboratory, VT Center for Geographic Information",
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        },
+        {
+            "name": "Samapriya Roy",
+            "roles": [
+                "processor"
+            ]
+        }
+    ],
+    "eo:bands": [
+        {
+            "name": "b1",
+            "gsd": 0,
+            "min": 1,
+            "max": 5,
+            "gee:estimated_range": true
+        }
+    ],
+    "eo:properties": {
+        "all_users_can_read": true
     }
-  ],
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -73.48584966568423, 42.70042854733823, -71.45588699711725,
-          45.02245151202532
-        ]
-      ]
-    },
-    "temporal": {
-      "interval": [["2012-12-31T00:00:00Z", "2017-12-30T00:00:00Z"]]
-    }
-  },
-  "gee:terms_of_use": "This dataset is made available publicly under PDDL-1.0.",
-  "gee:user_uploaded": true,
-  "keywords": [
-    "Land Use",
-    " Land Cover",
-    " Urban Watch",
-    " Remote Sensing",
-    " High Resolution",
-    " OBIA",
-    " Vermont"
-  ],
-  "providers": [
-    {
-      "name": "University of Vermont Spatial Analysis Laboratory, VT Center for Geographic Information",
-      "roles": ["producer", "licensor"]
-    },
-    {
-      "name": "Samapriya Roy",
-      "roles": ["processor"]
-    }
-  ],
-  "eo:bands": [
-    {
-      "name": "b1",
-      "gsd": 0,
-      "min": 1,
-      "max": 5,
-      "gee:estimated_range": true
-    }
-  ],
-  "eo:properties": {
-    "all_users_can_read": true
-  }
 }

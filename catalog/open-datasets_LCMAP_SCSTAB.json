@@ -28,7 +28,7 @@
         {
             "title": "Run the example for LCMAP v1.2: SCSTAB in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/791aa894ce0abfe1a9eb1dc478bbc5d7",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
             "type": "text/html",
             "code": "JavaScript"
         },

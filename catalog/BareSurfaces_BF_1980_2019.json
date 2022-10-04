@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Bare Surface Frequency 1980-2019 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/8fc9d2e3531ba32b895332b575e6cc04",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA",
             "type": "text/html",
             "code": "JavaScript"
         },

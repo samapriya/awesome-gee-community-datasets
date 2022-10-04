@@ -28,7 +28,7 @@
         {
             "title": "Run the example for West Africa Land Use and Land Cover 2013 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/93ec15b58db715aac57cbf34b6d29c8d",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/WEST-AFRICA-LULC",
             "type": "text/html",
             "code": "JavaScript"
         },

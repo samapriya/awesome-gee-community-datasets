@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Busia Cropland Probability in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/d3441d23c1b2840948e026f51edd5bc9",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND",
             "type": "text/html",
             "code": "JavaScript"
         },

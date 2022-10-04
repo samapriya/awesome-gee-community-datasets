@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global Curve Number (GCN250) Wet conditions in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/65fd6cfd746e4a1dc13b1c2b5ed86d40",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-HYDROLOGIC-CURVE-NUMBER",
             "type": "text/html",
             "code": "JavaScript"
         },

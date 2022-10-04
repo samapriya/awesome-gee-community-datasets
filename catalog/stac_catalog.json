@@ -293,12 +293,6 @@
         },
         {
             "rel": "child",
-            "id": "users/keikonomura/fire/LBA_CU_2019_20200415_C01_V01_BP_L8",
-            "title": "Landsat Burned Area",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/fire_LBA_CU_2019_20200415_C01_V01_BP_L8.json"
-        },
-        {
-            "rel": "child",
             "id": "users/jaafarhadi/GCN250/GCN250Average",
             "title": "Global Curve Number (GCN250) Average conditions",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/GCN250_GCN250Average.json"
@@ -653,6 +647,12 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/cloudsen12/high",
+            "title": "CloudSEN12 High Quality labels",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_cloudsen12_high.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim",
             "title": "Projections from AOGCM Ensemble: Bioclimatic Variables",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_CMIP6-scenarios-NA_AOGCM-ensemble_bioclim.json"
@@ -788,6 +788,12 @@
             "id": "projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux",
             "title": "Global Forest Carbon Fluxes: Net Flux",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_forest_carbon_fluxes_net_flux.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/FROM-GLC10",
+            "title": "Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10)",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_FROM-GLC10.json"
         },
         {
             "rel": "child",
@@ -935,6 +941,36 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/global-daily-air-temp/africa",
+            "title": "Global Daily near-surface air temperature (2003-2020): Africa",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-daily-air-temp_africa.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global-daily-air-temp/australia",
+            "title": "Global Daily near-surface air temperature (2003-2020): Australia",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-daily-air-temp_australia.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global-daily-air-temp/europe_asia",
+            "title": "Global Daily near-surface air temperature (2003-2020): Eurasia",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-daily-air-temp_europe_asia.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global-daily-air-temp/latin_america",
+            "title": "Global Daily near-surface air temperature (2003-2020): Latin America",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-daily-air-temp_latin_america.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global-daily-air-temp/north_america",
+            "title": "Global Daily near-surface air temperature (2003-2020): North America",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-daily-air-temp_north_america.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/global-fire-atlas/day_of_burn",
             "title": "Global Fire Atlas: Day of Burn",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global-fire-atlas_day_of_burn.json"
@@ -977,9 +1013,15 @@
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/global_ai_et0",
-            "title": "Global Aridity Index",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_ai_et0.json"
+            "id": "projects/sat-io/open-datasets/global_ai/global_ai_monthly",
+            "title": "Global Aridity Index Monthly",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_ai_global_ai_monthly.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global_ai/global_ai_yearly",
+            "title": "Global Aridity Index Yearly",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_ai_global_ai_yearly.json"
         },
         {
             "rel": "child",
@@ -1064,6 +1106,12 @@
             "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly",
             "title": "Global Reference Evapotranspiration Yearly",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_et0_global_et0_yearly.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/global_et0/global_et0_yearly_sd",
+            "title": "Global Reference Evapotranspiration Yearly SD",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_global_et0_global_et0_yearly_sd.json"
         },
         {
             "rel": "child",
@@ -1553,9 +1601,93 @@
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/GMW/GMW_2010_v25",
-            "title": "Global Mangrove Forest Baseline 2010 v2.5",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_GMW_2010_v25.json"
+            "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_bathymetry",
+            "title": "GLOBathy (Global lakes bathymetry dataset) : Bathymetry",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GLOBathy_GLOBathy_bathymetry.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GMW/change/change_f1996",
+            "title": "Global Mangrove Watch v3 Change-change_f1996  : Raster",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_change_change_f1996.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GMW/core/gmw_v3_mng_core",
+            "title": "Global Mangrove Watch v3 Core-gmw_v3_mng_core  : Raster",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_core_gmw_v3_mng_core.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GMW/extent/GMW_V3",
+            "title": "Global Mangrove Watch v3 Extent-gmw_v3  : Raster",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_extent_GMW_V3.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GMW/union/gmw_v3_mng_union",
+            "title": "Global Mangrove Watch v3 Union-gmw_v3_mng_union  : Raster",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GMW_union_gmw_v3_mng_union.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_8day",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_8DAY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_gpp_8day.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_monthly",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-GPP_MONTHLY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_gpp_monthly.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_yearly/GPP_v21_2020",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_YEARLY-GPP_V21_2020",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_gpp_yearly_GPP_v21_2020.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_8day",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_8DAY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_shaded_8day.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_monthly",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SHADED_MONTHLY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_shaded_monthly.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_yearly/Shade_GPP_v21_2020",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SHADED_YEARLY-SHADE_GPP_V21_2020",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_shaded_yearly_Shade_GPP_v21_2020.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_8DAY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_sunlit_8day.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_monthly",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): GPP_SUNLIT_SHADED-SUNLIT_MONTHLY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_sunlit_monthly.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_yearly/Sun_GPP_v21_2020",
+            "title": "Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): SUNLIT_YEARLY-SUN_GPP_V21_2020",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GPP_SUNLIT_SHADED_sunlit_yearly_Sun_GPP_v21_2020.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/GRIDDED_EC",
+            "title": "GRIDDED Electricity Consumption",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_GRIDDED_EC.json"
         },
         {
             "rel": "child",
@@ -1859,87 +1991,51 @@
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bedrock_depth",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bedrock depth",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_bedrock_depth.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_af_v1_labels",
+            "title": "LandCoverNet v1.0 - Africa",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_af_v1_labels.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/bulk_density",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Bulk density",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_bulk_density.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_as_v1_labels",
+            "title": "LandCoverNet v1.0 - Asia",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_as_v1_labels.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_organic",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon organic",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_carbon_organic.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_au_v1_labels",
+            "title": "LandCoverNet v1.0 - Australia",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_au_v1_labels.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/carbon_total",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Carbon total",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_carbon_total.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_eu_v1_labels",
+            "title": "LandCoverNet v1.0 - Europe",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_eu_v1_labels.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/cation_exchange_capacity",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Cation exchange capacity",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_cation_exchange_capacity.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_na_v1_labels",
+            "title": "LandCoverNet v1.0 - North America",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_na_v1_labels.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/clay_content",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Clay content",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_clay_content.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/fcc",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Fcc",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_fcc.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/nitrogen_total",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Nitrogen total",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_nitrogen_total.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/ph",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Ph",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_ph.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/sand_content",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Sand content",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_sand_content.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/silt_content",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Silt content",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_silt_content.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/stone_content",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Stone content",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_stone_content.json"
-        },
-        {
-            "rel": "child",
-            "id": "projects/sat-io/open-datasets/iSDAsoil_Africa_30m/texture_class",
-            "title": "iSDAsoil Predicted Soil Properties for Africa 30m: Texture class",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_iSDAsoil_Africa_30m_texture_class.json"
+            "id": "projects/sat-io/open-datasets/LandCoverNet/LABELS/ref_landcovernet_sa_v1_labels",
+            "title": "LandCoverNet v1.0 - South America",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_LandCoverNet_LABELS_ref_landcovernet_sa_v1_labels.json"
         },
         {
             "rel": "child",
             "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m",
             "title": "ESRI Global Land Use Land Cover from Sentinel-2",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landcover_ESRI_Global-LULC_10m.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
+            "title": "ESRI 10m Annual Land Use Land Cover (2017-2021)",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landcover_ESRI_Global-LULC_10m_TS.json"
         },
         {
             "rel": "child",
@@ -1961,15 +2057,21 @@
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/disturbance/fdist",
-            "title": "Fuel Disturbance (FDist) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_disturbance_fdist.json"
+            "id": "projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR",
+            "title": "Disturbance Year (DistYear) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_disturbance_DISTYEAR.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/disturbance/hdist",
-            "title": "Fuel Disturbance (HDist) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_disturbance_hdist.json"
+            "id": "projects/sat-io/open-datasets/landfire/disturbance/FDIST",
+            "title": "Fuel Disturbance (FDist) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_disturbance_FDIST.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landfire/disturbance/HDIST",
+            "title": "Historical Disturbance (HDist) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_disturbance_HDIST.json"
         },
         {
             "rel": "child",
@@ -1991,93 +2093,117 @@
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/cbd",
-            "title": "Forest Canopy Bulk Density (CBD) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_cbd.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/CBD",
+            "title": "Forest Canopy Bulk Density (CBD) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_CBD.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/cbh",
-            "title": "Forest Canopy Base Height (CBH) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_cbh.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/CBH",
+            "title": "Forest Canopy Base Height (CBH) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_CBH.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/cc",
-            "title": "Forest Canopy Cover (CC) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_cc.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/CC",
+            "title": "Forest Canopy Cover (CC) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_CC.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/ch",
-            "title": "Forest Canopy Height (CH) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_ch.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/CFFDRS",
+            "title": "Canadian Forest Fire Danger Rating System 2022 (CFFDRS) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_CFFDRS.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/fccs",
-            "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_fccs.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/CH",
+            "title": "Forest Canopy Height (CH) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_CH.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/fvc",
-            "title": "Fuel Vegetation Cover (FVC) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_fvc.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FBFM13",
+            "title": "13 Anderson Fire Behavior Fuel Models 2022 (FBFM13) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FBFM13.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/fvh",
-            "title": "Fuel Vegetation Height (FVH) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_fvh.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FBFM40",
+            "title": "40 Scott and Burgan Fire Behavior Fuel Models 2022 (FBFM40) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FBFM40.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/fuel/fvt",
-            "title": "Fuel Vegetation Type (FVT) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_fvt.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FCCS",
+            "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FCCS.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/topographic/aspect",
-            "title": "Aspect (ASP) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_aspect.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FVC",
+            "title": "Fuel Vegetation Cover (FVC) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FVC.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/topographic/elevation",
-            "title": "Elevation (ELEV) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_elevation.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FVH",
+            "title": "Fuel Vegetation Height (FVH) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FVH.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/vegetation/bps_v2_0_0",
-            "title": "Biophysical Settings (BPS) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_bps_v2_0_0.json"
+            "id": "projects/sat-io/open-datasets/landfire/fuel/FVT",
+            "title": "Fuel Vegetation Type (FVT) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_fuel_FVT.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/vegetation/evc_v2_0_0",
-            "title": "Existing Vegetation Cover (EVC) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_evc_v2_0_0.json"
+            "id": "projects/sat-io/open-datasets/landfire/topographic/ASP",
+            "title": "Aspect (ASP) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_ASP.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/vegetation/evh_v2_0_0",
-            "title": "Existing Vegetation Height (EVH) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_evh_v2_0_0.json"
+            "id": "projects/sat-io/open-datasets/landfire/topographic/ELEV",
+            "title": "Elevation (ELEV) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_ELEV.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/vegetation/evt_v2_0_0",
-            "title": "Existing Vegetation Type (EVT) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_evt_v2_0_0.json"
+            "id": "projects/sat-io/open-datasets/landfire/topographic/SLP",
+            "title": "Slope Degrees (SLP) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_SLP.json"
         },
         {
             "rel": "child",
-            "id": "projects/sat-io/open-datasets/landfire/vegetation/nvc_v2_0_0",
-            "title": "National Vegetation Classification (NVC) LF v2.0.0",
-            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_nvc_v2_0_0.json"
+            "id": "projects/sat-io/open-datasets/landfire/topographic/SlpP",
+            "title": "Slope Percentage Rise (SlpP) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_topographic_SlpP.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landfire/transportation/ROADS",
+            "title": "Operational Roads (Roads) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_transportation_ROADS.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landfire/vegetation/EVC",
+            "title": "Existing Vegetation Cover (EVC) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_EVC.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landfire/vegetation/EVH",
+            "title": "Existing Vegetation Height (EVH) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_EVH.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/landfire/vegetation/EVT",
+            "title": "Existing Vegetation Type (EVT) LF v2.2.0",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_landfire_vegetation_EVT.json"
         },
         {
             "rel": "child",
@@ -2243,6 +2369,24 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_first",
+            "title": "NAFD Forest Disturbance History 1986-2010 time integrated: First",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NAFD_VCT_30m_first.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NAFD/VCT_30m_last",
+            "title": "NAFD Forest Disturbance History 1986-2010 time integrated: Last",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NAFD_VCT_30m_last.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NAFD/vct_annual",
+            "title": "NAFD Forest Disturbance History 1986-2010: Annual",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NAFD_vct_annual.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary",
             "title": "Busia Cropland Binary",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_nasa-harvest_busia_cropland_binary.json"
@@ -2309,15 +2453,69 @@
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/NOAA/ccap_10m",
+            "title": "C-CAP Medium-Resolution Land Cover - Beta 10m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_ccap_10m.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NOAA/ccap_30m",
+            "title": "C-CAP Medium-Resolution Land Cover - Beta 30m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_ccap_30m.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/NOAA/ccap_30m_impervious",
+            "title": "C-CAP Medium-Resolution Impervious - Beta 30m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_ccap_30m_impervious.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/NOAA/CoNED_TBDEM",
             "title": "CoNED Project -Topobathymetric digital elevation models",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_CoNED_TBDEM.json"
         },
         {
             "rel": "child",
+            "id": "projects/sat-io/open-datasets/NOAA/conus_ccap_wetland_potential",
+            "title": "C-CAP Wetland Potential 30m",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_conus_ccap_wetland_potential.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/sat-io/open-datasets/NOAA/SLR_DEM",
             "title": "NOAA Sea-Level Rise Digital Elevation Models",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_NOAA_SLR_DEM.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/npp-viirs-ntl",
+            "title": "Global NPP-VIIRS-like nighttime light (2000-2020)",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_npp-viirs-ntl.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_GLOBAL",
+            "title": "LANDSCAN GLOBAL",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_ORNL_LANDSCAN_GLOBAL.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_HD",
+            "title": "LANDSCAN HD",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_ORNL_LANDSCAN_HD.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_USA_DAY",
+            "title": "LANDSCAN USA DAY",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_ORNL_LANDSCAN_USA_DAY.json"
+        },
+        {
+            "rel": "child",
+            "id": "projects/sat-io/open-datasets/ORNL/LANDSCAN_USA_NIGHT",
+            "title": "LANDSCAN USA NIGHT",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/open-datasets_ORNL_LANDSCAN_USA_NIGHT.json"
         },
         {
             "rel": "child",
@@ -2705,6 +2903,30 @@
         },
         {
             "rel": "child",
+            "id": "users/lgutierrezlf/PISCOeo_pm/climatology",
+            "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly climatology data",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/PISCOeo_pm_climatology.json"
+        },
+        {
+            "rel": "child",
+            "id": "users/lgutierrezlf/PISCOeo_pm/daily",
+            "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Daily data",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/PISCOeo_pm_daily.json"
+        },
+        {
+            "rel": "child",
+            "id": "users/lgutierrezlf/PISCOeo_pm/monthly",
+            "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Monthly data",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/PISCOeo_pm_monthly.json"
+        },
+        {
+            "rel": "child",
+            "id": "users/lgutierrezlf/PISCOeo_pm/yearly",
+            "title": "Reference ET gridded database based on FAO Penman-Monteith for Peru (1981-2016) : Yearly mean data",
+            "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/PISCOeo_pm_yearly.json"
+        },
+        {
+            "rel": "child",
             "id": "projects/mapbiomas-workspace/public/collection5/mapbiomas_collection50_quality_v1",
             "title": "Mapbiomas: Maps of quality (change in coverage or use) between selected years",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/public_collection5_mapbiomas_collection50_quality_v1.json"
@@ -2838,7 +3060,7 @@
         {
             "rel": "child",
             "id": "projects/rangeland-analysis-platform/vegetation-cover-v3",
-            "title": "Rangeland-Analysis-Platform: Vegetation Cover v3",
+            "title": "Rangeland-Analysis-Platform: Vegetation Cover v2",
             "href": "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/catalog/vegetation-cover-v3.json"
         }
     ]

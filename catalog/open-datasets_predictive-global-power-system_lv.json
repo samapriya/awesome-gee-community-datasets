@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Predicted low-voltage infrastructure in kilometres per cell in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/b27444561070de599678b2fe03c2d3dc",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/PREDICTED-GLOBAL-POWER-SYSTEMS",
             "type": "text/html",
             "code": "JavaScript"
         },

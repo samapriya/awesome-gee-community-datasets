@@ -28,7 +28,7 @@
         {
             "title": "Run the example for United States Drought Monitor (USDM) in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/939a2201427201d6945d1b79c9bb2a46",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/UNITED-STATES-DROUGHT-MONITOR",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -53,7 +53,7 @@
             "interval": [
                 [
                     "1999-12-27T00:00:00Z",
-                    "2022-06-06T00:00:00Z"
+                    "2022-09-26T00:00:00Z"
                 ]
             ]
         }

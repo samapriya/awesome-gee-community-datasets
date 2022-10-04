@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Secondary Forest Loss: Collection5_v3 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/7d1f97bbc04cbf351aa38246d38246ed",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/BRAZIL-SECONDARY-FOREST-AGE",
             "type": "text/html",
             "code": "JavaScript"
         },

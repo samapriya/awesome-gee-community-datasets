@@ -28,7 +28,7 @@
         {
             "title": "Run the example for High Resolution Settlement Layer: Women of reproductive age in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/5f8af7ee25d50d44a58c90bf0efc91bb",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/FACEBOOK-HRSL-30m",
             "type": "text/html",
             "code": "JavaScript"
         },
@@ -52,8 +52,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2022-06-12T04:41:59.866974Z",
-                    "2022-06-12T04:41:59.866974Z"
+                    "2022-08-27T06:27:22.561425Z",
+                    "2022-08-27T06:27:22.561425Z"
                 ]
             ]
         }
@@ -95,6 +95,6 @@
     ],
     "eo:properties": {
         "all_users_can_read": true,
-        "version": "1.1,1.5.2,1.5.5,1.5.3,1.5.1,1.5.6,1.5.4"
+        "version": "1.1,1.5.2,1.5.3,1.5.7,1.5.1,1.5.8,1.5.6,1.5.4,1.5.5,1.5.9"
     }
 }

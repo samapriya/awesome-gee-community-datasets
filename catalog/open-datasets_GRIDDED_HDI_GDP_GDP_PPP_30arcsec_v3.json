@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Gridded GDP PPP 30arcsec v2 in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/75ab868ddbf11372285c4bc009655f1d",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-GDP-HDI",
             "type": "text/html",
             "code": "JavaScript"
         },

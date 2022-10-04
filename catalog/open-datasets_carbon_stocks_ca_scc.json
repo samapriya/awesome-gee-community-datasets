@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Soil carbon storage in terrestrial ecosystems of Canada: Soil Carbon Concentration in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/b17184d3dd1b54434be2a2abd1fc63ad",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA",
             "type": "text/html",
             "code": "JavaScript"
         },

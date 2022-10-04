@@ -28,7 +28,7 @@
         {
             "title": "Run the example for Global max geometric temperatures for the mid-month in the Google Playground",
             "rel": "related",
-            "href": "https://code.earthengine.google.com/489333ffe575920a4623c10c11a52923",
+            "href": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER",
             "type": "text/html",
             "code": "JavaScript"
         },
