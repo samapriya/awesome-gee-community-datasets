@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-10-11
+- Added [High Resolution Tree Species Information for Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_species/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-10-03
 - Added [CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2](https://samapriya.github.io/awesome-gee-community-datasets/projects/cloudsen12/)
 - Added [Global Electric Consumption revised GDP](https://samapriya.github.io/awesome-gee-community-datasets/projects/elc_gdp/)

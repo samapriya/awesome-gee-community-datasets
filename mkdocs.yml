@@ -188,7 +188,6 @@ nav:
     - Mississippi River Basin Floodplain Land Use Change (1941-2000): projects/floodplain_lc.md
     - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
     - Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0: projects/dea_lc.md
-    - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
     - UrbanWatch 1m Land Cover & Land Use: projects/urban-watch.md
     - Vermont High Resolution Land Cover 2016: projects/vt_lc.md
     - Chesapeake Bay High Resolution Land Cover Dataset (2013-2014): projects/cc.md
@@ -229,6 +228,8 @@ nav:
     - Vegetation dryness for western USA: projects/veg_dry.md
     - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
     - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
+    - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
+    - High Resolution Tree Species Information for Canada: projects/ca_species.md
     - Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): projects/shd_sun_gpp.md
     - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
     - Rangeland Analysis Platform layers: projects/rap.md
