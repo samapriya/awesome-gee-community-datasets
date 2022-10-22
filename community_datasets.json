@@ -7638,5 +7638,21 @@
     "id": "projects/sat-io/open-datasets/GRIDDED_EC-GDP",
     "provider": "Chen, J., Gao, M., Cheng, S. et al 2022",
     "tags": "GDP, Electricity Consumption, Night Lights"
+  },
+  {
+    "title": "Canopy height: forested ecosystems of Canada GEDI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-GEDI",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/GEDI_forest_canopy_height_250m_v1",
+    "provider": "Sothe,Camile, et al. 2022",
+    "tags": "LiDAR analysis, ICESat-2, GEDI, canopy height distribution, Carbon storage and distribution"
+  },
+  {
+    "title": "Canopy height: forested ecosystems of Canada ICESat-2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-ICESAT",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/ICESat2_forest_canopy_height_250m_v1",
+    "provider": "Sothe,Camile, et al. 2022",
+    "tags": "LiDAR analysis, ICESat-2, GEDI, canopy height distribution, Carbon storage and distribution"
   }
 ]
