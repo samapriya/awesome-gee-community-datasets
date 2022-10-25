@@ -230,6 +230,9 @@ nav:
     - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
     - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
     - High Resolution Tree Species Information for Canada: projects/ca_species.md
+    - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
+    - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+    - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
     - Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): projects/shd_sun_gpp.md
     - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
     - Rangeland Analysis Platform layers: projects/rap.md

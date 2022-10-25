@@ -7654,5 +7654,29 @@
     "id": "projects/sat-io/open-datasets/CA_FOREST/ICESat2_forest_canopy_height_250m_v1",
     "provider": "Sothe,Camile, et al. 2022",
     "tags": "LiDAR analysis, ICESat-2, GEDI, canopy height distribution, Carbon storage and distribution"
+  },
+  {
+    "title": "Global tree allometry and crown architecture (Tallo) database",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/TREE-ALLOMETRY-CROWN-ARCH-DATABASE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/tallo_database",
+    "provider": "Jucker, Tommaso, et al. 2022",
+    "tags": "stem diameter, tree height, crown size, tree allometry, tree architecture, forest biomass, remote sensing"
+  },
+  {
+    "title": "US National Forest Type",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-NATIONAL-FOREST-TYPE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USFS/national-forest-type",
+    "provider": "USDA Forest Service-Forest Inventory and Analysis (FIA) Program & Geospatial Technology and Applications Center (GTAC)",
+    "tags": "forest type, forest group, forest, remote sensing"
+  },
+  {
+    "title": "US National Forest Group",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-NATIONAL-FOREST-GROUP",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USFS/national-forest-group",
+    "provider": "USDA Forest Service-Forest Inventory and Analysis (FIA) Program & Geospatial Technology and Applications Center (GTAC)",
+    "tags": "forest type, forest group, forest, remote sensing"
   }
 ]

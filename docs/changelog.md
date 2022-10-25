@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-10-25
+- Added [Canopy height forested ecosystems of Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_canopy_ht)
+- Added [US National Forest Type and Groups](https://samapriya.github.io/awesome-gee-community-datasets/projects/us_ftype_fgroup)
+- Added [Global tree allometry and crown architecture (Tallo) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/tallo)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-10-11
 - Added [High Resolution Tree Species Information for Canada](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_species/)
 - Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
