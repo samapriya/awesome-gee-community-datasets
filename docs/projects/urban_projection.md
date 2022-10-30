@@ -42,7 +42,7 @@ This work is licensed under [Creative Commons Attribution 4.0 International](htt
 
 Created by: Gao, et al. 2022 and Chen, et al. 2022
 
-Curated in GEE by : [TC Chakraborty](tc.chakraborty25@gmail.com) and Samapriya Roy
+Curated in GEE by : [TC Chakraborty](mailto:tc.chakraborty25@gmail.com) and Samapriya Roy
 
 Keywords: urban, SSPs, urban projection, temporal models
 
