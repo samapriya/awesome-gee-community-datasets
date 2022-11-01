@@ -132,6 +132,7 @@ nav:
     - LandScan Population Data: projects/landscan.md
     - GPW Version 4 Admin Units: projects/GPWv4.md
     - geoBoundaries Global Database of Political Administrative Boundaries: projects/geoboundary.md
+    - Edge-matched Global, Subnational and operational Boundaries: projects/edge_matched.md
     - West Africa Coastal Vulnerability Mapping: projects/wacvm.md
     - Relative Wealth Index (RWI): projects/rwi.md
     - Social Connectedness Index (SCI): projects/sci.md
@@ -177,6 +178,7 @@ nav:
     - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
     - Global Impervious Surface Area (1972-2019): projects/gisa.md
     - Global urban extents from 1870 to 2100: projects/gue.md
+    - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
     - World Settlement Footprint & Evolution: projects/wsf.md
     - LandCoverNet Training Labels v1.0: projects/lcnet.md
     - CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
@@ -284,5 +286,6 @@ nav:
     - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
     - Global large flood events (1985-2016) : projects/flood.md
     - Global Landslide Catalog (1970-2019): projects/landslide.md
+    - MAXAR Open Data Events: projects/maxar_opendata.md
     - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
   - License: license.md

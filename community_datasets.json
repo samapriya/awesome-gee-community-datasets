@@ -7678,5 +7678,229 @@
     "id": "projects/sat-io/open-datasets/USFS/national-forest-group",
     "provider": "USDA Forest Service-Forest Inventory and Analysis (FIA) Program & Geospatial Technology and Applications Center (GTAC)",
     "tags": "forest type, forest group, forest, remote sensing"
+  },
+  {
+    "title": "Global urban projections under SSPs (2020-2100) Chen 2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-SCENARIO-PROJECTIONS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/FUTURE-URBAN-LAND/CHEN_2020_2100",
+    "provider": "Chen et al 2020",
+    "tags": "urban, SSPs, urban projection, temporal models"
+  },
+  {
+    "title": "Global urban projections under SSPs (2020-2100) Gao 2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-SCENARIO-PROJECTIONS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/FUTURE-URBAN-LAND/GAO_2020_2100",
+    "provider": "Gao et al 2020",
+    "tags": "urban, SSPs, urban projection, temporal models"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Afghanistan earthquake 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/afghanistan_earthquake_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, Earthquake"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Gambia flooding 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/gambia_flooding_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Hurricane Fiona 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/hurricane_fiona_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, hurriance"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Hurricane Ian 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/hurricane_ian_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, hurriance"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Kentucky Flooding 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/kentucky_flooding_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Pakistan Flooding 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/pakistan_flooding_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: South Africa Flooding 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/southafrica_flooding_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
+    "title": "MAXAR Open Data Multispectral: Sudan Flooding 2022",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/sudan_flooding_2022",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
+    "title": "FieldMaps GeoBoundaries Edge matched : adm1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-geoboundaries/adm1_geoboundaries",
+    "provider": " William & Mary geoLab, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "FieldMaps GeoBoundaries Edge matched : adm2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-geoboundaries/adm2_geoboundaries",
+    "provider": " William & Mary geoLab, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "FieldMaps GeoBoundaries Edge matched : adm3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-geoboundaries/adm3_geoboundaries",
+    "provider": " William & Mary geoLab, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "FieldMaps GeoBoundaries Edge matched : adm4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-geoboundaries/adm4_geoboundaries",
+    "provider": " William & Mary geoLab, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Common Operation dataset Edge Matched : adm1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/COD-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm1_cod",
+    "provider": "UNOCHA, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Common Operation dataset Edge Matched : adm2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/COD-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm2_cod",
+    "provider": "UNOCHA, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Common Operation dataset Edge Matched : adm3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/COD-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm3_cod",
+    "provider": "UNOCHA, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Common Operation dataset Edge Matched : adm4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/COD-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm4_cod",
+    "provider": "UNOCHA, FieldMaps",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "International ADM0 boundaries Edge Matched : OSM",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/AMD0-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/field-maps/OSM_adm0_polygons",
+    "provider": "FieldMaps, U.S. Department of State, OpenStreetMap",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "International ADM0 boundaries Edge Matched : OSM",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/AMD0-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/field-maps/USGS_adm0_polygons",
+    "provider": "FieldMaps, USGS",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Open : adm1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/OPEN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-open/adm1_polygons",
+    "provider": "FieldMaps, geoBoundaries, U.S. Department of State, U.S. Geological Survey",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Open : adm2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/OPEN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-open/adm2_polygons",
+    "provider": "FieldMaps, geoBoundaries, U.S. Department of State, U.S. Geological Survey",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Open : adm3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/OPEN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-open/adm3_polygons",
+    "provider": "FieldMaps, geoBoundaries, U.S. Department of State, U.S. Geological Survey",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Open : adm4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/OPEN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-open/adm4_polygons",
+    "provider": "FieldMaps, geoBoundaries, U.S. Department of State, U.S. Geological Survey",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Humanitarian : adm1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/HUMANITARIAN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-humanitarian/adm1_polygons",
+    "provider": "FieldMaps, OCHA, geoBoundaries, U.S. Department of State, OpenStreetMap",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Humanitarian : adm2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/HUMANITARIAN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-humanitarian/adm2_polygons",
+    "provider": "FieldMaps, OCHA, geoBoundaries, U.S. Department of State, OpenStreetMap",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Humanitarian : adm3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/HUMANITARIAN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-humanitarian/adm3_polygons",
+    "provider": "FieldMaps, OCHA, geoBoundaries, U.S. Department of State, OpenStreetMap",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "Global Edge-matched Subnational Boundaries Humanitarian : adm4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/HUMANITARIAN-EDGEMATCHED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/field-maps/edge-matched-humanitarian/adm4_polygons",
+    "provider": "FieldMaps, OCHA, geoBoundaries, U.S. Department of State, OpenStreetMap",
+    "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
   }
 ]
