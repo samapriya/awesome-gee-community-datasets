@@ -24,6 +24,6 @@ https://gee-community-catalog.org/
 #### Citation
 
 ```
-Samapriya Roy, Erin Trochim, Alec L. Robitaille, & Valerie Pasquarella. (2022). samapriya/awesome-gee-community-datasets: Community Catalog(1.0.0).
-Zenodo. https://doi.org/10.5281/zenodo.7144934
+Samapriya Roy, Tyson Swetnam, Alec L. Robitaille, Erin Trochim, & Valerie Pasquarella. (2022). samapriya/awesome-gee-community-datasets: Community
+Catalog (1.0.1). Zenodo. https://doi.org/10.5281/zenodo.7271726
 ```
