@@ -4,7 +4,7 @@ Pre and post event high-resolution satellite imagery in support of emergency pla
 
 #### Preprocessing
 
-The metadata tags were parsed from the existing metadata json files and available properties were parsed to confirm to property names for GEE. The datetime property was added as system:time_start for easy filtering of datasets. Not all datasets have been added and this will be continiously updated to include additional datasets/disasters
+The metadata tags were parsed from the existing metadata json files and available properties were parsed to confirm to property names for GEE. The datetime property was added as system:time_start for easy filtering of datasets. Not all datasets have been added and this will be continuously updated to include additional datasets/disasters
 
 #### Citation
 

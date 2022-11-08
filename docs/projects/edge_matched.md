@@ -72,7 +72,7 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ## Common Operation dataset Edge Matched
 
- The COD layers are obtained from the Humanitarian Data Exchange at the source URLs below before processed for edge matching. Extended layers can be downloaded and clipped to any ADM0. You can download the dataset in [different formats here](https://data.fieldmaps.io/geoboundaries.json). Datasets were merged to create singular representation at each hierachy so all ADM1 for example and ADM2 for example. Each component of the dataset retains the original license provided.
+The COD layers are obtained from the Humanitarian Data Exchange at the source URLs below before processed for edge matching. Extended layers can be downloaded and clipped to any ADM0. You can download the dataset in [different formats here](https://data.fieldmaps.io/geoboundaries.json). Datasets were merged to create singular representation at each hierarchy so all ADM1 for example and ADM2 for example. Each component of the dataset retains the original license provided.
 
 #### Earth Engine Snippet
 
@@ -86,7 +86,7 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ## GeoBoundaries Edge matched
 
-The Humanitarian Data Exchange at the source URLs below before processed for edge matching. Extended layers can be downloaded and clipped to any ADM0. You can download the dataset and find license information here[different formats here](https://data.fieldmaps.io/geoboundaries.json). Datasets were merged to create singular representation at each hierachy so all ADM1 for example and ADM2 for example. Each component of the dataset retains the original license provided.
+The Humanitarian Data Exchange at the source URLs below before processed for edge matching. Extended layers can be downloaded and clipped to any ADM0. You can download the dataset and find license information here[different formats here](https://data.fieldmaps.io/geoboundaries.json). Datasets were merged to create singular representation at each hierarchy so all ADM1 for example and ADM2 for example. Each component of the dataset retains the original license provided.
 
 ```js
 var adm = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-geoboundaries/adm1_geoboundaries");

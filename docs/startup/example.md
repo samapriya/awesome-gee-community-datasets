@@ -1,6 +1,6 @@
 # Submit example for dataset in community catalog
 
-Examples are helpful in understanding different use cases for datasets as well as enabling rich visualization of an existing dataset from domain experts. The template alllows you to point to an existing dataset and submit an example code link via code editor/colab link or otherwise for others to use. All example/code contributors get attribution in the code apart from dataset attributions which are already included.
+Examples are helpful in understanding different use cases for datasets as well as enabling rich visualization of an existing dataset from domain experts. The template allows you to point to an existing dataset and submit an example code link via code editor/colab link or otherwise for others to use. All example/code contributors get attribution in the code apart from dataset attributions which are already included.
 
 ![example](https://i.imgur.com/HiMR14U.gif)
 
