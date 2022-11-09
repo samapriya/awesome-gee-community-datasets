@@ -19,6 +19,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install \
+            "wheel" \
+            "lxml" \
             "mkdocs-material" \
             "cairosvg>=2.5" \
             "mkdocs-git-committers-plugin-2>=1.1.1" \
