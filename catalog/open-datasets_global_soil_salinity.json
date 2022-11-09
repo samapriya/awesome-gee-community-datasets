@@ -62,13 +62,13 @@
     "gee:user_uploaded": true,
     "keywords": [
         "salinity",
-        " digital soil mapping",
-        " electrical conductivity",
-        " global map",
-        " soilgrids",
-        " landsat",
-        " thermal",
-        " salinisation"
+        "digital soil mapping",
+        "electrical conductivity",
+        "global map",
+        "soilgrids",
+        "landsat",
+        "thermal",
+        "salinisation"
     ],
     "providers": [
         {

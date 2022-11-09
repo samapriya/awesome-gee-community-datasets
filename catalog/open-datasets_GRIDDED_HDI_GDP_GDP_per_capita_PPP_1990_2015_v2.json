@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Development indicator",
-        " global spatial data",
-        " gridded data",
-        " Gross Domestic Product (GDP)",
-        " Human Development Index (HDI)",
-        " Purchasing Power Parity (PPP)"
+        "global spatial data",
+        "gridded data",
+        "Gross Domestic Product (GDP)",
+        "Human Development Index (HDI)",
+        "Purchasing Power Parity (PPP)"
     ],
     "providers": [
         {

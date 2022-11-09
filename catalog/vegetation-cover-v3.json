@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "rangelands",
-        " vegetation",
-        " time-series",
-        " machine learning",
-        " landsat"
+        "vegetation",
+        "time-series",
+        "machine learning",
+        "landsat"
     ],
     "providers": [
         {

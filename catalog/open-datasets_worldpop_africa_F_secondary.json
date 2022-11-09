@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "gridded model",
-        " population data",
-        " school age",
-        " disaggregated",
-        " worldpop"
+        "population data",
+        "school age",
+        "disaggregated",
+        "worldpop"
     ],
     "providers": [
         {

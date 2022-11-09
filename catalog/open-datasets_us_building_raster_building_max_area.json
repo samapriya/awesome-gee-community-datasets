@@ -62,9 +62,9 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Building Footprint",
-        " Built Environment Density",
-        " Land cover",
-        " Land use"
+        "Built Environment Density",
+        "Land cover",
+        "Land use"
     ],
     "providers": [
         {

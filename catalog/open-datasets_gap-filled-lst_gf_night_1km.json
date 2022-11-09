@@ -62,9 +62,9 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Land Surface Temperature",
-        " LST",
-        " MODIS",
-        " gapfilled"
+        "LST",
+        "MODIS",
+        "gapfilled"
     ],
     "providers": [
         {

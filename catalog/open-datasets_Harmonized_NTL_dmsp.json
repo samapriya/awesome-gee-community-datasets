@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "DMSP/OLS data",
-        " VIIRS",
-        " nighttime light",
-        " calibration",
-        " consistent",
-        " global"
+        "VIIRS",
+        "nighttime light",
+        "calibration",
+        "consistent",
+        "global"
     ],
     "providers": [
         {

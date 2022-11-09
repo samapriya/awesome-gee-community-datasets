@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Earthenv",
-        " cloud frequency",
-        " annual",
-        " MODIS",
-        " Global Cloud"
+        "cloud frequency",
+        "annual",
+        "MODIS",
+        "Global Cloud"
     ],
     "providers": [
         {

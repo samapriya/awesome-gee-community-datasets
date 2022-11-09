@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Floodplain",
-        " Digital Elevation Model (DEM)",
-        " Terrain analysis",
-        " river networks",
-        " landscape features"
+        "Digital Elevation Model (DEM)",
+        "Terrain analysis",
+        "river networks",
+        "landscape features"
     ],
     "providers": [
         {
