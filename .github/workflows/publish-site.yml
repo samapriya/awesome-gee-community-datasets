@@ -6,17 +6,30 @@ on:
       - master
 
 jobs:
-  build:
-    name: Deploy docs
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
+      - name: Checkout repository
         uses: actions/checkout@v3
-      - name: remove requirements file
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install Python dependencies
         run: |
-          rm -Rf requirements.txt
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+          pip install \
+            "mkdocs-material" \
+            "cairosvg>=2.5" \
+            "mkdocs-git-committers-plugin-2>=1.1.1" \
+            "mkdocs-git-revision-date-localized-plugin>=1.0" \
+            "mkdocs-minify-plugin>=0.3" \
+            "mkdocs-rss-plugin>=1.2" \
+            "mkdocs-redirects>=1.0" \
+            "pillow<10"
+      - name: Deploy documentation
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: reqs.txt
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdocs gh-deploy --force
+          mkdocs --version
