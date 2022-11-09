@@ -67,9 +67,6 @@ plugins:
     - git-revision-date-localized:
         enable_creation_date: true
         type: timeago
-    - git-committers:
-        repository: samapriya/awesome-gee-community-datasets
-        branch: master
 
 # Extensions
 markdown_extensions:
