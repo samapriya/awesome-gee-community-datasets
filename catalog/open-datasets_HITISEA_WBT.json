@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "thermal-stress indices",
-        " south and southeast asia",
-        " heat index",
-        " humidity index",
-        " wind chill",
-        " apparent temperature"
+        "south and southeast asia",
+        "heat index",
+        "humidity index",
+        "wind chill",
+        "apparent temperature"
     ],
     "providers": [
         {

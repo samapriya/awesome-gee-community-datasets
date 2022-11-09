@@ -62,9 +62,9 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Elevation",
-        " topography",
-        " topobathymetric",
-        " bathymetry"
+        "topography",
+        "topobathymetric",
+        "bathymetry"
     ],
     "providers": [
         {

@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Wind",
-        " energy",
-        " ruggedness index",
-        " capacity factor",
-        " wind speed",
-        " power density"
+        "energy",
+        "ruggedness index",
+        "capacity factor",
+        "wind speed",
+        "power density"
     ],
     "providers": [
         {

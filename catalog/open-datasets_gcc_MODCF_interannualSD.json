@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Earthenv",
-        " mean",
-        " seasonality",
-        " between year",
-        " MODIS",
-        " Global Cloud"
+        "mean",
+        "seasonality",
+        "between year",
+        "MODIS",
+        "Global Cloud"
     ],
     "providers": [
         {

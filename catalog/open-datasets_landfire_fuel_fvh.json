@@ -62,13 +62,13 @@
     "gee:user_uploaded": true,
     "keywords": [
         "doi",
-        " fire",
-        " landfire",
-        " nature-conservancy",
-        " usda",
-        " usgs",
-        " vegetation",
-        " wildfire"
+        "fire",
+        "landfire",
+        "nature-conservancy",
+        "usda",
+        "usgs",
+        "vegetation",
+        "wildfire"
     ],
     "providers": [
         {

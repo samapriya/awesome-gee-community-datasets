@@ -62,12 +62,12 @@
     "gee:user_uploaded": true,
     "keywords": [
         "World Settlement Footprint",
-        " Settlement Extent",
-        " Urbanization",
-        " Earth Observation",
-        " Remote Sensing",
-        " Sentinel-1",
-        " Landsat-8"
+        "Settlement Extent",
+        "Urbanization",
+        "Earth Observation",
+        "Remote Sensing",
+        "Sentinel-1",
+        "Landsat-8"
     ],
     "providers": [
         {

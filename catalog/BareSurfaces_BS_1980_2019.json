@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Bare Earth Surface",
-        " Soil",
-        " Geomorphology",
-        " Landsat",
-        " Bare Surface Frequency"
+        "Soil",
+        "Geomorphology",
+        "Landsat",
+        "Bare Surface Frequency"
     ],
     "providers": [
         {

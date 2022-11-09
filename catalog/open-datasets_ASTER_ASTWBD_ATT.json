@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "ASTER",
-        " DEM",
-        " elevation",
-        " remote sensing",
-        " Water Bodies Database"
+        "DEM",
+        "elevation",
+        "remote sensing",
+        "Water Bodies Database"
     ],
     "providers": [
         {

@@ -62,16 +62,16 @@
     "gee:user_uploaded": true,
     "keywords": [
         "land",
-        " cover",
-        " land use",
-        " land cover",
-        " lulc",
-        " 10m",
-        " global",
-        " world",
-        " sentinel-1",
-        " sentinel 2",
-        " ESA"
+        "cover",
+        "land use",
+        "land cover",
+        "lulc",
+        "10m",
+        "global",
+        "world",
+        "sentinel-1",
+        "sentinel 2",
+        "ESA"
     ],
     "providers": [
         {

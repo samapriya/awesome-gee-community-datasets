@@ -62,20 +62,20 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Geomorpho90m",
-        " geomorphometric layers",
-        " MERIT DEM",
-        " topographic index",
-        " terrain ruggedness index",
+        "geomorphometric layers",
+        "MERIT DEM",
+        "topographic index",
+        "terrain ruggedness index",
         "spi",
-        " global",
-        " topography",
-        " MERIT",
-        " SRTM",
-        " ALOS",
-        " DEM",
-        " terrain",
-        " shuttle",
-        " radar"
+        "global",
+        "topography",
+        "MERIT",
+        "SRTM",
+        "ALOS",
+        "DEM",
+        "terrain",
+        "shuttle",
+        "radar"
     ],
     "providers": [
         {

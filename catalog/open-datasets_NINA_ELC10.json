@@ -62,12 +62,12 @@
     "gee:user_uploaded": true,
     "keywords": [
         "land use",
-        " europe",
-        " land cover",
-        " remote sensing",
-        " copernicus",
-        " sentinel",
-        " satellite"
+        "europe",
+        "land cover",
+        "remote sensing",
+        "copernicus",
+        "sentinel",
+        "satellite"
     ],
     "providers": [
         {
