@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "vegetation",
-        " dryness",
-        " drought",
-        " wildfire",
-        " USA",
-        " live fuel moisture content"
+        "dryness",
+        "drought",
+        "wildfire",
+        "USA",
+        "live fuel moisture content"
     ],
     "providers": [
         {

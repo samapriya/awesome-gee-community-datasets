@@ -62,13 +62,13 @@
     "gee:user_uploaded": true,
     "keywords": [
         "landcover",
-        " landuse",
-        " lulc",
-        " 10m",
-        " global",
-        " world",
-        " sentinel 2",
-        " FROM-GLC"
+        "landuse",
+        "lulc",
+        "10m",
+        "global",
+        "world",
+        "sentinel 2",
+        "FROM-GLC"
     ],
     "providers": [
         {

@@ -62,12 +62,12 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Land Use",
-        " Land Cover",
-        " Urban Watch",
-        " Remote Sensing",
-        " High Resolution",
-        " OBIA",
-        " NOAA"
+        "Land Cover",
+        "Urban Watch",
+        "Remote Sensing",
+        "High Resolution",
+        "OBIA",
+        "NOAA"
     ],
     "providers": [
         {

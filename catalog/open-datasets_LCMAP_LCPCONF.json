@@ -62,12 +62,12 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Landsat",
-        " ARD",
-        " Land Cover",
-        " Spectral Change",
-        " USGS",
-        " EROS",
-        " LCPCONF"
+        "ARD",
+        "Land Cover",
+        "Spectral Change",
+        "USGS",
+        "EROS",
+        "LCPCONF"
     ],
     "providers": [
         {

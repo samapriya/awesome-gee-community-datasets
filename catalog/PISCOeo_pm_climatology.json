@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "reference evapotranspiration",
-        " FAO Penman Monteith",
-        " Peru",
-        " hydrology",
-        " satellite data",
-        " Earth observation"
+        "FAO Penman Monteith",
+        "Peru",
+        "hydrology",
+        "satellite data",
+        "Earth observation"
     ],
     "providers": [
         {

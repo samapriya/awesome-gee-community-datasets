@@ -62,14 +62,14 @@
     "gee:user_uploaded": true,
     "keywords": [
         "landcover",
-        " landuse",
-        " lulc",
-        " 10m",
-        " global",
-        " world",
-        " sentinel",
-        " sentinel 2",
-        " impact observatory"
+        "landuse",
+        "lulc",
+        "10m",
+        "global",
+        "world",
+        "sentinel",
+        "sentinel 2",
+        "impact observatory"
     ],
     "providers": [
         {

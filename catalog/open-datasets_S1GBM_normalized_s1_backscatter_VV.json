@@ -62,15 +62,15 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Mosaic",
-        " Sentinel-1",
-        " Backscatter",
-        " Normalized",
-        " VV",
-        " VH",
-        " polarization",
-        " S1GBM",
-        " European Space Agency",
-        " ESA"
+        "Sentinel-1",
+        "Backscatter",
+        "Normalized",
+        "VV",
+        "VH",
+        "polarization",
+        "S1GBM",
+        "European Space Agency",
+        "ESA"
     ],
     "providers": [
         {

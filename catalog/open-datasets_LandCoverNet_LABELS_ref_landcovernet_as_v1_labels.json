@@ -62,12 +62,12 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Land Use",
-        " Land Cover",
-        " Remote Sensing",
-        " landsat-8",
-        " sentinel-1",
-        " sentinel-2",
-        " segmentation"
+        "Land Cover",
+        "Remote Sensing",
+        "landsat-8",
+        "sentinel-1",
+        "sentinel-2",
+        "segmentation"
     ],
     "providers": [
         {

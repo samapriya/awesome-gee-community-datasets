@@ -62,10 +62,10 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Landsat",
-        " Urban",
-        " Google Earth Engine",
-        " Impervious area",
-        " Urban expansion"
+        "Urban",
+        "Google Earth Engine",
+        "Impervious area",
+        "Urban expansion"
     ],
     "providers": [
         {

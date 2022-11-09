@@ -62,8 +62,8 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Sea Surface Temperature",
-        " SST",
-        " Gridded"
+        "SST",
+        "Gridded"
     ],
     "providers": [
         {

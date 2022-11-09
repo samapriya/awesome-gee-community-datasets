@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Oil palm plantations",
-        " Indonesia",
-        " Malaysia",
-        " Thailand",
-        " Landsat",
-        " Sentinel-1"
+        "Indonesia",
+        "Malaysia",
+        "Thailand",
+        "Landsat",
+        "Sentinel-1"
     ],
     "providers": [
         {

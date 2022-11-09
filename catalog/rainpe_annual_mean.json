@@ -62,15 +62,15 @@
     "gee:user_uploaded": true,
     "keywords": [
         "precipitation",
-        " streamflow",
-        " Peru",
-        " Ecuador",
-        " random forest",
-        " SWAT",
-        " reverse hydrology",
-        " satellite data",
-        " Earth observation",
-        " GIS"
+        "streamflow",
+        "Peru",
+        "Ecuador",
+        "random forest",
+        "SWAT",
+        "reverse hydrology",
+        "satellite data",
+        "Earth observation",
+        "GIS"
     ],
     "providers": [
         {

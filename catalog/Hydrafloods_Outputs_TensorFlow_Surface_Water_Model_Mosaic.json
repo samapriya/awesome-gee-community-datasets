@@ -62,9 +62,9 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Surface Water Mapping",
-        " Floods",
-        " Deep Learning TensorFlow",
-        " SERVIR"
+        "Floods",
+        "Deep Learning TensorFlow",
+        "SERVIR"
     ],
     "providers": [
         {

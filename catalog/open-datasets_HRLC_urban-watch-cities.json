@@ -62,11 +62,11 @@
     "gee:user_uploaded": true,
     "keywords": [
         "Land Use",
-        " Land Cover",
-        " Urban Watch",
-        " Remote Sensing",
-        " High Resolution",
-        " FLUTE"
+        "Land Cover",
+        "Urban Watch",
+        "Remote Sensing",
+        "High Resolution",
+        "FLUTE"
     ],
     "providers": [
         {
