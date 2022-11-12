@@ -4,13 +4,17 @@ These datasets include two separate global projections of future urban land unde
 
 When using these future projections, it is important to recognize that they are based on different methodologies, different training data, and different assumptions about future scenarios. For instance, the Gao & O'Neill dataset considers broad urbanization patterns across 375 sub-regions, while the Chen et al. data uses 32 regions. While both of these datasets are trained using the Global Human Settlement Layer (GHSL), the Chen et al. data are further calibrated against the European Space Agency's Climate Change Initiative (ESA CCI) data for 2015.  There are many other differences and users should ideally go through the assumptions and methodology described in the respective papers before using the data.
 
-As an example of these differences, below is a plot of projected urban percentage over time for Asia for different SSP scenarios from these datasets and the Li et al. (2021) urban extent data, which is also in the community catalog. Note that the Li et al. data are not based on GHSL, but on historical urban extent dataset from nighttime lights:
+As an example of these differences, below is a plot of projected urban percentage over time for Asia for different SSP scenarios from these datasets and the Li et al. (2021) urban extent data, which is also in the community catalog. Note that the Li et al. data are not based on GHSL, but on historical urban extent dataset from nighttime lights
 
 #### Dataset notes
 
 * (Chen et al 2020): This dataset provides future estimates of urban expansion for all Shared Socioeconomic Pathways (SSPs) every 10 years from 2020 to 2100 (inclusive). The data are at 1 km resolution. Pixels have a value of 2 (for urban) or 1 (for non-urban). Each image corresponds to a date and there are separate bands for each SSP scenario.
 
 * (Gao et al 2020): This dataset provides future estimates of urban expansion for all Shared Socioeconomic Pathways (SSPs) every 10 years from 2020 to 2100 (inclusive). The data are at 1/8 degree resolution. Probabilities of conversion of entire grid to urban is provided instead of a binary classification. Each image corresponds to a date and there are separate bands for each SSP scenario.
+
+Also noting that these projections are all over the place. See the figure below (also comparing with the Li et al. data you have already ingested). Always good to have a word of caution about these datasets and encourage users to go back to the paper and understand the various assumptions, methodological differences, and what they might mean for use cases.
+
+![SSPs_compare_Asia](https://user-images.githubusercontent.com/30564889/197263701-a357d3f3-736c-4e5d-9fad-732a856dc4f1.png)
 
 #### Citation
 
