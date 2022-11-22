@@ -67,6 +67,8 @@ plugins:
     - git-revision-date-localized:
         enable_creation_date: true
         type: timeago
+    - minify:
+        minify_html: true
 
 # Extensions
 markdown_extensions:
@@ -200,6 +202,7 @@ nav:
   - Hydrology:
     - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
     - Global 30m Height Above the Nearest Drainage: projects/hand.md
+    - Hydrography 90m Layers: projects/hydro90.md
     - HydroLAKES v1.0: projects/hydrolakes.md
     - HydroATLAS v1.0: projects/hydroatlas.md
     - HydroWaste v1.0: projects/hydrowaste.md

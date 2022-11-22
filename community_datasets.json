@@ -7902,5 +7902,341 @@
     "id": "projects/sat-io/open-datasets/field-maps/edge-matched-humanitarian/adm4_polygons",
     "provider": "FieldMaps, OCHA, geoBoundaries, U.S. Department of State, OpenStreetMap",
     "tags": "Metadata, Political Geography, Open Data, Built Structures, Physical Mapping"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-order_order_hack",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-ORDER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_hack",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-order_order_horton",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-ORDER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_horton",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-order_order_shreve",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-ORDER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_shreve",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-order_order_strahler",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-ORDER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_strahler",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-order_order_topo",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-ORDER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_topo",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: flow_index_cti",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-FLOW-INDEX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/cti",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: flow_index_spi",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-FLOW-INDEX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/spi",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: flow_index_sti",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-FLOW-INDEX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/sti",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_depression",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/depression",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_drainage_basin",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/drainage_basin",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_flow_accumulation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/flow_accumulation",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_flow_direction",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/flow_direction",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_outlet",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/outlet",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_regional_unit",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/regional_unit",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_segment",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/segment",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: base-network-layers_sub_catchment",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-BASE-NETWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/base-network-layers/sub_catchment",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_outlet_diff_dw_basin",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_diff_dw_basin",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_outlet_diff_dw_scatch",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_diff_dw_scatch",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_outlet_dist_dw_basin",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_dist_dw_basin",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_outlet_dist_dw_scatch",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_dist_dw_scatch",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_diff_dw_near",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_dw_near",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_diff_up_farth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_up_farth",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_diff_up_near",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_up_near",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_dist_dw_near",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_dw_near",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_dist_proximity",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_proximity",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_dist_up_farth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_up_farth",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-outlet-distance_stream_dist_up_near",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-OUTLET-DIST",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_up_near",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-slope_slope_curv_max_dw_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-SLOPE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_curv_max_dw_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-slope_slope_curv_min_dw_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-SLOPE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_curv_min_dw_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-slope_slope_elv_dw_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-SLOPE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_elv_dw_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-slope_slope_grad_dw_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-SLOPE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_grad_dw_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_curv_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_curv_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_dist_dw_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_dw_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_dist_up_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_up_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_dist_up_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_up_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_elv_dw_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_dw_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_elv_dw_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_dw_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_elv_up_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_up_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_elv_up_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_up_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_grad_dw_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_dw_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_grad_up_cel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_up_cel",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "HYDROGRAPHY90: stream-channel_channel_grad_up_seg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROGRAPHY90-STREAM-CHANNEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_up_seg",
+    "provider": "Amatulli et al. (2022)",
+    "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
   }
 ]
