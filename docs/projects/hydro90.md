@@ -9,7 +9,7 @@ Hydro–Vector. Improved accuracy was achieved principally by employing a higher
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
 #### Dataset Preprocessing
-The hydrography datasets can (downloaded here](https://hydrography.org/hydrography90m/hydrography90m_layers/). The folders were renamed based on the descriptions of the papers and are included in the tables below. The parameter name were kept consistent and additional information is provided as need along with units for said parameters.
+The hydrography datasets can [downloaded here](https://hydrography.org/hydrography90m/hydrography90m_layers/). The folders were renamed based on the descriptions of the papers and are included in the tables below. The parameter name were kept consistent and additional information is provided as need along with units for said parameters.
 
 #### Paper Citation
 
