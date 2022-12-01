@@ -8238,5 +8238,437 @@
     "id": "projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_up_seg",
     "provider": "Amatulli et al. (2022)",
     "tags": "Hydrology, Hydrography, Slope, Channel, Stream, Runoff, Flow accumulation, Flow direction"
+  },
+  {
+    "title": "USA Structures: AK",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AK",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: AL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AL",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: AR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AR",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: AS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AS",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: AZ",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AZ",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: CA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_CA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: CO",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_CO",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: CT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_CT",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: DC",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_DC",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: DE",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_DE",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: FL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_FL",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: GA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_GA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: GU",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_GU",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: HI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_HI",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: IA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_IA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: ID",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_ID",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: IL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_IL",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: IN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_IN",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: KS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_KS",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: KY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_KY",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: LA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_LA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MD",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: ME",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_ME",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MI",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MN",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MO",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MO",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MP",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MP",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MS",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: MT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_MT",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NC",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NC",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: ND",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_ND",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NE",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NE",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NH",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NH",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NJ",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NJ",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NM",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NM",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: NV",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_NV",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: OH",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_OH",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: OK",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_OK",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: OR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_OR",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: PA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_PA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: PR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_PR",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: RI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_RI",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: SC",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_SC",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: SD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_SD",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: TN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_TN",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: TX",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_TX",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: UT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_UT",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: VA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_VA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: VI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_VI",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: VT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_VT",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: WA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_WA",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: WV",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_WV",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
+  },
+  {
+    "title": "USA Structures: WY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_WY",
+    "provider": "DHS, FEMA, ORNL",
+    "tags": "homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial"
   }
 ]

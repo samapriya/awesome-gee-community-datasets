@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updates 2022-12-01
+- Release 1.0.3 for awesome gee community catalog
+- Updated stats and citation
+- Added [USA Structures](https://samapriya.github.io/awesome-gee-community-datasets/projects/usa_structures)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updates 2022-11-22
 - Added [Hydrography 90m Layers](https://samapriya.github.io/awesome-gee-community-datasets/projects/hydro90)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
