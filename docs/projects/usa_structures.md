@@ -25,7 +25,7 @@ Oak Ridge National Laboratory (ORNL); Federal Emergency Management Agency (FEMA)
 All datasets are in the format
 
 ```js
-var country  = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/US_ST_{Two letter abbreviation for US or territory}');
+var state  = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/US_ST_{Two letter abbreviation for US state or territory}');
 ```
 
 for a list of all US states and territories use this
@@ -34,7 +34,7 @@ for a list of all US states and territories use this
 var ee_folder = ee.data.listAssets("projects/sat-io/open-datasets/ORNL/USA-STRUCTURES");
 ```
 
-Here are some example setups for two countries
+Here are some example setups for two states/territories
 
 ```js
 var dc = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_DC')
