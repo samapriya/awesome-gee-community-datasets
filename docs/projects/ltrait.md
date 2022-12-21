@@ -66,6 +66,8 @@ var vis_vi = {min:7 , max: 22, palette: ["ffffd9", "edf8b1", "c7e9b4", "7fcdbb",
 Map.addLayer(SLA, vis_vi,  'SLA (mm2 / g)',true)
 ```
 
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS
+
 #### License
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any
 medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link
