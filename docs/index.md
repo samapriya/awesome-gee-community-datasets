@@ -1,6 +1,6 @@
 # awesome-gee-community-catalog
 
-![Mastodon Follow](https://img.shields.io/mastodon/follow/109627075086849826?domain=https%3A%2F%2Fmapstodon.space%2F)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109627075086849826?domain=https%3A%2F%2Fmapstodon.space%2F)](https://mapstodon.space/@samapriya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samapriya/)
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 [![Twitter URL](https://img.shields.io/twitter/follow/samapriyaroy?style=social)](https://twitter.com/intent/follow?screen_name=samapriyaroy)
