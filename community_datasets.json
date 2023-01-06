@@ -8734,5 +8734,29 @@
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LDMC_sd_1km_v3",
     "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat"
+  },
+  {
+    "title": "Open Canada Elevation HRDEM Footprints",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/OPEN-CANADA-HRDEM",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/dataset_footprints",
+    "provider": " CanElevation Series, Gov of Canada",
+    "tags": "digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm"
+  },
+  {
+    "title": "Open Canada Elevation HRDEM Digital Surface Model",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/OPEN-CANADA-HRDEM",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DSM",
+    "provider": " CanElevation Series, Gov of Canada",
+    "tags": "digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm"
+  },
+  {
+    "title": "Open Canada Elevation HRDEM Digital Terrain Model",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/OPEN-CANADA-HRDEM",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DTM",
+    "provider": " CanElevation Series, Gov of Canada",
+    "tags": "digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm"
   }
 ]
