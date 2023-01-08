@@ -8758,5 +8758,141 @@
     "id": "projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DTM",
     "provider": " CanElevation Series, Gov of Canada",
     "tags": "digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AfricaCenter",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaCenter",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AfricaEast",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaEast",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AfricaNorth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaNorth",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AfricaSouth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaSouth",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AfricaWest",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaWest",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AmericaCenter",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/AmericaCenter",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AsiaCenter",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Asia/AsiaCenter",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AsiaNorth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Asia/AsiaNorth",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AsiaSouth",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Asia/AsiaSouth",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: AsiaSouthEast",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Asia/AsiaSouthEast",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: Canada",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Canada",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: CaribbeanIslands",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/CaribbeanIslands",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: EU",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/EU",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: MiddleEast",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/MiddleEast",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: Oceania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Oceania",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: SouthAmerica",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/SouthAmerica",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Microsoft Bing Mined Roads: US",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
+    "type": "table",
+    "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/US",
+    "provider": "Microsoft",
+    "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
   }
 ]
