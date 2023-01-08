@@ -5,17 +5,18 @@
 Bing Maps is releasing mined roads around the world. We have detected 47.8M km of all roads and 1165K km of roads missing from OSM. Mining is performed with Bing Maps imagery between 2020 and 2022 including Maxar and Airbus. Datasets were provided in tsv formats and additional steps were used to convert them into GEE ready formatting.
 
 #### Data generation details
-The road extraction is done in four stages (full drop went through two stages and OSM missing set went through all four):
-1.	Semantic Segmentation – Recognizing road pixels on the aerial image using Convolutional Neural Network (CNN).
-2.	Geometry Generation - A series of algorithms and processes transforming output of semantic segmentation into roads in geometry format.
-    - Image postprocessing
-    - Thinning
-    - Connectivity improvement
-    - Graph construction
-    - Finalizing road shapes and network quality
-    - Stiching road geojsons between neighboring images where needed
-3.  Conflation & Cutting - Excluding roads and parts of roads that already exist in the road network (OSM).
-4.  Classification - A classifier to filter out low-confidence roads and predict a road type.
+The road extraction is done in four stages (full drop went through two stages and OSM missing set went through all four)
+
++ Semantic Segmentation – Recognizing road pixels on the aerial image using Convolutional Neural Network (CNN).
++ Geometry Generation - A series of algorithms and processes transforming output of semantic segmentation into roads in geometry format.
+    1. Image postprocessing
+    2. Thinning
+    3. Connectivity improvement
+    4. Graph construction
+    5. Finalizing road shapes and network quality
+    6. Stiching road geojsons between neighboring images where needed
++ Conflation & Cutting - Excluding roads and parts of roads that already exist in the road network (OSM).
++ Classification - A classifier to filter out low-confidence roads and predict a road type.
 
 You can find [additional information here](https://github.com/microsoft/RoadDetections).
 
