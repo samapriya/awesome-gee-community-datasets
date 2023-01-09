@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-01-08
+- Release 1.0.3 for awesome gee community catalog
+- Added new dataset for insiders program [Canada High Resolution Digital Elevation Model (HRDEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrdem/)
+- Added new dataset for insiders program [Microsoft Bing Global Mined Roads](https://samapriya.github.io/awesome-gee-community-datasets/projects/msroads)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
+
 #### Updates 2022-12-20
 - Created community [catalog insiders program you can sign up here if you are a sponsor or contributor](https://gee-community-catalog.org/insiders)
 - Added new dataset [Global Leaf trait estimates for land modelling](https://gee-community-catalog.org/projects/ltrait/)
@@ -10,7 +17,7 @@
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 #### Updates 2022-12-01
-- Release 1.0.3 for awesome gee community catalog
+- Release 1.0.2 for awesome gee community catalog
 - Updated stats and citation
 - Added [USA Structures](https://samapriya.github.io/awesome-gee-community-datasets/projects/usa_structures)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
