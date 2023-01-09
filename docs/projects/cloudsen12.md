@@ -17,24 +17,13 @@ CloudSEN12 is a large dataset for cloud semantic understanding that consists of 
 #### Data Citation
 
 ```
-Cesar Aybar, Luis Ysuhuaylas, Jhomira Loja, Karen Gonzales, Fernando Herrera,
-Lesly Bautista, Roy Yali, Angie Flores, Lissette Diaz, Nicole Cuenca, Wendy
-Espinoza, Fernando Prudencio, Joselyn Inga, Valeria LLactayo, David Montero,
-Martin Sudmanns, Dirk Tiede, Gonzalo Mateo-García, & Luis Gómez-Chova. (2022).
-CloudSEN12 - a global dataset for semantic understanding of cloud and cloud
-shadow in Sentinel-2 (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.
-7034410
+Aybar, C. et al. CloudSEN12 - a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2. Science Data Bank https://doi.org/10.57760/sciencedb.06669 (2022).
 ```
 
 #### Paper Citation
 
 ```
-Cesar Aybar, Luis Ysuhuaylas, Jhomira Loja, Karen Gonzales, Fernando Herrera,
-Lesly Bautista, Roy Yali, Angie Flores, Lissette Diaz, Nicole Cuenca, Wendy
-Espinoza, Fernando Prudencio, Joselyn Inga, Valeria LLactayo, David Montero,
-Martin Sudmanns, Dirk Tiede, Gonzalo Mateo-García, & Luis Gómez-Chova. (2022).
-CloudSEN12 - a global dataset for semantic understanding of cloud and cloud
-shadow in Sentinel-2. https://eartharxiv.org/repository/view/3615/
+Aybar, C., Ysuhuaylas, L., Loja, J. et al. CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2. Sci Data 9, 782 (2022). https://doi.org/10.1038/s41597-022-01878-2
 ```
 
 <center>
