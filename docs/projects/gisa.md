@@ -11,7 +11,7 @@ pixel value[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2
 
 You can [download the dataset here](https://zenodo.org/record/5136330)
 
-You can read about the [methodology in the paper here](https://www.nature.com/articles/s41597-021-00982-z)
+You can read about the [methodology in the paper here](https://doi.org/10.1007/s11430-020-9797-9)
 
 #### Citation
 
