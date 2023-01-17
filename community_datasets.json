@@ -8888,6 +8888,14 @@
     "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
   },
   {
+    "title": "RADD Forest Disturbance Alert",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/RADD-FOREST-ALERT",
+    "type": "image_collection",
+    "id": "projects/radar-wur/raddalert/v1",
+    "provider": "J Reiche, J Balling, M Herold, B Slagter, NE Tsendbazar",
+    "tags": "Forest, Deforestation, Alerts, NBS, Sentinel-1, Radar"
+  },
+  {
     "title": "Microsoft Bing Mined Roads: US",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS",
     "type": "table",

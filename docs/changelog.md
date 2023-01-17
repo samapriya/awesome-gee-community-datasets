@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-01-17
+- Added new dataset [RADD Forest Disturbance Alert](https://samapriya.github.io/awesome-gee-community-datasets/projects/radd/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-01-08
 - Release 1.0.3 for awesome gee community catalog
 - Added new dataset for insiders program [Canada High Resolution Digital Elevation Model (HRDEM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrdem/)

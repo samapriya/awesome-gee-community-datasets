@@ -293,5 +293,6 @@ nav:
       - Global large flood events (1985-2016): projects/flood.md
       - Global Landslide Catalog (1970-2019): projects/landslide.md
       - MAXAR Open Data Events: projects/maxar_opendata.md
+      - RADD Forest Disturbance Alert: projects/radd.md
       - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
   - License: license.md
