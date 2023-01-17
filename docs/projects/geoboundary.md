@@ -73,6 +73,8 @@ var SSCU_ADM4 = ee.FeatureCollection('projects/earthengine-legacy/assets/project
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES
 
+#### Code Attribution
+Code Provided by Ujaval Gandhi: www.spatialthoughts.com
 
 #### License
 
