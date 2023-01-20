@@ -4,6 +4,7 @@
 
 #### Updated 2023-01-17
 - Added new dataset [RADD Forest Disturbance Alert](https://samapriya.github.io/awesome-gee-community-datasets/projects/radd/)
+- Added new dataset [Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA)](https://samapriya.github.io/awesome-gee-community-datasets/projects/vodca/)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 #### Updated 2023-01-08

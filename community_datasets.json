@@ -8902,5 +8902,29 @@
     "id": "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/US",
     "provider": "Microsoft",
     "tags": "Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM"
+  },
+  {
+    "title": "Global Long-term Microwave Vegetation Optical Depth Climate Archive: C-BAND",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/VODCA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/VODCA/C-BAND",
+    "provider": "Moesinger, Leander, Wouter Dorigo, Richard de Jeu, Robin van der Schalie, Tracy Scanlon, Irene Teubner, and Matthias Forkel",
+    "tags": "VOD, Vegetation Optical Depth, Biomass, Vegetation water content, Microwave Remote Sensing, Biosphere, Time Series, global, vegetation"
+  },
+  {
+    "title": "Global Long-term Microwave Vegetation Optical Depth Climate Archive: K-BAND",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/VODCA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/VODCA/K-BAND",
+    "provider": "Moesinger, Leander, Wouter Dorigo, Richard de Jeu, Robin van der Schalie, Tracy Scanlon, Irene Teubner, and Matthias Forkel",
+    "tags": "VOD, Vegetation Optical Depth, Biomass, Vegetation water content, Microwave Remote Sensing, Biosphere, Time Series, global, vegetation"
+  },
+  {
+    "title": "Global Long-term Microwave Vegetation Optical Depth Climate Archive: X-BAND",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/VODCA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/VODCA/X-BAND",
+    "provider": "Moesinger, Leander, Wouter Dorigo, Richard de Jeu, Robin van der Schalie, Tracy Scanlon, Irene Teubner, and Matthias Forkel",
+    "tags": "VOD, Vegetation Optical Depth, Biomass, Vegetation water content, Microwave Remote Sensing, Biosphere, Time Series, global, vegetation"
   }
 ]
