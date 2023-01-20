@@ -13,6 +13,16 @@ copyright: "Copyright &copy; 2022 - 2023 Samapriya Roy"
 # Configuration
 theme:
   name: "material"
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
 
   # 404 page
   static_templates:
