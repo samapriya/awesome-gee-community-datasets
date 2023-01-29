@@ -8926,5 +8926,69 @@
     "id": "projects/sat-io/open-datasets/VODCA/X-BAND",
     "provider": "Moesinger, Leander, Wouter Dorigo, Richard de Jeu, Robin van der Schalie, Tracy Scanlon, Irene Teubner, and Matthias Forkel",
     "tags": "VOD, Vegetation Optical Depth, Biomass, Vegetation water content, Microwave Remote Sensing, Biosphere, Time Series, global, vegetation"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Average",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/average",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Maximum",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/maximum",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Median",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/median",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Minimum",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/minimum",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Average Masked",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/average_masked",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "EOG Annual VIIRS Night Time Light: Median Masked",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/EOG_VNL_V21/median_masked",
+    "provider": "Colorado School of Mines, Elvidge et al. 2019",
+    "tags": "Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines"
+  },
+  {
+    "title": "Canada Landsat Derived Forest harvest disturbance 1985-2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST(1985-2020)",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Harvest_1985-2020",
+    "provider": "Hermosilla et al. 2016",
+    "tags": "Forest Harvest, Forest inventory, Land cover, Landsat, Machine learning"
+  },
+  {
+    "title": "Canada Landsat Derived Wildfire disturbance 1985-2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE(1985-2020)",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Fire_1985-2020",
+    "provider": "Hermosilla et al. 2016",
+    "tags": "Forest Fire, Forest inventory, Land cover, Landsat, Machine learning"
   }
 ]
