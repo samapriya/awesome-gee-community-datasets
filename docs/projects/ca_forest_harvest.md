@@ -31,7 +31,7 @@ monitoring. International Journal of Digital Earth 9(11), 1035-1054 ( Hermosilla
 var ca_forest_harvest = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Harvest_1985-2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST(1985-2020)
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST-1985-2020
 
 #### License
 This work is licensed under and freely available to the public Open Government Licence - Canada.

@@ -8977,7 +8977,7 @@
   },
   {
     "title": "Canada Landsat Derived Forest harvest disturbance 1985-2020",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST(1985-2020)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST-1985-2020",
     "type": "image",
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Harvest_1985-2020",
     "provider": "Hermosilla et al. 2016",
@@ -8985,7 +8985,7 @@
   },
   {
     "title": "Canada Landsat Derived Wildfire disturbance 1985-2020",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE(1985-2020)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-1985-2020",
     "type": "image",
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Fire_1985-2020",
     "provider": "Hermosilla et al. 2016",
