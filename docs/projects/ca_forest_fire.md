@@ -11,8 +11,8 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 #### Dataset Citation
 
 ```
-Hermosilla, T., M.A. Wulder, J.C. White, N.C. Coops, G.W. Hobart, L.B. Campbell, 2016. Mass data processing of time series Landsat imagery: pixels
-to data products for forest monitoring. International Journal of Digital Earth 9(11), 1035-1054 ( Hermosilla et al. 2016).
+Hermosilla, T., Wulder, M.A., White, J.C., Coops, N.C., Hobart, G.W., Campbell, L.B., 2016. Mass data processing of time series Landsat imagery:
+pixels to data products for forest monitoring. International Journal of Digital Earth 9(11), 1035-1054.
 ```
 
 ![ca_forest_harvest_small](https://user-images.githubusercontent.com/6677629/215292086-0b98bb65-e49a-479e-9fd4-4422d49e426e.gif)
