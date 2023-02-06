@@ -8990,5 +8990,13 @@
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Fire_1985-2020",
     "provider": "Hermosilla et al. 2016",
     "tags": "Forest Fire, Forest inventory, Land cover, Landsat, Machine learning"
+  },
+  {
+    "title": "swissSURFACE3D Raster Digital Surface Model (DSM)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/swiss3D-RASTER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/swissSURFACE3D",
+    "provider": "Federal Office of Topography swisstopo",
+    "tags": "LIDAR, Digital Surface Model, DSM, Topography"
   }
 ]
