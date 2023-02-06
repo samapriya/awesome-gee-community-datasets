@@ -2,6 +2,14 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-02-07
+- Release 1.0.4 for awesome gee community catalog
+- Added new dataset [Canada Landsat Derived Forest harvest disturbance 1985-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_forest_harvest)
+- Added new dataset [Canada Landsat Derived Forest fire disturbance 1985-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_forest_fire)
+- Added new dataset for insiders program [EOG Annual VIIRS Night Time Light (2013-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/eog_viirs_ntl)
+- Added new dataset for insiders program [swissSURFACE3D Raster Digital Surface Model (DSM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/swiss3d)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-01-17
 - Added new dataset [RADD Forest Disturbance Alert](https://samapriya.github.io/awesome-gee-community-datasets/projects/radd/)
 - Added new dataset [Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA)](https://samapriya.github.io/awesome-gee-community-datasets/projects/vodca/)

@@ -507,7 +507,7 @@
     "title": "Mapbiomas: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_integration_v1",
+    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas_collection70_integration_v2",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon"
   },
@@ -515,7 +515,7 @@
     "title": "Mapbiomas: Maps of transition areas (change in coverage or use) between selected years",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_transitions_v1",
+    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas_collection70_transitions_v3",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
   },
@@ -523,7 +523,7 @@
     "title": "Mapbiomas: Maps of quality (change in coverage or use) between selected years",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection5/mapbiomas_collection50_quality_v1",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_quality_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
   },
