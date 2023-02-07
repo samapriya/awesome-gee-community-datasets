@@ -280,14 +280,6 @@
     "tags": "Global, Mangrove, GMW"
   },
   {
-    "title": "Global Mangrove Extent 2016",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
-    "type": "table",
-    "id": "projects/sat-io/open-datasets/GMW/GMW_2016_v2",
-    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
-    "tags": "Global, Mangrove, GMW"
-  },
-  {
     "title": "Cloud Forest Prediction",
     "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
     "type": "image",
@@ -576,26 +568,26 @@
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },
   {
-    "title": "Mapbiomas: Maps of annual burned coverage Collection 6",
+    "title": "Mapbiomas: Maps of annual burned coverage Collection 7",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-annual-burned-coverage-1",
+    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-annual-burned-coverage-1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },
   {
-    "title": "Mapbiomas: Maps of monthly burned coverage Collection 6",
+    "title": "Mapbiomas: Maps of monthly burned coverage Collection 7",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-monthly-burned-coverage-1",
+    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-monthly-burned-coverage-1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },
   {
-    "title": "Mapbiomas: Maps of fire frequency Collection 6",
+    "title": "Mapbiomas: Maps of fire frequency Collection 7",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-fire-collection1-fire-frequency-1",
+    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-fire-frequency-1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },

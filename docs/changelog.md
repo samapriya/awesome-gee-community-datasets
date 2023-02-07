@@ -9,6 +9,7 @@
 - Added new dataset for insiders program [EOG Annual VIIRS Night Time Light (2013-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/eog_viirs_ntl)
 - Added new dataset for insiders program [swissSURFACE3D Raster Digital Surface Model (DSM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/swiss3d)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+- Mapbiomas [Landsat collections for collection 7 was removed by provider](https://gee-community-catalog.org/projects/mapbiomas)
 
 #### Updated 2023-01-17
 - Added new dataset [RADD Forest Disturbance Alert](https://samapriya.github.io/awesome-gee-community-datasets/projects/radd/)
