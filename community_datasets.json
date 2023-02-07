@@ -528,10 +528,10 @@
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition"
   },
   {
-    "title": "Mapbiomas: Mosaic of Landsat Images for each year of Collection 6",
+    "title": "Mapbiomas: Mosaic tiles of Landsat Images for each year of Collection 7",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/mosaics",
+    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/BRAZIL/mosaics-2",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic"
   },
