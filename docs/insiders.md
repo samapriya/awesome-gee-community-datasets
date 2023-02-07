@@ -13,4 +13,4 @@ What do you get when you sign up for the Insiders program?
 
 Any and all support is appreciated you can sponsor the project using the sponrship links as well as contributing and helping data curation for the catalog.
 
-*All datasets that are part of the insiders’ program are released within a month to the general catalog, along with the monthly release cycle for the catalog.*
+*All datasets that are part of the insiders’ program are released within a few months to the general catalog, along with the monthly release cycle for the catalog.*
