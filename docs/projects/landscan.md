@@ -54,6 +54,14 @@ var landscan_hd = ee.ImageCollection("projects/sat-io/open-datasets/ORNL/LANDSCA
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-HD
 
+#### User Contributed Code
+
+The code snippet shows how to use the Landscan Global population dataset to plot a time series chart comparing changes in the yearly population of two regions from 2000-2020.
+
+Code link: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/LANDSCAN-POPULATION-COMPARE
+
+Code Attribution Source: [Ujaval Gandhi](https://www.spatialthoughts.com/)
+
 #### License
 
 These datasets are offered under the Creative Commons Attribution 4.0 International License. Users are free to use, copy, distribute, transmit, and adapt the data for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
