@@ -11,6 +11,6 @@ What do you get when you sign up for the Insiders program?
 * This will give you early access to certain datasets as they are being processed, reviewed and some unreleased yet.
 * You will also recieve changelog and updates emails once in a while and you can post to the google group with questions, concerns and thoughts
 
-Any and all support is appreciated you can sponsor the project using the sponrship links as well as contributing and helping data curation for the catalog.
+Any and all support is appreciated you can sponsor the project using the sponsorship links as well as contributing and helping data curation for the catalog.
 
 *All datasets that are part of the insiders’ program are released within a few months to the general catalog, along with the monthly release cycle for the catalog.*
