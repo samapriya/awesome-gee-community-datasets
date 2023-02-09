@@ -183,6 +183,7 @@ nav:
       - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
       - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
       - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
+      - Global Soil bioclimatic variables: projects/soil_bioclim.md
   - Global Land Use and Land Cover:
       - Global Mangrove Project: projects/mangrove.md
       - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
