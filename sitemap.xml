@@ -711,6 +711,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/samapriya/projects/soil_bioclim/</loc>
+         <lastmod>2023-02-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/samapriya/projects/soil_nematode/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
