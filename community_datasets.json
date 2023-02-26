@@ -9006,5 +9006,13 @@
     "id": "projects/crowtherlab/soil_bioclim/SBIO_v2_5_15cm",
     "provider": "Jonas Lembrechts & Johan van den Hoogen",
     "tags": "Bioclim, soil, soil temperature, climate"
+  },
+  {
+    "title": "High-Res water body dataset for tundra and boreal forests North America",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HRES-INLAND-WB-NA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/HYDRO/wbd_fixed_geoms",
+    "provider": "National Tibetan Plateau Data Center",
+    "tags": "Hydrology, Boreal, Tundra, water body"
   }
 ]

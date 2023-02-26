@@ -222,6 +222,7 @@ nav:
       - HydroWaste v1.0: projects/hydrowaste.md
       - Global River Classification (GloRiC): projects/gloric.md
       - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
+      - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
       - Global River Width from Landsat (GRWL): projects/grwl.md
       - Global coastal rivers and environmental variables: projects/rivermouth.md
       - Global River Deltas and vulnerability: projects/river_deltas.md
