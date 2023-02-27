@@ -67,7 +67,7 @@ Both databases have been developed by the Oxford Sustainable Finance Programme, 
 #### License
 The Global Database of Cement Production Assets can be used by others and is available under a CC BY 4.0 license
 
-Data download page: [Download Request Form](https://spatialfinanceinitiative.com/geoasset-project/data/)
+Data download page: [Download Request Form](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/geoasset-databases/)
 
 Curated in GEE by: Samapriya Roy
 
