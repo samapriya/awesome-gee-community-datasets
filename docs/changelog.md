@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-02-28
+- Added new dataset [High-Res water body dataset for tundra and boreal forests North America](https://samapriya.github.io/awesome-gee-community-datasets/projects/nawbd)
+- Added new dataset [Global Soil bioclimatic variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_bioclim)
+- Updated [USA Structures](https://samapriya.github.io/awesome-gee-community-datasets/projects/usa_structures) to include NY and WI
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-02-07
 - Release 1.0.4 for awesome gee community catalog
 - Added new dataset [Canada Landsat Derived Forest harvest disturbance 1985-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_forest_harvest)
