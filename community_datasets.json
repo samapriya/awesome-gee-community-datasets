@@ -9030,5 +9030,21 @@
     "id": "projects/sat-io/open-datasets/HYDRO/wbd_fixed_geoms",
     "provider": "National Tibetan Plateau Data Center",
     "tags": "Hydrology, Boreal, Tundra, water body"
+  },
+  {
+    "title": "GFSAD Global Cropland Extent Product (GCEP)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GCEP-30-CROPLAND-EXTENT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GFSAD/GCEP30",
+    "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+    "tags": "Landsat, Global Food, Cropland Extent, GEE, USGS, EROS"
+  },
+  {
+    "title": "GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LGRIP-30-CROPLAND-EXTENT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GFSAD/LGRIP30",
+    "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
+    "tags": "Landsat, Global Food, Cropland Extent, GEE, USGS, EROS"
   }
 ]

@@ -2,9 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
-#### Updated 2023-02-28
+#### Updated 2023-03-01
 - Added new dataset [High-Res water body dataset for tundra and boreal forests North America](https://samapriya.github.io/awesome-gee-community-datasets/projects/nawbd)
 - Added new dataset [Global Soil bioclimatic variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_bioclim)
+- Added new dataset [GFSAD Global Cropland Extent Product (GCEP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcep30)
+- Added new dataset [GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP)](https://samapriya.github.io/awesome-gee-community-datasets/projects/lgrip30)
 - Updated [USA Structures](https://samapriya.github.io/awesome-gee-community-datasets/projects/usa_structures) to include NY and WI
 - Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
