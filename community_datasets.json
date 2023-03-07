@@ -9046,5 +9046,37 @@
     "id": "projects/sat-io/open-datasets/GFSAD/LGRIP30",
     "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)",
     "tags": "Landsat, Global Food, Cropland Extent, GEE, USGS, EROS"
+  },
+  {
+    "title": "Mismanaged Plastic Waste River Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/MPW/changeMap",
+    "provider": "Björn Nyberg et al",
+    "tags": "Rivers, Plastic, Mismanaged plastic waste"
+  },
+  {
+    "title": "Mismanaged Plastic Waste River Impact",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/MPW/riverImpact",
+    "provider": "Björn Nyberg et al",
+    "tags": "Rivers, Plastic, Mismanaged plastic waste"
+  },
+  {
+    "title": "Mismanaged Plastic Waste River Type",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/MPW/Plastics_Env",
+    "provider": "Björn Nyberg et al",
+    "tags": "Rivers, Plastic, Mismanaged plastic waste"
+  },
+  {
+    "title": "Mismanaged Plastic Waste MPW input 2015",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/MPW/MPW_data",
+    "provider": "Björn Nyberg et al",
+    "tags": "Rivers, Plastic, Mismanaged plastic waste"
   }
 ]
