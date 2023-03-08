@@ -44,9 +44,12 @@ Sample code : https://code.earthengine.google.com/?scriptPath=users/sat-io/aweso
 
 For more information about how to work with HISTARFM and some examples of how to improve your research and applications with the HISTARFM database, visit the tutorial [here](https://developers.google.com/earth-engine/tutorials/community/histarfm-cloud-and-gap-free-landsat).
 
-The HISTARFM database was used in the following papers:
+The HISTARFM database was used in the following papers
+
 - Martínez-Ferrer, L., et al. "Quantifying uncertainty in high resolution biophysical variable retrieval with machine learning." Remote Sensing of Environment 280 (2022): 113199.
+
 - Salerno, L., et al. "Satellite Analyses Unravel the Multi-Decadal Impact of Dam Management on Tropical Floodplain Vegetation." Frontiers in Environmental Science (2022): 357.
+
 - Kushal, K. C., and Sami Khanal. "Agricultural productivity and water quality tradeoffs of winter cover crops at a landscape scale through the lens of remote sensing." Journal of Environmental Management 330 (2023): 117212.
 
 #### License
