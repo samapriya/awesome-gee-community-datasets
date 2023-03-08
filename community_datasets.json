@@ -9078,5 +9078,21 @@
     "id": "projects/sat-io/open-datasets/MPW/MPW_data",
     "provider": "Björn Nyberg et al",
     "tags": "Rivers, Plastic, Mismanaged plastic waste"
+  },
+  {
+    "title": "HIghly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database V5",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:reflectance-products/HISTARFM-V5-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/ee-kalman-gap-filled/assets/histarfm_v5",
+    "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
+    "tags": "Land reflectance images, gap-filled temporal series, vegetation"
+  },
+  {
+    "title": "HIghly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database CONUS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:reflectance-products/HISTARFM-V5-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/KalmanGFwork/GFLandsat_V1",
+    "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
+    "tags": "Land reflectance images, gap-filled temporal series, vegetation"
   }
 ]
