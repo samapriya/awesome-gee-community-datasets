@@ -16,7 +16,7 @@ To access the HISTARFM dataset, you need to join the HISTARFM google group once 
 ![histarfrm_signup](https://user-images.githubusercontent.com/6677629/223832893-a00d1cfc-646f-4cab-a9c4-eca05b0cd3e7.gif)
 
 
-#### Dataset citation
+#### Citation
 
 ```
 Moreno-Martínez, Álvaro, Emma Izquierdo-Verdiguier, Marco P. Maneta, Gustau Camps-Valls, Nathaniel Robinson, Jordi Muñoz-Marí, Fernando Sedano,
