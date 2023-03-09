@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-03-09
+- Release 1.0.5 for awesome gee community catalog
+- Added new dataset [Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/histarfm)
+- Added new dataset [Mismanaged Plastic Waste Dataset in Rivers](https://samapriya.github.io/awesome-gee-community-datasets/projects/mpw)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+- Added new dataset category **Analysis Ready Data**
+
 #### Updated 2023-03-01
 - Added new dataset [High-Res water body dataset for tundra and boreal forests North America](https://samapriya.github.io/awesome-gee-community-datasets/projects/nawbd)
 - Added new dataset [Global Soil bioclimatic variables](https://samapriya.github.io/awesome-gee-community-datasets/projects/soil_bioclim)

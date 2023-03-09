@@ -9085,7 +9085,7 @@
     "type": "image_collection",
     "id": "projects/ee-kalman-gap-filled/assets/histarfm_v5",
     "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
-    "tags": "Land reflectance images, gap-filled temporal series, vegetation"
+    "tags": "MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation"
   },
   {
     "title": "HIghly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database CONUS",
@@ -9093,6 +9093,6 @@
     "type": "image_collection",
     "id": "projects/KalmanGFwork/GFLandsat_V1",
     "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
-    "tags": "Land reflectance images, gap-filled temporal series, vegetation"
+    "tags": "MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation"
   }
 ]

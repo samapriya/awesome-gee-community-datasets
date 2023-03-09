@@ -53,12 +53,11 @@ The HISTARFM database was used in the following papers
 - Kushal, K. C., and Sami Khanal. "Agricultural productivity and water quality tradeoffs of winter cover crops at a landscape scale through the lens of remote sensing." Journal of Environmental Management 330 (2023): 117212.
 
 #### License
-The HISTARFM model is licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the [License here](http://www.apache.org/licenses/LICENSE-2.0)
 
 The dataset is licensed under a [Creative Commons Attribution NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) license.
 
 Curated by: Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton.
 
-Keywords: Land reflectance images, gap-filled temporal series, vegetation.
+Keywords: MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation
 
 Last updated: 06-03-2023
