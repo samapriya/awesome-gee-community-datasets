@@ -242,6 +242,7 @@ nav:
       - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
       - Aqualink ocean surface and subsurface temperature subset: projects/aqualink.md
       - Plastic Inputs from Rivers into Oceans: projects/plastic.md
+      - Mismanaged Plastic Waste Dataset in Rivers: projects/mpw.md
   - Agriculture, Vegetation and Forestry:
       - Landfire Mosaics LF v2.2.0: projects/landfire.md
       - Vegetation dryness for western USA: projects/veg_dry.md
@@ -268,6 +269,8 @@ nav:
       - Tile Drained Croplands (30m): projects/tile.md
       - Global crop production tillage practices: projects/tillage.md
       - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
+  - Analysis Ready Data:
+      - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
   - Global Utilities, Assets and Amenities Layers:
       - Global Power: projects/global_power.md
       - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md

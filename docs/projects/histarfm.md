@@ -40,7 +40,7 @@ var histarfm_conus = ee.ImageCollection("projects/KalmanGFwork/GFLandsat_V1")
 var histarfm_ic = ee.ImageCollection("projects/ee-kalman-gap-filled/assets/histarfm_v5")
 ```
 
-Sample code : https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples/HISTARFM-V5-EXAMPLE
+Sample code : https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/HISTARFM-V5-EXAMPLE
 
 For more information about how to work with HISTARFM and some examples of how to improve your research and applications with the HISTARFM database, visit the tutorial [here](https://developers.google.com/earth-engine/tutorials/community/histarfm-cloud-and-gap-free-landsat).
 
