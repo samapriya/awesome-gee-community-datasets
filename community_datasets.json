@@ -9094,5 +9094,37 @@
     "id": "projects/KalmanGFwork/GFLandsat_V1",
     "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
     "tags": "MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation"
+  },
+  {
+    "title": "Digital Earth Africa's cropland extent map Africa 2019: Filtered",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/filtered",
+    "provider": "Digital Earth Africa",
+    "tags": "agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability"
+  },
+  {
+    "title": "Digital Earth Africa's cropland extent map Africa 2019: Mask",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/mask",
+    "provider": "Digital Earth Africa",
+    "tags": "agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability"
+  },
+  {
+    "title": "Digital Earth Africa's cropland extent map Africa 2019: Probability",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/prob",
+    "provider": "Digital Earth Africa",
+    "tags": "agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability"
+  },
+  {
+    "title": "Digital Earth Africa's cropland extent map Africa 2019 Validation points",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/validation",
+    "provider": "Digital Earth Africa",
+    "tags": "agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability"
   }
 ]
