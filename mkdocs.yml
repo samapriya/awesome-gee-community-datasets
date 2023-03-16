@@ -179,9 +179,7 @@ nav:
       - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
       - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
       - ÍslandsDEM v1.0 10m: projects/iceland_dem.md
-      - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
       - DEM France (Continental) 5m IGN RGE Alti: projects/france5m.md
-      - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
   - Soil Properties:
       - Soil Grids 250m v2.0: projects/isric.md
       - Soil Properties 800m: projects/soilprop.md
@@ -281,9 +279,7 @@ nav:
       - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
       - Harmonized Global Night Time Lights (1992-2020): projects/hntl.md
       - Global NPP-VIIRS-like nighttime light (2000-2020): projects/npp_viirs_ntl.md
-      - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
       - Global Roads Inventory Project: projects/grip.md
-      - Microsoft Bing Global Mined Roads: projects/msroads.md
       - Global Mining Areas and Validation Datasets: projects/global_mining.md
       - Global Healthsites Mapping Project: projects/health_sites.md
       - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
