@@ -9126,5 +9126,21 @@
     "id": "projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/validation",
     "provider": "Digital Earth Africa",
     "tags": "agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability"
+  },
+  {
+    "title": "Canada Forest Age 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-AGE-2019",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_forest_age_2019",
+    "provider": "Maltman et al. (2023)",
+    "tags": "Forest age, Forest inventory, Land cover, Landsat, Time since disturbance"
+  },
+  {
+    "title": "Canada Forest Age 2019 Approach",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-AGE-2019",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA-FOREST-AGE-2019-APPROACH",
+    "provider": "Maltman et al. (2023)",
+    "tags": "Forest age, Forest inventory, Land cover, Landsat, Time since disturbance"
   }
 ]

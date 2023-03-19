@@ -255,6 +255,7 @@ nav:
       - High Resolution Tree Species Information for Canada: projects/ca_species.md
       - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
       - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
+      - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - Canada Landsat Derived Forest fire disturbance 1985-2020: projects/ca_forest_fire.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
       - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
