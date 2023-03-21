@@ -9142,5 +9142,53 @@
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA-FOREST-AGE-2019-APPROACH",
     "provider": "Maltman et al. (2023)",
     "tags": "Forest age, Forest inventory, Land cover, Landsat, Time since disturbance"
+  },
+  {
+    "title": "Global human modification v1- watermask",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/landLakeResOcean300m",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
+  },
+  {
+    "title": "Global human modification v1- static 2017",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/gHMv1_2015_300_60s",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
+  },
+  {
+    "title": "Global human modification v1- 2015 Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/gHMv1_4_2015_300_60cland",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
+  },
+  {
+    "title": "Global human modification v1- 2010 Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/gHMv1_4_2010_300_60cland",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
+  },
+  {
+    "title": "Global human modification v1- 2000 Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/gHMv1_4_2000_300_60cland",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
+  },
+  {
+    "title": "Global human modification v1- 1990 Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GHM/gHMv1_4_1990_300_60cland",
+    "provider": "Theobald et al. (2020)",
+    "tags": "Global human modification, land use, human pressures, biodiversity"
   }
 ]

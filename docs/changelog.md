@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-03-21
+- Added new dataset [Landsat-derived forest age for Canada's forested ecosystems](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_fa)
+- Added new dataset [Digital Earth Africa's cropland extent map Africa 2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/dea_croplands)
+- Added new dataset [Global human modification v1](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghm)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+
 #### Updated 2023-03-09
 - Release 1.0.5 for awesome gee community catalog
 - Added new dataset [Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database](https://samapriya.github.io/awesome-gee-community-datasets/projects/histarfm)

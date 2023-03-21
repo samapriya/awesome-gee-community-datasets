@@ -18,9 +18,9 @@ Map for displaying the approach followed to compute forest age for the treed are
 
 Forest area codes:
 0: Non treed
-2: Disturbance approach
-3: Recovery approach
-4: Allometric approach
+1: Disturbance approach
+2: Recovery approach
+3: Allometric approach
 
 See Maltman et al. (2023) for an overview of the methods, data, image processing, as well as information on agreement assessment using Canada’s National Inventory (NFI). [Maltman et al. (2023)](https://doi.org/10.1016/j.rse.2023.113529)
 

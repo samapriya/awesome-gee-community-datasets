@@ -153,6 +153,7 @@ nav:
       - Relative Wealth Index (RWI): projects/rwi.md
       - Social Connectedness Index (SCI): projects/sci.md
       - Gridded Global GDP and HDI (1990-2015): projects/gridded_gdp_hdi.md
+      - Global human modification v1: projects/ghm.md
       - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
       - Native Land (Indigenous Land Maps): projects/native.md
       - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
@@ -267,6 +268,7 @@ nav:
       - NASA Harvest Layers: projects/harvest.md
       - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
       - NAFD Forest Disturbance History 1986-2010: projects/nafd.md
+      - Digital Earth Africa's cropland extent map Africa 2019: projects/dea_croplands.md
       - GFSAD Global Cropland Extent Product (GCEP): projects/gcep30.md
       - GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP): projects/lgrip30.md
       - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
