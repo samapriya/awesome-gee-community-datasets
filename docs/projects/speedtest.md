@@ -92,4 +92,4 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: : analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles
 
-Last updated: 2022-06-11
+Last updated: 2023-03-25
