@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-03-28
+- Updated [Current and projected climate data for North America (CMIP6 scenarios)](https://gee-community-catalog.org/projects/aogcm_cmip6) to v7.3 and added 20 and 30 year ensemble periods
+- Added [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorelines)
+- Added [Digital Earth Africa Shorelines dataset](https://gee-community-catalog.org/projects/deaf_shorelines)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-03-21
 - Added new dataset [Landsat-derived forest age for Canada's forested ecosystems](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_fa)
 - Added new dataset [Digital Earth Africa's cropland extent map Africa 2019](https://samapriya.github.io/awesome-gee-community-datasets/projects/dea_croplands)
