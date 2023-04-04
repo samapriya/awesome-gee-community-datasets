@@ -13,10 +13,10 @@ Dataset was updated based on specifications provided in changelog below. Updated
 
 ```js
 // Vegetation Cover
-var RAP_veg = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v3")
+var RAP_veg = ee.ImageCollection("projects/rap-data-365417/assets/vegetation-cover-v3")
 
 // Net Primary Production (annual)
-var RAP_npp = ee.ImageCollection("projects/rangeland-analysis-platform/npp-partitioned-v3")
+var RAP_npp = ee.ImageCollection("projects/rap-data-365417/assets/npp-partitioned-v3")
 
 ```
 
@@ -42,7 +42,7 @@ rangeland fractional cover with multitask learning and uncertainty.
 bioRxiv:2020.06.10.142489. http://dx.doi.org/10.1101/2020.06.10.142489
 ```
 
-Sample scripts are available on the [RAP Support Site](https://support.rangelands.app/article/61-processing-rap-data-in-google-earth-engine).
+Sample scripts are available on the [RAP Support Site](https://rangelands.app/support/61-processing-rap-data-in-google-earth-engine).
 
 Extra Info: See any of the three herbaceous biomass scripts for the function to convert from net primary production to biomass.
 
@@ -50,10 +50,10 @@ Download Tool/Code snippets if any: Analysis can be performed on these datasets 
 
 #### License Information
 
-Creative Commons Attribution-NonCommercial 4.0 International License
+Public Domain-CC0
 
 #### Curated by
-Brady Allred and Matthew Jones, University of Montana, Data producers; Eric Jensen, University of Montana, Point of Contact
+Sarah McCord, Point of Contact, and Jeb Williamson, Agricultural Research Service, U.S. Department of Agriculture
 
 Keywords: rangelands, vegetation, time-series, machine learning, landsat
 
