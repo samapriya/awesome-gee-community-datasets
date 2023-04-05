@@ -16,28 +16,68 @@ Amatulli, Giuseppe, Daniel McInerney, Tushar Sethi, Peter Strobl, and Sami Domis
 
 #### Earth Engine Snippet
 
+#### Geomorphological forms
+
 ```js
-var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti");
-var tri = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tri");
-var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope");
+var geom = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/geom");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-GEOMORPHOLOGICAL-FORMS
+
+#### First order derivatives
 
 ```js
+var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope");
+var aspect = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect");
+var aspect_cosine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-cosine");
+var aspect_sine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-sine");
+var eastness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/eastness");
+var northness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/northness");
+var convergence = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/convergence");
+var spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi");
+var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti");
+var dx = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dx");
+var dy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dy");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE
+
+#### Second order derivatives
+
+```js
+var dxx = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dxx");
+var dxy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dxy");
+var dyy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dyy");
+var pcurv = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/pcurv");
+var tcurv = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tcurv");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE
+
+
+#### Ruggedeness
+
+```js
+var elev_stdev = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/elev-stdev")
 var vrm = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/vrm");
 var roughness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/roughness");
+var tri = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tri");
 var tpi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tpi");
-var spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi");
+var dev_magnitude = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dev-magnitude");
+var dev_scale = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dev-scale");
+var rough_magnitude = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/rough-magnitude");
+var rough_scale = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/rough-scale");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS
 
-Shared License:
+
+#### License
+
 This work is licensed under a Creative Commons Attribution 4.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
 Curated by: Samapriya Roy
 
 Keywords: Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope
 
-Last updated: 2021-04-04
+Last updated: 2023-04-04

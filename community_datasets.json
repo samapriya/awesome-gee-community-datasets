@@ -696,60 +696,212 @@
     "tags": "global, road map, infrastructure, global roads inventory project (GRIP), SSP scenarios"
   },
   {
-    "title": "Geomorpho90m: Compound Topographic Index",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
+    "title": "Geomorpho90m Geomorphological forms: Geomorphon",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-GEOMORPHOLOGICAL-FORMS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/geom",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: Slope",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/slope",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: Aspect",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/aspect",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: Aspect cosine",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/aspect-cosine",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: Aspect sine",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/aspect-sine",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: eastness",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/eastness",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: northness",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/northness",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: convergence",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/convergence",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: spi",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/spi",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m First order derivatives: cti",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/cti",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
     "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Slope",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
+    "title": "Geomorpho90m First order derivatives: dx",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/Geomorpho90m/slope",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dx",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Terrain Ruggedness Index",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-INDICES",
+    "title": "Geomorpho90m First order derivatives: dy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dy",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, tri, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Vector Ruggedness Measure",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
+    "title": "Geomorpho90m Second order derivatives: dxx",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dxx",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Second order derivatives: dxy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dxy",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Second order derivatives: dyy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dyy",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Second order derivatives: pcurv",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/pcurv",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Second order derivatives: tcurv",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/tcurv",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: elev-stdev",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/elev-stdev",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: vrm",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/vrm",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, vrm, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Roughness",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
+    "title": "Geomorpho90m Ruggedeness: roughness",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/roughness",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, roughness, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Topographic Position Index",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
+    "title": "Geomorpho90m Ruggedeness: tri",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/tri",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: tpi",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Geomorpho90m/tpi",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, tpi, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
-    "title": "Geomorpho90m: Stream Power Index",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90",
+    "title": "Geomorpho90m Ruggedeness: dev-magnitude",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/Geomorpho90m/spi",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dev-magnitude",
     "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
-    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index,spi, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: dev-scale",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/dev-scale",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: rough-magnitude",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/rough-magnitude",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
+  },
+  {
+    "title": "Geomorpho90m Ruggedeness: rough-scale",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Geomorpho90m/rough-scale",
+    "provider": "Yale University, Coillte, Irish State Forestry Board, Leibniz-Institute of Freshwater Ecology and Inland Fisheries, European Commission - Joint Research Centre, Spatial Ecology",
+    "tags": "Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, cti, global, topography, MERIT, SRTM, ALOS, DEM, terrain, shuttle, radar"
   },
   {
     "title": "Gridded Population of the World, Version 4 (GPWv4): Administrative Unit Center Points with Population Estimates",
