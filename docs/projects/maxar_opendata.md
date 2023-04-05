@@ -26,6 +26,7 @@ var kentucky_flooding_2022  = ee.ImageCollection("projects/sat-io/open-datasets/
 var pakistan_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/pakistan_flooding_2022");
 var southafrica_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/southafrica_flooding_2022");
 var sudan_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/sudan_flooding_2022");
+var turkey_earthquake_2023 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/earthquake_turkey_2023");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS

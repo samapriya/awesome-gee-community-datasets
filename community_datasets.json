@@ -8000,6 +8000,14 @@
     "tags": "disaster, maxar, high resolution, flooding"
   },
   {
+    "title": "MAXAR Open Data Multispectral: Turkey Earthquake 2023",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MAXAR-OPENDATA/earthquake_turkey_2023",
+    "provider": "MAXAR",
+    "tags": "disaster, maxar, high resolution, flooding"
+  },
+  {
     "title": "FieldMaps GeoBoundaries Edge matched : adm1",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GEOBOUNDARIES-EDGEMATCHED",
     "type": "table",
