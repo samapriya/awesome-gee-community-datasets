@@ -1,6 +1,6 @@
 # Catalog Stats
 
-#### Last updated 2022-03-08
+#### Last updated 2023-03-08
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
