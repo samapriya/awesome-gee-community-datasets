@@ -1,8 +1,8 @@
-# Land Change Monitoring, Assessment, and Projection (LCMAP) v1.2
+# Land Change Monitoring, Assessment, and Projection (LCMAP) v1.3
 
-Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. LCMAP Collection 1.2 products were released in November 2021, including LCMAP products for 1985-2020.
+Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. LCMAP Collection 1.3 products were released in August 2022, including LCMAP products for 1985-2021
 
-LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-12-science-product-guide). Collection 1.0 for Hawaii was made available Jan 19 and [more information can be found here](https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products)
+LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-13-science-product-guide). Collection 1.0 for Hawaii was made available Jan 19 and [more information can be found here](https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products)
 
 <center>
 
@@ -130,17 +130,28 @@ Curated by: Samapriya Roy
 
 Keywords: Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
 
-Last updated: 2022-05-04
+Last updated: 2023-04-04
 
 #### Changelog
+
+Updated v1.3
+
+```
+Collection 1.3 extends LCMAP’s record to 37 years, characterizing the landscapes across CONUS at 30-meter resolution from 1985-2021. The 10-product
+suite can be used to capture the dynamics of wetlands in growth or decline, characterize the ephemeral impacts of hurricanes or rapidly-shifting
+mining operations, track the pace of coastal erosion or urban growth, observe the progression of fires, monitor recovery from mudslides and
+wildfires, and much more. LCMAP products can also serve as a complement to other USGS Landsat-based mapping efforts, such as the National Land Cover
+Database, LANDFIRE, Monitoring Trends in Burn Severity, and others.
+```
 
 USGS posted a notification for v1.2, so datasets were reprocessed and ingested
 
 ```
-A processing issue was found in LCMAP Conterminous United States (CONUS) Collection 1.2 product mosaics in March 2022. The CONUS Collection 1.2 mosaics have been
-reprocessed as of April 14, 2022, and users who downloaded CONUS Collection 1.2 mosaics before that date are encouraged to redownload the reprocessed data. CONUS
-Collection 1.2 tiled data were unaffected and are available on EarthExplorer. LCMAP Conterminous United States (CONUS) Collection 1.2 products are available on
-EarthExplorer, the LCMAP Web Viewer, and the LCMAP Mosaic Download website as of December 2021. CONUS Collection 1.2 includes LCMAP products for 1985-2020. Previous
-LCMAP collections will remain available on EarthExplorer; however, user are encouraged to use the most recent release. LCMAP Hawaii (HI) Collection 1.0 products are also
-available on EarthExplorer, the LCMAP Web Viewer, and the LCMAP Mosaic Download website as of January 2022. HI Collection 1.0 includes LCMAP products for 2000-2020.
+A processing issue was found in LCMAP Conterminous United States (CONUS) Collection 1.2 product mosaics in March 2022. The CONUS Collection 1.2
+mosaics have been reprocessed as of April 14, 2022, and users who downloaded CONUS Collection 1.2 mosaics before that date are encouraged to
+redownload the reprocessed data. CONUS Collection 1.2 tiled data were unaffected and are available on EarthExplorer. LCMAP Conterminous United
+States (CONUS) Collection 1.2 products are available on EarthExplorer, the LCMAP Web Viewer, and the LCMAP Mosaic Download website as of December
+2021. CONUS Collection 1.2 includes LCMAP products for 1985-2020. Previous LCMAP collections will remain available on EarthExplorer; however, user
+are encouraged to use the most recent release. LCMAP Hawaii (HI) Collection 1.0 products are also available on EarthExplorer, the LCMAP Web Viewer,
+and the LCMAP Mosaic Download website as of January 2022. HI Collection 1.0 includes LCMAP products for 2000-2020.
 ```

@@ -3784,7 +3784,7 @@
     "tags": "burned area, fire occurrence, fire area, burn severity,MTBS, EROS, GTAC, USGS, USDA"
   },
   {
-    "title": "LCMAP v1.2: LCACHG",
+    "title": "LCMAP v1.3: LCACHG",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/LCACHG",
@@ -3792,7 +3792,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS, LCACHG"
   },
   {
-    "title": "LCMAP v1.2: LCPCONF",
+    "title": "LCMAP v1.3: LCPCONF",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/LCPCONF",
@@ -3800,7 +3800,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS, LCPCONF"
   },
   {
-    "title": "LCMAP v1.2: LCPRI",
+    "title": "LCMAP v1.3: LCPRI",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/LCPRI",
@@ -3808,7 +3808,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: LCSCONF",
+    "title": "LCMAP v1.3: LCSCONF",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/LCSCONF",
@@ -3816,7 +3816,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: LCSEC",
+    "title": "LCMAP v1.3: LCSEC",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/LCSEC",
@@ -3824,7 +3824,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: SCLAST",
+    "title": "LCMAP v1.3: SCLAST",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/SCLAST",
@@ -3832,7 +3832,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: SCMAG",
+    "title": "LCMAP v1.3: SCMAG",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/SCMAG",
@@ -3840,7 +3840,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: SCMQA",
+    "title": "LCMAP v1.3: SCMQA",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/SCMQA",
@@ -3848,7 +3848,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: SCSTAB",
+    "title": "LCMAP v1.3: SCSTAB",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/SCSTAB",
@@ -3856,7 +3856,7 @@
     "tags": "Landsat, ARD, Land Cover, Spectral Change, USGS, EROS"
   },
   {
-    "title": "LCMAP v1.2: SCTIME",
+    "title": "LCMAP v1.3: SCTIME",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/LCMAP/SCTIME",
