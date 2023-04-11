@@ -9395,7 +9395,7 @@
     "title": "Canada Forest Age 2019 Approach",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-AGE-2019",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/CA_FOREST/CA-FOREST-AGE-2019-APPROACH",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_forest_age_2019_approach",
     "provider": "Maltman et al. (2023)",
     "tags": "Forest age, Forest inventory, Land cover, Landsat, Time since disturbance"
   },
