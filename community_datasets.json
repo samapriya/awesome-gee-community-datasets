@@ -7672,8 +7672,8 @@
     "tags": "Global Fire, burned area, GABAM, remote sensing, Earth Engine"
   },
   {
-    "title": "ESRI 10m Annual Land Use Land Cover (2017-2021)",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2017-2021",
+    "title": "ESRI 10m Annual Land Use Land Cover (2017-2022)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2017-2022",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
@@ -9526,5 +9526,29 @@
     "id": "projects/sat-io/open-datasets/DEAF/COASTLINES/coastlines_v040_rates_of_change",
     "provider": "Digital Earth Africa",
     "tags": "shorelines, coast, ocean, DEAF"
+  },
+  {
+    "title": "GlobCover v2.2 2004-2006",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-GLOBCOVER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/ESA/GLOBCOVER_200412_200606_V22_Global_CLA",
+    "provider": "ESA and by the Université Catholique de Louvain",
+    "tags": "Landcover, Global Landcover, ESA, JRC, EEA, FAO, UNEP, GOFC-GOLD and IGBP, ENVISAT product"
+  },
+  {
+    "title": "GlobCover v2.3 2009",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-GLOBCOVER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/ESA/GLOBCOVER_L4_200901_200912_V23",
+    "provider": "ESA and by the Université Catholique de Louvain",
+    "tags": "Landcover, Global Landcover, ESA, JRC, EEA, FAO, UNEP, GOFC-GOLD and IGBP, ENVISAT product"
+  },
+  {
+    "title": "CCI LAND COVER S2 PROTOTYPE LAND COVER 20M MAP OF AFRICA 2016",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCI-LC-20M-AFRICA",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/ESA/ESACCI-LC-L4-LC10-Map-20m-P1Y-2016-v10",
+    "provider": "ESA",
+    "tags": "Landcover, Sentinel-2 Landcover, ESA, Africa Landcover"
   }
 ]

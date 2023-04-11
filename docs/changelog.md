@@ -2,6 +2,15 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-04-11
+- Release 1.0.6 for awesome gee community catalog & catalog stats
+- Updated [ESRI 10m Annual Land Use Land Cover (2017-2022)](https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC) now includes 2022
+- Reprocessed and updated [Land Change Monitoring, Assessment, and Projection (LCMAP) v1.3](https://samapriya.github.io/awesome-gee-community-datasets/projects/lcmap/)
+- Added [GlobCover Global Land Cover](https://samapriya.github.io/awesome-gee-community-datasets/projects/globcover_esa/)
+- Added [CCI LAND COVER S2 PROTOTYPE LAND COVER 20M MAP OF AFRICA 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/cci_lc/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-03-28
 - Updated [Current and projected climate data for North America (CMIP6 scenarios)](https://gee-community-catalog.org/projects/aogcm_cmip6) to v7.3 and added 20 and 30 year ensemble periods
 - Added [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorelines)
