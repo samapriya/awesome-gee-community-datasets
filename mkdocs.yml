@@ -143,6 +143,7 @@ nav:
       - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
       - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
       - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
+      - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
   - Population & Socioeconomic:
       - High Resolution Settlement Layers: projects/hrsl.md
       - LandScan Population Data: projects/landscan.md
