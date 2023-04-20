@@ -9574,5 +9574,13 @@
     "id": "projects/sat-io/open-datasets/carbon-mapper/plume_feature",
     "provider": "Carbon Mapper, Inc.",
     "tags": "Methane Emissions, AVIRIS-NG, Global Airborne Observatory, Plume Emissions , Carbon Mapper Data Portal"
+  },
+  {
+    "title": "Open Aerial Map subset",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/OPEN-AERIAL-MAP",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/open-aerial-map",
+    "provider": "Open Aerial Map Community providers",
+    "tags": "Open Aerial Map, OAM, HOTOSM, Drones, UAV, High resolution"
   }
 ]
