@@ -231,6 +231,7 @@ nav:
       - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
       - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
       - Global River Width from Landsat (GRWL): projects/grwl.md
+      - Global Channel Belt (GCB): projects/gcb.md
       - Global coastal rivers and environmental variables: projects/rivermouth.md
       - Global River Deltas and vulnerability: projects/river_deltas.md
       - Global georeferenced Database of Dams(GOODD): projects/goodd.md
@@ -260,10 +261,13 @@ nav:
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
       - High Resolution Tree Species Information for Canada: projects/ca_species.md
       - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
+      - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
       - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
       - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - Canada Landsat Derived Forest fire disturbance 1985-2020: projects/ca_forest_fire.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+      - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
+      - Global Forest Management dataset 2015: projects/gfm_100.md
       - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
       - Global Leaf trait estimates for land modelling: projects/ltrait.md
       - Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA): projects/vodca.md

@@ -9582,5 +9582,77 @@
     "id": "projects/sat-io/open-datasets/open-aerial-map",
     "provider": "Open Aerial Map Community providers",
     "tags": "Open Aerial Map, OAM, HOTOSM, Drones, UAV, High resolution"
+  },
+  {
+    "title": "Global Channel Belt Prediction",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-CHANNEL-BELT",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GCB/GRMM",
+    "provider": "Nyberg, Björn, et al 2023",
+    "tags": "Rivers, Hydrology, Morphology, Landforms, Ecosystems"
+  },
+  {
+    "title": "Global Depositional Environment Classifications",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-CHANNEL-BELT",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GCB/Env",
+    "provider": "Nyberg, Björn, et al 2023",
+    "tags": "Rivers, Hydrology, Morphology, Landforms, Ecosystems"
+  },
+  {
+    "title": "Canada Landsat derived FAO forest identification (2019)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FAO-FOREST-IDENTIFICATION-2019",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_FAO_forest_2019",
+    "provider": "Wulder et al. (2020)",
+    "tags": "Forest area, temporally informed forest area, disturbance informed forest area, Forest inventory, Land cover, Landsat"
+  },
+  {
+    "title": "Global Forest Canopy Height from GEDI & Landsat",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CANOPY-HT-GEDI-LANDSAT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLAD/GEDI_V27",
+    "provider": "Potapov et al. (2020)",
+    "tags": "GEDI, Canopy Height, Landsat, Tree"
+  },
+  {
+    "title": "Global Forest Canopy Height from GEDI & Landsat Boreal",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CANOPY-HT-GEDI-LANDSAT",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLAD/GEDI_V25_Boreal",
+    "provider": "Potapov et al. (2020)",
+    "tags": "GEDI, Canopy Height, Landsat, Tree"
+  },
+  {
+    "title": "Global Forest Management dataset 2015 - Class probability",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-MANAGEMENT-DATASET-2015",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GFM/ProbaV_LC100_epoch2015_global_v203",
+    "provider": "Myroslava et al. 2022",
+    "tags": "forest management, plantations, land use, map, remote sensing"
+  },
+  {
+    "title": "Global Forest Management dataset 2015",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-MANAGEMENT-DATASET-2015",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GFM/FML_v3-2",
+    "provider": "Myroslava et al. 2022",
+    "tags": "forest management, plantations, land use, map, remote sensing"
+  },
+  {
+    "title": "Global Forest Management dataset 2015 crowdsourced data",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-MANAGEMENT-DATASET-2015",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GFM/original_crowdsourced_data",
+    "provider": "Myroslava et al. 2022",
+    "tags": "forest management, plantations, land use, map, remote sensing"
+  },
+  {
+    "title": "Global Forest Management dataset 2015 validation data",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-MANAGEMENT-DATASET-2015",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GFM/validation_data_set",
+    "provider": "Myroslava et al. 2022",
+    "tags": "forest management, plantations, land use, map, remote sensing"
   }
 ]
