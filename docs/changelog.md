@@ -2,6 +2,18 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-05-15
+- Release 1.0.7 for awesome gee community catalog & catalog stats
+- Added [Carbon Mapper Data Portal Methane Emissions](https://samapriya.github.io/awesome-gee-community-datasets/projects/cmapper/)
+- Added [Open Aerial Map Subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/oam/)
+- Added [Global Channel Belt (GCB)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcb/)
+- Added [Canada Landsat derived FAO forest identification (2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_fao/)
+- Added [Global Forest Canopy Height from GEDI & Landsat](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfch/)
+- Added [Global Forest Management dataset 2015](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfm_100/)
+- Added [Global Channel Belt (GCB)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcb/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-04-11
 - Release 1.0.6 for awesome gee community catalog & catalog stats
 - Updated [ESRI 10m Annual Land Use Land Cover (2017-2022)](https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC) now includes 2022

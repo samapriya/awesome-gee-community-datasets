@@ -1,6 +1,6 @@
 # Open Aerial Map Subset
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/) and will be made available generally on next update**
 
 [OpenAerialMap (OAM) was created as a set of tools and portal](https://openaerialmap.org/) for searching, sharing, and using openly licensed satellite and unmanned aerial vehicle (UAV) imagery. Built on top of the Open Imagery Network (OIN), OAM is an open service that provides search and access to this imagery. While Open Aerial Map is excellent and with plug and play capability coming in the future this will only evolve as a resouce for most users the goal of bringing a subset in Google Earth Engine was to explore current capabilities of the platform with ultra high resolution datasets and to allow for labeling classification and potential use of the collection as teaching and training tool via plugins like Collect Earth online and other providers who might be interested in leveraging this further including applications like Machine learning models.
 
