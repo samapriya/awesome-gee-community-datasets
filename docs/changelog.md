@@ -6,7 +6,6 @@
 - Release 1.0.7 for awesome gee community catalog & catalog stats
 - Added [Carbon Mapper Data Portal Methane Emissions](https://samapriya.github.io/awesome-gee-community-datasets/projects/cmapper/)
 - Added [Open Aerial Map Subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/oam/)
-- Added [Global Channel Belt (GCB)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gcb/)
 - Added [Canada Landsat derived FAO forest identification (2019)](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_fao/)
 - Added [Global Forest Canopy Height from GEDI & Landsat](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfch/)
 - Added [Global Forest Management dataset 2015](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfm_100/)
