@@ -189,6 +189,7 @@ nav:
       - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
       - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
       - Global Soil bioclimatic variables: projects/soil_bioclim.md
+      - Harmonized World Soil Database (HWSD) version 2.0: projects/hwsd.md
   - Global Land Use and Land Cover:
       - Global Mangrove Project: projects/mangrove.md
       - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
@@ -279,6 +280,7 @@ nav:
       - NAFD Forest Disturbance History 1986-2010: projects/nafd.md
       - Digital Earth Africa's cropland extent map Africa 2019: projects/dea_croplands.md
       - GFSAD Global Cropland Extent Product (GCEP): projects/gcep30.md
+      - Ensemble Source Africa Cropland Mask 2016: projects/af_cmask.md
       - GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP): projects/lgrip30.md
       - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
       - Tile Drained Croplands (30m): projects/tile.md
@@ -329,6 +331,7 @@ nav:
       - Global large flood events (1985-2016): projects/flood.md
       - Global Landslide Catalog (1970-2019): projects/landslide.md
       - MAXAR Open Data Events: projects/maxar_opendata.md
+      - Umbra SAR Open Data: projects/umbra_opendata.md
       - RADD Forest Disturbance Alert: projects/radd.md
       - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
   - License: license.md

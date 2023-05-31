@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-05-31
+- Added [Harmonized World Soil Database (HWSD) version 2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hwsd/)
+- Added [Ensemble Source Africa Cropland Mask 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/af_cmask/)
+- Added [Umbra SAR Open Data](https://samapriya.github.io/awesome-gee-community-datasets/projects/umbra_opendata/)
+- Updated [High Resolution Settlement Layer](https://samapriya.github.io/awesome-gee-community-datasets/projects/hrsl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-05-15
 - Release 1.0.7 for awesome gee community catalog & catalog stats
 - Added [Carbon Mapper Data Portal Methane Emissions](https://samapriya.github.io/awesome-gee-community-datasets/projects/cmapper/)

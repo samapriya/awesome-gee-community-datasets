@@ -9654,5 +9654,29 @@
     "id": "projects/sat-io/open-datasets/GFM/validation_data_set",
     "provider": "Myroslava et al. 2022",
     "tags": "forest management, plantations, land use, map, remote sensing"
+  },
+  {
+    "title": "Harmonized World Soil Database (HWSD) version 2.0",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HWSD-V2-SMU",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/FAO/HWSD_V2_SMU",
+    "provider": "FAO & IIASA",
+    "tags": "Soil, World Soil properties, Texture, USDA, FAO, IIASA"
+  },
+  {
+    "title": "Ensemble Source Africa Cropland Mask 2016",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/AF-CROPLAND-MASK-30M-2016",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/landcover/AF_Cropland_mask_30m_2016_v3",
+    "provider": "Nabil, Mohsen; Zhang, Miao; Wu, Bingfang; Bofana, Jose; Elnashar, Abdelrazek",
+    "tags": "Agriculture, Africa, cropland, cropland maps, agriculture land use"
+  },
+  {
+    "title": "Umbra SAR Open Data",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/UMBRA-OPENDATA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UMBRA/open-data",
+    "provider": "Umbra",
+    "tags": "UMBRA, SAR, GED, Open data"
   }
 ]
