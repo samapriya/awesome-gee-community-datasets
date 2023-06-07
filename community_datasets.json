@@ -9678,5 +9678,53 @@
     "id": "projects/sat-io/open-datasets/UMBRA/open-data",
     "provider": "Umbra",
     "tags": "UMBRA, SAR, GED, Open data"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Ortho imagery 1cm May 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-HIGHRES-DRONE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_may_2019_1cm",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Ortho imagery 1cm September 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-HIGHRES-DRONE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_sept_2019_1cm",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Vegetation Height model September 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-APP-CODE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_sept_2019",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Vegetation Height model May 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-APP-CODE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_may_2019",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Vegetation Class 5cm May 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-APP-CODE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_may_2019_5cm",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
+  },
+  {
+    "title": "Santa Rita Experimental Range Drone Imagery: Vegetation Class 5cm September 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SRER-APP-CODE",
+    "type": "image",
+    "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_sep_2019_5cm",
+    "provider": "Jeffrey K. Gillan, Guillermo E. Ponce Campos",
+    "tags": "cloud computing, high-performance computing, monitor,real-time kinematic (RTK), unmanned aerial systems"
   }
 ]

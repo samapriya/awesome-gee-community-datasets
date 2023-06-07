@@ -289,6 +289,7 @@ nav:
   - Analysis Ready Data:
       - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
       - Open Aerial Map Subset: projects/oam.md
+      - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
   - Global Utilities, Assets and Amenities Layers:
       - Global Power: projects/global_power.md
       - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md

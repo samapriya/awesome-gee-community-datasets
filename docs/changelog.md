@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-06-07
+- Added [Santa Rita Experimental Range Drone Imagery](https://samapriya.github.io/awesome-gee-community-datasets/projects/srer_drone/)
+- General availability of [Open Aerial Map Subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/oam/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-05-31
 - Added [Harmonized World Soil Database (HWSD) version 2.0](https://samapriya.github.io/awesome-gee-community-datasets/projects/hwsd/)
 - Added [Ensemble Source Africa Cropland Mask 2016](https://samapriya.github.io/awesome-gee-community-datasets/projects/af_cmask/)
