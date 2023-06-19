@@ -154,7 +154,7 @@ nav:
       - Relative Wealth Index (RWI): projects/rwi.md
       - Social Connectedness Index (SCI): projects/sci.md
       - Gridded Global GDP and HDI (1990-2015): projects/gridded_gdp_hdi.md
-      - Global human modification v1: projects/ghm.md
+      - Global human modification v1.5: projects/ghm.md
       - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
       - Native Land (Indigenous Land Maps): projects/native.md
       - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
@@ -296,6 +296,7 @@ nav:
       - Harmonized Global Night Time Lights (1992-2020): projects/hntl.md
       - Global NPP-VIIRS-like nighttime light (2000-2020): projects/npp_viirs_ntl.md
       - Global Roads Inventory Project: projects/grip.md
+      - Global Highres Mining Footprints: projects/global-mining.md
       - Global Mining Areas and Validation Datasets: projects/global_mining.md
       - Global Healthsites Mapping Project: projects/health_sites.md
       - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
@@ -315,6 +316,7 @@ nav:
       - Global Aridity Index: projects/ai0.md
       - Global Wind Atlas Datasets: projects/gwa.md
       - Global Solar Atlas Datasets: projects/gsa.md
+      - Global Extreme Heat Hazard: projects/heat-hazard.md
       - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
       - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
       - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md

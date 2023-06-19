@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-06-19
+- Updated [Global Human Modification dataset from v1 to v1.5](https://gee-community-catalog.org/projects/ghm/) including stressor collections.
+- Added [Global Highres Mining Footprints](https://gee-community-catalog.org/projects/global-mining/)
+- Added [Global Extreme Heat Hazard](https://gee-community-catalog.org/projects/heat-hazard/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-06-07
 - Added [Santa Rita Experimental Range Drone Imagery](https://samapriya.github.io/awesome-gee-community-datasets/projects/srer_drone/)
 - General availability of [Open Aerial Map Subset](https://samapriya.github.io/awesome-gee-community-datasets/projects/oam/)
