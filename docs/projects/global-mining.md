@@ -32,8 +32,6 @@ var mining_footprints = ee.FeatureCollection("projects/sat-io/open-datasets/glob
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-FOOTPRINTS
 
-Earth Engine App: https://davidtheobald8.users.earthengine.app/view/global-human-modification-change
-
 #### License
 This dataset is available under a Creative Commons BY-4.0 license
 
