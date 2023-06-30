@@ -12,21 +12,27 @@ Sci Data 7, 256 (2020). https://doi.org/10.1038/s41597-020-00599-8
 ![Habitat map](https://raw.githubusercontent.com/Martin-Jung/Habitatmapping/master/screen_lvl2.png)
 
 #### Earth Engine Snippet
-```js
 
+```js
 // Level 1 and level 2 for the year 2015
-var lvl1 = ee.Image("users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl1_ver004")
-var lvl2 = ee.Image("users/Uploads/habitattypes/iucn_habitatclassification_composite_lvl2_ver004")
+var lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/iucn_habitatclassification_composite_lvl1_ver004")
+var lvl2 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/iucn_habitatclassification_composite_lvl2_ver004")
 
 // Note: Colour code is random
-Map.addLayer(lvl2.randomVisualizer())
+Map.addLayer(lvl2.randomVisualizer(),{},'Habitat Classification Level 1')
 
 // Changemask for later.
 // Replace year in folder and mask to get a different year (for years 2016-2019)
-//for example 2017 would be var change2017_lvl1 = ee.Image("users/Uploads/habitattypes/changemasks2016/iucn_habitatclassification_2017changemask_lvl1_ver004")
-var change2016_lvl1 = ee.Image("users/Uploads/habitattypes/changemasks2016/iucn_habitatclassification_2016changemask_lvl1_ver004")
-print(change2016_lvl1)
+//for example 2017 would be var change2017_lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2017changemask_lvl1_ver004")
+var change2019_lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2019changemask_lvl1_ver004").select('comp2019').unmask(0)
+var change2019_lvl2 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2019changemask_lvl2_ver004").select('comp2019').unmask(0)
+print(change2019_lvl1)
 
+//Level 1 and level 2 for the year 2019
+var lvl12019 = change2019_lvl1.firstNonZero(lvl1)
+var lvl22019 = change2019_lvl2.firstNonZero(lvl2)
+
+Map.addLayer(lvl12019.randomVisualizer(),{},'Level 1 2019')
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-HABITAT-TYPES
