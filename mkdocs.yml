@@ -267,6 +267,7 @@ nav:
       - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - Canada Landsat Derived Forest fire disturbance 1985-2020: projects/ca_forest_fire.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+      - Global Fungi Database: projects/global_fungi.md
       - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
       - Global Forest Management dataset 2015: projects/gfm_100.md
       - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
@@ -289,6 +290,7 @@ nav:
   - Analysis Ready Data:
       - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
       - Open Aerial Map Subset: projects/oam.md
+      - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
       - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
   - Global Utilities, Assets and Amenities Layers:
       - Global Power: projects/global_power.md

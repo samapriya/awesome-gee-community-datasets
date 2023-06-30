@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-06-30
+- Released 1.0.8 for awesome gee community catalog & catalog stats
+- Added [Global Fungi database](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_fungi) of sample collection from various studies
+- Added [HySpecNet-11K Hyperspectral Benchmark dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/hyspecnet)
+- Updated [Global maps of habitat types](https://samapriya.github.io/awesome-gee-community-datasets/projects/habitat)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-06-19
 - Updated [Global Human Modification dataset from v1 to v1.5](https://gee-community-catalog.org/projects/ghm/) including stressor collections.
 - Added [Global Highres Mining Footprints](https://gee-community-catalog.org/projects/global-mining/)
