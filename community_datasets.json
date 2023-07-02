@@ -9288,6 +9288,14 @@
     "tags": "Forest Fire, Forest inventory, Land cover, Landsat, Machine learning"
   },
   {
+    "title": "Canada Landsat Derived Wildfire disturbance Magnitude 1985-2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-MAGNITUDE-1985-2020",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Wildfire_dNBR_1985_2020",
+    "provider": "Hermosilla et al. 2016",
+    "tags": "Forest Fire, Forest inventory, Land cover, Landsat, Machine learning"
+  },
+  {
     "title": "swissSURFACE3D Raster Digital Surface Model (DSM)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/swiss3D-RASTER",
     "type": "image_collection",
@@ -9854,5 +9862,21 @@
     "id": "projects/sat-io/open-datasets/HySpecNet/HYSPECNET-11K",
     "provider": "Fuchs, Martin Hermann Paul, and Begüm Demir",
     "tags": "Hyperspectral, Enmap, Benchmark, Tile"
+  },
+  {
+    "title": "geeSEBAL-MODIS Continental scale ET for South America",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GEESEBAL-ET-SOUTH-AMERICA",
+    "type": "image_collection",
+    "id": "projects/et-brasil/assets/geesebal/myd11a2/sa/v0-02",
+    "provider": "Bruno Comini de Andrade, Anderson Ruhoff, Leonardo Laipelt",
+    "tags": "evapotranspiration, South America, water resources"
+  },
+  {
+    "title": "ESA CCI Global Forest Above Ground Biomass",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ESA-CCI-ABOVEGROUND-BIOMASS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ESA/ESA_CCI_AGB",
+    "provider": "CCI BIOMASS consortium led by the University of Aberystwyth (U.K.)",
+    "tags": "satellite observation, forest, biomass"
   }
 ]
