@@ -1,4 +1,4 @@
-### geeSEBAL-MODIS Continental scale ET for South America
+# geeSEBAL-MODIS Continental scale ET for South America
 
 The geeSEBAL-MODIS Version 0-02 Evapotranspiration (ET) product is an 8-day product produced at 500 meter pixel resolution. The algorithm for ET calculation is based on the SEBAL model and the FAO Penman-Monteith equation, which includes inputs of daily meteorological reanalysis data along with MODIS remotely sensed data products such as vegetation property dynamics, albedo, land cover and land surface temperature (LST).
 
