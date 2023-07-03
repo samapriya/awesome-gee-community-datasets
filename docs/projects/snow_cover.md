@@ -44,7 +44,7 @@ var tmax_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/
 var tmin_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmin");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-MODIS-SNOWCOVER
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MODIS-SNOWCOVER
 
 #### License
 

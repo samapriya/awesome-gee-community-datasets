@@ -170,7 +170,6 @@ nav:
       - Global maps of habitat types: projects/habitat.md
       - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
       - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
-      - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
       - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
   - Elevation and Bathymetry:
       - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
@@ -322,6 +321,7 @@ nav:
       - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
       - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
       - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
+      - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
       - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
       - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
       - United States Drought Monitor Layers: projects/usdm.md
