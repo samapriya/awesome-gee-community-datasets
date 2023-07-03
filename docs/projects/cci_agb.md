@@ -5,6 +5,7 @@ This dataset provides estimates of forest above-ground biomass for the years 201
 The dataset includes multi-temporal observations at L-band for all biomes and for each year. The above-ground biomass (AGB) maps utilize revised allometries, which are now based on a more extensive collection of spaceborne LiDAR data from the GEDI and ICESat-2 missions. The retrieval algorithm now incorporates temporal information to capture and preserve biomass dynamics as expressed in the remote sensing data.
 
 The data products consist of two (2) global layers that include estimates of:
+
 1) above ground biomass (AGB, unit: tons/ha i.e., Mg/ha) (raster dataset). This is defined as the mass, expressed as oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots
 2) per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)
 
