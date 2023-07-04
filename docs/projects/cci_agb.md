@@ -6,8 +6,9 @@ The dataset includes multi-temporal observations at L-band for all biomes and fo
 
 The data products consist of two (2) global layers that include estimates of:
 
-1) above ground biomass (AGB, unit: tons/ha i.e., Mg/ha) (raster dataset). This is defined as the mass, expressed as oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots
-2) per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)
+1. Above ground biomass (AGB, unit: tons/ha i.e., Mg/ha) (raster dataset). This is defined as the mass, expressed as oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots
+
+2. Per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
