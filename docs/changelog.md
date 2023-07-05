@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-07-05
+- Added [MOD10A2061 Snow Cover 8-Day L3 Global 500m](https://samapriya.github.io/awesome-gee-community-datasets/projects/modis_8day_snow)
+- Added [geeSEBAL-MODIS Continental scale ET for South America](https://samapriya.github.io/awesome-gee-community-datasets/projects/gee_sebal)
+- Added [ESA CCI Global Forest Above Ground Biomass](https://samapriya.github.io/awesome-gee-community-datasets/projects/cci_agb)
+- Updated [Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_forest_fire)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-06-30
 - Released 1.0.8 for awesome gee community catalog & catalog stats
 - Added [Global Fungi database](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_fungi) of sample collection from various studies

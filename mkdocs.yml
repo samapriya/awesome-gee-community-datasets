@@ -266,6 +266,8 @@ nav:
       - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+      - ESA CCI Global Forest Above Ground Biomass: projects/cci_agb.md
+      - geeSEBAL-MODIS Continental scale ET for South America: projects/gee_sebal.md
       - Global Fungi Database: projects/global_fungi.md
       - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
       - Global Forest Management dataset 2015: projects/gfm_100.md
@@ -322,6 +324,7 @@ nav:
       - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
       - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
       - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
+      - MOD10A2061 Snow Cover 8-Day L3 Global 500m: projects/modis_8day_snow.md
       - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
       - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
       - United States Drought Monitor Layers: projects/usdm.md
