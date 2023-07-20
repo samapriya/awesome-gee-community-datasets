@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-07-20
+- Added [Global Human Settlement Layer 2023](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghsl)
+- Added [Global 30m Landsat Tree Canopy Cover v4](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_tcc)
+- Added 2022 to Landscan global and updated [LandScan Population Data](https://samapriya.github.io/awesome-gee-community-datasets/projects/landscan)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-07-04
 - Added [MOD10A2061 Snow Cover 8-Day L3 Global 500m](https://samapriya.github.io/awesome-gee-community-datasets/projects/modis_8day_snow)
 - Added [geeSEBAL-MODIS Continental scale ET for South America](https://samapriya.github.io/awesome-gee-community-datasets/projects/gee_sebal)

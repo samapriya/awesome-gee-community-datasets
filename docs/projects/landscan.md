@@ -66,13 +66,16 @@ Code Attribution Source: [Ujaval Gandhi](https://www.spatialthoughts.com/)
 
 These datasets are offered under the Creative Commons Attribution 4.0 International License. Users are free to use, copy, distribute, transmit, and adapt the data for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
+#### Changelog
+* Landscan Global 2022 layer was released on 2023-07-05 and has now been added to existing global collection.
+
 Created by: Oakridge National Laboratory
 
 Curated in GEE by : Samapriya Roy
 
 keywords: Global Population, Population count, Diurnal population, remote sensing, machine learning
 
-Last modified: 2022-01-20
+Last modified: 2023-07-05
 
-Last updated on GEE: 2022-09-25
+Last updated on GEE: 2023-07-20
 

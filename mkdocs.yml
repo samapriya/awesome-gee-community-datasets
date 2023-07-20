@@ -155,6 +155,7 @@ nav:
       - Social Connectedness Index (SCI): projects/sci.md
       - Gridded Global GDP and HDI (1990-2015): projects/gridded_gdp_hdi.md
       - Global human modification v1.5: projects/ghm.md
+      - Global Human Settlement Layer 2023: projects/ghsl.md
       - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
       - Native Land (Indigenous Land Maps): projects/native.md
       - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
@@ -271,6 +272,7 @@ nav:
       - Global Fungi Database: projects/global_fungi.md
       - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
       - Global Forest Management dataset 2015: projects/gfm_100.md
+      - Global 30m Landsat Tree Canopy Cover v4: projects/global_tcc.md
       - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
       - Global Leaf trait estimates for land modelling: projects/ltrait.md
       - Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA): projects/vodca.md
