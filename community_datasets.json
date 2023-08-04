@@ -9958,5 +9958,13 @@
     "id": "projects/sat-io/open-datasets/GFCC30TC",
     "provider": "Sexton, J. O et al",
     "tags": "Global Tree Canopy, Forestry, Time series, Landsat"
+  },
+  {
+    "title": "USGS Historical Topo maps 1:24000",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-TOPO",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USGS/historical_topo",
+    "provider": "USGS",
+    "tags": "USGS, Historical maps, Topo Maps, Quads"
   }
 ]
