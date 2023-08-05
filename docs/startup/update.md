@@ -2,6 +2,6 @@
 
 The submit updated data request templates is designed for requesting update to an existing data in the community catalog. This can range from new releases to continuous updates. Modify the markdown text in the template as needed and fill in the pieces of information that is available to you as in the example below.
 
-![update_data_request](https://i.imgur.com/H17Q9xd.gif)
+![update_issue](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/5daa3fa4-0ec6-43ef-a50d-6663dfdfdb28)
 
-[To submit a suggested update to an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=update+dataset&template=suggest-update-to-existing-awesome-gee-catalog-dataset.md&title=Add+existing+Dataset+Title%2FName)
+[To submit a suggested update to an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=update&projects=&template=bup.yml&title=%5BDataset%2FTitle%5D%3A+)
