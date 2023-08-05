@@ -127,6 +127,8 @@ markdown_extensions:
 # Page tree
 nav:
   - Introduction: index.md
+  - License: license.md
+  - Code of Conduct: code_of_conduct.md
   - Insiders program: insiders.md
   - Getting Started:
       - Navigating the Catalog: startup/navigation.md
@@ -344,4 +346,3 @@ nav:
       - Umbra SAR Open Data: projects/umbra_opendata.md
       - RADD Forest Disturbance Alert: projects/radd.md
       - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
-  - License: license.md
