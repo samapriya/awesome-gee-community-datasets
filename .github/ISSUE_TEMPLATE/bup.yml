@@ -1,0 +1,49 @@
+name: Suggest update to existing awesome-gee-catalog dataset
+description:
+  This template can be issued to create an issue to update an existing dataset
+  in the catalog
+title: "[Dataset/Title]: "
+labels: ["update"]
+assignees:
+  - samapriya, valpasq, edtrochim
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this update request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: Dataset-URL
+    attributes:
+      label: Provide Dataset Link
+      description: Provide a link to the existing dataset page ex. https://gee-community-catalog.org/projects/geomorpho90/
+    validations:
+      required: true
+  - type: textarea
+    id: Clear_and_concise_description_about_the_update
+    attributes:
+      label: Describe the update
+      description: Add as much information as you can about the update
+      value: "Describe the update"
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Relevant additional information
+      description: If applicable, add screenshots, updated code samples and so on for the update.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://gee-community-catalog.org/code_of_conduct/)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

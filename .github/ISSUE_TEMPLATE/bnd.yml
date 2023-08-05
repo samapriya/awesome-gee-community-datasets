@@ -1,0 +1,63 @@
+name: Suggest new community data for awesome-gee-catalog
+description: This template allows the users to submit datasets for consideration into community catalog
+title: "[Dataset Title/Name]: "
+labels: ["Dataset"]
+assignees:
+  - samapriya, valpasq, edtrochim
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a dataset to the community catalog!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: Dataset-description
+    attributes:
+      label: Dataset description
+      description: Include download links, citation and DOI information including dataset owner
+    validations:
+      required: true
+  - type: textarea
+    id: Earth-Engine-Snippet
+    attributes:
+      label: Earth Engine Snippet if dataset already in GEE
+      description: Include the GEE dataset information and example code snippet
+      value: |
+        for example
+        ```js
+        var asset_name = ee.ImageCollection("path to your collection")
+        ```
+        Sample Code: Add a sample code maybe just adding your datasets in the code editor
+    validations:
+      required: true
+  - type: textarea
+    id: License-Information
+    attributes:
+      label: Enter license information
+      description: License information allows us to decide if the dataset can be included
+      value: "Enter License information ex: APAHCE 2.0, CC-BY-4.0"
+    validations:
+      required: true
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Please include some keywords to describe the dataset
+      placeholder: ex. coast, erosion, waterline extraction
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://gee-community-catalog.org/code_of_conduct/)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
