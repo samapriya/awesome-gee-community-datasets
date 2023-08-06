@@ -21,7 +21,7 @@ body:
     id: Dataset-description
     attributes:
       label: Dataset description
-      description: Include download links, citation and DOI information
+      description: Include dataset description, download links, citation and DOI information
     validations:
       required: true
   - type: textarea
