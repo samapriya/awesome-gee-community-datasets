@@ -1,7 +1,5 @@
 # USGS Historical Topo Maps
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
-
 The history of USGS Topo Maps traces back to the late 19th century when the USGS embarked on a mission to map the entire United States in intricate detail. The 1:24,000 scale, also known as 7.5-minute quadrangle maps, emerged as one of the most widely used scales. Each map sheet covers an area of 7.5 minutes of longitude and latitude, resulting in a detailed representation of approximately 64 square miles (166 square kilometers).
 
 A subset of these are ingested into the overall collection about 81,000+ and improvements and additions will be made in the future. Metadata including state name, place name and scale. States like Texas, California and others were not added directly but might be added over time.

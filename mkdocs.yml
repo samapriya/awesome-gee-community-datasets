@@ -146,7 +146,6 @@ nav:
       - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
       - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
       - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
-      - USGS Historical Topo Maps: projects/usgs_topo.md
   - Population & Socioeconomic:
       - High Resolution Settlement Layers: projects/hrsl.md
       - LandScan Population Data: projects/landscan.md
@@ -298,6 +297,7 @@ nav:
       - Open Aerial Map Subset: projects/oam.md
       - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
       - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
+      - USGS Historical Topo Maps: projects/usgs_topo.md
   - Global Utilities, Assets and Amenities Layers:
       - Global Power: projects/global_power.md
       - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
