@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-08-08
+- Released 1.0.9 for awesome gee community catalog & catalog stats
+- Added [USGS Historical Topo Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/usgs_topo)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-07-20
 - Added [Global Human Settlement Layer 2023](https://samapriya.github.io/awesome-gee-community-datasets/projects/ghsl)
 - Added [Global 30m Landsat Tree Canopy Cover v4](https://samapriya.github.io/awesome-gee-community-datasets/projects/global_tcc)

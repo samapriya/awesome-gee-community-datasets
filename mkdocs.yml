@@ -146,6 +146,7 @@ nav:
       - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
       - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
       - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
+      - USGS Historical Topo Maps: projects/usgs_topo.md
   - Population & Socioeconomic:
       - High Resolution Settlement Layers: projects/hrsl.md
       - LandScan Population Data: projects/landscan.md
