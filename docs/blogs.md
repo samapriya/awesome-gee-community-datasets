@@ -2,6 +2,8 @@
 
 Find a list of associated blog posts related to GEE and community catalog here. To get post updates follow me on [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 
+* [From Paper to Pixels- Rediscovering Historical USGS Topo Maps in the Google Earth Engine Community Catalog](https://medium.com/@samapriyaroy/from-paper-to-pixels-rediscovering-historical-usgs-topo-maps-in-the-google-earth-engine-community-f514c97c46a)
+* [Community-Enhanced: Google Earth Engine Community Catalog Upgrades](https://medium.com/@samapriyaroy/community-enhanced-google-earth-engine-community-catalog-upgrades-66d4b7076826)
 * [Google Cloud Projects and Earth Engine Integration at Universities: A Practical Guide](https://samapriyaroy.medium.com/google-cloud-projects-and-earth-engine-integration-in-universities-a-practical-guide-fb16d8dad14a)
 * [What’s new with the Google Earth Engine Community Catalog](https://medium.com/@samapriyaroy/whats-new-with-the-google-earth-engine-community-catalog-76e09a76a1ff)
 * [Awesome Google Earth Engine Community Catalog](https://samapriyaroy.medium.com/awesome-google-earth-engine-community-catalog-bd86d0ba63b8)
