@@ -19,6 +19,7 @@ United States Geological Survey. (2019). Yosemite National Park [Topographic map
 
 ```js
 var usgs_topo = ee.ImageCollection("projects/sat-io/open-datasets/USGS/historical_topo");
+var map_index = ee.FeatureCollection("projects/sat-io/open-datasets/USGS/TOPO_24K_MAPINDEX");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER

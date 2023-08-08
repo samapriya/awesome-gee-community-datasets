@@ -9960,8 +9960,16 @@
     "tags": "Global Tree Canopy, Forestry, Time series, Landsat"
   },
   {
+    "title": "USGS Historical Topo maps 1:24000 map index",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/USGS/TOPO_24K_MAPINDEX",
+    "provider": "USGS",
+    "tags": "USGS, Historical maps, Topo Maps, Quads"
+  }
+  {
     "title": "USGS Historical Topo maps 1:24000",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-TOPO",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/historical_topo",
     "provider": "USGS",
