@@ -1,13 +1,13 @@
 # [awesome-gee-community-datasets](https://gee-community-catalog.org/)
 
-[![Mastodon Follow](https://img.shields.io/mastodon/follow/109627075086849826?domain=https%3A%2F%2Fmapstodon.space%2F)](https://mapstodon.space/@samapriya)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=plastic&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samapriya/)
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 [![Twitter URL](https://img.shields.io/twitter/follow/samapriyaroy?style=social)](https://twitter.com/intent/follow?screen_name=samapriyaroy)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109627075086849826?domain=https%3A%2F%2Fmapstodon.space%2F)](https://mapstodon.space/@samapriya)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream2](https://img.shields.io/badge/Supported%20by-Jetstream2-brightgreen)](https://jetstream-cloud.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7817991.svg)](https://doi.org/10.5281/zenodo.7817991)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8223455.svg)](https://doi.org/10.5281/zenodo.8223455)
 [![Donate](https://img.shields.io/badge/Donate-Buy%20me%20a%20Coffee-teal)](https://www.buymeacoffee.com/samapriya)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
 
@@ -26,6 +26,6 @@ https://gee-community-catalog.org/
 #### Citation
 
 ```
-Samapriya Roy, Valerie Pasquarella, Erin Trochim, & Tyson Swetnam. (2023). samapriya/awesome-gee-community-datasets: Community Catalog (1.0.8).
-Zenodo. https://doi.org/10.5281/zenodo.8099010
+Samapriya Roy, Valerie Pasquarella, Erin Trochim, & Tyson Swetnam. (2023). samapriya/awesome-gee-community-datasets: Community Catalog (1.0.9).
+Zenodo. https://doi.org/10.5281/zenodo.8223455
 ```
