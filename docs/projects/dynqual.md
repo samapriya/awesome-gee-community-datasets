@@ -7,7 +7,7 @@ This comprehensive global model allows us to evaluate its performance against re
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
 #### Datasets preprocessing
-The datasets were downloaded and converted from NetCDF to Geotiff format for ingestion. Since this was a multi band monthly aggregated image and I wanted to allow the user to slice by time frame. The image bands were seperated as individual images and the overall results are image collections with date range information attached.
+The datasets were downloaded and converted from NetCDF to Geotiff format for ingestion. Since this was a multi band monthly aggregated image and I wanted to allow the user to slice by time frame, the image bands were seperated as individual images and the overall results are image collections with date range information attached.
 
 #### Citation
 
