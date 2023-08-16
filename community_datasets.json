@@ -9960,6 +9960,46 @@
     "tags": "Global Tree Canopy, Forestry, Time series, Landsat"
   },
   {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Discharge",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/discharge",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Fecal Coliform",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/fecal-coliform",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: TDS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/total-dissolved-solids",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: BOD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/biological-oxygen-demand",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Water Temperature",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/water-temperature",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
