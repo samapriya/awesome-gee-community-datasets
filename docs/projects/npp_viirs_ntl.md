@@ -1,8 +1,8 @@
-# Global NPP-VIIRS-like nighttime light (2000-2020)
+# Global NPP-VIIRS-like nighttime light (2000-2022)
 
 The nighttime light (NTL) satellite data have been widely used to investigate the urbanization process. The Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) stable nighttime light data and Suomi National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light data are two widely used NTL datasets. However, the difference in their spatial resolutions and sensor design requires a cross-sensor calibration of these two datasets for analyzing a long-term urbanization process.
 
-The extended data NPP-VIIRS-like NTL data (2000–2020) have an excellent spatial pattern and temporal consistency which are similar to the composited NPP-VIIRS NTL data. In addition, the resulting product could be easily updated and provide a useful proxy to monitor the dynamics of demographic and socioeconomic activities for a longer time period compared to existing products. The extended time series (2000–2018) of nighttime light data.
+The extended data NPP-VIIRS-like NTL data (2000–2022) have an excellent spatial pattern and temporal consistency which are similar to the composited NPP-VIIRS NTL data. In addition, the resulting product could be easily updated and provide a useful proxy to monitor the dynamics of demographic and socioeconomic activities for a longer time period compared to existing products. The extended time series (2000–2018) of nighttime light data.
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
@@ -34,4 +34,4 @@ Curated in GEE by : Samapriya Roy
 
 keywords: Nighttime light, VIIRS, NTL, NPP-VIIRS
 
-Last updated on GEE: 2022-08-19
+Last updated on GEE: 2023-08-13

@@ -235,6 +235,7 @@ nav:
       - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
       - Global River Width from Landsat (GRWL): projects/grwl.md
       - Global Channel Belt (GCB): projects/gcb.md
+      - DynQual Global Surface Water Quality Dataset: projects/dynqual.md
       - Global coastal rivers and environmental variables: projects/rivermouth.md
       - Global River Deltas and vulnerability: projects/river_deltas.md
       - Global georeferenced Database of Dams(GOODD): projects/goodd.md
@@ -269,6 +270,7 @@ nav:
       - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+      - USDA Crop Sequence Boundaries 2015-2022: projects/csb.md
       - ESA CCI Global Forest Above Ground Biomass: projects/cci_agb.md
       - geeSEBAL-MODIS Continental scale ET for South America: projects/gee_sebal.md
       - Global Fungi Database: projects/global_fungi.md
@@ -302,7 +304,7 @@ nav:
       - Global Power: projects/global_power.md
       - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
       - Harmonized Global Night Time Lights (1992-2020): projects/hntl.md
-      - Global NPP-VIIRS-like nighttime light (2000-2020): projects/npp_viirs_ntl.md
+      - Global NPP-VIIRS-like nighttime light (2000-2022): projects/npp_viirs_ntl.md
       - Global Roads Inventory Project: projects/grip.md
       - Global Highres Mining Footprints: projects/global-mining.md
       - Global Mining Areas and Validation Datasets: projects/global_mining.md

@@ -2,9 +2,15 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-08-17
+- Added [DynQual Global Surface Water Quality Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/dynqual/)
+- Added [USDA Crop Sequence Boundaries 2015-2022](https://samapriya.github.io/awesome-gee-community-datasets/projects/csb/)
+- Updated [Global NPP-VIIRS-like nighttime light (2000-2022)](https://samapriya.github.io/awesome-gee-community-datasets/projects/npp_viirs_ntl/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-08-08
 - Released 1.0.9 for awesome gee community catalog & catalog stats
-- Added [USGS Historical Topo Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/usgs_topo)
+- Added [USGS Historical Topo Maps](DynQual Global Surface Water Quality Dataset)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 #### Updated 2023-07-20

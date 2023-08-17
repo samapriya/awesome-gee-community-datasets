@@ -10000,6 +10000,398 @@
     "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
   },
   {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: AL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBAL1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: AR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBAR1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: AZ",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBAZ1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: CA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBCA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: CO",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBCO1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: CT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBCT1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: DE",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBDE1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: GA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBGA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: FL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBFL1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: IA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBIA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: ID",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBID1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: IL",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBIL1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: IN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBIN1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: KS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBKS1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: KY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBKY1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: LA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBLA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMD1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: ME",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBME1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMI1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMN1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MO",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMO1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMS1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: MT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBMT1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NE",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNE1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NH",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNH1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NJ",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNJ1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NM",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNM1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NV",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNV1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNY1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: NC",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBNC1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: ND",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBND1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: OH",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBOH1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: OK",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBOK1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: OR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBOR1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: PA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBPA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: RI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBRI1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: SC",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBSC1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: SD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBSD1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: TN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBTN1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: TX",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBTX1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: UT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBUT1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: VT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBVT1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: VA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBVA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: WA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBWA1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: WV",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBWV1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: WI",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBWI1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: WY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/nass-csb/assets/csb1522/CSBWY1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
+    "title": "USDA Crop Sequence Boundaries 2015-2022: Combined",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/USDA/CSB_1522",
+    "provider": "USDA NASS, USDA ERS",
+    "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
