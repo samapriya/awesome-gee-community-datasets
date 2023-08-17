@@ -10,7 +10,7 @@
 
 #### Updated 2023-08-08
 - Released 1.0.9 for awesome gee community catalog & catalog stats
-- Added [USGS Historical Topo Maps](DynQual Global Surface Water Quality Dataset)
+- Added [USGS Historical Topo Maps](https://gee-community-catalog.org/projects/usgs_topo)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
 #### Updated 2023-07-20
