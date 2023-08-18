@@ -40,7 +40,7 @@ var bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/biological-o
 var water_temp = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/water-temperature");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNAQUAL-EXAMPLE
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE
 
 #### License
 Creative Commons Attribution 4.0 International Public License
