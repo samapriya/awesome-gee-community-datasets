@@ -4,7 +4,7 @@
 
 ???+ note
 
-    **This dataset is part of a paper in submission and as such does not have citation and DOI information. This will be updated as the paper progress through review and publication cycles.**
+    **This dataset is part of a paper in submission and as such does not have citation and DOI information. This will be updated as the paper progresses through review and publication cycles.**
 
 </div>
 
