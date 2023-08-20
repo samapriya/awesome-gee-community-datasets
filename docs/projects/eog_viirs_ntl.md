@@ -1,6 +1,12 @@
 # EOG Annual VIIRS Night Time Light
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+<div class="result" markdown>
+
+???+ note
+
+    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+
+</div>
 
 A new consistently processed time series of annual global VIIRS nighttime lights has been produced from monthly cloud-free average radiance grids spanning 2012 to 2021 is processed by the Earth Observation Group(EOG). The new methodology (version 2.1) is a modification of the original VNL V1 that is available in the Earth Engine catalogue. Compared to VNL V1, this improved VNL V2.1 version removes ephemeral lights and background noise.
 

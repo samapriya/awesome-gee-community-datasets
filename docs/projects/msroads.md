@@ -1,6 +1,12 @@
 # Microsoft Bing Global Mined Roads
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+<div class="result" markdown>
+
+???+ note
+
+    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+
+</div>
 
 Bing Maps is releasing mined roads around the world. We have detected 47.8M km of all roads and 1165K km of roads missing from OSM. Mining is performed with Bing Maps imagery between 2020 and 2022 including Maxar and Airbus. Datasets were provided in tsv formats and additional steps were used to convert them into GEE ready formatting.
 

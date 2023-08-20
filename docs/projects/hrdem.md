@@ -1,6 +1,12 @@
 # Canada High Resolution Digital Elevation Model (HRDEM)
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+<div class="result" markdown>
+
+???+ note
+
+    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+
+</div>
 
 The High Resolution Digital Elevation Model (HRDEM) product is derived from airborne LiDAR data (mainly in the south) and satellite images in the north. The complete coverage of the Canadian territory is gradually being established. It includes a Digital Terrain Model (DTM), a Digital Surface Model (DSM) and other derived data. For DTM datasets, derived data available are slope, aspect, shaded relief, color relief and color shaded relief maps and for DSM datasets, derived data available are shaded relief, color relief and color shaded relief maps.
 

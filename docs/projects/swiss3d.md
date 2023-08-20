@@ -1,6 +1,12 @@
 # swissSURFACE3D Raster (DSM)
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+<div class="result" markdown>
+
+???+ note
+
+    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+
+</div>
 
 swissSURFACE3D Raster is a digital surface model (DSM) which represents the earth’s surface including visible and permanent landscape elements such as soil, natural cover, and all sorts of constructive work with the exception of power lines and masts. swissSURFACE3D Raster is derived from airborne LiDAR data of swissSURFACE3D. To model the surface, the following elements (classified LiDAR points) are used:
 

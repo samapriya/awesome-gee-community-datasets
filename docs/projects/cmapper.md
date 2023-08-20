@@ -1,6 +1,12 @@
 # Carbon Mapper Data Portal Methane Emissions
 
-**This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+<div class="result" markdown>
+
+???+ note
+
+    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+
+</div>
 
 The Carbon Mapper data portal focused on collecting individual high emission methane point sources. The [Carbon mapper portal](https://data.carbonmapper.org/) provides methane plume imagery with emission rates and uncertainties from strong point sources as observed from NASA’s next generation Airborne Visible/Infrared Imaging Spectrometer (AVIRIS-NG) and ASU’s Global Airborne Observatory (GAO) airborne platforms.
 
