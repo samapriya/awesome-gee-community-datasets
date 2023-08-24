@@ -7,7 +7,7 @@ This dataset derives from a meticulous fusion of data from 11,473 rain gauges an
 These dataset presents the daily meteorological gridded data set from Brazil (BR-DWGD). The variables are Precipitation (pr, mm); maximum and minimum temperature (Tmax, tmin, °C); solar radiation (Rs, MJ/m2); relative humidity (RH, %); wind speed at 2 meters (u2, m/s) and evapotranspiration (ETo, mm). The temporal coverage is 1961/01/01-2020/07/31 (except precipitation: 1961/01/01-2022/12/31) and has the spatial resolution 0.1° x 0.1°, just for Brazil territory. You can find links to the dataset [here](https://sites.google.com/site/alexandrecandidoxavierufes/brazilian-daily-weather-gridded-data)
 
 #### Dataset post processing
-The datasets must be scaled and offset should be applied to represent true values and they are included in the table below as well as the sample script.
+The datasets were provided as multiband netcdf files with each representing a single day since 1961 and then partitioned across 20 year intervals. There were then converted and split into single geotiff images and merged so they could be continious collections with about 21,762 images per collection except Precipitation which extends till 2022. The rain gauge and weather station location data was further added to the assets. The datasets must be scaled and offset should be applied to represent true values and they are included in the table below as well as the sample script.
 
 |Variable|Variable name      |Units     |Offset|Scale      |
 |--------|-------------------|----------|------|-----------|
