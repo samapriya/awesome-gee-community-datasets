@@ -10392,6 +10392,78 @@
     "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary"
   },
   {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): ET",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/ET",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): PR",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/PR",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): RH",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/RH",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): RS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/RS",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): TMAX",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/TMAX",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): TMIN",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/TMIN",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): U2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/U2",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): Rain Gauges",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/RAIN_GAUGES",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
+    "title": "Brazilian Daily  Weather  Gridded  Data (BR-DWGD): Weather Stations",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/BR-DWGD/WEATHER_STATIONS",
+    "provider": "Xavier, A. C. et al",
+    "tags": "Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",

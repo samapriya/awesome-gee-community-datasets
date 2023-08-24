@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-08-24
+- Updated [Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/br_dwgd/)
+- Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-08-17
 - Added [DynQual Global Surface Water Quality Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/dynqual/)
 - Added [USDA Crop Sequence Boundaries 2015-2022](https://samapriya.github.io/awesome-gee-community-datasets/projects/csb/)
