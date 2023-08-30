@@ -1280,7 +1280,7 @@
     "tags": "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
   },
   {
-    "title": "GEBCO 2021 Grid",
+    "title": "GEBCO 2023 Grid",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_grid",
@@ -1288,7 +1288,7 @@
     "tags": "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
   },
   {
-    "title": "GEBCO 2021 sub-ice topo/bathy",
+    "title": "GEBCO 2023 sub-ice topo/bathy",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo",
@@ -1296,7 +1296,7 @@
     "tags": "Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
   },
   {
-    "title": "GEBCO 2021 Type Identifier (TID) Grid",
+    "title": "GEBCO 2023 Type Identifier (TID) Grid",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/gebco/gebco_tid_grid",
@@ -9552,42 +9552,42 @@
     "tags": "Global human modification, land use, human pressures, biodiversity"
   },
   {
-    "title": "Digital Earth Australia Coastlines v200 Shorlines",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V200",
+    "title": "Digital Earth Australia Coastlines v210 Shorlines",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v200_shorelines_annual",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_shorelines_annual",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion"
   },
   {
-    "title": "Digital Earth Australia Coastlines v200 Hotspots Zoom 1",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V200",
+    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v200_hotspots_zoom_1",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_1",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion"
   },
   {
-    "title": "Digital Earth Australia Coastlines v200 Hotspots Zoom 2",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V200",
+    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v200_hotspots_zoom_2",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_2",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion"
   },
   {
-    "title": "Digital Earth Australia Coastlines v200 Hotspots Zoom 3",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V200",
+    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v200_hotspots_zoom_3",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_3",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion"
   },
   {
-    "title": "Digital Earth Australia Coastlines v200 Rate of Change",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V200",
+    "title": "Digital Earth Australia Coastlines v210 Rate of Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v200_rates_of_change",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_rates_of_change",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion"
   },
@@ -9968,10 +9968,34 @@
     "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
   },
   {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Average Annual Discharge",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/discharge-avg-annual",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Channel Storage",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/channel-storage",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
     "title": "DynQual v1 Global Surface Water Quality Dataset: Fecal Coliform",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/DYNQUAL/fecal-coliform",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Routed Fecal Coliform",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/routed-fc",
     "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
     "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
   },
@@ -9984,10 +10008,26 @@
     "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
   },
   {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Routed TDS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/routed-tds",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
     "title": "DynQual v1 Global Surface Water Quality Dataset: BOD",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/DYNQUAL/biological-oxygen-demand",
+    "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
+    "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
+  },
+  {
+    "title": "DynQual v1 Global Surface Water Quality Dataset: Routed BOD",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/DYNQUAL/routed-bod",
     "provider": "Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.",
     "tags": "water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC"
   },
