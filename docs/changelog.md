@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-08-30
+- Updated [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/) now updated to 2023
+- Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorelines) to include 2022 shorelines
+- Updated [DynQual Global Surface Water Quality Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/dynqual/) with Channel Storage and routed loading
+- Updated Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-08-24
 - Updated [Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/br_dwgd/)
 - Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
