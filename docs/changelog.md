@@ -4,7 +4,7 @@
 
 #### Updated 2023-08-30
 - Updated [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/) now updated to 2023
-- Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorelines) to include 2022 shorelines
+- Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorlines) to include 2022 shorelines
 - Updated [DynQual Global Surface Water Quality Dataset](https://samapriya.github.io/awesome-gee-community-datasets/projects/dynqual/) with Channel Storage and routed loading
 - Updated Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
 
