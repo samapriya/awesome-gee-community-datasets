@@ -11,7 +11,7 @@ The datasets were provided as multiband netcdf files with each representing a si
 
 |Variable|Variable name      |Units     |Offset|Scale      |
 |--------|-------------------|----------|------|-----------|
-|pr      |Precipitation      |mm        |255   |0.006866665|
+|pr      |Precipitation      |mm        |225   |0.006866665|
 |Eto     |evapotranspiration |mm        |0     |0.051181102|
 |Tmax    |maximum temperature|C         |15    |0.001068148|
 |Tmin    |minimum temperature|C         |15    |0.001068148|
