@@ -9947,7 +9947,7 @@
     "title": "Global Human Settlement Layer GHS_SMOD R2023A 1000m 1975-2030",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/GHS/GHS_SMOD_GLOBE_R2023A_54009_1000_V1_0",
+    "id": "projects/sat-io/open-datasets/GHS/GHS_SMOD",
     "provider": "JRC, ESA",
     "tags": "Global Population, Population count, Urban structure, Built up area, Built up volume, Building height"
   },
