@@ -56,9 +56,8 @@ var GHS_BUILT_S_2030 = ee.Image("projects/sat-io/open-datasets/GHS/GHS_BUILT_S_E
 var GHS_BUILT_H = ee.Image("projects/sat-io/open-datasets/GHS/GHS_BUILT_H_AGBH_E2018_GLOBE_R2023A_54009_100_V1_0");
 var GHS_BUILT_V = ee.Image("projects/sat-io/open-datasets/GHS/GHS_BUILT_V_E2030_GLOBE_R2023A_54009_100_V1_0");
 var GHS_BUILT_C = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_BUILT_C_MSZ_E2018_GLOBE_R2023A_54009_10_V1_0");
-var GHS_POP = ee.Image("projects/sat-io/open-datasets/GHS/GHS_POP_E2030_GLOBE_R2023A_54009_100_V1_0");
-var GHS_SMOD = ee.Image("projects/sat-io/open-datasets/GHS/GHS_SMOD_E2030_GLOBE_R2023A_54009_1000_V1_0");
-var GHS_SMOD_1975_2030 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_SMOD_GLOBE_R2023A_54009_1000_V1_0")
+var GHS_POP_1975_2030 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_POP");
+var GHS_SMOD_1975_2030 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_SMOD")
 ```
 
 Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023
