@@ -2656,10 +2656,34 @@
     "tags": "Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1"
   },
   {
+    "title": "South African National Land Cover 1990",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/landcover/SA_NLC_1990",
+    "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
+    "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
+  },
+  {
+    "title": "South African National Land Cover 2013-2014",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2013_2014",
+    "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
+    "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
+  },
+  {
     "title": "South African National Land Cover 2018",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC",
     "type": "image",
     "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2018",
+    "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
+    "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
+  },
+  {
+    "title": "South African National Land Cover 2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/landcover/SA_NLC_2020",
     "provider": "Department of Forestry, Fisheries and the Environment, Republic of South Africa",
     "tags": "land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite"
   },
