@@ -2,6 +2,7 @@
 
 Find a list of associated blog posts related to GEE and community catalog here. To get post updates follow me on [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 
+* [Behind the Scenes: The Role of NSF’s Jetstream2 in Building the Awesome GEE Community Catalog](https://samapriyaroy.medium.com/behind-the-scenes-the-role-of-nsfs-jetstream2-in-building-the-awesome-gee-community-catalog-3f563b8cb9f0)
 * [From Paper to Pixels- Rediscovering Historical USGS Topo Maps in the Google Earth Engine Community Catalog](https://medium.com/@samapriyaroy/from-paper-to-pixels-rediscovering-historical-usgs-topo-maps-in-the-google-earth-engine-community-f514c97c46a)
 * [Community-Enhanced: Google Earth Engine Community Catalog Upgrades](https://medium.com/@samapriyaroy/community-enhanced-google-earth-engine-community-catalog-upgrades-66d4b7076826)
 * [Google Cloud Projects and Earth Engine Integration at Universities: A Practical Guide](https://samapriyaroy.medium.com/google-cloud-projects-and-earth-engine-integration-in-universities-a-practical-guide-fb16d8dad14a)
