@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-09-14
+- Added [Global 30m Impervious-Surface Dynamic Dataset (GISD30)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisd30)
+- Added [USGS VIIRS Evapotranspiration](https://samapriya.github.io/awesome-gee-community-datasets/projects/usgs_viirs)
+- Added [USGS MODIS Evapotranspiration](https://samapriya.github.io/awesome-gee-community-datasets/projects/usgs_modis_et)
+- Added [Snow Data Assimilation System (SNODAS) Daily](https://samapriya.github.io/awesome-gee-community-datasets/projects/snodas)
+- Added [North American Drought Monitor (NADM) Monthly](https://samapriya.github.io/awesome-gee-community-datasets/projects/nadm)
+
 #### Updated 2023-08-30
 - Updated [General Bathymetric Chart of the Oceans (GEBCO)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gebco/) now updated to 2023
 - Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorlines) to include 2022 shorelines

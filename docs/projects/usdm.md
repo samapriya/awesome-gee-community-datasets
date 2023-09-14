@@ -38,6 +38,6 @@ Produced by : National Drought Mitigation Center at the University of Nebraska-L
 
 Processed secondary/formatted & Curated by: Samapriya Roy
 
-Keywords: :"National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
+Keywords: "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
 
 Last updated: 2021-04-24

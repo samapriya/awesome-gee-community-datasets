@@ -203,6 +203,7 @@ nav:
       - GlobCover Global Land Cover: projects/globcover_esa.md
       - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
       - Global Impervious Surface Area (1972-2019): projects/gisa.md
+      - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
       - Global urban extents from 1870 to 2100: projects/gue.md
       - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
       - World Settlement Footprint & Evolution: projects/wsf.md
@@ -262,6 +263,8 @@ nav:
   - Agriculture, Vegetation and Forestry:
       - Landfire Mosaics LF v2.2.0: projects/landfire.md
       - Vegetation dryness for western USA: projects/veg_dry.md
+      - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
+      - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
@@ -337,7 +340,9 @@ nav:
       - MOD10A2061 Snow Cover 8-Day L3 Global 500m: projects/modis_8day_snow.md
       - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
       - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
+      - Snow Data Assimilation System (SNODAS): projects/snodas.md
       - United States Drought Monitor Layers: projects/usdm.md
+      - North American Drought Monitor (NADM): projects/nadm.md
       - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
       - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
       - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
