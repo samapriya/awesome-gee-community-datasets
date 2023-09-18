@@ -3216,7 +3216,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2019-04-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-04-01_performance_mobile_tiles",
@@ -3224,7 +3224,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2019-07-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-07-01_performance_mobile_tiles",
@@ -3232,7 +3232,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2019-10-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2019-10-01_performance_mobile_tiles",
@@ -3240,7 +3240,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2020-01-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-01-01_performance_mobile_tiles",
@@ -3248,7 +3248,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2020-04-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-04-01_performance_mobile_tiles",
@@ -3256,7 +3256,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2020-07-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-07-01_performance_mobile_tiles",
@@ -3264,7 +3264,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2020-10-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2020-10-01_performance_mobile_tiles",
@@ -3272,7 +3272,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2021-01-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-01-01_performance_mobile_tiles",
@@ -3280,7 +3280,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2021-04-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-04-01_performance_mobile_tiles",
@@ -3288,7 +3288,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2021-07-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-07-01_performance_mobile_tiles",
@@ -3296,7 +3296,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2021-10-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2021-10-01_performance_mobile_tiles",
@@ -3304,7 +3304,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2022-01-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2022-01-01_performance_mobile_tiles",
@@ -3312,7 +3312,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2022-04-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2022-04-01_performance_mobile_tiles",
@@ -3320,7 +3320,7 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2022-07-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2022-07-01_performance_mobile_tiles",
@@ -3328,10 +3328,42 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },
   {
-    "title": "Global Mobile Network Performance Maps: 2019-01-01",
+    "title": "Global Mobile Network Performance Maps: 2022-10-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2022-10-01_performance_mobile_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+  },
+  {
+    "title": "Global fixed Network Performance Maps: 2023-01-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/fixed_tiles/2023-01-01_performance_fixed_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+  },
+  {
+    "title": "Global fixed Network Performance Maps: 2023-04-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/fixed_tiles/2023-04-01_performance_fixed_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+  },
+  {
+    "title": "Global Mobile Network Performance Maps: 2023-01-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/mobile_tiles/2023-01-01_performance_mobile_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
+  },
+  {
+    "title": "Global Mobile Network Performance Maps: 2023-04-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/mobile_tiles/2023-04-01_performance_mobile_tiles",
     "provider": "Ookla",
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles"
   },

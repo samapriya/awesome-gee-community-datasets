@@ -2,7 +2,7 @@
 
 Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.
 
-Available years of datasets: 2019,2020,2021 and 2022
+Available years of datasets: 2019,2020,2021,2022 and 2023
 
 #### Citation
 
@@ -92,4 +92,4 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: : analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles
 
-Last updated: 2023-03-25
+Last updated: 2023-09-18
