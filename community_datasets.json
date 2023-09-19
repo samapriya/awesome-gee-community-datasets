@@ -1659,7 +1659,7 @@
     "title": "Evergreen Deciduous Needleleaf Trees avg- Global Freshwater Variables",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_broadleaf_trees_avg",
+    "id": "projects/sat-io/open-datasets/global_freshwater_variables/evergreen_deciduous_needleleaf_trees_avg",
     "provider": "Domisch, S., Amatulli, G., and Jetz, W.",
     "tags": "Evergreen Deciduous Needleleaf Trees avg, EarthEnv, global freshwater"
   },
