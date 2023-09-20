@@ -2265,7 +2265,7 @@
   },
   {
     "title": "Global Fire Atlas: Day of Burn",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/day_of_burn",
     "provider": "Niels Andela",
@@ -2273,7 +2273,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Direction",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_direction",
     "provider": "Niels Andela",
@@ -2281,7 +2281,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Line",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_line",
     "provider": "Niels Andela",
@@ -2289,7 +2289,7 @@
   },
   {
     "title": "Global Fire Atlas: Fire Speed",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/fire_speed",
     "provider": "Niels Andela",
@@ -2297,7 +2297,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2003",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2003",
     "provider": "Niels Andela",
@@ -2305,7 +2305,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2004",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2004",
     "provider": "Niels Andela",
@@ -2313,7 +2313,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2005",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2005",
     "provider": "Niels Andela",
@@ -2321,7 +2321,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2006",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2006",
     "provider": "Niels Andela",
@@ -2329,7 +2329,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2007",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2007",
     "provider": "Niels Andela",
@@ -2337,7 +2337,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2008",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2008",
     "provider": "Niels Andela",
@@ -2345,7 +2345,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2009",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2009",
     "provider": "Niels Andela",
@@ -2353,7 +2353,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2010",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2010",
     "provider": "Niels Andela",
@@ -2361,7 +2361,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2011",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2011",
     "provider": "Niels Andela",
@@ -2369,7 +2369,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2012",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2012",
     "provider": "Niels Andela",
@@ -2377,7 +2377,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2013",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2013",
     "provider": "Niels Andela",
@@ -2385,7 +2385,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2014",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2014",
     "provider": "Niels Andela",
@@ -2393,7 +2393,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2015",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2015",
     "provider": "Niels Andela",
@@ -2401,7 +2401,7 @@
   },
   {
     "title": "Global Fire Atlas: ignitions_2016",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2016",
     "provider": "Niels Andela",
@@ -2409,7 +2409,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2003",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2003",
     "provider": "Niels Andela",
@@ -2417,7 +2417,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2004",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2004",
     "provider": "Niels Andela",
@@ -2425,7 +2425,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2005",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2005",
     "provider": "Niels Andela",
@@ -2433,7 +2433,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2006",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2006",
     "provider": "Niels Andela",
@@ -2441,7 +2441,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2007",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2007",
     "provider": "Niels Andela",
@@ -2449,7 +2449,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2008",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2008",
     "provider": "Niels Andela",
@@ -2457,7 +2457,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2009",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2009",
     "provider": "Niels Andela",
@@ -2465,7 +2465,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2010",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2010",
     "provider": "Niels Andela",
@@ -2473,7 +2473,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2011",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2011",
     "provider": "Niels Andela",
@@ -2481,7 +2481,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2012",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2012",
     "provider": "Niels Andela",
@@ -2489,7 +2489,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2013",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2013",
     "provider": "Niels Andela",
@@ -2497,7 +2497,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2014",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2014",
     "provider": "Niels Andela",
@@ -2505,7 +2505,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2015",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2015",
     "provider": "Niels Andela",
@@ -2513,7 +2513,7 @@
   },
   {
     "title": "Global Fire Atlas: perimeter_2016",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS",
     "type": "table",
     "id": "projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016",
     "provider": "Niels Andela",
@@ -3825,7 +3825,7 @@
   },
   {
     "title": "Monitoring Trends in Burn Severity 1984-2019: Burned area boundaries",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MONITORING-TRENDS-BURN-SEVERITY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/MONITORING-TRENDS-BURN-SEVERITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MTBS/burned_area_boundaries",
     "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
@@ -3833,7 +3833,7 @@
   },
   {
     "title": "Monitoring Trends in Burn Severity 1984-2019: Fire Occurrence",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MONITORING-TRENDS-BURN-SEVERITY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/MONITORING-TRENDS-BURN-SEVERITY",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MTBS/fire_occurrence",
     "provider": "U.S. Geological Survey Center for Earth Resources Observation and Science (EROS) and the USDA Forest Service Geospatial Technology and Applications Center (GTAC)",
@@ -7017,7 +7017,7 @@
   },
   {
     "title": "MODIS MCD14ML (standard quality) active fire vector data",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
     "type": "table",
     "id": "projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2012",
     "provider": "Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA",
@@ -7025,7 +7025,7 @@
   },
   {
     "title": "VIIRS VNP14IMGTDL_NRT active fire vector data",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ARCHIVAL-NRT-FIRMS-VIIRS-DATA",
     "type": "table",
     "id": "projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012",
     "provider": "Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA",
@@ -7753,7 +7753,7 @@
   },
   {
     "title": "30m Global Annual Burned Area Maps (GABAM)",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-ANNUAL-BURNED-AREA-MAPS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-ANNUAL-BURNED-AREA-MAPS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GABAM",
     "provider": "Long Tengfei; Zhang Zhaoming; He Guojin",
@@ -9337,7 +9337,7 @@
   },
   {
     "title": "Canada Landsat Derived Wildfire disturbance 1985-2020",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-1985-2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CA-FOREST-FIRE-1985-2020",
     "type": "image",
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Fire_1985-2020",
     "provider": "Hermosilla et al. 2016",
@@ -9345,7 +9345,7 @@
   },
   {
     "title": "Canada Landsat Derived Wildfire disturbance Magnitude 1985-2020",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-MAGNITUDE-1985-2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CA-FOREST-FIRE-MAGNITUDE-1985-2020",
     "type": "image",
     "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Wildfire_dNBR_1985_2020",
     "provider": "Hermosilla et al. 2016",
@@ -10630,6 +10630,30 @@
     "id": "projects/sat-io/open-datasets/GISD30_1985_2020",
     "provider": "Zhang, X., Liu, L., Zhao, T., Gao, Y., Chen, X., and Mi, J.",
     "tags": "Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion, global dataset"
+  },
+  {
+    "title": "Wildfire Risk to Communities (WRC)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/WILDFIRE-RISK-COMMUNITIES",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-wrc-static",
+    "provider": "USDA Forest Service",
+    "tags": "Wildfire, CONUS, United States, USDA, Forest Service, LANDFIRE"
+  },
+  {
+    "title": "CEMS Fire Danger Indices Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CEMS-FIRE-DAILY",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-cems-fire-daily-4-1",
+    "provider": "Copernicus",
+    "tags": "ECMWF, Copernicus, wildfire, climate, reanalysis, ERA5, daily, near real-time"
+  },
+  {
+    "title": "Global Fire WEather Database (GFWED) Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-WEATHER-DB",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-merra2_fwi-daily",
+    "provider": "NASA Precipitation Measurement Missions Science Team, NASA Group on Earth Observations Work Program",
+    "tags": "climate, fire, wildfire, NASA, MERRA2, daily, global, GFWED"
   },
   {
     "title": "USGS Historical Topo maps 1:24000 map index",

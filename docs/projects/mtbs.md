@@ -49,7 +49,7 @@ var area_boundaries = ee.FeatureCollection("projects/sat-io/open-datasets/MTBS/b
 var fire_occurrence = ee.FeatureCollection("projects/sat-io/open-datasets/MTBS/fire_occurrence");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MONITORING-TRENDS-BURN-SEVERITY
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/MONITORING-TRENDS-BURN-SEVERITY
 
 
 #### License

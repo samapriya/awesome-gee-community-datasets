@@ -36,7 +36,7 @@ Note: **The user did notice that some 8 years of datasets were missing or not pr
 var gabam = ee.ImageCollection("projects/sat-io/open-datasets/GABAM");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-ANNUAL-BURNED-AREA-MAPS
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-ANNUAL-BURNED-AREA-MAPS
 
 #### License
 

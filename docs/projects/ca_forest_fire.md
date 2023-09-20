@@ -26,13 +26,13 @@ pixels to data products for forest monitoring. International Journal of Digital 
 var ca_forest_fire = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Fire_1985-2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-1985-2020
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CA-FOREST-FIRE-1985-2020
 
 ```js
 var ca_forest_fire_mag = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Wildfire_dNBR_1985_2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-FIRE-MAGNITUDE-1985-2020
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CA-FOREST-FIRE-MAGNITUDE-1985-2020
 
 #### License
 This work is licensed under and freely available to the public Open Government Licence - Canada.

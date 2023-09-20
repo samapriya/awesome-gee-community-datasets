@@ -2,6 +2,18 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-09-20
+- Added a new section about **Forest Monitoring and analysis**
+- Added [CEMS Fire Danger Indices](https://samapriya.github.io/awesome-gee-community-datasets/projects/cems_fire)
+- Added [Global Fire WEather Database (GFWED)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfwed)
+- Added [Wildfire Risk to Communities (WRC)](https://samapriya.github.io/awesome-gee-community-datasets/projects/wrc)
+- Updated [Native Land (Indigenous Land Maps)](https://samapriya.github.io/awesome-gee-community-datasets/projects/native/)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://samapriya.github.io/awesome-gee-community-datasets/projects/speedtest)
+- Moved [Canada Landsat Derived Forest fire disturbance 1985-2020](https://samapriya.github.io/awesome-gee-community-datasets/projects/ca_forest_fire) to section **Forest Monitoring and analysis**
+- Moved [30m Global Annual Burned Area Maps (GABAM)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gabam) to section **Forest Monitoring and analysis**
+- Moved [Archival NRT FIRMS Global VIIRS and MODIS vector data](https://samapriya.github.io/awesome-gee-community-datasets/projects/firms_vector) to section **Forest Monitoring and analysis**
+- Moved [Global Fire Atlas](https://samapriya.github.io/awesome-gee-community-datasets/projects/gfa) to section **Forest Monitoring and analysis**
+
 #### Updated 2023-09-14
 - Added [Global 30m Impervious-Surface Dynamic Dataset (GISD30)](https://samapriya.github.io/awesome-gee-community-datasets/projects/gisd30)
 - Added [USGS VIIRS Evapotranspiration](https://samapriya.github.io/awesome-gee-community-datasets/projects/usgs_viirs)

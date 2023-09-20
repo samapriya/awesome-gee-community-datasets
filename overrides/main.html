@@ -1,40 +1,68 @@
 {#-
-  This file was automatically generated - do not edit
+This file was automatically generated - do not edit
 -#}
 {% extends "base.html" %}
 {% block extrahead %}
-  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f7ec4df2.min.css' | url }}">
+<link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f7ec4df2.min.css' | url }}">
+<style>
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-content {
+        flex-grow: 1;
+    }
+
+    .right-content {
+        /* Change this to your desired background color */
+        color: #fff;
+        text-align: right;
+    }
+</style>
 {% endblock %}
 {% block announce %}
-  For updates follow <strong>@samapriya</strong> on
-  <a rel="me" href="https://www.linkedin.com/in/samapriya/">
-    <span class="twemoji linkedin">
-      {% include ".icons/fontawesome/brands/linkedin.svg" %}
-    </span>
-    <strong>Linkedin</strong>
-  </a>
-  <a href="https://medium.com/@samapriyaroy">
-    <span class="twemoji medium">
-      {% include ".icons/fontawesome/brands/medium.svg" %}
-    </span>
-    <strong>Medium</strong>
-  </a>
-  <a href="https://twitter.com/samapriyaroy">
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
-  </a>
-  or
-  <a rel="me" href="https://mapstodon.space/@samapriya">
-    <span class="twemoji mastodon">
-      {% include ".icons/fontawesome/brands/mastodon.svg" %}
-    </span>
-    <strong>Mapstodon</strong>
-  </a>
-
+<div class="content-container">
+    <div class="left-content">
+        For updates follow <strong>@samapriya</strong> on
+        <a rel="me" href="https://www.linkedin.com/in/samapriya/">
+            <span class="twemoji linkedin">
+                {% include ".icons/fontawesome/brands/linkedin.svg" %}
+            </span>
+            <strong>Linkedin</strong>
+        </a>
+        <a rel="me" href="https://www.github.com/samapriya/">
+            <span class="twemoji github">
+                {% include ".icons/fontawesome/brands/github.svg" %}
+            </span>
+            <strong>Github</strong>
+        </a>
+        <a href="https://medium.com/@samapriyaroy">
+            <span class="twemoji medium">
+                {% include ".icons/fontawesome/brands/medium.svg" %}
+            </span>
+            <strong>Medium</strong>
+        </a>
+        <a href="https://twitter.com/samapriyaroy">
+            <span class="twemoji twitter">
+                {% include ".icons/fontawesome/brands/twitter.svg" %}
+            </span>
+            <strong>Twitter</strong>
+        </a>
+    </div>
+    <div class="right-content">
+        Support
+        <a rel="me" href="https://github.com/sponsors/samapriya">
+            <span class="twemoji sponsor">
+                {% include ".icons/octicons/sponsor-tiers-24.svg" %}
+            </span>
+            <strong>Sponsor</strong>
+        </a>
+    </div>
+</div>
 {% endblock %}
 {% block scripts %}
-  {{ super() }}
-  <script src="{{ 'assets/javascripts/custom.a678ee80.min.js' | url }}"></script>
+{{ super() }}
+<script src="{{ 'assets/javascripts/custom.a678ee80.min.js' | url }}"></script>
 {% endblock %}
