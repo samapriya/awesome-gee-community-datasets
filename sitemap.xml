@@ -586,6 +586,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/samapriya/projects/historical_us/</loc>
+         <lastmod>2023-09-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/samapriya/projects/hitisae/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
@@ -807,6 +812,11 @@
     </url>
     <url>
          <loc>https://github.com/samapriya/projects/polaris/</loc>
+         <lastmod>2023-09-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/projects/pomelo/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
