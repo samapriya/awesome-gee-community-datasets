@@ -1168,14 +1168,6 @@
     "tags": "Social Connectedness Index, SCI, Facebook, CIESIN, country, second location"
   },
   {
-    "title": "Fuel Characteristic Classification System Fuelbeds (FCCS) LF v2.2.0",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
-    "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/landfire/fuel/FCCS",
-    "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
-    "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire"
-  },
-  {
     "title": "Elevation (ELEV) LF v2.2.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TOPOGRAPHIC",
     "type": "image_collection",
@@ -6288,7 +6280,7 @@
     "tags": "Building Footprint, Built Environment Density, Land cover, Land use"
   },
   {
-    "title": "Harmonized Global Night Time Lights (1992-2020): DMSP",
+    "title": "Harmonized Global Night Time Lights (1992-2021): DMSP",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-GLOBAL-NTL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Harmonized_NTL/dmsp",
@@ -6296,7 +6288,7 @@
     "tags": "DMSP/OLS data, VIIRS, nighttime light, calibration, consistent, global"
   },
   {
-    "title": "Harmonized Global Night Time Lights (1992-2020): VIIRS",
+    "title": "Harmonized Global Night Time Lights (1992-2021): VIIRS",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-GLOBAL-NTL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/Harmonized_NTL/viirs",
@@ -9944,14 +9936,6 @@
     "tags": "albedo, eight-day, 8-day, geophysical, global, modis, nasa, nsidc, snow, terra, mod10a2"
   },
   {
-    "title": "Global Human Settlement Layer GHS-BUILT-S R2023A",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023",
-    "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/GHS/GHS_BUILT_S_E2018_GLOBE_R2023A_54009_10_V1_0",
-    "provider": "JRC, ESA",
-    "tags": "Global Population, Population count, Urban structure, Built up area, Built up volume, Building height"
-  },
-  {
     "title": "Global Human Settlement Layer GHS-BUILT-S R2023A 10m",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023",
     "type": "image_collection",
@@ -10654,6 +10638,38 @@
     "id": "projects/climate-engine-pro/assets/ce-merra2_fwi-daily",
     "provider": "NASA Precipitation Measurement Missions Science Team, NASA Group on Earth Observations Work Program",
     "tags": "climate, fire, wildfire, NASA, MERRA2, daily, global, GFWED"
+  },
+  {
+    "title": "POMELO Model Population Density Maps",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/POMELO-POP-DENSITY",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/POMELO/POMELOv1",
+    "provider": "Metzger et al 2022",
+    "tags": "population mapping, developing countires, population density, humanitarian actions"
+  },
+  {
+    "title": "USGS Historical Imagery Western US Imagery",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
+    "type": "image_collection",
+    "id": "projects/wlfw-um/assets/historical-imagery/conus-west",
+    "provider": "University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture",
+    "tags": "Aerial imagery, United States, Great Plains, Great Basin, Historical, photogrammetry"
+  },
+  {
+    "title": "USGS Historical Imagery Western US Metadata",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
+    "type": "table",
+    "id": "projects/wlfw-um/assets/historical-imagery/conus-west-seamlines",
+    "provider": "University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture",
+    "tags": "Aerial imagery, United States, Great Plains, Great Basin, Historical, photogrammetry"
+  },
+  {
+    "title": "USGS Historical Imagery Western US Metadata with date",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/wlfm-um-extra/wlfm-um-seamlines",
+    "provider": "University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture",
+    "tags": "Aerial imagery, United States, Great Plains, Great Basin, Historical, photogrammetry"
   },
   {
     "title": "USGS Historical Topo maps 1:24000 map index",

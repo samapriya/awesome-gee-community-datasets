@@ -1,9 +1,9 @@
-# Harmonized Global Night Time Lights (1992-2020)
+# Harmonized Global Night Time Lights (1992-2021)
 
 In this study, the authors generated an integrated and consistent NTL dataset at the global scale by harmonizing the inter-calibrated NTL observations from the DMSP data and the simulated DMSP-like NTL observations from the VIIRS data. The generated global DMSP NTL time-series data (1992–2018) show consistent temporal trends. This temporally extended DMSP NTL dataset provides valuable support for various studies related to human activities such as electricity consumption and urban extent dynamics. The dataset contains
 
 1. Temporally calibrated DMSP-OLS NTL time series data from 1992-2013; and
-2. Converted NTL time series from the VIIRS data (2014-2020)
+2. Converted NTL time series from the VIIRS data (2014-2021)
 
 Spatial resolution: 30 arc-seconds (~1km)
 
@@ -49,4 +49,7 @@ Curated by: Samapriya Roy
 
 Keywords: : DMSP/OLS data, VIIRS, nighttime light, calibration, consistent, global
 
-Last updated: 2021-11-26
+#### Changelog
+* Updated to v7 now included 2021 VIIRS datatset
+
+Last updated: 2023-09-22

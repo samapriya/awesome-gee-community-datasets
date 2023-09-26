@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-09-26
+- Added [POMELO Model Population Density Maps](https://samapriya.github.io/awesome-gee-community-datasets/projects/pomelo)
+- Added [USGS Historical Imagery Western US](https://samapriya.github.io/awesome-gee-community-datasets/projects/historical_us)
+- Updated [Harmonized Global Night Time Lights (1992-2021)](https://samapriya.github.io/awesome-gee-community-datasets/projects/hntl)
+- Updated Weekly updates to [USDM drought monitor](https://samapriya.github.io/awesome-gee-community-datasets/projects/usdm/)
+
 #### Updated 2023-09-20
 - Added a new section about **Fire Monitoring and analysis**
 - Added [CEMS Fire Danger Indices](https://samapriya.github.io/awesome-gee-community-datasets/projects/cems_fire)
