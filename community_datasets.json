@@ -6275,7 +6275,7 @@
     "title": "Rasterized building footprint US: Building Count",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
+    "id": "projects/sat-io/open-datasets/us_building_raster/building_count",
     "provider": "Heris et al, NASA, USGS",
     "tags": "Building Footprint, Built Environment Density, Land cover, Land use"
   },
@@ -6283,7 +6283,7 @@
     "title": "Rasterized building footprint US: Building Centroid Count",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/us_building_raster/building_total_area",
+    "id": "projects/sat-io/open-datasets/us_building_raster/building_centroid_count",
     "provider": "Heris et al, NASA, USGS",
     "tags": "Building Footprint, Built Environment Density, Land cover, Land use"
   },
