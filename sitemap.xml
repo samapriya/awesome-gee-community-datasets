@@ -211,6 +211,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/samapriya/projects/cpc_morph/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/samapriya/projects/csb/</loc>
          <lastmod>2023-10-02</lastmod>
          <changefreq>daily</changefreq>
@@ -641,6 +646,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/samapriya/projects/hrdpa/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/projects/hrdps/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/samapriya/projects/hrsl/</loc>
          <lastmod>2023-10-02</lastmod>
          <changefreq>daily</changefreq>
@@ -752,6 +767,11 @@
     </url>
     <url>
          <loc>https://github.com/samapriya/projects/maxar_opendata/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/projects/merrav2/</loc>
          <lastmod>2023-10-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -877,6 +897,16 @@
     </url>
     <url>
          <loc>https://github.com/samapriya/projects/rap/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/projects/rdpa/</loc>
+         <lastmod>2023-10-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/projects/rdps/</loc>
          <lastmod>2023-10-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
