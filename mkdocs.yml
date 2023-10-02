@@ -266,6 +266,8 @@ nav:
       - Vegetation dryness for western USA: projects/veg_dry.md
       - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
       - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md
+      - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
+      - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2021): projects/cflux.md
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
@@ -344,6 +346,14 @@ nav:
       - Snow Data Assimilation System (SNODAS): projects/snodas.md
       - United States Drought Monitor Layers: projects/usdm.md
       - North American Drought Monitor (NADM): projects/nadm.md
+      - Canadian Drought Outlook: projects/can_drought_outlook.md
+      - United States Seasonal Drought Outlook: projects/ussdo.md
+      - Global Precipitation Measurement (GPM): projects/gpm.md
+      - ANUSPLIN Gridded Climate Dataset: projects/anusplin.md
+      - AgERA5 (ECMWF) dataset: projects/agera5_datasets.md
+      - Applied Climate Information System (ACIS) NRCC NN: noaa_acis.md
+      - Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim): projects/chirps_prelim.md
+      - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): nclim_grid.md
       - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
       - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
       - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md

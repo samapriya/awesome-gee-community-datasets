@@ -10648,6 +10648,110 @@
     "tags": "population mapping, developing countires, population density, humanitarian actions"
   },
   {
+    "title": "AgERA5 (ECMWF) dataset",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/AGERA5-DATASETS",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-ag-era5/daily",
+    "provider": "Copernicus",
+    "tags": "climate, reanalysis, near real-time, ECMWF, precipitation, temperature"
+  },
+  {
+    "title": "ANUSPLIN Gridded Climate Dataset Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/ANUSPLIN-GRID",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-anusplin-daily",
+    "provider": " Agriculture and Agri-Food Canada",
+    "tags": "climate, reanalysis, near real-time, ECMWF, precipitation, temperature"
+  },
+  {
+    "title": "ANUSPLIN Gridded Climate Dataset Monthly",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/ANUSPLIN-GRID",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-anusplin-monthly",
+    "provider": " Agriculture and Agri-Food Canada",
+    "tags": "climate, reanalysis, near real-time, ECMWF, precipitation, temperature"
+  },
+  {
+    "title": "Canadian Drought Outlook",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CANADA-DROUGHT-OUTLOOK",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-aafc-cdo-monthly",
+    "provider": " Agriculture and Agri-Food Canada",
+    "tags": "drought, Canada, forecast, AAFC"
+  },
+  {
+    "title": "Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CANADA-DROUGHT-OUTLOOK",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-chirps-prelim-pentad",
+    "provider": "Climate Hazards Group Infrared Precipitation with Stations (CHIRPS)",
+    "tags": "precipitation, near real-time, climate, CHIRPS"
+  },
+  {
+    "title": "Forecast Reference Crop Evapotranspiration (FRET)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-FRET",
+    "type": "image_collection",
+    "id": "projects/climate-engine/fret/forecast/eto",
+    "provider": "NOAA",
+    "tags": "drought, aridity, evaporative demand, ASCE, evapotranspiration, climate, forecast, CONUS, United States"
+  },
+  {
+    "title": "NOAA Evaporative Stress Index (ESI) 4 week",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-ESI-10KM",
+    "type": "image_collection",
+    "id": "projects/climate-engine/esi/4wk",
+    "provider": "NOAA",
+    "tags": "Drought, vegetation, remote sensing, climate, USDA-ARS, NOAA, MODIS, LST, global, near real-time"
+  },
+  {
+    "title": "NOAA Evaporative Stress Index (ESI) 12 week",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-ESI-10KM",
+    "type": "image_collection",
+    "id": "projects/climate-engine/esi/12wk",
+    "provider": "NOAA",
+    "tags": "Drought, vegetation, remote sensing, climate, USDA-ARS, NOAA, MODIS, LST, global, near real-time"
+  },
+  {
+    "title": "Global Precipitation Measurement (GPM)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-PRECIP-MEASUREMENT",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-gpm-imerg-daily",
+    "provider": "Climate Engine Org, NASA",
+    "tags": "precipitation, climate, NASA, JAXA, satellite, near real-time"
+  },
+  {
+    "title": "NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid) daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NCLIM-GRID",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/noaa-ncei-nclimgrid/daily",
+    "provider": "Climate Engine Org, NASA",
+    "tags": "NOAA, nclim, CONUS, United Stated, daily, near real-time, temperature, precipitation"
+  },
+  {
+    "title": "NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid) monthly",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NCLIM-GRID",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/noaa-ncei-nclimgrid/monthly",
+    "provider": "Climate Engine Org, NASA",
+    "tags": "NOAA, nclim, CONUS, United Stated, monthly, near real-time, temperature, precipitation"
+  },
+  {
+    "title": "Applied Climate Information System (ACIS) NRCC NN Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NRCC-ACIS",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/noaa-nrcc-acis-nn/daily",
+    "provider": "NOAA",
+    "tags": "climate, precipitation, temperature, NOAA, reanalysis, CONUS, daily, near real-time"
+  },
+  {
+    "title": "United States Seasonal Drought Outlook",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/weather-climate/US-DROUGHT-OUTLOOK",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-cpc-usdo-monthly",
+    "provider": "NOAA",
+    "tags": "drought, United Stated, outlook, forecast, NOAA, NWS, CPC, monthly"
+  },
+  {
     "title": "USGS Historical Imagery Western US Imagery",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
     "type": "image_collection",
