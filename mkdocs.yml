@@ -351,9 +351,15 @@ nav:
       - Global Precipitation Measurement (GPM): projects/gpm.md
       - ANUSPLIN Gridded Climate Dataset: projects/anusplin.md
       - AgERA5 (ECMWF) dataset: projects/agera5_datasets.md
-      - Applied Climate Information System (ACIS) NRCC NN: noaa_acis.md
+      - High Resolution Deterministic Precipitation Analysis (HRDPA): projects/hrdpa.md
+      - High Resolution Deterministic Prediction System (HRDPS): projects/hrdps.md
+      - Regional Deterministic Precipitation Analysis (RDPA): projects/rdpa.md
+      - Regional Deterministic Prediction System (RDPS): projects/rdps.md
+      - Climate Prediction Center (CPC) Morphing Technique (MORPH): projects/cpc_morph.md
+      - Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2): projects/merrav2.md
+      - Applied Climate Information System (ACIS) NRCC NN: projects/noaa_acis.md
       - Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim): projects/chirps_prelim.md
-      - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): nclim_grid.md
+      - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): projects/nclim_grid.md
       - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
       - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
       - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md

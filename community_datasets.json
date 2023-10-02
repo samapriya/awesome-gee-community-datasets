@@ -10752,6 +10752,54 @@
     "tags": "drought, United Stated, outlook, forecast, NOAA, NWS, CPC, monthly"
   },
   {
+    "title": "Climate Prediction Center (CPC) Morphing Technique (MORPH)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CPC-MORPH",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/noaa-cpc-cmorph/daily",
+    "provider": "NOAA",
+    "tags": "NOAA, global, precipitation, climate, near real-time, NWS, CPC, MORPH, CMORPH"
+  },
+  {
+    "title": "High Resolution Deterministic Precipitation Analysis (HRDPA)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-HRDPA-DAILY",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-hrdpa-daily",
+    "provider": "Environment and Climate Change Canada",
+    "tags": "precipitation, Canada, near real-time, daily, climate"
+  },
+  {
+    "title": "High Resolution Deterministic Prediction System (HRDPS) Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-HRDPS-DAILY",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-hrdps-daily",
+    "provider": "Environment and Climate Change Canada",
+    "tags": "climate, temperature, daily, Canada, near real-time"
+  },
+  {
+    "title": "Regional Deterministic Precipitation Analysis (RDPA) Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-RDPA-DATASETS",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-rdpa-daily",
+    "provider": "Environment and Climate Change Canada",
+    "tags": "climate, precipitation, Canada, United States, daily"
+  },
+  {
+    "title": "Regional Deterministic Prediction System (RDPS) Daily",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-RDPS-DAILY",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-rdps-daily",
+    "provider": "Environment and Climate Change Canada",
+    "tags": "climate, precipitation, Canada, United States, daily"
+  },
+  {
+    "title": "Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/MERRA-2",
+    "type": "image_collection",
+    "id": "projects/earthengine-legacy/assets/projects/climate-engine/merra2/daily",
+    "provider": "NASA",
+    "tags": "MERRA2, NASA, global, climate, reanalysis, temperature, precipitation, evapotranspiration, evaporative demand, wind"
+  },
+  {
     "title": "USGS Historical Imagery Western US Imagery",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
     "type": "image_collection",
