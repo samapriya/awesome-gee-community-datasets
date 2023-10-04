@@ -5,7 +5,7 @@
 #### Updated 2023-10-04
 - Added [AgERA5 (ECMWF) dataset](https://gee-community-catalog.org/projects/agera5_datasets)
 - Added [ANUSPLIN Gridded Climate Dataset](https://gee-community-catalog.org/projects/anusplin)
-- Added [Applied Climate Information System (ACIS) NRCC NN](https://gee-community-catalog.org/noaa_acis.md)
+- Added [Applied Climate Information System (ACIS) NRCC NN](https://gee-community-catalog.org/projects/noaa_acis)
 - Added [Applied Climate Information System (ACIS) NRCC NN](https://gee-community-catalog.org/projects/noaa_acis)
 - Added [Canadian Drought Outlook](https://gee-community-catalog.org/projects/can_drought_outlook)
 - Added [Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim)](https://gee-community-catalog.org/projects/chirps_prelim)
@@ -17,7 +17,7 @@
 - Added [High Resolution Deterministic Prediction System (HRDPS)](https://gee-community-catalog.org/projects/hrdps)
 - Added [Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2)](https://gee-community-catalog.org/projects/merrav2)
 - Added [NOAA Evaporative Stress Index (ESI)](https://gee-community-catalog.org/projects/global_esi)
-- Added [NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)](https://gee-community-catalog.org/nclim_grid.md)
+- Added [NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)](https://gee-community-catalog.org/projects/nclim_grid)
 - Added [NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)](https://gee-community-catalog.org/projects/nclim_grid)
 - Added [Regional Deterministic Precipitation Analysis (RDPA)](https://gee-community-catalog.org/projects/rdpa)
 - Added [Regional Deterministic Prediction System (RDPS)](https://gee-community-catalog.org/projects/rdps)
