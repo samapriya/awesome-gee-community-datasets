@@ -2,6 +2,27 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-10-04
+- Added [AgERA5 (ECMWF) dataset](https://gee-community-catalog.org/projects/agera5_datasets)
+- Added [ANUSPLIN Gridded Climate Dataset](https://gee-community-catalog.org/projects/anusplin)
+- Added [Applied Climate Information System (ACIS) NRCC NN](https://gee-community-catalog.org/noaa_acis.md)
+- Added [Applied Climate Information System (ACIS) NRCC NN](https://gee-community-catalog.org/projects/noaa_acis)
+- Added [Canadian Drought Outlook](https://gee-community-catalog.org/projects/can_drought_outlook)
+- Added [Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim)](https://gee-community-catalog.org/projects/chirps_prelim)
+- Added [Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim)](https://gee-community-catalog.org/projects/chirps_prelim)
+- Added [Climate Prediction Center (CPC) Morphing Technique (MORPH)](https://gee-community-catalog.org/projects/cpc_morph)
+- Added [Forecast Reference Crop Evapotranspiration (FRET)](https://gee-community-catalog.org/projects/fret)
+- Added [Global Precipitation Measurement (GPM)](https://gee-community-catalog.org/projects/gpm)
+- Added [High Resolution Deterministic Precipitation Analysis (HRDPA)](https://gee-community-catalog.org/projects/hrdpa)
+- Added [High Resolution Deterministic Prediction System (HRDPS)](https://gee-community-catalog.org/projects/hrdps)
+- Added [Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2)](https://gee-community-catalog.org/projects/merrav2)
+- Added [NOAA Evaporative Stress Index (ESI)](https://gee-community-catalog.org/projects/global_esi)
+- Added [NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)](https://gee-community-catalog.org/nclim_grid.md)
+- Added [NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)](https://gee-community-catalog.org/projects/nclim_grid)
+- Added [Regional Deterministic Precipitation Analysis (RDPA)](https://gee-community-catalog.org/projects/rdpa)
+- Added [Regional Deterministic Prediction System (RDPS)](https://gee-community-catalog.org/projects/rdps)
+- Added [United States Seasonal Drought Outlook](https://gee-community-catalog.org/projects/ussdo)
+
 #### Updated 2023-09-26
 - Added [POMELO Model Population Density Maps](https://gee-community-catalog.org/projects/pomelo)
 - Added [USGS Historical Imagery Western US](https://gee-community-catalog.org/projects/historical_us)
