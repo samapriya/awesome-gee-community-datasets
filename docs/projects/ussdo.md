@@ -55,7 +55,7 @@ var usdo_palette = ["#ffffff", "#ABA362", "#DACBB5", "#FFD861", "#935743"]
 Map.addLayer(usdo_i, {min:0, max:4, palette: usdo_palette}, 'usdo_i')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/weather-climate/US-DROUGHT-OUTLOOK
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-DROUGHT-OUTLOOK
 
 #### License
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their
