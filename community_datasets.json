@@ -10745,7 +10745,7 @@
   },
   {
     "title": "United States Seasonal Drought Outlook",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/weather-climate/US-DROUGHT-OUTLOOK",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-DROUGHT-OUTLOOK",
     "type": "image_collection",
     "id": "projects/climate-engine-pro/assets/ce-cpc-usdo-monthly",
     "provider": "NOAA",
