@@ -38,6 +38,8 @@ Map.addLayer(bdi_2017_20_comp, visualization, "composite 2017-20")
 Map.addLayer(bdi_2017_comp, visualization, "composite 2017")
 ```
 
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/BIODIVERSITY-INTACTNESS-INDEX
+
 #### License
 
 The datasets are made available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)

@@ -1,7 +1,7 @@
 # FABDEM (Forest And Buildings removed Copernicus 30m DEM)
 
 FABDEM (Forest And Buildings removed Copernicus DEM) removes building and tree height biases from the Copernicus GLO 30 Digital Elevation Model (DEM) (Airbus, 2020). The data is available at 1 arc second grid spacing (approximately 30m at the equator) for the globe. The authors use machine learning to
-remove buildings and forests from the Copernicus Digital Elevation Model to produce, for the first time, a global map of elevation with buildings and forests removed at 1 arc second (∼30 m) grid spacing. You can [read the paper here](https://iopscience.iop.org/article/10.1088/1748-9326/ac4d4f/pdf) and the overall dataset can be [downloaded here](https://data.bris.ac.uk/data/dataset/25wfy0f9ukoge2gs7a5mqpq2j7)
+remove buildings and forests from the Copernicus Digital Elevation Model to produce, for the first time, a global map of elevation with buildings and forests removed at 1 arc second (∼30 m) grid spacing. You can [read the paper here](https://iopscience.iop.org/article/10.1088/1748-9326/ac4d4f/pdf) and the overall dataset can be [downloaded here](https://data.bris.ac.uk/data/dataset/s5hqmjcdj8yo2ibzi9b4ew3sn)
 
 Disclaimer: Parts or all of the dataset description is borrowed from existing description provided by authors.
 
@@ -44,3 +44,7 @@ Created by: Hawker, L., Uhe, P., Paulo, L., Sosa, J., Savage, J., Sampson, C., &
 Curated by: Samapriya Roy
 
 Keywords: digital elevation model, bare-earth, terrain, remote sensing, machine learning
+
+#### Changelog
+
+- Updated FABDEM V1-2, an update on FABDEM V1-0. Changes detailed in FABDEM-V1-2 Changelog.pdf. FABDEM (Forest And Buildings removed Copernicus DEM) is a global elevation map that removes building and tree height biases from the Copernicus GLO 30 Digital Elevation Model (DEM). The data is available at 1 arc second grid spacing (approximately 30m at the equator) for the globe.
