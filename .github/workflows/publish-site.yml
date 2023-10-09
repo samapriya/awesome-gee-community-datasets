@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
       - name: Install Python dependencies
         run: |
           pip install \
@@ -25,6 +25,7 @@ jobs:
             "cairosvg>=2.5" \
             "mkdocs-git-committers-plugin-2>=1.1.1" \
             "mkdocs-git-revision-date-localized-plugin>=1.0" \
+            "mkdocs-git-authors-plugin" \
             "mkdocs-minify-plugin>=0.3" \
             "mkdocs-rss-plugin>=1.2" \
             "mkdocs-redirects>=1.0" \

@@ -8,7 +8,7 @@ repo_name: awesome-gee-community-datasets
 repo_url: https://github.com/samapriya/awesome-gee-community-datasets
 
 # Copyright
-copyright: "Copyright &copy; 2022 - 2023 Samapriya Roy"
+copyright: "Copyright &copy; 2020 - 2024 Samapriya Roy"
 
 # Configuration
 theme:
@@ -77,6 +77,9 @@ extra_css:
 
 plugins:
   - search
+  - git-committers:
+      repository: samapriya/awesome-gee-community-datasets
+      branch: master
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
