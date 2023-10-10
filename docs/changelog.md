@@ -4,7 +4,7 @@
 
 #### Updated 2023-10-10
 - Added [GIMMS Normalized Difference Vegetation Index 1982-2022](https://gee-community-catalog.org/projects/gimms_ndvi)
-- Added [GIMMS Normalized Difference Vegetation Index 1982-2022](https://gee-community-catalog.org/projects/gimms_ndvi)
+- Added [USGS Global Earthquake Datasets](https://gee-community-catalog.org/projects/global_earthquakes)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2023-10-04
