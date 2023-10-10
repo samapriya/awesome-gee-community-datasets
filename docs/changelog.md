@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-10-10
+- Added [GIMMS Normalized Difference Vegetation Index 1982-2022](https://gee-community-catalog.org/projects/gimms_ndvi)
+- Added [GIMMS Normalized Difference Vegetation Index 1982-2022](https://gee-community-catalog.org/projects/gimms_ndvi)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2023-10-04
 - Added [AgERA5 (ECMWF) dataset](https://gee-community-catalog.org/projects/agera5_datasets)
 - Added [ANUSPLIN Gridded Climate Dataset](https://gee-community-catalog.org/projects/anusplin)

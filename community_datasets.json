@@ -10808,6 +10808,30 @@
     "tags": "Biodiversity, Ecology, Human Pressures, Gridded data"
   },
   {
+    "title": "USGS Earthquake data",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-events-layers/USGS-EARTHQUAKES-1923-2023",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/USGS/usgs_earthquakes_1923-2023",
+    "provider": "USGS",
+    "tags": "earthquake, usgs"
+  },
+  {
+    "title": "GIMMS Normalized Difference Vegetation Index 1982-2022 AVHRR MODIS CONSOLIDATED",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GIMMS-NDVI-1982-2022",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/PKU-GIMMS-NDVI/AVHRR_MODIS_CONSOLIDATED",
+    "provider": "Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao",
+    "tags": "PKU GIMMS NDVI, Landsat, MODIS, Back Propagation Neural Network"
+  },
+  {
+    "title": "GIMMS Normalized Difference Vegetation Index 1982-2022 AVHRR SOLELY",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GIMMS-NDVI-1982-2022",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/PKU-GIMMS-NDVI/AVHRR_SOLELY",
+    "provider": "Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao",
+    "tags": "PKU GIMMS NDVI, Landsat, MODIS, Back Propagation Neural Network"
+  },
+  {
     "title": "USGS Historical Imagery Western US Imagery",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
     "type": "image_collection",

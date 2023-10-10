@@ -77,9 +77,6 @@ extra_css:
 
 plugins:
   - search
-  - git-committers:
-      repository: samapriya/awesome-gee-community-datasets
-      branch: master
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
@@ -273,6 +270,7 @@ nav:
       - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
+      - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
       - High Resolution Tree Species Information for Canada: projects/ca_species.md
       - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
@@ -374,6 +372,7 @@ nav:
       - Umbra SAR Open Data: projects/umbra_opendata.md
       - RADD Forest Disturbance Alert: projects/radd.md
       - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
+      - USGS Global Earthquake dataset: projects/global_earthquakes.md
   - Fire Monitoring and Analysis:
       - CEMS Fire Danger Indices: projects/cems_fire.md
       - Wildfire Risk to Communities (WRC): projects/wrc.md
