@@ -25,6 +25,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Samapriya Roy, Valerie Pasquarella, Erin Trochim, & Tyson Swetnam. (2023). samapriya/awesome-gee-community-datasets: Community Catalog (1.0.9).
-Zenodo. https://doi.org/10.5281/zenodo.8223455
+Samapriya Roy, Kurt Schwehr, Valerie Pasquarella, Erin Trochim, & Tyson Swetnam. (2023).samapriya/awesome-gee-community-datasets: Community Catalog
+(2.0.0). Zenodo. https://doi.org/10.5281/zenodo.8435453
 ```
