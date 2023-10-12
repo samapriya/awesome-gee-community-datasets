@@ -42,7 +42,7 @@ body:
     attributes:
       label: Enter license information
       description: License information allows us to decide if the dataset can be included
-      value: "Enter License information ex: APAHCE 2.0, CC-BY-4.0"
+      value: "Enter License information ex: APACHE 2.0, CC-BY-4.0"
     validations:
       required: true
   - type: input
