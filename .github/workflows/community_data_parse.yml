@@ -27,7 +27,7 @@ jobs:
           script: |
             import csv
             import json
-            with open('community_datasets.json') as f:
+            with open('community_datasets.json',encoding='utf-8') as f:
               data = json.load(f)
             with open('community_datasets.csv','w') as csvfile:
                 writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code","license","license_text"], delimiter=',',lineterminator='\n')
