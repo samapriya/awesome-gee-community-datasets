@@ -7291,7 +7291,8 @@
     "type": "image",
     "id": "projects/sat-io/open-datasets/us_building_raster/building_avg_area",
     "provider": "Heris et al, NASA, USGS",
-    "tags": "Building Footprint, Built Environment Density, Land cover, Land use"
+    "tags": "Building Footprint, Built Environment Density, Land cover, Land use",
+    "license": "Creative Commons Zero v1.0 Universal"
   },
   {
     "title": "Rasterized building footprint US: Building Max Area",
@@ -8694,7 +8695,8 @@
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_bathymetry",
     "provider": "Khazaei, B., Read, L.K., Casali, M. et al.",
-    "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis"
+    "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis",
+    "license": "Creative Commons Zero v1.0 Universal"
   },
   {
     "title": "GLOBathy (Global lakes bathymetry dataset) : GLOBathy Basic Parameters",
@@ -8703,8 +8705,7 @@
     "id": "projects/sat-io/open-datasets/GLOBathy/GLOBathy_basic_parameters",
     "provider": "Khazaei, B., Read, L.K., Casali, M. et al.",
     "tags": "bathymetry and depth, lake systems, reservoir management, Hydrological Modelling, Limnology, Geographic information systems (GIS), Geomorphology, topographic analysis",
-    "license": "proprietary",
-    "license_text": "The dataset is released under a public domain dedication."
+    "license": "Creative Commons Zero v1.0 Universal"
   },
   {
     "title": "C-CAP Wetland Potential 30m",
