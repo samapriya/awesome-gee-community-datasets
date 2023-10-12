@@ -8,15 +8,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content to github runner
 
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8' # install the python version needed
-          
+          python-version: "3.8" # install the python version needed
+
       - name: upgrade pip and install python packages
         run: |
           python -m pip install --upgrade pip
@@ -31,7 +30,7 @@ jobs:
             with open('community_datasets.json') as f:
               data = json.load(f)
             with open('community_datasets.csv','w') as csvfile:
-                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code"], delimiter=',',lineterminator='\n')
+                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code","license","license_text"], delimiter=',',lineterminator='\n')
                 writer.writeheader()
             for datasets in data:
                 gee_id = datasets['id']
@@ -40,9 +39,14 @@ jobs:
                 gee_type = datasets['type']
                 gee_tags = datasets['tags']
                 sample_code = datasets['sample_code']
+                license = datasets['license']
+                if license == "proprietary":
+                  license_text = datasets['license_text']
+                else:
+                  license_text = "NA"
                 with open('community_datasets.csv','a') as csvfile:
                     writer=csv.writer(csvfile,delimiter=',',lineterminator='\n')
-                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code])
+                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code,license,license_text])
                 csvfile.close()
       - name: commit files
         continue-on-error: true
