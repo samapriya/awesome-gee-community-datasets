@@ -40,7 +40,7 @@ jobs:
                 gee_tags = datasets['tags']
                 sample_code = datasets['sample_code']
                 license = datasets['license']
-                if license == "proprietary":
+                if license == "custom":
                   license_text = datasets['license_text']
                 else:
                   license_text = "NA"
