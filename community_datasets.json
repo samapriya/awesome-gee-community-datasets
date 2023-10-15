@@ -558,43 +558,214 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Final Integrated Land Use Land Cover Maps",
+    "title": "Mapbiomas Brazil: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas_collection70_integration_v2",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_integration_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of transition areas (change in coverage or use) between selected years",
+    "title": "Mapbiomas Brazil: Maps of transition areas (change in coverage or use) between selected years",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas_collection70_transitions_v3",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_transitions_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of quality (change in coverage or use) between selected years",
+    "title": "Mapbiomas Brazil: Maps of quality (change in coverage or use) between selected years",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_quality_v1",
+    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection80_quality_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
-    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Quality",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of irrigated agriculture",
+    "title": "Mapbiomas Pan Amazonia: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_irrigated_agriculture_v1",
+    "id": "projects/mapbiomas-raisg/public/collection4/mapbiomas_raisg_panamazonia_collection4_integration_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
-    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pan Amazonia, Integration",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Mosaic tiles of Landsat Images for each year of Collection 7",
+    "title": "Mapbiomas Pan Amazonia: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-raisg/public/collection4/mapbiomas_raisg_panamazonia_collection4_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pan Amazonia,Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Chaco: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-chaco/public/collection4/mapbiomas_chaco_collection4_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Chaco, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Chaco: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-chaco/public/collection4/mapbiomas_chaco_collection4_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Chaco,Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Atlantic Forest: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas_af_trinacional/public/collection2/mapbiomas_atlantic_forest_collection20_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Atlantic Forest, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Atlantic Forest: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas_af_trinacional/public/collection2/mapbiomas_atlantic_forest_collection20_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Atlantic Forest, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Atlantic Forest: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas_af_trinacional/public/collection2/mapbiomas_atlantic_forest_collection20_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Atlantic Forest, Quality",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Pampa: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/MapBiomas_Pampa/public/collection2/mapbiomas_pampa_collection2_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pampa, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Pampa: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/MapBiomas_Pampa/public/collection2/mapbiomas_pampa_collection2_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pampa, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Pampa: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/MapBiomas_Pampa/public/collection2/mapbiomas_pampa_collection2_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pampa, Quality",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Indonesia: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-indonesia/public/collection1/mapbiomas_indonesia_collection1_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Indonesia, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Indonesia: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-indonesia/public/collection1/mapbiomas_indonesia_collection1_transitions_v2",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Indonesia, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Indonesia: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-indonesia/public/collection1/mapbiomas_indonesia_collection1_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Indonesia, Quality",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Peru: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/peru/collection1/mapbiomas_peru_collection1_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Peru, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Peru: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/peru/collection1/mapbiomas_peru_collection1_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Peru, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Peru: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/peru/collection1/mapbiomas_peru_collection1_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Peru, Quality",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Bolivia: Final Integrated Land Use Land Cover Maps",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/bolivia/collection1/mapbiomas_bolivia_collection1_integration_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Integration",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Bolivia: Maps of transition areas (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/bolivia/collection1/mapbiomas_bolivia_collection1_transitions_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Bolivia: Maps of quality (change in coverage or use) between selected years",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-public/assets/peru/collection1/mapbiomas_bolivia_collection1_quality_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Quality",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Brazil: LULC Map Sentinel-2 Beta",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-workspace/public/collection_S2_beta/collection_LULC_S2_beta",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Sentinel-2",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas: Mosaic tiles of Landsat Images for each year of Collection 8",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
     "id": "projects/nexgenmap/MapBiomas2/LANDSAT/BRAZIL/mosaics-2",
@@ -603,73 +774,118 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of Mined substances Collection 6",
+    "title": "Mapbiomas Brazil: Maps of irrigated agriculture Collection 8",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_irrigated_agriculture_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Transition",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Brazil: Maps of Mined substances Collection 8",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_mined_substance_v1",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_mined_substance_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of Pasture quality Collection 6",
+    "title": "Mapbiomas Brazil: Maps of Pasture quality Collection 8",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_pasture_quality_v1",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_pasture_quality_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of Annual water coverage Collection 6",
+    "title": "Mapbiomas Brazil: Maps of Annual water coverage Collection 8",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-water-collection1-annual-water-coverage-1",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_water_collection2_annual_water_coverage_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of Annual water frequency Collection 6",
+    "title": "Mapbiomas Brazil: Maps of Annual water frequency Collection 8",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas-water-collection1-water-frequency-1",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_water_collection1_water_frequency_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of annual burned coverage Collection 7",
+    "title": "Mapbiomas Pan Amazonia: Maps of Annual water coverage Collection 5",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-annual-burned-coverage-1",
+    "id": "projects/mapbiomas-raisg/public/collection5/mapbiomas_raisg_panamazonia_collection1_annual_water_coverage_v2",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Pan Amazonia, Landsat, Mosaic",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Pan Amazonia: Maps of Annual water frequency Collection 5",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-raisg/public/collection5/mapbiomas_raisg_panamazonia_collection1_water_frequency_v2",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of monthly burned coverage Collection 7",
+    "title": "Mapbiomas Brazil: Maps of annual burned coverage Collection 2",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-monthly-burned-coverage-1",
+    "id": "projects/mapbiomas-workspace/public/collection7_1/mapbiomas-fire-collection2-annual-burned-coverage-1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of fire frequency Collection 7",
+    "title": "Mapbiomas Brazil: Sentinel-2 Fire Monitor Collection 2",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection7/mapbiomas-fire-collection1-1-fire-frequency-1",
+    "id": "projects/mapbiomas-workspace/FOGO/MONITORAMENTO/collection-fire-monthly-sentinel2-v3",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Mapbiomas: Maps of Deforestation Regeneration Collection 6",
+    "title": "Mapbiomas Brazil: Maps of monthly burned coverage Collection 2",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image_collection",
-    "id": "projects/mapbiomas-workspace/public/collection6/mapbiomas_collection60_deforestation_regeneration_v1",
+    "id": "projects/mapbiomas-workspace/public/collection7_1/mapbiomas-fire-collection2-monthly-burned-coverage-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Brazil: Maps of fire frequency Collection 2",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection7_1/mapbiomas-fire-collection2-fire-frequency-1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Brazil: Maps of Deforestation Regeneration Collection 8",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_deforestation_secondary_vegetation_v1",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Mapbiomas Brazil: Maps of Secondary Vegetation age Collection 8",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_secondary_vegetation_age_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
     "license": "Creative Commons Attribution 4.0 International"
