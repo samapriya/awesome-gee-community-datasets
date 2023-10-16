@@ -10,6 +10,13 @@ Data Type: Multiple raster datasets and types
 #### Citation
 
 ```
+Souza at. al. (2020) - Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine -
+Remote Sensing, Volume 12, Issue 17, 10.3390/rs12172735 doi: 10.3390/rs12172735 https://doi.org/10.3390 /rs12172735
+```
+
+#### Dataset Citation
+
+```
 "Project MapBiomas - Collection [version] of [region] Land Cover & Use Map Series, accessed on [date] through the link: [LINK]"
 ```
 
