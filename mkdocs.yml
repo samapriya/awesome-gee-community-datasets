@@ -242,6 +242,7 @@ nav:
       - DynQual Global Surface Water Quality Dataset: projects/dynqual.md
       - Global coastal rivers and environmental variables: projects/rivermouth.md
       - Global River Deltas and vulnerability: projects/river_deltas.md
+      - Streamflow reconstruction for Indian sub-continental river basins 1951–2021: projects/streamflow_india.md
       - Global georeferenced Database of Dams(GOODD): projects/goodd.md
       - RealSAT Global Dataset of Reservoir and Lake Surface Area: projects/realsat.md
       - Global Hydrologic Curve Number(GCN250): projects/gcn250.md
@@ -323,6 +324,7 @@ nav:
       - Global offshore wind turbine dataset: projects/gowt.md
       - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
       - Global Database of Cement Production Assets: projects/gcd.md
+      - Global database of cement production assets and upstream suppliers: projects/gcd_assets.md
       - Global Database of Iron and Steel Production Assets: projects/gid.md
       - Global Photovoltaics Inventory (2016-2018): projects/global_pv.md
   - Biodiversity, Ecosystems & Habitat Layers:

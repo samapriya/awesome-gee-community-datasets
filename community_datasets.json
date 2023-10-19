@@ -3704,6 +3704,24 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
+    "title": "Global Database of Cement Production Assets 2023-10-04",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-SUPP-PROD-DB",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/SFI/global_cement_db_assets_20231004",
+    "provider": "Tkachenko, N., Tang, K., McCarten, M. et al",
+    "tags": "Computer vision, Remote sensing, Computer and information sciences, asset-level data, Decarbonisation, LLMs, spatial finance, supply chains, sustainable finance, cement",
+    "license": "Creative Commons Zero v1.0 Universal"
+  },
+  {
+    "title": "Global Database of Cement Producer & Supplier 2023-10-04",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-SUPP-PROD-DB",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/SFI/global_cement_db_suppliers_20231004",
+    "provider": "Tkachenko, N., Tang, K., McCarten, M. et al",
+    "tags": "Computer vision, Remote sensing, Computer and information sciences, asset-level data, Decarbonisation, LLMs, spatial finance, supply chains, sustainable finance, cement",
+    "license": "Creative Commons Zero v1.0 Universal"
+  },
+  {
     "title": "Global Database of Iron and Steel Production Assets",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-IRON-STEEL-PRODUCTION-ASSETS",
     "type": "table",
@@ -12815,6 +12833,150 @@
     "id": "projects/sat-io/open-datasets/PKU-GIMMS-NDVI/AVHRR_SOLELY",
     "provider": "Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao",
     "tags": "PKU GIMMS NDVI, Landsat, MODIS, Back Propagation Neural Network",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 CV Annual Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/CV/cv_annual_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 CV Monsoon Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/CV/cv_monsoon_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 High Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/high_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Low Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/low_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Mean Annual Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_annual_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Mean Monsoon Flow",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_monsoon_flow",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry July 1972",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_1972",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry July 2002",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_2002",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry June 2009",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2009",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry June 2014",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2014",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet August 2020",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_august_2020",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet July 1988",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_july_1988",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet September 1983",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_1983",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet September 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_2019",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Streamflow Trend",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/streamflow_trend",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "Indian Subcontinental River Basins Stream Data",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/indian-streams/streams",
+    "provider": "Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar",
+    "tags": "H08, mizuRoute, Streamflow, India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis",
     "license": "Creative Commons Attribution 4.0 International"
   },
   {

@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-10-19
+- Added [Global database of cement production assets and upstream suppliers](https://gee-community-catalog.org/projects/gcd_assets)
+- Added [Streamflow reconstruction for Indian sub-continental river basins 1951–2021](https://gee-community-catalog.org/projects/streamflow_india)
+- Updated Mapbiomas [Collection 8 and additional areas](https://gee-community-catalog.org/projects/mapbiomas)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2023-10-10
 - Added [GIMMS Normalized Difference Vegetation Index 1982-2022](https://gee-community-catalog.org/projects/gimms_ndvi)
 - Added [USGS Global Earthquake Datasets](https://gee-community-catalog.org/projects/global_earthquakes)
