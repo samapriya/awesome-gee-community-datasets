@@ -4,6 +4,6 @@ Examples are helpful in understanding different use cases for datasets as well a
 
 ![example_issue](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/c30caa5f-5d6f-4101-b6ca-659ce84d9443)
 
-[To submit an example for an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=data%2Cexample&projects=&template=bexm.yml&title=%5BDataset+Title%2FName%5D%3A)
+[To submit an example for an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=data%2Cexample&projects=&template=bexm.yml&title=%5BDataset+Title%2FName%5D%3A)
 
 

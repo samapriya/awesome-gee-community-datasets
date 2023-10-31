@@ -4,4 +4,4 @@ The submit updated data request templates is designed for requesting update to a
 
 ![update_issue](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/5daa3fa4-0ec6-43ef-a50d-6663dfdfdb28)
 
-[To submit a suggested update to an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=update&projects=&template=bup.yml&title=%5BDataset%2FTitle%5D%3A+)
+[To submit a suggested update to an existing awesome-gee-catalog dataset use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=update&projects=&template=bup.yml&title=%5BDataset%2FTitle%5D%3A+)

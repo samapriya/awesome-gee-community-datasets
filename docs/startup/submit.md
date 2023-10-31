@@ -4,6 +4,6 @@ The submit data request templates are further subdivded into two templates one f
 
 ![submit_issue](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/903ec378-abd2-4de1-ad32-5c326bd6b960)
 
-* [To submit a new dataset for the community catalog use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=Dataset&projects=&template=bnd.yml&title=%5BDataset+Title%2FName%5D%3A+)
+* [To submit a new dataset for the community catalog use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=Dataset&projects=&template=bnd.yml&title=%5BDataset+Title%2FName%5D%3A+)
 
-* [To bring your own dataset for the community catalog use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya%2C+valpasq%2C+edtrochim&labels=BYOD&projects=&template=byod.yml&title=%5BDataset+Title%2FName%5D%3A+)
+* [To bring your own dataset for the community catalog use this link](https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=BYOD&projects=&template=byod.yml&title=%5BDataset+Title%2FName%5D%3A+)
