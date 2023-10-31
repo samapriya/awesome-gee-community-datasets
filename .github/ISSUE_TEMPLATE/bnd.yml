@@ -3,7 +3,7 @@ description: This template allows the users to submit datasets for consideration
 title: "[Dataset Title/Name]: "
 labels: ["data request"]
 assignees:
-  - samapriya, valpasq, edtrochim
+  - samapriya
 body:
   - type: markdown
     attributes:

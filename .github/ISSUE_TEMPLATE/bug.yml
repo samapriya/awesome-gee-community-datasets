@@ -3,7 +3,7 @@ description: Create a bug report about existing dataset in catalog
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
-  - samapriya, valpasq, edtrochim
+  - samapriya
 body:
   - type: markdown
     attributes:

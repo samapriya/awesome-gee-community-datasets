@@ -3,7 +3,7 @@ description: This template can be submit a code example to an existing dataset i
 title: "[Dataset Title/Name]:"
 labels: ["example"]
 assignees:
-  - samapriya, valpasq, edtrochim
+  - samapriya
 body:
   - type: markdown
     attributes:

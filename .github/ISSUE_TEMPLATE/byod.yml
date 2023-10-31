@@ -3,7 +3,7 @@ description: This template allows the owners or creators or datasets to submit t
 title: "[Dataset Title/Name]: "
 labels: ["BYOD"]
 assignees:
-  - samapriya, valpasq, edtrochim
+  - samapriya
 body:
   - type: markdown
     attributes:

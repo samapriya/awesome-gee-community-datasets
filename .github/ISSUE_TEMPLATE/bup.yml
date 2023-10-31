@@ -5,7 +5,7 @@ description:
 title: "[Dataset/Title]: "
 labels: ["update"]
 assignees:
-  - samapriya, valpasq, edtrochim
+  - samapriya
 body:
   - type: markdown
     attributes:
