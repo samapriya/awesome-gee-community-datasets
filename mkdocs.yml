@@ -208,6 +208,7 @@ nav:
       - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
       - Global urban extents from 1870 to 2100: projects/gue.md
       - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
+      - Global Intra-Urban Land Use: projects/giulu.md
       - World Settlement Footprint & Evolution: projects/wsf.md
       - LandCoverNet Training Labels v1.0: projects/lcnet.md
       - CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
