@@ -335,6 +335,7 @@ nav:
       - Global Freshwater Variables: projects/gfv.md
       - Global Habitat Heterogeneity: projects/ghh.md
       - Global 1-km Cloud Cover: projects/gcc.md
+      - Areas of global conservation value: projects/gci.md
   - Weather and Climate Layers:
       - Global Reference Evapotranspiration Layers: projects/et0.md
       - Global Aridity Index: projects/ai0.md
