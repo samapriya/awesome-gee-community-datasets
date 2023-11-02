@@ -13084,6 +13084,159 @@
     "license": "Creative Commons Attribution Non Commercial 4.0 International"
   },
   {
+    "title": "Areas of global conservation value : biodiv_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_biome_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodiv_pa_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_biome_withPA_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodiv",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodiv_pa",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargetswithPA_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbon_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_biome_carbon_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbon_pa_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_biome_withPA_carbon_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbon",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_carbon_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbon_pa",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargetswithPA_carbon_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivwater_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_biome_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivwater_pa_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_biome_withPA_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivwater",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivwater_pa",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargetswithPA_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbonwater_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_biome_carbon_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbonwater_pa_biome",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_biome_withPA_carbon_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbonwater",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_carbon_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Areas of global conservation value : biodivcarbonwater_pa",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargetswithPA_carbon_water_esh10km_repruns10_ranked",
+    "provider": "IIASA",
+    "tags": "biodiversity, conservation importance, priorities, carbon, water",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Intra-Urban Land Use",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-INTRA-URBAN-LANDUSE",
+    "type": "image_collection",
+    "id": "projects/wri-datalab/cities/urban_land_use/V1",
+    "provider": "WRI",
+    "tags": "Urban land use maps; Land use land cover; Sentinel-2; Neural networks; Computer vision; Supervised classification; Google Earth Engine; Informal settlements",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
