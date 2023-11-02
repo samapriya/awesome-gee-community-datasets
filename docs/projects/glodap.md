@@ -60,9 +60,7 @@ Other variables in the compilation, such as isotopic tracers and discrete CO2 fu
 | ∆14C counting error                               | c14err      | %              | calculated               |                        |                                          | GLODAP Group       |
 | 3H                                                | h3          | TU             | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
 | 3H counting error                                 | h3err       | TU             | calculated               |                        |                                          | GLODAP Group       |
-| δ3He                                              | δ3He       | %
-
-              | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
+| δ3He                                              | δ3He       | %               | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
 | 3He counting error                                | he3err      | %              | calculated               |                        |                                          | GLODAP Group       |
 | He                                                | He          | nmol kg−1      | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
 | He counting error                                  | heerr       | %              | calculated               |                        |                                          | GLODAP Group       |
