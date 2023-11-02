@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-11-02
+- Added [Areas of global conservation value](https://gee-community-catalog.org/projects/gci)
+- Added [Global Intra-Urban Land Use](https://gee-community-catalog.org/projects/giulu)
+- Updated [Global Ocean Data Analysis Project (GLODAP) v2.2023](https://gee-community-catalog.org/projects/glodap)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2023-10-26
 - Added [Daylight Map Distribution map data](https://gee-community-catalog.org/projects/daylight_maps)
 - Added [Global Ocean Data Analysis Project (GLODAP) v2.2022](https://gee-community-catalog.org/projects/glodap)
