@@ -65,12 +65,12 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 #### Acknowledgements
 
-Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://spatialfinanceinitiative.com/geoasset-project/faqs/)
+Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/iron-and-steel/)
 
 #### License
 The Global Database of Iron and Steel Production Assets can be used by others and is available under a CC BY 4.0 license
 
-Data download page: [Download Request Form](https://spatialfinanceinitiative.com/geoasset-project/data/)
+Data download page: [Download Request Form](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/iron-and-steel/)
 
 Curated in GEE by: Samapriya Roy
 
