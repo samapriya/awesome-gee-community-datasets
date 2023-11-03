@@ -12,7 +12,7 @@ Layman, C., Rossi, C., Scott, K., Tang, K., Tkachenko, N., and Yoken, D. 2021.
 Global Database of Cement Production Assets. Spatial Finance Initiative
 ```
 
-Additional Information about the [Spatial Finance Initiative can be found here](https://spatialfinanceinitiative.com/geoasset-project/)
+Additional Information about the [Spatial Finance Initiative can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project)
 
 ![cement_database](https://user-images.githubusercontent.com/6677629/126024364-5d5e8299-3a48-445c-a480-345f8cb84a8f.gif)
 
@@ -62,7 +62,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 #### Acknowledgements
 
-Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://spatialfinanceinitiative.com/geoasset-project/faqs/)
+Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/)
 
 #### License
 The Global Database of Cement Production Assets can be used by others and is available under a CC BY 4.0 license
