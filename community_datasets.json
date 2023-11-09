@@ -13249,7 +13249,7 @@
     "title": "Global Land Subsidence mapping: subsidence_prediction_recoded",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-LAND-SUBSIDENCE",
     "type": "image",
-    "id": "projects/space-geographer/assets/Final_subsidence_prediction_recoded",
+    "id": "projects/sat-io/open-datasets/global_subsidence/Final_subsidence_prediction_recoded",
     "provider": "Hasan, M. F., R. Smith, S. Vajedian, R. Pommerenke, S. Majumdar",
     "tags": "machine learning,global groundwater,groundwater monitoring,land subsidence, InSAR",
     "license": "Creative Commons Attribution 4.0 International"
@@ -13258,7 +13258,7 @@
     "title": "Global Land Subsidence mapping: subsidence_prediction_probability",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-LAND-SUBSIDENCE",
     "type": "image",
-    "id": "projects/space-geographer/assets/Final_subsidence_proba_greater_1cm_2013_2019_recoded",
+    "id": "projects/sat-io/open-datasets/global_subsidence/Final_subsidence_proba_greater_1cm_2013_2019_recoded",
     "provider": "Hasan, M. F., R. Smith, S. Vajedian, R. Pommerenke, S. Majumdar",
     "tags": "machine learning,global groundwater,groundwater monitoring,land subsidence, InSAR",
     "license": "Creative Commons Attribution 4.0 International"

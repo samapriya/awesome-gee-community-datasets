@@ -23,8 +23,8 @@ Capacity Datasets, HydroShare, https://doi.org/10.4211/hs.dc7c5bfb3a86479b889d3b
 #### Earth Engine Snippet
 
 ```js
-var subsidence_prediction_probability = ee.Image("projects/space-geographer/assets/Final_subsidence_proba_greater_1cm_2013_2019_recoded");
-var subsidence_prediction_recoded = ee.Image("projects/space-geographer/assets/Final_subsidence_prediction_recoded");
+var subsidence_prediction_probability = ee.Image("projects/sat-io/open-datasets/global_subsidence/Final_subsidence_proba_greater_1cm_2013_2019_recoded");
+var subsidence_prediction_recoded = ee.Image("projects/sat-io/open-datasets/global_subsidence/Final_subsidence_prediction_recoded");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-LAND-SUBSIDENCE
