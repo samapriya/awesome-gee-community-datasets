@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2023-11-09
+- Added [Global Land subsidence mapping](https://gee-community-catalog.org/projects/land_subidence)
+- Added [ACES-Enhanced Rice Crop Maps for Bhutan (2016-2022)](https://gee-community-catalog.org/projects/aces_bhutan)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+- Released 2.1.0 for awesome gee community catalog & catalog stats
+
 #### Updated 2023-11-02
 - Added [Areas of global conservation value](https://gee-community-catalog.org/projects/gci)
 - Added [Global Intra-Urban Land Use](https://gee-community-catalog.org/projects/giulu)
