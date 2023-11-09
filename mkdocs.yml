@@ -176,6 +176,7 @@ nav:
       - Global maps of habitat types: projects/habitat.md
       - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
       - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
+      - Global Land subsidence mapping: projects/land_subsidence.md
       - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
   - Elevation and Bathymetry:
       - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
