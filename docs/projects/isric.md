@@ -20,7 +20,7 @@ SoilGrids is designed as a globally consistent, data-driven system that predicts
 #### Citation
 
 ```
-de Sousa, L., Poggio, L., Batjes, N.H., Heuvelink, G.B.M., Kempen, B., Ribeiro, E., Rossiter, D. SoilGrids 2.0: producing quality-assessed soil information for the globe. Under submission to SOIL
+Poggio, L., de Sousa, L. M., Batjes, N. H., Heuvelink, G. B. M., Kempen, B., Ribeiro, E., and Rossiter, D.: SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty, SOIL, 7, 217–240, https://doi.org/10.5194/soil-7-217-2021, 2021.
 ```
 
 ![gee_isric_main](https://user-images.githubusercontent.com/6677629/96608670-44f6a380-12bf-11eb-9e0b-1419a891fa84.gif)
