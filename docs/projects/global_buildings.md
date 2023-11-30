@@ -33,7 +33,7 @@ for example India would be
 var ind = ee.FeatureCollection("projects/sat-io/open-datasets/VIDA_COMBINED/IND")
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA/global-utilities-assets-amenities/
+Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA
 
 Earth Engine App: https://sat-io.earthengine.app/view/global-buildings
 
