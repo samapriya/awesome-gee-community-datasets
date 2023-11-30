@@ -3,7 +3,7 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
 #### Updated 2023-11-30
-- Added [Global Google-Microsoft Open Buildings Dataset](https://gee-community-catalog.org/projects/land_subsidence)
+- Added [Global Google-Microsoft Open Buildings Dataset](https://gee-community-catalog.org/projects/global_buildings)
 - Updated [USGS Historical Topo Maps](https://gee-community-catalog.org/projects/usgs_topo)
 - Released 2.2.0 for awesome gee community catalog & catalog stats
 
