@@ -34,4 +34,4 @@ Curated in GEE by : Samapriya Roy
 
 keywords: USGS, Historical Topographical Maps, Orthophoto mosaics, Topography,Cartography
 
-Last updated on GEE: 2023-07-21
+Last updated on GEE: 2023-11-25

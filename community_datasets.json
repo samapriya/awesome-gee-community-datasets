@@ -13264,6 +13264,1617 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Afghanistan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AFG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Angola",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AGO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Albania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ALB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Andorra",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AND",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: United Arab Emirates",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ARE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Argentina",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ARG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Armenia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ARM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Antigua and Barbuda",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ATG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Australia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AUS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Austria",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AUT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Azerbaijan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/AZE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Burundi",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BDI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Belgium",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BEL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Benin",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BEN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Burkina Faso",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BFA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bangladesh",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BGD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bulgaria",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BGR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bahrain",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BHR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bahamas",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BHS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bosnia and Herzegovina",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BIH",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Belarus",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BLR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Belize",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BLZ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bolivia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BOL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Brazil",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BRA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Barbados",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BRB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Brunei",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BRN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Bhutan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BTN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Botswana",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/BWA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Central African Republic",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CAF",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Canada",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CAN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Switzerland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CHE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Chile",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CHL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: China",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CHN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: None",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CIV",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Cameroon",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CMR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Democratic Republic of Congo",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/COD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Congo",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/COG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Colombia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/COL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Comoros",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/COM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Cabo Verde",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CPV",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Costa Rica",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CRI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Cuba",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CUB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Cyprus",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CYP",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Czech Republic",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/CZE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Germany",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DEU",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Djibouti",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DJI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Dominica",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DMA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Denmark",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DNK",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Dominican Republic",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DOM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Algeria",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/DZA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Ecuador",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ECU",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Egypt",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/EGY",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Eritrea",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ERI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Spain",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ESP",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Estonia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/EST",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Ethiopia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ETH",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Finland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/FIN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: France",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/FRA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Gabon",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GAB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: United Kingdom",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GBR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Georgia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GEO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Ghana",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GHA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Guinea",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GIN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Gambia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GMB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Guinea-Bissau",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GNB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Equatorial Guinea",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GNQ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Greece",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GRC",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Grenada",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GRD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Guatemala",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GTM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Guyana",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/GUY",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Honduras",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/HND",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Croatia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/HRV",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Haiti",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/HTI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Hungary",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/HUN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Indonesia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/IDN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: India",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/IND",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Ireland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/IRL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Iran",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/IRN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Iraq",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/IRQ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Iceland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ISL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Israel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ISR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Italy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ITA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Jamaica",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/JAM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Jordan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/JOR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Japan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/JPN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Kazakhstan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/KAZ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Kenya",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/KEN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Kyrgyzstan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/KGZ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Saint Kitts and Nevis",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/KNA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Kuwait",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/KWT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Laos",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LAO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Lebanon",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LBN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Liberia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LBR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Libya",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LBY",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Saint Lucia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LCA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Sri Lanka",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LKA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Lesotho",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LSO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Lithuania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LTU",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Luxembourg",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LUX",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Latvia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/LVA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Morocco",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MAR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Monaco",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MCO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Moldova",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MDA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Madagascar",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MDG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Maldives",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MDV",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mexico",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MEX",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: North Macedonia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MKD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mali",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MLI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Malta",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MLT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Myanmar",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MMR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Montenegro",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MNE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mongolia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MNG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mozambique",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MOZ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mauritania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MRT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Mauritius",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MUS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Malawi",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MWI",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Malaysia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/MYS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Namibia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NAM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Niger",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NER",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Nigeria",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NGA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Nicaragua",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NIC",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Netherlands",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NLD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Norway",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NOR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Nepal",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/NPL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Oman",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/OMN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Pakistan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PAK",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Panama",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PAN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Peru",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PER",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Philippines",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PHL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Papua New Guinea",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PNG",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Poland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/POL",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: North Korea",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PRK",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Portugal",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PRT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Paraguay",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/PRY",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Qatar",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/QAT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Romania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ROU",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Russia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/RUS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Rwanda",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/RWA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Saudi Arabia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SAU",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Sudan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SDN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Senegal",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SEN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Singapore",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SGP",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Sierra Leone",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SLE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: El Salvador",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SLV",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: San Marino",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SMR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Somalia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SOM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Serbia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SRB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: South Sudan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SSD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Sao Tome and Principe",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/STP",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Suriname",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SUR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Slovakia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SVK",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Slovenia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SVN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Sweden",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SWE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Eswatini",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SWZ",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Seychelles",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SYC",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Syria",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/SYR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Chad",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TCD",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Togo",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TGO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Thailand",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/THA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Tajikistan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TJK",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Turkmenistan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TKM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Timor-Leste",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TLS",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Trinidad and Tobago",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TTO",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Tunisia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TUN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Turkey",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TUR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Tanzania",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/TZA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Uganda",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/UGA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Ukraine",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/UKR",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Uruguay",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/URY",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: United States",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/USA",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Uzbekistan",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/UZB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Holy See",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/VAT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Saint Vincent and the Grenadines",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/VCT",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Venezuela",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/VEN",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Vietnam",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/VNM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Yemen",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/YEM",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: South Africa",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ZAF",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Zambia",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ZMB",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Global Google Microsoft Combined Building Footprints VIDA: Zimbabwe",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-COMBINED-BUILDING-FOOTPRINTS-VIDA",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/VIDA_COMBINED/ZWE",
+    "provider": "VIDA, Google, Microsoft",
+    "tags": "Machine Learning, Building Footprints, Google, Microsoft",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",

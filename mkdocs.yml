@@ -164,9 +164,6 @@ nav:
       - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
       - Native Land (Indigenous Land Maps): projects/native.md
       - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
-      - Global ML Building Footprints: projects/msbuildings.md
-      - USA Structures: projects/usa_structures.md
-      - Global Electric Consumption revised GDP: projects/elc_gdp.md
   - Geophysical, Biological & Biogeochemical:
       - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
       - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
@@ -322,6 +319,10 @@ nav:
       - Global NPP-VIIRS-like nighttime light (2000-2022): projects/npp_viirs_ntl.md
       - Global Roads Inventory Project: projects/grip.md
       - Global Highres Mining Footprints: projects/global-mining.md
+      - Global ML Building Footprints: projects/msbuildings.md
+      - Global Google-Microsoft Open Buildings Dataset: projects/global_buildings.md
+      - USA Structures: projects/usa_structures.md
+      - Global Electric Consumption revised GDP: projects/elc_gdp.md
       - Global Mining Areas and Validation Datasets: projects/global_mining.md
       - Global Healthsites Mapping Project: projects/health_sites.md
       - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
