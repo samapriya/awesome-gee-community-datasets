@@ -14875,6 +14875,15 @@
     "license": "Creative Commons Attribution Share Alike 4.0 International"
   },
   {
+    "title": "Randolph Glacial Inventory v7: Glacier Outlines",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/RANDOLPH-GLACIER-INVENTORY",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/RGI/RGI_VECTOR_MERGED",
+    "provider": "GLIMS, RGI",
+    "tags": "glacier outlines, RGI, GLIMS",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
