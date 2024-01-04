@@ -12,7 +12,7 @@ Colorado USA. National Snow and Ice Data Center. https://doi.org/10.5067/F6JMOVY
 #### Earth Engine Snippet
 
 ```js
-var glacier_ft = ee.FeatureCollection("projects/sat-io/open-datasets/RGI/RGI_VECTOR_MERGED");
+var glacier_ft = ee.FeatureCollection("projects/sat-io/open-datasets/RGI/RGI_VECTOR_MERGED_V7");
 Map.centerObject(glacier_ft.first())
 
 // print a feature
