@@ -2,6 +2,10 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-01-04
+- Added [Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2022](https://gee-community-catalog.org/projects/fpar/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2023-11-30
 - Added [Global Google-Microsoft Open Buildings Dataset](https://gee-community-catalog.org/projects/global_buildings)
 - Updated [USGS Historical Topo Maps](https://gee-community-catalog.org/projects/usgs_topo)
