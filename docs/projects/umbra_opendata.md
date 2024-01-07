@@ -17,6 +17,7 @@ Only GEC data was selected from the available collections since they were alread
 
 ```js
 var umbra_open = ee.ImageCollection('projects/sat-io/open-datasets/UMBRA/open-data');
+var notoPeninsula = ee.ImageCollection('projects/sat-io/open-datasets/disaster/japan-earthquake-2024_UMBRA')
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/UMBRA-OPENDATA
