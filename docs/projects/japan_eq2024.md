@@ -13,17 +13,28 @@ Additional metadata was added to the images in the collection. Field names such 
 #### Earth Engine Snippet
 
 ```js
-
+var notoPeninsula = ee.ImageCollection("projects/sat-io/open-datasets/disaster/japan-earthquake-2024_ALOS");
 ```
 
-Sample Code:
+Sample Code: https://code.earthengine.google.com/064e9b1763890269f97d133939a95302
 
 #### License
 
 This publicly released data is intended for non-commercial purposes, including government and local authority use, as well as
 research by universities.
 
-Provided by: JAXA
+ - CC-BY-NC-4.0
+ - CC-BY-NC-SA-4.0
+   
+Provided by: Japan Aerospace Exploration Agency (JAXA)
+
+Title: Emergency Observation Data for the 2024 Sea of Japan Earthquake
+
+Year: 2024
+
+URL: https://www.eorc.jaxa.jp/ALOS/jp/dataset/alos_open_and_free_j.htm#Noto2024
+
+For citation details, please refer to the above URL
 
 Curated in GEE by Samapriya Roy and Keiko Nomura
 
