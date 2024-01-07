@@ -384,6 +384,7 @@ nav:
       - RADD Forest Disturbance Alert: projects/radd.md
       - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
       - USGS Global Earthquake dataset: projects/global_earthquakes.md
+      - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
   - Fire Monitoring and Analysis:
       - CEMS Fire Danger Indices: projects/cems_fire.md
       - Wildfire Risk to Communities (WRC): projects/wrc.md

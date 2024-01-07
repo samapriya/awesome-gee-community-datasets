@@ -14938,6 +14938,16 @@
     "license": "Creative Commons Attribution Share Alike 4.0 International"
   },
   {
+    "title": "Emergency Observation Data for the 2024 Sea of Japan Earthquake",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/SEA-OF-JAPAN-EQ-2024",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/disaster/japan-earthquake-2024_ALOS",
+    "provider": "Japan Aerospace Exploration Agency (JAXA)",
+    "tags": "Emergency Data, ALOS, JAPAN, Earthquake",
+    "license": "custom",
+    "license_text": "This publicly released data is intended for non-commercial purposes, including government and local authority use, as well as research by universities"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
