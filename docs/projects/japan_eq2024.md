@@ -25,6 +25,8 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 This publicly released data is intended for non-commercial purposes, including government and local authority use, as well as
 research by universities.
 
+Please note the terms of use: https://global.jaxa.jp/policy.html
+
  - CC-BY-NC-4.0
  - CC-BY-NC-SA-4.0
 
