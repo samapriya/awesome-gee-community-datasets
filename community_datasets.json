@@ -1269,7 +1269,7 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
-    "title": "Vegetation Condition Class (VCC) LF v2.0.0",
+    "title": "Vegetation Condition Class (VCC) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fire-regime/vcc",
@@ -1279,7 +1279,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Vegetation Departure Index (VDep) LF v2.0.0",
+    "title": "Vegetation Departure Index (VDep) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fire-regime/vdep",
@@ -1289,7 +1289,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Succession Classes (SClass) LF v2.0.0",
+    "title": "Succession Classes (SClass) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fire-regime/sclass",
@@ -1299,7 +1299,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Fuel Disturbance (FDist) LF v2.2.0",
+    "title": "Fuel Disturbance (FDist) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/disturbance/FDIST",
@@ -1309,7 +1309,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Historical Disturbance (HDist) LF v2.2.0",
+    "title": "Historical Disturbance (HDist) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/disturbance/HDIST",
@@ -1319,7 +1319,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Disturbance Year (DistYear) LF v2.2.0",
+    "title": "Disturbance Year (DistYear) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR",
@@ -1329,7 +1329,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Forest Canopy Height (CH) LF v2.2.0",
+    "title": "Forest Canopy Height (CH) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/CH",
@@ -1339,7 +1339,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Forest Canopy Cover (CC) LF v2.2.0",
+    "title": "Forest Canopy Cover (CC) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/CC",
@@ -1349,7 +1349,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Forest Canopy Base Height (CBH) LF v2.2.0",
+    "title": "Forest Canopy Base Height (CBH) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/CBH",
@@ -1359,7 +1359,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Forest Canopy Bulk Density (CBD) LF v2.2.0",
+    "title": "Forest Canopy Bulk Density (CBD) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/CBD",
@@ -1369,7 +1369,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Fuel Vegetation Cover (FVC) LF v2.2.0",
+    "title": "Fuel Vegetation Cover (FVC) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/FVC",
@@ -1379,7 +1379,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Fuel Vegetation Height (FVH) LF v2.2.0",
+    "title": "Fuel Vegetation Height (FVH) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/FVH",
@@ -1389,7 +1389,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Fuel Vegetation Type (FVT) LF v2.2.0",
+    "title": "Fuel Vegetation Type (FVT) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/FVT",
@@ -1419,7 +1419,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "13 Anderson Fire Behavior Fuel Models 2022 (FBFM13) LF v2.2.0",
+    "title": "13 Anderson Fire Behavior Fuel Models 2022 (FBFM13) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/FBFM13",
@@ -1429,7 +1429,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "40 Scott and Burgan Fire Behavior Fuel Models 2022 (FBFM40) LF v2.2.0",
+    "title": "40 Scott and Burgan Fire Behavior Fuel Models 2022 (FBFM40) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/fuel/FBFM40",
@@ -1439,7 +1439,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Existing Vegetation Cover (EVC) LF v2.2.0",
+    "title": "Existing Vegetation Cover (EVC) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVC",
@@ -1449,7 +1449,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Existing Vegetation Height (EVH) LF v2.2.0",
+    "title": "Existing Vegetation Height (EVH) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVH",
@@ -1459,7 +1459,7 @@
     "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion"
   },
   {
-    "title": "Existing Vegetation Type (EVT) LF v2.2.0",
+    "title": "Existing Vegetation Type (EVT) LF v2.3.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landfire/vegetation/EVT",

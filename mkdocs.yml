@@ -266,7 +266,7 @@ nav:
       - Global Ocean Data Analysis Project (GLODAP) v2.2023: projects/glodap.md
   - Agriculture, Vegetation and Forestry:
       - Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2022: projects/fpar.md
-      - Landfire Mosaics LF v2.2.0: projects/landfire.md
+      - Landfire Mosaics LF: projects/landfire.md
       - Vegetation dryness for western USA: projects/veg_dry.md
       - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
       - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md

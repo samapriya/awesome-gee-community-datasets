@@ -1,4 +1,4 @@
-# Landfire Mosaics LF v2.2.0
+# Landfire Mosaics LF
 
 LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a shared program between the wildland fire management programs of the U.S. Department of Agriculture's Forest Service, U.S. Department of the Interior's Geological Survey, and The Nature Conservancy.
 
@@ -20,7 +20,7 @@ There are important changes to ancillary data and classes in the LF 2020 Update,
 
 Currently included layers are
 
-#### Earth Engine Snippet: Fire Regime v2.0.0
+#### Earth Engine Snippet: Fire Regime v2.3.0
 
 ```js
 var sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/sclass");
@@ -30,7 +30,7 @@ var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regim
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME
 
-#### Earth Engine Snippet: Disturbance 2.2.0
+#### Earth Engine Snippet: Disturbance 2.3.0
 
 ```js
 var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/FDIST");
@@ -54,7 +54,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 ![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
 
 
-#### Earth Engine Snippet: Fuel 2.2.0
+#### Earth Engine Snippet: Fuel 2.3.0
 
 ```js
 var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBD");
@@ -64,16 +64,22 @@ var cffdrs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CFF
 var ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CH");
 var fbfm13 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM13");
 var fbfm40 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM40");
-var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FCCS");
 var fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVC");
 var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVH");
 var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVT");
 ```
+
+#### Earth Engine Snippet: Fuel 2.2.0
+
+```js
+var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FCCS");
+```
+
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL
 
 ![lf_veg](https://user-images.githubusercontent.com/6677629/115133326-e3449700-9fcc-11eb-81bf-450c622ca166.gif)
 
-#### Earth Engine Snippet: Vegetation 2.2.0
+#### Earth Engine Snippet: Vegetation 2.3.0
 
 ```js
 var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVC");
@@ -107,9 +113,12 @@ LANDFIRE: LANDFIRE Existing Vegetation Type layer.(2013, June - last update). U.
 #### License
 LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion.
 
-
-Curated by: Samapriya Roy
+Curated in GEE by: Samapriya Roy
 
 Keywords: doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire
 
-Last updated: 2022-08-16
+Last updated: 2024-01-14
+
+#### Changelog
+
+* 2024-01-14 Updated to v2.2.3 for available collections
