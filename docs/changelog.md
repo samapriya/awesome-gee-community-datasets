@@ -2,6 +2,15 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-01-18
+- Added [Climate Trace Global Emissions Data](https://gee-community-catalog.org/projects/climate_trace/)
+- Added [Randolph Glacier Inventory](https://gee-community-catalog.org/projects/rgi/)
+- Added [Emergency Observation Data for the 2024 Sea of Japan Earthquake](https://gee-community-catalog.org/projects/japan_eq2024)
+- Added [Umbra SAR Open Data: Sea of Japan Earthquake Jan 2024](https://gee-community-catalog.org/projects/umbra_opendata)
+- Updated [Landfire Mosaics LF v2.3.0](https://gee-community-catalog.org/projects/landfire/)
+- Updated [Nodes and ways datasets from Global Health sites Mapping Projects](https://gee-community-catalog.org/projects/health_sites/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-01-04
 - Added [Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2022](https://gee-community-catalog.org/projects/fpar/)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
