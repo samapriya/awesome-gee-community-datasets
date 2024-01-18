@@ -14958,6 +14958,339 @@
     "license_text": "This publicly released data is intended for non-commercial purposes, including government and local authority use, as well as research by universities"
   },
   {
+    "title": "Climate Trace Emissions: aluminum",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/aluminum_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: bauxite mining",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/bauxite-mining_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: cement",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/cement_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: chemicals",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/chemicals_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: coal mining",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/coal-mining_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: copper mining",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/copper-mining_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: cropland fires",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/cropland-fires_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: domestic aviation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/domestic-aviation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: domestic shipping",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/domestic-shipping_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: electricity generation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/electricity-generation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: enteric fermentation cattle feedlot",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/enteric-fermentation-cattle-feedlot_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: enteric fermentation cattle pasture",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/enteric-fermentation-cattle-pasture_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: forest land clearing",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-clearing_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: forest land degradation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-degradation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: forest land fires",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-fires_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: international aviation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/international-aviation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: international shipping",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/international-shipping_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: iron mining",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/iron-mining_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: manure left on pasture cattle",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/manure-left-on-pasture-cattle_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: manure management cattle feedlot",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/manure-management-cattle-feedlot_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: net forest land",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-forest-land_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: net shrubgrass",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-shrubgrass_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: net wetland",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-wetland_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: oil and gas refining",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/oil-and-gas-refining_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: other manufacturing",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/other-manufacturing_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: petrochemicals",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/petrochemicals_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: pulp and paper",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/pulp-and-paper_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: removals",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/removals_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: rice cultivation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/rice-cultivation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: road transportation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/road-transportation_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: shrubgrass fires",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/shrubgrass-fires_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: solid waste disposal",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/solid-waste-disposal_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: steel",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/steel_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: synthetic fertilizer application",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/synthetic-fertilizer-application_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: wastewater treatment and discharge",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/wastewater-treatment-and-discharge_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: water reservoirs",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/water-reservoirs_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
+    "title": "Climate Trace Emissions: wetland fires",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/wetland-fires_emissions-sources",
+    "provider": "Climate Trace",
+    "tags": "Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste",
+    "license": "Creative Commons Attribution Share Alike 4.0 International"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
