@@ -2,19 +2,25 @@
 
 LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a shared program between the wildland fire management programs of the U.S. Department of Agriculture's Forest Service, U.S. Department of the Interior's Geological Survey, and The Nature Conservancy.
 
-LANDFIRE (LF) layers are created using predictive landscape models based on extensive field-referenced data, satellite imagery and biophysical gradient layers using classification and regression trees. You can read [about the Landfire 2020 updates v2.2.0 here](https://landfire.gov/lf_220.php)
+LANDFIRE (LF) layers are created using predictive landscape models based on extensive field-referenced data, satellite imagery and biophysical gradient layers using classification and regression trees. You can read [about the Landfire 2022 updates v2.3.0 here](https://landfire.gov/lf_230.php)
 
-The LF 2020 Update represents the second step in moving towards an annual update in which the disturbances from the year before are represented in current year products. LANDFIRE (LF) 2019L (Limited) was the first step towards this goal but contained limited disturbance information (events and fire program data only) for the years 2017-2019. LF 2020 includes adjustments to vegetation and fuels in disturbed areas for disturbances recorded in 2017-2020. LF 2020 disturbance layers contain events, fire program data (Monitoring Trends in Burn Severity (MTBS), Burned Area Reflectance Classification (BARC), Rapid Assessment of Vegetation Condition after Wildfire (RAVG)) and LF's remote sensing of landscape change (RSLC), which identifies spectral change in vegetation using automated algorithms and image analyst review. See the disturbance source information table.
+The LANDFIRE (LF) 2022 Update represents another step in moving towards an annual update. This update is the first time in LANDFIRE history in which disturbances from the year before are represented in current year products. LF 2022 includes adjustments to vegetation and fuels in disturbed areas for disturbances recorded in 2021 and 2022. LF 2022 disturbance layers contain comprehensive polygon treatment data (disturbance events) obtained from national and local sources and fire program data including:
 
-LF 2020 replaces LF 2019L in terms of disturbances accounted for in vegetation and fuels product layers as it includes all disturbances in LF 2019L plus additional disturbances from 2017-2019 identified by LF's RSLC process and an additional year of full disturbance mapping (2020). Both vegetation cover and height, as well as fuels, will be 2022 capable in disturbed areas. This means that in mapped disturbances, vegetation and fuels are "grown" to current (delivery) year conditions. Transition rulesets for vegetation account for disturbances from 2017-2020 (using LF 2016 Remap vegetation as an input), meaning that no vegetation disturbed prior to LF 2016 Remap will be transitioned from what was mapped at the time. Fuel updates utilize 2012–2020 disturbances because fuels transition rules are based on pre-disturbance fuel inputs, which could pre-date LF 2016 Remap.
+* Monitoring Trends in Burn Severity (MTBS)
+* Burned Area Reflectance Classification (BARC)
+* Rapid Assessment of Vegetation Condition after Wildfire (RAVG)
 
-There are important changes to ancillary data and classes in the LF 2020 Update, including:
+Disturbances are also identified with LF's remote sensing of landscape change (RSLC), which identifies spectral change in vegetation using automated algorithms and image analyst review of the entire country.
 
-* A complete recalculation of topography based on the most recent 3D Elevation Program (3DEP) data and corrections to aspect that are crucial to fire behavior modeling
-* Use of the latest National Land Cover Dataset (NLCD) 2019 data for roads and urban classes and a new separate product layer for roads designed for operational use
-* Removal of the developed ruderal classes and the designation of new burnable developed classes based on the Microsoft Building Footprint data and the Wildfire Risk to Communities value added layer
-* Removal of the recently disturbed classes, replaced with modeled vegetation
-* Adjustment of agricultural classes using the new 2020 cropland data layer (CDL) and transitioning federal agricultural lands to burnable fuels in non-irrigated areas
+Both vegetation cover and height, as well as fuels, will be 2023 capable in disturbed areas. This means that in mapped disturbances, vegetation and fuels represent current year conditions. Transition rulesets for vegetation account for disturbances from 2017 to 2022 since they were designed to use LF 2016 Remap vegetation data as inputs. Fuel updates utilize 2013–2022 disturbances because fuels transition rules encompass ten years of disturbance and can use pre-disturbance fuel inputs.
+
+Important changes featured in the LF 2022 update include:
+
+* Existing Vegetation Type (EVT) Ecological Systems classifications will remain the same as LF 2020, except in areas where agriculture or urban areas have changed
+* LF 2022 contains the first application of the "zero to one" Time Since Disturbance (TSD) rules for vegetation height and cover transition rules
+    * New rules for the "zero to one" TSD category were developed for surface fuel transitions and are designed to represent the effects of disturbance on fuels for the growing season immediately following the disturbance
+* The years represented in Historical Disturbance (HDist) and Fuel Disturbance (FDist) are now the same
+
 
 ![lf_others](https://user-images.githubusercontent.com/6677629/115133292-bc866080-9fcc-11eb-9cd1-286a46c67ad4.gif)
 
