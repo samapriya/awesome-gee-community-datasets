@@ -357,6 +357,7 @@ nav:
       - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
       - MOD10A2061 Snow Cover 8-Day L3 Global 500m: projects/modis_8day_snow.md
       - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
+      - Global Seamless High-resolution Temperature Dataset (GSHTD): projects/gshtd.md
       - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
       - Snow Data Assimilation System (SNODAS): projects/snodas.md
       - United States Drought Monitor Layers: projects/usdm.md

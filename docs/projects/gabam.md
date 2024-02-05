@@ -2,7 +2,7 @@
 
 Heretofore, global Burned Area (BA) products have only been available at coarse spatial resolution, since most of the current global BA products are produced with the help of active fire detection or dense time-series change analysis, which requires very high temporal resolution. In this study, however, we focus on an automated global burned area mapping approach based on Landsat images. By utilizing the huge catalog of satellite imagery, as well as the high-performance computing capacity of Google Earth Engine, we propose an automated pipeline for generating 30-m resolution global-scale annual burned area maps from time-series of Landsat images, and a novel 30-m resolution Global annual Burned Area Map of 2015 (GABAM 2015) was released.
 
-30 m resolution global annual burned area maps (GABAM) of 1990-2020 are released for free download. The annual burned area map is defined as spatial extent of fires that occurs within a whole year and not of fires that occurred in previous years. GABAM was generated via an automated pipeline based on Google Earth Engine (GEE), using all the available Landsat images on GEE platform. The product was projected in a Geographic (Lat/Long) projection at 0.00025 degree​​ (approximately 30 meters) resolution, with the WGS84 horizontal datum and the EGM96 vertical datum, consisting of 10 degree × 10 degree tiles spanning the range 180W–180E and 80N–60S.
+30 m resolution global annual burned area maps (GABAM) of 1990-2021 are released for free download. The annual burned area map is defined as spatial extent of fires that occurs within a whole year and not of fires that occurred in previous years. GABAM was generated via an automated pipeline based on Google Earth Engine (GEE), using all the available Landsat images on GEE platform. The product was projected in a Geographic (Lat/Long) projection at 0.00025 degree​​ (approximately 30 meters) resolution, with the WGS84 horizontal datum and the EGM96 vertical datum, consisting of 10 degree × 10 degree tiles spanning the range 180W–180E and 80N–60S.
 
 You can get links to [download the data here](https://vapd.gitlab.io/post/gabam/)
 
@@ -42,12 +42,16 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 These datasets are made available under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other [Information here](https://doi.org/10.7910/DVN/3CTMKP).
 
+
+#### Changelog
+* Added 2020 and 2021 to the collection and collection has been updated.
+
 Created by: Long Tengfei; Zhang Zhaoming; He Guojin
 
 Curated in GEE by : Samapriya Roy
 
 keywords: Global Fire, burned area, GABAM, remote sensing, Earth Engine
 
-Last modified: 2021-04-06
+Last modified: 2022-07-14
 
-Last updated on GEE: 2022-08-19
+Last updated on GEE: 2024-02-04
