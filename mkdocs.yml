@@ -203,6 +203,7 @@ nav:
       - GlobCover Global Land Cover: projects/globcover_esa.md
       - Daylight Map Distribution map data: projects/daylight_maps.md
       - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
+      - GLANCE Global Landcover Training dataset: projects/glance_training.md
       - Global Impervious Surface Area (1972-2019): projects/gisa.md
       - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
       - Global urban extents from 1870 to 2100: projects/gue.md
@@ -275,6 +276,7 @@ nav:
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
       - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
+      - High resolution map of African tree cover: projects/af_trees.md
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
       - High Resolution Tree Species Information for Canada: projects/ca_species.md
       - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md

@@ -2,6 +2,14 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-02-09
+- Released 2.3.0 for awesome gee community catalog & stats
+- Added [Global Seamless High-resolution Temperature Dataset (GSHTD)](https://gee-community-catalog.org/projects/gshtd/)
+- Added [GLANCE Global Landcover Training dataset](https://gee-community-catalog.org/projects/glance_training/)
+- Added [High resolution map of African tree cover](https://gee-community-catalog.org/projects/af_trees)
+- Updated [Global annual Burned Area Maps](https://gee-community-catalog.org/projects/gabam) to include 2020 and 2021
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-01-18
 - Added [Climate Trace Global Emissions Data](https://gee-community-catalog.org/projects/climate_trace/)
 - Added [Randolph Glacier Inventory](https://gee-community-catalog.org/projects/rgi/)

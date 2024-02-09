@@ -14894,6 +14894,25 @@
     "license": "Creative Commons Attribution Share Alike 4.0 International"
   },
   {
+    "title": "GLANCE Global Landcover Training dataset",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLANCE-TRAINING",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GLANCE/GLANCE_TRAINING_DATA_V1",
+    "provider": "Stanimirova et al, Boston University",
+    "tags": "Glance, LULC, training dataset, Medium resolution, global dataset, land use, land cover",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "High resolution map of African tree cover",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/PS-AFRICA-TREECOVER",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/PS_AFRICA_TREECOVER_2019_100m_V10",
+    "provider": "Reiner et al",
+    "tags": "Africa, NICFI, Planet, Tree cover, Land cover",
+    "license": "custom",
+    "license_text": "This tree cover map is made freely available for non-commercial purposes. All usage of the data must be attributed and should be cited with the paper citation. Please see the NICFI license for full terms of usage, [available here](https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf)"
+  },
+  {
     "title": "MODIS/VIIRS LAI FPAR 2000-2022: WGS 500m 8day",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LAI-FPAR-2000-2022",
     "type": "image_collection",
