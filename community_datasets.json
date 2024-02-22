@@ -15490,6 +15490,42 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
+    "title": "Canadian Satellite-Based Forest Inventory (SBFI): Merged",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-SBFI",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/CA_SBFI_MERGED",
+    "provider": "Wulder et al. 2024",
+    "tags": "Landsat, land cover, change detection, forest structure, biomass, NFI",
+    "license": "Open Government Licence - Canada"
+  },
+  {
+    "title": "Canadian Satellite-Based Forest Inventory (SBFI): Gridded Forested Ecosystems",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-SBFI",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/GRID_forested_ecosystems",
+    "provider": "Wulder et al. 2024",
+    "tags": "Landsat, land cover, change detection, forest structure, biomass, NFI",
+    "license": "Open Government Licence - Canada"
+  },
+  {
+    "title": "GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022) Annual",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC-FCS30D",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLC-FCS30D/annual",
+    "provider": "Zhang et al. 2023",
+    "tags": "GLC_FCS30D, 1985-2022, Land-cover change, Landsat, change detection, Google Earth Engine",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
+    "title": "GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022) Five year",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC-FCS30D",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLC-FCS30D/five-years-map",
+    "provider": "Zhang et al. 2023",
+    "tags": "GLC_FCS30D, 1985-2022, Land-cover change, Landsat, change detection, Google Earth Engine",
+    "license": "Creative Commons Attribution 4.0 International"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",

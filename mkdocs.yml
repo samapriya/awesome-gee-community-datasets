@@ -102,8 +102,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       options:
         custom_icons:
           - overrides/.icons
@@ -201,6 +201,7 @@ nav:
       - ESRI 10m Annual Land Use Land Cover (2017-2022): projects/S2TSLULC.md
       - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
       - GlobCover Global Land Cover: projects/globcover_esa.md
+      - GLC_FCS30D - Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
       - Daylight Map Distribution map data: projects/daylight_maps.md
       - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
       - GLANCE Global Landcover Training dataset: projects/glance_training.md
@@ -282,6 +283,7 @@ nav:
       - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
       - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
       - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
+      - Canadian Satellite-Based Forest Inventory (SBFI): projects/ca_sbfi.md
       - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
       - US National Forest Type and Groups: projects/us_ftype_fgroup.md
       - USDA Crop Sequence Boundaries 2015-2022: projects/csb.md
