@@ -15526,6 +15526,51 @@
     "license": "Creative Commons Attribution 4.0 International"
   },
   {
+    "title": "GLOBGM v1.0 Computed steady-state groundwater head [m] for the lower model layer",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBGM-GROUNDWATER-MODEL",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-heads-lower-layer-ss",
+    "provider": "Verkaik et al. 2024",
+    "tags": "GLOBGM,groundwater,global-scale modeling,PCR-GLOBWB,MODFLOW,high performance computing",
+    "license": "GNU General Public License v3.0 or later"
+  },
+  {
+    "title": "GLOBGM v1.0 Computed steady-state groundwater head [m] for the upper model layer",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBGM-GROUNDWATER-MODEL",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-heads-upper-layer-ss",
+    "provider": "Verkaik et al. 2024",
+    "tags": "GLOBGM,groundwater,global-scale modeling,PCR-GLOBWB,MODFLOW,high performance computing",
+    "license": "GNU General Public License v3.0 or later"
+  },
+  {
+    "title": "GLOBGM v1.0 Computed water table depth [m] sampled from upper to lower layer",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBGM-GROUNDWATER-MODEL",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-wtd-ss",
+    "provider": "Verkaik et al. 2024",
+    "tags": "GLOBGM,groundwater,global-scale modeling,PCR-GLOBWB,MODFLOW,high performance computing",
+    "license": "GNU General Public License v3.0 or later"
+  },
+  {
+    "title": "GLOBGM v1.0 Computed transient water table depth [m] sampled from upper to lower layer",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBGM-GROUNDWATER-MODEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBGM/TRANSIENT/WTD",
+    "provider": "Verkaik et al. 2024",
+    "tags": "GLOBGM,groundwater,global-scale modeling,PCR-GLOBWB,MODFLOW,high performance computing",
+    "license": "GNU General Public License v3.0 or later"
+  },
+  {
+    "title": "GLOBGM v1.0 Computed transient water table depth [m] lower layer only",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBGM-GROUNDWATER-MODEL",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBGM/TRANSIENT/WTD-BOTTOM",
+    "provider": "Verkaik et al. 2024",
+    "tags": "GLOBGM,groundwater,global-scale modeling,PCR-GLOBWB,MODFLOW,high performance computing",
+    "license": "GNU General Public License v3.0 or later"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
