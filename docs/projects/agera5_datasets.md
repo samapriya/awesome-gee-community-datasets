@@ -43,7 +43,7 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 |                           | - Scale factor: 1.0                |
 | Dewpoint temperature, 2m ('Dew_Point_Temperature_2m_Mean') | - Units: Degrees Kelvin |
 |                           | - Scale factor: 1.0                |
-| Precipitation ('Precipitation_Flux') | - Units: Centimeters           |
+| Precipitation ('Precipitation_Flux') | - Units: Millimeters           |
 |                           | - Scale factor: 1.0                |
 | Precipitation rain duration fraction ('Precipitation_Rain_Duration_Fraction') | - Units: Count |
 |                           | - Scale factor: 1.0                |
