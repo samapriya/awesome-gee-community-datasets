@@ -5,7 +5,7 @@
 #### Updated 2024-03-07
 - Released 2.4.0 for awesome gee community catalog & stats
 - Added [GLOBGM v1.0 global-scale groundwater model](https://gee-community-catalog.org/projects/globgm/)
-- Added [Temporal trends of Surface water across Indian Rivers & Basins](https://gee-community-catalog.org/projects/indian_river_trends/)
+- Added [Temporal trends of Surface water across Indian Rivers & Basins](https://gee-community-catalog.org/projects/india_river_trends/)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2024-02-22
