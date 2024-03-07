@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-03-07
+- Released 2.4.0 for awesome gee community catalog & stats
+- Added [GLOBGM v1.0 global-scale groundwater model](https://gee-community-catalog.org/projects/globgm/)
+- Added [Temporal trends of Surface water across Indian Rivers & Basins](https://gee-community-catalog.org/projects/indian_river_trends/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-02-22
 - Added provisional dataset [GLC_FCS30D - Global 30-meter Land Cover Change Dataset (1985-2022)](https://gee-community-catalog.org/projects/glc_fcs/)
 - Added [Canadian Satellite-Based Forest Inventory (SBFI)](https://gee-community-catalog.org/projects/ca_sbfi/)
