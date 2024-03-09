@@ -135,13 +135,13 @@ nav:
   - Getting Started:
       - Navigating the Catalog: startup/navigation.md
       - Access awesome-gee-catalog-examples repo: startup/catalog-examples.md
-      - Submit or bring your data request to community catalog: startup/submit.md
-      - Submit update request for dataset in community catalog: startup/update.md
-      - Bug report for dataset in community catalog: startup/bug.md
-      - Submit example for dataset in community catalog: startup/example.md
   - Blog posts: blogs.md
   - Catalog Stats: stats.md
   - Changelog: changelog.md
+  - Submit or bring your data request to community catalog: submit.md
+  - Submit update request for dataset in community catalog: update.md
+  - Bug report for dataset in community catalog: bug.md
+  - Submit example for dataset in community catalog: example.md
   - Insiders only datasets:
       - Microsoft Bing Global Mined Roads: projects/msroads.md
       - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
