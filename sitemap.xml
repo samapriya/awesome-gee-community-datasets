@@ -11,12 +11,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/samapriya/bug/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/samapriya/changelog/</loc>
          <lastmod>2024-03-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/samapriya/code_of_conduct/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/example/</loc>
          <lastmod>2024-03-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -32,6 +42,16 @@
     </url>
     <url>
          <loc>https://github.com/samapriya/stats/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/submit/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/samapriya/update/</loc>
          <lastmod>2024-03-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1261,32 +1281,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/samapriya/startup/bug/</loc>
-         <lastmod>2024-03-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/samapriya/startup/catalog-examples/</loc>
          <lastmod>2024-03-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/samapriya/startup/example/</loc>
-         <lastmod>2024-03-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/samapriya/startup/navigation/</loc>
-         <lastmod>2024-03-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/samapriya/startup/submit/</loc>
-         <lastmod>2024-03-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/samapriya/startup/update/</loc>
          <lastmod>2024-03-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
