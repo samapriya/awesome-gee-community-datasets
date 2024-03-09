@@ -30,7 +30,7 @@ jobs:
             with open('community_datasets.json',encoding='utf-8') as f:
               data = json.load(f)
             with open('community_datasets.csv','w') as csvfile:
-                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code","license","license_text"], delimiter=',',lineterminator='\n')
+                writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code","license","license_text","docs_page"], delimiter=',',lineterminator='\n')
                 writer.writeheader()
             for datasets in data:
                 gee_id = datasets['id']
@@ -40,13 +40,14 @@ jobs:
                 gee_tags = datasets['tags']
                 sample_code = datasets['sample_code']
                 license = datasets['license']
+                docs_page = datasets['docs']
                 if license == "custom":
                   license_text = datasets['license_text']
                 else:
                   license_text = "NA"
                 with open('community_datasets.csv','a') as csvfile:
                     writer=csv.writer(csvfile,delimiter=',',lineterminator='\n')
-                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code,license,license_text])
+                    writer.writerow([gee_id,gee_provider,gee_title,gee_type,gee_tags,sample_code,license,license_text,docs_page])
                 csvfile.close()
       - name: commit files
         continue-on-error: true
