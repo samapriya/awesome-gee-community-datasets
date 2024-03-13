@@ -9,7 +9,8 @@ the paper](https://www.sciencedirect.com/science/article/pii/S2352340923010211) 
 
 The authors have also provided a dataset page and an earth engine app to [analyze the dataset further](https://sites.google.com/view/surface-water-trends-india/).
 
-These are available as the following GEE assets:
+These are available as the following GEE assets
+
 * Annual rate of change of surface water area, by season:
   * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/txsTrends`
   * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/basinsTrends`
