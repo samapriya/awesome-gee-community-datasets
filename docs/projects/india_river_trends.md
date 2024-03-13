@@ -11,16 +11,73 @@ The authors have also provided a dataset page and an earth engine app to [analyz
 
 These are available as the following GEE assets
 
-* Annual rate of change of surface water area, by season
-  
-  * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/txsTrends`
-  * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/basinsTrends`
-* Time series of annual surface water area, by season
-  
-  * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_txs`
-  * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_basinsL7`
-    
-* Time series of annual surface water occurrence, by season: `projects/sat-io/open-datasets/indian_rivers/riverchanges/waterOccSeasComps`
+- Annual rate of change of surface water area, by season
+
+    * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/txsTrends`
+    * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/basinsTrends`
+
+
+??? example "Expand to show Attributes for Annual rate of change of surface water area feature collections"
+
+    <center>
+
+    | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                        |
+    |---------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | HYBAS_ID or txId     | Feature's unique identifier. <ul><li>HYBAS_ID is for basins. It is the basin's identifier HYBAS_ID in the HydroBASINS dataset</li><li>txId is for transects. It is the '_' concatenated string derived from the longitude and latitude values, truncated to 4 decimals, of the transect's median point. Specifically, it is "_xx.xxxx_yy.yyyy_" where _xx.xxxx_ and _yy.yyyy_ are the median's longitude and latitude values truncated to 4 decimals.</li></ul> |
+    | season               | Denotes the season, in "_sss_mmm_" format, where <ul><li>"_sss_" denotes the season: "_dry_" for dry, "_wet_" for wet and "_prm_" for permanent </li><li>"_mmm_" denotes the span of the season in calendar months: "_fma_" is for dry season of February-March-April, "_ond_" is for wet (post-monsoon) season of October-November-December and "_DnW_" is for permanent which is dry AND wet season. </li></ul>|
+    | sl_perYr            | Regression slope of the surface water area vs. year Sen's slope regression analysis, and "_perYr_" denotes its units, per year. |
+    | offset               | Regression offset of the surface water area vs. year Sen's slope regression analysis. |
+    | tsPtCount            | Number of time-points included in the Sen's slope regression analysis. |
+    | system:index         | GEE system-generated unique identifier. |
+
+
+
+- Time series of annual surface water area, by season
+
+    * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_txs`
+    * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_basinsL7`
+
+??? example "Expand to show Attributes for Time series of annual surface water area feature collections"
+
+    <center>
+
+    | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                        |
+    |---------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | HYBAS_ID or txId     | Feature's unique identifier. <br> - HYBAS_ID is for basins. It is the basin's identifier HYBAS_ID in the HydroBASINS dataset. <br> - txId is for transects. It is the '_' concatenated string derived from the longitude and latitude values, truncated to 4 decimals, of the transect's median point. Specifically, it is "_xx.xxxx_yy.yyyy_" where _xx.xxxx_ and _yy.yyyy_ are the median's longitude and latitude values truncated to 4 decimals. |
+    | season               | Denotes the season, in "_sss_mmm_" format. <br> - "_sss_" denotes the season: "_dry_" for dry, "_wet_" for wet, and "_prm_" for permanent. <br> - "_mmm_" denotes the span of the season in calendar months: "_fma_" is for the dry season of February-March-April, "_ond_" is for the wet (post-monsoon) season of October-November-December, and "_DnW_" is for permanent which is dry AND wet season.               |
+    | year               | Year.                                                                                                                                                                                                                                                                                                                                                                               |
+    | water_ha            | Area of water pixels in the feature, in hectares.                                                                                                                                                                                                                                                                                                                                  |
+    | notwater_ha        | Area of notwater pixels in the feature, in hectares.                                                                                                                                                                                                                                                                                                                               |
+    | nodata_ha          | Area of nodata pixels in the feature, in hectares.                                                                                                                                                                                                                                                                                                                                 |
+    | nodataFrac         | Proportion of the feature's area with nodata pixels.                                                                                                                                                                                                                                                                                                                               |
+    | system:index      | GEE system-generated unique identifier.    |
+                                                                                                                                                                                                                                                                                                                                             |
+- Time series of annual surface water occurrence, by season: `projects/sat-io/open-datasets/indian_rivers/riverchanges/waterOccSeasComps`
+
+??? example "Expand to show band information for Time series of annual surface water image collection"
+
+    <center>
+
+    | Bands             | Description                                                                                                       |
+    |------------------:|:------------------------------------------------------------------------------------------------------------------|
+    | drySeasCompos_fma | Each pixel in these bands have one of 3 integer values (following the convention in the JRC water dataset, Pekel et al. 2016) |
+    |wetSeasCompos_ond  | * `2`: a pixel with valid data and containing water (denoting a "water" pixel)                                     |
+    |prmSeasCompos_DnW  | * `1`: a pixel with valid data and not containing water (denoting a "notwater" pixel)                               |
+    |                   | * `0`: a pixel with no valid data (denoting a "nodata" pixel)                                                       |
+
+
+??? example "Expand to show attributes for Time series of annual surface water image collection"
+
+    <center>
+
+    | Properties | Description |
+    |----------:|:------------|
+    |year       | year of the image. |
+    |monsoonYearStartMonth | Number (between 1-12) of the month when monsoon (or, hydrological) year starts. It is 6, indicating June, and is the same for all images. A year is taken to be June to May in this analysis. |
+    |drySeasMonthsOffset | Number of months after `monsoonYearStartMonth` when dry season starts. It is 8, indicating February. |
+    |drySeasMonthsTag    | Suffix tag, in names of image bands, table columns, etc., indicating the 3 months of the dry season. |
+    |wetSeasMonthsOffset | Number of months after `monsoonYearStartMonth` when wet season starts. It is 4, indicating October. |
+    |wetSeasMonthsTag    | Suffix tag, in names of image bands, table columns, etc., indicating the 3 months of the wet season. |
 
 More details and resources:
 
