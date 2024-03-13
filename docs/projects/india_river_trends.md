@@ -11,12 +11,15 @@ The authors have also provided a dataset page and an earth engine app to [analyz
 
 These are available as the following GEE assets
 
-* Annual rate of change of surface water area, by season:
+* Annual rate of change of surface water area, by season
+  
   * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/txsTrends`
   * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/basinsTrends`
-* Time series of annual surface water area, by season:
+* Time series of annual surface water area, by season
+  
   * Reaches: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_txs`
   * Basins: `projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_basinsL7`
+    
 * Time series of annual surface water occurrence, by season: `projects/sat-io/open-datasets/indian_rivers/riverchanges/waterOccSeasComps`
 
 More details and resources:
