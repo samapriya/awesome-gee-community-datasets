@@ -201,7 +201,7 @@ nav:
       - ESRI 10m Annual Land Use Land Cover (2017-2022): projects/S2TSLULC.md
       - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
       - GlobCover Global Land Cover: projects/globcover_esa.md
-      - GLC_FCS30D - Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
+      - GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
       - Daylight Map Distribution map data: projects/daylight_maps.md
       - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
       - GLANCE Global Landcover Training dataset: projects/glance_training.md

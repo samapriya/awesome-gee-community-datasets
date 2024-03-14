@@ -1,4 +1,4 @@
-# GLC_FCS30D - Global 30-meter Land Cover Change Dataset (1985-2022)
+# GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022)
 
 ???+ note
 
