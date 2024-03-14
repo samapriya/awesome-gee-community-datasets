@@ -1,4 +1,4 @@
-# CloudSEN12 - Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2
+# CloudSEN12 Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2
 
 CloudSEN12 is a large dataset for cloud semantic understanding that consists of 9880 regions of interest (ROIs) that consists of 49,400 image patches (IP) that are evenly spread throughout all continents except Antarctica. Each IP covers 5090 x 5090 meters and contains data from Sentinel-2 levels 1C and 2A, hand-crafted annotations of thick and thin clouds and cloud shadows, Sentinel-1 Synthetic Aperture Radar (SAR), digital elevation model, surface water occurrence, land cover classes, and cloud mask results from six cutting-edge cloud detection algorithms. Each ROI has five 5090x5090 meters image patches (IPs) collected on different dates that match one of the following cloud cover groups:
 
