@@ -226,7 +226,7 @@ nav:
       - Vermont High Resolution Land Cover 2016: projects/vt_lc.md
       - Chesapeake Bay High Resolution Land Cover Dataset (2013-2014): projects/cc.md
       - C-CAP High-Resolution Land Cover: projects/ccap_lc.md
-      - C-CAP Medium-Resolution Land Cover - Beta: projects/ccap_mlc.md
+      - C-CAP Medium-Resolution Land Cover Beta: projects/ccap_mlc.md
       - C-CAP Wetland Potential 30m: projects/ccap_wpotential.md
       - Oil Palm Plantation Layers: projects/oil-palm.md
       - Rasterized building footprint dataset for the US: projects/usbuild_raster.md
