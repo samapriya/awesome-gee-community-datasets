@@ -36,14 +36,14 @@ model (DynQual) at 10 km spatial resolution [Data set]. In Geoscientific Model D
 
 ```js
 var fc = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/fecal-coliform");
-var routed_fc = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed_fc");
+var routed_fc = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed-fc");
 var discharge = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/discharge");
 var storage = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/channel-storage");
 var avg_annualDischarge = ee.Image("projects/sat-io/open-datasets/DYNQUAL/discharge-avg-annual");
 var tds = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/total-dissolved-solids");
-var routed_tds = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed_tds");
+var routed_tds = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed-tds");
 var bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/biological-oxygen-demand");
-var routed_bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed_bod");
+var routed_bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed-bod");
 var water_temp = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/water-temperature");
 ```
 
