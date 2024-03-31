@@ -2,18 +2,7 @@
 
 Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.
 
-Available years of datasets: 2019,2020,2021,2022 and 2023
-
-#### Citation
-
-```
-Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps.
-Based on analysis by Ookla of Speedtest Intelligence® data for [DATA TIME PERIOD].
-Provided by Ookla and accessed [DAY MONTH YEAR]. Ookla trademarks used under license
-and reprinted with permission.
-```
-
-Find the GitHub project and datasets here: https://github.com/teamookla/ookla-open-data
+Available years of datasets: 2019,2020,2021,2022 and 2023.Find the GitHub project and datasets here: https://github.com/teamookla/ookla-open-data
 You can also download the datasets from AWS Open data registry: https://registry.opendata.aws/speedtest-global-performance/
 
 #### Tiles
@@ -38,6 +27,15 @@ Each tile contains the following adjoining attributes:
 #### Quadkeys
 
 [Quadkeys](https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system) can act as a unique identifier for the tile. This can be useful for joining data spatially from multiple periods (quarters), creating coarser spatial aggregations without using geospatial functions, spatial indexing, partitioning, and an alternative for storing and deriving the tile geometry.
+
+#### Citation
+
+```
+Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps.
+Based on analysis by Ookla of Speedtest Intelligence® data for [DATA TIME PERIOD].
+Provided by Ookla and accessed [DAY MONTH YEAR]. Ookla trademarks used under license
+and reprinted with permission.
+```
 
 #### Layers
 Two layers are distributed as separate sets of files:
@@ -92,4 +90,4 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: : analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles
 
-Last updated: 2023-09-18
+Last updated: 2024-03-31
