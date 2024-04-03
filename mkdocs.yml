@@ -397,7 +397,7 @@ nav:
       - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
   - Fire Monitoring and Analysis:
       - CEMS Fire Danger Indices: projects/cems_fire.md
-      - National Burned Area Composite (NBAC): projects/nbac.md
+      - Canada National Burned Area Composite (NBAC): projects/nbac.md
       - Wildfire Risk to Communities (WRC): projects/wrc.md
       - Global Fire WEather Database (GFWED): projects/gfwed.md
       - Global Fire Atlas (2003-2016): projects/gfa.md

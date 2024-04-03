@@ -2,6 +2,14 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-04-02
+- Released 2.5.0 for awesome gee community catalog & stats
+- Added [Canada National Burned Area Composite (NBAC)](https://gee-community-catalog.org/projects/nbac/)
+- Added [ESA Fire Disturbance Climate Change Initiative (CCI)](https://gee-community-catalog.org/projects/pk_nssed/)
+- Added [National-Scale Soil Erosion Dataset for Pakistan (2005 and 2015)](https://gee-community-catalog.org/projects/pk_nssed/)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://gee-community-catalog.org/projects/speedtest)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-03-07
 - Released 2.4.0 for awesome gee community catalog & stats
 - Added [GLOBGM v1.0 global-scale groundwater model](https://gee-community-catalog.org/projects/globgm/)

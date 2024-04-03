@@ -1,4 +1,4 @@
-# National Burned Area Composite (NBAC)
+# Canada National Burned Area Composite (NBAC)
 
 The National Burned Area Composite (NBAC) is a GIS database and system that calculates the area of forest burned on a national scale for each year since 1986. The data are used to help estimate carbon emissions in Canada. The burned area is determined by evaluating a number of available sources of data, which use different techniques to map any given fire. The system chooses the best available source of data for each burned area and builds a national composite picture.
 
