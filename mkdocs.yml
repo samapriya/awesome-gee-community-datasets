@@ -193,6 +193,7 @@ nav:
       - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
       - Global Soil bioclimatic variables: projects/soil_bioclim.md
       - Harmonized World Soil Database (HWSD) version 2.0: projects/hwsd.md
+      - National-Scale Soil Erosion Dataset for Pakistan (2005 and 2015): projects/pk_nssed.md
   - Global Land Use and Land Cover:
       - Global Mangrove Project: projects/mangrove.md
       - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
@@ -396,6 +397,7 @@ nav:
       - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
   - Fire Monitoring and Analysis:
       - CEMS Fire Danger Indices: projects/cems_fire.md
+      - National Burned Area Composite (NBAC): projects/nbac.md
       - Wildfire Risk to Communities (WRC): projects/wrc.md
       - Global Fire WEather Database (GFWED): projects/gfwed.md
       - Global Fire Atlas (2003-2016): projects/gfa.md
@@ -403,3 +405,4 @@ nav:
       - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
       - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
       - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
+      - ESA Fire Disturbance Climate Change Initiative (CCI): projects/avhrr-ltdr.md
