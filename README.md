@@ -7,7 +7,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream2](https://img.shields.io/badge/Supported%20by-Jetstream2-brightgreen)](https://jetstream-cloud.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10737966.svg)](https://doi.org/10.5281/zenodo.10737966)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10913399.svg)](https://doi.org/10.5281/zenodo.10913399)
 [![Donate](https://img.shields.io/badge/Donate-Buy%20me%20a%20Coffee-teal)](https://www.buymeacoffee.com/samapriya)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
 
@@ -26,6 +26,6 @@ https://gee-community-catalog.org/
 #### Citation
 
 ```
-Roy, S., Swetnam, T., & Somasundaram, D. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (2.4.0).
-Zenodo. https://doi.org/10.5281/zenodo.10737966
+Samapriya Roy, Alec L. Robitaille, Swetnam, T., & Somasundaram, D. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (2.5.0).
+Zenodo. https://doi.org/10.5281/zenodo.10913399
 ```
