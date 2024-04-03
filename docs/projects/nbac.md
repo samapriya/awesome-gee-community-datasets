@@ -19,7 +19,7 @@ Canadian Forest Service. National Burned Area Composite (NBAC). Natural Resource
 
 #### Citation
 
-````
+```
 Skakun, R.; Castilla, G.; Metsaranta, J.; Whitman, E.; Rodrigue, S.; Little, J.; Groenewegen, K.; Coyle, M. (2022). Extending the National Burned
 Area Composite Time Series of Wildfires in Canada. Remote Sensing, 14, 3050. DOI: https://doi.org/10.3390/rs14133050
 
