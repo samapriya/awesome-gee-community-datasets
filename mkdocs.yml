@@ -238,6 +238,9 @@ nav:
       - HydroLAKES v1.0: projects/hydrolakes.md
       - HydroATLAS v1.0: projects/hydroatlas.md
       - HydroWaste v1.0: projects/hydrowaste.md
+      - SWOT River Database (SWORD): projects/sword.md
+      - Global River Obstruction Database (GROD): projects/grod.md
+      - United States Groundwater Well Database (USGWD): projects/usgwd.md
       - Global River Classification (GloRiC): projects/gloric.md
       - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
       - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md

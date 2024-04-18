@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-04-18
+- Added [SWOT River Database (SWORD)](https://gee-community-catalog.org/projects/sword/)
+- Added [Global River Obstruction Database (GROD)](https://gee-community-catalog.org/projects/grod/)
+- Added [United States Groundwater Well Database (USGWD)](https://gee-community-catalog.org/projects/usgwd/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-04-02
 - Released 2.5.0 for awesome gee community catalog & stats
 - Added [Canada National Burned Area Composite (NBAC)](https://gee-community-catalog.org/projects/nbac/)
