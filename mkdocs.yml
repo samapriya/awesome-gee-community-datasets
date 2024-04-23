@@ -280,6 +280,7 @@ nav:
       - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md
       - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
       - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
+      - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
       - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
