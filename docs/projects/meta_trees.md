@@ -7,9 +7,9 @@ Moreover, its integration into conservation initiatives, carbon credit monitorin
 #### Citation
 
 ```
-Tolan, J., Yang, H.I., Nosarzewski, B., Couairon, G., Vo, H., Brandt, J., Spore, J., Majumdar, S., Haziza, D., Vamaraju, J. and Moutakanni, T.,
-2023. Sub-meter resolution canopy height maps using self-supervised learning and a vision transformer trained on Aerial and GEDI Lidar. arXiv
-e-prints, pp.arXiv-2304.
+Tolan, J., Yang, H.I., Nosarzewski, B., Couairon, G., Vo, H.V., Brandt, J., Spore, J., Majumdar, S., Haziza, D., Vamaraju, J. and Moutakanni, T.,
+2024. Very high resolution canopy height maps from RGB imagery using self-supervised vision transformer and convolutional decoder trained on aerial
+lidar. Remote Sensing of Environment, 300, p.113888.
 ```
 
 #### Dataset citation
