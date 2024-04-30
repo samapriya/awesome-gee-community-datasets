@@ -1,16 +1,27 @@
 # S2 SR HARMONIZED SWITZERLAND
 
-Sentinel-2 (ESA) optical satellite data provides complete coverage of Switzerland approximately every three days. The effectiveness of this data relies significantly on meteorological factors like cloud cover, atmospheric correction, data registration, and delivery methods (projection). We've enhanced existing processing procedures and incorporated additional post-processing techniques to produce analysis-ready surface reflectance data specifically tailored for Switzerland. You can find additional information [here in geocat.ch - the swiss geographic catalogue](https://www.[geocat.ch](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/7ae5cd5b-e872-4719-92c0-dc2f86c4d471)/geonetwork/srv/eng/catalog.search#/metadata/7ae5cd5b-e872-4719-92c0-dc2f86c4d471) and [processing code here in the [SATROMO GitHub Repository](https://github.com/swisstopo/topo-satromo).
+Sentinel-2 (ESA) optical satellite data provides complete coverage of Switzerland approximately every three days. The effectiveness of this data
+relies significantly on meteorological factors like cloud cover, atmospheric correction, data registration, and delivery methods (projection). We've
+enhanced existing processing procedures and incorporated additional post-processing techniques to produce analysis-ready surface reflectance data
+specifically tailored for Switzerland. You can find additional information in [geocat.ch - the swiss geographic catalogue](https://www.geocat.ch)
+and [metadata information can be found here](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/7ae5cd5b-e872-4719-92c0-dc2f86c4d471). Processing code can be found in the [SATROMO GitHub Repository](https://github.com/swisstopo/topo-satromo).
 
 #### Processing
 - The input dataset is the Level 2A (surface reflectance) data from Sentinel-2: [S2_SR_HARMONIZED](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED?hl=en).
-- For cloud detection the [CloudScore+](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED?hl=en) dataset is used with a 0.6 threshold for the cs_cdf band to identify clouds. Additionally, a stricter 0.8 threshold is applied in a projection corridor of the clouds derived from the solar and satellite geometries.
+- For cloud detection the [CloudScore+](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED?hl=en) dataset is used with a 0.4 threshold for the cs_cdf band to identify clouds. Additionally, a stricter 0.2 threshold is applied in a projection corridor of the clouds derived from the solar and satellite geometries.
 - Using the same geometries as above in addition to a digital elevation model (swissALTI3D) terrain shadows are detected and added as a mask.
 - The tiles from each overpass are mosaiced.
-- Lastly, the mosaics are co-registered by the displacement vectors in relation to the Sentinel Ground Reference Image to achieve sub-pixel location accuracy. All the mosaics are saved in epsg:2056 (CH1903+ / LV95).
+- Lastly, the mosaics are co-registered by the displacement vectors in relation to the Sentinel Ground Reference Image to achieve sub-pixel location accuracy. All the mosaics are saved in epsg:2056 (CH1903+ / LV95) and the covered perimeter includes Switzerland and Liechtenstein.
 
 #### Assets, bands & masks
 Each overpass is mosaiced and there are two assets per overpass for the 10m and 20m spatial resolution.
+
+**Note from Data Providers**
+
+```
+Please note that we are in commissioning mode until 01.01.2025. For 2024, we will have real-time data,
+and we will reprocess data from 2017 onward
+```
 
 ??? example "Expand to show asset resolution and band list"
 
@@ -37,13 +48,13 @@ Each overpass is mosaiced and there are two assets per overpass for the 10m and 
 ### Earth Engine Snippet
 
 ```js
-var s2_s2_harmonized_swiss = ee.ImageCollection("projects/sat-io/open-datasets/SWISSTOPO/S2_SR_HARMONIZED_SWISS");
+var s2_sr_harmonized_swiss = ee.ImageCollection("projects/sat-io/open-datasets/SWISSTOPO/S2_SR_HARMONIZED_SWISS");
 ```
 
 
 #### License
 The free geodata and geoservices of swisstopo may be used, distributed and made accessible. Furthermore, they may be enriched and processed and also
-used commercially.[Terms of use for free geodata and geoservices (OGD) from swisstopo](https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices). Contains modified Copernicus Sentinel data.
+used commercially.[Terms of use for free geodata and geoservices(OGD) from swisstopo](https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices). Contains modified Copernicus Sentinel data.
 
 1. Legal basis
 
@@ -66,6 +77,6 @@ Keywords: BGDI, optical satellite imagery, Sentinel-2, surface reflectance, Anal
 
 Created and provided by: [Federal Office of Topography swisstopo](https://www.swisstopo.admin.ch/en)
 
-Curated in GEE by: SwissTopo and Samapriya Roy
+Curated in GEE by: swisstopo and Samapriya Roy
 
 Last updated: 2024-04-24
