@@ -2,6 +2,11 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-04-30
+- Added [DeltaDTM Global coastal digital terrain model](https://gee-community-catalog.org/projects/delta_dtm/)
+- Added [Global Glacier Elevation change products](https://gee-community-catalog.org/projects/glacier/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-04-22
 - Added [High Resolution 1m Global Canopy Height Maps](https://gee-community-catalog.org/projects/meta_trees/)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
