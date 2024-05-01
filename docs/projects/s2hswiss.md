@@ -54,7 +54,7 @@ var s2_sr_harmonized_swiss = ee.ImageCollection("projects/sat-io/open-datasets/S
 
 #### License
 The free geodata and geoservices of swisstopo may be used, distributed and made accessible. Furthermore, they may be enriched and processed and also
-used commercially.[Terms of use for free geodata and geoservices(OGD) from swisstopo](https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices). Contains modified Copernicus Sentinel data.
+used commercially. [Terms of use for free geodata and geoservices(OGD) from swisstopo](https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices). Contains modified Copernicus Sentinel data.
 
 1. Legal basis
 
