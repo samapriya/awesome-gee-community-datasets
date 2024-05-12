@@ -1,9 +1,5 @@
 # GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022)
 
-???+ note
-
-    **This dataset is part of a paper in submission and as such does not have citation and DOI information. This will be updated as the paper progresses through review and publication cycles.Please keep this into consideration while using this dataset**
-
 The GLC_FCS30D dataset represents a pioneering advancement in global land-cover monitoring, offering comprehensive insights into land cover dynamics at a 30-meter resolution spanning the period from 1985 to 2022. Developed using continuous change detection methods and leveraging the extensive Landsat imagery archives within the Google Earth Engine platform, GLC_FCS30D comprises 35 land-cover subcategories with 26 time steps, updated every five years prior to 2000 and annually thereafter. Through a rigorous refinement process, including spatiotemporal classification and temporal-consistency optimization, the dataset achieves high-confidence accuracy, validated with over 84,000 global samples and achieving an overall accuracy of 80.88%. Notably, GLC_FCS30D elucidates significant trends, revealing forest and cropland variations as dominant drivers of global land cover change over the past 37 years, with a net loss of approximately 2.5 million km² of forests and a net gain of around 1.3 million km² in cropland area. With its diverse classification system, high spatial resolution, and extensive temporal coverage, GLC_FCS30D serves as a valuable resource for climate change research and sustainable development analysis. Access the [dataset here](https://doi.org/10.5281/zenodo.8239305).
 
 ??? example "Expand to show Land Cover classes, RGB values and hex codes"
@@ -244,9 +240,7 @@ The datasets consist of about 961 tiles with the annual layers consisting of abo
 #### Citation
 
 ```
-Zhang, X., Zhao, T., Xu, H., Liu, W., Wang, J., Chen, X., and Liu, L.: GLC_FCS30D: The first global 30-m land-cover dynamic monitoring product with
-a fine classification system from 1985 to 2022 using dense time-series Landsat imagery and continuous change-detection method, Earth Syst. Sci. Data
-Discuss. [preprint], https://doi.org/10.5194/essd-2023-320, in review, 2023.
+Zhang, X., Zhao, T., Xu, H., Liu, W., Wang, J., Chen, X., and Liu, L.: GLC_FCS30D: the first global 30 m land-cover dynamics monitoring product with a fine classification system for the period from 1985 to 2022 generated using dense-time-series Landsat imagery and the continuous change-detection method, Earth Syst. Sci. Data, 16, 1353–1381, https://doi.org/10.5194/essd-16-1353-2024, 2024.
 ```
 
 #### Dataset Citation
