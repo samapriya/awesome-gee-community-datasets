@@ -215,6 +215,7 @@ nav:
       - Global Intra-Urban Land Use: projects/giulu.md
       - World Settlement Footprint & Evolution: projects/wsf.md
       - LandCoverNet Training Labels v1.0: projects/lcnet.md
+      - Global Oil Palm Dataset 1990-2021: projects/global_palm_oil.md
       - CloudSEN12 Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
   - Regional Land Use and Land Cover:
       - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
@@ -285,6 +286,7 @@ nav:
       - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
       - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
       - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
+      - Field Boundaries of Agriculture (FIBOA) UK Fields: projects/fiboa_uk.md
       - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
       - High resolution map of African tree cover: projects/af_trees.md
       - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
@@ -380,6 +382,8 @@ nav:
       - Global Precipitation Measurement (GPM): projects/gpm.md
       - ANUSPLIN Gridded Climate Dataset: projects/anusplin.md
       - AgERA5 (ECMWF) dataset: projects/agera5_datasets.md
+      - Vegetation Drought Response Index (VegDRI): projects/veg_dri.md
+      - ERA5-HEAT Dataset: projects/era5_heat.md
       - High Resolution Deterministic Precipitation Analysis (HRDPA): projects/hrdpa.md
       - High Resolution Deterministic Prediction System (HRDPS): projects/hrdps.md
       - Regional Deterministic Precipitation Analysis (RDPA): projects/rdpa.md

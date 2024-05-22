@@ -21493,6 +21493,85 @@
     "thematic_group": "Elevation and Bathymetry"
   },
   {
+    "title": "FIBOA UK Fields",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/FIBOA-UK-FIELDS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/UK-FIELDS",
+    "provider": "Samuel Bancroft",
+    "tags": "fields, agriculture, UK, england, scotland, wales, northern-ireland",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/fiboa_uk/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
+    "title": "ERA5 Heat Dataset",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/ERA5-HEAT",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-era5-heat",
+    "provider": "Copernicus",
+    "tags": "heat exposure, climate, reanalysis, global, era5, thermal, public health, climate engine",
+    "license": "custom",
+    "license_text": "ECMWF is available under an open license with terms of agreement available here at https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
+    "docs": "https://gee-community-catalog.org/projects/era5_heat/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Vegetation Drought Response Index (VegDRI)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/VEGETATION-DROUGHT-RESPONSE-INDEX",
+    "type": "image_collection",
+    "id": "projects/climate-engine-pro/assets/ce-veg-dri",
+    "provider": "USGS",
+    "tags": "Drought, Climate, Remote sensing, MODIS, PDSI, CONUS, United States",
+    "license": "custom",
+    "license_text": "USGS-authored or produced data and information are considered to be in the U.S. Public Domain.",
+    "docs": "https://gee-community-catalog.org/projects/veg_dri/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Global Palm Oil Dataset 1990-2021 Grid",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-OIL-PALM-1990-2021-APP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/global-oil-palm/Grid_OilPalm_2021_v1-1",
+    "provider": "Descals et al 2024",
+    "tags": "oil palm, planting year, global crop mapping, remote sensing, deep learning, Sentinel-1",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_palm_oil/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Palm Oil Dataset 1990-2021 extent",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-OIL-PALM-1990-2021-APP",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-oil-palm/GlobalOilPalm_extent_2021",
+    "provider": "Descals et al 2024",
+    "tags": "oil palm, planting year, global crop mapping, remote sensing, deep learning, Sentinel-1",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_palm_oil/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Palm Oil Dataset 1990-2021 Year of Plantation",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-OIL-PALM-1990-2021-APP",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-oil-palm/GlobalOilPalm_YoP_2021",
+    "provider": "Descals et al 2024",
+    "tags": "oil palm, planting year, global crop mapping, remote sensing, deep learning, Sentinel-1",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_palm_oil/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Palm Oil Dataset 1990-2021 Validation Points",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-OIL-PALM-1990-2021-APP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/global-oil-palm/Validation_points_GlobalOP2016-2021_v1-1",
+    "provider": "Descals et al 2024",
+    "tags": "oil palm, planting year, global crop mapping, remote sensing, deep learning, Sentinel-1",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_palm_oil/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
     "title": "USGS Historical Topo maps 1:24000 map index",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-TOPO-RENDER",
     "type": "table",
