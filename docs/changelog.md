@@ -2,6 +2,13 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-05-23
+- Added [Field Boundaries of Agriculture(FIBOA) UK Fields](https://gee-community-catalog.org/projects/fiboa_uk)
+- Added [Global Oil Palm Dataset 1990-2021](https://gee-community-catalog.org/projects/global_palm_oil)
+- Added [Vegetation Drought Response Index](https://gee-community-catalog.org/projects/veg_dri)
+- Added [ERA5-HEAT Dataset](https://gee-community-catalog.org/projects/era5_heat)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-04-30
 - Added [DeltaDTM Global coastal digital terrain model](https://gee-community-catalog.org/projects/delta_dtm/)
 - Added [Global Glacier Elevation change products](https://gee-community-catalog.org/projects/glacier/)
