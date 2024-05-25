@@ -1,4 +1,4 @@
-# USDA Crop Sequence Boundaries 2015-2022
+# USDA Crop Sequence Boundaries 2016-2023
 
 The **Crop Sequence Boundaries (CSB)**, developed in collaboration with the USDA's Economic Research Service, provides estimates of field boundaries, crop acreage, and crop rotations across the contiguous United States. This dataset utilizes satellite imagery along with other public data and is open source, enabling users to conduct area and statistical analysis of planted U.S. commodities. It offers valuable insights into farmer cropping decisions and practices.
 
@@ -23,54 +23,54 @@ The datasets are made available as feature collections in Earth Engine for each 
 #### Earth Engine Snippet: Source
 
 ```js
-var csbal22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBAL1522");
-var csbar22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBAR1522");
-var csbaz22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBAZ1522");
-var csbca22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBCA1522");
-var csbco22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBCO1522");
-var csbct22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBCT1522");
-var csbde22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBDE1522");
-var csbga22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBGA1522");
-var csbfl22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBFL1522");
-var csbia22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBIA1522");
-var csbid22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBID1522");
-var csbil22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBIL1522");
-var csbin22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBIN1522");
-var csbks22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBKS1522");
-var csbky22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBKY1522");
-var csbla22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBLA1522");
-var csbma22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMA1522");
-var csbmd22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMD1522");
-var csbme22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBME1522");
-var csbmi22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMI1522");
-var csbmn22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMN1522");
-var csbmo22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMO1522");
-var csbms22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMS1522");
-var csbmt22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBMT1522");
-var csbne22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNE1522");
-var csbnh22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNH1522");
-var csbnj22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNJ1522");
-var csbnm22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNM1522");
-var csbnv22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNV1522");
-var csbny22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNY1522");
-var csbnc22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBNC1522");
-var csbnd22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBND1522");
-var csboh22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBOH1522");
-var csbok22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBOK1522");
-var csbor22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBOR1522");
-var csbpa22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBPA1522");
-var csbri22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBRI1522");
-var csbsc22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBSC1522");
-var csbsd22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBSD1522");
-var csbtn22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBTN1522");
-var csbtx22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBTX1522");
-var csbut22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBUT1522");
-var csbvt22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBVT1522");
-var csbva22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBVA1522");
-var csbwa22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBWA1522");
-var csbwv22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBWV1522");
-var csbwi22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBWI1522");
-var csbwy22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBWY1522");
+var csbal23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAL1623");
+var csbar23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAR1623");
+var csbaz23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAZ1623");
+var csbca23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCA1623");
+var csbco23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCO1623");
+var csbct23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCT1623");
+var csbde23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBDE1623");
+var csbga23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBGA1623");
+var csbfl23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBFL1623");
+var csbia23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIA1623");
+var csbid23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBID1623");
+var csbil23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIL1623");
+var csbin23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIN1623");
+var csbks23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBKS1623");
+var csbky23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBKY1623");
+var csbla23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBLA1623");
+var csbma23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMA1623");
+var csbmd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMD1623");
+var csbme23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBME1623");
+var csbmi23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMI1623");
+var csbmn23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMN1623");
+var csbmo23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMO1623");
+var csbms23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMS1623");
+var csbmt23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMT1623");
+var csbne23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNE1623");
+var csbnh23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNH1623");
+var csbnj23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNJ1623");
+var csbnm23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNM1623");
+var csbnv23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNV1623");
+var csbny23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNY1623");
+var csbnc23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNC1623");
+var csbnd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBND1623");
+var csboh23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOH1623");
+var csbok23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOK1623");
+var csbor23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOR1623");
+var csbpa23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBPA1623");
+var csbri23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBRI1623");
+var csbsc23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBSC1623");
+var csbsd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBSD1623");
+var csbtn23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBTN1623");
+var csbtx23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBTX1623");
+var csbut23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBUT1623");
+var csbvt23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBVT1623");
+var csbva23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBVA1623");
+var csbwa23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWA1623");
+var csbwv23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWV1623");
+var csbwi23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWI1623");
+var csbwy23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWY1623");
 ```
 
 #### Earth Engine Snippet Combined
@@ -91,3 +91,11 @@ Created by: USDA NASS, USDA ERS
 Curated in GEE by : USDA NASS, USDA ERS, Samapriya Roy
 
 keywords: agricultural lands, USDA, crop layer, CDL, crop sequence boundary
+
+Last updated in GEE: 2024-05-25
+
+#### Changelog notes from Source
+
+* The 2016-2023 CSB was released April 5, 2024.
+* Concurrent with the 2023 release, all historic CSB data was re-released to reflect updates in methodology. The new version is revision 2.3 (rev23).
+* The current archive of these datasets span 8-year time frames for all years from 2008 to current. Custom time frames can be created using the [Github code](https://github.com/USDA-REE-NASS/crop-sequence-boundaries/tree/main/csb-project).
