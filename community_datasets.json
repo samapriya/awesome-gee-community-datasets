@@ -15122,10 +15122,10 @@
     "thematic_group": "Agriculture, Vegetation and Forestry"
   },
   {
-    "title": "USDA Crop Sequence Boundaries 2015-2022: Combined",
+    "title": "USDA Crop Sequence Boundaries 2016-2023: Combined",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/USDA/CSB_1522",
+    "id": "projects/sat-io/open-datasets/USDA/CSB_1623",
     "provider": "USDA NASS, USDA ERS",
     "tags": "agricultural lands, USDA, crop layer, CDL, crop sequence boundary",
     "license": "custom",

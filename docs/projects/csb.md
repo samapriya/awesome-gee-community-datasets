@@ -76,7 +76,7 @@ var csbwy23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWY1623")
 #### Earth Engine Snippet Combined
 
 ```js
-var combined_csb= ee.FeatureCollection('projects/sat-io/open-datasets/USDA/CSB_1522');
+var combined_csb= ee.FeatureCollection('projects/sat-io/open-datasets/USDA/CSB_1623');
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP
