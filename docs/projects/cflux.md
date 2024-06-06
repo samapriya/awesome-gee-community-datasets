@@ -1,8 +1,8 @@
-# Global Forest Carbon Fluxes (2001-2022)
+# Global Forest Carbon Fluxes (2001-2023)
 
-Net forest carbon flux represents the net exchange of carbon between forests and the atmosphere between 2001 and 2022, calculated as the balance between carbon emitted by forests and removed by (or sequestered by) forests during the model period (megagrams CO2 emissions/ha). Net carbon flux is calculated by subtracting average annual gross removals from average annual gross emissions in each modeled pixel; negative values are where forests were net sinks of carbon and positive values are where forests were net sources of carbon between 2001 and 2022. Net fluxes are calculated following IPCC Guidelines for national greenhouse gas inventories in each pixel where forests existed in 2000 or were established between 2000 and 2012 according to the Global Forest Change tree cover change data of Hansen et al. (2013). This layer reflects the cumulative net flux during the model period (2001-2022) and must be divided by 22 to obtain average annual net flux; net flux values cannot be assigned to individual years of the model.
+Net forest carbon flux represents the net exchange of carbon between forests and the atmosphere between 2001 and 2023, calculated as the balance between carbon emitted by forests and removed by (or sequestered by) forests during the model period (megagrams CO2 emissions/ha). Net carbon flux is calculated by subtracting average annual gross removals from average annual gross emissions in each modeled pixel; negative values are where forests were net sinks of carbon and positive values are where forests were net sources of carbon between 2001 and 2023. Net fluxes are calculated following IPCC Guidelines for national greenhouse gas inventories in each pixel where forests existed in 2000 or were established between 2000 and 2012 according to the Global Forest Change tree cover change data of Hansen et al. (2013). This layer reflects the cumulative net flux during the model period (2001-2023) and must be divided by 23 to obtain average annual net flux; net flux values cannot be assigned to individual years of the model.
 
-Forest carbon removals from the atmosphere (sequestration) by forest sinks represent the cumulative carbon captured (megagrams CO2/ha) by the growth of established and newly regrowing forests during the model period between 2001-2022. Removals include accumulation of carbon in both aboveground and belowground live tree biomass. Following IPCC Tier 1 assumptions for forests remaining forests, removals by dead wood, litter, and soil carbon pools are assumed to be zero. In each pixel, carbon removals are calculated following IPCC Guidelines for national greenhouse gas inventories where forests existed in 2000 or were established between 2000 and 2012 according to the Global Forest Change tree cover loss data of Hansen et al. (2013). Carbon removed by each pixel is based on maps of forest type (e.g., mangrove, plantation), ecozone (e.g., humid Neotropics), forest age (e.g., primary, old secondary), and number of years of carbon removal. This layer reflects the cumulative removals during the model period (2001-2022) and must be divided by 22 to obtain an annual average during the model duration; removal rates cannot be assigned to individual years of the model.
+Forest carbon removals from the atmosphere (sequestration) by forest sinks represent the cumulative carbon captured (megagrams CO2/ha) by the growth of established and newly regrowing forests during the model period between 2001-2023. Removals include accumulation of carbon in both aboveground and belowground live tree biomass. Following IPCC Tier 1 assumptions for forests remaining forests, removals by dead wood, litter, and soil carbon pools are assumed to be zero. In each pixel, carbon removals are calculated following IPCC Guidelines for national greenhouse gas inventories where forests existed in 2000 or were established between 2000 and 2012 according to the Global Forest Change tree cover loss data of Hansen et al. (2013). Carbon removed by each pixel is based on maps of forest type (e.g., mangrove, plantation), ecozone (e.g., humid Neotropics), forest age (e.g., primary, old secondary), and number of years of carbon removal. This layer reflects the cumulative removals during the model period (2001-2023) and must be divided by 23 to obtain an annual average during the model duration; removal rates cannot be assigned to individual years of the model.
 
 Forest carbon emissions represent the greenhouse gas emissions arising from stand-replacing forest disturbances that occurred in each modeled year (megagrams CO2 emissions/ha, between 2001 and 2022). Emissions include all relevant ecosystem carbon pools (aboveground biomass, belowground biomass, dead wood, litter, soil) and greenhouse gases (CO2, CH4, N2O). Emissions estimates for each pixel are calculated following IPCC Guidelines for national greenhouse gas inventories where stand-replacing disturbance occurred, as mapped in the Global Forest Change annual tree cover loss data of Hansen et al. (2013). The carbon emitted from each pixel is based on carbon densities in 2000, with adjustment for carbon accumulated between 2000 and the year of disturbance. Emissions reflect a gross estimate, i.e., carbon removals from subsequent regrowth are not included. Instead, gross carbon removals resulting from subsequent regrowth after clearing are accounted for in the companion forest carbon removals layer. The fraction of carbon emitted from each pixel upon disturbance (emission factor) is affected by several factors, including the direct driver of disturbance, whether fire was observed in the year of or preceding the observed disturbance event,  whether the disturbance occurred on peat, and more. All emissions are assumed to occur in the year of disturbance. Emissions can be assigned to a specific year using the Hansen tree cover loss data.
 
@@ -10,8 +10,9 @@ All three layers are part of the forest carbon flux model described in [Harris e
 
 Disclaimer: Parts or all of the dataset description is borrowed from existing description provided by authors.
 
-#### Dataset preprocessing
-The tiled imagery for the three layers emissions, removals and net flux were combined into individual GEE image objects using GDAL before ingested. LZW compression and tiling was applied during mosaic operation.
+#### Dataset updates
+
+Each year, the tree cover loss, drivers of tree cover loss, and burned area are updated. In 2023 and 2024, a few model input data sets and constants were changed as well, as described below. Please refer to [this blog post](https://www.globalforestwatch.org/blog/data/whats-new-carbon-flux-monitoring) for more information.
 
 #### Citation
 
@@ -24,16 +25,16 @@ https://doi.org/10.1038/s41558-020-00976-6
 
 
 ```
-var emissions = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions");
-var removals = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals");
-var net_flux = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux");
+var emissions = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions");
+var removals = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals");
+var net_flux = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES
 
 #### License
 
-The Global Forest Carbon Fluxes (2001-2022) products are provided free of charge, without restriction of use. For the full license information see the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following citation.
+The Global Forest Carbon Fluxes (2001-2023) products are provided free of charge, without restriction of use. For the full license information see the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following citation.
 
 Created by: Harris, N.L., Gibbs, D.A., Baccini, A. et al
 
@@ -41,9 +42,11 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: Carbon emissions, forest change, climate, carbon
 
-Last updated on GEE: 2023-10-05
+Last updated on GEE: 2024-06-06
 
 #### Changelog
 
+* Major updates were [discussed in the blog](https://www.globalforestwatch.org/blog/data/whats-new-carbon-flux-monitoring/)
+* Updated to year 2023
 * Updated to year 2022
 * Images were converted to Image Collections
