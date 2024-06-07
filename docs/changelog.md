@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-06-07
+- Updated [ESRI 10m Annual Land Use Land Cover (2017-2022)](https://gee-community-catalog.org/projects/S2TSLULC) now includes 2023
+- Updated [Global Forest Carbon Fluxes (2001-2021)](https://gee-community-catalog.org/projects/cflux) now includes 2023
+- Updated [USDA Crop Sequence Boundaries 2015-2022](https://gee-community-catalog.org/projects/csb/) now includes 2016-2023
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-05-23
 - Added [Field Boundaries of Agriculture(FIBOA) UK Fields](https://gee-community-catalog.org/projects/fiboa_uk)
 - Added [Global Oil Palm Dataset 1990-2021](https://gee-community-catalog.org/projects/global_palm_oil)
