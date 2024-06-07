@@ -11304,8 +11304,8 @@
     "thematic_group": "Fire Monitoring and Analysis"
   },
   {
-    "title": "ESRI 10m Annual Land Use Land Cover (2017-2022)",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2017-2022",
+    "title": "ESRI 10m Annual Land Use Land Cover (2017-2023)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-10M-LANDCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS",
     "provider": "Impact Observatory for Esri, Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute",
