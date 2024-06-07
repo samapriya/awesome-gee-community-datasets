@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gmv_raster = ee.ImageCollection("projects/sat-io/open-datasets/facebook/global_medium_voltage_grid"),
+    gmv_vector = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/gmv_grid"),
+    vis = {"opacity":1,"bands":["b1"],"min":1,"palette":["be2dac"]};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(gmv_raster.first(),10)
+
+// Fire Regime
+Map.addLayer(gmv_raster,vis,'Medium Voltage Grid')
+Map.addLayer(gmv_vector,{},'Medium Voltage Grid: Vector')

@@ -1,0 +1,69 @@
+/**
+rain4pe: High-resolution gridded precipitation dataset for Peruvian and 
+Ecuadorian watersheds (1981-2015)
+
+Image properties: 
+  - 'system:time_start' (Unix time)
+Spatial resolution: 0.1° (or roughly 10km x 10km)
+
+
+Google Earth Engine assets:
+  - rain4pe monthly: "users/csaybar/rainpe/monthly"
+  - rain4pe daily: "users/csaybar/rainpe/monthly" & "users/ryali93/rainpe/monthly"
+  - rain4pe monthly climatology: "users/csaybar/rainpe/monthly_clim"
+  - rain4pe annual mean: "users/csaybar/rainpe/annual"
+  
+More Information: https://dataservices.gfz-potsdam.de/pik/showshort.php?id=6f766e20-2d94-11eb-9603-497c92695674
+*/
+
+
+// 1. Global Parameters
+var ROI = ee.Geometry.Rectangle([-74, -16, -71, -14]);
+var start_date = "1981-01-01";
+var end_date = "2015-12-31";
+
+
+// 2. Function to compute spatial average.
+var ppreducer = function(rain4pe) {
+  var params = {collection: ROI, reducer: ee.Reducer.mean(), scale: 5000};
+  var image_value = rain4pe.reduceRegions(params).first().get('mean');
+  var image_date = rain4pe.get('system:time_start');
+  var ft = ee.Feature(null, {'system:time_start': image_date,
+                         'date': ee.Date(image_date).format('Y-M-d'), 
+                         'value': image_value});
+  return ft;
+};
+
+
+// 3. Create a time series chart.
+var rain4pe_daily_data = ee.ImageCollection("projects/sat-io/open-datasets/rainpe/daily")
+
+var rain4pe_data = rain4pe_daily_data.filterDate(start_date, end_date)
+                                     .map(ppreducer);
+var graph = ui.Chart.feature.byFeature(
+  rain4pe_daily_data.filterDate("1981-06-01", "1982-06-01").map(ppreducer), 
+  'system:time_start', 
+  'value'
+);
+print(graph.setChartType("ColumnChart")
+           .setOptions({vAxis: {title: 'PP (mm/day)'},
+                        hAxis: {title: 'Date'}}));
+
+
+// 4. Export results
+Export.table.toDrive({collection: rain4pe_data,
+                      selectors: 'date, value',
+                      description: "rain4pe-daily-data",
+                      fileNamePrefix:"rain4pe_ts"})
+                      
+
+// 5. Display a specific day
+var daily_rain = ee.Image("users/ryali93/rainpe/daily/1998_01_25")
+var palette = [
+  '000096','0064ff', '00b4ff', '33db80', '9beb4a',
+  'ffeb00', 'ffb300', 'ff6400', 'eb1e00', 'af0000'
+];
+
+Map.addLayer(daily_rain, {min:0, max:80, palette: palette})
+Map.centerObject(ROI);
+Map.addLayer(ROI)

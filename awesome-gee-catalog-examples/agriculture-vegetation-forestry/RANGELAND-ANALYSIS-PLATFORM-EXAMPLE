@@ -1,0 +1,53 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cover = ee.ImageCollection("projects/rangeland-analysis-platform/vegetation-cover-v3");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Author: Eric Jensen and Matt Jones, Working Lands for Wildlife, University of Montana
+// Contact: eric.jensen@mso.umt.edu
+// Date: January 1, 2022
+// Purpose of script: This script exports RAP Vegetation Cover raster data (TIF file format) from Google Earth Engine to your personal Google Drive
+// Supporting article: https://support.rangelands.app/article/62-export-vegetation-cover-rasters
+
+
+// ------------------------------------------------------------
+// -------------- Variables for User to change ----------------
+// ------------------------------------------------------------
+
+// ---------- Define the bounding box ------------------------------
+//  If bounding box was drawn on map below, no additional steps are needed.
+//
+//  If a shapefile was loaded - rename shapefile to 'geometry'.  To do this 
+//  click the default shapefile name (likely 'table') in the Imports panel above,
+//  and rename it 'geometry'
+
+// ---------- Define the years that you want to export --------------
+// ---------- End year is inclusive in this case  ------------------
+var yearStart = 2010
+var yearEnd = 2019
+
+// -------------- Define the plant functional types (PFTs) that you want to export --------------
+// PFTs are "AFGC" (Annual forb and grass cover), "BG" (bare ground), "LTR" (litter), 
+// "PFGC" (perennial forb and grass cover), "SHR" (shrub cover), and "TREE" (tree cover)
+var PFTs = ee.List(['AFG', 'BGR', 'LTR', 'PFG', 'SHR', 'TRE'])
+
+
+// ----------------------------------------------------------------------
+// -------------- Do not edit anything below this header ----------------
+// ----------------------------------------------------------------------
+
+// ------------- Select the PFTs for export as defined by User  --------------
+var cover_toExport = cover.select(PFTs)
+
+// ------------- Export images one-by-one for each year -------------
+
+// Loop over year objects to export images year-by-year
+for (var yr = yearStart; yr <= yearEnd; yr++){
+  // Export the image, specifying scale and region.
+  Export.image.toDrive({
+    image: cover_toExport.filterDate(yr.toString(), (yr+1).toString()).first(),
+    description: 'RAP_VegCover_' + yr,
+    folder: 'RAP_exports',
+    scale: 30,
+    region: geometry.bounds(),
+    maxPixels: 1e10
+  });
+}

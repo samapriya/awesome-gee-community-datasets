@@ -1,0 +1,25 @@
+// load the population density
+var popDensity = ee.Image("projects/sat-io/open-datasets/POMELO/POMELOv1");
+
+// Define the inferno color palette
+var infernoPalette = [
+  '#000004', '#1b0c41', '#4a0c6b', '#781c81', '#a52c7a', '#cf4446',
+  '#ed721c', '#fb9b06', '#f7d03c', '#fcffa4'
+];
+
+// Define visualization parameters.
+var visParams = {
+  min: 0,
+  max: 450,
+  palette: infernoPalette,
+  opacity: 0.7 // 70% transparent
+};
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+// Add the population density layer to the map.
+Map.addLayer(popDensity, visParams, 'Population Density');
+
+// Center map
+Map.setCenter(39.2026, -6.1659, 12);

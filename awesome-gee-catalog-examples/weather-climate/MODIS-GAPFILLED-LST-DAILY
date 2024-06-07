@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gf_day_1km = ee.ImageCollection("projects/sat-io/open-datasets/gap-filled-lst/gf_day_1km"),
+    gf_night_1km = ee.ImageCollection("projects/sat-io/open-datasets/gap-filled-lst/gf_night_1km");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes');
+
+//gf indicates the gap-filled LST in the unit of 0.1 Celsius temperature (0.1 degree C) 
+Map.addLayer(gf_day_1km.first().multiply(0.1),{min:-50,max:50,palette:palettes.cmocean.Balance[7]},' Daytime 1km LST')
+Map.addLayer(gf_night_1km.first().multiply(0.1),{min:-50,max:30,palette:palettes.cmocean.Balance[7]},' Nighttime 1km LST')

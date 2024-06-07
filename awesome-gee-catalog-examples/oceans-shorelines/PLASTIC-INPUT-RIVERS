@@ -1,0 +1,12 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var plastic = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/river_plastic_emissions");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(plastic.toList(20))
+
+function addStyle(pt) {
+  var size = ee.Number(pt.get('mpw')).sqrt().divide(2000).add(1);
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': '#0EA7A5','opacity':0.4}))
+}
+var sampler = plastic.map(addStyle)
+print(sampler.first())
+Map.addLayer(sampler.style({styleProperty: 'styleProperty'}),{},'River Plastic Emissions',true,0.65)

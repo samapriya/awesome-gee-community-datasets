@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var uk_fields = ee.FeatureCollection("projects/sat-io/open-datasets/UK-FIELDS");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(uk_fields.first(),12)
+var empty = ee.Image().byte();
+var outline = empty.paint({
+  featureCollection: uk_fields,
+  color: 'random',
+  width: 3
+});
+    
+Map.addLayer(outline.randomVisualizer(), {opacity:0.8}, 'UK Fields')
+Map.setOptions("SATELLITE")

@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var argo = ee.FeatureCollection("projects/sat-io/open-datasets/argo-subset");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total Features',argo.size())
+print('Distinct Platform Id: ',argo.aggregate_count_distinct('pid'))
+
+Map.addLayer(argo,{},'Argo Float Subset')

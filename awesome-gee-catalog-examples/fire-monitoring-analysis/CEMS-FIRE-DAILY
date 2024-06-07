@@ -1,0 +1,16 @@
+// Read in Image Collection and get most recent image
+var cems_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-cems-fire-daily-4-1')
+var cems_i = cems_ic.filterDate('2023-01-01', ee.Date(Date.now())).sort('system:time_start', false).first()
+
+// Print first image to see bands
+print(cems_i)
+
+// Visualize select bands from first image - additional variables are available in the Image Collection
+var fire_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+Map.addLayer(cems_i.select('burning_index'), {min: 0, max: 50, palette: fire_palette}, 'burning_index')
+Map.addLayer(cems_i.select('fire_weather_index'), {min: 0, max: 50, palette: fire_palette}, 'fire_weather_index')
+Map.addLayer(cems_i.select('fire_danger_index'), {min: 0, max: 50, palette: fire_palette}, 'fire_danger_index')
+Map.addLayer(cems_i.select('ignition_component'), {min: 0, max: 50, palette: fire_palette}, 'ignition_component')
+Map.addLayer(cems_i.select('spread_component'), {min: 0, max: 10, palette: fire_palette}, 'spread_component')
+Map.addLayer(cems_i.select('energy_release_component'), {min: 0, max: 50, palette: fire_palette}, 'energy_release_component')
+Map.addLayer(cems_i.select('fire_daily_severity_rating'), {min: 0, max: 50, palette: fire_palette}, 'fire_daily_severity_rating')

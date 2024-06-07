@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var pk_soil_erosion_2005 = ee.Image("projects/sat-io/open-datasets/NSSED-PAKISTAN/Pakistan_soil_erosion_2005_1km"),
+    pk_soil_erosion_2015 = ee.Image("projects/sat-io/open-datasets/NSSED-PAKISTAN/Pakistan_soil_erosion_2015_1km");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define the visualization parameters using SLD format
+var sld_visualization = {
+  min: 0,
+  max: 20,
+  palette: ["#C2533C","#F7D728","#0EC441","#0B2C7B"],
+  sld:
+    '<RasterSymbolizer>' +
+      '<ColorMap type="ramp">' +
+        '<ColorMapEntry color="#00FF00" quantity="1" label="Low" />' +
+        '<ColorMapEntry color="#FFFF00" quantity="5" label="Medium" />' +
+        '<ColorMapEntry color="#FFA500" quantity="20" label="High" />' +
+        '<ColorMapEntry color="#FF0000" quantity="21" label="Very High" />' +
+      '</ColorMap>' +
+    '</RasterSymbolizer>'
+};
+
+// Center the map on the image
+Map.centerObject(pk_soil_erosion_2005,6);
+
+// Add the layers with the specified visualization
+Map.addLayer(pk_soil_erosion_2005, sld_visualization, "Soil Erosion 2005");
+Map.addLayer(pk_soil_erosion_2015, sld_visualization, "Soil Erosion 2015");

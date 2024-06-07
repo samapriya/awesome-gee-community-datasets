@@ -1,0 +1,57 @@
+// Import HISTARTFM database.
+var GF_Landsat =
+    ee.ImageCollection('projects/ee-kalman-gap-filled/assets/histarfm_v5');
+
+// Filter per year.
+var year = '2019';  // In version 5 the properties are in string format, it
+                    // seems to be a limitation of adding properties to COGs In
+                    // case of using version 2 data (CONUS), the metadata is in
+                    // standard integer format: `var year = 2019;`
+
+GF_Landsat = GF_Landsat.filter(ee.Filter.eq('year', year));
+
+var months = GF_Landsat.aggregate_array('month').distinct().sort();
+// Join all images of a month into a single image.
+function EuropeanMosaic(num) {
+  var ic = GF_Landsat.filter(ee.Filter.eq('month', num));
+  var img = ic.mosaic().selfMask();
+  return img.copyProperties(ic.first(), ['system:time_start', 'month', 'year']);
+}
+var GF_Landsat = ee.ImageCollection(months.map(EuropeanMosaic));
+// Sort the ImageCollection considering the 'system:time_start' property.
+GF_Landsat = GF_Landsat.sort('system:time_start');
+
+// Scaling the data to reflectance units.
+function scaleError(img) {
+  var y = ee.Number.parse(img.get('year'));
+  var m = ee.Number.parse(img.get('month'));
+  var d = ee.Date.fromYMD(y, m, 15);
+  var doy = d.getRelative('day', 'year').add(1);
+  var scaled = img.select(['P.*']).multiply(0.5);
+  return img.addBands(scaled, null, true)
+      .set({'month': m, 'year': y, 'DOY': doy})
+      .copyProperties(img, ['system:time_start']);
+}
+
+GF_Landsat = GF_Landsat.map(scaleError);
+
+// Set map options.
+Map.setCenter(14.76, 49.28, 4);
+
+// Subset a single month for display (e.g. July, the 7th month).
+var julyImg = GF_Landsat.filter(ee.Filter.eq('month', 7));
+
+// Display the RGB gap-filled Landsat reflectance mosaic to the map.
+var imageVisParam = {
+  'opacity': 1,
+  'bands': ['B3_mean_post', 'B2_mean_post', 'B1_mean_post'],
+  'min': 0,
+  'max': 2500,
+  'gamma': 1
+};
+Map.addLayer(julyImg, imageVisParam, 'example July RGB');
+
+// Display the error gap-filled Landsat reflectance mosaic to the map.
+var imageVisParam =
+    {'opacity': 1, 'bands': ['P1_postSD'], 'min': 0, 'max': 200, 'gamma': 1};
+Map.addLayer(GF_Landsat, imageVisParam, 'example error B1',false);

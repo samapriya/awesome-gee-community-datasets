@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var full_ortho_srer_may_2019_1cm = ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_may_2019_1cm"),
+    full_ortho_srer_sept_2019_1cm = ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_sept_2019_1cm");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(full_ortho_srer_may_2019_1cm,{},'Ortho May 2019 @ SRER')
+Map.addLayer(full_ortho_srer_sept_2019_1cm,{},'Ortho Sept. 2019 @ SRER',false)
+
+Map.setCenter(-110.85754, 31.8068,13)

@@ -1,0 +1,21 @@
+var change = ee.Image('projects/sat-io/open-datasets/MPW/changeMap'); //River Change
+var ffr = ee.Image('projects/sat-io/open-datasets/MPW/riverImpact'); //Free flowing rivers
+var env = ee.Image('projects/sat-io/open-datasets/MPW/Plastics_Env'); //River Types
+var mpw = ee.Image('projects/sat-io/open-datasets/MPW/MPW_data'); // Mismanaged plastic waste
+
+var colors = {min:1000,max:5000, palette:['#ff0000','#ff9900','#ffd400','#fdff83','#ffffff']};
+var colors2 = {min:0,max:3, palette:['#ffffff','#74ef27','#137800','#89ffef']};
+var colors3 = {min:10,max:30, palette:['#ffffff','#fff81d','#45a9ff']};
+var colors4 = {min:100,max:300, palette:['#007eff','#fff700','#ff00eb']};
+
+var mask = env.gt(0);
+var change = change.mask(mask);
+var env = env.mask(mask);
+var ffr = ffr.mask(mask);
+var mpw2015 = mpw.select('MPW2015'); //select MPW input in 2015
+
+Map.addLayer(env,colors2, 'River Type');
+Map.addLayer(change,colors3,'River Migration');
+Map.addLayer(ffr,colors4, 'River Impact');
+Map.addLayer(mpw2015,colors, 'MPW input 2015');
+

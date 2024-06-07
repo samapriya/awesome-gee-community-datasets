@@ -1,0 +1,707 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var age = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_forest_age_2019");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [ 
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89",
+    "90",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121",
+    "122",
+    "123",
+    "124",
+    "125",
+    "126",
+    "127",
+    "128",
+    "129",
+    "130",
+    "131",
+    "132",
+    "133",
+    "134",
+    "135",
+    "136",
+    "137",
+    "138",
+    "139",
+    "140",
+    "141",
+    "142",
+    "143",
+    "144",
+    "145",
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    
+  ],
+    "colors": [
+    "#76dbd3",
+    "#79dbcb",
+    "#7edec4",
+    "#81debd",
+    "#84e0b9",
+    "#88e3b3",
+    "#8ae3ac",
+    "#8ee6a7",
+    "#92e8a3",
+    "#95e89e",
+    "#9beb9c",
+    "#a4ed9f",
+    "#adeda1",
+    "#b8f0a5",
+    "#c2f2aa",
+    "#caf2ac",
+    "#d4f5b0",
+    "#ddf7b5",
+    "#e5f7ba",
+    "#edfabe",
+    "#f5fcc2",
+    "#fbfcc5",
+    "#ffffc7",
+    "#ffffc4",
+    "#ffffbf",
+    "#ffffbd",
+    "#ffffba",
+    "#ffffb8",
+    "#ffffb2",
+    "#ffffb0",
+    "#ffffad",
+    "#ffffa8",
+    "#ffffa6",
+    "#ffffa3",
+    "#ffff9e",
+    "#ffff9c",
+    "#ffff99",
+    "#ffff94",
+    "#ffff91",
+    "#ffff8f",
+    "#ffff8a",
+    "#ffff87",
+    "#ffff85",
+    "#ffff80",
+    "#ffff80",
+    "#fcfa7e",
+    "#faf87f",
+    "#f7f37e",
+    "#f7f17e",
+    "#f5ef7d",
+    "#f2ea7e",
+    "#f0e87d",
+    "#f0e67d",
+    "#ede27e",
+    "#ede27e",
+    "#ebde7c",
+    "#e8da7b",
+    "#e6d77c",
+    "#e6d67c",
+    "#e3d27b",
+    "#e0d07b",
+    "#e0ce7b",
+    "#deca7a",
+    "#dbc679",
+    "#d9c479",
+    "#d9c279",
+    "#d4bc74",
+    "#d1b971",
+    "#ccb26c",
+    "#c9ad67",
+    "#c4a962",
+    "#c2a45f",
+    "#bd9f5b",
+    "#ba9b57",
+    "#b59651",
+    "#b08f4d",
+    "#ad8c4b",
+    "#ab8848",
+    "#a68342",
+    "#a38040",
+    "#9e7a3a",
+    "#9c7738",
+    "#967135",
+    "#946e31",
+    "#8f6a2e",
+    "#8c652a",
+    "#876026",
+    "#876129",
+    "#8a642f",
+    "#8a6433",
+    "#8c683a",
+    "#8f6b40",
+    "#8f6d46",
+    "#91704d",
+    "#917253",
+    "#917357",
+    "#947760",
+    "#947966",
+    "#947b6c",
+    "#967f74",
+    "#96817a",
+    "#968481",
+    "#968688",
+    "#96898f",
+    "#968a96",
+    "#968d9e",
+    "#9690a6",
+    "#9693ad",
+    "#9696b5",
+    "#9796b5",
+    "#9996b5",
+    "#9a96b5",
+    "#9c96b5",
+    "#9d96b5",
+    "#9e96b5",
+    "#a096b5",
+    "#a296b5",
+    "#a396b5",
+    "#a596b5",
+    "#a696b5",
+    "#a796b5",
+    "#a996b5",
+    "#aa96b5",
+    "#ac96b5",
+    "#ad96b5",
+    "#ae96b5",
+    "#b096b5",
+    "#b196b5",
+    "#b396b5",
+    "#b596b5",
+    "#b596b5",
+    "#ba9cba",
+    "#bda0bd",
+    "#bfa4bf",
+    "#c4abc4",
+    "#c7adc7",
+    "#c9b1c9",
+    "#cfb8cf",
+    "#d1bcd1",
+    "#d4c1d4",
+    "#d9c5d8",
+    "#dbcadb",
+    "#decede",
+    "#e0d1e0",
+    "#e6d8e5",
+    "#e8dce8",
+    "#ede4ed",
+    "#f0e6f0",
+    "#f5edf5",
+    "#f7f2f7",
+    "#faf5fa",
+    "#b2b2b2",
+
+  ]};
+
+Map.setCenter(-97.61655457157725,55.6280720462063,4)
+
+// Add image to the map
+Map.addLayer(age, {min:0, max:152, palette:dict['colors']}, 'CA Forest Age')
+/////////////////////////////////////////////////////////////////////////
+var legend = ui.Panel({
+  style: {
+    position: 'middle-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create and add the legend title.
+var legendTitle = ui.Label({
+  value: 'CA Forest Age',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+legend.add(legendTitle);
+
+var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+legend.add(loading);
+
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+
+  // Create the label filled with the description text.
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+
+  for (var i = 0; i < names.length; i++) {
+    legend.add(makeRow(palette[i], names[i]));
+  }
+
+// Print the panel containing the legend
+print(legend);
+
+// set background/basemap to dark
+var Dark
+ = 
+[
+  {
+    "featureType": "all",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "all",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "all",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "saturation": 36
+      },
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 40
+      }
+    ]
+  },
+  {
+    "featureType": "all",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "on"
+      },
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 16
+      }
+    ]
+  },
+  {
+    "featureType": "all",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 20
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 17
+      },
+      {
+        "weight": 1.2
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 20
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 21
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      },
+      {
+        "color": "#8a4040"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "visibility": "on"
+      },
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 17
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 29
+      },
+      {
+        "weight": 0.2
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 18
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 16
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "visibility": "on"
+      },
+      {
+        "color": "#faf2f2"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "lightness": 19
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#b4bcc2"
+      },
+      {
+        "lightness": 17
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+]
+Map.setOptions('Dark', {Dark
+: Dark
+})

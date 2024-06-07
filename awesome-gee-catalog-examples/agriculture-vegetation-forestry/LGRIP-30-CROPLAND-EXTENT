@@ -1,0 +1,16 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var countries = ee.FeatureCollection("FAO/GAUL/2015/level0"),
+    lgrip30 = ee.ImageCollection("projects/sat-io/open-datasets/GFSAD/LGRIP30");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+/*
+Class Label	Name	Description
+0	Ocean	Ocean and Water bodies
+1	Non-croplands	Land with other land use
+2	Irrigated croplands	Agricultural croplands that are irrigated
+3	Rainfed croplands	Agricultural croplands that are rainfed
+*/
+
+
+var vis = {min:0,max:3,palette:["0050cb","d58855","c2d30c","379a4b"]}
+Map.addLayer(lgrip30.mosaic().clip(countries),vis,'LGRIP30')

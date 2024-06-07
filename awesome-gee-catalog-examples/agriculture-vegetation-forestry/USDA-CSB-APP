@@ -1,0 +1,872 @@
+///////////////////////////////////////////////////////////////////////////////////
+/////$$$$$$$/////////  Create menus for states and counties ////////$$$$$$/////////
+////////////////////---------- Author: Dr. Zhe Li -------------////////////////////
+///////////////===================  USDA NASS SARS ===================/////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////
+//////////////$$$$$$$/////////  Host and Query CSBs ////////$$$$$$/////////////////
+////////////////////---------- Author: Arthur Rosales -------------////////////////
+///////////////===================  USDA NASS SARS ===================/////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+
+/*Global Variable*/
+
+var csb23;
+var empty1;
+var fills1;
+var filledOutlines1;
+var empty2;
+var fills2;
+var image1;
+
+
+
+
+
+
+
+/*---------------------LOAD State and County features ----------------------------*/
+var us_states = ee.FeatureCollection("TIGER/2018/States"),
+    counties = ee.FeatureCollection("TIGER/2018/Counties");
+
+
+/*-----------------------LOAD CSB FILES FROM ASSETS ------------------------------*/
+
+var styling = {
+    color: 'red',
+    fillColor: '00000000',
+    width: 2
+};
+var styling_co = {
+    color: 'white',
+    fillColor: '00000000',
+    width: 0.5
+};
+
+
+var csbal23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAL1623");
+
+var csbar23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAR1623");
+
+var csbaz23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBAZ1623");
+
+var csbca23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCA1623");
+
+var csbco23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCO1623");
+
+var csbct23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBCT1623");
+
+var csbde23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBDE1623");
+
+var csbga23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBGA1623");
+
+var csbfl23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBFL1623");
+
+var csbia23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIA1623");
+
+var csbid23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBID1623");
+
+var csbil23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIL1623");
+
+var csbin23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBIN1623");
+
+var csbks23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBKS1623");
+
+var csbky23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBKY1623");
+
+var csbla23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBLA1623");
+
+var csbma23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMA1623");
+
+var csbmd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMD1623");
+
+var csbme23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBME1623");
+
+var csbmi23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMI1623");
+
+var csbmn23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMN1623");
+
+var csbmo23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMO1623");
+
+var csbms23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMS1623");
+
+var csbmt23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBMT1623");
+
+var csbne23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNE1623");
+
+var csbnh23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNH1623");
+
+var csbnj23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNJ1623");
+
+var csbnm23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNM1623");
+
+var csbnv23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNV1623");
+
+var csbny23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNY1623");
+
+var csbnc23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBNC1623");
+
+var csbnd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBND1623");
+
+var csboh23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOH1623");
+
+var csbok23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOK1623");
+
+var csbor23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBOR1623");
+
+var csbpa23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBPA1623");
+
+var csbri23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBRI1623");
+
+var csbsc23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBSC1623");
+
+var csbsd23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBSD1623");
+
+var csbtn23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBTN1623");
+
+var csbtx23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBTX1623");
+
+var csbut23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBUT1623");
+
+var csbvt23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBVT1623");
+
+var csbva23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBVA1623");
+
+var csbwa23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWA1623");
+
+var csbwv23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWV1623");
+
+var csbwi23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWI1623");
+
+var csbwy23 = ee.FeatureCollection("projects/nass-csb/assets/csb1623/CSBWY1623");
+
+
+var istate = {
+    Alabama: [csbal23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "01", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Arkansas: [csbar23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "05", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Arizona: [csbaz23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "04", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    California: [csbca23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "06", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Colorado: [csbco23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "08", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Connecticut: [csbct23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "09", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Delaware: [csbde23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "10", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Florida: [csbfl23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "12", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Georgia: [csbga23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "13", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Iowa: [csbia23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "19", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Idaho: [csbid23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "16", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Illinois: [csbil23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "17", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Indiana: [csbin23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "18", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Kansas: [csbks23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "20", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Kentucky: [csbky23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "21", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Louisiana: [csbla23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "22", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Massachusetts: [csbma23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "25", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Maryland: [csbmd23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "24", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Maine: [csbme23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "23", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Michigan: [csbmi23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "26", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Minnesota: [csbmn23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "27", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Missouri: [csbmo23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "29", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Mississippi: [csbms23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "28", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Montana: [csbmt23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "30", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Nebraska: [csbne23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "31", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'New Hampshire': [csbnh23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "33", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'New Jersey': [csbnj23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "34", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'New Mexico': [csbnm23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "35", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Nevada: [csbnv23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "32", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'New York': [csbny23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "36", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'North Carolina': [csbnc23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "37", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'North Dakota': [csbnd23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "38", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Ohio: [csboh23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "39", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Oklahoma: [csbok23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "40", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Oregon: [csbor23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "41", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Pennsylvania: [csbpa23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "42", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'Rhode Island': [csbri23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "44", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'South Carolina': [csbsc23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "45", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'South Dakota': [csbsd23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "46", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Tennessee: [csbtn23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "47", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Texas: [csbtx23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "48", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Utah: [csbut23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "49", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Vermont: [csbvt23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "50", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Virginia: [csbva23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "51", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Washington: [csbwa23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "53", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    'West Virginia': [csbwv23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "54", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Wisconsin: [csbwi23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "55", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16'],
+    Wyoming: [csbwy23, 'CDL2023', 'CDL2022', 'CDL2021', 'CDL2020', 'CDL2019', 'CDL2018', 'CDL2017', 'CDL2016', 2023, "56", 'ACRES', 'CROP23', 'CROP22', 'CROP21', 'CROP20', 'CROP19', 'CROP18', 'CROP17', 'CROP16']
+
+
+};
+
+var keys = Object.keys(istate);
+
+
+
+
+
+
+
+/*----------------------Define variables for dropdown----------------------------*/
+
+var state_name = '';
+var state_FP_selected = '';
+var state_selected = us_states.first();
+
+var county_name = 'Not selected';
+var county_selected = counties.first();
+
+var shp_us_counties = ee.FeatureCollection(counties);
+
+
+var AOI = state_selected;
+var empty = ee.Image().byte();
+
+var state_outline_lyr = ui.Map.Layer();
+var county_outline_lyr = ui.Map.Layer();
+var inset_county_outline_lyr = ui.Map.Layer();
+var csblayer = ui.Map.Layer();
+
+
+
+
+/*--------------------------Define Component Panels--------------------------------*/
+var mapPanel = ui.Map().setOptions('SATELLITE'); //// Set map layer as setellite images
+mapPanel.setCenter(-98.36, 39.89, 5); //// CONUS
+mapPanel.style().set('cursor', 'crosshair');
+mapPanel.setControlVisibility(false);
+mapPanel.setControlVisibility({
+    zoomControl: true
+});
+
+var layers = mapPanel.layers();
+
+var insetmap = ui.Map().setCenter(-94.625, 42, 5);
+
+var insetlayers = insetmap.layers();
+/*new*/
+//var bounds = ee.Geometry.Rectangle(mapPanel.getBounds());
+//insetmap.centerObject(bounds);
+/*end new*/
+
+insetmap.setControlVisibility(false);
+insetmap.setControlVisibility({
+    zoomControl: true
+});
+insetmap.setControlVisibility(false);
+
+ui.Map.Linker([mapPanel, insetmap], "change-center");
+
+
+
+
+var Panel = ui.Panel({
+    style: {
+        width: '30%',
+    }
+});
+
+
+
+
+
+
+var selectorLabel = ui.Label("1. Set State and County to Load Data...", {
+    fontWeight: 'bold',
+    fontSize: '1em'
+});
+
+Panel.add(selectorLabel);
+
+
+var Label_selectState = ui.Label({
+    value: 'Select a state:',
+    style: {
+        fontSize: '12px',
+    }
+});
+
+var dropdown_menu_states = ui.Select({
+    placeholder: ' ',
+    style: {
+        width: '100px'
+    },
+    items: keys
+});
+
+/*var statesNames = us_states.aggregate_array('NAME').sort();*/
+
+var statesNames = ee.List(keys);
+statesNames = statesNames.insert(0, ' ');
+
+/*statesNames = statesNames.insert(0, ' ');*/
+
+statesNames.evaluate(function(states) {
+    dropdown_menu_states.items().reset(states);
+    dropdown_menu_states.style().set({
+        width: '200px',
+    });
+});
+
+var Panel_selectState = ui.Panel({
+    widgets: [Label_selectState, dropdown_menu_states],
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+        stretch: 'horizontal'
+    }
+});
+Panel.add(Panel_selectState);
+
+var Label_selectCounty = ui.Label({
+    value: 'Select a county:',
+    style: {
+        fontSize: '12px',
+    }
+});
+
+var dropdown_menu_counties = ui.Select({
+    placeholder: ' ',
+});
+dropdown_menu_counties.style().set({
+    width: '100px',
+});
+
+var Panel_selectCounty = ui.Panel({
+    widgets: [Label_selectCounty, dropdown_menu_counties],
+    layout: ui.Panel.Layout.Flow('horizontal'), //// Default is 'vertical'
+    style: {
+        stretch: 'horizontal'
+    }
+});
+Panel.add(Panel_selectCounty);
+
+
+var analysisLabel = ui.Label("2. Click Map for Analysis", {
+    fontWeight: 'bold',
+    fontSize: '1em'
+});
+
+Panel.add(analysisLabel);
+
+var analysisLabel2 = ui.Label('Please be patient after each click.');
+
+Panel.add(analysisLabel2);
+
+
+
+var header = ui.Label('Summary:');
+//var analysisPanel=ui.Panel([header],"flow");
+var analysisPanel = ui.Panel();
+
+analysisPanel.style().set('backgroundColor', 'lightgray');
+
+Panel.add(analysisPanel);
+
+
+
+
+
+var infoLabel = ui.Label("3. More Info and Downloads", {
+    fontWeight: 'bold',
+    fontSize: '1em'
+});
+var infoLink = ui.Label('USDA NASS/ERS Crop Sequence Boundaries', {
+    color: 'blue'
+}, 'https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/');
+
+Panel.add(infoLabel);
+Panel.add(infoLink);
+
+
+
+// set position of panel
+var legend = ui.Panel({
+    style: {
+        position: 'bottom-left',
+        padding: '8px 15px'
+    }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+    value: 'Legend for Select Crops',
+    style: {
+        fontWeight: 'bold',
+        fontSize: '.75em',
+        margin: '0 0 4px 0',
+        padding: '0'
+    }
+});
+
+// Add the title to the panel
+legend.add(legendTitle);
+
+// Creates and styles 1 row of the legend.
+var makeRow = function(color, name) {
+
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+        style: {
+            backgroundColor: '#' + color,
+            // Use padding to give the box height and width.
+            padding: '8px',
+            margin: '0 0 4px 0'
+        }
+    });
+
+    // Create the label filled with the description text.
+    var description = ui.Label({
+        value: name,
+        style: {
+            margin: '0 0 4px 6px'
+        }
+    });
+
+    // return the panel
+    return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+    });
+};
+
+
+//  Palette with the colors
+
+
+// name of the legend
+
+
+
+var names = ['Corn', 'Cotton', 'Rice', 'Sorghum', 'Soybeans', 'Sunflower', 'Peanuts', 'Durum Wheat', 'Winter Wheat', 'Rye', 'Oats', 'Alfalfa', 'Sugarbeets', 'Dry Beans', 'Potatoes', 'Sugarcane', 'Misc Vegs & Fruits', 'Peas', 'Apples', 'Citrus', 'Almonds', 'Oranges'];
+var palette = ['FFD300', 'FF2626', '00A8E2', 'FF9E0A', '267000', 'FFFF00', '70A500', '896054', 'A57000', 'AA007C', 'A05989', 'FFA5E2', 'A800E2', 'A50000', '702600', 'AF7CFF', 'FF6666', '54FF00', 'BA004F', 'FFFF7C', '00A582', 'E27026'];
+
+
+// Add color and and names
+for (var i = 0; i < 22; i++) {
+    legend.add(makeRow(palette[i], names[i]));
+}
+
+
+Panel.add(legend)
+//ui.root.insert(0, titlePanel);
+
+
+
+
+// MAP LAYER MANAGER
+//print(istate[key][10]);
+
+var img1check = ui.Checkbox({
+    label: 'Toggle CSB layer',
+    value: true,
+    style: {
+        backgroundColor: "00000000"
+    }
+})
+img1check.onChange(function(checked) {
+    // Shows or hides the first map layer based on the checkbox's value.
+    mapPanel.layers().get(1).setShown(checked);
+
+});
+
+
+var image1Label = ui.Label({
+    value: "2023 CSB Polygons",
+    style: {
+        fontSize: '1.5em',
+        fontWeight: 'bold',
+        backgroundColor: "00000000"
+    }
+});
+
+var query1Panel = ui.Panel({
+    widgets: [img1check],
+    style: {
+        backgroundColor: "00000000"
+    }
+})
+
+
+var image1Panel = ui.Panel({
+    widgets: [image1Label, query1Panel],
+    style: {
+        position: 'top-left'
+    }
+})
+
+
+var insetPanel = ui.Panel({
+    widgets: [insetmap],
+    style: {
+        position: 'top-right'
+    }
+})
+
+
+
+mapPanel.widgets().reset([image1Panel, insetPanel])
+
+
+
+/*---Introduction Popup ---*/
+
+var introlabel1 = ui.Label({
+    value: 'The Crop Sequence Boundaries are a geospatial data product representing non-confidential single crop field boundaries. The field polygons contain information on crop boundaries, crop rotation history, and area metrics like acreage and location in an eight-year time frame. Data derived from CSBs are from satellite imagery and publicly available data.',
+    style: {
+        maxWidth: '400px'
+    }
+});
+
+
+var introlabel2 = ui.Label({
+    value: 'To use this application:',
+    style: {
+        maxWidth: '400px'
+    }
+});
+
+var introlabel3 = ui.Label({
+    value: '1.	Select a state and county of interest.',
+    style: {
+        maxWidth: '350px',
+        position: 'top-right'
+    }
+});
+
+var introlabel4 = ui.Label({
+    value: '2.	Click on a CSB polygon to summarize the CDL-derived crop history and size of that polygon.',
+    style: {
+        maxWidth: '350px',
+        position: 'top-right'
+    }
+});
+
+var introlabel5 = ui.Label({
+    value: 'For more details about this data or to download, please visit:',
+    style: {
+        maxWidth: '400px'
+    }
+});
+
+
+var link = ui.Label('USDA NASS/ERS Crop Sequence Boundaries', {
+    color: 'blue'
+}, 'https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/');
+
+
+// Create a button to unhide the panel.
+var intropanel = ui.Panel({
+    style: {
+        position: 'middle-left',
+        width: '450px',
+        height: '400px'
+    },
+    widgets: [
+        introlabel1, introlabel2, introlabel3, introlabel4, introlabel5, link
+    ]
+});
+var closebutton = ui.Button({
+    label: 'Close',
+    onClick: function() {
+
+        // Display the panel.
+        intropanel.style().set('shown', false);
+
+        // Temporarily make a map click hide the panel
+        // and show the button.
+        var listenerId = mapPanel.onClick(function() {
+            intropanel.style().set('shown', false);
+            // Once the panel is hidden, the map should not
+            // try to close it by listening for clicks.
+            mapPanel.unlisten(listenerId);
+        });
+    }
+
+});
+
+mapPanel.add(intropanel); //
+intropanel.add(closebutton)
+
+/*---------------------------Define CSB Styling ---------------------------------*/
+
+
+
+var styling_csb = {
+    color: '101010',
+    fillColor: '00000000',
+    width: 1
+};
+var cdlpalette = ['ffd300', 'ff2626', '00a8e2', 'ff9e0a', '267000', 'ffff00', 'ffffff', 'ffffff', 'ffffff', '70a500', '00af49', 'dda50a', 'dda50a', '7cd3ff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'e2007c', '896054', 'd8b56b', 'a57000', 'd69ebc', '707000', 'aa007c', 'a05989', '700049', 'd69ebc', 'd1ff00', '7c99ff', 'd6d600', 'd1ff00', '00af49', 'ffa5e2', 'a5f28c', '00af49', 'd69ebc', 'ffffff', 'a800e2', 'a50000', '702600', '00af49', 'af7cff', '702600', 'ff6666', 'ff6666', 'ffcc66', 'ff6666', '00af49', '00ddaf', '54ff00', 'f2a377', 'ff6666', '00af49', '7cd3ff', 'e8bfff', 'afffdd', '00af49', 'bfbf77', 'ffffff', '93cc93', 'c6d69e', 'ccbfa3', 'ff00ff', 'ff8eaa', 'ba004f', '704489', '7777', 'af9970', 'ffff7c', 'ffffff', 'b5705b', '00a582', 'e8d6af', 'af9970', 'ffffff', 'ffffff', 'ffffff', 'f2f2f2', '999999', '4970a3', 'ffffff', 'ffffff', 'ffffff', '7cafaf', 'e8ffbf', 'ffffff', 'ffffff', 'ffffff', '00ffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '4970a3', 'd3e2f9', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '999999', '999999', '999999', '999999', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ccbfa3', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '93cc93', '93cc93', '93cc93', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'c6d69e', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'e8ffbf', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '7cafaf', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '7cafaf', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', 'ffffff', '00ff8c', 'd69ebc', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ff8eaa', '334933', 'e27026', 'ff6666', 'ff6666', '739755', 'ff6666', 'af9970', 'ff8eaa', 'ff6666', 'ff8eaa', 'ff6666', 'ff6666', 'ff8eaa', '00af49', 'ffd300', 'ffd300', 'ff6666', 'f8d248', 'ff6666', '896054', 'ff6666', 'ff2626', 'e2007c', 'ff9e0a', 'ff9e0a', 'a57000', 'ffd300', 'a57000', '267000', '267000', 'ffd300', '000099', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ff6666', 'ffffff', 'ffffff', 'ffffff', '267000']
+
+
+
+
+
+
+/*----------------------------Define dropdown functionality-------------------------*/
+
+dropdown_menu_states.onChange(function(key) {
+    state_name = dropdown_menu_states.getValue();
+    print('State name', state_name);
+    layers.remove(state_outline_lyr);
+    layers.remove(county_outline_lyr);
+    insetlayers.remove(inset_county_outline_lyr);
+    layers.remove(csblayer);
+    //layers.remove(click_point);
+    analysisPanel.clear();
+
+
+
+
+    if (state_name === ' ') {} else {
+
+
+
+        /*state_selected = us_states.filterMetadata('NAME', 'equals', state_name);*/
+        state_selected = us_states.filterMetadata('STATEFP', 'equals', istate[key][10]);
+
+
+        var polygonCentroid = state_selected.geometry().centroid({
+            'maxError': 1
+        });
+        mapPanel.setCenter(polygonCentroid.coordinates().get(0).getInfo(),
+            polygonCentroid.coordinates().get(1).getInfo(), 7);
+
+        var state_outline = empty.paint({
+                featureCollection: state_selected,
+                color: 1,
+                width: 3
+            })
+            .visualize({
+                palette: 'cyan'
+            });
+        state_outline_lyr = ui.Map.Layer(state_outline).setName(state_name);
+        //layers.add(state_outline_lyr);
+        layers.set(0, state_outline_lyr);
+
+        /*try to add CSB file here*/
+
+
+
+
+
+        /*var csb23 = istate[key][0];*/
+        csb23 = istate[key][0]
+
+        image1 = csb23;
+
+        empty1 = ee.Image().byte();
+        fills1 = empty1.paint({
+            featureCollection: csb23,
+            color: istate[key][3]
+        });
+
+        filledOutlines1 = empty1.paint(csb23, istate[key][1]).paint(csb23, 0, 1);
+
+        empty2 = ee.Image().byte();
+        fills2 = empty2.paint({
+            featureCollection: csb23,
+            color: istate[key][2]
+        });
+
+
+
+
+        var statefp_list = state_selected.reduceColumns(ee.Reducer.toList(), ['STATEFP']).get('list');
+        print('statefp_list', statefp_list);
+        state_FP_selected = ee.List(statefp_list).get(0);
+        print('STATEFP', state_FP_selected);
+
+
+        shp_us_counties = counties.filter(ee.Filter.eq('STATEFP', state_FP_selected));
+        var countyNames = shp_us_counties.reduceColumns(ee.Reducer.toList(), ['NAME']).get('list');
+        countyNames = ee.List(countyNames).sort();
+        countyNames = countyNames.insert(0, ' ');
+        print('Counties in this state', countyNames);
+
+        countyNames.evaluate(function(county) {
+            dropdown_menu_counties.items().reset(county);
+        });
+
+
+
+
+
+
+
+
+        //mapPanel.widgets().reset([image1Panel, insetPanel]);
+
+
+
+        /*On click Functionality*/
+
+        mapPanel.onClick(function(coords) {
+            // Create or update the location label (the second widget in the panel)
+            /*var istatenum = dropdown_menu_states.getValue([0]);*/
+            var location = 'lon: ' + coords.lon.toFixed(4) + ' ' +
+                'lat: ' + coords.lat.toFixed(4);
+            var click_point = ee.Geometry.Point(coords.lon, coords.lat);
+            // var currentvalue = image1.reduceColumns(click_point);
+            //var currentyr = 'Crop Type: ' +  currentvalue.get(istate[key][1]);
+            var ROI = image1.filterBounds(click_point);
+
+
+
+            var csbacres = "CSB Acres: " + ROI.aggregate_array(istate[key][11]).getInfo();
+            var currentyr = istate[key][9] + ": " + ROI.aggregate_array(istate[key][12]).getInfo();
+            var prevyr1 = istate[key][9] - 1 + ": " + ROI.aggregate_array(istate[key][13]).getInfo();
+            var prevyr2 = istate[key][9] - 2 + ": " + ROI.aggregate_array(istate[key][14]).getInfo();
+            var prevyr3 = istate[key][9] - 3 + ": " + ROI.aggregate_array(istate[key][15]).getInfo();
+            var prevyr4 = istate[key][9] - 4 + ": " + ROI.aggregate_array(istate[key][16]).getInfo();
+            var prevyr5 = istate[key][9] - 5 + ": " + ROI.aggregate_array(istate[key][17]).getInfo();
+            var prevyr6 = istate[key][9] - 6 + ": " + ROI.aggregate_array(istate[key][18]).getInfo();
+            var prevyr7 = istate[key][9] - 7 + ": " + ROI.aggregate_array(istate[key][19]).getInfo();
+
+
+
+
+            /*var info = ui.Label({value: 'Click on a feature', style: {whiteSpace: 'pre'}});*/
+            /*analysisPanel.widgets().set(0, ui.Label(istatenum));*/
+            analysisPanel.widgets().set(0, ui.Label(location));
+            analysisPanel.widgets().set(1, ui.Label(csbacres));
+            analysisPanel.widgets().set(2, ui.Label(currentyr));
+            analysisPanel.widgets().set(3, ui.Label(prevyr1));
+            analysisPanel.widgets().set(4, ui.Label(prevyr2));
+            analysisPanel.widgets().set(5, ui.Label(prevyr3));
+            analysisPanel.widgets().set(6, ui.Label(prevyr4));
+            analysisPanel.widgets().set(7, ui.Label(prevyr5));
+            analysisPanel.widgets().set(8, ui.Label(prevyr6));
+            analysisPanel.widgets().set(9, ui.Label(prevyr7));
+
+            //Add a blue dot to the map where the user clicked.
+            mapPanel.layers().set(3, ui.Map.Layer(click_point, {
+                color: 'blue'
+            }));
+            //layers.add(click_point);
+
+
+        });
+
+
+        /*
+
+         var createInset = function() {
+          var bounds = ee.Geometry.Rectangle(mapPanel.getBounds());
+          //var reticleMarker = ee.Geometry.Point(coords.lon, coords.lat);
+          insetmap.centerObject(bounds);
+          insetmap.clear();
+          //insetmap.addLayer(bounds);
+          //insetmap.addLayer(cnty.style(styling_co), {}, 'County Boundaries');
+          var rectangleCentroid = bounds.centroid({'maxError': 1});
+          insetmap.addLayer(rectangleCentroid,
+                     {'color': 'red'},
+                     'Result [red]: rectangle.centroid');
+          
+
+        };
+
+        // Run it once to initialize.
+        createInset();
+
+        // Get a new inset map whenever you click on the big map.
+        mapPanel.onClick(createInset);
+
+         */
+
+
+        if (state_selected !== null) {}
+
+    }
+
+});
+
+
+
+dropdown_menu_counties.onChange(function(key) {
+    county_name = dropdown_menu_counties.getValue();
+    print('County name', county_name);
+
+    layers.remove(county_outline_lyr);
+    layers.remove(csblayer);
+    insetlayers.remove(inset_county_outline_lyr)
+    //layers.remove(click_point);
+    analysisPanel.clear();
+
+    if (county_name === ' ') {
+        AOI = state_selected;
+    } else {
+
+        county_selected = counties.filterMetadata('STATEFP', 'equals', state_FP_selected)
+            .filterMetadata('NAME', 'equals', county_name);
+
+        AOI = county_selected;
+
+        var polygonCentroid = county_selected.geometry().centroid({
+            'maxError': 1
+        });
+        mapPanel.setCenter(polygonCentroid.coordinates().get(0).getInfo(),
+            polygonCentroid.coordinates().get(1).getInfo(), 12);
+
+        var county_outline = empty.paint({
+                featureCollection: county_selected,
+                color: 1,
+                width: 3
+            })
+            .visualize({
+                palette: 'cyan'
+            });
+        county_outline_lyr = ui.Map.Layer(county_outline).setName(county_name);
+        inset_county_outline_lyr = ui.Map.Layer(county_outline).setName(county_name);
+
+
+
+
+        /*TRY Adding CSB here*/
+
+        var finalcsb = csb23;
+
+        var finalempty1 = empty1;
+        var finalfills1 = fills1;
+
+        var finalfilledOutlines1 = filledOutlines1;
+
+        var finalempty2 = empty2;
+        var finalfills2 = fills2;
+
+
+        /*var image1 = csb23;*/
+
+        csblayer = ui.Map.Layer(finalfilledOutlines1, {
+            palette: ['000000'].concat(cdlpalette),
+            min: 0,
+            max: 254
+        }, '2023 CSB')
+
+        //layers.add(csblayer);
+        //layers.add(county_outline_lyr);
+
+        insetlayers.set(1, inset_county_outline_lyr);
+        layers.set(1, csblayer);
+        layers.set(2, county_outline_lyr);
+
+
+
+
+
+
+        if (county_selected !== null) {}
+
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+ui.root.clear();
+ui.root.add(ui.SplitPanel(Panel, mapPanel));

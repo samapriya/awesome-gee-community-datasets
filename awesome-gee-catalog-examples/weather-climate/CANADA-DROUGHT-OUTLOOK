@@ -1,0 +1,10 @@
+// Read in Image Collection and get single image 
+var cdo_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-aafc-cdo-monthly')
+var cdo_i = cdo_ic.sort('system:start',false).first()
+
+// Print image to see bands
+print(cdo_i)
+
+// Visualize a single image
+var cdo_palette = ["#ffffff", "#4a7733", "#dfb73d", "#b6a083", "#775412", "#c24d1b"]
+Map.addLayer(cdo_i, {min:0, max:4, palette: cdo_palette}, 'cdo_i')

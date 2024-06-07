@@ -1,0 +1,30 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var territories = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousTerritories"),
+    languages = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousLanguages"),
+    treaties = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousTreaties");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Indigenous Territories from native-land.ca
+
+Map.addLayer(territories,{'color':'red'},'Territories',false)
+
+var getarea = function(feature) {
+  var keepProperties = ['id', 'FrenchDesc', 'FrenchName', 'Name','Slug','color','descriptio'];
+  var geom_area = ee.Feature(feature).area().divide(1000000);
+  return feature.set('area',geom_area).copyProperties(feature, keepProperties)
+}
+
+var terr= territories.map(getarea)
+print(terr.first())
+
+// Create an empty image into which to paint the features, cast to byte.
+var empty = ee.Image().byte();
+
+// Paint the edges with different colors, display.
+var outlines = empty.paint({
+  featureCollection: terr,
+  color: 'area',
+  width: 4
+});
+
+var palette = ['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf','#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'];
+Map.addLayer(outlines, {palette: palette,min:3.37,max:38921}, 'Indigenous Territories');

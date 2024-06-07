@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var nbac_raster8622 = ee.Image("projects/sat-io/open-datasets/CA_FOREST/NBAC/NBAC_MRB_1986_to_2022"),
+    nbac8622 = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/NBAC/nbac_1986_to_2022_20230630");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+var palette = [
+  '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b',
+  '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#aec7e8', '#ffbb78',
+  '#98df8a', '#ff9896', '#c5b0d5', '#c49c94', '#f7b6d2', '#c7c7c7',
+  '#dbdb8d', '#9edae5', '#393b79', '#637939', '#8c6d31', '#843c39',
+  '#7b4173', '#5254a3', '#637939', '#8c6d31', '#bd9e39', '#8c6d31',
+  '#bd9e39', '#8c6d31', '#bd9e39', '#8c6d31', '#bd9e39', '#8c6d31'
+];
+
+//Center the object
+Map.setCenter(-97.31,56.71,4)
+
+Map.addLayer(nbac_raster8622,{min:1986,max:2022,palette:palette},'National Burned Area Raster Composite 1986-2022')
+Map.addLayer(nbac8622,{},'National Burned Area Composite 1986-2022',false)

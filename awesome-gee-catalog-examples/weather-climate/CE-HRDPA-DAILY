@@ -1,0 +1,10 @@
+// Read in Image Collections and get single image
+var hrdpa_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-hrdpa-daily')
+var hrdpa_i = hrdpa_ic.first()
+
+// Print single image to see bands
+print(hrdpa_i)
+
+// Visualize precipitation for single image
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+Map.addLayer(hrdpa_i.select('precip'), {min: 0, max: 200, palette: prec_palette}, 'precip')

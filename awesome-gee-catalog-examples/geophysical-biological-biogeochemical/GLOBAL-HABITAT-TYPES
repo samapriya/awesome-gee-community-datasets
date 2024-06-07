@@ -1,0 +1,19 @@
+// Level 1 and level 2 for the year 2015
+var lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/iucn_habitatclassification_composite_lvl1_ver004")
+var lvl2 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/iucn_habitatclassification_composite_lvl2_ver004")
+
+// Note: Colour code is random
+Map.addLayer(lvl2.randomVisualizer(),{},'Habitat Classification Level 1')
+
+// Changemask for later.
+// Replace year in folder and mask to get a different year (for years 2016-2019)
+//for example 2017 would be var change2017_lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2017changemask_lvl1_ver004")
+var change2019_lvl1 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2019changemask_lvl1_ver004").select('comp2019').unmask(0)
+var change2019_lvl2 = ee.Image("projects/sat-io/open-datasets/IUCN_HABITAT/changemasks/iucn_habitatclassification_2019changemask_lvl2_ver004").select('comp2019').unmask(0)
+print(change2019_lvl1)
+
+//Level 1 and level 2 for the year 2019
+var lvl12019 = change2019_lvl1.firstNonZero(lvl1)
+var lvl22019 = change2019_lvl2.firstNonZero(lvl2)
+
+Map.addLayer(lvl12019.randomVisualizer(),{},'Level 1 2019')

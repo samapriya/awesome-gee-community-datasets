@@ -1,0 +1,30 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var rge_alti5 = ee.Image("projects/sat-io/open-datasets/IGN_RGE_Alti_5m");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(rge_alti5,6)
+
+Map.addLayer(rge_alti5, {}, 'elev', false);
+
+// Use the terrain algorithms to compute a hillshade with 8-bit values.
+var shade = ee.Terrain.hillshade(rge_alti5);
+Map.addLayer(shade, {}, 'hillshade', false);
+
+// Create an "ocean" variable to be used for cartographic purposes
+var ocean = rge_alti5.lte(0);
+Map.addLayer(ocean.mask(ocean), {palette:'000022'}, 'ocean', false);
+
+// Create a custom elevation palette from hex strings.
+var elevationPalette = ['006600', '002200', 'fff700', 'ab7634', 'c4d0ff', 'ffffff'];
+// Use these visualization parameters, customized by location.
+var visParams = {min: 1, max: 3000, palette: elevationPalette};
+
+// Create a mosaic of the ocean and the elevation data
+var visualized = ee.ImageCollection([
+  // Mask the elevation to get only land
+  rge_alti5.mask(ocean.not()).visualize(visParams), 
+  // Use the ocean mask directly to display ocean.
+  ocean.mask(ocean).visualize({palette:'000022'})
+]).mosaic();
+
+// Note that the visualization image doesn't require visualization parameters.
+Map.addLayer(visualized, {}, 'elev palette');

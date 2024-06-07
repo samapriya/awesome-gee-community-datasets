@@ -1,0 +1,20 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var glacier_ft = ee.FeatureCollection("projects/sat-io/open-datasets/RGI/RGI_VECTOR_MERGED_V7");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(glacier_ft.first())
+
+// print a feature
+print('first glacier feature', glacier_ft.first());
+
+// Make a raster image out of the land area attribute.
+var glacier_img = glacier_ft.reduceToImage({
+properties: ['area_km2'],
+reducer: ee.Reducer.first()
+});
+
+// Make a binary mask
+var glacier_binary = glacier_img.gt(0).unmask();
+
+//Add layers
+Map.addLayer(glacier_binary, {min:0, max:1}, 'Glacier raster mask',false);
+Map.addLayer(glacier_ft,{color:'#368BC1'},'Glacier Features')

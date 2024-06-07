@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var area_boundaries = ee.FeatureCollection("projects/sat-io/open-datasets/MTBS/burned_area_boundaries"),
+    fire_occurrence = ee.FeatureCollection("projects/sat-io/open-datasets/MTBS/fire_occurrence");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(fire_occurrence,{'color':'red'},'MTBS Fire Occurrence')
+Map.addLayer(area_boundaries,{'color':'orange'},'MTBS burned area boundaries')

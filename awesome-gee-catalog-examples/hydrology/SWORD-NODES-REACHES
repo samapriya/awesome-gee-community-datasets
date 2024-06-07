@@ -1,0 +1,5 @@
+var ee_nodes = ee.data.listAssets("projects/sat-io/open-datasets/SWORD/nodes");
+var ee_reaches = ee.data.listAssets("projects/sat-io/open-datasets/SWORD/reaches");
+
+print('Total of '+ee.List(ee_nodes.assets).size().getInfo()+ ' assets in nodes',ee_nodes.assets);
+print('Total of '+ee.List(ee_reaches.assets).size().getInfo()+ ' reaches in nodes',ee_reaches.assets);

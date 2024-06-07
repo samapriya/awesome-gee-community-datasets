@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var oceania = ee.FeatureCollection("projects/sat-io/open-datasets/MSRoads/Oceania");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(oceania.first(),9)
+
+Map.addLayer(oceania.style({color: '800080',width:0.75}),{},'Oceania Microsoft Roads')
+var style = require('users/gena/packages:style')
+style.SetMapStyleGrey()

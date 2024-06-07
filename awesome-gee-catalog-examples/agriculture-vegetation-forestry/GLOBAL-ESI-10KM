@@ -1,0 +1,14 @@
+// Read in Image Collection and get first image
+var esi_4wk_ic = ee.ImageCollection('projects/climate-engine/esi/4wk')
+var esi_4wk_i = esi_4wk_ic.filterDate('2020-08-01', '2020-08-10').first()
+var esi_12wk_ic = ee.ImageCollection('projects/climate-engine/esi/12wk')
+var esi_12wk_i = esi_12wk_ic.filterDate('2020-08-01', '2020-08-10').first()
+
+// Print first image to see bands
+print(esi_4wk_i)
+print(esi_12wk_i)
+
+// Visualize select bands from first image — additional bands are present in the Image Collection
+var esi_palette = ["#0000aa", "#0000ff", "#00aaff", "#00ffff", "#aaff55", "#ffffff", "#ffff00", "#fcd37f", "#ffaa00", "#e60000", "#730000"]
+Map.addLayer(esi_4wk_i.select('ESI'), {min: -2.5, max: 2.5, palette: esi_palette}, 'ESI_4wk')
+Map.addLayer(esi_12wk_i.select('ESI'), {min: -2.5, max: 2.5, palette: esi_palette}, 'ESI_12wk')

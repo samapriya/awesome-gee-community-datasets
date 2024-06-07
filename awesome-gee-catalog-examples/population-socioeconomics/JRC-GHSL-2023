@@ -1,0 +1,12 @@
+var smod_vis = {min: 10,max: 26,palette: ['000000', '448564', '70daa4', 'ffffff']};
+var pop_vis = {min: 0.0,max: 125.0,palette: ['060606', '337663', '337663', 'ffffff']};
+Map.setCenter(114.96, 31.13, 4);
+for (var i=1975;i<2035;i+=5) {
+  var GHS_SMOD = ee.Image("projects/sat-io/open-datasets/GHS/GHS_SMOD/GHS_SMOD_E" + i + "_GLOBE_R2023A_54009_1000_V1_0");
+  var GHS_POP = ee.Image("projects/sat-io/open-datasets/GHS/GHS_POP/GHS_POP_E" + i + "_GLOBE_R2023A_54009_100_V1_0");
+  Map.addLayer(GHS_SMOD.mask(GHS_SMOD.neq(10)),smod_vis,'GHS_SMOD: Degree of Urbanization '+ i,false)
+  Map.addLayer(GHS_POP,pop_vis,'GHS_POP: Population Count '+ i,false)
+}
+
+
+ 

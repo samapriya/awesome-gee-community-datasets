@@ -1,0 +1,36 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var landcover = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/LANDCOVER_ESA_2020");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(landcover.aggregate_histogram('class'))
+print(landcover.first())
+
+Map.setCenter(-34.14,37.6,2)
+
+
+/*
+
+Dataset information here: https://daylightmap.org/2023/10/11/landcover.html
+
+Class : Label
+trees: 1
+shrub: 2
+grass: 3
+crop: 4
+urban: 5
+barren: 6
+snow: 7
+*/
+
+// Define the ESA land cover class palette with '#' before each color code
+var palette = [
+  "#006400","#ffbb22","#ffff4c","#f096ff","#fa0000","#b4b4b4","#f0f0f0"
+];
+var empty = ee.Image().byte();
+
+// Paint the interior of the polygons with different colors.
+var fills = empty.paint({
+  featureCollection: landcover,
+  color: 'label',
+});
+Map.addLayer(landcover,{},'Vector Only',false)
+Map.addLayer(fills, {palette: palette, min:1,max: 7}, 'Colored fills');

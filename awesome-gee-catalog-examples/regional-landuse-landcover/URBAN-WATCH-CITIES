@@ -1,0 +1,27 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var imageCollection = ee.ImageCollection("projects/sat-io/open-datasets/HRLC/urban-watch-cities");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(imageCollection.size())
+print('City List',imageCollection.aggregate_histogram('city'))
+
+//multiband mask
+var masked = function(image) {
+  var b1 = image.select(['b1']);
+  var b2 = image.select(['b2']);
+  var b3 = image.select(['b3']);
+  
+  var maskb1 = b1.eq(0);
+  var maskb2 = b2.eq(0);
+  var maskb3 = b3.eq(0);
+  
+  var mask = maskb1.and(maskb2)
+  .and(maskb3)
+  .rename('cmask');
+  
+  //Invert mask
+  return image.addBands(mask)
+  .updateMask(mask.unmask().not());
+};
+
+Map.setCenter(-117.18910446862611,32.76908678504577,12)
+Map.addLayer(imageCollection.map(masked).mosaic())

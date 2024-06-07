@@ -1,0 +1,144 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var forest_age = ee.Image("users/celsohlsj/public/secondary_forest_age_collection5_v3"),
+    forest_extent = ee.Image("users/celsohlsj/public/secondary_forest_extent_collection5_v3"),
+    forest_increment = ee.Image("users/celsohlsj/public/secondary_forest_increment_collection5_v3"),
+    forest_loss = ee.Image("users/celsohlsj/public/secondary_forest_loss_collection5_v3");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes')
+
+Map.addLayer(forest_increment.select('classification_2019'),{min:0,max:1,palette:palettes.colorbrewer.Blues[3]},'Forest Increment 2019')
+Map.addLayer(forest_loss.select('classification_2019'),{min:0,max:1,palette:palettes.colorbrewer.Reds[3]},'Forest Loss 2019')
+Map.addLayer(forest_extent.select('classification_2019'),{min:0,max:1,palette:palettes.colorbrewer.Oranges[3]},'Forest Extent 2019')
+Map.addLayer(forest_age.select('classification_2019'),{min:0,max:6,palette:palettes.colorbrewer.Greens[7]},'Forest Age 2019')
+
+
+var SubtleGrayscale
+= 
+[
+  {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": 65
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": "50"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "30"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "40"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "hue": "#ffff00"
+      },
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -97
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -100
+      }
+    ]
+  }
+]
+Map.setOptions('SubtleGrayscale', {SubtleGrayscale
+: SubtleGrayscale
+})

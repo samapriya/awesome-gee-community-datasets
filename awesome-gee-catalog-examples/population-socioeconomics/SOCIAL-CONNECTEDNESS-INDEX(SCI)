@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var sci_user_loc = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/sci_user_loc"),
+    sci_fr_loc = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/sci_fr_loc");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(sci_user_loc, {}, 'SCI User Loc')
+Map.addLayer(sci_fr_loc, {}, 'SCI FR Loc')

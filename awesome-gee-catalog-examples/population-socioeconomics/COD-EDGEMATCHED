@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var adm1_cod = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm1_cod"),
+    adm2_cod = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm2_cod"),
+    adm3_cod = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm3_cod"),
+    adm4_cod = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-cod/adm4_cod");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.Image().paint(adm1_cod,0,3), {"palette":["#d73027"]}, 'ADM1 COD')
+Map.addLayer(ee.Image().paint(adm2_cod,0,3), {"palette":["#fc8d59"]}, 'ADM2 COD',false)
+Map.addLayer(ee.Image().paint(adm3_cod,0,3), {"palette":["#b35806"]}, 'ADM3 COD',false)
+Map.addLayer(ee.Image().paint(adm4_cod,0,3), {"palette":["#01665e"]}, 'ADM4 COD',false)

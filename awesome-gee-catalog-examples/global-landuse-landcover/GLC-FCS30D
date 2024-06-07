@@ -1,0 +1,185 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var annual = ee.ImageCollection("projects/sat-io/open-datasets/GLC-FCS30D/annual"),
+    five_year = ee.ImageCollection("projects/sat-io/open-datasets/GLC-FCS30D/five-years-map");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+var palette = [
+  "#ffff64", "#ffff64", "#ffff00", "#aaf0f0", "#4c7300", "#006400", "#a8c800", "#00a000", 
+  "#005000", "#003c00", "#286400", "#285000", "#a0b432", "#788200", "#966400", "#964b00", 
+  "#966400", "#ffb432", "#ffdcd2", "#ffebaf", "#ffd278", "#ffebaf", "#00a884", "#73ffdf", 
+  "#9ebb3b", "#828282", "#f57ab6", "#66cdab", "#444f89", "#c31400", "#fff5d7", "#dcdcdc", 
+  "#fff5d7", "#0046c8", "#ffffff", "#ffffff"
+];
+
+// Function to recode class values into sequential values starting from 1 onwards
+var recodeClasses = function(image) {
+  // Define the class values
+  var classes = [10, 11, 12, 20, 51, 52, 61, 62, 71, 72, 81, 82, 91, 92, 120, 121, 122, 
+                 130, 140, 150, 152, 153, 181, 182, 183, 184, 185, 186, 187, 190, 200, 
+                 201, 202, 210, 220, 0];
+  var reclassed = image.remap(classes, ee.List.sequence(1, classes.length));
+  return reclassed;
+};
+
+// Function to add a layer with given settings
+var addLayer = function(image, name) {
+  Map.addLayer(image, {palette: palette}, name,false);
+};
+
+// Apply the function to your images and add layers
+addLayer(recodeClasses(five_year.mosaic().select('b1')), 'GLC FCS 1985');
+addLayer(recodeClasses(five_year.mosaic().select('b2')), 'GLC FCS 1990',false);
+addLayer(recodeClasses(five_year.mosaic().select('b3')), 'GLC FCS 1995',false);
+
+// Load the GLC-FCS30D collection
+var image = annual.mosaic();
+
+// Iterate over each band (year) in the image
+for (var i = 1; i <= 23; i++) {
+  var year = 1999 + i; // starts at year 2000 for annual maps
+  var layerName = "GLC FCS " + year.toString();
+  var band = image.select("b" + i);
+  
+  // Apply the function to the band and add layer
+  addLayer(recodeClasses(band), layerName);
+}
+
+// Define a dictionary for legend and visualization
+var dict = {
+  "names": [
+    "Rainfed cropland",
+    "Herbaceous cover cropland",
+    "Tree or shrub cover (Orchard) cropland",
+    "Irrigated cropland",
+    "Open evergreen broadleaved forest",
+    "Closed evergreen broadleaved forest",
+    "Open deciduous broadleaved forest (0.15<fc<0.4)",
+    "Closed deciduous broadleaved forest (fc>0.4)",
+    "Open evergreen needle-leaved forest (0.15< fc <0.4)",
+    "Closed evergreen needle-leaved forest (fc >0.4)",
+    "Open deciduous needle-leaved forest (0.15< fc <0.4)",
+    "Closed deciduous needle-leaved forest (fc >0.4)",
+    "Open mixed leaf forest (broadleaved and needle-leaved)",
+    "Closed mixed leaf forest (broadleaved and needle-leaved)",
+    "Shrubland",
+    "Evergreen shrubland",
+    "Deciduous shrubland",
+    "Grassland",
+    "Lichens and mosses",
+    "Sparse vegetation (fc<0.15)",
+    "Sparse shrubland (fc<0.15)",
+    "Sparse herbaceous (fc<0.15)",
+    "Swamp",
+    "Marsh",
+    "Flooded flat",
+    "Saline",
+    "Mangrove",
+    "Salt marsh",
+    "Tidal flat",
+    "Impervious surfaces",
+    "Bare areas",
+    "Consolidated bare areas",
+    "Unconsolidated bare areas",
+    "Water body",
+    "Permanent ice and snow",
+    "Filled value"
+  ],
+  "colors": [
+    "#ffff64",
+    "#ffff64",
+    "#ffff00",
+    "#aaf0f0",
+    "#4c7300",
+    "#006400",
+    "#a8c800",
+    "#00a000",
+    "#005000",
+    "#003c00",
+    "#286400",
+    "#285000",
+    "#a0b432",
+    "#788200",
+    "#966400",
+    "#964b00",
+    "#966400",
+    "#ffb432",
+    "#ffdcd2",
+    "#ffebaf",
+    "#ffd278",
+    "#ffebaf",
+    "#00a884",
+    "#73ffdf",
+    "#9ebb3b",
+    "#828282",
+    "#f57ab6",
+    "#66cdab",
+    "#444f89",
+    "#c31400",
+    "#fff5d7",
+    "#dcdcdc",
+    "#fff5d7",
+    "#0046c8",
+    "#ffffff",
+    "#ffffff",
+    "#ffffff"
+  ]
+};
+
+var legend = ui.Panel({
+  style: {
+    position: 'middle-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create and add the legend title.
+var legendTitle = ui.Label({
+  value: 'GLC FCS Classes',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+legend.add(legendTitle);
+
+var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+legend.add(loading);
+
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+
+  // Create the label filled with the description text.
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+
+  for (var i = 0; i < names.length; i++) {
+    legend.add(makeRow(palette[i], names[i]));
+  }
+
+// Print the panel containing the legend
+print(legend);

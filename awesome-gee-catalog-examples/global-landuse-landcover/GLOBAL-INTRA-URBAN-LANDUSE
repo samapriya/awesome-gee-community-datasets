@@ -1,0 +1,43 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ULU = ee.ImageCollection("projects/wri-datalab/cities/urban_land_use/V1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define classes and set color parameters.
+var CLASSES_7=[
+  "open_space",
+  "nonresidential",
+  "atomistic",
+  "informal_subdivision",
+  "formal_subdivision",
+  "housing_project",
+  "road"]
+var COLORS_7=[
+  '33A02C',
+  'E31A1C',
+  'FB9A99',
+  'FFFF99',
+  '1F78B4',
+  'A6CEE3',
+  'bdbdbd']
+var CLASSES=CLASSES_7
+var colors=COLORS_7
+var ULU7Params = {bands: ['lulc'], min: 0, max: 6, opacity: 1, palette: colors};
+
+// Generate image of 6-class land use from the highest probability class at each pixel.
+var ULUimage = ULU.select('lulc').reduce(ee.Reducer.firstNonNull()).rename('lulc')
+ULUimage=ULUimage.mask(ULUimage.mask().gt(0))
+
+// Generate image of road areas based on a pixels with greater than 50% probability of being road.
+var roadsImage = ULU.select('road').reduce(ee.Reducer.firstNonNull()).rename('lulc')
+var roadProb = 50
+var roadsMask = roadsImage.updateMask(roadsImage.gt(roadProb)).where(roadsImage, 1)
+
+// Composite 6-class land use and roads into as single image.
+var ULUandRoads = ULUimage.where(roadsMask,6).select('lulc')
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+
+// Map both the 6-class land use and composite images.
+Map.addLayer(ULUimage, ULU7Params, 'Intra-urban land use, 6-class (2020)');
+Map.addLayer(ULUandRoads, ULU7Params, 'Intra-urban land use, 7-class (2020)');

@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gowt = ee.FeatureCollection("projects/sat-io/open-datasets/global_offshore_wind_turbine_v1-3");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+Map.setCenter(30.290751107548992,26.158890852053972,3)
+Map.addLayer(gowt, {"palette":"FF0000"}, 'Global Offshore Wind Turbines')

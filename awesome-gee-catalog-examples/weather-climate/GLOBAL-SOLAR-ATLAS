@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var dif = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/dif_LTAy_AvgDailyTotals"),
+    dni = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/dni_LTAy_AvgDailyTotals"),
+    elevation_asl = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/ele_asl"),
+    ghi = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/ghi_LTAy_AvgDailyTotals"),
+    gti = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/gti_LTAy_AvgDailyTotals"),
+    opta = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/opta_LTAy_AvgDailyTotals"),
+    pvout_ltam = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/pvout_LTAm_AvgDailyTotals"),
+    pvout_ltay = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/pvout_LTAy_AvgDailyTotals"),
+    temp_agl = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/temp_2m_agl");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(dif,{min:0.95,max:3,palette:palettes.cmocean.Dense[7]},'DIF')
+Map.addLayer(dni,{min:0.8,max:10,palette:palettes.matplotlib.plasma[7]},'DNI')
+Map.addLayer(pvout_ltam.first(),{min:0.55,max:7,palette:palettes.niccoli.linearl[7]},'PVOUT_LTAm')
+Map.addLayer(opta,{min:0,max:51,palette:palettes.colorbrewer.Spectral[9]},'OPTA')
+Map.addLayer(gti,{min:2.5,max:8,palette:palettes.cmocean.Solar[7]},'GTI')
+
+
+
+
+
+
+

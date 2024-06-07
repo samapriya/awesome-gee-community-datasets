@@ -1,0 +1,51 @@
+// Visualization for Global Fungi dataset
+var table = ee.FeatureCollection("projects/sat-io/open-datasets/GLOBAL-FUNGI-DB/global-fungi-db-20230627");
+print(table.aggregate_histogram('Biome'))
+print(table.first())
+
+// Get a color from a continent
+var biomeColor = ee.Dictionary({
+  'anthropogenic': '000000',
+  'aquatic': '593704',
+  'cropland': 'BC80BD',
+  'desert':'229A00',
+  'forest': '0565A6',
+  'grassland':'32CD32',
+  'mangrove': 'E31A1C',
+  'shrubland': 'FF7F00',
+  'tundra': '6A3D9A',
+  'wetland': '5CA2D1',
+  'woodland': 'FDBF6F',
+});
+
+// List of  to add to the map
+var biome = ['anthropogenic', 'aquatic', 'cropland', 'desert', 'forest', 'grassland', 'mangrove',
+    'shrubland', 'tundra','wetland','woodland'];
+
+/**
+* Computes size from id and color from biome.
+*
+* @param {!ee.Geometry.Point} pt A point
+* @return {!ee.Geometry.Point} Input point with added style dictionary.
+*/
+function addStyle(pt) {
+  var size = ee.Number.parse(pt.get('id')).sqrt().divide(100).add(2);
+  var color = biomeColor.get(pt.get('Biome'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+// Make a FeatureCollection out of the power plant data table
+var pp = ee.FeatureCollection(table).map(addStyle);
+print(pp.first());
+
+/**
+* Adds samples of a certain biome type to the map.
+*
+* @param {string} continent
+*/
+function addLayer(ct) {
+  Map.addLayer(pp.filter(ee.Filter.eq('Biome', ct)).style({styleProperty: 'styleProperty', neighborhood: 50}), {}, ct, true, 0.65);
+}
+
+// Apply `addLayer` to each record
+biomeColor.keys().getInfo().map(addLayer);

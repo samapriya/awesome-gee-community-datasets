@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var slrdem = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/SLR_DEM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(slrdem.size())
+
+//Function to attach nominal scale to collection
+var scales = function(image){
+  var b1proj = image.select('b1').projection();
+  var b1scale = image.select('b1').projection().nominalScale();
+return image.set('scale',ee.Number(b1scale).round())
+}
+
+var ns = slrdem.map(scales)
+
+//print distribution of nominal scale across collection
+print(ns.aggregate_histogram('scale'))
+
+//filter by nominal scale
+var ns_3m =ns.filter(ee.Filter.eq('scale',3)) 
+var image = ns_3m.mosaic().setDefaultProjection('EPSG:3857',null,3)
+Map.addLayer(image.updateMask(image.gt(-9999)))
+Map.addLayer(ee.Terrain.products(image))

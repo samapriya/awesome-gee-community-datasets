@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var oam_subset = ee.ImageCollection("projects/sat-io/open-datasets/open-aerial-map");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Shuffle the image collection to fetch random data
+var collection = oam_subset.toList(oam_subset.size())
+
+//Fetch any item from list
+var image = ee.Image(collection.get(8))
+Map.centerObject(image,14)
+print('Image detail',image)
+
+// Add imagery
+Map.addLayer(ee.Image(image),{},image.get('platform').getInfo()+' data')

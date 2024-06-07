@@ -1,0 +1,33 @@
+var HRSL_general = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrslpop");
+var HRSL_men = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_men");
+var HRSL_women = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women");
+var HRSL_youth = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_youth");
+var HRSL_children_under_five = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_children_under_five");
+var HRSL_women_reproductive_age = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women_reproductive_age");
+var HRSL_elderly_over_sixty = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_elderly_over_sixty");
+
+var countries = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017")
+
+// Load packages for basemap and palettes
+var palettes = require('users/gena/packages:palettes')
+var style = require('users/gena/packages:style')
+
+
+print('Total images',HRSL_general.size())
+
+//Zoom to some place in the world
+Map.setCenter(28.9853, 41.0703,10)
+//Adding country boundaries (Feel free to remove)
+Map.addLayer(ee.Image().paint(countries,0,1), {color:'00FF00'}, 'Area of Interest')
+
+
+Map.addLayer(HRSL_general.median(),{palette: palettes.colorbrewer.Reds[9]},'HRSL')
+Map.addLayer(HRSL_men.median(),{palette: palettes.colorbrewer.Blues[9]},'HRSL men',false)
+Map.addLayer(HRSL_women.median(),{palette: palettes.colorbrewer.PuOr[9]},'HRSL women',false)
+Map.addLayer(HRSL_youth.median(),{palette: palettes.colorbrewer.PuBuGn[9]},'HRSL youth',false)
+Map.addLayer(HRSL_children_under_five.median(),{palette: palettes.colorbrewer.YlOrRd[9]},'HRSL Children under five',false)
+Map.addLayer(HRSL_women_reproductive_age.median(),{palette: palettes.colorbrewer.RdYlBu[9]},'HRSL Women of reproductive age',false)
+Map.addLayer(HRSL_elderly_over_sixty.median(),{palette: palettes.colorbrewer.YlGnBu[9]},'HRSL Elderly over sixty',false)
+
+
+style.SetMapStyleGrey()

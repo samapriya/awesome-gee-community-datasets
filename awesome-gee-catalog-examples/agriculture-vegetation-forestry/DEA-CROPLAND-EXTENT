@@ -1,0 +1,34 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var filtered = ee.ImageCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/filtered"),
+    mask = ee.ImageCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/mask"),
+    prob = ee.ImageCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/prob"),
+    validation = ee.FeatureCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/validation");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+|Band ID |Description               |Value range|Data type|NoData/Fill value|
+|--------|--------------------------|-----------|---------|-----------------|
+|mask    |crop extent (pixel)       |0 - 1      |uint8    |0                |
+|prob    |crop probability (pixel)  |0 - 100    |uint8    |0                |
+|filtered|crop extent (object-based)|0 - 1      |uint8    |0                |
+
+Notes Probability
+prob: This band displays the prediction probabilities for the 'crop' class. 
+As this service uses a random forest classifier, the prediction probabilities refer to
+the percentage of trees that voted for the random forest classification.
+For example, if the model had 200 decision trees in the random forest, 
+and 150 of the trees voted ‘crop’, the prediction probability is 150 / 200 x 100 = 75 %.
+Thresholding this band at > 50 % will produce a map identical to mask.
+*/
+Map.setCenter(25.35, 4.19,4)
+
+//Convert to single images
+var mask = mask.mosaic()
+var filtered = filtered.mosaic()
+var prob = prob.mosaic()
+
+Map.addLayer(mask.updateMask(mask.gt(0)),{min:0,max:1,palette:['70a54c']},'Crop extent mask')
+Map.addLayer(filtered.updateMask(filtered.gt(0)),{min:0,max:1,palette:['70a54c']},'Crop extent mask- Filtered',false)
+Map.addLayer(prob,{min:0,max:100},'Crop extent mask Prediction Prob',false)
+Map.addLayer(validation,{},'Crop extent mask Validation points',false)
+
+

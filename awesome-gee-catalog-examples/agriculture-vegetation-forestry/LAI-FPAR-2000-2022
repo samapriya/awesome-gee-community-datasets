@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wgs_500m_8d = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_500m_8d"),
+    wgs_5km_8d = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_5km_8d"),
+    wgs_005degree_8d = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_005degree_8d"),
+    wgs_500m_bimonthly = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_500m_bimonthly"),
+    wgs_5km_bimonthly = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_5km_bimonthly"),
+    wgs_005degree_bimonthly = ee.ImageCollection("projects/sat-io/open-datasets/BU_LAI_FPAR/wgs_005degree_bimonthly");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(wgs_500m_8d)
+
+/*
+Adding just the first image in collection
+Multiply LAI by 0.1 (scale)
+Multiply FPAR by 0.01 (scale)
+*/
+
+//Add LAI layers
+Map.addLayer(wgs_005degree_8d.first().select('LAI').multiply(0.1),{min:0,max:6,palette: ['#a89247','#5e963b','#75b84f','#8bd162','#f3e24d','#f7eb6b','#fbe789']},'LAI sample 005 degree',false)
+Map.addLayer(wgs_5km_8d.first().select('LAI').multiply(0.1),{min:0,max:6,palette: ['#a89247','#5e963b','#75b84f','#8bd162','#f3e24d','#f7eb6b','#fbe789']},'LAI sample 5km',false)
+Map.addLayer(wgs_500m_8d.first().select('LAI').multiply(0.1),{min:0,max:6,palette: ['#a89247','#5e963b','#75b84f','#8bd162','#f3e24d','#f7eb6b','#fbe789']},'LAI sample 500m')
+
+//Add FPAR layers
+Map.addLayer(wgs_005degree_8d.first().select('FPAR').multiply(0.01),{min:0,max:0.9,palette:['#ff0000','#ff4500','#ff7f00','#ffa500','#ffcf00','#ffff00','#ffff66']},'FPAR sample 005 degree',false)
+Map.addLayer(wgs_5km_8d.first().select('FPAR').multiply(0.01),{min:0,max:0.9,palette:['#ff0000','#ff4500','#ff7f00','#ffa500','#ffcf00','#ffff00','#ffff66']},'FPAR sample 5km',false)
+Map.addLayer(wgs_500m_8d.first().select('FPAR').multiply(0.01),{min:0,max:0.9,palette:['#ff0000','#ff4500','#ff7f00','#ffa500','#ffcf00','#ffff00','#ffff66']},'FPAR sample 500m')
+

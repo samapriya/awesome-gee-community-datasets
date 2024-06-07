@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var af_cropmask_2016 = ee.Image("projects/sat-io/open-datasets/landcover/AF_Cropland_mask_30m_2016_v3");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+Map.centerObject(af_cropmask_2016)
+Map.addLayer(af_cropmask_2016.mask(af_cropmask_2016.neq(1).and(af_cropmask_2016.gt(0))),{palette:'#EAC117'},'Ensemble Cropland Mask 2016')
+
+style.SetMapStyleDark()

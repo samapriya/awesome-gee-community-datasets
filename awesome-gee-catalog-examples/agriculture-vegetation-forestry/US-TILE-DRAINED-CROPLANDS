@@ -1,0 +1,4 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tile30m = ee.Image("projects/sat-io/open-datasets/agtile/AgTile-US");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(tile30m)

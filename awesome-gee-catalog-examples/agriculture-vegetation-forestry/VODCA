@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cband = ee.ImageCollection("projects/sat-io/open-datasets/VODCA/C-BAND"),
+    kband = ee.ImageCollection("projects/sat-io/open-datasets/VODCA/K-BAND"),
+    xband = ee.ImageCollection("projects/sat-io/open-datasets/VODCA/X-BAND");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var vis = ['#a50026','#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850','#006837']
+
+Map.addLayer(cband.filterDate('2005-01-01','2005-12-31').limit(10).median().select('b1'),{palette:vis},'C-Band 2005 subset')
+Map.addLayer(xband.filterDate('2005-01-01','2005-12-31').limit(10).median().select('b1'),{palette:vis},'X-Band 2005 subset')
+Map.addLayer(kband.filterDate('2005-01-01','2005-12-31').limit(10).median().select('b1'),{palette:vis},'K-Band 2005 subset')

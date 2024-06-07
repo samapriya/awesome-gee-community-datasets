@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var countries = ee.FeatureCollection("FAO/GAUL/2015/level0"),
+    gcep30 = ee.ImageCollection("projects/sat-io/open-datasets/GFSAD/GCEP30");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Class Label	Name	Description
+0 Water	Water bodies/no-data
+1	Non-Cropland	Non-Cropland areas
+2	Cropland	Cropland areas
+*/
+
+var vis = {min:0,max:2,palette:["0050cb","d78956","21d911"]}
+Map.addLayer(gcep30.mosaic().clip(countries),vis,'GCEP30')

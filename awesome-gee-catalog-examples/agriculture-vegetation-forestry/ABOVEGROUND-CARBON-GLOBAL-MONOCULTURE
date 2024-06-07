@@ -1,0 +1,44 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var table = ee.FeatureCollection("projects/sat-io/open-datasets/global-monoculture-plantations");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Get a color from biome
+var biomeColor = ee.Dictionary({
+  'Boreal Forests/Taiga': '000000',
+  'Deserts & Xeric Shrublands': '593704',
+  'Flooded Grasslands & Savannas': 'BC80BD',
+  'Mangroves': '0565A6',
+  'Mediterranean Forests, Woodlands & Scrub': 'E31A1C',
+  'Montane Grasslands & Shrublands': 'FF7F00',
+  'Temperate Broadleaf & Mixed Forests': '6A3D9A',
+  'Temperate Conifer Forests': '5CA2D1',
+  'Temperate Grasslands, Savannas & Shrublands': 'FDBF6F',
+  'Tropical & Subtropical Dry Broadleaf Forests': '229A00',
+  'Tropical & Subtropical Grasslands, Savannas & Shrublands':'80cdc1',
+  'Tropical & Subtropical Moist Broadleaf Forests':'8c510a'
+});
+
+// List of biomes to add to the map
+var biomes = ['Boreal Forests/Taiga','Deserts & Xeric Shrublands','Flooded Grasslands & Savannas',	'Mangroves',
+'Mediterranean Forests Woodlands & Scrub','Montane Grasslands & Shrublands', 'Temperate Broadleaf & Mixed Forests',
+'Temperate Conifer Forests','Temperate Grasslands, Savannas & Shrublands',
+'Tropical & Subtropical Dry Broadleaf Forests','Tropical & Subtropical Grasslands, Savannas & Shrublands','Tropical & Subtropical Moist Broadleaf Forests',];
+
+//Use above ground carbon (agc) for points
+function addStyle(pt) {
+  var size = ee.Number(pt.get('agc')).sqrt().divide(10).add(2)
+  var color = biomeColor.get(pt.get('biome'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+// Make a FeatureCollection out of the agc data table
+var pp = ee.FeatureCollection(table).map(addStyle);
+print(pp.first());
+
+
+function addLayer(biome) {
+  print(biome);
+  Map.addLayer(pp.filter(ee.Filter.eq('biome', biome)).style({styleProperty: 'styleProperty', neighborhood: 50}), {}, biome, true, 0.65);
+}
+
+// Apply `addLayer` to each record in `biomes`
+biomeColor.keys().getInfo().map(addLayer);

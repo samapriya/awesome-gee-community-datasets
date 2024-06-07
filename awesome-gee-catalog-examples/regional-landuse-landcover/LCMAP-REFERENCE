@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var reference = ee.FeatureCollection("projects/sat-io/open-datasets/LCMAP/LCMAP_CU_20200414_V01_REF");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(reference.size())
+
+var buff = function(ft) {
+  var buffered = ft.buffer(1000)
+  return buffered
+};
+
+Map.addLayer(reference.map(buff),{},'LCMAP reference')

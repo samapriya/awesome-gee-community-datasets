@@ -1,0 +1,14 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var agb = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_distribution/agb"),
+    hba95 = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_distribution/hba95"),
+    hmax95 = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_distribution/hmax95"),
+    americas_tree = ee.FeatureCollection("projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//import modules
+var palettes = require('users/gena/packages:palettes')
+
+Map.setCenter(-61.9097, 9.9357,9)
+Map.addLayer(agb.mosaic(),{'min':0.5,'max':375,'palette':palettes.colorbrewer.YlGn[9]},'Aboveground mangrove biomass')
+Map.addLayer(hmax95.mosaic(),{'min':0.5,'max':52,'palette':palettes.colorbrewer.PiYG[9]},'Mangrove canopy maximum height')
+Map.addLayer(hba95.mosaic(),{'min':0.5,'max':33,'palette':palettes.colorbrewer.Reds[9]},'Mangrove basal-area weighted height')
+Map.addLayer(americas_tree,{},'North South America tree measurements')

@@ -1,0 +1,95 @@
+// Define color palette for each emissions source
+var colorPalette = [
+  'FF0000', '00FF00', '0000FF', 'FFFF00', 'FF00FF', '00FFFF', 'FF4500', '8B4513',
+  '8A2BE2', 'A52A2A', '000080', '008080', '4B0082', '2F4F4F', 'DC143C', '00CED1',
+  '20B2AA', '191970', '008B8B', '800000', 'FF6347', 'D2691E', 'FF8C00', '8B0000',
+  '8B008B', '808000', '228B22', '2E8B57', '556B2F', '483D8B', '800080', 'B22222',
+  '8B4513', '483D8B'
+];
+
+// Define FeatureCollections for each emissions source
+var aluminum = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/aluminum_emissions-sources");
+var bauxiteMining = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/bauxite-mining_emissions-sources");
+var cement = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/cement_emissions-sources");
+var chemicals = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/chemicals_emissions-sources");
+var coalMining = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/coal-mining_emissions-sources");
+var copperMining = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/copper-mining_emissions-sources");
+var croplandFires = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/cropland-fires_emissions-sources");
+var domesticAviation = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/domestic-aviation_emissions-sources");
+var domesticShipping = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/domestic-shipping_emissions-sources");
+var electricityGeneration = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/electricity-generation_emissions-sources");
+var entericFermentationCattleFeedlot = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/enteric-fermentation-cattle-feedlot_emissions-sources");
+var entericFermentationCattlePasture = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/enteric-fermentation-cattle-pasture_emissions-sources");
+var forestLandClearing = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-clearing_emissions-sources");
+var forestLandDegradation = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-degradation_emissions-sources");
+var forestLandFires = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/forest-land-fires_emissions-sources");
+var internationalAviation = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/international-aviation_emissions-sources");
+var internationalShipping = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/international-shipping_emissions-sources");
+var ironMining = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/iron-mining_emissions-sources");
+var manureLeftOnPastureCattle = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/manure-left-on-pasture-cattle_emissions-sources");
+var manureManagementCattleFeedlot = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/manure-management-cattle-feedlot_emissions-sources");
+var netForestLand = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-forest-land_emissions-sources");
+var netShrubgrass = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-shrubgrass_emissions-sources");
+var netWetland = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/net-wetland_emissions-sources");
+var oilAndGasRefining = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/oil-and-gas-refining_emissions-sources");
+var otherManufacturing = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/other-manufacturing_emissions-sources");
+var petrochemicals = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/petrochemicals_emissions-sources");
+var pulpAndPaper = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/pulp-and-paper_emissions-sources");
+var removals = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/removals_emissions-sources");
+var riceCultivation = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/rice-cultivation_emissions-sources");
+var roadTransportation = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/road-transportation_emissions-sources");
+var shrubgrassFires = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/shrubgrass-fires_emissions-sources");
+var solidWasteDisposal = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/solid-waste-disposal_emissions-sources");
+var steel = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/steel_emissions-sources");
+var syntheticFertilizerApplication = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/synthetic-fertilizer-application_emissions-sources");
+var wastewaterTreatmentAndDischarge = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/wastewater-treatment-and-discharge_emissions-sources");
+var waterReservoirs = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/water-reservoirs_emissions-sources");
+var wetlandFires = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/wetland-fires_emissions-sources");
+
+// Function to add each emissions source to Code Editor with a different color and name
+var addLayerToCodeEditor = function (collection, color, name) {
+  var layer = collection.style({ fillColor: color, color: '000000', width: 1});
+  Map.addLayer(layer, {}, name);
+};
+
+// Add each emissions source to Code Editor
+addLayerToCodeEditor(aluminum, colorPalette[0], 'Aluminum Emissions');
+addLayerToCodeEditor(bauxiteMining, colorPalette[1], 'Bauxite Mining Emissions');
+addLayerToCodeEditor(cement, colorPalette[2], 'Cement Emissions');
+addLayerToCodeEditor(chemicals, colorPalette[3], 'Chemicals Emissions');
+addLayerToCodeEditor(coalMining, colorPalette[4], 'Coal Mining Emissions');
+addLayerToCodeEditor(copperMining, colorPalette[5], 'Copper Mining Emissions');
+addLayerToCodeEditor(croplandFires, colorPalette[6], 'Cropland Fires Emissions');
+addLayerToCodeEditor(domesticAviation, colorPalette[7], 'Domestic Aviation Emissions');
+addLayerToCodeEditor(domesticShipping, colorPalette[8], 'Domestic Shipping Emissions');
+addLayerToCodeEditor(electricityGeneration, colorPalette[9], 'Electricity Generation Emissions');
+addLayerToCodeEditor(entericFermentationCattleFeedlot, colorPalette[10], 'Enteric Fermentation Cattle Feedlot Emissions');
+addLayerToCodeEditor(entericFermentationCattlePasture, colorPalette[11], 'Enteric Fermentation Cattle Pasture Emissions');
+addLayerToCodeEditor(forestLandClearing, colorPalette[12], 'Forest Land Clearing Emissions');
+addLayerToCodeEditor(forestLandDegradation, colorPalette[13], 'Forest Land Degradation Emissions');
+addLayerToCodeEditor(forestLandFires, colorPalette[14], 'Forest Land Fires Emissions');
+addLayerToCodeEditor(internationalAviation, colorPalette[15], 'International Aviation Emissions');
+addLayerToCodeEditor(internationalShipping, colorPalette[16], 'International Shipping Emissions');
+addLayerToCodeEditor(ironMining, colorPalette[17], 'Iron Mining Emissions');
+addLayerToCodeEditor(manureLeftOnPastureCattle, colorPalette[18], 'Manure Left On Pasture Cattle Emissions');
+addLayerToCodeEditor(manureManagementCattleFeedlot, colorPalette[19], 'Manure Management Cattle Feedlot Emissions');
+addLayerToCodeEditor(netForestLand, colorPalette[20], 'Net Forest Land Emissions');
+addLayerToCodeEditor(netShrubgrass, colorPalette[21], 'Net Shrubgrass Emissions');
+addLayerToCodeEditor(netWetland, colorPalette[22], 'Net Wetland Emissions');
+addLayerToCodeEditor(oilAndGasRefining, colorPalette[23], 'Oil and Gas Refining Emissions');
+addLayerToCodeEditor(otherManufacturing, colorPalette[24], 'Other Manufacturing Emissions');
+addLayerToCodeEditor(petrochemicals, colorPalette[25], 'Petrochemicals Emissions');
+addLayerToCodeEditor(pulpAndPaper, colorPalette[26], 'Pulp and Paper Emissions');
+addLayerToCodeEditor(removals, colorPalette[27], 'Removals Emissions');
+addLayerToCodeEditor(riceCultivation, colorPalette[28], 'Rice Cultivation Emissions');
+addLayerToCodeEditor(roadTransportation, colorPalette[29], 'Road Transportation Emissions');
+addLayerToCodeEditor(shrubgrassFires, colorPalette[30], 'Shrubgrass Fires Emissions');
+addLayerToCodeEditor(solidWasteDisposal, colorPalette[31], 'Solid Waste Disposal Emissions');
+addLayerToCodeEditor(steel, colorPalette[32], 'Steel Emissions');
+addLayerToCodeEditor(syntheticFertilizerApplication, colorPalette[33], 'Synthetic Fertilizer Application Emissions');
+addLayerToCodeEditor(wastewaterTreatmentAndDischarge, colorPalette[34], 'Wastewater Treatment and Discharge Emissions');
+addLayerToCodeEditor(waterReservoirs, colorPalette[35], 'Water Reservoirs Emissions');
+addLayerToCodeEditor(wetlandFires, colorPalette[36], 'Wetland Fires Emissions');
+
+// Center the map on a location of interest (using aluminum as an example)
+Map.centerObject(aluminum, 3);

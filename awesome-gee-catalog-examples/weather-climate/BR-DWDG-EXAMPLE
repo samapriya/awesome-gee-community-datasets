@@ -1,0 +1,139 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tmax = ee.ImageCollection("projects/sat-io/open-datasets/BR-DWGD/TMAX");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+|Variable|Variable name      |Units     |Offset|Scale      |
+|--------|-------------------|----------|------|-----------|
+|pr      |Precipitation      |mm        |225   |0.006866665|
+|Eto     |evapotranspiration |mm        |0     |0.051181102|
+|Tmax    |maximum temperature|C         |15    |0.001068148|
+|Tmin    |minimum temperature|C         |15    |0.001068148|
+|RH      |Relative humidity  |Percentage|0     |0.393700787|
+|RS      |Solar radiation    |MJ/m2     |0     |0.157086614|
+|U2      |Wind speed         |m/s       |0     |0.059055118|
+*/
+
+// Define a scaling factor
+
+var offset = 15
+var scale  = 0.001068148
+
+// Function to apply the scaling factor to a specific band
+var scaleBand = function(image) {
+  var scaledImage = image.select("b1").rename(['TMAX']).multiply(scale).add(offset);
+  return scaledImage.copyProperties(image, image.propertyNames());
+};
+var tmax = tmax.map(scaleBand);
+
+
+//Standard color palette for tmax
+var color_pal = ['000066', '001199', '0044BB', '0077DD', '33AAEE', '66CCFF', 'FFDDCC', 'FFBB99', 'FF9966', 'FF6644']
+var vis = {min:20,max:40,palette:color_pal};
+
+var tmax = tmax.filterDate('2010-01-01','2022-12-31').select(['TMAX']);
+var composite = tmax.first().visualize(vis);
+var compositeLayer = ui.Map.Layer(composite).setName('Temp Max in Degree C');
+
+// Create the main map and set the SST layer.
+var mapPanel = ui.Map();
+var layers = mapPanel.layers();
+layers.add(compositeLayer, 'Temp max Composite');
+
+
+/*
+* Panel setup
+*/
+
+// Create a panel to hold title, intro text, chart and legend components.
+var inspectorPanel = ui.Panel({style: {width: '30%'}});
+
+// Create an intro panel with labels.
+var intro = ui.Panel([
+  ui.Label({
+    value: 'Temp Max in C - Time Series Inspector',
+    style: {fontSize: '20px', fontWeight: 'bold'}
+  }),
+  ui.Label('Click a location to see its time series of Max temp from gridded data.')
+]);
+inspectorPanel.add(intro);
+
+// Create panels to hold lon/lat values.
+var lon = ui.Label();
+var lat = ui.Label();
+inspectorPanel.add(ui.Panel([lon, lat], ui.Panel.Layout.flow('horizontal')));
+
+// Add placeholders for the chart and legend.
+inspectorPanel.add(ui.Label('[Chart]'));
+
+
+/*
+* Chart setup
+*/
+
+// Generates a new time series chart of SST for the given coordinates.
+var generateChart = function (coords) {
+  // Update the lon/lat panel with values from the click event.
+  lon.setValue('lon: ' + coords.lon.toFixed(2));
+  lat.setValue('lat: ' + coords.lat.toFixed(2));
+
+  // Add a dot for the point clicked on.
+  var point = ee.Geometry.Point(coords.lon, coords.lat);
+  var dot = ui.Map.Layer(point, {color: '000000'}, 'clicked location');
+  // Add the dot as the second layer, so it shows up on top of the composite.
+  mapPanel.layers().set(1, dot);
+
+  // Make a chart from the time series.
+  var tmaxChart = ui.Chart.image.series(tmax, point, ee.Reducer.mean(), 500);
+
+  // Customize the chart.
+  tmaxChart.setOptions({
+    title: 'Tmax Brazil in Temp (C)',
+    vAxis: {title: 'Temp (C)'},
+    hAxis: {title: 'Date', format: 'yyyy-MM-dd', gridlines: {count: 7}},
+    series: {
+      0: {
+        color: 'blue',
+        lineWidth: 0,
+        pointsVisible: true,
+        pointSize: 2,
+      },
+    },
+    legend: {position: 'right'},
+  });
+  // Add the chart at a fixed position, so that new charts overwrite older ones.
+  inspectorPanel.widgets().set(2, tmaxChart);
+};
+
+
+/*
+* Legend setup
+*/
+
+/*
+* Map setup
+*/
+
+// Register a callback on the default map to be invoked when the map is clicked.
+mapPanel.onClick(generateChart);
+
+// Configure the map.
+mapPanel.style().set('cursor', 'crosshair');
+
+
+// Initialize with a test point.
+var initialPoint = ee.Geometry.Point(-53.02, -8.90);
+mapPanel.centerObject(initialPoint, 4);
+
+
+/*
+* Initialize the app
+*/
+
+// Replace the root with a SplitPanel that contains the inspector and map.
+ui.root.clear();
+ui.root.add(ui.SplitPanel(inspectorPanel, mapPanel));
+
+generateChart({
+  lon: initialPoint.coordinates().get(0).getInfo(),
+  lat: initialPoint.coordinates().get(1).getInfo()
+});

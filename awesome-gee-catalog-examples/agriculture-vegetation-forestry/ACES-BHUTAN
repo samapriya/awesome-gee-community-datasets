@@ -1,0 +1,9 @@
+var Bhutan_ACES_Rice_Maps = ee.ImageCollection("projects/servir-sco-assets/assets/Bhutan/Rice_Extent_Mapper/Predicted_Rice_Post_Processed_IC");
+Map.setCenter(90.37, 27.51,8)
+var palettes = require('users/gena/packages:palettes');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+Map.addLayer(Bhutan_ACES_Rice_Maps,{min: 0,max: 1, palette: ["fee6ce","fdae6b","e6550d"]},
+"ACES Rice Maps 2016-2022 ")

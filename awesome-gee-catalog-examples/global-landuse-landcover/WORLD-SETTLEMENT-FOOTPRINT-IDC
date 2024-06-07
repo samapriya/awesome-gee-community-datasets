@@ -1,0 +1,12 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wsf_evo_idc = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO_IDC"),
+    vis = {"opacity":1,"bands":["b30"],"max":6,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Collection size',wsf_evo_idc.size());
+
+print('Band size',wsf_evo_idc.first().bandNames().size())
+print('Band list b1:1985 to b31:2015',wsf_evo_idc.first().bandNames())
+
+var palette = ['#d73027','#fc8d59','#fee08b','#d9ef8b','#91cf60','#1a9850']
+
+Map.addLayer(wsf_evo_idc.mosaic().select('b30'),{min:1,max:6,'palette':palette},'B30 IDC')

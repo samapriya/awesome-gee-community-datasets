@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var lake_poly = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_poly_v10"),
+    lake_points = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_points_v10");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(lake_poly,{'color':'#00008B'},'HydroLakes Polygons v1.0');
+Map.addLayer(lake_points,{'color':'red','opacity':0.1},'HydroLakes Points v1.0',false)

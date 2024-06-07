@@ -1,0 +1,14 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var africa = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/africa"),
+    australia = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/australia"),
+    eurasia = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/europe_asia"),
+    latin_america = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/latin_america"),
+    north_america = ee.ImageCollection("projects/sat-io/open-datasets/global-daily-air-temp/north_america");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(africa.first(),4)
+
+var af_tmax = africa.filter(ee.Filter.eq('prop_type','tmax'))
+var af_tmin = africa.filter(ee.Filter.eq('prop_type','tmin'))
+
+Map.addLayer(af_tmax.first().multiply(0.1),{min:16,max:40,palette:['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf','#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse()},' Africa Surface Air Temp 1km Tmax')
+Map.addLayer(af_tmin.first().multiply(0.1),{min:2,max:30,palette:['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf','#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse()},' Africa Surface Air Temp 1km Tmin')

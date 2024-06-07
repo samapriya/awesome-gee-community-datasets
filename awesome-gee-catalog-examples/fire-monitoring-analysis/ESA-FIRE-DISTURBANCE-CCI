@@ -1,0 +1,35 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var BA = ee.ImageCollection("projects/sat-io/open-datasets/ESA/AVHRR-LTDR/BA"),
+    CL = ee.ImageCollection("projects/sat-io/open-datasets/ESA/AVHRR-LTDR/CL"),
+    JD = ee.ImageCollection("projects/sat-io/open-datasets/ESA/AVHRR-LTDR/JD"),
+    OB = ee.ImageCollection("projects/sat-io/open-datasets/ESA/AVHRR-LTDR/OB");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+/*
+| Attribute | Units | Data Type | Notes |
+|---|---|---|---|
+| Date of the first detection (JD) | Day of the year (1-366) | Float |  - 0: Not burned - 1-366: Day of first detection for burned pixel  - -1: Not observed in month  - -2: Not burnable (water, bare land, urban, snow/ice) |
+| Confidence level (CL) | 0-100 | Float | - 0: Low burn probability  - 1-100: Increasing burn probability confidence  - -1: Not observed in month  - -2: Not burnable (water, bare land, urban, snow/ice) |
+| Burned Area (BA) | Square meters | Float | - 0-N: Burned area within pixel cell  - -1: Not observed in month  - -2: Not burnable (water, bare land, urban, snow/ice) |
+| Number of observations (OB) | 0-31 | Int16 | - 0-31: No-cloud observations in pixel  - 0: Not observed  - -2: Not burnable (water, bare land, urban, snow/ice) |
+*/
+
+var BA_mosaic = BA.filterDate('2018-01-01','2018-12-31').mosaic()
+var CL_mosaic = CL.filterDate('2018-01-01','2018-12-31').mosaic()
+var OB_mosaic = OB.filterDate('2018-01-01','2018-12-31').mosaic()
+var JD_mosaic = JD.filterDate('2018-01-01','2018-12-31').mosaic()
+
+// Define color palettes
+var BA_palette = ['#f07167','#fed9b7','#fdfcdc','#00afb9','#0081a7'];
+var CL_palette = ['blue', 'green', 'yellow', 'orange', 'red'];
+var OB_palette = ['#7f3b08','#b35806','#e08214','#fdb863','#fee0b6','#f7f7f7','#d8daeb','#b2abd2','#8073ac','#542788','#2d004b'];
+var JD_palette = ['#9e0142','#d53e4f','#f46d43','#fdae61','#fee08b','#ffffbf','#e6f598','#abdda4','#66c2a5','#3288bd','#5e4fa2'];
+
+// Add layers with color palettes
+Map.addLayer(BA_mosaic.updateMask(BA_mosaic.gte(0)), {min: 0, max: 15000, palette: BA_palette}, 'Burned Area (BA)');
+Map.addLayer(CL_mosaic.updateMask(CL_mosaic.gte(0)), {min: 0, max: 100, palette: CL_palette}, 'Confidence Level (CL)');
+Map.addLayer(OB_mosaic.updateMask(OB_mosaic.gte(0)), {min: 0, max: 31, palette: OB_palette}, 'Number of observations (OB)');
+Map.addLayer(JD_mosaic.updateMask(JD_mosaic.gte(0)), {min: 0, max: 366, palette: JD_palette}, 'Date of the first detection (JD)');

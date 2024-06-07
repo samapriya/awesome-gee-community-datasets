@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var realsat = ee.FeatureCollection("projects/sat-io/open-datasets/ReaLSAT/ReaLSAT-1_4");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(
+  realsat.style({
+    fillColor: '00000000',
+    color: '008D97',
+  }),{},'RealSAT'
+);

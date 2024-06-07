@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gloric = ee.FeatureCollection("projects/sat-io/open-datasets/GloRiC/GloRiC_v10"),
+    gloric_canada = ee.FeatureCollection("projects/sat-io/open-datasets/GloRiC/GloRiC_Canada_v10");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(gloric.first());
+Map.addLayer(gloric,{color: 'blue'}, 'GloRiC global')

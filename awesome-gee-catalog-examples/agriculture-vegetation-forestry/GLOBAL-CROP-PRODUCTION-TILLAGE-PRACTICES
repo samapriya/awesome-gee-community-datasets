@@ -1,0 +1,42 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tillage = ee.FeatureCollection("projects/sat-io/open-datasets/global_tillage_production");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(tillage.size(),'Total observations')
+
+// Get a color from crop types
+var cropColor = ee.Dictionary({
+  'maize': '000000',
+  'barley.spring': '593704',
+  'soybean': 'BC80BD',
+  'wheat.winter': '0565A6',
+  'cotton': 'E31A1C',
+  'sorghum': 'FF7F00',
+  'sunflower': '6A3D9A',
+  'wheat_spring': '5CA2D1',
+});
+
+// List of crop types to add to the map
+var crops = ['maize', 'barley.spring', 'soybean', 'wheat.winter', 'cotton', 'sorghum', 'sunflower',
+    'wheat_spring'];
+
+function addStyle(pt) {
+  var color = cropColor.get(pt.get('crop'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': 2, 'color': color}));
+}
+
+// Make a FeatureCollection out of the crop table
+var pp = ee.FeatureCollection(tillage).map(addStyle);
+print(pp.first());
+
+/**
+ * Adds crop types to the map.
+ *
+ * @param {string} fuel A fuel type
+ */
+function addLayer(fuel) {
+  print(fuel);
+  Map.addLayer(pp.filter(ee.Filter.eq('crop', fuel)).style({styleProperty: 'styleProperty', neighborhood: 50}), {}, fuel, true, 0.65);
+}
+
+// Apply `addLayer` to each record in `fuels`
+cropColor.keys().getInfo().map(addLayer);

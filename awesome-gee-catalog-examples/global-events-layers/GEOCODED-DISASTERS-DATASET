@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gdis = ee.FeatureCollection("projects/sat-io/open-datasets/gdis_1960-2018");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(gdis.size())
+Map.addLayer(gdis)
+

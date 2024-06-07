@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var CCAP_IMP30 = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/ccap_30m_impervious");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-95.3592289208674,29.744084242227128,11)
+
+//Import palette
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.addLayer(CCAP_IMP30,{min:-12,max:60,palette:palettes.extra.blue_silver},'CCAP 30m Impervious')

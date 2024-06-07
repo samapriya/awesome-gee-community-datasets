@@ -1,0 +1,25 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var prob_vis = {"min":0,"max":1,"palette":["#000004","#2C105C","#711F81","#B63679","#EE605E","#FDAE78","#FCFDBF"]},
+    binary_vis = {"opacity":1,"bands":["b1"],"max":1,"palette":["e6d186","2eaf3e"]},
+    kenya_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/kenya_cropland_binary"),
+    kenya_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/kenya_2019_cropland_probability"),
+    togo_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_binary"),
+    togo_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_probability"),
+    busia_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary"),
+    busia_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/busia_cropland_probability");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Center Map to Kenya
+Map.setCenter(38.214, 0.677,6)
+
+// //Add Binary Masks
+Map.addLayer(togo_cropland_binary, binary_vis,'Togo Cropland Binary');
+Map.addLayer(busia_cropland_binary, binary_vis,'Busia Cropland Binary');
+Map.addLayer(kenya_cropland_binary, binary_vis, 'Kenya Cropland Binary')
+
+// //Add Cropland Probability Masks
+// Map.addLayer(bahia_cropmask_probability, prob_vis,'Bahia Coffee Cropmask Probability');
+Map.addLayer(busia_cropland_probability, prob_vis,'Busia Cropland Probability');
+Map.addLayer(kenya_cropland_probability, prob_vis,'Kenya Cropland Probability');
+Map.addLayer(togo_cropland_probability,prob_vis,'Togo Cropland Probability')
+
+Map.setOptions('HYBRID')

@@ -1,0 +1,10 @@
+// Load image
+var SBIO_0_5cm = ee.Image('projects/crowtherlab/soil_bioclim/SBIO_v2_0_5cm')
+
+// Print bandNames
+print(SBIO_0_5cm.bandNames())
+
+// Add to map
+Map.addLayer(SBIO_0_5cm.select('SBIO1_Annual_Mean_Temperature'),
+             {min: -10, max: 30, palette: ["2166AC", "4393C3", "92C5DE", "D1E5F0", "FDDBC7", "F4A582", "D6604D", "B2182B"]},
+             'SBIO1_Annual_Mean_Temperature')

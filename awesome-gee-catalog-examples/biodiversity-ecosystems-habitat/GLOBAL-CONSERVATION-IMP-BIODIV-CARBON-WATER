@@ -1,0 +1,38 @@
+// ------------------------ //
+// Import the layers
+// -- Biodiv --
+var biodiv_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_biome_esh10km_repruns10_ranked");
+var biodiv_pa_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_biome_withPA_esh10km_repruns10_ranked");
+var biodiv = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargets_esh10km_repruns10_ranked");
+var biodiv_pa = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity/minshort_speciestargetswithPA_esh10km_repruns10_ranked");
+// -- Biodiv Carbon--
+var biodivcarbon_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_biome_carbon_esh10km_repruns10_ranked");
+var biodivcarbon_pa_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_biome_withPA_carbon_esh10km_repruns10_ranked");
+var biodivcarbon = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargets_carbon_esh10km_repruns10_ranked");
+var biodivcarbon_pa = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon/minshort_speciestargetswithPA_carbon_esh10km_repruns10_ranked");
+// -- Biodiv water--
+var biodivwater_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_biome_water_esh10km_repruns10_ranked");
+var biodivwater_pa_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_biome_withPA_water_esh10km_repruns10_ranked");
+var biodivwater = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargets_water_esh10km_repruns10_ranked");
+var biodivwater_pa = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-water/minshort_speciestargetswithPA_water_esh10km_repruns10_ranked");
+// -- Biodiv carbonwater--
+var biodivcarbonwater_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_biome_carbon_water_esh10km_repruns10_ranked");
+var biodivcarbonwater_pa_biome = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_biome_withPA_carbon_water_esh10km_repruns10_ranked");
+var biodivcarbonwater = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargets_carbon_water_esh10km_repruns10_ranked");
+var biodivcarbonwater_pa = ee.Image("projects/sat-io/open-datasets/naturemap/biodiversity-carbon-water/minshort_speciestargetswithPA_carbon_water_esh10km_repruns10_ranked");
+// ------------------------ //
+
+// Define SLD style of discrete intervals to apply to the image.
+var default_colours = {min: 1, max: 100, palette: ['7a0403','c92903','f56918','fbb938','c9ef34','74fe5d','1be5b5','35abf8','4662d8','30123b']};
+
+// Default entries
+var what = "Biodiversity, carbon and water";
+
+// Visualize
+Map.addLayer(biodivcarbon, default_colours, "Biodiversity and Carbon");
+
+// The layers are area-consistent, thus through subsetting it becomes possible to identify for example
+// the 10% of land-areas with the greatest conservation value for biodiversity
+
+var bio30x30 = biodiv.expression("b(0) <= 10");
+Map.addLayer(bio30x30.mask(bio30x30.eq(1)), {'palette':['red']}, "Top 10% value for biodiversity only", false);

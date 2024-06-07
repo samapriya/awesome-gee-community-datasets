@@ -1,0 +1,89 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = 
+    /* color: #d63000 */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[15.927045926451665, 4.013609709197195],
+          [15.927045926451665, 3.872838134721237],
+          [16.117590054869634, 3.872838134721237],
+          [16.117590054869634, 4.013609709197195]]], null, false);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Exporting RADD forest disturbance alert as GeoTiff (Reiche et al.,2021)
+//Website: http://radd-alert.wur.nl
+//Citation: Reiche et al. (2021): Forest disturbance alerts for the Congo Basin using Sentinel-1, ERL.
+
+//Instructions for exporting:
+//   Before running this script, (1) define a region of interest (roi) to be exported as GeoTiff. The roi can either  
+//   be coded as an ee.Geometry, or be drawn in the map window (using the tools provided in the upper left corner
+//   of the map window). (2) create/ensure the output folder exisits in google drive to store the exported image(s). 
+//   Then run the script. When complete, the export task can then be found under 'Tasks' in the  
+//   upper right corner. Run this task to export your data. 
+//     
+//   Note 1: If your roi is too large, the data will be split into multiple tiles, which can be merged later into 
+//           a full coverage GeoTiff in your GIS software of choice, or in Python with gdal_merge:
+//           (https://gdal.org/programs/gdal_merge.html).
+
+
+ 
+//---------------------------
+//Access RADD image collection and define region(s) of interest to be exported as GeoTiff
+//---------------------------
+var roi = geometry; //  define region(s) of interest, this can either be drawn in the map window, or be coded as an ee.Geometry
+var geography = 'africa'; // 'sa' (south america), 'africa' (africa), 'asia' (asia & pacific)
+var scale = 10; //pixel spacing [m]; default is 10 m.
+var google_drive_folder = 'test'; //the name of a google drive folder to export images to.   
+
+var radd = ee.ImageCollection('projects/radar-wur/raddalert/v1');
+print('RADD image collection:', radd);
+ 
+//----------------------------------------
+//Forest baseline 
+//Primary humid tropical forest mask 2001 from Turubanova et al (2018) with annual (Africa: 2001-2018; Asia: 2001 - 2019) forest loss (Hansen et al 2013) and mangroves (Bunting et al 2018) removed
+//----------------------------------------
+var forest_baseline = ee.Image(radd.filterMetadata('layer','contains','forest_baseline')
+                            .filterMetadata('geography','contains',geography).first());
+
+print('Forest baseline '+ geography + ':',  forest_baseline);
+
+Map.addLayer(forest_baseline, {palette:['black'], opacity: 0.3},'Forest baseline');
+
+//-----------------
+//Latest RADD alert
+//-----------------
+var latest_radd_alert =  ee.Image(radd.filterMetadata('layer','contains','alert')
+                            .filterMetadata('geography','contains',geography)
+                            .sort('system:time_end', false).first());
+
+print('Latest RADD alert '+ geography+':',latest_radd_alert);
+
+//RADD alert: 2 = unconfirmed (low confidence) alert; 3 = confirmed (high confidence) alert
+Map.addLayer(latest_radd_alert.select('Alert'), {min:2,max:3,palette:['blue','coral']}, 'RADD alert');
+
+//RADD alert date: yyDOY (e.g. 21001 = 1 Jan 2021)
+Map.addLayer(latest_radd_alert.select('Date'), {min:19000,max:21000, palette: ['ffffcc','800026']}, 'RADD alert date');
+
+//Visuaisation paramter
+Map.setOptions('Satellite');
+Map.centerObject(roi);
+
+//------------------------------------------
+//Export the data as GeoTiff to Google Drive
+//------------------------------------------
+
+//get version date
+var version_date = latest_radd_alert.get('version_date').getInfo();
+
+Export.image.toDrive({
+  image: latest_radd_alert, 
+  description: 'radd_alert_'+geography+'_roi_v'+version_date,
+  folder:google_drive_folder,
+  region: roi,
+  scale: scale,
+  maxPixels: 10e12,
+  crs: 'EPSG:4326'
+  });
+  

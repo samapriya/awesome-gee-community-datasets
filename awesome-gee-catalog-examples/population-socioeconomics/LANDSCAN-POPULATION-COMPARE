@@ -1,0 +1,61 @@
+/*
+The code snippet shows how to use the Landscan Global population dataset to plot a time series chart 
+comparing changes in the yearly population of two regions from 2000-2020.
+
+Code Attribution: Ujaval Gandhi https://www.spatialthoughts.com
+*/
+
+// Using GeoBoundries admin boundaries
+var admin0 = ee.FeatureCollection("projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM0");
+
+// Let's select 2 Admin1 regions to compare
+var region1 = 'Japan';
+var region2 = 'Mexico'; 
+
+var selectedRegions = admin0.filter(ee.Filter.inList('shapeName', [region1, region2]));
+print('Filtered Admin1 collection', selectedRegions);
+
+// We pick Landscan population dataset
+var landscan = ee.ImageCollection("projects/sat-io/open-datasets/ORNL/LANDSCAN_GLOBAL");
+var band = 'b1';
+
+var startYear = 2000;
+var endYear = 2020;
+
+var startDate = ee.Date.fromYMD(startYear, 1, 1);
+var endDate = ee.Date.fromYMD(endYear + 1, 1, 1);
+
+var populationFiltered = landscan
+  .filter(ee.Filter.date(startDate, endDate))
+  .select(band);
+print('Filtered Population Collection', populationFiltered);
+
+// Extract the resolution of the population dataset
+var projection = populationFiltered.first().projection();
+var resolution = projection.nominalScale();
+print('Landscan Global Resolution', resolution);
+
+// Create a time-series chart comparing the population
+
+var chartOptions = {
+    title: 'Population Time Series',
+    vAxis: {
+        title: 'Population', 
+      },
+      hAxis: {
+        title: '',
+        format: 'YYYY',
+        gridlines: {color: 'transparent'}
+
+      },
+  }
+  
+var chart = ui.Chart.image.seriesByRegion({
+  imageCollection: populationFiltered,
+  regions: selectedRegions,
+  reducer: ee.Reducer.sum(),
+  scale: resolution,
+  seriesProperty: 'shapeName'
+}).setChartType('ColumnChart')
+  .setOptions(chartOptions);
+print(chart);

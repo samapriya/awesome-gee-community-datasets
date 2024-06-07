@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var f_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_PRIMARY"),
+    f_secondary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_secondary"),
+    m_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_M_PRIMARY"),
+    m_secondary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_M_secondary"),
+    fm_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_M_PRIMARY"),
+    fm_secondary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_M_SECONDARY");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette_green = ['#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#006837','#004529']
+var palette_red = ['#fff7ec','#fee8c8','#fdd49e','#fdbb84','#fc8d59','#ef6548','#d7301f','#b30000','#7f0000']
+
+Map.addLayer(f_primary.mosaic(),{palette:palette_green},'Female Primary gridded')
+Map.addLayer(m_primary.mosaic(),{palette:palette_red},'Male Primary gridded')
+
+
+Map.addLayer(f_secondary.mosaic(),{palette:palette_green},'Female Secondary gridded',false)
+Map.addLayer(m_secondary.mosaic(),{palette:palette_red},'Male Secondary gridded',false)

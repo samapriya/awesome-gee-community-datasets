@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gisa = ee.ImageCollection("projects/sat-io/open-datasets/GISA_1972_2019");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Load packages for basemap
+var style = require('users/gena/packages:style')
+
+Map.addLayer(gisa.mosaic(),{},'GISA 1972-2019')
+
+style.SetMapStyleGrey()

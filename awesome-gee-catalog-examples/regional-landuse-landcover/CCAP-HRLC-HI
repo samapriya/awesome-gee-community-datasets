@@ -1,0 +1,149 @@
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/HRLC/CCAP_HI_LC");
+
+//Function to set date string as property for aggregation
+function dtstr(image){
+  var dt = ee.String(ee.Date(image.get('system:time_start')).format('YYYY-MM-dd'))
+  var ed = ee.String(ee.Date(image.get('system:time_end')).format('YYYY-MM-dd'))
+  return image.copyProperties(image, ['system:time_start','system:time_end'])
+  .set('start-date',dt).set('end-date',ed).set('date-range',dt.cat('-').cat(ed))
+}
+
+print(collection.map(dtstr).aggregate_histogram('date-range'))
+
+var collection = collection.filterDate('2010-01-01','2022-01-01')
+
+var image = collection.mosaic()
+image = image.mask(image.gt(0))
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+    "Unclassified (Cloud,Shadow etc)",//1
+    "Impervious",//2
+    "Developed Open Space",//3
+    "Developed Open Space",//4
+    "Developed Open Space",//5
+    "Cultivated Land",//6
+    "Pasture/Hay",//7
+    "Grassland/Herbaceous",//8
+    "Deciduous Forest",//9
+    "Evergreen Forest",//10
+    "Mixed Forest",//11
+    "Scrub/Shrub",//12
+    "Palustrine Forested Wetland",//13
+    "Palustrine Scrub/Shrub Wetland",//14
+    "Palustrine Emergent Wetland",//15
+    "Estuarine Forested Wetland",//16
+    "Estuarine Scrub/Shrub Wetland",//17
+    "Estuarine Emergent Wetland",//18
+    "Unconsolidated Shore",//19
+    "Bare Land",//20
+    "Open Water",//21
+    "Palustrine Aquatic Bed",//22
+    "Estuarine Aquatic Bed",//23
+    "Tundra",//24
+    "Snow/Ice"//25
+  ],
+  "colors": [
+    "#000000",
+    "#f2f2f2",
+    "#a899a8",
+    "#8e757c",
+    "#c1cc38",
+    "#542100",
+    "#c1a04f",
+    "#f2ba87",
+    "#00f200",
+    "#003a00",
+    "#07a03a",
+    "#6d6d00",
+    "#005b5b",
+    "#f26d00",
+    "#f200f2",
+    "#3d003d",
+    "#6d006d",
+    "#af00af",
+    "#00f2f2",
+    "#f2f200",
+    "#000077",
+    "#0000f2",
+    "#161616",
+    "#161616",
+    "#191919",
+  ]};
+
+// Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+  
+}
+
+
+/*
+  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
+*/
+
+// Add the legend to the map
+addCategoricalLegend(legend, dict, 'Land cover');
+
+// Add LC image to the map
+Map.addLayer(image, {min:1, max:25, palette:dict['colors']}, 'Hawaii High Res C-CAP LC')
+
+Map.centerObject(collection.first(),8)

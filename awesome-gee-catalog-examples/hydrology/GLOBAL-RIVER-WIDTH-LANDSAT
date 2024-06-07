@@ -1,0 +1,16 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var grwl_rssa_basins = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/rssa_basins"),
+    grwl_summary = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/grwl_SummaryStats_v01_01"),
+    water_mask = ee.ImageCollection("projects/sat-io/open-datasets/GRWL/water_mask_v01_01"),
+    grwl_water_vector = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/water_vector_v01_01"),
+    grwl_tiles = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/grwl_tiles");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+Map.setCenter(-78.2758, 1.663,10)
+Map.addLayer(water_mask,{'min':11,'max':125,palette: palettes.colorbrewer.Blues[5]},'GRWL Water Mask')
+Map.addLayer(grwl_water_vector.style({fillColor: '00000000',color: 'FF5500'}),{},'GRWL Vector')
+Map.addLayer(grwl_summary.style({fillColor: '00000000',color: '0000FF'}),{},'GRWL Vector Simplified')
+
+

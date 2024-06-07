@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var GFCC30TC = ee.ImageCollection("projects/sat-io/open-datasets/GFCC30TC"),
+    countries = ee.FeatureCollection("FAO/GAUL/2015/level0");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(GFCC30TC)
+var vis = ['#CCFFCC','#99FF99','#66FF66','#33CC33','#009900','#006600','#003300','#000000'];
+
+Map.addLayer(GFCC30TC.filterDate('2000-01-01','2001-12-31').mosaic().clip(countries),{min:0,max:150,palette:vis},'GFCC30TC 2000')
+Map.addLayer(GFCC30TC.filterDate('2015-01-01','2015-12-31').mosaic().clip(countries),{min:0,max:150,palette:vis},'GFCC30TC 2015')

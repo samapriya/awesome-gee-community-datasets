@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var irrecoverable_carbon_2010 = ee.Image("projects/sat-io/open-datasets/irrecoverable_carbon/carbon_total/carbon_total_2010"),
+    irrecoverable_carbon_2018 = ee.Image("projects/sat-io/open-datasets/irrecoverable_carbon/carbon_total/carbon_total_2018"),
+    manageable_carbon_2010 = ee.Image("projects/sat-io/open-datasets/manageable_carbon/carbon_total/carbon_total_2010"),
+    manageable_carbon_2018 = ee.Image("projects/sat-io/open-datasets/manageable_carbon/carbon_total/carbon_total_2018"),
+    vulnerable_carbon_2010 = ee.Image("projects/sat-io/open-datasets/vulnerable_carbon/carbon_total/carbon_total_2010"),
+    vulnerable_carbon_2018 = ee.Image("projects/sat-io/open-datasets/vulnerable_carbon/carbon_total/carbon_total_2018"),
+    ecosystem_13_class = ee.Image("projects/sat-io/open-datasets/ecosystem_extent/ecosystem_13_class");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = ["#fcd6d2","#faacb9","#f768a1","#cf298f","#8c007a","#49006b"]
+
+var eco_plt = ['#31572C','#3A0CA3','#CD5334','#4F772D','#4361EE','#FC9E4F','#90A955','#4CC9F0','#F2F3AE','#9D0610','#F9626C','#BD4EF9','#8207C5']
+Map.addLayer(ecosystem_13_class.updateMask(ecosystem_13_class.neq(128)),{'min':1,'max':13,'palette':eco_plt},'Ecosystem Extent 13 class')
+
+//Irrecoverable Carbon
+Map.addLayer(irrecoverable_carbon_2010,{'min':0,'max':120,'palette':palette},'Irrecoverable Carbon Soil 2010',false)
+Map.addLayer(irrecoverable_carbon_2018,{'min':0,'max':120,'palette':palette},'Irrecoverable Carbon Soil 2018',false)
+
+//Manageable Carbon
+Map.addLayer(manageable_carbon_2010,{'min':0,'max':120,'palette':palette},'Manageable Carbon Soil 2010',false)
+Map.addLayer(manageable_carbon_2018,{'min':0,'max':120,'palette':palette},'Manageable Carbon Soil 2018',false)
+
+//Vulnerable Carbon
+Map.addLayer(vulnerable_carbon_2010,{'min':0,'max':120,'palette':palette},'Vulnerable Carbon Soil 2010',false)
+Map.addLayer(vulnerable_carbon_2018,{'min':0,'max':120,'palette':palette},'Vulnerable Carbon Soil 2018',false)
+

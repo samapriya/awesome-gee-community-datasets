@@ -1,0 +1,29 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var dsm = ee.ImageCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DSM"),
+    dtm = ee.ImageCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DTM"),
+    footprint = ee.FeatureCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/dataset_footprints");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-80.5419, 42.7651,9)
+
+//Function to get resolution
+function tile_res(feature){
+ var res = ee.String(feature.get('Tile_name')).slice(0,1)
+ return feature.set('resolution',ee.Number.parse(res))
+}
+
+footprint=footprint.map(tile_res)
+print(footprint.aggregate_histogram('resolution'))
+
+Map.addLayer(
+  footprint.filter(ee.Filter.eq('resolution',1)).style({
+    fillColor: '00000000',
+    color: 'FF5500',
+  }),{},'Footprints'
+);
+
+//Add DSM and DTM 
+Map.addLayer(dsm.mosaic(),{min:75,max:380,palette:["#006994","#b2ff59","002200","fff700","ab7634","c4d0ff","ffffff"]},'DSM 1m HRDEM')
+Map.addLayer(dtm.mosaic(),{min:75,max:380,palette:["#006994","#b2ff59","002200","fff700","ab7634","c4d0ff","ffffff"]},'DTM 1m HRDEM')
+
+//Add a difference layer
+Map.addLayer(dsm.mosaic().subtract(dtm.mosaic()),{min:0,max:28,palette:['#67001f','#b2182b','#d6604d','#f4a582','#fddbc7','#f7f7f7','#d1e5f0','#92c5de','#4393c3','#2166ac','#053061']},'Difference Layer',false)

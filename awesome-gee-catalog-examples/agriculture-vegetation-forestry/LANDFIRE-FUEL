@@ -1,0 +1,25 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBD"),
+    cbh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBH"),
+    cc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CC"),
+    cffdrs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CFFDRS"),
+    ch = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CH"),
+    fbfm13 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM13"),
+    fbfm40 = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FBFM40"),
+    fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FCCS"),
+    fvc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVC"),
+    fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVH"),
+    fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+//Fuel
+Map.addLayer(ch.mosaic(),{'min':11,'max':125,palette: palettes.cmocean.Oxy[7]},'Forest Canopy Height',false)
+Map.addLayer(cbh.mosaic(),{'min':11,'max':125,palette: palettes.cmocean.Algae[7]},'Forest Canopy Base Height')
+Map.addLayer(cc.mosaic(),{'min':11,'max':125,palette: palettes.cmocean.Algae[7]},'Forest Canopy Cover',false)
+Map.addLayer(cbd.mosaic(),{'min':0,'max':20,palette: palettes.cmocean.Balance[7]},'Forest Canopy Bulk Density',false)
+Map.addLayer(fvc.mosaic(),{'min':11,'max':125,palette: palettes.cmocean.Delta[7]},'Fuel Vegetation Cover')
+Map.addLayer(fvh.mosaic(), {'min':11,'max':624,palette: palettes.cmocean.Curl[7]}, 'Fuel Vegetation Height',false)
+Map.addLayer(fvt.mosaic(),{'min':11,'max':2940,palette: palettes.cmocean.Matter[7]},'Fuel Vegetation Type',false)
+Map.addLayer(fccs.mosaic().mask(fccs.first().neq(-9999)),{'min':24,'max':175,palette: palettes.cmocean.Haline[7]},'Fuel Characteristic Classification System Fuelbeds')

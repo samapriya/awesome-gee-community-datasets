@@ -1,0 +1,13 @@
+var dataset = ee.ImageCollection('projects/et-brasil/assets/geesebal/myd11a2/sa/v0-02')
+                  .filter(ee.Filter.date('2018-05-01', '2018-10-01'));
+var et = dataset.select('ET_24h');
+var etVis = {
+  min: 0.0,
+  max: 6000.0,
+  palette: ['#650000','#b02323','#d35454','#cc9e99','#e6e2ac','#99accc','#5676d6','#2222ab','#380061']
+           
+};
+Map.setCenter(-50, -25, 3);
+Map.addLayer(
+    et, etVis,
+    'Daily Evapotranspiration (mm/day)');

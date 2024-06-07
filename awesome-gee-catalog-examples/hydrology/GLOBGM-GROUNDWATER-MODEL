@@ -1,0 +1,28 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wtd = ee.ImageCollection("projects/sat-io/open-datasets/GLOBGM/TRANSIENT/WTD"),
+    globgm_wtd_ss = ee.Image("projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-heads-upper-layer-ss"),
+    globgm_heads_lower_layer_ss = ee.Image("projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-heads-lower-layer-ss"),
+    globgm_heads_upper_layer_ss = ee.Image("projects/sat-io/open-datasets/GLOBGM/STEADY-STATE/globgm-wtd-ss"),
+    wtd_bt = ee.ImageCollection("projects/sat-io/open-datasets/GLOBGM/TRANSIENT/WTD-BOTTOM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(wtd.limit(100).aggregate_array('system:index'))
+
+//Function to add year based on dates
+function addyear(image){
+  var year = ee.Date(image.get('system:time_end')).get('year')
+  return image.set('year',year)
+}
+
+print(wtd.map(addyear).aggregate_histogram('year'))
+var palette = ["#1a1a4b", "#203387", "#254bb3", "#2b63e0", "#4673e6", "#6083ec", "#7a94f2", "#95a4f7", "#afb4fd", "#c8c5ff", "#dcb3f5", "#df96e2", "#e47ac0", "#e95da0", "#ec407f", "#ee265f", "#f00a3f", "#f20027", "#f30015", "#f30000"];
+
+Map.addLayer(wtd.sort('system:time_start').first(),{min:-2,max:1200,palette:palette},'Computed water table depth [m] (sampled from upper to lower layer) 1958')
+Map.addLayer(wtd.sort('system:time_start',false).first(),{min:-2,max:1200,palette:palette},'Computed water table depth [m] (sampled from upper to lower layer) 2015')
+
+var diff = ["#0000FF", "#001AEB", "#0035D7", "#004FC3", "#006AAF","#00849B", "#009F87", "#00B973", "#00D45F", "#00EF4B","#00FF37", "#29FF2E", "#52FF25", "#7BFF1C", "#A4FF13","#CDFF0A", "#F6FF00", "#FFD300", "#FFA600", "#FF7900"]
+Map.addLayer((wtd.sort('system:time_start').first()).subtract(wtd.sort('system:time_start',false).first()),{min:-40,max:60,palette:diff},'Difference',false)
+
+Map.addLayer(wtd_bt.sort('system:time_start').first(),{min:-2,max:1200,palette:["001219","005f73","0a9396","94d2bd","e9d8a6","ee9b00","ca6702","bb3e03","ae2012","9b2226"]},'Computed water table depth [m] (lower layer only) 1958')
+Map.addLayer(wtd_bt.sort('system:time_start',false).first(),{min:-2,max:1200,palette:["001219","005f73","0a9396","94d2bd","e9d8a6","ee9b00","ca6702","bb3e03","ae2012","9b2226"]},'Computed water table depth [m] (lower layer only) 2015')
+
+Map.addLayer(globgm_heads_lower_layer_ss,{min:500, max:4500,palette:["f94144","f3722c","f8961e","f9844a","f9c74f","90be6d","43aa8b","4d908e","577590","277da1"]},'Computed steady-state groundwater head [m] for the lower model layer')

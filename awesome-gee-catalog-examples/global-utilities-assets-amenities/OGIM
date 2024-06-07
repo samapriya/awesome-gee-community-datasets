@@ -1,0 +1,53 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var crude_oil_refineries = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/crude_oil_refineries"),
+    equipment_and_components = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/equipment_and_components"),
+    gathering_and_processing = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/gathering_and_processing"),
+    injection_disposal_and_underground_storage = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/injection_disposal_and_underground_storage"),
+    lng_facilities = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/lng_facilities"),
+    natural_gas_compressor_stations = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/natural_gas_compressor_stations"),
+    natural_gas_flaring_detections = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/natural_gas_flaring_detections"),
+    offshore_platforms = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/offshore_platforms"),
+    oil_and_natural_gas_production = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/oil_and_natural_gas_production"),
+    oil_and_natural_gas_wells = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/oil_and_natural_gas_wells"),
+    petroleum_terminals = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/petroleum_terminals"),
+    stations_other = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/stations_other"),
+    tank_battery = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/tank_battery");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define color palette
+var colorPalette = [
+  'FF0000', '00FF00', '0000FF', 'FFFF00', 'FF00FF', '00FFFF', 'FF4500', '8B4513',
+  '8A2BE2', 'A52A2A', '000080', '008080', '4B0082'
+];
+
+// Function to add each emissions source to Code Editor with a different color and name
+var addLayerToCodeEditor = function (collection, color, name) {
+  var layer = collection.style({ fillColor: color, color: '000000', width: 1});
+  Map.addLayer(layer, {}, name);
+};
+
+    
+// Add each emissions source to Code Editor
+addLayerToCodeEditor(crude_oil_refineries, colorPalette[0], 'Crude Oil Refineries');
+addLayerToCodeEditor(equipment_and_components, colorPalette[1], 'Equipment and Components');
+addLayerToCodeEditor(gathering_and_processing, colorPalette[2], 'Gathering and Processing');
+addLayerToCodeEditor(injection_disposal_and_underground_storage, colorPalette[3], 'Injection Disposal & Underground storage');
+addLayerToCodeEditor(lng_facilities, colorPalette[4], 'Lng Facilities');
+addLayerToCodeEditor(natural_gas_compressor_stations, colorPalette[5], 'Natural Gas Compressor Stations');
+addLayerToCodeEditor(natural_gas_flaring_detections, colorPalette[6], 'Natural Gas Flaring Detections');
+addLayerToCodeEditor(offshore_platforms, colorPalette[7], 'Offshore Platforms');
+addLayerToCodeEditor(oil_and_natural_gas_production, colorPalette[8], 'Oil and natural gas production');
+addLayerToCodeEditor(oil_and_natural_gas_wells, colorPalette[9], 'Oil and natural gas wells');
+addLayerToCodeEditor(petroleum_terminals, colorPalette[10], 'Petroleum terminals');
+addLayerToCodeEditor(stations_other, colorPalette[11], 'Stations Other');
+addLayerToCodeEditor(tank_battery, colorPalette[12], 'Tank Battery');
+
+
+
+
+
+
+
+
+
+
+

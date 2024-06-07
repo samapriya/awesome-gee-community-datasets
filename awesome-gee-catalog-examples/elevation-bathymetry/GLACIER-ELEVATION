@@ -1,0 +1,21 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL-GLACIER-MASS-LOSS/elevation-change"),
+    error = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL-GLACIER-MASS-LOSS/elevation-change-error");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Load your glacial elevation map
+var elevationMap = collection.mosaic();
+
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+var elevationPalette = [
+  'blue', 'cyan', 'lightblue', 'lightgreen', 'green', 'darkgreen',
+  'yellow', 'orange', 'red', 'darkred', 'brown', 'black'
+];
+
+Map.setCenter(81.472,30.116,9)
+
+// Visualize the original and masked elevation maps
+Map.addLayer(elevationMap, {min: -6.3, max: 3, palette: elevationPalette}, 'Original Elevation');
+// Define a custom elevation palette with a wide range of color

@@ -1,0 +1,24 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mod10a2 = ee.ImageCollection("projects/sat-io/open-datasets/MODIS/MOD10A261");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var mod10a2_2001=mod10a2.filterDate("2001-1-1","2001-12-13")
+
+var eq200=function(i){
+  return i.eq(200)
+}
+
+var mod10a2_2001_sum=mod10a2.select(["snowmax"]).map(eq200).
+reduce(ee.Reducer.sum())
+
+var palette=['f7fbff','deebf7','c6dbef','9ecae1','6baed6',
+'4292c6','2171b5','08519c','08306b']
+
+/*
+NOTE: This code only produces the number of days with
+detected snow. To produce an index of the fraction
+of observations that are detected snow, one must
+calculate the number of days with valid non-snow
+observations. See User Guide for the MOD10A2 Product
+*/
+
+Map.addLayer(mod10a2_2001_sum.updateMask(mod10a2_2001_sum.gt(0)),{min:0,max:42,palette:palette})

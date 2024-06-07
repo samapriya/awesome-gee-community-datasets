@@ -1,0 +1,24 @@
+// SLA (mm2/g)
+var SLA=ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/SLA_1km_v3').select([0],['SLA']);
+var SLA_SD = ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/SLA_sd_1km_v3').select([0],['SLA_sd']);
+
+// LNC (mg/g) 
+var LNC=ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LNC_1km_v3').select([0],['LNC']);
+var LNC_SD = ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LNC_sd_1km_v3').select([0],['LNC_sd']);
+
+// LPC (mg/g)
+var LPC=ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LPC_1km_v3').select([0],['LPC']);
+var LPC_SD=ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LPC_sd_1km_v3').select([0],['LPC_sd']);
+
+// Leaf dry matter content LDMC (g/g)
+var LDMC=ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LDMC_1km_v3').select([0],['LDMC']);
+var LDMC_SD = ee.Image('projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LDMC_sd_1km_v3').select([0],['LDMC_sd']);
+
+//let's mask unprocessed data (Positive values correspond with natural vegetated areas)
+SLA = SLA.mask(SLA.gt(0));
+LNC = LNC.mask(LNC.gt(0));
+LPC = LPC.mask(LPC.gt(0));
+LDMC = LDMC.mask(LDMC.gt(0));
+
+var vis_vi = {min:7 , max: 22, palette: ["ffffd9", "edf8b1", "c7e9b4", "7fcdbb", "41b6c4", "1d91c0", "225ea8", "253494", "081d58"]};
+Map.addLayer(SLA, vis_vi,  'SLA (mm2 / g)',true)

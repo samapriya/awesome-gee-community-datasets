@@ -1,0 +1,14 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_extreme_heat_hazard = ee.ImageCollection("projects/sat-io/open-datasets/WORLD-BANK/global-ext-heat-hazard");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = [
+    "#FF0000",
+    "#FF4000",
+    "#FF8000",
+    "#FFBF00",
+    "#FFFF00",
+    "#80FF00",
+    "#00FF00"
+]
+
+Map.addLayer(global_extreme_heat_hazard.first().updateMask(global_extreme_heat_hazard.first().gt(0)),{min:10,max:40,palette:palette},'Global Extreme Heat Hazard')

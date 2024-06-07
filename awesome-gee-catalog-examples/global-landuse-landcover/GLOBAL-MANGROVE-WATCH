@@ -1,0 +1,35 @@
+var extent_raster = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/GMW_V3");
+var extent_1996 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_1996_vec");
+var extent_2020 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2020_vec");
+
+Map.addLayer(ee.Image().paint(extent_1996,0,3), {"palette":["228B22"]}, 'Extent Vector 1996',false)
+Map.addLayer(ee.Image().paint(extent_2020,0,3), {"palette":["228B22"]}, 'Extent Vector 2020',false)
+
+Map.addLayer(extent_raster.filterDate('1996-01-01','1996-12-31').first(),{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'Extent Raster 1996',false)
+Map.addLayer(extent_raster.filterDate('2020-01-01','2020-12-31').first(),{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'Extent Raster 2020',false)
+
+var change_f1996_raster = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/change_f1996");
+var change_f1996_2007 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2007_vec");
+var change_f1996_2020 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/change/gmw_v3_f1996_t2020_vec");
+
+Map.addLayer(ee.Image().paint(change_f1996_2007,0,3), {"palette":["228B22"]}, 'Change vector 1996-2007',false)
+Map.addLayer(ee.Image().paint(change_f1996_2020,0,3), {"palette":["228B22"]}, 'Change Vector 1996-2007',false)
+
+Map.addLayer(change_f1996_raster.sort('system:time_end').first(),{"opacity":1,"bands":["b1"],"min":1,"max":2,"palette":["#ff0000","#0000ff"]},'Change Loss:Gain Raster 1996-2007')
+Map.addLayer(change_f1996_raster.sort('system:time_end',false).first(),{"opacity":1,"bands":["b1"],"min":1,"max":2,"palette":["#ff0000","#0000ff"]},'Change Loss:Gain Raster 1996-2020')
+
+//Union: Single layer of pixels which were mangroves at any date in the time series
+var gmw_union_raster = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/union/gmw_v3_mng_union");
+var gmw_union_vector = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/union/gmw_v3_union_vec");
+
+Map.addLayer(gmw_union_raster,{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'GMW Union raster',false)
+
+//Core: Single layer of pixels which were mangroves at all dates within the time series
+var gmw_core_raster = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/core/gmw_v3_mng_core");
+var gmw_core_vector = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/core/gmw_v3_core_vec");
+
+Map.addLayer(gmw_core_raster,{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'GMW Core raster',false)
+
+//Tiles
+var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
+Map.addLayer(ee.Image().paint(tiles,0,3), {"palette":["#000000"]}, 'Tiles')

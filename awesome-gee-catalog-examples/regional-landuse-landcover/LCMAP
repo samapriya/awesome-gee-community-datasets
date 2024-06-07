@@ -1,0 +1,32 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var lcachg = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCACHG"),
+    lcpconf = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCPCONF"),
+    lcpri = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCPRI"),
+    lcsconf = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCSCONF"),
+    lcsec = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCSEC"),
+    sclast = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCLAST"),
+    scmag = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCMAG"),
+    scmqa = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCMQA"),
+    scstab = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCSTAB"),
+    sctime = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCTIME");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+var lcpri_palette = ['E60000','A87000','E3E3C2','1D6330','476BA1','BAD9EB','FFFFFF','B3B0A3']
+var lcsec_palette = ['E60000','A87000','E3E3C2','1D6330','476BA1','BAD9EB','FFFFFF','B3B0A3']
+var lcachg_palette = ['E60000','A87000','E3E3C2','1D6330','476BA1','BAD9EB','FFFFFF','B3B0A3','A201FF']
+var sclast_palette = ['FFC7AA','F87E45','CC764E','86A7B6','46A4EE','7954C8','7A24AA','432172']
+var scstab_palette = ['BA4E16','EE964D','FFE29C','F4FBC1','E1F3C3','BCE6CA','46989C']
+var scmqa_palette = ['000000','A900E6','DF73FF','F5F5E3','DB8A00','924900','9C9C9C','FFFFFF']
+
+//Add map layers
+Map.addLayer(lcpri.sort('system:time_start',false).first(),{min:1,max:8,palette:lcpri_palette},'LCPRI',false)
+Map.addLayer(lcsec.sort('system:time_start',false).first(),{min:1,max:8,palette:lcsec_palette},'LCSEC',false)
+Map.addLayer(lcpconf.sort('system:time_start',false).first(),{min:74,max:118,palette:palettes.cmocean.Speed[7]},'LCPCONF',false)
+Map.addLayer(lcsconf.sort('system:time_start',false).first(),{min:8,max:64,palette:palettes.cmocean.Solar[7]},'LCSCONF',false)
+Map.addLayer(lcachg.sort('system:time_start',false).first(),{min:1,max:9,palette:lcachg_palette},'LCACHG',false)
+Map.addLayer(sctime.sort('system:time_start',false),{min:100,max:292,palette:palettes.cmocean.Curl[7]},'SCTIME',false)
+Map.addLayer(scmag.sort('system:time_start',false),{min:651,max:3700,palette:palettes.cmocean.Algae[7]},'SCMAG',false)
+Map.addLayer(ee.Image(sclast.sort('system:time_start',false).first()).mask(ee.Image(sclast.sort('system:time_start',false).first()).gt(0)),{min:518,max:4600,palette:sclast_palette},'SCLAST',false)
+Map.addLayer(scstab.sort('system:time_start',false).first(),{min:70,max:13000,palette:scstab_palette},'SCSTAB',false)
+Map.addLayer(scmqa.sort('system:time_start',false).first().remap([0,4,6,8,14,24,44,54],[0,1,2,3,4,5,6,7]).mask(ee.Image(scmqa.sort('system:time_start',false).first()).gt(0)),{min:0,max:7,palette:scmqa_palette},'SCMQA',false)

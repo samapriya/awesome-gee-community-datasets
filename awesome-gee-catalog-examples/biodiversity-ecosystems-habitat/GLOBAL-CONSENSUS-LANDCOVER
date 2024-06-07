@@ -1,0 +1,30 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var barren = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/barren"),
+    cultivated_and_managed_vegetation = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/cultivated_and_managed_vegetation"),
+    deciduous_broadleaf_trees = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/deciduous_broadleaf_trees"),
+    evergreen_deciduous_needleleaf_trees = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/evergreen-deciduous_needleleaf_trees"),
+    evergreen_broadleaf_trees = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/evergreen_broadleaf_trees"),
+    herbaceous_vegetation = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/herbaceous_vegetation"),
+    mixed_other_trees = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/mixed-other_trees"),
+    open_water = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/open_water"),
+    regularly_flooded_vegetation = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/regularly_flooded_vegetation"),
+    shrubs = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/shrubs"),
+    snow_ice = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/snow-ice"),
+    urban_built_up = ee.Image("projects/sat-io/open-datasets/global_consensus_landcover/urban-built-up");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var Urban_Built_up_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Regularly_Flooded_Vegetation_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Herbaceous_Vegetation_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Snow_Ice_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Cultivated_and_Managed_Vegetation_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Evergreen_Deciduous_Needleleaf_Trees_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Deciduous_Broadleaf_Trees_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Mixed_Other_Trees_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Shrubs_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Barren_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Open_Water_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+var Evergreen_Broadleaf_Trees_vis = {'opacity': 0.6, 'max': 100, 'palette': 'FFFFFF,CE7E45,DF923D,F1B555,FCD163,99B718,74A901,66A000,529400,3E8601,207401,056201,004C00,023B01,012E01,011D01,011301', 'min': 1}
+
+Map.addLayer(urban_built_up.updateMask(urban_built_up.gt(0)),Urban_Built_up_vis,'Urban Built up')
+Map.addLayer(herbaceous_vegetation.updateMask(herbaceous_vegetation.gt(0)),Herbaceous_Vegetation_vis,'Herbaceous Vegetation')
+Map.addLayer(evergreen_deciduous_needleleaf_trees.updateMask(evergreen_deciduous_needleleaf_trees.gt(0)),Evergreen_Deciduous_Needleleaf_Trees_vis,'Evergreen Decidious Needleleaf Trees')

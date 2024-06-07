@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var channel_curv_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_curv_cel"),
+    channel_dist_dw_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_dw_seg"),
+    channel_dist_up_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_up_cel"),
+    channel_dist_up_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_dist_up_seg"),
+    channel_elv_dw_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_dw_cel"),
+    channel_elv_dw_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_dw_seg"),
+    channel_elv_up_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_up_cel"),
+    channel_elv_up_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_elv_up_seg"),
+    channel_grad_dw_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_dw_seg"),
+    channel_grad_up_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_up_cel"),
+    channel_grad_up_seg = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-channel/channel_grad_up_seg");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.setCenter(-16.786, 19.082,10);
+
+style.SetMapStyleDark()
+
+
+//Add some layers
+Map.addLayer(channel_elv_dw_cel.mosaic(),{min:0,max:50,palette: palettes.extra.blkylw}, 'Downstream elevation difference between focal cell and the next cell');
+Map.addLayer(channel_dist_dw_seg.mosaic(),{min:-0.16,max:0.18,palette: palettes.extra.blkredwht}, 'Segment downstream distance between focal cell and the node or outlet');
+Map.addLayer(channel_dist_up_seg.mosaic(),{min:-23,max:40,palette: palettes.extra.orngblue},'Segment upstream distance between focal cell and the init or node')
+Map.addLayer(channel_dist_up_cel.mosaic(),{min:50,max:130,palette: palettes.extra.voilets},'Upstream distance between focal cell and next cell')

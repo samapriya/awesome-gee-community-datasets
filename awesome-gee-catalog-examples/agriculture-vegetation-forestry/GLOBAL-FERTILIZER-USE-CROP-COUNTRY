@@ -1,0 +1,34 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var LSIB = ee.FeatureCollection("USDOS/LSIB/2017"),
+    fertilizer_use_ct = ee.FeatureCollection("projects/sat-io/open-datasets/global_fertilizer_use_centroid");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Create a filter
+var Filter = ee.Filter.equals({
+  leftField: 'COUNTRY_NA',
+  rightField: 'COUNTRY_NA'
+});
+
+var country_join = ee.Join.inner();
+var country_join = country_join.apply(LSIB,fertilizer_use_ct,Filter);
+
+
+function cleanJoin(feature){
+  return ee.Feature(feature.get('primary')).copyProperties(feature.get('secondary'));
+}
+
+var joined = country_join.map(cleanJoin)
+print('Sample fertilizer application', joined.first())
+
+//Break down by year of publication
+print('Year of publication',joined.aggregate_histogram('Year_FUBC_publication'))
+
+//Export individual country usage to CSV
+var selected = fertilizer_use_ct.filter(ee.Filter.eq('COUNTRY_NA','Canada'))
+print('Total features for Country',selected.size())
+
+Export.table.toDrive({
+  collection: ee.FeatureCollection(selected),
+  description:'fertilizer_country_canada',
+  fileFormat: 'CSV'
+});
+

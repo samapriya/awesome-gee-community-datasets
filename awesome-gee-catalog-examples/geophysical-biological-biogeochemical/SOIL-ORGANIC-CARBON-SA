@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var SOC30_mean = ee.ImageCollection("projects/sat-io/open-datasets/NINA/SOC30_SA_mean"),
+    SOC30_trend = ee.ImageCollection("projects/sat-io/open-datasets/NINA/SOC30_SA_trend");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes')
+
+Map.setCenter(25.654, -29.558,6)
+Map.addLayer(SOC30_mean.median().divide(100),{min:0.86,max:16,palette: palettes.cmocean.Algae[7]},'SOC median')
+Map.addLayer(SOC30_trend.median().divide(100),{min:-20,max:24,palette: palettes.cmocean.Curl[7]},'SOC trend')

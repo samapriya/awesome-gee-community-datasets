@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ind = ee.FeatureCollection("projects/sat-io/open-datasets/VIDA_COMBINED/IND");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(79.088,21.145,14)
+
+Map.addLayer(
+  ee.FeatureCollection(ind).style({
+    fillColor: '00000000',
+    color: '#964B00',
+  }),{},'Combined Buildings India'
+);

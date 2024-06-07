@@ -1,0 +1,18 @@
+// Read in dekadal, monthly, and annual Image Collections and get single image from each
+var viirs_et_d_ic = ee.ImageCollection('projects/usgs-ssebop/viirs_et_v6_dekadal')
+var viirs_et_d_i = viirs_et_d_ic.first()
+var viirs_et_m_ic = ee.ImageCollection('projects/usgs-ssebop/viirs_et_v6_monthly')
+var viirs_et_m_i = viirs_et_m_ic.first()
+var viirs_et_a_ic = ee.ImageCollection('projects/usgs-ssebop/viirs_et_v6_annual')
+var viirs_et_a_i = viirs_et_a_ic.first()
+
+// Print first image to see bands
+print(viirs_et_d_i)
+print(viirs_et_m_i)
+print(viirs_et_a_i)
+
+// Visualize select bands from first image
+var et_palette = ['#f5e4a9', '#fff4ad', '#c3e683', '#6bcc5c', '#3bb369', '#20998f', '#1c8691']
+Map.addLayer(viirs_et_d_i.select('et'), {min: 0, max: 10, palette: et_palette}, 'et, dekadal')
+Map.addLayer(viirs_et_m_i.select('et'), {min: 0, max: 30, palette: et_palette}, 'et, monthly')
+Map.addLayer(viirs_et_a_i.select('et'), {min: 0, max: 1000, palette: et_palette}, 'et, annual')

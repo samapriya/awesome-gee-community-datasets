@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wa1975 = ee.Image("projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_1975"),
+    wa2000 = ee.Image("projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2000"),
+    wa2013 = ee.Image("projects/sat-io/open-datasets/wa-datasets/wa_lc_usgs_2013");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var vis_wa = {"opacity":1,"min":1,"max":99,"palette":["8400A8","8BAD8B","000080","FFCC99","808000","33CCCC","FFFF96","3366FF","FF99CC","969696","A87000","FF0000","CCFF66","A95CE6","D296E6","A83800","F5A27A","EBC961","28734B","EBDF73","BEFFA6","A6C28C","0A9696","749373","505050","FFFFFF"]};
+Map.addLayer(wa1975,vis_wa,'West Africa Land Cover USGS 1975')
+Map.addLayer(wa2000,vis_wa,'West Africa Land Cover USGS 2000')
+Map.addLayer(wa2013,vis_wa,'West Africa Land Cover USGS 2013');

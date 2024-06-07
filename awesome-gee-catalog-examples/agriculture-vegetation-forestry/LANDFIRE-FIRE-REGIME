@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vcc"),
+    vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vdep"),
+    sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/sclass");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+// Fire Regime
+Map.addLayer(vcc,{'min':2,'max':174,palette: palettes.colorbrewer.Dark2[7]},'Vegetation Condition Class')
+Map.addLayer(vdep,{'min':24,'max':175,palette: palettes.cmocean.Haline[7]},'Vegetation Departure Index')
+Map.addLayer(sclass,{'min':2,'max':174,palette: palettes.cmocean.Amp[7]},'Succession Classes')

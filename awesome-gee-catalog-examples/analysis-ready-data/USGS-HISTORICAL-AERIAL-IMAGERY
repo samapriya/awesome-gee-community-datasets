@@ -1,0 +1,12 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var conusWest_imagery = ee.ImageCollection("projects/wlfw-um/assets/historical-imagery/conus-west"),
+    conusWest_metadata = ee.FeatureCollection("projects/wlfw-um/assets/historical-imagery/conus-west-seamlines"),
+    conusWest_metadata_with_date = ee.FeatureCollection("projects/sat-io/open-datasets/wlfm-um-extra/wlfm-um-seamlines");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-108.3563, 42.8912, 5)
+
+//Get count of features in each year
+print(conusWest_metadata_with_date.aggregate_histogram('year'))
+
+Map.addLayer(conusWest_imagery, {}, 'Historical Imagery', true)
+Map.addLayer(conusWest_metadata, {}, 'Historical Imagery - metadata', false)

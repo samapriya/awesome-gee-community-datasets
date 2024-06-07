@@ -1,0 +1,23 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var viirs_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012"),
+    modis_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2012");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Get a color from a day or night
+var classColor = ee.Dictionary({
+  'D': '0565A6',
+  'N': '229A00'
+});
+
+var classes = ['D', 'N'];
+
+function addStyle(pt) {
+  var size = ee.Number(pt.get('bright_ti4')).divide(100);
+  var color = classColor.get(pt.get('daynight'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+// Make a FeatureCollection out of the power plant data table
+var pp = ee.FeatureCollection(viirs_2012).map(addStyle);
+
+Map.addLayer((pp.filter(ee.Filter.eq('daynight', 'D')).style({styleProperty: 'styleProperty',neighborhood:50})),{},'Daytime Fires',true,0.65)
+Map.addLayer((pp.filter(ee.Filter.eq('daynight', 'N')).style({styleProperty: 'styleProperty',neighborhood:50})),{},'Nighttime Fires',true,0.65)

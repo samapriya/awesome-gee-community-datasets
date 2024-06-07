@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var glc = ee.FeatureCollection("projects/sat-io/open-datasets/events/global_landslide_1970-2019");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Global Landslide Catalog 1970-2019',glc.size())
+Map.addLayer(glc,{},'Landslide Catalog Events 1985-2016')

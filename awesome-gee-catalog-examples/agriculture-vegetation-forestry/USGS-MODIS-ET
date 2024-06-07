@@ -1,0 +1,18 @@
+// Read in dekadal, monthly, and annual Image Collections and get single image from each
+var modis_et_d_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/usgs-ssebop/modis_et_v5_dekadal')
+var modis_et_d_i = modis_et_d_ic.first()
+var modis_et_m_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/usgs-ssebop/modis_et_v5_monthly')
+var modis_et_m_i = modis_et_m_ic.first()
+var modis_et_a_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/usgs-ssebop/modis_et_v5_annual')
+var modis_et_a_i = modis_et_a_ic.first()
+
+// Print first image to see bands
+print(modis_et_d_i)
+print(modis_et_m_i)
+print(modis_et_a_i)
+
+// Visualize select bands from first image
+var et_palette = ['#f5e4a9', '#fff4ad', '#c3e683', '#6bcc5c', '#3bb369', '#20998f', '#1c8691']
+Map.addLayer(modis_et_d_i.select('et'), {min: 0, max: 10, palette: et_palette}, 'et, dekadal')
+Map.addLayer(modis_et_m_i.select('et'), {min: 0, max: 30, palette: et_palette}, 'et, monthly')
+Map.addLayer(modis_et_a_i.select('et'), {min: 0, max: 1000, palette: et_palette}, 'et, annual')

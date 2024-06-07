@@ -1,0 +1,44 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var usgwd_merged = ee.FeatureCollection("projects/sat-io/open-datasets/USGWD-TABULAR-MERGED");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total dataset count merged ',usgwd_merged.size())
+
+// Aggregate histogram and remove any wells which Year well was constructed is known
+var histogram = usgwd_merged.filter(ee.Filter.neq('Year Well was Constructed','Unknown')).aggregate_histogram('Year Well was Constructed');
+print(histogram)
+
+// Convert histogram to a list of features
+var histogramList = ee.List(histogram.keys()).map(function(key){
+  return ee.Feature(null, {
+    'Year': ee.Number.parse(key),
+    'Count': histogram.get(key)
+  });
+});
+
+// Create a feature collection from the list
+var histogramFC = ee.FeatureCollection(histogramList);
+
+// Create a chart
+var chart = ui.Chart.feature.byFeature(histogramFC, 'Year', 'Count')
+    .setChartType('ColumnChart')
+    .setOptions({
+      title: 'Well Construction Year Distribution',
+      hAxis: {title: 'Year'},
+      vAxis: {title: 'Count'},
+      colors: ['blue']
+    });
+
+// Print chart
+print(chart);
+
+var usgwd_states = ee.data.listAssets("projects/sat-io/open-datasets/USGWD-TABULAR");
+print('Total Assets in Folder '+ee.List(usgwd_states.assets).size().getInfo(),usgwd_states.assets);
+
+//Add a state adding CA
+var california_wells = ee.FeatureCollection("projects/sat-io/open-datasets/USGWD-TABULAR/USGWD_CA")
+
+Map.centerObject(california_wells.first(),9)
+
+// Add the FeatureCollection to the map with the specified style
+Map.addLayer(california_wells.style({color: '00008B'}), {}, 'California Groundwater wells');
+Map.addLayer(usgwd_merged,{},'United States Groundwater Well Database',false)

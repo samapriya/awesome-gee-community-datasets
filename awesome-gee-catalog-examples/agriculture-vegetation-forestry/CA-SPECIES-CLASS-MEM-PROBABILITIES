@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var imageCollection = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST/SPECIES_CLASS_MEMBERSHIP_PROBABILITIES");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = ["#000000","#050408",	"#07050d",	"#080512",	"#09061a",	"#090521",	"#080429",	"#06032e",	"#030336",	"#070b3d",	"#091142",	"#091747",	"#0a1d4d",	"#0a2452",	"#092a57",	"#07325e",	"#003a63",	"#0a4363",	"#0d4b63",	"#0f5866",	"#106266",	"#106b65",	"#0e7866",	"#0a8264",	"#048c63",	"#0a8c5a",	"#0d8f54",	"#0e8f4c",	"#0e8f44",	"#0d8f3a",	"#0c9132",	"#099129",	"#009120",	"#248c1c",	"#37871a",	"#438216",	"#517d13",	"#5c7810",	"#65700c",	"#6e6a08",	"#756402",	"#825f00",	"#8c5900",	"#965000",	"#a34900",	"#ad4000",	"#b83400",	"#c22a00",	"#cc1400",	"#cf1f00",	"#cf2600",	"#d12d00",	"#d43500",	"#d43c00",	"#d64400",	"#d64700",	"#d94f00",	"#db5800",	"#db5b00",	"#de6400",	"#e06c00",	"#e07400",	"#e37d00",	"#e38100",	"#e68a00",	"#e89300",	"#e89700",	"#eba000",	"#eda600",	"#edae00",	"#f0b800",	"#f0bc00",	"#f2c600",	"#f5cc00",	"#f5d400",	"#f7da00",	"#fae100",	"#fae900",	"#fcf000",	"#fcf800",	"#ffff00"]
+var image = imageCollection.mosaic()
+Map.centerObject(imageCollection.first(),4)
+Map.addLayer(image,{min:0,max:80,'palette':palette},'Species Class Membership probabilities')

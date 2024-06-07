@@ -1,0 +1,24 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tallo = ee.FeatureCollection("projects/sat-io/open-datasets/tallo_database");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Feature sample',tallo.first())
+
+//Using height_m as property and removing null
+tallo = tallo.filter(ee.Filter.neq('height_m','NA'))
+
+//Add a random color
+function randomVisualizer(featureCollection) {
+  return featureCollection
+    .randomColumn('height_m')
+    .map(function (f) {
+      var randomHex = f.getNumber('height_m').multiply((Math.pow(2, 24) - 1)).round().int().format('%x')
+      var color = ee.String('000000').cat(randomHex).slice(-6) // Pad with 0 to length of 6
+      return f.set('style', {
+        color: color,
+      })
+    })
+    .style({styleProperty: 'style'})
+}
+var viz = randomVisualizer(tallo)
+Map.addLayer(viz,{},'Tallo random visualization of height_m')
+Map.addLayer(tallo,{},'Tallo database height_m',false)

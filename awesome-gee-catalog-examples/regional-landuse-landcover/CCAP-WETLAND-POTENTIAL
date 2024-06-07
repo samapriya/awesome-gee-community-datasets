@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ccap_wetland_potential = ee.Image("projects/sat-io/open-datasets/NOAA/conus_ccap_wetland_potential");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+Map.setCenter(-95.3592289208674,29.744084242227128,11)
+
+//Import palette
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.addLayer(ccap_wetland_potential.mask(ccap_wetland_potential.gt(0)),{min:1,max:10,palette:palettes.extra.marine},'CCAP Wetland Potential')

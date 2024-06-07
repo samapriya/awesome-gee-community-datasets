@@ -1,0 +1,30 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ksat = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/ksat"),
+    satfield = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/sat-field"),
+    N = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/N"),
+    alpha = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/alpha"),
+    wilt_perm = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/crit-wilt"),
+    field_wilt = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/field-crit"),
+    ormc = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/ormc"),
+    stc = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/stc"),
+    wcavail = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcavail"),
+    wcpf2 = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf2"),
+    wcpf3 = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf3"),
+    wcpf4_2 = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcpf4-2"),
+    wcres = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcres"),
+    wcsat = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wcsat");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(ksat.first().multiply(0.0001),{min:2,max:415,palette:palettes.cmocean.Delta[7]},'ksat')
+Map.addLayer(satfield.first().multiply(0.0001),{min:0.25,max:0.55,palette:palettes.cmocean.Haline[7]},'sat-field',false)
+Map.addLayer(N.first().multiply(0.0001),{min:1,max:1.5,palette:palettes.cmocean.Thermal[7]},'N',false)
+Map.addLayer(alpha.first().multiply(0.0001),{min:0.006,max:0.074,palette:palettes.cmocean.Solar[7]},'alpha',false)
+Map.addLayer(wilt_perm.first().multiply(0.0001),{min:0.04,max:0.14,palette:palettes.cmocean.Gray[7]},'Perm-wilt',false)
+Map.addLayer(field_wilt.first().multiply(0.0001),{min:0.02,max:0.27,palette:palettes.cmocean.Oxy[7]},'field-wilt',false)
+Map.addLayer(ormc.first().multiply(0.0001),{min:0.48,max:14,palette:palettes.cmocean.Deep[7]},'ormc',false)
+Map.addLayer(stc.first().multiply(0.0001),{min:0.0003,max:0.0006,palette:palettes.cmocean.Haline[7]},'stc',false)
+Map.addLayer(wcavail.first().multiply(0.0001),{min:0.132,max:0.353,palette:palettes.cmocean.Dense[7]},'wcavail',false)
+Map.addLayer(wcpf2.first().multiply(0.0001),{min:0.25,max:0.55,palette:palettes.cmocean.Algae[7]},'wcpf2',false)
+Map.addLayer(wcpf3.first().multiply(0.0001),{min:0.10,max:0.327,palette:palettes.cmocean.Delta[7]},'wcfp3',false)
+Map.addLayer(wcpf4_2.first().multiply(0.0001),{min:0.05,max:0.19,palette:palettes.cmocean.Haline[7]},'wcpf4_2',false)

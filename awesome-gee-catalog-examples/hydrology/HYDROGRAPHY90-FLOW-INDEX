@@ -1,0 +1,16 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cti = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/cti"),
+    spi = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/spi"),
+    sti = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/flow_index/sti");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.setCenter(-16.786, 19.082,3);
+
+style.SetMapStyleGrey()
+
+//Add with scaling applied
+Map.addLayer(cti.mosaic().divide(1e8),{min:-3.554,max:3.161,palette: palettes.extra.blkred}, 'CTI');
+Map.addLayer(spi.mosaic().divide(1e3),{min:-78.418,max:83.271,palette: palettes.extra.blkredwht}, 'SPI');
+Map.addLayer(sti.mosaic().divide(1e3),{min:-0.552,max:0.792,palette: palettes.extra.orngblue},'STI')

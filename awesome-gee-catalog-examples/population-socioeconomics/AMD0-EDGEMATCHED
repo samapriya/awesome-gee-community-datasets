@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var osm = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/OSM_adm0_polygons"),
+    usgs = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/USGS_adm0_polygons");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.Image().paint(osm,0,3), {"palette":["#d73027"]}, 'OSM boundaries')
+Map.addLayer(ee.Image().paint(usgs,0,3), {"palette":["#fc8d59"]}, 'USGS boundaries')

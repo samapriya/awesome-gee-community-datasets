@@ -1,0 +1,42 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var AT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/AT"),
+    ESI = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/ESI"),
+    HI = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/HI"),
+    Humidex = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/Humidex"),
+    MRT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/MRT"),
+    NET = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/NET"),
+    UTCI = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/UTCI"),
+    UTCI2 = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/UTCI2"),
+    UTCI3 = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/UTCI3"),
+    WBGT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/WBGT"),
+    WBT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/WBT"),
+    WCT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/WCT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total size AT',AT.size())
+print('Total size ESI',ESI.size())
+print('Total size HI',HI.size())
+print('Total size Humidex',Humidex.size())
+print('Total size MRT',MRT.size())
+print('Total size NET',NET.size())
+print('Total size UTCI',UTCI.size())
+print('Total size UTCI2',UTCI2.size())
+print('Total size UTCI3',UTCI3.size())
+print('Total size WBGT',WBGT.size())
+print('Total size WBT',WBT.size())
+print('Total size WCT',WCT.size())
+
+var palette = ["#FAFAD2","#EEE8AA","#F0E68C","#DAA520","#FFD700","#FFA500","#FF8C00","#CD853F","#D2691E","#8B4513","#A0522D"]
+
+var image = AT.first()
+
+// Get projection information from band 2
+var b1proj = image.select('b2').projection();
+print('Projection:', b1proj);
+
+// Get scale (in meters) information from band 2
+var b1scale = image.select('b2').projection().nominalScale();
+print('Scale in meters:', b1scale);
+
+
+Map.addLayer(AT.first().select('b2'),{min:-45,max:30,palette:palette},'AT')
+Map.addLayer(ESI.first().select('b2'),{min:-45,max:30,palette:palette},'ESI')

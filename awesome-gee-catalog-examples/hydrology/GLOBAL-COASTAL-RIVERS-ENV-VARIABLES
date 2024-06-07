@@ -1,0 +1,15 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_costal_rivers = ee.FeatureCollection("projects/sat-io/open-datasets/delta/global-costal-rivers-points");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+function buffer_collection(ft) {
+  var buffered = ft.buffer(2000);//buffer distance in meter
+    return buffered;
+}
+print(global_costal_rivers.size());
+print(global_costal_rivers.first())
+Map.addLayer(
+  ee.FeatureCollection(global_costal_rivers.map(buffer_collection)).style({
+    fillColor: '00000000',  // transparent
+    color: '#191919',
+  }),{},'Global coastal rivers and environmental variables'
+);

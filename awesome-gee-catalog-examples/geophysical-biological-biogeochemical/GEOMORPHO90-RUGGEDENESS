@@ -1,0 +1,32 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope"),
+    aspect = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect"),
+    aspect_cosine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-cosine"),
+    aspect_sine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-sine"),
+    eastness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/eastness"),
+    northness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/northness"),
+    convergence = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/convergence"),
+    spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi"),
+    cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti"),
+    dx = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dx"),
+    dy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dy");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+//Center Map
+Map.setCenter(91.1709, 29.3025,10)
+
+//Add Layers
+Map.addLayer(slope.median(),{min: 0.01, max: 45, palette: palettes.cmocean.Turbid[7]},'Slope')
+Map.addLayer(aspect.median(), {min:10, max: 350, palette: palettes.cmocean.Oxy[7]}, 'Aspect')
+Map.addLayer(aspect_cosine.median(),{min:-1, max: 1, palette: palettes.cmocean.Matter[7]},'Aspect cosine')
+Map.addLayer(aspect_sine.median(),{min: -8.3011414, max: 5.60854, palette: palettes.cmocean.Dense[7]},'Aspect Sine ')
+Map.addLayer(cti.median(), {min: -3, max: 6, palette: palettes.cmocean.Algae[7]}, 'Compound Topographic Index (CTI)')
+Map.addLayer(spi.median(), {min: 0.2, max:22, palette: palettes.cmocean.Turbid[7]}, 'Stream Power Index (SPI)')
+Map.addLayer(slope.median(), {min: 0.2, max:25, palette: palettes.cmocean.Curl[7]}, 'Slope Median')
+
+
+
+
+

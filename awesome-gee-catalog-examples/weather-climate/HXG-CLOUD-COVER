@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var hxg = ee.ImageCollection("projects/sat-io/open-datasets/isccp/hxg");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var jan = (hxg.filter(ee.Filter.equals('month',1)).filter(ee.Filter.equals('hour',0)).reduce(ee.Reducer.sum()).rename('b1_jan'))
+var dec = (hxg.filter(ee.Filter.equals('month',12)).filter(ee.Filter.equals('hour',0)).reduce(ee.Reducer.sum()).rename('b1_dec'))
+
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+Map.addLayer(jan, {min: [150], max: [1000], palette: palettes.cmocean.Curl[7]}, 'HXG January Hour 00');
+Map.addLayer(dec, {min: [150], max: [1000], palette: palettes.cmocean.Balance[7]}, 'HXG December Hour 00');

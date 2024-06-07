@@ -1,0 +1,11 @@
+// Read in Image Collection and get single image
+var usdo_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-cpc-usdo-monthly')
+var usdo_i = usdo_ic.first()
+
+// Print image to see bands
+print(usdo_i)
+
+// Visualize a single image
+
+var usdo_palette = ["#ffffff", "#ABA362", "#DACBB5", "#FFD861", "#935743"]
+Map.addLayer(usdo_i, {min:0, max:4, palette: usdo_palette}, 'usdo_i')

@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var glance_training = ee.FeatureCollection("projects/sat-io/open-datasets/GLANCE/GLANCE_TRAINING_DATA_V1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(glance_training.size())
+
+print(glance_training.first())
+
+Map.addLayer(glance_training)

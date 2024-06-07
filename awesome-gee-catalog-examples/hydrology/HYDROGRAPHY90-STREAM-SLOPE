@@ -1,0 +1,18 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var slope_curv_max_dw_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_curv_max_dw_cel"),
+    slope_curv_min_dw_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_curv_min_dw_cel"),
+    slope_elv_dw_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_elv_dw_cel"),
+    slope_grad_dw_cel = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-slope/slope_grad_dw_cel");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.setCenter(-16.786, 19.082,3);
+
+style.SetMapStyleGrey()
+
+//Add with scaling applied
+Map.addLayer(slope_curv_max_dw_cel.mosaic().divide(1e6),{min:-0.16,max:0.18,palette: palettes.extra.blkred}, 'Maximum curvature between highest upstream cell, focal cell, and downstream cell');
+Map.addLayer(slope_curv_min_dw_cel.mosaic().divide(1e6),{min:-0.16,max:0.18,palette: palettes.extra.blkredwht}, 'Minimum curvature between highest upstream cell, focal cell, and downstream cell');
+Map.addLayer(slope_elv_dw_cel.mosaic(),{min:-23,max:40,palette: palettes.extra.orngblue},'Elevation difference between focal cell and downstream cell')
+Map.addLayer(slope_grad_dw_cel.mosaic().divide(1e6),{min:-0.552,max:0.792,palette: palettes.extra.voilets},'Focal cell gradient')

@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_steel = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_steel_database_20210701");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(global_steel.first())
+
+Map.addLayer(global_steel,{'color':'red'},'Global Iron and Steel Database')

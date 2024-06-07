@@ -1,0 +1,14 @@
+var bdi_ic = ee.ImageCollection("projects/ebx-data/assets/earthblox/IO/BIOINTACT")
+var bdi_2017_20_comp = bdi_ic.mean()
+var bdi_2017_comp = bdi_ic.filterDate('2017-01-01', '2017-12-31').mean()
+
+
+var visualization = {
+  bands: ['BioIntactness'],
+  min: 0,
+  max: 1,
+  palette: ['e5f5e0', 'a1d99b', '31a354'], 4: ['edf8e9', 'bae4b3', '74c476', '238b45']
+};
+
+Map.addLayer(bdi_2017_20_comp, visualization, "composite 2017-20")
+Map.addLayer(bdi_2017_comp, visualization, "composite 2017")

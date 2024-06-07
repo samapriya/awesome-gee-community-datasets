@@ -1,0 +1,51 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var climate_models_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_bioclim"),
+    aogcm_ensemble_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim"),
+    climate_normals_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Filter climate models by model and bioclimatic variable name
+print('Total climate variable of Model ACCESS_ESM1-5',climate_models_bioclim.filter(ee.Filter.eq('model','ACCESS-ESM1-5')).size())
+print('Total models with climate variables PPT_sm',climate_models_bioclim.filter(ee.Filter.eq('bioclim_variable','PPT_sm')).size())
+
+
+//or combine the filters
+print('Total climate variables of type PPT_sm under model ACCESS-ESM1-5',climate_models_bioclim
+.filter(ee.Filter.eq('model','ACCESS-ESM1-5'))
+.filter(ee.Filter.eq('bioclim_variable','PPT_sm'))
+.size()
+)
+
+//you can add scenario model as well and finally also filter by date range
+print('Total climate variables of type PPT_sm under model ACCESS-ESM1-5',climate_models_bioclim
+.filter(ee.Filter.eq('model','ACCESS-ESM1-5'))
+.filter(ee.Filter.eq('bioclim_variable','PPT_sm'))
+.filter(ee.Filter.eq('emission_scenario','SSP2-4.5'))
+.size()
+)
+
+//you can add scenario model as well and finally also filter by date range
+print('Total climate variables of type PPT_sm under model ACCESS-ESM1-5',climate_models_bioclim
+.filter(ee.Filter.eq('model','ACCESS-ESM1-5'))
+.filter(ee.Filter.eq('bioclim_variable','PPT_sm'))
+.filter(ee.Filter.eq('emission_scenario','SSP2-4.5'))
+.filter(ee.Filter.date('2071-01-01','2100-12-31'))
+.size()
+)
+
+/*
+Ensemble model can be filtered by emission scenario , date range and bioclimatic variable
+Climate Normals can be filtered by date range, and bioclimatic variables
+*/
+
+var palettes = require('users/gena/packages:palettes');
+
+var aogcm_ensemble_mat = aogcm_ensemble_bioclim.filter(ee.Filter.eq('emission_scenario','SSP3-7.0')).filter(ee.Filter.date('2040-01-01', '2070-01-01')).filter(ee.Filter.eq('bioclim_variable','MAT'))
+var climate_models_mat = climate_models_bioclim.filter(ee.Filter.eq('emission_scenario','SSP3-7.0')).filter(ee.Filter.date('2040-01-01', '2070-01-01')).filter(ee.Filter.eq('bioclim_variable','MAT'))
+var climate_normal_mat = climate_normals_bioclim.filter(ee.Filter.eq('bioclim_variable','MAT'))
+print(climate_models_mat)
+print(climate_normal_mat)
+
+//Add Tmax Normal, A single model and Ensemble
+Map.addLayer(aogcm_ensemble_mat.first(),{min:1.5,max:30,palette:palettes.cmocean.Balance[7]},'Ensemble Emission Scenario 3-7.0 Mean Annual Temp')
+Map.addLayer(climate_models_mat.first(),{min:-0.5,max:30,palette:palettes.cmocean.Balance[7]},'ACCESS-ESM1-5_ssp370_2041 Mean Annual Temp')
+Map.addLayer(climate_normal_mat.first(),{min:-2.5,max:28,palette:palettes.cmocean.Balance[7]},'Climate Normal Mean Annual Temp')

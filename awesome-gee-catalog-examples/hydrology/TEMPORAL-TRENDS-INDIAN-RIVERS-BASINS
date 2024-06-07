@@ -1,0 +1,21 @@
+var reachTrends = ee.FeatureCollection('projects/sat-io/open-datasets/indian_rivers/riverchanges/txsTrends');
+var reachAreaTimeseries = ee.FeatureCollection('projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_txs');
+var basTrends = ee.FeatureCollection('projects/sat-io/open-datasets/indian_rivers/riverchanges/basinsTrends');
+var basAreaTimeseries = ee.FeatureCollection('projects/sat-io/open-datasets/indian_rivers/riverchanges/mainlandIndia_areasTs_basinsL7');
+var annualWaterOccSeasComps = ee.ImageCollection('projects/sat-io/open-datasets/indian_rivers/riverchanges/waterOccSeasComps');
+
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+var brewer7ClPuOr = ['b35806', 'f1a340', 'fee0b6', 'f7f7f7', 'd8daeb', '998ec3', '542788'];
+var empty = ee.Image().byte();
+
+var reachTrendsDrySeason = reachTrends.filter(ee.Filter.eq('season', 'dry_fma'));
+var fillsreach = empty.paint(reachTrendsDrySeason, 'sl_perYr');
+Map.addLayer(fillsreach, {palette: brewer7ClPuOr, min: -0.02, max: 0.02}, 'dry_fma_reach');
+Map.setCenter(79.49959, 16.63471, 14);
+
+var basTrendDrySeason = basTrends.filter(ee.Filter.and(ee.Filter.eq('HYBAS_ID', 4071092530), ee.Filter.eq('season', 'dry_fma')));
+var fillsBas = empty.paint(basTrendDrySeason, 'sl_perYr');
+Map.addLayer(fillsBas, {palette: brewer7ClPuOr, min: -75, max: 75}, 'dry_fma_bas', false);

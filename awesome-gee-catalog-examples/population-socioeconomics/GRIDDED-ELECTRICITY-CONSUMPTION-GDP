@@ -1,0 +1,26 @@
+var imageCollection = ee.ImageCollection("projects/sat-io/open-datasets/GRIDDED_EC-GDP")
+
+var time_start = imageCollection
+    .reduceColumns(ee.Reducer.toList(), ['system:time_start'])
+    .get('list');
+
+time_start.evaluate(
+
+    function (time_start) {
+
+        time_start.forEach(
+
+            function (date) {
+
+                var images = imageCollection.filterMetadata('system:time_start', 'equals', date);
+
+                var year = new Date(date).getFullYear();
+
+                Map.addLayer(images, {
+                    min:0,
+                    max: 34,
+                    palette:["black","white","orange","yellow","gold","red",]
+                }, 'GDP US Dollars Millions (2017) '+String(year),false);
+            });
+    }
+);

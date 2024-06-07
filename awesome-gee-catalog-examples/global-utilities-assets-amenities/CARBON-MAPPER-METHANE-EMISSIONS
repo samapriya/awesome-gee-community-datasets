@@ -1,0 +1,60 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var plume_geotiffs = ee.ImageCollection("projects/sat-io/open-datasets/carbon-mapper/plume_geo"),
+    rgb_geotiffs = ee.ImageCollection("projects/sat-io/open-datasets/carbon-mapper/rgb_geo"),
+    plume_features = ee.FeatureCollection("projects/sat-io/open-datasets/carbon-mapper/plume_feature");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var plume_example = plume_geotiffs.limit(30).sort('system:time_start',false).first()
+print(plume_example)
+
+var rgb_image = rgb_geotiffs.filter(ee.Filter.eq('plume_id',plume_example.get('plume_id')))
+Map.centerObject(rgb_image,17)
+
+Map.addLayer(rgb_image,{},'RGB base imagery')
+Map.addLayer(plume_example,{},'Plume imagery')
+
+//////////////////////////////////////////////Create a legend /////////////////////////////////////////////////////
+var vis = {min:0,max:4000,palette:["FFFFFF","6060E0","19E013","C8E022","f80022"]}
+
+// Creates a color bar thumbnail image for use in legend from the given color palette
+function makeColorBarParams(palette) {
+  return {
+    bbox: [0, 0, 50, 0.1],
+    dimensions: '200x10',
+    format: 'png',
+    min: 0,
+    max: 50,
+    palette: palette,
+  };
+}
+
+// Create the colour bar for the legend
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0).int(),
+  params: makeColorBarParams(vis.palette),
+  style: {stretch: 'horizontal', margin: '0px 8px', maxHeight: '24px',position:'bottom-left'},
+});
+
+// Create a panel with three numbers for the legend
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label(vis.min, {margin: '4px 8px'}),
+    ui.Label(
+        ((vis.max-vis.min) / 2+vis.min),
+        {margin: '4px 8px', textAlign: 'center', stretch: 'horizontal'}),
+    ui.Label(vis.max, {margin: '4px 8px'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+// Legend title
+var legendTitle = ui.Label({
+  value: 'Emission (ppm-m)',
+  style: {fontWeight: 'bold',position:'bottom-left'}
+});
+
+// Add the legendPanel to the map
+var legendPanel = ui.Panel([legendTitle, colorBar, legendLabels]);
+legendPanel.style().set({
+  position: 'bottom-right',
+  shown: true
+});
+Map.add(legendPanel);

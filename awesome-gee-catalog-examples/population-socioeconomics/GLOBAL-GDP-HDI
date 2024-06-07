@@ -1,0 +1,18 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gdp_ppp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_1990_2015_5arcmin_v2"),
+    gdp_ppp_30arc = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_30arcsec_v3"),
+    gdp_per_capita = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_per_capita_PPP_1990_2015_v2"),
+    hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/HDI_1990_2015_v2"),
+    admin_areas = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/admin_areas_GDP_HDI"),
+    pedigree_gdp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_GDP_per_capita_PPP_1990_2015_v2"),
+    pedigree_hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.addLayer(ee.Image(gdp_per_capita.select('b1')),{min:1600,max:50000,palette: palettes.extra.blkred},'GDP Per Capita 1990-2015')
+Map.addLayer(ee.Image(gdp_ppp.select('b1')),{min:-347969610,max:411755463,palette: palettes.extra.orngblue},'GDP PPP 1990-2015')
+Map.addLayer(ee.Image(hdi.select('b1')),{min:0.2,max:0.8,palette: palettes.extra.orngblue},'HDI')
+
+
+
+

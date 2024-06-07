@@ -1,0 +1,17 @@
+var nodes_merged = ee.FeatureCollection("projects/sat-io/open-datasets/SWORD/nodes_merged");
+var reaches_merged = ee.FeatureCollection("projects/sat-io/open-datasets/SWORD/reaches_merged");
+
+// Define different styles for each FeatureCollection
+var nodeStyle = {
+  color: 'red',
+  width: 2
+};
+
+var reachStyle = {
+  color: 'blue',
+  width: 1
+};
+
+// Add each FeatureCollection with its own style
+Map.addLayer(nodes_merged, nodeStyle, 'Nodes');
+Map.addLayer(reaches_merged, reachStyle, 'Reaches');

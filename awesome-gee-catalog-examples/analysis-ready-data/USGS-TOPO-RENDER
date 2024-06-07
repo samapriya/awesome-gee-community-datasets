@@ -1,0 +1,31 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var usgs_topo = ee.ImageCollection("projects/sat-io/open-datasets/USGS/historical_topo"),
+    map_index = ee.FeatureCollection("projects/sat-io/open-datasets/USGS/TOPO_24K_MAPINDEX");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(usgs_topo.first())
+print(usgs_topo.aggregate_histogram('state'))
+print(usgs_topo.aggregate_histogram('year'))
+
+// Generate a random number between 1 and 5000
+var randomNumber = Math.floor(Math.random() * 5000) + 1;
+
+// Print the random number
+print("Choosing from a random list of ", randomNumber);
+
+var items = usgs_topo.toList(randomNumber)
+var item = ee.List(items).shuffle(false)
+var img = ee.ImageCollection(item).first()
+Map.centerObject(img,10)
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+//Function to clip to 24K grid & remove map collars mostly
+function clipper(image){
+  var center = image.geometry().centroid()
+  var main_geom = map_index.filterBounds(center)
+  return image.clip(main_geom).copyProperties(image)
+}
+
+var mapped = usgs_topo.map(clipper)
+Map.addLayer(mapped,{},'USGS Mosaic')

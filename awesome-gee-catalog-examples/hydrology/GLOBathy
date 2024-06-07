@@ -1,0 +1,12 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var globathy = ee.Image("projects/sat-io/open-datasets/GLOBathy/GLOBathy_bathymetry"),
+    globathy_param = ee.FeatureCollection("projects/sat-io/open-datasets/GLOBathy/GLOBathy_basic_parameters");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/samapriya/utils:palettes');
+
+// Use these visualization parameters, customized by location.
+var visParams = {min: 1, max: 700, palette: palettes.extra.blkred};
+
+// Note that the visualization image doesn't require visualization parameters.
+Map.addLayer(globathy, visParams, 'Globathy Bathymetry (m)');
+Map.addLayer(globathy_param,{},'GLOBathy Basic Param',false)

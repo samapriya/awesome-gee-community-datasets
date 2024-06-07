@@ -1,0 +1,18 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ch = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/ch"),
+    fc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/fc"),
+    sc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/sc"),
+    scc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/scc");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Assets for Soil Canopy Height',ch)
+print('Assets for Forest Carbon',fc)
+print('Assets for Soil Carbon Stock',sc)
+print('Assets for Soil Carbon Stock',scc)
+
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(ee.Image(ch.toList(3).get(-1)),{min:5.5,max:28,palette:palettes.cmocean.Delta[7]},'Canopy Height Max')
+Map.addLayer(fc.first(),{min:0.62,max:12,palette:palettes.cmocean.Speed[7]},'Forest Carbon stock')
+Map.addLayer(sc.first(),{min:6.5,max:327,palette:palettes.cmocean.Dense[7]},'Soil Carbon stock')
+Map.addLayer(scc.first(),{min:24,max:460,palette:palettes.cmocean.Matter[7]},'Soil Carbon Concentration 0cm')

@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tree_cover = ee.Image("projects/sat-io/open-datasets/PS_AFRICA_TREECOVER_2019_100m_V10");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette= ["#00FF00", "#1AFF1A", "#33FF33", "#4DFF4D", "#66FF66", "#80FF80", "#99FF99", "#B3FFB3", "#CCFFCC", "#E6FFE6"]
+
+
+Map.addLayer(tree_cover,{min:0,max:100,palette:palette},'PS Tree Cover Percentage')

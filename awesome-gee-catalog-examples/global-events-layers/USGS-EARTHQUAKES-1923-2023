@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var usgs_earthquakes = ee.FeatureCollection("projects/sat-io/open-datasets/USGS/usgs_earthquakes_1923-2023");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+Map.addLayer(usgs_earthquakes,{},'USGS Earthquakes 1923-2023')

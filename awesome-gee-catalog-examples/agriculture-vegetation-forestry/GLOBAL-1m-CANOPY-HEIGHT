@@ -1,0 +1,486 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint();
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var canopyHeight = ee.ImageCollection('projects/meta-forest-monitoring-okw37/assets/CanopyHeight').mosaic();
+var treenotree = canopyHeight.updateMask(canopyHeight.gte(1))
+
+//// viz settings //// 
+var palettes = require('users/gena/packages:palettes');
+
+///Other teams layers///
+var ethcanopyheight = ee.Image('users/nlang/ETH_GlobalCanopyHeight_2020_10m_v1')
+Map.addLayer(ethcanopyheight, {
+    min: 0,
+    max: 25,
+    palette: palettes.matplotlib.viridis[7]
+}, 'Canopy Height Lang 2022 98%', false)
+
+var umdheight = ee.ImageCollection("users/potapovpeter/GEDI_V27").mosaic()
+Map.addLayer(umdheight, {
+    min: 0,
+    max: 25,
+    palette: palettes.matplotlib.viridis[7]
+}, 'Canopy Height Potapov 2021 95%', false)
+
+///Our layers///
+Map.addLayer(treenotree, {
+    min: 0,
+    max: 1,
+    palette: ['440154', 'fde725']
+}, 'Canopy height (>=1 meter)', false);
+Map.addLayer(canopyHeight, {
+    min: 0,
+    max: 25,
+    palette: palettes.matplotlib.viridis[7]
+}, 'Canopy Height [meters]');
+
+
+///Default location and zoom///
+Map.setCenter(0, 10, 3)
+
+
+//////////
+
+//// style templates ////
+var borderStyle = '3px double green';
+var optionsTitleStyle = {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'green'
+};
+
+//////// All Labels //////
+var AllLabels = {
+    title: ['Global Canopy Height'],
+    intro: [
+        'Tolan et al. (2023). "Sub-meter resolution canopy height maps using self-supervised learning and a vision transformer trained on Aerial and GEDI Lidar"'
+    ],
+    clause: ['Data may be shifted relative to basemap imagery due to differences in imagery observation date and/or orthorectification.'],
+    clause2: ['For this visualization, we use mean downsampling of roughly 1m pixels, which may lead to some of the height difference with previously published datasets (Lang, Potapov), which are mean downsamples of 95th and 98th percentile 10m and 30m pixels.'],
+    resetbuttonLabel: ['Reset Map'],
+    PITitle: ['Point Inspector'],
+    PIInstr: ["Select points to identify  canopy height."],
+    pointlayername: ["Custom Point"],
+    aoiTitle: ['AOI Inspector'],
+    aoiInstr: ["Create a region of interest and calculate mean canopy height"],
+    aoilayername: ["Custom Point"],
+};
+
+
+//////Colorbar//////
+
+var nSteps = 9
+// Creates a color bar thumbnail image for use in legend from the given color palette
+function makeColorBarParams(palette) {
+    return {
+        bbox: [0, 0, nSteps, 0.1],
+        dimensions: '100x10',
+        format: 'png',
+        min: 0,
+        max: nSteps,
+        palette: palette,
+    };
+}
+
+// Create a panel with three numbers for the legend
+var legendLabels = ui.Panel({
+    widgets: [
+        //ui.Label("0", {margin: '4px 8px'}),
+        ui.Label("0 3 6 9 12 15 18 21 24", {
+            textAlign: 'center',
+            stretch: 'horizontal',
+            margin: '0px 0px'
+        }),
+        //ui.Label(
+        //    ((palettes.matplotlib.viridis[7].max-palettes.matplotlib.viridis[7].min) / 2+palettes.matplotlib.viridis[7].min),
+        //     {margin: '4px 8px', textAlign: 'center', stretch: 'horizontal'}),
+        //ui.Label("20", {margin: '4px 8px', textAlign: 'right'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal')
+});
+
+
+// Create the colour bar for the legend
+var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0).int(),
+    params: makeColorBarParams(palettes.matplotlib.viridis[7]),
+    style: {
+        stretch: 'horizontal',
+        margin: '8px 30px',
+        maxHeight: '24px'
+    },
+});
+
+
+////------------------------------------------Panel for intro (AllPanels index 1)------------------------------------------------ ////
+
+var IntroPanel = ui.Panel({
+        style: {
+            width: '200px'
+        }
+    })
+    .add(ui.Label({
+        value: AllLabels.title[0],
+        style: {
+            fontWeight: 'bold',
+            fontSize: '18px',
+            margin: '10px 5px'
+        }
+    }))
+    .add(ui.Label({
+        value: AllLabels.intro[0]
+    }))
+    .add(ui.Label({
+        value: AllLabels.clause[0]
+    }))
+    .add(ui.Label({
+        value: AllLabels.clause2[0]
+    }))
+    .add(colorBar).add(legendLabels);
+
+////------------------------------------------Panel for point inspector (AllPanels index 2)------------------------------------------------ ////
+//// Create panel to hold point inspector & lon/lat + ch values.////
+var lon = ui.Label();
+var lat = ui.Label();
+var ch = ui.Label();
+
+var coordPanel = ui.Panel({
+    widgets: [lon, lat, ch],
+    layout: ui.Panel.Layout.flow('vertical'),
+});
+
+////checkbox to turn the point change inspector on and off ////
+var PI_OnOff = ui.Checkbox({
+    label: "Turn On",
+    style: {
+        color: 'green'
+    },
+    onChange: function() {
+        if (PI_OnOff.getValue() === true) { //If checkbox is checked, a chart is created after clicking the map
+            Map.style().set('cursor', 'crosshair');
+            Map.onClick(function(coords) {
+                    //// Update the lon/lat panel with values from the click event. ////
+                    lon.setValue('Lon: ' + coords.lon.toFixed(5));
+                    lat.setValue('Lat: ' + coords.lat.toFixed(5));
+
+                    //// Add a layer with a dot for the point clicked on. A new layer is added each time. ////
+                    var point = ee.FeatureCollection(ee.Geometry.Point(coords.lon, coords.lat));
+                    var pointlayername = AllLabels.pointlayername[0];
+                    //// extract CH at the point using reducer
+                    var chLabel = canopyHeight.reduceRegion({
+                        reducer: ee.Reducer.mean(),
+                        geometry: point,
+                        scale: 1.2
+                    }).get('cover_code')
+                    chLabel.evaluate(showCH);
+
+                    function showCH(chLabel) {
+                        ch.setValue('Canopy height: ' + chLabel);
+                    }
+                    Map.addLayer(point.draw({
+                        color: '#6F20A8',
+                        pointRadius: 5
+                    }), {}, pointlayername + ': ' + coords.lon.toFixed(5) + ', ' + coords.lat.toFixed(5));
+                }
+
+            )
+        } else { //if checkbox is not checked, clicks on the map are not listed for and the cursor is styled back to the default hand
+            Map.unlisten();
+            Map.style().set('cursor', 'hand');
+        }
+    },
+});
+
+////------------------------------------------Panel for aoi inspector (AllPanels index 3)------------------------------------------------ ////
+//// Create panel to hold aoi inspector for ch values.////
+var avg = ui.Label();
+
+var avgPanel = ui.Panel({
+    widgets: [avg],
+    layout: ui.Panel.Layout.flow('horizontal'),
+});
+
+var sum = ui.Label();
+
+var sumPanel = ui.Panel({
+    widgets: [sum],
+    layout: ui.Panel.Layout.flow('horizontal'),
+});
+
+
+///////// set up ability to draw their own polygon/////
+var drawingTools = Map.drawingTools();
+drawingTools.setShown(false);
+while (drawingTools.layers().length() > 0) {
+    var layer = drawingTools.layers().get(0);
+    drawingTools.layers().remove(layer);
+}
+
+var dummyGeometry =
+    ui.Map.GeometryLayer({
+        geometries: null,
+        name: 'geometry',
+        color: '23cba7'
+    });
+
+drawingTools.layers().add(dummyGeometry);
+
+function clearGeometry() {
+    var layers = drawingTools.layers();
+    layers.get(0).geometries().remove(layers.get(0).geometries().get(0));
+}
+
+// function drawRectangle() {
+//   clearGeometry();
+//   drawingTools.setShape('rectangle');
+//   drawingTools.draw();
+// }
+
+function drawPolygon() {
+    clearGeometry();
+    drawingTools.setShape('polygon');
+    drawingTools.draw();
+}
+
+var chartPanel = ui.Panel({
+    style: {
+        height: '235px',
+        width: '300px',
+        position: 'bottom-right',
+        shown: false
+    }
+});
+
+//Map.add(chartPanel);
+
+function histogramOfCH() {
+    // Make the chart panel visible the first time a geometry is drawn.
+    if (!chartPanel.style().get('shown')) {
+        chartPanel.style().set('shown', true);
+    }
+
+    Map.add(chartPanel);
+
+    // Get the drawn geometry; it will define the reduction region.
+    var aoi = drawingTools.layers().get(0).getEeObject();
+
+    // Set the drawing mode back to null; turns drawing off.
+    drawingTools.setShape(null);
+
+
+    //Pixel - Area conversion
+    var areacanopyHeight = canopyHeight.multiply(ee.Image.pixelArea())
+    var areacanopyBinary = treenotree.multiply(ee.Image.pixelArea())
+
+    // Chart histogram of height for the selected area of interest.
+    var chart = ui.Chart.image
+        .histogram({
+            image: areacanopyHeight,
+            region: aoi,
+            scale: 1.2,
+            minBucketWidth: 2,
+        })
+        .setOptions({
+            titlePostion: 'none',
+            legend: {
+                position: 'none'
+            },
+            hAxis: {
+                title: 'Height (m)'
+            },
+            vAxis: {
+                title: 'Area (m^2)'
+            },
+            series: {
+                0: {
+                    color: '23cba7'
+                }
+            }
+        });
+
+    // Replace the existing chart in the chart panel with the new chart.
+    chartPanel.widgets().reset([chart]);
+
+
+    var chLabel = areacanopyHeight.reduceRegion({
+        reducer: ee.Reducer.mean(),
+        geometry: aoi,
+        scale: 1.2,
+        crs: 'EPSG:3857',
+    }).get('cover_code')
+
+    chLabel.evaluate(showCH);
+    //print(chLabel)
+    //print(ee.Number(chLabel));
+    function showCH(chLabel) {
+        avg.setValue('Avg height: ' + chLabel.toFixed(2) + ' m');
+    }
+
+
+    var chSum = areacanopyBinary.reduceRegion({
+        reducer: ee.Reducer.sum(),
+        geometry: aoi,
+        scale: 1.2,
+        crs: 'EPSG:3857',
+    }).get('cover_code')
+    chSum.evaluate(showCHSum);
+
+    function showCHSum(chSum) {
+        sum.setValue('Area >=1m: ' + chSum.toFixed(2) + ' m^2');
+    }
+
+}
+
+drawingTools.onDraw(ui.util.debounce(histogramOfCH, 500));
+drawingTools.onEdit(ui.util.debounce(histogramOfCH, 500));
+
+
+////checkbox to turn the point change inspector on and off ////
+var aoi_OnOff = ui.Checkbox({
+    label: "Turn On",
+    style: {
+        color: 'green'
+    },
+    onChange: function() {
+        if (aoi_OnOff.getValue() === true) { //If checkbox is checked, a chart is created after clicking the map
+            // Allow the user to draw a polygon
+            drawPolygon();
+        } else { //if checkbox is not checked, clicks on the map are not listed for and the cursor is styled back to the default hand
+            Map.unlisten();
+            Map.style().set('cursor', 'hand');
+        }
+    },
+});
+
+
+////------------------------------------------Panel for reset button (AllPanels index 4)----------------------------------------- ////
+var resetbutton = ui.Button({
+    label: AllLabels.resetbuttonLabel[0],
+    style: {
+        width: '200px',
+        color: '#EB7B59',
+        padding: '5px 5px 15px 5px',
+    },
+    onClick: function reset() {
+        Map.layers().reset();
+        clearGeometry();
+        Map.addLayer(ethcanopyheight, {
+            min: 0,
+            max: 25,
+            palette: palettes.matplotlib.viridis[7]
+        }, 'Canopy Height Lang 2022 98%', false);
+        Map.addLayer(umdheight, {
+            min: 0,
+            max: 25,
+            palette: palettes.matplotlib.viridis[7]
+        }, 'Canopy Height Potapov 2021 95%', false);
+        Map.addLayer(treenotree, {
+            min: 0,
+            max: 1,
+            palette: ['440154', 'fde725']
+        }, 'Canopy height (>=1 meter)', false);
+        Map.addLayer(canopyHeight, {
+            min: 0,
+            max: 20,
+            palette: palettes.matplotlib.viridis[7]
+        }, 'Canopy Height [m]');
+        Map.remove(chartPanel);
+        //chartPanel.reset();
+        mapinfopanel.clear();
+        mapinfopanel.style().set({
+            width: '0px'
+        });
+    }
+});
+
+
+////final panel that holds the reset button
+/// add export or something else here if you want!!!! 
+var resetPanel = ui.Panel({
+    widgets: [
+        resetbutton,
+    ]
+});
+
+
+////////////////////////////////////////////
+//// POINT INSPECTOR PANEL ////
+////////////////////////////////////////////
+var PIPanel = ui.Panel({
+    widgets: [
+        /*0*/
+        ui.Label({
+            value: AllLabels.PITitle[0],
+            style: optionsTitleStyle,
+        }),
+        /*1*/
+        ui.Label(AllLabels.PIInstr[0]),
+        /*2*/
+        PI_OnOff,
+        /*3*/
+        coordPanel,
+    ],
+    style: {
+        margin: '10px 0px 0px 0px',
+        border: borderStyle
+    }
+});
+
+//////////////////////////////////////////
+// AOI INSPECTOR PANEL ////
+//////////////////////////////////////////
+var aoiPanel = ui.Panel({
+    widgets: [
+        /*0*/
+        ui.Label({
+            value: AllLabels.aoiTitle[0],
+            style: optionsTitleStyle,
+        }),
+        /*1*/
+        ui.Label(AllLabels.aoiInstr[0]),
+        /*2*/
+        aoi_OnOff,
+        /*3*/
+        avgPanel,
+        /*4*/
+        sumPanel,
+    ],
+    style: {
+        margin: '10px 0px 0px 0px',
+        border: borderStyle
+    }
+});
+
+var AllPanels = ui.Panel({
+    widgets: [
+        /*0*/
+        IntroPanel,
+        /*1*/
+        PIPanel,
+        /*2*/
+        aoiPanel,
+        /*3*/
+        resetPanel,
+        // /*4*/ ExportPanel, 
+    ],
+    style: {
+        width: '250px',
+        padding: '8px'
+    }
+});
+
+//insert this panel into the root panel (sidebar)
+//ui.root.insert(0,AllPanels);
+ui.root.add(AllPanels);
+//--------------------------------------------------------------map info panel-----------------------------------//
+////empty panel called mapinfopanel placed in the bottom left of the map. 
+
+var mapinfopanel = ui.Panel({
+    style: {
+        position: 'top-left'
+    }
+});
+
+Map.add(mapinfopanel);
+

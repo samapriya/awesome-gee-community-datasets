@@ -1,0 +1,23 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var water_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/water_polygons"),
+    land_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/land_polygons");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-34.14,37.6,4)
+
+Map.addLayer(
+  water_polygons.style({
+    fillColor: '00000000',
+    color: 'blue',
+  }),
+  {},
+  'Water Polygons'
+);
+
+Map.addLayer(
+  land_polygons.style({
+    fillColor: '00000000',
+    color: 'brown',
+  }),
+  {},
+  'Land Polygons'
+);

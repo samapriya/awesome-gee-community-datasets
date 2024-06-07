@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geom = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/geom");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+//Center Map
+Map.setCenter(91.1709, 29.3025,10)
+
+//Add Layers
+Map.addLayer(geom.median(),{min: 0.01, max: 273.18, palette: palettes.cmocean.Turbid[7]},'Geomorphon')

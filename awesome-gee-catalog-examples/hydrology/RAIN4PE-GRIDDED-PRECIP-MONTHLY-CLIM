@@ -1,0 +1,41 @@
+/**
+rain4pe: High-resolution gridded precipitation dataset for Peruvian and 
+Ecuadorian watersheds (1981-2015) 
+
+Image properties: 
+  - 'system:time_start' (Unix time)
+Spatial resolution: 0.1° (or roughly 10km x 10km)
+
+
+Google Earth Engine assets:
+  - rain4pe monthly: "users/csaybar/rainpe/monthly"
+  - rain4pe daily: "users/csaybar/rainpe/monthly" & "users/ryali93/rainpe/monthly"
+  - rain4pe monthly climatology: "users/csaybar/rainpe/monthly_clim"
+  - rain4pe annual mean: "users/csaybar/rainpe/annual"
+  
+More Information: https://dataservices.gfz-potsdam.de/pik/showshort.php?id=6f766e20-2d94-11eb-9603-497c92695674
+*/
+
+var rain4pe_mclim = ee.ImageCollection("users/csaybar/rainpe/monthly_clim")
+
+
+// Define an area of interest geometry.
+var aoi = rain4pe_mclim.first().geometry()
+  
+
+// Define arguments for animation function parameters.
+var palette = ['000096','0064ff', '00b4ff', '33db80', '9beb4a', 'ffeb00', 'ffb300', 'ff6400', 'eb1e00', 'af0000'];
+var videoArgs = {
+  dimensions: 768,
+  region: aoi,
+  framesPerSecond: 4,
+  crs: 'EPSG:3857',
+  min: 0,
+  max: 500,
+  palette: palette
+};
+
+print(rain4pe_mclim.getVideoThumbURL(videoArgs));
+
+Map.centerObject(aoi)
+Map.addLayer(rain4pe_mclim.first(), {min:0, max:500, palette: palette})

@@ -1,0 +1,29 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var average = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/average"),
+    maximum = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/maximum"),
+    median = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/median"),
+    minimum = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/minimum"),
+    average_masked = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/average_masked"),
+    median_masked = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/median_masked"),
+    GDEM = ee.Image("projects/sat-io/open-datasets/ASTER/GDEM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+"average" Average monthly radiance, nW/cm2/sr
+"average-masked" Average monthly radiance w/ background masked, nW/cm2/sr
+"max" Maximum monthly radiance, nW/cm2/sr
+"median" Median monthly radiance, nW/cm2/sr
+"median-masked" Median monthly radiance w/ background masked, nW/cm2/sr
+"min" Minimum monthly radiance, nW/cm2/sr
+*/
+var ocean_mask = GDEM.gt(0)
+
+var viz = ["#e2ee82","#f2d192","#c98cbe","#9c79c1","#584d9f"]
+
+Map.addLayer(maximum.first().mask(ocean_mask),{'palette':viz},'Maximum monthly radiance 2013, nW/cm2/sr')
+Map.addLayer(minimum.first().mask(ocean_mask),{'palette':viz},'Minimum monthly radiance 2013, nW/cm2/sr')
+Map.addLayer(median.first().mask(ocean_mask),{'palette':viz},'Median monthly radiance 2013, nW/cm2/sr')
+Map.addLayer(average.first().mask(ocean_mask),{'palette':viz},'Average monthly radiance 2013, nW/cm2/sr')
+Map.addLayer(average_masked.first().mask(ocean_mask),{'palette':viz},'Average monthly radiance w/ background masked 2013, nW/cm2/sr')
+Map.addLayer(median_masked.first().mask(ocean_mask),{'palette':viz},'Median monthly radiance w/ background masked 2013, nW/cm2/sr')
+
+

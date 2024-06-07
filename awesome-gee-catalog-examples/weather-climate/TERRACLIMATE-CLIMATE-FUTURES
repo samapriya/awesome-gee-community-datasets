@@ -1,0 +1,91 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var imageCollection = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/2C/tmax"),
+    point = /* color: #d63000 */ee.Geometry.Point([77.19352795668044, 28.629300008353113]),
+    maximumTemperatureVis = {"opacity":1,"bands":["b10"],"min":-2,"max":50,"palette":["1a3678","2955bc","5699ff","8dbae9","acd1ff","caebff","e5f9ff","fdffb4","ffe6a2","ffc969","ffa12d","ff7c1f","ca531a","ff0000","ab0000"]};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Scale and offset applied to imagery
+function scalor(image) {
+    return image.multiply(ee.Number(image.get('scale'))).add(ee.Number(image.get('offset'))).copyProperties(image, ["system:time_start","system:time_end"])
+}
+
+//data on TerraClimate 2c and 4c for month October
+var dataset2c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/2C/tmax").select('b10');
+dataset2c = dataset2c.map(scalor)
+
+var dataset4c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/4C/tmax").select('b10');
+dataset4c = dataset4c.map(scalor)
+
+//print the contents
+print('tmax2c',dataset2c);
+print('tmax4c',dataset4c);
+
+//add layer
+Map.addLayer(dataset2c, maximumTemperatureVis, 'Maximum Temperature 2C');
+Map.addLayer(dataset4c, maximumTemperatureVis, 'Maximum Temperature 4C');
+Map.addLayer(point, {}, 'Location:Delhi');
+
+// Define the chart and print it to the console.
+var chart =
+    ui.Chart.image
+    .seriesByRegion({
+        imageCollection: dataset2c,
+        band: 'b10',
+        regions: point,
+        reducer: ee.Reducer.mean(),
+        scale: 4000,
+        seriesProperty: 'label',
+        xProperty: 'system:time_start'
+    })
+    .setOptions({
+        title: 'dataset2c-1985-october(b10)',
+        hAxis: {
+            title: 'Date',
+            titleTextStyle: {
+                italic: false,
+                bold: true
+            }
+        },
+        vAxis: {
+            title: 'tmax (Celcius)',
+            titleTextStyle: {
+                italic: false,
+                bold: true
+            }
+        },
+        lineWidth: 5,
+        colors: ['f0af07', '0f8755', '76b349'],
+    });
+print(chart);
+
+// Define the chart and print it to the console.
+var chart =
+    ui.Chart.image
+    .seriesByRegion({
+        imageCollection: dataset4c,
+        band: 'b10',
+        regions: point,
+        reducer: ee.Reducer.mean(),
+        scale: 4000,
+        seriesProperty: 'label',
+        xProperty: 'system:time_start'
+    })
+    .setOptions({
+        title: 'dataset4c-1985-october(b10)',
+        hAxis: {
+            title: 'Date',
+            titleTextStyle: {
+                italic: false,
+                bold: true
+            }
+        },
+        vAxis: {
+            title: 'tmax (Celcius)',
+            titleTextStyle: {
+                italic: false,
+                bold: true
+            }
+        },
+        lineWidth: 5,
+        colors: ['f0af07', '0f8755', '76b349'],
+    });
+print(chart);

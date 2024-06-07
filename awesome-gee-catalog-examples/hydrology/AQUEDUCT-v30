@@ -1,0 +1,45 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var bws = ee.FeatureCollection("projects/sat-io/open-datasets/aqueduct_global_v30/physical_risk_quantity/baseline_water_stress"),
+    undw = ee.FeatureCollection("projects/sat-io/open-datasets/aqueduct_global_v30/regulatory_reputational/unimproved_no_drinking_water"),
+    drr = ee.FeatureCollection("projects/sat-io/open-datasets/aqueduct_global_v30/physical_risk_quantity/drought_risk"),
+    owr = ee.FeatureCollection("projects/sat-io/open-datasets/aqueduct_global_v30/overall_water_risk_annual");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+var empty = ee.Image().byte();
+
+// Paint the interior of the polygons with different colors.
+var fills = empty.paint({
+  featureCollection: undw,
+  color: 'udw_cat',
+});
+
+// Low, Low-Medium,Medium-High,High,Extremely High
+var palette = ['#ffff99', '#ffe600', 'ff9900','#ff1900','#cc0014'];
+Map.addLayer(fills, {palette: palette, min:0,max: 4}, 'Unimproved no drinking water');
+
+// Paint the interior of the polygons with different colors.
+var fills = empty.paint({
+  featureCollection: bws,
+  color: 'bws_cat',
+});
+//
+var palette = ['#808080','#ffff99', '#ffe600', 'ff9900','#ff1900','#cc0014']
+Map.addLayer(fills, {palette: palette, min:-1,max: 4}, 'Baseline water stress');
+
+// Paint the interior of the polygons with different colors.
+var fills = empty.paint({
+  featureCollection: drr,
+  color: 'drr_cat',
+});
+//
+var palette = ['#ffff99', '#ffe600', 'ff9900','#ff1900','#cc0014']
+Map.addLayer(fills, {palette: palette, min:0,max: 4}, 'Drought Risk');
+
+// Paint the interior of the polygons with different colors.
+var fills = empty.paint({
+  featureCollection: owr,
+  color: 'owr',
+});
+//
+var palette = ['#808080','#ffff99', '#ffe600', 'ff9900','#ff1900','#cc0014']
+Map.addLayer(fills, {palette: palette, min:-1,max: 4}, 'Overall Water Risk');

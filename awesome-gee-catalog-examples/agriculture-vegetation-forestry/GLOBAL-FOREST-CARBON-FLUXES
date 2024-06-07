@@ -1,0 +1,101 @@
+//Visualize and load Global Forest Watch gross emissions, gross removals, and net flux from forests
+//Model version 1.2.3
+//Harris et al. 2021
+
+//Mosaic imageCollection into a single image
+var emissions = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions").mosaic();
+var removals = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals").mosaic();
+var net_flux = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux").mosaic();
+
+// Set visualization parameters. Adjust `quantity` for breakpoints.
+var emissions_intervals =
+'<RasterSymbolizer>' +
+' <ColorMap type="intervals" extended="false" >' +
+    '<ColorMapEntry color="#f5e9ee" quantity="0" label="No Data"/>' +
+    '<ColorMapEntry color="#f0d3df" quantity="50" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#d8afbc" quantity="100" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#d687a4" quantity="175" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#c75d9d" quantity="250" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#c72a80" quantity="350" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#a62177" quantity="450" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#96267e" quantity="550" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#872782" quantity="650" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#782b8a" quantity="800" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#662d91" quantity="1000" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#592a85" quantity="1100" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#4c287a" quantity="1300" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#402773" quantity="1900" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#35256b" quantity="2600" label="Gross Emissions"/>' +
+    '<ColorMapEntry color="#262260" quantity="3652" label="Gross Emissions"/>' +
+  '</ColorMap>' +
+'</RasterSymbolizer>';
+
+var removals_intervals =
+'<RasterSymbolizer>' +
+ ' <ColorMap type="intervals" extended="false" >' +
+    '<ColorMapEntry color="#ffecaa" quantity="0" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#ffe991" quantity="15" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#fce479" quantity="25" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#fcde5a" quantity="35" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#fcdc3a" quantity="45" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#f9d800" quantity="55" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#e8d31b" quantity="70" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#BAD12F" quantity="90" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#bfc64e" quantity="110" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#aac138" quantity="130" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#96bc3e" quantity="150" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#7ba53d" quantity="190" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#629144" quantity="250" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#4a8239" quantity="380" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#307038" quantity="700" label="Gross Removals"/>' +
+    '<ColorMapEntry color="#0e6030" quantity="1500" label="Gross Removals"/>' +
+  '</ColorMap>' +
+'</RasterSymbolizer>';
+
+var net_flux_intervals =
+'<RasterSymbolizer>' +
+' <ColorMap type="intervals" extended="false" >' +
+    '<ColorMapEntry color="#0e6030" quantity="-1500" label="Net Flux"/>' +
+    '<ColorMapEntry color="#307038" quantity="-700" label="Net Flux"/>' +
+    '<ColorMapEntry color="#4a8239" quantity="-250" label="Net Flux"/>' +
+    '<ColorMapEntry color="#629144" quantity="-180" label="Net Flux"/>' +
+    '<ColorMapEntry color="#7ba53d" quantity="-150" label="Net Flux"/>' +
+    '<ColorMapEntry color="#b5bf28" quantity="-120" label="Net Flux"/>' +
+    '<ColorMapEntry color="#BFC64E" quantity="-100" label="Net Flux"/>' +
+    '<ColorMapEntry color="#94DE26" quantity="-80" label="Net Flux"/>' +
+    '<ColorMapEntry color="#B1E717" quantity="-70" label="Net Flux"/>' +
+    '<ColorMapEntry color="#cfed4f" quantity="-50" label="Net Flux"/>' +
+    '<ColorMapEntry color="#fce479" quantity="-30" label="Net Flux"/>' +
+    '<ColorMapEntry color="#ffe991" quantity="-15" label="Net Flux"/>' +
+    '<ColorMapEntry color="#ffecaa" quantity="35" label="Net Flux"/>' +
+    
+    '<ColorMapEntry color="#f0d3df" quantity="60" label="Net Flux"/>' +
+    '<ColorMapEntry color="#d8afbc" quantity="80" label="Net Flux"/>' +
+    '<ColorMapEntry color="#d687a4" quantity="100" label="Net Flux"/>' +
+    '<ColorMapEntry color="#c75d9d" quantity="150" label="Net Flux"/>' +
+    '<ColorMapEntry color="#c72a80" quantity="200" label="Net Flux"/>' +
+    '<ColorMapEntry color="#a62177" quantity="275" label="Net Flux"/>' +
+    '<ColorMapEntry color="#96267e" quantity="350" label="Net Flux"/>' +
+    '<ColorMapEntry color="#872782" quantity="500" label="Net Flux"/>' +
+    '<ColorMapEntry color="#782b8a" quantity="700" label="Net Flux"/>' +
+    '<ColorMapEntry color="#662d91" quantity="1000" label="Net Flux"/>' +
+    '<ColorMapEntry color="#4c287a" quantity="1300" label="Net Flux"/>' +
+    '<ColorMapEntry color="#402773" quantity="1900" label="Net Flux"/>' +
+    '<ColorMapEntry color="#35256b" quantity="2600" label="Net Flux"/>' +
+    '<ColorMapEntry color="#262260" quantity="3652" label="Net Flux"/>' +
+  '</ColorMap>' +
+'</RasterSymbolizer>';
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+// Layers not displayed, just to get the pixel values with pixel inspector
+// Pixel values represent MgCO2e/ha between 2001 and 2022
+Map.addLayer(emissions, {}, 'Gross emissions (no viz)',false);
+Map.addLayer(removals, {}, 'Gross removals (no viz)',false);
+Map.addLayer(net_flux, {}, 'Net flux (no viz)',false);
+
+// Layers displayed
+Map.addLayer(emissions.sldStyle(emissions_intervals), {}, 'Gross emissions (Mg CO2e/ha between 2001 and 2023)');
+Map.addLayer(removals.sldStyle(removals_intervals), {}, 'Gross removals (Mg CO2e/ha between 2001 and 2023)');
+Map.addLayer(net_flux.sldStyle(net_flux_intervals), {}, 'Net flux (Mg CO2e/ha between 2001 and 2023)');

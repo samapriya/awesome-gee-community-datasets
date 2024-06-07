@@ -1,0 +1,169 @@
+/**************Code Attribution: Code Provided by  www.spatialthoughts.com*****/
+
+// Drill-down (Cascading Forms) for Selecting Administrative Boundaries
+// This script shows how to build hierarchical selection using UI Widgets
+
+// Using GeoBoundries admin boundaries
+var admin0 = ee.FeatureCollection("projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM0");
+var admin1 = ee.FeatureCollection("projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM1");
+var admin2 = ee.FeatureCollection("projects/sat-io/open-datasets/geoboundaries/CGAZ_ADM2");
+
+
+// Set-up the panel
+var mainPanel = ui.Panel();
+mainPanel.style().set({
+  width: '300px',
+});
+ui.root.insert(0,mainPanel);
+
+var title = ui.Label('Drill-down Selector');
+title.style().set({
+  'position':  'top-center',
+  'fontSize': '24px'
+  });
+mainPanel.add(title)
+
+// Create a panel to hold the drop-down boxes
+var dropdownPanel = ui.Panel();
+
+// Create a panel to hold the result
+var resultPanel = ui.Panel();
+
+// Define 3 dropdowns for admin0, admin1 and admin2 names
+
+// Keep them disbled. We will add items later
+var admin0Select = ui.Select({
+    placeholder: 'please wait..',
+  }).setDisabled(true)
+  
+var admin1Select = ui.Select({
+    placeholder: 'select admin0 unit first',
+  }).setDisabled(true)
+  
+var admin2Select = ui.Select({
+  placeholder: 'select admin1 unit first',
+}).setDisabled(true)
+
+dropdownPanel.add(admin0Select)
+dropdownPanel.add(admin1Select)
+dropdownPanel.add(admin2Select)
+
+mainPanel.add(dropdownPanel)
+mainPanel.add(resultPanel)
+
+// *************************
+// Define callback functions
+// *************************
+
+// We need to do this first since the functions need to
+// be defined before they are used.
+
+// Define the onChange() function for admin0Select
+var admin0Selected = function(admin0Selection) {
+  resultPanel.clear()
+  Map.clear()
+  admin1Select.items().reset()
+  admin2Select.items().reset()
+  admin1Select.setPlaceholder('please wait..')
+  admin2Select.setPlaceholder('Select a admin1 unit first..')
+
+  // Now we have admin0 values, fetch admin1 values for that country
+  
+  var selectedAdmin0 = admin0.filter(ee.Filter.eq('shapeName', admin0Selection));
+  var shapeID = ee.Feature(selectedAdmin0.first()).get('shapeID');
+  var selectedAdmin1 = admin1.filter(ee.Filter.eq('ADM0_shape', shapeID));
+
+  var admin1Names = selectedAdmin1
+    .aggregate_array('shapeName')
+    .sort()
+
+  // Use evaluate() to not block the UI
+  admin1Names.evaluate(function(items){
+    admin1Select.setPlaceholder('select admin1 unit')
+    admin1Select.items().reset(items)
+    // Now that we have items, enable the menu
+    admin1Select.setDisabled(false)
+  })
+}
+
+// Define the onChange() function for admin1Select
+var admin1Selected = function(admin1Selection) {
+  resultPanel.clear()
+  Map.clear()
+  admin2Select.setPlaceholder('please wait..')
+
+  var selectedAdmin1 = admin1.filter(ee.Filter.eq('shapeName', admin1Selection));
+  
+  var shapeID = ee.Feature(selectedAdmin1.first()).get('shapeID');
+  var selectedAdmin2 = admin2.filter(ee.Filter.eq('ADM1_shape', shapeID));
+
+  var admin2Names = selectedAdmin2
+    .aggregate_array('shapeName')
+    .sort()
+
+  
+  admin2Names.evaluate(function(items){
+    if (items.length == 0) {
+      items = ['No Admin2 Units']
+      admin2Select.items().reset(items)
+    }
+    else {
+      admin2Select.items().reset(items)  
+    }
+    admin2Select.setPlaceholder('select admin2 unit')
+    admin2Select.setDisabled(false)
+  })
+}
+
+// Define the onChange() function for admin2Select
+var admin2Selected = function(admin1Selection) {
+  resultPanel.clear()
+  Map.clear()
+  var admin0Value = admin0Select.getValue()
+  var admin1Value = admin1Select.getValue()
+  var admin2Value = admin2Select.getValue()
+  
+  var selectedAdmin1 = admin1.filter(ee.Filter.eq('shapeName', admin1Value));
+  var shapeGroup = ee.Feature(selectedAdmin1.first()).get('shapeGroup');
+  // Some regions do not have admin2 values
+  // We are on client-side, so using if/else is ok
+  if (admin2Value == 'No Admin2 Units') {
+      var result = admin1Value + ',' + admin0Value
+      var filtered = admin1
+        .filter(ee.Filter.eq('shapeName', admin1Value))
+        .filter(ee.Filter.eq('shapeGroup', shapeGroup))
+  }
+  else {
+      var result = admin2Value + ',' + admin1Value + ',' + admin0Value
+      var filtered = admin2
+        .filter(ee.Filter.eq('shapeName', admin2Value))
+        .filter(ee.Filter.eq('shapeGroup', shapeGroup))
+        .filter(ee.Filter.intersects('.geo', selectedAdmin1.geometry()));
+
+  }
+  var label = ui.Label('You selected: ' + result)
+  resultPanel.add(label)
+  Map.centerObject(filtered)
+  Map.addLayer(filtered, {color: 'blue'}, result)
+}
+
+// Register the callback functions
+admin0Select.onChange(admin0Selected)
+admin1Select.onChange(admin1Selected)
+admin2Select.onChange(admin2Selected)
+
+// ******************
+// Populate the items
+// ******************
+
+// Get all country names and sort them
+var admin0Names = admin0.aggregate_array('shapeName').sort().distinct()
+// Fetch the value using evaluate() to not block the UI
+admin0Names.evaluate(function(items){
+  admin0Select.items().reset(items)
+  // Now that we have items, enable the menu
+  admin0Select.setDisabled(false)
+  // Change placeholder
+  admin0Select.setPlaceholder('Select admin0 unit')
+
+})

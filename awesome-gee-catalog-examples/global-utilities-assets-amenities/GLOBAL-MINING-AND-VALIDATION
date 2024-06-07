@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mining = ee.FeatureCollection("projects/sat-io/open-datasets/global-mining/global_mining_polygons"),
+    validation = ee.FeatureCollection("projects/sat-io/open-datasets/global-mining/global_mining_validation");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.FeatureCollection(mining).style({fillColor: '00000000',color: 'af8dc3',width:3}),{},'Mining Polygons')
+Map.addLayer(ee.FeatureCollection(validation).style({color: 'FC8D59',width:4}),{},'Mining Validation Points')
+
+Map.setOptions('SATELLITE')

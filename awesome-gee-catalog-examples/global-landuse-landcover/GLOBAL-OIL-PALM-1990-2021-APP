@@ -1,0 +1,542 @@
+Map.setCenter(20, 0, 3)
+Map.setOptions('satellite')
+
+// var point = geometry  
+
+
+//_______________________________________________________________________________________________________________________
+// SECTION   -  S1S2 composite
+var yy = 2021
+var js_s1 = require('users/adriadescals/JSfunctions:S1_annualComposites.js')
+var js_s2 = require('users/adriadescals/JSfunctions:S2_annualComposites.js')
+var S1comp = js_s1.S1_annualComposites(yy)
+var S2comp = js_s2.S2_annualComposites(yy)
+
+var bandVV = S1comp.select('VV') //.divide(100).multiply(20)).add(10)
+var bandVH = S1comp.select('VH') //.divide(100).multiply(20)).add(-10)
+var band11 = (S2comp.select('B11').multiply(0.1)).add(-70)
+var band8 = (S2comp.select('B8').multiply(0.06)).add(-70)
+var band4 = (S2comp.select('B4').multiply(0.1)).add(-70)
+
+var COMP = bandVV.addBands(bandVH).addBands(band11).addBands(band8).addBands(band4).uint8()
+
+// var compS2VisParam = {"opacity":1,"bands":["B11","B8","B4"],"min":20,"max":200,"gamma":1.3};
+// Map.addLayer(COMP,compS2VisParam,'COMP (B11-B8-B4)',false)
+
+var compS1VisParam = {
+    "opacity": 1,
+    "bands": ["VV_1", "VH_1", "B11_1"],
+    "min": 50,
+    "max": 180,
+    "gamma": 0.9
+};
+Map.addLayer(COMP.addBands(COMP.select('VV').multiply(1.7)).addBands(COMP.select('VH').multiply(1.5)).addBands(COMP.select('B11').add(-20)), compS1VisParam, 'Sentinel-1&2 Composite 2021 (VV-VH-B11)', false)
+
+//_______________________________________________________________________________________________________________________
+// SECTION   - Oil palm extent
+
+var tilesOP = ee.FeatureCollection('projects/ee-globaloilpalm/assets/shared/Grid_OilPalm_2021_v1-1');
+
+var vPoly = ee.Image().toByte().paint(tilesOP, 2, 2);
+var vPoly = vPoly.visualize({
+    palette: 'd6d6d6',
+    max: 2,
+    opacity: 1
+});
+Map.addLayer(vPoly, {}, 'Grid cells with oil palm', false)
+
+
+var OP2016_2021_S1 = ee.ImageCollection('projects/ee-globaloilpalm/assets/shared/GlobalOilPalm_extent_2021').mosaic()
+Map.addLayer(OP2016_2021_S1.selfMask(), {
+    min: 0,
+    max: 2,
+    palette: ["white", "red", "f344ff"]
+}, 'Oil palm extent 2016-2021', true)
+
+
+var vPoly = ee.Image().toByte().paint(tilesOP, 2, 2);
+var vPoly = vPoly.visualize({
+    palette: 'd6d6d6',
+    max: 2,
+    opacity: 1
+});
+var mask = vPoly.unmask(999)
+var OPvis = OP2016_2021_S1.visualize({
+    min: 0,
+    max: 2,
+    palette: ["white", "red", "f344ff"]
+}).unmask(0).where(mask.neq(999), vPoly).updateMask((OP2016_2021_S1.unmask(0).eq(0).and(mask.eq(999))).not()) //.selfMask()
+// Map.addLayer(OPvis,{},'Oil palm extent 2016-2021',true)
+
+
+
+// var OP2019 = ee.ImageCollection("BIOPAMA/GlobalOilPalm/v1").mosaic().unmask(0);
+// var OP2019 = OP2019.where(OP2019.eq(3),0)
+// // Map.addLayer(OP2019.selfMask(),{min:0,max:2,palette:["gray","blue","cyan"]},'OP 2019 (ESSD)',false)
+
+// var BA2021 = OP2019.gt(0).unmask(0)
+// var BA2005 = OP2016_2021_S1.gt(0).unmask(0)
+// var BAmerged = ee.Image(0)
+//   .where(BA2005.eq(1).and(BA2021.eq(0)), 1)
+//   .where(BA2005.eq(1).and(BA2021.eq(1)), 2)
+//   .where(BA2005.eq(0).and(BA2021.eq(1)), 3)
+// // Map.addLayer(BAmerged.selfMask(),{min:1,max:3,palette:['00ff00','white','ff0000']},'Comparison ESSD2019 - OPextent',false)
+
+
+//_______________________________________________________________________________________________________________________
+// SECTION   - Call last disturbance and age
+
+var dateDisturbance = ee.ImageCollection("projects/ee-globaloilpalm/assets/shared/GlobalOilPalm_YoP_2021")
+    .mosaic()
+    .select(['minNBR_date', 'lastBareLand_date']).rename(['minNBR', 'last'])
+
+var yearDisturbance = dateDisturbance.divide(365).add(1970)
+
+var colorblindRainbowPalette = ["be231f", "e62424", "f14e2b", "f56a30", "fd8537", "fb983a", "f7a93e", "f3bb42", "eacb49", "e0de55", "c2de62", "a5de7b", "93e29a", "84deb5", "78d6c6", "6cc9ce", "67c2dc", "5db3e0", "589ee2", "5888de", "5568b8"];
+var visyearDisturbance = {
+    min: 1990,
+    max: 2021,
+    palette: colorblindRainbowPalette
+}
+
+var mask = yearDisturbance.select('minNBR').lt(1990).selfMask()
+var YoP = yearDisturbance.select('minNBR').where(mask, 1989)
+Map.addLayer(YoP, visyearDisturbance, 'Year of oil palm plantation', true)
+
+
+//_______________________________________________________________________________________________________________________
+// SECTION   - Validation points
+var validation = ee.FeatureCollection("projects/ee-globaloilpalm/assets/shared/Validation_points_GlobalOP2016-2021_v1-1");
+
+var palette = ee.List(['FFFFFF', 'FF0000', 'f344ff']); // number of colors equal to number of classes
+var validation = validation.map(function(ff) {
+    return ff.set({
+        style: {
+            color: '000000',
+            fillColor: palette.get(ff.get("Class")),
+            width: 1,
+            pointSize: 4
+        }
+    })
+})
+Map.addLayer(validation.style({
+    styleProperty: "style"
+}), {}, 'Validation points (true class)', true)
+
+
+
+//_______________________________________________________________________________________________________________________
+// SECTION   - 
+
+var resultsPanel = ui.Panel(
+    [],
+    ui.Panel.Layout.flow('vertical'), {
+        position: 'bottom-left'
+    });
+Map.add(resultsPanel);
+
+
+var panel = ui.Panel();
+panel.style().set('width', '300px');
+
+var ULtextbox_lat = ui.Textbox({
+    placeholder: 'Enter latitude (e.g. 1.537)',
+    onChange: function(text) {}
+});
+
+var ULtextbox_lon = ui.Textbox({
+    placeholder: 'Enter longitude (e.g. 99.8)',
+    onChange: function(text) {}
+});
+
+
+var intro1 = ui.Panel([
+    ui.Label({
+        value: 'Global oil palm extent and planting year from 1990 to 2021',
+        style: {
+            fontSize: '18px',
+            fontWeight: 'bold'
+        }
+    }),
+]);
+
+var descriptionData = ui.Panel([
+    ui.Label({
+        value: '  ',
+        style: {
+            fontSize: '14px'
+        }
+    }),
+]);
+
+var step1 = ui.Label({
+    value: ' ',
+    style: {
+        fontSize: '14px',
+        fontWeight: 'bold'
+    }
+})
+var step2 = ui.Label({
+    value: ' ',
+    style: {
+        fontSize: '14px',
+        fontWeight: 'bold'
+    }
+})
+
+
+var coords1 = ULtextbox_lon.getValue()
+var coords2 = ULtextbox_lat.getValue()
+
+var buttonUL = ui.Button({
+    label: 'Get point of interest',
+    onClick: function() {
+        textUL.setValue('click a point on the map...')
+        // lat1.setValue(' ')
+        Map.style().set('cursor', 'crosshair');
+
+        var listenerId = Map.onClick(function(coords) {
+
+            ULtextbox_lon.setValue(coords.lon.toFixed(5)),
+                ULtextbox_lat.setValue(coords.lat.toFixed(5));
+
+            var point1 = ee.Geometry.Point(coords.lon, coords.lat);
+
+
+
+
+            //_______________________________________________________________________________________________________________________
+            // SECTION   - Call last disturbance v1
+
+
+            var point = point1
+            var datePoint = ee.Number(dateDisturbance.select('minNBR').unmask(0).rename('date1').reduceRegion(ee.Reducer.first(), point, 30).get('date1'))
+            var dateGEEPoint = ee.Date(datePoint.multiply(86400000).add(ee.Date.fromYMD(1970, 1, 1).millis())) //ee.Date.fromYMD(yearPoint, 1, 1).advance(doyPoint, 'day')
+            var doyPoint = dateGEEPoint.getRelative('day', 'year')
+            var yearPoint = dateGEEPoint.get('year')
+            // print(datePoint,yearPoint,doyPoint,dateGEEPoint)
+
+
+
+            var js_l578 = require('users/adriadescals/JSfunctions:Landsat_harmonized.js')
+            var L578 = js_l578.Landsat_harmonized({
+                startDate: '1990-01-01',
+                endDate: '2022-01-01',
+                region: point
+            })
+
+            var imageVisParam = {
+                    "opacity": 1,
+                    "bands": ["SWIR1", "NIR", "Red"],
+                    "min": 9600,
+                    "max": 27000,
+                    "gamma": 1.5
+                },
+                imageVisParam2 = {
+                    "opacity": 1,
+                    "bands": ["Red", "Green", "Blue"],
+                    "min": 8500,
+                    "max": 14000,
+                    "gamma": 1.5
+                };
+
+
+            if (1) {
+                function renameOli(img) {
+                    return img.select(
+                        ['SR_B2', 'SR_B3', 'SR_B4', 'SR_B5', 'SR_B6', 'SR_B7', 'ST_B10', 'QA_PIXEL'],
+                        ['Blue', 'Green', 'Red', 'NIR', 'SWIR1', 'SWIR2', 'LST', 'QA_PIXEL']);
+                }
+
+                function renameEtm(img) {
+                    return img.select(
+                        ['SR_B1', 'SR_B2', 'SR_B3', 'SR_B4', 'SR_B5', 'SR_B7', 'ST_B6', 'QA_PIXEL'],
+                        ['Blue', 'Green', 'Red', 'NIR', 'SWIR1', 'SWIR2', 'LST', 'QA_PIXEL']);
+                }
+
+                var landsatAllRaw = ee.ImageCollection('LANDSAT/LT05/C02/T1_L2').map(renameEtm)
+                    .merge(ee.ImageCollection("LANDSAT/LE07/C02/T1_L2").map(renameEtm))
+                    .merge(ee.ImageCollection("LANDSAT/LC08/C02/T1_L2").map(renameOli))
+
+                var colLine = ee.ImageCollection.fromImages([ee.Image(-0.1).set('system:time_start', dateGEEPoint.millis()).rename('Date of planting'),
+                    ee.Image(1).set('system:time_start', dateGEEPoint.millis()).rename('Date of planting')
+                ])
+
+                var chart = ui.Chart.image.series({
+                    imageCollection: L578.select(['nbr2'])
+                        // .map(function(im){return im.rename('NBR')})
+                        .merge(colLine),
+                    region: point,
+                    reducer: ee.Reducer.mean(),
+                    scale: 30,
+                    xProperty: 'system:time_start'
+                }).setSeriesNames(['Planting date', 'NDWI']).setOptions({
+                    title: 'Click any NDWI observation to visualize the corresponding Landsat image',
+                    titleTextStyle: {
+                        fontName: 'Arial',
+                        italic: true
+                    },
+                    vAxis: {
+                        title: 'NDWI',
+                        // gridlines: {count: 20},
+                        viewWindow: {
+                            min: -0.1,
+                            max: 1
+                        }
+                    },
+                    hAxis: {
+                        title: ' ',
+                        // gridlines: {count: 20},
+                        viewWindow: {
+                            min: 630979200000,
+                            max: 1640995200000
+                        }
+                    },
+                    series: {
+                        1: {
+                            color: '000000',
+                            pointSize: 4,
+                            lineWidth: 0
+                        },
+                        0: {
+                            color: 'ff0000',
+                            pointSize: 0,
+                            lineWidth: 2
+                        },
+                    }
+                });
+
+                chart.style().set({
+                    position: 'bottom-left',
+                    width: '1200px',
+                    height: '200px'
+                });
+                // Map.add(chart);
+                resultsPanel.clear().add(chart);
+
+                chart.onClick(function(xValue, yValue, seriesName) {
+                    if (!xValue) return;
+                    // var image = ee.Image(landsatAllRaw.filterBounds(point).filter(ee.Filter.equals('system:time_start', xValue)).first());
+                    var image = landsatAllRaw.filterDate(ee.Date(xValue).advance(-1, 'day'), ee.Date(xValue).advance(1, 'day')).mosaic();
+                    var dateImage = ((new Date(xValue)).toISOString())
+
+                    print(ee.Date(xValue), yValue, image)
+
+                    // Map.layers().forEach(function(layer) {
+                    //   layer.setShown(false);
+                    // });
+
+                    // Map.addLayer(image,imageVisParam2,dateImage,true)
+
+                    var imLayer = ui.Map.Layer(image, imageVisParam2, dateImage, true);
+                    Map.layers().set(4, imLayer);
+                });
+
+
+                var im = landsatAllRaw.filterBounds(point)
+                    .filter(ee.Filter.calendarRange(doyPoint, doyPoint.add(1), 'day_of_year'))
+                    .filter(ee.Filter.calendarRange(yearPoint, yearPoint, 'year'))
+
+                // Map.addLayer(im,imageVisParam2,'IM',true)
+                // Map.addLayer(ee.Image(0),{},'empty',true)
+                // print(im)
+            }
+
+            var emptyLayer = ui.Map.Layer(ee.Image(0).selfMask(), {}, 'empty', false);
+            Map.layers().set(4, emptyLayer);
+
+            var dot1 = ui.Map.Layer(point1, {
+                color: 'ff0000'
+            }, 'Point', true);
+            Map.layers().set(5, dot1);
+
+            Map.style().set('cursor', 'hand');
+            Map.unlisten(listenerId);
+            textUL.setValue('')
+        })
+    },
+});
+
+var textUL =
+    ui.Label({
+        value: '',
+        style: {
+            fontSize: '12px'
+        }
+
+    });
+
+
+panel.add(intro1);
+panel.add(descriptionData);
+
+
+var link1 = ui.Label('Link to preprint in ESSD', {
+    position: 'bottom-left'
+}, 'https://essd.copernicus.org/preprints/essd-2024-157/')
+panel.add(link1)
+
+var link2 = ui.Label('Link to data repository (Zenodo)', {
+    position: 'bottom-left'
+}, 'https://doi.org/10.5281/zenodo.11034131')
+panel.add(link2)
+
+
+var link3 = ui.Label('Link to oil palm extent layer (GEE asset)', {
+    position: 'bottom-left'
+}, 'https://code.earthengine.google.com/?asset=projects/ee-globaloilpalm/assets/shared/GlobalOilPalm_extent_2021')
+panel.add(link3)
+
+var link4 = ui.Label('Link to oil palm planting layer (GEE asset)', {
+    position: 'bottom-left'
+}, 'https://code.earthengine.google.com/?asset=projects/ee-globaloilpalm/assets/shared/GlobalOilPalm_YoP_2021')
+panel.add(link4)
+
+panel.add(step1);
+panel.add(step2);
+
+Map.add(ui.Panel([buttonUL, textUL], ui.Panel.Layout.flow('vertical')));
+
+ui.root.insert(0, panel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////
+// MAKE MAP LEGEND (continuous variable)
+var visParams = visyearDisturbance;
+var TITLE = 'Oil palm planting year'
+var LEGEND = ' '
+
+
+///////////////////////////
+function ColorBar() {
+    return ui.Thumbnail({
+        image: ee.Image.pixelLonLat().select(0),
+        params: {
+            bbox: [0, 0, 1, 0.1],
+            dimensions: '100x10',
+            format: 'png',
+            min: 0,
+            max: 1,
+            palette: visParams['palette'],
+        },
+        style: {
+            stretch: 'horizontal',
+            margin: '0px 8px'
+        },
+    });
+}
+
+function makeLegend(a, b) {
+    var labelPanel = ui.Panel(
+        [
+            ui.Label(a, {
+                margin: '4px 8px'
+            }),
+            ui.Label(' ', {
+                margin: '4px 8px',
+                textAlign: 'center',
+                stretch: 'horizontal'
+            }),
+            ui.Label(b, {
+                margin: '4px 8px'
+            })
+        ],
+        ui.Panel.Layout.flow('horizontal'));
+    return ui.Panel([ColorBar(), labelPanel]);
+}
+
+var LEGEND_TITLE_STYLE = {
+    fontSize: '14px',
+    fontWeight: 'bold',
+    stretch: 'horizontal',
+    textAlign: 'left',
+    margin: '4px'
+};
+var LEGEND_FOOTNOTE_STYLE = {
+    fontSize: '11px',
+    stretch: 'horizontal',
+    textAlign: 'center',
+    margin: '4px'
+};
+
+
+panel.add(ui.Panel(
+    [
+        ui.Label(TITLE, LEGEND_TITLE_STYLE), makeLegend(visParams['min'], visParams['max']),
+        ui.Label(LEGEND, LEGEND_FOOTNOTE_STYLE)
+    ],
+    ui.Panel.Layout.flow('vertical'), {
+        width: '250px',
+        position: 'bottom-left',
+        padding: '8px 14px'
+    }));
+
+
+
+
+
+
+///////////////////////////////
+// MAKE MAP LEGEND (categorical variable)
+
+// setup
+var TITLE = 'Oil palm extent 2021'
+var palette = ['ff0000', 'f344ff']
+var ClassNames = ['Industrial oil palm', 'Smallholder oil palm']
+
+///////////////////////////
+var legend = ui.Panel({
+    style: {
+        position: 'bottom-left',
+        padding: '8px 15px'
+    }
+});
+
+var legendTitle = ui.Label({
+    value: TITLE,
+    style: {
+        fontWeight: 'bold',
+        fontSize: '14px',
+        margin: '0 0 4px 0',
+        padding: '0'
+    }
+});
+legend.add(legendTitle);
+
+var makeRow = function(color, name) {
+    var colorBox = ui.Label({
+        style: {
+            backgroundColor: '#' + color,
+            padding: '8px',
+            margin: '0 0 4px 0'
+        }
+    });
+    var description = ui.Label({
+        value: name,
+        style: {
+            margin: '0 0 4px 4px'
+        }
+    });
+    return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+    });
+};
+
+for (var i = 0; i < ClassNames.length; i++) {
+    legend.add(makeRow(palette[i], ClassNames[i]));
+}
+
+panel.add(legend);

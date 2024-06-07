@@ -1,0 +1,125 @@
+// https://doi.org/10.1038/s41597-021-01048-w
+
+var State_boundaries = ee.FeatureCollection('users/giswqs/MRB/State_Boundaries');
+var State_style = State_boundaries.style({'color': '808080', 'width':1, 'fillColor': '00000000'});
+
+var MRB_boundary = ee.FeatureCollection('users/giswqs/MRB/MRB_Boundary');
+var MRB_style = MRB_boundary.style({'color': '000000', 'width':2, 'fillColor': '00000000'});
+
+var floodplain = ee.Image('users/giswqs/MRB/USGS_Floodplain');
+
+var class_values = [34, 38, 46, 50, 62];
+var class_palette = ['c500ff', '00ffc5', '00a9e6', '73004d', '004d73'];
+
+var img_1950 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_1950');
+img_1950 = img_1950.set('b1_class_values', class_values);
+img_1950 = img_1950.set('b1_class_palette', class_palette);
+
+var img_1960 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_1960');
+img_1960 = img_1960.set('b1_class_values', class_values);
+img_1960 = img_1960.set('b1_class_palette', class_palette);
+
+var img_1970 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_1970');
+img_1970 = img_1970.set('b1_class_values', class_values);
+img_1970 = img_1970.set('b1_class_palette', class_palette);
+
+var img_1980 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_1980');
+img_1980 = img_1980.set('b1_class_values', class_values);
+img_1980 = img_1980.set('b1_class_palette', class_palette);
+
+var img_1990 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_1990');
+img_1990 = img_1990.set('b1_class_values', class_values);
+img_1990 = img_1990.set('b1_class_palette', class_palette);
+
+var img_2000 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_2000');
+img_2000 = img_2000.set('b1_class_values', class_values);
+img_2000 = img_2000.set('b1_class_palette', class_palette);
+
+
+// Set position of panel
+var title = ui.Panel({
+  style: {
+    position: "top-center",
+    padding: "8px 15px",
+  },
+});
+
+// Create legend title
+var titleLabel = ui.Label({
+  value: "Mississippi River Basin Floodplain Land Use Change (1941-2000)",
+  style: {
+    fontWeight: "bold",
+    fontSize: "18px",
+    margin: "0 0 4px 0",
+    padding: "0",
+  },
+});
+
+title.add(titleLabel);
+Map.add(title);
+
+// Set position of panel
+var legend = ui.Panel({
+  style: {
+    position: "bottom-left",
+    padding: "8px 15px",
+  },
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: "Legend",
+  style: {
+    fontWeight: "bold",
+    fontSize: "18px",
+    margin: "0 0 4px 0",
+    padding: "0",
+  },
+});
+
+// Add the title to the panel
+legend.add(legendTitle);
+// Creates and styles 1 row of the legend
+var makeRow = function(color, name) {
+var colorBox = ui.Label({
+style: {
+backgroundColor: '#' + color,
+padding: '8px',
+margin: '0 0 4px 0'
+}
+});
+// Create the label filled with the description text
+var description = ui.Label({
+value: name,
+style: {margin: '0 0 4px 6px'}
+});
+
+// Return the panel
+return ui.Panel({
+widgets: [colorBox, description],
+layout: ui.Panel.Layout.Flow('horizontal')
+});
+};
+// Name of each legend input
+var names =['Forest to Developed', 'Forest to Agriculture', 'Grassland to Agriculture', 'Agriculture to Developed', 'Wetland to Agriculture', 'Floodplain'];
+// Palette with the colors
+var palette =['c500ff', '00ffc5', '00a9e6', '73004d', '004d73', 'cccccc'];
+// Add the colors and names
+for (var i = 0; i < 6; i++) {
+legend.add(makeRow(palette[i], names[i]));
+}
+// Add legend to map (alternatively you can also print the legend to the console)
+Map.add(legend);
+
+
+// Map.centerObject(MRB_boundary, 4);
+Map.addLayer(floodplain, {'palette': ['cccccc']}, 'Floodplain', true, 0.5 );
+Map.addLayer(img_2000, {}, 'Major Transitions 1941-2000');
+Map.addLayer(img_1990, {}, 'Major Transitions 1941-1990');
+Map.addLayer(img_1980, {}, 'Major Transitions 1941-1980');
+Map.addLayer(img_1970, {}, 'Major Transitions 1941-1970');
+Map.addLayer(img_1960, {}, 'Major Transitions 1941-1960');
+Map.addLayer(img_1950, {}, 'Major Transitions 1941-1950');
+
+Map.addLayer(State_style, {}, 'State Boundaries');
+Map.addLayer(MRB_style, {}, 'MRB Boundary');

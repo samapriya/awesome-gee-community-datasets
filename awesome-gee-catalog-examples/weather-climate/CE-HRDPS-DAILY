@@ -1,0 +1,10 @@
+// Read in Image Collection and get first image
+var hrdps_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-hrdps-daily')
+var hrdps_i = hrdps_ic.first()
+
+// Print first image to see bands
+print(hrdps_i)
+
+// Visualize temperature from first image
+var temp_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+Map.addLayer(hrdps_i.select('Tavg'), {min: -10, max: 20, palette: temp_palette}, 'Tavg')

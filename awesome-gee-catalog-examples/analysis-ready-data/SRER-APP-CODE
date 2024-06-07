@@ -1,0 +1,508 @@
+var chm_sep_2019 = ui.import && ui.import("chm_sep_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_sept_2019"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_sept_2019"),
+    chm_may_2019 = ui.import && ui.import("chm_may_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_may_2019"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/chm_may_2019"),
+    rgb1cm_sep_2019 = ui.import && ui.import("rgb1cm_sep_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_sept_2019_1cm"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_sept_2019_1cm"),
+    class_sep_2019 = ui.import && ui.import("class_sep_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_sep_2019_5cm"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_sep_2019_5cm"),
+    class_may_2019 = ui.import && ui.import("class_may_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_may_2019_5cm"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_classified_may_2019_5cm"),
+    rgb1cm_may_2019 = ui.import && ui.import("rgb1cm_may_2019", "image", {
+      "id": "users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_may_2019_1cm"
+    }) || ee.Image("users/gponce/usda_ars/assets/images/aes/srer/suas/2019/full_ortho_srer_may_2019_1cm"),
+    geometry = ui.import && ui.import("geometry", "geometry", {
+      "geometries": [],
+      "displayProperties": [],
+      "properties": {},
+      "color": "#d63000",
+      "mode": "Geometry",
+      "shown": true,
+      "locked": false
+    }) || /* color: #d63000 */ee.Geometry.MultiPoint(),
+    fpa = ui.import && ui.import("fpa", "table", {
+      "id": "users/jgillan/ortho_footprints_A"
+    }) || ee.FeatureCollection("users/jgillan/ortho_footprints_A"),
+    fpb = ui.import && ui.import("fpb", "table", {
+      "id": "users/jgillan/ortho_footprints_B"
+    }) || ee.FeatureCollection("users/jgillan/ortho_footprints_B"),
+    fpc = ui.import && ui.import("fpc", "table", {
+      "id": "users/jgillan/ortho_footprints_C"
+    }) || ee.FeatureCollection("users/jgillan/ortho_footprints_C");
+/* ### Santa Rita Experimental Range (SRER) 2019 Drone Survey ###
+# The University of Arizona-SNRE - USDA-SWRC 
+# Goal:  To show data products derived from drone surveys @ SRER in 2019
+# Data from May & September 2019:  
+#  - Vegetation Height Model 
+#  - Classification
+#  - RGB 1cm image
+# Authors information: 
+#  Guillermo Ponce, geponce@arizona.edu
+#  Jeffrey Gillan, jgillan@arizona.edu
+# Date: 12/08/2020
+*/
+//Merge footprints of images
+var fprints = fpa.merge(fpb).merge(fpc)
+// Mask and clip layers (In the case of vegetation heights, 0's are masked out)
+// Sept. 2019
+class_sep_2019 = class_sep_2019.clip(fprints)
+rgb1cm_sep_2019 = rgb1cm_sep_2019.clip(fprints)
+chm_sep_2019 = chm_sep_2019.clip(fprints)
+var mask_chm = chm_sep_2019.select('b1').neq(0)
+chm_sep_2019 = chm_sep_2019.updateMask(mask_chm)
+// May 2019
+class_may_2019 = class_may_2019.clip(fprints)
+rgb1cm_may_2019 = rgb1cm_may_2019.clip(fprints)
+chm_may_2019 = chm_may_2019.clip(fprints)
+mask_chm = chm_may_2019.select('chm_may').neq(0)
+chm_may_2019 = chm_may_2019.updateMask(mask_chm)
+// ### Display Data Layers
+// A reference point displayed on the map to visualize the location clicked
+var point = ee.Geometry.Point(-110.13, 32.33);
+var dot = ui.Map.Layer(point, {color: 'FF0000'}, 'Reference_Point');
+Map.layers().set(0, dot)
+// Sept. 2019
+Map.addLayer(rgb1cm_sep_2019,{}, 'Sep_2019 RGB 1cm',false)
+Map.addLayer(chm_sep_2019,{min:0.1, max:5, palette:['blue','green','yellow','red']},'Sep_2019 Vegetation Height Model', true)
+Map.addLayer(class_sep_2019, {min:1,max:4, palette:['b9d980','316033','dfc885','black']}, 'Sep_2019 Classification_5cm', false)
+// May 2019
+Map.addLayer(rgb1cm_may_2019,{}, 'May_2019 RGB 1cm',false)
+Map.addLayer(chm_may_2019,{min:0.1, max:5, palette:['blue','green','yellow','red']},'May_2019 Vegeation Height Model', true)
+Map.addLayer(class_may_2019, {min:1,max:4, palette:['b9d980','316033','dfc885','black']}, 'May_2019 Classification_5cm', false)
+// Footprints polygons
+Map.addLayer(fprints.style({fillColor:'FFFF0000', color:'FFFF00', width:3}),{},'Image Footprints', true)
+Map.setCenter(-110.84574, 31.80538, 14)
+// ************** Functions *********************
+// To create thumbnail for color legend in right panel for the VHM
+function makeColorBarParams(palette) {
+  return {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '100x10',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: palette,
+  };
+}
+// Styling for 1 row legend
+var makeRow = function(color, name) {
+      // Create the label that is actually the colored box.
+      var colorBox = ui.Label({
+        style: {
+          backgroundColor: '#' + color,
+          padding: '8px', // height 
+          margin: '0 0 4px 0' // width
+        }
+      });
+      // Add the description text.
+      var description = ui.Label({
+        value: name,
+        style: {margin: '0 0 4px 6px'}
+      });
+     return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+      });
+};
+// To remove a layer (source:geetools) using name
+var removeLayer = function(name) {
+  var layers = Map.layers()
+  // list of layers names
+  var names = []
+  layers.forEach(function(lay) {
+    var lay_name = lay.getName()
+    names.push(lay_name)
+  })
+  // get index
+  var index = names.indexOf(name)
+  if (index > -1) {
+    // if name in names
+    var layer = layers.get(index)
+    Map.remove(layer)
+  } else {
+    print('Layer '+name+' not found')
+  }
+}
+// To define plot options, this is useful to set parameters of a plot
+function set_opts (p_mtitle, p_xtitle, p_ytitle) {
+  return ( {
+                chartArea:{
+                          left:100,
+                          top: 50,
+                          // size: 12,
+                          width: '100%',
+                          height: '100%',
+                          bottom: 60
+                },
+                 lineWidth: 1,
+                 pointSize: 1,
+                 title: p_mtitle,
+                 titleTextStyle: {
+                          color: '#000',
+                          fontName: 'sans-serif',
+                          fontSize: 16,
+                          //marginTop: '70',
+                          bold: true,
+                          italic: false
+                        },
+                //legend: {position: 'none'},
+                series: {//'b9d980','316033'
+                          0: { color: '81FA4C'},
+                          1: { color: '316033'},
+                },
+                hAxis: {
+                        title:  p_xtitle,
+                        textStyle: {
+                          fontSize: 16,
+                          fontStyle: 'Arial',
+                          marginTop: '50',
+                          color: '#808080'
+                        },
+                        titleTextStyle: {
+                          color: '#000',
+                          fontName: 'sans-serif',
+                          fontSize: 16,
+                          marginTop: '70',
+                          bold: true,
+                          italic: false
+                        }
+                },
+                vAxis: {
+                        title: p_ytitle,
+                        textStyle: {
+                          fontSize: 16,
+                          fontStyle: 'Arial',
+                          marginTop: '50',
+                          color: '#808080'
+                        },
+                        titleTextStyle: {
+                          color: '#000',
+                          fontName: 'sans-serif',
+                          fontSize: 16,
+                          marginTop: '70',
+                          bold: true,
+                          italic: false
+                        }
+                }
+    });
+}
+var lookup_names = ee.Dictionary.fromLists(
+    ['1', '2', '3', '4'],
+    ['Herb', 'Woody','Bareground','Shadow']
+  );
+// Create a dictionary for looking up colors of landcover classes.
+var lookup_palette = ee.Dictionary.fromLists(
+    ['1', '2', '3', '4'],
+    ['b9d980','316033','dfc885','black']
+  );
+// Create a feature for a landcover class that includes the area covered.
+function createFeature(landcover_class_stats) {
+  landcover_class_stats = ee.Dictionary(landcover_class_stats);
+  var class_number = landcover_class_stats.get('classification');
+  var result = {
+    landcover_class_number: class_number,
+    landcover_class_name: lookup_names.get(class_number),
+    landcover_class_palette: lookup_palette.get(class_number),
+    area_m2: landcover_class_stats.get('sum')
+  };
+  return ee.Feature(null, result); // Creates a feature without a geometry.
+}
+// Create a JSON dictionary for piechart colors 
+// E.g. https://developers.google.com/chart/interactive/docs/gallery/piechart
+function createPieChartSliceDictionary(fc) {
+  return ee.List(fc.aggregate_array("landcover_class_palette"))
+    .map(function(p) {
+      return {
+        'color': p
+      };
+    }).getInfo();
+}
+// To generate histogram of two images 
+function getHistogram(v_class, v_vhm, v_region, v_title, v_xTitle, v_yTitle) {
+    // Select just woody
+    var woody = v_class.select('classification').eq(2)
+    var VHM_woody = v_vhm.updateMask(woody).rename('Woody')
+    //Select just the herb pixels
+    var herb = v_class.select('classification').eq(1)
+    var VHM_herb = v_vhm.updateMask(herb).rename('Herb')
+    //Stack the woody and herb pixels into a single object
+    var herb_woody = VHM_herb.addBands(VHM_woody)
+    //Define design properties histogram
+    //Return histogram chart
+   return ui.Chart.image.histogram({
+      image: herb_woody, 
+      region: v_region,
+      scale: 1,
+     // maxBuckets: 20,
+      minBucketWidth: 0.5,
+      maxPixels:1e13
+    }).setSeriesNames(['herb', 'woody'])
+      .setOptions(set_opts(v_title, v_xTitle, v_yTitle))
+}
+// To generate PieChart of landcover
+function getPieChart(v_class,v_region, v_title){
+  // Clip the classification image using the footprint clicked by the user
+  var landcover = v_class.clip(v_region.first())
+  // Create a dictionary for looking up names of landcover classes.
+  // Summarize landcover classes in a region of interest.
+  var area_image_with_landcover_class = ee.Image.pixelArea().addBands(landcover);
+  var reduction_results = area_image_with_landcover_class.reduceRegion({
+    reducer: ee.Reducer.sum().group({
+      groupField: 1,
+      groupName: 'classification',
+    }),
+    geometry: v_region.first().geometry(),
+    scale: 0.05,
+    bestEffort: true,
+   });
+  //Perform stats by group
+  var roi_stats = ee.List(reduction_results.get('groups'));
+  // Get Stats for each class/group
+  var landcover_fc = ee.FeatureCollection(roi_stats.map(createFeature)); 
+  // Return the piechart 
+  return ui.Chart.feature.byFeature({
+              features: landcover_fc,
+              xProperty: 'landcover_class_name',
+              yProperties: ['area_m2', 'landcover_class_number']
+            })
+            .setChartType('PieChart')
+            .setOptions({
+                         chartArea:{
+                           left:0,
+                           right:0,
+                           top: 50,
+                          // // size: 12,
+                          width: '100%',
+                          height: '100%',
+                          //bottom: 50
+                         },
+                         title: v_title,
+                         is3D: true,
+                         width:500,
+                         height:200,
+                         align:'center',
+                         titleTextStyle: {
+                                    color: '#000',
+                                    fontName: 'sans-serif',
+                                    fontSize: 16,
+                                    textAlign: 'center',
+                                    //marginTop: '70',
+                                    bold: true,
+                                    italic: false
+                                  },
+                          slices: createPieChartSliceDictionary(landcover_fc),
+                          sliceVisibilityThreshold: 0 
+             })
+}
+function closePlots(){
+  if (chm_chartPanel.style().get('shown')) {
+    chm_chartPanel.widgets().reset()
+    chm_chartPanel.add(ui.Label('No data available at this location'))
+    chm_chartPanel2.widgets().reset()
+    chm_chartPanel2.add(ui.Label('No data available at this location'))
+    cover_chartPanel.widgets().reset()
+    cover_chartPanel.add(ui.Label('No data available at this location'))
+    cover_chartPanel2.widgets().reset()
+    cover_chartPanel2.add(ui.Label('No data available at this location'))
+    // chm_chartPanel.style().set('shown', false);
+    // chm_chartPanel2.style().set('shown', false);
+    // cover_chartPanel.style().set('shown', false);
+    // cover_chartPanel2.style().set('shown', false);
+    //close_button.style().set('shown', false);
+  } 
+}
+// ########### END-Functions section #########################
+// Title 
+var v_title = 'SRER Drone Data Explorer (2019)';
+// Create a panel to hold widgets.
+var panel = ui.Panel();
+panel.style().set('width', '350px');
+// Create an intro panel with labels.
+var intro = ui.Panel([
+  ui.Label({
+    value: v_title,
+    style: {fontSize: '20px', fontWeight: 'bold'}
+  }),
+  ui.Label('The Layers tool allows you display an RGB orthomosaic with 1 cm resolution, a classified image at 5 cm, and a vegetation height model (VHM).'),
+  ui.Label('Click on any image footprint on the map to show graphical summaries of vegetation indicators. For an enlarged view of the graph, click on the top-right corner icon (↗).'),
+  ui.Label('Note:',{fontWeight:'bold'}), 
+  ui.Label('Visualizations are only generated when user clicks within the footprints.'),
+  ui.Label(' ')
+]);
+panel.add(intro);
+// Display lat/lng of the location selected in the panel
+var lon = ui.Label();
+var lat = ui.Label();
+var na = ui.Label()
+panel.add(ui.Panel([lon, lat], ui.Panel.Layout.flow('horizontal')));
+// Create panels to hold plots
+var chm_chartPanel = ui.Panel({
+  style:
+      {height: '235px', width: '600px', position: 'bottom-right', shown: false, border:'1px solid black'}
+});
+var chm_chartPanel2 = ui.Panel({
+  style:
+      {height: '235px', width: '600px', position: 'top-right', shown: false, border:'1px solid black'}
+});
+var cover_chartPanel = ui.Panel({
+  style:
+      {height: '235px', width: '600px', position: 'bottom-left', shown: false, border:'1px solid black'}
+});
+var cover_chartPanel2 = ui.Panel({
+  style:
+      {height: '235px', width: '600px', position: 'top-left', shown: false, border:'1px solid black'}
+});
+var close_button = ui.Panel({
+  style:
+      {height: '45px', width: '87px', position: 'top-center', padding:'0px', margin:'0px', shown: false, border:'0px solid black'}
+});
+// Add the panel variables to the current Map
+Map.add(chm_chartPanel);
+Map.add(chm_chartPanel2);
+Map.add(cover_chartPanel)
+Map.add(cover_chartPanel2)
+Map.add(close_button)
+// ### Add an event call that will be triggered when the map is clicked.
+Map.onClick(function(coords) {
+  // Remote specific layer 
+  removeLayer('Reference_Point')  
+  // Update the lon/lat panel with values from the click event. The coordinates are used to do
+  // a spatial filter 
+  lon.setValue('lon: ' + coords.lon.toFixed(2)),
+  lat.setValue('lat: ' + coords.lat.toFixed(2));
+  // Add a red dot for the point clicked on.
+  point = ee.Geometry.Point(coords.lon, coords.lat);
+  var spatialFilter = ee.Filter.intersects({
+    leftField: '.geo',
+    rightField: '.geo',
+    maxError: 1
+  });
+  var saveAllJoin = ee.Join.saveAll({
+    matchesKey: 'points',
+  });
+  var pts_intersect = saveAllJoin.apply(point,fprints, spatialFilter).size().getInfo()
+  dot = ui.Map.Layer(point, {color: 'FF0000'}, 'Reference_Point');
+  var output = ee.Algorithms.If(pts_intersect, 1, 0)
+        Map.layers().set(8, dot);
+        // Filter the featureCollection(footprints) by using the coordinates clicked
+        var selection = ee.FeatureCollection(fprints).filterBounds(ee.Geometry.Point(coords.lon, coords.lat))
+        var bt_close;
+     if (pts_intersect>0) {
+        // Activate/Show panels for plots
+        if (!chm_chartPanel.style().get('shown')) {
+          chm_chartPanel.style().set('shown', true);
+          close_button.style().set('shown', true);
+        } 
+        if (!chm_chartPanel2.style().get('shown')) {
+          chm_chartPanel2.style().set('shown', true);
+        }
+        if (!cover_chartPanel.style().get('shown')) {
+          cover_chartPanel.style().set('shown', true);
+        }
+        if (!cover_chartPanel2.style().get('shown')) {
+          cover_chartPanel2.style().set('shown', true);
+        }
+          // *** Histogram plots calls *** 
+          // 
+          // Image from Sept. 2019
+           var herbWoody_sep2019 = getHistogram(class_sep_2019, chm_sep_2019, selection,
+                                                'Sept. 2019 Vegetation heights ', 
+                                                'Vegetation heights (m)', 'Frequency')  
+          // Image from May 2019
+           var herbWoody_may2019 = getHistogram(class_may_2019, chm_may_2019, selection,
+                                                'May 2019 Vegetation heights ', 
+                                                'Vegetation heights (m)', 'Frequency')  
+          // Add Histograms to the panels
+          chm_chartPanel.widgets().reset([herbWoody_sep2019]);  
+          chm_chartPanel2.widgets().reset([herbWoody_may2019]);  
+          // *** PieChart plots calls ***
+          // Image Sept. 2019
+          var landcoverPieChart_sep2019 = getPieChart(class_sep_2019,selection, 'Sept. 2019 landcover class areas')
+          // Image May 2019  
+          var landcoverPieChart_may2019 = getPieChart(class_may_2019,selection, 'May 2019 landcover class areas')
+          // Add PieCharts to the panels
+          cover_chartPanel.widgets().reset([landcoverPieChart_sep2019]);
+          cover_chartPanel2.widgets().reset([landcoverPieChart_may2019]);
+          bt_close = ui.Button({label:'Close plots', onClick: function() {
+                                            if (chm_chartPanel.style().get('shown')) {
+                                              chm_chartPanel.style().set('shown', false);
+                                              chm_chartPanel2.style().set('shown', false);
+                                              cover_chartPanel.style().set('shown', false);
+                                              cover_chartPanel2.style().set('shown', false);
+                                              close_button.style().set('shown', false);
+                                            } 
+                                      }
+                          })  
+          close_button.widgets().reset([bt_close])
+      } else {
+              closePlots()
+      }
+});
+// Show crosshair as cursor over map 
+Map.style().set('cursor', 'crosshair');
+// *** Add Legends to the right-panel ***
+// Add Legend to right-panel
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Landcover classes',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+    }
+});
+// Add the title to the panel
+legend.add(legendTitle);
+//  Palette with the colors
+var palette =['b9d980','316033','dfc885','000000'];
+// name of the legend
+var names = ['Herb','Woody','Bareground','Shadows'];
+// Add color and and names
+for (var i = 0; i < 4; i++) {
+  legend.add(makeRow(palette[i], names[i]));
+  }  
+// Add legend to the panel
+panel.add(legend)
+// Add Horizontal legend for VHM
+var vis = {min: 0.1, max: 4, palette: 'blue,green,yellow,red'};
+// Create the color bar for the legend.
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: makeColorBarParams(vis.palette),
+  style: {stretch: 'horizontal', margin: '0px 8px', maxHeight: '24px'},
+});
+// Create a panel with three numbers for the legend.
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label(vis.min, {margin: '4px 8px'}),
+    ui.Label(
+        (vis.max / 2),
+        {margin: '4px 8px', textAlign: 'center', stretch: 'horizontal'}),
+    ui.Label(vis.max, {margin: '4px 8px'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+var legendTitle = ui.Label({
+  value: 'Vegetation Height Model (m)',
+  style: {fontWeight: 'bold'}
+});
+// Add the legendPanel to the map.
+var legendPanel = ui.Panel([legendTitle, colorBar, legendLabels]);
+panel.add(legendPanel)
+// Enable the right panel
+ui.root.insert(2, panel);
+// Deactivate map tools
+Map.drawingTools().setShown(false) 
+Map.setControlVisibility({zoomControl:false})

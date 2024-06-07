@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mining_footprints = ee.FeatureCollection("projects/sat-io/open-datasets/global-mining/global_mining_footprints");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(mining_footprints.first(),9)
+Map.addLayer(ee.Image().paint(mining_footprints,0,3), {"palette":["#d73027"]},'Global Mining Footprints')
+Map.setOptions('SATELLITE')

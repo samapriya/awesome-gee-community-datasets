@@ -1,0 +1,19 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var delta_dtm = ee.Image("projects/sat-io/open-datasets/DELTARES/deltadtm_v1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var elevation = delta_dtm.select('b1');
+elevation = elevation.updateMask(elevation.neq(10));
+
+//Setup basemaps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+var elevationVis = {
+  min: 0,
+  max: 10.0,
+  // cmocean deep
+  palette: ["281a2c", "3f396c", "3e6495", "488e9e", "5dbaa4", "a5dfa7", "fdfecc"]
+};
+
+Map.setCenter(103, 0, 7);  // South East Asia
+Map.addLayer(elevation, elevationVis, 'DeltaDTM');

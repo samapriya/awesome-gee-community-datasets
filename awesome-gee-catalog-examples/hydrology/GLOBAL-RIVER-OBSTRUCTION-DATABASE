@@ -1,0 +1,126 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var grod = ee.FeatureCollection("projects/sat-io/open-datasets/GROD/GROD_V11");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(grod.first())
+print(grod.aggregate_histogram('type'))
+
+// Define color palette for each property type
+var dict = ee.Dictionary({
+  'Channel dam': '#d73027', // Red
+  'Dam': '#fc8d59', // Orange
+  'Lock': '#fee08b', // Yellow
+  'Low head dam': '#d9ef8b', // Light Green
+  'Partial dam 1': '#91cf60', // Dark Green
+  'Partial dam 2': '#1a9850', // Dark Teal
+});
+
+// Function to style features based on property type
+var styleFeatures = function(feature) {
+  var color = dict.get(feature.get('type')); // Use default color if type not found
+  return feature.set('styleProperty', ee.Dictionary({'pointSize': 2, 'color': color})); // Set style directly
+};
+
+// Apply styling to the feature collection
+var styledFeatures = grod.map(styleFeatures);
+
+// Function to add a layer for each type
+function addLayer(type) {
+  print(type);
+  Map.addLayer(styledFeatures.filter(ee.Filter.eq('type', type)).style({styleProperty: 'styleProperty'}), {}, type);
+}
+
+// Apply `addLayer` to each record in `palette.keys()`
+dict.keys().getInfo().map(addLayer);
+
+var dict = ee.Dictionary({
+  'Channel dam': '#d73027', // Red
+  'Dam': '#fc8d59', // Orange
+  'Lock': '#fee08b', // Yellow
+  'Low head dam': '#d9ef8b', // Light Green
+  'Partial dam 1': '#91cf60', // Dark Green
+  'Partial dam 2': '#1a9850', // Dark Teal
+});
+
+var dict = {
+  "names": [
+  'Channel dam',
+  'Dam',
+  'Lock',
+  'Low head dam',
+  'Partial dam 1',
+  'Partial dam 2'
+  ],
+  "colors": [
+  '#d73027', // Red
+  '#fc8d59', // Orange
+  '#fee08b', // Yellow
+  '#d9ef8b', // Light Green
+  '#91cf60', // Dark Green
+  '#1a9850', // Dark Teal
+  ]};
+
+// Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+
+  Map.add(panel);
+
+}
+
+// Add the legend to the map
+addCategoricalLegend(legend, dict, 'Global River Obstruction Database v1.1');

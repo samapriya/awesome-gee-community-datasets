@@ -1,0 +1,18 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var order_hack = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_hack"),
+    order_horton = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_horton"),
+    order_shreve = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_shreve"),
+    order_strahler = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_strahler"),
+    order_topo = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-order/order_topo");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.setCenter(7.926, 59.570,8);
+
+style.SetMapStyleGrey()
+
+//Add sample layers
+Map.addLayer(order_hack.mosaic(),{min:1,max:10,palette: palettes.extra.blkred}, 'Order hack');
+Map.addLayer(order_shreve.mosaic(),{min:1,max:10,palette: palettes.extra.redpurple}, 'Order Shreve');
+Map.addLayer(order_topo.mosaic(),{min:1,max:10,palette: palettes.extra.orngblue},'Order Topo')

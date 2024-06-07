@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var sbfi_merged = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/CA_SBFI_MERGED"),
+    grid_tile = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/GRID_forested_ecosystems");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var tile_select = sbfi_merged.filter(ee.Filter.eq('002_TILE',306))
+print(tile_select.first())
+print(tile_select.aggregate_histogram('045_AGE_MAX'))
+
+// Visualize the feature collection based on the 'age_max_numeric' property
+Map.setCenter(-65.6396, 47.6464,10)
+Map.addLayer(sbfi_merged, {}, 'CA_SBFI',false);
+
+// Create an empty image into which to paint the features, cast to byte.
+var empty = ee.Image().byte();
+var fills = empty.paint({
+  featureCollection: sbfi_merged,
+  color: '045_AGE_MAX',
+});
+
+var palettes = require('users/samapriya/utils:palettes');
+Map.addLayer(fills, {palette: palettes.psize.random_50,min:0,max:150}, 'colored fills');
+

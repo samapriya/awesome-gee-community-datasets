@@ -1,0 +1,4 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gpw = ee.FeatureCollection("projects/sat-io/open-datasets/sedac/gpw-v4-admin-unit-center-points-population-estimates-rev11");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.FeatureCollection(gpw),{},'gpw-v4-admin-center-points-rev11')

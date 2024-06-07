@@ -1,0 +1,27 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var grip4_africa = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Africa"),
+    grip4_central_south_america = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Central-South-America"),
+    grip4_europe = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Europe"),
+    grip4_north_america = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/North-America"),
+    grip4_oceania = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Oceania"),
+    grip4_south_east_asia = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/South-East-Asia"),
+    grip4_middle_east_central_asia = ee.FeatureCollection("projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Grip4 Africa size',grip4_africa.size())
+print('Grip4 Central South America size',grip4_central_south_america.size())
+print('Grip4 North America size',grip4_north_america.size())
+print('Grip4 Europe size',grip4_europe.size())
+print('Grip4 Oceania size',grip4_oceania.size())
+print('Grip4 South East Asia size',grip4_south_east_asia.size())
+print('Grip4 Middle East Central Asia size',grip4_middle_east_central_asia.size())
+
+Map.addLayer(ee.FeatureCollection(grip4_africa).style({color: '413B3A',width:1}),{},'Grip4 Africa')
+Map.addLayer(ee.FeatureCollection(grip4_central_south_america).style({color: '413B3A',width:1}),{},'Grip4 Central South America')
+Map.addLayer(ee.FeatureCollection(grip4_north_america).style({color: '413B3A',width:1}),{},'Grip4 North America')
+Map.addLayer(ee.FeatureCollection(grip4_europe).style({color: '413B3A',width:1}),{},'Grip4 Europe')
+Map.addLayer(ee.FeatureCollection(grip4_oceania).style({color: '413B3A',width:1}),{},'Grip4 Oceania')
+Map.addLayer(ee.FeatureCollection(grip4_south_east_asia).style({color: '413B3A',width:1}),{},'Grip4 South East Asia')
+Map.addLayer(ee.FeatureCollection(grip4_middle_east_central_asia).style({color: '413B3A',width:1}),{},'Grip4 Middle East and Central Asia')
+
+
+Map.setOptions('TERRAIN')

@@ -1,0 +1,23 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var vct_annual = ee.ImageCollection("projects/sat-io/open-datasets/NAFD/vct_annual"),
+    vct_first = ee.Image("projects/sat-io/open-datasets/NAFD/VCT_30m_first"),
+    vct_last = ee.Image("projects/sat-io/open-datasets/NAFD/VCT_30m_last");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var image = vct_annual.filterDate('2002-01-01','2002-12-31').first()
+
+var palette = {min:1,max:4,palette:["#1700FA","#C8C8C8","#029609","#FF0023"]}
+Map.addLayer(image,palette,'Annual Disturbance 2002')
+
+
+
+// Add first and last image
+var vct_first = vct_first
+.remap([1,	2,	3,	4,	15,	16,	17,	18,	19,	20,	21,	22,	23,	24,	25,	26,	27,	28,	29,	30,	31,	32,	33,	34,	35,	36,	37,	38,	39,	40],[1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	14,	15,	16,	17,	18,	19,	20,	21,	22,	23,	24,	25,	26,	27,	28,	29,	30])
+
+var vct_last = vct_last
+.remap([1,	2,	3,	4,	15,	16,	17,	18,	19,	20,	21,	22,	23,	24,	25,	26,	27,	28,	29,	30,	31,	32,	33,	34,	35,	36,	37,	38,	39,	40],[1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	14,	15,	16,	17,	18,	19,	20,	21,	22,	23,	24,	25,	26,	27,	28,	29,	30])
+
+var palette = {min:1,max:29,palette:["#d3d3d3",	"#009900",	"#728249",	"#3f3fff",	"#09f3f5",	"#09ebf5",	"#09dcf5",	"#09c5f5",	"#09a6f5",	"#829bf6",	"#8d08f6",	"#b108f6",	"#cd08f6",	"#e208f6",	"#f008f6",	"#f608f6",	"#f608f4",	"#f608eb",	"#f608da",	"#f608c1",	"#f707a1",	"#f70779",	"#f7074a",	"#f70713",	"#f73507",	"#f76807",	"#f79307",	"#f7b607",	"#f7d207",	"#f7e607",]}
+
+Map.addLayer(vct_first,palette,'VCT Time integrated first 1986-2010',false)
+Map.addLayer(vct_last,palette,'VCT Time integrated last 1986-2010',false)

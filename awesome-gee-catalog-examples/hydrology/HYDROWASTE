@@ -1,0 +1,23 @@
+// Visualization for HydroWASTE
+var table = ee.FeatureCollection("projects/sat-io/open-datasets/HydroWaste/HydroWASTE_v10");
+
+
+var typeColor = ee.Dictionary({
+  'Primary': 'fc8d59',
+  'Secondary': '542788',
+  'Advanced': 'fdb863',
+});
+
+
+var type = ['Primary', 'Secondary', 'Advanced'];
+
+function addStyle(pt) {
+  var size = ee.Number(pt.get('WASTE_DIS')).sqrt().divide(100);
+  var color = typeColor.get(pt.get('LEVEL'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+var pp = ee.FeatureCollection(table).map(addStyle);
+Map.addLayer(pp.filter(ee.Filter.eq('LEVEL', 'Primary')).style({styleProperty: 'styleProperty'}), {}, 'Primary', true,0.65);
+Map.addLayer(pp.filter(ee.Filter.eq('LEVEL', 'Secondary')).style({styleProperty: 'styleProperty'}), {}, 'Secondary', true,0.65);
+Map.addLayer(pp.filter(ee.Filter.eq('LEVEL', 'Advanced')).style({styleProperty: 'styleProperty'}), {}, 'Advanced', true,0.65);

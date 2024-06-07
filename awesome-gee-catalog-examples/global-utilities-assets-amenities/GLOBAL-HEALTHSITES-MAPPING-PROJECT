@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var node = ee.FeatureCollection("projects/sat-io/open-datasets/health-site-node"),
+    way = ee.FeatureCollection("projects/sat-io/open-datasets/health-site-way");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total Sites Nodes: Global Healthsites Mapping Project',node.size())
+print('Total Sites Ways: Global Healthsites Mapping Project',way.size())
+
+Map.addLayer(node,{},'Global Healthsites Mapping Project: Nodes')
+Map.addLayer(way,{},'Global Healthsites Mapping Project: Ways')

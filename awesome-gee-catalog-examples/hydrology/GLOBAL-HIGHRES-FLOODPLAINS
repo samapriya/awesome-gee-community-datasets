@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gfplain250 = ee.ImageCollection("projects/sat-io/open-datasets/GFPLAIN250");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(gfplain250);
+
+var pal = ["#000080", "#0000ff", "#0063ff", "#00d4ff", "#4effa9", "#a9ff4e", "#ffe600", "#ff7d00", "#ff1400", "#800000"]
+
+Map.addLayer(gfplain250.mosaic(),{palette:"#002B4D"},'Global Flood Plain 250m')

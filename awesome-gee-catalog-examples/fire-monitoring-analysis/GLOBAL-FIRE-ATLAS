@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var day_of_burn = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/day_of_burn"),
+    fire_direction = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/fire_direction"),
+    fire_line = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/fire_line"),
+    fire_speed = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/fire_speed"),
+    ignitions_2003 = ee.FeatureCollection("projects/sat-io/open-datasets/global-fire-atlas/ignitions/Global_fire_atlas_V1_ignitions_2003"),
+    perimeter_2003 = ee.FeatureCollection("projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2003");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(day_of_burn,{min:1,max:365,palette:palettes.cmocean.Thermal[7]},'Day of Burn')
+Map.addLayer(fire_speed,{min:1,max:200,palette:palettes.cmocean.Haline[7]},'Fire Speed')
+Map.addLayer(fire_line,{min:1,max:365,palette:palettes.cmocean.Solar[7]},'Fire Line')
+Map.addLayer(fire_direction,{min:1,max:7,palette:palettes.cmocean.Delta[7]},'Fire Speed')
+
+Map.addLayer(ignitions_2003,{},'Ignitions 2003')
+Map.addLayer(perimeter_2003,{},'Perimeter 2003')

@@ -1,0 +1,8 @@
+var mainlands = ee.FeatureCollection('projects/sat-io/open-datasets/shoreline/mainlands');
+var big_islands = ee.FeatureCollection('projects/sat-io/open-datasets/shoreline/big_islands');
+var small_islands = ee.FeatureCollection('projects/sat-io/open-datasets/shoreline/small_islands');
+
+Map.setCenter(-4.843, 51.392,6)
+Map.addLayer(ee.Image().paint(mainlands,0,3), {"palette":["008000"]}, 'Shoreline Mainlands')
+Map.addLayer(ee.Image().paint(big_islands,0,3), {"palette":["0000FF"]}, 'Shoreline Big Islands')
+Map.addLayer(ee.Image().paint(small_islands,0,3), {"palette":["FF0000"]}, 'Shoreline Small Islands')

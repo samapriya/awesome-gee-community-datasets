@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gabam = ee.ImageCollection("projects/sat-io/open-datasets/GABAM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var year_2018 = gabam.filterDate('2018-01-01','2018-12-31')
+print(year_2018.size())
+
+Map.addLayer(year_2018.mosaic(),{min:1,max:1,palette:"f00c0c"},'GABAM Year 2018')

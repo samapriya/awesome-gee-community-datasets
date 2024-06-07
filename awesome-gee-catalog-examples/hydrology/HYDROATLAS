@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var lake_poly = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/LakeAtlas/LakeAtlas_v10_polygon"),
+    lake_points = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/LakeAtlas/LakeAtlas_v10_point"),
+    river_atlas = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/RiverAtlas_v10"),
+    basin_l5 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev05");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(lake_poly.first())
+print(lake_points.first())
+Map.addLayer(lake_poly,{'color':'#00008B'},'HydroATLAS Lakes Polygons v1.0')
+Map.addLayer(
+  basin_l5.style({
+    fillColor: '00000000',
+    color: 'FF4500',
+  }),{},'HydroATLAS BasinATLAS Level 05 v1.0'
+);
+Map.addLayer(river_atlas,{'color':'#809fff'},'HydroATLAS RiverATLAS v1.0')
+Map.addLayer(lake_points,{'color':'red','opacity':0.1},'HydroLakes Points v1.0',false)

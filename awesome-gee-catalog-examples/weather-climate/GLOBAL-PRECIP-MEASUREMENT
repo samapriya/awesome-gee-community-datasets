@@ -1,0 +1,10 @@
+// Read in Image Collections and get single image
+var gpm_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-gpm-imerg-daily')
+var gpm_i = gpm_ic.first()
+
+// Print single image to see bands 
+print(gpm_i)
+
+// Visualize precipitation for single image
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+Map.addLayer(gpm_i.select('precipitationCal'), {min: 0, max: 200, palette: prec_palette}, 'precipitationCal')

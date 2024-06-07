@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_cement = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_cement_database_20210701");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(global_cement.first())
+
+Map.addLayer(global_cement,{'color':'red'},'Global Cement Database')

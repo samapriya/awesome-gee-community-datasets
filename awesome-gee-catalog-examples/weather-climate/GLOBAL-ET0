@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var et_yearly = ee.Image("projects/sat-io/open-datasets/global_et0/global_et0_yearly"),
+    et_yearly_sd = ee.Image("projects/sat-io/open-datasets/global_et0/global_et0_yearly_sd");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/samapriya/utils:palettes');
+
+
+// Note that the visualization image doesn't require visualization parameters.
+Map.addLayer(et_yearly, {min: 1, max: 3000, palette: palettes.extra.blkred}, 'ET Yearly');
+Map.addLayer(et_yearly_sd,{min: 1, max: 100, palette: palettes.MET.Monet},'ET Yearly SD',false)

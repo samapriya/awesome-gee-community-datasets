@@ -1,0 +1,20 @@
+
+// Import the GCN250 Images and rename bands
+var GCN250_Average =  ee.Image("users/jaafarhadi/GCN250/GCN250Average").select('b1').rename('average');
+var GCN250_Dry =  ee.Image("users/jaafarhadi/GCN250/GCN250Dry").select('b1').rename('dry');
+var GCN250_Wet = ee.Image("users/jaafarhadi/GCN250/GCN250Wet").select('b1').rename('wet');
+
+// visualize the Dry GCN dataset
+var vis = {
+  min:40, 
+  max:75, 
+  palette: ['Red','SandyBrown','Yellow','LimeGreen', 'Blue','DarkBlue']
+  
+};
+
+Map.addLayer(GCN250_Dry, vis, 'CN Dry');
+
+Map.setCenter(17.93, 7.71, 2);
+
+
+

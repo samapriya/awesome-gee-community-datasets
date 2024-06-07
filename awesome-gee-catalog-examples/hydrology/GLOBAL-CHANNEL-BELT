@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gcb = ee.Image("projects/sat-io/open-datasets/GCB/GRMM"),
+    env = ee.Image("projects/sat-io/open-datasets/GCB/Env");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var visParams = {
+  bands: ['Braided', 'Braided', 'Meander'],
+  min: 0,
+  max: 100,
+  gamma: 2.0,
+};
+
+var colors = {min:1,max:6, palette:['#d4a334','#1bff00','#fff700','#1b00ff','#10fff4','#50c7ff']};
+
+var mask = env.gt(1);// Do not map background value
+
+Map.addLayer(gcb.unmask(0),visParams,'ML Prediction',true);
+Map.addLayer(env.mask(mask),colors,'Environments',false);

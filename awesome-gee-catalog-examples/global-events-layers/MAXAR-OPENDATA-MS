@@ -1,0 +1,43 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var afghanistan_earthquake_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/afghanistan_earthquake_2022"),
+    gambia_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/gambia_flooding_2022"),
+    hurricane_fiona_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/hurricane_fiona_2022"),
+    hurriance_ian_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/hurricane_ian_2022"),
+    kentucky_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/kentucky_flooding_2022"),
+    pakistan_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/pakistan_flooding_2022"),
+    southafrica_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/southafrica_flooding_2022"),
+    sudan_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/sudan_flooding_2022"),
+    turkey_earthquake_2023 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/earthquake_turkey_2023"),
+    vis8b = {"opacity":1,"bands":["b8","b3","b2"],"min":171,"max":3884,"gamma":1},
+    vis4b = {"opacity":1,"bands":["b4","b3","b2"],"min":444,"max":3164,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Event index
+0: afghanistan_earthquake_2022
+1: gambia_flooding_2022
+2: hurricane_fiona_2022
+3: hurriance_ian_2022
+4: kentucky_flooding_2022
+5: pakistan_flooding_2022
+6: southafrica_flooding_2022
+7: sudan_flooding_2022
+8: turkey_earthquake_2023
+*/
+
+var collection_collections = ee.List([afghanistan_earthquake_2022,gambia_flooding_2022,
+hurricane_fiona_2022,hurriance_ian_2022,kentucky_flooding_2022,pakistan_flooding_2022,
+southafrica_flooding_2022,sudan_flooding_2022,turkey_earthquake_2023])
+
+//Select event by index
+var image_collection = ee.ImageCollection(collection_collections.get(0))
+print(image_collection.first())
+
+// add only 8 band data for now
+var collection = image_collection.filter(ee.Filter.neq('platform','GE01'))
+Map.centerObject(collection.first(),10)
+Map.addLayer(collection,vis8b,'8 Band Collection WV02 & WV03')
+
+// add 4 band data for now GE01
+var collection = image_collection.filter(ee.Filter.eq('platform','GE01'))
+Map.centerObject(collection.first(),10)
+Map.addLayer(collection,vis4b,'4 Band Collection GE01')

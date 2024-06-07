@@ -1,0 +1,112 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var fc = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/fecal-coliform"),
+    discharge_annual = ee.Image("projects/sat-io/open-datasets/DYNQUAL/discharge-avg-annual");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var conditional = function(image){
+  var fc_masked = image.select('b1').mask(discharge_annual.select('b1').gt(10))
+  return fc_masked
+}
+
+var fc_constrained = ee.ImageCollection(fc).map(conditional)
+
+var popcount_intervals =
+'<RasterSymbolizer>' +
+' <ColorMap type="intervals" extended="false" >' +
+    '<ColorMapEntry color="#4E99BB" quantity="0" label="No Data"/>' +
+    '<ColorMapEntry color="#97BB5F" quantity="10" label="Population Count (Estimate)"/>' +
+    '<ColorMapEntry color="#DBA03A" quantity="100" label="Population Count (Estimate)"/>' +
+    '<ColorMapEntry color="#E1622D" quantity="1000" label="Population Count (Estimate)"/>' +
+    '<ColorMapEntry color="#B51F1D" quantity="10000" label="Population Count (Estimate)"/>' +
+    '<ColorMapEntry color="#531412" quantity="100000" label="Population Count (Estimate)"/>' +
+
+  '</ColorMap>' +
+'</RasterSymbolizer>';
+
+// Define a dictionary which will be used to make legend and visualize image on map
+//4E99BB,97BB5F,DBA03A,E1622D,B51F1D,531412
+var dict = {
+  "names": [
+    "<10",
+    "10-100",
+    "100-1000",
+    "1000-10000",
+    "10000-100000",
+    ">100000",
+  ],
+  "colors": [
+    "#4E99BB",
+    "#97BB5F",
+    "#DBA03A",
+    "#E1622D",
+    "#B51F1D",
+    "#531412",
+  ]};
+  
+  // Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+}
+
+addCategoricalLegend(legend, dict, 'FC conc. in CFU/100ml');
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+Map.addLayer(fc_constrained.sort('system:time_start').first().sldStyle(popcount_intervals), {}, 'FC 1980-01-01');
+Map.addLayer(fc_constrained.sort('system:time_start',false).first().sldStyle(popcount_intervals), {}, 'FC 2019-12-31');

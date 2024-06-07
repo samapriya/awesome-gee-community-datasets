@@ -1,0 +1,20 @@
+// Read in daily and monthly Image Collections and get single image from each collection
+var anuspline_m_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-anusplin-monthly')
+var anuspline_m_i = anuspline_m_ic.first()
+var anuspline_d_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-anusplin-daily')
+var anuspline_d_i = anuspline_d_ic.first()
+
+// Print each single image to see bands
+print(anuspline_m_i)
+print(anuspline_d_i)
+
+// Visualize each band from each single image
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+var temp_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+Map.addLayer(anuspline_m_i.select('pcp'), {min: 0, max: 200, palette: prec_palette}, 'pcp, monthly')
+Map.addLayer(anuspline_m_i.select('mint'), {min: -30, max: 30, palette: temp_palette}, 'mint, monthly')
+Map.addLayer(anuspline_m_i.select('maxt'), {min: -30, max: 30, palette: temp_palette}, 'maxt, monthly')
+
+Map.addLayer(anuspline_d_i.select('pcp'), {min: 0, max: 10, palette: prec_palette}, 'pcp, daily')
+Map.addLayer(anuspline_d_i.select('mint'), {min: -30, max: 30, palette: temp_palette}, 'mint, daily')
+Map.addLayer(anuspline_d_i.select('maxt'), {min: -30, max: 30, palette: temp_palette}, 'maxt, daily')

@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var flood_events = ee.FeatureCollection("projects/sat-io/open-datasets/events/large_flood_events_1985-2016");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total events 1985-2016',flood_events.size())
+Map.addLayer(flood_events,{},'Flood Events 1985-2016')

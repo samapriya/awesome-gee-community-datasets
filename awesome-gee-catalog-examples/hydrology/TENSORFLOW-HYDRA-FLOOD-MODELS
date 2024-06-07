@@ -1,0 +1,135 @@
+var HydraFloods_Deep_Learning_Output = ee.Image("users/tjm0042/Hydrafloods_Outputs/TensorFlow_Surface_Water_Model_Mosaic")
+Map.setCenter(104.9614, 12.2642,9);
+var palettes = require('users/gena/packages:palettes');
+Map.addLayer(HydraFloods_Deep_Learning_Output,{min: 0,max: 1, palette: palettes.cmocean.Tempo[7]},
+"HYDRAFloods TensorFlow Model Approach: Joint Research Centre Adjusted Learning Rate Binary Cross Entropy Dice")
+
+//Add a grayscale map to help higlight the feature
+var SubtleGrayscale
+ = 
+[
+  {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": 65
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": "50"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "30"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "40"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "hue": "#ffff00"
+      },
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -97
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -100
+      }
+    ]
+  }
+]
+Map.setOptions('SubtleGrayscale', {SubtleGrayscale: SubtleGrayscale})

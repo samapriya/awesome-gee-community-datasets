@@ -1,0 +1,10 @@
+// Read in Image Collection and get single image 
+var fret_ic = ee.ImageCollection('projects/climate-engine/fret/forecast/eto')
+var fret_i = fret_ic.first()
+
+// Print image to see bands
+print(fret_i)
+
+// Visualize a single image
+var fret_palette = ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#b10026"]
+Map.addLayer(fret_i, {min:0, max:10, palette: fret_palette}, 'fret_i')

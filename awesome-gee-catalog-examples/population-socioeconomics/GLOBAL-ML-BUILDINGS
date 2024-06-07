@@ -1,0 +1,8 @@
+var objects = ee.data.listAssets('projects/sat-io/open-datasets/MSBuildings')
+print('Assets in MS Global Buildings Footprint Folder', objects['assets'])
+
+print(ee.FeatureCollection('projects/sat-io/open-datasets/MSBuildings/Australia').size())
+
+var feature = ee.FeatureCollection('projects/sat-io/open-datasets/MSBuildings/Australia')
+Map.centerObject(feature.first(),6)
+Map.addLayer(feature.style({fillColor: '00000000',color: 'FF5500'})),{},'Australia'

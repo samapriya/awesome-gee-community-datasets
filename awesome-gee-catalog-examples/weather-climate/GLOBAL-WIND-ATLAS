@@ -1,0 +1,15 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var air_density = ee.ImageCollection("projects/sat-io/open-datasets/global_wind_atlas/air-density"),
+    wind_speed = ee.ImageCollection("projects/sat-io/open-datasets/global_wind_atlas/wind-speed"),
+    power_density = ee.ImageCollection("projects/sat-io/open-datasets/global_wind_atlas/power-density"),
+    capacity_factor = ee.ImageCollection("projects/sat-io/open-datasets/global_wind_atlas/capacity-factor"),
+    ruggedness_index = ee.Image("projects/sat-io/open-datasets/global_wind_atlas/ruggedness-index");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(air_density.first(),{min:0.75,max:1.2,palette:palettes.cmocean.Dense[7]},'Air Density')
+Map.addLayer(wind_speed.first(),{min:2,max:12,palette:palettes.matplotlib.plasma[7]},'Wind Speed')
+Map.addLayer(power_density.first(),{min:200,max:1750,palette:palettes.niccoli.linearl[7]},'Power Density')
+Map.addLayer(capacity_factor.first(),{min:0.006,max:0.70,palette:palettes.colorbrewer.Spectral[9]},'Capacity Factor')
+Map.addLayer(ruggedness_index,{min:0,max:0.6,palette:palettes.cmocean.Solar[7]},'Ruggedness Index')

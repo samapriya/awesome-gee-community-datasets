@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVC"),
+    evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVH"),
+    evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(evc.mosaic(),{'min':11,'max':356,palette: palettes.colorbrewer.YlGnBu[8]},'Existing Vegetation Cover')
+Map.addLayer(evh.mosaic(),{'min':11,'max':301,palette: palettes.colorbrewer.RdYlGn[8]},'Existing Vegetation Height')
+Map.addLayer(evt.mosaic(),{'min':7067,'max':9038,palette: palettes.cmocean.Matter[7]},'Existing Vegetation Type')

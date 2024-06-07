@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mobile_20200101 = ee.FeatureCollection("projects/sat-io/open-datasets/network/mobile_tiles/2020-01-01_performance_mobile_tiles"),
+    fixed_20200101 = ee.FeatureCollection("projects/sat-io/open-datasets/network/fixed_tiles/2020-01-01_performance_fixed_tiles");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Fixed Performance Metrics',fixed_20200101.size())
+print('Mobile Performance Metrics',mobile_20200101.size())
+Map.addLayer(fixed_20200101,{'color':'blue'},'Fixed 2020-01-01')
+Map.addLayer(mobile_20200101,{'color':'red'},'Mobile 2020-01-01')

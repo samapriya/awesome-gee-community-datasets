@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var oil_palm_2019 = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil_palm_industrial_smallholder_2019");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Classes
+ [1] Industrial closed-canopy oil palm plantations
+ [2] Smallholder closed-canopy oil palm plantations, and 
+ [3] other land covers/uses that are not closed canopy oil palm.
+ */
+
+//Zoom to a cluster
+Map.setCenter(107.1307996323747,1.5664239997609994,7)
+
+//Import module to set Style
+var style = require('users/gena/packages:style')
+
+//Mask out Class 3 other classes that are not closed canopy oil plam
+var oil_palm = oil_palm_2019.mosaic().updateMask(oil_palm_2019.mosaic().neq(3))
+
+Map.addLayer(oil_palm,{min:1,max:2,"palette":["ff6218","ff3ba7"]},'Industrial and Small Holder Closed Canopy oil palm plantations')
+
+style.SetMapStyleDark()

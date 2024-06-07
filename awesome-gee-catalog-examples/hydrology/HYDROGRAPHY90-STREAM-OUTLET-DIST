@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var outlet_diff_dw_basin = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_diff_dw_basin"),
+    outlet_diff_dw_scatch = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_diff_dw_scatch"),
+    outlet_dist_dw_basin = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_dist_dw_basin"),
+    outlet_dist_dw_scatch = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/outlet_dist_dw_scatch"),
+    stream_diff_dw_near = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_dw_near"),
+    stream_diff_dw_far = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_up_farth"),
+    stream_diff_up_near = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_diff_up_near"),
+    stream_dist_dw_near = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_dw_near"),
+    stream_dist_proximity = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_proximity"),
+    stream_dist_up_farth = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_up_farth"),
+    stream_dist_up_near = ee.ImageCollection("projects/sat-io/open-datasets/HYDROGRAPHY90/stream-outlet-distance/stream_dist_up_near");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var style = require('users/gena/packages:style')
+var palettes = require('users/samapriya/utils:palettes');
+
+Map.setCenter(-16.786, 19.082,3);
+
+style.SetMapStyleGrey()
+
+//Add with scaling applied
+Map.addLayer(outlet_diff_dw_basin.mosaic(),{min:1,max:5490,palette: palettes.extra.blkred}, 'outlet_diff_dw_basin');
+Map.addLayer(outlet_diff_dw_scatch.mosaic(),{min:0,max:415,palette: palettes.extra.blkredwht}, 'outlet_diff_dw_scatch');
+Map.addLayer(outlet_dist_dw_basin.mosaic(),{min:-2359729.24,max:4307192.53,palette: palettes.extra.orngblue},'outlet_dist_dw_basin')
+Map.addLayer(stream_diff_dw_far.mosaic(),{min:-50,max:150,palette: palettes.extra.blue_silver},'stream_diff_dw_far')
+Map.addLayer(stream_diff_up_near.mosaic(),{min:1,max:50,palette: palettes.extra.red_purple},'stream_diff_up_near')

@@ -1,0 +1,31 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var countries = ee.FeatureCollection("FAO/GAUL/2015/level0"),
+    GDEM = ee.Image("projects/sat-io/open-datasets/ASTER/GDEM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/samapriya/utils:palettes');
+
+// Add the elevation to the map.  Play with the visualization tools
+// to get a better visualization.
+Map.addLayer(GDEM, {}, 'elev', false);
+
+// Use the terrain algorithms to compute a hillshade with 8-bit values.
+var shade = ee.Terrain.hillshade(GDEM);
+Map.addLayer(shade, {}, 'hillshade', false);
+
+// Create an "ocean" variable to be used for cartographic purposes
+var ocean = GDEM.lte(0);
+Map.addLayer(ocean.mask(ocean), {palette:'000022'}, 'ocean', false);
+
+// Use these visualization parameters, customized by location.
+var visParams = {min: 1, max: 3000, palette: palettes.extra.blkred};
+
+// Create a mosaic of the ocean and the elevation data
+var visualized = ee.ImageCollection([
+  // Mask the elevation to get only land
+  GDEM.mask(ocean.not()).visualize(visParams), 
+  // Use the ocean mask directly to display ocean.
+  ocean.mask(ocean).visualize({palette:'000022'})
+]).mosaic();
+
+// Note that the visualization image doesn't require visualization parameters.
+Map.addLayer(visualized.clip(countries), {}, 'ASTER GDEM');

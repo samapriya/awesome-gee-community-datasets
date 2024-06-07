@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_CISI = ee.Image("projects/sat-io/open-datasets/CISI/global_CISI"),
+    infrastructure = ee.ImageCollection("projects/sat-io/open-datasets/CISI/amount_infrastructure");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/samapriya/utils:palettes');
+
+print(infrastructure.aggregate_array('id_no'))
+
+Map.addLayer(global_CISI,{min:0,max:0.2,palette: palettes.extra.greens},'Global CISI')
+Map.addLayer(infrastructure.filter(ee.Filter.eq('id_no','hospital')),{min:0,max:50,palette:palettes.extra.orngblue},'Hospitals')

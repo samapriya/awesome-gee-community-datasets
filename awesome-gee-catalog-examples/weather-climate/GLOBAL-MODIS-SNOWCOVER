@@ -1,0 +1,14 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var lt_p90 = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_p90"),
+    lt_sd = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_sd"),
+    lt_snow_quantile = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_snow_quantile"),
+    tmax_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmax"),
+    tmin_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmin");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes');
+
+Map.addLayer(lt_snow_quantile.first(),{min:-20,max:60,palette:palettes.colorbrewer.Blues[9]},'p05 2003-03')
+Map.addLayer(lt_p90.first(),{min:-20,max:60,palette:palettes.colorbrewer.RdYlBu[9]},'p90 2000-2012')
+Map.addLayer(lt_sd.first(),{min:0,max:41,palette:palettes.colorbrewer.RdBu[9]},'sd 2000-2012')
+Map.addLayer(tmax_geom.first(),{min: 0,max:150,palette:palettes.colorbrewer.RdBu[9]},'tmax geom 2000-2012')
+Map.addLayer(tmin_geom.first(),{min:0,max:150,palette:palettes.colorbrewer.RdBu[9]},'tmin geom 2000-2012')

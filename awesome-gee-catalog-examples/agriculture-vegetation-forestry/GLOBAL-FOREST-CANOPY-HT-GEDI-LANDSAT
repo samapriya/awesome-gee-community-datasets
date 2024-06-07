@@ -1,0 +1,12 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gf = ee.ImageCollection("projects/sat-io/open-datasets/GLAD/GEDI_V27"),
+    gbf = ee.ImageCollection("projects/sat-io/open-datasets/GLAD/GEDI_V25_Boreal");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var comb = gf.merge(gbf).mosaic()
+gf = gf.mosaic().unmask()
+gbf = gbf.mosaic().unmask()
+
+var visParam = {min:0,max:30,palette:'white, #006600'};
+Map.addLayer(gf.updateMask(gf.gte(3)),visParam,'Forest Canopy Height');
+var visParamB = {min:0,max:30,palette:'white, #004d4d'};
+Map.addLayer(gbf.updateMask(gbf.gte(3)),visParamB,'Forest Canopy Height Boreal');

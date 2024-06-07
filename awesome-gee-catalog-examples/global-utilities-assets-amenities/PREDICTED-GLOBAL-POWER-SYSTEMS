@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var transmission = ee.FeatureCollection("projects/sat-io/open-datasets/predictive-global-power-system/distribution-transmission-lines"),
+    lv = ee.Image("projects/sat-io/open-datasets/predictive-global-power-system/lv"),
+    targets = ee.Image("projects/sat-io/open-datasets/predictive-global-power-system/targets");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.FeatureCollection(transmission).style({color: 'FC8D59',width:1}),{},'Predicted Distribution and Transmission Lines')
+Map.addLayer(lv,{},'Predicted low-voltage infrastructure in kilometres per cell')
+Map.addLayer(targets,{},'Locations predicted to be connected to distribution grid')
+
+Map.setOptions('TERRAIN')

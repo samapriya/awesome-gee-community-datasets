@@ -1,0 +1,35 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var iq = ee.ImageCollection("projects/sat-io/open-datasets/ESA_WorldCover_Input_Quality");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+ESA 10m World Cover Input Quality Dataset
+
+Per pixel quality indicator showing the quality of the Earth Observation (EO) input data. The layer is a
+3 band GeoTIFF with
+• Band 1: Number of Sentinel-1 GAMMA0 observations used in the classification workflow
+• Band 2: Number of Sentinel-2 L2A observations used in the classification workflow
+• Band 3 Percentage (0-100) of invalid S2 observations discarded in the classification workflow
+(after cloud and cloud shadow filtering).
+Combining Band 2 and Band 3 yields the total absolute number of valid Sentinel-2 L2A observations
+used in the classification workflow.
+*/
+
+//Count collection objects
+print('ESA 10m Input Quality Collection size',iq.size())
+
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+var vis_b1 = {"bands":["b1"],"min":0,"max":174,palette: palettes.cmocean.Deep[7]};
+var vis_b2 = {"bands":["b2"],"min":0,"max":174,palette: palettes.cmocean.Haline[7]};
+var vis_b3 = {"bands":["b3"],"min":0,"max":100,palette: palettes.cmocean.Oxy[7]};
+var vis_b23 = {"bands":["b23"],"min":0,"max":140,palette: palettes.cmocean.Algae[7]};
+
+
+var b1_mosaic = iq.select(['b2']).mosaic()
+var b3_mosaic = iq.select(['b3']).mosaic()
+var combined_mosaic = b1_mosaic.multiply(ee.Image.constant(100).subtract(b3_mosaic)).divide(100).round().rename('b23')
+
+Map.addLayer(iq.mosaic(),vis_b1,'Band 1 Input Quality: Number of Sentinel-1 GAMMA0 observations')
+Map.addLayer(iq.mosaic(),vis_b2,'Band 2 Input Quality: Number of Sentinel-2 L2A observations',false)
+Map.addLayer(iq.mosaic(),vis_b3,'Band 3 Input Quality: Percentage (0-100) of invalid S2 observations discarded')
+Map.addLayer(combined_mosaic,vis_b23,'Band 2 combined with Band 3 Input Quality: total absolute number of valid Sentinel-2 L2A observations',false)

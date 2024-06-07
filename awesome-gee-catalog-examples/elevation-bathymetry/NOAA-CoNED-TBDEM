@@ -1,0 +1,25 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tb_dem = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/CoNED_TBDEM");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total CoNED TBDEM collection',tb_dem.size())
+
+Map.centerObject(tb_dem,4)
+
+//Function to attach nominal scale to collection
+var scales = function(image){
+  var b1proj = image.select('b1').projection();
+  var b1scale = image.select('b1').projection().nominalScale();
+return image.set('scale',ee.Number(b1scale).round())
+}
+
+var ns = tb_dem.map(scales)
+
+//print distribution of nominal scale across collection
+print(ns.aggregate_histogram('scale'))
+
+var tb_dem = tb_dem.mosaic().setDefaultProjection('EPSG:3857',null,1);
+var tb_hillshade = ee.Terrain.hillshade(tb_dem);
+var vis_params = {'palette':['#006994','#b2ff59', '002200', 'fff700', 'ab7634', 'c4d0ff', 'ffffff'], min: -50, max: 1000};
+
+Map.addLayer(tb_hillshade, {}, 'CoNED_TBDEM Hillshade',false);
+Map.addLayer(tb_dem, vis_params, 'CoNED_TBDEM');

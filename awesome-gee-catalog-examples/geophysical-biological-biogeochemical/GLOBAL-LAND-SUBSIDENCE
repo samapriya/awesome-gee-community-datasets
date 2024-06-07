@@ -1,0 +1,97 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var subsidence_prediction_probability = ee.Image("projects/sat-io/open-datasets/global_subsidence/Final_subsidence_proba_greater_1cm_2013_2019_recoded"),
+    subsidence_prediction_recoded = ee.Image("projects/sat-io/open-datasets/global_subsidence/Final_subsidence_prediction_recoded");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var split1 = subsidence_prediction_recoded.updateMask(subsidence_prediction_recoded.select('b1').lte(1));  // Values < 1cm/yr
+var split2 = subsidence_prediction_recoded.updateMask(subsidence_prediction_recoded.select('b1').gt(1).and(subsidence_prediction_probability.select('b1').lte(5)));  // Values between 1cm/yr and 5cm/yr
+var split3 = subsidence_prediction_recoded.updateMask(subsidence_prediction_recoded.select('b1').gt(5));  // Values > 5cm/yr
+
+var palette = ['FF0000', 'FFA500', 'FFFF00', '00FF00', '008000'];
+
+// Display each split with the specified color palette
+Map.addLayer(split2, {palette: ['FEAA27']}, 'Subsidence rate 1-5cm/yr');
+Map.addLayer(split3, {palette: ['E54C1F']},'Subsidence rate > 5cm/yr');
+Map.addLayer(subsidence_prediction_probability,{palette:palette,min:0,max:1},'Subsidence Prediction Probability',false)
+
+/*
+We are using basemaps as gray to represent less than 1cm subsidence
+*/
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+    "<1",
+    "1-5",
+    ">5",
+  ],
+  "colors": [
+    "E1E1E1",
+    "FEAA27",
+    "E54C1F",
+  ]};
+  
+  // Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+}
+
+addCategoricalLegend(legend, dict, 'Land Subsidence Rate Yearly (cm)');

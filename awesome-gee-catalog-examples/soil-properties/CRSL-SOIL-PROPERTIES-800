@@ -1,0 +1,111 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var texture = ee.ImageCollection("projects/sat-io/open-datasets/CSRL_soil_properties/physical/soil_texture_profile");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(texture.first())
+
+var tx = ee.Image(texture.toList(texture.size()).get(-1))
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+    "Sand", //1
+    "Loamy Sand", //2
+    "Sandy Loam", //3
+    "Loam",//4
+    "Silt Loam", //5
+    "Silt",//6
+    "Sandy Clay Loam",//7
+    "Clay Loam",//8
+    "Silty Clay Loam",//9
+    "Sandy Clay",//10
+    "Silty Clay",//11
+    "Clay",//12
+  ],
+  "colors": [
+    "#BEBEBE",
+    "#FDFD9E",
+    "#ebd834",
+    "#307431",
+    "#CD94EA",
+    "#546BC3",
+    "#92C158",
+    "#EA6996",
+    "#6D94E5",
+    "#4C5323",
+    "#E93F4A",
+    "#AF4732"
+  ]};
+
+// Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+  
+}
+
+
+/*
+  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
+*/
+
+// Add the legend to the map
+addCategoricalLegend(legend, dict, 'USDA Soil Texture');
+
+// Add USDM Image image to the map
+Map.addLayer(tx, {min:1, max:12, palette:dict['colors']}, tx.get('system:index').getInfo())

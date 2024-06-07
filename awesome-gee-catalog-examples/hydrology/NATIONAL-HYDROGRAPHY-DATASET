@@ -1,0 +1,18 @@
+var objects = ee.data.listAssets('projects/sat-io/open-datasets/NHD/NHD_MO')
+print('Assets in State NHD Folder', objects['assets'])
+
+var geometry = ee.Feature(ee.FeatureCollection('projects/sat-io/open-datasets/NHD/NHD_MO/WBDHU10').first())
+
+//lets zoom to a WBDHU10 and add
+Map.centerObject(geometry,11)
+Map.addLayer(ee.FeatureCollection(geometry).style({fillColor: '00000000',color: 'FF5500'}),{},'WBDHU10')
+
+//Add NHD Flowline
+Map.addLayer(ee.FeatureCollection('projects/sat-io/open-datasets/NHD/NHD_MO/NHDFlowline').filterBounds(geometry.geometry()).style({color: '2E5984'}),{},'NHD Flowline')
+
+
+//Add NHD point layer
+Map.addLayer(ee.FeatureCollection('projects/sat-io/open-datasets/NHD/NHD_MO/NHDPoint').filterBounds(geometry.geometry()).style({color: '00FF00'}),{},'NHD Point')
+
+//Add waterbody layer
+Map.addLayer(ee.FeatureCollection('projects/sat-io/open-datasets/NHD/NHD_MO/NHDWaterbody').filterBounds(geometry.geometry()).style({fillColor: '00000000',color: '008080'}),{},'NHD Waterbody')

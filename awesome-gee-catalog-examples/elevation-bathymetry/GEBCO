@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gebco_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_grid"),
+    gebco_sub_ice_topo = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo"),
+    gebco_tid_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_tid_grid");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+var elevationVis = {
+  min: -7000.0,
+  max: 3000.0,
+  palette: ['011de2', 'afafaf', '3603ff', 'fff477', 'b42109'],
+};
+Map.setCenter(-37.62, 25.8, 2);
+Map.addLayer(gebco_grid.median(), elevationVis, 'Elevation');
+Map.addLayer(gebco_sub_ice_topo.median(), {min:-7500,max:5000,palette: ['011de2', 'afafaf', '3603ff', 'fff477', 'b42109']},'Elevation Sub Ice Topo' );
+Map.addLayer(gebco_tid_grid,{'min':0,'max':70,palette: palettes.colorbrewer.RdYlBu[11]},'Elevation TID',false)

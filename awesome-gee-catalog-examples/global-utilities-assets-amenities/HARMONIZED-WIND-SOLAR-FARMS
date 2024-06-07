@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wind_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_wind_farms_2020"),
+    solar_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_solar_farms_2020");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total Harmonized Global Windfarms 2020',wind_farms.size())
+print('Total Harmonized Global solarfarms 2020',solar_farms.size())
+
+Map.addLayer(wind_farms,{'color':'blue'},'Global Harmonized Dataset: Wind farms')
+Map.addLayer(solar_farms,{'color':'red'},'Global Harmonized Dataset: Solar farms')

@@ -1,0 +1,27 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var all_sky_day = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/ALL_SKY_DAY"),
+    all_sky_night = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/ALL_SKY_NIGHT"),
+    clear_sky_day = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/CLEAR_SKY_DAY"),
+    clear_sky_night = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/CLEAR_SKY_NIGHT"),
+    tmax = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/TMAX"),
+    tmean = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/TMEAN"),
+    tmin = ee.ImageCollection("projects/sat-io/open-datasets/GSHTD/TMIN");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var heatmapPalette = ['00274D', '4D8DB6', '009688', '7CB342', 'FFEB3B', 'FF9800', 'FF5722', 'D32F2F'];
+
+/*
+All values must be scaled by 0.02
+Values can then be converted to celcius by subtracting 273.15 from each pixel value
+*/
+
+Map.addLayer(tmax.first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Tmax first');
+Map.addLayer(tmax.sort('system:time_start',false).first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Tmax last');
+
+Map.addLayer(tmin.first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Tmin first');
+Map.addLayer(tmin.sort('system:time_start',false).first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Tmin last');
+
+Map.addLayer(clear_sky_day.first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Clear Sky Day first');
+Map.addLayer(clear_sky_day.sort('system:time_start',false).first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Clear Sky Day last');
+
+Map.addLayer(clear_sky_night.first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Clear Sky Night first');
+Map.addLayer(clear_sky_night.sort('system:time_start',false).first().multiply(0.02).subtract(273.15), {min:-40,max:40,palette: heatmapPalette}, 'Clear Sky Night last');

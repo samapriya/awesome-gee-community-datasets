@@ -1,0 +1,98 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var age_appro = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_forest_age_2019_approach"),
+    country = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [ 
+    "Non treed",
+    "Disturbance approach",
+    "Recovery approach",
+    "Allometric approach",
+    
+  ],
+    "colors": [
+    "#000000",
+    "#e60000",
+    "#ffff00",
+    "#267300",
+
+  ]};
+
+Map.setCenter(-97.61655457157725,55.6280720462063,4)
+
+// Add image to the map
+Map.addLayer(age_appro.clip(country.filter(ee.Filter.eq('country_co','CA'))), {min:0, max:3, palette:dict['colors']}, 'Approach used to compute the Landsat-derived forest age for Canada (2019)')
+
+// Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+  
+}
+
+
+/*
+  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
+*/
+
+// Add the legend to the map
+addCategoricalLegend(legend, dict, 'Approach for Canada Forest Age Est');
+
+

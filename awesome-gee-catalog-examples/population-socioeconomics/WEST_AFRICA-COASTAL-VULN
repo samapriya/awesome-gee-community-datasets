@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wacvm_pei = ee.Image("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-pei"),
+    wacvm_paci = ee.Image("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-paci"),
+    wacvm_svi = ee.Image("projects/sat-io/open-datasets/sedac/wacvm-social-vulnerability-indices-svi");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+Map.addLayer(wacvm_svi,{min: 2.31, max: 85.156, palette: palettes.cmocean.Turbid[7]},'WACVM SVM')
+Map.addLayer(wacvm_paci,{min: 10.24, max: 82.370, palette: palettes.cmocean.Amp[7]},'WACVM PACI')
+Map.addLayer(wacvm_pei,{min: 0.24, max: 100, palette: palettes.cmocean.Matter[7]},'WACVM PEI')
+
+Map.setOptions('HYBRID')

@@ -1,0 +1,5 @@
+var catchments = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2_catchments");
+var dams = ee.FeatureCollection("projects/sat-io/open-datasets/GOODD/GOOD2_dams");
+
+Map.addLayer(ee.Image().paint(catchments,0,3), {"palette":["008000"]}, 'GOODD Catchments')
+Map.addLayer(dams, {"palette":"FF0000"}, 'GOODD Dams')

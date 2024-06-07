@@ -1,0 +1,196 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var shoreline_annual = ee.FeatureCollection("projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_shorelines_annual"),
+    hotspot_zoom_1 = ee.FeatureCollection("projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_1"),
+    hotspot_zoom_2 = ee.FeatureCollection("projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_2"),
+    hotspot_zoom_3 = ee.FeatureCollection("projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_3"),
+    rate_of_change = ee.FeatureCollection("projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_shorelines_annual");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(shoreline_annual.first(),18)
+
+// Get a color for a year
+var yearColor = ee.Dictionary({
+    '1988': '#4d4d7a',
+    '1989': '#535a88',
+    '1990': '#5a608d',
+    '1991': '#616692',
+    '1992': '#686c97',
+    '1993': '#6f719c',
+    '1994': '#7677a1',
+    '1995': '#7d7ca6',
+    '1996': '#8482ab',
+    '1997': '#8b87b0',
+    '1998': '#922db9',
+    '1999': '#9922b3',
+    '2000': '#a01db0',
+    '2001': '#a717aa',
+    '2002': '#af11a4',
+    '2003': '#b70d9e',
+    '2004': '#bf0898',
+    '2005': '#c70292',
+    '2006': '#ce027e',
+    '2007': '#d5016a',
+    '2008': '#dc0156',
+    '2009': '#e40042',
+    '2010': '#ec003e',
+    '2011': '#f3003a',
+    '2012': '#fa0036',
+    '2013': '#ff0033',
+    '2014': '#ff4733',
+    '2015': '#ff6d33',
+    '2016': '#ff9333',
+    '2017': '#ffb933',
+    '2018': '#ffd033',
+    '2019': '#ffe54c',
+    '2020': '#ffe54c',
+    '2021': '#ffe54c',
+    '2022': '#52b033',
+});
+
+
+function addStyle(ft) {
+  var color = yearColor.get(ft.get('year'));
+  return ft.set('styleProperty', ee.Dictionary({'color': color}));
+}
+
+// Make a FeatureCollection out of years database
+var pp = ee.FeatureCollection(shoreline_annual).map(addStyle);
+
+function addLayer(year) {
+  Map.addLayer(pp.filter(ee.Filter.eq('year', ee.Number.parse(year))).style({styleProperty: 'styleProperty', neighborhood: 50}), {}, year, true, 0.8);
+}
+
+// Apply `addLayer` to each record in years
+yearColor.keys().getInfo().map(addLayer);
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+      "1988",
+    "1989",
+    "1990",
+    "1991",
+    "1992",
+    "1993",
+    "1994",
+    "1995",
+    "1996",
+    "1997",
+    "1998",
+    "1999",
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+  ],
+    "colors": [
+    '#4d4d7a',
+    '#535a88',
+    '#5a608d',
+    '#616692',
+    '#686c97',
+    '#6f719c',
+    '#7677a1',
+    '#7d7ca6',
+    '#8482ab',
+    '#8b87b0',
+    '#922db9',
+    '#9922b3',
+    '#a01db0',
+    '#a717aa',
+    '#af11a4',
+    '#b70d9e',
+    '#bf0898',
+    '#c70292',
+    '#ce027e',
+    '#d5016a',
+    '#dc0156',
+    '#e40042',
+    '#ec003e',
+    '#f3003a',
+    '#fa0036',
+    '#ff0033',
+    '#ff4733',
+    '#ff6d33',
+    '#ff9333',
+    '#ffb933',
+    '#ffd033',
+    '#ffe54c',
+    '#ffe54c',
+    '#ffe54c',
+    '#52b033'
+  ]};
+
+var legend = ui.Panel({
+  style: {
+    position: 'middle-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create and add the legend title.
+var legendTitle = ui.Label({
+  value: 'Shoreline Year',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+legend.add(legendTitle);
+
+var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+legend.add(loading);
+
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+
+  // Create the label filled with the description text.
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+
+  for (var i = 0; i < names.length; i++) {
+    legend.add(makeRow(palette[i], names[i]));
+  }
+
+// Print the panel containing the legend
+print(legend);

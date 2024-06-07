@@ -1,0 +1,39 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var hand30_100 = ee.ImageCollection("users/gena/global-hand/hand-100"),
+    hand30_1000 = ee.Image("users/gena/GlobalHAND/30m/hand-1000"),
+    hand90_1000 = ee.Image("users/gena/GlobalHAND/90m-global/hand-1000"),
+    demSRTM = ee.Image("USGS/SRTMGL1_003"),
+    demALOS = ee.Image("JAXA/ALOS/AW3D30/V2_2");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+demALOS = demALOS.select('AVE_DSM')
+
+var paletteHand = ['023858', '006837', '1a9850', '66bd63', 'a6d96a', 'd9ef8b', 'ffffbf', 'fee08b', 'fdae61', 'f46d43', 'd73027'];
+var vis = {min: 1, max: 150, palette: paletteHand}
+
+Map.addLayer(hand30_100.mosaic(), vis, 'HAND 100, 30m (~0.1km2)', true)
+Map.addLayer(hand30_1000, vis, 'HAND 1000, 30m (~1km2)', false)
+Map.addLayer(hand90_1000, vis, 'HAND 1000, 90m (~8km2)', false)
+
+// add styled
+var utils = require('users/gena/packages:utils')
+
+function hillshade(image) {
+  var weight = 0.7
+  var extrusion = 5
+  var sunAzimuth = 315
+  var sunElevation = 35
+  var contrast = 0.1
+  var brightness = 0
+  var saturation = 0.85
+
+  return utils.hillshadeRGB(image, demALOS, weight, extrusion, sunAzimuth, sunElevation, contrast, brightness, saturation)
+}
+  
+Map.addLayer(hillshade(hand30_100.mosaic().visualize(vis)), {}, 'HAND 100, 30m (~0.1km2) hillshade', false)
+Map.addLayer(hillshade(hand30_1000.visualize(vis)), {}, 'HAND 1000, 30m (~1km2) hillshade', true)
+Map.addLayer(hillshade(hand90_1000.visualize(vis)), {}, 'HAND 1000, 90m (~8km2) hillshade', false)
+  
+// clip potential flooded areas
+var palettes = require('users/gena/packages:palettes')
+var bigFlood = hand30_1000.resample('bicubic').multiply(-1).unitScale(-15, -5).selfMask()
+Map.addLayer(bigFlood, { palette: palettes.cb.Blues[7] }, 'water', true, 0.5)

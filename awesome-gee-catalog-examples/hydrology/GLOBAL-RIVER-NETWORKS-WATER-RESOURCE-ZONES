@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var af_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/af_river"),
+    as_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/as_river"),
+    au_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/au_river"),
+    eu_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/eu_river"),
+    na_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/na_river"),
+    sa_river = ee.FeatureCollection("projects/sat-io/open-datasets/GRN/sa_river"),
+    WRZ_L1 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L1"),
+    WRZ_L2 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L2"),
+    WRZ_L3 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L3"),
+    WRZ_L4 = ee.FeatureCollection("projects/sat-io/open-datasets/WRZ/WRZ_L4");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(WRZ_L1.style({fillColor: '00000000',color: '#d7191c'}),{},'Global Level 1 Water Resources Zone');
+Map.addLayer(WRZ_L2.style({fillColor: '00000000',color: '#fdae61'}),{},'Global Level 2 Water Resources Zone',false)
+Map.addLayer(WRZ_L3.style({fillColor: '00000000',color: '#abd9e9'}),{},'Global Level 3 Water Resources Zone',false)
+Map.addLayer(WRZ_L4.style({fillColor: '00000000',color: '#2c7bb6'}),{},'Global Level 4 Water Resources Zone',false)
+Map.addLayer(sa_river.style({fillColor: '00000000',color: '#002B4D'}),{},'South America River Network')

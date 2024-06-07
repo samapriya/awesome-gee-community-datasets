@@ -1,0 +1,56 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cv_annual_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/CV/cv_annual_flow"),
+    cv_monsoon_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/CV/cv_monsoon_flow"),
+    high_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/high_flow"),
+    low_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/low_flow"),
+    mean_annual_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_annual_flow"),
+    mean_monsoon_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_monsoon_flow"),
+    ssi_dry_july_1972 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_1972"),
+    ssi_dry_july_2002 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_2002"),
+    ssi_dry_june_2009 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2009"),
+    ssi_dry_june_2014 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2014"),
+    ssi_wet_august_2020 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_august_2020"),
+    ssi_wet_july_1988 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_july_1988"),
+    ssi_wet_september_1983 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_1983"),
+    ssi_wet_september_2019 = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_2019"),
+    streamflow_trend = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/streamflow_trend"),
+    streams = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/streams");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Total stream segments
+print('Total stream segments',streams.size())
+
+//Match this with Segment ID
+print('Total stream segment IDs',streams.aggregate_array('seg_id').size())
+
+Map.setCenter(78.252,23.159,6)
+
+//Add a light gray map
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
+
+// Define a diverging color palette
+var palette = ['6efffb', '00a2ff', '66c2ff', 'a6d1f5', '8B4513', '800000', 'f6aeb5', 'd54341'];
+
+// Add the CV Annual Flow layer using the diverging palette
+Map.addLayer(cv_annual_flow, {color: palette[0]}, 'CV Annual Flow (m³/s)', false);
+Map.addLayer(cv_monsoon_flow, {color: palette[1]}, 'CV Monsoon Flow (m³/s)', false);
+Map.addLayer(high_flow, {color: palette[2]}, 'High Flow (m³/s)', false);
+Map.addLayer(low_flow, {color: palette[3]}, 'Low Flow (m³/s)', false);
+Map.addLayer(mean_annual_flow, {color: palette[4]}, 'Mean Annual Flow (m³/s)', false);
+Map.addLayer(mean_monsoon_flow, {color: palette[5]}, 'Mean Monsoon Flow (m³/s)', false);
+
+// Define a diverging color palette for SSI layers
+var ssiPalette = ['6efffb', '00a2ff', '66c2ff', 'a6d1f5', 'f6f6f6', 'ffd9e1', 'f6aeb5', 'd54341'];
+
+Map.addLayer(ssi_dry_july_1972, {color: ssiPalette[0]}, 'SSI Dry July 1972 (SSI)', false);
+Map.addLayer(ssi_dry_july_2002, {color: ssiPalette[1]}, 'SSI Dry July 2002 (SSI)', false);
+Map.addLayer(ssi_dry_june_2009, {color: ssiPalette[2]}, 'SSI Dry June 2009 (SSI)', false);
+Map.addLayer(ssi_dry_june_2014, {color: ssiPalette[3]}, 'SSI Dry June 2014 (SSI)', false);
+Map.addLayer(ssi_wet_august_2020, {color: ssiPalette[4]}, 'SSI Wet August 2020 (SSI)', false);
+Map.addLayer(ssi_wet_july_1988, {color: ssiPalette[5]}, 'SSI Wet July 1988 (SSI)', false);
+Map.addLayer(ssi_wet_september_1983, {color: ssiPalette[6]}, 'SSI Wet September 1983 (SSI)', false);
+Map.addLayer(ssi_wet_september_2019, {color: ssiPalette[7]}, 'SSI Wet September 2019 (SSI)', false);
+
+// Add the Streamflow Trend layer using a single color
+Map.addLayer(streamflow_trend, {color: '003b5e'}, 'Streamflow Trend', false);
+Map.addLayer(streams, {color: '66c2ff'}, 'Streams', false);

@@ -1,0 +1,9 @@
+var objects = ee.data.listAssets('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES')
+print('Assets in US Strucutres Folder', objects['assets'])
+
+
+//Selecting DC from the folder list
+var feature = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_DC')
+Map.centerObject(feature.first(),16)
+Map.addLayer(feature.style({fillColor: '00000000',color: 'FF5500'})),{},'DC'
+Map.addLayer(feature,{},'DC values only',false)

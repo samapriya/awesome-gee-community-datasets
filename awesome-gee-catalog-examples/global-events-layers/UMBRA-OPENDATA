@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var umbra_open = ee.ImageCollection("projects/sat-io/open-datasets/UMBRA/open-data"),
+    notoPeninsula = ee.ImageCollection("projects/sat-io/open-datasets/disaster/japan-earthquake-2024_UMBRA"),
+    vis = {"opacity":1,"bands":["b1"],"min":12,"max":160,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(notoPeninsula.first(),14)
+Map.addLayer(umbra_open.first(),vis,'Umbra sample',false)
+Map.addLayer(notoPeninsula.first(),vis,'Noto Peninsula sample')

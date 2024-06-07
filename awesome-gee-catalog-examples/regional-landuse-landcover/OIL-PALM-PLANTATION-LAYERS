@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*Citation
+Danylo, O., Pirker, J., Lemoine, G. et al. A map of the extent and year of detection of oil palm plantations in Indonesia
+Malaysia and Thailand. Sci Data 8, 96 (2021). https://doi.org/10.1038/s41597-021-00867-1
+*/
+
+var palettes = require('users/gena/packages:palettes')
+Map.setCenter(108.871, -2.401,7)
+
+/*
+ 4 corresponds to the year 1984,the first year oil palm was detected
+ and each consecutive number represents the next year, i.e., 5 is 1985,
+ while the maximum value of 37 corresponds to 2017
+*/
+Map.addLayer(oil_palm.mode(),{min:4,max:37,palette: palettes.cmocean.Turbid[7]},'Oil Palm Plantation 1984-2017')

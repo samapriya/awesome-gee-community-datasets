@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var hyspecnet = ee.ImageCollection("projects/sat-io/open-datasets/HySpecNet/HYSPECNET-11K");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(hyspecnet.size())
+
+//Remove invalid bands
+var invalid_bands = ['B126', 'B127', 'B128', 'B129', 'B130', 'B131', 'B132', 'B133', 'B134', 'B135', 'B136', 'B137', 'B138', 'B139', 'B140', 'B160', 'B161', 'B162', 'B163', 'B164', 'B165', 'B166']
+
+//Select an image
+var image = hyspecnet.limit(500).sort('system:time_start',false).first()
+image = image.select(image.bandNames().removeAll(invalid_bands))
+print('Resolution',image.select(['B1']).projection().nominalScale())
+print('Band Names',image.bandNames())
+
+//Add image as layer
+Map.centerObject(image,12)
+Map.addLayer(image,{"opacity":1,"bands":["B3","B2","B1"],"min":-154,"max":934,"gamma":1},'Sample HYSPECNET Image Chip')

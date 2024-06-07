@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var npp_viirs_ntl = ee.ImageCollection("projects/sat-io/open-datasets/npp-viirs-ntl");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var image = npp_viirs_ntl.sort('system:time_start').first()
+var vis = {"opacity":1,"bands":["b1"],min: 1, max: 32,"palette":["584d9f","9c79c1","c98cbe","f2d192","e2ee82"]}
+var formattedDate = ee.Date(image.get('system:time_start')).format('YYYY-MM-dd');
+Map.addLayer(image.mask(image.neq(0)),vis,'NTL VIIRS '+formattedDate.getInfo())
+
+var image = npp_viirs_ntl.sort('system:time_start',false).first()
+var formattedDate = ee.Date(image.get('system:time_start')).format('YYYY-MM-dd');
+Map.addLayer(image.mask(image.neq(0)),vis,'NTL VIIRS '+formattedDate.getInfo())

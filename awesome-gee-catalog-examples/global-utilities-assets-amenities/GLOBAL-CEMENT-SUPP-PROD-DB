@@ -1,0 +1,15 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var assets_db = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_cement_db_assets_20231004"),
+    suppliers_producers_db = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_cement_db_suppliers_20231004");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Let's get property names for a single asset in the databases
+print(assets_db.first().propertyNames())
+print(suppliers_producers_db.first().propertyNames())
+
+//Size estimates are helpful too
+print('Assets DB size',assets_db.size())
+print('Suppliers& Producers DB size',suppliers_producers_db.size())
+
+//Let's add these to the code editor map
+Map.addLayer(assets_db,{'color':'red'},'Assets Database')
+Map.addLayer(suppliers_producers_db,{'color':'blue'},'Supplier & Producers Database')

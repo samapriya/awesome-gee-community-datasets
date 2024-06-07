@@ -1,0 +1,10 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var adm1 = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-open/adm1_polygons"),
+    adm2 = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-open/adm2_polygons"),
+    adm3 = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-open/adm3_polygons"),
+    adm4 = ee.FeatureCollection("projects/sat-io/open-datasets/field-maps/edge-matched-open/adm4_polygons");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(ee.Image().paint(adm1,0,3), {"palette":["#d73027"]}, 'ADM1 Open')
+Map.addLayer(ee.Image().paint(adm2,0,3), {"palette":["#fc8d59"]}, 'ADM2 Open',false)
+Map.addLayer(ee.Image().paint(adm3,0,3), {"palette":["#b35806"]}, 'ADM3 Open',false)
+Map.addLayer(ee.Image().paint(adm4,0,3), {"palette":["#01665e"]}, 'ADM4 Open',false)

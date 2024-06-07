@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/FDIST"),
+    hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/HDIST"),
+    distyear = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Import palette
+var palettes = require('users/gena/packages:palettes')
+
+//Disturbance Layers
+Map.addLayer(fdist.mosaic(),{'min':0,'max':260,palette: palettes.cmocean.Deep[7]},'Fuel Disturbance')
+Map.addLayer(hdist.mosaic(),{'min':0,'max':20078388,palette: palettes.cmocean.Haline[7]},'Historical Disturbance')

@@ -1,0 +1,47 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var top = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/aqualink_top_temp_2020"),
+    bottom = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/aqualink_bottom_temp_2020");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Top readings',top.size())
+print('Bottom readings',bottom.size()) 
+
+Map.centerObject(top.first(),7)
+Map.addLayer(top)
+
+// Define the chart and print it to the console.
+var chart =
+    ui.Chart.feature
+        .histogram({features: top, property: 'value', maxBuckets: 50})
+        .setOptions({
+          title: 'Top temp',
+          hAxis: {
+            title: 'Top temp (C)',
+            titleTextStyle: {italic: false, bold: true}
+          },
+          vAxis: {
+            title: 'Observation count',
+            titleTextStyle: {italic: false, bold: true}
+          },
+          colors: ['1d6b99'],
+          legend: {position: 'none'}
+        });
+print(chart);
+
+// Define the chart and print it to the console.
+var chart =
+    ui.Chart.feature
+        .histogram({features: bottom, property: 'value', maxBuckets: 50})
+        .setOptions({
+          title: 'Bottom temp',
+          hAxis: {
+            title: 'Bottom temp (C)',
+            titleTextStyle: {italic: false, bold: true}
+          },
+          vAxis: {
+            title: 'Observation count',
+            titleTextStyle: {italic: false, bold: true}
+          },
+          colors: ['1d6b99'],
+          legend: {position: 'none'}
+        });
+print(chart);

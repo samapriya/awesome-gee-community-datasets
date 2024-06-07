@@ -1,0 +1,11 @@
+// Read in Image Collection and get image
+var snodas_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/climate-engine/snodas/daily')
+var snodas_i = snodas_ic.filterDate('2022-01-01', '2022-01-05').first()
+
+// Print first image to see bands
+print(snodas_i)
+
+// Visualize select bands from first image
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+Map.addLayer(snodas_i.select('Snow_Depth'), {min: 0, max: 1, palette: prec_palette}, 'Snow_Depth')
+Map.addLayer(snodas_i.select('SWE'), {min: 0, max: 1, palette: prec_palette}, 'SWE')

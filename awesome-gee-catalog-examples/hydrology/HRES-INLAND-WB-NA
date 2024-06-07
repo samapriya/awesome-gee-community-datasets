@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var wbd = ee.FeatureCollection("projects/sat-io/open-datasets/HYDRO/wbd_fixed_geoms");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-107.0832, 59.341, 10)
+Map.addLayer(wbd, {"color":"#003366"}, "N. American boreal Water Body Dataset")

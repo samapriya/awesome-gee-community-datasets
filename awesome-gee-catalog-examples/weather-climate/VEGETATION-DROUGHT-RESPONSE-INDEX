@@ -1,0 +1,44 @@
+// Import VegDRI
+var vegdri_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-veg-dri')
+var vegdri_i = vegdri_ic.first()
+print(vegdri_i)
+
+// Link to methods webpage: https://www.usgs.gov/special-topics/monitoring-vegetation-drought-stress/science/methods-vegdri
+// Link to EROS page: https://www.usgs.gov/centers/eros/science/usgs-eros-archive-vegetation-monitoring-vegetation-drought-response-index
+
+// VegDRI data are stored as 8-bit integer data and can be scaled into the values below
+// Drought categories from EROS page
+// Category           Bitmap      PDSI vals
+// Extreme drought:   001-064     -7.9375 - -4.0000
+// Severe drought:    065-080     -3.9375 - -3.0000
+// Moderate drought:  081-096     -2.9375 - -2.0000
+// Abnormally dry:    097-112     -1.9375 - -1.0000
+// Near normal:       113-160     -0.9375 - 2.0000
+// Abnormally wet:    161-176     2.0625 - 3.0000
+// Moderately wet:    177-192     3.0625 - 4.0000
+// Extremely wet:     193-255     4.0625 - 7.7500
+// Water:                 253
+// Out of season:         254
+// Other landcover:       255
+
+// Function to apply stretch to make consistent with values above
+function scale_vegdri(img){
+
+  // Select vegdri band and scale to PDSI range.
+  var vegdri_scale = img.select('vegdri')
+              .subtract(128) // convert to signed 8-bit integer
+              .divide(16) // scale to PDSI range
+              .rename('vegdri_scale') // rename image
+  return img.addBands(vegdri_scale)
+}
+vegdri_ic = vegdri_ic.map(scale_vegdri)
+print(vegdri_ic)
+
+// VegDRI color palette
+var vegdri_palette = ["#720206", "#cb3121", "#e36b09", "#fee301", "#ffffff", "#ffffff", "#ffffff", "#88f9c7", "#53c285", "#2b8032"]
+
+// Select individual image and apply to map
+var vegdri_i = vegdri_ic.first()
+Map.addLayer(vegdri_i.select('vegdri_scale'), {min: -5, max: 5, palette: vegdri_palette}, 'VegDRI')
+Map.addLayer(vegdri_i.select('out_of_season'), {min:254, max:254, palette: ['878787']}, 'VegDRI Out-of-Season')
+Map.addLayer(vegdri_i.select('water'), {min:253, max:253, palette: ['0000FF']}, 'Water')

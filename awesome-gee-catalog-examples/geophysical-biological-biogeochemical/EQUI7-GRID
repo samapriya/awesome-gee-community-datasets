@@ -1,0 +1,61 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var AF_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AF_GEOG_TILE_T1"),
+    AN_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AN_GEOG_TILE_T1"),
+    AS_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_AS_GEOG_TILE_T1"),
+    EU_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_EU_GEOG_TILE_T1"),
+    NA_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_NA_GEOG_TILE_T1"),
+    OC_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_OC_GEOG_TILE_T1"),
+    SA_T1 = ee.FeatureCollection("projects/sat-io/open-datasets/equi7grid/EQUI7_V14_SA_GEOG_TILE_T1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(AF_T1,{},'AF Tile 1',false)
+Map.addLayer(AN_T1,{},'Tile 1',false)
+Map.addLayer(AS_T1,{},'Tile 3',false)
+Map.addLayer(EU_T1,{},'Tile 6',false)
+Map.addLayer(NA_T1,{},'Tile 6',false)
+Map.addLayer(OC_T1,{},'Tile 6',false)
+Map.addLayer(SA_T1,{},'Tile 6',false)
+
+Map.addLayer(
+  AF_T1.style({
+    fillColor: '00000000',
+    color: '#d53e4f',
+  })
+);
+
+Map.addLayer(
+  AN_T1.style({
+    fillColor: '00000000',
+    color: '#fc8d59',
+  })
+);
+Map.addLayer(
+  AS_T1.style({
+    fillColor: '00000000',
+    color: '#fee08b',
+  })
+);
+Map.addLayer(
+  EU_T1.style({
+    fillColor: '00000000',
+    color: '#ffffbf',
+  })
+);
+Map.addLayer(
+  NA_T1.style({
+    fillColor: '00000000',
+    color: '#e6f598',
+  })
+);
+Map.addLayer(
+  OC_T1.style({
+    fillColor: '00000000',
+    color: '#99d594',
+  })
+);
+
+Map.addLayer(
+  SA_T1.style({
+    fillColor: '00000000',
+    color: '#3288bd',
+  })
+);

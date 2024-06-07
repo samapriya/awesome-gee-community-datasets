@@ -1,0 +1,42 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cm_ppt = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_ppt"),
+    cm_tave = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tave"),
+    cm_tmax = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmax"),
+    cm_tmin = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_tmin"),
+    cn_ppt = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_ppt"),
+    cn_tave = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tave"),
+    cn_tmax = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmax"),
+    cn_tmin = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_tmin"),
+    aogcm_ensemble_ppt = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_ppt"),
+    aogcm_ensemble_tave = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tave"),
+    aogcm_ensemble_tmax = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmax"),
+    aogcm_ensemble_tmin = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmin");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Total count of number of scenario models for climate normals
+print(cm_tmax.size())
+
+//Total count of emission scenarios per climate models and ensemble models
+print('Total Emission Scenarios for indiviudual AOGCMs',cm_tmax.aggregate_count_distinct('emission_scenario'))
+print('Total Emission Scenarios for AOGCMs ensemble',aogcm_ensemble_tmax.aggregate_count_distinct('emission_scenario'))
+
+//Total count of climate models for individual AOGCM models
+print('Total individual AOGCMs',cm_tmax.aggregate_histogram('model'))
+
+var palettes = require('users/gena/packages:palettes');
+
+//Let's filter for and choose the same climate scenario for ensemble and individual models
+aogcm_ensemble_tmax = aogcm_ensemble_tmax.filter(ee.Filter.eq('emission_scenario','SSP3-7.0')).filter(ee.Filter.date('2040-01-01', '2070-01-01'))
+cm_tmax = cm_tmax.filter(ee.Filter.eq('emission_scenario','SSP3-7.0')).filter(ee.Filter.date('2040-01-01', '2070-01-01'))
+
+//Add Tmax Normal, A single model and Ensemble
+Map.addLayer(cn_tmax.filter(ee.Filter.date('1990-01-01', '2070-01-01')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'Climate Normal Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','GFDL-ESM4')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'GFDL-ESM4 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','CNRM-ESM2-1')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'CNRM-ESM2-1 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','EC-Earth3')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'EC-Earth3 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','GISS-E2-1-G')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'GISS-E2-1-G Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','MIROC6')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'MIROC6 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','MPI-ESM1-2-HR')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'MPI-ESM1-2-HR Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','MRI-ESM2-0')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'MRI-ESM2-0 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','UKESM1-0-LL')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'UKESM1-0-LL Emission Scenario 3-7.0 Tmax')
+Map.addLayer(cm_tmax.filter(ee.Filter.eq('model','ACCESS-ESM1-5')).first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'ACCESS-ESM1-5 Emission Scenario 3-7.0 Tmax')
+Map.addLayer(aogcm_ensemble_tmax.first(),{min:-8,max:40,palette:palettes.cmocean.Balance[7]},'AOGCM Ensemble Model Emission Scenario 3-7.0 Tmax')

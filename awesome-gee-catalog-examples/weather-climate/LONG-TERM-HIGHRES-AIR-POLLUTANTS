@@ -1,0 +1,15 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var aod_daily = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/AOD_daily"),
+    aod_monthly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/AOD_monthly_avg"),
+    aod_yearly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/AOD_yearly_avg"),
+    pm10_daily = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM10_daily"),
+    pm10_monthly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM10_monthly_avg"),
+    pm10_yearly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM10_yearly_avg"),
+    pm25_daily = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM25_daily"),
+    pm25_monthly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM25_monthly_avg"),
+    pm25_yearly_avg = ee.ImageCollection("projects/sat-io/open-datasets/LGHAP/PM25_yearly_avg");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = ["#000080", "#0000ff", "#0063ff", "#00d4ff", "#4effa9", "#a9ff4e", "#ffe600", "#ff7d00", "#ff1400", "#800000"]
+Map.addLayer(aod_daily.first(),{min:0,max:1,palette:palette},'AOD First')
+Map.addLayer(aod_daily.sort('system:time_start',false).first(),{min:0,max:1,palette:palette},'AOD Last')
+Map.centerObject(aod_daily.first(),4)

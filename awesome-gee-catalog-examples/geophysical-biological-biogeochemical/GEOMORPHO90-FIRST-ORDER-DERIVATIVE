@@ -1,0 +1,152 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var cti = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/cti"),
+    slope = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/slope"),
+    aspect = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect"),
+    aspect_cosine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-cosine"),
+    aspect_sine = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/aspect-sine"),
+    eastness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/eastness"),
+    northness = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/northness"),
+    convergence = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/convergence"),
+    spi = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/spi"),
+    dx = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dx"),
+    dy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dy");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes')
+
+//Center Map
+Map.setCenter(103.7557, 1.6986,10)
+
+Map.addLayer(cti.median(), {min: -3, max: 6, palette: palettes.cmocean.Algae[7]}, 'Compound Topographic Index (CTI)')
+Map.addLayer(spi.median(), {min: 0, max:4, palette: palettes.cmocean.Turbid[7]}, 'Stream Power Index (SPI)')
+Map.addLayer(aspect.median(), {min: 25, max:350, palette: palettes.cmocean.Curl[7]}, 'Aspect Median')
+
+var SubtleGrayscale
+ = 
+[
+  {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": 65
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": "50"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": "-100"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "all",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "30"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "all",
+    "stylers": [
+      {
+        "lightness": "40"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "hue": "#ffff00"
+      },
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -97
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": -25
+      },
+      {
+        "saturation": -100
+      }
+    ]
+  }
+]
+Map.setOptions('SubtleGrayscale', {SubtleGrayscale
+: SubtleGrayscale
+})

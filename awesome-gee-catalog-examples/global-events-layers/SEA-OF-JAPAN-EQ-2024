@@ -1,0 +1,11 @@
+var notoPeninsula = ee.ImageCollection("projects/sat-io/open-datasets/disaster/japan-earthquake-2024_ALOS");
+
+var dates = notoPeninsula.distinct('system:time_start').aggregate_array('system:time_start')
+            .map(function(feature){return ee.Date(feature)}).aside(print); 
+
+var before =  notoPeninsula.filterDate('2024-01-01','2024-01-04');
+var after = notoPeninsula.filterDate('2022-01-01','2024-01-01');
+
+Map.addLayer(before,{min: 0.0,max: 10000.0},'before');
+Map.addLayer(after,{min: 0.0,max: 10000.0},'after');
+Map.setCenter(137.1901, 36.6159);

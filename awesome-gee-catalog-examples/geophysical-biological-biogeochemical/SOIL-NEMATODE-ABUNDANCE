@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var nematode = ee.FeatureCollection("projects/sat-io/open-datasets/global-nematode");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(nematode)
+print(nematode.size())

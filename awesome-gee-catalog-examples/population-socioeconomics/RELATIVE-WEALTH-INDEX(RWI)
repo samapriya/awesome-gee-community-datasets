@@ -1,0 +1,6 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var rwi = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/relative_wealth_index");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(
+  ee.FeatureCollection(rwi),{},'Relative Wealth Index'
+);

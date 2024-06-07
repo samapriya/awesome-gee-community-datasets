@@ -1,0 +1,21 @@
+// Read in daily and monthly Image Collections and get single image from each collection
+var nclimgrid_m_ic = ee.ImageCollection('projects/climate-engine-pro/assets/noaa-ncei-nclimgrid/monthly')
+var nclimgrid_m_i = nclimgrid_m_ic.first()
+var nclimgrid_d_ic = ee.ImageCollection('projects/climate-engine-pro/assets/noaa-ncei-nclimgrid/daily')
+var nclimgrid_d_i = nclimgrid_d_ic.first()
+
+// Print each single image to see bands
+print(nclimgrid_m_i)
+print(nclimgrid_d_i)
+
+// Visualize each band from each single image
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+var temp_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+Map.addLayer(nclimgrid_m_i.select('precip'), {min: 0, max: 200, palette: prec_palette}, 'precip, monthly')
+Map.addLayer(nclimgrid_m_i.select('tmin'), {min: -20, max: 20, palette: temp_palette}, 'tmin, monthly')
+Map.addLayer(nclimgrid_m_i.select('tmax'), {min: -20, max: 20, palette: temp_palette}, 'tmax, monthly')
+Map.addLayer(nclimgrid_m_i.select('tavg'), {min: -20, max: 20, palette: temp_palette}, 'tavg, monthly')
+Map.addLayer(nclimgrid_d_i.select('precip'), {min: 0, max: 10, palette: prec_palette}, 'precip, daily')
+Map.addLayer(nclimgrid_d_i.select('tmin'), {min: -20, max: 20, palette: temp_palette}, 'tmin, daily')
+Map.addLayer(nclimgrid_d_i.select('tmax'), {min: -20, max: 20, palette: temp_palette}, 'tmax, daily')
+Map.addLayer(nclimgrid_d_i.select('tavg'), {min: -20, max: 20, palette: temp_palette}, 'tavg, daily')

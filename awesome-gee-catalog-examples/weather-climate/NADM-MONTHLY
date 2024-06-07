@@ -1,0 +1,102 @@
+// Read in Image Collection and mosaic to single image
+var nadm_ic = ee.ImageCollection('projects/climate-engine/nadm/monthly')
+var nadm_i = ee.Image(nadm_ic.sort('system:time_start',false).first())
+
+// Print image to see bands
+print(nadm_i)
+
+// Visualize a single image
+var nadm_palette = ["#ffffff", "#ffff00", "#fcd37f", "#ffaa00", "#e60000", "#730000"]
+
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+    "No drought or wet",
+    "Abnormally Dry",
+    "Moderate Drought",
+    "Severe Drought",
+    "Extreme Drought",
+    "Exceptional Drought",
+  ],
+  "colors": [
+    "#ffffff",
+    "#FFFF00", 
+    "#FCD37F", 
+    "#FFAA00",
+    "#E60000", 
+    "#730000"
+  ]};
+
+// Create a panel to hold the legend widget
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Function to generate the legend
+function addCategoricalLegend(panel, dict, title) {
+  
+  // Create and add the legend title.
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '18px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  panel.add(legendTitle);
+  
+  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+  panel.add(loading);
+  
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, name) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+  
+    // Create the label filled with the description text.
+    var description = ui.Label({
+      value: name,
+      style: {margin: '0 0 4px 6px'}
+    });
+  
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Get the list of palette colors and class names from the image.
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+  
+  for (var i = 0; i < names.length; i++) {
+    panel.add(makeRow(palette[i], names[i]));
+  }
+  
+  Map.add(panel);
+  
+}
+
+
+/*
+  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
+*/
+
+// Add the legend to the map
+addCategoricalLegend(legend, dict, 'North America Drought Monitor(NADM) Monthly');
+
+Map.addLayer(nadm_i, {min:-1, max:4, palette: nadm_palette}, 'NADM '+ee.Date(nadm_i.get('system:time_start')).format('YYYY-MM-dd').getInfo())

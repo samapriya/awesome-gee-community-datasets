@@ -1,0 +1,18 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var merged = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Merged_Master_File_formatted"),
+    arctic_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Arctic_Ocean_formatted"),
+    atlantic_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Atlantic_Ocean_formatted"),
+    indian_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Indian_Ocean_formatted"),
+    pacific_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Pacific_Ocean_formatted");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Keep in mind that all variables have a prefix G2 for operations
+*/
+
+//Let's get a total size
+print('Collection size',merged.size())
+
+//Let's now get a yearly count
+print('Yearly distribution',merged.aggregate_histogram('G2year'))
+
+Map.addLayer(merged,{'color':'blue'},'Merged GLODAP global v2.2022')

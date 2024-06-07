@@ -1,0 +1,16 @@
+// Read in Image Collection and get first image
+var merra2_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/climate-engine/merra2/daily')
+var merra2_i = merra2_ic.first()
+
+// Print first image to see bands
+print(merra2_i)
+
+// Visualize select bands from first image — additional bands are present in the Image Collection
+var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
+var temp_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+var eto_palette = ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#b10026"]
+Map.addLayer(merra2_i.select('PRECTOTCORR'), {min: 0, max: 10, palette: prec_palette}, 'PRECTOTCORR')
+Map.addLayer(merra2_i.select('T2MMAX').subtract(273.15), {min: -10, max: 30, palette: temp_palette}, 'T2MMAX')
+Map.addLayer(merra2_i.select('T2MMIN').subtract(273.15), {min: -10, max: 30, palette: temp_palette}, 'T2MMIN')
+Map.addLayer(merra2_i.select('ETo_ASCE'), {min: 0, max: 10, palette: eto_palette}, 'ETo_ASCE')
+Map.addLayer(merra2_i.select('ETr_ASCE'), {min: 0, max: 10, palette: eto_palette}, 'ETr_ASCE')

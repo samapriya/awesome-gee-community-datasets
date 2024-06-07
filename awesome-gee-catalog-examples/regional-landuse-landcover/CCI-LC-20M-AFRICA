@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var esa_cci = ee.Image("projects/sat-io/open-datasets/ESA/ESACCI-LC-L4-LC10-Map-20m-P1Y-2016-v10");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Prototype Land Cover Classification at 20m https://2016africalandcover20m.esrin.esa.int/
+
+Map.centerObject(esa_cci,4)
+
+var vis = {min:0,max:10,palette:["#000000","#00a000","#966400","#ffb400","#ffff64","#00dc82","#ffebaf","#fff5d7","#c31400","#ffffff","#0046c8"]} 
+
+Map.addLayer(esa_cci,vis,'CCI LAND COVER-S2 PROTOTYPE LC 20M')
+

@@ -1,0 +1,13 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var DEM = ee.Image("projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print(DEM);
+
+var elevationVis = {
+  min: -30.0,
+  max: 1200.0,
+  palette: ["#317605","f5cf13","b45504","#ffffff"],
+};
+
+Map.setCenter(-18.52, 64.81, 7); 
+Map.addLayer(DEM, elevationVis, 'IslandsDEMv1 10m isn93');

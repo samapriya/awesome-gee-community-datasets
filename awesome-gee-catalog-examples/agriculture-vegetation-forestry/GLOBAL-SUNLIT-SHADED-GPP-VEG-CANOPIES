@@ -1,0 +1,35 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gpp_annual = ee.Image("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_yearly/GPP_v21_2020"),
+    shaded_annual = ee.Image("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_yearly/Shade_GPP_v21_2020"),
+    sunlit_annual = ee.Image("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_yearly/Sun_GPP_v21_2020"),
+    gpp_monthly = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_monthly"),
+    shaded_monthly = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_monthly"),
+    sunlit_monthly = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_monthly"),
+    gpp_8day = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/gpp_8day"),
+    shaded_8day = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/shaded_8day"),
+    sunlit_8day = ee.ImageCollection("projects/sat-io/open-datasets/GPP_SUNLIT_SHADED/sunlit_8day");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = ['#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#006837','#004529']
+
+Map.addLayer(gpp_annual,{min:0,max:4500,palette:palette},'GPP annual',false)
+Map.addLayer(shaded_annual,{min:0,max:2500,palette:palette},'GPP shaded annual',false)
+Map.addLayer(sunlit_annual,{min:0,max:2500,palette:palette},'GPP sunlit annual',false)
+
+
+//// Monthly datasets
+var sunlit_monthly_2020 = sunlit_monthly.filterDate('2020-06-01','2020-12-31').first()
+var shaded_monthly_2020 = shaded_monthly.filterDate('2020-06-01','2020-12-31').first()
+var gpp_monthly_2020 = gpp_monthly.filterDate('2020-06-01','2020-12-31').first()
+
+Map.addLayer(gpp_monthly_2020.multiply(0.1),{min:0,max:450,palette:palette},'GPP monthly June 2020',false)
+Map.addLayer(shaded_monthly_2020.multiply(0.1),{min:0,max:250,palette:palette},'GPP shaded monthly June 2020',false)
+Map.addLayer(sunlit_monthly_2020.multiply(0.1),{min:0,max:250,palette:palette},'GPP sunlit monthly June 2020',false)
+
+//// 8 day datasets
+var sunlit_8day_2020 = sunlit_8day.filterDate('2020-06-01','2020-12-31').first()
+var shaded_8day_2020 = shaded_8day.filterDate('2020-06-01','2020-12-31').first()
+var gpp_8day_2020 = gpp_8day.filterDate('2020-06-01','2020-12-31').first()
+
+Map.addLayer(gpp_8day_2020.multiply(0.01),{min:0,max:65,palette:palette},'GPP 8day June 2020',false)
+Map.addLayer(shaded_8day_2020.multiply(0.01),{min:0,max:65,palette:palette},'GPP shaded 8day June 2020',false)
+Map.addLayer(sunlit_8day_2020.multiply(0.01),{min:0,max:120,palette:palette},'GPP sunlit 8day June 2020',false)
