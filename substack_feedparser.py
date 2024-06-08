@@ -29,7 +29,7 @@ def update_markdown_file(filename, blog_info, start_marker, end_marker):
         start_marker: The marker indicating the start of the section to update.
         end_marker: The marker indicating the end of the section to update.
     """
-    with open(filename, 'r') as f:
+    with open(filename, 'r',encoding='utf-8') as f:
         file_content = f.read()
 
     start_index = file_content.find(start_marker) + len(start_marker)
@@ -41,7 +41,7 @@ def update_markdown_file(filename, blog_info, start_marker, end_marker):
 
     updated_content = file_content[:start_index] + "\n" + new_content + file_content[end_index:]
 
-    with open(filename, 'w') as f:
+    with open(filename, 'w',encoding='utf-8') as f:
         f.write(updated_content)
     print(f"Updated {filename} successfully!")
 
