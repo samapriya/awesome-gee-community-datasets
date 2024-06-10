@@ -15,6 +15,16 @@ The dataset fields constructed_before and constructed_after was converted to sys
 * constructed_before: upper bound for construction date (estimated date of the image in which the solar plant was first seen in a constructed state)
 * constructed_after: lower bound for construction date (estimated date of the image in which construction began for the solar plant)
 
+#### Citation
+
+Please refer to the suggested citation formats
+
+```
+"TransitionZero Solar Asset Mapper, TransitionZero, May 2024 release."
+"TZ-SAM, TransitionZero, May 2024 release."
+"TransitionZero (2024) Solar Asset Mapper."
+```
+
 #### Dataset Citation
 
 ```
@@ -34,13 +44,7 @@ var tzero_solar = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-S
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER
 
 #### License
-TZ-SAM is made available under a Creative Commons Attribution Non-Commercial 4.0 International License (CC-BY-NC-4.0). Attribution to TransitionZero is required. You must also clearly indicate if you have made any changes to the TZ-SAM dataset and what these are. Please refer to the suggested citation formats:
-
-```
-"TransitionZero Solar Asset Mapper, TransitionZero, May 2024 release."
-"TZ-SAM, TransitionZero, May 2024 release."
-"TransitionZero (2024) Solar Asset Mapper."
-```
+TZ-SAM is made available under a Creative Commons Attribution Non-Commercial 4.0 International License (CC-BY-NC-4.0). Attribution to TransitionZero is required. You must also clearly indicate if you have made any changes to the TZ-SAM dataset and what these are.
 
 Keywords: solar energy, energy transition, open data
 
