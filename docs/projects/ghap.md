@@ -31,7 +31,7 @@ var GHAP_MONTHLY = ee.ImageCollection("projects/sat-io/open-datasets/GHAP/GHAP_M
 var GHAP_YEARLY = ee.ImageCollection("projects/sat-io/open-datasets/GHAP/GHAP_Y1K_PM25");
 ```
 
-Sample Code:
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GHAP-DATASETS
 
 #### License
 These datasets are licensed under a Creative Commons Attribution 4.0 International license.

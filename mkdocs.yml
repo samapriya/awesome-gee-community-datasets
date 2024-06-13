@@ -242,6 +242,7 @@ nav:
       - HydroATLAS v1.0: projects/hydroatlas.md
       - HydroWaste v1.0: projects/hydrowaste.md
       - SWOT River Database (SWORD): projects/sword.md
+      - Surface Area of Rivers and Lakes (SARL): projects/sarl.md
       - Global River Obstruction Database (GROD): projects/grod.md
       - United States Groundwater Well Database (USGWD): projects/usgwd.md
       - Global River Classification (GloRiC): projects/gloric.md
@@ -348,6 +349,7 @@ nav:
       - Global Power Plant Database: projects/pwplants.md
       - Global offshore wind turbine dataset: projects/gowt.md
       - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
+      - TransitionZero Solar Asset Mapper: projects/tzero.md
       - Global Database of Cement Production Assets: projects/gcd.md
       - Global database of cement production assets and upstream suppliers: projects/gcd_assets.md
       - Global Database of Iron and Steel Production Assets: projects/gid.md
@@ -395,6 +397,7 @@ nav:
       - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): projects/nclim_grid.md
       - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
       - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
+      - Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022): projects/ghap.md
       - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
   - Global Events Layers:
       - Global large flood events (1985-2016): projects/flood.md
