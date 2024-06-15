@@ -11,6 +11,13 @@ Here the [SDG Transformation Center](https://sdgtransformationcenter.org/geospat
 
 The complete methodology is available [here](https://www.frontiersin.org/articles/10.3389/frsen.2024.1375476/full#h1)
 
+#### Citation
+
+```
+Iablonovski G, Drumm E, Fuller G and Lafortune G (2024) A global implementation of the rural access index.
+Front. Remote Sens. 5:1375476. doi: 10.3389/frsen.2024.1375476
+```
+
 #### Earth Engine Snippet
 
 ```js
