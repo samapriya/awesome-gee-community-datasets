@@ -1,10 +1,9 @@
 site_name: awesome-gee-community-catalog
 site_description: Community Datasets in Google Earth Engine
 site_author: Samapriya Roy
-site_url: https://github.com/samapriya
+site_url: https://gee-community-catalog.org/
 
 # Repository
-repo_name: awesome-gee-community-datasets
 repo_url: https://github.com/samapriya/awesome-gee-community-datasets
 
 # Copyright

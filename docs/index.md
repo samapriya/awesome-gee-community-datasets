@@ -5,7 +5,7 @@
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream2](https://img.shields.io/badge/Supported%20by-Jetstream2-brightgreen)](https://jetstream-cloud.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11118613.svg)](https://doi.org/10.5281/zenodo.11118613)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12057445.svg)](https://doi.org/10.5281/zenodo.12057445)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
 
 The awesome-gee-community-catalog is an **unfunded open source grassroots project** with a mission to help collect **community sourced** and **community generated** geospatial datasets. Our goal is to make data **accessible** and tie it to an analysis platform **fostering accessibility** and **reducing digital divide**. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog). This collaborative effort not only offers openly available, preprocessed research datasets but also caters to frequently requested ones under various open licenses. **Stay updated by signing up for email updates, ensuring you receive the latest catalog news and in-depth explorations of valuable data.**
@@ -27,6 +27,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Roy, S., & Swetnam, T. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (2.6.0).
-Zenodo. https://doi.org/10.5281/zenodo.11118613
+Samapriya Roy, Muhammed Abdelaal, Ujaval Gandhi, & Swetnam, T. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (2.7.0).
+Zenodo. https://doi.org/10.5281/zenodo.12057445
 ```
