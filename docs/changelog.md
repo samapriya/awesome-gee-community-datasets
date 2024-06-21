@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-06-21
+- Added [Rural Access Index (RAI)](https://gee-community-catalog.org/projects/rai)
+- Added [GAN based Synthetic VIIRS (NTL) India](https://gee-community-catalog.org/projects/syn_ntl)
+- Added [Global Monthly Satellite-derived PM2.5](https://gee-community-catalog.org/projects/global_pm25)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-06-13
 - Added [Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022)](https://gee-community-catalog.org/projects/ghap)
 - Added [Surface Area of Rivers and Lakes (SARL)](https://gee-community-catalog.org/projects/sarl)

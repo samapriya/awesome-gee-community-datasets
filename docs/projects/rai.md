@@ -1,4 +1,4 @@
-#Rural Access Index (RAI)
+# Rural Access Index (RAI)
 
 The Rural Access Index (RAI) is one of the most important global development indicators in the transport sector. It is currently the only indicator for the SDGs that directly measures rural accessibility, and it does so by assessing rural populations’ access to all-season roads. Following its adoption as Sustainable Development Goal (SDG) indicator 9.1.1 in 2015, the indicator received a new methodology taking advantage of geospatial techniques, published under the “Measuring rural access using new technologies” report in 2016 ([World Bank, 2016](https://www.frontiersin.org/articles/10.3389/frsen.2024.1375476/full#B19)). The World Bank has since endorsed an additional Research for Community Access Partnership (ReCAP) funded project led by the Transport Research Laboratory (TRL)—the RAI Supplemental Guidelines ([Workman and McPherson, 2019](https://www.frontiersin.org/articles/10.3389/frsen.2024.1375476/full#B15))—which provided detailed guidance for calculating the RAI, notably with an alternative approach to the all-season aspect of RAI, focusing on the changing accessibility profile of road networks rather than relying on road surface quality alone or scarce physical measurements for road conditions. Nevertheless, neither the 2016 nor the 2019 methodologies were implemented globally, with official implementations published by the World Bank being restricted to more in-depth studies for selected countries mostly in Africa and the Middle East ([World Bank, 2023a](https://www.frontiersin.org/articles/10.3389/frsen.2024.1375476/full#B17)) due to data source restrictions.
 
@@ -17,6 +17,8 @@ The complete methodology is available [here](https://www.frontiersin.org/article
 Iablonovski G, Drumm E, Fuller G and Lafortune G (2024) A global implementation of the rural access index.
 Front. Remote Sens. 5:1375476. doi: 10.3389/frsen.2024.1375476
 ```
+
+![rai](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/6041917f-98dc-43d3-9e82-a48fbf7cc6b2)
 
 #### Earth Engine Snippet
 
@@ -37,7 +39,7 @@ Map.addLayer(ruralpopulationwithaccess,{min:0, max:100,'palette': ['00A600','63C
 
 ```
 
-Sample Code:
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RURAL-ACCESS-INDEX
 
 #### License
 

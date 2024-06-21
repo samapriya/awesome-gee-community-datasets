@@ -2,11 +2,13 @@
 
 This dataset provides annual and monthly estimates of ground-level fine particulate matter (PM2.5) from 2000 to 2019. The data are derived by integrating Aerosol Optical Depth (AOD) retrievals from multiple NASA instruments—MODIS, MISR, SeaWIFS, and VIIRS—with the GEOS-Chem chemical transport model. The initial PM2.5 estimates are then calibrated using a residual Convolutional Neural Network (CNN) against global ground-based observations.
 
-Key Features:
+#### Key Features
+
 * Time Span: 2000-2019 (V6.GL.01), extended through 2022 (V6.GL.02)
 * AOD Data Sources: MODIS, MISR, SeaWIFS, and VIIRS
 * Calibration: GEOS-Chem model and residual CNN using global ground-based observations
 * Updates in V6.GL.02:
+
     - Updated ground-based observations for the entire time series
     - Inclusion of SNPP VIIRS retrievals
     - Extended temporal coverage through 2022
@@ -20,6 +22,8 @@ Shen, S. Li, C. van Donkelaar, A. Jacobs, N. Wang, C. Martin, R. V.: Enhancing G
 Including Geophysical a Priori Information in Deep Learning. (2024) ACS ES&T Air. DOI: 10.1021/acsestair.3c00054
 ```
 
+![pm25_monthly](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/1874cb04-953f-4c34-9749-669b82a26c37)
+
 #### Earth Engine Snippet
 
 ```js
@@ -27,7 +31,7 @@ var pm25_monthly = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL-SATE
 var pm25_yearly = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL-SATELLITE-PM25/ANNUAL")
 ```
 
-Sample Code: Add a sample code maybe just adding your datasets in the code editor
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SATELLITE-PM25
 
 
 #### License

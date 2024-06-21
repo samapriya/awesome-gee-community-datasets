@@ -33,14 +33,13 @@ deep learning (cGAN) technique. Remote Sensing Applications: Society and Environ
 
 ![ntl](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/5f75c2c0-070e-497f-b215-d36a3229b8f5)
 
-
 #### Earth Engine Snippet
 
 ```js
 var syn_ntl_india = ee.ImageCollection("projects/sat-io/open-datasets/gan-synthetic-viirs");
 ```
 
-Sample Code:
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/SYNTHETIC-NTL-VIIRS-INDIA
 
 #### License
 Creative Commons Attribution 4.0 International

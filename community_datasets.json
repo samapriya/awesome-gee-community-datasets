@@ -21559,6 +21559,72 @@
     "thematic_group": "Agriculture, Vegetation and Forestry"
   },
   {
+    "title": "Rural Access Index (RAI) Inaccessibility index",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RURAL-ACCESS-INDEX",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/RAI/raimultiplier",
+    "provider": "United Nations Sustainable Development Solutions Network",
+    "tags": "sdg, accessibility, rural",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/rai/",
+    "thematic_group": "Population & Socioeconomic"
+  },
+  {
+    "title": "Rural Access Index (RAI) Rural Population",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RURAL-ACCESS-INDEX",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/RAI/ruralpop",
+    "provider": "United Nations Sustainable Development Solutions Network",
+    "tags": "sdg, accessibility, rural",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/rai/",
+    "thematic_group": "Population & Socioeconomic"
+  },
+  {
+    "title": "Rural Access Index (RAI) Rural Population with Access",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RURAL-ACCESS-INDEX",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/RAI/ruralpopaccess",
+    "provider": "United Nations Sustainable Development Solutions Network",
+    "tags": "sdg, accessibility, rural",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/rai/",
+    "thematic_group": "Population & Socioeconomic"
+  },
+  {
+    "title": "GAN based Synthetic VIIRS (NTL) India",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/SYNTHETIC-NTL-VIIRS-INDIA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gan-synthetic-viirs",
+    "provider": "Jindal et al",
+    "tags": "VIIRS-DNB, Noise removal, DMSP-OLS, Monthly, Inter-calibration, Conditional GAN",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/syn_ntl/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
+    "title": "Global Monthly Satellite derived PM25 Monthly",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SATELLITE-PM25",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBAL-SATELLITE-PM25/MONTHLY",
+    "provider": "Atmospheric Composition Analysis Group at Washington University in St Louis",
+    "tags": "PM2.5, Remote Sensing, MODIS, SeaWIFS, VIIRS, MISR, AOD",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_pm25/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Global Monthly Satellite derived PM25 Annual",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SATELLITE-PM25",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBAL-SATELLITE-PM25/ANNUAL",
+    "provider": "Atmospheric Composition Analysis Group at Washington University in St Louis",
+    "tags": "PM2.5, Remote Sensing, MODIS, SeaWIFS, VIIRS, MISR, AOD",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/global_pm25/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
     "title": "ERA5 Heat Dataset",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/ERA5-HEAT",
     "type": "image_collection",
