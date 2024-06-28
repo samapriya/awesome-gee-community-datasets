@@ -1,7 +1,7 @@
 name: Suggest a tutorial or example for an existing awesome-gee-catalog dataset
 description: This template can be submit a code example to an existing dataset in the catalog
 title: "[Dataset Title/Name]:"
-labels: ["tutorial"]
+labels: ["tutorial","example"]
 assignees:
   - samapriya
 body:
