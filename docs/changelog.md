@@ -2,6 +2,12 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-07-03
+- Added [Ookla 5G Maps](https://gee-community-catalog.org/projects/ookla_5g/)
+- Added [M-Lab Network Speed Data Extracts](https://gee-community-catalog.org/projects/mlab_extracts)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://gee-community-catalog.org/projects/speedtest)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-06-21
 - Added [Rural Access Index (RAI)](https://gee-community-catalog.org/projects/rai)
 - Added [GAN based Synthetic VIIRS (NTL) India](https://gee-community-catalog.org/projects/syn_ntl)

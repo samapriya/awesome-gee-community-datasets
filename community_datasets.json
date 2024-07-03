@@ -4956,6 +4956,17 @@
     "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
+    "title": "Global fixed Network Performance Maps: 2024-01-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/fixed_tiles/2024-01-01_performance_fixed_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/speedtest/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
     "title": "Global Mobile Network Performance Maps: 2023-01-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
@@ -5000,6 +5011,17 @@
     "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
+    "title": "Global Mobile Network Performance Maps: 2024-01-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/mobile_tiles/2024-01-01_performance_mobile_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/speedtest/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
     "title": "Global fixed Network Performance Maps Raster Tiles",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERF-RASTER",
     "type": "image_collection",
@@ -5019,6 +5041,17 @@
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/speedtest/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
+    "title": "Global 5G Map",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/OOKLA-5G-MAP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/ookla_5g_map",
+    "provider": "Ookla",
+    "tags": "analytics,operator,cities,status,civic,infrastructure,internet,telecommunications",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/ookla_5g/",
     "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
@@ -21691,6 +21724,28 @@
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/global_palm_oil/",
     "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "M-Lab Download Speed Extract",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MLAB-EXTRACTS-NETWORK-SPEED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/MLAB/mlab_download_extract",
+    "provider": "M-Lab",
+    "tags": "analytics,network speed,cities,civic,infrastructure,internet,network traffic, telecommunications,isp",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mlab_extracts/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
+    "title": "M-Lab Upload Speed Extract",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MLAB-EXTRACTS-NETWORK-SPEED",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/MLAB/mlab_upload_extract",
+    "provider": "M-Lab",
+    "tags": "analytics,network speed,cities,civic,infrastructure,internet,network traffic, telecommunications,isp",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mlab_extracts/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
     "title": "USGS Historical Topo maps 1:24000 map index",
