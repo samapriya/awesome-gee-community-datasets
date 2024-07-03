@@ -7,7 +7,7 @@ The Global Power Plant Database is an open-source open-access dataset of grid-sc
 The Database currently contains nearly 35000 power plants in 167 countries, representing about 72% of the world's capacity. Entries are at the facility level only, generally defined as a single transmission grid connection point.
 Generation unit-level information is not currently available.
 
-* The methodology for the dataset creation is given in the World Resources Institute publication ["A Global Database of Power Plants"](www.wri.org/publication/global-power-plant-database).
+* The methodology for the dataset creation is given in the World Resources Institute publication ["A Global Database of Power Plants"](https://www.wri.org/research/global-database-power-plants).
 * Associated code for the creation of the dataset can be [found on GitHub](https://github.com/wri/global-power-plant-database).
 * See also the technical note published in early 2020 on an improved methodology to [estimate annual generation](https://www.wri.org/publication/estimating-power-plant-generation-global-power-plant-database).
 

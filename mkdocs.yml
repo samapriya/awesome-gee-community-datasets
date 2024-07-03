@@ -347,6 +347,8 @@ nav:
       - Global Mining Areas and Validation Datasets: projects/global_mining.md
       - Global Healthsites Mapping Project: projects/health_sites.md
       - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
+      - Ookla 5G Map: projects/ookla_5g.md
+      - Measurement Lab Network Extracts (M-Lab): projects/mlab_extracts.md
       - Global Power Plant Database: projects/pwplants.md
       - Global offshore wind turbine dataset: projects/gowt.md
       - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
