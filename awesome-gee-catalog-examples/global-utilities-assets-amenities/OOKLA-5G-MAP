@@ -1,0 +1,37 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ookla_5g_map = ee.FeatureCollection("projects/sat-io/open-datasets/network/ookla_5g_map");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var operatorCounts = ookla_5g_map.aggregate_histogram('operator');
+print('Operator Counts:', operatorCounts);
+
+var ookla_updated = ookla_5g_map.map(function(feature) {
+  // Get the operator of the current feature
+  var operator = feature.getString('operator');
+  
+  // Get the count of this operator from the histogram
+  var count = operatorCounts.get(operator);
+  
+  // Add the count as a new property to the feature
+  return feature.set('operator_count', count);
+});
+
+// Print the updated feature collection
+print('Updated Feature Collection:', ookla_updated.limit(10));
+
+Map.centerObject(ookla_5g_map.first(),5)
+
+//buffer to 10m
+function pt_buffer(feature){
+  var ft = feature.buffer(10)
+  return ft
+}
+
+var empty = ee.Image().byte();
+var outline = empty.paint({
+  featureCollection: ookla_updated.map(pt_buffer),
+  color: 'operator_count',
+  width: 4
+});
+
+Map.addLayer(ookla_updated,{},'Ookla 5G Map',false)
+Map.addLayer(outline.randomVisualizer(), {opacity:0.8}, '5G Service operations')

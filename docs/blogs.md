@@ -3,6 +3,7 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [Data Commons and Connectivity: Exploring Global Data and Tools That Measure Internet Access](https://datacommons.substack.com/p/data-commons-and-connectivity-exploring)
 * [🌍 Community Catalog Summer Refresh: Land Cover, Forest Flux, and Field Boundaries Updates](https://datacommons.substack.com/p/community-catalog-summer-refresh)
 * [GEE Community Catalog Celebrates 4 Years: May 2024 Data Refresh](https://datacommons.substack.com/p/gee-community-catalog-celebrates)
 * [Mapping with the Flow: Rivers, Wells, and Obstruction Datasets in the Community Catalog](https://datacommons.substack.com/p/mapping-with-the-flow-rivers-wells)

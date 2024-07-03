@@ -1,0 +1,17 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var tzero_solar = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define the visualization parameters
+var vizParams = {
+  color: 'FFD700',
+  fillColor: '00000000'
+};
+
+// Add the feature collection to the map with the specified visualization parameters
+Map.addLayer(tzero_solar.style(vizParams), {}, 'Solar Farms');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+// Center the map on a specific region (optional)
+Map.setCenter(0, 0, 2); // You can adjust the coordinates and zoom level as needed

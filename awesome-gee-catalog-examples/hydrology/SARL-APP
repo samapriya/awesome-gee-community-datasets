@@ -1,0 +1,399 @@
+var image = ui.import && ui.import("image", "image", {
+        "id": "users/bjornburrnyberg/SARL"
+    }) || ee.Image("users/bjornburrnyberg/SARL"),
+    dataTable = ui.import && ui.import("dataTable", "table", {
+        "id": "users/bjornburrnyberg/WaterChanges"
+    }) || ee.FeatureCollection("users/bjornburrnyberg/WaterChanges");
+
+var table = ee.FeatureCollection("WWF/HydroSHEDS/v1/Basins/hybas_5");
+
+Map.setOptions('SATELLITE');
+Map.drawingTools().setShown(false);
+var colors = {
+    min: 1,
+    max: 6,
+    palette: ['#0571b0', '#d01c8b', '#92c5de', '#f1b6da', '#999999', '#ffffff']
+};
+var years = []
+for (var i = 1984; i < 2022; i++) {
+    years.push({
+        v: i,
+        f: i.toString()
+    })
+}
+var createCharts = function(name) {
+    var values = dataTable.filter(ee.Filter.eq('HYBAS_ID', name)).sort('Year');
+    var checked = checkbox.getValue();
+    if (checked === true) {
+        var props = datasets['Absolute Change'];
+        var props2 = datasets['Percentage Change'];
+        var props3 = datasets['Annual Percentage Change'];
+        var c = ['#d01c8b', '#f1b6da', '#0571b0', '#92c5de'];
+    } else {
+        var props = datasets['Absolute Change'].slice(2, 5);
+        var props2 = datasets['Percentage Change'].slice(2, 5);
+        var props3 = datasets['Annual Percentage Change'].slice(2, 5);
+        var c = ['#0014ff', '#00ff37'];
+    }
+    var chart =
+        ui.Chart.feature
+        .byFeature({
+            features: values.select(props),
+            xProperty: 'Year',
+        })
+        .setSeriesNames(props.slice(0, -1))
+        .setChartType('LineChart')
+        .setOptions({
+            title: 'Absolute Change',
+            vAxis: {
+                title: 'Area km2',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+            },
+            hAxis: {
+                title: 'Year',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+                ticks: years
+            },
+            colors: c
+        });
+    var chart2 =
+        ui.Chart.feature
+        .byFeature({
+            features: values.select(props2),
+            xProperty: 'Year',
+        })
+        .setSeriesNames(props2.slice(0, -1))
+        .setChartType('LineChart')
+        .setOptions({
+            title: 'Percentage Change',
+            vAxis: {
+                title: 'Percentage %',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+                // viewWindow: {min: -100, max: 100}
+            },
+            hAxis: {
+                title: 'Year',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+                ticks: years
+            },
+            colors: c
+        });
+    var chart3 =
+        ui.Chart.feature
+        .byFeature({
+            features: values.select(props3),
+            xProperty: 'Year',
+        })
+        .setSeriesNames(props3.slice(0, -1))
+        .setChartType('LineChart')
+        .setOptions({
+            title: 'Annual Percentage Change',
+            vAxis: {
+                title: 'Percentage %',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+                viewWindow: {
+                    min: -100,
+                    max: 100
+                }
+            },
+            hAxis: {
+                title: 'Year',
+                titleTextStyle: {
+                    italic: false,
+                    bold: true
+                },
+                ticks: years,
+            },
+            colors: c
+        });
+    panel.widgets().set(8, chart);
+    panel.widgets().set(9, chart2);
+    panel.widgets().set(10, chart3);
+};
+var showLayers = function(y) {
+    var name = y.toString();
+    var imgName = 'Y' + name;
+
+    var img = image.select(imgName);
+
+    var mask = img.gt(0);
+    var layer = ui.Map.Layer(img.mask(mask), colors, name);
+    Map.layers().set(0, layer);
+};
+var slider = ui.Slider({
+    min: 1984,
+    max: 2021,
+    value: 2021,
+    step: 1,
+    style: {
+        width: '150px'
+    },
+    onChange: function(float) {
+        var y = float;
+        showLayers(y);
+    },
+    style: {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }
+});
+var datasets = {
+    'Absolute Change': ['LakeP', 'LakeS', 'RiverP', 'RiverS', 'Year'],
+    'Percentage Change': ['P_LakeP', 'P_LakeS', 'P_RiverP', 'P_RiverS', 'Year'],
+    'Annual Percentage Change': ['AP_LakeP', 'AP_LakeS', 'AP_RiverP', 'AP_RiverS', 'Year'],
+};
+var checkbox = ui.Checkbox({
+    label: 'Include Lakes',
+    value: true,
+    style: {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }
+});
+var panel = ui.Panel({
+    style: {
+        width: '400px'
+    }
+});
+panel.add(ui.Label(
+    'Surface Area of Rivers and Lakes', {
+        color: '000000',
+        fontSize: '20px',
+        fontFamily: 'Arial',
+        margin: '10px 30px 10px 30px',
+        textAlign: 'center',
+        fontWeight: 'bold'
+    }));
+panel.add(ui.Label(
+    'Björn Nyberg, Roger Sayre, Elco Luijendijk', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '0px 10px 5px 80px',
+        textAlign: 'center'
+    }));
+panel.add(ui.Label(
+    'Version 1.0', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '5px 5px 5px 160px',
+        textAlign: 'center'
+    }));
+panel.add(ui.Label(
+    'Background', {
+        color: '000000',
+        fontSize: '12px',
+        fontFamily: 'Arial',
+        margin: '0px 50px 0px 5px',
+        fontWeight: 'bold'
+    }));
+panel.add(ui.Label(
+    'The map shows the global change in permanent and seasonal water levels of lakes and rivers. Use the slider to view the data for a specific year.', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }));
+panel.add(ui.Label(
+    'Click on the map to generate water change analysis charts for a specific watershed.', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }));
+// Legend
+panel.add(ui.Label(
+    'Legend', {
+        color: '000000',
+        fontSize: '12px',
+        fontFamily: 'Arial',
+        margin: '0px 0px 5px 10px',
+        fontWeight: 'bold'
+    }));
+
+function makeLegend(panel, legend) {
+    for (var i = 0; i < legend.length; ++i) {
+        var colorBoxStyle = {
+            width: '14px',
+            height: '14px',
+            backgroundColor: legend[i].color,
+            margin: '0px 2px 0px 8px'
+        };
+        panel.add(ui.Panel([
+            ui.Label('', colorBoxStyle),
+            ui.Label(legend[i].label, {
+                fontSize: '11px',
+                fontFamily: 'Arial',
+                color: '000000',
+                margin: '1px 8px 0px 10px'
+            })
+        ], ui.Panel.Layout.flow('horizontal')));
+    }
+}
+
+var legendPanel = ui.Panel(null, null, {
+    margin: '0px 10px 20px 5px'
+});
+var legendData = [{
+    color: '#0571b0',
+    label: 'Permanent River'
+}, {
+    color: '#92c5de',
+    label: 'Seasonal River'
+}, {
+    color: '#ffffff',
+    label: 'NoData River'
+}, {
+    color: '#d01c8b',
+    label: 'Permanent Lake / Wetland'
+}, {
+    color: '#f1b6da',
+    label: 'Seasonal Lake / Wetland'
+}, {
+    color: '#999999',
+    label: 'NoData Lake / Wetland'
+}, ];
+makeLegend(legendPanel, legendData);
+var comb = ui.Panel({
+    widgets: [ui.Label('Year Selector', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }), slider, checkbox],
+    layout: ui.Panel.Layout.flow('vertical'),
+    // style: {margin: '0px 0 0 0px'},
+});
+var comb2 = ui.Panel({
+    widgets: [legendPanel, comb],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    // style: {margin: '0px 10 10 10px'},
+});
+panel.add(comb2);
+
+panel.add(ui.Label(''));
+panel.add(ui.Label(''));
+panel.add(ui.Label(''));
+Map.onClick(function(coords) {
+    var point = ee.Geometry.Point(coords.lon, coords.lat);
+    var selection = table.filterBounds(ee.Geometry.Point(coords.lon, coords.lat));
+    var properties = selection.first();
+    var name = properties.get('HYBAS_ID').getInfo();
+    var layer = ui.Map.Layer(selection, {}, 'Sampled Region', true);
+    Map.layers().set(1, layer);
+    createCharts(name);
+});
+//Hide and show legend
+var hide = ui.Button({
+    label: 'Hide Legend',
+    style: {
+        fontSize: '8px',
+        fontFamily: 'Arial',
+        position: 'top-center'
+    },
+    onClick: function() {
+        panel.style().set('shown', false);
+        show.style().set('shown', true);
+    }
+});
+var show = ui.Button({
+    label: 'Show Legend',
+    style: {
+        position: 'bottom-right',
+        fontSize: '8px',
+        fontFamily: 'Arial'
+    },
+    onClick: function() {
+        panel.style().set('shown', true);
+        show.style().set('shown', false);
+    }
+});
+show.style().set('shown', false);
+
+// Download Data Links
+panel.add(ui.Label(
+    'Data Download', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '0px 50px 0px 5px',
+        fontWeight: 'bold'
+    }));
+
+panel.add(ui.Label(
+    'The datasets are available for download as geotiff files and as a code snippet using the links provided below.', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '8px'
+    }));
+
+var downloadData = 'https://zenodo.org/record/6895820';
+var codeSnippet = 'https://code.earthengine.google.com/9a1fca5d0a836490244701fd86760461';
+
+panel.add(ui.Label('Download Link', {
+    color: '#044CFF',
+    fontSize: '11px',
+    fontFamily: 'Arial',
+    margin: '0px 0px 10px 10px'
+}, downloadData));
+
+panel.add(ui.Label('Code Link', {
+    color: '#044CFF',
+    fontSize: '11px',
+    fontFamily: 'Arial',
+    margin: '0px 0px 10px 10px'
+}, codeSnippet));
+
+
+panel.add(ui.Label(
+    'Citation', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '0px 50px 0px 5px',
+        fontWeight: 'bold'
+    }));
+
+panel.add(ui.Label(
+    'Nyberg, B., Sayre, R., and Luijendijk, E.: Increasing seasonal variation in the extent of rivers and lakes from 1984 to 2022, Hydrol. Earth Syst. Sci., 28, 1653–1663, 2024.', {
+        color: '000000',
+        fontSize: '11px',
+        fontFamily: 'Arial',
+        margin: '5px 50px 0px 5px',
+        fontWeight: 'regular'
+    }));
+
+var paperLink = 'https://hess.copernicus.org/articles/28/1653/2024/';
+
+panel.add(ui.Label('Article Link', {
+    color: '#044CFF',
+    fontSize: '11px',
+    fontFamily: 'Arial',
+    margin: '5px 0px 10px 10px'
+}, paperLink));
+
+panel.add(hide); 
+ui.root.add(panel);
+Map.add(show);
+showLayers(2021);

@@ -115,7 +115,7 @@ function addCategoricalLegend(panel, dict, title) {
 */
 
 // Add the legend to the map
-addCategoricalLegend(legend, dict, '10m Global Land Cover: Impact Observatory');
+addCategoricalLegend(legend, dict, 'Land Cover Class');
 
 // Add image to the map
 Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2017-01-01','2017-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2017 LULC 10m')
@@ -124,3 +124,4 @@ Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2019-01-01','2019-12-31'
 Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2020-01-01','2020-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2020 LULC 10m')
 Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2021-01-01','2021-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2021 LULC 10m')
 Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2022-01-01','2022-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2022 LULC 10m')
+Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2023-01-01','2023-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2023 LULC 10m')

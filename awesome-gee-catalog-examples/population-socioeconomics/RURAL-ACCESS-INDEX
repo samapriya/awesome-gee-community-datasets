@@ -1,0 +1,13 @@
+//Use the inaccessibility index to multiply your gridded rural population dataset to obtain the
+//distribution of rural population with access to all-season roads
+var inaccessibilityindex = ee.Image('projects/sat-io/open-datasets/RAI/raimultiplier');
+Map.addLayer(inaccessibilityindex,{min:0, max:1, 'palette': ['EFC2B3','ECB176','E9BD3A','E6E600','63C600','00A600']}, 'Inaccessibility index');
+
+//In order to get the Rural Access Index for any given set of boundaries, get zonal statistics
+//for the total rural population and the rural population with access to all-season roads
+
+var ruralpopulation = ee.Image('projects/sat-io/open-datasets/RAI/ruralpop');
+Map.addLayer(ruralpopulation, {min:0, max:100,'palette': ['FFFFFF', 'ff0000']},'Rural Population');
+
+var ruralpopulationwithaccess = ee.Image('projects/sat-io/open-datasets/RAI/ruralpopaccess');
+Map.addLayer(ruralpopulationwithaccess,{min:0, max:100,'palette': ['00A600','63C600','E6E600','E9BD3A','ECB176','EFC2B3']},'Rural Pop w/ Access');

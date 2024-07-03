@@ -1,0 +1,21 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var daily_pm25 = ee.ImageCollection("projects/sat-io/open-datasets/GHAP/GHAP_D1K_PM25"),
+    monthly_pm25 = ee.ImageCollection("projects/sat-io/open-datasets/GHAP/GHAP_M1K_PM25"),
+    yearly_pm25 = ee.ImageCollection("projects/sat-io/open-datasets/GHAP/GHAP_Y1K_PM25");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+print('Total Daily Images',daily_pm25.size())
+
+//Scale the images (Scaling factor is 0.1)
+var scale = function(image){
+  return image.multiply(0.1).copyProperties(image, ['system:time_start', 'system:time_end']);
+}
+
+daily_pm25=daily_pm25.map(scale)
+monthly_pm25 = monthly_pm25.map(scale)
+yearly_pm25 = yearly_pm25.map(scale)
+
+var vis  = { bands: ['b1'],min: 0.5, max: 5,palette: ['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf','#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse()}
+
+Map.addLayer(daily_pm25.first(),vis,'Daily PM 2.5')
+Map.addLayer(monthly_pm25.first(),vis,'Monthly PM 2.5')
+Map.addLayer(yearly_pm25.first(),vis,'Daily PM 2.5')

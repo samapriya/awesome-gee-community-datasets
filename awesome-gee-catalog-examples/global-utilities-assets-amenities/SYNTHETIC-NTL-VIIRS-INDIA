@@ -1,0 +1,43 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var syn_ntl_india = ee.ImageCollection("projects/sat-io/open-datasets/gan-synthetic-viirs"),
+    geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[67.84813300538107, 34.082106373488514],
+          [67.84813300538107, 7.963881142535264],
+          [92.28172675538107, 7.963881142535264],
+          [92.28172675538107, 34.082106373488514]]], null, false);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var dt = function(image){
+  return image.set('month',ee.Date(image.get('system:time_start')).get('month'))
+  .set('year',ee.Date(image.get('system:time_start')).get('year'))
+  .set('year_month',ee.String(image.get('id_no')).slice(24,32))
+}
+syn_ntl_india = syn_ntl_india.map(dt)
+print(syn_ntl_india.aggregate_histogram('month'))
+print(syn_ntl_india.aggregate_histogram('year'))// was hoping there were will 12 months per year
+print(syn_ntl_india.aggregate_histogram('year_month'))
+
+// Define visualization parameters with a dark background and appropriate palette for night lights
+var visParams = {
+  min: 0,
+  max: 1,
+  palette: ['000004', '1b0c41', '4a0c6b', '781c6d', 'a52c60', 'cf4446', 
+            'ed6925', 'fb9b06', 'f7d13d', 'fefab7']
+};
+
+Map.setCenter(81.66, 22.48, 5);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+
+// Add the Nighttime Lights layer to the map
+Map.addLayer(syn_ntl_india.first(), visParams, 'Nighttime Lights with Dark Background');
+Map.addLayer(syn_ntl_india.sort('system:time_start',false).first(), visParams, 'Nighttime Lights with Dark Background');

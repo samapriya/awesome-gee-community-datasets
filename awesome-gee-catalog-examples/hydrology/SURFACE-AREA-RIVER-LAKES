@@ -1,0 +1,42 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geom = 
+    /* color: #98ff00 */
+    /* shown: false */
+    ee.Geometry.Point([-59.33105103256977, -3.155350631633839]),
+    img_vis = {"opacity":0.99,"bands":["Y2021"],"min":1,"max":6,"palette":["ffd700","00ffff","0000ff","0043fa","6a0dad","9400d3"]},
+    sarl = ee.Image("projects/sat-io/open-datasets/SARL");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Center to geometry
+var geometry = geom.buffer(60000).bounds()
+Map.centerObject(geom,10)
+
+//Convert multiband to image collection
+var imageCollection = ee.ImageCollection(sarl.bandNames().map(function(b) {
+  var year=ee.String(b).slice(1,5)
+  return sarl.mask(sarl.gt(0)).select([b]).set('year',year)
+}))
+
+//Set visualization
+var viz = {min: 1,max: 6,opacity: 0.50,palette: ["#FFD700","#00FFFF","#0000FF","#0043FA","#6A0DAD","#9400D3"]};
+var collection = imageCollection
+  .map(function f(e) {
+    return e.visualize(viz);
+  });
+
+Map.addLayer(imageCollection.sort('year',false).first(),img_vis,'2021')
+
+geometry.evaluate(function(result) {
+  var regionGeoJSON = JSON.stringify(result);
+
+  // Print the thumbnail
+  print(ui.Thumbnail(collection, {
+    format: 'gif',
+    crs: 'EPSG:3857',
+    region: regionGeoJSON,
+    dimensions: '500x500'
+  }));
+});
+
+// Add Snazzy Map style
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

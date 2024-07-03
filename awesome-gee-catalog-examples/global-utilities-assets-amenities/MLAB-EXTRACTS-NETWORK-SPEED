@@ -1,0 +1,35 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mlab_download_extract = ee.FeatureCollection("projects/sat-io/open-datasets/network/MLAB/mlab_download_extract"),
+    mlab_upload_extract = ee.FeatureCollection("projects/sat-io/open-datasets/network/MLAB/mlab_upload_extract");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Network extracts 15,000 from MLAB single day 2024-06-01
+print('MLAB Download Extract',mlab_download_extract.first())
+print('MLAB Upload Extract',mlab_upload_extract.first())
+
+//Let's get all properties
+print('Property Names',mlab_download_extract.first().propertyNames())
+
+//Let's run some queries
+print(mlab_download_extract.aggregate_histogram('isp'))
+print(mlab_upload_extract.aggregate_histogram('isp'))
+
+//Let's get some stats on that extract (Download stats)
+var download_stats = mlab_download_extract.aggregate_stats('max_download_speed_mbps')
+print('Download stats for max download speed',download_stats)
+print(download_stats.getNumber('max'))
+print(download_stats.getNumber('min'))
+
+//Let's get some stats on that extract (Upload stats)
+var upload_stats = mlab_upload_extract.aggregate_stats('max_upload_speed_mbps')
+print('Download stats for max upload speed',upload_stats)
+print(upload_stats.getNumber('max'))
+print(upload_stats.getNumber('min'))
+
+Map.addLayer(mlab_download_extract,{'color':'green'},'Download Speed Extracts')
+Map.addLayer(mlab_upload_extract,{'color':'red'},'Download Speed Extracts')
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");
+
+// Center the map on a specific region (optional)
+Map.setCenter(0, 0, 2); // You can adjust the coordinates and zoom level as needed
