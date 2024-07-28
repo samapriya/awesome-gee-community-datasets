@@ -23171,15 +23171,26 @@
   },
   {
     "title": "USGS Earthquake data",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-events-layers/USGS-EARTHQUAKES-1923-2023",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-events-layers/USGS-EARTHQUAKES",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/USGS/usgs_earthquakes_1923-2023",
+    "id": "projects/sat-io/open-datasets/USGS/usgs_earthquakes",
     "provider": "USGS",
     "tags": "earthquake, usgs",
     "license": "custom",
     "license_text": "These datasets are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion",
     "docs": "https://gee-community-catalog.org/projects/global_earthquakes/",
     "thematic_group": "Global Events Layers"
+  },
+  {
+    "title": "Global 30 m Wetland Map with a Fine Classification System",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-events-layers/USGS-EARTHQUAKES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GWL_FCS30",
+    "provider": "Zhang et al 2023",
+    "tags": "fine classification system, land cover, wetland, wetland ecosystem",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gwl_fcs/",
+    "thematic_group": "Global Land Use and Land Cover"
   },
   {
     "title": "GIMMS Normalized Difference Vegetation Index 1982-2022 AVHRR MODIS CONSOLIDATED",

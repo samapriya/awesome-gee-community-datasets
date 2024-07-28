@@ -213,6 +213,7 @@ nav:
       - Global urban extents from 1870 to 2100: projects/gue.md
       - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
       - Global Intra-Urban Land Use: projects/giulu.md
+      - Global 30 m Wetland Map with a Fine Classification System: projects/gwl_fcs.md
       - World Settlement Footprint & Evolution: projects/wsf.md
       - LandCoverNet Training Labels v1.0: projects/lcnet.md
       - Global Oil Palm Dataset 1990-2021: projects/global_palm_oil.md
