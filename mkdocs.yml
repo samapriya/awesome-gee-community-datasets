@@ -199,6 +199,7 @@ nav:
   - Global Land Use and Land Cover:
       - Global Mangrove Project: projects/mangrove.md
       - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
+      - Global Mangrove Canopy Height Maps Derived from TanDEM-X: projects/mangrove_ht_tandemx.md
       - Randolph Glacial Inventory: projects/rgi.md
       - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
       - ESRI 10m Annual Land Cover (2017-2023): projects/S2TSLULC.md

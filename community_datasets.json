@@ -23183,13 +23183,37 @@
   },
   {
     "title": "Global 30 m Wetland Map with a Fine Classification System",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-events-layers/USGS-EARTHQUAKES",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GWL-FCS30-WETLANDS",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/GWL_FCS30",
     "provider": "Zhang et al 2023",
     "tags": "fine classification system, land cover, wetland, wetland ecosystem",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/gwl_fcs/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Mangrove Canopy Height Raster Derived from TanDEM-X",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-CANOPY-HT-TANDEMX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBAL_MANGROVE_HT_TANDEMX",
+    "provider": "Simard et al 2024",
+    "tags": "Mangrove, Tandem-X, Canopy Height, GEDI",
+    "license": "custom",
+    "license_text": "Data hosted by the ORNL DAAC is openly shared, without restriction, in accordance with NASA's Earth Science program Data and Information Policy",
+    "docs": "https://gee-community-catalog.org/projects/mangrove_ht_tandemx/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Mangrove Canopy Height Maps Derived from TanDEM-X GEDI Extracts",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-CANOPY-HT-TANDEMX",
+    "type": "table",
+    "id": "projects/space-geographer/assets/GEDI_MANGROVE_HT",
+    "provider": "Simard et al 2024",
+    "tags": "Mangrove, Tandem-X, Canopy Height, GEDI",
+    "license": "custom",
+    "license_text": "Data hosted by the ORNL DAAC is openly shared, without restriction, in accordance with NASA's Earth Science program Data and Information Policy",
+    "docs": "https://gee-community-catalog.org/projects/mangrove_ht_tandemx/",
     "thematic_group": "Global Land Use and Land Cover"
   },
   {
