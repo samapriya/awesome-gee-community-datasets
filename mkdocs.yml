@@ -11,7 +11,7 @@ copyright: "Copyright &copy; 2020 - 2024 Samapriya Roy"
 
 # Configuration
 theme:
-  name: "material"
+  name: material
   custom_dir: overrides
   features:
     - announce.dismiss
@@ -19,77 +19,93 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
     - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-
-  # 404 page
-  static_templates:
-    - 404.html
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
-  language: en
+    # - toc.integrate
   palette:
     - scheme: default
-      primary: yellow
-      accent: indigo
+      primary: "yellow"
+      accent: "deep orange"
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
-      primary: red
-      accent: red
+      primary: "deep orange"
+      accent: "lime"
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
   font:
     text: Google Sans
     code: Regular
   favicon: assets/favicon.png
   logo: "https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png"
+  favicon: "https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png"
 
-# Options
+# Plugins
+plugins:
+  - blog
+#   - git-authors
+  - git-committers:
+      repository: "samapriya/agcc"
+      branch: main
+      token: !ENV GH_TOKEN
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Hooks
+# hooks:
+#   - material/overrides/hooks/shortcodes.py
+#   - material/overrides/hooks/translations.py
+
+# Additional configuration
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/samapriya
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/samapriya
     - icon: fontawesome/brands/medium
       link: https://medium.com/@samapriyaroy
     - icon: fontawesome/brands/mastodon
       link: https://mapstodon.space/@samapriya
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/samapriyaroy
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/samapriya
   analytics:
     provider: google
     property: G-G7SXDJEWXV
 
-extra_css:
-  - stylesheets/extra.css
-
-plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  - minify:
-      minify_html: true
-
 # Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes
-  - meta
   - md_in_html
   - toc:
       permalink: true
@@ -98,330 +114,363 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      options:
-        custom_icons:
-          - overrides/.icons
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
+      normalize_issue_symbols: true
       repo_url_shorthand: true
       user: squidfunk
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree
 nav:
-  - Introduction: index.md
-  - License: license.md
-  - Code of Conduct: code_of_conduct.md
-  - Insiders program: insiders.md
+  - Home:
+      - index.md
+      - History of the Community Catalog: history.md
+      - Stay updated & contribute: involved.md
+      - About Us: about_us.md
   - Getting Started:
       - Navigating the Catalog: startup/navigation.md
-      - Access awesome-gee-catalog-examples repo: startup/catalog-examples.md
-  - Blog posts: blogs.md
-  - Catalog Stats: stats.md
-  - Changelog: changelog.md
-  - Submit or bring your data request to community catalog: submit.md
-  - Submit update request for dataset in community catalog: update.md
-  - Bug report for dataset in community catalog: bug.md
-  - Submit example for dataset in community catalog: example.md
-  - Insiders only datasets:
-      - Microsoft Bing Global Mined Roads: projects/msroads.md
-      - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
-      - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
-      - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
-      - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
-  - Population & Socioeconomic:
-      - High Resolution Settlement Layers: projects/hrsl.md
-      - LandScan Population Data: projects/landscan.md
-      - POMELO Model Population Density Maps: projects/pomelo.md
-      - GPW Version 4 Admin Units: projects/GPWv4.md
-      - geoBoundaries Global Database of Political Administrative Boundaries: projects/geoboundary.md
-      - Edge-matched Global, Subnational and operational Boundaries: projects/edge_matched.md
-      - West Africa Coastal Vulnerability Mapping: projects/wacvm.md
-      - Relative Wealth Index (RWI): projects/rwi.md
-      - Rural Access Index (RAI): projects/rai.md
-      - Social Connectedness Index (SCI): projects/sci.md
-      - Gridded Global GDP and HDI (1990-2015): projects/gridded_gdp_hdi.md
-      - Global human modification v1.5: projects/ghm.md
-      - Global Human Settlement Layer 2023: projects/ghsl.md
-      - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
-      - Native Land (Indigenous Land Maps): projects/native.md
-      - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
-  - Geophysical, Biological & Biogeochemical:
-      - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
-      - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
-      - Normalized Sentinel-1 Global Backscatter Model Land Surface: projects/s1gbm.md
-      - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
-      - Soil nematode abundance & functional group composition: projects/soil_nematode.md
-      - Global maps of habitat types: projects/habitat.md
-      - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
-      - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
-      - Global Land subsidence mapping: projects/land_subsidence.md
-      - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
-  - Elevation and Bathymetry:
-      - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
-      - FABDEM (Forest And Buildings removed Copernicus 30m DEM): projects/fabdem.md
-      - DeltaDTM Global coastal digital terrain model: projects/delta_dtm.md
-      - Global Glacier Elevation change products: projects/glacier.md
-      - ASTER Global Digital Elevation Model (GDEM) v3: projects/aster.md
-      - ASTER Global Water Bodies Database (ASTWBD) Version 1: projects/astwbd.md
-      - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
-      - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
-      - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
-      - ÍslandsDEM v1.0 10m: projects/iceland_dem.md
-      - DEM France (Continental) 5m IGN RGE Alti: projects/france5m.md
-  - Soil Properties:
-      - Soil Grids 250m v2.0: projects/isric.md
-      - Soil Properties 800m: projects/soilprop.md
-      - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
-      - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
-      - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
-      - Global Soil bioclimatic variables: projects/soil_bioclim.md
-      - Harmonized World Soil Database (HWSD) version 2.0: projects/hwsd.md
-      - National-Scale Soil Erosion Dataset for Pakistan (2005 and 2015): projects/pk_nssed.md
-  - Global Land Use and Land Cover:
-      - Global Mangrove Project: projects/mangrove.md
-      - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
-      - Global Mangrove Canopy Height Maps Derived from TanDEM-X: projects/mangrove_ht_tandemx.md
-      - Randolph Glacial Inventory: projects/rgi.md
-      - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
-      - ESRI 10m Annual Land Cover (2017-2023): projects/S2TSLULC.md
-      - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
-      - GlobCover Global Land Cover: projects/globcover_esa.md
-      - GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
-      - Daylight Map Distribution map data: projects/daylight_maps.md
-      - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
-      - GLANCE Global Landcover Training dataset: projects/glance_training.md
-      - Global Impervious Surface Area (1972-2019): projects/gisa.md
-      - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
-      - Global urban extents from 1870 to 2100: projects/gue.md
-      - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
-      - Global Intra-Urban Land Use: projects/giulu.md
-      - Global 30 m Wetland Map with a Fine Classification System: projects/gwl_fcs.md
-      - World Settlement Footprint & Evolution: projects/wsf.md
-      - LandCoverNet Training Labels v1.0: projects/lcnet.md
-      - Global Oil Palm Dataset 1990-2021: projects/global_palm_oil.md
-      - CloudSEN12 Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
-  - Regional Land Use and Land Cover:
-      - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
-      - Land Change Monitoring, Assessment, and Projection (LCMAP) v1.3: projects/lcmap.md
-      - West Africa Land Use Land Cover: projects/wa_lulc.md
-      - CCI LAND COVER S2 PROTOTYPE LAND COVER 20M MAP OF AFRICA 2016: projects/cci_lc.md
-      - South African National Land Cover (SANLC): projects/sa_nlc.md
-      - Mississippi River Basin Floodplain Land Use Change (1941-2000): projects/floodplain_lc.md
-      - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
-      - Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0: projects/dea_lc.md
-      - UrbanWatch 1m Land Cover & Land Use: projects/urban-watch.md
-      - Vermont High Resolution Land Cover 2016: projects/vt_lc.md
-      - Chesapeake Bay High Resolution Land Cover Dataset (2013-2014): projects/cc.md
-      - C-CAP High-Resolution Land Cover: projects/ccap_lc.md
-      - C-CAP Medium-Resolution Land Cover Beta: projects/ccap_mlc.md
-      - C-CAP Wetland Potential 30m: projects/ccap_wpotential.md
-      - Oil Palm Plantation Layers: projects/oil-palm.md
-      - Rasterized building footprint dataset for the US: projects/usbuild_raster.md
-  - Hydrology:
-      - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
-      - Global 30m Height Above the Nearest Drainage: projects/hand.md
-      - Hydrography 90m Layers: projects/hydro90.md
-      - HydroLAKES v1.0: projects/hydrolakes.md
-      - HydroATLAS v1.0: projects/hydroatlas.md
-      - HydroWaste v1.0: projects/hydrowaste.md
-      - SWOT River Database (SWORD): projects/sword.md
-      - Surface Area of Rivers and Lakes (SARL): projects/sarl.md
-      - Global River Obstruction Database (GROD): projects/grod.md
-      - United States Groundwater Well Database (USGWD): projects/usgwd.md
-      - Global River Classification (GloRiC): projects/gloric.md
-      - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
-      - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
-      - Global River Width from Landsat (GRWL): projects/grwl.md
-      - GLOBGM v1.0 global-scale groundwater model: projects/globgm.md
-      - Global Channel Belt (GCB): projects/gcb.md
-      - DynQual Global Surface Water Quality Dataset: projects/dynqual.md
-      - Global coastal rivers and environmental variables: projects/rivermouth.md
-      - Global River Deltas and vulnerability: projects/river_deltas.md
-      - Streamflow reconstruction for Indian sub-continental river basins 1951–2021: projects/streamflow_india.md
-      - Global georeferenced Database of Dams(GOODD): projects/goodd.md
-      - RealSAT Global Dataset of Reservoir and Lake Surface Area: projects/realsat.md
-      - Global Hydrologic Curve Number(GCN250): projects/gcn250.md
-      - Global high-resolution floodplains (GFPLAIN250m): projects/gfplain250.md
-      - Global river networks & Corresponding Water resources zones: projects/grn_wrz.md
-      - National Wetland Inventory (Surface Water and Wetlands): projects/nwi.md
-      - National Hydrography Dataset (NHD): projects/nhd.md
-      - Temporal trends of Surface water across Indian Rivers & Basins: projects/india_river_trends.md
-      - Tensor Flow Hydra Flood Models: projects/hydra_water.md
-      - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
-  - Oceans and Shorelines:
-      - Global Shoreline Dataset: projects/shoreline.md
-      - Digital Earth Australia Coastlines: projects/dea_shorlines.md
-      - Digital Earth Africa Coastlines: projects/deaf_shorlines.md
-      - Argo Float Data(Subset): projects/argo.md
-      - Global gridded sea surface temperature (SSTG): projects/sstg.md
-      - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
-      - Aqualink ocean surface and subsurface temperature subset: projects/aqualink.md
-      - Plastic Inputs from Rivers into Oceans: projects/plastic.md
-      - Mismanaged Plastic Waste Dataset in Rivers: projects/mpw.md
-      - Global Ocean Data Analysis Project (GLODAP) v2.2023: projects/glodap.md
-  - Agriculture, Vegetation and Forestry:
-      - Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2022: projects/fpar.md
-      - Landfire Mosaics LF: projects/landfire.md
-      - Vegetation dryness for western USA: projects/veg_dry.md
-      - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
-      - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md
-      - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
-      - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
-      - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
-      - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
-      - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
-      - Field Boundaries of Agriculture (FIBOA) UK Fields: projects/fiboa_uk.md
-      - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
-      - High resolution map of African tree cover: projects/af_trees.md
-      - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
-      - High Resolution Tree Species Information for Canada: projects/ca_species.md
-      - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
-      - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
-      - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
-      - Canadian Satellite-Based Forest Inventory (SBFI): projects/ca_sbfi.md
-      - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
-      - US National Forest Type and Groups: projects/us_ftype_fgroup.md
-      - USDA Crop Sequence Boundaries 2015-2022: projects/csb.md
-      - ESA CCI Global Forest Above Ground Biomass: projects/cci_agb.md
-      - geeSEBAL-MODIS Continental scale ET for South America: projects/gee_sebal.md
-      - Global Fungi Database: projects/global_fungi.md
-      - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
-      - Global Forest Management dataset 2015: projects/gfm_100.md
-      - Global 30m Landsat Tree Canopy Cover v4: projects/global_tcc.md
-      - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
-      - Global Leaf trait estimates for land modelling: projects/ltrait.md
-      - Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA): projects/vodca.md
-      - Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): projects/shd_sun_gpp.md
-      - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
-      - Rangeland Analysis Platform layers: projects/rap.md
-      - NASA Harvest Layers: projects/harvest.md
-      - ACES-Enhanced Rice Crop Maps for Bhutan (2016-2022): projects/aces_bhutan.md
-      - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
-      - NAFD Forest Disturbance History 1986-2010: projects/nafd.md
-      - Digital Earth Africa's cropland extent map Africa 2019: projects/dea_croplands.md
-      - GFSAD Global Cropland Extent Product (GCEP): projects/gcep30.md
-      - Ensemble Source Africa Cropland Mask 2016: projects/af_cmask.md
-      - GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP): projects/lgrip30.md
-      - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
-      - Tile Drained Croplands (30m): projects/tile.md
-      - Global crop production tillage practices: projects/tillage.md
-      - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
-  - Analysis Ready Data:
-      - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
-      - Open Aerial Map Subset: projects/oam.md
-      - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
-      - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
-      - USGS Historical Topo Maps: projects/usgs_topo.md
-      - USGS Historical Imagery Western US: projects/historical_us.md
-  - Global Utilities, Assets and Amenities Layers:
-      - Global Power: projects/global_power.md
-      - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
-      - Harmonized Global Night Time Lights (1992-2021): projects/hntl.md
-      - Climate Trace Global Emissions Data: projects/climate_trace.md
-      - Oil and Gas Infrastructure Mapping (OGIM) database: projects/ogim.md
-      - Global NPP-VIIRS-like nighttime light (2000-2022): projects/npp_viirs_ntl.md
-      - GAN based Synthetic VIIRS (NTL) India: projects/syn_ntl.md
-      - Global Roads Inventory Project: projects/grip.md
-      - Global Highres Mining Footprints: projects/global-mining.md
-      - Global ML Building Footprints: projects/msbuildings.md
-      - Global Google-Microsoft Open Buildings Dataset: projects/global_buildings.md
-      - USA Structures: projects/usa_structures.md
-      - Global Electric Consumption revised GDP: projects/elc_gdp.md
-      - Global Mining Areas and Validation Datasets: projects/global_mining.md
-      - Global Healthsites Mapping Project: projects/health_sites.md
-      - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
-      - Ookla 5G Map: projects/ookla_5g.md
-      - Measurement Lab Network Extracts (M-Lab): projects/mlab_extracts.md
-      - Global Power Plant Database: projects/pwplants.md
-      - Global offshore wind turbine dataset: projects/gowt.md
-      - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
-      - TransitionZero Solar Asset Mapper: projects/tzero.md
-      - Global Database of Cement Production Assets: projects/gcd.md
-      - Global database of cement production assets and upstream suppliers: projects/gcd_assets.md
-      - Global Database of Iron and Steel Production Assets: projects/gid.md
-      - Global Photovoltaics Inventory (2016-2018): projects/global_pv.md
-  - Biodiversity, Ecosystems & Habitat Layers:
-      - Biodiversity Intactness Index(BII): projects/bii.md
-      - Global Consensus Landcover: projects/gcl.md
-      - Global Freshwater Variables: projects/gfv.md
-      - Global Habitat Heterogeneity: projects/ghh.md
-      - Global 1-km Cloud Cover: projects/gcc.md
-      - Areas of global conservation value: projects/gci.md
-  - Weather and Climate Layers:
-      - Global Reference Evapotranspiration Layers: projects/et0.md
-      - Global Aridity Index: projects/ai0.md
-      - Global Wind Atlas Datasets: projects/gwa.md
-      - Global Solar Atlas Datasets: projects/gsa.md
-      - Global Extreme Heat Hazard: projects/heat-hazard.md
-      - Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020: projects/br_dwgd.md
-      - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
-      - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
-      - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
-      - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
-      - MOD10A2061 Snow Cover 8-Day L3 Global 500m: projects/modis_8day_snow.md
-      - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
-      - Global Seamless High-resolution Temperature Dataset (GSHTD): projects/gshtd.md
-      - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
-      - Snow Data Assimilation System (SNODAS): projects/snodas.md
-      - United States Drought Monitor Layers: projects/usdm.md
-      - North American Drought Monitor (NADM): projects/nadm.md
-      - Canadian Drought Outlook: projects/can_drought_outlook.md
-      - United States Seasonal Drought Outlook: projects/ussdo.md
-      - Global Precipitation Measurement (GPM): projects/gpm.md
-      - ANUSPLIN Gridded Climate Dataset: projects/anusplin.md
-      - AgERA5 (ECMWF) dataset: projects/agera5_datasets.md
-      - Vegetation Drought Response Index (VegDRI): projects/veg_dri.md
-      - ERA5-HEAT Dataset: projects/era5_heat.md
-      - High Resolution Deterministic Precipitation Analysis (HRDPA): projects/hrdpa.md
-      - High Resolution Deterministic Prediction System (HRDPS): projects/hrdps.md
-      - Regional Deterministic Precipitation Analysis (RDPA): projects/rdpa.md
-      - Regional Deterministic Prediction System (RDPS): projects/rdps.md
-      - Climate Prediction Center (CPC) Morphing Technique (MORPH): projects/cpc_morph.md
-      - Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2): projects/merrav2.md
-      - Applied Climate Information System (ACIS) NRCC NN: projects/noaa_acis.md
-      - Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim): projects/chirps_prelim.md
-      - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): projects/nclim_grid.md
-      - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
-      - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
-      - Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022): projects/ghap.md
-      - Global Monthly Satellite-derived PM2.5: projects/global_pm25.md
-      - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
-  - Global Events Layers:
-      - Global large flood events (1985-2016): projects/flood.md
-      - Global Landslide Catalog (1970-2019): projects/landslide.md
-      - MAXAR Open Data Events: projects/maxar_opendata.md
-      - Umbra SAR Open Data: projects/umbra_opendata.md
-      - RADD Forest Disturbance Alert: projects/radd.md
-      - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
-      - USGS Global Earthquake dataset: projects/global_earthquakes.md
-      - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
-  - Fire Monitoring and Analysis:
-      - CEMS Fire Danger Indices: projects/cems_fire.md
-      - Canada National Burned Area Composite (NBAC): projects/nbac.md
-      - Wildfire Risk to Communities (WRC): projects/wrc.md
-      - Global Fire WEather Database (GFWED): projects/gfwed.md
-      - Global Fire Atlas (2003-2016): projects/gfa.md
-      - Archival NRT FIRMS Global VIIRS and MODIS vector data: projects/firms_vector.md
-      - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
-      - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
-      - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
-      - ESA Fire Disturbance Climate Change Initiative (CCI): projects/avhrr-ltdr.md
+      - Access examples repo: startup/catalog-examples.md
+      - Catalog assets lists: startup/catalog-assets.md
+      - Catalog Stats: stats.md
+      - Code of Conduct: code_of_conduct.md
+      - License: license.md
+  - Data Catalog:
+      - Data Themes:
+          - projects/index.md
+          - "Population & Socioeconomic":
+              - High Resolution Settlement Layers: projects/hrsl.md
+              - LandScan Population Data: projects/landscan.md
+              - POMELO Model Population Density Maps: projects/pomelo.md
+              - GPW Version 4 Admin Units: projects/GPWv4.md
+              - geoBoundaries Global Database of Political Administrative Boundaries: projects/geoboundary.md
+              - Edge-matched Global, Subnational and operational Boundaries: projects/edge_matched.md
+              - West Africa Coastal Vulnerability Mapping: projects/wacvm.md
+              - Relative Wealth Index (RWI): projects/rwi.md
+              - Rural Access Index (RAI): projects/rai.md
+              - Social Connectedness Index (SCI): projects/sci.md
+              - Gridded Global GDP and HDI (1990-2015): projects/gridded_gdp_hdi.md
+              - Global human modification v1.5: projects/ghm.md
+              - Global Human Settlement Layer 2023: projects/ghsl.md
+              - Harmonized Global Critical infrastructure & Index (CISI): projects/cisi.md
+              - Native Land (Indigenous Land Maps): projects/native.md
+              - Gridded Sex-Disaggregated School-Age Population (2020): projects/wpschool.md
+          - "Geophysical, Biological & Biogeochemical":
+              - Geomorpho90m Geomorphometric Layers: projects/geomorpho90.md
+              - Bare Earth’s Surface Spectra 1980-2019: projects/bss.md
+              - Normalized Sentinel-1 Global Backscatter Model Land Surface: projects/s1gbm.md
+              - Soil Organic Carbon Stocks & Trends South Africa: projects/soc.md
+              - Soil nematode abundance & functional group composition: projects/soil_nematode.md
+              - Global maps of habitat types: projects/habitat.md
+              - Soil carbon storage in terrestrial ecosystems of Canada: projects/scs.md
+              - Irrecoverable carbon in Earth’s ecosystems: projects/irc.md
+              - Global Land subsidence mapping: projects/land_subsidence.md
+              - Global Surface water and groundwater salinity measurements (1980-2019): projects/salinity.md
+          - "Elevation and Bathymetry":
+              - Copernicus Digital Elevation Model (GLO-30 DEM): projects/glo30.md
+              - FABDEM (Forest And Buildings removed Copernicus 30m DEM): projects/fabdem.md
+              - DeltaDTM Global coastal digital terrain model: projects/delta_dtm.md
+              - Global Glacier Elevation change products: projects/glacier.md
+              - ASTER Global Digital Elevation Model (GDEM) v3: projects/aster.md
+              - ASTER Global Water Bodies Database (ASTWBD) Version 1: projects/astwbd.md
+              - General Bathymetric Chart of the Oceans (GEBCO): projects/gebco.md
+              - Coastal National Elevation Database (CoNED) Project -Topobathymetric digital elevation models (TBDEMs): projects/tbdem.md
+              - NOAA Sea-Level Rise Digital Elevation Models (DEMs): projects/slrdem.md
+              - ÍslandsDEM v1.0 10m: projects/iceland_dem.md
+              - DEM France (Continental) 5m IGN RGE Alti: projects/france5m.md
+          - "Soil Properties":
+              - Soil Grids 250m v2.0: projects/isric.md
+              - Soil Properties 800m: projects/soilprop.md
+              - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
+              - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
+              - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
+              - Global Soil bioclimatic variables: projects/soil_bioclim.md
+              - Harmonized World Soil Database (HWSD) version 2.0: projects/hwsd.md
+              - National-Scale Soil Erosion Dataset for Pakistan (2005 and 2015): projects/pk_nssed.md
+          - "Global Land Use and Land Cover":
+              - Global Mangrove Project: projects/mangrove.md
+              - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
+              - Global Mangrove Canopy Height Maps Derived from TanDEM-X: projects/mangrove_ht_tandemx.md
+              - Randolph Glacial Inventory: projects/rgi.md
+              - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
+              - ESRI 10m Annual Land Cover (2017-2023): projects/S2TSLULC.md
+              - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
+              - GlobCover Global Land Cover: projects/globcover_esa.md
+              - GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
+              - Daylight Map Distribution map data: projects/daylight_maps.md
+              - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
+              - GLANCE Global Landcover Training dataset: projects/glance_training.md
+              - Global Impervious Surface Area (1972-2019): projects/gisa.md
+              - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
+              - Global urban extents from 1870 to 2100: projects/gue.md
+              - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
+              - Global Intra-Urban Land Use: projects/giulu.md
+              - Global 30 m Wetland Map with a Fine Classification System: projects/gwl_fcs.md
+              - World Settlement Footprint & Evolution: projects/wsf.md
+              - LandCoverNet Training Labels v1.0: projects/lcnet.md
+              - Global Oil Palm Dataset 1990-2021: projects/global_palm_oil.md
+              - CloudSEN12 Global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2: projects/cloudsen12.md
+          - "Regional Land Use and Land Cover":
+              - Mapbiomas Annual land cover and use maps: projects/mapbiomas.md
+              - Land Change Monitoring, Assessment, and Projection (LCMAP) v1.3: projects/lcmap.md
+              - West Africa Land Use Land Cover: projects/wa_lulc.md
+              - CCI LAND COVER S2 PROTOTYPE LAND COVER 20M MAP OF AFRICA 2016: projects/cci_lc.md
+              - South African National Land Cover (SANLC): projects/sa_nlc.md
+              - Mississippi River Basin Floodplain Land Use Change (1941-2000): projects/floodplain_lc.md
+              - Continental-scale land cover mapping at 10 m resolution over Europe: projects/elc.md
+              - Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0: projects/dea_lc.md
+              - UrbanWatch 1m Land Cover & Land Use: projects/urban-watch.md
+              - Vermont High Resolution Land Cover 2016: projects/vt_lc.md
+              - Chesapeake Bay High Resolution Land Cover Dataset (2013-2014): projects/cc.md
+              - C-CAP High-Resolution Land Cover: projects/ccap_lc.md
+              - C-CAP Medium-Resolution Land Cover Beta: projects/ccap_mlc.md
+              - C-CAP Wetland Potential 30m: projects/ccap_wpotential.md
+              - Oil Palm Plantation Layers: projects/oil-palm.md
+              - Rasterized building footprint dataset for the US: projects/usbuild_raster.md
+          - "Hydrology":
+              - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
+              - Global 30m Height Above the Nearest Drainage: projects/hand.md
+              - Hydrography 90m Layers: projects/hydro90.md
+              - HydroLAKES v1.0: projects/hydrolakes.md
+              - HydroATLAS v1.0: projects/hydroatlas.md
+              - HydroWaste v1.0: projects/hydrowaste.md
+              - SWOT River Database (SWORD): projects/sword.md
+              - Surface Area of Rivers and Lakes (SARL): projects/sarl.md
+              - Global River Obstruction Database (GROD): projects/grod.md
+              - United States Groundwater Well Database (USGWD): projects/usgwd.md
+              - Global River Classification (GloRiC): projects/gloric.md
+              - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
+              - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
+              - Global River Width from Landsat (GRWL): projects/grwl.md
+              - GLOBGM v1.0 global-scale groundwater model: projects/globgm.md
+              - Global Channel Belt (GCB): projects/gcb.md
+              - DynQual Global Surface Water Quality Dataset: projects/dynqual.md
+              - Global coastal rivers and environmental variables: projects/rivermouth.md
+              - Global River Deltas and vulnerability: projects/river_deltas.md
+              - Streamflow reconstruction for Indian sub-continental river basins 1951–2021: projects/streamflow_india.md
+              - Global georeferenced Database of Dams(GOODD): projects/goodd.md
+              - RealSAT Global Dataset of Reservoir and Lake Surface Area: projects/realsat.md
+              - Global Hydrologic Curve Number(GCN250): projects/gcn250.md
+              - Global high-resolution floodplains (GFPLAIN250m): projects/gfplain250.md
+              - Global river networks & Corresponding Water resources zones: projects/grn_wrz.md
+              - National Wetland Inventory (Surface Water and Wetlands): projects/nwi.md
+              - National Hydrography Dataset (NHD): projects/nhd.md
+              - Temporal trends of Surface water across Indian Rivers & Basins: projects/india_river_trends.md
+              - Tensor Flow Hydra Flood Models: projects/hydra_water.md
+              - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
+          - "Oceans and Shorelines":
+              - Global Shoreline Dataset: projects/shoreline.md
+              - Digital Earth Australia Coastlines: projects/dea_shorlines.md
+              - Digital Earth Africa Coastlines: projects/deaf_shorlines.md
+              - Argo Float Data(Subset): projects/argo.md
+              - Global gridded sea surface temperature (SSTG): projects/sstg.md
+              - Global Storm Surge Reconstruction (GSSR) database: projects/gssr.md
+              - Aqualink ocean surface and subsurface temperature subset: projects/aqualink.md
+              - Plastic Inputs from Rivers into Oceans: projects/plastic.md
+              - Mismanaged Plastic Waste Dataset in Rivers: projects/mpw.md
+              - Global Ocean Data Analysis Project (GLODAP) v2.2023: projects/glodap.md
+          - "Agriculture, Vegetation and Forestry":
+              - Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2022: projects/fpar.md
+              - Landfire Mosaics LF: projects/landfire.md
+              - Vegetation dryness for western USA: projects/veg_dry.md
+              - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
+              - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md
+              - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
+              - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
+              - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
+              - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
+              - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
+              - Field Boundaries of Agriculture (FIBOA) UK Fields: projects/fiboa_uk.md
+              - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
+              - High resolution map of African tree cover: projects/af_trees.md
+              - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
+              - High Resolution Tree Species Information for Canada: projects/ca_species.md
+              - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
+              - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
+              - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
+              - Canadian Satellite-Based Forest Inventory (SBFI): projects/ca_sbfi.md
+              - Landsat-derived forest age for Canada's forested ecosystems: projects/ca_fa.md
+              - US National Forest Type and Groups: projects/us_ftype_fgroup.md
+              - USDA Crop Sequence Boundaries 2015-2022: projects/csb.md
+              - ESA CCI Global Forest Above Ground Biomass: projects/cci_agb.md
+              - geeSEBAL-MODIS Continental scale ET for South America: projects/gee_sebal.md
+              - Global Fungi Database: projects/global_fungi.md
+              - Global Forest Canopy Height from GEDI & Landsat: projects/gfch.md
+              - Global Forest Management dataset 2015: projects/gfm_100.md
+              - Global 30m Landsat Tree Canopy Cover v4: projects/global_tcc.md
+              - Global tree allometry and crown architecture (Tallo) database: projects/tallo.md
+              - Global Leaf trait estimates for land modelling: projects/ltrait.md
+              - Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA): projects/vodca.md
+              - Global Sunlit and Shaded GPP for vegetation canopies (1992-2020): projects/shd_sun_gpp.md
+              - Aboveground carbon accumulation in global monoculture plantation forests: projects/monoculture.md
+              - Rangeland Analysis Platform layers: projects/rap.md
+              - NASA Harvest Layers: projects/harvest.md
+              - ACES-Enhanced Rice Crop Maps for Bhutan (2016-2022): projects/aces_bhutan.md
+              - Benchmark maps Secondary Forest Brazil: projects/secondary_forest.md
+              - NAFD Forest Disturbance History 1986-2010: projects/nafd.md
+              - Digital Earth Africa's cropland extent map Africa 2019: projects/dea_croplands.md
+              - GFSAD Global Cropland Extent Product (GCEP): projects/gcep30.md
+              - Ensemble Source Africa Cropland Mask 2016: projects/af_cmask.md
+              - GFSAD Landsat-Derived Global Rainfed and Irrigated-Cropland Product (LGRIP): projects/lgrip30.md
+              - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
+              - Tile Drained Croplands (30m): projects/tile.md
+              - Global crop production tillage practices: projects/tillage.md
+              - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
+          - "Analysis Ready Data":
+              - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
+              - Open Aerial Map Subset: projects/oam.md
+              - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
+              - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
+              - USGS Historical Topo Maps: projects/usgs_topo.md
+              - USGS Historical Imagery Western US: projects/historical_us.md
+          - "Global Utilities, Assets and Amenities Layers":
+              - Global Power: projects/global_power.md
+              - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md
+              - Harmonized Global Night Time Lights (1992-2021): projects/hntl.md
+              - Climate Trace Global Emissions Data: projects/climate_trace.md
+              - Oil and Gas Infrastructure Mapping (OGIM) database: projects/ogim.md
+              - Global NPP-VIIRS-like nighttime light (2000-2022): projects/npp_viirs_ntl.md
+              - GAN based Synthetic VIIRS (NTL) India: projects/syn_ntl.md
+              - Global Roads Inventory Project: projects/grip.md
+              - Global Highres Mining Footprints: projects/global-mining.md
+              - Global ML Building Footprints: projects/msbuildings.md
+              - Global Google-Microsoft Open Buildings Dataset: projects/global_buildings.md
+              - USA Structures: projects/usa_structures.md
+              - Global Electric Consumption revised GDP: projects/elc_gdp.md
+              - Global Mining Areas and Validation Datasets: projects/global_mining.md
+              - Global Healthsites Mapping Project: projects/health_sites.md
+              - Global fixed broadband and mobile (cellular) network performance: projects/speedtest.md
+              - Ookla 5G Map: projects/ookla_5g.md
+              - Measurement Lab Network Extracts (M-Lab): projects/mlab_extracts.md
+              - Global Power Plant Database: projects/pwplants.md
+              - Global offshore wind turbine dataset: projects/gowt.md
+              - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
+              - TransitionZero Solar Asset Mapper: projects/tzero.md
+              - Global Database of Cement Production Assets: projects/gcd.md
+              - Global database of cement production assets and upstream suppliers: projects/gcd_assets.md
+              - Global Database of Iron and Steel Production Assets: projects/gid.md
+              - Global Photovoltaics Inventory (2016-2018): projects/global_pv.md
+          - "Biodiversity, Ecosystems & Habitat Layers":
+              - Biodiversity Intactness Index(BII): projects/bii.md
+              - Global Consensus Landcover: projects/gcl.md
+              - Global Freshwater Variables: projects/gfv.md
+              - Global Habitat Heterogeneity: projects/ghh.md
+              - Global 1-km Cloud Cover: projects/gcc.md
+              - Areas of global conservation value: projects/gci.md
+          - "Weather and Climate Layers":
+              - Global Reference Evapotranspiration Layers: projects/et0.md
+              - Global Aridity Index: projects/ai0.md
+              - Global Wind Atlas Datasets: projects/gwa.md
+              - Global Solar Atlas Datasets: projects/gsa.md
+              - Global Extreme Heat Hazard: projects/heat-hazard.md
+              - Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020: projects/br_dwgd.md
+              - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
+              - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
+              - Terraclimate Individual years for +2C and +4C climate futures: projects/terraclim.md
+              - Global MODIS-based snow cover monthly values (2000-2020): projects/snow_cover.md
+              - MOD10A2061 Snow Cover 8-Day L3 Global 500m: projects/modis_8day_snow.md
+              - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
+              - Global Seamless High-resolution Temperature Dataset (GSHTD): projects/gshtd.md
+              - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
+              - Snow Data Assimilation System (SNODAS): projects/snodas.md
+              - United States Drought Monitor Layers: projects/usdm.md
+              - North American Drought Monitor (NADM): projects/nadm.md
+              - Canadian Drought Outlook: projects/can_drought_outlook.md
+              - United States Seasonal Drought Outlook: projects/ussdo.md
+              - Global Precipitation Measurement (GPM): projects/gpm.md
+              - ANUSPLIN Gridded Climate Dataset: projects/anusplin.md
+              - AgERA5 (ECMWF) dataset: projects/agera5_datasets.md
+              - Vegetation Drought Response Index (VegDRI): projects/veg_dri.md
+              - ERA5-HEAT Dataset: projects/era5_heat.md
+              - High Resolution Deterministic Precipitation Analysis (HRDPA): projects/hrdpa.md
+              - High Resolution Deterministic Prediction System (HRDPS): projects/hrdps.md
+              - Regional Deterministic Precipitation Analysis (RDPA): projects/rdpa.md
+              - Regional Deterministic Prediction System (RDPS): projects/rdps.md
+              - Climate Prediction Center (CPC) Morphing Technique (MORPH): projects/cpc_morph.md
+              - Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2): projects/merrav2.md
+              - Applied Climate Information System (ACIS) NRCC NN: projects/noaa_acis.md
+              - Climate Hazards Group InfraRed Precipitation with Station Data-Prelim (CHIRPS-Prelim): projects/chirps_prelim.md
+              - NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid): projects/nclim_grid.md
+              - High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE): projects/hitisae.md
+              - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
+              - Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022): projects/ghap.md
+              - Global Monthly Satellite-derived PM2.5: projects/global_pm25.md
+              - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
+          - "Global Events Layers":
+              - Global large flood events (1985-2016): projects/flood.md
+              - Global Landslide Catalog (1970-2019): projects/landslide.md
+              - MAXAR Open Data Events: projects/maxar_opendata.md
+              - Umbra SAR Open Data: projects/umbra_opendata.md
+              - RADD Forest Disturbance Alert: projects/radd.md
+              - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
+              - USGS Global Earthquake dataset: projects/global_earthquakes.md
+              - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
+          - "Fire Monitoring and Analysis":
+              - CEMS Fire Danger Indices: projects/cems_fire.md
+              - Canada National Burned Area Composite (NBAC): projects/nbac.md
+              - Wildfire Risk to Communities (WRC): projects/wrc.md
+              - Global Fire WEather Database (GFWED): projects/gfwed.md
+              - Global Fire Atlas (2003-2016): projects/gfa.md
+              - Archival NRT FIRMS Global VIIRS and MODIS vector data: projects/firms_vector.md
+              - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
+              - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
+              - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
+              - ESA Fire Disturbance Climate Change Initiative (CCI): projects/avhrr-ltdr.md
+  - Tutorials:
+      - tutorials/index.md
+      - Global Land & Shorelines Masks: tutorials/examples/global_shorelines.md
+      - Exploring Global 30m Land Cover Change: tutorials/examples/glc_fcs30d_lulc.md
+      - Population Trends with Landscan: tutorials/examples/landscan_extracts.md
+    #   - Assessing Brazil's Biodiversity and Conservation Needs: tutorials/examples/conservation_priorities.md
+    #   - Forest Loss and Cost Surface Analysis for Brazil's Tall Forests: tutorials/examples/tree_canopy.md
+  - Changelog:
+      - Data Changelog: changelog.md
+  - How to Cite:
+      - reference/index.md
+  - Insiders:
+      - insiders/index.md
+      - Insiders Program: insiders/insiders_program.md
+      - "Insiders only datasets":
+          - Microsoft Bing Global Mined Roads: projects/msroads.md
+          - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
+          - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
+          - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
+          - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
+  - Get Involved:
+      - Community Actions (What you can do):
+          - contributing/index.md
+          - Submit or bring your data request to community catalog: contributing/submit.md
+          - Submit update request for dataset in community catalog: contributing/update.md
+          - Bug report for dataset in community catalog: contributing/bug.md
+          - Submit example for dataset in community catalog: contributing/example.md
+  - Blogs:
+      - Substack Blogs: substack_blogs.md
+      - Medium Blogs: medium_blogs.md

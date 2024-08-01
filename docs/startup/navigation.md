@@ -2,7 +2,7 @@
 
 The awesome-gee-community catalog is designed to be completely compatible with the existing GEE master catalog. It is also designed to be as open and exploratory as possible. The catalog is grouped by domains for example datasets that belong to themes about Population and Socioeconomics will be within that group and you should be able to expand and look at the datasets.
 
-![expand_domain](https://user-images.githubusercontent.com/6677629/193892821-31355044-5fa7-4e82-bf53-f79d57f86c2f.gif)
+![navigation](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/20ad544f-c143-4354-a9af-0dd956f5d50f)
 
 You can also search by dataset name or keywords or tags in the search bar.
 
