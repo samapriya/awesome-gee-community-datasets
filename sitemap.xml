@@ -226,6 +226,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gee-community-catalog.org/projects/caml/</loc>
+         <lastmod>2024-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gee-community-catalog.org/projects/can_drought_outlook/</loc>
          <lastmod>2024-08-01</lastmod>
          <changefreq>daily</changefreq>
