@@ -66,8 +66,8 @@ plugins:
   - blog
 #   - git-authors
   - git-committers:
-      repository: "samapriya/agcc"
-      branch: main
+      repository: "samapriya/awesome-gee-community-datasets"
+      branch: master
       token: !ENV GH_TOKEN
   - git-revision-date-localized:
       enable_creation_date: true
