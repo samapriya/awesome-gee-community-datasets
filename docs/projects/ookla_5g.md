@@ -11,6 +11,8 @@ As 5G technology has become prevalent in many regions, the Ookla 5G Map™ is ev
 Based on [LICENSEE’S] analysis of Ookla® 5G Map Data. Ookla trademarks used under license and reprinted with permission."
 ```
 
+![ookla_5g](https://github.com/user-attachments/assets/d106f69c-947c-497b-8743-03e746c58021)
+
 #### Earth Engine Snippet
 
 ```js

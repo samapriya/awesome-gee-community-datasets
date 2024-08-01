@@ -272,6 +272,7 @@ nav:
               - Global River Width from Landsat (GRWL): projects/grwl.md
               - GLOBGM v1.0 global-scale groundwater model: projects/globgm.md
               - Global Channel Belt (GCB): projects/gcb.md
+              - Cyanobacteria Aggregated Manual Labels (CAML): projects/caml.md
               - DynQual Global Surface Water Quality Dataset: projects/dynqual.md
               - Global coastal rivers and environmental variables: projects/rivermouth.md
               - Global River Deltas and vulnerability: projects/river_deltas.md

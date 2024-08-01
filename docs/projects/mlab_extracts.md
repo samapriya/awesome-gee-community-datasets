@@ -13,6 +13,8 @@ Measurement Lab. "The M-Lab NDT Data Set." (February 11, 2009 -- December 21, 20
 Accessed July 2, 2024. https://measurementlab.net/tests/ndt.
 ```
 
+![mlab_extracts](https://github.com/user-attachments/assets/217c8016-0766-458f-8f4a-3bc1cdce91bf)
+
 #### License
 
 ```

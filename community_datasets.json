@@ -21988,6 +21988,18 @@
     "thematic_group": "Agriculture, Vegetation and Forestry"
   },
   {
+    "title": "Cyanobacteria Aggregated Manual Labels (CAML)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/CYANOBACTERIA-AGG-MANUAL-LABELS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/HAB-DETECTION/CAML_cyanobacteria_abundance_20211229_R1",
+    "provider": "NASA, UC Berkeley,DrivenData, ASRC Federal.",
+    "tags": "water quality, HAB, Cyanobacteria, Manual Labels, Ground data",
+    "license": "custom",
+    "license_text": "Following the NASA Earth Science Data and Information Policy, all SeaBASS data are publicly available.",
+    "docs": "https://gee-community-catalog.org/projects/caml/",
+    "thematic_group": "Hydrology"
+  },
+  {
     "title": "DynQual v1 Global Surface Water Quality Dataset: Discharge",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
     "type": "image_collection",

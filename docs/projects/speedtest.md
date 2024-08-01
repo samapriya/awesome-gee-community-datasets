@@ -2,7 +2,7 @@
 
 Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.
 
-Available years of datasets: 2019,2020,2021,2022 and 2023.Find the GitHub project and datasets here: https://github.com/teamookla/ookla-open-data
+Available years of datasets: 2019,2020,2021,2022,2023 and 2024.Find the GitHub project and datasets here: https://github.com/teamookla/ookla-open-data
 You can also download the datasets from AWS Open data registry: https://registry.opendata.aws/speedtest-global-performance/
 
 #### Tiles
@@ -90,4 +90,4 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: : analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles
 
-Last updated: 2024-07-01
+Last updated: 2024-08-01
