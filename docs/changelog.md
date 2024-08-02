@@ -2,6 +2,16 @@
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 
+#### Updated 2024-08-01
+- Added [Global Mangrove Canopy Height Maps Derived from TanDEM-X](https://gee-community-catalog.org/projects/mangrove_ht_tandemx/)
+- Added [Cyanobacteria Aggregated Manual Labels (CAML)](https://gee-community-catalog.org/projects/caml/)
+- Added [Global 30 m Wetland Map with a Fine Classification System](https://gee-community-catalog.org/projects/gwl_fcs)
+- Added new dataset for insiders program [gNATSGO (gridded National Soil Survey Geographic Database)](https://gee-community-catalog.org/projects/gnatsgo)
+- Added new dataset for insiders program [Overture Foundation Building Footprints)](https://gee-community-catalog.org/projects/overture_buildings)
+- Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/caml/global_earthquakes)
+- Updated [Global fixed broadband and mobile (cellular) network performance](https://gee-community-catalog.org/projects/speedtest)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-07-03
 - Added [Ookla 5G Maps](https://gee-community-catalog.org/projects/ookla_5g/)
 - Added [M-Lab Network Speed Data Extracts](https://gee-community-catalog.org/projects/mlab_extracts)

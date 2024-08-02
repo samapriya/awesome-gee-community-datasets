@@ -461,10 +461,12 @@ nav:
       - Insiders Program: insiders/insiders_program.md
       - "Insiders only datasets":
           - Microsoft Bing Global Mined Roads: projects/msroads.md
+          - Overture Foundation Building Footprints: projects/overture_buildings.md
           - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
           - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
           - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
           - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
+          - gNATSGO (gridded National Soil Survey Geographic Database): projects/gnatsgo.md
   - Get Involved:
       - Community Actions (What you can do):
           - contributing/index.md
