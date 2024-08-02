@@ -8,7 +8,7 @@
 - Added [Global 30 m Wetland Map with a Fine Classification System](https://gee-community-catalog.org/projects/gwl_fcs)
 - Added new dataset for insiders program [gNATSGO (gridded National Soil Survey Geographic Database)](https://gee-community-catalog.org/projects/gnatsgo)
 - Added new dataset for insiders program [Overture Foundation Building Footprints)](https://gee-community-catalog.org/projects/overture_buildings)
-- Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/caml/global_earthquakes)
+- Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
 - Updated [Global fixed broadband and mobile (cellular) network performance](https://gee-community-catalog.org/projects/speedtest)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
