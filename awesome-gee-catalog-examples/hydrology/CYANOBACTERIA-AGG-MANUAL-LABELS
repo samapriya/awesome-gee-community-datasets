@@ -1,0 +1,40 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var caml = ee.FeatureCollection("projects/sat-io/open-datasets/HAB-DETECTION/CAML_cyanobacteria_abundance_20211229_R1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Dictionary to map data providers to specific colors
+var dataProviderColors = ee.Dictionary({
+  'Bureau_of_Water_Kansas_Department_of_Health_and_Environment': 'ff0000',
+  'California_Environmental_Data_Exchange_Network': '00ff00',
+  'Connecticut_State_Department_of_Public_Health': '0000ff',
+  'Delaware_National_Resources_and_the_University_of_Delaware\'s_Citizen_Monitoring_Program': 'ffff00',
+  'EPA_Central_Data_Exchange': '00ffff',
+  'EPA_National_Aquatic_Research_Survey': 'ff00ff',
+  'EPA_Water_Quality_Data_Portal': '800000',
+  'Indiana_State_Department_of_Health': '008000',
+  'NC_Division_of_Water_Resources_NC_Department_of_Environmental_Quality': '000080',
+  'New_Mexico_Environment_Department': '808000',
+  'Pennsylvania_Department_of_Environmental_Protection': '800080',
+  'Texas_Commission_on_Environmental_Quality': '008080',
+  'US_Army_Corps_of_Engineers': 'C0C0C0',
+  'Wyoming_Department_of_Environmental_Quality': '808080'
+});
+
+// Function to add style based on 'abun' and 'data_provider'
+function addStyle(pt) {
+  var size = ee.Number(pt.get('abun')).subtract(0).divide(ee.Number(804667.5).subtract(0)).multiply(8).add(2);
+  var color = dataProviderColors.get(pt.get('data_provider'));
+  return pt.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+// Apply the style function to the feature collection
+var styledFeatures = caml.map(addStyle);
+
+function addLayer(provider) {
+  Map.addLayer(styledFeatures.filter(ee.Filter.eq('data_provider', provider)).style({styleProperty: 'styleProperty', neighborhood: 50}), {}, provider, true, 0.8);
+}
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");
+
+// Apply `addLayer` to each record in `fuels`
+dataProviderColors.keys().getInfo().map(addLayer);

@@ -1,0 +1,104 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var usgs_earthquakes = ee.FeatureCollection("projects/sat-io/open-datasets/USGS/usgs_earthquakes");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Dictionary to map earthquake types to specific colors
+var earthquakeTypeColors = ee.Dictionary({
+  'Ice Quake': 'ff0000',
+  'Landslide': '00ff00',
+  'Rock Slide': '0000ff',
+  'chemical explosion': 'ffff00',
+  'collapse': 'ff00ff',
+  'earthquake': '800000',
+  'experimental explosion': '008000',
+  'explosion': '000080',
+  'ice quake': '808000',
+  'induced or triggered event': '800080',
+  'landslide': '008080',
+  'mine collapse': 'C0C0C0',
+  'mining explosion': '808080',
+  'nuclear explosion': 'FF5733',
+  'other event': '33FF57',
+  'quarry blast': '3357FF',
+  'rock burst': 'FF33A1',
+  'sonic boom': 'A133FF',
+  'volcanic eruption': 'FF33FF'
+});
+
+// Function to add style based on 'mag' and 'type'
+function addStyle(feature) {
+  var magnitude = ee.Number(feature.get('mag'));
+  var size = magnitude.multiply(0.5).add(1); // Adjusted scaling to make buffers smaller
+  var color = earthquakeTypeColors.get(feature.get('type'));
+  return feature.set('styleProperty', ee.Dictionary({'pointSize': size, 'color': color}));
+}
+
+// Apply the style function to the feature collection
+var styledEarthquakes = usgs_earthquakes.map(addStyle);
+
+// Function to add a layer for each earthquake type
+function addLayer(type) {
+  Map.addLayer(
+    styledEarthquakes.filter(ee.Filter.eq('type', type)).style({styleProperty: 'styleProperty'}),
+    {},
+    type,
+    true,
+    0.8
+  );
+}
+
+// Apply `addLayer` to each earthquake type
+earthquakeTypeColors.keys().getInfo().forEach(function(type) {
+  addLayer(type);
+});
+
+// Add a legend to the map
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'Earthquake Types Legend',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+// Function to create a color bar
+function makeColorBar(color, name) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + color,
+      padding: '8px',
+      margin: '0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+}
+
+// Add color bars to the legend
+earthquakeTypeColors.keys().getInfo().forEach(function(key) {
+  var color = earthquakeTypeColors.get(key).getInfo();
+  legend.add(makeColorBar(color, key));
+});
+
+Map.add(legend);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");

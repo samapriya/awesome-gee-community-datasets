@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var mangrove_tandemx_12 = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL_MANGROVE_HT_TANDEMX"),
+    mangrove_gedi = ee.FeatureCollection("projects/space-geographer/assets/GEDI_MANGROVE_HT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palettes = require('users/gena/packages:palettes')
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+Map.setCenter(103.4919, -0.4812,10)
+Map.addLayer(mangrove_tandemx_12.mosaic(),{'min':1,'max':22,'palette':palettes.colorbrewer.YlGn[9]},'Global Mangrove Height TANDEMX')
+Map.addLayer(mangrove_gedi.style({'color':'red'}),{},'Mangrove GEDI point')

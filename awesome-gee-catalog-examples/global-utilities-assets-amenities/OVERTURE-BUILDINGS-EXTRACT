@@ -1,0 +1,5 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var buildings = ee.FeatureCollection("projects/sat-io/open-datasets/OVERTURE/BUILDINGS/CONUS-EXTRACT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(-90.1887, 38.6255,15)
+Map.addLayer(buildings, {color:'blue'}, 'Buildings CONUS Extract');

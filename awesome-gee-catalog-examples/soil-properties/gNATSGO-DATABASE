@@ -1,0 +1,25 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var aws0_5 = ee.ImageCollection("projects/sat-io/open-datasets/gNATSGO/raster/aws0_5"),
+    aws0_20 = ee.ImageCollection("projects/sat-io/open-datasets/gNATSGO/raster/aws0_20");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Available water storage estimate (AWS) in a standard zone 1 (0-5 cm depth), expressed in mm
+ Available water storage estimate (AWS) in standard zone 2 (0-20 cm depth), expressed in mm. 
+*/
+
+var aws0_5_image = aws0_5.mosaic();
+var aws0_20_image = aws0_20.mosaic();
+
+var visParams = {
+  min: 0,
+  max: 150,
+  palette: ['blue', 'green', 'yellow', 'orange', 'red']
+};
+
+Map.addLayer(aws0_5_image, {min: 0,max: 30,palette: ['blue', 'green', 'yellow', 'orange', 'red']}, 'Available water storage estimate (AWS) 0-5 cm');
+Map.addLayer(aws0_20_image, {min: 0,max: 120,palette: ['blue', 'green', 'yellow', 'orange', 'red']}, 'Available water storage estimate (AWS) 0-20 cm');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");
+
+Map.setCenter(-100, 40, 4);

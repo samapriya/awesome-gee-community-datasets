@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gwl_fcs30 = ee.ImageCollection("projects/sat-io/open-datasets/GWL_FCS30");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+180 - Non-wetland (#CCCCCC) Light gray
+181 - Permanent water (#0000FF) Deep Blue
+182 - Swamp (#006400) Dark green
+183 - Marsh (#00FF00) Light green
+184 - Flooded flat (#00FFFF) Aqua blue
+185 - Saline (#CC99FF) Light purple
+186 - Mangrove forest (#556B2F) Olive green
+187 - Salt marsh (#FFFF99) Pale yellow
+188 - Tidal flat (#D2B48C) Light brown
+*/
+
+var image = gwl_fcs30.sort('system:time_start',false).first()
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+var vis = {min:180,max:187,"palette":['#CCCCCC', '#0000FF', '#006400', '#00FF00', '#00FFFF', '#CC99FF', '#556B2F', '#FFFF99', '#D2B48C']}
+Map.addLayer(image.mask(image.neq(0)),vis,'GWL FCS30')
