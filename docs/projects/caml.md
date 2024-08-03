@@ -5,10 +5,18 @@ water bodies to cover, but also due to the dynamic nature of algal growth and to
 and biological factors. Ground monitoring also lacks consistency as sampling methods, frequency, and analytical techniques vary from region to region. However, remote sensing
 allows systematic data collection over a large area to identify regions with potential harmful algal growth. We introduce the Cyanobacteria Aggregated Manual Labels (CAML), a
 large dataset of in-situ cyanobacteria measurements for investigations of cyanobacteria detection and severity classification in inland water bodies across the United States.
-Relevant satellite imagery from publicly available endpoints are applicable to use when applying the CAML dataset to models. The dataset labels ground measurements of
-cyanobacteria cell counts at 23,570 points in U.S. inland water bodies over 2013 - 2021. Algorithms trained on this data could be used to estimate cyanobacteria cell counts in
-water bodies for timely water quality and public health interventions and to gain an understanding of environmental and anthropogenic factors associated with cyanobacteria
+Relevant satellite imagery from publicly available endpoints are applicable to use when applying the CAML dataset to models. 
+
+The dataset labels ground measurements of cyanobacteria cell counts at 23,570 points in U.S. inland water bodies over 2013 - 2021. Algorithms trained on this data could be used to estimate cyanobacteria cell counts in water bodies for timely water quality and public health interventions and to gain an understanding of environmental and anthropogenic factors associated with cyanobacteria
 incidence and proliferation. Data is provided in a comma-separated values (CSV) format. You can find the dataset [here](https://seabass.gsfc.nasa.gov/archive/NASA_HEADQUARTERS/SGupta/CAML/CAML_2013_2021)
+
+Severity levels are based on World Health Organization (WHO) cyanobacteria density thresholds.
+
+* Low: 0 - 20,000 cells/ml
+* Moderate: 20,000 - 100,000 cells/ml
+* High: > 100,000 cells/ml
+
+However users should feel free to to use their own thresholds as makes sense for their needs.
 
 ![caml_field_data](https://github.com/user-attachments/assets/246b6359-e89c-4c16-ad3c-952267d061a8)
 
