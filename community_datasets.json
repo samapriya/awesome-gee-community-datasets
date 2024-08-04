@@ -759,6 +759,17 @@
     "thematic_group": "Regional Land Use and Land Cover"
   },
   {
+    "title": "Mapbiomas Atlantic Forest: Landsat Mosaics",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/ATLANTICFOREST/mosaics",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Atlantic Forest, Integration",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
+    "thematic_group": "Regional Land Use and Land Cover"
+  },
+  {
     "title": "Mapbiomas Atlantic Forest: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
@@ -902,28 +913,6 @@
     "thematic_group": "Regional Land Use and Land Cover"
   },
   {
-    "title": "Mapbiomas Bolivia: Collection 2.0 Landsat mosaics 1985-2021",
-    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
-    "type": "image_collection",
-    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/PANAMAZON/mosaics-2",
-    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
-    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Integration",
-    "license": "Creative Commons Attribution 4.0 International",
-    "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
-    "thematic_group": "Regional Land Use and Land Cover"
-  },
-  {
-    "title": "Mapbiomas Bolivia: Collection 2.0 Landsat mosaics 2022-2023",
-    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
-    "type": "image_collection",
-    "id": "projects/mapbiomas-raisg/MOSAICOS/mosaics-2",
-    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
-    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Integration",
-    "license": "Creative Commons Attribution 4.0 International",
-    "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
-    "thematic_group": "Regional Land Use and Land Cover"
-  },
-  {
     "title": "Mapbiomas Bolivia: Final Integrated Land Use Land Cover Maps",
     "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
     "type": "image",
@@ -1029,6 +1018,28 @@
     "id": "projects/mapbiomas-workspace/public/collection8/mapbiomas_water_collection1_water_frequency_v1",
     "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
     "tags": "Mapbiomas, Land Use, Land Cover, Brazil,Amazon, Landsat, Mosaic",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
+    "thematic_group": "Regional Land Use and Land Cover"
+  },
+  {
+    "title": "Mapbiomas Pan Amazonia: Collection 2.0 Landsat mosaics 1985-2021",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/nexgenmap/MapBiomas2/LANDSAT/PANAMAZON/mosaics-2",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Integration",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
+    "thematic_group": "Regional Land Use and Land Cover"
+  },
+  {
+    "title": "Mapbiomas Pan Amazonia: Collection 2.0 Landsat mosaics 2022-2023",
+    "sample_code": "https://code.earthengine.google.com/3d07ce796edba49bcd2cf18931dff541?accept_repo=users%2Fmapbiomas%2Fuser-toolkit",
+    "type": "image_collection",
+    "id": "projects/mapbiomas-raisg/MOSAICOS/mosaics-2",
+    "provider": "MapBiomas,Greenhouse Gas Emissions Estimation System (SEEG)",
+    "tags": "Mapbiomas, Land Use, Land Cover, Bolivia, Integration",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/mapbiomas/",
     "thematic_group": "Regional Land Use and Land Cover"
