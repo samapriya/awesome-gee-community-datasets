@@ -22000,6 +22000,138 @@
     "thematic_group": "Hydrology"
   },
   {
+    "title": "gNATSGO AWS 0-100",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_100",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 0-150",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_150",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 0-20",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_20",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 0-30",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_30",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 0-5",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_5",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 0-999",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws0_999",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 100-150",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws100_150",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 150-999",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws150_999",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 20-50",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws20_50",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 50-100",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws50_100",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO AWS 5-20",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/aws5_20",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
+    "title": "gNATSGO Mukey",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/gNATSGO-DATABASE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gNATSGO/raster/mukey",
+    "provider": "USDA, NRCS",
+    "tags": "Soil Survey, USDA, NRCS, Raster Data, Gridded Data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gnatsgo/",
+    "thematic_group": "Soil Properties"
+  },
+  {
     "title": "DynQual v1 Global Surface Water Quality Dataset: Discharge",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE",
     "type": "image_collection",
@@ -23771,6 +23903,17 @@
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/land_subsidence/",
     "thematic_group": "Geophysical, Biological & Biogeochemical"
+  },
+  {
+    "title": "Overture Map Foundation Buildings Layer: CONUS Extract",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/OVERTURE-BUILDINGS-EXTRACT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/OVERTURE/BUILDINGS/CONUS-EXTRACT",
+    "provider": "Overture Map Foundation",
+    "tags": "Building Data, Overture Foundation, OpenStreetMap, Esri, Google, Microsoft",
+    "license": "Open Data Commons Open Database License v1.0",
+    "docs": "https://gee-community-catalog.org/projects/overture_buildings/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
     "title": "Global Google Microsoft Combined Building Footprints VIDA: Afghanistan",
