@@ -1,6 +1,7 @@
 # Changelog
 
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
+![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2024-08-01
 - Added [Global Mangrove Canopy Height Maps Derived from TanDEM-X](https://gee-community-catalog.org/projects/mangrove_ht_tandemx/)
