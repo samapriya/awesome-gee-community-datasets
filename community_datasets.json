@@ -5011,6 +5011,17 @@
     "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
+    "title": "Global fixed Network Performance Maps: 2024-04-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/fixed_tiles/2024-04-01_performance_fixed_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/speedtest/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
     "title": "Global Mobile Network Performance Maps: 2023-01-01",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
@@ -5059,6 +5070,17 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/network/mobile_tiles/2024-01-01_performance_mobile_tiles",
+    "provider": "Ookla",
+    "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/speedtest/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers"
+  },
+  {
+    "title": "Global Mobile Network Performance Maps: 2024-04-01",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-FIXED-MOBILE-NETWORK-PERFORMANCE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/network/mobile_tiles/2024-04-01_performance_mobile_tiles",
     "provider": "Ookla",
     "tags": "analytics,broadband,cities,civic,infrastructure,internet,network traffic, telecommunications,tiles",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
