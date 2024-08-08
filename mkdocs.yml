@@ -462,6 +462,7 @@ nav:
       - "Insiders only datasets":
           - Microsoft Bing Global Mined Roads: projects/msroads.md
           - Overture Foundation Building Footprints: projects/overture_buildings.md
+          - National Structures Inventory (NSI): projects/nsi.md
           - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
           - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
           - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
