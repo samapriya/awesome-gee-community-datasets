@@ -49,7 +49,7 @@ def update_markdown_file(filename, blog_info, start_marker, end_marker):
 feed_url = "https://datacommons.substack.com/feed"
 blog_info = get_blog_info(feed_url)
 
-filename = "docs/blogs.md"  # Replace with your markdown filename
+filename = "docs/substack_blogs.md"  # Replace with your markdown filename
 start_marker = "<!-- START_MARKER -->"
 end_marker = "<!-- END_MARKER -->"
 
