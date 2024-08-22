@@ -23,8 +23,7 @@ However users should feel free to to use their own thresholds as makes sense for
 #### Dataset Citation
 
 ```
-CAML Data (2013-2021). Investigators: Emily Gelbart (NASA), Ritwik Gupta (UC Berkeley), Katie Wetstone (DrivenData), Emily Dorne (DrivenData), Shobhana Gupta (NASA, ASRC
-Federal). Retrieved from https://seabass.gsfc.nasa.gov/archive/NASA_HEADQUARTERS/SGupta/CAML/CAML_2013_2021
+S. Gupta, E. Gelbart, R. Gupta, K. Wetstone, and E. Dorne (2024). Cyanobacteria Aggregated Manual Labels Dataset (NASA and DrivenData). SeaBASS. http://dx.doi.org/10.5067/SeaBASS/CAML/DATA001
 ```
 
 #### Earth Engine Snippet
