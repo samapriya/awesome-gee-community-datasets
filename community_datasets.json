@@ -9196,7 +9196,7 @@
     "thematic_group": "Geophysical, Biological & Biogeochemical"
   },
   {
-    "title": "High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019)",
+    "title": "High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2022)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FORESTED-ECOSYSTEM-LC",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2",
@@ -9205,6 +9205,171 @@
     "license": "Open Government Licence - Canada",
     "docs": "https://gee-community-catalog.org/projects/ca_lc/",
     "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
+    "title": "Enhanced Spring Indices: BloomDaymetv4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/BloomDaymetv4",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Enhanced Spring Indices: BloomEuropev3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/BloomEuropev3",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change, Europe",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Enhanced Spring Indices: DI_Daymetv4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/DI_Daymetv4",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Enhanced Spring Indices: DI_Europev3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/DI_Europev3",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change, Europe",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Enhanced Spring Indices: LeafDaymetv4",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/LeafDaymetv4",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Enhanced Spring Indices: LeafEuropev3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/EXTENDED-SPRING-INDICES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SIx_products/LeafEuropev3",
+    "provider": "Izquierdo-Verdiguier. 2024",
+    "tags": "spring onset, phenology, climate change, Europe",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/spring_indices/",
+    "thematic_group": "Analysis Ready Data"
+  },
+  {
+    "title": "Urban Heat Island Intensity: AMOD2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/AMOD2",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: MOD1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/MOD1",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: MOD2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/MOD2",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: MYD1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/MYD1",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: MYD2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/MYD2",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: SAT",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/SAT",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: SMOD2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/SMOD2",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Urban Heat Island Intensity: SMYD1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/URBAN-HEAT-ISLAND-INTENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/UHII/SMYD1",
+    "provider": "Yang et al 2024",
+    "tags": "urban, heat, climate, city",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/uhii/",
+    "thematic_group": "Weather and Climate Layers"
+  },
+  {
+    "title": "Global Groundwater-Dependent Ecosystems (GDEs)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:biodiversity-ecosystems-habitat/GROUNDWATER-DEP-ECOSYSTEMS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GlobalGDEMap_v6_TNC",
+    "provider": "TNC, Rohde, M.M., Albano, C.M., Huggins, X. et al",
+    "tags": "Global Groundwater-Dependent Ecosystems, GDE Mapping, Conflict Hotspots, Climate Change, Food Security",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gde/",
+    "thematic_group": "Biodiversity, Ecosystems & Habitat Layers"
   },
   {
     "title": "Distance-to-second class for the leading tree species map 2019",
@@ -27431,6 +27596,28 @@
     "license": "Open Government Licence - Canada",
     "docs": "https://gee-community-catalog.org/projects/ca_sbfi/",
     "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
+    "title": "Canadian Satellite-Based Forest Inventory (SBFI): Gridded Labels",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-SBFI",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/Grid_Labels",
+    "provider": "Wulder et al. 2024",
+    "tags": "Landsat, land cover, change detection, forest structure, biomass, NFI",
+    "license": "Open Government Licence - Canada",
+    "docs": "https://gee-community-catalog.org/projects/ca_sbfi/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
+    "title": "Canada 2023 Wildfires",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/CA-FOREST-FIRE-2023",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Wildfire_2023_Summer_Fall",
+    "provider": "Pelletier et al. 2024",
+    "tags": "Wildfire, Tracking Intra- Inter-year Change (TIIC), Landsat, Sentinel, Burned Area, Fire Occurrence, Canada",
+    "license": "Open Government Licence - Canada",
+    "docs": "https://gee-community-catalog.org/projects/ca_fires/",
+    "thematic_group": "Fire Monitoring and Analysis"
   },
   {
     "title": "GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022) Annual",

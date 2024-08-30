@@ -3,6 +3,17 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2024-08-30
+- Added [Urban Heat Island Intensity (UHII)](https://gee-community-catalog.org/projects/uhii/)
+- Added [High Res Extended Spring Indices database](https://gee-community-catalog.org/projects/spring_indices)
+- Added [Global Groundwater-Dependent Ecosystems (GDEs)](https://gee-community-catalog.org/projects/gde)
+- Added [Canada 2023 Wildfires](https://gee-community-catalog.org/projects/ca_fires)
+- Added new dataset for Insiders Program [National Structures Inventory](https://gee-community-catalog.org/projects/nsi/)
+- Updated [Canadian Satellite-Based Forest Inventory (SBFI)](https://gee-community-catalog.org/projects/ca_sbfi)
+- Updated [High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2022)](https://gee-community-catalog.org/projects/ca_lc) to include 2019-2022 datasets
+- Updated dataset for insiders program [gNATSGO (gridded National Soil Survey Geographic Database)](https://gee-community-catalog.org/projects/gnatsgo)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-08-01
 - Added [Global Mangrove Canopy Height Maps Derived from TanDEM-X](https://gee-community-catalog.org/projects/mangrove_ht_tandemx/)
 - Added [Cyanobacteria Aggregated Manual Labels (CAML)](https://gee-community-catalog.org/projects/caml/)

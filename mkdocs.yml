@@ -312,7 +312,7 @@ nav:
               - Field Boundaries of Agriculture (FIBOA) UK Fields: projects/fiboa_uk.md
               - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
               - High resolution map of African tree cover: projects/af_trees.md
-              - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2019): projects/ca_lc.md
+              - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2022): projects/ca_lc.md
               - High Resolution Tree Species Information for Canada: projects/ca_species.md
               - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
               - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
@@ -347,6 +347,7 @@ nav:
               - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
           - "Analysis Ready Data":
               - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
+              - High Res Extended Spring Indices database: projects/spring_indices.md
               - Open Aerial Map Subset: projects/oam.md
               - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
               - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
@@ -386,6 +387,7 @@ nav:
               - Global Habitat Heterogeneity: projects/ghh.md
               - Global 1-km Cloud Cover: projects/gcc.md
               - Areas of global conservation value: projects/gci.md
+              - Global Groundwater-Dependent Ecosystems (GDEs): projects/gde.md
           - "Weather and Climate Layers":
               - Global Reference Evapotranspiration Layers: projects/et0.md
               - Global Aridity Index: projects/ai0.md
@@ -424,6 +426,7 @@ nav:
               - Long-term Gap-free High-resolution Air Pollutants (LGHAP): projects/lghap.md
               - Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022): projects/ghap.md
               - Global Monthly Satellite-derived PM2.5: projects/global_pm25.md
+              - Urban Heat Island Intensity: projects/uhii.md
               - Reference ET gridded database based on FAO Penman-Monteith for Peru (PISCOeo_pm): projects/piscoeo.md
           - "Global Events Layers":
               - Global large flood events (1985-2016): projects/flood.md
@@ -444,6 +447,7 @@ nav:
               - Monitoring Trends in Burn Severity (MTBS) 1984-2019: projects/mtbs.md
               - 30m Global Annual Burned Area Maps (GABAM): projects/gabam.md
               - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
+              - Canada 2023 Wildfires: projects/ca_fires.md
               - ESA Fire Disturbance Climate Change Initiative (CCI): projects/avhrr-ltdr.md
   - Tutorials:
       - tutorials/index.md

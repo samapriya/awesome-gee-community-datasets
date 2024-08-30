@@ -150,6 +150,7 @@ satellite-based forest inventory for Canada. Forestry: An International Journal 
 ```js
 var sbfi_merged = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/CA_SBFI_MERGED");
 var grid_fe = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/GRID_forested_ecosystems");
+var grid_labels = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/CA_SBFI/Grid_Labels");
 ```
 
 Sample Code:  https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-SBFI
@@ -163,4 +164,4 @@ Curated in GEE by : Samapriya Roy
 
 Keyworks: Landsat, land cover, change detection, forest structure, biomass; NFI
 
-Last updated in GEE: 2024-02-22
+Last updated in GEE: 2024-08-29
