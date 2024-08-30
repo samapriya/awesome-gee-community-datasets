@@ -1,0 +1,57 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = /* color: #d63000 */ee.Geometry.MultiPoint();
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+function linspace(a,b,n) {
+    if(typeof n === "undefined") n = Math.max(Math.round(b-a)+1,1);
+    if(n<2) { return n===1?[a]:[]; }
+    var i,ret = Array(n);
+    n--;
+    for(i=n;i>=0;i--) { ret[i] = (i*b+(n-i)*a)/n; }
+    return ret;
+}
+
+var lf_eu = ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/LeafEuropev3')
+.map(function(img){return img.mask(img.neq(0)).select([3],['leaf']).copyProperties(img)});
+var bl_eu = ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/BloomEuropev3')
+.map(function(img){return img.mask(img.neq(0)).select([3],['bloom']).copyProperties(img)});
+var di_am = ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/DI_Daymetv4')
+.map(function(img){return img.select([3],['damage']).copyProperties(img)});
+var di_er = ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/DI_Europev3')
+.map(function(img){return img.select([3],['damage']).copyProperties(img)});
+
+var yrs = linspace(1950,2022,73);
+
+function compositeAreas(yr){
+var image = ee.Image(ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/LeafDaymetv4')
+  .filter(ee.Filter.eq('system:index',yr.toString())).select('leaf').first());
+
+var image2 = ee.Image(lf_eu.filter(ee.Filter.eq('system:index',yr.toString())).first());
+
+var image3 = ee.Image(ee.ImageCollection('projects/sat-io/open-datasets/SIx_products/BloomDaymetv4')
+  .filter(ee.Filter.eq('system:index',yr.toString())).select('bloom').first());
+
+var image4 = ee.Image(bl_eu.filter(ee.Filter.eq('system:index',yr.toString())).first());
+  
+var image5 = ee.Image(di_am.filter(ee.Filter.eq('system:index',yr.toString())).first());
+
+var image6 = ee.Image(di_er.filter(ee.Filter.eq('system:index',yr.toString())).first());
+
+var final = ee.ImageCollection([image,image2]).mosaic()
+.addBands(ee.ImageCollection([image3,image4]).mosaic())
+.addBands(ee.ImageCollection([image5,image6]).mosaic());
+return final.set('year',yr);
+}
+
+var pheno = ee.ImageCollection(yrs.map(compositeAreas));
+print(pheno);
+
+var vis_vi1 = {bands:['leaf'],min:0 , max: 250, palette:["af0000","eb1e00","ff6400","ffb300","ffeb00","9beb4a","33db80","00b4ff","0064ff","000096"]};
+Map.addLayer(pheno,vis_vi1,'Leaf');
+
+var vis_vi2 = {bands:['bloom'],min:0, max: 250, palette:["af0000","eb1e00","ff6400","ffb300","ffeb00","9beb4a","33db80","00b4ff","0064ff","000096"]};
+Map.addLayer(pheno,vis_vi2,'Bloom');
+
+var vis_vi3 = {bands:['damage'],min:-150 , max: 150, palette:["ff3636","ff7b71","ffafaf","ffe8de","ffffff","dae4ff","b1c5ff","6d93ff","3e70ff"]};
+Map.addLayer(pheno,vis_vi3,'DI');
+
+Map.setCenter(-32.639,40.407,3)

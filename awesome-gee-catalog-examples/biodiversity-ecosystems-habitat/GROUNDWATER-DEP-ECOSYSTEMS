@@ -1,0 +1,609 @@
+var imageCollection = ee.ImageCollection("projects/codefornature/assets/GlobalGDEMap_v6_TNC");
+print(imageCollection)
+
+var ic_class = imageCollection.select('gde_class');
+var ic_prob = imageCollection.select('gde_prob');
+
+var GDEmap = ee.Image(ic_class.mosaic());
+var GDEprob = ee.Image(ic_prob.mosaic());
+
+var dataset = ee.ImageCollection("ESA/WorldCover/v100").first();
+var land = dataset.neq(80).updateMask(dataset.neq(80));
+
+///////////////////////////////
+
+// rename "land" band to match "GDEmap" band names
+// set land raster = 0
+var land_renameBand = land.remap([1], [0], 0, 'Map').select(['remapped']).rename(['gde_class']);
+
+// mask out non-analyzed areas from GDE layer
+var mask = GDEmap.gt(0)
+var GDEmasked = GDEmap.updateMask(mask) // GDE and no GDE; excludes areas not analyzed
+var GDEprob_masked = GDEprob.updateMask(mask) // probability of GDEs; excludes areas not analyzed
+var GDEprob_80 = GDEprob_masked.gte(80) // high probability of GDEs; excludes areas not analyzed
+// Use the image as its own mask to hide zero values
+var GDEprob_80_masked = GDEprob_80.mask(GDEprob_80);
+
+// composite "land" and "GDEmap" images (taking the maximum value)
+var GDEmap_land_composite = ee.ImageCollection.fromImages([GDEmasked, land_renameBand]).max(); // composite layer (GDE, no GDE, land area not analyzed)
+
+// add composite image to map
+// 0 = not analyzed
+// 1 = GDE
+// 2 = no GDE
+//  Palette with the colors
+//var palette_colors =['#c6c6c6','#00cc00','white'];
+var palette_colors = ['#c6c6c6', '#018571', '#a6611a'];
+var palette_colors_prob = ['#a6611a', '#dfc27d', '#f5f5f5', '#80cdc1', '#018571'];
+
+var classProbVisualization = {
+    min: 0,
+    max: 100,
+    palette: palette_colors_prob
+};
+
+var vizParams = {
+    palette: ['006400'] // dark green
+};
+
+// name of the legend
+var names = ['Not Analyzed', 'Likely GDE', 'Not GDE'];
+
+
+//Map.addLayer(GDEprob_80_masked, vizParams, 'High probability GDEs');
+Map.setCenter(-28, 33, 3)
+
+// Add in the download grid
+var finalGrid = ee.FeatureCollection('projects/codefornature/assets/global_gde_tiles_URL');
+print(finalGrid)
+
+// Define the style for the grid layer
+var gridStyle = {
+    color: 'white',
+    fillColor: '#FFFFFF80', // Transparent white fill (50% opacity)
+    width: 2
+};
+
+// Add the styled grid layer to the map
+Map.addLayer(GDEmap_land_composite, {
+    min: 0,
+    max: 2,
+    palette: palette_colors,
+    opacity: .8
+}, 'Groundwater Dependent Ecosystems')
+Map.addLayer(GDEprob_masked, classProbVisualization, 'GDE Certainty', 0);
+Map.addLayer(finalGrid.style(gridStyle), {}, 'Download Tiles', 0);
+
+
+// Global variable to store the pop-up
+var popup;
+
+// Function to create a pop-up with the URL
+var createPopup = function(feature) {
+    var url = feature.get('URL');
+    url.evaluate(function(clientUrl) { // Convert the URL to a client-side string
+        if (popup) {
+            Map.remove(popup); // Remove the existing pop-up if it exists
+        }
+        popup = ui.Label({
+            value: 'Download the GDE data for this tile',
+            style: {
+                fontSize: '12px',
+                margin: '1px 8px 1px 8px',
+                textAlign: 'left',
+                color: 'blue',
+                textDecoration: 'underline'
+            },
+            targetUrl: clientUrl
+        });
+        Map.add(popup);
+    });
+};
+
+// Add a click event to show the pop-up
+Map.onClick(function(coords) {
+    var point = ee.Geometry.Point([coords.lon, coords.lat]);
+    var clickedFeature = finalGrid.filterBounds(point).first();
+    clickedFeature.evaluate(function(f) {
+        if (f) {
+            var feature = ee.Feature(f); // Ensure the feature is an ee.Feature object
+            createPopup(feature); // Create the pop-up with the URL
+        }
+    });
+});
+
+// Add a click event to remove the pop-up when clicking outside
+Map.onClick(function(coords) {
+    if (popup) {
+        Map.remove(popup);
+        popup = null;
+    }
+});
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//   Set Up Side Panel
+/////////////////////////////////////////////////////////////////////////////////////////
+
+var panel = ui.Panel({
+    layout: ui.Panel.Layout.flow('vertical'),
+    style: {
+        width: '370px'
+    }
+});
+
+var title = ui.Label({
+    value: 'Global Groundwater Dependent Ecosystems',
+    style: {
+        fontSize: '20px',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '484848'
+    }
+});
+
+var description_title = ui.Label({
+    value: 'Description:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var description = ui.Label({
+    value: 'The teal areas on this map show the likely locations of groundwater dependent ecosystems (GDEs) in dry climate zones across the globe, while the brown areas are not likely GDEs.  GDEs are important because they are often biodiversity hotspots that support rare and endemic species, but also hold cultural and socio-economic significance to people. These ecosystems rely on groundwater and can be lost if groundwater is not managed sustainably.',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 8px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var methods_title = ui.Label({
+    value: 'Methods:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var methods = ui.Label({
+    value: 'The map was created using machine learning approaches and satellite data at a 30 meter resolution.  The methods are described in Rohde, M.M., Albano, C.M., Huggins, X. et al. Groundwater-dependent ecosystem map exposes global dryland protection needs. Nature (2024).',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 1px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var methods_link = ui.Label({
+    value: 'https://www.nature.com/articles/s41586-024-07702-8',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 1px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'https://www.nature.com/articles/s41586-024-07702-8'
+});
+
+var download_title = ui.Label({
+    value: 'Download Data:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var download = ui.Label({
+    value: 'The data are available for download in 5 degree tiles in a multiband GeoTiff format.  The "classification" band includes the values 1 (likely GDE), 2 (not likely GDE) and 0 (out of model domain).  The "probabiliy" band is the liklihood the pixel is a GDE (100) or non-GDE (0).  To download the tiles, click on the "Layers" button, then check the box next to "Download Tiles".  Click on any white rectangle on the map and a popup will contain the download link for that tile.  To download all the tiles, visit the data repository:',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 1px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var download_link = ui.Label({
+    value: 'https://doi.org/10.5281/zenodo.11062894',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 1px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'https://doi.org/10.5281/zenodo.11062894'
+});
+
+var learn_title = ui.Label({
+    value: 'Learn More:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var learn1 = ui.Label({
+    value: 'To see the GDE certainty data from the machine learning model, click on the "Layers" button, then check the box next to "GDE Certainty".  This map layer shows the areas most likely to be GDEs in the darkest teal color.',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 1px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var learn2 = ui.Label({
+    value: 'Click the links below to learn more about GDEs and what The Nature Conservancy and its partners are doing to protect these vital ecosystems:',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 1px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var learn_link1 = ui.Label({
+    value: 'nature.org',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 1px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'https://www.nature.org/en-us/what-we-do/our-insights/perspectives/groundwater-most-valuable-resource/'
+});
+var learn_link2 = ui.Label({
+    value: 'groundwaterresourcehub.org',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 8px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'https://www.groundwaterresourcehub.org/'
+});
+
+var citation_title = ui.Label({
+    value: 'Suggested Citation:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var citation = ui.Label({
+    value: 'The Nature Conservancy and the Desert Research Institute. Global Groundwater Dependent Ecosystem Map, Version 1.2.0. https://codefornature.projects.earthengine.app/view/global-gde. August 2024',
+    style: {
+        fontSize: '12px',
+        margin: '3px 8px 8px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+
+var questions = ui.Label({
+    value: 'Questions or comments about the global GDE map?  Contact:',
+    style: {
+        fontSize: '12px',
+        margin: '8px 8px 1px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var questions_link1 = ui.Label({
+    value: 'melissa@RohdeEnvironmental.com',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 1px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'mailto:melissa@RohdeEnvironmental.com'
+});
+var questions_link2 = ui.Label({
+    value: 'kklausmeyer@tnc.org',
+    style: {
+        fontSize: '12px',
+        margin: '1px 8px 8px 8px',
+        textAlign: 'left',
+        color: 'blue',
+        textDecoration: 'underline'
+    },
+    targetUrl: 'mailto:kklausmeyer@tnc.org'
+});
+
+var disclaimer_title = ui.Label({
+    value: 'Disclaimer:',
+    style: {
+        fontSize: '11px',
+        margin: '8px 8px 1px 8px',
+        fontWeight: 'bold',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+var disclaimer = ui.Label({
+    value: 'The data displayed in this web map do not prove or make any claim about the nature and/or extent of groundwater dependent ecosystems for any mapped location. Features mapped here are not intended for legal uses and no warranty, expressed or implied, is made by The Nature Conservancy or data contributors as to the accuracy of the data. The Nature Conservancy shall not be held liable for improper or incorrect use of the data described and/or contained herein. Any sale, distribution, loan, or offering for use of these data, in whole or in part, is prohibited. The use of these data to produce other products and services with the intent to use or sell for a profit is prohibited. All parties receiving these data must be informed of these restrictions. This is an aggregate dataset with multiple data sources.',
+    style: {
+        fontSize: '10px',
+        margin: '3px 8px 8px 8px',
+        textAlign: 'left',
+        color: '484848'
+    }
+});
+
+// Add picture:  https://gis.stackexchange.com/questions/331842/adding-a-logo-to-a-panel-on-an-app-in-google-earth-engine
+
+// TNC logo
+var tnc_logo = ee.Image('users/kklausmeyer/Logo_map_CA_Albers').visualize({
+    bands: ['b1', 'b2', 'b3'],
+    min: 0,
+    max: 255
+});
+var tnc_thumb = ui.Thumbnail({
+    image: tnc_logo,
+    params: {
+        dimensions: '1000x333',
+        format: 'png'
+    },
+    style: {
+        height: '50px',
+        width: '150px',
+        padding: '0',
+        position: 'top-left'
+    }
+});
+
+// DRI logo
+var dri_logo = ee.Image('users/kklausmeyer/DRI_logo_CA_Albers_white2').visualize({
+    bands: ['b1', 'b2', 'b3'],
+    min: 0,
+    max: 255
+});
+var dri_thumb = ui.Thumbnail({
+    image: dri_logo,
+    params: {
+        dimensions: '1553x775',
+        format: 'png'
+    },
+    style: {
+        height: '45px',
+        width: '110px',
+        padding: '5px 0px 0px 30px',
+        position: 'top-right'
+    }
+});
+
+var logo_panel = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {
+        width: '350px'
+    }
+});
+
+logo_panel.add(tnc_thumb)
+logo_panel.add(dri_thumb)
+
+
+
+//var toolPanel = ui.Panel(thumb, 'flow', {width: '300px'});
+//ui.root.widgets().add(toolPanel);
+
+
+
+
+panel.add(title)
+panel.add(description_title)
+panel.add(description)
+panel.add(methods_title)
+panel.add(methods)
+panel.add(methods_link)
+panel.add(download_title)
+panel.add(download)
+panel.add(download_link)
+panel.add(learn_title)
+panel.add(learn1)
+panel.add(learn2)
+panel.add(learn_link1)
+panel.add(learn_link2)
+panel.add(citation_title)
+panel.add(citation)
+panel.add(questions)
+panel.add(questions_link1)
+panel.add(questions_link2)
+panel.add(logo_panel)
+panel.add(disclaimer_title)
+panel.add(disclaimer)
+
+
+ui.root.add(panel);
+
+//////////////////////////////////////////////////////////
+//
+//  Add Legend to Map
+
+
+// set position of panel
+var legend = ui.Panel({
+    style: {
+        position: 'bottom-left',
+        padding: '8px 15px'
+    }
+});
+
+// Create an empty panel to hold the legend components
+//var legend = ui.Panel({style: {width: '250px'}});
+
+// Create legend title
+var legendTitle = ui.Label({
+    value: 'Legend',
+    style: {
+        fontWeight: 'bold',
+        fontSize: '12px',
+        margin: '0 0 4px 0',
+        padding: '0'
+    }
+});
+
+// Add the title to the panel
+legend.add(legendTitle);
+
+// Creates and styles 1 row of the legend.
+var makeRow = function(color, name) {
+
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+        style: {
+            backgroundColor: color,
+            // Use padding to give the box height and width.
+            padding: '6px',
+            margin: '0 0 4px 0',
+            border: '1px solid black'
+        }
+    });
+
+    // Create the label filled with the description text.
+    var description = ui.Label({
+        value: name,
+        style: {
+            margin: '0 0 4px 6px',
+            fontSize: '12px'
+
+
+        }
+    });
+
+    // return the panel
+    return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+    });
+};
+
+//Set the order of the items in the legend
+var array = [1, 2, 0];
+// Add color and and names
+for (var i = 0; i < 3; i++) {
+
+    legend.add(makeRow(palette_colors[array[i]], names[array[i]]));
+}
+
+
+// Add in GDE certainty to the legend
+
+// Create layer title title
+var certTitle = ui.Label({
+    value: 'GDE Certainty',
+    style: {
+        fontWeight: '0',
+        fontSize: '12px',
+        margin: '4px 0 2px 0',
+        padding: '0'
+    }
+});
+
+// Add the title to the panel
+legend.add(certTitle);
+
+// Invert the certainty color pallette
+var inverted_palette_colors_prob = palette_colors_prob.slice().reverse();
+
+// Create a color bar for the legend
+var makeColorBar = function(palette) {
+    return ui.Thumbnail({
+        image: ee.Image.pixelLonLat().select(1),
+        params: {
+            bbox: [0, 0, 1, 1],
+            dimensions: '12x60',
+            format: 'png',
+            min: 0,
+            max: 1,
+            palette: palette,
+        },
+        style: {
+            stretch: 'vertical',
+            margin: '0px 0px',
+            border: '1px solid black',
+        }
+    });
+};
+
+// Define the color gradient
+
+var colorBar = makeColorBar(inverted_palette_colors_prob);
+
+// Create labels for the legend
+var legendLabels = ui.Panel({
+    widgets: [
+        ui.Label('0%', {
+            margin: '0 0 0px 5px'
+        }),
+        ui.Label('50%', {
+            margin: '10px 0 0px 5px',
+            textAlign: 'center'
+        }),
+        ui.Label('100%', {
+            margin: '10px 0 0px 5px',
+            textAlign: 'right'
+        })
+    ],
+    style: {
+        fontSize: '10px',
+        padding: '0px 0',
+        position: 'bottom-left'
+    }
+});
+
+// Create a panel to hold the color bar and labels side by side
+var legendPanel = ui.Panel({
+    widgets: [colorBar, legendLabels],
+    layout: ui.Panel.Layout.flow('horizontal')
+});
+
+// Add the combined panel to the legend
+legend.add(legendPanel);
+
+/*
+// Define a list of thresholds to define the different categories in your legend
+var thresholds = [0, 20, 40, 60, 80, 100];
+
+// Create a panel for each category
+for (var i = 0; i < classProbVisualization.palette.length; i++) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: classProbVisualization.palette[i],
+      padding: '6px',
+      margin: '0 0 4px 0',
+      border: '1px solid black'
+    }
+  });
+
+  var description = ui.Label({
+    value: thresholds[i] + ' - ' + thresholds[i + 1] + '%',
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  legend.add(ui.Panel([colorBox, description], ui.Panel.Layout.Flow('horizontal')));
+}
+
+*/
+
+
+
+// add legend to map (alternatively you can also print the legend to the console)
+Map.add(legend);

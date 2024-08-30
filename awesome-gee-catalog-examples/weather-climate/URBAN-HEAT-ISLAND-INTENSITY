@@ -1,0 +1,35 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var AMOD2 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/AMOD2"),
+    MOD1 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/MOD1"),
+    MOD2 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/MOD2"),
+    MYD1 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/MYD1"),
+    MYD2 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/MYD2"),
+    SAT = ee.ImageCollection("projects/sat-io/open-datasets/UHII/SAT"),
+    SMOD2 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/SMOD2"),
+    SMYD1 = ee.ImageCollection("projects/sat-io/open-datasets/UHII/SMYD1");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+
+// Function to calculate and visualize the average UHII from an ImageCollection
+function visualizeUHII(collection, title) {
+  var uhi = collection.first().mask(collection.first().gt(0));
+
+  Map.addLayer(uhi, {
+    min: 1,
+    max: 25,
+    palette: ['#000004', '#1f0c48', '#550f6d', '#88226a', '#b63655', '#de4968', '#f87d46', '#fdca26', '#f0f921']
+  }, title);
+}
+
+
+// Visualize UHII from different collections
+visualizeUHII(AMOD2, 'UHII - AMOD2');
+visualizeUHII(MOD1, 'UHII - MOD1');
+visualizeUHII(MOD2, 'UHII - MOD2');
+visualizeUHII(MYD1, 'UHII - MYD1');
+visualizeUHII(MYD2, 'UHII - MYD2');
+visualizeUHII(SAT, 'UHII - SAT');
+visualizeUHII(SMOD2, 'UHII - SMOD2');
+visualizeUHII(SMYD1, 'UHII - SMYD1');

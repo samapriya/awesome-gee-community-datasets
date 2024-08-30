@@ -19,6 +19,71 @@ var visParams = {
 Map.addLayer(aws0_5_image, {min: 0,max: 30,palette: ['blue', 'green', 'yellow', 'orange', 'red']}, 'Available water storage estimate (AWS) 0-5 cm');
 Map.addLayer(aws0_20_image, {min: 0,max: 120,palette: ['blue', 'green', 'yellow', 'orange', 'red']}, 'Available water storage estimate (AWS) 0-20 cm');
 
+// Load the SOC ImageCollections
+var soc0_100 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_100');
+var soc0_150 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_150');
+var soc0_20 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_20');
+var soc0_30 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_30');
+var soc0_5 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_5');
+var soc0_999 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc0_999');
+var soc100_150 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc100_150');
+var soc150_999 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc150_999');
+var soc20_50 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc20_50');
+var soc50_100 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc50_100');
+var soc5_20 = ee.ImageCollection('projects/sat-io/open-datasets/gNATSGO/raster/soc5_20');
+
+// Visualization parameters
+
+var visParams = {
+  min: 0,
+  max: 10000,
+  palette: [
+    '440154', // Deep purple
+    '482878', // Purple-blue
+    '3E4A89', // Blue
+    '31688E', // Teal-blue
+    '26828E', // Green-blue
+    '1F9E89', // Green-cyan
+    '35B779', // Light green
+    '6DCD59', // Yellow-green
+    'B4DE2C', // Yellow
+    'FDE725', // Bright yellow
+    'FCA636', // Orange
+    'F58526', // Deep orange
+    'F04520', // Red-orange
+    'D73027', // Red
+    'A50026'  // Deep red
+  ]
+};
+
+
+
+// Select the first image from each collection
+var soc0_100_img = soc0_100.mosaic();
+var soc0_150_img = soc0_150.mosaic();
+var soc0_20_img = soc0_20.mosaic();
+var soc0_30_img = soc0_30.mosaic();
+var soc0_5_img = soc0_5.mosaic();
+var soc0_999_img = soc0_999.mosaic();
+var soc100_150_img = soc100_150.mosaic();
+var soc150_999_img = soc150_999.mosaic();
+var soc20_50_img = soc20_50.mosaic();
+var soc50_100_img = soc50_100.mosaic();
+var soc5_20_img = soc5_20.mosaic();
+
+// Add layers to the map with labels
+Map.addLayer(soc0_100_img, visParams, 'SOC 0-100 cm');
+Map.addLayer(soc0_150_img, visParams, 'SOC 0-150 cm');
+Map.addLayer(soc0_20_img, visParams, 'SOC 0-20 cm');
+Map.addLayer(soc0_30_img, visParams, 'SOC 0-30 cm');
+Map.addLayer(soc0_5_img, visParams, 'SOC 0-5 cm');
+Map.addLayer(soc0_999_img, visParams, 'SOC 0-999 cm');
+Map.addLayer(soc100_150_img, visParams, 'SOC 100-150 cm');
+Map.addLayer(soc150_999_img, visParams, 'SOC 150-999 cm');
+Map.addLayer(soc20_50_img, visParams, 'SOC 20-50 cm');
+Map.addLayer(soc50_100_img, visParams, 'SOC 50-100 cm');
+Map.addLayer(soc5_20_img, visParams, 'SOC 5-20 cm');
+
 var snazzy = require("users/aazuspan/snazzy:styles");
 snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");
 

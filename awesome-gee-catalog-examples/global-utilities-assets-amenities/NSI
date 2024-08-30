@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var buildings = ee.FeatureCollection("projects/sat-io/open-datasets/OVERTURE/BUILDINGS/CONUS-EXTRACT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(buildings.style({color:'blue'}), {}, 'Buildings CONUS Extract');
+
+var nsi_wy = ee.FeatureCollection('projects/sat-io/open-datasets/NSI/nsi_2022_WY');
+Map.centerObject(nsi_wy.first(),16)
+Map.addLayer(nsi_wy.style({color:'red'}), {}, 'NSI');

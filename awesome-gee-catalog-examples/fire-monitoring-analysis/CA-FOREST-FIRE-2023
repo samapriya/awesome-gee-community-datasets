@@ -1,0 +1,71 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var image = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Wildfire_2023_Summer_Fall");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names":    ["Summer Fire", "Fall Fire"],
+    "colors": ["#de2f14", "#dec314"]};
+
+Map.setCenter(-97.61655457157725, 55.6280720462063, 4)
+
+
+// Add image to the map
+Map.addLayer(image, {min:1, max:2, palette:dict['colors']}, 'Summer-Fall 2023 Wildfires')
+
+/////////////////////////////////////////////////////////////////////////
+
+var legend = ui.Panel({
+  style: {
+    position: 'middle-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create and add the legend title.
+var legendTitle = ui.Label({
+  value: 'Summer-Fall 2023 Wildfire',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+legend.add(legendTitle);
+
+// Creates and styles 1 row of the legend.
+var makeRow = function(color, name) {
+  // Create the label that is actually the colored box.
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: color,
+      // Use padding to give the box height and width.
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+
+// Create the label filled with the description text.
+var description = ui.Label({
+  value: name,
+  style: {margin: '0 0 4px 6px'}
+});
+
+return ui.Panel({
+  widgets: [colorBox, description],
+  layout: ui.Panel.Layout.Flow('horizontal')
+});
+  
+};
+var palette = dict['colors'];
+var names = dict['names'];
+
+for (var i = 0; i < names.length; i++) {
+  legend.add(makeRow(palette[i], names[i]));
+}
+
+// Print the panel containing the legend
+print(legend);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
