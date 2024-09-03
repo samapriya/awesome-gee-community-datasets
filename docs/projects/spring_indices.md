@@ -16,6 +16,9 @@ At the present, the 1 km SI-x products are available over two study areas
 ```
 Izquierdo-Verdiguier, Emma, Raúl Zurita-Milla, Toby R. Ault, and Mark D. Schwartz. "Development and analysis of spring plant phenology products: 36
 years of 1-km grids over the conterminous US." Agricultural and forest meteorology 262 (2018): 34-41.
+
+Izquierdo-Verdiguier, Emma, and Raúl Zurita-Milla. "A multi-decadal 1 km gridded database of continental-scale spring onset products."
+Scientific Data 11.1 (2024): 905. (https://www.nature.com/articles/s41597-024-03710-5).
 ```
 
 | First Leaf Index over Contiguous US | First Leaf Index over Europe |
