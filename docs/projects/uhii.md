@@ -6,6 +6,17 @@ neglecting all-sky surface and canopy (air temperature) UHII. These approaches o
 
 The dataset reveals that UHII is greater than zero in more than 80% of the studied cities, with global annual average magnitudes around 1.0°C (day) and 0.8°C (night) for surface UHII, and approximately 0.5°C for canopy UHII. Moreover, an interannual upward trend in UHII is observed in over 60% of cities, with global average trends exceeding 0.1°C per decade (day) and 0.06°C per decade (night) for surface UHII, and slightly over 0.03°C per decade for canopy UHII. A positive correlation is also identified between the magnitude and trend of UHII, indicating that cities with stronger UHII tend to experience faster growth in UHII over time. The dataset further highlights discrepancies in UHII estimates based on differences in data types (surface or air temperature), data acquisition times (Terra or Aqua), weather conditions (clear-sky or all-sky), and processing methodologies. This comprehensive dataset and the accompanying analysis offer valuable insights for future urban climate studies and are publicly accessible at [https://doi.org/10.6084/m9.figshare.24821538](https://doi.org/10.6084/m9.figshare.24821538). A global dataset of urban heat island using multiple methods and including estimates for both air temperature and land surface temperature. It is available monthly from 2003 to 2020 (from 2001 for the dataset from MODIS Terra satellite). You can read more information [in the paper here](https://www.sciencedirect.com/science/article/pii/S0034425724003614?dgcid=coauthor)
 
+<div class="result" markdown>
+
+???+ note
+
+    **The "Diurnal" field can be either "Day" or "Nig", signifying daytime and nighttime UHII, respectively. "Year” denotes the UHII year, and "Month” indicates the specific       month. It’s important to note that, besides monthly UHII results, we also provide quarterly and annual averages. When “Month” takes values from 1 to 12, it signifies         the monthly average. If “Month” is between 21 and 24, it indicates the quarterly average (21 for March-May, 22 for June-August, 23 for September-November, and 24 for         December-February). When “Month” is 30, it denotes the annual average. The UHII value can be converted to degrees Celsius by multiplying a scaling factor of 0.01.**
+
+</div>
+
+
+
+
 #### Dataset Details
 
 | Indicator                                         | Data Source                             | Period     | Description                                                                                                                                                       |
@@ -57,4 +68,8 @@ Curated in GEE by : Samapriya Roy
 
 Keywords: urban, heat, climate, city
 
-Last updated: 2024-08-29
+Last updated: 2024-09-06
+
+#### Changelog
+- Added extra properties for filtering and sorting
+- Updated collections to include missing data
