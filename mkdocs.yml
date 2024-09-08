@@ -170,6 +170,7 @@ nav:
               - High Resolution Settlement Layers: projects/hrsl.md
               - LandScan Population Data: projects/landscan.md
               - POMELO Model Population Density Maps: projects/pomelo.md
+              - POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2: projects/popcorn.md
               - GPW Version 4 Admin Units: projects/GPWv4.md
               - geoBoundaries Global Database of Political Administrative Boundaries: projects/geoboundary.md
               - Edge-matched Global, Subnational and operational Boundaries: projects/edge_matched.md

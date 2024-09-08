@@ -23461,9 +23461,20 @@
     "type": "image",
     "id": "projects/sat-io/open-datasets/POMELO/POMELOv1",
     "provider": "Metzger et al 2022",
-    "tags": "University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture",
+    "tags": "population mapping, developing countries, population density, humanitarian actions",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/pomelo/",
+    "thematic_group": "Population & Socioeconomic"
+  },
+  {
+    "title": "POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/POPCORN-POPULATION-DENSITY",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/POPCORN/POPCORNv1",
+    "provider": "Metzger et al 2024",
+    "tags": "population mapping, developing countries, population density, humanitarian actions, machine learning models",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/popcorn/",
     "thematic_group": "Population & Socioeconomic"
   },
   {
