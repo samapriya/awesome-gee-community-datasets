@@ -33,3 +33,10 @@ Map.addLayer(gmw_core_raster,{"opacity":1,"bands":["b1"],"min":1,"max":1,"palett
 //Tiles
 var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
 Map.addLayer(ee.Image().paint(tiles,0,3), {"palette":["#000000"]}, 'Tiles')
+
+//Extent v4
+var raster_extent = ee.ImageCollection("projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_2020");
+var vector_extent = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_VEC_2020");
+Map.addLayer(raster_extent.median(),{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'GMW Raster Extent 2020  v4.0.19')
+Map.addLayer(ee.Image().paint(vector_extent,0,3), {"palette":["red"]}, 'GMW Vector Extent 2020 v4.0.19')
+

@@ -1,0 +1,16 @@
+// Load administrative boundaries for Indonesia
+var admin1 = ee.FeatureCollection("projects/sat-io/open-datasets/geoboundaries/HPSCGS-ADM1");
+var geometry = admin1.filter(ee.Filter.eq('shapeGroup', 'IDN'));
+
+Map.centerObject(geometry, 4);
+Map.setOptions("Hybrid");
+
+var peat = ee.Image("projects/sat-io/open-datasets/ML-GLOBAL-PEATLAND-EXTENT")
+    .clip(geometry)
+    .unmask();
+
+// Display the results
+Map.addLayer(peat.clip(geometry),
+  {min: 0, max: 100, palette: ['#f7fcf5', '#c7e9c0', '#74c476', '#238b45', '#00441b']},
+  'Peatland Distribution', true
+  );

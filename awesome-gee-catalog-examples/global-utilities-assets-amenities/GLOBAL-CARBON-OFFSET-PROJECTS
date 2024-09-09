@@ -1,0 +1,15 @@
+var carbonoffsetscol = ee.FeatureCollection('projects/sat-io/open-datasets/CARBON-OFFSET-PROJECTS-GLOBAL');
+
+var visParams = {
+    palette: ['#9ab555'],
+    min: 0.0,
+    max: 1550000.0,
+    opacity: 0.8,
+};
+var carbonoffsets = ee.Image().float().paint(carbonoffsetscol, 'REP_AREA');
+
+Map.setCenter(-52.692,-2.628,6)
+Map.addLayer(carbonoffsets, visParams, 'Existing carbon projects area');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

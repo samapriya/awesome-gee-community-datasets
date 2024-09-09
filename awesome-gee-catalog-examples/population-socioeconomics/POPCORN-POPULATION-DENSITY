@@ -1,0 +1,95 @@
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+
+
+// load the population density
+var popDensity = ee.Image("projects/ee-nandometzger/assets/POPCORNv1");
+
+// Define the inferno color palette
+var infernoPalette = [
+  '#000004', '#1b0c41', '#4a0c6b', '#781c81', '#a52c7a', '#cf4446',
+  '#ed721c', '#fb9b06', '#f7d03c', '#fcffa4'
+];
+
+// Define visualization parameters.
+var visParams = {
+  min: 0,
+  max: 4,
+  palette: infernoPalette,
+  opacity: 0.8 // 70% transparent
+};
+
+
+// Mask out the lowest values (e.g., less than a certain threshold)
+var threshold = 0.08;
+var maskedPopDensity = popDensity.updateMask(popDensity.gt(threshold));
+
+// Add the masked population density layer to the map.
+Map.addLayer(maskedPopDensity, visParams, 'Population Density');
+
+// Create a legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px',
+  }
+});
+
+// Create legend title
+var legendTitle1 = ui.Label({
+  value: 'POPCORN',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '32px',
+    margin: '0 0 4px 0',
+    padding: '0'
+    }
+});
+
+legend.add(legendTitle1);
+
+// Create another legend title
+var legendTitle2 = ui.Label({
+  value: 'Population Density [People/ha]',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+    }
+});
+
+legend.add(legendTitle2);
+
+// Create a continuous color legend
+var legendImage = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '300x15',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: infernoPalette,
+  },
+  style: { margin: '0 0 4px 0' },
+});
+
+legend.add(legendImage);
+
+// Create labels for min and max values
+var minLabel = ui.Label(visParams.min.toString(), { margin: '0 269px 4px 0' });
+var maxLabel = ui.Label(visParams.max.toString(), { margin: '0 0 4px 0' });
+
+// Add labels to the legend
+var labelsPanel = ui.Panel([minLabel, maxLabel], ui.Panel.Layout.flow('horizontal'));
+legend.add(labelsPanel);
+Map.setControlVisibility({all: false});
+
+// Add the legend to the map
+Map.add(legend);
+
+// Center map for the rwanda/DRC boarder scene
+Map.setCenter(29.244453536522037, -1.6857641047022471, 13); // The third parameter is the zoom level.
+

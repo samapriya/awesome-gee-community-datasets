@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var csi_great_basin = ee.ImageCollection("projects/sat-io/open-datasets/CSI/Great_Basin");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+
+var mosaic = csi_great_basin.mosaic();
+
+var palette = [
+  'FF0000',
+  'FFA500',
+  'FFFF00',
+  'ADFF2F',
+  '008000'
+];
+
+var visParams = {
+  min: -1,
+  max: 1,
+  palette: palette
+};
+
+Map.centerObject(csi_great_basin.first(),6)
+
+Map.addLayer(mosaic.select('CSI'), visParams, 'Great Basin Carbon Security Index');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
