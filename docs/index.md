@@ -21,7 +21,7 @@ You can read about the history and how this project started in the [Medium Post 
 
 <center>
 
-![logo_cropped](https://github.com/user-attachments/assets/9a057577-59a4-4f49-8b90-b86bdc19ebca)
+![logo_cropped](https://github.com/user-attachments/assets/1d86c7bb-3333-4227-80f8-b93d1a0875b8)
 
 </center>
 
