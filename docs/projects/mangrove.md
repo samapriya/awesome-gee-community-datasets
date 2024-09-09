@@ -86,9 +86,27 @@ Vector layer with the 1x1 degree tiles used for the analysis
 var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
 ```
 
+Resolution: approx 30m
+
+#### Global Mangrove Watch: Annual Mangrove Extent 4.0.19
+
+To improve the resolution and local relevance of the Global Mangrove Watch (GMW) baseline, a new layer has been created for 2020. Using Copernicus Sentinel-2 satellite imagery, processed to a pixel resolution of 10 m, the mangrove extent has been completely remapped and revised with many areas which were not previously mapped now included within the new map. This has increased the spatial resolution of the mapping from a pixel resolution of 25 m to 10 m, allowing finer features to be mapped, such as fringing and riverine mangroves.
+
+#### Earth Engine Snippet: Sentinel Raster and Vector Baseline v4.0.19
+
+```js
+//Extent v4.0.19
+var raster_extent = ee.ImageCollection("projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_2020");
+var vector_extent = ee.FeatureCollection("projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_VEC_2020");
+Map.addLayer(raster_extent.median(),{"opacity":1,"bands":["b1"],"min":1,"max":1,"palette":["228B22"]},'GMW Raster Extent 2020  v4.0.19')
+Map.addLayer(ee.Image().paint(vector_extent,0,3), {"palette":["red"]}, 'GMW Vector Extent 2020 v4.0.19')
+
+```
+
+Resolution: approx 10m
+
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH
 
-Resolution: approx 30m
 
 #### License & Usage
 Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -97,4 +115,9 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: Global, Mangrove, GMW, 1996, 2020
 
-Last updated: 2022-09-16
+Last updated: 2024-09-08
+
+#### Changelog
+
+##### Updated 2024-09-08
+- Added Sentinel derived v4.0.19 raster and vector extent

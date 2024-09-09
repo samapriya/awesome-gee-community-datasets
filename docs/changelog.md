@@ -3,6 +3,16 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2024-09-08
+- Added [POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2](https://gee-community-catalog.org/projects/popcorn/)
+- Added [Carbon Security Index](https://gee-community-catalog.org/projects/csi/)
+- Added [Carbon Offset Project Boundaries](https://gee-community-catalog.org/projects/carbon_projects/)
+- Added [Global Peatland Database](https://gee-community-catalog.org/projects/peatland/)
+- Added [Global Peatland Fractional Coverage](https://gee-community-catalog.org/projects/peatland_ml/)
+- Updated [Urban Heat Island Intensity (UHII)](https://gee-community-catalog.org/projects/uhii/) to add metadata properties and additional images
+- Updated [Global Mangrove Watch](https://gee-community-catalog.org/projects/mangrove/) added Global Mangrove Watch: Annual Mangrove Extent 4.0.19
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-08-30
 - Added [Urban Heat Island Intensity (UHII)](https://gee-community-catalog.org/projects/uhii/)
 - Added [High Res Extended Spring Indices database](https://gee-community-catalog.org/projects/spring_indices)

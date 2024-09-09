@@ -385,6 +385,28 @@
     "thematic_group": "Global Land Use and Land Cover"
   },
   {
+    "title": "Global Mangrove Watch 2020 Raster Extent v4.0.19: Raster",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_2020",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW, Sentinel",
+    "license": "Creative Commons Attribution Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/mangrove/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
+    "title": "Global Mangrove Watch 2020 Raster Extent v4.0.19: Vector",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMW/annual-extent/GMW_MNG_VEC_2020",
+    "provider": "Global Mangrove Watch, Aberystwyth University, solo Earth Observation, Wetlands Institute, International Water Management Institute, UN Environment World Conservation Monitoring Center",
+    "tags": "Global, Mangrove, GMW, Sentinel",
+    "license": "Creative Commons Attribution Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/mangrove/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
     "title": "Cloud Forest Prediction",
     "sample_code": "https://earthenv-dot-map-of-life.appspot.com/4/20.650/15.675?collections=cloud&layers=Seasonality",
     "type": "image",
