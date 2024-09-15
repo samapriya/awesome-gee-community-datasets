@@ -21694,10 +21694,10 @@
     "thematic_group": "Population & Socioeconomic"
   },
   {
-    "title": "Digital Earth Australia Coastlines v210 Shorlines",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
+    "title": "Digital Earth Australia Coastlines v220 Shorlines",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorelines",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_shorelines_annual",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v220_shorelines_annual",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
@@ -21705,10 +21705,10 @@
     "thematic_group": "Oceans and Shorelines"
   },
   {
-    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 1",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
+    "title": "Digital Earth Australia Coastlines v220 Hotspots Zoom 1",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorelines",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_1",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v220_hotspots_zoom_1",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
@@ -21716,10 +21716,10 @@
     "thematic_group": "Oceans and Shorelines"
   },
   {
-    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 2",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
+    "title": "Digital Earth Australia Coastlines v220 Hotspots Zoom 2",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorelines",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_2",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v220_hotspots_zoom_2",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
@@ -21727,10 +21727,10 @@
     "thematic_group": "Oceans and Shorelines"
   },
   {
-    "title": "Digital Earth Australia Coastlines v210 Hotspots Zoom 3",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
+    "title": "Digital Earth Australia Coastlines v220 Hotspots Zoom 3",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorelines",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_hotspots_zoom_3",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v220_hotspots_zoom_3",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
@@ -21738,10 +21738,10 @@
     "thematic_group": "Oceans and Shorelines"
   },
   {
-    "title": "Digital Earth Australia Coastlines v210 Rate of Change",
-    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorlines-V210",
+    "title": "Digital Earth Australia Coastlines v220 Rate of Change",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEA-Shorelines",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v210_rates_of_change",
+    "id": "projects/sat-io/open-datasets/DEA/COASTLINES/coastlines_v220_rates_of_change",
     "provider": "Digital Earth Australia",
     "tags": "Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction,subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
