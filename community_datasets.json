@@ -21804,6 +21804,17 @@
     "thematic_group": "Oceans and Shorelines"
   },
   {
+    "title": "Congo Basin Forest Roads",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/FOREST-ROADS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/DEAF/COASTLINES/coastlines_v040_rates_of_change",
+    "provider": "Slagter et al. 2024",
+    "tags": "Congo Basin, forest roads, road development, Sentinel-1, Sentinel-2, deep learning, selective logging, deforestation, illegal logging, forest conservation",
+    "license": "Creative Commons Attribution Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/forest_roads/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
     "title": "GlobCover v2.2 2004-2006",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-GLOBCOVER",
     "type": "image",
@@ -22647,6 +22658,28 @@
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/dynqual/",
     "thematic_group": "Hydrology"
+  },
+  {
+    "title": "QDANN 30m Yield Map for Corn, Soy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/QDANN-30M-YIELD-MAPS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/lobell-lab/VAE_QDANN_YIELD_MAP/CORN_SOY_MAP",
+    "provider": "Ma,Yuchi et al. 2024, Lobell Lab",
+    "tags": "corn,soybean,winter wheat,yield",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/qdann/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
+    "title": "QDANN 30m Yield Map for Winter Wheat",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/QDANN-30M-YIELD-MAPS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/lobell-lab/VAE_QDANN_YIELD_MAP/WINTER_WHEAT_MAP",
+    "provider": "Ma,Yuchi et al. 2024, Lobell Lab",
+    "tags": "corn,soybean,winter wheat,yield",
+    "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/qdann/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
   },
   {
     "title": "USDA Crop Sequence Boundaries 2016-2023: AL",

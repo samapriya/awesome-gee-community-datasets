@@ -20,7 +20,8 @@ The road detection method integrates Sentinel-1 radar and Sentinel-2 optical ima
 #### Citation
 
 ```
-Slagter, Bart, Kurt Fesenmyer, Matthew Hethcoat, Ethan Belair, Peter Ellis, Fritz Kleinschroth, Marielos Peña-Claros, Martin Herold, and Johannes Reiche. "Monitoring road development in Congo Basin forests with multi-sensor satellite imagery and deep learning." Remote Sensing of Environment (2024): 114380.
+Slagter, Bart, Kurt Fesenmyer, Matthew Hethcoat, Ethan Belair, Peter Ellis, Fritz Kleinschroth, Marielos Peña-Claros, Martin Herold, and Johannes Reiche. "Monitoring road
+development in Congo Basin forests with multi-sensor satellite imagery and deep learning." Remote Sensing of Environment (2024): 114380.
 ```
 
 #### Data Citation
