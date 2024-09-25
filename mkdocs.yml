@@ -221,13 +221,13 @@ nav:
               - Global Mangrove Distribution, Aboveground Biomass, and Canopy Height: projects/gmd.md
               - Global Mangrove Canopy Height Maps Derived from TanDEM-X: projects/mangrove_ht_tandemx.md
               - Randolph Glacial Inventory: projects/rgi.md
+              - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
               - ESRI 2020 Global Land Use Land Cover from Sentinel-2: projects/esrilc2020.md
               - ESRI 10m Annual Land Cover (2017-2023): projects/S2TSLULC.md
-              - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
               - GlobCover Global Land Cover: projects/globcover_esa.md
               - GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022): projects/glc_fcs.md
+              - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
               - Daylight Map Distribution map data: projects/daylight_maps.md
-              - Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10): projects/glc10.md
               - GLANCE Global Landcover Training dataset: projects/glance_training.md
               - Global Impervious Surface Area (1972-2019): projects/gisa.md
               - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
