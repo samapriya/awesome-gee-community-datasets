@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog Search</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            /* Optional background color */
+            position: relative;
+            /* Position relative for footer placement */
+        }
+
+        #searchWidgetTrigger {
+            padding: 10px;
+            width: 600px;
+            /* Wider width for search bar */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            /* More rounded edges */
+            cursor: pointer;
+            /* Indicate it's clickable */
+            text-align: center;
+            /* Center align the text in the search bar */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Optional shadow for emphasis */
+            padding-left: 40px;
+            /* Additional padding to accommodate the icon */
+        }
+
+        .header {
+            margin-bottom: 20px;
+            /* Space between header and search bar */
+            font-size: 20px;
+            font-weight: bold;
+            /* Make the text bold */
+            color: black;
+            /* Set header text color to black */
+            text-align: center;
+            /* Center the header text */
+        }
+
+        .search-container {
+            position: relative;
+            /* Relative positioning for the icon */
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            /* Position the icon */
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
+            /* Adjust vertical alignment */
+            font-size: 24px;
+            /* Icon size */
+            color: #aaa;
+            /* Color for the icon */
+        }
+
+        /* Style for powered by Vertex AI box */
+        .powered-by {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            /* Move to bottom left corner */
+            background-color: #ffffff;
+            /* White background for the box */
+            padding: 5px 10px;
+            /* Padding around the text */
+            border: 1px solid #ccc;
+            /* Border for the box */
+            border-radius: 4px;
+            /* Rounded corners */
+            font-size: 12px;
+            /* Font size for the text */
+            color: #000;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline from links */
+        }
+
+        .powered-by a {
+            color: #000;
+            /* Link color */
+            text-decoration: none;
+            /* Remove underline from links */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Image above the search bar -->
+    <img src="https://i.imgur.com/FYPcTFF.png" alt="Awesome GEE Community Catalog"
+        style="width: 350px; height: auto; margin-bottom: 20px;">
+
+    <div class="header">
+        Awesome GEE Community Catalog Search <sub>Beta</sub>
+    </div>
+
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+
+    <!-- Search widget element -->
+    <gen-search-widget configId="42d7a6f0-38be-4aba-bf7e-cdb63596f581"
+        triggerId="searchWidgetTrigger"></gen-search-widget>
+
+    <!-- Search bar container -->
+    <div class="search-container">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Search here" id="searchWidgetTrigger" />
+    </div>
+
+    <script>
+        // List of default questions
+        const questions = [
+            "Tell me about the ESRI Land cover dataset",
+            "What data is available in the Awesome GEE Community catalog?",
+            "Give me a list of all tree canopy datasets",
+            "What population datasets can I explore in the catalog?",
+            "Give me the citation for the FABDEM dataset?",
+            "Tell me about the Mangrove extent datasets in the catalog"
+        ];
+
+        // Function to get a random question from the list
+        function getRandomQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            return questions[randomIndex];
+        }
+
+        // Set a random question in the search bar on page load
+        document.getElementById('searchWidgetTrigger').value = getRandomQuestion();
+
+        // Ensuring the widget opens on click
+        document.getElementById('searchWidgetTrigger').addEventListener('click', function () {
+            const widget = document.querySelector('gen-search-widget');
+            widget.open(); // Open the search widget
+        });
+    </script>
+
+</body>
+
+</html>
