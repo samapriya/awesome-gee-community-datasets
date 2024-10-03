@@ -3,6 +3,14 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2024-10-03
+- Release 3.0.0 for the Awesome GEE Community Catalog
+- Added [Large Language Model & AI enabled search to the Community Catalog](https://gee-community-catalog.org/search)
+- Added [QDANN 30m Yield Map](https://gee-community-catalog.org/qdann)
+- Added [Congo Basin Forest Roads](https://gee-community-catalog.org/forest_roads)
+- Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorlines) to include 2023 shorelines
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-09-08
 - Added [POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2](https://gee-community-catalog.org/projects/popcorn/)
 - Added [Carbon Security Index](https://gee-community-catalog.org/projects/csi/)

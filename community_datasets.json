@@ -22682,6 +22682,17 @@
     "thematic_group": "Agriculture, Vegetation and Forestry"
   },
   {
+    "title": "Global Cropping Intensity Dataset 30m",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GCI",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GCI30",
+    "provider": "Zhang et al 2021",
+    "tags": "cropping intensity,crop cycle,average crop intensity",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/gci30/",
+    "thematic_group": "Agriculture, Vegetation and Forestry"
+  },
+  {
     "title": "USDA Crop Sequence Boundaries 2016-2023: AL",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP",
     "type": "table",
