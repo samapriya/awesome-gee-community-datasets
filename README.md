@@ -7,7 +7,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream2](https://img.shields.io/badge/Supported%20by-Jetstream2-brightgreen)](https://jetstream-cloud.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13733838.svg)](https://doi.org/10.5281/zenodo.13733838)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13885957.svg)](https://doi.org/10.5281/zenodo.13885957)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 [![Donate](https://img.shields.io/badge/Donate-Buy%20me%20a%20Coffee-teal)](https://www.buymeacoffee.com/samapriya)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
@@ -27,6 +27,6 @@ https://gee-community-catalog.org/
 #### Citation
 
 ```
-Samapriya Roy, Emily (Miller) Dorne, Somasundaram, D., Swetnam, T., & Saah, A. (2024). samapriya/awesome-gee-community-datasets:
-Community Catalog (2.9.0). Zenodo. https://doi.org/10.5281/zenodo.13733838
+Samapriya Roy, Swetnam, T., Shen, C., Somasundaram, D., & Saah, A. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (3.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.13885957
 ```
