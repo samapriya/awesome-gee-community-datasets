@@ -7,8 +7,8 @@ We encourage participation in our releases by contributing code examples, tutori
 ## Citation
 
 ```
-Samapriya Roy, Emily (Miller) Dorne, Somasundaram, D., Swetnam, T., & Saah, A. (2024). samapriya/awesome-gee-community-datasets:
-Community Catalog (2.9.0). Zenodo. https://doi.org/10.5281/zenodo.13733838
+Samapriya Roy, Swetnam, T., Shen, C., Somasundaram, D., & Saah, A. (2024). samapriya/awesome-gee-community-datasets: Community Catalog (3.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.13885957
 ```
 
 ## Earn your place in the citation
