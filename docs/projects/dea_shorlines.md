@@ -65,7 +65,7 @@ Keywords : Sea, ocean and coast, marine and coastal, coast, erosion, waterline e
 subpixel waterlines, coastal change, DEA CoastLines, coastline data, coastal erosion
 
 #### Changelog
-* In August 2024 , the DEA Coastlines product was updated to version 2.1.0. This update consists of the addition of annual shoreline data for 2022.
+* In August 2024 , the DEA Coastlines product was updated to version 2.2.0. This update consists of the addition of annual shoreline data for 2023.
 * In August 2023, the DEA Coastlines product was updated to version 2.1.0. This update consists of the addition of annual shoreline data for 2022. The 2022 shoreline is interim data that is subject to change, and will be updated to a final version in the following 2023 DEA Coastlines update (in July 2024).
 
 Last updated : 2024-09-13
