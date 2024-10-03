@@ -5,9 +5,9 @@
 
 #### Updated 2024-10-03
 - Release 3.0.0 for the Awesome GEE Community Catalog
-- Added [Large Language Model & AI enabled search to the Community Catalog](https://gee-community-catalog.org/search)
-- Added [QDANN 30m Yield Map](https://gee-community-catalog.org/qdann)
-- Added [Congo Basin Forest Roads](https://gee-community-catalog.org/forest_roads)
+- Added [Large Language Model (Gemini) enabled search for the Community Catalog](https://gee-community-catalog.org/search)
+- Added [QDANN 30m Yield Map](https://gee-community-catalog.org/projects/qdann)
+- Added [Congo Basin Forest Roads](https://gee-community-catalog.org/projects/forest_roads)
 - Updated [Digital Earth Australia Shorelines dataset](https://gee-community-catalog.org/projects/dea_shorlines) to include 2023 shorelines
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
