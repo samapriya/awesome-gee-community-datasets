@@ -36,3 +36,29 @@ jobs:
         run: |
           mkdocs gh-deploy --force
           mkdocs --version
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: gh-pages
+
+      - name: Download search.html
+        run: |
+          curl -o search.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/search.html
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+
+      - name: Commit search.html to gh-pages
+        run: |
+          git add search.html
+          git commit -m "Add search.html from external source"
+
+      - name: Push changes to gh-pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin gh-pages
