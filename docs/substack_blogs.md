@@ -3,6 +3,8 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [The Hitchhiker's Guide to Vector Embeddings in Machine Learning (for Geographers)](https://datacommons.substack.com/p/the-hitchhikers-guide-to-vector-embeddings)
+* [Can AI Turn Slides into Podcasts? My NotebookLM Experiment](https://datacommons.substack.com/p/can-ai-turn-slides-into-podcasts)
 * [What's Cooking in Google Earth Engine Community Catalog Release 2.9.0](https://datacommons.substack.com/p/whats-cooking-in-google-earth-engine)
 * [Catalog Updates & Must-Have Datasets With Community Catalog Release 2.8.0](https://datacommons.substack.com/p/catalog-updates-and-must-have-datasets)
 * [Reimagining the Community Catalog](https://datacommons.substack.com/p/reimagining-the-community-catalog)
