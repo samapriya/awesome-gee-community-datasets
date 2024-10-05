@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-G7SXDJEWXV');
+    </script>
+    <style>
+        body {
+            font-family: "Afacad Flux", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        #searchWidgetTrigger {
+            padding: 10px;
+            width: 600px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding-left: 40px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            font-size: 32px;
+            /* Increased font size */
+            font-weight: 800;
+            /* Bolder text */
+            color: black;
+            text-align: center;
+        }
+
+        .header sub {
+            font-size: 16px;
+            /* Adjusted size for the subscript */
+            font-weight: 600;
+            /* Bolder subscript text */
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #aaa;
+        }
+
+        .powered-by {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            background-color: #ffffff;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .powered-by a {
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://i.imgur.com/FYPcTFF.png" alt="Awesome GEE Community Catalog"
+        style="width: 400px; height: auto; margin-bottom: 20px;">
+
+    <div class="header">
+        Awesome GEE Community Catalog Search <sub>Beta</sub>
+    </div>
+
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+
+    <gen-search-widget configId="9b5b8799-a13d-4322-aa4f-6ef1b0351a9b"
+        triggerId="searchWidgetTrigger"></gen-search-widget>
+
+    <div class="search-container">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Search here" id="searchWidgetTrigger" />
+    </div>
+
+    <script>
+        const questions = [
+            "Tell me about the ESRI Land cover dataset",
+            "What population datasets are avaialable in the community catalog?",
+            "Tell me about datasets related to crop phenology",
+            "Are there any datasets related to soil conditions?",
+            "Give me a list of all tree canopy datasets",
+            "What population datasets can I explore in the catalog?",
+            "Give me the citation for the FABDEM dataset?",
+            "Tell me about the Mangrove extent datasets in the catalog"
+        ];
+
+        function getRandomQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            return questions[randomIndex];
+        }
+
+        document.getElementById('searchWidgetTrigger').value = getRandomQuestion();
+
+        document.getElementById('searchWidgetTrigger').addEventListener('click', function () {
+            const widget = document.querySelector('gen-search-widget');
+            widget.open();
+        });
+    </script>
+
+</body>
+
+</html>
