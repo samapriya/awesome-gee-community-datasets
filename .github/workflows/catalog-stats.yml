@@ -1,0 +1,84 @@
+name: daily_stats
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8" # install the python version needed
+
+      - name: upgrade pip and install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U pip setuptools
+          pip install requests
+          pip install pytz
+      - name: json2csv
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import os
+            from datetime import datetime
+
+            import pytz
+            import requests
+
+            json_url = f'https://gist.githubusercontent.com/samapriya/c604537511cb7ef3b46376ee5aff22c4/raw'
+
+            response = requests.get(json_url)
+            data = response.json()
+
+            def update_markdown_file(filename, start_marker, end_marker):
+                """
+                Updates a markdown file with JSON data between specified markers.
+                Args:
+                    filename: The name of the markdown file.
+                    json_data: A dictionary containing the data to insert.
+                    start_marker: The marker indicating the start of the section to update.
+                    end_marker: The marker indicating the end of the section to update.
+                """
+                with open(filename, 'r', encoding='utf-8') as f:
+                    file_content = f.read()
+
+                start_index = file_content.find(start_marker) + len(start_marker)
+                end_index = file_content.find(end_marker)
+
+                new_content = ""
+                for key, value in data.items():
+                    new_content += f"* **{key}**: {value}\n"
+
+                updated_content = file_content[:start_index] + "\n" + new_content + file_content[end_index:]
+
+                with open(filename, 'w',encoding='utf-8') as f:
+                    f.write(updated_content)
+                print(f"Updated {filename} successfully!")
+
+            filename = "docs/stats.md"  # Replace with your markdown filename
+            start_marker = "<!-- START_MARKER -->"
+            end_marker = "<!-- END_MARKER -->"
+
+            update_markdown_file(filename, start_marker, end_marker)
+      - name: commit files
+        continue-on-error: true
+        run: |
+          export TZ="America/Chicago"
+          today=$(date +"%Y-%m-%d")
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "updated stats ${today} CDT" -a
+      - name: push changes
+        continue-on-error: true
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
