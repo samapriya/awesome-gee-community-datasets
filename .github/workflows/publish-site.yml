@@ -1,6 +1,10 @@
 name: Publish docs via GitHub
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["daily_stats"]  # Ensure this matches the name of the other workflow
+    types:
+      - completed
   push:
     branches:
       - master
