@@ -1,0 +1,22 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var corn_soybean = ee.ImageCollection("projects/sat-io/open-datasets/lobell-lab/VAE_QDANN_YIELD_MAP/CORN_SOY_MAP");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/**
+Modified GEE code to demostrate the QDANN Yield Map (corn and soybean)
+Band info: b1: corn; b2: soybean
+Unit: kg/ha
+Author: Samapriya Roy
+Date: 2024-09-22
+**/
+
+var vis = {bands: ['b1'], min: 4000, max: 16000, palette: ['black', 'blue', 'green', 'yellow' ,'red']}
+
+
+var mosaic_2008 = corn_soybean.filterDate('2008-01-01','2008-12-31')
+.mosaic();
+
+var mask = mosaic_2008.select('b1').neq(0)
+var masked = mosaic_2008.updateMask(mask)
+
+Map.setCenter(-89.0926, 41.18, 10)
+Map.addLayer(masked, vis, 'Corn Yield Map 2008 in kg/ha')

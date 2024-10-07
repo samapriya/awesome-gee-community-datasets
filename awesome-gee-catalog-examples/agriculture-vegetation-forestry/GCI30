@@ -1,0 +1,30 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var GCI30 = ee.ImageCollection("projects/sat-io/open-datasets/GCI30");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/72543/assassins-creed-iv", "Greyscale");
+
+// Average Cropping Intensity (Single/Double/Triple Cropping)
+var average_cropping_intensity = GCI30.median().mask(GCI30.median().neq(-1));
+var cropping_intensity_palette = ['#ffeda0', '#feb24c', '#f03b20', '#bd0026'];
+
+Map.addLayer(average_cropping_intensity.select('b1'), {
+  min: 1, 
+  max: 3, 
+  palette: cropping_intensity_palette
+}, 'Average Crop Intensity Single/Double/Triple Cropping');
+
+// Total Number of Crop Cycles
+var total_crop_cycles = GCI30.median().mask(GCI30.median().neq(-1));
+
+// Recode value 127 to 4 to make the palette continuous
+var recoded_crop_cycles = total_crop_cycles.select('b2').remap([127], [4]);
+
+var crop_cycles_palette = ['#762a83', '#af8dc3', '#e7d4e8', '#d9f0d3', '#7fbf7b', '#1b7837'];
+
+Map.addLayer(total_crop_cycles.select('b2'), {
+  min: 1, 
+  max: 4, 
+  palette: crop_cycles_palette
+}, 'Total Number of Crop Cycles (Recode)');
+

@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var forest_roads = ee.FeatureCollection("projects/wurnrt-loggingroads/assets/distribution/forestroads_afr_2019-01_2023-12");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(12.7254,-1.2772,10)
+Map.addLayer(forest_roads,{},'Forest Roads ')
+
+Map.setOptions('SATELLITE')
