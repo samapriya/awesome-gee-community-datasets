@@ -1,16 +1,17 @@
 name: Publish docs via GitHub
 on:
   workflow_dispatch:
-  # workflow_run:
-  #   workflows: ["daily_stats"]  # Ensure this matches the name of the other workflow
-  #   types:
-  #     - completed
+  workflow_run:
+    workflows: ["daily_stats"]
+    types:
+      - completed
   push:
     branches:
       - master
 
 jobs:
   deploy:
+    if: github.actor == "samapriya"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
