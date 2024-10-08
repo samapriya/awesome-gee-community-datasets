@@ -11,7 +11,7 @@ on:
 
 jobs:
   deploy:
-    if: github.actor == "samapriya"
+    if: github.actor == 'samapriya'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
