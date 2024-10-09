@@ -1,5 +1,10 @@
 name: sync_searcher
 on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["publish_docs"]
+    types:
+      - completed
   push:
     branches:
       - master
