@@ -26958,6 +26958,17 @@
     "thematic_group": "Global Land Use and Land Cover"
   },
   {
+    "title": "Global Land Cover Estimation (GLanCE)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLANCE-VISUALIZATION",
+    "type": "image_collection",
+    "id": "projects/GLANCE/DATASETS/V001",
+    "provider": "Friedl et al 2022",
+    "tags": "land cover, land cover change, greenness, EVI2, CCDC, global, Landsat, NASA MEaSUREs",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/glance/",
+    "thematic_group": "Global Land Use and Land Cover"
+  },
+  {
     "title": "GLANCE Global Landcover Training dataset",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLANCE-TRAINING",
     "type": "table",

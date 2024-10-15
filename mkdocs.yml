@@ -64,7 +64,7 @@ theme:
 # Plugins
 plugins:
   - blog
-#   - git-authors
+  # - git-authors
   - git-committers:
       repository: "samapriya/awesome-gee-community-datasets"
       branch: master
@@ -229,6 +229,7 @@ nav:
               - ESA WorldCover 10 m 2020 V100 InputQuality: projects/esa_iq.md
               - Daylight Map Distribution map data: projects/daylight_maps.md
               - GLANCE Global Landcover Training dataset: projects/glance_training.md
+              - Global Land Cover Estimation (GLanCE): projects/glance.md
               - Global Impervious Surface Area (1972-2019): projects/gisa.md
               - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
               - Global urban extents from 1870 to 2100: projects/gue.md
