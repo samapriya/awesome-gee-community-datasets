@@ -319,6 +319,7 @@ nav:
               - High resolution map of African tree cover: projects/af_trees.md
               - High-resolution annual forest land cover maps for Canada's forested ecosystems (1984-2022): projects/ca_lc.md
               - High Resolution Tree Species Information for Canada: projects/ca_species.md
+              - Canada Long Term Tree Species (1984-2022): projects/ca_species_ts.md
               - Canopy height forested ecosystems of Canada: projects/ca_canopy_ht.md
               - Canada Landsat derived FAO forest identification (2019): projects/ca_fao.md
               - Canada Landsat Derived Forest harvest disturbance 1985-2020: projects/ca_forest_harvest.md
