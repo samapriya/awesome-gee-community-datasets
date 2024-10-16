@@ -3,6 +3,11 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2024-10-16
+- Added [Global Land Cover Estimation (GLanCE)](https://gee-community-catalog.org/projects/glance)
+- Added [Canada Long Term Tree Species (1984-2022)](https://gee-community-catalog.org/projects/ca_species_ts)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-10-03
 - Release 3.0.0 for the Awesome GEE Community Catalog
 - Added [Large Language Model (Gemini) enabled search for the Community Catalog](https://gee-community-catalog.org/search)
