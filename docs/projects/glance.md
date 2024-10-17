@@ -54,7 +54,7 @@ Gorelick, T. Loveland, C. Barber, M. Friedl. Global Land Cover Mapping and Estim
 Processes Distributed Active Archive Center, https://doi.org/10.5067/MEaSUREs/GLanCE/GLanCE30.001. Accessed YYYY-MM-DD.
 ```
 
-[glance](https://github.com/user-attachments/assets/df62637f-fb20-46e2-8cc6-5dfb048c7fdb)
+![glance](https://github.com/user-attachments/assets/df62637f-fb20-46e2-8cc6-5dfb048c7fdb)
 
 #### Earth Engine Snippet
 
