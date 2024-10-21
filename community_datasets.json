@@ -25821,7 +25821,7 @@
     "provider": "VIDA, Google, Microsoft",
     "tags": "Machine Learning, Building Footprints, Google, Microsoft",
     "license": "Creative Commons Attribution Share Alike 4.0 International",
-    "docs": "https://gee-community-catalog.org/projects/global_buildings//",
+    "docs": "https://gee-community-catalog.org/projects/global_buildings/",
     "thematic_group": "Global Utilities, Assets and Amenities Layers"
   },
   {
@@ -28343,7 +28343,7 @@
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
-    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr.md",
+    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr/",
     "thematic_group": "Fire Monitoring and Analysis"
   },
   {
@@ -28355,7 +28355,7 @@
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
-    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr.md",
+    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr/",
     "thematic_group": "Fire Monitoring and Analysis"
   },
   {
@@ -28367,7 +28367,7 @@
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
-    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr.md",
+    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr/",
     "thematic_group": "Fire Monitoring and Analysis"
   },
   {
@@ -28379,7 +28379,7 @@
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
-    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr.md",
+    "docs": "https://gee-community-catalog.org/projects/avhrr-ltdr/",
     "thematic_group": "Fire Monitoring and Analysis"
   },
   {

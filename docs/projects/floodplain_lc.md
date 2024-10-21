@@ -27,7 +27,7 @@ var img_2000 = ee.Image('users/giswqs/MRB/Major_Transitions_1941_2000');
 
 ```
 
-Sample Code: https://code.earthengine.google.com/e982f11b610438862eb908e22c2cc088
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/MISSISSIPPI-RIVER-BASIN-LUC
 
 Earth Engine App: https://giswqs.users.earthengine.app/view/mrb-floodplain
 
