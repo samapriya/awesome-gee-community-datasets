@@ -32,8 +32,8 @@ jobs:
             jsonl_file = 'community_datasets.jsonl'
             with open(jsonl_file, 'w') as f:
             for entry in data:
-              json.dump(entry, f)
-              f.write('\n')  # Write each JSON object on a new line
+                json.dump(entry, f)
+                f.write('\n')  # Write each JSON object on a new line
             with open('community_datasets.csv','w') as csvfile:
                 writer=csv.DictWriter(csvfile,fieldnames=["id", "provider", "title", "type","tags","sample_code","license","license_text","docs_page","thematic_group","thumbnail"], delimiter=',',lineterminator='\n')
                 writer.writeheader()
