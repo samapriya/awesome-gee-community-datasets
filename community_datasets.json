@@ -4346,7 +4346,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA",
     "type": "image",
     "id": "users/geocis/BareSurfaces/BS_1980_2019",
-    "provider": "Dematt\u00ea, Jos\u00e9 AM, et al, Geotechnologies in Soil Science Group",
+    "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
     "tags": "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/bss/",
@@ -4358,7 +4358,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/BARE_EARTH_SPECTRA",
     "type": "image",
     "id": "users/geocis/BareSurfaces/BF_1980_2019",
-    "provider": "Dematt\u00ea, Jos\u00e9 AM, et al, Geotechnologies in Soil Science Group",
+    "provider": "Demattê, José AM, et al, Geotechnologies in Soil Science Group",
     "tags": "Bare Earth Surface, Soil, Geomorphology, Landsat, Bare Surface Frequency",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/bss/",
@@ -4974,7 +4974,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/GLOBAL-INDUSTRIAL-SMALLHOLDER-OIL-PALM",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/landcover/oil_palm_industrial_smallholder_2019",
-    "provider": "Adri\u00e0 Descals et al 2021",
+    "provider": "Adrià Descals et al 2021",
     "tags": "industrial, smallholder, oil palm, deep learning, global, remote sensing, Sentinel-1, Sentinel-2, convolutional neural network",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/oil-palm/",
@@ -6182,7 +6182,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/soil_nematode.png"
   },
   {
-    "title": "Geocoded Disasters (GDIS) Dataset (1960\u200a\u2013\u200a2018)",
+    "title": "Geocoded Disasters (GDIS) Dataset (1960 – 2018)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GEOCODED-DISASTERS-DATASET",
     "type": "table",
     "id": "projects/sat-io/open-datasets/gdis_1960-2018",
@@ -10247,6 +10247,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/peatland.png"
   },
   {
+    "title": "Amazonia Peatland Extent",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/AMAZONIA-PEATMAP",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/INT_Amazon_peat_map",
+    "provider": "Hastie et al 2024",
+    "tags": "Peat, Tropical Peat, Amazon basin",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/amazon_peat/",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/amazon_peat.png"
+  },
+  {
     "title": "Carbon Offset Project Boundaries",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CARBON-OFFSET-PROJECTS",
     "type": "table",
@@ -10451,7 +10463,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/global_salinity.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Irrecoverable total",
+    "title": "Carbon in Earth’s ecosystems: Irrecoverable total",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_total",
@@ -10463,7 +10475,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Irrecoverable soil",
+    "title": "Carbon in Earth’s ecosystems: Irrecoverable soil",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_soil",
@@ -10475,7 +10487,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Irrecoverable biomass",
+    "title": "Carbon in Earth’s ecosystems: Irrecoverable biomass",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/irrecoverable_carbon/carbon_biomass",
@@ -10487,7 +10499,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Vulnerable total",
+    "title": "Carbon in Earth’s ecosystems: Vulnerable total",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_total",
@@ -10499,7 +10511,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Vulnerable soil",
+    "title": "Carbon in Earth’s ecosystems: Vulnerable soil",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_soil",
@@ -10511,7 +10523,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Vulnerable biomass",
+    "title": "Carbon in Earth’s ecosystems: Vulnerable biomass",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/vulnerable_carbon/carbon_biomass",
@@ -10523,7 +10535,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Manageable total",
+    "title": "Carbon in Earth’s ecosystems: Manageable total",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_total",
@@ -10535,7 +10547,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Manageable soil",
+    "title": "Carbon in Earth’s ecosystems: Manageable soil",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_soil",
@@ -10547,7 +10559,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Manageable biomass",
+    "title": "Carbon in Earth’s ecosystems: Manageable biomass",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/manageable_carbon/carbon_biomass",
@@ -10559,7 +10571,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/irc.png"
   },
   {
-    "title": "Carbon in Earth\u2019s ecosystems: Ecosystem Extent",
+    "title": "Carbon in Earth’s ecosystems: Ecosystem Extent",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GLOBAL-IRRECOVERABLE-CARBON",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ecosystem_extent",
@@ -10619,7 +10631,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/gmd.png"
   },
   {
-    "title": "Global snow cover monthly long-term (2000\u20132012) P90",
+    "title": "Global snow cover monthly long-term (2000–2012) P90",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_p90",
@@ -10631,7 +10643,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/snow_cover.png"
   },
   {
-    "title": "Global snow cover monthly long-term (2000\u20132012) SD",
+    "title": "Global snow cover monthly long-term (2000–2012) SD",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MODIS-SNOWCOVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_sd",
@@ -22711,7 +22723,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/SLA_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22723,7 +22735,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/SLA_sd_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22735,7 +22747,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LNC_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22747,7 +22759,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LNC_sd_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22759,7 +22771,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LPC_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22771,7 +22783,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LPC_sd_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22783,7 +22795,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LDMC_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -22795,7 +22807,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GLOBAL-LEAF-TRAITS/LDMC_sd_1km_v3",
-    "provider": "Alvaro Moreno-Mart\u00ednez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Pe\u00f1uelas, Brady Allred, Steve W. Running",
+    "provider": "Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running",
     "tags": "Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/ltrait/",
@@ -23284,7 +23296,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/MPW/changeMap",
-    "provider": "Bj\u00f6rn Nyberg et al",
+    "provider": "Björn Nyberg et al",
     "tags": "Rivers, Plastic, Mismanaged plastic waste",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/mpw/",
@@ -23296,7 +23308,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/MPW/riverImpact",
-    "provider": "Bj\u00f6rn Nyberg et al",
+    "provider": "Björn Nyberg et al",
     "tags": "Rivers, Plastic, Mismanaged plastic waste",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/mpw/",
@@ -23308,7 +23320,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/MPW/Plastics_Env",
-    "provider": "Bj\u00f6rn Nyberg et al",
+    "provider": "Björn Nyberg et al",
     "tags": "Rivers, Plastic, Mismanaged plastic waste",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/mpw/",
@@ -23320,7 +23332,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE",
     "type": "image",
     "id": "projects/sat-io/open-datasets/MPW/MPW_data",
-    "provider": "Bj\u00f6rn Nyberg et al",
+    "provider": "Björn Nyberg et al",
     "tags": "Rivers, Plastic, Mismanaged plastic waste",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/mpw/",
@@ -23332,7 +23344,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/HISTARFM-V5-EXAMPLE",
     "type": "image_collection",
     "id": "projects/ee-kalman-gap-filled/assets/histarfm_v5",
-    "provider": "\u00c1lvaro Moreno-Mart\u00ednez, Emma Izquierdo-Verdiguier, Jordi Mu\u00f1oz-Mar\u00ed and Nicolas Clinton",
+    "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
     "tags": "MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/histarfm/",
@@ -23344,7 +23356,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/HISTARFM-V5-EXAMPLE",
     "type": "image_collection",
     "id": "projects/KalmanGFwork/GFLandsat_V1",
-    "provider": "\u00c1lvaro Moreno-Mart\u00ednez, Emma Izquierdo-Verdiguier, Jordi Mu\u00f1oz-Mar\u00ed and Nicolas Clinton",
+    "provider": "Álvaro Moreno-Martínez, Emma Izquierdo-Verdiguier, Jordi Muñoz-Marí and Nicolas Clinton",
     "tags": "MODIS, Landsat, Land reflectance images, gap-filled temporal series, vegetation",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/histarfm/",
@@ -23728,10 +23740,10 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-GLOBCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/ESA/GLOBCOVER_200412_200606_V22_Global_CLA",
-    "provider": "ESA and by the Universit\u00e9 Catholique de Louvain",
+    "provider": "ESA and by the Université Catholique de Louvain",
     "tags": "Landcover, Global Landcover, ESA, JRC, EEA, FAO, UNEP, GOFC-GOLD and IGBP, ENVISAT product",
     "license": "custom",
-    "license_text": "The GlobCover products have been processed by ESA and by the Universit\u00e9 Catholique de Louvain. They are made available to the public by ESA. You may use the GlobCover land cover map for educational and/or scientific purposes, without any fee on the condition that you credit ESA and the Universit\u00e9 Catholique de Louvain as the source of the GlobCover products",
+    "license_text": "The GlobCover products have been processed by ESA and by the Université Catholique de Louvain. They are made available to the public by ESA. You may use the GlobCover land cover map for educational and/or scientific purposes, without any fee on the condition that you credit ESA and the Université Catholique de Louvain as the source of the GlobCover products",
     "docs": "https://gee-community-catalog.org/projects/globcover_esa/",
     "thematic_group": "Global Land Use and Land Cover",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/globcover_esa.png"
@@ -23741,10 +23753,10 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESA-GLOBCOVER",
     "type": "image",
     "id": "projects/sat-io/open-datasets/ESA/GLOBCOVER_L4_200901_200912_V23",
-    "provider": "ESA and by the Universit\u00e9 Catholique de Louvain",
+    "provider": "ESA and by the Université Catholique de Louvain",
     "tags": "Landcover, Global Landcover, ESA, JRC, EEA, FAO, UNEP, GOFC-GOLD and IGBP, ENVISAT product",
     "license": "custom",
-    "license_text": "The GlobCover products have been processed by ESA and by the Universit\u00e9 Catholique de Louvain. They are made available to the public by ESA. You may use the GlobCover land cover map for educational and/or scientific purposes, without any fee on the condition that you credit ESA and the Universit\u00e9 Catholique de Louvain as the source of the GlobCover products",
+    "license_text": "The GlobCover products have been processed by ESA and by the Université Catholique de Louvain. They are made available to the public by ESA. You may use the GlobCover land cover map for educational and/or scientific purposes, without any fee on the condition that you credit ESA and the Université Catholique de Louvain as the source of the GlobCover products",
     "docs": "https://gee-community-catalog.org/projects/globcover_esa/",
     "thematic_group": "Global Land Use and Land Cover",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/globcover_esa.png"
@@ -23819,7 +23831,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-CHANNEL-BELT",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GCB/GRMM",
-    "provider": "Nyberg, Bj\u00f6rn, et al 2023",
+    "provider": "Nyberg, Björn, et al 2023",
     "tags": "Rivers, Hydrology, Morphology, Landforms, Ecosystems",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/gcb/",
@@ -23831,7 +23843,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-CHANNEL-BELT",
     "type": "image",
     "id": "projects/sat-io/open-datasets/GCB/Env",
-    "provider": "Nyberg, Bj\u00f6rn, et al 2023",
+    "provider": "Nyberg, Björn, et al 2023",
     "tags": "Rivers, Hydrology, Morphology, Landforms, Ecosystems",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/gcb/",
@@ -24073,7 +24085,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FUNGI-DATABASE",
     "type": "table",
     "id": "projects/sat-io/open-datasets/GLOBAL-FUNGI-DB/global-fungi-db-20230627",
-    "provider": "V\u011btrovsk\u00fd, Tom\u00e1\u0161, et al. 2020",
+    "provider": "Větrovský, Tomáš, et al. 2020",
     "tags": "Global Fungi database, Global dataset, carbon cycling",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/global_fungi/",
@@ -24085,7 +24097,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/HYSPECNET-11K",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/HySpecNet/HYSPECNET-11K",
-    "provider": "Fuchs, Martin Hermann Paul, and Beg\u00fcm Demir",
+    "provider": "Fuchs, Martin Hermann Paul, and Begüm Demir",
     "tags": "Hyperspectral, Enmap, Benchmark, Tile",
     "license": "Creative Commons Zero v1.0 Universal",
     "docs": "https://gee-community-catalog.org/projects/hyspecnet/",
@@ -25930,7 +25942,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/gimms_ndvi.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 CV Annual Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 CV Annual Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/CV/cv_annual_flow",
@@ -25942,7 +25954,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 CV Monsoon Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 CV Monsoon Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/CV/cv_monsoon_flow",
@@ -25954,7 +25966,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 High Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 High Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/high_flow",
@@ -25966,7 +25978,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 Low Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Low Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/HIGH-LOW-FLOW/low_flow",
@@ -25978,7 +25990,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 Mean Annual Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Mean Annual Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_annual_flow",
@@ -25990,7 +26002,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 Mean Monsoon Flow",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Mean Monsoon Flow",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/MEAN-FLOW/mean_monsoon_flow",
@@ -26002,7 +26014,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Dry July 1972",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry July 1972",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_1972",
@@ -26014,7 +26026,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Dry July 2002",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry July 2002",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_july_2002",
@@ -26026,7 +26038,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Dry June 2009",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry June 2009",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2009",
@@ -26038,7 +26050,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Dry June 2014",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Dry June 2014",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_dry_june_2014",
@@ -26050,7 +26062,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Wet August 2020",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet August 2020",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_august_2020",
@@ -26062,7 +26074,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Wet July 1988",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet July 1988",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_july_1988",
@@ -26074,7 +26086,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Wet September 1983",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet September 1983",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_1983",
@@ -26086,7 +26098,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 SSI Wet September 2019",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 SSI Wet September 2019",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/SSI/ssi_wet_september_2019",
@@ -26098,7 +26110,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/streamflow_india.png"
   },
   {
-    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951\u20132021 Streamflow Trend",
+    "title": "Streamflow reconstruction for Indian sub-continental river basins 1951–2021 Streamflow Trend",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT",
     "type": "table",
     "id": "projects/sat-io/open-datasets/indian-streams/streamflow_trend",
@@ -30815,7 +30827,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ESA-FIRE-DISTURBANCE-CCI",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ESA/AVHRR-LTDR/BA",
-    "provider": "Chuvieco, E.; Pettinari, M.L.; Ot\u00c3\u00b3n, G, ESA",
+    "provider": "Chuvieco, E.; Pettinari, M.L.; OtÃ³n, G, ESA",
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
@@ -30828,7 +30840,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ESA-FIRE-DISTURBANCE-CCI",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ESA/AVHRR-LTDR/OB",
-    "provider": "Chuvieco, E.; Pettinari, M.L.; Ot\u00c3\u00b3n, G, ESA",
+    "provider": "Chuvieco, E.; Pettinari, M.L.; OtÃ³n, G, ESA",
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
@@ -30841,7 +30853,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ESA-FIRE-DISTURBANCE-CCI",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ESA/AVHRR-LTDR/CL",
-    "provider": "Chuvieco, E.; Pettinari, M.L.; Ot\u00c3\u00b3n, G, ESA",
+    "provider": "Chuvieco, E.; Pettinari, M.L.; OtÃ³n, G, ESA",
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
@@ -30854,7 +30866,7 @@
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ESA-FIRE-DISTURBANCE-CCI",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/ESA/AVHRR-LTDR/JD",
-    "provider": "Chuvieco, E.; Pettinari, M.L.; Ot\u00c3\u00b3n, G, ESA",
+    "provider": "Chuvieco, E.; Pettinari, M.L.; OtÃ³n, G, ESA",
     "tags": "ESA, CCI, Pixel, Burned Area, Fire Disturbance, Climate Change, GCOS Essential Climate Variable",
     "license": "custom",
     "license_text": "You can find license information [here](http://licences.ceda.ac.uk/image/data_access_condition/esacci_fire_terms_and_conditions.pdf)",
