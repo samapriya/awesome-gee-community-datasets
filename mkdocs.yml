@@ -211,6 +211,7 @@ nav:
               - Soil Grids 250m v2.0: projects/isric.md
               - Soil Properties 800m: projects/soilprop.md
               - Polaris 30m Probabilistic Soil Properties US: projects/polaris.md
+              - gNATSGO (gridded National Soil Survey Geographic Database): projects/gnatsgo.md
               - HiHydroSoil v2.0 layers: projects/hihydro_soil.md
               - Global Soil Salinity Maps (1986-2016): projects/global_salinity.md
               - Global Soil bioclimatic variables: projects/soil_bioclim.md
@@ -312,6 +313,7 @@ nav:
               - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
               - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
               - Carbon Security Index: projects/csi.md
+              - Gridded Livestock Density Kazakhstan (2000-2019): projects/gridded_livestock.md
               - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
               - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
               - Global Forest Carbon Fluxes (2001-2022): projects/cflux.md
@@ -482,7 +484,6 @@ nav:
           - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
           - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
           - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
-          - gNATSGO (gridded National Soil Survey Geographic Database): projects/gnatsgo.md
   - Get Involved:
       - Community Actions (What you can do):
           - contributing/index.md
