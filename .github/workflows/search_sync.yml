@@ -16,6 +16,11 @@ jobs:
     if: github.actor == 'samapriya'
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for GitHub Pages
+        run: |
+          # Wait for 2 minutes to allow GitHub Pages deployment to complete
+          echo "Waiting for GitHub Pages deployment to complete..."
+          sleep 120
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
