@@ -1,10 +1,8 @@
 name: Upload File to GCS on Change
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["gee_catalog"]
-    types:
-      - completed
+  schedule:
+    - cron: "0 18 * * *"
 jobs:
   upload_to_gcs:
     runs-on: ubuntu-latest
