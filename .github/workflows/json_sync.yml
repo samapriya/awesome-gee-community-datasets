@@ -1,0 +1,29 @@
+name: Upload File to GCS on Change
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'community_datasets.jsonl'
+
+jobs:
+  upload_to_gcs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
+    - name: Set up Cloud SDK
+      uses: 'google-github-actions/setup-gcloud@v2'
+
+    - name: Use gcloud CLI
+      run: 'gcloud info'
+
+    - name: Upload file to GCS using gcloud
+      run: |
+        gcloud storage cp community_datasets.jsonl ${{ secrets.GCS_FILE_PATH }}
