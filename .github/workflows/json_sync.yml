@@ -1,10 +1,10 @@
 name: Upload File to GCS on Change
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'community_datasets.jsonl'
-
+  workflow_run:
+    workflows: ["gee_catalog"]
+    types:
+      - completed
 jobs:
   upload_to_gcs:
     runs-on: ubuntu-latest
