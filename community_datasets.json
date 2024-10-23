@@ -26559,6 +26559,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/daylight_maps.png"
   },
   {
+    "title": "USGS Consolidated Survey-Grade Checkpoints 3DEP 2010 to 2017",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-3DEP-CONSOLIDATED-SURVEY-CHECKPOINTS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/USGS/SURVEY_CHECKPOINTS_3DEP_2010_2017",
+    "provider": "U.S. Geological Survey (USGS)",
+    "tags": "3DEP, Lidar, Survey-Grade Checkpoints, GEOID18, GEOID12B, Elevation, Accuracy, Survey Data, USGS, Vertical Datum, Horizontal Datum",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/survey_checkpoints/",
+    "thematic_group": "Analysis Ready Data",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/survey_checkpoints.png"
+  },
+  {
     "title": "USGS Historical Imagery Western US Imagery",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
     "type": "image_collection",

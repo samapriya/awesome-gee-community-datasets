@@ -363,6 +363,7 @@ nav:
               - Open Aerial Map Subset: projects/oam.md
               - HySpecNet-11K Hyperspectral Benchmark dataset: projects/hyspecnet.md
               - Santa Rita Experimental Range Drone Imagery: projects/srer_drone.md
+              - USGS Consolidated Survey-Grade Checkpoints 3DEP 2010 to 2017: projects/survey_checkpoints.md
               - USGS Historical Topo Maps: projects/usgs_topo.md
               - USGS Historical Imagery Western US: projects/historical_us.md
           - "Global Utilities, Assets and Amenities Layers":
