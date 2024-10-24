@@ -31,7 +31,9 @@
             height: 100vh;
             margin: 0;
             background-color: #f5f5f5;
+            color: black;
             position: relative;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         #searchWidgetTrigger {
@@ -50,7 +52,7 @@
             margin-bottom: 20px;
             font-size: 32px;
             font-weight: 800;
-            color: black;
+            color: inherit;
             text-align: center;
         }
 
@@ -72,7 +74,6 @@
             color: #aaa;
         }
 
-        /* New Back to Catalog Button */
         .back-to-catalog {
             position: absolute;
             bottom: 20px;
@@ -107,6 +108,34 @@
             font-size: 24px;
             vertical-align: middle;
         }
+
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Toggle button styles */
+        .toggle-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .toggle-button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-button:hover {
+            background-color: #666;
+        }
     </style>
 </head>
 
@@ -119,9 +148,14 @@
         Awesome GEE Community Catalog Search <sub>Beta</sub>
     </div>
 
+    <!-- Light/Dark mode toggle -->
+    <div class="toggle-container">
+        <button id="modeToggle" class="toggle-button">Switch to Dark Mode</button>
+    </div>
+
     <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
 
-    <gen-search-widget configId="9b5b8799-a13d-4322-aa4f-6ef1b0351a9b"
+    <gen-search-widget configId="7df2e903-867d-4e8e-b3da-bc5f138b359b"
         triggerId="searchWidgetTrigger"></gen-search-widget>
 
     <div class="search-container">
@@ -158,6 +192,19 @@
         document.getElementById('searchWidgetTrigger').addEventListener('click', function () {
             const widget = document.querySelector('gen-search-widget');
             widget.open();
+        });
+
+        // Dark mode toggle script
+        const toggleButton = document.getElementById('modeToggle');
+        const bodyElement = document.body;
+
+        toggleButton.addEventListener('click', function () {
+            bodyElement.classList.toggle('dark-mode');
+            if (bodyElement.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Switch to Light Mode';
+            } else {
+                toggleButton.textContent = 'Switch to Dark Mode';
+            }
         });
     </script>
 
