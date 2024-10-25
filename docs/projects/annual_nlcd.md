@@ -46,7 +46,8 @@ The USGS Land Cover program integrates methodologies from the National Land Cove
 #### Citation
 
 ```
-U.S. Geological Survey (2024). Annual NLCD Collection 1 Science Product User Guide. Version 1.0.
+U.S. Geological Survey (USGS), 2024, Annual NLCD Collection 1 Science Products: U.S. Geological Survey data release,
+https://doi.org/10.5066/P94UXNTS.
 ```
 
 ![annual_nlcd](https://i.imgur.com/9DlcjOZ.gif)
