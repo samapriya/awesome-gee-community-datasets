@@ -62,7 +62,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 #### License
 
-NLCD datasets are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion.
+NLCD datasets are provided under a Creative Commons Zero v1.0 Universal license.
 
 Provided by: USGS
 
