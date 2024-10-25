@@ -11,30 +11,30 @@ The USGS Land Cover program integrates methodologies from the National Land Cove
 - **Impervious Descriptor**: Distinguishes urban, non-urban, and road areas.
 - **Spectral Change Day of Year**: Identifies the day significant spectral changes occur, allowing event tracking within a calendar year.
 
-#### Land Cover Classes
+??? example "Expand to show Land Cover Classes"
 
-<center>
+    <center>
 
-| Class Value | Class Name                   | RGB Color |
-| ----------- | ---------------------------- | --------- |
-| 11          | Open Water                   | `#466b9f` |
-| 12          | Perennial Ice/Snow           | `#d1def8` |
-| 21          | Developed, Open Space        | `#dec5c5` |
-| 22          | Developed, Low Intensity     | `#d99282` |
-| 23          | Developed, Medium Intensity  | `#eb0000` |
-| 24          | Developed, High Intensity    | `#ab0000` |
-| 31          | Barren Land                  | `#b3ac9f` |
-| 41          | Deciduous Forest             | `#68ab5f` |
-| 42          | Evergreen Forest             | `#1c5f2c` |
-| 43          | Mixed Forest                 | `#b5c58f` |
-| 52          | Shrub/Scrub                  | `#ccb879` |
-| 71          | Grassland/Herbaceous         | `#dfdfc2` |
-| 81          | Pasture/Hay                  | `#dcd939` |
-| 82          | Cultivated Crops             | `#ab6c28` |
-| 90          | Woody Wetlands               | `#b8d9eb` |
-| 95          | Emergent Herbaceous Wetlands | `#6c9fb8` |
+    | Class Value | Class Name                   | RGB Color |
+    | ----------- | ---------------------------- | --------- |
+    | 11          | Open Water                   | `#466b9f` |
+    | 12          | Perennial Ice/Snow           | `#d1def8` |
+    | 21          | Developed, Open Space        | `#dec5c5` |
+    | 22          | Developed, Low Intensity     | `#d99282` |
+    | 23          | Developed, Medium Intensity  | `#eb0000` |
+    | 24          | Developed, High Intensity    | `#ab0000` |
+    | 31          | Barren Land                  | `#b3ac9f` |
+    | 41          | Deciduous Forest             | `#68ab5f` |
+    | 42          | Evergreen Forest             | `#1c5f2c` |
+    | 43          | Mixed Forest                 | `#b5c58f` |
+    | 52          | Shrub/Scrub                  | `#ccb879` |
+    | 71          | Grassland/Herbaceous         | `#dfdfc2` |
+    | 81          | Pasture/Hay                  | `#dcd939` |
+    | 82          | Cultivated Crops             | `#ab6c28` |
+    | 90          | Woody Wetlands               | `#b8d9eb` |
+    | 95          | Emergent Herbaceous Wetlands | `#6c9fb8` |
 
-</center>
+    </center>
 
 #### Key Information
 
