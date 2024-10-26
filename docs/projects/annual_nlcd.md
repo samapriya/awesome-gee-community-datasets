@@ -73,6 +73,17 @@ var nlcd_landcover = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNU
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER
 
+![annual_nlcd_layers-optimized](https://i.imgur.com/GVRiO60.gif)
+
+```js
+var nlcd_landcover_confidence = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER_CONFIDENCE");
+var nlcd_fractional_impervious_surface = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/FRACTIONAL_IMPERVIOUS_SURFACE");
+var nlcd_impervious_descriptor = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/IMPERVIOUS_DESCRIPTOR");
+var nlcd_spectral_change_doy = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/SPECTRAL_CHANGE_DOY");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER-LAYERS
+
 #### License
 
 NLCD datasets are provided under a Creative Commons Zero v1.0 Universal license.
