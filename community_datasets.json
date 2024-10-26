@@ -26574,7 +26574,7 @@
     "title": "USGS Annual NLCD Land Cover Dataset",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/USGS/ANNUAL_NLCD_LANDCOVER",
+    "id": "projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER",
     "provider": "U.S. Geological Survey (USGS)",
     "tags": "Land Cover, Land Change, Landsat, Deep Learning, Annual NLCD, USGS, Environmental Monitoring",
     "license": "Creative Commons Zero v1.0 Universal",

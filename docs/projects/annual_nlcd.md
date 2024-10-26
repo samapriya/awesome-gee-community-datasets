@@ -43,6 +43,19 @@ The USGS Land Cover program integrates methodologies from the National Land Cove
 - **Temporal Coverage**: 1985–2023 (updated annually)
 - **Access**: Products are accessible via multiple platforms, including MRLC Viewer and AWS S3.
 
+<center>
+
+| Layer Name                    | Class Values (Range)         | Min | Max | NoData Value |
+|-------------------------------|------------------------------|-----|-----|--------------|
+| Land Cover                     | Various land cover types (11, 12, ..., 95) | N/A | N/A | 250          |
+| Land Cover Change              | Change class categories     | AABB  | AABB | 9999        |
+| Land Cover Confidence          | Confidence levels           | 1   | 100 | 250         |
+| Fractional Impervious Surface  | Imperviousness percentage   | 0   | 100 | 250         |
+| Impervious Descriptor          | Impervious surface types (0: Non-Urban, 1: Roads, 2: Urban) | N/A | N/A | 250        |
+| Spectral Change Day of Year    | Julian days of change       | 1   | 366 | 9999        |
+
+</center>
+
 #### Citation
 
 ```
@@ -55,7 +68,7 @@ https://doi.org/10.5066/P94UXNTS.
 #### Earth Engine Snippet
 
 ```js
-var nlcd_landcover = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD_LANDCOVER");
+var nlcd_landcover = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER");
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER
