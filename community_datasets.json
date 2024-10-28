@@ -31895,6 +31895,54 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/grod.png"
   },
   {
+    "title": "Global Dam Tracker Database (GDAT) Catchments",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/hydrology/GLOBAL-DAM-TRACKER",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GDAT/GDAT_V1_CATCHMENTS",
+    "provider": "Zhang et al. 2023",
+    "tags": "River Barriers, Reservoirs, Hydropower Dams, Water Storage, Flood Control, Aquatic Ecosystems",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gdat/",
+    "thematic_group": "Hydrology",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gdat.png"
+  },
+  {
+    "title": "Global Dam Tracker Database (GDAT) Dams",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/hydrology/GLOBAL-DAM-TRACKER",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GDAT/GDAT_V1_DAMS",
+    "provider": "Zhang et al. 2023",
+    "tags": "River Barriers, Reservoirs, Hydropower Dams, Water Storage, Flood Control, Aquatic Ecosystems",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gdat/",
+    "thematic_group": "Hydrology",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gdat.png"
+  },
+  {
+    "title": "Global Dam Watch Database (GDW) v1 Barriers",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/hydrology/GLOBAL-DAM-WATCH-DATABASE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GDW/GDW_BARRIERS_V1_0",
+    "provider": "Lehner et al 2024, Global Dam Watch",
+    "tags": "River Barriers, Reservoirs, Hydropower Dams, Water Storage, Flood Control, Aquatic Ecosystems",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gdw/",
+    "thematic_group": "Hydrology",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gdw.png"
+  },
+  {
+    "title": "Global Dam Watch Database (GDW) v1 Reservoirs",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/hydrology/GLOBAL-DAM-WATCH-DATABASE",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GDW/GDW_RESERVOIRS_V1_0",
+    "provider": "Lehner et al 2024, Global Dam Watch",
+    "tags": "River Barriers, Reservoirs, Hydropower Dams, Water Storage, Flood Control, Aquatic Ecosystems",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gdw/",
+    "thematic_group": "Hydrology",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gdw.png"
+  },
+  {
     "title": "SWOT River Database (SWORD) Nodes: Hydrobasin hb11",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/SWORD-NODES-REACHES",
     "type": "table",
