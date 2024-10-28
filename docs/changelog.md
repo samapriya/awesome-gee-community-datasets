@@ -3,6 +3,12 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2024-10-27
+- Added all [Annual NLCD Dataset Layers](https://gee-community-catalog.org/projects/annual_nlcd)
+- Added [Global Dam Tracker (GDAT) Database](https://gee-community-catalog.org/projects/gdat)
+- Added [Global Dam Watch v1.0.](https://gee-community-catalog.org/projects/gdw)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-10-22
 - Updated [gNATSGO (gridded National Soil Survey Geographic Database)](https://gee-community-catalog.org/projects/gnatsgo) and made generally available
 - Added [Amazonian Peatland Extent](https://gee-community-catalog.org/projects/amazon_peat)
