@@ -1,0 +1,93 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ca_species_ts = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST/SPECIES-1984-2022");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var species = ee.Image(ca_species_ts.filterDate('2022-01-01','2022-12-31').first())
+
+// Define a dictionary which will be used to make legend and visualize image on map
+var dict = {
+  "names": [
+    "Non Tree", "Amabilis fir", "Balsam fir", "Subalpine fir", "Bigleaf maple", "Red maple",
+    "Sugar maple", "Gray alder", "Red alder", "Yellow birch", "White birch", "Yellow-cedar", 
+    "Black ash", "Tamarack", "Western larch", "Norway spruce", "Engelmann spruce","White spruce",
+    "Black spruce", "Red spruce", "Sitka spruce", "Whitebark pine", "Jack pine", "Lodgepole pine",
+    "Ponderosa pine", "Red pine", "Eastern white pine", "Balsam poplar", "Largetooth aspen",
+    "Trembling aspen", "Douglas-fir", "Red oak", "Eastern white-cedar", "Western redcedar", 
+    "Eastern hemlock", "Western hemlock", "Mountain hemlock", "White elm",
+    ],
+  "colors": [
+    "#000000", "#fef2ec", "#fff2c7", "#ffedb3", "#fdb462", "#fdbf6f", "#fca773", "#e3b9db", 
+    "#d6aad3", "#fb8069", "#fb9a85", "#ae027e", "#808080", "#e5b75a", "#e5c468", "#b3de53", 
+    "#f2fa8c", "#e6f47f", "#d9ef74", "#cce968", "#bfe35d", "#d9f1f7", "#bfe7f1", "#b3e2e3", 
+    "#99cee3", "#80c5dd", "#4eb3d3", "#68d094", "#66c092", "#33a97e", "#faa7c8", "#f668b2", 
+    "#e38776", "#e36f5c", "#bfc26b", "#a6b96c", "#8cb06c", "#99c2b5",
+    ]};
+
+//Map.setCenter(-97.61655457157725, 55.6280720462063, 4);
+Map.centerObject(species, 4);
+
+var imgname = species.get('system:asset_id').getInfo()
+
+// Add image to the map
+Map.addLayer(species.mask(species.neq(0)), {min:0, max:37, palette:dict['colors']}, imgname)
+
+/////////////////////////////////////////////////////////////////////////
+
+//generate the legend
+var legend = ui.Panel({
+  style: {
+    position: 'middle-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create and add the legend title.
+var legendTitle = ui.Label({
+  value: imgname,
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+legend.add(legendTitle);
+
+var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
+legend.add(loading);
+
+  // Creates and styles 1 row of the legend.
+  var makeRow = function(color, imgname) {
+    // Create the label that is actually the colored box.
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        // Use padding to give the box height and width.
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+
+  // Create the label filled with the description text.
+  var description = ui.Label({
+    value: imgname,
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+  var palette = dict['colors'];
+  var names = dict['names'];
+  loading.style().set('shown', false);
+
+  for (var i = 0; i < names.length; i++) {
+    legend.add(makeRow(palette[i], names[i]));
+  }
+
+// Print the panel containing the legend
+print(legend);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/131894/dark", "Dark");

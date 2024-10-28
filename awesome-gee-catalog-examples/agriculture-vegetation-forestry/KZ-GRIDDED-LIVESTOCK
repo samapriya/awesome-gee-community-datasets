@@ -1,0 +1,66 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var sheep_goat_collection = ee.Image("projects/sat-io/open-datasets/GRIDDED-LIVESTOCK/KZ_SHEEP_GOAT_DENSITY_DB"),
+    horse_collection = ee.Image("projects/sat-io/open-datasets/GRIDDED-LIVESTOCK/KZ_HORSE_DENSITY_DB");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Function to download a specific year band from the collection
+function downloadBand(collection, year, prefix) {
+var bandName = prefix + year;
+var band = collection.select(bandName);
+
+if (band) {
+var region = collection.geometry().bounds();
+
+Export.image.toDrive({
+  image: band,
+  description: prefix + '_' + year,
+  scale: 1000,
+  region: region,
+  fileFormat: 'GeoTIFF'
+});
+
+print('Exporting band:', bandName);
+} else {
+print('Band not found:', bandName);
+}
+}
+
+// Example: To download band for Sheep Goat collection for year 2010
+downloadBand(sheep_goat_collection, 2010, 'sheep_goat_');
+
+// Example: To download band for Horse collection for year 2010
+downloadBand(horse_collection, 2010, 'horse_');
+
+// Function to download all bands at once
+function downloadAllBands(collection, prefix) {
+var bands = collection.bandNames();
+bands.evaluate(function(bandList) {
+bandList.forEach(function(band) {
+var bandImage = collection.select(band);
+
+  if (bandImage) {
+    Export.image.toDrive({
+      image: bandImage,
+      description: prefix + band,
+      scale: 1000,
+      region: collection.geometry().bounds(),
+      fileFormat: 'GeoTIFF'
+    });
+  }
+});
+});
+}
+
+// Uncomment to download all bands for Sheep Goat collection
+// downloadAllBands(sheep_goat_collection, 'sheep_goat_');
+
+// Uncomment to download all bands for Horse collection
+// downloadAllBands(horse_collection, 'horse_');
+
+Map.addLayer(sheep_goat_collection.select('sheep_goat_2019'), {min: 0, max: 200, palette: [ '#e0f3f8', '#4575b4', '#313695', '#fee090', '#fc8d59', '#d73027']}, 'sheep_goat_2019');
+//Map.addLayer(horse_collection.select('horse_2019'), {min: 0, max: 30, palette: [ '#e0f3f8', '#4575b4', '#313695', '#fee090', '#fc8d59', '#d73027']}, 'Horse_2019');
+
+// Center the map on the collection
+Map.setCenter(68.725,41.603,7);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/131894/dark", "Dark");

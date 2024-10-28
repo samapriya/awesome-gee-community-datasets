@@ -1,0 +1,75 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var Simple_AOI = ee.FeatureCollection("users/adamhastie50/Study_area_simplify"),
+    Amazon_peat_map = ee.Image("projects/sat-io/open-datasets/INT_Amazon_peat_map");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//Predicted extent of peat (organic soil of ≥ 30 cm thickness) 
+//across the study area (Amazon basin below 500 m and mean annual precipitation >1,390 mm)
+//at 90 m resolution. From Hastie et al., 2024- https://iopscience.iop.org/article/10.1088/1748-9326/ad677b
+
+// Create a legend
+// set position of panel
+
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }});
+ 
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Legend',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 4px',
+    padding: '0'}});
+ 
+// Add the title to the panel
+legend.add(legendTitle);
+ 
+// Creates and styles 1 row of the legend.
+var makeRow = function(color, name) {
+  //Create the label that is actually the colored box.
+      var colorBox = ui.Label({
+        style: {
+          backgroundColor: '#' + color,
+          // Use padding to give the box height and width.
+          padding: '8px',
+          margin: '0 0 4px 4px'
+        }});
+ 
+      // Create the label filled with the description text.
+      var description = ui.Label({
+        value: name,
+        style: {margin: '0 0 4px 4px'}
+      });
+ 
+      // return the panel
+      return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+      });
+      };
+ 
+//  Palette with the colors
+var palette =['FFA500'];
+ 
+// name of the legend
+var names = ['Peat (Hastie et al., 2024)'];
+ 
+// Add color and and names
+for (var i = 0; i < 1; i++) {
+  legend.add(makeRow(palette[i], names[i]));
+  }  
+ 
+ //add legend to map (alternatively you can also print the legend to the console)
+Map.add(legend);
+Map.centerObject(Amazon_peat_map, 6); 
+
+
+Map.addLayer(Amazon_peat_map, {min: 1, max: 1, palette: ['orange']}, 'Peat_map');  
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/131894/dark", "Dark");
+
+
+

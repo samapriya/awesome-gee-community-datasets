@@ -1,0 +1,124 @@
+/** 
+ * Example GEE Script for Exploring Global Land Cover mapping and Estimation (GLANCE) 
+ * Catalog -- Example 2: Year of change and EVI2 change  
+ * 
+ * Preliminary citation: 
+ * 
+ * Friedl, M.A., Woodcock, C.E., Olofsson, P., Zhu, Z., Loveland, T., 
+ * Stanimirova, R., Arévalo, P., Bullock, E., Hu, K.-T., Zhang, Y., Turlej, K., 
+ * Tarrio, K., McAvoy, K., Gorelick, N., Wang, J.A., Barber, C.P., Souza, C., 2022. 
+ * Medium Spatial Resolution Mapping of Global Land Cover and Land Cover Change 
+ * Across Multiple Decades From Landsat. Frontiers in Remote Sensing 3. 
+ * https://doi.org/10.3389/frsen.2022.894571
+ * 
+ * User guide: https://lpdaac.usgs.gov/documents/1567/GLanCE_User_Guide_v1.pdf 
+ * 
+ * Authors: 
+ *         Yingtong Zhang | zhangyt@bu.edu
+ *         Paulo Arévalo  | parevalo@bu.edu
+ */
+
+var GLANCE = ee.ImageCollection("projects/GLANCE/DATASETS/V001")
+var palettes = require('users/gena/packages:palettes')
+
+
+// -------------- SET GLOBAL VIZ PROPERTIES
+Map.setOptions('HYBRID')
+
+// EVI Palette
+var eviChangePal = {palette: palettes.matplotlib.viridis[7], min:-1000, max: 1000}
+var eviPal = {palette: palettes.matplotlib.viridis[7], min:2000, max: 3000}
+
+// Change Palette
+var changePalette = ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a',
+  '#e31a1c','#bd0026','#800026']
+var changePal = {palette: changePalette, min:2005, max: 2020}
+
+
+// -------------- FILTER AND SELECT DATASETS
+var filteredCol = GLANCE.filterDate('2005-01-01', '2020-01-01')
+var changeDate = filteredCol.select('changeDate')
+var EVI2change = filteredCol.select('changeMag')
+var EVI2median = filteredCol.select('EVI2median')
+
+// --------------  CREATE ANNUAL MOSAICS
+
+// Extract list of available years from image id. 
+// Keep in mind change layers are only available from 2002
+var imageIds = changeDate.aggregate_array('id')
+
+var years = ee.List(imageIds.map(function(value){
+  return ee.String(value).split("-").get(0)
+})).distinct()
+
+// Create constant image with years, useful for indexing
+var dateDictImg = ee.Dictionary.fromLists(
+  years, years.map(function(x){return ee.Number.parse(x)})).toImage()
+
+// Function to retrieve annual mosaics per dataset
+var getYearlyStack = function(imgCol, yearsStr){
+  return ee.ImageCollection.fromImages(
+    yearsStr.map(function(y) {
+      // Get the list of image IDs for the current year
+      return imgCol.filter(ee.Filter.stringContains('system:index', y)).mosaic()
+    })
+  ).toBands()
+}
+
+// Generate annual mosaics of change date, and retrieve year of first change
+var changeYear = dateDictImg
+  .updateMask(getYearlyStack(changeDate, years))
+  .reduce(ee.Reducer.firstNonNull())
+
+// Generate annual mosaics of EVI2 change, and retrieve value for year of first change
+var EVI2firstChange = getYearlyStack(EVI2change, years)
+  .updateMask(changeYear)
+  .reduce(ee.Reducer.firstNonNull())
+
+// --------------  VISUALIZE -------------- 
+
+// Year of first change and magnitude of EVI2 change for that year
+Map.addLayer(changeYear, changePal, "Change year")
+Map.addLayer(EVI2firstChange, eviChangePal, "First EVI2 change", 0)
+
+
+// Average EVI2 median 3 years before and after the first change
+var EVI2medianStack = getYearlyStack(EVI2median, years)
+var yearWindow = 3
+var beforeChange = dateDictImg
+  .lt(changeYear)
+  .and(dateDictImg.gte(changeYear.subtract(yearWindow)))
+var afterChange = dateDictImg
+  .gt(changeYear)
+  .and(dateDictImg.lte(changeYear.add(yearWindow)))
+
+Map.addLayer(EVI2medianStack.updateMask(beforeChange).reduce(ee.Reducer.mean()), 
+  eviPal, "EVI2 before change", 0)
+Map.addLayer(EVI2medianStack.updateMask(afterChange).reduce(ee.Reducer.mean()),
+  eviPal, "EVI2 after change", 0)
+
+
+// Function to automate the creation of a legend
+function createLegend(viz){
+  var lon = ee.Image.pixelLonLat().select('longitude')
+  var gradient = lon.multiply((viz.max-viz.min)/100.0).add(viz.min)
+  var legendImage = gradient.visualize(viz)
+  var params = {bbox:'0,0,100,10', dimensions:'200x10'}
+  var thumbnail = ui.Thumbnail({
+    image: legendImage,
+    params: params,
+  })
+  
+  var panel = ui.Panel([
+    ui.Label(viz['min']), thumbnail,  ui.Label(viz['max']),
+  ], ui.Panel.Layout.Flow('horizontal'))
+  
+  return panel
+}
+
+// Print legends to the console
+print("Change Year", createLegend(changePal))
+print("EVI2 Change Magnitude x10,000", createLegend(eviChangePal))
+print("EVI2 median", createLegend(eviPal))
+
+Map.setCenter(-61.9446, -21.6216, 11)

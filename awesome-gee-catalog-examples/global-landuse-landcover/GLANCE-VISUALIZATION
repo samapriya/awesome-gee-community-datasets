@@ -1,0 +1,55 @@
+/** 
+ * Example GEE Script for Exploring Global Land Cover mapping and Estimation (GLANCE) 
+ * Catalog -- Example 1: Loading datasets for a time range
+ * 
+ * Preliminary citation: 
+ * 
+ * Friedl, M.A., Woodcock, C.E., Olofsson, P., Zhu, Z., Loveland, T., 
+ * Stanimirova, R., Arévalo, P., Bullock, E., Hu, K.-T., Zhang, Y., Turlej, K., 
+ * Tarrio, K., McAvoy, K., Gorelick, N., Wang, J.A., Barber, C.P., Souza, C., 2022. 
+ * Medium Spatial Resolution Mapping of Global Land Cover and Land Cover Change 
+ * Across Multiple Decades From Landsat. Frontiers in Remote Sensing 3. 
+ * https://doi.org/10.3389/frsen.2022.894571
+ * 
+ * User guide: https://lpdaac.usgs.gov/documents/1567/GLanCE_User_Guide_v1.pdf 
+ * 
+ * Authors: 
+ *         Yingtong Zhang | zhangyt@bu.edu
+ *         Paulo Arévalo  | parevalo@bu.edu 
+ */
+
+
+var GLANCE = ee.ImageCollection("projects/GLANCE/DATASETS/V001")
+var palettes = require('users/gena/packages:palettes')
+
+// -------------- SET GLOBAL VIZ PROPERTIES
+Map.setOptions('HYBRID')
+// Land cover Palette
+var LCPalette = ['#386cb0', 'white', 'red', '#68666B', '#336600', '#28A765', '#ffff99']
+var classes = ['Water', 'Snow/Ice', 'Developed', 'Bare', 'Forest', 'Shrub', 'Herbaceous']
+var LCpal = {min: 1, max: 7, palette: LCPalette}
+
+// EVI Palette
+var eviPal = {palette: palettes.matplotlib.viridis[7], min:-100, max: 4000}
+var eviRatePal = {palette: palettes.matplotlib.viridis[7], min:-700, max: 700}
+// Change Palette
+var doyPal = {palette: palettes.matplotlib.viridis[7], min:1, max: 365}
+
+
+// Load the data for a certain year; can also be filtered by other properties
+var filtered = GLANCE.filterDate('2015-01-01', '2016-01-01').mosaic()
+
+// -------------- LAND COVER --------------
+Map.addLayer(filtered.select('LC'), LCpal,'LC')
+
+// -------------- EVI2--------------
+Map.addLayer(filtered.select('EVI2median'), eviPal, "EVI2median",0)
+Map.addLayer(filtered.select('EVI2amplitude'), eviPal, "EVI2amplitude",0)
+Map.addLayer(filtered.select('EVI2rate'), eviRatePal, "EVI2rate",0)
+
+// -------------- CHANGE --------------
+Map.addLayer(filtered.select('changeDate'), doyPal, "Change day",0)
+Map.addLayer(filtered.select('changeMag'), eviPal, "Change magnitude",0)
+Map.addLayer(filtered.select('prevClass'), LCpal, "Previous class",0)
+
+Map.setCenter(-52.9496, -6.1690, 11)

@@ -1,0 +1,119 @@
+// Define the years of interest
+var year1985 = 1985;
+var year2023 = 2023;
+
+// Define ImageCollections for each NLCD dataset
+var nlcd_landcover = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER");
+var nlcd_landcover_confidence = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER_CONFIDENCE");
+var nlcd_fractional_impervious_surface = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/FRACTIONAL_IMPERVIOUS_SURFACE");
+var nlcd_impervious_descriptor = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/IMPERVIOUS_DESCRIPTOR");
+var nlcd_spectral_change_doy = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/SPECTRAL_CHANGE_DOY");
+
+// Original class values, continuous remapped values, color palette, and simplified class names
+var originalClasses = [11, 12, 21, 22, 23, 24, 31, 41, 42, 43, 52, 71, 81, 82, 90, 95];
+var remappedClasses = ee.List.sequence(1, originalClasses.length);
+
+// Function to remap each image's land cover classes and keep the year property
+function remapImage(image) {
+  var remapped = image.remap(originalClasses, remappedClasses, null);
+  return remapped.copyProperties(image, ['year']).set('system:time_start', image.get('system:time_start'));
+}
+
+// Apply remapping to the entire collection
+var nlcd_landcover = nlcd_landcover.map(remapImage);
+
+// Filter each ImageCollection by the year property
+var landcover_1985 = nlcd_landcover.filter(ee.Filter.eq('year', 1985));
+var landcover_2023 = nlcd_landcover.filter(ee.Filter.eq('year', 2023));
+
+var landcover_confidence_1985 = nlcd_landcover_confidence.filter(ee.Filter.eq('year', 1985));
+var landcover_confidence_2023 = nlcd_landcover_confidence.filter(ee.Filter.eq('year', 2023));
+
+var fractional_impervious_surface_1985 = nlcd_fractional_impervious_surface.filter(ee.Filter.eq('year', 1985));
+var fractional_impervious_surface_2023 = nlcd_fractional_impervious_surface.filter(ee.Filter.eq('year', 2023));
+
+var impervious_descriptor_1985 = nlcd_impervious_descriptor.filter(ee.Filter.eq('year', 1985));
+var impervious_descriptor_2023 = nlcd_impervious_descriptor.filter(ee.Filter.eq('year', 2023));
+
+var spectral_change_doy_1985 = nlcd_spectral_change_doy.filter(ee.Filter.eq('year', 1985));
+var spectral_change_doy_2023 = nlcd_spectral_change_doy.filter(ee.Filter.eq('year', 2023));
+
+// Define visualization parameters for each layer
+var vizParams = {
+  'landcover': {
+    min: 1,
+    max: 16,
+    palette: [
+      '#466b9f', '#d1def8', '#dec5c5', '#d99282', '#eb0000', '#ab0000',
+      '#b3ac9f', '#68ab5f', '#1c5f2c', '#b5c58f', '#ccb879', '#dfdfc2', 
+      '#dcd939', '#ab6c28', '#b8d9eb', '#6c9fb8'
+    ]
+  },
+  'landcover_confidence': {min: 1, max: 100, palette: [
+    '#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026', '#800026', 
+    '#7fca4f', '#66c255', '#4dba5b', '#33b160', '#19a766', '#009e6b', '#008763', '#00715a', '#005b52'
+  ]},
+  'fractional_impervious_surface': {min: 1, max: 100, palette: ['#d3d3d3', '#c9b1b1', '#b38484', '#e75454', '#ff7fbf', '#cc66cc', '#9933cc', '#660099']},
+  'impervious_descriptor': {min: 0, max: 2, palette: ['#000000', '#2171b5', '#f6ec27']},
+  'spectral_change_doy': {min: 1, max: 366, palette: ['#6a0dad', '#483d8b', '#1e90ff', '#00fa9a', '#32cd32', '#ffff00', '#ff8c00', '#ff4500', '#ff0000']}
+};
+
+// Function to create a horizontal legend panel
+function createHorizontalLegend(title, palette) {
+  var legend = ui.Panel({
+    style: {
+      position: 'bottom-left',
+      padding: '8px 15px',
+      width: '300px'
+    }
+  });
+
+  // Add a title
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '14px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  legend.add(legendTitle);
+
+  // Create a horizontal gradient bar
+  var legendImage = ee.Image.pixelLonLat().select(0).int();
+  var gradient = legendImage.visualize({min: 0, max: 100, palette: palette});
+  var thumbnail = ui.Thumbnail({
+    image: gradient,
+    params: {bbox: '0,0,100,10', dimensions: '300x15', format: 'png'},
+    style: {stretch: 'horizontal', margin: '0px'}
+  });
+
+  legend.add(thumbnail);
+  return legend;
+}
+
+// Add each horizontal legend to the UI
+Map.add(createHorizontalLegend('Landcover Confidence', vizParams.landcover_confidence.palette));
+Map.add(createHorizontalLegend('Fractional Impervious Surface', vizParams.fractional_impervious_surface.palette));
+Map.add(createHorizontalLegend('Impervious Descriptor', vizParams.impervious_descriptor.palette));
+Map.add(createHorizontalLegend('Spectral Change DOY', vizParams.spectral_change_doy.palette));
+
+// Add each 1985 layer to the map with 'false' so they're not shown by default
+Map.centerObject(fractional_impervious_surface_1985.first(), 5);  // Center on one of the images
+Map.addLayer(landcover_1985.first(), vizParams.landcover, 'Landcover 1985', false);
+Map.addLayer(landcover_confidence_1985.first(), vizParams.landcover_confidence, 'Landcover Confidence 1985', false);
+Map.addLayer(fractional_impervious_surface_1985.first().mask(fractional_impervious_surface_1985.first().gt(1)), vizParams.fractional_impervious_surface, 'Fractional Impervious Surface 1985', false);
+Map.addLayer(impervious_descriptor_1985.first().mask(impervious_descriptor_1985.first().gt(0)), vizParams.impervious_descriptor, 'Impervious Descriptor 1985', false);
+Map.addLayer(spectral_change_doy_1985.first(), vizParams.spectral_change_doy, 'Spectral Change DOY 1985', false);
+
+// Add each 2023 layer to the map with 'false' so they're not shown by default
+Map.addLayer(landcover_2023.first(), vizParams.landcover, 'Landcover 2023', false);
+Map.addLayer(landcover_confidence_2023.first(), vizParams.landcover_confidence, 'Landcover Confidence 2023', false);
+Map.addLayer(fractional_impervious_surface_2023.first().mask(fractional_impervious_surface_2023.first().gt(1)), vizParams.fractional_impervious_surface, 'Fractional Impervious Surface 2023', false);
+Map.addLayer(impervious_descriptor_2023.first().mask(impervious_descriptor_2023.first().gt(0)), vizParams.impervious_descriptor, 'Impervious Descriptor 2023', false);
+Map.addLayer(spectral_change_doy_2023.first(), vizParams.spectral_change_doy, 'Spectral Change DOY 2023', false);
+
+// Add a greyscale map style
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");

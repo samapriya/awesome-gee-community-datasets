@@ -1,0 +1,87 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gdat_catchments = ee.FeatureCollection("projects/sat-io/open-datasets/GDAT/GDAT_V1_CATCHMENTS"),
+    gdat_dams = ee.FeatureCollection("projects/sat-io/open-datasets/GDAT/GDAT_V1_DAMS");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define a function to map values to colors based on visualization parameters
+function getColor(value, visParams) {
+  var min = visParams.min;
+  var max = visParams.max;
+  var palette = ee.List(visParams.palette);
+  var paletteSize = palette.length();
+  
+  // Normalize the value between 0 and 1
+  var normalized = ee.Number(value).subtract(min).divide(max - min).clamp(0, 1);
+  
+  // Compute the palette index
+  var index = normalized.multiply(paletteSize.subtract(1)).round();
+  
+  // Get the color from the palette
+  var color = palette.get(index);
+  
+  return color;
+}
+
+// Function to ensure 'Height' is a valid number and default to 0 if missing or invalid
+var catchmentsWithHeight = gdat_catchments.map(function(feature) {
+  // Get the 'Height' property as a string
+  var heightString = ee.String(feature.get('Height'));
+  
+  // Check if the 'Height' string is empty or not a valid number
+  var isValid = heightString.match('^[0-9.]+$'); // Matches only numeric values
+  var height = ee.Algorithms.If(isValid, ee.Number.parse(heightString), 0); // Default to 0 if invalid
+  
+  return feature.set('Height', height);
+});
+
+// Apply a random visualizer to the catchments using the validated 'Height' property
+var randomVisCatchments = ee.Image().paint({
+  featureCollection: catchmentsWithHeight,
+  color: 'Height' // Use the 'Height' property as the color value
+}).randomVisualizer();
+
+// Add the randomly styled catchments to the map
+Map.addLayer(randomVisCatchments, {}, 'GDAT Catchments Styled by Height');
+
+// Define visualization parameters for dams based on Year_Fin
+var damVis = {
+  min: 1200,
+  max: 2024, // Full range of 'Year_Fin'
+  palette: ['#f7fcf0', '#e0f3db', '#ccebc5', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081', '#081d58', '#fcfdbf', '#fee391', '#fec44f', '#fe9929', '#ec7014', '#cc4c02', '#993404', '#662506', '#4d004b', '#2c0031'],
+  opacity: 0.6
+};
+
+// Style dams by Year_Fin
+var styledDams = gdat_dams.map(function(feature) {
+  var yearFinished = ee.String(feature.get('Year_Fin'));
+  
+  // Check if 'Year_Fin' is not empty and can be converted to a number
+  var isValidYear = yearFinished.match('^[0-9]{4}$'); // Check if it matches a 4-digit number pattern
+  yearFinished = ee.Algorithms.If(isValidYear, ee.Number.parse(yearFinished), 1200); // Default to 1200 if invalid
+  
+  var color = getColor(yearFinished, damVis);
+  return feature.set('style', {color: color, fillColor: color, width: 1});
+});
+
+// Add dams to the map
+Map.addLayer(
+  styledDams.style({styleProperty: 'style'}),
+  {},
+  'Dams Styled by Year Finished'
+);
+
+
+// Center the map
+Map.setCenter(0, 20, 3);
+
+// Print the number of dams and catchments
+gdat_dams.size().evaluate(function(count) {
+  print('Number of dam points:', count);
+});
+
+gdat_catchments.size().evaluate(function(count) {
+  print('Number of catchment polygons:', count);
+});
+
+// Add a greyscale map style
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");

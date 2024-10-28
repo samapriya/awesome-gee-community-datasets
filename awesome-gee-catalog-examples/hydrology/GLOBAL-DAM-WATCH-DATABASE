@@ -1,0 +1,87 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var gdw_barriers = ee.FeatureCollection("projects/sat-io/open-datasets/GDW/GDW_BARRIERS_V1_0"),
+    gdw_reservoirs = ee.FeatureCollection("projects/sat-io/open-datasets/GDW/GDW_RESERVOIRS_V1_0");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define a function to map values to colors based on visualization parameters
+function getColor(value, visParams) {
+  var min = visParams.min;
+  var max = visParams.max;
+  var palette = ee.List(visParams.palette);
+  var paletteSize = palette.length();
+  
+  // Normalize the value between 0 and 1
+  var normalized = ee.Number(value).subtract(min).divide(max - min).clamp(0, 1);
+  
+  // Compute the palette index
+  var index = normalized.multiply(paletteSize.subtract(1)).round();
+  
+  // Get the color from the palette
+  var color = palette.get(index);
+  
+  return color;
+}
+
+// Define visualization parameters for reservoirs based on capacity (CAP_MCM)
+var reservoirVis = {
+  min: 100,
+  max: 3000, // Adjust max value based on the data range
+  palette: ['#f7fcf0', '#e0f3db', '#ccebc5', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081', '#081d58', '#fcfdbf', '#fee391', '#fec44f', '#fe9929', '#ec7014', '#cc4c02', '#993404', '#662506', '#4d004b', '#2c0031'],
+  opacity: 0.6
+};
+
+
+// Style reservoirs by capacity
+var styledReservoirs = gdw_reservoirs.map(function(feature) {
+  var capacity = ee.Number(feature.get('CAP_MCM'));
+  // Handle missing or invalid capacity values
+  capacity = ee.Algorithms.If(capacity.gt(0), capacity, 0);
+  var color = getColor(capacity, reservoirVis);
+  return feature.set('style', {color: color, fillColor: color, width: 1});
+});
+
+// Add reservoirs to the map
+Map.addLayer(
+  styledReservoirs.style({styleProperty: 'style'}),
+  {},
+  'Reservoirs Styled by Capacity'
+);
+
+// Define visualization parameters for barriers based on dam height (DAM_HGT_M)
+var barrierVis = {
+  min: 0,
+  max: 100, // Adjust max value based on the data range
+  palette: ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026', '#800026', '#4d0019'],
+  opacity: 0.6
+};
+
+// Style barriers by dam height
+var styledBarriers = gdw_barriers.map(function(feature) {
+  var damHeight = ee.Number(feature.get('DAM_HGT_M'));
+  // Handle missing or invalid dam height values
+  damHeight = ee.Algorithms.If(damHeight.gt(0), damHeight, 0);
+  var color = getColor(damHeight, barrierVis);
+  return feature.set('style', {color: color, pointSize: 4});
+});
+
+// Add barriers to the map
+Map.addLayer(
+  styledBarriers.style({styleProperty: 'style'}),
+  {},
+  'Barriers Styled by Dam Height'
+);
+
+// Center the map
+Map.setCenter(0, 20, 3);
+
+// Print the number of barriers and reservoirs
+gdw_barriers.size().evaluate(function(count) {
+  print('Number of barrier points:', count);
+});
+
+gdw_reservoirs.size().evaluate(function(count) {
+  print('Number of reservoir polygons:', count);
+});
+
+// Add a greyscale map style
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");

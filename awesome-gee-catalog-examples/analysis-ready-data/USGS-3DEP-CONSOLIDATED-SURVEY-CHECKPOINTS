@@ -1,0 +1,7 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var survey_checkpoints = ee.FeatureCollection("projects/sat-io/open-datasets/USGS/SURVEY_CHECKPOINTS_3DEP_2010_2017");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(survey_checkpoints)
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/65217/grey", "Greyscale");
