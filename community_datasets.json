@@ -26583,6 +26583,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/annual_nlcd.png"
   },
   {
+    "title": "USGS Annual NLCD Land Cover Change Dataset",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER_CHANGE",
+    "provider": "U.S. Geological Survey (USGS)",
+    "tags": "Land Cover, Land Change, Landsat, Deep Learning, Annual NLCD, USGS, Environmental Monitoring",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/annual_nlcd",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/annual_nlcd.png"
+  },
+  {
     "title": "USGS Annual NLCD Fractional Impervious Surface",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/NLCD-ANNUAL-LANDCOVER-LAYERS",
     "type": "image_collection",

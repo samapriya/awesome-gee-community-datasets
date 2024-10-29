@@ -85,6 +85,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ```js
 var nlcd_landcover_confidence = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER_CONFIDENCE");
+var nlcd_landcover_change = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER_CHANGE");
 var nlcd_fractional_impervious_surface = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/FRACTIONAL_IMPERVIOUS_SURFACE");
 var nlcd_impervious_descriptor = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/IMPERVIOUS_DESCRIPTOR");
 var nlcd_spectral_change_doy = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/SPECTRAL_CHANGE_DOY");
