@@ -78,6 +78,14 @@
     </div>
 </div>
 {% endblock %}
+{% block content %}
+{{ super() }}
+
+<!-- Floating Button -->
+<a href="https://gee-community-catalog.org/search" class="floating-button" target="_blank">
+    AI-Powered Search
+</a>
+{% endblock %}
 {% block scripts %}
 {{ super() }}
 <script src="{{ 'assets/javascripts/custom.a678ee80.min.js' | url }}"></script>

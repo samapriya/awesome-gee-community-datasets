@@ -7,6 +7,7 @@
 - Added all [Annual NLCD Dataset Layers](https://gee-community-catalog.org/projects/annual_nlcd)
 - Added [Global Dam Tracker (GDAT) Database](https://gee-community-catalog.org/projects/gdat)
 - Added [Global Dam Watch v1.0.](https://gee-community-catalog.org/projects/gdw)
+- Added [Global Natural and Planted Forests](https://gee-community-catalog.org/projects/global_ftype)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2024-10-22
