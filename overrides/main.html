@@ -17,15 +17,46 @@
         text-align: right;
     }
 
-    /* New center-container to isolate the center content and fully center it */
     .center-container {
         flex-grow: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 20px;
-        /* Adjust as necessary for vertical alignment */
         text-align: center;
+    }
+
+    .floating-button {
+        position: fixed;
+        bottom: 30px;
+        /* Moved to lower bottom */
+        right: 30px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+    }
+
+    .floating-button img {
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .floating-button:hover {
+        background-color: #333;
+    }
+
+    /* Custom styling to hide reCAPTCHA badge */
+    .grecaptcha-badge {
+        visibility: hidden;
+        /* Hides the badge but it remains active */
     }
 </style>
 {% endblock %}
@@ -82,9 +113,18 @@
 {{ super() }}
 
 <!-- Floating Button -->
-<a href="https://gee-community-catalog.org/search" class="floating-button" target="_blank">
-    AI-Powered Search
+<a href="javascript:void(0);" class="floating-button" id="searchWidgetTrigger">
+    <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
+    Ask AI
 </a>
+
+<!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget configId="7df2e903-867d-4e8e-b3da-bc5f138b359b" triggerId="searchWidgetTrigger" target="_blank">
+</gen-search-widget>
+
 {% endblock %}
 {% block scripts %}
 {{ super() }}
