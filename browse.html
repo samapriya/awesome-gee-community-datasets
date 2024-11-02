@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         body {
-            font-family: "Afacad Flux", sans-serif;
+            font-family: "Poppins", sans-serif;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         body.dark {
@@ -35,25 +39,24 @@
             color: #cbd5e0;
         }
 
-        #theme-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #4a5568;
-            color: #fff;
-            border: none;
-            border-radius: 9999px;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-        }
-
         .btn {
             display: inline-block;
             border-radius: 9999px;
-            padding: 0.5rem 1rem;
+            padding: 0.25rem 0.5rem;
             text-align: center;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
+            white-space: nowrap;
+            /* Ensure text stays on one line */
+        }
+
+        .btn:hover {
+            background-color: #2d3748;
+            /* Change color as needed */
+            color: #fff;
+            /* Text color on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge button */
         }
 
         input[type="search"] {
@@ -62,14 +65,23 @@
         }
 
         .grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            /* Ensure enough space between items */
+        }
+
+        .dataset-card {
+            padding: 1rem;
+            /* Reduce padding for better spacing */
         }
 
         .dataset-card .buttons {
             display: flex;
             gap: 0.5rem;
-            justify-content: space-between;
+            justify-content: space-evenly;
             margin-top: auto;
+            flex-wrap: nowrap;
+            /* Prevent buttons from wrapping */
         }
     </style>
 </head>
@@ -78,15 +90,17 @@
     <header class="sticky top-0 z-50 w-full border-b bg-white dark:bg-gray-800">
         <div class="container mx-auto p-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <img src="https://i.imgur.com/FYPcTFF.png" alt="Logo" class="h-8">
-                <h1 class="font-bold">Catalog Browse</h1>
+                <img src="https://i.imgur.com/FYPcTFF.png" alt="Logo" class="h-12">
+                <!-- Adjusted height to make the logo bigger -->
+                <h1 class="text-lg font-bold">Catalog Browse</h1> <!-- Adjusted text size if necessary -->
             </div>
+
             <div class="flex items-center">
                 <input type="search" id="search" placeholder="Search datasets..." class="p-2 rounded border w-80">
                 <span id="dataset-count" class="text-gray-700 dark:text-gray-300">0 datasets</span>
             </div>
             <button id="theme-toggle" class="p-2">
-                <span id="theme-text">Switch to Dark Mode</span>
+                <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
             </button>
         </div>
     </header>
@@ -102,7 +116,7 @@
             const datasetContainer = document.getElementById('dataset-container');
             const searchInput = document.getElementById('search');
             const themeToggle = document.getElementById('theme-toggle');
-            const themeText = document.getElementById('theme-text');
+            const themeIcon = document.getElementById('theme-icon');
             const datasetCount = document.getElementById('dataset-count');
             let datasets = [];
             let displayedDatasets = [];
@@ -157,7 +171,7 @@
 
             themeToggle.addEventListener('click', () => {
                 document.body.classList.toggle('dark');
-                themeText.textContent = document.body.classList.contains('dark') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+                themeIcon.textContent = document.body.classList.contains('dark') ? 'dark_mode' : 'light_mode';
             });
         });
     </script>
