@@ -29,7 +29,6 @@
     .floating-button {
         position: fixed;
         bottom: 30px;
-        /* Moved to lower bottom */
         right: 30px;
         background-color: #000;
         color: #fff;
@@ -41,6 +40,7 @@
         font-weight: bold;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s;
+        cursor: pointer;
     }
 
     .floating-button img {
@@ -56,10 +56,10 @@
     /* Custom styling to hide reCAPTCHA badge */
     .grecaptcha-badge {
         visibility: hidden;
-        /* Hides the badge but it remains active */
     }
 </style>
 {% endblock %}
+
 {% block announce %}
 <div class="content-container">
     <div class="left-content">
@@ -109,13 +109,14 @@
     </div>
 </div>
 {% endblock %}
+
 {% block content %}
 {{ super() }}
 
 <!-- Floating Button -->
 <a href="javascript:void(0);" class="floating-button" id="searchWidgetTrigger">
     <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
-    Ask AI
+    <span>Ask AI</span>
 </a>
 
 <!-- Widget JavaScript bundle -->
@@ -125,7 +126,14 @@
 <gen-search-widget configId="7df2e903-867d-4e8e-b3da-bc5f138b359b" triggerId="searchWidgetTrigger" target="_blank">
 </gen-search-widget>
 
+<script>
+    document.getElementById('searchWidgetTrigger').addEventListener('click', function () {
+        document.querySelector('gen-search-widget').open();
+    });
+</script>
+
 {% endblock %}
+
 {% block scripts %}
 {{ super() }}
 <script src="{{ 'assets/javascripts/custom.a678ee80.min.js' | url }}"></script>
