@@ -15,7 +15,7 @@
 
 ## Release stats
 
-#### Last updated 2024-10-03
+#### Last updated 2024-11-05
 
-![catalog_stats_20241003](https://github.com/user-attachments/assets/e85a8a35-14e8-4f02-8906-68359ff39996)
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/1024a792-99e1-4f17-adf8-b2f77bc569b8">
 
