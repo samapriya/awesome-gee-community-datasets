@@ -1536,6 +1536,30 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/mapbiomas.png"
   },
   {
+    "title": "High Res Land Cover Change Pakistan (1990-2020)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/PK-LANCOVER-CARBON-STOCK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/pk-lulc",
+    "provider": "Waleed et al 2024",
+    "tags": "land use, land cover, pakistan, lulc, carbon, urban, InVEST model",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/pk_lulc/",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/pk-landcover.png"
+  },
+  {
+    "title": "High Res Carbon Storage Pakistan (1990-2020)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/PK-LANCOVER-CARBON-STOCK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/pk-carbon-stock",
+    "provider": "Waleed et al 2024",
+    "tags": "land use, land cover, pakistan, lulc, carbon, urban, InVEST model",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/pk_lulc/",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/pk-carbon-stock.png"
+  },
+  {
     "title": "Global Mining Polygons",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-AND-VALIDATION",
     "type": "table",
