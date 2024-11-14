@@ -114,23 +114,10 @@
 {{ super() }}
 
 <!-- Floating Button -->
-<a href="javascript:void(0);" class="floating-button" id="searchWidgetTrigger">
+<a href="https://gee-community-catalog.org/search" class="floating-button" id="searchRedirect" target="_blank">
     <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
     <span>Ask AI</span>
 </a>
-
-<!-- Widget JavaScript bundle -->
-<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
-
-<!-- Search widget element is not visible by default -->
-<gen-search-widget configId="7df2e903-867d-4e8e-b3da-bc5f138b359b" triggerId="searchWidgetTrigger" target="_blank">
-</gen-search-widget>
-
-<script>
-    document.getElementById('searchWidgetTrigger').addEventListener('click', function () {
-        document.querySelector('gen-search-widget').open();
-    });
-</script>
 
 {% endblock %}
 
