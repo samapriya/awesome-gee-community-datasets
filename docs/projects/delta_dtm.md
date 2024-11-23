@@ -23,7 +23,7 @@ https://doi.org/10.4121/21997565.v3
 #### Earth Engine Snippet
 
 ```js
-var delta_dtm = ee.Image("users/maartenpronk/deltadtm/v1-1");
+var delta_dtm = ee.Image("projects/sat-io/open-datasets/DELTARES/deltadtm_v1-1");
 var elevation = delta_dtm.select('b1');
 elevation = elevation.updateMask(elevation.neq(30)); // Dataset is clipped at 30m.
 
