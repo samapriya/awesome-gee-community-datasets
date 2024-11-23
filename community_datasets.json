@@ -33746,7 +33746,7 @@
     "title": "DeltaDTM Global coastal digital terrain model",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/DELTA-DTM",
     "type": "image",
-    "id": "projects/sat-io/open-datasets/DELTARES/deltadtm_v1",
+    "id": "projects/sat-io/open-datasets/DELTARES/deltadtm_v1-1",
     "provider": "Deltares, Pronk, M., Hooijer, A., Eilander, D. et al 2024",
     "tags": "Altimetry, Digital Elevation Model (DEM), Digital terrain model (DTM), elevation, GEDI, ICESat-2, LiDAR",
     "license": "Creative Commons Attribution 4.0 International",
