@@ -422,6 +422,7 @@ nav:
               - MODIS Gap filled Long-term Land Surface Temperature Daily (2003-2020): projects/daily_lst.md
               - Global Seamless High-resolution Temperature Dataset (GSHTD): projects/gshtd.md
               - Global Daily near-surface air temperature (2003-2020): projects/airtemp.md
+              - High-Resolution Global Monthly Universal Thermal Climate Index (2000–2022): projects/globutci.md
               - Snow Data Assimilation System (SNODAS): projects/snodas.md
               - United States Drought Monitor Layers: projects/usdm.md
               - North American Drought Monitor (NADM): projects/nadm.md

@@ -21037,6 +21037,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/airtemp.png"
   },
   {
+    "title": "High-Resolution Global Monthly Universal Thermal Climate Index (2000–2022)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOUTCI-MONTHLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/gloutci-m",
+    "provider": "Zhiwei Yang, Jian Peng, & Yanxu Liu. (2023)",
+    "tags": "Universal Thermal Climate Index, Heat Stress, GloUTCI-M",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/globutci/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/globutci.png"
+  },
+  {
     "title": "Global NPP-VIIRS-like nighttime light (2000-2020)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-NPP-VIIRS-LIKE-NTL",
     "type": "image_collection",
