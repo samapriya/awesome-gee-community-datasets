@@ -24,6 +24,8 @@ Zhiwei Yang, Jian Peng, & Yanxu Liu. (2023). GloUTCI-M: A Global Monthly 1 km Un
 Zenodo. https://doi.org/10.5281/zenodo.8310513
 ```
 
+![globutci-m](https://github.com/user-attachments/assets/9e1e629e-e512-4466-bb7e-74a09a1f856e)
+
 #### Earth Engine Snippet
 
 ```js
