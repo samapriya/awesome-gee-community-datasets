@@ -30,7 +30,7 @@ Zenodo. https://doi.org/10.5281/zenodo.8310513
 var gloutci = ee.ImageCollection("projects/sat-io/open-datasets/gloutci-m");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/gloutci-m
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOUTCI-MONTHLY
 
 #### License
 
