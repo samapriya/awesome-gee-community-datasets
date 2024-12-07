@@ -68,6 +68,7 @@ These datasets are offered under the Creative Commons Attribution 4.0 Internatio
 
 #### Changelog
 * Landscan Global 2022 layer was released on 2023-07-05 and has now been added to existing global collection.
+* Landscan Global 2023 layer was released on 2024-12-03 and has now been added to existing global collection.
 
 Created by: Oakridge National Laboratory
 
@@ -75,7 +76,7 @@ Curated in GEE by : Samapriya Roy
 
 keywords: Global Population, Population count, Diurnal population, remote sensing, machine learning
 
-Last modified: 2023-07-05
+Last modified: 2024-12-03
 
-Last updated on GEE: 2023-07-20
+Last updated on GEE: 2024-12-06
 
