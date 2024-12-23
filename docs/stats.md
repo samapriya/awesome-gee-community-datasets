@@ -7,10 +7,10 @@
 
 <!-- START_MARKER -->
 * **Total Size of catalog**: 500.79 TB
-* **Total images in catalog**: 1,487,070
+* **Total images in catalog**: 1,487,079
 * **Total image collections in catalog**: 584
 * **Total Feature collections in catalog**: 1,789
-* **Last Run Date**: 2024-12-22
+* **Last Run Date**: 2024-12-23
 <!-- END_MARKER -->
 
 ## Release stats
