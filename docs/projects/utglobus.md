@@ -87,7 +87,7 @@ Earth Engine App: https://sat-io.earthengine.app/view/ut-globus
 #### License
 The article is licensed under a Creative Commons Attribution 4.0 International license.
 
-Provided by: Kamath et al 2024
+Provided by: Kamath, H.G., Singh, M., Malviya, N. et al 2024
 
 Curated in GEE by: Samapriya Roy
 
