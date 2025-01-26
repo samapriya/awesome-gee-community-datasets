@@ -25,6 +25,9 @@ Kamath, H., Singh, M., Malviya, N., Martilli, A., He, L., Aliaga, D., He, C., Ch
 (UT-GLOBUS) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11156602
 ```
 
+#### Dataset preprocessing
+The datasets which are in gpkg format are converted into Earth Engine compatible formats. In some cases cities were divided into multiple parts and attempts were made to create a merged feature collection. Custom code was written to automate this process and to progressively remove duplicates and parts once merge had been completed. While the original collection has 1200 cities only 1088 could be ingested owing to ingestion failure at Earth Engine side. I wanted to create an app for users to select a city and click and get heigh information and that has been implemented and I have included the link.
+
 ![ut-globus](https://github.com/user-attachments/assets/f5d856a2-55ea-49ef-9fb0-3a29bf3d8fbe)
 
 #### Code Snippet
