@@ -3,6 +3,7 @@
 The University of Texas - GLObal Building heights for Urban Studies (UT-GLOBUS) dataset provides building heights and urban canopy parameters (UCPs) for more than 1200 cities worldwide. It combines open-source spaceborne altimetry (ICESat-2 and GEDI), and coarse-resolution urban canopy elevation data with a machine-learning model to estimate building-level information. The dataset includes individual building polygons with height attributes in meters above ground level, suitable for visualization using GIS platforms.  UCPs are provided in a binary file format compatible with the Weather Research and Forecasting (WRF) preprocessing system. The primary objective of UT-GLOBUS is to provide a dataset for modelling applications from city to street scales, particularly for deriving UCPs for the multi-layer UCM in the WRF-Urban model and for providing building heights for the SOlar and LongWave Environmental Irradiance Geometry (SOLWEIG) model.
 
 **Key Features and Details**
+
 *   **Building Heights:** Provided as vector files with individual building polygons and height attributes in meters.
 *   **Urban Canopy Parameters (UCPs):** Available in a binary file format compatible with WRF preprocessing system. UCPs include plan area fraction (λp), building surface to plan area ratio (λb), and area-averaged building height (ha), along with the building height histogram with 5-meter bin size.
 *   **Spatial Resolution:** Building heights are derived at a 30-meter spatial resolution. UCPs are calculated using a 300-meter sliding kernel with 1 km² area.
