@@ -3,6 +3,14 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-01-28
+- Release 3.1.0 for the Awesome GEE Community Catalog
+- Added [UT-GLOBUS GLObal Building heights for Urban Studies (UT-GLOBUS)](https://gee-community-catalog.org/projects/utglobus)
+- Added [ESA CCI Global Forest Above Ground Biomass Change Layers v5.01](https://gee-community-catalog.org/projects/cci_agb)
+- Added [Global Annual Simulated NPP-VIIRS Nighttime Light Dataset (1992-2023)](https://gee-community-catalog.org/projects/srunet_npp_viirs_ntl)
+- Updated [ESA CCI Global Forest Above Ground Biomass v5.01](https://gee-community-catalog.org/projects/cci_agb)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2024-10-27
 - Added all [Annual NLCD Dataset Layers](https://gee-community-catalog.org/projects/annual_nlcd)
 - Added [Global Dam Tracker (GDAT) Database](https://gee-community-catalog.org/projects/gdat)
