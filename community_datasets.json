@@ -37474,6 +37474,19 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/cci_agb.png"
   },
   {
+    "title": "ESA CCI Global Forest Above Ground Biomass Change Products",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ESA-CCI-ABOVEGROUND-BIOMASS-DIFFERENCE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ESA/ESA_CCI_AGB_DIFF",
+    "provider": "CCI BIOMASS consortium led by the University of Aberystwyth (U.K.)",
+    "tags": "satellite observation, forest, biomass",
+    "license": "custom",
+    "license_text": "Use of these data is covered by the license information found here http://artefacts.ceda.ac.uk/licences/specific_licences/esacci_biomass_terms_and_conditions.pdf. The CCI BIOMASS datasets have been processed by the CCI BIOMASS consortium led by the University of Aberystwyth (U.K.). They are made available to the public by ESA and the consortium. ",
+    "docs": "https://gee-community-catalog.org/projects/cci_agb/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/cci_agb.png"
+  },
+  {
     "title": "MOD10A2061 Snow Cover 8-Day L3 Global 500m",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MOD10A261-Snow-Cover-8-Day",
     "type": "image_collection",
