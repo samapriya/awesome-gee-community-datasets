@@ -12,10 +12,3 @@
 * **Total Feature collections in catalog**: 2,862
 * **Last Run Date**: 2025-01-28
 <!-- END_MARKER -->
-
-## Release stats
-
-#### Last updated 2024-11-05
-
-<img width="512" alt="image" src="https://github.com/user-attachments/assets/1024a792-99e1-4f17-adf8-b2f77bc569b8">
-
