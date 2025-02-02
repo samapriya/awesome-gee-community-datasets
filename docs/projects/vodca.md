@@ -1,5 +1,9 @@
 # Global Long-term Microwave Vegetation Optical Depth Climate Archive (VODCA)
 
+???+ note
+
+    **This has now been updated to [VODCA v2](https://gee-community-catalog.org/projects/vodca_v2) which includes data all the way upto 2021. Both versions will be maintained for the time being**
+
 Vegetation optical depth (VOD) describes the attenuation of radiation by plants. VOD a function of frequency as well as vegetation water content, and by extension biomass. VOD has many possible applications in studies of the biosphere, such as biomass monitoring, drought monitoring, phenology analyzes or fire risk management. We merged VOD observations from various spaceborne sensors (SSM/I, TMI, AMSR-E, AMSR2, WindSat) to create global long-term vod time series. Prior to aggregation the data has been rescaled to AMSR-E, removing systematic differences between them.
 
 There is a product for C-band (~6.9 GHz, 2002 - 2018), X-band (10.7 GHz, 1997 - 2018) and Ku-band (~19 GHz, 1987 - 2017). The data is global sampled on a regular 0.25 degrees grid.
