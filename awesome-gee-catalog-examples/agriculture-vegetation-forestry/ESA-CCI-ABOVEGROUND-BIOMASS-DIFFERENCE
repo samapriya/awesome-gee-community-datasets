@@ -1,0 +1,32 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var agb_diff = ee.ImageCollection("projects/sat-io/open-datasets/ESA/ESA_CCI_AGB_DIFF");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var palette = ["#C6ECAE","#A1D490","#7CB970","#57A751","#348E32", "#267A29","#176520","#0C4E15","#07320D","#031807"];
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+
+/*
+The standard deviation of the AGB change estimate is defined as the square root of the sum of the
+variances of the two individual AGB values. The standard deviation is expressed in Mg ha-1.
+*/
+Map.addLayer(agb_diff.sort('system:time_start').first().select(['AGB_DIFF_SD']),{min:1,max:315,palette:palette},'Above Ground Biomass Change Standard Deviation')
+
+
+/*
+The quality flag layer is stored in byte format and adopts the following legend:
+0: AGB=0 in both maps
+1: AGB loss
+2: Potential AGB loss
+3: Improbable change
+4: Potential AGB gain
+5: AGB gain
+*/
+var palette = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00']
+
+// Update your layer with the new palette and correct min/max values
+Map.addLayer(
+  agb_diff.sort('system:time_start').first().select(['AGB_DIFF_QF']),
+  {min: 1, max: 5, palette: palette},
+  'Above Ground Biomass Change Quality Flag'
+);

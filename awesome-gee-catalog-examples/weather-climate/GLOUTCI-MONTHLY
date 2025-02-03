@@ -1,0 +1,66 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[-165.68828125000002, 70.77640275242975],
+          [-165.68828125000002, -49.97175414996437],
+          [155.46406249999998, -49.97175414996437],
+          [155.46406249999998, 70.77640275242975]]], null, false),
+    gloutcim = ee.ImageCollection("projects/sat-io/open-datasets/gloutci-m");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var dataset = gloutcim
+  .map(function(img) {
+    return img.divide(100); // Scale the images by dividing by 100
+  });
+
+// Load a dataset to mask oceans (use 'Land/Water Mask' or similar dataset)
+var landMask = ee.Image("MODIS/006/MCD12Q1/2018_01_01")
+  .select('LC_Type1')
+  .neq(17); // Class 17 corresponds to 'water' in the MCD12Q1 dataset
+
+// Apply the land mask to each image in the collection
+dataset = dataset.map(function(image) {
+  return image.updateMask(landMask);
+});
+
+// Define visualization parameters with a broader range and more colors
+var visParams = {
+  min: -20,
+  max: 40, // Expanded temperature range (Celsius)
+  palette: ["#000004", "#1b0b42", "#3e0f70", "#721f81", "#9e377d", "#c74b56", "#f1605d", "#fc9d24", "#f9f65e", "#fcffa4"]
+};
+
+// Function to create visualized frames for each image in the collection
+function visualizeImage(image) {
+  return image.visualize(visParams);
+}
+
+// Map the visualization function over the dataset
+var visualizedCollection = dataset.map(visualizeImage);
+
+// Parameters for video thumbnail
+var videoParams = {
+  region: geometry,
+  framesPerSecond: 8,
+  dimensions: 512,
+  crs: 'EPSG:3857'
+};
+
+// Generate a video thumbnail 15 years
+print("Video URL:", visualizedCollection.limit(180).getVideoThumbURL(videoParams));
+print(ui.Thumbnail(visualizedCollection.limit(180), videoParams));
+
+// Optional: Add the first frame to the map for preview
+Map.setCenter(19.51,14.72, 3); // Adjust zoom level as needed
+
+Map.addLayer(dataset.first(), visParams, 'First Frame: Temperature (Celsius)');
+
+// Add custom styling with Snazzy maps
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/1261/dark", "Dark");

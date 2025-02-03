@@ -1,0 +1,108 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var landcover = ee.ImageCollection("projects/sat-io/open-datasets/pk-lulc"),
+    carbon = ee.ImageCollection("projects/sat-io/open-datasets/pk-carbon-stock");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.setCenter(70.079,30.467,6)
+
+// Define time periods of interest
+var years = [1990, 2000, 2010, 2020];
+
+// Define visualization parameters for LULC and Carbon Stock
+var lulcVis = {
+  min: 1,
+  max: 9,
+  palette: ['#54bb19', '#ffffff', '#affd08', '#d1fbb9', '#652ff3', '#fed483', '#005ce6', '#e50600', '#fe4fcd']
+};
+var carbonVis = {
+  min: 0,
+  max: 31.1,
+  palette: ['#440154', '#482576', '#33638d', '#238a8d', '#75d054', '#dde318', '#fde725']
+};
+
+// Loop through each year and add LULC and Carbon Stock layers
+years.forEach(function(year) {
+  // Load LULC images with date filters for specific years
+  var lulcImage = landcover.filterDate(year + '-01-01', year + '-12-31').first();
+  if (lulcImage) {
+    Map.addLayer(lulcImage, lulcVis, 'LULC ' + year, year === 2020);
+  }
+
+  // Load Carbon Stock images, applying multiplier
+  var carbonImage = carbon.filterDate(year + '-01-01', year + '-12-31').first();
+  if (carbonImage) {
+    Map.addLayer(carbonImage.multiply(10), carbonVis, 'Carbon Stock ' + year, year === 2020);
+  }
+});
+
+// Center the map on Pakistan
+Map.centerObject(ee.FeatureCollection('USDOS/LSIB_SIMPLE/2017').filter(ee.Filter.eq('country_na', 'Pakistan')), 6);
+
+// LULC Class Legend
+var lulcLegend = ui.Panel({style: {position: 'bottom-left', padding: '8px 15px'}});
+lulcLegend.add(ui.Label({value: 'LULC Classes', style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}}));
+
+var lulcClasses = [
+  {label: 'Forest Cover', color: '#54bb19'},
+  {label: 'Agriculture/Cropland', color: '#affd08'},
+  {label: 'Rangeland', color: '#d1fbb9'},
+  {label: 'Wetlands', color: '#652ff3'},
+  {label: 'Barren Lands', color: '#fed483'},
+  {label: 'Water Bodies', color: '#005ce6'},
+  {label: 'Built-up Areas', color: '#e50600'},
+  {label: 'Snow/Ice', color: '#fe4fcd'}
+];
+
+lulcClasses.forEach(function(lulcClass) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: lulcClass.color,
+      padding: '10px',
+      margin: '0 0 4px 0'
+    }
+  });
+  var description = ui.Label({
+    value: lulcClass.label,
+    style: {margin: '0 0 4px 6px'}
+  });
+
+  var legendItem = ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+  lulcLegend.add(legendItem);
+});
+Map.add(lulcLegend);
+
+// Carbon Stock Legend
+var carbonLegend = ui.Panel({style: {position: 'bottom-left', padding: '8px 15px'}});
+carbonLegend.add(ui.Label({value: 'Carbon Storage (Mg/m2)', style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}}));
+
+var carbonColorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '100x10',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: carbonVis.palette,
+  },
+  style: {stretch: 'horizontal', margin: '3px 8px', maxHeight: '24px'}
+});
+
+var carbonLegendLabels = ui.Panel({
+  widgets: [
+    ui.Label(carbonVis.min, {margin: '4px 8px'}),
+    ui.Label(((carbonVis.max - carbonVis.min) / 2 + carbonVis.min), {margin: '4px 8px', textAlign: 'center', stretch: 'horizontal'}),
+    ui.Label(carbonVis.max, {margin: '4px 8px'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+carbonLegend.add(carbonColorBar);
+carbonLegend.add(carbonLegendLabels);
+Map.add(carbonLegend);
+
+// Add a greyscale map style
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/1261/dark", "Greyscale");

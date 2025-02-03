@@ -1,4 +1,4 @@
-# Global Vegetation Optical Depth Dataset VODCA v2
+# Global Long-term Microwave Vegetation Optical Depth Dataset Archive VODCA v2
 
 The Global Microwave Vegetation Optical Depth Climate Archive version 2 (VODCA v2) provides two new multi-satellite VOD datasets: VODCA CXKu, a
 daily multi-frequency product spanning 1987-2021, and VODCA L, a 10-daily L-band product covering 2010-2021. Vegetation Optical Depth (VOD) is a

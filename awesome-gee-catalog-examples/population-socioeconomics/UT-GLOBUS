@@ -1,0 +1,47 @@
+var table = ee.FeatureCollection("projects/sat-io/open-datasets/UT-GLOBUS/peoria");
+
+// Set the map center and zoom
+Map.setCenter(-89.60, 40.73, 17);
+
+// Get the current map bounds
+var bounds = ee.Geometry.Rectangle(Map.getBounds());
+
+// Filter the feature collection to the bounds
+var filteredTable = table.filterBounds(bounds);
+
+// Calculate minimum and maximum heights
+var ht_min = filteredTable.aggregate_min('height');
+var ht_max = filteredTable.aggregate_max('height');
+
+// Define a color palette as an Earth Engine List
+var palette = ee.List([
+  '#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78',
+  '#2ca02c', '#98df8a', '#d62728', '#ff9896',
+  '#9467bd', '#c5b0d5'
+]);
+
+// Assign colors based on height
+var colorFeatures = filteredTable.map(function(feature) {
+  var height = feature.getNumber('height');
+  var min = ee.Number(ht_min);
+  var max = ee.Number(ht_max);
+  
+  // Normalize the height to [0, 1]
+  var normalizedHeight = height.subtract(min).divide(max.subtract(min));
+  
+  // Map the normalized height to one of the palette indices
+  var paletteIndex = normalizedHeight.multiply(palette.length().subtract(1)).floor();
+  
+  // Clamp the palette index to valid bounds
+  var clampedIndex = paletteIndex.min(palette.length().subtract(1)).max(0);
+  
+  // Get the corresponding color from the Earth Engine List
+  var color = palette.get(clampedIndex);
+  
+  return feature.set('style', {color: color, width: 2});
+});
+
+// Apply the styles and add to the map
+var styledTable = colorFeatures.style({styleProperty: 'style'});
+
+Map.addLayer(styledTable, {}, 'Palette Colored Table');

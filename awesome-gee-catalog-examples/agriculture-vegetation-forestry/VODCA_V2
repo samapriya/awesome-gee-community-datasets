@@ -1,0 +1,33 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ckxu_band = ee.ImageCollection("projects/sat-io/open-datasets/VODCA/CKXU_BAND_V2"),
+    l_band = ee.ImageCollection("projects/sat-io/open-datasets/VODCA/L_BAND_V2");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+function getCollectionDateRange(collection) {
+  // Get earliest date
+  var startDate = ee.Date(collection.sort('system:time_start')
+    .first()
+    .get('system:time_start'))
+    .format('YYYY-MM-dd');
+    
+  // Get latest date  
+  var endDate = ee.Date(collection.sort('system:time_start', false)
+    .first()
+    .get('system:time_start'))
+    .format('YYYY-MM-dd');
+    
+  return {
+    start: startDate,
+    end: endDate
+  };
+}
+
+var ckxuDates = getCollectionDateRange(ckxu_band);
+var lDates = getCollectionDateRange(l_band);
+
+print('CKXU dates:', ckxuDates.start, 'to', ckxuDates.end);
+print('L-band dates:', lDates.start, 'to', lDates.end);
+
+var vis = ['#a50026','#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850','#006837']
+
+Map.addLayer(ckxu_band.filterDate('2005-01-01','2005-12-31').median().select('VOD'),{palette:vis,min:0.1,max:1.5},'CKXU-Band 2005 subset')
+Map.addLayer(l_band.filterDate('2010-01-01','2010-12-31').median().select('VOD'),{palette:vis,min:0.08,max:0.6},'L-Band 2010 subset')

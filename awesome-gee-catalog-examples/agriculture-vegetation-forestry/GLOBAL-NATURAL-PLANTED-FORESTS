@@ -1,0 +1,14 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var global_forest_types = ee.ImageCollection("projects/sat-io/open-datasets/GLOBAL-NATURAL-PLANTED-FORESTS");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var image = global_forest_types.mosaic()
+
+var maskedImage = image.updateMask(
+  image.select('b1').neq(127)
+    .or(image.select('b2').neq(127))
+    .or(image.select('b3').neq(127))
+);
+Map.addLayer(maskedImage,{min:0,max:127},'Masked Global Natural(Green) & Planted(Yellow) Trees')
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/71079/dark", "Dark");

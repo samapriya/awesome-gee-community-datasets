@@ -1,0 +1,33 @@
+// Load the NPP-VIIRS nighttime lights collection
+var viirs_ntl = ee.ImageCollection("projects/sat-io/open-datasets/srunet-npp-viirs-ntl");
+
+// Function to visualize each image in the collection
+function visualizeNightLights(collection) {
+  // Get unique years from the collection
+  var years = collection.distinct('system:index').aggregate_array('system:index');
+  years.evaluate(function(yearList) {
+    yearList.forEach(function(year) {
+      // Filter collection for each year
+      var yearImage = collection.filter(ee.Filter.eq('system:index', year)).first();
+      
+      // Add layer to map with appropriate visualization parameters
+      Map.addLayer(yearImage, {
+        min: 0,
+        max: 60,
+        palette: ['#FFFFE0', '#FFFF00', '#FFE135', '#FFD700', '#FFC200', 
+                 '#FFA500', '#FF8C00', '#FF7518', '#FF4D00', '#FF0000']
+      }, 'Nighttime Lights ' + year);
+    });
+  });
+}
+
+// Center map on a region of interest
+Map.setCenter(0, 20, 3);
+
+// Call visualization function
+visualizeNightLights(viirs_ntl);
+
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
