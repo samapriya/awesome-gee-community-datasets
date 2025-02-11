@@ -21253,6 +21253,30 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/wyvern.png"
   },
   {
+    "title": "Urban Sky Open Data Thermal (LWIR)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/URBAN-SKY-OPENDATA",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/URBAN_SKY/USKY02_D00235_400_11S_20250119_20250121015227_A2_000_000_01",
+    "provider": "Urban Sky",
+    "tags": "aerial imagery, thermal imaging, wildfire monitoring, high-resolution imagery, microballoon, stratospheric imaging, LWIR, imagery",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/urbansky/",
+    "thematic_group": "Global Events Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/urbansky.png"
+  },
+  {
+    "title": "Urban Sky Open Data High Resolution (RGB)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/URBAN-SKY-OPENDATA",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/URBAN_SKY/USKY01_D00236_010_11S_20250119_20250125200840_A0_000_000_01",
+    "provider": "Urban Sky",
+    "tags": "aerial imagery, thermal imaging, wildfire monitoring, high-resolution imagery, microballoon, stratospheric imaging, RGB imagery",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/urbansky/",
+    "thematic_group": "Global Events Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/urbansky.png"
+  },
+  {
     "title": "Aboveground carbon accumulation in global monoculture plantation forests",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ABOVEGROUND-CARBON-GLOBAL-MONOCULTURE",
     "type": "table",

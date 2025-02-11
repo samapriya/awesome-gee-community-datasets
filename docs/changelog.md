@@ -3,6 +3,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-02-11
+- Added [Wyvern Open Data](https://gee-community-catalog.org/projects/wyvern)
+- Added [Urban Sky Open Data](https://gee-community-catalog.org/projects/urbansky)
+- Added [Global Long-term Microwave Vegetation Optical Depth Dataset Archive VODCA v2](https://gee-community-catalog.org/projects/vodca_v2)
+- Updated [TransitionZero Solar Asset Mapper](https://gee-community-catalog.org/projects/tzero) to Q4 2024
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-01-28
 - Release 3.2.0 for the Awesome GEE Community Catalog
 - Added [UT-GLOBUS GLObal Building heights for Urban Studies (UT-GLOBUS)](https://gee-community-catalog.org/projects/utglobus)

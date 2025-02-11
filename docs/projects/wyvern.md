@@ -63,7 +63,7 @@ where [YEAR] must reflect the year any given imagery data product was collected 
 
 ![wyvern_app](https://github.com/user-attachments/assets/ad0fdca5-43c7-4662-9cf5-1c02806c8857)
 
-#### Sample Code
+#### Code Snippet
 
 ```js
 // Load the Wyvern collection
