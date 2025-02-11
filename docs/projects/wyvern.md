@@ -5,6 +5,7 @@ Wyvern's Open Data Program provides free medium resolution (5.30 m) hyperspectra
 
 #### Technical Specifications
 
+<center>
 
 | Parameter           | Value                        |
 | ------------------- | ---------------------------- |
@@ -16,6 +17,7 @@ Wyvern's Open Data Program provides free medium resolution (5.30 m) hyperspectra
 | Swath Width         | 20 km                        |
 | Geographic Coverage | Global                       |
 
+</center>
 
 #### Spectral Band Information
 
@@ -57,8 +59,9 @@ Use the following copyright notice on or adjacent to the source image data produ
 
 "©[YEAR] Wyvern Incorporated. All Rights Reserved."
 
-where [YEAR] must reflect the year any given imagery data product was collected by a Wyvern satellite as reflected in the dataset’s acquisition ‘datetime’ metadata field.
+where [YEAR] must reflect the year any given imagery data product was collected by a Wyvern satellite as reflected in the dataset’s acquisition 'datetime' metadata field.
 
+![wyvern_app](https://github.com/user-attachments/assets/ad0fdca5-43c7-4662-9cf5-1c02806c8857)
 
 #### Sample Code
 
@@ -105,5 +108,7 @@ This dataset is made available under Creative Commons Attribution 4.0 Internatio
 Provided by: Wyvern
 
 Curated in GEE by: Samapriya Roy
+
+Keywords: Hyperspectral, Open data
 
 Last updated: 2025-02-05

@@ -21241,6 +21241,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tzero.png"
   },
   {
+    "title": "Wyvern Open Data Hyperspectral",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/WYVERN-OPEN-DATA",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/disaster/wyvern-open-data",
+    "provider": "Wyvern",
+    "tags": "hyperspectral, open data",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/wyvern/",
+    "thematic_group": "Global Events Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/wyvern.png"
+  },
+  {
     "title": "Aboveground carbon accumulation in global monoculture plantation forests",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ABOVEGROUND-CARBON-GLOBAL-MONOCULTURE",
     "type": "table",
