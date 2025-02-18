@@ -87,6 +87,8 @@ Bolton, D. K., Gray, J.M, Melaas, E.K., Moon, M., Eklundh, L. and M.A. Friedl (2
 Friedl, M.. MuSLI Multi-Source Land Surface Phenology Yearly North America 30 m V011. 2021, distributed by NASA EOSDIS Land Processes Distributed Active Archive Center, https://doi.org/10.5067/Community/MuSLI/MSLSP30NA.011. Accessed 2025-02-18.
 ```
 
+![mslsp](https://github.com/user-attachments/assets/450b085b-a211-4797-870e-b5d6b761d66d)
+
 #### Earth Engine Snippet
 
 ```js
