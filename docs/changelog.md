@@ -3,6 +3,12 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-02-18
+- Added [Multi-Source Land Surface Phenology (MSLSP) North America 30m v1.1](https://gee-community-catalog.org/projects/mslsp)
+- Added [Los Angeles Fires 2025 Lidar Collections and Change Analysis](https://gee-community-catalog.org/projects/ladem)
+- Updated [Canada National Burned Area Composite (NBAC)](https://gee-community-catalog.org/projects/nbac)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-02-11
 - Added [Wyvern Open Data](https://gee-community-catalog.org/projects/wyvern)
 - Added [Urban Sky Open Data](https://gee-community-catalog.org/projects/urbansky)

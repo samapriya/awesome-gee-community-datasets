@@ -21361,6 +21361,54 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/ladem.png"
   },
   {
+    "title": "Multi-Source Land Surface Phenology (MSLSP) North America 30m v11 2016",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/MSLSP-YEARLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MUSLI/MSLSP_2016",
+    "provider": "NASA, Friedl et al",
+    "tags": "phenology, vegetation, landsat, sentinel, remote sensing, north america, EVI, NDVI, land surface",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mslsp/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/mslsp.png"
+  },
+  {
+    "title": "Multi-Source Land Surface Phenology (MSLSP) North America 30m v11 2017",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/MSLSP-YEARLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MUSLI/MSLSP_2017",
+    "provider": "NASA, Friedl et al",
+    "tags": "phenology, vegetation, landsat, sentinel, remote sensing, north america, EVI, NDVI, land surface",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mslsp/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/mslsp.png"
+  },
+  {
+    "title": "Multi-Source Land Surface Phenology (MSLSP) North America 30m v11 2018",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/MSLSP-YEARLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MUSLI/MSLSP_2018",
+    "provider": "NASA, Friedl et al",
+    "tags": "phenology, vegetation, landsat, sentinel, remote sensing, north america, EVI, NDVI, land surface",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mslsp/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/mslsp.png"
+  },
+  {
+    "title": "Multi-Source Land Surface Phenology (MSLSP) North America 30m v11 2019",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/MSLSP-YEARLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/MUSLI/MSLSP_2019",
+    "provider": "NASA, Friedl et al",
+    "tags": "phenology, vegetation, landsat, sentinel, remote sensing, north america, EVI, NDVI, land surface",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/mslsp/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/mslsp.png"
+  },
+  {
     "title": "Urban Sky Open Data High Resolution (RGB)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/URBAN-SKY-OPENDATA",
     "type": "image",
