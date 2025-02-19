@@ -30,11 +30,11 @@ The data is provided in both ESRI© Geodatabase and GeoTIFF formats at 15 arc-se
 
 The GLWD v2 dataset in Google Earth Engine consists of several components:
 
-### Image Collections
+#### Image Collections
 
 - **DELTA_AREA_CLASS_PCT**: An image collection containing individual images for each of the 33 wetland classes (plus dryland), showing the extent of each wetland class per pixel as a percentage of pixel area. Values range from 0-100%.
 
-### Individual Images
+#### Individual Images
 - **GLWD_V2_DELTA_AREA_HA_X10**: Shows the absolute area of all wetland classes combined in hectares, multiplied by 10 for precision (i.e., a value of 15 means 1.5 ha). This layer is useful for quantifying total wetland extent.
 
 - **GLWD_V2_DELTA_AREA_PCT**: Represents the relative area of all wetland classes combined as a percentage of pixel area (0-100%). This layer helps visualize the density of wetland coverage.
