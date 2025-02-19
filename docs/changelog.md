@@ -5,6 +5,7 @@
 
 #### Updated 2025-02-18
 - Added [Multi-Source Land Surface Phenology (MSLSP) North America 30m v1.1](https://gee-community-catalog.org/projects/mslsp)
+- Added [Global Lakes and Wetlands Database (GLWD) Version 2](https://gee-community-catalog.org/projects/glwd)
 - Added [Los Angeles Fires 2025 Lidar Collections and Change Analysis](https://gee-community-catalog.org/projects/ladem)
 - Updated [Canada National Burned Area Composite (NBAC)](https://gee-community-catalog.org/projects/nbac)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
