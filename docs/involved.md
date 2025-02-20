@@ -74,9 +74,9 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 </div>
 
   [use star]: https://github.com/samapriya/awesome-gee-community-datasets
-  [build cite]: https://beta.gee-community-catalog.org/reference/
-  [byod]: https://beta.gee-community-catalog.org/contributing/submit/
-  [submit tutorial]: https://beta.gee-community-catalog.org/contributing/example
+  [build cite]: https://gee-community-catalog.org/reference/
+  [byod]: https://gee-community-catalog.org/contributing/submit/
+  [submit tutorial]: https://gee-community-catalog.org/contributing/example
   [submit donate]: https://github.com/sponsors/samapriya
   [create a pull request]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 
