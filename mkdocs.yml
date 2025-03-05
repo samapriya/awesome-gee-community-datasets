@@ -418,6 +418,7 @@ nav:
               - Global Wind Atlas Datasets: projects/gwa.md
               - Global Solar Atlas Datasets: projects/gsa.md
               - Global Extreme Heat Hazard: projects/heat-hazard.md
+              - US EPA Total Deposition Layers (TDEP Layers): projects/tdep.md
               - Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020: projects/br_dwgd.md
               - International Satellite Cloud Climatology Project HXG Cloud Cover: projects/isccp_hxg.md
               - Current and projected climate data for North America (CMIP6 scenarios): projects/aogcm_cmip6.md
