@@ -1,12 +1,38 @@
 # Community Actions (Building the Catalog)
 
-The Awesome GEE Community Catalog is an actively maintained and evolving project that serves a diverse user base with versatile backgrounds and needs. To efficiently address the requirements of all our users, evaluate change requests, and fix bugs, update datasets, I put in a lot of work and your contributions are helpful.The catalog is a collaborative effort, and I welcome your contributions! This catalog aims to provide a comprehensive and up-to-date list of community-driven datasets readily accessible within Google Earth Engine (GEE).
+The Awesome GEE Community Catalog is an actively maintained and evolving project that serves a diverse user base with versatile backgrounds and needs. To efficiently address the requirements of all our users, evaluate change requests, and fix bugs, update datasets, I put in a lot of work and your contributions are helpful. The catalog is a collaborative effort, and I welcome your contributions! This catalog aims to provide a comprehensive and up-to-date list of community-driven datasets readily accessible within Google Earth Engine (GEE).
 
 The Awesome GEE Community Catalog thrives on community contributions! Whether you've found a valuable dataset, spotted an error, or have a helpful tip to share, there are many ways to get involved. By contributing, you're not only helping us build a valuable resource for the GEE community, but you're also making it easier for others to find and utilize valuable Earth observation data.
 
   [discussion board]: https://github.com/samapriya/awesome-gee-community-datasets/discussions
   [issue tracker]: https://github.com/samapriya/awesome-gee-community-datasets/issues
   [documentation]: https://gee-community-catalog.org
+
+## **Community Forum**
+
+The Awesome GEE Community Catalog Forum is a collaborative space for Google Earth Engine (GEE) users and enthusiasts.
+
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XUDZ4Ta6oGI?si=7xH1aL05yJm3aqfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://forum.gee-community-catalog.org" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4285F4; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px;">Join our Community Forum</a>
+    <p style="margin-top: 10px; font-size: 0.9em;">Connect with other GEE users, ask questions, and share your insights!</p>
+</div>
+
+</center>
+
+This forum serves as a central hub where researchers, developers, and geospatial practitioners can:
+
+* Share knowledge and expertise about GEE and the Community Catalog
+* Discuss workflows and methodologies for geospatial analysis
+* Troubleshoot issues with datasets or code
+* Showcase projects built using Community Catalog datasets
+* Discover new datasets and their applications
+* Contribute to the growth of open geospatial collaboration
+
+With a focus on the Awesome GEE Community Catalog, contributed datasets, examples, and tools, the forum fosters innovation and collaboration within the geospatial community. Whether you're looking to share applications, discover new datasets, or contribute to the Community Catalog, this forum supports all aspects of community engagement around these discussions.
 
 ## **How you can contribute**
 
@@ -72,8 +98,7 @@ Ready to get started? Let's dive into the specific ways you can contribute!
 
     ---
 
-    Ask a question on our [discussion board] and get in touch with our
-    community
+    Ask a question on our [discussion board] or join our [community forum](https://forum.gee-community-catalog.org) to get in touch with our community
 
     ---
 

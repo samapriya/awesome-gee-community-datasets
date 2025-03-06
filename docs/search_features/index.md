@@ -1,10 +1,10 @@
-# Advanced Search for Awesome GEE Community Catalog
+# AI Search for Awesome GEE Community Catalog
 
-The **Advanced Search** feature of the Community Catalog leverages **Vertex AI** to enhance documentation search. This search is powered by both the catalog pages and **Data JSON** tabular structures. As more people use the feature, the indexed results improve over time. The feature benefits from **grounded search**, meaning that its summaries are always linked to the source material, ensuring transparency and trustworthiness.
+The **AI Search** feature of the Community Catalog leverages **Vertex AI** to enhance documentation search. This search is powered by both the catalog pages and **Data JSON** tabular structures. As more people use the feature, the indexed results improve over time. The feature benefits from **grounded search**, meaning that its summaries are always linked to the source material, ensuring transparency and trustworthiness.
 
 This is made possible by **RAG (Retrieval Augmented Generation)**, which not only improves search relevancy but also minimizes misinformation by grounding the output in reliable sources. Learn more about RAGs [here in an earlier blog post](https://datacommons.substack.com/p/can-ai-turn-slides-into-podcasts) to understand why this is so powerful and why grounded search can be effective. Currently, this search is in **Beta**, allowing us to test and refine it further with your participation. You can still use the embedded search within the Community Catalog for basic keyword or text-match searches.
 
-[Find the Advanced Search here.](https://gee-community-catalog.org/search)
+[Find the AI Search here.](https://gee-community-catalog.org/search)
 
 <div class="result" markdown>
 

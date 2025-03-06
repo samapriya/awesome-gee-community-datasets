@@ -53,6 +53,34 @@
         background-color: #333;
     }
 
+    /* Community Chat button styling */
+    .community-chat-button {
+        position: fixed;
+        bottom: 100px;
+        /* Position above Ask AI button with padding */
+        right: 30px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000 !important;
+        /* Black text color with !important to override any inheritance */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+    /* Ensure the span inside also has black text */
+    .community-chat-button span {
+        color: #000 !important;
+    }
+
+    .community-chat-button:hover {
+        opacity: 0.9;
+    }
+
     /* Custom styling to hide reCAPTCHA badge */
     .grecaptcha-badge {
         visibility: hidden;
@@ -91,9 +119,9 @@
         <strong>
             <a href="https://forum.gee-community-catalog.org" target="_blank">
                 <span class="material-symbols-outlined" style="vertical-align: middle; font-size: 24px;">
-                    search
+                    forum
                 </span>
-                Join the Conversation Now!!
+                Join the GEE Community Forum
             </a>
         </strong>
     </div>
@@ -113,6 +141,12 @@
 {% block content %}
 {{ super() }}
 
+<!-- Community Chat Button -->
+<a href="https://forum.gee-community-catalog.org" class="community-chat-button" id="communityChatButton"
+    target="_blank">
+    <span>Community Chat</span>
+</a>
+
 <!-- Floating Button -->
 <a href="https://gee-community-catalog.org/search" class="floating-button" id="searchRedirect" target="_blank">
     <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
@@ -124,4 +158,20 @@
 {% block scripts %}
 {{ super() }}
 <script src="{{ 'assets/javascripts/custom.a678ee80.min.js' | url }}"></script>
+<script>
+    // Google colors array - only blue, red, yellow, green
+    const googleColors = [
+        "#4285F4", // Google Blue
+        "#DB4437", // Google Red
+        "#F4B400", // Google Yellow
+        "#0F9D58"  // Google Green
+    ];
+
+    // Set random color on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        const communityChatButton = document.getElementById("communityChatButton");
+        const randomColor = googleColors[Math.floor(Math.random() * googleColors.length)];
+        communityChatButton.style.backgroundColor = randomColor;
+    });
+</script>
 {% endblock %}

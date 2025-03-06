@@ -510,5 +510,5 @@ nav:
   - Blogs:
       - Substack Blogs: substack_blogs.md
       - Medium Blogs: medium_blogs.md
-  - Advanced Search:
+  - AI Search:
     - search_features/index.md

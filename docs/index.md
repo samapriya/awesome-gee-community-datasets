@@ -9,11 +9,16 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
 
-The awesome-gee-community-catalog is an **unfunded open source grassroots project** with a mission to help collect **community sourced** and **community generated** geospatial datasets. Our goal is to make data **accessible** and tie it to an analysis platform **fostering accessibility** and **reducing digital divide**. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog). This collaborative effort not only offers openly available, preprocessed research datasets but also caters to frequently requested ones under various open licenses. **Stay updated by signing up for email updates, ensuring you receive the latest catalog news and in-depth explorations of valuable data.**
+The awesome-gee-community-catalog is an **unfunded open source grassroots project** with a mission to help collect **community sourced** and **community generated** geospatial datasets. Our goal is to make data **accessible** and tie it to an analysis platform **fostering accessibility** and **reducing digital divide**. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog). This collaborative effort not only offers openly available, preprocessed research datasets but also caters to frequently requested ones under various open licenses. **Stay updated by signing up for email updates and joining our community forum, ensuring you receive the latest catalog news, connect with other users, and explore in-depth discussions of valuable data.**
 
 <center>
 
 <iframe src="https://datacommons.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    <a href="https://forum.gee-community-catalog.org" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4285F4; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px;">Join our Community Forum</a>
+    <p style="margin-top: 10px; font-size: 0.9em;">Connect with other GEE users, ask questions, and share your insights!</p>
+</div>
 </center>
 
 
