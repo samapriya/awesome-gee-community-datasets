@@ -11920,7 +11920,501 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/firms_vector.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry equivalent deposition of all base cations (BC_DW)",
+    "title": "US EPA Total Deposition Maps Average: Dry equivalent deposition of all base cations (BC_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/BC_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,base cations,air quality,chemistry,dry deposition",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of base cations as percent of total (BC_DWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/BC_DWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,base cations,air quality,chemistry,dry deposition,percentage",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total equivalent deposition of all base cations (BC_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/BC_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,base cations,air quality,chemistry,total deposition",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet equivalent deposition of all base cations (BC_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/BC_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,base cations,air quality,chemistry,wet deposition,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of calcium (CA_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CA_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,calcium,air quality,chemistry,dry deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of calcium (CA_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CA_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,calcium,air quality,chemistry,total deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of calcium (CA_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CA_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,calcium,air quality,chemistry,wet deposition,minerals,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of chlorine (CL_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CL_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,chlorine,air quality,chemistry,dry deposition",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of chlorine as percent of total (CL_DWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CL_DWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,chlorine,air quality,chemistry,dry deposition,percentage",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of chlorine (CL_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CL_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,chlorine,air quality,chemistry,total deposition",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of chlorine (CL_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/CL_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,chlorine,air quality,chemistry,wet deposition,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of nitric acid (HNO3_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/HNO3_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitric acid,nitrogen,air quality,chemistry,dry deposition,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of potassium (K_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/K_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,potassium,air quality,chemistry,dry deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of potassium (K_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/K_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,potassium,air quality,chemistry,total deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of potassium (K_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/K_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,potassium,air quality,chemistry,wet deposition,minerals,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of magnesium (MG_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/MG_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,magnesium,air quality,chemistry,dry deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of magnesium (MG_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/MG_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,magnesium,air quality,chemistry,total deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of magnesium (MG_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/MG_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,magnesium,air quality,chemistry,wet deposition,minerals,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of sodium (NA_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NA_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,sodium,air quality,chemistry,dry deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of sodium (NA_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NA_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,sodium,air quality,chemistry,total deposition,minerals",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of sodium (NA_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NA_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,sodium,air quality,chemistry,wet deposition,minerals,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of ammonia (NH3_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NH3_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,ammonia,nitrogen,air quality,chemistry,dry deposition,pollution,agriculture",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of particulate ammonium (NH4_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NH4_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,ammonium,nitrogen,particulate,air quality,chemistry,dry deposition,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of particulate ammonium (NH4_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NH4_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,ammonium,nitrogen,particulate,air quality,chemistry,wet deposition,pollution,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of particulate nitrate (NO3_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NO3_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrate,nitrogen,particulate,air quality,chemistry,dry deposition,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Wet deposition of particulate nitrate (NO3_WW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NO3_WW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrate,nitrogen,particulate,air quality,chemistry,wet deposition,pollution,precipitation",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of unmeasured nitrogen species (NOM_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOM_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,unmeasured species,air quality,chemistry,dry deposition",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of unmeasured nitrogen species as percent of total (NOM_DWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOM_DWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,unmeasured species,air quality,chemistry,dry deposition,percentage",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of oxidized nitrogen (NOXI_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOXI_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,oxidized nitrogen,air quality,chemistry,dry deposition,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of oxidized nitrogen as percent of total (NOXI_DWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOXI_DWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,oxidized nitrogen,air quality,chemistry,dry deposition,percentage,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of oxidized nitrogen (NOXI_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOXI_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,oxidized nitrogen,air quality,chemistry,total deposition,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of oxidized nitrogen as percent of total (NOXI_TWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NOXI_TWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,oxidized nitrogen,air quality,chemistry,total deposition,percentage,pollution",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of reduced nitrogen (NRED_DW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NRED_DW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,reduced nitrogen,air quality,chemistry,dry deposition,pollution,agriculture",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Dry deposition of reduced nitrogen as percent of total (NRED_DWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NRED_DWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,reduced nitrogen,air quality,chemistry,dry deposition,percentage,pollution,agriculture",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of reduced nitrogen (NRED_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NRED_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,reduced nitrogen,air quality,chemistry,total deposition,pollution,agriculture",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total deposition of reduced nitrogen as percent of total (NRED_TWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NRED_TWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,reduced nitrogen,air quality,chemistry,total deposition,percentage,pollution,agriculture",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total equivalent nitrogen + sulfur deposition (NS_TW)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NS_TW",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,sulfur,air quality,chemistry,total deposition,pollution,acidification",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Average: Total equivalent nitrogen + sulfur deposition as percent (NS_TWPCT)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/TDEP/tdep-average/NS_TWPCT",
+    "provider": "United States Environmental Protection Agency (EPA), National Atmospheric Deposition Program (NADP)",
+    "tags": "deposition,nitrogen,sulfur,air quality,chemistry,total deposition,percentage,pollution,acidification",
+    "license": "custom",
+    "license_text": "The TDEP data layers are distributed under a license similar to Public domain license and distributed by United States Environmental Protection Agency (EPA)",
+    "docs": "https://gee-community-catalog.org/projects/tdep/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
+  },
+  {
+    "title": "US EPA Total Deposition Maps Annual: Dry equivalent deposition of all base cations (BC_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/BC_DW",
@@ -11933,7 +12427,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of unmeasured nitrogen species as percent of total (NOM_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of unmeasured nitrogen species as percent of total (NOM_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOM_DWPCT",
@@ -11946,7 +12440,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of oxidized nitrogen (NOXI_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of oxidized nitrogen (NOXI_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DW",
@@ -11959,7 +12453,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of oxidized nitrogen as percent of total (NOXI_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of oxidized nitrogen as percent of total (NOXI_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DWPCT",
@@ -11972,7 +12466,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of oxidized nitrogen (NOXI_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of oxidized nitrogen (NOXI_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TW",
@@ -11985,7 +12479,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of oxidized nitrogen as percent of total (NOXI_TWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of oxidized nitrogen as percent of total (NOXI_TWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TWPCT",
@@ -11998,7 +12492,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of reduced nitrogen (NRED_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of reduced nitrogen (NRED_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DW",
@@ -12011,7 +12505,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of reduced nitrogen as percent of total (NRED_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of reduced nitrogen as percent of total (NRED_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DWPCT",
@@ -12024,7 +12518,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of reduced nitrogen (NRED_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of reduced nitrogen (NRED_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TW",
@@ -12037,7 +12531,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of reduced nitrogen as percent of total (NRED_TWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of reduced nitrogen as percent of total (NRED_TWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TWPCT",
@@ -12050,7 +12544,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total equivalent nitrogen + sulfur deposition (NS_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total equivalent nitrogen + sulfur deposition (NS_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NS_TW",
@@ -12063,7 +12557,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Annual precipitation (PRECIP_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Annual precipitation (PRECIP_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/PRECIP_WW",
@@ -12076,7 +12570,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur (S_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur (S_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_DW",
@@ -12089,7 +12583,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur as percent of total (S_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur as percent of total (S_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_DWPCT",
@@ -12102,7 +12596,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total sulfur deposition (S_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total sulfur deposition (S_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_TW",
@@ -12115,7 +12609,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of sulfur (S_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of sulfur (S_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_WW",
@@ -12128,7 +12622,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of sulfur as percent of total (S_WWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of sulfur as percent of total (S_WWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_WWPCT",
@@ -12141,7 +12635,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur dioxide (SO2_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur dioxide (SO2_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/SO2_DW",
@@ -12154,7 +12648,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of particulate sulfate (SO4_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of particulate sulfate (SO4_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/SO4_DW",
@@ -12167,7 +12661,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of nitric acid + particulate nitrate (TNO3_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of nitric acid + particulate nitrate (TNO3_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/TNO3_DW",
@@ -12180,7 +12674,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of base cations as percent of total (BC_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of base cations as percent of total (BC_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/BC_DWPCT",
@@ -12193,7 +12687,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total equivalent deposition of all base cations (BC_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total equivalent deposition of all base cations (BC_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/BC_TW",
@@ -12206,7 +12700,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of calcium (CA_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of calcium (CA_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CA_DW",
@@ -12219,7 +12713,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of calcium (CA_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of calcium (CA_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CA_TW",
@@ -12232,7 +12726,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of calcium (CA_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of calcium (CA_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CA_WW",
@@ -12245,7 +12739,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of chlorine (CL_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of chlorine (CL_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CL_DW",
@@ -12258,7 +12752,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of chlorine (CL_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of chlorine (CL_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CL_TW",
@@ -12271,7 +12765,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of chlorine (CL_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of chlorine (CL_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/CL_WW",
@@ -12284,7 +12778,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of nitric acid (HNO3_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of nitric acid (HNO3_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/HNO3_DW",
@@ -12297,7 +12791,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of potassium (K_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of potassium (K_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/K_DW",
@@ -12310,7 +12804,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of potassium (K_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of potassium (K_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/K_TW",
@@ -12323,7 +12817,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of potassium (K_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of potassium (K_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/K_WW",
@@ -12336,7 +12830,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of magnesium (MG_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of magnesium (MG_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/MG_DW",
@@ -12349,7 +12843,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of magnesium (MG_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of magnesium (MG_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/MG_TW",
@@ -12362,7 +12856,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of magnesium (MG_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of magnesium (MG_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/MG_WW",
@@ -12375,7 +12869,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of nitrogen (N_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of nitrogen (N_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/N_DW",
@@ -12388,7 +12882,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of nitrogen as percent of total (N_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of nitrogen as percent of total (N_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/N_DWPCT",
@@ -12401,7 +12895,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total nitrogen deposition (N_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total nitrogen deposition (N_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/N_TW",
@@ -12414,7 +12908,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of nitrogen (N_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of nitrogen (N_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/N_WW",
@@ -12427,7 +12921,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of nitrogen as percent of total (N_WWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of nitrogen as percent of total (N_WWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/N_WWPCT",
@@ -12440,7 +12934,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sodium (NA_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sodium (NA_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NA_DW",
@@ -12453,7 +12947,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of sodium (NA_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of sodium (NA_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NA_TW",
@@ -12466,7 +12960,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of sodium (NA_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of sodium (NA_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NA_WW",
@@ -12479,7 +12973,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of ammonia (NH3_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of ammonia (NH3_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NH3_DW",
@@ -12492,7 +12986,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of particulate ammonium (NH4_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of particulate ammonium (NH4_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NH4_DW",
@@ -12505,7 +12999,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of particulate ammonium (NH4_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of particulate ammonium (NH4_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NH4_WW",
@@ -12518,7 +13012,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of particulate nitrate (NO3_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of particulate nitrate (NO3_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NO3_DW",
@@ -12531,7 +13025,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of particulate nitrate (NO3_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of particulate nitrate (NO3_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NO3_WW",
@@ -12544,7 +13038,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of unmeasured nitrogen species (NOM_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of unmeasured nitrogen species (NOM_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOM_DW",
@@ -12557,7 +13051,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of unmeasured nitrogen species as percent of total (NOM_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of unmeasured nitrogen species as percent of total (NOM_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOM_DWPCT",
@@ -12570,7 +13064,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of oxidized nitrogen (NOXI_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of oxidized nitrogen (NOXI_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DW",
@@ -12583,7 +13077,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of oxidized nitrogen as percent of total (NOXI_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of oxidized nitrogen as percent of total (NOXI_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DWPCT",
@@ -12596,7 +13090,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of oxidized nitrogen (NOXI_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of oxidized nitrogen (NOXI_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TW",
@@ -12609,7 +13103,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of oxidized nitrogen as percent of total (NOXI_TWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of oxidized nitrogen as percent of total (NOXI_TWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TWPCT",
@@ -12622,7 +13116,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of reduced nitrogen (NRED_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of reduced nitrogen (NRED_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DW",
@@ -12635,7 +13129,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of reduced nitrogen as percent of total (NRED_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of reduced nitrogen as percent of total (NRED_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DWPCT",
@@ -12648,7 +13142,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of reduced nitrogen (NRED_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of reduced nitrogen (NRED_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TW",
@@ -12661,7 +13155,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total deposition of reduced nitrogen as percent of total (NRED_TWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Total deposition of reduced nitrogen as percent of total (NRED_TWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TWPCT",
@@ -12674,7 +13168,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total equivalent nitrogen + sulfur deposition (NS_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total equivalent nitrogen + sulfur deposition (NS_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/NS_TW",
@@ -12687,7 +13181,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Annual precipitation (PRECIP_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Annual precipitation (PRECIP_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/PRECIP_WW",
@@ -12700,7 +13194,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur (S_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur (S_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_DW",
@@ -12713,7 +13207,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur as percent of total (S_DWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur as percent of total (S_DWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_DWPCT",
@@ -12726,7 +13220,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Total sulfur deposition (S_TW)",
+    "title": "US EPA Total Deposition Maps Annual: Total sulfur deposition (S_TW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_TW",
@@ -12739,7 +13233,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of sulfur (S_WW)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of sulfur (S_WW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_WW",
@@ -12752,7 +13246,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Wet deposition of sulfur as percent of total (S_WWPCT)",
+    "title": "US EPA Total Deposition Maps Annual: Wet deposition of sulfur as percent of total (S_WWPCT)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/S_WWPCT",
@@ -12765,7 +13259,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of sulfur dioxide (SO2_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of sulfur dioxide (SO2_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/SO2_DW",
@@ -12778,7 +13272,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of particulate sulfate (SO4_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of particulate sulfate (SO4_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/SO4_DW",
@@ -12791,7 +13285,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tdep.png"
   },
   {
-    "title": "US EPA Total Deposition Maps: Dry deposition of nitric acid + particulate nitrate (TNO3_DW)",
+    "title": "US EPA Total Deposition Maps Annual: Dry deposition of nitric acid + particulate nitrate (TNO3_DW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-EPA-TDEP",
     "type": "table",
     "id": "projects/sat-io/open-datasets/TDEP/tdep-annual/TNO3_DW",
