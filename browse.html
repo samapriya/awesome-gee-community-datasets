@@ -13,15 +13,6 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-G7SXDJEWXV');
-    </script>
     <style>
         body {
             font-family: "Poppins", sans-serif;
@@ -56,16 +47,12 @@
             cursor: pointer;
             transition: background-color 0.2s, transform 0.2s;
             white-space: nowrap;
-            /* Ensure text stays on one line */
         }
 
         .btn:hover {
             background-color: #2d3748;
-            /* Change color as needed */
             color: #fff;
-            /* Text color on hover */
             transform: scale(1.05);
-            /* Slightly enlarge button */
         }
 
         input[type="search"] {
@@ -76,12 +63,10 @@
         .grid {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            /* Ensure enough space between items */
         }
 
         .dataset-card {
             padding: 1rem;
-            /* Reduce padding for better spacing */
         }
 
         .dataset-card .buttons {
@@ -90,7 +75,74 @@
             justify-content: space-evenly;
             margin-top: auto;
             flex-wrap: nowrap;
-            /* Prevent buttons from wrapping */
+        }
+
+        #loading-spinner {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: #3498db;
+            animation: spin 1s ease-in-out infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .dark #loading-spinner {
+            border-color: rgba(255, 255, 255, 0.1);
+            border-top-color: #3498db;
+        }
+
+        .lazy-image {
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+
+        #pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 0.5rem;
+        }
+
+        #pagination button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.25rem;
+            margin: 0 0.15rem;
+            background-color: white;
+            min-width: 2.5rem;
+            transition: all 0.2s;
+        }
+
+        #pagination button:hover:not(:disabled) {
+            background-color: #edf2f7;
+            transform: translateY(-2px);
+        }
+
+        .dark #pagination button {
+            background-color: #2d3748;
+            border-color: #4a5568;
+        }
+
+        .dark #pagination button:hover:not(:disabled) {
+            background-color: #4a5568;
+        }
+
+        #pagination button.active {
+            background-color: #3182ce;
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -100,8 +152,7 @@
         <div class="container mx-auto p-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <img src="https://i.imgur.com/FYPcTFF.png" alt="Logo" class="h-12">
-                <!-- Adjusted height to make the logo bigger -->
-                <h1 class="text-lg font-bold">Catalog Browser</h1> <!-- Adjusted text size if necessary -->
+                <h1 class="text-lg font-bold">Catalog Browser</h1>
             </div>
 
             <div class="flex items-center">
@@ -115,9 +166,11 @@
     </header>
 
     <main class="container mx-auto py-6">
+        <div id="loading-spinner"></div>
         <div id="dataset-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <!-- Datasets will be dynamically loaded here -->
         </div>
+        <div id="pagination" class="mt-8"></div>
     </main>
 
     <script>
@@ -127,20 +180,199 @@
             const themeToggle = document.getElementById('theme-toggle');
             const themeIcon = document.getElementById('theme-icon');
             const datasetCount = document.getElementById('dataset-count');
+            const loadingSpinner = document.getElementById('loading-spinner');
+            const paginationContainer = document.getElementById('pagination');
+
             let datasets = [];
-            let displayedDatasets = [];
+            let filteredDatasets = [];
+            let currentPage = 1;
+            const itemsPerPage = 12;
+            let searchTimeout = null;
 
-            // Fetch dataset data
-            fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/community_datasets.json')
-                .then(response => response.json())
-                .then(data => {
-                    datasets = data;
-                    datasetCount.textContent = `${datasets.length} datasets`;
-                    shuffleArray(datasets); // Shuffle datasets initially
-                    loadDatasets();
-                });
+            // Storage helper that falls back to memory when localStorage is unavailable
+            const storage = {
+                data: {},
+                getItem: function (key) {
+                    try {
+                        return localStorage.getItem(key);
+                    } catch (e) {
+                        return this.data[key] || null;
+                    }
+                },
+                setItem: function (key, value) {
+                    try {
+                        localStorage.setItem(key, value);
+                    } catch (e) {
+                        this.data[key] = value;
+                    }
+                }
+            };
 
-            // Function to shuffle the array
+            // Check for cached data
+            const cachedData = storage.getItem('gee_datasets');
+            const cacheTimestamp = storage.getItem('gee_datasets_timestamp');
+            const cacheExpiration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+            // Initialize from cache or fetch new data
+            if (cachedData && cacheTimestamp && (Date.now() - parseInt(cacheTimestamp)) < cacheExpiration) {
+                console.log('Loading data from cache');
+                datasets = JSON.parse(cachedData);
+                initializeData();
+            } else {
+                fetchDatasets();
+            }
+
+            function fetchDatasets() {
+                loadingSpinner.style.display = 'block';
+
+                // Try to fetch from GitHub
+                fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/community_datasets.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        datasets = data;
+
+                        // Cache the fetched data
+                        storage.setItem('gee_datasets', JSON.stringify(datasets));
+                        storage.setItem('gee_datasets_timestamp', Date.now().toString());
+
+                        initializeData();
+                        loadingSpinner.style.display = 'none';
+                    })
+                    .catch(error => {
+                        console.warn('Error fetching data from GitHub, using sample data instead:', error);
+
+                        // Fallback to sample data when fetch fails
+                        datasets = getSampleDatasets();
+                        initializeData();
+                        loadingSpinner.style.display = 'none';
+                    });
+            }
+
+            function getSampleDatasets() {
+                // Sample datasets that mimic the structure of the actual data
+                return [
+                    {
+                        title: "Global Forest Change",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/forest-change.jpg",
+                        thematic_group: "Land Cover & Land Use",
+                        docs: "https://example.com/docs/forest-change",
+                        sample_code: "https://example.com/code/forest-change"
+                    },
+                    {
+                        title: "Global Surface Water",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/surface-water.jpg",
+                        thematic_group: "Hydrology",
+                        docs: "https://example.com/docs/surface-water",
+                        sample_code: "https://example.com/code/surface-water"
+                    },
+                    {
+                        title: "Sentinel-2 Cloud-Free Composite",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/sentinel-2.jpg",
+                        thematic_group: "Imagery",
+                        docs: "https://example.com/docs/sentinel-2",
+                        sample_code: "https://example.com/code/sentinel-2"
+                    },
+                    {
+                        title: "Global Precipitation Measurement",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/precipitation.jpg",
+                        thematic_group: "Climate",
+                        docs: "https://example.com/docs/precipitation",
+                        sample_code: "https://example.com/code/precipitation"
+                    },
+                    {
+                        title: "MODIS Land Surface Temperature",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/lst.jpg",
+                        thematic_group: "Climate",
+                        docs: "https://example.com/docs/lst",
+                        sample_code: "https://example.com/code/lst"
+                    },
+                    {
+                        title: "Global Mangrove Forests",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/mangroves.jpg",
+                        thematic_group: "Land Cover & Land Use",
+                        docs: "https://example.com/docs/mangroves",
+                        sample_code: "https://example.com/code/mangroves"
+                    },
+                    {
+                        title: "PALSAR Global Forest Biomass",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/biomass.jpg",
+                        thematic_group: "Land Cover & Land Use",
+                        docs: "https://example.com/docs/biomass",
+                        sample_code: "https://example.com/code/biomass"
+                    },
+                    {
+                        title: "CHIRPS Precipitation",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/chirps.jpg",
+                        thematic_group: "Climate",
+                        docs: "https://example.com/docs/chirps",
+                        sample_code: "https://example.com/code/chirps"
+                    },
+                    {
+                        title: "Landsat Time Series Analysis",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/landsat-timeseries.jpg",
+                        thematic_group: "Imagery",
+                        docs: "https://example.com/docs/landsat-time",
+                        sample_code: "https://example.com/code/landsat-time"
+                    },
+                    {
+                        title: "USDA Cropland Data Layer",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/cropland.jpg",
+                        thematic_group: "Agriculture",
+                        docs: "https://example.com/docs/cropland",
+                        sample_code: "https://example.com/code/cropland"
+                    },
+                    {
+                        title: "Global Urban Footprint",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/urban.jpg",
+                        thematic_group: "Human Impact",
+                        docs: "https://example.com/docs/urban",
+                        sample_code: "https://example.com/code/urban"
+                    },
+                    {
+                        title: "SMAP Soil Moisture",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/soil-moisture.jpg",
+                        thematic_group: "Agriculture",
+                        docs: "https://example.com/docs/soil-moisture",
+                        sample_code: "https://example.com/code/soil-moisture"
+                    },
+                    {
+                        title: "Global Flood Database",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/floods.jpg",
+                        thematic_group: "Natural Disasters",
+                        docs: "https://example.com/docs/floods",
+                        sample_code: "https://example.com/code/floods"
+                    },
+                    {
+                        title: "ESA WorldCover",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/worldcover.jpg",
+                        thematic_group: "Land Cover & Land Use",
+                        docs: "https://example.com/docs/worldcover",
+                        sample_code: "https://example.com/code/worldcover"
+                    },
+                    {
+                        title: "Night Lights",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/night-lights.jpg",
+                        thematic_group: "Human Impact",
+                        docs: "https://example.com/docs/night-lights",
+                        sample_code: "https://example.com/code/night-lights"
+                    },
+                    {
+                        title: "FIRMS Active Fire Data",
+                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/fire.jpg",
+                        thematic_group: "Natural Disasters",
+                        docs: "https://example.com/docs/fire",
+                        sample_code: "https://example.com/code/fire"
+                    }
+                ];
+            }
+
+            function initializeData() {
+                shuffleArray(datasets);
+                filterDatasets();
+                updatePagination();
+                datasetCount.textContent = `${datasets.length} datasets`;
+            }
+
             function shuffleArray(array) {
                 for (let i = array.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
@@ -148,40 +380,213 @@
                 }
             }
 
-            function loadDatasets() {
-                const filteredDatasets = datasets.filter(dataset =>
+            function filterDatasets() {
+                const searchTerm = searchInput.value.toLowerCase();
+
+                filteredDatasets = datasets.filter(dataset =>
                     Object.values(dataset).some(value =>
-                        value.toString().toLowerCase().includes(searchInput.value.toLowerCase())
+                        String(value).toLowerCase().includes(searchTerm)
                     )
                 );
 
-                datasetCount.textContent = `${filteredDatasets.length} datasets`; // Update dataset count
-
-                datasetContainer.innerHTML = ''; // Clear previous datasets
-                filteredDatasets.forEach(dataset => {
-                    const card = document.createElement('div');
-                    card.classList.add('card', 'p-4', 'border', 'rounded', 'flex', 'flex-col', 'dataset-card');
-                    card.innerHTML = `
-            <h2 class="text-base font-medium mb-2">${dataset.title}</h2>
-            <img src="${dataset.thumbnail}" alt="${dataset.title}" class="object-cover rounded-md mb-2 w-full h-40">
-            <p class="text-sm text-gray-500 mb-2">${dataset.thematic_group}</p>
-            <div class="buttons">
-              ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Documentation</a>` : ''}
-              ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Sample Code</a>` : ''}
-            </div>
-          `;
-                    datasetContainer.appendChild(card);
-                });
+                datasetCount.textContent = `${filteredDatasets.length} datasets`;
+                currentPage = 1;
+                displayCurrentPage();
+                updatePagination();
             }
 
+            function displayCurrentPage() {
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                const currentPageItems = filteredDatasets.slice(startIndex, endIndex);
+
+                datasetContainer.innerHTML = '';
+
+                if (currentPageItems.length === 0) {
+                    datasetContainer.innerHTML = '<p class="col-span-full text-center">No datasets found matching your search.</p>';
+                    return;
+                }
+
+                currentPageItems.forEach(dataset => {
+                    const card = document.createElement('div');
+                    card.classList.add('card', 'p-4', 'border', 'rounded', 'flex', 'flex-col', 'dataset-card');
+
+                    card.innerHTML = `
+                        <h2 class="text-base font-medium mb-2">${dataset.title}</h2>
+                        <div class="w-full h-40 bg-gray-200 dark:bg-gray-700 rounded-md mb-2 relative overflow-hidden">
+                            <img
+                                data-src="${dataset.thumbnail}"
+                                alt="${dataset.title}"
+                                class="lazy-image object-cover w-full h-full absolute inset-0"
+                                onerror="this.onerror=null; this.src='/api/placeholder/400/320'; this.classList.add('loaded');">
+                        </div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${dataset.thematic_group || ''}</p>
+                        <div class="buttons">
+                            ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Documentation</a>` : ''}
+                            ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Sample Code</a>` : ''}
+                        </div>
+                    `;
+
+                    datasetContainer.appendChild(card);
+                });
+
+                // Initialize lazy loading for the current page
+                initLazyLoading();
+            }
+
+            function initLazyLoading() {
+                const lazyImages = document.querySelectorAll('.lazy-image');
+
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.src = img.dataset.src;
+                                img.onload = () => img.classList.add('loaded');
+                                imageObserver.unobserve(img);
+                            }
+                        });
+                    });
+
+                    lazyImages.forEach(img => imageObserver.observe(img));
+                } else {
+                    // Fallback for browsers that don't support IntersectionObserver
+                    lazyImages.forEach(img => {
+                        img.src = img.dataset.src;
+                        img.onload = () => img.classList.add('loaded');
+                    });
+                }
+            }
+
+            function updatePagination() {
+                const totalPages = Math.ceil(filteredDatasets.length / itemsPerPage);
+                paginationContainer.innerHTML = '';
+
+                if (totalPages <= 1) return;
+
+                // Add first page button
+                if (currentPage > 1) {
+                    const firstButton = createPaginationButton('«', () => {
+                        currentPage = 1;
+                        displayCurrentPage();
+                        updatePagination();
+                        window.scrollTo(0, 0);
+                    });
+                    paginationContainer.appendChild(firstButton);
+                }
+
+                // Add prev button
+                if (currentPage > 1) {
+                    const prevButton = createPaginationButton('‹', () => {
+                        currentPage--;
+                        displayCurrentPage();
+                        updatePagination();
+                        window.scrollTo(0, 0);
+                    });
+                    paginationContainer.appendChild(prevButton);
+                }
+
+                // Determine page numbers to show
+                let startPage = Math.max(1, currentPage - 2);
+                let endPage = Math.min(totalPages, startPage + 4);
+
+                if (endPage - startPage < 4) {
+                    startPage = Math.max(1, endPage - 4);
+                }
+
+                // Show start ellipsis if needed
+                if (startPage > 1) {
+                    paginationContainer.appendChild(createPaginationButton('...', null, false, true));
+                }
+
+                // Add page number buttons
+                for (let i = startPage; i <= endPage; i++) {
+                    const button = createPaginationButton(i, () => {
+                        currentPage = i;
+                        displayCurrentPage();
+                        updatePagination();
+                        window.scrollTo(0, 0);
+                    }, i === currentPage);
+
+                    paginationContainer.appendChild(button);
+                }
+
+                // Show end ellipsis if needed
+                if (endPage < totalPages) {
+                    paginationContainer.appendChild(createPaginationButton('...', null, false, true));
+                }
+
+                // Add next button
+                if (currentPage < totalPages) {
+                    const nextButton = createPaginationButton('›', () => {
+                        currentPage++;
+                        displayCurrentPage();
+                        updatePagination();
+                        window.scrollTo(0, 0);
+                    });
+                    paginationContainer.appendChild(nextButton);
+                }
+
+                // Add last page button
+                if (currentPage < totalPages) {
+                    const lastButton = createPaginationButton('»', () => {
+                        currentPage = totalPages;
+                        displayCurrentPage();
+                        updatePagination();
+                        window.scrollTo(0, 0);
+                    });
+                    paginationContainer.appendChild(lastButton);
+                }
+            }
+
+            function createPaginationButton(text, onClick, isActive = false, isDisabled = false) {
+                const button = document.createElement('button');
+                button.textContent = text;
+
+                if (isActive) {
+                    button.classList.add('active');
+                }
+
+                if (isDisabled) {
+                    button.disabled = true;
+                    button.classList.add('cursor-default', 'opacity-50');
+                } else if (onClick) {
+                    button.addEventListener('click', onClick);
+                }
+
+                return button;
+            }
+
+            // Search with debounce
             searchInput.addEventListener('input', () => {
-                loadDatasets();
+                loadingSpinner.style.display = 'block';
+
+                if (searchTimeout) {
+                    clearTimeout(searchTimeout);
+                }
+
+                searchTimeout = setTimeout(() => {
+                    filterDatasets();
+                    loadingSpinner.style.display = 'none';
+                }, 300); // Wait 300ms after typing stops
             });
 
+            // Theme toggle
             themeToggle.addEventListener('click', () => {
                 document.body.classList.toggle('dark');
                 themeIcon.textContent = document.body.classList.contains('dark') ? 'dark_mode' : 'light_mode';
+
+                // Store theme preference
+                storage.setItem('theme_preference', document.body.classList.contains('dark') ? 'dark' : 'light');
             });
+
+            // Load saved theme preference
+            const savedTheme = storage.getItem('theme_preference');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+                themeIcon.textContent = 'dark_mode';
+            }
         });
     </script>
 </body>
