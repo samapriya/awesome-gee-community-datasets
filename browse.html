@@ -31,12 +31,23 @@
             border-color: #4a5568;
         }
 
+        .dark select {
+            background-color: #2d3748;
+            color: #cbd5e0;
+            border-color: #4a5568;
+        }
+
         .dark header {
             background-color: #2d3748;
         }
 
         .dark #dataset-count {
             color: #cbd5e0;
+        }
+
+        .dark .filter-panel {
+            background-color: #2d3748;
+            border-color: #4a5568;
         }
 
         .btn {
@@ -60,21 +71,68 @@
             margin-right: 1rem;
         }
 
-        .grid {
+        .grid-view {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
         }
 
-        .dataset-card {
-            padding: 1rem;
+        .list-view {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
-        .dataset-card .buttons {
+        .dataset-card {
+            padding: 1rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list-item {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 80px 1fr auto;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .dataset-card .buttons,
+        .list-item .buttons {
             display: flex;
             gap: 0.5rem;
             justify-content: space-evenly;
             margin-top: auto;
             flex-wrap: nowrap;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            background-color: #e2e8f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            background-color: #3182ce;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .dark .tag {
+            background-color: #4a5568;
+        }
+
+        .dark .tag:hover {
+            background-color: #4299e1;
         }
 
         #loading-spinner {
@@ -144,6 +202,222 @@
             color: white;
             font-weight: bold;
         }
+
+        /* Filter Panel Styles */
+        .filter-panel {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: max-height 0.3s ease-in-out, opacity 0.3s;
+        }
+
+        .filter-panel.collapsed {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        .filter-section {
+            margin-bottom: 1rem;
+        }
+
+        .filter-section h3 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+
+        .filter-checkbox input {
+            margin-right: 0.25rem;
+        }
+
+        /* View Toggle Styles */
+        .view-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toggle-btn {
+            background-color: #e2e8f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .toggle-btn.active {
+            background-color: #3182ce;
+            color: white;
+        }
+
+        .dark .toggle-btn {
+            background-color: #4a5568;
+        }
+
+        .dark .toggle-btn.active {
+            background-color: #4299e1;
+        }
+
+        /* Controls Bar */
+        .controls-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .sort-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        select {
+            padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.25rem;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+        }
+
+        /* Search History Dropdown Styles */
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .search-history-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            max-height: 300px;
+            overflow-y: auto;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark .search-history-dropdown {
+            background-color: #2d3748;
+            border-color: #4a5568;
+        }
+
+        .search-history-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-history-item:hover {
+            background-color: #f7fafc;
+        }
+
+        .dark .search-history-item:hover {
+            background-color: #4a5568;
+        }
+
+        .search-history-item .history-text {
+            flex-grow: 1;
+        }
+
+        .search-history-item .history-time {
+            color: #718096;
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+        }
+
+        .dark .search-history-item .history-time {
+            color: #a0aec0;
+        }
+
+        .search-history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .dark .search-history-header {
+            border-color: #4a5568;
+        }
+
+        .clear-history-btn {
+            font-size: 0.875rem;
+            color: #e53e3e;
+            cursor: pointer;
+            transition: all 0.2s;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .clear-history-btn:hover {
+            background-color: #FED7D7;
+        }
+
+        .dark .clear-history-btn {
+            color: #FC8181;
+        }
+
+        .dark .clear-history-btn:hover {
+            background-color: rgba(252, 129, 129, 0.2);
+        }
+
+        .search-history-empty {
+            padding: 1rem;
+            text-align: center;
+            color: #718096;
+        }
+
+        .dark .search-history-empty {
+            color: #a0aec0;
+        }
+
+        .history-icon {
+            margin-left: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .history-icon:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -154,25 +428,77 @@
                 <img src="https://i.imgur.com/FYPcTFF.png" alt="Logo" class="h-12">
                 <h1 class="text-lg font-bold">Catalog Browser</h1>
             </div>
-
-            <div class="flex items-center">
-                <input type="search" id="search" placeholder="Search datasets..." class="p-2 rounded border w-80">
-                <span id="dataset-count" class="text-gray-700 dark:text-gray-300">0 datasets</span>
+            <div class="flex items-center flex-grow justify-center max-w-xl">
+                <div class="search-container">
+                    <input type="search" id="search" placeholder="Search datasets..." class="p-2 rounded border w-full">
+                    <button id="history-toggle" class="history-icon">
+                        <span class="material-symbols-outlined">history</span>
+                    </button>
+                    <div class="search-history-dropdown" id="search-history-dropdown">
+                        <div class="search-history-header">
+                            <span class="font-medium">Recent Searches</span>
+                            <button id="clear-history" class="clear-history-btn">Clear All</button>
+                        </div>
+                        <div id="search-history-list">
+                            <!-- Search history items will be populated here -->
+                            <div class="search-history-empty">No recent searches</div>
+                        </div>
+                    </div>
+                </div>
+                <span id="dataset-count" class="text-gray-700 dark:text-gray-300 ml-2">0 datasets</span>
+                <button id="filter-toggle" class="p-2 ml-2">
+                    <span class="material-symbols-outlined">filter_alt</span>
+                </button>
             </div>
             <button id="theme-toggle" class="p-2">
                 <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
             </button>
         </div>
     </header>
-
     <main class="container mx-auto py-6">
+        <!-- Filter Panel -->
+        <div id="filter-panel" class="filter-panel collapsed">
+            <div class="filter-section">
+                <h3>Filter by Thematic Group</h3>
+                <div id="thematic-filters" class="filter-options">
+                    <!-- Thematic groups will be dynamically added here -->
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Filter by Popular Tags</h3>
+                <div id="tag-filters" class="filter-options">
+                    <!-- Tags will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+        <!-- Controls Bar -->
+        <div class="controls-bar">
+            <div class="view-toggle">
+                <button id="grid-view-btn" class="toggle-btn active">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <span>Grid</span>
+                </button>
+                <button id="list-view-btn" class="toggle-btn">
+                    <span class="material-symbols-outlined">view_list</span>
+                    <span>List</span>
+                </button>
+            </div>
+            <div class="sort-control">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="random">Random</option>
+                    <option value="title-asc">Title A-Z</option>
+                    <option value="title-desc">Title Z-A</option>
+                    <option value="group">Thematic Group</option>
+                </select>
+            </div>
+        </div>
         <div id="loading-spinner"></div>
-        <div id="dataset-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div id="dataset-container" class="grid-view grid">
             <!-- Datasets will be dynamically loaded here -->
         </div>
         <div id="pagination" class="mt-8"></div>
     </main>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const datasetContainer = document.getElementById('dataset-container');
@@ -182,12 +508,42 @@
             const datasetCount = document.getElementById('dataset-count');
             const loadingSpinner = document.getElementById('loading-spinner');
             const paginationContainer = document.getElementById('pagination');
+            const filterPanel = document.getElementById('filter-panel');
+            const filterToggle = document.getElementById('filter-toggle');
+            const thematicFilters = document.getElementById('thematic-filters');
+            const tagFilters = document.getElementById('tag-filters');
+            const gridViewBtn = document.getElementById('grid-view-btn');
+            const listViewBtn = document.getElementById('list-view-btn');
+            const sortSelect = document.getElementById('sort-select');
+            const historyToggle = document.getElementById('history-toggle');
+            const searchHistoryDropdown = document.getElementById('search-history-dropdown');
+            const searchHistoryList = document.getElementById('search-history-list');
+            const clearHistoryBtn = document.getElementById('clear-history');
 
             let datasets = [];
             let filteredDatasets = [];
             let currentPage = 1;
+            let currentView = 'grid';
             const itemsPerPage = 12;
             let searchTimeout = null;
+            let activeThematicFilters = [];
+            let activeTagFilters = [];
+            let allThematicGroups = [];
+            let allTags = [];
+            let searchHistory = [];
+            const MAX_HISTORY_ITEMS = 10;
+
+            // Add a consistent fallback for images that fail to load
+            function createFallbackImageUrl(width, height) {
+                // Return a placeholder image URL with the given dimensions
+                return `/api/placeholder/${width}/${height}`;
+            }
+
+            // Pre-load images when switching views
+            function preloadImagesForView() {
+                // Reset lazy loading when changing views
+                initLazyLoading();
+            }
 
             // Storage helper that falls back to memory when localStorage is unavailable
             const storage = {
@@ -205,13 +561,144 @@
                     } catch (e) {
                         this.data[key] = value;
                     }
+                },
+                removeItem: function (key) {
+                    try {
+                        localStorage.removeItem(key);
+                    } catch (e) {
+                        delete this.data[key];
+                    }
                 }
             };
+
+            // Load search history from storage
+            function loadSearchHistory() {
+                const historyString = storage.getItem('search_history');
+                if (historyString) {
+                    try {
+                        searchHistory = JSON.parse(historyString);
+                    } catch (e) {
+                        console.error('Error parsing search history:', e);
+                        searchHistory = [];
+                    }
+                }
+            }
+
+            // Save search history to storage
+            function saveSearchHistory() {
+                storage.setItem('search_history', JSON.stringify(searchHistory));
+            }
+
+            // Add search term to history
+            function addToSearchHistory(term) {
+                if (!term || term.trim() === '') return;
+
+                // Remove existing entry if it exists
+                searchHistory = searchHistory.filter(item => item.term !== term);
+
+                // Add new entry at the beginning
+                searchHistory.unshift({
+                    term: term,
+                    timestamp: Date.now()
+                });
+
+                // Limit history size
+                if (searchHistory.length > MAX_HISTORY_ITEMS) {
+                    searchHistory = searchHistory.slice(0, MAX_HISTORY_ITEMS);
+                }
+
+                saveSearchHistory();
+                updateSearchHistoryUI();
+            }
+
+            // Clear search history
+            function clearSearchHistory() {
+                searchHistory = [];
+                saveSearchHistory();
+                updateSearchHistoryUI();
+            }
+
+            // Format relative time
+            function formatRelativeTime(timestamp) {
+                const now = Date.now();
+                const diff = now - timestamp;
+
+                // If less than a minute
+                if (diff < 60 * 1000) {
+                    return 'just now';
+                }
+
+                // If less than an hour
+                if (diff < 60 * 60 * 1000) {
+                    const minutes = Math.floor(diff / (60 * 1000));
+                    return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ago`;
+                }
+
+                // If less than a day
+                if (diff < 24 * 60 * 60 * 1000) {
+                    const hours = Math.floor(diff / (60 * 60 * 1000));
+                    return `${hours} ${hours === 1 ? 'hour' : 'hours'} ago`;
+                }
+
+                // Otherwise show days
+                const days = Math.floor(diff / (24 * 60 * 60 * 1000));
+                return `${days} ${days === 1 ? 'day' : 'days'} ago`;
+            }
+
+            // Update search history UI
+            function updateSearchHistoryUI() {
+                if (searchHistory.length === 0) {
+                    searchHistoryList.innerHTML = '<div class="search-history-empty">No recent searches</div>';
+                    return;
+                }
+
+                searchHistoryList.innerHTML = '';
+
+                searchHistory.forEach(item => {
+                    const historyItem = document.createElement('div');
+                    historyItem.classList.add('search-history-item');
+
+                    historyItem.innerHTML = `
+                         <span class="history-text">${item.term}</span>
+                         <span class="history-time">${formatRelativeTime(item.timestamp)}</span>
+                     `;
+
+                    historyItem.addEventListener('click', () => {
+                        searchInput.value = item.term;
+                        searchHistoryDropdown.style.display = 'none';
+                        filterDatasets();
+                    });
+
+                    searchHistoryList.appendChild(historyItem);
+                });
+            }
+
+            // Toggle search history dropdown
+            function toggleSearchHistory() {
+                if (searchHistoryDropdown.style.display === 'block') {
+                    searchHistoryDropdown.style.display = 'none';
+                } else {
+                    updateSearchHistoryUI();
+                    searchHistoryDropdown.style.display = 'block';
+                }
+            }
+
+            // Close search history dropdown when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!searchHistoryDropdown.contains(event.target) &&
+                    event.target !== historyToggle &&
+                    !historyToggle.contains(event.target)) {
+                    searchHistoryDropdown.style.display = 'none';
+                }
+            });
 
             // Check for cached data
             const cachedData = storage.getItem('gee_datasets');
             const cacheTimestamp = storage.getItem('gee_datasets_timestamp');
             const cacheExpiration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+            // Load search history
+            loadSearchHistory();
 
             // Initialize from cache or fetch new data
             if (cachedData && cacheTimestamp && (Date.now() - parseInt(cacheTimestamp)) < cacheExpiration) {
@@ -256,121 +743,149 @@
                         thumbnail: "https://storage.googleapis.com/earthengine-community/examples/forest-change.jpg",
                         thematic_group: "Land Cover & Land Use",
                         docs: "https://example.com/docs/forest-change",
-                        sample_code: "https://example.com/code/forest-change"
+                        sample_code: "https://example.com/code/forest-change",
+                        tags: "forest, deforestation, land cover, global"
                     },
                     {
                         title: "Global Surface Water",
                         thumbnail: "https://storage.googleapis.com/earthengine-community/examples/surface-water.jpg",
                         thematic_group: "Hydrology",
                         docs: "https://example.com/docs/surface-water",
-                        sample_code: "https://example.com/code/surface-water"
+                        sample_code: "https://example.com/code/surface-water",
+                        tags: "water, hydrology, surface water, global"
                     },
                     {
                         title: "Sentinel-2 Cloud-Free Composite",
                         thumbnail: "https://storage.googleapis.com/earthengine-community/examples/sentinel-2.jpg",
                         thematic_group: "Imagery",
                         docs: "https://example.com/docs/sentinel-2",
-                        sample_code: "https://example.com/code/sentinel-2"
+                        sample_code: "https://example.com/code/sentinel-2",
+                        tags: "sentinel, optical, composite, cloud-free"
                     },
                     {
                         title: "Global Precipitation Measurement",
                         thumbnail: "https://storage.googleapis.com/earthengine-community/examples/precipitation.jpg",
                         thematic_group: "Climate",
                         docs: "https://example.com/docs/precipitation",
-                        sample_code: "https://example.com/code/precipitation"
+                        sample_code: "https://example.com/code/precipitation",
+                        tags: "precipitation, rainfall, climate, global"
                     },
                     {
                         title: "MODIS Land Surface Temperature",
                         thumbnail: "https://storage.googleapis.com/earthengine-community/examples/lst.jpg",
                         thematic_group: "Climate",
                         docs: "https://example.com/docs/lst",
-                        sample_code: "https://example.com/code/lst"
-                    },
-                    {
-                        title: "Global Mangrove Forests",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/mangroves.jpg",
-                        thematic_group: "Land Cover & Land Use",
-                        docs: "https://example.com/docs/mangroves",
-                        sample_code: "https://example.com/code/mangroves"
-                    },
-                    {
-                        title: "PALSAR Global Forest Biomass",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/biomass.jpg",
-                        thematic_group: "Land Cover & Land Use",
-                        docs: "https://example.com/docs/biomass",
-                        sample_code: "https://example.com/code/biomass"
-                    },
-                    {
-                        title: "CHIRPS Precipitation",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/chirps.jpg",
-                        thematic_group: "Climate",
-                        docs: "https://example.com/docs/chirps",
-                        sample_code: "https://example.com/code/chirps"
-                    },
-                    {
-                        title: "Landsat Time Series Analysis",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/landsat-timeseries.jpg",
-                        thematic_group: "Imagery",
-                        docs: "https://example.com/docs/landsat-time",
-                        sample_code: "https://example.com/code/landsat-time"
-                    },
-                    {
-                        title: "USDA Cropland Data Layer",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/cropland.jpg",
-                        thematic_group: "Agriculture",
-                        docs: "https://example.com/docs/cropland",
-                        sample_code: "https://example.com/code/cropland"
-                    },
-                    {
-                        title: "Global Urban Footprint",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/urban.jpg",
-                        thematic_group: "Human Impact",
-                        docs: "https://example.com/docs/urban",
-                        sample_code: "https://example.com/code/urban"
-                    },
-                    {
-                        title: "SMAP Soil Moisture",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/soil-moisture.jpg",
-                        thematic_group: "Agriculture",
-                        docs: "https://example.com/docs/soil-moisture",
-                        sample_code: "https://example.com/code/soil-moisture"
-                    },
-                    {
-                        title: "Global Flood Database",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/floods.jpg",
-                        thematic_group: "Natural Disasters",
-                        docs: "https://example.com/docs/floods",
-                        sample_code: "https://example.com/code/floods"
-                    },
-                    {
-                        title: "ESA WorldCover",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/worldcover.jpg",
-                        thematic_group: "Land Cover & Land Use",
-                        docs: "https://example.com/docs/worldcover",
-                        sample_code: "https://example.com/code/worldcover"
-                    },
-                    {
-                        title: "Night Lights",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/night-lights.jpg",
-                        thematic_group: "Human Impact",
-                        docs: "https://example.com/docs/night-lights",
-                        sample_code: "https://example.com/code/night-lights"
-                    },
-                    {
-                        title: "FIRMS Active Fire Data",
-                        thumbnail: "https://storage.googleapis.com/earthengine-community/examples/fire.jpg",
-                        thematic_group: "Natural Disasters",
-                        docs: "https://example.com/docs/fire",
-                        sample_code: "https://example.com/code/fire"
+                        sample_code: "https://example.com/code/lst",
+                        tags: "temperature, LST, MODIS, climate"
                     }
                 ];
             }
 
             function initializeData() {
+                // Extract thematic groups and tags
+                extractThematicGroups();
+                extractPopularTags();
+
+                // Populate filter panel
+                populateFilterPanel();
+
+                // Initialize with random sorting
                 shuffleArray(datasets);
+
+                // Apply filters
                 filterDatasets();
+
+                // Update pagination
                 updatePagination();
+
+                // Update dataset count
                 datasetCount.textContent = `${datasets.length} datasets`;
+            }
+
+            function extractThematicGroups() {
+                // Extract unique thematic groups
+                const thematicSet = new Set();
+                datasets.forEach(dataset => {
+                    if (dataset.thematic_group) {
+                        thematicSet.add(dataset.thematic_group);
+                    }
+                });
+                allThematicGroups = Array.from(thematicSet).sort();
+            }
+
+            function extractPopularTags() {
+                // Count tag occurrences
+                const tagCounts = {};
+                datasets.forEach(dataset => {
+                    if (dataset.tags) {
+                        // Convert tags to array if it's a string
+                        const tagsArray = Array.isArray(dataset.tags)
+                            ? dataset.tags
+                            : typeof dataset.tags === 'string'
+                                ? dataset.tags.split(',').map(tag => tag.trim())
+                                : [];
+
+                        tagsArray.forEach(tag => {
+                            if (tag) {
+                                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                            }
+                        });
+                    }
+                });
+
+                // Sort tags by frequency
+                allTags = Object.keys(tagCounts)
+                    .sort((a, b) => tagCounts[b] - tagCounts[a])
+                    .slice(0, 20); // Get top 20 tags
+            }
+
+            function populateFilterPanel() {
+                // Clear existing filters
+                thematicFilters.innerHTML = '';
+                tagFilters.innerHTML = '';
+
+                // Add thematic group checkboxes
+                allThematicGroups.forEach(group => {
+                    const checkbox = document.createElement('div');
+                    checkbox.classList.add('filter-checkbox');
+                    checkbox.innerHTML = `
+                         <input type="checkbox" id="theme-${group.replace(/\s+/g, '-').replace(/[&]/g, 'and')}" data-group="${group}">
+                         <label for="theme-${group.replace(/\s+/g, '-').replace(/[&]/g, 'and')}">${group}</label>
+                     `;
+                    thematicFilters.appendChild(checkbox);
+                });
+
+                // Add tag checkboxes
+                allTags.forEach(tag => {
+                    const checkbox = document.createElement('div');
+                    checkbox.classList.add('filter-checkbox');
+                    checkbox.innerHTML = `
+                         <input type="checkbox" id="tag-${tag.replace(/\s+/g, '-')}" data-tag="${tag}">
+                         <label for="tag-${tag.replace(/\s+/g, '-')}">${tag}</label>
+                     `;
+                    tagFilters.appendChild(checkbox);
+                });
+
+                // Add event listeners to checkboxes
+                document.querySelectorAll('.filter-checkbox input').forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        if (checkbox.dataset.group) {
+                            if (checkbox.checked) {
+                                activeThematicFilters.push(checkbox.dataset.group);
+                            } else {
+                                activeThematicFilters = activeThematicFilters.filter(g => g !== checkbox.dataset.group);
+                            }
+                        } else if (checkbox.dataset.tag) {
+                            if (checkbox.checked) {
+                                activeTagFilters.push(checkbox.dataset.tag);
+                            } else {
+                                activeTagFilters = activeTagFilters.filter(t => t !== checkbox.dataset.tag);
+                            }
+                        }
+                        filterDatasets();
+                        updatePagination();
+                    });
+                });
             }
 
             function shuffleArray(array) {
@@ -383,16 +898,89 @@
             function filterDatasets() {
                 const searchTerm = searchInput.value.toLowerCase();
 
-                filteredDatasets = datasets.filter(dataset =>
-                    Object.values(dataset).some(value =>
-                        String(value).toLowerCase().includes(searchTerm)
-                    )
-                );
+                // Save to search history if not empty
+                if (searchTerm && searchTerm.trim() !== '') {
+                    addToSearchHistory(searchTerm);
+                }
+
+                // First filter by search term
+                filteredDatasets = datasets.filter(dataset => {
+                    // Basic fields search
+                    const basicMatch = (
+                        dataset.title.toLowerCase().includes(searchTerm) ||
+                        (dataset.thematic_group && dataset.thematic_group.toLowerCase().includes(searchTerm))
+                    );
+
+                    if (basicMatch) return true;
+
+                    // Tags search if tags exist
+                    if (dataset.tags) {
+                        // Handle tags as string or array
+                        if (typeof dataset.tags === 'string') {
+                            return dataset.tags.toLowerCase().includes(searchTerm);
+                        } else if (Array.isArray(dataset.tags)) {
+                            return dataset.tags.some(tag =>
+                                String(tag).toLowerCase().includes(searchTerm));
+                        }
+                    }
+
+                    return false;
+                });
+
+                // Then filter by thematic group
+                if (activeThematicFilters.length > 0) {
+                    filteredDatasets = filteredDatasets.filter(dataset =>
+                        dataset.thematic_group && activeThematicFilters.includes(dataset.thematic_group)
+                    );
+                }
+
+                // Then filter by tags
+                if (activeTagFilters.length > 0) {
+                    filteredDatasets = filteredDatasets.filter(dataset => {
+                        if (!dataset.tags) return false;
+
+                        const tagsArray = Array.isArray(dataset.tags)
+                            ? dataset.tags
+                            : typeof dataset.tags === 'string'
+                                ? dataset.tags.split(',').map(tag => tag.trim())
+                                : [];
+
+                        return activeTagFilters.some(filterTag =>
+                            tagsArray.some(datasetTag => datasetTag === filterTag)
+                        );
+                    });
+                }
+
+                // Apply sorting
+                sortDatasets();
 
                 datasetCount.textContent = `${filteredDatasets.length} datasets`;
                 currentPage = 1;
                 displayCurrentPage();
                 updatePagination();
+            }
+
+            function sortDatasets() {
+                const sortMethod = sortSelect.value;
+
+                switch (sortMethod) {
+                    case 'title-asc':
+                        filteredDatasets.sort((a, b) => a.title.localeCompare(b.title));
+                        break;
+                    case 'title-desc':
+                        filteredDatasets.sort((a, b) => b.title.localeCompare(a.title));
+                        break;
+                    case 'group':
+                        filteredDatasets.sort((a, b) => {
+                            const groupA = a.thematic_group || '';
+                            const groupB = b.thematic_group || '';
+                            return groupA.localeCompare(groupB) || a.title.localeCompare(b.title);
+                        });
+                        break;
+                    case 'random':
+                        shuffleArray(filteredDatasets);
+                        break;
+                }
             }
 
             function displayCurrentPage() {
@@ -407,27 +995,105 @@
                     return;
                 }
 
-                currentPageItems.forEach(dataset => {
+                if (currentView === 'grid') {
+                    datasetContainer.className = 'grid-view grid';
+                    displayGridView(currentPageItems);
+                } else {
+                    datasetContainer.className = 'list-view';
+                    displayListView(currentPageItems);
+                }
+            }
+
+            function displayGridView(items) {
+                items.forEach(dataset => {
                     const card = document.createElement('div');
                     card.classList.add('card', 'p-4', 'border', 'rounded', 'flex', 'flex-col', 'dataset-card');
 
+                    let tagsHTML = '';
+                    if (dataset.tags) {
+                        // Convert tags to array if it's a string
+                        const tagsArray = Array.isArray(dataset.tags)
+                            ? dataset.tags
+                            : dataset.tags.split(',').map(tag => tag.trim());
+
+                        if (tagsArray.length > 0) {
+                            tagsHTML = '<div class="tags-container">';
+                            tagsArray.forEach(tag => {
+                                tagsHTML += `<span class="tag cursor-pointer" onclick="document.getElementById('search').value='${tag}'; document.getElementById('search').dispatchEvent(new Event('input'));">${tag}</span>`;
+                            });
+                            tagsHTML += '</div>';
+                        }
+                    }
+
                     card.innerHTML = `
-                        <h2 class="text-base font-medium mb-2">${dataset.title}</h2>
-                        <div class="w-full h-40 bg-gray-200 dark:bg-gray-700 rounded-md mb-2 relative overflow-hidden">
-                            <img
-                                data-src="${dataset.thumbnail}"
-                                alt="${dataset.title}"
-                                class="lazy-image object-cover w-full h-full absolute inset-0"
-                                onerror="this.onerror=null; this.src='/api/placeholder/400/320'; this.classList.add('loaded');">
-                        </div>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${dataset.thematic_group || ''}</p>
-                        <div class="buttons">
-                            ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Documentation</a>` : ''}
-                            ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Sample Code</a>` : ''}
-                        </div>
-                    `;
+                         <h2 class="text-base font-medium mb-2">${dataset.title}</h2>
+                         <div class="mx-auto w-64 h-64 bg-gray-200 dark:bg-gray-700 rounded-md mb-2 relative overflow-hidden">
+                             <img
+                                 data-src="${dataset.thumbnail}"
+                                 alt="${dataset.title}"
+                                 class="lazy-image object-cover w-full h-full absolute inset-0"
+                                 onerror="this.onerror=null; this.src='/api/placeholder/256/256'; this.classList.add('loaded');">
+                         </div>
+                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${dataset.thematic_group || ''}</p>
+                         <div class="buttons mb-2">
+                             ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Documentation</a>` : ''}
+                             ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Sample Code</a>` : ''}
+                         </div>
+                         ${tagsHTML}
+                     `;
 
                     datasetContainer.appendChild(card);
+                });
+
+                // Initialize lazy loading for grid view images
+                initLazyLoading();
+            }
+
+            function displayListView(items) {
+                items.forEach(dataset => {
+                    const listItem = document.createElement('div');
+                    listItem.classList.add('list-item', 'border', 'rounded');
+
+                    let tagsHTML = '';
+                    if (dataset.tags) {
+                        // Convert tags to array if it's a string
+                        const tagsArray = Array.isArray(dataset.tags)
+                            ? dataset.tags
+                            : dataset.tags.split(',').map(tag => tag.trim());
+
+                        if (tagsArray.length > 0) {
+                            tagsHTML = '<div class="tags-container">';
+                            // In list view, limit to 3 tags to save space
+                            tagsArray.slice(0, 3).forEach(tag => {
+                                tagsHTML += `<span class="tag cursor-pointer" onclick="document.getElementById('search').value='${tag}'; document.getElementById('search').dispatchEvent(new Event('input'));">${tag}</span>`;
+                            });
+                            if (tagsArray.length > 3) {
+                                tagsHTML += `<span class="tag">+${tagsArray.length - 3} more</span>`;
+                            }
+                            tagsHTML += '</div>';
+                        }
+                    }
+
+                    listItem.innerHTML = `
+                         <div class="bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden w-20 h-20 relative">
+                             <img
+                                 data-src="${dataset.thumbnail}"
+                                 alt="${dataset.title}"
+                                 class="lazy-image object-cover w-full h-full absolute inset-0"
+                                 onerror="this.onerror=null; this.src='/api/placeholder/80/80'; this.classList.add('loaded');">
+                         </div>
+                         <div class="flex flex-col">
+                             <h2 class="text-base font-medium">${dataset.title}</h2>
+                             <p class="text-sm text-gray-500 dark:text-gray-400">${dataset.thematic_group || ''}</p>
+                             ${tagsHTML}
+                         </div>
+                         <div class="buttons">
+                             ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2">Docs</a>` : ''}
+                             ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2">Code</a>` : ''}
+                         </div>
+                     `;
+
+                    datasetContainer.appendChild(listItem);
                 });
 
                 // Initialize lazy loading for the current page
@@ -443,7 +1109,20 @@
                             if (entry.isIntersecting) {
                                 const img = entry.target;
                                 img.src = img.dataset.src;
-                                img.onload = () => img.classList.add('loaded');
+
+                                img.onload = () => {
+                                    img.classList.add('loaded');
+                                };
+
+                                img.onerror = () => {
+                                    // Set appropriate fallback image based on parent container size
+                                    const parent = img.parentElement;
+                                    const width = parent.offsetWidth || 256;
+                                    const height = parent.offsetHeight || 256;
+                                    img.src = createFallbackImageUrl(width, height);
+                                    img.classList.add('loaded');
+                                };
+
                                 imageObserver.unobserve(img);
                             }
                         });
@@ -454,7 +1133,18 @@
                     // Fallback for browsers that don't support IntersectionObserver
                     lazyImages.forEach(img => {
                         img.src = img.dataset.src;
-                        img.onload = () => img.classList.add('loaded');
+
+                        img.onload = () => {
+                            img.classList.add('loaded');
+                        };
+
+                        img.onerror = () => {
+                            const parent = img.parentElement;
+                            const width = parent.offsetWidth || 256;
+                            const height = parent.offsetHeight || 256;
+                            img.src = createFallbackImageUrl(width, height);
+                            img.classList.add('loaded');
+                        };
                     });
                 }
             }
@@ -558,6 +1248,7 @@
                 return button;
             }
 
+            // Event Listeners
             // Search with debounce
             searchInput.addEventListener('input', () => {
                 loadingSpinner.style.display = 'block';
@@ -581,11 +1272,80 @@
                 storage.setItem('theme_preference', document.body.classList.contains('dark') ? 'dark' : 'light');
             });
 
-            // Load saved theme preference
+            // Filter panel toggle
+            filterToggle.addEventListener('click', () => {
+                filterPanel.classList.toggle('collapsed');
+            });
+
+            // View toggle
+            gridViewBtn.addEventListener('click', () => {
+                if (currentView !== 'grid') {
+                    currentView = 'grid';
+                    gridViewBtn.classList.add('active');
+                    listViewBtn.classList.remove('active');
+                    displayCurrentPage();
+
+                    // Initialize lazy loading after switching views
+                    setTimeout(() => initLazyLoading(), 50);
+
+                    // Save view preference
+                    storage.setItem('view_preference', 'grid');
+                }
+            });
+
+            listViewBtn.addEventListener('click', () => {
+                if (currentView !== 'list') {
+                    currentView = 'list';
+                    listViewBtn.classList.add('active');
+                    gridViewBtn.classList.remove('active');
+                    displayCurrentPage();
+
+                    // Initialize lazy loading after switching views
+                    setTimeout(() => initLazyLoading(), 50);
+
+                    // Save view preference
+                    storage.setItem('view_preference', 'list');
+                }
+            });
+
+            // Sort change
+            sortSelect.addEventListener('change', () => {
+                sortDatasets();
+                displayCurrentPage();
+
+                // Save sort preference
+                storage.setItem('sort_preference', sortSelect.value);
+            });
+
+            // History toggle click event
+            historyToggle.addEventListener('click', (event) => {
+                event.stopPropagation();
+                toggleSearchHistory();
+            });
+
+            // Clear history button click event
+            clearHistoryBtn.addEventListener('click', (event) => {
+                event.stopPropagation();
+                clearSearchHistory();
+            });
+
+            // Load saved preferences
             const savedTheme = storage.getItem('theme_preference');
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark');
                 themeIcon.textContent = 'dark_mode';
+            }
+
+            const savedView = storage.getItem('view_preference');
+            if (savedView === 'list') {
+                currentView = 'list';
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+            }
+
+            const savedSort = storage.getItem('sort_preference');
+            if (savedSort) {
+                sortSelect.value = savedSort;
             }
         });
     </script>
