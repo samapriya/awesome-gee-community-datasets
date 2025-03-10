@@ -1,0 +1,207 @@
+// Import GLWD v2 layers
+var glwdAreaHa = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GLWD/GLWD_V2_DELTA_AREA_HA_X10');
+var glwdAreaPct = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GLWD/GLWD_V2_DELTA_AREA_PCT');
+var glwdMainClass = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GLWD/GLWD_V2_DELTA_MAIN_CLASS');
+var glwdMainClass50 = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GLWD/GLWD_V2_DELTA_MAIN_CLASS_50PCT');
+var glwdDrylandPct = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GLWD/GLWD_v2_delta_class_00_pct');
+var glwdClassPct = ee.ImageCollection('projects/sat-io/open-datasets/GLWD/DELTA_AREA_CLASS_PCT');
+
+// Define visualization parameters for class map
+var classVisParams = {
+  min: 1,
+  max: 33,
+  palette: [
+    //'f0eeef', // 0 - Dryland (muted gray)
+    '000080', // 1 - Freshwater lake
+    'FF69B4', // 2 - Saline lake
+    'FF0000', // 3 - Reservoir
+    '0000FF', // 4 - River
+    '008080', // 5 - Estuarine river
+    '4169E1', // 6 - Other permanent waterbody
+    'B0C4DE', // 7 - Small streams
+    '006400', // 8 - Lacustrine, forested
+    '008000', // 9 - Lacustrine, non-forested
+    '228B22', // 10 - Riverine, regularly flooded, forested
+    '20B2AA', // 11 - Riverine, regularly flooded, non-forested
+    '32CD32', // 12 - Riverine, seasonally flooded, forested
+    '48D1CC', // 13 - Riverine, seasonally flooded, non-forested
+    '90EE90', // 14 - Riverine, seasonally saturated, forested
+    'AFEEEE', // 15 - Riverine, seasonally saturated, non-forested
+    'FFB6C1', // 16 - Palustrine, regularly flooded, forested
+    'FF69B4', // 17 - Palustrine, regularly flooded, non-forested
+    'FFC0CB', // 18 - Palustrine, seasonally saturated, forested
+    'FFE4E1', // 19 - Palustrine, seasonally saturated, non-forested
+    '4B0082', // 20 - Ephemeral, forested
+    'DDA0DD', // 21 - Ephemeral, non-forested
+    '3B1E00', // 22 - Arctic/boreal peatland forested
+    '4E2700', // 23 - Arctic/boreal peatland non-forested
+    '613000', // 24 - Temperate peatland forested
+    '743800', // 25 - Temperate peatland non-forested
+    '8B4513', // 26 - Tropical peatland forested
+    'A0522D', // 27 - Tropical peatland non-forested
+    'FF00FF', // 28 - Mangrove
+    'FFFF00', // 29 - Saltmarsh
+    '40E0D0', // 30 - Delta
+    '48D1CC', // 31 - Other coastal wetland
+    'FFA500', // 32 - Salt pan, saline/brackish wetland
+    '800080'  // 33 - Paddy rice
+  ]
+};
+
+// Define visualization parameters for percentage data
+var percentVisParams = {
+  min: 0,
+  max: 100,
+  palette: ['white', '0000FF']
+};
+
+// Set map center (can be adjusted to area of interest)
+Map.setCenter(-50.5, -0.5, 7);
+
+// Add layers to the map
+Map.addLayer(glwdMainClass.mask(glwdMainClass.gt(0)), classVisParams, 'GLWD Main Classes');
+Map.addLayer(glwdMainClass50, classVisParams, 'GLWD Classes >50%', false);
+Map.addLayer(glwdAreaPct, percentVisParams, 'Wetland Area Percentage', false);
+Map.addLayer(glwdDrylandPct, percentVisParams, 'Dryland Percentage', false);
+
+// Create main legend panel
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px',
+    height: '300px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'GLWD v2 Classes',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+// Function to create legend items
+var makeRow = function(color, name) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + color,
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+
+// Class names for legend
+var classNames = [
+  //'Dryland',
+  'Freshwater lake',
+  'Saline lake',
+  'Reservoir',
+  'River',
+  'Estuarine river',
+  'Other permanent waterbody',
+  'Small streams',
+  'Lacustrine, forested',
+  'Lacustrine, non-forested',
+  'Riverine, regularly flooded, forested',
+  'Riverine, regularly flooded, non-forested',
+  'Riverine, seasonally flooded, forested',
+  'Riverine, seasonally flooded, non-forested',
+  'Riverine, seasonally saturated, forested',
+  'Riverine, seasonally saturated, non-forested',
+  'Palustrine, regularly flooded, forested',
+  'Palustrine, regularly flooded, non-forested',
+  'Palustrine, seasonally saturated, forested',
+  'Palustrine, seasonally saturated, non-forested',
+  'Ephemeral, forested',
+  'Ephemeral, non-forested',
+  'Arctic/boreal peatland forested',
+  'Arctic/boreal peatland non-forested',
+  'Temperate peatland forested',
+  'Temperate peatland non-forested',
+  'Tropical peatland forested',
+  'Tropical peatland non-forested',
+  'Mangrove',
+  'Saltmarsh',
+  'Delta',
+  'Other coastal wetland',
+  'Salt pan, saline/brackish wetland',
+  'Paddy rice'
+];
+
+// Create two columns for the legend
+var leftColumn = ui.Panel({
+  layout: ui.Panel.Layout.Flow('vertical'),
+  style: {padding: '0 8px 0 0'}
+});
+
+var rightColumn = ui.Panel({
+  layout: ui.Panel.Layout.Flow('vertical'),
+  style: {padding: '0 0 0 8px'}
+});
+
+// Split classes between columns
+var midPoint = Math.ceil(classNames.length / 2);
+
+// Add classes to left column
+for (var i = 0; i < midPoint; i++) {
+  leftColumn.add(makeRow(classVisParams.palette[i], classNames[i]));
+}
+
+// Add classes to right column
+for (var i = midPoint; i < classNames.length; i++) {
+  rightColumn.add(makeRow(classVisParams.palette[i], classNames[i]));
+}
+
+// Create a panel for the columns and add them side by side
+var columnsPanel = ui.Panel({
+  widgets: [leftColumn, rightColumn],
+  layout: ui.Panel.Layout.Flow('horizontal')
+});
+
+legend.add(columnsPanel);
+Map.add(legend);
+
+// Example: Calculate statistics for a region of interest
+var roi = ee.Geometry.Rectangle([-51, -1, -50, 0]);
+
+// Calculate total wetland area
+var wetlandArea = glwdAreaHa
+  .divide(10) // Convert from hectares * 10 to hectares
+  .reduceRegion({
+    reducer: ee.Reducer.sum(),
+    geometry: roi,
+    scale: 464, // ~15 arc-seconds at equator
+    maxPixels: 1e9
+  });
+
+// Get class distribution
+var classDistribution = glwdMainClass
+  .reduceRegion({
+    reducer: ee.Reducer.frequencyHistogram(),
+    geometry: roi,
+    scale: 464,
+    maxPixels: 1e9
+  });
+
+// Print results
+print('Total wetland area (ha):', wetlandArea);
+print('Class distribution:', classDistribution);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

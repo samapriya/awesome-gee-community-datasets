@@ -1,0 +1,11 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var HIGHRES_RGB = ee.Image("projects/sat-io/open-datasets/URBAN_SKY/USKY01_D00236_010_11S_20250119_20250125200840_A0_000_000_01"),
+    LWIR_THERMAL = ee.Image("projects/sat-io/open-datasets/URBAN_SKY/USKY02_D00235_400_11S_20250119_20250121015227_A2_000_000_01");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(LWIR_THERMAL,10)
+Map.addLayer(HIGHRES_RGB.mask(HIGHRES_RGB.gt(0)),{},'High Res RGB 10cm')
+Map.addLayer(LWIR_THERMAL, {min: 3, max: 215, palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#fee090', '#fdae61', '#f46d43', '#d73027']}, 'LWIR Thermal 3m')
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+

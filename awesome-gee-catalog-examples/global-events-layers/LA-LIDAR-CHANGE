@@ -1,0 +1,189 @@
+// Define the dataset paths
+var datasets = {
+  'Eaton': {
+    dsm: 'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/disaster/difference_dsm_eaton_2025_2016_aligned_1m',
+    dtm: 'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/disaster/difference_dtm_eaton_2025_2016_aligned_1m',
+    center: [-118.133972, 34.158601],
+    zoom: 17
+  },
+  'Palisades': {
+    dsm: 'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/disaster/difference_dsm_palisades_2025_2016_aligned_1m',
+    dtm: 'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/disaster/difference_dtm_palisades_2025_2016_aligned_1m',
+    center: [-118.683569, 34.036449],
+    zoom: 17
+  }
+};
+
+// Define color palettes with more options
+var palettes = {
+  'RdYlBu': ['#a50026', '#d73027', '#f46d43', '#fdae61', '#fee090', '#e0f3f8', '#abd9e9', '#74add1', '#4575b4', '#313695'],
+  'Spectral': ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'],
+  'Viridis': ['#440154', '#482878', '#3e4989', '#31688e', '#26828e', '#1f9e89', '#35b779', '#6ece58', '#b5de2b', '#fde725'],
+  'Magma': ['#000004', '#140e36', '#3b0f70', '#641a80', '#8c2981', '#b73779', '#de4968', '#f66e5c', '#fe9f6d', '#fecf92'],
+  'Inferno': ['#000004', '#1b0c41', '#4a0c6b', '#781c6d', '#a52c60', '#cf4446', '#ed6925', '#fb9b06', '#f7d13d', '#fcffa4'],
+  'Plasma': ['#0d0887', '#41049d', '#6a00a8', '#8f0da4', '#b12a90', '#cb4678', '#e16462', '#f1834b', '#fca636', '#fccd25']
+};
+
+// Track the current legend
+var currentLegend = null;
+
+// Function to load and display difference maps
+function loadDifference(location, dataType, selectedPalette) {
+  // Clear previous layers
+  Map.layers().reset();
+  
+  // Remove previous legend if it exists
+  if (currentLegend) {
+    Map.remove(currentLegend);
+  }
+  
+  // Load selected dataset
+  var difference = ee.Image(datasets[location][dataType]);
+  
+  // Set visualization parameters
+  var visParams = {
+    min: -10,
+    max: 10,
+    palette: palettes[selectedPalette]
+  };
+  
+  // Add layer to map
+  Map.addLayer(difference, visParams, location + ' ' + dataType.toUpperCase() + ' Difference');
+  
+  // Set map view
+  Map.setCenter(
+    datasets[location].center[0],
+    datasets[location].center[1],
+    datasets[location].zoom
+  );
+  
+  // Add a legend
+  addLegend(selectedPalette, visParams.min, visParams.max);
+}
+
+// Function to create color bar legend
+function addLegend(selectedPalette, min, max) {
+  // Create legend panel
+  var legend = ui.Panel({
+    style: {
+      position: 'bottom-right',
+      padding: '8px 15px',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)'
+    }
+  });
+  
+  // Create title
+  var legendTitle = ui.Label({
+    value: 'Elevation Difference (m)',
+    style: {
+      fontWeight: 'bold',
+      fontSize: '16px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  legend.add(legendTitle);
+  
+  // Create color bar
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '200x20',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: palettes[selectedPalette],
+    },
+    style: {margin: '0 0 8px 0'}
+  });
+  legend.add(colorBar);
+  
+  // Add min and max labels in a single row
+  var legendLabels = ui.Panel({
+    widgets: [
+      ui.Label(min, {margin: '0 8px 4px 0'}),
+      ui.Label('', {margin: '0 4px 4px 0', stretch: 'horizontal'}),
+      ui.Label(max, {margin: '0 0 4px 8px'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {stretch: 'horizontal', margin: '0'}
+  });
+  legend.add(legendLabels);
+  
+  // Update current legend reference
+  currentLegend = legend;
+  Map.add(legend);
+}
+
+// Create title panel
+var titlePanel = ui.Panel({
+  widgets: [
+    ui.Label('Los Angeles Fires 2025 Lidar Collection Change Analysis', {
+      fontWeight: 'bold',
+      fontSize: '24px',
+      margin: '10px 0 5px 8px'
+    }),
+    ui.Label('The dataset combines preliminary post-fire Digital Elevation Models (DEMs) created for immediate disaster response with detailed topographic differencing analysis comparing pre-fire (2016) and post-fire (2025) conditions.', {
+      fontSize: '14px',
+      margin: '5px 8px 15px 8px'
+    })
+  ],
+  style: {
+    position: 'top-center',
+    width: '800px',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)'
+  }
+});
+
+// Create UI elements
+var locationSelect = ui.Select({
+  items: Object.keys(datasets),
+  placeholder: 'Select location',
+  value: 'Eaton',
+  onChange: function(location) {
+    loadDifference(location, dataTypeSelect.getValue(), paletteSelect.getValue());
+  }
+});
+
+var dataTypeSelect = ui.Select({
+  items: ['dsm', 'dtm'],
+  placeholder: 'Select data type',
+  value: 'dsm',
+  onChange: function(dataType) {
+    loadDifference(locationSelect.getValue(), dataType, paletteSelect.getValue());
+  }
+});
+
+var paletteSelect = ui.Select({
+  items: Object.keys(palettes),
+  placeholder: 'Select color palette',
+  value: 'RdYlBu',  // Changed default palette to RdYlBu
+  onChange: function(palette) {
+    loadDifference(locationSelect.getValue(), dataTypeSelect.getValue(), palette);
+  }
+});
+
+// Create control panel
+var controlPanel = ui.Panel({
+  widgets: [
+    ui.Label('Location:', {fontWeight: 'bold'}),
+    locationSelect,
+    ui.Label('Data Type:', {fontWeight: 'bold'}),
+    dataTypeSelect,
+    ui.Label('Color Palette:', {fontWeight: 'bold'}),
+    paletteSelect
+  ],
+  style: {
+    position: 'top-left',
+    padding: '8px',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)'
+  }
+});
+
+// Add panels to map
+Map.add(titlePanel);
+Map.add(controlPanel);
+
+// Initialize map with default settings
+loadDifference('Eaton', 'dsm', 'RdYlBu');

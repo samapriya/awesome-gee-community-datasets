@@ -1,22 +1,89 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var nbac_raster8622 = ee.Image("projects/sat-io/open-datasets/CA_FOREST/NBAC/NBAC_MRB_1986_to_2022"),
-    nbac8622 = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/NBAC/nbac_1986_to_2022_20230630");
+var nbac_raster7223 = ee.Image("projects/sat-io/open-datasets/CA_FOREST/NBAC/NBAC_MRB_1972_to_2023"),
+    nbac7223 = ee.FeatureCollection("projects/sat-io/open-datasets/CA_FOREST/NBAC/nbac_1972_2023_20240530");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 //Setup basemaps
 var snazzy = require("users/aazuspan/snazzy:styles");
 snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
 
 var palette = [
-  '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b',
-  '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#aec7e8', '#ffbb78',
-  '#98df8a', '#ff9896', '#c5b0d5', '#c49c94', '#f7b6d2', '#c7c7c7',
-  '#dbdb8d', '#9edae5', '#393b79', '#637939', '#8c6d31', '#843c39',
-  '#7b4173', '#5254a3', '#637939', '#8c6d31', '#bd9e39', '#8c6d31',
-  '#bd9e39', '#8c6d31', '#bd9e39', '#8c6d31', '#bd9e39', '#8c6d31'
+    // 1970s (1972-1979) - Blues
+    '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff',
+    
+    // 1980s - Greens
+    '#006d2c', '#2ca25f', '#66c2a4', '#99d8c9', '#ccece6', '#edf8fb', '#238b45', '#41ab5d', '#74c476', '#a1d99b',
+    
+    // 1990s - Purples to Reds
+    '#54278f', '#756bb1', '#9e9ac8', '#bcbddc', '#dadaeb', '#7a0177', '#ae017e', '#dd3497', '#f768a1', '#fa9fb5',
+    
+    // 2000s - Orange to Yellow
+    '#8c2d04', '#cc4c02', '#ec7014', '#fe9929', '#fec44f', '#fee391', '#fff7bc', '#ffffe5', '#d95f0e', '#fe9929',
+    
+    // 2010s - Multiple hues
+    '#a63603', '#e6550d', '#fd8d3c', '#fdae6b', '#fdd0a2', '#31a354', '#74c476', '#a1d99b', '#c7e9c0', '#e5f5e0',
+    
+    // 2020s - Ending with distinct colors
+    '#756bb1', '#88419d', '#8c6bb1', '#810f7c', '#4d004b'
 ];
 
-//Center the object
-Map.setCenter(-97.31,56.71,4)
+// Center the map
+Map.setCenter(-97.31, 56.71, 4);
 
-Map.addLayer(nbac_raster8622,{min:1986,max:2022,palette:palette},'National Burned Area Raster Composite 1986-2022')
-Map.addLayer(nbac8622,{},'National Burned Area Composite 1986-2022',false)
+// Add the raster layer with updated year range
+Map.addLayer(nbac_raster7223, {
+    min: 1972,
+    max: 2023,
+    palette: palette
+}, 'National Burned Area Raster Composite 1972-2023');
+
+// Add the vector layer
+Map.addLayer(nbac7223, {}, 'National Burned Area Composite 1972-2023', false);
+
+// Create a more detailed legend
+var legend = ui.Panel({
+    style: {
+        position: 'bottom-left',
+        padding: '8px 15px',
+        backgroundColor: 'white'
+    }
+});
+
+var legendTitle = ui.Label({
+    value: 'Burn Years (1972-2023)',
+    style: {
+        fontWeight: 'bold',
+        fontSize: '16px',
+        margin: '0 0 10px 0',
+        padding: '0'
+    }
+});
+legend.add(legendTitle);
+
+// Create legend gradient
+function makeRow(color, name) {
+    var colorBox = ui.Label({
+        style: {
+            backgroundColor: color,
+            padding: '8px',
+            margin: '0 0 4px 0'
+        }
+    });
+    var description = ui.Label({
+        value: name,
+        style: {margin: '0 0 4px 6px'}
+    });
+    return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+    });
+}
+
+// Add legend items for different decades
+legend.add(makeRow('#08519c', '1970s (1972-1979)'));
+legend.add(makeRow('#006d2c', '1980s (1980-1989)'));
+legend.add(makeRow('#54278f', '1990s (1990-1999)'));
+legend.add(makeRow('#8c2d04', '2000s (2000-2009)'));
+legend.add(makeRow('#a63603', '2010s (2010-2019)'));
+legend.add(makeRow('#756bb1', '2020s (2020-2023)'));
+
+Map.add(legend);

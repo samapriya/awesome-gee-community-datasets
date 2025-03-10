@@ -3,6 +3,8 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [Data with a Purpose: Nearly 4000 Datasets and our view from Above](https://datacommons.substack.com/p/data-with-a-purpose-nearly-4000-datasets)
+* [Measure Twice, Compress Once: Tales of Compression in the Community Catalog](https://datacommons.substack.com/p/measure-twice-compress-once-tales)
 * [Insights to Enhancements: Unpacking GEE Community Catalog Release 3.1.0](https://datacommons.substack.com/p/insights-to-enhancements-unpacking)
 * [AI Enhanced Search, Datasets & More in Community Catalog Release 3.0.0](https://datacommons.substack.com/p/ai-enhanced-search-datasets-and-more)
 * [The Hitchhiker's Guide to Vector Embeddings in Machine Learning (for Geographers)](https://datacommons.substack.com/p/the-hitchhikers-guide-to-vector-embeddings)
@@ -21,6 +23,5 @@ Find a list of associated blog posts related to GEE and community catalog here. 
 * [Beneath the Surface: Exploring GLOBGM High Resolution Global Groundwater Model](https://datacommons.substack.com/p/beneath-the-surface-exploring-globgm)
 * [Get Your Open Data Fix: What's New in the GEE Community Catalog Release 2.4.0](https://datacommons.substack.com/p/get-your-open-data-fix-whats-new)
 * [Our Dynamic World: Dense Land Cover Data & Stories of Shifting Landscapes](https://datacommons.substack.com/p/our-dynamic-world-dense-land-cover)
-* [Exploring the Data Commons, One Dataset at a Time](https://datacommons.substack.com/p/exploring-the-data-commons-one-dataset)
 <!-- END_MARKER -->
 

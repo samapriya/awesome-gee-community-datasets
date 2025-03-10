@@ -1,31 +1,56 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
 var ca_lc = ee.ImageCollection("projects/sat-io/open-datasets/CA_FOREST_LC_VLCE2");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
-var ca_lc_last = ee.Image(ca_lc.sort('system:time_start',false).first());
+// Get the first and last dates from the collection
+var startDate = ee.Date(ca_lc.first().get('system:time_start'));
+var endDate = ee.Date(ca_lc.sort('system:time_start', false).first().get('system:time_start'));
 
-var from = [0, 20, 31, 32, 33, 40, 50, 80, 81, 100, 210, 220, 230];
-var to =   [0, 1,  2,  3,  4,  5,  6,  7,  8,  9,   10,  11,  12 ];
-ca_lc_last = ca_lc_last.remap(from, to);
+// Print the date range
+print('Collection Date Range:', startDate.format('YYYY-MM-dd'), 'to', endDate.format('YYYY-MM-dd'));
 
-print("Reclassed values:");
-print({"from": from, "to": to});
+// Function to get year from date
+var getYear = function(date) {
+  return ee.Date(date).get('year');
+};
 
-// Define a dictionary which will be used to make legend and visualize image on map
+// Get start and end years
+var startYear = getYear(startDate);
+var endYear = getYear(endDate);
+
+// Create a list of years
+var years = ee.List.sequence(startYear, endYear);
+
+// Function to process one year of data
+var processYear = function(year) {
+  // Filter collection for the specific year
+  var yearStart = ee.Date.fromYMD(year, 1, 1);
+  var yearEnd = ee.Date.fromYMD(year, 12, 31);
+  var yearImage = ee.Image(ca_lc
+    .filterDate(yearStart, yearEnd)
+    .first());
+    
+  // Apply the remapping
+  var from = [0, 20, 31, 32, 33, 40, 50, 80, 81, 100, 210, 220, 230];
+  var to =   [0, 1,  2,  3,  4,  5,  6,  7,  8,  9,   10,  11,  12 ];
+  return yearImage.remap(from, to);
+};
+
+// Dictionary for visualization and class names
 var dict = {
   "names": [
-  "Unclassified",
-  "Water",
-  "Snow/Ice",
-  "Rock/Rubble",
-  "Exposed/Barren land",
-  "Bryoids",
-  "Shrubs",
-  "Wetland",
-  "Wetland-treed",
-  "Herbs",
-  "Coniferous",
-  "Broadleaf",
-  "Mixedwood"
+    "Unclassified",
+    "Water",
+    "Snow/Ice",
+    "Rock/Rubble",
+    "Exposed/Barren land",
+    "Bryoids",
+    "Shrubs",
+    "Wetland",
+    "Wetland-treed",
+    "Herbs",
+    "Coniferous",
+    "Broadleaf",
+    "Mixedwood"
   ],
   "colors": [
     "#686868",
@@ -41,9 +66,10 @@ var dict = {
     "#006600",
     "#00cc00",
     "#cc9900"
-  ]};
+  ]
+};
 
-// Create a panel to hold the legend widget
+// Create a panel for the legend
 var legend = ui.Panel({
   style: {
     position: 'bottom-left',
@@ -51,10 +77,31 @@ var legend = ui.Panel({
   }
 });
 
+// Create a panel for displaying the chart
+var chartPanel = ui.Panel({
+  style: {
+    position: 'top-right',
+    padding: '8px 15px',
+    width: '500px',
+    height: '300px'
+  }
+});
+
+// Add title to chart panel
+chartPanel.add(ui.Label({
+  value: 'Click on map to see land cover changes over time',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 10px 0'
+  }
+}));
+
+// Add the chart panel to the map
+Map.add(chartPanel);
+
 // Function to generate the legend
 function addCategoricalLegend(panel, dict, title) {
-
-  // Create and add the legend title.
   var legendTitle = ui.Label({
     value: title,
     style: {
@@ -65,56 +112,122 @@ function addCategoricalLegend(panel, dict, title) {
     }
   });
   panel.add(legendTitle);
-
+  
   var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
   panel.add(loading);
-
-  // Creates and styles 1 row of the legend.
+  
   var makeRow = function(color, name) {
-    // Create the label that is actually the colored box.
     var colorBox = ui.Label({
       style: {
         backgroundColor: color,
-        // Use padding to give the box height and width.
         padding: '8px',
         margin: '0 0 4px 0'
       }
     });
-
-    // Create the label filled with the description text.
+    
     var description = ui.Label({
       value: name,
       style: {margin: '0 0 4px 6px'}
     });
-
+    
     return ui.Panel({
       widgets: [colorBox, description],
       layout: ui.Panel.Layout.Flow('horizontal')
     });
   };
-
-  // Get the list of palette colors and class names from the image.
+  
   var palette = dict['colors'];
   var names = dict['names'];
   loading.style().set('shown', false);
-
+  
   for (var i = 0; i < names.length; i++) {
     panel.add(makeRow(palette[i], names[i]));
   }
-
   Map.add(panel);
-
 }
 
+// Add legend to map
+addCategoricalLegend(legend, dict, 'CA Annual forest LC map');
 
-/*
-  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
-*/
+// Set map center and zoom level
+Map.setCenter(-97.61655457157725, 55.6280720462063, 4);
 
-// Add the legend to the map
-addCategoricalLegend(legend, dict, 'CA Annual forest LC map 2019');
+// Create a list to store all processed images
+var processedImages = [];
 
-Map.setCenter(-97.61655457157725,55.6280720462063,4)
-
-// Add image to the map
-Map.addLayer(ca_lc_last.mask(ca_lc_last.neq(0)), {min:0, max:12, palette:dict['colors']}, 'CA Annual forest LC map 2019')
+// Process and add each year to the map
+years.evaluate(function(yearList) {
+  yearList.forEach(function(year) {
+    var yearImage = processYear(year);
+    processedImages.push({
+      year: year,
+      image: yearImage
+    });
+    
+    // Set visibility to true only for first and last years
+    var isVisible = (year === yearList[0] || year === yearList[yearList.length - 1]);
+    
+    Map.addLayer(
+      yearImage.mask(yearImage.neq(0)), 
+      {min: 0, max: 12, palette: dict['colors']}, 
+      'CA Annual forest LC map ' + year,
+      isVisible
+    );
+  });
+  
+  // Add click handler after all images are processed
+  Map.onClick(function(coords) {
+    // Clear the panel
+    chartPanel.clear();
+    chartPanel.add(ui.Label({
+      value: 'Land Cover Changes Over Time',
+      style: {
+        fontWeight: 'bold',
+        fontSize: '16px',
+        margin: '0 0 10px 0'
+      }
+    }));
+    
+    // Add location info
+    chartPanel.add(ui.Label('Location: ' + 
+      coords.lon.toFixed(4) + ', ' + 
+      coords.lat.toFixed(4)));
+    
+    // Create a point from the click coordinates
+    var point = ee.Geometry.Point(coords.lon, coords.lat);
+    
+    // Create a feature collection for the chart
+    var timeSeriesData = ee.FeatureCollection(
+      processedImages.map(function(item) {
+        var value = item.image.sample({
+          region: point,
+          scale: 30
+        }).first().get(item.image.bandNames().get(0));
+        
+        return ee.Feature(null, {
+          'year': item.year,
+          'class': value
+        });
+      })
+    );
+    
+    // Create and style the chart
+    var chart = ui.Chart.feature.byFeature(timeSeriesData, 'year', ['class'])
+      .setChartType('LineChart')
+      .setOptions({
+        title: 'Land Cover Class Changes',
+        hAxis: {title: 'Year', format: '####'},
+        vAxis: {
+          title: 'Land Cover Class',
+          ticks: dict.names.map(function(name, index) {
+            return {v: index, f: name};
+          })
+        },
+        pointSize: 5,
+        lineWidth: 2
+      });
+    
+    // Add the chart to the panel
+    chartPanel.add(chart);
+  });
+});

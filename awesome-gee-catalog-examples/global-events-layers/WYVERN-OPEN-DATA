@@ -1,0 +1,32 @@
+// Load the Wyvern collection
+var wyvernCollection = ee.ImageCollection('projects/sat-io/open-datasets/disaster/wyvern-open-data')
+.filter(ee.Filter.eq('system:index','wyvern_dragonette-001_20240823T172127_4ef5c7ec'));
+var image = wyvernCollection.first()
+
+// Visualization parameters
+var visParams = {
+  // Natural Color-like composite
+  naturalColor: {
+    bands: ['Band_635nm', 'Band_549nm', 'Band_503nm'],
+    min: 35,
+    max: 188,
+    gamma: 1.2
+  },
+  // False Color Vegetation composite (NIR, Red, Green)
+  falseColor: {
+    bands: ['Band_799nm', 'Band_669nm', 'Band_549nm'],
+    min: 34,
+    max: 145,
+    gamma: 1.2
+  }
+};
+
+// Add the layers to the map
+Map.addLayer(image, visParams.naturalColor, 'Natural Color');
+Map.addLayer(image, visParams.falseColor, 'False Color Vegetation');
+
+// Center map on the image
+Map.centerObject(image, 10);
+
+// Print image ID for reference
+print('Selected Image ID:', image.get('system:id'));

@@ -1,0 +1,718 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var image = ee.Image("USGS/3DEP/10m");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Import blend utilities
+var blend = require('users/jja/public:blend.js');
+
+// Create a hillshade layer once for reuse
+var terrain = ee.Terrain.products(ee.Image('USGS/SRTMGL1_003'));
+var hillshade = ee.Terrain.hillshade(terrain.select('elevation'));
+var hillshadeVis = hillshade.visualize({min: 0, max: 255});
+
+// Define available collections with their properties
+var collections = {
+  'BC_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/BC_DW',
+    description: 'Dry equivalent deposition of all base cations',
+    units: 'keq/ha',
+    min: 0,
+    max: 1.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'BC_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/BC_DWPCT',
+    description: 'Dry deposition of base cations as percent of total (wet + dry) deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'BC_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/BC_TW',
+    description: 'Total equivalent deposition of all base cations',
+    units: 'keq/ha',
+    min: 0,
+    max: 1.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CA_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CA_DW',
+    description: 'Dry deposition of calcium',
+    units: 'kg-Ca/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CA_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CA_TW',
+    description: 'Total deposition of calcium',
+    units: 'kg-Ca/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CA_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CA_WW',
+    description: 'Wet deposition of calcium',
+    units: 'kg-Ca/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CL_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CL_DW',
+    description: 'Dry deposition of chlorine',
+    units: 'kg-Cl/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CL_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CL_TW',
+    description: 'Total deposition of chlorine',
+    units: 'kg-Cl/ha',
+    min: 0,
+    max: 20.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'CL_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/CL_WW',
+    description: 'Wet deposition of chlorine',
+    units: 'kg-Cl/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'HNO3_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/HNO3_DW',
+    description: 'Total deposition of nitric acid',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'K_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/K_DW',
+    description: 'Dry deposition of potassium',
+    units: 'kg-K/ha',
+    min: 0,
+    max: 2.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'K_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/K_TW',
+    description: 'Total deposition of potassium',
+    units: 'kg-K/ha',
+    min: 0,
+    max: 4.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'K_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/K_WW',
+    description: 'Wet deposition of potassium',
+    units: 'kg-K/ha',
+    min: 0,
+    max: 2.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'MG_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/MG_DW',
+    description: 'Dry deposition of magnesium',
+    units: 'kg-Mg/ha',
+    min: 0,
+    max: 1.5,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'MG_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/MG_TW',
+    description: 'Total deposition of magnesium',
+    units: 'kg-Mg/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'MG_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/MG_WW',
+    description: 'Wet deposition of magnesium',
+    units: 'kg-Mg/ha',
+    min: 0,
+    max: 1.5,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'N_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/N_DW',
+    description: 'Dry deposition of nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'N_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/N_DWPCT',
+    description: 'Dry deposition of nitrogen as percent of total (wet + dry) deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'N_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/N_TW',
+    description: 'Total (wet + dry) nitrogen deposition',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 20.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'N_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/N_WW',
+    description: 'Wet deposition of nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'N_WWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/N_WWPCT',
+    description: 'Wet deposition of nitrogen as percent of total (wet + dry) deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NA_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NA_DW',
+    description: 'Dry deposition of sodium',
+    units: 'kg-Na/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NA_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NA_TW',
+    description: 'Total deposition of sodium',
+    units: 'kg-Na/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NA_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NA_WW',
+    description: 'Wet deposition of sodium',
+    units: 'kg-Na/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NH3_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NH3_DW',
+    description: 'Dry deposition of ammonia',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NH4_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NH4_DW',
+    description: 'Dry deposition of particulate ammonium',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 2.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NH4_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NH4_WW',
+    description: 'Wet deposition of particulate ammonium',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NO3_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NO3_DW',
+    description: 'Dry deposition of particulate nitrate',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 2.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NO3_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NO3_WW',
+    description: 'Wet deposition of particulate nitrate',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOM_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOM_DW',
+    description: 'Dry deposition of unmeasured nitrogen species',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOM_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOM_DWPCT',
+    description: 'Dry deposition of unmeasured nitrogen species as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOXI_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DW',
+    description: 'Dry deposition of oxidized nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOXI_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_DWPCT',
+    description: 'Dry deposition of oxidized nitrogen as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOXI_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TW',
+    description: 'Total (wet + dry) deposition of oxidized nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NOXI_TWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NOXI_TWPCT',
+    description: 'Total deposition of oxidized nitrogen as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NRED_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DW',
+    description: 'Dry deposition of reduced nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 5.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NRED_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_DWPCT',
+    description: 'Dry deposition of reduced nitrogen as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NRED_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TW',
+    description: 'Total (wet + dry) deposition of reduced nitrogen',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 10.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NRED_TWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NRED_TWPCT',
+    description: 'Total deposition of reduced nitrogen as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'NS_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/NS_TW',
+    description: 'Total equivalent nitrogen + sulfur deposition',
+    units: 'keq/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'PRECIP_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/PRECIP_WW',
+    description: 'Annual precipitation',
+    units: 'cm',
+    min: 0,
+    max: 250,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'S_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/S_DW',
+    description: 'Dry deposition of sulfur',
+    units: 'kg-S/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'S_DWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/S_DWPCT',
+    description: 'Dry deposition of sulfur as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'S_TW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/S_TW',
+    description: 'Total (wet + dry) sulfur deposition',
+    units: 'kg-S/ha',
+    min: 0,
+    max: 6.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'S_WW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/S_WW',
+    description: 'Wet deposition of sulfur',
+    units: 'kg-S/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'S_WWPCT': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/S_WWPCT',
+    description: 'Wet deposition of sulfur as percent of total deposition',
+    units: 'Percent',
+    min: 0,
+    max: 100,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'SO2_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/SO2_DW',
+    description: 'Dry deposition of sulfur dioxide',
+    units: 'kg-S/ha',
+    min: 0,
+    max: 2.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'SO4_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/SO4_DW',
+    description: 'Dry deposition of particulate sulfate',
+    units: 'kg-S/ha',
+    min: 0,
+    max: 1.5,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  },
+  'TNO3_DW': {
+    path: 'projects/sat-io/open-datasets/TDEP/tdep-annual/TNO3_DW',
+    description: 'Dry deposition of nitric acid + particulate nitrate',
+    units: 'kg-N/ha',
+    min: 0,
+    max: 3.0,
+    palette: ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525']
+  }
+};
+
+// Set default collection and year range
+var selectedCollection = 'BC_TW';
+var startYear = 2000;
+var endYear = 2023; // Adjust based on actual data availability
+
+// Function to load and prepare the selected collection
+function loadCollection(collectionName) {
+  var collectionInfo = collections[collectionName];
+  
+  // Load the collection
+  var collection = ee.ImageCollection(collectionInfo.path)
+    .filterDate(ee.Date.fromYMD(startYear, 1, 1), ee.Date.fromYMD(endYear, 12, 31));
+  
+  return {
+    collection: collection,
+    info: collectionInfo
+  };
+}
+
+// Function to update the map with the selected collection and year
+function updateMap() {
+  // Clear previous layers
+  Map.layers().reset();
+  
+  // Load the selected collection
+  var result = loadCollection(selectedCollection);
+  var collection = result.collection;
+  var collectionInfo = result.info;
+  
+  // Filter the collection for the selected year
+  var image = collection
+    .filter(ee.Filter.calendarRange(yearSlider.getValue(), yearSlider.getValue(), 'year'))
+    .first();
+    
+  // Visualization parameters
+  var visParams = {
+    min: collectionInfo.min,
+    max: collectionInfo.max,
+    palette: collectionInfo.palette
+  };
+  
+  // Visualize the TDEP data
+  var visDeposition = image.visualize(visParams);
+  
+  // Apply multiply blend with hillshade
+  var blendedImage = blend.multiply(visDeposition, hillshadeVis);
+  
+  // Add the blended image to the map
+  Map.addLayer(blendedImage, {}, selectedCollection + ' ' + yearSlider.getValue() + ' with Terrain');
+  
+  // Update the legend
+  updateLegend(collectionInfo, visParams);
+  
+  return image; // Return for use in the click handler
+}
+
+// Function to handle click events
+function handleMapClick(coordinates) {
+  // Load the current displayed image
+  var result = loadCollection(selectedCollection);
+  var collection = result.collection;
+  var collectionInfo = result.info;
+  
+  // Get all the years available
+  var years = ee.List.sequence(startYear, endYear);
+  
+  // Create a chart for the time series
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  
+  // Get values for all years at the clicked point
+  var timeSeries = years.map(function(year) {
+    var image = collection
+      .filter(ee.Filter.calendarRange(year, year, 'year'))
+      .first();
+    
+    var value = image.reduceRegion({
+      reducer: ee.Reducer.mean(),
+      geometry: point,
+      scale: 4000
+    }).get(ee.String(selectedCollection.toLowerCase()));
+    
+    return ee.Feature(null, {
+      'year': year,
+      'value': value
+    });
+  });
+  
+  var timeSeriesFeatureCollection = ee.FeatureCollection(timeSeries);
+  
+  // Create a chart
+  var chart = ui.Chart.feature.byFeature(timeSeriesFeatureCollection, 'year', ['value'])
+  .setChartType('LineChart')
+  .setOptions({
+    title: collectionInfo.description + ' at ' + coordinates.lat.toFixed(3) + '°, ' + coordinates.lon.toFixed(3) + '°',
+    vAxis: {title: collectionInfo.units},
+    hAxis: {
+      title: 'Year',
+      format: '####'  // This format will prevent the commas
+    },
+    pointSize: 5,
+    lineWidth: 2
+  });
+  
+  // Display the chart
+  chartPanel.clear();
+  chartPanel.add(chart);
+  
+  // Get and display the current value
+  var currentYear = yearSlider.getValue();
+  var currentImage = collection
+    .filter(ee.Filter.calendarRange(currentYear, currentYear, 'year'))
+    .first();
+  
+  var currentValue = currentImage.reduceRegion({
+    reducer: ee.Reducer.mean(),
+    geometry: point,
+    scale: 4000
+  }).get(ee.String(selectedCollection.toLowerCase()));
+  
+  currentValue.evaluate(function(value) {
+    infoPanel.clear();
+    infoPanel.add(ui.Label({
+      value: 'Collection: ' + selectedCollection,
+      style: {fontWeight: 'bold', fontSize: '16px'}
+    }));
+    infoPanel.add(ui.Label('Description: ' + collectionInfo.description));
+    infoPanel.add(ui.Label('Units: ' + collectionInfo.units));
+    infoPanel.add(ui.Label('Year: ' + currentYear));
+    infoPanel.add(ui.Label('Value at point: ' + (value ? value.toFixed(4) : 'No data') + ' ' + collectionInfo.units));
+    infoPanel.add(ui.Label('Coordinates: ' + coordinates.lat.toFixed(3) + '°, ' + coordinates.lon.toFixed(3) + '°'));
+  });
+}
+
+// Function to update the legend
+function updateLegend(collectionInfo, visParams) {
+  // Clear the legend panel
+  legendPanel.clear();
+  
+  // Create the title
+  legendPanel.add(ui.Label({
+    value: selectedCollection + ': ' + collectionInfo.description,
+    style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+  }));
+  
+  legendPanel.add(ui.Label('Units: ' + collectionInfo.units));
+  
+  // Create the color bar for the legend
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '300x30',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: visParams.palette
+    },
+    style: {stretch: 'horizontal', margin: '8px 0px'}
+  });
+  legendPanel.add(colorBar);
+  
+  // Add min/max labels
+  var minMaxPanel = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {margin: '0px 0px 6px 0px'}
+  });
+  minMaxPanel.add(ui.Label(visParams.min.toString(), {margin: '0px 0px'}));
+  var midLabel = ui.Label(
+    ((visParams.max - visParams.min) / 2 + visParams.min).toFixed(2),
+    {margin: '0px 0px', textAlign: 'center', stretch: 'horizontal'}
+  );
+  minMaxPanel.add(midLabel);
+  minMaxPanel.add(ui.Label(visParams.max.toString(), {margin: '0px 0px'}));
+  legendPanel.add(minMaxPanel);
+}
+
+// Create the user interface panels
+var controlPanel = ui.Panel({
+  style: {
+    width: '320px',
+    padding: '10px'
+  }
+});
+
+var titleLabel = ui.Label({
+  value: 'TDEP Data Viewer',
+  style: {fontWeight: 'bold', fontSize: '18px', margin: '0 0 10px 0'}
+});
+controlPanel.add(titleLabel);
+
+// Collection selector
+var collectionSelector = ui.Select({
+  items: Object.keys(collections),
+  value: selectedCollection,
+  onChange: function(value) {
+    selectedCollection = value;
+    updateMap();
+  },
+  style: {stretch: 'horizontal'}
+});
+
+var collectionLabel = ui.Label('Select Collection:', {fontWeight: 'bold'});
+controlPanel.add(collectionLabel);
+controlPanel.add(collectionSelector);
+
+// Year slider
+var yearSlider = ui.Slider({
+  min: startYear,
+  max: endYear,
+  value: 2023,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var yearLabel = ui.Label('Select Year:', {fontWeight: 'bold'});
+controlPanel.add(yearLabel);
+controlPanel.add(yearSlider);
+
+// Custom palette selector (optional feature)
+var paletteLabel = ui.Label('Color Palette:', {fontWeight: 'bold'});
+var paletteSelector = ui.Select({
+  items: [
+    {label: 'TDEP (Default)', value: 'usepa_tdep'},
+    {label: 'Blues', value: 'blues'},
+    {label: 'Reds', value: 'reds'},
+    {label: 'Greens', value: 'greens'},
+    {label: 'Viridis', value: 'viridis'},
+    {label: 'Spectral', value: 'spectral'}
+  ],
+  value: 'usepa_tdep',
+  onChange: function(value) {
+    // Update the palette for the selected collection
+    if (value === 'usepa_tdep') {
+      collections[selectedCollection].palette = ['#75CFC0', '#5BC4A9', '#42C28C', '#6CCF75', '#A5DC6C', '#D6E65A', '#F3DD53', '#F1BE48', '#EA9245', '#D95F37', '#8E1525'];
+    } else if (value === 'blues') {
+      collections[selectedCollection].palette = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b'];
+    } else if (value === 'reds') {
+      collections[selectedCollection].palette = ['#fff5f0', '#fee0d2', '#fcbba1', '#fc9272', '#fb6a4a', '#ef3b2c', '#cb181d', '#a50f15', '#67000d'];
+    } else if (value === 'greens') {
+      collections[selectedCollection].palette = ['#f7fcf5', '#e5f5e0', '#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c', '#00441b'];
+    } else if (value === 'viridis') {
+      collections[selectedCollection].palette = ['#440154', '#433982', '#30678D', '#218F8B', '#36B677', '#8ED542', '#FDE725'];
+    } else if (value === 'spectral') {
+      collections[selectedCollection].palette = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'];
+    }
+    updateMap();
+  },
+  style: {stretch: 'horizontal'}
+});
+controlPanel.add(paletteLabel);
+controlPanel.add(paletteSelector);
+
+// Information panel for clicked point
+var infoPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+var infoLabel = ui.Label('Click on map for point information:', {fontWeight: 'bold'});
+controlPanel.add(infoLabel);
+controlPanel.add(infoPanel);
+
+// Chart panel for time series
+var chartPanel = ui.Panel();
+controlPanel.add(ui.Label('Time Series:', {fontWeight: 'bold', margin: '10px 0px 0px 0px'}));
+controlPanel.add(chartPanel);
+
+// Legend panel
+var legendPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+controlPanel.add(ui.Label('Legend:', {fontWeight: 'bold'}));
+controlPanel.add(legendPanel);
+
+// Terrain enhancement settings
+controlPanel.add(ui.Label({
+  value: 'Terrain Enhancement: Multiply Hillshade (Always On)',
+  style: {fontWeight: 'bold', margin: '10px 0px 5px 0px'}
+}));
+
+// Add the control panel to the map
+ui.root.add(controlPanel);
+
+// Set map properties
+Map.style().set('cursor', 'crosshair');
+Map.setCenter(-98, 40, 5); 
+
+// Add click event handler to the map
+Map.onClick(function(coords) {
+  handleMapClick(coords);
+});
+
+// Initialize the map with the default collection and year
+updateMap();
+
+// Add a note about the data source
+controlPanel.add(ui.Label({
+  value: 'Data Source: US EPA TDEP (Total Deposition) Dataset',
+  style: {margin: '20px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+controlPanel.add(ui.Label({
+  value: 'https://www.epa.gov/castnet/total-deposition-maps',
+  style: {margin: '20px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));

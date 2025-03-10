@@ -1,5 +1,8 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var tzero_solar = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q1");
+var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS"),
+    tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS_CENTROID"),
+    tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_RAW_POLYGONS"),
+    tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_RAW_POLYGONS_CENTROID");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Define the visualization parameters
 var vizParams = {
@@ -8,7 +11,8 @@ var vizParams = {
 };
 
 // Add the feature collection to the map with the specified visualization parameters
-Map.addLayer(tzero_solar.style(vizParams), {}, 'Solar Farms');
+Map.addLayer(tzero_solar_analysis.style(vizParams), {}, 'Solar Farms Polygons');
+Map.addLayer(tzero_solar_analysis_centroid.style(vizParams), {}, 'Solar Farms Centroids',false);
 
 var snazzy = require("users/aazuspan/snazzy:styles");
 snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

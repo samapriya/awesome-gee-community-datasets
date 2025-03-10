@@ -1,0 +1,134 @@
+// Define the dataset paths
+var datasets = {
+  'Eaton': {
+    dem: "projects/sat-io/open-datasets/disaster/EATON_POSTFIRE_DEM_LA25",
+    dsm: "projects/sat-io/open-datasets/disaster/EATON_POSTFIRE_DSM_LA25",
+    center: [-118.133972, 34.158601],
+    zoom: 17
+  },
+  'Palisades': {
+    dem: "projects/sat-io/open-datasets/disaster/PALISADES_POSTFIRE_DEM_LA25",
+    dsm: "projects/sat-io/open-datasets/disaster/PALISADES_POSTFIRE_DSM_LA25",
+    center: [-118.683569, 34.036449],
+    zoom: 17
+  }
+};
+
+// Define perceptually uniform color palettes
+var palettes = {
+  'Inferno': [
+    '#000004',
+    '#1b0c41',
+    '#4a0c6b',
+    '#781c6d',
+    '#a52c60',
+    '#cf4446',
+    '#ed6925',
+    '#fb9b06',
+    '#f7d13d',
+    '#fcffa4'
+  ],
+  'Magma': [
+    '#000004',
+    '#140e36',
+    '#3b0f70',
+    '#641a80',
+    '#8c2981',
+    '#b73779',
+    '#de4968',
+    '#f66e5c',
+    '#fe9f6d',
+    '#fecf92',
+    '#fcfdbf'
+  ],
+  'Plasma': [
+    '#0d0887',
+    '#41049d',
+    '#6a00a8',
+    '#8f0da4',
+    '#b12a90',
+    '#cb4678',
+    '#e16462',
+    '#f1834b',
+    '#fca636',
+    '#fccd25',
+    '#f0f921'
+  ],
+  'Viridis': [
+    '#440154',
+    '#482878',
+    '#3e4989',
+    '#31688e',
+    '#26828e',
+    '#1f9e89',
+    '#35b779',
+    '#6ece58',
+    '#b5de2b',
+    '#fde725'
+  ]
+};
+
+// Function to load and display location data
+function loadLocation(location, selectedPalette) {
+  // Clear previous layers
+  Map.layers().reset();
+  
+  // Load selected datasets
+  var dem = ee.ImageCollection(datasets[location].dem).mosaic();
+  var dsm = ee.ImageCollection(datasets[location].dsm).mosaic();
+  
+  // Calculate nDSM
+  var nDSM = dsm.subtract(dem);
+  
+  // Add layer to map
+  Map.addLayer(nDSM, {
+    min: 0,
+    max: 15,
+    palette: palettes[selectedPalette]
+  }, 'Height Difference - ' + location);
+  
+  // Set map view to selected location
+  Map.setCenter(
+    datasets[location].center[0],
+    datasets[location].center[1],
+    datasets[location].zoom
+  );
+}
+
+// Create UI elements
+var locationSelect = ui.Select({
+  items: Object.keys(datasets),
+  placeholder: 'Select location',
+  value: 'Eaton',
+  onChange: function(location) {
+    loadLocation(location, paletteSelect.getValue());
+  }
+});
+
+var paletteSelect = ui.Select({
+  items: Object.keys(palettes),
+  placeholder: 'Select color palette',
+  value: 'Viridis',
+  onChange: function(palette) {
+    loadLocation(locationSelect.getValue(), palette);
+  }
+});
+
+// Create a control panel
+var controlPanel = ui.Panel({
+  widgets: [
+    ui.Label('Select Location:'),
+    locationSelect,
+    ui.Label('Select Color Palette:'),
+    paletteSelect
+  ],
+  style: {
+    position: 'top-left'
+  }
+});
+
+// Add the control panel to the map
+Map.add(controlPanel);
+
+// Load Eaton data with default palette
+loadLocation('Eaton', 'Viridis');

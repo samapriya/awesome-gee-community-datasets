@@ -1,0 +1,265 @@
+// Define the collection paths
+var collections = [
+  'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MUSLI/MSLSP_2016',
+  'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MUSLI/MSLSP_2017',
+  'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MUSLI/MSLSP_2018',
+  'projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MUSLI/MSLSP_2019'
+];
+
+// Initialize global variables for point tracking
+var points = ee.List([]);
+var pointCoords = [];  // Store coordinates for export
+var chartPanel = null;
+var chart = null;
+
+// Visualization parameters
+var vizParams = {
+  min: 0,
+  max: 0.75,
+  palette: [
+    'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718',
+    '74A901', '66A000', '529400', '3E8601', '207401', '056201',
+    '004C00', '023B01', '012E01', '011D01', '011301'
+  ]
+};
+
+// Create a panel to hold the chart and buttons
+var panel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px',
+    width: '400px',
+    height: '250px'
+  }
+});
+
+// Create buttons panel
+var buttonPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {
+    margin: '0 0 6px 0',
+    height: '30px'
+  }
+});
+
+// Style buttons
+var buttonStyle = {
+  margin: '0 8px 0 0',
+  height: '24px'
+};
+
+// Create buttons
+var clearButton = ui.Button({
+  label: 'Clear All Points',
+  style: buttonStyle,
+  onClick: function() {
+    points = ee.List([]);
+    pointCoords = [];
+    updateChart();
+    // Remove all point layers
+    var layers = Map.layers();
+    for (var i = layers.length() - 1; i >= 0; i--) {
+      var layer = layers.get(i);
+      var name = layer.get('name');
+      if (name && name.indexOf('Point') !== -1) {
+        Map.remove(layer);
+      }
+    }
+  }
+});
+
+var exportButton = ui.Button({
+  label: 'Export CSV',
+  style: buttonStyle,
+  onClick: function() {
+    if (pointCoords.length === 0) {
+      print('No points to export');
+      return;
+    }
+    
+    // Create CSV content
+    var csvContent = 'Point,Latitude,Longitude,Zoom\n';
+    pointCoords.forEach(function(coord, index) {
+      csvContent += 'Point ' + (index + 1) + ',' + 
+                   coord.lat.toFixed(6) + ',' + 
+                   coord.lon.toFixed(6) + ',' +
+                   coord.zoom + '\n';
+    });
+    
+    // Use Export.table to create downloadable asset
+    var fc = ee.FeatureCollection(pointCoords.map(function(coord, index) {
+      // Get EVI values for all years
+      var eviValues = imageCollections.map(function(collection, yearIndex) {
+        var year = 2016 + yearIndex;
+        var value = collection.mosaic()
+          .select('B_EVImax')
+          .reduceRegion({
+            reducer: ee.Reducer.first(),
+            geometry: ee.Geometry.Point([coord.lon, coord.lat]),
+            scale: 30
+          }).get('B_EVImax');
+        return [year, value];
+      });
+      
+      return ee.Feature(null, {
+        'point_number': index + 1,
+        'latitude': coord.lat,
+        'longitude': coord.lon,
+        'zoom': coord.zoom,
+        'EVImax_2016': eviValues[0][1],
+        'EVImax_2017': eviValues[1][1],
+        'EVImax_2018': eviValues[2][1],
+        'EVImax_2019': eviValues[3][1]
+      });
+    }));
+    
+    Export.table.toDrive({
+      collection: fc,
+      description: 'EVI_Point_Coordinates',
+      fileFormat: 'CSV',
+      selectors: ['point_number', 'latitude', 'longitude', 'zoom', 
+                 'evi_2016', 'evi_2017', 'evi_2018', 'evi_2019']
+    });
+  }
+});
+
+buttonPanel.add(clearButton);
+buttonPanel.add(exportButton);
+panel.add(buttonPanel);
+
+// Add initial instructions to the panel
+panel.add(ui.Label('Click on the map to add points for comparison'));
+
+// Add the panel to the map
+Map.add(panel);
+
+// Load collections and apply scaling
+var imageCollections = collections.map(function(path) {
+  return ee.ImageCollection(path).map(function(image) {
+    return image.multiply(0.0001);  // Apply scaling factor
+  });
+});
+
+// Add layers to map
+collections.forEach(function(collectionPath, index) {
+  var year = 2016 + index;
+  var collection = ee.ImageCollection(collectionPath)
+    .map(function(image) {
+      return image.multiply(0.0001);  // Apply scaling factor
+    });
+  
+  Map.addLayer(
+    collection.mosaic().select('B_EVImax'),
+    vizParams,
+    'MSLSP Mosaic ' + year
+  );
+});
+
+// Function to update the chart with current points
+function updateChart() {
+  if (points.size().getInfo() === 0) {
+    panel.clear();
+    panel.add(buttonPanel);
+    panel.add(ui.Label('Click on the map to add points for comparison'));
+    return;
+  }
+
+  var allFeatures = ee.FeatureCollection([]);
+  
+  points.evaluate(function(pointList) {
+    pointList.forEach(function(point, pointIndex) {
+      imageCollections.forEach(function(collection, yearIndex) {
+        var year = 2016 + yearIndex;
+        var value = collection.mosaic()
+          .select('B_EVImax')
+          .reduceRegion({
+            reducer: ee.Reducer.first(),
+            geometry: ee.Geometry(point),
+            scale: 30
+          });
+        
+        var feature = ee.Feature(null, {
+          'year': year,
+          'EVI': value.get('B_EVImax'),
+          'point': 'Point ' + (pointIndex + 1)
+        });
+        
+        allFeatures = allFeatures.merge(ee.FeatureCollection([feature]));
+      });
+    });
+    
+    // Create the chart
+    chart = ui.Chart.feature.groups({
+      features: allFeatures,
+      xProperty: 'year',
+      yProperty: 'EVI',
+      seriesProperty: 'point'
+    })
+    .setChartType('LineChart')
+    .setOptions({
+      title: 'EVI Values Across Years',
+      vAxis: {title: 'EVI Value'},
+      hAxis: {title: 'Year', format: '####'},
+      height: 180,
+      width: 350,
+      series: {
+        0: {color: 'red'},
+        1: {color: 'blue'},
+        2: {color: 'green'},
+        3: {color: 'purple'},
+        4: {color: 'orange'}
+      }
+    });
+
+    panel.clear();
+    panel.add(buttonPanel);
+    panel.add(chart);
+  });
+}
+
+// Add a click handler to the map
+Map.onClick(function(coords) {
+  var point = ee.Geometry.Point([coords.lon, coords.lat]);
+  points = points.add(point);
+  
+  // Store coordinates and zoom level for export
+  pointCoords.push({
+    lat: coords.lat,
+    lon: coords.lon,
+    zoom: Map.getZoom()
+  });
+  
+  // Add a marker for the clicked point
+  var pointIndex = points.size().getInfo();
+  var colors = ['red', 'blue', 'green', 'purple', 'orange'];
+  var color = colors[(pointIndex - 1) % colors.length];
+  
+  Map.addLayer(point, {color: color}, 'Point ' + pointIndex);
+  
+  // Update the chart with the new point
+  updateChart();
+});
+
+// Set initial map view
+Map.setCenter(-96.508, 40.151, 5);
+
+// Add legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'EVI Max Values',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+Map.add(legend);
