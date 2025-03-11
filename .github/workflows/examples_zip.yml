@@ -1,0 +1,48 @@
+name: Update Zip File on Changes
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'awesome-gee-catalog-examples/**'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  zip-and-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Check if changes exist
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD -- 'awesome-gee-catalog-examples/'; then
+            echo "No changes detected, skipping zip update."
+            echo "skip=true" >> $GITHUB_ENV
+          fi
+      
+      - name: Zip awesome-gee-catalog-examples folder
+        if: env.skip != 'true'
+        run: |
+          zip -r awesome-gee-catalog-examples.zip awesome-gee-catalog-examples/
+      
+      - name: Commit and push if changed
+        if: env.skip != 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add awesome-gee-catalog-examples.zip
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update awesome-gee-catalog-examples.zip after folder changes"
+          git push
