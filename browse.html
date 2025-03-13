@@ -81,7 +81,8 @@
         }
 
         .grid-view {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5rem;
         }
 
@@ -98,6 +99,51 @@
             flex-direction: column;
         }
 
+        /* Fixed height elements for consistent card sizing */
+        .card-title {
+            height: 3rem;
+            /* Fixed height for title - accommodates 2 lines */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-thematic {
+            height: 1.5rem;
+            /* Fixed height for thematic group */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .card-image-container {
+            aspect-ratio: 1/1;
+            width: 100%;
+            max-width: 16rem;
+            /* 64 * 0.25rem = 16rem */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.375rem;
+        }
+
+        .card-buttons {
+            height: 2.5rem;
+            /* Fixed height for buttons */
+            display: flex;
+            gap: 0.5rem;
+            justify-content: space-evenly;
+            margin: 0.75rem 0;
+        }
+
+        .card-tags {
+            height: 4.5rem;
+            /* Fixed height for tags area - can fit 2 rows of tags */
+            overflow: hidden;
+        }
+
         .list-item {
             padding: 1rem;
             display: grid;
@@ -106,20 +152,10 @@
             gap: 1rem;
         }
 
-        .dataset-card .buttons,
-        .list-item .buttons {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: space-evenly;
-            margin-top: auto;
-            flex-wrap: nowrap;
-        }
-
         .tags-container {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 0.5rem;
         }
 
         .tag {
@@ -128,6 +164,8 @@
             border-radius: 0.25rem;
             font-size: 0.75rem;
             transition: all 0.2s;
+            white-space: nowrap;
+            display: inline-block;
         }
 
         .tag:hover {
@@ -169,6 +207,11 @@
         .lazy-image {
             transition: opacity 0.3s;
             opacity: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
         }
 
         .lazy-image.loaded {
@@ -427,6 +470,151 @@
         .history-icon:hover {
             transform: scale(1.1);
         }
+
+        /* Catalog Type Icon */
+        .catalog-icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 24px;
+            height: 24px;
+            z-index: 10;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2px;
+        }
+
+        .dark .catalog-icon {
+            background-color: rgba(45, 55, 72, 0.8);
+        }
+
+        /* Radio button styling for catalog filter */
+        .catalog-radio-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .catalog-radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .catalog-radio-option input[type="radio"] {
+            margin-right: 0.25rem;
+        }
+
+        .catalog-count-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.125rem 0.375rem;
+            font-size: 0.75rem;
+            border-radius: 9999px;
+            background-color: #e2e8f0;
+            margin-left: 0.5rem;
+        }
+
+
+        .dark .catalog-count-badge {
+            background-color: #4a5568;
+        }
+
+        /* Add the new CSS here, right before the closing style tag */
+        /* Updated CSS for better tag handling */
+        .card-tags {
+            min-height: 4.5rem; /* Minimum height but can grow if needed */
+            max-height: 4.5rem; /* Maximum height to maintain consistency */
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Add a fade-out effect for overflowing tags */
+        .card-tags::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5rem;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9));
+            pointer-events: none; /* Allow clicks to pass through */
+        }
+
+        .dark .card-tags::after {
+            background: linear-gradient(to bottom, rgba(26,32,44,0), rgba(26,32,44,0.9));
+        }
+
+        /* Make tags more compact */
+        .tag {
+            background-color: #e2e8f0;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.7rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+            display: inline-block;
+            margin: 0.15rem;
+        }
+
+        /* Updated tags container */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            padding-bottom: 0.5rem; /* Add space for the gradient fade */
+        }
+
+        /* "More tags" indicator that stays at the bottom right */
+        .more-tags-indicator {
+            position: absolute;
+            bottom: 0.3rem;
+            right: 0.3rem;
+            background-color: #4a5568;
+            color: white;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            font-size: 0.65rem;
+            z-index: 5; /* Above the gradient */
+        }
+
+        .dark .more-tags-indicator {
+            background-color: #718096;
+        }
+
+        /* Make list view tags more compact */
+        .list-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            max-width: 100%;
+        }
+
+        .list-tags .tag {
+            margin: 0.1rem;
+        }
+
+        /* List view specific styling */
+        .list-title {
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        .list-thematic {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .list-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.375rem;
+            max-width: 100%;
+        }
     </style>
 </head>
 
@@ -467,6 +655,28 @@
     <main class="container mx-auto py-6">
         <!-- Filter Panel -->
         <div id="filter-panel" class="filter-panel collapsed">
+            <!-- Catalog Filter Section -->
+            <div class="filter-section">
+                <h3>Filter by Catalog Type</h3>
+                <div id="catalog-filters" class="catalog-radio-group mt-2">
+                    <div class="catalog-radio-option">
+                        <input type="radio" id="catalog-all" name="catalog-type" value="all" checked>
+                        <label for="catalog-all">All Catalogs</label>
+                        <span id="all-count" class="catalog-count-badge">0</span>
+                    </div>
+                    <div class="catalog-radio-option">
+                        <input type="radio" id="catalog-main" name="catalog-type" value="main">
+                        <label for="catalog-main">Main Catalog</label>
+                        <span id="main-count" class="catalog-count-badge">0</span>
+                    </div>
+                    <div class="catalog-radio-option">
+                        <input type="radio" id="catalog-community" name="catalog-type" value="community">
+                        <label for="catalog-community">Community Catalog</label>
+                        <span id="community-count" class="catalog-count-badge">0</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="filter-section">
                 <h3>Filter by Thematic Group</h3>
                 <div id="thematic-filters" class="filter-options">
@@ -503,7 +713,7 @@
             </div>
         </div>
         <div id="loading-spinner"></div>
-        <div id="dataset-container" class="grid-view grid">
+        <div id="dataset-container" class="grid-view">
             <!-- Datasets will be dynamically loaded here -->
         </div>
         <div id="pagination" class="mt-8"></div>
@@ -528,8 +738,14 @@
             const searchHistoryDropdown = document.getElementById('search-history-dropdown');
             const searchHistoryList = document.getElementById('search-history-list');
             const clearHistoryBtn = document.getElementById('clear-history');
+            const catalogFilterInputs = document.querySelectorAll('input[name="catalog-type"]');
+            const allCountBadge = document.getElementById('all-count');
+            const mainCountBadge = document.getElementById('main-count');
+            const communityCountBadge = document.getElementById('community-count');
 
             let datasets = [];
+            let mainCatalogDatasets = [];
+            let communityCatalogDatasets = [];
             let filteredDatasets = [];
             let currentPage = 1;
             let currentView = 'grid';
@@ -537,10 +753,15 @@
             let searchTimeout = null;
             let activeThematicFilters = [];
             let activeTagFilters = [];
+            let activeCatalogFilter = 'all';
             let allThematicGroups = [];
             let allTags = [];
             let searchHistory = [];
             const MAX_HISTORY_ITEMS = 10;
+
+            // URLs for the catalogs
+            const mainCatalogUrl = 'https://raw.githubusercontent.com/samapriya/ee-catalog-jsons/refs/heads/main/gee_catalog_formatted.json';
+            const communityCatalogUrl = 'https://raw.githubusercontent.com/samapriya/ee-catalog-jsons/refs/heads/main/community_datasets.json';
 
             // Add a consistent fallback for images that fail to load
             function createFallbackImageUrl(width, height) {
@@ -702,7 +923,8 @@
             });
 
             // Check for cached data
-            const cachedData = storage.getItem('gee_datasets');
+            const cachedMainData = storage.getItem('gee_main_datasets');
+            const cachedCommunityData = storage.getItem('gee_community_datasets');
             const cacheTimestamp = storage.getItem('gee_datasets_timestamp');
             const cacheExpiration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
@@ -710,9 +932,25 @@
             loadSearchHistory();
 
             // Initialize from cache or fetch new data
-            if (cachedData && cacheTimestamp && (Date.now() - parseInt(cacheTimestamp)) < cacheExpiration) {
+            if (cachedMainData && cachedCommunityData && cacheTimestamp && (Date.now() - parseInt(cacheTimestamp)) < cacheExpiration) {
                 console.log('Loading data from cache');
-                datasets = JSON.parse(cachedData);
+                mainCatalogDatasets = JSON.parse(cachedMainData);
+                communityCatalogDatasets = JSON.parse(cachedCommunityData);
+
+                // Mark each dataset with its catalog source
+                mainCatalogDatasets = mainCatalogDatasets.map(dataset => ({
+                    ...dataset,
+                    catalog_type: 'main'
+                }));
+
+                communityCatalogDatasets = communityCatalogDatasets.map(dataset => ({
+                    ...dataset,
+                    catalog_type: 'community'
+                }));
+
+                // Combine datasets
+                datasets = [...mainCatalogDatasets, ...communityCatalogDatasets];
+
                 initializeData();
             } else {
                 fetchDatasets();
@@ -721,24 +959,42 @@
             function fetchDatasets() {
                 loadingSpinner.style.display = 'block';
 
-                // Try to fetch from GitHub
-                fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/community_datasets.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        datasets = data;
+                // Fetch both catalogs
+                Promise.all([
+                    fetch(mainCatalogUrl).then(response => response.json()),
+                    fetch(communityCatalogUrl).then(response => response.json())
+                ])
+                    .then(([mainData, communityData]) => {
+                        // Mark each dataset with its catalog source
+                        mainCatalogDatasets = mainData.map(dataset => ({
+                            ...dataset,
+                            catalog_type: 'main'
+                        }));
+
+                        communityCatalogDatasets = communityData.map(dataset => ({
+                            ...dataset,
+                            catalog_type: 'community'
+                        }));
+
+                        // Combine datasets
+                        datasets = [...mainCatalogDatasets, ...communityCatalogDatasets];
 
                         // Cache the fetched data
-                        storage.setItem('gee_datasets', JSON.stringify(datasets));
+                        storage.setItem('gee_main_datasets', JSON.stringify(mainCatalogDatasets));
+                        storage.setItem('gee_community_datasets', JSON.stringify(communityCatalogDatasets));
                         storage.setItem('gee_datasets_timestamp', Date.now().toString());
 
                         initializeData();
                         loadingSpinner.style.display = 'none';
                     })
                     .catch(error => {
-                        console.warn('Error fetching data from GitHub, using sample data instead:', error);
+                        console.warn('Error fetching data, using sample data instead:', error);
 
                         // Fallback to sample data when fetch fails
                         datasets = getSampleDatasets();
+                        mainCatalogDatasets = datasets.filter(d => d.catalog_type === 'main');
+                        communityCatalogDatasets = datasets.filter(d => d.catalog_type === 'community');
+
                         initializeData();
                         loadingSpinner.style.display = 'none';
                     });
@@ -753,7 +1009,8 @@
                         thematic_group: "Land Cover & Land Use",
                         docs: "https://example.com/docs/forest-change",
                         sample_code: "https://example.com/code/forest-change",
-                        tags: "forest, deforestation, land cover, global"
+                        tags: "forest, deforestation, land cover, global",
+                        catalog_type: "main"
                     },
                     {
                         title: "Global Surface Water",
@@ -761,7 +1018,8 @@
                         thematic_group: "Hydrology",
                         docs: "https://example.com/docs/surface-water",
                         sample_code: "https://example.com/code/surface-water",
-                        tags: "water, hydrology, surface water, global"
+                        tags: "water, hydrology, surface water, global",
+                        catalog_type: "main"
                     },
                     {
                         title: "Sentinel-2 Cloud-Free Composite",
@@ -769,7 +1027,8 @@
                         thematic_group: "Imagery",
                         docs: "https://example.com/docs/sentinel-2",
                         sample_code: "https://example.com/code/sentinel-2",
-                        tags: "sentinel, optical, composite, cloud-free"
+                        tags: "sentinel, optical, composite, cloud-free",
+                        catalog_type: "community"
                     },
                     {
                         title: "Global Precipitation Measurement",
@@ -777,7 +1036,8 @@
                         thematic_group: "Climate",
                         docs: "https://example.com/docs/precipitation",
                         sample_code: "https://example.com/code/precipitation",
-                        tags: "precipitation, rainfall, climate, global"
+                        tags: "precipitation, rainfall, climate, global",
+                        catalog_type: "community"
                     },
                     {
                         title: "MODIS Land Surface Temperature",
@@ -785,12 +1045,16 @@
                         thematic_group: "Climate",
                         docs: "https://example.com/docs/lst",
                         sample_code: "https://example.com/code/lst",
-                        tags: "temperature, LST, MODIS, climate"
+                        tags: "temperature, LST, MODIS, climate",
+                        catalog_type: "main"
                     }
                 ];
             }
 
             function initializeData() {
+                // Update catalog counts
+                updateCatalogCounts();
+
                 // Extract thematic groups and tags
                 extractThematicGroups();
                 extractPopularTags();
@@ -809,6 +1073,13 @@
 
                 // Update dataset count
                 datasetCount.textContent = `${datasets.length} datasets`;
+            }
+
+            // Update catalog counts in the UI
+            function updateCatalogCounts() {
+                allCountBadge.textContent = datasets.length;
+                mainCountBadge.textContent = mainCatalogDatasets.length;
+                communityCountBadge.textContent = communityCatalogDatasets.length;
             }
 
             function extractThematicGroups() {
@@ -912,8 +1183,16 @@
                     addToSearchHistory(searchTerm);
                 }
 
-                // First filter by search term
-                filteredDatasets = datasets.filter(dataset => {
+                // First filter by catalog type
+                let initialDatasets = datasets;
+                if (activeCatalogFilter === 'main') {
+                    initialDatasets = mainCatalogDatasets;
+                } else if (activeCatalogFilter === 'community') {
+                    initialDatasets = communityCatalogDatasets;
+                }
+
+                // Then filter by search term
+                filteredDatasets = initialDatasets.filter(dataset => {
                     // Basic fields search
                     const basicMatch = (
                         dataset.title.toLowerCase().includes(searchTerm) ||
@@ -1005,7 +1284,7 @@
                 }
 
                 if (currentView === 'grid') {
-                    datasetContainer.className = 'grid-view grid';
+                    datasetContainer.className = 'grid-view';
                     displayGridView(currentPageItems);
                 } else {
                     datasetContainer.className = 'list-view';
@@ -1013,43 +1292,57 @@
                 }
             }
 
+            // Updated grid view display with fixed sizes
             function displayGridView(items) {
                 items.forEach(dataset => {
                     const card = document.createElement('div');
-                    card.classList.add('card', 'p-4', 'border', 'rounded', 'flex', 'flex-col', 'dataset-card');
+                    card.classList.add('card', 'border', 'rounded', 'flex', 'flex-col', 'dataset-card');
 
+                    // Process tags for display
                     let tagsHTML = '';
+                    let tagsArray = [];
                     if (dataset.tags) {
                         // Convert tags to array if it's a string
-                        const tagsArray = Array.isArray(dataset.tags)
+                        tagsArray = Array.isArray(dataset.tags)
                             ? dataset.tags
                             : dataset.tags.split(',').map(tag => tag.trim());
 
                         if (tagsArray.length > 0) {
                             tagsHTML = '<div class="tags-container">';
+                            // Show all tags in the HTML, visibility will be controlled by CSS
                             tagsArray.forEach(tag => {
                                 tagsHTML += `<span class="tag cursor-pointer" onclick="document.getElementById('search').value='${tag}'; document.getElementById('search').dispatchEvent(new Event('input'));">${tag}</span>`;
                             });
                             tagsHTML += '</div>';
+
+                            // Add "more tags" indicator only if there are more than 8 tags
+                            if (tagsArray.length > 8) {
+                                tagsHTML += `<span class="more-tags-indicator">+${tagsArray.length - 8} more</span>`;
+                            }
                         }
                     }
 
                     card.innerHTML = `
-                         <h2 class="text-base font-medium mb-2">${dataset.title}</h2>
-                         <div class="mx-auto w-64 h-64 bg-gray-200 dark:bg-gray-700 rounded-md mb-2 relative overflow-hidden">
-                             <img
-                                 data-src="${dataset.thumbnail}"
-                                 alt="${dataset.title}"
-                                 class="lazy-image object-cover w-full h-full absolute inset-0"
-                                 onerror="this.onerror=null; this.src='/api/placeholder/256/256'; this.classList.add('loaded');">
-                         </div>
-                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${dataset.thematic_group || ''}</p>
-                         <div class="buttons mb-2">
-                             ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Documentation</a>` : ''}
-                             ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Sample Code</a>` : ''}
-                         </div>
-                         ${tagsHTML}
-                     `;
+            <h2 class="card-title text-base font-medium">${dataset.title}</h2>
+            <p class="card-thematic text-sm text-gray-500 dark:text-gray-400">${dataset.thematic_group || ''}</p>
+            <div class="card-image-container bg-gray-200 dark:bg-gray-700 my-2">
+                ${dataset.catalog_type === 'main' ?
+                            `<img src="https://i.imgur.com/m0Lki0L.png" alt="Main Catalog" class="catalog-icon" title="Main Catalog">` :
+                            ''}
+                <img
+                    data-src="${dataset.thumbnail}"
+                    alt="${dataset.title}"
+                    class="lazy-image"
+                    onerror="this.onerror=null; this.src='/api/placeholder/256/256'; this.classList.add('loaded');">
+            </div>
+            <div class="card-buttons">
+                ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2 flex-1 text-center">Docs</a>` : ''}
+                ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2 flex-1 text-center">Code</a>` : ''}
+            </div>
+            <div class="card-tags">
+                ${tagsHTML}
+            </div>
+        `;
 
                     datasetContainer.appendChild(card);
                 });
@@ -1058,11 +1351,13 @@
                 initLazyLoading();
             }
 
+            // Updated list view with better text handling
             function displayListView(items) {
                 items.forEach(dataset => {
                     const listItem = document.createElement('div');
                     listItem.classList.add('list-item', 'border', 'rounded');
 
+                    // Process tags for list view
                     let tagsHTML = '';
                     if (dataset.tags) {
                         // Convert tags to array if it's a string
@@ -1071,36 +1366,43 @@
                             : dataset.tags.split(',').map(tag => tag.trim());
 
                         if (tagsArray.length > 0) {
-                            tagsHTML = '<div class="tags-container">';
-                            // In list view, limit to 3 tags to save space
-                            tagsArray.slice(0, 3).forEach(tag => {
+                            tagsHTML = '<div class="list-tags">';
+                            // In list view, show up to 4 tags
+                            const visibleTags = tagsArray.slice(0, 4);
+                            visibleTags.forEach(tag => {
                                 tagsHTML += `<span class="tag cursor-pointer" onclick="document.getElementById('search').value='${tag}'; document.getElementById('search').dispatchEvent(new Event('input'));">${tag}</span>`;
                             });
-                            if (tagsArray.length > 3) {
-                                tagsHTML += `<span class="tag">+${tagsArray.length - 3} more</span>`;
+
+                            // Add a more tags indicator if needed
+                            if (tagsArray.length > 4) {
+                                tagsHTML += `<span class="tag more-tag">+${tagsArray.length - 4}</span>`;
                             }
+
                             tagsHTML += '</div>';
                         }
                     }
 
                     listItem.innerHTML = `
-                         <div class="bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden w-20 h-20 relative">
-                             <img
-                                 data-src="${dataset.thumbnail}"
-                                 alt="${dataset.title}"
-                                 class="lazy-image object-cover w-full h-full absolute inset-0"
-                                 onerror="this.onerror=null; this.src='/api/placeholder/80/80'; this.classList.add('loaded');">
-                         </div>
-                         <div class="flex flex-col">
-                             <h2 class="text-base font-medium">${dataset.title}</h2>
-                             <p class="text-sm text-gray-500 dark:text-gray-400">${dataset.thematic_group || ''}</p>
-                             ${tagsHTML}
-                         </div>
-                         <div class="buttons">
-                             ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2">Docs</a>` : ''}
-                             ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2">Code</a>` : ''}
-                         </div>
-                     `;
+            <div class="bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden w-20 h-20 relative">
+                ${dataset.catalog_type === 'main' ?
+                            `<img src="https://i.imgur.com/m0Lki0L.png" alt="Main Catalog" class="catalog-icon" title="Main Catalog">` :
+                            ''}
+                <img
+                    data-src="${dataset.thumbnail}"
+                    alt="${dataset.title}"
+                    class="lazy-image"
+                    onerror="this.onerror=null; this.src='/api/placeholder/80/80'; this.classList.add('loaded');">
+            </div>
+            <div class="flex flex-col">
+                <h2 class="list-title text-base font-medium" title="${dataset.title}">${dataset.title}</h2>
+                <p class="list-thematic text-sm text-gray-500 dark:text-gray-400" title="${dataset.thematic_group || ''}">${dataset.thematic_group || ''}</p>
+                ${tagsHTML}
+            </div>
+            <div class="buttons flex gap-2">
+                ${dataset.docs ? `<a href="${dataset.docs}" target="_blank" class="btn border p-2">Docs</a>` : ''}
+                ${dataset.sample_code ? `<a href="${dataset.sample_code}" target="_blank" class="btn border p-2">Code</a>` : ''}
+            </div>
+        `;
 
                     datasetContainer.appendChild(listItem);
                 });
@@ -1258,6 +1560,14 @@
             }
 
             // Event Listeners
+            // Catalog filter change
+            catalogFilterInputs.forEach(input => {
+                input.addEventListener('change', () => {
+                    activeCatalogFilter = input.value;
+                    filterDatasets();
+                });
+            });
+
             // Search with debounce
             searchInput.addEventListener('input', () => {
                 loadingSpinner.style.display = 'block';
@@ -1357,7 +1667,7 @@
                 sortSelect.value = savedSort;
             }
         });
-    </script>
-</body>
+                </script>
+    </body>
 
-</html>
+    </html>
