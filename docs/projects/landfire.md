@@ -89,19 +89,6 @@ For LF 2023, LANDFIRE maps the lifeform, cover, and height of existing vegetatio
 
 Currently included layers are
 
-#### Earth Engine Snippet: Topographic 2.2.0
-
-```js
-var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ELEV");
-var aspect = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ASP");
-var slope_degrees = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SLP");
-var slope_perc_rise = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SlpP");
-```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TOPOGRAPHIC
-
-![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
-
 #### Earth Engine Snippet: Disturbance 2.4.0
 
 ```js
@@ -190,5 +177,5 @@ Last updated: 2025-03-16
 
 #### Changelog
 
-* 2025-03-16 Updated to v2.4.0 for available collections
+* 2025-03-16 Updated to v2.4.0 for available collections (removed topographic collections as they are no longer produced)
 * 2024-01-14 Updated to v2.2.3 for available collections
