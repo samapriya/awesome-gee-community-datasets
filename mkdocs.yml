@@ -374,6 +374,7 @@ nav:
               - USGS Consolidated Survey-Grade Checkpoints 3DEP 2010 to 2017: projects/survey_checkpoints.md
               - USGS Historical Topo Maps: projects/usgs_topo.md
               - USGS Historical Imagery Western US: projects/historical_us.md
+              - S2 SR HARMONIZED SWITZERLAND: projects/s2hswiss.md
           - "Global Utilities, Assets and Amenities Layers":
               - Global Power: projects/global_power.md
               - Facebook Electrical Distribution Grid Maps: projects/electric_grid.md

@@ -14,14 +14,7 @@ and [metadata information can be found here](https://www.geocat.ch/geonetwork/sr
 - Lastly, the mosaics are co-registered by the displacement vectors in relation to the Sentinel Ground Reference Image to achieve sub-pixel location accuracy. All the mosaics are saved in epsg:2056 (CH1903+ / LV95) and the covered perimeter includes Switzerland and Liechtenstein.
 
 #### Assets, bands & masks
-Each overpass is mosaiced and there are two assets per overpass for the 10m and 20m spatial resolution.
-
-**Note from Data Providers**
-
-```
-Please note that we are in commissioning mode until 01.01.2025. For 2024, we will have real-time data,
-and we will reprocess data from 2017 onward
-```
+Each overpass is mosaiced and there are two assets per overpass for the 10m and 20m spatial resolution, both can be filtered using a property called "pixel_size_meter" so for example you can filter using ```collection.filter(ee.Filter.eq('pixel_size_meter',10))``` for 10m bands
 
 ??? example "Expand to show asset resolution and band list"
 
@@ -48,9 +41,10 @@ and we will reprocess data from 2017 onward
 ### Earth Engine Snippet
 
 ```js
-var s2_sr_harmonized_swiss = ee.ImageCollection("projects/sat-io/open-datasets/SWISSTOPO/S2_SR_HARMONIZED_SWISS");
+var s2_sr_harmonized_swiss = ee.ImageCollection("projects/satromo-prod/assets/col/S2_SR_HARMONIZED_SWISS");
 ```
 
+Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/SWISSTOPO-S2-SR-HARMONIZED
 
 #### License
 The free geodata and geoservices of swisstopo may be used, distributed and made accessible. Furthermore, they may be enriched and processed and also
@@ -79,4 +73,4 @@ Created and provided by: [Federal Office of Topography swisstopo](https://www.sw
 
 Curated in GEE by: swisstopo and Samapriya Roy
 
-Last updated: 2024-04-24
+Last updated: 2025-03-18
