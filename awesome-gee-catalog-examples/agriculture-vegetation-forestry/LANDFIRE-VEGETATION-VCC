@@ -1,0 +1,132 @@
+// Load the LANDFIRE Vegetation Condition Class (VCC) collection
+var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION/VCC");
+
+// Mosaic the collection to a single image
+var vccMosaic = vcc.mosaic();
+
+// Get the values from the provided SLD file
+// Original values
+var fromValues = [1, 2, 3, 4, 5, 6, 111, 120, 132, 180];
+
+// Sequential values (0-indexed for visualization)
+var toValues = [];
+for (var i = 0; i < fromValues.length; i++) {
+  toValues.push(i);
+}
+
+// Apply the remapping
+var remappedImage = vccMosaic.remap(fromValues, toValues);
+
+// Create the color palette from the hex codes
+var colorPalette = [
+  '38a800', // Vegetation Condition Class I.A
+  '4be600', // Vegetation Condition Class I.B
+  'ffff00', // Vegetation Condition Class II.A
+  'ffaa00', // Vegetation Condition Class II.B
+  'ff0000', // Vegetation Condition Class III.A
+  'a80000', // Vegetation Condition Class III.B
+  '0000ff', // Water
+  '8300a8', // Developed
+  'bfbfbf', // Barren or Sparse
+  'df72ff'  // Agriculture
+];
+
+// Create the label map for the legend
+var labelMap = {
+  '1': 'Vegetation Condition Class I.A',
+  '2': 'Vegetation Condition Class I.B',
+  '3': 'Vegetation Condition Class II.A',
+  '4': 'Vegetation Condition Class II.B',
+  '5': 'Vegetation Condition Class III.A',
+  '6': 'Vegetation Condition Class III.B',
+  '111': 'Water',
+  '120': 'Developed',
+  '132': 'Barren or Sparse',
+  '180': 'Agriculture'
+}
+
+// Create a visualization parameter
+var visParams = {
+  min: 0,
+  max: colorPalette.length - 1,
+  palette: colorPalette
+};
+
+// Add the layer to the map
+Map.addLayer(remappedImage, visParams, 'Vegetation Condition Class');
+
+// Create a legend
+// Set position of panel
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Vegetation Condition Class',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+// Create a two-column legend layout
+var legendPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+var leftColumn = ui.Panel();
+var rightColumn = ui.Panel();
+
+// Add colors and labels to the legend in two columns
+var keys = Object.keys(labelMap);
+for (var i = 0; i < keys.length; i++) {
+  var key = keys[i];
+  var value = labelMap[key];
+  var color = colorPalette[i];
+  
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + color,
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: value,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  var row = ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+  
+  // Distribute items between columns
+  if (i < Math.ceil(keys.length / 2)) {
+    leftColumn.add(row);
+  } else {
+    rightColumn.add(row);
+  }
+}
+
+legendPanel.add(leftColumn);
+legendPanel.add(rightColumn);
+legend.add(legendPanel);
+
+// Add legend to map
+Map.add(legend);
+
+// Center map to the US (Hawaii is emphasized in the filename, but we can easily adjust if needed)
+Map.setCenter(-100, 40, 4); 
+
+// If you want to focus on Hawaii instead, uncomment the line below
+// Map.setCenter(-156.3, 20.5, 7); // Center on Hawaii

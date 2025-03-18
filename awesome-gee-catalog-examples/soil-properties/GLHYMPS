@@ -1,0 +1,244 @@
+// GLHYMPS - Global HYdrogeology MaPS Visualization
+// Data from Gleeson et al. 2014 GRL
+// Path: projects/sat-io/open-datasets/GLHYMPS
+
+// Load the GLHYMPS dataset
+var glhymps = ee.FeatureCollection("projects/sat-io/open-datasets/GLHYMPS");
+
+// Print dataset information to the console
+//print("GLHYMPS Dataset Information:", glhymps);
+print("Number of features:", glhymps.size());
+print("First feature example:", glhymps.first());
+
+// Function to convert the permeability value to actual permeability
+// Some features have null values, so we need to handle those
+var calculatePermeability = function(feature) {
+  var logK = feature.get('PP');  // Permeability permafrost
+  
+  // Only calculate if the value is not null
+  if (logK !== null) {
+    var permeability = ee.Number(10).pow(ee.Number(logK).divide(100));
+    return feature.set('permeability_m2', permeability);
+  } else {
+    // Return the feature unchanged if PP is null
+    return feature;
+  }
+};
+
+// Apply the conversion
+var glhympsWithPerm = glhymps.map(calculatePermeability);
+
+// Function to convert permeability to hydraulic conductivity
+// Formula: K = k * 1e+7 (m/s)
+var calculateHydConductivity = function(feature) {
+  var permeability = feature.get('permeability_m2');
+  
+  // Only calculate if permeability_m2 exists and is not null
+  if (permeability !== null && permeability !== undefined) {
+    var hydraulicConductivity = ee.Number(permeability).multiply(1e7);
+    return feature.set('hydraulic_conductivity_ms', hydraulicConductivity);
+  } else {
+    // Return the feature unchanged if permeability_m2 is null or undefined
+    return feature;
+  }
+};
+
+// Apply the conversion
+var glhympsWithHydCond = glhympsWithPerm.map(calculateHydConductivity);
+
+// Convert FeatureCollection to Image for better visualization
+var logK_Ice_img = glhymps.reduceToImage(['PP'], ee.Reducer.first());
+var logK_Ferr_img = glhymps.reduceToImage(['PNP'], ee.Reducer.first());
+var porosity_img = glhymps.reduceToImage(['Porosity'], ee.Reducer.first());
+
+// Set visualization parameters based on what we know from the documentation
+// These are tuned for the PP values which represent log(k)*100
+var permafrostVis = {
+  min: -15,  // log(k) = -15
+  max: -5,   // log(k) = -5
+  palette: ['0000ff', '00ffff', '00ff00', 'ffff00', 'ff0000']
+};
+
+// Visualization parameters for porosity
+var porosityVis = {
+  min: 0,
+  max: 0.5,  // 0.5 porosity (since values are * 100)
+  palette: ['white', 'yellow', 'orange', 'red']
+};
+
+// Add image layers, handling possible null values
+Map.addLayer(logK_Ice_img.updateMask(logK_Ice_img.gt(-9999)), permafrostVis, 'Permeability (with permafrost)');
+Map.addLayer(logK_Ferr_img.updateMask(logK_Ferr_img.gt(-9999)), permafrostVis, 'Permeability (without permafrost)', false);
+Map.addLayer(porosity_img.updateMask(porosity_img.gt(0)), porosityVis, 'Porosity', false);
+
+// Create a filtered version of the dataset for non-null PP values
+var filteredGlhymps = glhymps.filter(ee.Filter.notNull(['PP']));
+
+// Sample a subset of features with non-null PP values for statistics
+var sampledFeatures = filteredGlhymps.limit(1000);
+
+// Calculate statistics on the sampled features
+var logK_Ice_stats = ui.Chart.feature.histogram({
+  features: sampledFeatures,
+  property: 'PP',
+  maxBuckets: 30
+}).setOptions({
+  title: 'Distribution of Permeability Values (with permafrost)',
+  hAxis: {title: 'PP (Log Permeability * 100)'},
+  vAxis: {title: 'Frequency'},
+});
+
+print(logK_Ice_stats);
+
+// Create a legend for permeability
+var permeabilityLegend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'white'
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Log Permeability (log k)',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+// Add the title to the panel
+permeabilityLegend.add(legendTitle);
+
+// Create the legend items
+var colors = ['0000ff', '00ffff', '00ff00', 'ffff00', 'ff0000'];
+var logK_values = ['-15', '-13', '-11', '-9', '-7', '-5'];
+
+// Add each color box and its label to the legend
+for (var i = 0; i < colors.length; i++) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + colors[i],
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var valueRange = logK_values[i] + ' to ' + logK_values[i+1];
+  if (i === colors.length-1) valueRange = logK_values[i];
+  
+  var description = ui.Label({
+    value: valueRange,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  // Add the color box and description to the legend panel
+  permeabilityLegend.add(ui.Panel([colorBox, description], ui.Panel.Layout.Flow('horizontal')));
+}
+
+// Add information about conversions
+var infoPanel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    width: '300px',
+    padding: '8px',
+    backgroundColor: 'white'
+  }
+});
+
+infoPanel.add(ui.Label({
+  value: 'GLHYMPS Dataset Information',
+  style: {fontWeight: 'bold', fontSize: '16px'}
+}));
+
+infoPanel.add(ui.Label('Gleeson et al. 2014 GRL'));
+infoPanel.add(ui.Label('Property Descriptions:'));
+infoPanel.add(ui.Label('- PP: Permeability with permafrost'));
+infoPanel.add(ui.Label('- PNP: Permeability without permafrost'));
+infoPanel.add(ui.Label('- Porosity: Porosity value * 100'));
+infoPanel.add(ui.Label('- PSD: Permeability standard deviation'));
+infoPanel.add(ui.Label(''));
+infoPanel.add(ui.Label('Units Conversion:'));
+infoPanel.add(ui.Label('- Permeability (m²): k = 10^(PP/100)'));
+infoPanel.add(ui.Label('- Hydraulic Conductivity (m/s): K = k * 1e+7'));
+infoPanel.add(ui.Label('- Porosity = Porosity / 100'));
+
+// Add the legend and info panel to the map
+Map.add(permeabilityLegend);
+Map.add(infoPanel);
+
+// Set map center and zoom level
+Map.setCenter(0, 0, 2);
+
+// Export capabilities
+// Uncomment these to enable exports
+
+// Export features with non-null PP values
+/*
+Export.table.toDrive({
+  collection: filteredGlhymps,
+  description: 'GLHYMPS_filtered_data',
+  fileFormat: 'CSV'
+});
+
+// Export an image of the permeability with permafrost
+Export.image.toDrive({
+  image: logK_Ice_img,
+  description: 'GLHYMPS_permeability_map',
+  scale: 10000,
+  region: glhymps.geometry().bounds(),
+  maxPixels: 1e9
+});
+*/
+
+// Add tools to manually convert values
+var conversionPanel = ui.Panel({
+  style: {
+    position: 'top-right',
+    width: '250px',
+    padding: '8px',
+    backgroundColor: 'white'
+  }
+});
+
+conversionPanel.add(ui.Label('Permeability Converter', {fontWeight: 'bold'}));
+
+// Input field for PP value
+var ppInput = ui.Textbox({
+  placeholder: 'Enter Permeability Permafrost value (e.g., -1300)',
+  onChange: updateConversion
+});
+conversionPanel.add(ui.Label('Permeability Permafrost value:'));
+conversionPanel.add(ppInput);
+
+// Output labels
+var permOutput = ui.Label('Permeability: ');
+var condOutput = ui.Label('Hydraulic conductivity: ');
+conversionPanel.add(permOutput);
+conversionPanel.add(condOutput);
+
+// Function to update the conversion outputs
+function updateConversion(value) {
+  // Convert the input string to a number
+  var ppValue = Number(value);
+  
+  if (!isNaN(ppValue)) {
+    // Calculate permeability: k = 10^(PP/100)
+    var permeability = Math.pow(10, ppValue/100);
+    
+    // Calculate hydraulic conductivity: K = k * 1e+7
+    var hydraulicConductivity = permeability * 1e7;
+    
+    // Update the output labels with formatted values
+    permOutput.setValue('Permeability: ' + permeability.toExponential(6) + ' m²');
+    condOutput.setValue('Hydraulic conductivity: ' + hydraulicConductivity.toExponential(6) + ' m/s');
+  } else {
+    permOutput.setValue('Permeability: Invalid input');
+    condOutput.setValue('Hydraulic conductivity: Invalid input');
+  }
+}
+
+Map.add(conversionPanel);

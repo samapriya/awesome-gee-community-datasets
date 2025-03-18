@@ -1,0 +1,15 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var vis = {"opacity":1,"bands":["B8","B3","B2"],"min":99,"max":6895,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var collection = ee.ImageCollection("projects/satromo-prod/assets/col/S2_SR_HARMONIZED_SWISS")
+Map.centerObject(collection.first(),8)
+
+print(collection.aggregate_histogram('pixel_size_meter'))
+
+var collection_3b = collection.filter(ee.Filter.eq('pixel_size_meter',20))
+var collection_10b = collection.filter(ee.Filter.neq('pixel_size_meter',20))
+
+Map.addLayer(collection_10b.filterDate('2024-07-01','2024-07-30').median(),vis,'Collection Mosaic Month')
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

@@ -1,0 +1,165 @@
+// Load the LANDFIRE Vegetation Departure (VDEP) collection
+var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION/VDEP");
+
+// Mosaic the collection to a single image
+var vdepMosaic = vdep.mosaic();
+
+// Get the values from the provided SLD file
+// Original values
+var fromValues = [
+  -1111, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+  41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+  61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+  81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+  111, 112, 120, 132, 180
+];
+
+// Sequential values (0-indexed for visualization)
+var toValues = [];
+for (var i = 0; i < fromValues.length; i++) {
+  toValues.push(i);
+}
+
+// Apply the remapping
+var remappedImage = vdepMosaic.remap(fromValues, toValues);
+
+// Create the color palette from the hex codes
+var colorPalette = [
+  '6e6e6e', '00dadd', '00cfcc', '00c3ba', '00b8aa', '00ae99', '00a387', '009777',
+  '008c66', '008254', '007744', '006b33', '006021', '005611', '004b00', '0e5900',
+  '1c6600', '2a7400', '388000', '468e00', '549c00', '62aa00', '70b600', '7ec400',
+  '8cd100', '9ad815', 'a8dd2a', 'b6e23f', 'c6e854', 'd4ed69', 'e2f480', 'f0f995',
+  'ffffaa', 'ffffa0', 'ffff95', 'ffff8c', 'ffff82', 'ffff77', 'ffff6e', 'ffff64',
+  'ffff59', 'ffff4f', 'ffff46', 'ffff3b', 'ffff31', 'ffff28', 'ffff1d', 'ffff13',
+  'ffff0a', 'ffff00', 'fff400', 'ffeb00', 'ffdf00', 'ffd600', 'ffcc00', 'ffc100',
+  'ffb800', 'ffac00', 'ffa300', 'ff9900', 'ff8e00', 'ff8500', 'ff7900', 'ff7000',
+  'ff6600', 'ff5b00', 'ff5200', 'ff4600', 'ff3d00', 'ff3300', 'ff2800', 'ff1f00',
+  'ff1300', 'ff0a00', 'ff0000', 'fb0000', 'f60000', 'f20000', 'ed0000', 'e90000',
+  'e60000', 'e10000', 'dd0000', 'd80000', 'd40000', 'cf0000', 'cc0000', 'c80000',
+  'c30000', 'bf0000', 'ba0000', 'b60000', 'b30000', 'af0000', 'aa0000', 'a50000',
+  'a10000', '9e0000', '990000', '950000', '0000ff', '9ea0ef', '8300a8', 'bfbfbf',
+  'df72ff'
+];
+
+// Create the label map for the legend
+var labelMap = {
+  '-1111': 'Not Mapped',
+  '2-15': 'Low Departure (2-15%)',
+  '16-33': 'Low-Moderate Departure (16-33%)',
+  '34-50': 'Moderate Departure (34-50%)',
+  '51-75': 'High Departure (51-75%)',
+  '76-100': 'Very High Departure (76-100%)',
+  '111': 'Water',
+  '112': 'Snow/Ice',
+  '120': 'Developed',
+  '132': 'Barren or Sparse',
+  '180': 'Agriculture'
+}
+
+// Create a visualization parameter
+var visParams = {
+  min: 0,
+  max: colorPalette.length - 1,
+  palette: colorPalette
+};
+
+// Add the layer to the map
+Map.addLayer(remappedImage, visParams, 'Vegetation Departure');
+
+// Create a legend
+// Set position of panel
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Vegetation Departure',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+// Create a two-column legend layout
+var legendPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+var leftColumn = ui.Panel();
+var rightColumn = ui.Panel();
+
+// Add colors and labels to the legend in two columns
+var keys = Object.keys(labelMap);
+for (var i = 0; i < keys.length; i++) {
+  var key = keys[i];
+  var color;
+  var value = labelMap[key];
+  
+  if (key === '-1111') {
+    color = colorPalette[0];
+  } else if (key === '2-15') {
+    color = colorPalette[5]; // Representative color for range
+  } else if (key === '16-33') {
+    color = colorPalette[20]; // Representative color for range
+  } else if (key === '34-50') {
+    color = colorPalette[35]; // Representative color for range
+  } else if (key === '51-75') {
+    color = colorPalette[60]; // Representative color for range
+  } else if (key === '76-100') {
+    color = colorPalette[85]; // Representative color for range
+  } else if (key === '111') {
+    color = colorPalette[colorPalette.length - 5];
+  } else if (key === '112') {
+    color = colorPalette[colorPalette.length - 4];
+  } else if (key === '120') {
+    color = colorPalette[colorPalette.length - 3];
+  } else if (key === '132') {
+    color = colorPalette[colorPalette.length - 2];
+  } else if (key === '180') {
+    color = colorPalette[colorPalette.length - 1];
+  }
+  
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + color,
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: value,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  var row = ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+  
+  // Distribute items between columns
+  if (i < Math.ceil(keys.length / 2)) {
+    leftColumn.add(row);
+  } else {
+    rightColumn.add(row);
+  }
+}
+
+legendPanel.add(leftColumn);
+legendPanel.add(rightColumn);
+legend.add(legendPanel);
+
+// Add legend to map
+Map.add(legend);
+
+// Center map to the US
+Map.setCenter(-100, 40, 4);
