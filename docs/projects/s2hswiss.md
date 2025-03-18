@@ -8,8 +8,8 @@ and [metadata information can be found here](https://www.geocat.ch/geonetwork/sr
 
 #### Processing
 - The input dataset is the Level 2A (surface reflectance) data from Sentinel-2: [S2_SR_HARMONIZED](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED?hl=en).
-- For cloud detection the [CloudScore+](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED?hl=en) dataset is used with a 0.4 threshold for the cs_cdf band to identify clouds. Additionally, a stricter 0.2 threshold is applied in a projection corridor of the clouds derived from the solar and satellite geometries.
-- Using the same geometries as above in addition to a digital elevation model (swissALTI3D) terrain shadows are detected and added as a mask.
+- For cloud detection the [CloudScore+](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_CLOUD_SCORE_PLUS_V1_S2_HARMONIZED?hl=en) dataset is used with a 0.4 threshold for the inverted cs_cdf band to identify clouds. Additionally, a stricter 0.2 threshold is applied in a projection corridor of the clouds derived from the solar and satellite geometries.
+- Using the same geometries as above illumination angles are added for each pixel in addition to terrain shadows detected from the digital surface model (swissSURFACE3D) added as a mask.
 - The tiles from each overpass are mosaiced.
 - Lastly, the mosaics are co-registered by the displacement vectors in relation to the Sentinel Ground Reference Image to achieve sub-pixel location accuracy. All the mosaics are saved in epsg:2056 (CH1903+ / LV95) and the covered perimeter includes Switzerland and Liechtenstein.
 
@@ -26,11 +26,11 @@ Each overpass is mosaiced and there are two assets per overpass for the 10m and 
     |                  | - B3 (Green)                     |
     |                  | - B4 (Red)                       |
     |                  | - B8 (NIR)                       |
-    |                  | - terrainShadowMask (binary mask for terrain shadow) |
+    |                  | - terrainShadowMask (0-90: illumination angle in degree, 100: cast shadows) |
     |                  | - cloudAndCloudShadowMask (binary mask for clouds and cloud shadows) |
     |                  | - reg_dx (offset in x direction from the co-registration) |
     |                  | - reg_dy (offset in y direction from the co-registration) |
-    |                  | - reg_confidence (displacement confidence from the co-registration) |
+    |                  | - reg_confidence (displacement confidence from the co-registration) currently empty! |
     |                  | - cloudProbability (percentage of cloud probability) |
     | 20m              | - B8A (NIR 2)                    |
     |                  | - B11 (SWIR 1)                   |
