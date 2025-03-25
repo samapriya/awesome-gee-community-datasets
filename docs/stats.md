@@ -6,9 +6,9 @@
 ## Daily Stats
 
 <!-- START_MARKER -->
-* **Total Size of catalog**: 509.22 TB
-* **Total images in catalog**: 1,519,725
+* **Total Size of catalog**: 509.24 TB
+* **Total images in catalog**: 1,519,739
 * **Total image collections in catalog**: 725
 * **Total Feature collections in catalog**: 2,879
-* **Last Run Date**: 2025-03-24
+* **Last Run Date**: 2025-03-25
 <!-- END_MARKER -->
