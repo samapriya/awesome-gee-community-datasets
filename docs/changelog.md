@@ -3,6 +3,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-03-25
+- Added catalog browswer for [combined catalog browsing](https://gee-community-catalog.org/browse)
+- Added [US EPA Total Deposition Layers (TDEP Layers)](https://gee-community-catalog.org/projects/tdep)
+- Added [Landfire 2.4.0](https://gee-community-catalog.org/projects/landfire)
+- Added [SWISS TOPO S2 SR HARMONIZED SWITZERLAND](https://gee-community-catalog.org/projects/landfires2hswiss)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-02-18
 - Added [Multi-Source Land Surface Phenology (MSLSP) North America 30m v1.1](https://gee-community-catalog.org/projects/mslsp)
 - Added [Global Lakes and Wetlands Database (GLWD) Version 2](https://gee-community-catalog.org/projects/glwd)
