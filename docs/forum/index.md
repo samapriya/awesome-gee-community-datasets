@@ -6,7 +6,7 @@ We take the next step in fostering collaboration with the official launch of our
 
 Becoming part of this community takes just three steps:
 
-1. Visit [forum.gee-community-catalog.com](https://forum.gee-community-catalog.com)
+1. Visit [forum.gee-community-catalog.org](https://forum.gee-community-catalog.org)
 2. Create your account using your professional/institutional email/gmail/github/linkedin
 3. Introduce yourself and explore the active discussions and start contributing
 
