@@ -1,6 +1,6 @@
 # GEE Community Catalog Forum
 
-We take the next step in fostering collaboration with the official launch of our dedicated community forum at [forum.gee-community-catalog.com](https://forum.gee-community-catalog.com). This platform represents more than just a discussion board - it's a place to learn, to grown , to build communities and so much more.
+We take the next step in fostering collaboration with the official launch of our dedicated community forum at [forum.gee-community-catalog.org](https://forum.gee-community-catalog.org). This platform represents more than just a discussion board - it's a place to learn, to grown , to build communities and so much more.
 
 ## Join Us Today
 
