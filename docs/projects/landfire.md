@@ -157,10 +157,10 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ```js
 // LANDFIRE Vegetation Collections
-var slpp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/SLPP");
-var slpd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/SLPD");
-var elev = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/ELEV");
-var asp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/ASP");
+var slpp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/SLPP");
+var slpd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/SLPD");
+var elev = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/ELEV");
+var asp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/ASP");
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION

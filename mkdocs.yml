@@ -513,3 +513,7 @@ nav:
       - Medium Blogs: medium_blogs.md
   - AI Search:
     - search_features/index.md
+  - Forum:
+    - forum/index.md
+  - Browse:
+    - browse/index.md

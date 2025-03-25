@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2025-03-25
-- Added catalog browswer for [combined catalog browsing](https://gee-community-catalog.org/browse)
+- Added catalog browser for [combined catalog browsing](https://gee-community-catalog.org/browse) and read [more here](https://datacommons.substack.com/p/building-the-community-catalog-browser)
 - Added [US EPA Total Deposition Layers (TDEP Layers)](https://gee-community-catalog.org/projects/tdep)
 - Added [Landfire 2.4.0](https://gee-community-catalog.org/projects/landfire)
 - Added [SWISS TOPO S2 SR HARMONIZED SWITZERLAND](https://gee-community-catalog.org/projects/s2hswiss)
