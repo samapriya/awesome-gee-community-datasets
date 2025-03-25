@@ -2,7 +2,7 @@
 
 LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a shared program between the wildland fire management programs of the U.S. Department of Agriculture's Forest Service, U.S. Department of the Interior's Geological Survey, and The Nature Conservancy.
 
-LANDFIRE (LF) layers are created using predictive landscape models based on extensive field-referenced data, satellite imagery and biophysical gradient layers using classification and regression trees. You can read [about the Landfire 2023 updates here](https://landfire.gov/lf_230.php)
+LANDFIRE (LF) layers are created using predictive landscape models based on extensive field-referenced data, satellite imagery and biophysical gradient layers using classification and regression trees. You can read [about the Landfire 2023 updates here](https://landfire.gov/data/lf2023)
 
 #### LANDFIRE 2023 Update
 
@@ -20,7 +20,7 @@ The LANDFIRE 2023 Update (LF 2023) represents the final step in the ongoing goal
     | | Preliminary Annual Disturbance | PDIST |
     | | 2023 Annual Disturbance | DIST |
     | | Historical Disturbance | HDIST |
-    | | Fuel Disturbance | FDist23 |
+    | | Fuel Disturbance | FDist |
     | **Historic Fire Regime** | Fire Regime Groups | FRG |
     | | Fire Return Interval | FRI |
     | | Percent Fire Severity | PFS |
@@ -68,7 +68,7 @@ The LANDFIRE 2023 Update (LF 2023) represents the final step in the ongoing goal
 
 #### New Disturbance Products in LF 2023
 
-To provide sooner delivery of LANDFIRE Annual Disturbance data and ensure a more complete record, LANDFIRE now distributes three Annual
+To provide sooner delivery of LANDFIRE Annual Disturbance data and ensure a more complete record, LANDFIRE now distributes three Annual Disturbance Products, Limited, Preliminary and Final.
 
 ??? example "Expand to see Disturbance products in a single version"
 
@@ -153,6 +153,18 @@ var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION
 
+#### Earth Engine Snippet: Topography 2.3.0
+
+```js
+// LANDFIRE Vegetation Collections
+var slpp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/SLPP");
+var slpd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/SLPD");
+var elev = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/ELEV");
+var asp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ELEVATION/ASP");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION
+
 
 Resolution:
 approx 30m
@@ -177,5 +189,5 @@ Last updated: 2025-03-16
 
 #### Changelog
 
-* 2025-03-16 Updated to v2.4.0 for available collections (removed topographic collections as they are no longer produced)
+* 2025-03-16 Updated to v2.4.0 for available collections
 * 2024-01-14 Updated to v2.2.3 for available collections
