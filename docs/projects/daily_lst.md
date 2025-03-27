@@ -12,16 +12,8 @@ The datasets and entire collection is [available at Figshare](https://iastate.fi
 **Paper Citation**
 
 ```
-Li, Xiaoma, Yuyu Zhou, Ghassem R. Asrar, and Zhengyuan Zhu. "Creating a seamless 1 km resolution daily land surface
-temperature dataset for urban and surrounding areas in the conterminous United States." Remote Sensing of
-Environment 206 (2018): 84-97.
-```
-
-**Abstract Citation**
-
-```
-Zhang, Tao, Yuyu Zhou, and Zhengyuan Zhu. "A spatiotemporal gap-filling method for building a seamless MODIS land
-surface temperature dataset." In AGU Fall Meeting Abstracts, vol. 2020, pp. GC127-01. 2020.
+Zhang, T., Zhou, Y., Zhu, Z., Li, X., and Asrar, G. R.: A global seamless 1 km resolution daily land surface temperature dataset (2003–2020)
+Earth Syst. Sci. Data, 14, 651–664, https://doi.org/10.5194/essd-14-651-2022, 2022
 ```
 
 **Collection Citation**
