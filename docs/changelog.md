@@ -4,8 +4,8 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2025-04-02
-- Added [Global Administrative Unit Layers (GAUL) 2024](https://gee-community-catalog.org/gaul)
-- Added [Enhanced National-Scale Urban Tree Canopy Cover (CONUS)](https://gee-community-catalog.org/us_tcc)
+- Added [Global Administrative Unit Layers (GAUL) 2024](https://gee-community-catalog.org/projects/gaul)
+- Added [Enhanced National-Scale Urban Tree Canopy Cover (CONUS)](https://gee-community-catalog.org/projects/us_tcc)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2025-03-25
