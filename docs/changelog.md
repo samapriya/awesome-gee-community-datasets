@@ -3,6 +3,11 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-04-02
+- Added [Global Administrative Unit Layers (GAUL) 2024](https://gee-community-catalog.org/gaul)
+- Added [Enhanced National-Scale Urban Tree Canopy Cover (CONUS)](https://gee-community-catalog.org/us_tcc)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-03-25
 - Added catalog browser for [combined catalog browsing](https://gee-community-catalog.org/browse) and read [more here](https://datacommons.substack.com/p/building-the-community-catalog-browser)
 - Added [US EPA Total Deposition Layers (TDEP Layers)](https://gee-community-catalog.org/projects/tdep)
