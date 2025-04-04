@@ -50,7 +50,7 @@ Franceschini, G., Khan, A., Moretti, L., Nyabuti, K., Asif, M., Bezuidenhoudt, E
     | disp_en      | Display label in English                             | Text      | 255    |
 
 
-![GAUL](https://github.com/user-attachments/assets/e7bff9fa-289c-41ed-9685-9d0161a0499a)
+![GAUL](https://github.com/user-attachments/assets/0d3e00c1-dfac-48ef-bf33-6da7b83dd4be)
 
 #### Earth Engine Snippet
 
