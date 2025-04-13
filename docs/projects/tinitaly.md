@@ -27,7 +27,7 @@ Istituto Nazionale di Geofisica e Vulcanologia (INGV). https://doi.org/10.13127/
 Tarquini S., I. Isola, M. Favalli, F. Mazzarini, M. Bisson, M.T. Pareschi, E. Boschi (2007). TINITALY/01: a new triangular irregular network of Italy. Annals of Geophysics. https://doi.org/10.4401/ag-4424
 ```
 
-![tinitaly](https://github.com/user-attachments/assets/8eb18873-085a-47e8-b231-72ffe2acafa8)
+![tinitaly](../images/tinitaly.gif)
 
 #### Earth Engine Snippet
 
