@@ -6,7 +6,7 @@ USGS contacts: <a href="mailto:csoulard@usgs.gov">Chris Soulard</a>,
 <a href="https://www.usgs.gov">US Geological Survey (USGS)</a>
 </p>
 
-Understanding surface water dynamics is crucial for effective water resource management, flood mapping, ecological research, and climate change analysis. The **Dynamic Surface Water Extent (DSWE)** dataset provides reliable, repeatable, and consistent maps of water presence derived from Landsat imagery. Originally introduced by Jones (2015), DSWE has been continuously improved and now leverages the power of Google Earth Engine (GEE) to deliver monthly surface water composites.
+Understanding surface water dynamics is crucial for effective water resource management, flood mapping, ecological research, and climate change analysis. The **Dynamic Surface Water Extent (DSWE)** dataset provides reliable, repeatable, and consistent maps of water presence derived from Landsat imagery. Originally introduced by Jones (2015), DSWE has been continuously improved and now leverages the power of Google Earth Engine (GEE) to deliver monthly surface water composites. Details on the code outputs can be found at the [USGS Official Source Code Archive](https://code.usgs.gov/place/dswe).
 
 In this tutorial, we will:
 
@@ -14,6 +14,20 @@ In this tutorial, we will:
 - Understand DSWE categorization and confidence levels.
 - Visualize monthly DSWE composites.
 - Export the data for further analysis.
+
+#### Citation
+
+```
+Walker JJ, Waller EK, Kreitler JR, Petrakis RE, Soulard CE. (2025). DSWE_GEE v2.0.0 Software release. U.S. Geological Survey. DOI: https://doi.org/10.5066/P14CF2B2.
+
+Landsat DSWE Google Earth Engine code originally developed for this paper:
+
+Walker, J.J., Soulard, C.E. and Petrakis, R.E., 2020. Integrating stream gage data and Landsat imagery to complete time-series of surface water extents in Central Valley, California. International Journal of Applied Earth Observation and Geoinformation, 84, p.101973.
+
+MODIS DSWE Google Earth Engine code originally developed for this paper:
+
+Soulard, C.E., Waller, E.K., Walker, J.J., Petrakis, R.E. and Smith, B.W., 2022. DSWEmod—The production of high‐frequency surface water map composites from daily MODIS images. JAWRA Journal of the American Water Resources Association, 58(2), pp.248-268.
+```
 
 
 
