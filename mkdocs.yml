@@ -76,7 +76,7 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
-
+  - open-in-new-tab
 # Hooks
 # hooks:
 #   - material/overrides/hooks/shortcodes.py
