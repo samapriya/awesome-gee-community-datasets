@@ -14,7 +14,7 @@ Find a list of associated blog posts related to GEE and community catalog here. 
 * [What's Cooking in Google Earth Engine Community Catalog Release 2.9.0](https://datacommons.substack.com/p/whats-cooking-in-google-earth-engine)
 * [Catalog Updates &amp; Must-Have Datasets With Community Catalog Release 2.8.0](https://datacommons.substack.com/p/catalog-updates-and-must-have-datasets)
 
-<!-- Updated: 2025-05-05 06:47:09 -->
+<!-- Updated: 2025-05-05 07:05:10 -->
 <!-- END_MARKER -->
 
 <!-- Last updated: Mon May  5 06:32:44 UTC 2025 -->
