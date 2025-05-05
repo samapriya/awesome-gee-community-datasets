@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: master  # Explicitly checkout the master branch
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -234,12 +236,12 @@ jobs:
                 random.shuffle(all_proxies)
                 return all_proxies[:10]  # Limit to 10 proxies to try
             
-            def get_blog_info(feed_data, num_entries=5):
+            def get_blog_info(feed_data, num_entries=None):
                 """
                 Extracts blog titles and links from feed data.
                 Args:
                     feed_data: The feed data returned by fetch_substack_feed.
-                    num_entries: The number of entries to extract (default: 5).
+                    num_entries: The number of entries to extract (default: None = all entries).
                 Returns:
                     A list of dictionaries, each containing the title and link for a blog entry.
                 """
@@ -248,7 +250,10 @@ jobs:
                     print("No entries found in feed data")
                     return entries
                 
-                for entry in feed_data["entries"][:num_entries]:
+                # Get all entries if num_entries is None, otherwise get the specified number
+                entries_to_process = feed_data["entries"] if num_entries is None else feed_data["entries"][:num_entries]
+                
+                for entry in entries_to_process:
                     title = entry.get("title", "Unknown Title")
                     link = entry.get("link", "#")
                     
@@ -270,34 +275,60 @@ jobs:
                     end_marker: The marker indicating the end of the section to update.
                 """
                 try:
+                    # Make sure the directory exists
+                    import os
+                    os.makedirs(os.path.dirname(filename), exist_ok=True)
+                    
+                    # Check if file exists, if not create it with initial content
+                    if not os.path.exists(filename):
+                        print(f"Creating new file {filename} as it doesn't exist")
+                        with open(filename, 'w', encoding='utf-8') as f:
+                            f.write("# Substack Blog Posts\n\n")
+                            f.write(f"{start_marker}\n\n{end_marker}\n")
+                    
+                    # Read the existing content
                     with open(filename, 'r', encoding='utf-8') as f:
                         file_content = f.read()
 
+                    # Find markers
                     start_index = file_content.find(start_marker)
                     if start_index == -1:
-                        print(f"Start marker '{start_marker}' not found in {filename}")
-                        return False
+                        print(f"Start marker '{start_marker}' not found in {filename}, adding it")
+                        # If start marker not found, add it to the end
+                        file_content += f"\n\n{start_marker}\n\n{end_marker}\n"
+                        start_index = file_content.find(start_marker)
                     
                     start_index += len(start_marker)
                     
                     end_index = file_content.find(end_marker, start_index)
                     if end_index == -1:
-                        print(f"End marker '{end_marker}' not found in {filename}")
-                        return False
+                        print(f"End marker '{end_marker}' not found in {filename}, adding it")
+                        # If end marker not found, add it after start marker
+                        new_content = file_content[:start_index] + f"\n\n{end_marker}\n"
+                        file_content = new_content
+                        end_index = file_content.find(end_marker, start_index)
 
-                    new_content = ""
+                    # Generate the new blog entries content
+                    new_content = "\n"
                     for entry in blog_info:
                         new_content += f"* [{entry['title']}]({entry['link']})\n"
+                    
+                    # Add a timestamp to force Git to detect a change
+                    new_content += f"\n<!-- Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} -->\n"
 
-                    updated_content = file_content[:start_index] + "\n" + new_content + file_content[end_index:]
+                    # Update the content between markers
+                    updated_content = file_content[:start_index] + new_content + file_content[end_index:]
 
+                    # Write back to file
                     with open(filename, 'w', encoding='utf-8') as f:
                         f.write(updated_content)
                     
-                    print(f"Updated {filename} successfully!")
+                    print(f"Updated {filename} successfully with {len(blog_info)} blog posts!")
                     return True
                 except Exception as e:
                     print(f"Error updating markdown file: {e}")
+                    import traceback
+                    print(traceback.format_exc())
                     return False
             
             # Main execution
@@ -313,7 +344,7 @@ jobs:
             if feed_data and "entries" in feed_data and feed_data["entries"]:
                 print("\n========= LATEST 5 SUBSTACK BLOG POSTS =========\n")
                 
-                for i, entry in enumerate(feed_data["entries"][:5]):
+                for i, entry in enumerate(feed_data["entries"]):
                     print(f"{i+1}. {entry.get('title', 'No title')}")
                     print(f"   URL: {entry.get('link', 'No link')}")
                     print(f"   Published: {entry.get('published', 'No date')}")
@@ -341,10 +372,35 @@ jobs:
       - name: Show fetch results
         run: cat *.log || echo "No log file found"
         
-      - name: Commit changes if file was updated
+      - name: Show file after changes
+        run: |
+          echo "=== File contents after changes ==="
+          if [ -f docs/substack_blogs.md ]; then
+            cat docs/substack_blogs.md
+          else
+            echo "File still does not exist"
+          fi
+          
+      - name: Commit changes with force update
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          
+          # Make sure the file exists and has content
+          mkdir -p docs
+          touch docs/substack_blogs.md
+          
+          # Stage the file
           git add docs/substack_blogs.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update Substack blog links in docs/substack_blogs.md"
-          git push
+          
+          # Check if there are any changes
+          if git diff --staged --quiet; then
+            echo "No changes detected in the file. Adding a timestamp to force a commit."
+            # Add a timestamp to force a change
+            echo "<!-- Last updated: $(date) -->" >> docs/substack_blogs.md
+            git add docs/substack_blogs.md
+          fi
+          
+          # Commit and push to master branch explicitly
+          git commit -m "Update Substack blog links in docs/substack_blogs.md [$(date +%s)]"
+          git push origin master
