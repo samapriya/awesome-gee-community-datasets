@@ -1,4 +1,4 @@
-name: Fetch Substack Blog Posts
+name: substack fetch
 on:
   schedule: # Run workflow automatically
     - cron: '0 0 * * *' # Runs once a day at midnight
