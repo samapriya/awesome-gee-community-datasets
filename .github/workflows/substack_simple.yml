@@ -1,18 +1,20 @@
 name: substack fetch
+
 on:
-  schedule: # Run workflow automatically
-    - cron: '0 0 * * *' # Runs once a day at midnight
-  workflow_dispatch: # Run workflow manually through the GitHub UI
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:      # Manual trigger
 
 jobs:
   fetch-substack-posts:
     name: Fetch latest blog posts from Substack
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: master  # Explicitly checkout the master branch
+          ref: master
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -22,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests beautifulsoup4 fake-useragent
+          pip install feedparser requests beautifulsoup4 fake-useragent requests[socks] pysocks
 
       - name: Run script to fetch Substack posts
         uses: jannekem/run-python-script-action@v1
@@ -35,224 +37,89 @@ jobs:
             import time
             from fake_useragent import UserAgent
             from bs4 import BeautifulSoup
-            
-            def get_proxies():
-                """Get a list of free proxies from various sources"""
-                proxy_urls = [
-                    "https://free-proxy-list.net/",
-                    "https://www.sslproxies.org/"
-                ]
-                
-                all_proxies = []
-                ua = UserAgent()
-                headers = {"User-Agent": ua.random}
-                
-                for url in proxy_urls:
-                    try:
-                        print(f"Fetching proxies from {url}")
-                        response = requests.get(url, headers=headers, timeout=10)
-                        if response.status_code == 200:
-                            soup = BeautifulSoup(response.text, 'html.parser')
-                            
-                            # Common pattern across many proxy list sites
-                            table = soup.find('table')
-                            if table:
-                                for row in table.find_all('tr'):
-                                    cells = row.find_all('td')
-                                    if len(cells) >= 2:
-                                        ip = cells[0].text.strip()
-                                        port = cells[1].text.strip()
-                                        if ip and port and port.isdigit():
-                                            all_proxies.append(f"{ip}:{port}")
-                    except Exception as e:
-                        print(f"Error fetching proxies from {url}: {e}")
-                
-                # Randomize and limit list
-                random.shuffle(all_proxies)
-                return all_proxies[:5]  # Limit to 5 proxies
-            
-            def fetch_feed_with_proxy(feed_url):
-                """
-                Fetches feed using proxies and random user agents to avoid blocks.
-                """
-                # Try direct connection first
-                ua = UserAgent()
-                headers = {"User-Agent": ua.random}
-                
-                print(f"Trying direct connection with user agent")
+
+            def get_free_proxies():
+                print("Fetching proxy list...")
                 try:
-                    response = requests.get(feed_url, headers=headers, timeout=10)
-                    if response.status_code == 200:
-                        print("Direct connection successful!")
-                        return feedparser.parse(response.content)
+                    response = requests.get("https://free-proxy-list.net/")
+                    soup = BeautifulSoup(response.text, 'html.parser')
+                    proxy_table = soup.find('table', id='proxylisttable')
+                    proxies = []
+                    for row in proxy_table.tbody.find_all('tr'):
+                        cols = row.find_all('td')
+                        ip = cols[0].text
+                        port = cols[1].text
+                        anonymity = cols[4].text
+                        https = cols[6].text
+                        if anonymity == "elite proxy" and https == "yes":
+                            proxy = f"http://{ip}:{port}"
+                            proxies.append({ "http": proxy, "https": proxy })
+                    print(f"Found {len(proxies)} proxies.")
+                    return proxies
                 except Exception as e:
-                    print(f"Direct connection failed: {e}")
-                
-                # Try with proxies
-                proxies = get_proxies()
-                if proxies:
-                    for proxy in proxies:
-                        try:
-                            print(f"Trying proxy: {proxy}")
-                            proxy_dict = {
-                                "http": f"http://{proxy}",
-                                "https": f"http://{proxy}"
-                            }
-                            response = requests.get(feed_url, headers={"User-Agent": ua.random}, proxies=proxy_dict, timeout=15)
-                            if response.status_code == 200:
-                                print(f"Proxy fetch successful with {proxy}")
-                                return feedparser.parse(response.content)
-                        except Exception as e:
-                            print(f"Proxy fetch failed with {proxy}: {e}")
-                        
-                        # Add delay between requests
-                        time.sleep(1)
-                
-                # Try public RSS to JSON service as fallback
+                    print(f"Error fetching proxy list: {e}")
+                    return []
+
+            proxy_list = get_free_proxies()
+            ua = UserAgent()
+
+            def get_blog_info(feed_url, num_entries=20):
+                session = requests.Session()
+                proxy = random.choice(proxy_list) if proxy_list else {}
+                session.proxies.update(proxy)
+                session.headers.update({'User-Agent': ua.random})
                 try:
-                    print("Trying fallback method with RSS proxy...")
-                    rss_proxy_url = f"https://api.rss2json.com/v1/api.json?rss_url={feed_url}"
-                    response = requests.get(rss_proxy_url, headers={"User-Agent": ua.random}, timeout=15)
-                    if response.status_code == 200:
-                        print("Fallback method successful!")
-                        json_data = response.json()
-                        
-                        # Convert JSON to feedparser format
-                        feed_data = {"entries": []}
-                        if "items" in json_data:
-                            for item in json_data["items"]:
-                                entry = {}
-                                entry["title"] = item.get("title", "")
-                                entry["link"] = item.get("link", "")
-                                feed_data["entries"].append(entry)
-                        return feed_data
-                except Exception as e:
-                    print(f"Fallback method failed: {e}")
-                
-                # All methods failed
-                print("All methods failed")
-                return {"entries": []}
-            
-            def get_blog_info(feed_url, num_entries=None):
-                """
-                Fetches blog titles and links from an RSS feed.
-                """
-                feed = fetch_feed_with_proxy(feed_url)
-                
-                entries = []
-                if not feed or "entries" not in feed:
-                    print("No entries found in feed")
+                    response = session.get(feed_url, timeout=20)
+                    raw_feed = response.content
+                    feed = feedparser.parse(raw_feed)
+                    entries = []
+                    for entry in feed.entries[:num_entries]:
+                        entries.append({
+                            "title": entry.title,
+                            "link": entry.link
+                        })
                     return entries
-                
-                # Get all entries or limit if specified
-                entries_to_process = feed["entries"] if num_entries is None else feed["entries"][:num_entries]
-                
-                for entry in entries_to_process:
-                    title = entry.get("title", "")
-                    if hasattr(entry, "link"):
-                        link = entry.link
-                    else:
-                        link = entry.get("link", "")
-                    
-                    entry_data = {
-                        "title": title,
-                        "link": link
-                    }
-                    entries.append(entry_data)
-                
-                return entries
-            
+                except Exception as e:
+                    print(f"Error using proxy {proxy.get('http')}: {e}")
+                    return []
+
             def update_markdown_file(filename, blog_info, start_marker, end_marker):
-                """
-                Updates a markdown file with blog info between specified markers.
-                """
-                # Create directory if it doesn't exist
-                os.makedirs(os.path.dirname(filename), exist_ok=True)
-                
-                # Create file if it doesn't exist
                 if not os.path.exists(filename):
-                    print(f"Creating file {filename} as it doesn't exist")
-                    with open(filename, 'w', encoding='utf-8') as f:
-                        f.write("# Substack Blog Posts\n\n")
-                        f.write(f"{start_marker}\n\n{end_marker}\n")
-                
-                # Read existing content
+                    print(f"File {filename} does not exist.")
+                    return
                 with open(filename, 'r', encoding='utf-8') as f:
                     file_content = f.read()
-                
-                # Find markers
-                start_index = file_content.find(start_marker)
-                if start_index == -1:
-                    print(f"Start marker '{start_marker}' not found, adding it")
-                    file_content += f"\n\n{start_marker}\n\n{end_marker}\n"
-                    with open(filename, 'w', encoding='utf-8') as f:
-                        f.write(file_content)
-                    
-                    # Read updated content
-                    with open(filename, 'r', encoding='utf-8') as f:
-                        file_content = f.read()
-                    start_index = file_content.find(start_marker)
-                
-                start_index += len(start_marker)
-                end_index = file_content.find(end_marker, start_index)
-                
-                if end_index == -1:
-                    print(f"End marker '{end_marker}' not found, adding it")
-                    file_content = file_content[:start_index] + f"\n\n{end_marker}\n"
-                    with open(filename, 'w', encoding='utf-8') as f:
-                        f.write(file_content)
-                    
-                    # Read updated content
-                    with open(filename, 'r', encoding='utf-8') as f:
-                        file_content = f.read()
-                    end_index = file_content.find(end_marker, start_index)
-                
-                # Generate new content
-                new_content = "\n"
+                start_index = file_content.find(start_marker) + len(start_marker)
+                end_index = file_content.find(end_marker)
+                new_content = ""
                 for entry in blog_info:
                     new_content += f"* [{entry['title']}]({entry['link']})\n"
-                
-                # Add timestamp to force Git to detect changes
-                new_content += f"\n<!-- Updated: {time.strftime('%Y-%m-%d %H:%M:%S')} -->\n"
-                
-                # Update content
-                updated_content = file_content[:start_index] + new_content + file_content[end_index:]
-                
-                # Write updated content
+                updated_content = file_content[:start_index] + "\n" + new_content + file_content[end_index:]
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(updated_content)
-                
-                print(f"Updated {filename} with {len(blog_info)} blog posts!")
-                return True
-            
-            # Main execution
-            print("Starting Substack blog post fetcher...")
-            
-            # Configuration
-            FEED_URL = "https://datacommons.substack.com/feed"
-            REPO_FILE_PATH = "docs/substack_blogs.md"
-            START_MARKER = "<!-- START_MARKER -->"
-            END_MARKER = "<!-- END_MARKER -->"
-            
-            # Get blog info
-            blog_info = get_blog_info(FEED_URL)
-            
-            # Print the blog posts for the log
+                print(f"Updated {filename} successfully!")
+
+            def fetch_with_retry(feed_url, max_retries=5):
+                retries = 0
+                while retries < max_retries:
+                    blog_info = get_blog_info(feed_url)
+                    if blog_info:
+                        return blog_info
+                    print(f"Retrying {retries + 1}/{max_retries}...")
+                    retries += 1
+                    time.sleep(2 ** retries)
+                return []
+
+            feed_url = "https://datacommons.substack.com/feed"
+            blog_info = fetch_with_retry(feed_url)
+
+            filename = "docs/substack_blogs.md"
             if blog_info:
-                print(f"\n========= FOUND {len(blog_info)} SUBSTACK BLOG POSTS =========\n")
-                
-                for i, entry in enumerate(blog_info):
-                    print(f"{i+1}. {entry.get('title', 'No title')}")
-                    print(f"   URL: {entry.get('link', 'No link')}")
-                    print("")
-                
-                # Update the markdown file
-                success = update_markdown_file(REPO_FILE_PATH, blog_info, START_MARKER, END_MARKER)
-                
-                if success:
-                    print(f"{REPO_FILE_PATH} updated successfully!")
+                start_marker = "<!-- START_MARKER -->"
+                end_marker = "<!-- END_MARKER -->"
+                update_markdown_file(filename, blog_info, start_marker, end_marker)
             else:
-                print("No blog posts found or failed to fetch the feed.")
+                print("Failed to fetch blog info after all retries.")
 
       - name: Debug file
         run: |
@@ -268,12 +135,14 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/substack_blogs.md
-          # Force a commit even if there are no changes
-          git diff --staged --quiet || git commit -m "Update Substack blog links [$(date +%s)]"
-          # Even if no changes, add a timestamp and commit
-          if git diff --staged --quiet; then
+          
+          # Check if any staged changes exist
+          if ! git diff --staged --quiet; then
+            git commit -m "Update Substack blog links [$(date +%s)]"
+          else
             echo "<!-- Updated: $(date) -->" >> docs/substack_blogs.md
             git add docs/substack_blogs.md
             git commit -m "Force update timestamp [$(date +%s)]"
           fi
+          
           git push origin master
