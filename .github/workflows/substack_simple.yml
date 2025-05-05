@@ -3,7 +3,7 @@ name: substack fetch
 on:
   schedule:
     - cron: '0 0 * * *'  # Daily at midnight
-  workflow_dispatch:      # Manual trigger
+  workflow_dispatch:
 
 jobs:
   fetch-substack-posts:
@@ -36,31 +36,29 @@ jobs:
             import os
             import time
             from fake_useragent import UserAgent
-            from bs4 import BeautifulSoup
 
-            def get_free_proxies():
-                print("Fetching proxy list...")
+            def get_geonode_proxies():
+                print("Fetching proxies from Geonode...")
                 try:
-                    response = requests.get("https://free-proxy-list.net/")
-                    soup = BeautifulSoup(response.text, 'html.parser')
-                    proxy_table = soup.find('table', id='proxylisttable')
+                    url = "https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc"
+                    resp = requests.get(url, timeout=20)
+                    data = resp.json()
                     proxies = []
-                    for row in proxy_table.tbody.find_all('tr'):
-                        cols = row.find_all('td')
-                        ip = cols[0].text
-                        port = cols[1].text
-                        anonymity = cols[4].text
-                        https = cols[6].text
-                        if anonymity == "elite proxy" and https == "yes":
-                            proxy = f"http://{ip}:{port}"
-                            proxies.append({ "http": proxy, "https": proxy })
-                    print(f"Found {len(proxies)} proxies.")
+                    for proxy in data.get("data", []):
+                        if proxy.get("anonymityLevel") == "elite" and "socks4" in proxy.get("protocols", []):
+                            ip = proxy["ip"]
+                            port = proxy["port"]
+                            proxies.append({
+                                "http": f"socks4://{ip}:{port}",
+                                "https": f"socks4://{ip}:{port}"
+                            })
+                    print(f"Loaded {len(proxies)} proxies.")
                     return proxies
                 except Exception as e:
-                    print(f"Error fetching proxy list: {e}")
+                    print(f"Failed to fetch proxy list: {e}")
                     return []
 
-            proxy_list = get_free_proxies()
+            proxy_list = get_geonode_proxies()
             ua = UserAgent()
 
             def get_blog_info(feed_url, num_entries=20):
@@ -80,34 +78,30 @@ jobs:
                         })
                     return entries
                 except Exception as e:
-                    print(f"Error using proxy {proxy.get('http')}: {e}")
+                    print(f"Error fetching with proxy {proxy.get('http')}: {e}")
                     return []
 
             def update_markdown_file(filename, blog_info, start_marker, end_marker):
                 if not os.path.exists(filename):
-                    print(f"File {filename} does not exist.")
+                    print(f"File {filename} not found.")
                     return
                 with open(filename, 'r', encoding='utf-8') as f:
-                    file_content = f.read()
-                start_index = file_content.find(start_marker) + len(start_marker)
-                end_index = file_content.find(end_marker)
-                new_content = ""
-                for entry in blog_info:
-                    new_content += f"* [{entry['title']}]({entry['link']})\n"
-                updated_content = file_content[:start_index] + "\n" + new_content + file_content[end_index:]
+                    content = f.read()
+                start_idx = content.find(start_marker) + len(start_marker)
+                end_idx = content.find(end_marker)
+                new_section = "\n".join(f"* [{item['title']}]({item['link']})" for item in blog_info)
+                updated = content[:start_idx] + "\n" + new_section + "\n" + content[end_idx:]
                 with open(filename, 'w', encoding='utf-8') as f:
-                    f.write(updated_content)
-                print(f"Updated {filename} successfully!")
+                    f.write(updated)
+                print(f"Updated {filename}")
 
             def fetch_with_retry(feed_url, max_retries=5):
-                retries = 0
-                while retries < max_retries:
-                    blog_info = get_blog_info(feed_url)
-                    if blog_info:
-                        return blog_info
-                    print(f"Retrying {retries + 1}/{max_retries}...")
-                    retries += 1
-                    time.sleep(2 ** retries)
+                for i in range(max_retries):
+                    result = get_blog_info(feed_url)
+                    if result:
+                        return result
+                    print(f"Retry {i+1}/{max_retries}")
+                    time.sleep(2 ** i)
                 return []
 
             feed_url = "https://datacommons.substack.com/feed"
@@ -115,11 +109,9 @@ jobs:
 
             filename = "docs/substack_blogs.md"
             if blog_info:
-                start_marker = "<!-- START_MARKER -->"
-                end_marker = "<!-- END_MARKER -->"
-                update_markdown_file(filename, blog_info, start_marker, end_marker)
+                update_markdown_file(filename, blog_info, "<!-- START_MARKER -->", "<!-- END_MARKER -->")
             else:
-                print("Failed to fetch blog info after all retries.")
+                print("Failed to fetch blog info after retries.")
 
       - name: Debug file
         run: |
@@ -135,8 +127,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/substack_blogs.md
-          
-          # Check if any staged changes exist
+
+          # Commit if file changed
           if ! git diff --staged --quiet; then
             git commit -m "Update Substack blog links [$(date +%s)]"
           else
@@ -144,5 +136,5 @@ jobs:
             git add docs/substack_blogs.md
             git commit -m "Force update timestamp [$(date +%s)]"
           fi
-          
+
           git push origin master
