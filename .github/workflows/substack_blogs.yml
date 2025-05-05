@@ -361,20 +361,20 @@ jobs:
                 
                 print("===============================================")
                 
-                # Get blog info and update README.md
-                blog_info = get_blog_info(feed_data, 5)
+                # Get blog info and update docs/substack_blogs.md
+                blog_info = get_blog_info(feed_data, num_entries=None)
                 
-                # Update README.md
-                filename = "README.md"
-                start_marker = "<!-- START_MARKER -->"
-                end_marker = "<!-- END_MARKER -->"
+                # Define file path constants
+                REPO_FILE_PATH = "docs/substack_blogs.md"
+                START_MARKER = "<!-- START_MARKER -->"
+                END_MARKER = "<!-- END_MARKER -->"
                 
-                success = update_markdown_file(filename, blog_info, start_marker, end_marker)
+                success = update_markdown_file(REPO_FILE_PATH, blog_info, START_MARKER, END_MARKER)
                 
                 if success:
-                    print("README.md updated successfully with the latest blog posts!")
+                    print(f"{REPO_FILE_PATH} updated successfully with the latest blog posts!")
                 else:
-                    print("Failed to update README.md")
+                    print(f"Failed to update {REPO_FILE_PATH}")
             else:
                 print("No blog posts found or failed to fetch the feed.")
 
@@ -411,5 +411,5 @@ jobs:
           fi
           
           # Commit and push to master branch explicitly
-          git commit -m "Update Substack blog links in docs/substack_blogs.md [$(date +%s)]"
+          git commit -m "Updated Substack blogs"
           git push origin master
