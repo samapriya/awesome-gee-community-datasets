@@ -275,9 +275,18 @@ jobs:
                     end_marker: The marker indicating the end of the section to update.
                 """
                 try:
+                    # Validate inputs
+                    if not filename or not isinstance(filename, str):
+                        print(f"Invalid filename: '{filename}'")
+                        return False
+                        
+                    print(f"Attempting to update file: '{filename}'")
+                    
                     # Make sure the directory exists
                     import os
-                    os.makedirs(os.path.dirname(filename), exist_ok=True)
+                    dir_name = os.path.dirname(filename)
+                    if dir_name:  # Only try to create directory if there is one
+                        os.makedirs(dir_name, exist_ok=True)
                     
                     # Check if file exists, if not create it with initial content
                     if not os.path.exists(filename):
