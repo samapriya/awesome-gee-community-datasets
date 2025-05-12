@@ -26,7 +26,7 @@ You can read about the history and how this project started in the [Medium Post 
 
 <center>
 
-![logo_cropped](https://github.com/user-attachments/assets/1d86c7bb-3333-4227-80f8-b93d1a0875b8)
+![logo_cropped](https://picsur.spatialbytes.work/i/29fb0cf5-f506-46e0-9946-5b714b0f0436.jpg)
 
 </center>
 
