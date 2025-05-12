@@ -25,11 +25,7 @@ The awesome-gee-community-catalog is an **unfunded open source grassroots projec
 
 You can read about the history and how this project started in the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
 
-<center>
-
 ![logo_cropped](images/logo_cropped.jpg)
-
-</center>
 
 Community Datasets added by users and made available for use at large
 
