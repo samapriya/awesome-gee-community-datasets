@@ -6673,6 +6673,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/globpop.png"
   },
   {
+    "title": "POI-based Large-Scale Land Use Modeling Framework",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/POI-LANDUSE-FRAMEWORK",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ORNL/grid_3c",
+    "provider": "Fan et al, Oak Ridge National Laboratory",
+    "tags": "Land Use, POI, Geospatial Semantics, Deep Learning, Neural Network, Word Embedding, Semantic Granularity, Spatial Scale, Geographic Context",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/poi_lu/",
+    "thematic_group": "Global Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/poi_lu.png"
+  },
+  {
     "title": "Soil nematode abundance & functional group composition",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-NEMATODE-ABUNDANCE",
     "type": "table",
