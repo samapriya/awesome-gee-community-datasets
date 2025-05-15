@@ -61,6 +61,13 @@ var GAUL_2024_L2 = ee.FeatureCollection("projects/sat-io/open-datasets/FAO/GAUL/
 
 Sample Code:  https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GAUL-2024
 
+```js
+var GAUL_2024_L0 = ee.FeatureCollection("projects/sat-io/open-datasets/FAO/GAUL/GAUL_2024_L0");
+```
+
+!!! note
+    This layer is not officially distributed by FAO, it was built on top of the GAUL 2024 Subnational Level 1 (GAUL_2024_L1) dataset by dissolving the features included in the same country together. You can [find the tutorial here provided by Rambaud Pierrick](https://gee-community-catalog.org/tutorials/examples/gaul_aggregate/)
+
 #### License
 
 GAUL is available under the Creative Commons Attribution-4.0 International licence (CC BY 4.0). When using GAUL data, proper attribution must be given as follows: Some third-party data included in GAUL may have different terms of use. Users are responsible for checking and complying with any additional restrictions.

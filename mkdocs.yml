@@ -169,6 +169,7 @@ nav:
           - "Population & Socioeconomic":
               - High Resolution Settlement Layers: projects/hrsl.md
               - LandScan Population Data: projects/landscan.md
+              - GlobPOP Global Gridded Population Dataset: projects/globpop.md
               - POMELO Model Population Density Maps: projects/pomelo.md
               - POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2: projects/popcorn.md
               - Global Administrative Unit Layers (GAUL) 2024: projects/gaul.md
@@ -232,7 +233,7 @@ nav:
               - Daylight Map Distribution map data: projects/daylight_maps.md
               - GLANCE Global Landcover Training dataset: projects/glance_training.md
               - Global Land Cover Estimation (GLanCE): projects/glance.md
-              - Global Impervious Surface Area (1972-2019): projects/gisa.md
+              - Global Impervious Surface Area (1972-2021): projects/gisa.md
               - Global 30m Impervious-Surface Dynamic Dataset (GISD30): projects/gisd30.md
               - Global urban extents from 1870 to 2100: projects/gue.md
               - Global urban projections under SSPs (2020-2100): projects/urban_projection.md
@@ -487,6 +488,7 @@ nav:
       - Exploring Global 30m Land Cover Change: tutorials/examples/glc_fcs30d_lulc.md
       - Population Trends with Landscan: tutorials/examples/landscan_extracts.md
       - Exploring Dynamic Surface Water Extent (DSWE): tutorials/examples/dswe_landsat.md
+      - Creating Country-Level Boundaries from GAUL Dataset in Google Earth Engine: tutorials/examples/gaul_aggregate.md
     #   - Assessing Brazil's Biodiversity and Conservation Needs: tutorials/examples/conservation_priorities.md
     #   - Forest Loss and Cost Surface Analysis for Brazil's Tall Forests: tutorials/examples/tree_canopy.md
   - Changelog:

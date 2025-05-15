@@ -5077,6 +5077,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/veg_dry.png"
   },
   {
+    "title": "Global Administrative Unit Layers (GAUL) 2024 - Level 0",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GAUL-2024",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/FAO/GAUL/GAUL_2024_L0",
+    "provider": "Food and Agriculture Organization of the United Nations (FAO), Rambaud Pierrick",
+    "tags": "Administrative boundaries, Geospatial data, Subnational boundaries, FAO, Administrative units, International boundaries, Humanitarian data, SALB",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gaul",
+    "thematic_group": "Population & Socioeconomic",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gaul.png"
+  },
+  {
     "title": "Global Administrative Unit Layers (GAUL) 2024 - Level 1",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GAUL-2024",
     "type": "table",
@@ -6625,16 +6637,40 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/argo.png"
   },
   {
-    "title": "Global Impervious Surface Area (1972-2019)",
+    "title": "Global Impervious Surface Area (1972-2021)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-IMPERVIOUS-SURFACE-AREA",
     "type": "image_collection",
-    "id": "projects/sat-io/open-datasets/GISA_1972_2019",
+    "id": "projects/sat-io/open-datasets/GISA_1972_2021",
     "provider": "Xin Huang, Jiayi Li, Jie Yang, Zhen Zhang, Dongrui Li, & Xiaoping Liu",
     "tags": "Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/gisa/",
     "thematic_group": "Global Land Use and Land Cover",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/gisa.png"
+  },
+  {
+    "title": "GlobPOP Global Gridded Population Dataset Count",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBPOP-COUNT-DENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBPOP_COUNT",
+    "provider": "Liu et al, State Key Laboratory of Remote Sensing Science, Beijing Normal University",
+    "tags": "Population, Demographics, Census, Global, Time-series, Gridded Population, Sustainable Development, Population Count",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/globpop/",
+    "thematic_group": "Population & Socioeconomic",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/globpop.png"
+  },
+  {
+    "title": "GlobPOP Global Gridded Population Dataset Density",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBPOP-COUNT-DENSITY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GLOBPOP_DENSITY",
+    "provider": "Liu et al, State Key Laboratory of Remote Sensing Science, Beijing Normal University",
+    "tags": "Population, Demographics, Census, Global, Time-series, Gridded Population, Sustainable Development, Population Count",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/globpop/",
+    "thematic_group": "Population & Socioeconomic",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/globpop.png"
   },
   {
     "title": "Soil nematode abundance & functional group composition",
