@@ -99,7 +99,6 @@ extra:
     provider: google
     property: G-G7SXDJEWXV
 
-# Extensions
 markdown_extensions:
   - abbr
   - admonition
