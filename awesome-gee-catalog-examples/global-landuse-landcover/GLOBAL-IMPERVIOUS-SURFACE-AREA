@@ -1,9 +1,151 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var gisa = ee.ImageCollection("projects/sat-io/open-datasets/GISA_1972_2019");
+var gisa = ee.Image("projects/sat-io/open-datasets/GISA_1972_2021");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
-// Load packages for basemap
-var style = require('users/gena/packages:style')
+//Zoom to an area with varied development (Bangalore in this case)
+Map.setCenter(77.5948, 12.9713,11)
 
-Map.addLayer(gisa.mosaic(),{},'GISA 1972-2019')
+var palette = [
+  '#d4f1f9', '#a9dce3', '#7fc7cd', '#55b3b6', // 1970s (light blue)
+  '#2b9eb0', '#0089a9', '#0073a2', '#005d9a', // 1980s (medium blue)
+  '#004892', '#003489', '#002080', '#010c77', // 1990s (dark blue to purple)
+  '#2a006e', '#540064', '#7f005a', '#a80050', // 2000s (purple to magenta)
+  '#d10046', '#f9003c', '#ff2932', '#ff5328', // 2010s (magenta to orange)
+  '#ff7e1e', '#ffa914', '#ffd40a', '#ffff00'  // Most recent (yellow)
+];
 
-style.SetMapStyleGrey()
+// Load style package for basemap
+var style = require('users/gena/packages:style');
+
+// Add the main impervious layer with improved visualization
+Map.addLayer(
+  gisa.mask(gisa.gt(0)), 
+  {min: 1, max: 39, palette: palette},
+  'GISA 1972-2021'
+);
+
+// Create a legend showing the years
+// Function to create a panel with a legend
+var createLegend = function() {
+  var legend = ui.Panel({
+    style: {
+      position: 'bottom-left',
+      padding: '8px 15px'
+    }
+  });
+  
+  var title = ui.Label({
+    value: 'Impervious Surface Development Year',
+    style: {fontWeight: 'bold', fontSize: '16px', margin: '0 0 4px 0', padding: '0'}
+  });
+  legend.add(title);
+  
+  // Create color blocks for legend
+  var makeRow = function(year, color) {
+    var colorBox = ui.Label({
+      style: {
+        backgroundColor: color,
+        padding: '8px',
+        margin: '0 0 4px 0'
+      }
+    });
+    
+    var description = ui.Label({
+      value: year.toString(),
+      style: {margin: '0 0 4px 6px'}
+    });
+    
+    return ui.Panel({
+      widgets: [colorBox, description],
+      layout: ui.Panel.Layout.Flow('horizontal')
+    });
+  };
+  
+  // Add color blocks to the legend
+  var years = [1972, 1980, 1990, 2000, 2010, 2021];
+  var legendColors = ['#d4f1f9', '#0089a9', '#010c77', '#7f005a', '#ff2932', '#ffff00'];
+  
+  for (var i = 0; i < years.length; i++) {
+    legend.add(makeRow(years[i], legendColors[i]));
+  }
+  
+  return legend;
+};
+
+// Add legend to the map
+Map.add(createLegend());
+
+// Add a title
+var title = ui.Label('Global Impervious Surface Development (1972-2021)', {
+  position: 'top-center',
+  fontSize: '20px',
+  fontWeight: 'bold',
+  backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  padding: '5px'
+});
+Map.add(title);
+
+// Set basemap style
+style.SetMapStyleGrey();
+
+// Add a layer selector
+var layers = ui.Map.Layer(gisa.mask(gisa.gt(0)), 
+  {min: 1, max: 39, palette: palette}, 
+  'GISA 1972-2021');
+
+// Add a checkbox to toggle only recent development (past 10 years)
+var recentCheckbox = ui.Checkbox({
+  label: 'Show only recent development (2010-2021)',
+  onChange: function(checked) {
+    if (checked) {
+      Map.layers().reset();
+      Map.addLayer(
+        gisa.mask(gisa.gte(29)), // Years 29-39 correspond to 2010-2021
+        {min: 29, max: 39, palette: palette.slice(-10)},
+        'Recent Development (2010-2021)'
+      );
+      style.SetMapStyleGrey();
+    } else {
+      Map.layers().reset();
+      Map.addLayer(
+        gisa.mask(gisa.gt(0)), 
+        {min: 1, max: 39, palette: palette},
+        'GISA 1972-2021'
+      );
+      style.SetMapStyleGrey();
+    }
+  }
+});
+
+// Add the checkbox to a control panel
+var controlPanel = ui.Panel({
+  widgets: [recentCheckbox],
+  style: {position: 'top-right'}
+});
+Map.add(controlPanel);
+
+// Optional: Add a time slider to visualize change over time
+var yearSlider = ui.Slider({
+  min: 1972, 
+  max: 2021, 
+  value: 2021, 
+  step: 1,
+  onChange: function(value) {
+    var yearIndex = Math.floor(value) - 1972 + 1;
+    Map.layers().reset();
+    Map.addLayer(
+      gisa.mask(gisa.lte(yearIndex)), 
+      {min: 1, max: 39, palette: palette},
+      'GISA until ' + Math.floor(value)
+    );
+    style.SetMapStyleGrey();
+  },
+  style: {width: '300px'}
+});
+
+var sliderLabel = ui.Label('View impervious surface until year:');
+var sliderPanel = ui.Panel({
+  widgets: [sliderLabel, yearSlider],
+  layout: ui.Panel.Layout.Flow('vertical'),
+  style: {position: 'bottom-right'}
+});
+Map.add(sliderPanel);

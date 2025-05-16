@@ -1,0 +1,759 @@
+// Define the collections
+var popDensityCollection = ee.ImageCollection("projects/sat-io/open-datasets/GLOBPOP_DENSITY");
+var popCountCollection = ee.ImageCollection("projects/sat-io/open-datasets/GLOBPOP_COUNT");
+
+// Use GAUL Level 0 for countries
+var countries = ee.FeatureCollection("projects/sat-io/open-datasets/FAO/GAUL/GAUL_2024_L0");
+
+// Available years (update based on actual data availability)
+var years = [1990, 2000, 2010, 2020];
+var startYear = 1990;
+var endYear = 2020;
+
+// Initialize the map
+Map.setOptions('HYBRID');
+Map.setCenter(10, 20, 3); // Center on a good global view
+
+// Define color palettes
+// Define the viridis9 color palette for population density
+var viridis9 = '#440154,#472d7b,#3b528b,#2c718e,#21908d,#27ad81,#5cc863,#a8db34,#fbe723';
+// Define color palette for population count (as requested)
+var countPalette = ['ffffcc', 'ffeda0', 'fed976', 'feb24c', 'fd8d3c', 'fc4e2a', 'e31a1c', 'b10026'];
+// Define color palette for change visualization - diverging palette for better representing increases/decreases
+var changePalette = ['d7191c', 'fdae61', 'ffffbf', 'a6d96a', '1a9641'];
+
+// Function to create a styled visualization for population density
+function createDensityViz(year) {
+  var yearStr = year.toString();
+  var densityImage = popDensityCollection
+    .filter(ee.Filter.stringContains('system:index', yearStr))
+    .first();
+  
+  return densityImage.updateMask(densityImage.gte(0))
+    .visualize({
+      min: 0,
+      max: 750, // As specified
+      palette: viridis9.split(',')
+    });
+}
+
+// Function to create a styled visualization for population count
+function createCountViz(year) {
+  var yearStr = year.toString();
+  var countImage = popCountCollection
+    .filter(ee.Filter.stringContains('system:index', yearStr))
+    .first();
+  
+  return countImage.updateMask(countImage.gte(0))
+    .visualize({
+      min: 0,
+      max: 100000, // People per grid cell
+      palette: countPalette
+    });
+}
+
+// Create UI panel - Position it on the right side with smaller size
+var panel = ui.Panel({
+  style: {
+    width: '280px', // Reduced width
+    padding: '8px', // Reduced padding
+    position: 'top-right'
+  }
+});
+
+// Add title with smaller font
+panel.add(ui.Label({
+  value: 'GLOBPOP Explorer (1990-2020)',
+  style: {
+    fontSize: '16px', // Smaller font
+    fontWeight: 'bold',
+    margin: '8px 3px' // Reduced margin
+  }
+}));
+
+// Description with smaller font
+panel.add(ui.Label({
+  value: 'Global population density and count data.',
+  style: {
+    fontSize: '12px', // Smaller font
+    margin: '0 3px 8px 3px' // Reduced margin
+  }
+}));
+
+// Create a panel for layer selection
+var layerPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {margin: '0 0 8px 0'} // Reduced margin
+});
+
+// Layer selection - Data type
+var layerSelect = ui.Select({
+  items: [
+    {label: 'Population Density (people/km²)', value: 'density'},
+    {label: 'Population Count', value: 'count'}
+  ],
+  value: 'density',
+  onChange: updateMap,
+  style: {stretch: 'horizontal', fontSize: '12px'} // Added smaller font
+});
+
+layerPanel.add(ui.Label('Display:', {margin: '4px 8px 0 3px', fontSize: '12px'})); // Smaller font and margins
+layerPanel.add(layerSelect);
+panel.add(layerPanel);
+
+// Year slider
+var yearSlider = ui.Slider({
+  min: startYear,
+  max: endYear,
+  step: 10,
+  value: 2010,
+  style: {stretch: 'horizontal', margin: '8px 3px'}, // Reduced margin
+  onChange: function(value) {
+    yearLabel.setValue('Year: ' + value);
+    updateMap();
+  }
+});
+
+var yearLabel = ui.Label('Year: 2010', {margin: '4px 3px', fontSize: '12px'}); // Smaller font and margin
+panel.add(yearLabel);
+panel.add(yearSlider);
+
+// Comparison mode checkbox
+var compareCheckbox = ui.Checkbox({
+  label: 'Compare with previous year',
+  value: false,
+  onChange: function(checked) {
+    // Show/hide the compare year slider based on checkbox status
+    compareYearPanel.style().set('shown', checked);
+    updateMap();
+  },
+  style: {fontSize: '12px'} // Smaller font
+});
+panel.add(compareCheckbox);
+
+// Create a simple panel just for the compare year slider (hidden by default)
+var compareYearPanel = ui.Panel({
+  style: {shown: false, margin: '8px 3px'} // Reduced margin
+});
+
+var compareYearSlider = ui.Slider({
+  min: startYear,
+  max: endYear,
+  step: 10,
+  value: 1990,
+  style: {stretch: 'horizontal'},
+  onChange: function(value) {
+    compareYearLabel.setValue('Compare with year: ' + value);
+    updateMap();
+  }
+});
+
+var compareYearLabel = ui.Label('Compare with year: 1990', {margin: '4px 0', fontSize: '12px'}); // Smaller font
+compareYearPanel.add(compareYearLabel);
+compareYearPanel.add(compareYearSlider);
+panel.add(compareYearPanel);
+
+// Add country selector label
+panel.add(ui.Label('Select a country:', {margin: '8px 3px 4px 3px', fontSize: '12px'})); // Smaller font and margin
+
+// Create a separate panel just for the country selector (to prevent it from being cut off)
+var countrySelectPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: {
+    margin: '0',
+    padding: '0',
+    maxHeight: '200px', // Limit height
+    width: '100%'
+  }
+});
+panel.add(countrySelectPanel);
+
+// Add country selector with predefined list
+var countrySelect = ui.Select({
+  placeholder: 'Select a country for analysis',
+  onChange: function(country) {
+    if (country) {
+      focusOnCountry(country);
+    }
+  },
+  style: {
+    stretch: 'horizontal',
+    fontSize: '12px', // Smaller font
+    margin: '0'
+  }
+});
+
+// Define a loading label while country list is being generated
+var countryLoadingLabel = ui.Label('Loading countries...', {margin: '3px 0', color: '#888', fontSize: '12px'}); // Smaller font
+countrySelectPanel.add(countryLoadingLabel);
+
+// Get countries list using direct histogram approach
+// Create a dictionary of country names
+var countryDict = countries.aggregate_histogram('gaul0_name');
+
+// Convert dictionary to array and add to dropdown
+countryDict.evaluate(function(dict) {
+  // Remove the loading label
+  countrySelectPanel.remove(countryLoadingLabel);
+  
+  // Create country items from the dictionary keys
+  var countryItems = [];
+  for (var name in dict) {
+    if (name && name.length > 0) {
+      countryItems.push({label: name, value: name});
+    }
+  }
+  
+  // Sort alphabetically
+  countryItems.sort(function(a, b) {
+    return a.label.localeCompare(b.label);
+  });
+  
+  // Add to dropdown
+  countrySelect.items().reset(countryItems);
+  countrySelectPanel.add(countrySelect);
+});
+
+// Results panel with limited height
+var resultsPanel = ui.Panel({
+  style: {
+    shown: false,
+    margin: '8px 3px', // Reduced margin
+    padding: '4px',
+    maxHeight: '300px' // Limit height
+  }
+});
+
+panel.add(resultsPanel);
+
+// Legend
+var legendPanel = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '6px 10px', // Reduced padding
+    backgroundColor: '#f8f8f8'
+  }
+});
+
+function updateLegend(type) {
+  legendPanel.clear();
+  
+  var title = type === 'density' ? 'Population Density (people/km²)' : 
+              type === 'count' ? 'Population Count' : 'Population Change';
+  
+  var palette = type === 'density' ? viridis9.split(',') : 
+               type === 'count' ? countPalette : changePalette;
+  
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '12px', // Smaller font
+      margin: '0 0 4px 0',
+      padding: '0',
+      backgroundColor: '#f8f8f8'
+    }
+  });
+  legendPanel.add(legendTitle);
+  
+  var maxValue, minValue, midValue;
+  if (type === 'density') {
+    maxValue = '750';
+    minValue = '0';
+  } else if (type === 'count') {
+    maxValue = '100,000';
+    minValue = '0';
+  } else {
+    // For change visualization, show negative, zero, and positive values
+    maxValue = 'Increase';
+    minValue = 'Decrease';
+    midValue = 'No Change';
+  }
+  
+  // Create gradient
+  var legend = ui.Panel({
+    style: {
+      padding: '0px 6px',
+      position: 'bottom-left'
+    }
+  });
+  
+  var gradient = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '180x8', // Smaller dimensions
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: palette,
+      backgroundColor: '#f8f8f8'
+    },
+    style: {stretch: 'horizontal', margin: '0px 6px'}
+  });
+  
+  var legendLabelsPanel = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {stretch: 'horizontal', margin: '0', fontSize: '10px'} // Smaller font
+  });
+  
+  legendLabelsPanel.add(ui.Label(minValue, {margin: '0', fontSize: '10px'})); // Smaller font
+  
+  // Add middle label for change visualization
+  if (type === 'change') {
+    // Add middle label for "No Change"
+    legendLabelsPanel.add(ui.Label(midValue, {
+      margin: '0', 
+      textAlign: 'center', 
+      stretch: 'horizontal',
+      fontSize: '10px'
+    }));
+  }
+  
+  legendLabelsPanel.add(ui.Label(maxValue, {
+    margin: '0', 
+    textAlign: 'right', 
+    stretch: 'horizontal', 
+    fontSize: '10px'
+  }));
+  
+  legend.add(gradient);
+  legend.add(legendLabelsPanel);
+  legendPanel.add(legend);
+}
+
+// Map layers
+var primaryLayer, secondaryLayer, changeLayer;
+var countryOutlineLayer;
+var selectedCountryGeometry = null;
+
+// Main function to update the map based on UI settings
+function updateMap() {
+  // Only reset data layers, keep boundary layer if exists
+  var numLayers = Map.layers().length();
+  for (var i = numLayers - 1; i >= 0; i--) {
+    if (i !== 0 || !countryOutlineLayer) { // Don't remove the country outline if it exists
+      Map.layers().remove(Map.layers().get(i));
+    }
+  }
+  
+  var currentYear = yearSlider.getValue();
+  var layerType = layerSelect.getValue();
+  var isCompareMode = compareCheckbox.getValue();
+  
+  // Clear previous layers
+  if (primaryLayer) { primaryLayer = null; }
+  if (secondaryLayer) { secondaryLayer = null; }
+  if (changeLayer) { changeLayer = null; }
+  
+  if (isCompareMode) {
+    var compareYear = compareYearSlider.getValue();
+    
+    if (layerType === 'density') {
+      var currentDensity = popDensityCollection
+        .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+        .first();
+      
+      var pastDensity = popDensityCollection
+        .filter(ee.Filter.stringContains('system:index', compareYear.toString()))
+        .first();
+      
+      // Create a simple absolute difference layer
+      changeLayer = currentDensity.subtract(pastDensity)
+        .updateMask(currentDensity.gt(0).and(pastDensity.gt(0)));
+      
+      // Improved visualization of change - using symmetric palette around zero
+      var changeViz = changeLayer.visualize({
+        min: -500,
+        max: 500,
+        palette: changePalette
+      });
+      
+      Map.addLayer(changeViz, {}, 'Population Density Change ' + compareYear + ' to ' + currentYear);
+      updateLegend('change');
+      
+      // If a country is selected, update the analysis
+      if (selectedCountryGeometry) {
+        analyzeCountry(selectedCountryGeometry);
+      }
+      
+    } else {
+      var currentCount = popCountCollection
+        .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+        .first();
+      
+      var pastCount = popCountCollection
+        .filter(ee.Filter.stringContains('system:index', compareYear.toString()))
+        .first();
+      
+      // Create a simple absolute difference layer
+      changeLayer = currentCount.subtract(pastCount)
+        .updateMask(currentCount.gt(0).and(pastCount.gt(0)));
+      
+      // Improved visualization for count change
+      var changeViz = changeLayer.visualize({
+        min: -50000,
+        max: 50000,
+        palette: changePalette
+      });
+      
+      Map.addLayer(changeViz, {}, 'Population Count Change ' + compareYear + ' to ' + currentYear);
+      updateLegend('change');
+      
+      // If a country is selected, update the analysis
+      if (selectedCountryGeometry) {
+        analyzeCountry(selectedCountryGeometry);
+      }
+    }
+    
+  } else {
+    if (layerType === 'density') {
+      primaryLayer = createDensityViz(currentYear);
+      Map.addLayer(primaryLayer, {}, 'Population Density ' + currentYear);
+      updateLegend('density');
+      
+      // If a country is selected, update the analysis
+      if (selectedCountryGeometry) {
+        analyzeCountry(selectedCountryGeometry);
+      }
+    } else {
+      primaryLayer = createCountViz(currentYear);
+      Map.addLayer(primaryLayer, {}, 'Population Count ' + currentYear);
+      updateLegend('count');
+      
+      // If a country is selected, update the analysis
+      if (selectedCountryGeometry) {
+        analyzeCountry(selectedCountryGeometry);
+      }
+    }
+  }
+}
+
+// Function to focus on a specific country using GAUL dataset
+function focusOnCountry(countryName) {
+  var selectedCountry = countries.filter(ee.Filter.eq('gaul0_name', countryName));
+  
+  // Remove existing country outline if any
+  if (countryOutlineLayer) {
+    Map.layers().remove(Map.layers().get(0));
+    countryOutlineLayer = false;
+  }
+  
+  // Add new country outline
+  Map.layers().set(0, ui.Map.Layer(selectedCountry.style({
+    color: 'FF0000',
+    fillColor: '00000000', // Transparent fill
+    width: 2
+  }), {}, 'Country Boundary - ' + countryName));
+  
+  countryOutlineLayer = true;
+  
+  // Store the selected country geometry for analysis
+  selectedCountryGeometry = selectedCountry;
+  
+  // Center map on country
+  Map.centerObject(selectedCountry, 5);
+  
+  // Update the map
+  updateMap();
+  
+  // Analyze the country immediately
+  analyzeCountry(selectedCountry);
+}
+
+// Function to analyze a selected country
+function analyzeCountry(countryGeometry) {
+  resultsPanel.clear();
+  resultsPanel.style().set('shown', true);
+  
+  var loadingLabel = ui.Label('Analyzing country... Please wait', {margin: '3px 0', fontSize: '12px'}); // Smaller font
+  resultsPanel.add(loadingLabel);
+  
+  var currentYear = yearSlider.getValue();
+  var layerType = layerSelect.getValue();
+  var isCompareMode = compareCheckbox.getValue();
+  
+  // Create charts based on the available years
+  var yearList = ee.List(years);
+  
+  if (layerType === 'density') {
+    // Analyze density over time
+    var densityData = yearList.map(function(year) {
+      var yearStr = ee.Number(year).format();
+      var image = popDensityCollection
+        .filter(ee.Filter.stringContains('system:index', yearStr))
+        .first();
+      
+      var meanDensity = image.reduceRegion({
+        reducer: ee.Reducer.mean(),
+        geometry: countryGeometry,
+        scale: 1000,
+        maxPixels: 1e9
+      });
+      
+      return ee.Feature(null, {
+        'year': year,
+        'density': meanDensity.values().get(0)
+      });
+    });
+    
+    var chart = ui.Chart.feature.byFeature(ee.FeatureCollection(densityData), 'year', ['density'])
+      .setChartType('LineChart')
+      .setOptions({
+        title: 'Average Population Density Over Time',
+        titleTextStyle: {fontSize: 14},
+        vAxis: {title: 'People per sq km', titleTextStyle: {fontSize: 12}},
+        hAxis: {title: 'Year', format: '####', titleTextStyle: {fontSize: 12}},
+        pointSize: 5,
+        lineWidth: 3,
+        series: {0: {color: '#21908d'}}, // Using a color from the viridis palette
+        legend: {textStyle: {fontSize: 10}},
+        fontSize: 10 // Smaller font for chart
+      });
+    
+    resultsPanel.clear();
+    resultsPanel.add(chart);
+    
+  } else {
+    // Analyze population count over time
+    var countData = yearList.map(function(year) {
+      var yearStr = ee.Number(year).format();
+      var image = popCountCollection
+        .filter(ee.Filter.stringContains('system:index', yearStr))
+        .first();
+      
+      var totalPop = image.reduceRegion({
+        reducer: ee.Reducer.sum(),
+        geometry: countryGeometry,
+        scale: 1000,
+        maxPixels: 1e9
+      });
+      
+      return ee.Feature(null, {
+        'year': year,
+        'population': totalPop.values().get(0)
+      });
+    });
+    
+    var chart = ui.Chart.feature.byFeature(ee.FeatureCollection(countData), 'year', ['population'])
+      .setChartType('LineChart')
+      .setOptions({
+        title: 'Total Population Over Time',
+        titleTextStyle: {fontSize: 14},
+        vAxis: {title: 'Population', titleTextStyle: {fontSize: 12}},
+        hAxis: {title: 'Year', format: '####', titleTextStyle: {fontSize: 12}},
+        pointSize: 5,
+        lineWidth: 3,
+        series: {0: {color: '#e31a1c'}}, // Using a color from the countPalette
+        legend: {textStyle: {fontSize: 10}},
+        fontSize: 10 // Smaller font for chart
+      });
+    
+    resultsPanel.clear();
+    resultsPanel.add(chart);
+  }
+  
+  // Add summary statistics for current year
+  var currentYearData;
+  if (layerType === 'density') {
+    currentYearData = popDensityCollection
+      .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+      .first();
+  } else {
+    currentYearData = popCountCollection
+      .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+      .first();
+  }
+  
+  var stats = currentYearData.reduceRegion({
+    reducer: ee.Reducer.mean().combine({
+      reducer2: ee.Reducer.max(),
+      sharedInputs: true
+    }).combine({
+      reducer2: ee.Reducer.min(),
+      sharedInputs: true
+    }),
+    geometry: countryGeometry,
+    scale: 1000,
+    maxPixels: 1e9
+  });
+  
+  stats.evaluate(function(results) {
+    if (results) {
+      var statsPanel = ui.Panel({
+        style: {
+          margin: '8px 0',
+          padding: '6px',
+          border: '1px solid #ddd',
+          backgroundColor: '#f8f8f8'
+        }
+      });
+      
+      var title = layerType === 'density' ? 'Population Density Statistics (' + currentYear + ')' :
+                 'Population Count Statistics (' + currentYear + ')';
+      
+      statsPanel.add(ui.Label(title, {fontWeight: 'bold', fontSize: '12px'})); // Smaller font
+      
+      // Get the first property name since we don't know what the exact band name is
+      var propName = Object.keys(results)[0].replace('_mean', ''); 
+      var meanVal = results[propName + '_mean'];
+      var maxVal = results[propName + '_max'];
+      var minVal = results[propName + '_min'];
+      
+      if (meanVal !== null && !isNaN(meanVal)) {
+        statsPanel.add(ui.Label('Mean: ' + meanVal.toFixed(2), {fontSize: '11px'})); // Smaller font
+      }
+      
+      if (maxVal !== null && !isNaN(maxVal)) {
+        statsPanel.add(ui.Label('Maximum: ' + maxVal.toFixed(2), {fontSize: '11px'})); // Smaller font
+      }
+      
+      if (minVal !== null && !isNaN(minVal)) {
+        statsPanel.add(ui.Label('Minimum: ' + minVal.toFixed(2), {fontSize: '11px'})); // Smaller font
+      }
+      
+      resultsPanel.add(statsPanel);
+    }
+  });
+  
+  // If in compare mode, add change statistics
+  if (isCompareMode) {
+    var compareYear = compareYearSlider.getValue();
+    
+    // Additional analysis for change mode
+    var yearDiff = Math.abs(currentYear - compareYear);
+    
+    var changeStatsLabel = ui.Label('Change Statistics (' + compareYear + ' to ' + currentYear + ')', 
+      {fontWeight: 'bold', fontSize: '12px', margin: '8px 0 4px 0'}); // Smaller font
+    
+    // This will be populated after the stats calculation
+    var changeStatsPanel = ui.Panel({
+      style: {
+        margin: '4px 0',
+        padding: '6px',
+        border: '1px solid #ddd',
+        backgroundColor: '#f8f8f8'
+      }
+    });
+    
+    resultsPanel.add(changeStatsLabel);
+    resultsPanel.add(changeStatsPanel);
+    
+    // Calculate change statistics based on layer type
+    if (layerType === 'density') {
+      var currentDensity = popDensityCollection
+        .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+        .first();
+      
+      var pastDensity = popDensityCollection
+        .filter(ee.Filter.stringContains('system:index', compareYear.toString()))
+        .first();
+      
+      // Calculate change
+      var densityChange = currentDensity.subtract(pastDensity);
+      
+      // Calculate stats for the change
+      var changeStats = densityChange.reduceRegion({
+        reducer: ee.Reducer.mean().combine({
+          reducer2: ee.Reducer.max(),
+          sharedInputs: true
+        }).combine({
+          reducer2: ee.Reducer.min(),
+          sharedInputs: true
+        }),
+        geometry: countryGeometry,
+        scale: 1000,
+        maxPixels: 1e9
+      });
+      
+      changeStats.evaluate(function(results) {
+        if (results) {
+          // Get the first property name
+          var propName = Object.keys(results)[0].replace('_mean', ''); 
+          var meanChange = results[propName + '_mean'];
+          var maxChange = results[propName + '_max'];
+          var minChange = results[propName + '_min'];
+          
+          if (meanChange !== null && !isNaN(meanChange)) {
+            var changeDirection = meanChange > 0 ? 'Increase' : meanChange < 0 ? 'Decrease' : 'No Change';
+            var annualRate = (meanChange / yearDiff).toFixed(2);
+            
+            changeStatsPanel.add(ui.Label('Average Change: ' + meanChange.toFixed(2) + ' people/km² (' + changeDirection + ')', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Approx. Annual Rate: ' + annualRate + ' people/km²/year', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Max Increase: ' + maxChange.toFixed(2) + ' people/km²', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Max Decrease: ' + minChange.toFixed(2) + ' people/km²', 
+              {fontSize: '11px'}));
+          }
+        }
+      });
+      
+    } else {
+      // Population count change statistics
+      var currentCount = popCountCollection
+        .filter(ee.Filter.stringContains('system:index', currentYear.toString()))
+        .first();
+      
+      var pastCount = popCountCollection
+        .filter(ee.Filter.stringContains('system:index', compareYear.toString()))
+        .first();
+      
+      // Calculate change
+      var countChange = currentCount.subtract(pastCount);
+      
+      // Calculate stats for the change
+      var changeStats = countChange.reduceRegion({
+        reducer: ee.Reducer.sum().combine({
+          reducer2: ee.Reducer.max(),
+          sharedInputs: true
+        }).combine({
+          reducer2: ee.Reducer.min(),
+          sharedInputs: true
+        }),
+        geometry: countryGeometry,
+        scale: 1000,
+        maxPixels: 1e9
+      });
+      
+      changeStats.evaluate(function(results) {
+        if (results) {
+          // Get the first property name
+          var propName = Object.keys(results)[0].replace('_sum', ''); 
+          var totalChange = results[propName + '_sum'];
+          var maxChange = results[propName + '_max'];
+          var minChange = results[propName + '_min'];
+          
+          if (totalChange !== null && !isNaN(totalChange)) {
+            var changeDirection = totalChange > 0 ? 'Increase' : totalChange < 0 ? 'Decrease' : 'No Change';
+            var annualRate = (totalChange / yearDiff).toFixed(0);
+            
+            changeStatsPanel.add(ui.Label('Total Change: ' + totalChange.toFixed(0) + ' people (' + changeDirection + ')', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Approx. Annual Rate: ' + annualRate + ' people/year', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Max Cell Increase: ' + maxChange.toFixed(0) + ' people', 
+              {fontSize: '11px'}));
+            changeStatsPanel.add(ui.Label('Max Cell Decrease: ' + minChange.toFixed(0) + ' people', 
+              {fontSize: '11px'}));
+          }
+        }
+      });
+    }
+  }
+}
+
+// Add the panels to the map
+Map.add(panel);
+Map.add(legendPanel);
+
+// Initialize the map
+updateMap();
+
+// Add information about the dataset (smaller font)
+var infoLabel = ui.Label(
+  'Data source: GLOBPOP_DENSITY & GLOBPOP_COUNT', 
+  {fontSize: '9px', margin: '12px 3px 0 3px'}
+);
+panel.add(infoLabel);

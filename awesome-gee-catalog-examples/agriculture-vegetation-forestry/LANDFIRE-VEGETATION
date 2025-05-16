@@ -1,7 +1,7 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVC"),
-    evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVH"),
-    evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVT");
+var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION/EVC"),
+    evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION/EVH"),
+    evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/VEGETATION/EVT");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 //Import palette
 var palettes = require('users/gena/packages:palettes');

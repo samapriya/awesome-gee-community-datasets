@@ -1,12 +1,12 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ELEV"),
-    aspect = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ASP"),
-    slope_degrees = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SLP"),
-    slope_perc_rise = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SlpP");
+var asp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/ASP"),
+    elev = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/ELEV"),
+    slpd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/SLPD"),
+    slpp = ee.ImageCollection("projects/sat-io/open-datasets/landfire/TOPOGRAPHY/SLPP");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 //Import palette
 var palettes = require('users/gena/packages:palettes')
 
 // Topographic
-Map.addLayer(elevation.mosaic().mask(elevation.mosaic().neq(32767)),{'min':2,'max':3500,palette: palettes.cmocean.Amp[7]},'Elevation')
-Map.addLayer(aspect.mosaic().mask(aspect.mosaic().neq(32767)),{'min':2,'max':174,palette: palettes.cmocean.Haline[7]},'Aspect')
+Map.addLayer(elev.mosaic().mask(elev.mosaic().neq(32767)),{'min':2,'max':3500,palette: palettes.cmocean.Amp[7]},'Elevation')
+Map.addLayer(asp.mosaic().mask(asp.mosaic().neq(32767)),{'min':2,'max':174,palette: palettes.cmocean.Haline[7]},'Aspect')

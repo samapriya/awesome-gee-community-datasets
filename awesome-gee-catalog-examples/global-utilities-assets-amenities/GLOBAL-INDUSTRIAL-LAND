@@ -1,0 +1,251 @@
+/**
+ * Global Industrial Land Mapping (2017–2023)
+ * Full interactive tool with city/year selector and click-based time series.
+ */
+
+// Dataset path
+var DATASET_PATH = "projects/sat-io/open-datasets/industry";
+
+// Visualization parameters
+var industrialVis = {
+  min: 0,
+  max: 2,
+  palette: ['black', 'red', 'green']
+};
+
+// Load the collection
+var collection = ee.ImageCollection(DATASET_PATH);
+
+// UI Panels
+var mainPanel = ui.Panel({style: {width: '350px', padding: '10px'}});
+var statusPanel = ui.Panel();
+var cityInfoLabel = ui.Label('Select a city and year to view industrial land', {
+  margin: '5px 0 0 0', fontSize: '13px', color: 'gray'
+});
+var chartPanel = ui.Panel({style: {margin: '15px 0 0 0'}});
+chartPanel.add(ui.Label('Click anywhere on the map to view class changes over time.', {
+  fontWeight: 'bold',
+  fontSize: '14px',
+  margin: '0 0 8px 0'
+}));
+
+// City and year selectors
+var citySelect = ui.Select({placeholder: 'Loading city list...'});
+var yearSelect = ui.Select({
+  items: ['2017','2018','2019','2020','2021','2022','2023'],
+  placeholder: 'Select a year'
+});
+
+// Header
+mainPanel.add(ui.Label('Industrial Land Analysis (2017–2023)', {
+  fontWeight: 'bold', fontSize: '18px', margin: '0 0 10px 0'
+}));
+mainPanel.add(ui.Label(
+  '10m industrial land classification for 1,093 cities.\n' +
+  'Classes: 0 (non-built-up), 1 (industrial), 2 (non-industrial built-up)',
+  {margin: '0 0 15px 0'}
+));
+mainPanel.add(ui.Label('Dataset Citation:', {fontWeight: 'bold'}));
+mainPanel.add(ui.Label(
+  'Yoo, C., Zhou, Y., & Weng, Q. (2025). Mapping 10-m Industrial Lands ' +
+  'across 1000+ Global Large Cities, 2017–2023. Scientific Data, 12(278).',
+  {margin: '0 0 15px 0', fontSize: '12px'}
+));
+mainPanel.add(statusPanel);
+
+// City/year UI
+var cityPanel = ui.Panel({style: {margin: '15px 0 0 0'}});
+cityPanel.add(ui.Label('City & Year Selection:', {fontWeight: 'bold'}));
+cityPanel.add(ui.Label('Select a city:'));
+cityPanel.add(citySelect);
+cityPanel.add(ui.Label('Select a year:'));
+cityPanel.add(yearSelect);
+cityPanel.add(cityInfoLabel);
+mainPanel.add(cityPanel);
+
+// Update map when both dropdowns have values
+function updateMap() {
+  var cityIdStr = citySelect.getValue();
+  var yearStr = yearSelect.getValue();
+  if (!cityIdStr || !yearStr) return;
+
+  var year = parseInt(yearStr, 10);
+
+  var filtered = collection
+    .filter(ee.Filter.eq('city_id', cityIdStr))
+    .filter(ee.Filter.eq('year', year));
+
+  var label = 'City ID ' + cityIdStr + ' (' + year + ')';
+
+  filtered.size().evaluate(function(size) {
+    print('Filtered size for ' + label + ':', size);
+
+    if (size > 0) {
+      var image = filtered.first();
+
+      Map.layers().reset(); // Comment this out if you want to stack layers
+      Map.addLayer(image, industrialVis, label);
+      Map.centerObject(image, 10);
+
+      cityInfoLabel.setValue('✓ Loaded: ' + label);
+      cityInfoLabel.style().set('color', 'green');
+
+      image.get('system:index').evaluate(function(index) {
+        print('✓ Image ID:', index);
+      });
+    } else {
+      cityInfoLabel.setValue('⚠ No image found for ' + label);
+      cityInfoLabel.style().set('color', 'red');
+      print('⚠ No image found for', label);
+    }
+  });
+}
+
+citySelect.onChange(updateMap);
+yearSelect.onChange(updateMap);
+
+// Populate city list dynamically
+var cityDict = {};
+collection.aggregate_array('city_id').evaluate(function(ids) {
+  collection.aggregate_array('full_city_name').evaluate(function(names) {
+    if (!ids || !names || ids.length !== names.length) {
+      print('Error fetching city names.');
+      return;
+    }
+
+    var seen = {};
+    var items = [];
+
+    for (var i = 0; i < ids.length; i++) {
+      var id = ids[i].toString();
+      var name = names[i];
+      if (!seen[id]) {
+        seen[id] = true;
+        cityDict[id] = name;
+        items.push({
+          label: name.split(';')[0].trim() + ' (ID: ' + id + ')',
+          value: id
+        });
+      }
+    }
+
+    items.sort(function(a, b) {
+      return a.label.localeCompare(b.label);
+    });
+
+    citySelect.items().reset(items);
+    citySelect.setPlaceholder('Select a city');
+  });
+});
+
+// Dataset info panel
+var infoPanel = ui.Panel();
+infoPanel.add(ui.Label('Dataset Information:', {fontWeight: 'bold', margin: '15px 0 5px 0'}));
+[
+  '• 10m resolution land classification',
+  '• Covers 1,093 cities globally (2017–2023)',
+  '• Accuracy: ~92%',
+  '• CO₂ correlation: r = 0.72',
+  '• Classes: 0 (non-built-up), 1 (industrial), 2 (non-industrial built-up)'
+].forEach(function(item) {
+  infoPanel.add(ui.Label(item));
+});
+mainPanel.add(infoPanel);
+
+// Legend
+var legendPanel = ui.Panel({style: {margin: '15px 0 0 0'}});
+legendPanel.add(ui.Label('Legend:', {fontWeight: 'bold'}));
+[
+  {color: 'black', label: 'Non-built-up (0)'},
+  {color: 'red', label: 'Industrial (1)'},
+  {color: 'green', label: 'Non-industrial built-up (2)'}
+].forEach(function(item) {
+  var row = ui.Panel({layout: ui.Panel.Layout.Flow('horizontal')});
+  var colorBox = ui.Panel([], ui.Panel.Layout.Flow('horizontal'), {
+    backgroundColor: item.color,
+    padding: '8px',
+    margin: '0 5px 4px 0'
+  });
+  row.add(colorBox);
+  row.add(ui.Label(item.label));
+  legendPanel.add(row);
+});
+mainPanel.add(legendPanel);
+
+// Resources
+var resourcesPanel = ui.Panel({style: {margin: '15px 0 0 0'}});
+resourcesPanel.add(ui.Label('Further Resources:', {fontWeight: 'bold'}));
+resourcesPanel.add(ui.Label('DOI: 10.5281/zenodo.14832219'));
+resourcesPanel.add(ui.Label('GitHub: github.com/cheolheeyoo/Industriallandmapping'));
+mainPanel.add(resourcesPanel);
+
+// Chart display for clicked points
+mainPanel.add(chartPanel);
+
+// Add UI to screen
+ui.root.add(mainPanel);
+Map.setOptions('SATELLITE');
+Map.setCenter(0, 20, 2);
+
+// Print total image count
+collection.size().evaluate(function(count) {
+  print('Total number of images in dataset:', count);
+  if (count && count > 0) {
+    statusPanel.add(ui.Label('✓ Dataset available: ' + count + ' images', {color: 'green'}));
+  } else {
+    statusPanel.add(ui.Label('⚠ Dataset unavailable or empty', {color: 'red'}));
+  }
+});
+
+// Point click to extract class over time
+var years = [2017, 2018, 2019, 2020, 2021, 2022, 2023];
+
+Map.onClick(function(coords) {
+  chartPanel.clear();
+  chartPanel.add(ui.Label('Fetching data for point: ' + coords.lon.toFixed(4) + ', ' + coords.lat.toFixed(4)));
+
+  var point = ee.Geometry.Point(coords.lon, coords.lat);
+
+  var images = years.map(function(year) {
+    return collection
+      .filter(ee.Filter.eq('year', year))
+      .filterBounds(point)
+      .first()
+      .set('year', year);
+  });
+
+  var features = ee.FeatureCollection(images.map(function(img) {
+    return ee.Feature(point).set({
+      year: img.get('year'),
+      class: img.reduceRegion({
+        reducer: ee.Reducer.first(),
+        geometry: point,
+        scale: 10
+      }).values().get(0)
+    });
+  }));
+
+  var chart = ui.Chart.feature.byFeature({
+    features: features,
+    xProperty: 'year',
+    yProperties: ['class']
+  }).setChartType('LineChart')
+    .setOptions({
+      title: 'Land Classification Over Time',
+      hAxis: {title: 'Year'},
+      vAxis: {
+        title: 'Class',
+        ticks: [
+          {v: 0, f: 'Non-built-up (0)'},
+          {v: 1, f: 'Industrial (1)'},
+          {v: 2, f: 'Non-industrial built-up (2)'}
+        ]
+      },
+      lineWidth: 2,
+      pointSize: 5,
+      colors: ['#3366cc'],
+      legend: {position: 'none'}
+    });
+
+  chartPanel.add(chart);
+});

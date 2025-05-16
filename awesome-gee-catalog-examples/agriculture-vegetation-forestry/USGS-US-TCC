@@ -1,0 +1,193 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var enhancedTCC = ee.Image("projects/sat-io/open-datasets/USGS/EnhancedTCC2011");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Define a color palette for tree canopy percentage
+var tccPalette = [
+  '#FFFFFF', // 0% - white
+  '#EDF8E9', // Very light green
+  '#C7E9C0', 
+  '#A1D99B', 
+  '#74C476', 
+  '#41AB5D', 
+  '#238B45', 
+  '#006D2C', // Dark green
+  '#00441B'  // Very dark green - 100%
+];
+
+// Set visualization parameters
+var visParams = {
+  min: 0,
+  max: 100,
+  palette: tccPalette,
+  opacity: 0.9
+};
+
+// Add the UNMASKED dataset to the map - this is key for seeing all values
+// We'll handle NoData values (255) in the inspection itself, not in visualization
+Map.addLayer(enhancedTCC, visParams, 'Enhanced Urban Tree Canopy Cover');
+
+// Set map center to Washington DC area
+Map.setCenter(-77.0369, 38.9072, 10);
+
+// Create a panel to display the tree canopy percentage
+var panel = ui.Panel({
+  style: {
+    position: 'top-right',
+    padding: '8px 15px',
+    width: '300px'
+  }
+});
+
+// Add a title to the panel
+var panelTitle = ui.Label('Tree Canopy Cover Inspector', {
+  fontWeight: 'bold', 
+  fontSize: '16px', 
+  margin: '0 0 8px 0'
+});
+panel.add(panelTitle);
+
+// Add instructions
+var instructions = ui.Label('Click anywhere on the map to see the tree canopy percentage. Wait for value to Load', {
+  fontSize: '12px',
+  margin: '0 0 10px 0'
+});
+panel.add(instructions);
+
+// Create labels for displaying the clicked location and value
+var valueLabel = ui.Label('', {fontSize: '14px', margin: '5px 0'});
+var coordLabel = ui.Label('', {fontSize: '12px', margin: '5px 0'});
+panel.add(valueLabel);
+panel.add(coordLabel);
+
+// Add the panel to the map
+Map.add(panel);
+
+// Create a variable to store the current inspection point
+var inspectionPoint = null;
+
+// Handle map clicks - active immediately
+Map.onClick(function(coords) {
+  // Get the coordinates of the clicked point
+  var point = ee.Geometry.Point(coords.lon, coords.lat);
+  
+  // Remove previous inspection point if exists
+  if (inspectionPoint) {
+    Map.layers().remove(inspectionPoint);
+  }
+  
+  // Add a new point at the click location with a plus sign style
+  inspectionPoint = ui.Map.Layer(point, {
+    color: 'red',
+    pointSize: 6,
+    pointShape: 'cross'  // This creates a plus sign
+  }, 'Inspection Point');
+  
+  Map.layers().set(Map.layers().length(), inspectionPoint);
+  
+  // Try a different sampling approach
+  // Create a small buffer around the clicked point to ensure we capture data
+  var buffer = point.buffer(30);
+  
+  // Use reduceRegion instead of sample
+  var tccValue = enhancedTCC.reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: point,
+    scale: 30,
+    maxPixels: 1e9
+  });
+  
+  // Get the value
+  tccValue.evaluate(function(result) {
+    if (result && result.b1 !== null && result.b1 !== undefined) {
+      // Check if it's NoData (255)
+      if (result.b1 === 255) {
+        valueLabel.setValue('No data available at this point');
+      } else {
+        // Round to nearest whole number for display
+        var roundedValue = Math.round(result.b1);
+        valueLabel.setValue('Tree Canopy Cover: ' + roundedValue + '%');
+      }
+      
+      // Update coordinate display
+      coordLabel.setValue('Location: ' + coords.lon.toFixed(4) + ', ' + coords.lat.toFixed(4));
+    } else {
+      valueLabel.setValue('No data available at this point');
+      coordLabel.setValue('Location: ' + coords.lon.toFixed(4) + ', ' + coords.lat.toFixed(4));
+      
+      // Try a slightly different approach with a small buffer
+      enhancedTCC.reduceRegion({
+        reducer: ee.Reducer.mean(),
+        geometry: buffer,
+        scale: 30,
+        maxPixels: 1e9
+      }).evaluate(function(bufferResult) {
+        if (bufferResult && bufferResult.b1 !== null && bufferResult.b1 !== undefined && bufferResult.b1 !== 255) {
+          var roundedValue = Math.round(bufferResult.b1);
+          valueLabel.setValue('Tree Canopy Cover (area average): ' + roundedValue + '%');
+        }
+      });
+    }
+  });
+});
+
+// Add a title and label for the legend
+var title = ui.Label('Enhanced National-Scale Urban Tree Canopy Cover (2011)', 
+  {fontWeight: 'bold', fontSize: '16px', margin: '0 0 4px 0'});
+
+var subtitle = ui.Label('Values represent percent tree canopy cover (0-100%)', 
+  {fontSize: '13px', margin: '0 0 15px 0'});
+
+// Create a color bar for the legend
+var makeColorBar = function(palette) {
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '300x20',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: palette
+    },
+    style: {stretch: 'horizontal', margin: '0px 8px'}
+  });
+  return colorBar;
+};
+
+// Create a panel with a legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+// Create legend title and add the colorbar
+legend.add(title);
+legend.add(subtitle);
+legend.add(makeColorBar(tccPalette));
+
+// Add labels for the legend
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label('0%', {margin: '4px 0'}),
+    ui.Label('', {margin: '4px 20px'}),
+    ui.Label('50%', {margin: '4px 0', textAlign: 'center', stretch: 'horizontal'}),
+    ui.Label('', {margin: '4px 20px'}),
+    ui.Label('100%', {margin: '4px 0'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+legend.add(legendLabels);
+
+// Add the legend panel to the map
+Map.add(legend);
+
+// Add a source attribution label
+var source = ui.Label('Source: Corro et al. (2025) Enhanced national-scale urban tree canopy cover dataset', 
+  {fontSize: '10px', position: 'bottom-right', padding: '3px 8px'});
+Map.add(source);
+Map.setCenter(-99.0530,39.484,5)
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

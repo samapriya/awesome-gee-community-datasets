@@ -1,0 +1,11 @@
+var DEM = ee.ImageCollection("projects/sat-io/open-datasets/Tinitaly_DTM")
+print(DEM);
+
+var elevationVis = {
+  min: -30.0,
+  max: 1200.0,
+  palette: ["#317605","f5cf13","b45504","#ffffff"],
+};
+
+Map.setCenter(13.58, 42.386, 7); 
+Map.addLayer(DEM, elevationVis, 'Tinitaly 10m');

@@ -1,0 +1,107 @@
+// Access the POI-based land use modeling 3-class collection
+var landUse_3class = ee.ImageCollection("projects/sat-io/open-datasets/ORNL/grid_3c");
+
+// Visualization parameters for 3-class land use
+var landUseVis = {
+  bands: 'classification',
+  min: 10, 
+  max: 30, 
+  palette: ['#3eca76', '#cf6aa6', '#e6e5d8']
+  // Green (open space), Purple (residential), Light beige (non-residential)
+};
+
+// Initialize the map
+Map.setOptions('HYBRID');
+Map.setCenter(20, 10, 2); // Center on a global view
+
+// Create a mosaic of the land use data
+var landUseMosaic = landUse_3class.mosaic();
+
+// Add land use layer
+Map.addLayer(landUseMosaic, landUseVis, 'POI-based Land Use Classification');
+
+// Add legend with fully opaque background
+var legendPanel = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px',
+    backgroundColor: 'white', // Fully opaque white background
+    border: '1px solid #cccccc'
+  }
+});
+
+// Create legend
+var legendTitle = ui.Label({
+  value: 'Land Use Classes',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '14px',
+    margin: '0 0 4px 0'
+  }
+});
+legendPanel.add(legendTitle);
+
+// Create legend items
+var makeRow = function(color, name) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: color,
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var description = ui.Label({
+    value: name,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+
+legendPanel.add(makeRow('#3eca76', 'Open Space'));
+legendPanel.add(makeRow('#cf6aa6', 'Residential'));
+legendPanel.add(makeRow('#e6e5d8', 'Non-Residential'));
+
+// Add info panel with fully opaque background
+var infoPanel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px',
+    backgroundColor: 'white', // Fully opaque white background
+    width: '300px',
+    border: '1px solid #cccccc'
+  }
+});
+
+var infoTitle = ui.Label({
+  value: 'POI-based Land Use Model',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '14px',
+    margin: '0 0 4px 0'
+  }
+});
+
+var infoText = ui.Label({
+  value: 'This model classifies land use into three categories (residential, non-residential, and open space) ' +
+         'using Points of Interest (POI) data and neural network language models.',
+  style: {fontSize: '12px'}
+});
+
+var citation = ui.Label({
+  value: 'Source: Fan, J., & Thakur, G. (2023). Towards POI-based large-scale land use modeling: ' +
+         'spatial scale, semantic granularity, and geographic context. International Journal of Digital Earth, 16(1).',
+  style: {fontSize: '10px', fontStyle: 'italic', margin: '8px 0 0 0'}
+});
+
+infoPanel.add(infoTitle);
+infoPanel.add(infoText);
+infoPanel.add(citation);
+
+// Add panels to the map
+Map.add(legendPanel);
+Map.add(infoPanel);
