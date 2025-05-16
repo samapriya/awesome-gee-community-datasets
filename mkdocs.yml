@@ -283,6 +283,7 @@ nav:
               - GLOBathy (Global lakes bathymetry dataset): projects/globathy.md
               - High-Res water body dataset for tundra and boreal forests North America: projects/nawbd.md
               - Global River Width from Landsat (GRWL): projects/grwl.md
+              - TINITALY High-Resolution Digital Elevation Model of Italy: projects/tinitaly.md
               - GLOBGM v1.0 global-scale groundwater model: projects/globgm.md
               - Global Channel Belt (GCB): projects/gcb.md
               - Cyanobacteria Aggregated Manual Labels (CAML): projects/caml.md

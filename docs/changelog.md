@@ -3,6 +3,16 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-05-16
+- Added [TINITALY: High-Resolution Digital Elevation Model of Italy](https://gee-community-catalog.org/projects/tinitaly)
+- Added [GlobPOP Global Gridded Population Dataset 1990-2020](https://gee-community-catalog.org/projects/globpop)
+- Updated L0 dataset to [Global Administrative Unit Layers (GAUL) 2024](https://gee-community-catalog.org/projects/gaul)
+- Added tutorial [Exploring Dynamic Surface Water Extent (DSWE)](https://gee-community-catalog.org/tutorials/examples/dswe_landsat)
+- Added tutorial [Creating Country-Level Boundaries from GAUL Dataset in Google Earth Engine](https://gee-community-catalog.org/tutorials/examples/gaul_aggregate/)
+- Added [POI-based Large-Scale Land Use Modeling Framework](https://gee-community-catalog.org/projects/poi_lu)
+- Updated [Global Impervious Surface Area (1972-2021)](https://gee-community-catalog.org/projects/gisa)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-04-02
 - Added [Global Administrative Unit Layers (GAUL) 2024](https://gee-community-catalog.org/projects/gaul)
 - Added [Enhanced National-Scale Urban Tree Canopy Cover (CONUS)](https://gee-community-catalog.org/projects/us_tcc)

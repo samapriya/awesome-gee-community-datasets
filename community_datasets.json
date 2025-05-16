@@ -6673,6 +6673,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/globpop.png"
   },
   {
+    "title": "TINITALY High-Resolution Digital Elevation Model of Italy",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/TINITALY-DTM-10m",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/Tinitaly_DTM",
+    "provider": "Istituto Nazionale di Geofisica e Vulcanologia",
+    "tags": "Italy, Digital Elevation Model, DEM, Topography, Geomorphology, Hazard Assessment",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/tinitaly/",
+    "thematic_group": "Elevation and Bathymetry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/tinitaly.png"
+  },
+  {
     "title": "POI-based Large-Scale Land Use Modeling Framework",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/POI-LANDUSE-FRAMEWORK",
     "type": "image_collection",
