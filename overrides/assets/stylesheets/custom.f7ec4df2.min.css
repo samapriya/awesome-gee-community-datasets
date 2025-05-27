@@ -268,40 +268,221 @@
     max-height: none
 }
 
-/* Floating Button Styles */
-.floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #000000;
-    /* Black background */
-    color: #FFFFFF !important;
-    /* White text */
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
+/* Removed generic .floating-button styles as they are now handled by specific IDs */
+
+/* ========================================================================== */
+/* Custom Banner Styles                                                       */
+/* ========================================================================== */
+.custom-banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--md-primary-bg-color); /* Color for text on primary-fg-color (header bg) */
+}
+
+.custom-banner-left-content {
+    flex-grow: 1;
+}
+
+.custom-banner-right-content {
+    text-align: right;
+    color: var(--md-primary-bg-color); /* Color for text on primary-fg-color (header bg) */
+}
+
+.custom-banner-center-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px; /* Adjust as needed */
     text-align: center;
-    font-size: 14px;
-    z-index: 1000;
-    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.custom-banner-center-container a {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: rgba(var(--md-primary-bg-color-rgb), 0.1); /* Subtle bg using text color on header */
+    transition: all 0.3s ease;
+    color: var(--md-primary-bg-color); /* Link color same as text on header */
+}
+
+.custom-banner-center-container a:hover {
+    background-color: rgba(var(--md-primary-bg-color-rgb), 0.2); /* Slightly more opaque on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(var(--md-shadow-color-rgb, 0,0,0), 0.1); /* Theme-aware shadow */
+    color: var(--md-primary-bg-color); /* Link color remains same on hover, bg changes */
+    /* Consider filter: brightness(90%); if a slightly darker text is desired on hover */
+}
+
+.custom-banner-center-container a::after {
+    content: " →";
+    margin-left: 4px;
+    transition: transform 0.2s ease;
+}
+
+.custom-banner-center-container a:hover::after {
+    transform: translateX(3px);
+}
+
+/* ========================================================================== */
+/* Custom Floating Buttons Styles                                             */
+/* ========================================================================== */
+
+/* "Ask AI" Button */
+#searchRedirect {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--md-primary-fg-color); /* Use theme's primary color */
+    color: var(--md-primary-bg-color) !important; /* Text color for contrast on primary */
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(var(--md-shadow-color-rgb, 0,0,0), 0.1); /* Theme-aware shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
-/* Hover Effect */
-.floating-button:hover {
-    background-color: #333333;
-    /* Dark grey on hover */
+#searchRedirect .material-symbols-outlined {
+    color: inherit; /* Takes the button's text color */
+    font-size: 24px;
+    margin-right: 8px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .floating-button {
+#searchRedirect:hover {
+    background-color: var(--md-primary-fg-color--dark); /* Darken on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(var(--md-shadow-color-rgb, 0,0,0), 0.2); /* Theme-aware shadow, enhanced */
+}
+
+/* "Community Chat" Button */
+#communityChatButton {
+    position: fixed;
+    bottom: 100px; /* Position above Ask AI button */
+    right: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    /* background-color is set by JS, so no need to set it here */
+    color: #000000 !important; /* Black text color as per original spec */
+    box-shadow: 0 4px 8px rgba(var(--md-shadow-color-rgb, 0,0,0), 0.1); /* Theme-aware shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#communityChatButton span {
+    color: #000000 !important; /* Ensure span text is also black */
+}
+
+#communityChatButton:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(var(--md-shadow-color-rgb, 0,0,0), 0.2); /* Theme-aware shadow, enhanced */
+}
+
+
+/* ========================================================================== */
+/* General Custom Styles                                                      */
+/* ========================================================================== */
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/* ========================================================================== */
+/* Responsive Adjustments                                                     */
+/* ========================================================================== */
+@media screen and (max-width: 59.9375em) { /* Approx 959px - MkDocs Material Mobile breakpoint */
+
+    /* Banner Responsiveness */
+    .custom-banner-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em; /* Spacing between stacked items */
+        padding: 0.5em; /* Add some padding to the container itself on mobile */
+    }
+
+    .custom-banner-left-content,
+    .custom-banner-center-container,
+    .custom-banner-right-content {
+        text-align: center;
+        padding: 0.3em 0.2em; /* Reduced padding */
+        font-size: 0.85em;   /* Slightly smaller font */
+        width: 100%; /* Ensure they take full width when stacked */
+    }
+
+    .custom-banner-center-container {
+        height: auto; /* Allow height to adjust to content */
+    }
+
+    .custom-banner-center-container a {
+        padding: 3px 10px; /* Adjust padding for smaller links */
+        font-size: 0.95em; /* Relative to parent's new font size */
+    }
+    
+    .custom-banner-center-container a .material-symbols-outlined {
+        font-size: 20px; /* Slightly smaller icon in banner link */
+    }
+
+    /* Floating Buttons Responsiveness */
+    #searchRedirect {
         padding: 8px 16px;
         font-size: 13px;
         bottom: 15px;
         right: 15px;
     }
+
+    #searchRedirect .material-symbols-outlined {
+        font-size: 20px; /* Smaller icon for smaller button */
+        margin-right: 6px;
+    }
+
+    #communityChatButton {
+        padding: 8px 16px;
+        font-size: 13px;
+        bottom: 70px; /* Positioned above the Ask AI button with some gap */
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Banner adjustments for very small screens */
+    .custom-banner-left-content,
+    .custom-banner-center-container,
+    .custom-banner-right-content {
+        font-size: 0.8em;   /* Even smaller font for very small screens */
+        padding: 0.2em 0.1em; /* Further reduced padding */
+        gap: 0.3em; /* Further reduced gap for items within these containers if they were flex */
+    }
+
+    .custom-banner-container {
+        gap: 0.3em; /* Spacing between stacked items */
+        padding: 0.3em; /* Further reduce padding for the main container */
+    }
+
+    .custom-banner-center-container a {
+        padding: 2px 6px; /* Tighter padding for the link */
+        font-size: 0.9em; /* Relative to parent's new font size (0.8em * 0.9em = 0.72em) */
+    }
+
+    .custom-banner-center-container a .material-symbols-outlined {
+        font-size: 18px; /* Even smaller icon in banner link */
+    }
+
+    /* Floating buttons generally okay, but ensure padding doesn't make them too tiny or text unreadable */
+    /* The 13px font-size from the previous breakpoint should be acceptable */
+    /* If #searchRedirect icon and text felt too cramped: */
+    /* #searchRedirect { padding: 6px 12px; } */
+    /* #searchRedirect .material-symbols-outlined { font-size: 18px; margin-right: 4px; } */
+    /* Similarly for #communityChatButton if needed. For now, assuming previous changes are sufficient. */
 }

@@ -2,124 +2,13 @@
 {% block extrahead %}
 <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f7ec4df2.min.css' | url }}">
 <style>
-    .content-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .left-content {
-        flex-grow: 1;
-    }
-
-    .right-content {
-        color: #fff;
-        text-align: right;
-    }
-
-    /* Style for the center banner to make it more obviously clickable */
-    .center-container {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20px;
-        text-align: center;
-        transition: opacity 0.5s ease;
-        /* Add smooth transition for opacity changes */
-    }
-
-    .center-container a {
-        display: flex;
-        align-items: center;
-        padding: 4px 12px;
-        border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .center-container a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: translateY(-1px);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Add a subtle pointer cursor indicator */
-    .center-container a::after {
-        content: " →";
-        margin-left: 4px;
-        transition: transform 0.2s ease;
-    }
-
-    .center-container a:hover::after {
-        transform: translateX(3px);
-    }
-
-    .floating-button {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background-color: #000;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-weight: bold;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s;
-        cursor: pointer;
-    }
-
-    .floating-button img {
-        margin-right: 8px;
-        width: 24px;
-        height: 24px;
-    }
-
-    .floating-button:hover {
-        background-color: #333;
-    }
-
-    /* Community Chat button styling */
-    .community-chat-button {
-        position: fixed;
-        bottom: 100px;
-        /* Position above Ask AI button with padding */
-        right: 30px;
-        padding: 10px 20px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-weight: bold;
-        color: #000 !important;
-        /* Black text color with !important to override any inheritance */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s;
-        cursor: pointer;
-    }
-
-    /* Ensure the span inside also has black text */
-    .community-chat-button span {
-        color: #000 !important;
-    }
-
-    .community-chat-button:hover {
-        opacity: 0.9;
-    }
-
-    /* Custom styling to hide reCAPTCHA badge */
-    .grecaptcha-badge {
-        visibility: hidden;
-    }
+    /* Styles moved to custom.f7ec4df2.min.css */
 </style>
 {% endblock %}
 
 {% block announce %}
-<div class="content-container">
-    <div class="left-content">
+<div class="custom-banner-container">
+    <div class="custom-banner-left-content">
         <strong>Follow me</strong> on
         <a rel="me" href="https://www.linkedin.com/in/samapriya/">
             <span class="twemoji linkedin">
@@ -145,13 +34,13 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block" />
     <!-- Ensure we have all the specific icons we need -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=forum,camera,search_insights&display=block" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=forum,camera,search_insights,auto_awesome&display=block" />
 
-    <div class="center-container" id="rotatingBanner">
+    <div class="custom-banner-center-container" id="rotatingBanner">
         <!-- The content will be set by JavaScript -->
     </div>
 
-    <div class="right-content">
+    <div class="custom-banner-right-content">
         Support
         <a rel="me" href="https://github.com/sponsors/samapriya">
             <span class="twemoji sponsor">
@@ -173,8 +62,8 @@
 </a>
 
 <!-- Floating Button -->
-<a href="https://gee-community-catalog.org/search" class="floating-button" id="searchRedirect" target="_blank">
-    <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
+<a href="https://gee-community-catalog.org/search" id="searchRedirect" target="_blank">
+    <span class="material-symbols-outlined">auto_awesome</span>
     <span>Ask AI</span>
 </a>
 
