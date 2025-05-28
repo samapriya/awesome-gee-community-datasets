@@ -162,6 +162,8 @@ nav:
       - Catalog Stats: stats.md
       - Code of Conduct: code_of_conduct.md
       - License: license.md
+  - Publications:
+      - publications/index.md
   - Data Catalog:
       - Data Themes:
           - projects/index.md
