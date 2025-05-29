@@ -3,6 +3,7 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [Plug and Play Earth Engine Search Agents with Google’s Agent Development Kit](https://datacommons.substack.com/p/plug-and-play-earth-engine-search)
 * [Pixels, Petabytes, and People: The Five-Year Journey of the GEE Community Catalog](https://datacommons.substack.com/p/pixels-petabytes-and-people-the-five)
 * [Building the Community Catalog Browser: A Visual Field Guide](https://datacommons.substack.com/p/building-the-community-catalog-browser)
 * [Data with a Purpose: Nearly 4000 Datasets and our view from Above](https://datacommons.substack.com/p/data-with-a-purpose-nearly-4000-datasets)
@@ -22,7 +23,6 @@ Find a list of associated blog posts related to GEE and community catalog here. 
 * [Catalog Data Refresh: Updates to GEE Community Catalog Release 2.5.0](https://datacommons.substack.com/p/catalog-data-refresh-updates-to-gee)
 * [A Weekly Pulse on Drought: Continuous Updates to US Drought Monitor in the Community Catalog](https://datacommons.substack.com/p/a-weekly-pulse-on-drought-bringing)
 * [Paper Trails to Pixels: Historical USGS Topo Maps in Google Earth Engine Community Catalog](https://datacommons.substack.com/p/paper-trails-to-pixels-historical)
-* [Beneath the Surface: Exploring GLOBGM High Resolution Global Groundwater Model](https://datacommons.substack.com/p/beneath-the-surface-exploring-globgm)
 <!-- END_MARKER -->
 
 <!-- Last updated: Mon May  5 06:32:44 UTC 2025 -->
