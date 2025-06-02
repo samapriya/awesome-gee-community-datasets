@@ -4,7 +4,7 @@ This dataset provides high-detail mapping of road development in the tropical fo
 
 Road construction in the Congo Basin forests, primarily driven by selective logging, poses significant ecological and climate risks. However, the full extent of these road networks, especially in remote areas, has been poorly understood. This dataset reveals all road networks established since 2019, providing a critical tool for studying the effects of logging, monitoring illegal forest activities, and assessing human impact on tropical forests at a large scale.
 
-The road detection method integrates Sentinel-1 radar and Sentinel-2 optical imagery. Sentinel-2 provides high-resolution optical data in clear weather, while Sentinel-1's radar technology can penetrate clouds, offering consistent observation even during the rainy season. This combination ensures precise monthly updates on narrow and transient road segments. The map covers road development across the six Congo Basin countries: Cameroon, Central African Republic, Democratic Republic of the Congo, Equatorial Guinea, Gabon, and Republic of the Congo. This version presents 5 years of road development (46,311 km) from 2019-2023. You can read more in the [paper here](https://www.sciencedirect.com/science/article/pii/S0034425724004061).
+The road detection method integrates Sentinel-1 radar and Sentinel-2 optical imagery. Sentinel-2 provides high-resolution optical data in clear weather, while Sentinel-1's radar technology can penetrate clouds, offering consistent observation even during the rainy season. This combination ensures precise monthly updates on narrow and transient road segments. The map covers road development across the six Congo Basin countries: Cameroon, Central African Republic, Democratic Republic of the Congo, Equatorial Guinea, Gabon, and Republic of the Congo. You can read more in the [paper here](https://www.sciencedirect.com/science/article/pii/S0034425724004061).
 
 
 | **Attribute** | **Description** |
@@ -36,7 +36,7 @@ Remote Sensing of Environment: Vol. xxx (1.02, Number xxx). Zenodo. https://doi.
 #### Earth Engine Snippet
 
 ```js
-var forest_roads = ee.FeatureCollection("projects/wurnrt-loggingroads/assets/distribution/forestroads_afr_2019-01_2023-12")
+var forest_roads = ee.FeatureCollection("projects/wurnrt-loggingroads/assets/distribution/forestroads_afr_2019-01_2024-12")
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/FOREST-ROADS
@@ -52,6 +52,8 @@ Curated in GEE by: Bart Slagter & Samapriya Roy
 
 Keywords : Congo Basin, forest roads, road development, Sentinel-1, Sentinel-2, deep learning, selective logging, deforestation, illegal logging, forest conservation
 
-Last updated in GEE: 2024-09-10
+Last updated in GEE: 2025-06-02
 
+#### Changelog
+- Annual updates to dataset to include 2024
 
