@@ -46,7 +46,7 @@ series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://d
 | **BU** | Built-Up (residential, commercial, recreation areas) |
 | **EX** | Energy production and mining                         |
 | **FR** | Biological resource use                              |
-| **HI** | Human accessibility (roads, trails, etc.)            |
+| **HA** | Human accessibility (roads, trails, etc.)            |
 | **NS** | Natural system modification (e.g., dams, reservoirs) |
 | **PO** | Pollution                                            |
 | **TI** | Transportation and service corridors                 |
@@ -66,7 +66,7 @@ Each `ee.Image` within the collections contains a single band named after its `t
 |       **BU**       | Built-Up (residential, commercial, recreation areas)       |  Float32  | \[0.0, 1.0] |
 |       **EX**       | Energy production and mining                               |  Float32  | \[0.0, 1.0] |
 |       **FR**       | Biological resource use                                    |  Float32  | \[0.0, 1.0] |
-|       **HI**       | Human accessibility (roads, trails, infrastructure)        |  Float32  | \[0.0, 1.0] |
+|       **HA**       | Human accessibility (roads, trails, infrastructure)        |  Float32  | \[0.0, 1.0] |
 |       **NS**       | Natural system modification (e.g., dams, water regulation) |  Float32  | \[0.0, 1.0] |
 |       **PO**       | Pollution                                                  |  Float32  | \[0.0, 1.0] |
 |       **TI**       | Transportation and service corridors                       |  Float32  | \[0.0, 1.0] |
