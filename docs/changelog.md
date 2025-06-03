@@ -3,6 +3,15 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-06-03
+- Release 3.5.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.7144933)
+- Added [Catalog publications section](https://gee-community-catalog.org/publications/)
+- Added [Rangeland Condition Monitoring Assessment and Projection (RCMAP)](https://gee-community-catalog.org/projects/rcmap/)
+- Updated [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm/)
+- Updated [Congo Basin Forest Roads](https://gee-community-catalog.org/projects/forest_roads/)
+- Updated [Rangeland Analysis Platform layers](https://gee-community-catalog.org/projects/rap)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-05-16
 - Added [TINITALY: High-Resolution Digital Elevation Model of Italy](https://gee-community-catalog.org/projects/tinitaly)
 - Added [GlobPOP Global Gridded Population Dataset 1990-2020](https://gee-community-catalog.org/projects/globpop)

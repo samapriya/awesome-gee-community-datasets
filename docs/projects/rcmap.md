@@ -21,36 +21,6 @@ Several enhancements were made to the RCMAP process relative to prior generation
 
 RCMAP data are useful to natural resource decision making including understanding drought impact, invasive species, fire risk, and livestock management.
 
-#### Dataset Details
-
-| Characteristic | Description                                                |
-| -------------- | ---------------------------------------------------------- |
-| Name           | RCMAP v7                                                   |
-| Provider       | USGS Earth Resources Observation and Science (EROS) Center |
-| Resolution     | 30 meters                                                  |
-| Coverage       | Western North America                                      |
-| Temporal Range | 1985-2024                                                  |
-| Components     | 10 fractional cover components                             |
-| Data Structure | Percent cover of each component per pixel                  |
-| Study Area     | Expanded to include grasslands biome (+1,830,783 km²)      |
-
-#### Rangeland Components
-
-The RCMAP v7 dataset includes the following fractional cover components:
-
-| Component            | Band Name                      | Description                        |
-| -------------------- | ------------------------------ | ---------------------------------- |
-| Annual Herbaceous    | rangeland_annual_herbaceous    | Annual grasses and forbs           |
-| Bare Ground          | rangeland_bare_ground          | Exposed soil and rock surfaces     |
-| Herbaceous           | rangeland_herbaceous           | Combined herbaceous vegetation     |
-| Litter               | rangeland_litter               | Dead plant material on ground      |
-| Non-Sagebrush Shrub  | rangeland_non_sagebrush_shrub  | Shrubs excluding sagebrush species |
-| Perennial Herbaceous | rangeland_perennial_herbaceous | Perennial grasses and forbs        |
-| Sagebrush            | rangeland_sagebrush            | Sagebrush shrub species            |
-| Shrub                | rangeland_shrub                | All shrub vegetation               |
-| Shrub Height         | rangeland_shrub_height         | Height measurement of shrub cover  |
-| Tree                 | rangeland_tree                 | Tree canopy cover                  |
-
 #### Available Datasets
 
 The RCMAP v7 product suite includes both cover data and time-series trends analysis. The following table shows the current availability status:
@@ -62,6 +32,39 @@ The RCMAP v7 product suite includes both cover data and time-series trends analy
 | **Break Point Count**       | Number of structural breaks in time-series      | ✅ Complete | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAK_POINT_COUNT` |
 | **P-Values Segment Annual** | Statistical significance of segments            | 🔄 Ongoing  | Not yet available                                                                  |
 | **Slope Segment Annual**    | Slope of structural break segments              | 🔄 Ongoing  | Not yet available                                                                  |
+
+
+#### Dataset Details
+
+??? example "The RCMAP v7 dataset details can be found here"
+
+      | Characteristic | Description                                                |
+      | -------------- | ---------------------------------------------------------- |
+      | Name           | RCMAP v7                                                   |
+      | Provider       | USGS Earth Resources Observation and Science (EROS) Center |
+      | Resolution     | 30 meters                                                  |
+      | Coverage       | Western North America                                      |
+      | Temporal Range | 1985-2024                                                  |
+      | Components     | 10 fractional cover components                             |
+      | Data Structure | Percent cover of each component per pixel                  |
+      | Study Area     | Expanded to include grasslands biome (+1,830,783 km²)      |
+
+#### Rangeland Components
+
+??? example "The RCMAP v7 dataset includes the following fractional cover components"
+
+      | Component            | Band Name                      | Description                        |
+      | -------------------- | ------------------------------ | ---------------------------------- |
+      | Annual Herbaceous    | rangeland_annual_herbaceous    | Annual grasses and forbs           |
+      | Bare Ground          | rangeland_bare_ground          | Exposed soil and rock surfaces     |
+      | Herbaceous           | rangeland_herbaceous           | Combined herbaceous vegetation     |
+      | Litter               | rangeland_litter               | Dead plant material on ground      |
+      | Non-Sagebrush Shrub  | rangeland_non_sagebrush_shrub  | Shrubs excluding sagebrush species |
+      | Perennial Herbaceous | rangeland_perennial_herbaceous | Perennial grasses and forbs        |
+      | Sagebrush            | rangeland_sagebrush            | Sagebrush shrub species            |
+      | Shrub                | rangeland_shrub                | All shrub vegetation               |
+      | Shrub Height         | rangeland_shrub_height         | Height measurement of shrub cover  |
+      | Tree                 | rangeland_tree                 | Tree canopy cover                  |
 
 #### RCMAP Time-Series Trends Analysis
 
@@ -88,6 +91,8 @@ Component products can be downloaded at the [MRLC website](https://www.mrlc.gov/
 Rigge, M.B., Bunde, B., and Postma, K., 2025, Rangeland Condition Monitoring Assessment and Projection (RCMAP) Fractional Component Time-Series Across Western North America from 1985-2024
 U.S. Geological Survey data release, https://doi.org/10.5066/P13QF8HT
 ```
+
+![rcmap_cover](../images/rcmap_cover.gif)
 
 #### Earth Engine Snippet
 
