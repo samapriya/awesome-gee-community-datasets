@@ -2,11 +2,14 @@
 
 The Global Human Modification v3 dataset provides a comprehensive, temporally consistent measure of cumulative human pressures on terrestrial ecosystems (excluding Antarctica) from 1990 to 2022. It builds on earlier versions (v1, v1.5, v2) by incorporating new time steps, higher-resolution data, and refined threat‐group layers. Users can leverage these data to quantify the extent and intensity of human modification for conservation planning, policy, and research.
 
-The Global Human Modification v3 dataset offers a detailed, temporally consistent quantification of cumulative human pressures on global terrestrial ecosystems (excluding Antarctica) from 1990 through 2022. Building on earlier versions (v1, v1.5, v2), v3 introduces new five‑year time steps (2020) in the change‐consistent series and a comprehensive static snapshot for 2022 at both 300 m and 90 m resolutions. Each annual layer (1990, 1995, 2000, 2005, 2010, 2015, 2020 in the “c” series; 2022 in the “s” series) is computed per pixel as
-$\text{modification} = \text{footprint proportion} \times \text{stressor intensity}$
-and is provided for eight IUCN‑aligned threat categories—agriculture (AG), built‑up (BU), energy/mining (EX), biological resource use (FR), human accessibility (HI), natural systems modification (NS), pollution (PO), and transportation/service corridors (TI)—plus a combined overall layer (AA). Values are stored as 32‑bit floats in the \[0.0, 1.0] range, where 0.0 indicates no detectable human modification and 1.0 indicates maximum modeled modification. The 1990–2020 “c” series uses consistent input data every five years to enable valid change analysis; the 2022 “s” series incorporates updated satellite and land‑cover inputs and is not directly comparable to earlier years for quantitative change metrics.
+The Global Human Modification v3 dataset offers a detailed, temporally consistent quantification of cumulative human pressures on global terrestrial ecosystems (excluding Antarctica) from 1990 through 2022. Building on earlier versions (v1, v1.5, v2), v3 introduces new five‑year time steps (2020) in the change‐consistent series and a comprehensive static snapshot for 2022 at both 300 m and 90 m resolutions. Each annual layer (1990, 1995, 2000, 2005, 2010, 2015, 2020 in the “c” series; 2022 in the “s” series) is computed per pixel and is provided for eight IUCN‑aligned threat categories—agriculture (AG), built‑up (BU), energy/mining (EX), biological resource use (FR), human accessibility (HI), natural systems modification (NS), pollution (PO), and transportation/service corridors (TI)—plus a combined overall layer (AA). Values are stored as 32‑bit floats in the \[0.0, 1.0] range, where 0.0 indicates no detectable human modification and 1.0 indicates maximum modeled modification. The 1990–2020 “c” series uses consistent input data every five years to enable valid change analysis; the 2022 “s” series incorporates updated satellite and land‑cover inputs and is not directly comparable to earlier years for quantitative change metrics.
 
-v3 underwent rigorous technical validation using a spatially balanced sample (circa 2015–2017) from the Global Land Use Emergent Dataset (GLUED), yielding a root‑mean‑squared error (RMSE) of 0.180 at 300 m and 0.178 at 90 m—an improvement over v2 (RMSE = 0.213). Sensitivity analyses (e.g., Monte Carlo simulations for agricultural footprint uncertainty) demonstrated biome‐level mean differences of less than 0.004 under spatially random error assumptions. For full details, see Theobald et al. (2025) in *Scientific Data* [https://doi.org/10.1038/s41597-025-04892-2](https://doi.org/10.1038/s41597-025-04892-2). The 1990–2020 v3 “change” series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://doi.org/10.5281/zenodo.14449495) and the 2022 “static” series at [https://doi.org/10.5281/zenodo.14502573](https://doi.org/10.5281/zenodo.14502573).
+v3 underwent rigorous technical validation using a spatially balanced sample (circa 2015–2017) from the Global Land Use Emergent Dataset (GLUED), yielding a 
+root‑mean‑squared error (RMSE) of 0.180 at 300 m and 0.178 at 90 m—an improvement over v2 (RMSE = 0.213). Sensitivity analyses (e.g., Monte Carlo simulations for 
+agricultural footprint uncertainty) demonstrated biome‐level mean differences of less than 0.004 under spatially random error assumptions. For full details, see 
+Theobald et al. (2025) in *Scientific Data* [https://doi.org/10.1038/s41597-025-04892-2](https://doi.org/10.1038/s41597-025-04892-2). The 1990–2020 v3 “change” 
+series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://doi.org/10.5281/zenodo.14449495) and the 2022 “static” series at 
+[https://doi.org/10.5281/zenodo.14502573](https://doi.org/10.5281/zenodo.14502573).
 
 
 #### Key features of v3:
@@ -126,6 +129,7 @@ print('HM_90M (2022 90m static):', HM_90M);
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION
+
 Earth Engine App: https://hm-30x30.projects.earthengine.app/view/hm-v3
 
 #### License
