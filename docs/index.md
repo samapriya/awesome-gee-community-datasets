@@ -34,6 +34,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Samapriya Roy, Sturm, J., Swetnam, T., & Saah, A. (2025). samapriya/awesome-gee-community-datasets: 3.4.0 (3.4.0).
-Zenodo. https://doi.org/10.5281/zenodo.15190103
+Samapriya Roy, Eric Jensen, Saah, A., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.5.0).
+Zenodo. https://doi.org/10.5281/zenodo.15587604
 ```
