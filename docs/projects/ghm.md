@@ -1,69 +1,140 @@
-# Global human modification v1.5
+# Global Human Modification v3
 
-This updates v1 to v1.5, which provides additional datasets on 6 major stressors at 300 m resolution and two additional time steps (1995 and 2005), as well as reflecting minor data update and processing refinements. Users are advised to use these data instead of "CSP gHM: Global Human Modification" (https://developers.google.com/earth-engine/datasets/catalog/CSP_HM_GlobalHumanModification).
-These data were updated June 17, 2023.
+The Global Human Modification v3 dataset provides a comprehensive, temporally consistent measure of cumulative human pressures on terrestrial ecosystems (excluding Antarctica) from 1990 to 2022. It builds on earlier versions (v1, v1.5, v2) by incorporating new time steps, higher-resolution data, and refined threat‐group layers. Users can leverage these data to quantify the extent and intensity of human modification for conservation planning, policy, and research.
 
-Data on the extent, patterns, and trends of human land use are critically important to support global and national priorities for conservation and sustainable development. To inform these issues, we created a series of detailed global datasets for 1990, 1995, 2000, 2005, 2010, 2015, and 2017 to evaluate temporal changes and spatial patterns of land use modification of terrestrial lands (excluding Antarctica). These data were calculated using the degree of human modification approach that combines the proportion of a pixel of a given stressor (i.e. footprint) times the intensity of that stressor (ranging from 0 to 1.0). Our novel datasets are detailed (0.09 km^2 resolution), temporally consistent (for 1990-2015, every 5 years), comprehensive (11 change stressors, 14 current), robust (using an established framework and incorporating classification errors and parameter uncertainty), and strongly validated. We also provide a dataset that represents ~2017 conditions and has 14 stressors for an even more comprehensive dataset, but the 2017 results should not be used to calculate change with the other datasets (1990-2015).You can read the [paper here](https://essd.copernicus.org/articles/12/1953/2020/essd-12-1953-2020.html). The v1.5 datasets [can also be accessed at](https://zenodo.org/record/7534895).
+The Global Human Modification v3 dataset offers a detailed, temporally consistent quantification of cumulative human pressures on global terrestrial ecosystems (excluding Antarctica) from 1990 through 2022. Building on earlier versions (v1, v1.5, v2), v3 introduces new five‑year time steps (2020) in the change‐consistent series and a comprehensive static snapshot for 2022 at both 300 m and 90 m resolutions. Each annual layer (1990, 1995, 2000, 2005, 2010, 2015, 2020 in the “c” series; 2022 in the “s” series) is computed per pixel as
+$\text{modification} = \text{footprint proportion} \times \text{stressor intensity}$
+and is provided for eight IUCN‑aligned threat categories—agriculture (AG), built‑up (BU), energy/mining (EX), biological resource use (FR), human accessibility (HI), natural systems modification (NS), pollution (PO), and transportation/service corridors (TI)—plus a combined overall layer (AA). Values are stored as 32‑bit floats in the \[0.0, 1.0] range, where 0.0 indicates no detectable human modification and 1.0 indicates maximum modeled modification. The 1990–2020 “c” series uses consistent input data every five years to enable valid change analysis; the 2022 “s” series incorporates updated satellite and land‑cover inputs and is not directly comparable to earlier years for quantitative change metrics.
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+v3 underwent rigorous technical validation using a spatially balanced sample (circa 2015–2017) from the Global Land Use Emergent Dataset (GLUED), yielding a root‑mean‑squared error (RMSE) of 0.180 at 300 m and 0.178 at 90 m—an improvement over v2 (RMSE = 0.213). Sensitivity analyses (e.g., Monte Carlo simulations for agricultural footprint uncertainty) demonstrated biome‐level mean differences of less than 0.004 under spatially random error assumptions. For full details, see Theobald et al. (2025) in *Scientific Data* [https://doi.org/10.1038/s41597-025-04892-2](https://doi.org/10.1038/s41597-025-04892-2). The 1990–2020 v3 “change” series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://doi.org/10.5281/zenodo.14449495) and the 2022 “static” series at [https://doi.org/10.5281/zenodo.14502573](https://doi.org/10.5281/zenodo.14502573).
+
+
+#### Key features of v3:
+
+* **Temporal extent & granularity:** 1990, 1995, 2000, 2005, 2010, 2015, 2020 at 300 m resolution (`_c_` series), plus a 2022 static snapshot at both 300 m and 90 m resolutions (`_s_` series).
+
+* **Dual resolutions for 2022:** 300 m (approx. 10 arc‐seconds) and 90 m (approx. 3 arc‐seconds).
+
+* **Threat categories:** Eight IUCN-aligned threat codes (AG, BU, EX, FR, HI, NS, PO, TI) plus an overall combined index (AA) per year.
+
+* **Data type:** Floating‐point values in \[0.0, 1.0], where each pixel’s modification score is:
+
+  ${\text{modification}} = {\text{footprint proportion}} \times {\text{stressor intensity}}$
+
+* **Naming conventions:** Asset IDs include suffixes `_YEARc_` for the 1990–2020 change‐consistent series, and `_2022s_` for the 2022 static snapshot. The `c` series is designed for temporal change analysis; the `s` series is a stand‐alone 2022 snapshot and is not recommended for direct quantitative comparisons with the `c` series.
 
 #### Updates Changelog & reasoning
-This updates v1 to v1.5, which provides additional datasets on 6 major stressors at 300 m resolution and two additional time steps (1995 and 2005), as well as reflecting minor data updates and processing refinements. Specifically:
+1. Bumped version to v3, extending the time‐series to include 2020 and introducing a static 2022 snapshot.
+2. Added dual resolution for 2022 (`300 m` and `90 m`) to support higher‐resolution analyses.
+3. Incorporated eight individual threat‐category layers (AG, BU, EX, FR, HI, NS, PO, TI) alongside the overall (AA) index for each year.
+4. Updated dataset values to floating‐point format [0.0, 1.0] for improved precision over previous integer‐scaled data.
+5. Refined threat‐group aggregation and metadata to align with Theobald *et al.* (2025) methodology.
+6. Revised Earth Engine snippet to load hosted v3 collections (`HM_OVERALL`, `HM_THREAT_GROUP`, `HM_300M`, `HM_90M`) directly instead of assembling from individual assets.
 
-1. Datasets are provided for each of the 6 stressor groups: built-up areas (BU), agricultural/timber harvest (AG), extractive energy and mining (EX), human intrusions (HI), natural system modifications (NS), and transportation & infrastructure (TI), available now at 300 m resolution for each of the time steps in the 1990-2015 time series.
 
-2. It provides the addition datasets for the years 1995 and 2005, calculated using linear interpolation when stressor data do not provide data at the specific year.
+#### Threat Code Legend
 
-3. The ESA 150 m water-mask dataset ([Lamarche et al. 2017](https://www.mdpi.com/2072-4292/9/1/36)) was used to provide better and more consistent alignment of datasets at the ocean-land-inland water interfaces.
+<center>
 
-4. The built-up stressor uses an updated version of the Global Human Settlement Layer (v2022A).
+|  Code  | Description                                          |
+| :----: | :--------------------------------------------------- |
+| **AA** | All threats combined (overall modification)          |
+| **AG** | Agriculture (croplands, forestry)                    |
+| **BU** | Built-Up (residential, commercial, recreation areas) |
+| **EX** | Energy production and mining                         |
+| **FR** | Biological resource use                              |
+| **HI** | Human accessibility (roads, trails, etc.)            |
+| **NS** | Natural system modification (e.g., dams, reservoirs) |
+| **PO** | Pollution                                            |
+| **TI** | Transportation and service corridors                 |
 
-5. Values provided are 32-bit floating point values, with human modification values ranging from 0.0 to 1.0.
+</center>
+
+#### Bands / Layers Metadata
+
+Each `ee.Image` within the collections contains a single band named after its `threat_code`. Units are unitless floats in \[0.0, 1.0].
+
+<center>
+
+| Band / Threat Code | Description                                                | Data Type | Value Range |
+| :----------------: | :--------------------------------------------------------- | :-------: | :---------: |
+|       **AA**       | All threats combined (overall modification)                |  Float32  | \[0.0, 1.0] |
+|       **AG**       | Agriculture (croplands, forestry)                          |  Float32  | \[0.0, 1.0] |
+|       **BU**       | Built-Up (residential, commercial, recreation areas)       |  Float32  | \[0.0, 1.0] |
+|       **EX**       | Energy production and mining                               |  Float32  | \[0.0, 1.0] |
+|       **FR**       | Biological resource use                                    |  Float32  | \[0.0, 1.0] |
+|       **HI**       | Human accessibility (roads, trails, infrastructure)        |  Float32  | \[0.0, 1.0] |
+|       **NS**       | Natural system modification (e.g., dams, water regulation) |  Float32  | \[0.0, 1.0] |
+|       **PO**       | Pollution                                                  |  Float32  | \[0.0, 1.0] |
+|       **TI**       | Transportation and service corridors                       |  Float32  | \[0.0, 1.0] |
+
+</center>
+
 
 #### Citation
 
 ```
-Theobald, David M., Christina Kennedy, Bin Chen, James Oakleaf, Sharon Baruch-Mordo, and Joe Kiesecker. "Earth transformed: detailed mapping of
-global human modification from 1990 to 2017." Earth System Science Data 12, no. 3 (2020): 1953-1972.
+Theobald, D.M., Oakleaf, J.R., Moncrieff, G., Voigt, M., Kiesecker, J. & Kennedy, C.M. (2025). Global extent and change in human modification of terrestrial ecosystems from
+1990 to 2022. *Scientific Data* **12**, 489. [doi:10.1038/s41597-025-04892-2](https://doi.org/10.1038/s41597-025-04892-2)
 ```
 
-#### Dataset citation
+#### Dataset citations
 
 ```
-Theobald, David M., Kennedy, Christina, Chen, Bin, Oakleaf, James, Baruch-Mordo, Sharon, & Kiesecker, Joe. (2023). Data for detailed temporal
-mapping of global human modification from 1990 to 2017 (v1.5) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7534895
+Theobald, D.M., Oakleaf, J., Moncrieff, G., & Kennedy, C.M. (2024). Global human modification datasets of terrestrial ecosystems from 1990 to 2020 (v1.0.0) \[Data set]. Zenodo. [doi:10.5281/zenodo.14449495](https://doi.org/10.5281/zenodo.14449495)
+
+Theobald, D.M., Oakleaf, J., Moncrieff, G., & Kennedy, C.M. (2024). Global human modification datasets of terrestrial ecosystems for 2022 (v1.0.0) \[Data set]. Zenodo. [doi:10.5281/zenodo.14502573](https://doi.org/10.5281/zenodo.14502573)
 ```
 
 ![ghm](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/9c7e404b-1c87-47b8-96c5-074d2e61acf1)
 
 #### Earth Engine Snippet
 
-```js
-var waterMask = ee.Image("projects/sat-io/open-datasets/GHM/ESACCI-LC-L4-WB-Ocean-Land-Map-150m-P13Y-2000-v40");
-var H2017static = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2017_300_60land")
-var H2015change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2015c_300_60land");
-var H2010change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2010c_300_60land");
-var H2005change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2005c_300_60land");
-var H2000change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2000c_300_60land");
-var H1995change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_1995c_300_60land");
-var H1990change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_1990c_300_60land");
-var H2017_AG = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-AG");
-var H2017_BU = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-BU");
-var H2017_EX = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-EX");
-var H2017_HI = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-HI");
-var H2017_NS = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-NS");
-var H2017_TI = ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-TI");
+```javascript
+// Load the v3 collections
+var HM_OVERALL = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_1990_2020_OVERALL_300M");
+var HM_THREAT_GROUP = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_1990_2020_THREAT_GROUPS_300M");
+var HM_300M = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_2022_300M");
+var HM_90M = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_2022_90M");
+
+// Define visualization palette (provided by authors)
+var paletteHM = ['4c6100','adda25','e2ff9b','ffff73','ffe629','ffd37f','ffaa00','e69808','e60000','a80000','730000'];
+var visParams = {min: 0.0, max: 1.0, palette: paletteHM};
+var changeVis = {min: -0.5, max: 0.5, palette: ['blue','white','red']};
+
+// --- Example usage & visualization ---
+Map.setCenter(0, 0, 2); // Global view
+
+// Overall modification for 2020 (300 m)
+var overall2020 = HM_OVERALL.filter(ee.Filter.eq('year', 2020)).first();
+Map.addLayer(overall2020, visParams, 'GHM-v3 2020 Overall (300m)');
+
+// Change in overall modification: 1990 → 2020 (from HM_OVERALL)
+var overall1990 = HM_OVERALL.filter(ee.Filter.eq('year', 1990)).first();
+var change90_20 = overall2020.subtract(overall1990);
+Map.addLayer(change90_20, changeVis, 'Change GHM Overall 1990–2020 (300m)', false);
+
+// 2022 agriculture modification at 90 m
+var ag2022_90 = HM_90M.filter(ee.Filter.eq('threat_code', 'AG')).first();
+Map.addLayer(ag2022_90, visParams, 'GHM-v3 2022 Agriculture (90m)', false);
+
+// Print collection summaries
+print('HM_OVERALL (1990–2020 300m):', HM_OVERALL);
+print('HM_THREAT_GROUP (1990–2020 per threat 300m):', HM_THREAT_GROUP);
+print('HM_300M (2022 300m static):', HM_300M);
+print('HM_90M (2022 90m static):', HM_90M);
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-HUMAN-MODIFICATION
-
-Earth Engine App: https://davidtheobald8.users.earthengine.app/view/global-human-modification-change
+Earth Engine App: https://hm-30x30.projects.earthengine.app/view/hm-v3
 
 #### License
-This dataset is available under a CC-BY-SA-4.0.
+This dataset is provided under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
-Curated by: David M. Theobald & Samapriya Roy
+Provided by: David M. Theobald, James R. Oakleaf, Glenn Moncrieff, Maria Voigt, Joe Kiesecker, Christina M. Kennedy
 
-Keywords: Global human modification, land use, human pressures, biodiversity
+Curated in GEE by: Samapriya Roy
 
-Last updated: June 17, 2023
+Keywords: human modification, land use, biodiversity, global pressure, 30x30, Global Biodiversity Framework (GBF), conservation, anthropogenic impact, ecosystem change, human footprint
+
+Last updated : 2025-06-03
