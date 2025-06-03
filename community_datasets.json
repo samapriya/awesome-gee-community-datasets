@@ -42075,7 +42075,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/annual_nlcd_spec_change_doy.png"
   },
   {
-    "title": "RCMAP v7 Percent Cover (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Percent Cover (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-COVER",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES/COVER",
@@ -42087,7 +42087,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Annual Herbaceous (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Annual Herbaceous (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/ANNUAL_HERBACEOUS",
@@ -42099,7 +42099,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Bare Ground (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Bare Ground (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/BARE_GROUND",
@@ -42111,7 +42111,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Herbaceous (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Herbaceous (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/HERBACEOUS",
@@ -42123,7 +42123,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Litter (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Litter (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/LITTER",
@@ -42135,7 +42135,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Non‑Sagebrush Shrub (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Non‑Sagebrush Shrub (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/NON_SAGEBRUSH_SHRUB",
@@ -42147,7 +42147,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Perennial Herbaceous (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Perennial Herbaceous (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/PERENNIAL_HERBACEOUS",
@@ -42159,7 +42159,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Sagebrush (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Sagebrush (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SAGEBRUSH",
@@ -42171,7 +42171,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Shrub (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Shrub (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SHRUB",
@@ -42183,7 +42183,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Shrub Height (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Shrub Height (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SHRUB_HEIGHT",
@@ -42195,7 +42195,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Presence – Tree (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Presence – Tree (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT",
     "type": "image_collection",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/TREE",
@@ -42207,7 +42207,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
-    "title": "RCMAP v7 Break Point Count (1985-2024)",
+    "title": "Rangeland Condition Monitoring Assessment and Projection (RCMAP) v7 Break Point Count (1985-2024)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-BREAK-POINT-COUNT",
     "type": "image",
     "id": "projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAK_POINT_COUNT",
