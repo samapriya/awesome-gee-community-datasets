@@ -23652,6 +23652,32 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tallo.png"
   },
   {
+    "title": "CTREES Amazon Canopy Tree Height",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CTREES-AMAZON-CANOPY-TREE-HT",
+    "type": "image",
+    "id": "projects/sat-io/open-datasets/CTREES/AMAZON-CANOPY-TREE-HT",
+    "provider": "Wagner et al 2025, ctrees.org",
+    "tags": "canopy-height, amazon-forest, tree-height, remote-sensing, deep-learning, u-net, planet-nicfi, lidar, tropical-forests, forest-structure",
+    "license": "custom",
+    "license_text": "The underlying Planet NICFI satellite imagery is available for non-commercial purposes under specific agreements with Planet and Norway's International Climate and Forest Initiative. The LiDAR datasets used for training have their own respective licenses, generally public or available for research.",
+    "docs": "https://gee-community-catalog.org/projects/ctrees_amazon/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/ctrees_amazon.png"
+  },
+  {
+    "title": "CTREES Amazon Tile Locator",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CTREES-AMAZON-CANOPY-TREE-HT",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CTREES/CTREES-AMAZON-TILE-LOCATOR",
+    "provider": "Wagner et al 2025, ctrees.org",
+    "tags": "canopy-height, amazon-forest, tree-height, remote-sensing, deep-learning, u-net, planet-nicfi, lidar, tropical-forests, forest-structure, tile-locator",
+    "license": "custom",
+    "license_text": "The underlying Planet NICFI satellite imagery is available for non-commercial purposes under specific agreements with Planet and Norway's International Climate and Forest Initiative. The LiDAR datasets used for training have their own respective licenses, generally public or available for research.",
+    "docs": "https://gee-community-catalog.org/projects/ctrees_amazon/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/ctrees_amazon.png"
+  },
+  {
     "title": "US National Forest Type",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/US-NATIONAL-FOREST-TYPE",
     "type": "image_collection",

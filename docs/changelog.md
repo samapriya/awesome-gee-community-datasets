@@ -3,6 +3,9 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-06-04
+- Added [High Resolution Amazon Canopy Tree Height Dataset](https://gee-community-catalog.org/projects/ctrees_amazon/)
+
 #### Updated 2025-06-03
 - Release 3.5.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.7144933)
 - Added [Catalog publications section](https://gee-community-catalog.org/publications/)
