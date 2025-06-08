@@ -13,9 +13,10 @@ GLWD v2 represents 18.2 million km² of wetlands (13.4% of global land area excl
 #### Citation
 
 ```
-Lehner, B., Anand, M., Fluet-Chouinard, E., Tan, F., Aires, F., Allen, G.H., Bousquet, P., Canadell, J.G., Davidson, N., Finlayson, C.M., Gumbricht, T., Hilarides, L., Hugelius, G., Jackson, R.B., Korver, M.C.,
-McIntyre, P.B., Matthews, E., Nagy, S., Olefeldt, D., Pavelsky, T., Pekel, J.-F., Poulter, B., Prigent, C., Wang, J., Worthington, T.A., Yamazaki, D., Thieme, M. (in preparation). Mapping the world’s inland waters: an
-update to the Global Lakes and Wetlands Database (GLWD v2).
+Lehner, B., Anand, M., Fluet-Chouinard, E., Tan, F., Aires, F., Allen, G. H., Bousquet, P., Canadell, J. G., Davidson, N., Ding, M., Finlayson, C. M., Gumbricht,
+T., Hilarides, L., Hugelius, G., Jackson, R. B., Korver, M. C., Liu, L., McIntyre, P. B., Nagy, S., Olefeldt, D., Pavelsky, T. M., Pekel, J.-F., Poulter, B.,
+Prigent, C., Wang, J., Worthington, T. A., Yamazaki, D., Zhang, X., and Thieme, M.: Mapping the world's inland surface waters: an upgrade to the Global Lakes and
+Wetlands Database (GLWD v2), Earth Syst. Sci. Data, 17, 2277–2329, https://doi.org/10.5194/essd-17-2277-2025, 2025.
 ```
 
 #### Data Format and Limitations
@@ -128,3 +129,6 @@ Created by: Lehner et al.
 Curated in GEE by: Samapriya Roy
 
 Last updated: 2025-02-19
+
+#### Changelog
+* Updated Citation released June 4, 2025
