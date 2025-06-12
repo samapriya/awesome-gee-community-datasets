@@ -8,7 +8,7 @@
 
 </div>
 
-This dataset provides high-resolution (~4.78 m) tree canopy height for the Amazon forest for the period 2020-2024. It was generated using a U-Net deep learning model adapted for regression, trained with Planet NICFI satellite images and informed by LiDAR-derived canopy height models (CHMs). The model predicts mean tree canopy height and has demonstrated a mean error of 3.68 m in validation samples, successfully estimating canopy heights up to 40-50 m with relatively low systematic bias. The study determined that the Amazon forest has an average canopy height of approximately 22 m.
+This dataset provides high-resolution (~4.78 m) tree canopy height for the Amazon forest for the period 2020-2024. It was generated using a U-Net deep learning model adapted for regression, trained with Planet NICFI satellite images and informed by LiDAR-derived canopy height models (CHMs). The model predicts mean tree canopy height and has demonstrated a mean error of 3.68 m in validation samples, successfully estimating canopy heights up to 40-50 m with relatively low systematic bias. The study determined that the Amazon forest has an average canopy height of approximately 22 m. You can find additional information [in the preprint](https://arxiv.org/abs/2501.10600)
 
 #### Key Features and Details
 

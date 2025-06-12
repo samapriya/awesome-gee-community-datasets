@@ -23728,6 +23728,19 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/urban_projection.png"
   },
   {
+    "title": "PRISM Climate Dataset (800m Resolution) Monthly",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/PRISM-800M-MONTHLY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_MONTHLY",
+    "provider": "PRISM Climate Group, Oregon State University",
+    "tags": "climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model",
+    "license": "custom",
+    "license_text": "Data and map graphics from prism.oregonstate.edu, © PRISM Group, Oregon State University, may be freely reproduced and distributed for non-commercial purposes with full attribution, including the copyright notice, URL, and creation/access dates. Commercial use of data requires registration by contacting prism-questions@nacse.org.",
+    "docs": "https://gee-community-catalog.org/projects/prism/",
+    "thematic_group": "Weather and Climate Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/prism.png"
+  },
+  {
     "title": "MAXAR Open Data Multispectral: Afghanistan earthquake 2022",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS",
     "type": "image_collection",
