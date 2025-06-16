@@ -7,7 +7,7 @@ site_url: https://gee-community-catalog.org/
 repo_url: https://github.com/samapriya/awesome-gee-community-datasets
 
 # Copyright
-copyright: "Copyright &copy; 2020 - 2024 Samapriya Roy"
+copyright: "Copyright &copy; 2020 - 2025 Samapriya Roy"
 
 # Configuration
 theme:
@@ -488,6 +488,15 @@ nav:
               - Canada Landsat Derived Wildfire disturbance & Magnitude 1985-2020: projects/ca_forest_fire.md
               - Canada 2023 Wildfires: projects/ca_fires.md
               - ESA Fire Disturbance Climate Change Initiative (CCI): projects/avhrr-ltdr.md
+          - "Insiders only datasets":
+              - Microsoft Bing Global Mined Roads: projects/msroads.md
+              - Overture Foundation Building Footprints: projects/overture_buildings.md
+              - National Structures Inventory (NSI): projects/nsi.md
+              - EOG Annual VIIRS Night Time Light (2013-2021): projects/eog_viirs_ntl.md
+              - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
+              - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
+              - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
+              - PRISM Climate Dataset (800m Resolution) Daily: projects/prism_daily.md
   - Tutorials:
       - tutorials/index.md
       - Global Land & Shorelines Masks: tutorials/examples/global_shorelines.md
