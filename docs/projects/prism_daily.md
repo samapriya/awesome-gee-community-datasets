@@ -1,13 +1,12 @@
-# PRISM Climate Dataset (800m Resolution)
+# PRISM Climate Dataset (800m Resolution) Daily
 
 <div class="result" markdown>
 
 ???+ note
 
-    **The PRISM Daily dataset at 800m is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/). You can [find it here](https://gee-community-catalog.org/projects/prism_daily)**
+    **The PRISM Daily dataset at 800m is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
 
 </div>
-
 
 The PRISM Climate Dataset provides high-resolution, spatially explicit climate information for the conterminous United States. It uses the Parameter-elevation Regressions on Independent Slopes Model (PRISM) to generate gridded estimates of key climate variables by leveraging weather station data and a digital elevation model. The 800m resolution dataset represents the native, highest-detail version, offering unparalleled insight into the complex influence of topography on local climate patterns.
 
@@ -38,13 +37,13 @@ Each data file or layer corresponds to a single climate variable.
 
 | Band / Parameter Code | Description                    | Data Type | Units           |
 | :-------------------- | :----------------------------- | :-------- | :-------------- |
-| **ppt** | Precipitation                  | Float32   | mm              |
-| **tmin** | Minimum Temperature            | Float32   | degrees Celsius |
-| **tmax** | Maximum Temperature            | Float32   | degrees Celsius |
-| **tmean** | Mean Temperature               | Float32   | degrees Celsius |
-| **tdmean** | Mean Dewpoint Temperature      | Float32   | degrees Celsius |
-| **vpdmin** | Minimum Vapor Pressure Deficit | Float32   | hPa             |
-| **vpdmax** | Maximum Vapor Pressure Deficit | Float32   | hPa             |
+| **ppt**               | Precipitation                  | Float32   | mm              |
+| **tmin**              | Minimum Temperature            | Float32   | degrees Celsius |
+| **tmax**              | Maximum Temperature            | Float32   | degrees Celsius |
+| **tmean**             | Mean Temperature               | Float32   | degrees Celsius |
+| **tdmean**            | Mean Dewpoint Temperature      | Float32   | degrees Celsius |
+| **vpdmin**            | Minimum Vapor Pressure Deficit | Float32   | hPa             |
+| **vpdmax**            | Maximum Vapor Pressure Deficit | Float32   | hPa             |
 
 </center>
 
@@ -68,12 +67,12 @@ PRISM Group, Oregon State University, https://prism.oregonstate.edu, data create
 #### Earth Engine Snippet
 
 ```javascript
-var prism_800_monthly = ee.ImageCollection("projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_MONTHLY");
+var prism_800_monthly = ee.ImageCollection("projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/PRISM-800M-MONTHLY
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/PRISM-800M-DAILY
 
-PRISM Data Explorer: https://sat-io.earthengine.app/view/prism-800-monthly
+PRISM Daily Data Explorer: https://sat-io.earthengine.app/view/prism-800-daily
 
 #### License
 
@@ -83,4 +82,4 @@ Provided by: PRISM Climate Group, Oregon State University
 
 Keywords: climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model
 
-Last updated: 2025-06-11
+Last updated: 2025-06-16
