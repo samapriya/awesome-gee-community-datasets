@@ -67,7 +67,7 @@ PRISM Group, Oregon State University, https://prism.oregonstate.edu, data create
 #### Earth Engine Snippet
 
 ```javascript
-var prism_800_monthly = ee.ImageCollection("projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY");
+var prism_800_daily = ee.ImageCollection("projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY");
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/PRISM-800M-DAILY
