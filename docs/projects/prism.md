@@ -30,6 +30,14 @@ The PRISM methodology has been extensively validated and is considered a benchma
 5.  **Quality Control:** The input station data undergoes rigorous quality control procedures before being used in the model.
 6.  **Temporal Consistency:** Provides a consistent, long-term climate record suitable for time-series analysis and climatology studies.
 
+<div class="result" markdown>
+
+???+ note
+
+    **According to the PRISM Group, PRISM data should not be used to calculate long-term trends.**
+
+</div>
+
 #### Bands / Layers Metadata
 
 Each data file or layer corresponds to a single climate variable.
@@ -77,7 +85,7 @@ PRISM Data Explorer: https://sat-io.earthengine.app/view/prism-800-monthly
 
 #### License
 
-Data and map graphics from prism.oregonstate.edu, © PRISM Group, Oregon State University, may be freely reproduced and distributed for non-commercial purposes with full attribution, including the copyright notice, URL, and creation/access dates. Commercial use of data requires registration by contacting prism-questions@nacse.org. All content is provided "as is" without warranty. Additional information can be [found here](https://prism.oregonstate.edu/terms/) and [public notice for 800m data release was noted here](https://prism.oregonstate.edu/notices/notice_20250327.php)
+All data (gridded, polygon, tabular, graphical) retrieved from this website or otherwise provided on the website may be freely reproduced and distributed. Refer to these terms for [additional information](https://prism.oregonstate.edu/terms/) and [public notice for 800m data release was noted here](https://prism.oregonstate.edu/notices/notice_20250327.php)
 
 Provided by: PRISM Climate Group, Oregon State University
 

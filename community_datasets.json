@@ -23136,10 +23136,10 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/sarl.png"
   },
   {
-    "title": "TransitionZero Solar Asset Mapper 2024 Q4 Analysis Centroids",
+    "title": "TransitionZero Solar Asset Mapper 2025 Q1 Analysis Centroids",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS_CENTROID",
+    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS_CENTROID",
     "provider": "Transition Zero",
     "tags": "solar energy, energy transition, open data",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
@@ -23148,10 +23148,10 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tzero.png"
   },
   {
-    "title": "TransitionZero Solar Asset Mapper 2024 Q4 Analysis Polygons",
+    "title": "TransitionZero Solar Asset Mapper 2025 Q1 Analysis Polygons",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS",
+    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS",
     "provider": "Transition Zero",
     "tags": "solar energy, energy transition, open data",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
@@ -23160,10 +23160,10 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tzero.png"
   },
   {
-    "title": "TransitionZero Solar Asset Mapper 2024 Q4 Raw Centroids",
+    "title": "TransitionZero Solar Asset Mapper 2025 Q1 Raw Centroids",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_RAW_CENTROID",
+    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_RAW_CENTROID",
     "provider": "Transition Zero",
     "tags": "solar energy, energy transition, open data",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
@@ -23172,10 +23172,10 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/tzero.png"
   },
   {
-    "title": "TransitionZero Solar Asset Mapper 2024 Q4 Raw Polygons",
+    "title": "TransitionZero Solar Asset Mapper 2025 Q1 Raw Polygons",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER",
     "type": "table",
-    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_RAW_POLYGONS",
+    "id": "projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS",
     "provider": "Transition Zero",
     "tags": "solar energy, energy transition, open data",
     "license": "Creative Commons Attribution Non Commercial 4.0 International",
@@ -23735,7 +23735,7 @@
     "provider": "PRISM Climate Group, Oregon State University",
     "tags": "climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model",
     "license": "custom",
-    "license_text": "Data and map graphics from prism.oregonstate.edu, © PRISM Group, Oregon State University, may be freely reproduced and distributed for non-commercial purposes with full attribution, including the copyright notice, URL, and creation/access dates. Commercial use of data requires registration by contacting prism-questions@nacse.org.",
+    "license_text": "All data (gridded, polygon, tabular, graphical) retrieved from this website or otherwise provided on the website may be freely reproduced and distributed.",
     "docs": "https://gee-community-catalog.org/projects/prism/",
     "thematic_group": "Weather and Climate Layers",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/prism.png"
@@ -23748,7 +23748,7 @@
     "provider": "PRISM Climate Group, Oregon State University",
     "tags": "climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model",
     "license": "custom",
-    "license_text": "Data and map graphics from prism.oregonstate.edu, © PRISM Group, Oregon State University, may be freely reproduced and distributed for non-commercial purposes with full attribution, including the copyright notice, URL, and creation/access dates. Commercial use of data requires registration by contacting prism-questions@nacse.org.",
+    "license_text": "All data (gridded, polygon, tabular, graphical) retrieved from this website or otherwise provided on the website may be freely reproduced and distributed.",
     "docs": "https://gee-community-catalog.org/projects/prism_daily/",
     "thematic_group": "Weather and Climate Layers",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/prism.png"
