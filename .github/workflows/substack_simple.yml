@@ -32,6 +32,8 @@ jobs:
           chrome-version: stable
 
       - name: Run script to fetch Substack posts
+        env:
+          RSS2JSON_API_KEY: ${{ secrets.RSS2JSON_KEY }}
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
@@ -234,23 +236,44 @@ jobs:
                 """Use RSS2JSON API as a proxy"""
                 print("Trying RSS2JSON API...")
                 try:
-                    api_url = f"https://api.rss2json.com/v1/api.json?rss_url={feed_url}&count={num_entries}"
-                    response = requests.get(api_url, timeout=30)
+                    api_key = os.environ.get('RSS2JSON_API_KEY')
+                    if not api_key:
+                        print("RSS2JSON API key not found in environment variables")
+                        return []
+                    
+                    print(f"Using RSS2JSON API key: {api_key[:8]}...")
+                    
+                    # Use params dict for cleaner URL construction
+                    params = {
+                        'rss_url': feed_url,
+                        'api_key': api_key,
+                        'count': num_entries
+                    }
+                    
+                    api_url = "https://api.rss2json.com/v1/api.json"
+                    response = requests.get(api_url, params=params, timeout=30)
                     response.raise_for_status()
                     
                     data = response.json()
+                    print(f"RSS2JSON response status: {data.get('status')}")
                     
                     if data.get('status') == 'ok' and data.get('items'):
                         entries = []
                         for item in data['items']:
-                            entries.append({
-                                "title": item.get('title', ''),
-                                "link": item.get('link', '')
-                            })
+                            title = item.get('title', '').strip()
+                            link = item.get('link', '').strip()
+                            if title and link:
+                                entries.append({
+                                    "title": title,
+                                    "link": link
+                                })
                         print(f"Successfully fetched {len(entries)} entries via RSS2JSON")
+                        print(f"Feed title: {data.get('feed', {}).get('title', 'Unknown')}")
                         return entries
                     else:
-                        print(f"RSS2JSON API error: {data.get('message', 'Unknown error')}")
+                        error_msg = data.get('message', 'Unknown error')
+                        print(f"RSS2JSON API error: {error_msg}")
+                        print(f"Full response: {data}")
                         return []
                         
                 except Exception as e:
@@ -316,6 +339,13 @@ jobs:
             # Main execution
             feed_url = "https://datacommons.substack.com/feed"
             print(f"Starting enhanced fetch for: {feed_url}")
+            
+            # Check if we have the API key
+            api_key = os.environ.get('RSS2JSON_API_KEY')
+            if api_key:
+                print(f"RSS2JSON API key detected: {api_key[:8]}...")
+            else:
+                print("⚠️  RSS2JSON API key not found - will skip RSS2JSON method")
             
             blog_info = fetch_with_all_methods(feed_url)
 
