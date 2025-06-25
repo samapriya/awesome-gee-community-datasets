@@ -12,9 +12,34 @@
 
 The awesome-gee-community-catalog is an **unfunded open source grassroots project** with a mission to help collect **community sourced** and **community generated** geospatial datasets. Our goal is to make data **accessible** and tie it to an analysis platform **fostering accessibility** and **reducing digital divide**. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog).
 
-<div style="background-color: #f0f9ff; border: 2px solid #0ea5e9; border-radius: 8px; padding: 20px; margin: 20px 0;">
-<h4 style="margin-top: 0; color: #0369a1;">👋 On a Personal Note</h4>
-<p>Hi there! I'm <strong>Samapriya Roy</strong>, and I created and maintain the GEE Community Catalog. This has grown from a personal project into something much bigger thanks to this amazing community. If you find value in this work, star the <a href="https://github.com/samapriya/awesome-gee-community-datasets" target="_blank">GitHub repo</a> as it helps others discover this catalog & keeps the effort visible. <a href="https://www.linkedin.com/in/samapriya/" target="_blank">Connect with me</a> and start a chat; I love hearing how people are using this catalog & help me showcase your work!</p>
+<div style="
+    background-color: var(--md-code-bg-color, #f8fafc);
+    border: 2px solid var(--md-accent-fg-color, #0ea5e9);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    color: var(--md-default-fg-color);
+">
+    <h4 style="margin-top: 0; color: var(--md-accent-fg-color);">
+        👋 On a Personal Note
+    </h4>
+    <p>
+        Hi there! I'm <strong>Samapriya Roy</strong>, and I created and maintain the GEE Community Catalog.
+        This has grown from a personal project into something much bigger thanks to this amazing community.
+        If you find value in this work, star the
+        <a href="https://github.com/samapriya/awesome-gee-community-datasets"
+           target="_blank"
+           style="color: var(--md-accent-fg-color); text-decoration: underline;">
+            GitHub repo
+        </a>
+        as it helps others discover this catalog & keeps the effort visible.
+        <a href="https://www.linkedin.com/in/samapriya/"
+           target="_blank"
+           style="color: var(--md-accent-fg-color); text-decoration: underline;">
+            Connect with me
+        </a>
+        and start a chat; I love hearing how people are using this catalog & help me showcase your work!
+    </p>
 </div>
 
  **Stay updated by signing up for email updates and joining our community forum, ensuring you receive the latest catalog news, connect with other users, and more.**
