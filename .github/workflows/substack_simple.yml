@@ -24,7 +24,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests beautifulsoup4 fake-useragent
+          pip install feedparser requests beautifulsoup4 fake-useragent selenium webdriver-manager cloudscraper
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@latest
+        with:
+          chrome-version: stable
 
       - name: Run script to fetch Substack posts
         uses: jannekem/run-python-script-action@v1
@@ -35,27 +40,81 @@ jobs:
             import random
             import os
             import time
+            import json
+            import cloudscraper
             from fake_useragent import UserAgent
+            from selenium import webdriver
+            from selenium.webdriver.chrome.options import Options
+            from selenium.webdriver.common.by import By
+            from selenium.webdriver.support.ui import WebDriverWait
+            from selenium.webdriver.support import expected_conditions as EC
+            from webdriver_manager.chrome import ChromeDriverManager
 
             ua = UserAgent()
 
-            def get_blog_info_direct(feed_url, num_entries=20):
-                """Direct approach without proxies - most reliable for GitHub Actions"""
-                print("Attempting direct connection...")
+            def get_free_proxies():
+                """Get free proxies from multiple sources"""
+                proxies = []
+                
+                # Try free-proxy-list.net
                 try:
-                    headers = {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                        'Accept': 'application/rss+xml, application/xml, text/xml',
+                    print("Fetching proxies from free-proxy-list...")
+                    scraper = cloudscraper.create_scraper()
+                    response = scraper.get('https://www.proxy-list.download/api/v1/get?type=http', timeout=10)
+                    proxy_list = response.text.strip().split('\n')
+                    for proxy in proxy_list[:20]:  # Take first 20
+                        if ':' in proxy:
+                            proxies.append({
+                                'http': f'http://{proxy}',
+                                'https': f'http://{proxy}'
+                            })
+                    print(f"Got {len(proxies)} proxies from proxy-list.download")
+                except Exception as e:
+                    print(f"Failed to get proxies from proxy-list.download: {e}")
+
+                # Backup proxy source
+                try:
+                    print("Fetching proxies from pubproxy...")
+                    response = requests.get('http://pubproxy.com/api/proxy?limit=20&format=json&type=http', timeout=10)
+                    data = response.json()
+                    for proxy in data.get('data', []):
+                        ip_port = f"{proxy['ip']}:{proxy['port']}"
+                        proxies.append({
+                            'http': f'http://{ip_port}',
+                            'https': f'http://{ip_port}'
+                        })
+                    print(f"Added {len(data.get('data', []))} proxies from pubproxy")
+                except Exception as e:
+                    print(f"Failed to get proxies from pubproxy: {e}")
+
+                return proxies
+
+            def get_blog_info_cloudscraper(feed_url, num_entries=20):
+                """Use cloudscraper to bypass CloudFlare protection"""
+                print("Trying cloudscraper...")
+                try:
+                    scraper = cloudscraper.create_scraper(
+                        browser={
+                            'browser': 'chrome',
+                            'platform': 'windows',
+                            'desktop': True
+                        }
+                    )
+                    
+                    # Add some realistic headers
+                    scraper.headers.update({
+                        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
                         'Accept-Language': 'en-US,en;q=0.9',
-                        'Accept-Encoding': 'gzip, deflate',
+                        'Accept-Encoding': 'gzip, deflate, br',
                         'Connection': 'keep-alive',
                         'Upgrade-Insecure-Requests': '1',
-                    }
+                        'Sec-Fetch-Dest': 'document',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'none',
+                        'Cache-Control': 'max-age=0'
+                    })
                     
-                    session = requests.Session()
-                    session.headers.update(headers)
-                    
-                    response = session.get(feed_url, timeout=30)
+                    response = scraper.get(feed_url, timeout=30)
                     response.raise_for_status()
                     
                     feed = feedparser.parse(response.content)
@@ -71,46 +130,86 @@ jobs:
                             "link": entry.link
                         })
                     
-                    print(f"Successfully fetched {len(entries)} entries")
+                    print(f"Successfully fetched {len(entries)} entries with cloudscraper")
                     return entries
                     
-                except requests.exceptions.RequestException as e:
-                    print(f"Direct request failed: {e}")
-                    return []
                 except Exception as e:
-                    print(f"Unexpected error: {e}")
+                    print(f"Cloudscraper failed: {e}")
                     return []
 
-            def get_blog_info_with_rotation(feed_url, num_entries=20):
-                """Fallback with user agent rotation"""
-                print("Trying with user agent rotation...")
+            def get_blog_info_selenium(feed_url, num_entries=20):
+                """Use Selenium to fetch RSS feed"""
+                print("Trying Selenium...")
+                driver = None
+                try:
+                    # Setup Chrome options
+                    chrome_options = Options()
+                    chrome_options.add_argument('--headless')
+                    chrome_options.add_argument('--no-sandbox')
+                    chrome_options.add_argument('--disable-dev-shm-usage')
+                    chrome_options.add_argument('--disable-gpu')
+                    chrome_options.add_argument('--window-size=1920,1080')
+                    chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+                    
+                    # Create driver
+                    driver = webdriver.Chrome(options=chrome_options)
+                    
+                    # Get the RSS feed
+                    driver.get(feed_url)
+                    time.sleep(5)  # Wait for page to load
+                    
+                    # Get page source
+                    page_source = driver.page_source
+                    
+                    # Parse with feedparser
+                    feed = feedparser.parse(page_source)
+                    
+                    if not feed.entries:
+                        print("No entries found with Selenium")
+                        return []
+                    
+                    entries = []
+                    for entry in feed.entries[:num_entries]:
+                        entries.append({
+                            "title": entry.title,
+                            "link": entry.link
+                        })
+                    
+                    print(f"Successfully fetched {len(entries)} entries with Selenium")
+                    return entries
+                    
+                except Exception as e:
+                    print(f"Selenium failed: {e}")
+                    return []
+                finally:
+                    if driver:
+                        driver.quit()
+
+            def get_blog_info_with_proxies(feed_url, num_entries=20):
+                """Try with rotating proxies"""
+                print("Trying with proxies...")
+                proxies = get_free_proxies()
                 
-                user_agents = [
-                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0',
-                    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/121.0'
-                ]
+                if not proxies:
+                    print("No proxies available")
+                    return []
                 
-                for attempt, user_agent in enumerate(user_agents, 1):
+                # Shuffle proxies for random selection
+                random.shuffle(proxies)
+                
+                for i, proxy in enumerate(proxies[:10]):  # Try first 10 proxies
                     try:
-                        print(f"Attempt {attempt} with user agent: {user_agent[:50]}...")
+                        print(f"Trying proxy {i+1}/{min(10, len(proxies))}: {proxy['http']}")
                         
-                        headers = {
-                            'User-Agent': user_agent,
-                            'Accept': 'application/rss+xml, application/xml, text/xml, */*',
-                            'Accept-Language': 'en-US,en;q=0.5',
-                            'Accept-Encoding': 'gzip, deflate',
-                            'Connection': 'keep-alive',
-                            'Cache-Control': 'no-cache',
-                            'Pragma': 'no-cache'
-                        }
+                        scraper = cloudscraper.create_scraper()
+                        scraper.proxies.update(proxy)
+                        scraper.headers.update({
+                            'User-Agent': ua.random,
+                            'Accept': 'application/rss+xml, application/xml, text/xml',
+                            'Accept-Language': 'en-US,en;q=0.9',
+                        })
                         
-                        session = requests.Session()
-                        session.headers.update(headers)
-                        
-                        response = session.get(feed_url, timeout=30)
+                        response = scraper.get(feed_url, timeout=15)
                         response.raise_for_status()
                         
                         feed = feedparser.parse(response.content)
@@ -122,65 +221,46 @@ jobs:
                                     "title": entry.title,
                                     "link": entry.link
                                 })
-                            print(f"Success! Fetched {len(entries)} entries")
+                            print(f"Success with proxy! Fetched {len(entries)} entries")
                             return entries
                         
                     except Exception as e:
-                        print(f"Attempt {attempt} failed: {e}")
-                        if attempt < len(user_agents):
-                            time.sleep(2)
+                        print(f"Proxy {proxy['http']} failed: {e}")
                         continue
                 
                 return []
 
-            def get_blog_info_alternative_endpoint(feed_url, num_entries=20):
-                """Try alternative RSS endpoints"""
-                print("Trying alternative endpoints...")
-                
-                # Extract base URL and try different RSS endpoints
-                base_url = feed_url.replace('/feed', '').replace('/rss', '')
-                alternative_urls = [
-                    f"{base_url}/feed",
-                    f"{base_url}/rss",
-                    f"{base_url}/feed.xml",
-                    f"{base_url}/rss.xml",
-                    feed_url  # original
-                ]
-                
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (compatible; RSS Reader/1.0)',
-                    'Accept': 'application/rss+xml, application/xml, text/xml',
-                }
-                
-                for url in alternative_urls:
-                    try:
-                        print(f"Trying endpoint: {url}")
-                        response = requests.get(url, headers=headers, timeout=30)
-                        response.raise_for_status()
+            def get_blog_info_rss2json(feed_url, num_entries=20):
+                """Use RSS2JSON API as a proxy"""
+                print("Trying RSS2JSON API...")
+                try:
+                    api_url = f"https://api.rss2json.com/v1/api.json?rss_url={feed_url}&count={num_entries}"
+                    response = requests.get(api_url, timeout=30)
+                    response.raise_for_status()
+                    
+                    data = response.json()
+                    
+                    if data.get('status') == 'ok' and data.get('items'):
+                        entries = []
+                        for item in data['items']:
+                            entries.append({
+                                "title": item.get('title', ''),
+                                "link": item.get('link', '')
+                            })
+                        print(f"Successfully fetched {len(entries)} entries via RSS2JSON")
+                        return entries
+                    else:
+                        print(f"RSS2JSON API error: {data.get('message', 'Unknown error')}")
+                        return []
                         
-                        feed = feedparser.parse(response.content)
-                        
-                        if feed.entries:
-                            entries = []
-                            for entry in feed.entries[:num_entries]:
-                                entries.append({
-                                    "title": entry.title,
-                                    "link": entry.link
-                                })
-                            print(f"Success with {url}! Fetched {len(entries)} entries")
-                            return entries
-                            
-                    except Exception as e:
-                        print(f"Failed with {url}: {e}")
-                        continue
-                
-                return []
+                except Exception as e:
+                    print(f"RSS2JSON failed: {e}")
+                    return []
 
             def update_markdown_file(filename, blog_info, start_marker, end_marker):
                 if not os.path.exists(filename):
                     print(f"File {filename} not found. Creating directory structure...")
                     os.makedirs(os.path.dirname(filename), exist_ok=True)
-                    # Create a basic file structure
                     with open(filename, 'w', encoding='utf-8') as f:
                         f.write(f"# Substack Blogs\n\n{start_marker}\n\n{end_marker}\n")
                 
@@ -205,54 +285,49 @@ jobs:
                     f.write(updated)
                 print(f"Updated {filename}")
 
-            def fetch_with_multiple_strategies(feed_url, max_retries=3):
-                """Try multiple strategies to fetch the RSS feed"""
-                strategies = [
-                    get_blog_info_direct,
-                    get_blog_info_with_rotation,
-                    get_blog_info_alternative_endpoint
+            def fetch_with_all_methods(feed_url, num_entries=20):
+                """Try all available methods"""
+                methods = [
+                    get_blog_info_rss2json,      # API proxy - often works
+                    get_blog_info_cloudscraper,  # CloudFlare bypass
+                    get_blog_info_with_proxies,  # Rotating proxies
+                    get_blog_info_selenium       # Browser automation
                 ]
                 
-                for strategy_num, strategy in enumerate(strategies, 1):
-                    print(f"\n=== Strategy {strategy_num}: {strategy.__name__} ===")
+                for method_num, method in enumerate(methods, 1):
+                    print(f"\n=== Method {method_num}: {method.__name__} ===")
                     
-                    for retry in range(max_retries):
-                        try:
-                            result = strategy(feed_url)
-                            if result:
-                                print(f"✅ Success with strategy {strategy_num}!")
-                                return result
-                            else:
-                                print(f"Strategy {strategy_num}, attempt {retry + 1} returned no results")
-                                
-                        except Exception as e:
-                            print(f"Strategy {strategy_num}, attempt {retry + 1} failed: {e}")
-                        
-                        if retry < max_retries - 1:
-                            wait_time = 2 ** retry
-                            print(f"Waiting {wait_time} seconds before retry...")
-                            time.sleep(wait_time)
+                    try:
+                        result = method(feed_url, num_entries)
+                        if result:
+                            print(f"✅ Success with method {method_num}!")
+                            return result
+                        else:
+                            print(f"❌ Method {method_num} returned no results")
+                            
+                    except Exception as e:
+                        print(f"❌ Method {method_num} failed with error: {e}")
                     
-                    print(f"❌ Strategy {strategy_num} failed after {max_retries} attempts")
+                    # Small delay between methods
+                    time.sleep(2)
                 
                 return []
 
             # Main execution
             feed_url = "https://datacommons.substack.com/feed"
-            print(f"Starting fetch for: {feed_url}")
+            print(f"Starting enhanced fetch for: {feed_url}")
             
-            blog_info = fetch_with_multiple_strategies(feed_url)
+            blog_info = fetch_with_all_methods(feed_url)
 
             filename = "docs/substack_blogs.md"
             if blog_info:
                 print(f"\n✅ Successfully fetched {len(blog_info)} blog posts!")
                 update_markdown_file(filename, blog_info, "<!-- START_MARKER -->", "<!-- END_MARKER -->")
             else:
-                print("\n❌ Failed to fetch blog info with all strategies.")
+                print("\n❌ All methods failed.")
                 print("Creating placeholder entry...")
-                # Create a placeholder entry so the workflow doesn't completely fail
                 placeholder_info = [{
-                    "title": f"Failed to fetch posts - {time.strftime('%Y-%m-%d %H:%M:%S')}",
+                    "title": f"Fetch failed - {time.strftime('%Y-%m-%d %H:%M:%S')}",
                     "link": feed_url
                 }]
                 update_markdown_file(filename, placeholder_info, "<!-- START_MARKER -->", "<!-- END_MARKER -->")
@@ -272,17 +347,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Create docs directory if it doesn't exist
           mkdir -p docs
-          
           git add docs/substack_blogs.md
 
-          # Check if there are changes to commit
           if ! git diff --staged --quiet; then
             git commit -m "Update Substack blog links [$(date +%s)]"
             echo "Changes committed"
           else
-            echo "No changes to commit, adding timestamp..."
             echo "<!-- Updated: $(date) -->" >> docs/substack_blogs.md
             git add docs/substack_blogs.md
             git commit -m "Force update timestamp [$(date +%s)]"
