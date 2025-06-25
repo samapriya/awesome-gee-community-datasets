@@ -31,7 +31,7 @@ The RCMAP v7 product suite includes both cover data and time-series trends analy
 | **Break Point Presence**    | Presence/absence of structural breaks each year | ✅ Complete | Individual collections per component                                               |
 | **Break Point Count**       | Number of structural breaks in time-series      | ✅ Complete | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAK_POINT_COUNT` |
 | **P-Values Segment Annual** | Statistical significance of segments            | 🔄 Ongoing  | Not yet available                                                                  |
-| **Slope Segment Annual**    | Slope of structural break segments              | 🔄 Ongoing  | Not yet available                                                                  |
+| **Slope Segment Annual**    | Slope of structural break segments              | ✅ Complete  | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL`                                                            |
 
 
 #### Dataset Details
