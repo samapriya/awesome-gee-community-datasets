@@ -1,13 +1,5 @@
 # Rangeland Condition Monitoring Assessment and Projection (RCMAP)
 
-<div class="result" markdown>
-
-???+ note
-
-    **This dataset ingestion is currently ongoing and additional datasets as part of the release will be made available as ingested.**
-
-</div>
-
 The Rangeland Condition Monitoring Assessment and Projection (RCMAP) dataset quantifies the percent cover of rangeland components across western North America using Landsat imagery from 1985-2024. The RCMAP product suite consists of ten fractional components: annual herbaceous, bare ground, herbaceous, litter, non-sagebrush shrub, perennial herbaceous, sagebrush, shrub, tree, and shrub height; in addition to the temporal trends of each component.
 
 Several enhancements were made to the RCMAP process relative to prior generations:
@@ -30,7 +22,7 @@ The RCMAP v7 product suite includes both cover data and time-series trends analy
 | **Cover**                   | Percent cover of each component (1985-2024)     | ✅ Complete | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES/COVER`                    |
 | **Break Point Presence**    | Presence/absence of structural breaks each year | ✅ Complete | Individual collections per component                                               |
 | **Break Point Count**       | Number of structural breaks in time-series      | ✅ Complete | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAK_POINT_COUNT` |
-| **P-Values Segment Annual** | Statistical significance of segments            | 🔄 Ongoing  | Not yet available                                                                  |
+| **P-Values Segment Annual** | Statistical significance of segments            | ✅ Complete  | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL`                                                                  |
 | **Slope Segment Annual**    | Slope of structural break segments              | ✅ Complete  | `projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL`                                                            |
 
 

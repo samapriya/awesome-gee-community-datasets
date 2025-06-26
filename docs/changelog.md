@@ -3,7 +3,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
-### Updated 2025-06-16
+#### Updated 2025-06-26
+- Added [Vulcan Fossil Fuel CO2 Emissions Dataset](https://gee-community-catalog.org/projects/vulcan)
+- Added [Industrial Land Maps across Global Cities](https://gee-community-catalog.org/projects/industrial)
+- Updated [Rangeland Condition Monitoring Assessment and Projection (RCMAP)](https://gee-community-catalog.org/projects/rcmap/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
+#### Updated 2025-06-16
 - Added [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism)
 - Added [PRISM 800m Daily Datasets to the insiders catalog](https://gee-community-catalog.org/projects/prism_daily)
 - Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
