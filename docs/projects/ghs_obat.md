@@ -68,17 +68,42 @@ Certain countries sub parts have been merged to create a consistent single file 
 #### Earth Engine Snippet
 
 ```javascript
-// Load a specific country's building data (example: Trinidad and Tobago)
-var ghs_obat_tto = ee.FeatureCollection("projects/sat-io/open-datasets/JRC/GHS-OBAT/GHS_OBAT_GPKG_TTO_E2020_R2024A_V1_0");
+// Load Singapore building data
+var ghs_obat_sgp = ee.FeatureCollection("projects/sat-io/open-datasets/JRC/GHS-OBAT/GHS_OBAT_GPKG_SGP_E2020_R2024A_V1_0");
 
-// Filter buildings by attributes (example: residential buildings constructed 2000-2010)
-var residential_2000s = ghs_obat_tto.filter(ee.Filter.and(
+// Filter out null height values
+var buildings_with_height = ghs_obat_sgp.filter(ee.Filter.neq('height', null));
+
+// Define visualization parameters for building heights
+var heightVis = {
+  min: 0,
+  max: 100,
+  palette: ['blue', 'green', 'yellow', 'orange', 'red']
+};
+
+// Create an image from the feature collection for height visualization
+var heightImage = buildings_with_height
+  .reduceToImage(['height'], ee.Reducer.first())
+  .rename('height');
+
+// Visualize building heights
+Map.addLayer(heightImage, heightVis, 'Singapore Building Heights');
+
+// Filter residential buildings from 2000-2010
+var residential_2000s = ghs_obat_sgp.filter(ee.Filter.and(
   ee.Filter.eq('use', 1),  // Residential
   ee.Filter.eq('epoch', 4) // 2000-2010
 ));
 
-// Visualize building height distribution
-Map.addLayer(ghs_obat_tto, {color: 'height'}, 'Building Heights');
+Map.addLayer(residential_2000s, {color: '#FF6600'}, 'Residential 2000s');
+
+// Print statistics
+print('Total buildings:', ghs_obat_sgp.size());
+print('Buildings with height data:', buildings_with_height.size());
+print('Residential 2000s buildings:', residential_2000s.size());
+
+// Center map on Singapore
+Map.centerObject(ghs_obat_sgp, 11);
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GHS-OBAT-OPEN-BUILDINGS
