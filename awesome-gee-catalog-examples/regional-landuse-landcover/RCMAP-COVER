@@ -1,0 +1,120 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var sample_point = /* color: #d63000 */ee.Geometry.Point([-109.5164794921875, 39.13221489515267]),
+    rcmap_cover = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES/COVER");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Visualization parameters for percent cover (0-100%)
+var vis = {
+  palette: [
+    '000000', 'f9e8b7', 'f7e3ac', 'f0dfa3', 'eedf9c', 'eada91', 'e8d687',
+    'e0d281', 'ddd077', 'd6cc6d', 'd3c667', 'd0c55e', 'cfc555', 'c6bd4f',
+    'c4ba46', 'bdb83a', 'bbb534', 'b7b02c', 'b0ad1f', 'adac17', 'aaaa0a',
+    'a3a700', '9fa700', '9aa700', '92a700', '8fa700', '87a700', '85a700',
+    '82aa00', '7aaa00', '77aa00', '70aa00', '6caa00', '67aa00', '5fa700',
+    '57a700', '52a700', '4fa700', '4aa700', '42a700', '3ca700', '37a700',
+    '37a300', '36a000', '369f00', '349d00', '339900', '339900', '2f9200',
+    '2d9100', '2d8f00', '2c8a00', '2c8800', '2c8500', '2c8400', '2b8200',
+    '297d00', '297a00', '297900', '277700', '247400', '247000', '29700f',
+    '2c6d1c', '2d6d24', '336d2d', '366c39', '376c44', '396a4a', '396a55',
+    '3a6a5f', '3a696a', '396774', '3a6782', '39668a', '376292', '34629f',
+    '2f62ac', '2c5fb7', '245ec4', '1e5ed0', '115cdd', '005ae0', '0057dd',
+    '0152d6', '0151d0', '014fcc', '014ac4', '0147bd', '0144b8', '0142b0',
+    '0141ac', '013da7', '013aa0', '01399d', '013693', '013491', '012f8a',
+    '012d85', '012c82', '01297a'
+  ],
+  min: 0,
+  max: 100
+};
+
+// Get the most recent year (2024)
+var rcmap_2024 = rcmap_cover.filterDate('2024-01-01', '2024-12-31').first();
+
+// Display all rangeland components
+Map.addLayer(rcmap_2024.select('rangeland_bare_ground'), vis, 'Bare Ground Cover 2024');
+Map.addLayer(rcmap_2024.select('rangeland_annual_herbaceous'), vis, 'Annual Herbaceous Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_non_sagebrush_shrub'), vis, 'Non-Sagebrush Shrub Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_herbaceous'), vis, 'Herbaceous Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_litter'), vis, 'Litter Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_sagebrush'), vis, 'Sagebrush Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_shrub'), vis, 'Shrub Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_shrub_height'), vis, 'Shrub Height 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_perennial_herbaceous'), vis, 'Perennial Herbaceous Cover 2024', false);
+Map.addLayer(rcmap_2024.select('rangeland_tree'), vis, 'Tree Cover 2024', false);
+
+// Create a time series chart for a specific location showing all components
+ // Example point in Utah
+
+// Chart with primary vegetation components
+var primaryChart = ui.Chart.image.series(
+  rcmap_cover.select([
+    'rangeland_sagebrush', 
+    'rangeland_herbaceous', 
+    'rangeland_bare_ground',
+    'rangeland_tree'
+  ]),
+  sample_point,
+  ee.Reducer.mean(),
+  30
+).setOptions({
+  title: 'Primary Rangeland Components Time Series (1985-2024)',
+  vAxis: {title: 'Percent Cover'},
+  hAxis: {title: 'Year'},
+  lineWidth: 2,
+  series: {
+    0: {color: '67aa00'}, // Sagebrush - green
+    1: {color: 'f0dfa3'}, // Herbaceous - yellow
+    2: {color: '8B4513'}, // Bare ground - brown
+    3: {color: '228B22'}  // Tree - dark green
+  }
+});
+
+// Chart with herbaceous components breakdown
+var herbaceousChart = ui.Chart.image.series(
+  rcmap_cover.select([
+    'rangeland_annual_herbaceous',
+    'rangeland_perennial_herbaceous',
+    'rangeland_herbaceous'
+  ]),
+  sample_point,
+  ee.Reducer.mean(),
+  30
+).setOptions({
+  title: 'Herbaceous Components Time Series (1985-2024)',
+  vAxis: {title: 'Percent Cover'},
+  hAxis: {title: 'Year'},
+  lineWidth: 2,
+  series: {
+    0: {color: 'FFD700'}, // Annual - gold
+    1: {color: '9ACD32'}, // Perennial - yellow-green
+    2: {color: 'ADFF2F'}  // Total herbaceous - green-yellow
+  }
+});
+
+// Chart with shrub components
+var shrubChart = ui.Chart.image.series(
+  rcmap_cover.select([
+    'rangeland_sagebrush',
+    'rangeland_non_sagebrush_shrub',
+    'rangeland_shrub'
+  ]),
+  sample_point,
+  ee.Reducer.mean(),
+  30
+).setOptions({
+  title: 'Shrub Components Time Series (1985-2024)',
+  vAxis: {title: 'Percent Cover'},
+  hAxis: {title: 'Year'},
+  lineWidth: 2,
+  series: {
+    0: {color: '67aa00'}, // Sagebrush - green
+    1: {color: 'CD853F'}, // Non-sagebrush shrub - tan
+    2: {color: '8FBC8F'}  // Total shrub - dark sea green
+  }
+});
+
+print('Primary Components Chart:', primaryChart);
+print('Herbaceous Components Chart:', herbaceousChart);
+print('Shrub Components Chart:', shrubChart);
+
+// Center map on the western US
+Map.setCenter(-109.5, 39.0, 4);
+Map.setOptions('HYBRID')

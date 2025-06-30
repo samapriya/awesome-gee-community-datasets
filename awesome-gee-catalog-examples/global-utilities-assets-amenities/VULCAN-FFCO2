@@ -1,0 +1,424 @@
+// Vulcan FFCO2 Emissions Interactive App
+// CONUS main map with Alaska inset panel and user controls
+
+// Load the Vulcan FFCO2 collection
+var vulcan = ee.ImageCollection('projects/sat-io/open-datasets/NAU/VULCAN_FFCO2');
+
+// Define color palettes
+var palettes = {
+  'Viridis (Purple-Yellow)': [
+    '#440154', '#482475', '#414487', '#355f8d', '#2a788e', 
+    '#21908c', '#22a884', '#42be71', '#7ad151', '#bddf26', '#fde725'
+  ],
+  'Dark Purple': [
+    '#0a0015', '#1a0033', '#330066', '#4d0099', '#6600cc', 
+    '#7f00ff', '#9933ff', '#cc66ff', '#e6b3ff'
+  ],
+  'Thermal (Black-Red-Yellow)': [
+    '#000000', '#1a0000', '#330000', '#660000', '#990000', 
+    '#cc3300', '#ff6600', '#ff9900', '#ffcc00', '#ffff00'
+  ],
+  'Pollution (Green-Yellow-Red)': [
+    '#00ff00', '#66ff00', '#ccff00', '#ffff00', '#ffcc00', 
+    '#ff9900', '#ff6600', '#ff3300', '#cc0000', '#990000'
+  ],
+  'Purple Haze': [
+    '#0d0426', '#2d1b69', '#5d2a8b', '#8b1a5b', '#b83d2c', 
+    '#db7b00', '#f2b900', '#fcffa4'
+  ]
+};
+
+// Define regions
+var contiguousUS = ee.Geometry.Rectangle([-125, 24, -66, 50]);
+var alaskaRegion = ee.Geometry.Rectangle([-180, 52, -130, 72]);
+
+// Global variables
+var currentLayer = null;
+var currentAlaskaLayer = null;
+var alaskaMap = null;
+var timeSeriesChart = null;
+
+// Create main control panel
+var controlPanel = ui.Panel({
+  style: {
+    position: 'top-left',
+    padding: '10px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    width: '300px',
+    border: '1px solid black'
+  }
+});
+
+// App title
+var appTitle = ui.Label({
+  value: 'Vulcan FFCO2 Emissions Explorer',
+  style: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    margin: '0 0 10px 0'
+  }
+});
+controlPanel.add(appTitle);
+
+// Year selector
+var yearLabel = ui.Label('Select Year:', {fontWeight: 'bold'});
+controlPanel.add(yearLabel);
+
+var yearSelect = ui.Select({
+  items: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+  value: '2022',
+  placeholder: 'Choose year...',
+  style: {margin: '0 0 10px 0', width: '280px'}
+});
+controlPanel.add(yearSelect);
+
+// Palette selector
+var paletteLabel = ui.Label('Select Color Palette:', {fontWeight: 'bold'});
+controlPanel.add(paletteLabel);
+
+var paletteSelect = ui.Select({
+  items: Object.keys(palettes),
+  value: 'Viridis (Purple-Yellow)',
+  placeholder: 'Choose palette...',
+  style: {margin: '0 0 10px 0', width: '280px'}
+});
+controlPanel.add(paletteSelect);
+
+// Loading indicator
+var loadingLabel = ui.Label({
+  value: '',
+  style: {color: '#666', fontStyle: 'italic', margin: '10px 0 0 0'}
+});
+controlPanel.add(loadingLabel);
+
+// Instructions for users
+var instructionsLabel = ui.Label({
+  value: 'Click on map to view time series (2010-2022)',
+  style: {
+    fontSize: '12px',
+    fontStyle: 'italic',
+    color: '#666',
+    margin: '5px 0'
+  }
+});
+controlPanel.add(instructionsLabel);
+
+// Coordinates display label
+var coordsLabel = ui.Label({
+  value: '',
+  style: {
+    fontSize: '12px',
+    color: '#333',
+    margin: '5px 0',
+    fontWeight: 'bold'
+  }
+});
+controlPanel.add(coordsLabel);
+
+// Add control panel to map
+Map.add(controlPanel);
+
+// Create Alaska inset map
+alaskaMap = ui.Map();
+alaskaMap.setCenter(-152, 64, 3);
+alaskaMap.setControlVisibility({all: false, zoomControl: true});
+
+// Style the Alaska inset panel
+var alaskaPanel = ui.Panel({
+  widgets: [
+    ui.Label('Alaska', {
+      fontWeight: 'bold', 
+      textAlign: 'center', 
+      backgroundColor: 'rgba(255, 255, 255, 1)',
+      padding: '5px'
+    }),
+    alaskaMap
+  ],
+  style: {
+    position: 'bottom-right',
+    width: '300px',
+    height: '250px',
+    padding: '0px',
+    border: '2px solid black',
+    backgroundColor: 'rgba(255, 255, 255, 1)'
+  }
+});
+
+Map.add(alaskaPanel);
+
+// Create legend panel
+var legend = ui.Panel({
+  style: {
+    position: 'top-right',
+    padding: '8px 15px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid black'
+  }
+});
+
+Map.add(legend);
+
+// Add title panel
+var title = ui.Label({
+  value: 'Vulcan v4.0 Fossil Fuel CO2 Emissions',
+  style: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    margin: '10px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    padding: '5px'
+  }
+});
+
+var titlePanel = ui.Panel({
+  widgets: [title],
+  style: {
+    position: 'top-center',
+    padding: '10px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid black'
+  }
+});
+
+Map.add(titlePanel);
+
+// Add data source info
+var sourceInfo = ui.Label({
+  value: 'Source: Vulcan Project v4.0, Northern Arizona University',
+  style: {
+    fontSize: '12px',
+    color: '#666',
+    textAlign: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    padding: '3px'
+  }
+});
+
+var sourcePanel = ui.Panel({
+  widgets: [sourceInfo],
+  style: {
+    position: 'bottom-center',
+    padding: '5px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid black'
+  }
+});
+
+Map.add(sourcePanel);
+
+// Function to create time series chart
+function createTimeSeries(point, mapType, coords) {
+  loadingLabel.setValue('Loading time series...');
+  
+  // Update coordinates display
+  coordsLabel.setValue('Location: ' + coords.lat.toFixed(4) + '°N, ' + Math.abs(coords.lon).toFixed(4) + '°W');
+  
+  // Get all years of total emissions
+  var timeSeriesData = vulcan
+    .filter(ee.Filter.eq('sector', 'tot'))
+    .filterBounds(point);
+  
+  // Create chart
+  var chart = ui.Chart.image.series({
+    imageCollection: timeSeriesData,
+    region: point.buffer(500), // 500m buffer around clicked point
+    reducer: ee.Reducer.mean(),
+    scale: 1000,
+    xProperty: 'year'
+  }).setOptions({
+    title: 'FFCO2 Emissions Time Series (' + mapType + ')',
+    vAxis: {
+      title: 'Emissions (tC/year)',
+      titleTextStyle: {italic: false, bold: true}
+    },
+    hAxis: {
+      title: 'Year',
+      titleTextStyle: {italic: false, bold: true},
+      format: '####'
+    },
+    series: {
+      0: {
+        color: '#1f77b4',
+        lineWidth: 2,
+        pointSize: 4
+      }
+    },
+    legend: {position: 'none'},
+    backgroundColor: 'white'
+  });
+  
+  // Remove existing chart if present
+  if (timeSeriesChart) {
+    controlPanel.remove(timeSeriesChart);
+  }
+  
+  // Add chart to control panel
+  timeSeriesChart = chart;
+  controlPanel.add(timeSeriesChart);
+  
+  loadingLabel.setValue('Time series loaded!');
+}
+
+// Function to update legend with multi-column layout
+function updateLegend(selectedPalette) {
+  legend.clear();
+  
+  var legendTitle = ui.Label({
+    value: 'FFCO2 Emissions (tC/year)',
+    style: {
+      fontWeight: 'bold',
+      fontSize: '16px',
+      margin: '0 0 8px 0',
+      textAlign: 'center'
+    }
+  });
+  legend.add(legendTitle);
+  
+  var paletteColors = palettes[selectedPalette];
+  var legendEntries = [
+    {color: paletteColors[0], label: '1 - 5'},
+    {color: paletteColors[2], label: '6 - 10'}, 
+    {color: paletteColors[3], label: '11 - 20'},
+    {color: paletteColors[4], label: '21 - 30'},
+    {color: paletteColors[6], label: '31 - 60'},
+    {color: paletteColors[7], label: '61 - 100'},
+    {color: paletteColors[8], label: '101 - 150'},
+    {color: paletteColors[paletteColors.length-1], label: '> 150'}
+  ];
+  
+  // Create multi-column layout (2 columns)
+  for (var i = 0; i < legendEntries.length; i += 2) {
+    var row = ui.Panel({
+      layout: ui.Panel.Layout.Flow('horizontal'),
+      style: {margin: '2px 0'}
+    });
+    
+    // First column
+    var entry1 = legendEntries[i];
+    var colorBox1 = ui.Label({
+      style: {
+        backgroundColor: entry1.color,
+        padding: '6px',
+        margin: '0 4px 0 0',
+        border: '1px solid black'
+      }
+    });
+    var description1 = ui.Label({
+      value: entry1.label,
+      style: {margin: '0 15px 0 2px', fontSize: '12px'}
+    });
+    
+    row.add(colorBox1);
+    row.add(description1);
+    
+    // Second column (if exists)
+    if (i + 1 < legendEntries.length) {
+      var entry2 = legendEntries[i + 1];
+      var colorBox2 = ui.Label({
+        style: {
+          backgroundColor: entry2.color,
+          padding: '6px',
+          margin: '0 4px 0 0',
+          border: '1px solid black'
+        }
+      });
+      var description2 = ui.Label({
+        value: entry2.label,
+        style: {margin: '0 0 0 2px', fontSize: '12px'}
+      });
+      
+      row.add(colorBox2);
+      row.add(description2);
+    }
+    
+    legend.add(row);
+  }
+}
+
+// Function to update map
+function updateMap() {
+  loadingLabel.setValue('Loading data...');
+  
+  var selectedYear = yearSelect.getValue();
+  var selectedPalette = paletteSelect.getValue();
+  
+  // Remove existing layers
+  if (currentLayer) {
+    Map.remove(currentLayer);
+  }
+  if (currentAlaskaLayer) {
+    alaskaMap.layers().reset();
+  }
+  
+  // Filter for selected year and total emissions
+  var totalEmissions = vulcan
+    .filter(ee.Filter.eq('sector', 'tot'))
+    .filter(ee.Filter.eq('year', selectedYear))
+    .mosaic();
+  
+  // Mask out values less than or equal to 0
+  var maskedEmissions = totalEmissions.updateMask(totalEmissions.gt(0));
+  
+  // Define visualization parameters
+  var visParams = {
+    min: 1,
+    max: 150,
+    palette: palettes[selectedPalette]
+  };
+  
+  // Create separate images for each region
+  var conusEmissions = maskedEmissions.clip(contiguousUS);
+  var alaskaEmissions = maskedEmissions.clip(alaskaRegion);
+  
+  // Add CONUS layer to main map with click handler
+  currentLayer = ui.Map.Layer(conusEmissions, visParams, 'FFCO2 Emissions (CONUS)');
+  Map.add(currentLayer);
+  
+  // Set cursor style for main map
+  Map.style().set('cursor', 'crosshair');
+  
+  // Add click handler to main map
+  Map.onClick(function(coords) {
+    var point = ee.Geometry.Point([coords.lon, coords.lat]);
+    createTimeSeries(point, 'CONUS', coords);
+  });
+  
+  // Add Alaska layer to inset map with click handler
+  currentAlaskaLayer = ui.Map.Layer(alaskaEmissions, visParams, 'Alaska FFCO2');
+  alaskaMap.add(currentAlaskaLayer);
+  
+  // Set cursor style for Alaska map
+  alaskaMap.style().set('cursor', 'crosshair');
+  
+  // Add click handler to Alaska map
+  alaskaMap.onClick(function(coords) {
+    var point = ee.Geometry.Point([coords.lon, coords.lat]);
+    createTimeSeries(point, 'Alaska', coords);
+  });
+  
+  // Update legend
+  updateLegend(selectedPalette);
+  
+  loadingLabel.setValue('Data loaded successfully!');
+}
+
+// Set up event handlers
+// Auto-update when palette changes
+paletteSelect.onChange(function(value) {
+  updateMap();
+});
+
+// Auto-update when year changes
+yearSelect.onChange(function(value) {
+  updateMap();
+});
+
+// Set initial map center
+Map.centerObject(contiguousUS, 4);
+
+// Load initial data
+updateMap();
+
+print('Vulcan FFCO2 Interactive App loaded successfully!');
+print('Use the controls in the top-left panel to explore different years and color palettes.');

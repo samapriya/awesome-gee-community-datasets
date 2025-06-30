@@ -1,7 +1,27 @@
-/**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var forest_roads = ee.FeatureCollection("projects/wurnrt-loggingroads/assets/distribution/forestroads_afr_2019-01_2023-12");
-/***** End of imports. If edited, may not auto-convert in the playground. *****/
-Map.setCenter(12.7254,-1.2772,10)
-Map.addLayer(forest_roads,{},'Forest Roads ')
+// Accessing and visualizing Congo Basin forest roads (Slagter et al., 2024, RSE)
 
-Map.setOptions('SATELLITE')
+// Website: https://wur.eu/forest-roads
+// Citation: Slagter et al. (2024): Monitoring road development in Congo Basin forests with multi-sensor satellite imagery and deep learning, Remote Sensing of Environment. https://doi.org/10.1016/j.rse.2024.114380
+// Licence: CC-BY-4.0
+
+
+// Access the Congo Basin forest road dataset
+var forestroads = ee.FeatureCollection('projects/wurnrt-loggingroads/assets/distribution/forestroads_afr_2019-01_2024-12')
+
+// Access additional contextual datasets
+var oldroads = ee.FeatureCollection('projects/wurnrt-loggingroads/assets/kleinschroth/kleinschroth_etal_2019_natsust_data')
+var forestmask = ee.Image('projects/wurnrt-loggingroads/assets/distribution/forestmask')
+
+// Convert the forest roads dataset to ee.Image to visualize the road opening dates
+var roads_img = forestroads.reduceToImage(['MonthNum'], ee.Reducer.first())
+
+// Convert the old forest roads dataset (Kleinschroth et al., 2019, Nat. Sustain.) to ee.Image
+var oldroads_img = oldroads.reduceToImage(['concession'], ee.Reducer.first())
+
+Map.addLayer(forestmask.selfMask(), {min:0, max:1, palette: ['black']}, 'Forestmask').setOpacity(0.25)
+Map.addLayer(oldroads_img, {palette: ['black'], min:0,max:1}, 'Old roads (pre-2019)').setOpacity(0.5)
+Map.addLayer(roads_img, {palette: ['pink', 'red', 'darkred'], min:0,max:72}, 'Road development (2019-2024)')
+
+
+Map.setOptions('Satellite')
+Map.setCenter(15, 1, 7)

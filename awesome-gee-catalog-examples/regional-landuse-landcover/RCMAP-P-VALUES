@@ -1,0 +1,218 @@
+/*
+RCMAP P-Values Segment Annual Analysis Script
+===========================================================
+
+This script analyzes statistical significance of rangeland component trends across western North America
+using the USGS RCMAP v7 P-Values Segment Annual datasets. The P-values represent the statistical 
+significance of structural break segments in time-series analysis from 1985-2024.
+
+The script creates 4 map layers:
+1. Sagebrush P-values (2020) - Red to blue palette showing statistical significance
+2. Significant Areas (P < 0.05) - Dark red areas where trends are statistically significant
+3. Multi-component Significance (RGB) - RGB composite showing significant trends for:
+   - Red channel: Annual herbaceous plants
+   - Green channel: Perennial herbaceous plants  
+   - Blue channel: Sagebrush
+4. Significant Trends Count (2015-2024) - White to purple showing how many years had significant trends
+
+Dataset: USGS RCMAP v7 P-Values Segment Annual
+*/
+
+// Load P-Values collections for different rangeland components
+var pval_annual_herbaceous = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/ANNUAL_HERBACEOUS");
+var pval_bare_ground = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/BARE_GROUND");
+var pval_herbaceous = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/HERBACEOUS");
+var pval_litter = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/LITTER");
+var pval_non_sagebrush_shrub = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/NON_SAGEBRUSH_SHRUB");
+var pval_perennial_herbaceous = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/PERENNIAL_HERBACEOUS");
+var pval_sagebrush = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/SAGEBRUSH");
+var pval_shrub = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/SHRUB");
+var pval_shrub_height = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/SHRUB_HEIGHT");
+var pval_tree = ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/PVALUES_SEGMENT_ANNUAL/TREE");
+
+// Set map center to western US where RCMAP data is available
+Map.setCenter(-110, 40, 6);
+
+// Helper function to get image with correct band name for a specific year
+function getImageWithBand(collection, bandName, year) {
+  var image = collection.filter(ee.Filter.eq('system:index', ee.String(year))).first();
+  // Fallback to most recent image if year not found
+  image = ee.Algorithms.If(
+    ee.Algorithms.IsEqual(image, null),
+    collection.sort('system:time_start', false).first(),
+    image
+  );
+  return ee.Image(image).select(bandName);
+}
+
+// Get sagebrush P-values for 2020
+var targetYear = '2020';
+var sagebrush_pval_2020 = pval_sagebrush.filter(ee.Filter.eq('system:index', targetYear)).first();
+var sagebrush_pval_recent = pval_sagebrush.sort('system:time_start', false).first();
+
+var sagebrush_image_to_use = ee.Algorithms.If(
+  ee.Algorithms.IsEqual(sagebrush_pval_2020, null),
+  sagebrush_pval_recent,
+  sagebrush_pval_2020
+);
+
+var sagebrush_band = ee.Image(sagebrush_image_to_use).select('sagebrush');
+
+// === LAYER 1: Sagebrush P-values (Red to Blue) ===
+var pvalueVis = {
+  min: 0,
+  max: 1,
+  palette: ['red', 'orange', 'yellow', 'lightblue', 'blue']
+};
+
+Map.addLayer(sagebrush_band, pvalueVis, 'Sagebrush P-values 2020');
+
+// === LAYER 2: Significant Areas Mask (Dark Red) ===
+var significanceThreshold = 0.05;
+var significantMask = sagebrush_band.lt(significanceThreshold);
+
+var significantVis = {
+  min: 0,
+  max: 1,
+  palette: ['#FFFFFF00', '#8B0000'] // Transparent to dark red
+};
+
+Map.addLayer(significantMask, significantVis, 'Significant Areas (P < 0.05)');
+
+// === LAYER 3: Multi-component RGB Composite ===
+// Get images for other rangeland components
+var annualHerbImage = getImageWithBand(pval_annual_herbaceous, 'annual_herbaceous', targetYear);
+var perennialHerbImage = getImageWithBand(pval_perennial_herbaceous, 'perennial_herbaceous', targetYear);
+
+// Create significance masks for each component
+var threshold = 0.05;
+var annualHerbSignificant = annualHerbImage.lt(threshold);
+var perennialHerbSignificant = perennialHerbImage.lt(threshold);
+var sagebrushSignificant = sagebrush_band.lt(threshold);
+
+// Create RGB composite showing significant trends
+var significantComposite = ee.Image.rgb(
+  annualHerbSignificant,     // Red channel: Annual herbaceous
+  perennialHerbSignificant,  // Green channel: Perennial herbaceous  
+  sagebrushSignificant       // Blue channel: Sagebrush
+);
+
+Map.addLayer(significantComposite, {min: 0, max: 1}, 'Multi-component Significance (RGB)');
+
+// === LAYER 4: Significant Trends Count Over Time (White to Purple) ===
+var yearsList = ee.List(['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']);
+
+// Create function to generate significance mask for each year
+function createSignificantMask(year) {
+  var yearImage = pval_sagebrush.filter(ee.Filter.eq('system:index', year)).first();
+  var mask = ee.Image(0).byte(); // Default to 0
+  
+  mask = ee.Algorithms.If(
+    ee.Algorithms.IsEqual(yearImage, null),
+    mask, // Keep as 0 if no image
+    ee.Image(yearImage).select('sagebrush').lt(0.05).byte()
+  );
+  
+  return ee.Image(mask);
+}
+
+// Count significant years across the time period
+var significantMasks = yearsList.map(createSignificantMask);
+var significantCollection = ee.ImageCollection.fromImages(significantMasks);
+var significantCount = significantCollection.sum().byte();
+
+var countVis = {
+  min: 0,
+  max: 10,
+  palette: ['white', 'lightblue', 'blue', 'darkblue', 'purple']
+};
+
+Map.addLayer(significantCount, countVis, 'Significant Trends Count (2015-2024)');
+
+// === TIME SERIES ANALYSIS ===
+function calculateMeanPvalueByYear(year) {
+  var yearString = ee.String(ee.Number(year).format('%.0f'));
+  var yearlyImage = pval_sagebrush.filter(ee.Filter.eq('system:index', yearString)).first();
+  
+  var meanPvalue = ee.Algorithms.If(
+    ee.Algorithms.IsEqual(yearlyImage, null),
+    ee.Dictionary({'sagebrush': null}),
+    ee.Image(yearlyImage).select('sagebrush').reduceRegion({
+      reducer: ee.Reducer.mean(),
+      scale: 30,
+      maxPixels: 1e9,
+      bestEffort: true
+    })
+  );
+  
+  return ee.Feature(null, {
+    'year': year,
+    'mean_pvalue': ee.Dictionary(meanPvalue).get('sagebrush')
+  });
+}
+
+var years = ee.List.sequence(2015, 2024);
+var timeSeriesFeatures = years.map(calculateMeanPvalueByYear);
+var timeSeriesCollection = ee.FeatureCollection(timeSeriesFeatures);
+
+print('Mean P-values over time (2015-2024):', timeSeriesCollection);
+
+// === STATISTICAL SUMMARY ===
+var statsResult = sagebrush_band.reduceRegion({
+  reducer: ee.Reducer.minMax().combine({
+    reducer2: ee.Reducer.mean(),
+    sharedInputs: true
+  }).combine({
+    reducer2: ee.Reducer.stdDev(),
+    sharedInputs: true
+  }),
+  scale: 30,
+  maxPixels: 1e9,
+  bestEffort: true
+});
+
+print('Sagebrush P-values statistics:', statsResult);
+
+// === CREATE LEGEND ===
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'P-value Legend',
+  style: {fontWeight: 'bold', fontSize: '16px', margin: '0 0 4px 0'}
+});
+
+legend.add(legendTitle);
+
+var legendItems = [
+  {color: 'red', label: '0.0 - 0.2 (Highly Significant)'},
+  {color: 'orange', label: '0.2 - 0.4'},
+  {color: 'yellow', label: '0.4 - 0.6'},
+  {color: 'lightblue', label: '0.6 - 0.8'},
+  {color: 'blue', label: '0.8 - 1.0 (Not Significant)'}
+];
+
+legendItems.forEach(function(item) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: item.color,
+      padding: '8px',
+      margin: '0 0 4px 0'
+    }
+  });
+  var description = ui.Label({
+    value: item.label,
+    style: {margin: '0 0 4px 6px'}
+  });
+  
+  legend.add(ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  }));
+});
+
+Map.add(legend);

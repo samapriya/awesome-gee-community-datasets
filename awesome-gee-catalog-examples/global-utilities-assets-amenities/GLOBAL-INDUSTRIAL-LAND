@@ -1,11 +1,6 @@
-/**
- * Global Industrial Land Mapping (2017–2023)
- * Full interactive tool with city/year selector and click-based time series.
- */
-
-// Dataset path
-var DATASET_PATH = "projects/sat-io/open-datasets/industry";
-
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/INDUSTRIAL_LAND");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Visualization parameters
 var industrialVis = {
   min: 0,
@@ -13,9 +8,12 @@ var industrialVis = {
   palette: ['black', 'red', 'green']
 };
 
-// Load the collection
-var collection = ee.ImageCollection(DATASET_PATH);
-
+// Change detection visualization
+var changeVis = {
+  min: 0,
+  max: 1,
+  palette: ['blue', 'yellow']
+};
 // UI Panels
 var mainPanel = ui.Panel({style: {width: '350px', padding: '10px'}});
 var statusPanel = ui.Panel();
@@ -34,6 +32,20 @@ var citySelect = ui.Select({placeholder: 'Loading city list...'});
 var yearSelect = ui.Select({
   items: ['2017','2018','2019','2020','2021','2022','2023'],
   placeholder: 'Select a year'
+});
+
+// Change detection controls
+var changeStartSelect = ui.Select({
+  items: ['2017','2018','2019','2020','2021','2022'],
+  placeholder: 'Start year'
+});
+var changeEndSelect = ui.Select({
+  items: ['2018','2019','2020','2021','2022','2023'],
+  placeholder: 'End year'
+});
+var showChangeCheckbox = ui.Checkbox({
+  label: 'Show change layer',
+  value: false
 });
 
 // Header
@@ -63,6 +75,70 @@ cityPanel.add(yearSelect);
 cityPanel.add(cityInfoLabel);
 mainPanel.add(cityPanel);
 
+// Change Detection UI
+var changePanel = ui.Panel({style: {margin: '15px 0 0 0'}});
+changePanel.add(ui.Label('Change Detection:', {fontWeight: 'bold'}));
+changePanel.add(ui.Label('Compare between years:'));
+var changeYearPanel = ui.Panel({layout: ui.Panel.Layout.Flow('horizontal')});
+changeYearPanel.add(changeStartSelect);
+changeYearPanel.add(ui.Label(' to '));
+changeYearPanel.add(changeEndSelect);
+changePanel.add(changeYearPanel);
+changePanel.add(showChangeCheckbox);
+changePanel.add(ui.Label('Yellow highlights show areas where land class changed', {
+  fontSize: '12px', color: 'gray', margin: '5px 0 0 0'
+}));
+mainPanel.add(changePanel);
+
+// Function to create change detection layer
+function createChangeLayer(cityId, startYear, endYear) {
+  var startImage = collection
+    .filter(ee.Filter.eq('city_id', cityId))
+    .filter(ee.Filter.eq('year', startYear))
+    .first();
+    
+  var endImage = collection
+    .filter(ee.Filter.eq('city_id', cityId))
+    .filter(ee.Filter.eq('year', endYear))
+    .first();
+    
+  // Create change mask (1 where different, 0 where same)
+  var changeMask = startImage.neq(endImage);
+  
+  return changeMask;
+}
+
+// Function to update change layer
+function updateChangeLayer() {
+  var cityIdStr = citySelect.getValue();
+  var startYearStr = changeStartSelect.getValue();
+  var endYearStr = changeEndSelect.getValue();
+  var showChange = showChangeCheckbox.getValue();
+  
+  // Remove existing change layer
+  var layers = Map.layers();
+  for (var i = layers.length() - 1; i >= 0; i--) {
+    var layer = layers.get(i);
+    if (layer.getName().indexOf('Change') !== -1) {
+      layers.remove(layer);
+    }
+  }
+  
+  if (!showChange || !cityIdStr || !startYearStr || !endYearStr) {
+    return;
+  }
+  
+  if (parseInt(startYearStr) >= parseInt(endYearStr)) {
+    print('Start year must be before end year');
+    return;
+  }
+  
+  var changeLayer = createChangeLayer(cityIdStr, parseInt(startYearStr), parseInt(endYearStr));
+  var changeLabel = 'Change (' + startYearStr + ' → ' + endYearStr + ')';
+  
+  Map.addLayer(changeLayer, changeVis, changeLabel);
+}
+
 // Update map when both dropdowns have values
 function updateMap() {
   var cityIdStr = citySelect.getValue();
@@ -83,12 +159,23 @@ function updateMap() {
     if (size > 0) {
       var image = filtered.first();
 
-      Map.layers().reset(); // Comment this out if you want to stack layers
+      // Clear only non-change layers
+      var layers = Map.layers();
+      for (var i = layers.length() - 1; i >= 0; i--) {
+        var layer = layers.get(i);
+        if (layer.getName().indexOf('Change') === -1) {
+          layers.remove(layer);
+        }
+      }
+      
       Map.addLayer(image, industrialVis, label);
       Map.centerObject(image, 10);
 
       cityInfoLabel.setValue('✓ Loaded: ' + label);
       cityInfoLabel.style().set('color', 'green');
+
+      // Update change layer if enabled
+      updateChangeLayer();
 
       image.get('system:index').evaluate(function(index) {
         print('✓ Image ID:', index);
@@ -101,8 +188,12 @@ function updateMap() {
   });
 }
 
+// Event listeners
 citySelect.onChange(updateMap);
 yearSelect.onChange(updateMap);
+changeStartSelect.onChange(updateChangeLayer);
+changeEndSelect.onChange(updateChangeLayer);
+showChangeCheckbox.onChange(updateChangeLayer);
 
 // Populate city list dynamically
 var cityDict = {};
@@ -158,7 +249,8 @@ legendPanel.add(ui.Label('Legend:', {fontWeight: 'bold'}));
 [
   {color: 'black', label: 'Non-built-up (0)'},
   {color: 'red', label: 'Industrial (1)'},
-  {color: 'green', label: 'Non-industrial built-up (2)'}
+  {color: 'green', label: 'Non-industrial built-up (2)'},
+  {color: 'yellow', label: 'Changed areas (overlay)'}
 ].forEach(function(item) {
   var row = ui.Panel({layout: ui.Panel.Layout.Flow('horizontal')});
   var colorBox = ui.Panel([], ui.Panel.Layout.Flow('horizontal'), {

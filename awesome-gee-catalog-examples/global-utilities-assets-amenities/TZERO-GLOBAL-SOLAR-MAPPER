@@ -1,9 +1,8 @@
-/**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS"),
-    tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_ANALYSIS_POLYGONS_CENTROID"),
-    tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_RAW_POLYGONS"),
-    tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2024Q4_RAW_POLYGONS_CENTROID");
-/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS");
+var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS_CENTROID");
+var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS");
+var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS_CENTROID");
+
 // Define the visualization parameters
 var vizParams = {
   color: 'FFD700',

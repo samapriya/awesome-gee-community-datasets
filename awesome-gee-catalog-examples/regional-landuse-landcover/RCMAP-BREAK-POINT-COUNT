@@ -1,0 +1,36 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var sample_point = /* color: #98ff00 */ee.Geometry.Point([-109.5, 39]),
+    break_counts = ee.Image("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAK_POINT_COUNT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Break Point Count collection
+
+
+var countVis = {
+  palette: ['#d73027', '#fc8d59', '#ffffbf', '#91bfdb', '#4575b4'],
+  min: 0,
+  max: 5
+};
+
+
+
+// Display break point counts for different components
+Map.addLayer(break_counts.select('sagebrush'), countVis, 'Sagebrush Break Point Count', false);
+Map.addLayer(break_counts.select('bare_ground'), countVis, 'Bare Ground Break Point Count', false);
+Map.addLayer(break_counts.select('herbaceous'), countVis, 'Herbaceous Break Point Count', false);
+
+// Create a histogram of break point counts for a specific component
+
+var region = sample_point.buffer(50000); // 50km buffer
+
+var histogram = ui.Chart.image.histogram(
+  break_counts.select('sagebrush'),
+  region,
+  30
+).setOptions({
+  title: 'Distribution of Sagebrush Break Point Counts',
+  xlabel: 'Number of Break Points',
+  ylabel: 'Pixel Count'
+});
+
+print('Break Point Count Histogram:', histogram);
+print('Break point count bands:', break_counts.bandNames());

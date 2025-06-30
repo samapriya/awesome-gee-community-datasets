@@ -1,84 +1,33 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var palette = {"min":[0],"max":[1],"palette":["0c0c0c","071aff","ff0000","ffbd03","fbff05","fffdfd"]};
+var palette = {"min":[0],"max":[1],"palette":["0c0c0c","071aff","ff0000","ffbd03","fbff05","fffdfd"]},
+    HM_OVERALL = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_1990_2020_OVERALL_300M"),
+    HM_THREAT_GROUP = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_1990_2020_THREAT_GROUPS_300M"),
+    HM_300M = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_2022_300M"),
+    HM_90M = ee.ImageCollection("projects/sat-io/open-datasets/GHM/HM_2022_90M");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
-// Global human modification v1.5
-// Citation: Theobald et al. 2020. https://essd.copernicus.org/articles/12/1953/2020/essd-12-1953-2020.html
-// Repository: zenodo.org/deposit/7534895
-// EEApp: https://davidtheobald8.users.earthengine.app/view/global-human-modification-change
+// Define visualization palette (provided by authors)
+var paletteHM = ['4c6100','adda25','e2ff9b','ffff73','ffe629','ffd37f','ffaa00','e69808','e60000','a80000','730000'];
+var visParams = {min: 0.0, max: 1.0, palette: paletteHM};
+var changeVis = {min: -0.5, max: 0.5, palette: ['blue','white','red']};
 
-var waterMask = ee.Image("projects/sat-io/open-datasets/GHM/ESACCI-LC-L4-WB-Ocean-Land-Map-150m-P13Y-2000-v40");
+// --- Example usage & visualization ---
+Map.setCenter(0, 0, 2); // Global view
 
-// Overall (all major stressors combined) human modification
-var H2017static = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2017_300_60land")
-var H2015change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2015c_300_60land");
-var H2010change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2010c_300_60land");
-var H2005change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2005c_300_60land");
-var H2000change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_2000c_300_60land");
-var H1995change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_1995c_300_60land");
-var H1990change = ee.Image("projects/sat-io/open-datasets/GHM/ghm_v15_1990c_300_60land");
+// Overall modification for 2020 (300 m)
+var overall2020 = HM_OVERALL.filter(ee.Filter.eq('year', 2020)).first();
+Map.addLayer(overall2020, visParams, 'GHM-v3 2020 Overall (300m)');
 
-// Overall (all major stressors combined) human modification
-Map.addLayer(H2017static,palette, 'HMv1.5: 2017 static',true)
-Map.addLayer(H2015change,palette, 'HMv1.5: 2015 change',false)
-Map.addLayer(H2010change,palette, 'HMv1.5: 2010 change',false)
-Map.addLayer(H2005change,palette, 'HMv1.5: 2005 change',false)
-Map.addLayer(H2000change,palette, 'HMv1.5: 2000 change',false)
-Map.addLayer(H1995change,palette, 'HMv1.5: 1995 change',false)
-Map.addLayer(H1990change,palette, 'HMv1.5: 1990 change',false)
+// Change in overall modification: 1990 → 2020 (from HM_OVERALL)
+var overall1990 = HM_OVERALL.filter(ee.Filter.eq('year', 1990)).first();
+var change90_20 = overall2020.subtract(overall1990);
+Map.addLayer(change90_20, changeVis, 'Change GHM Overall 1990–2020 (300m)', false);
 
-// Major stressors for 2017 -- note these are available for all years as well
-var H2017_AG = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-AG").filterDate('2017-01-01','2017-12-31').first())
-var H2017_BU = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-BU").filterDate('2017-01-01','2017-12-31').first())
-var H2017_EX = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-EX").filterDate('2017-01-01','2017-12-31').first())
-var H2017_HI = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-HI").filterDate('2017-01-01','2017-12-31').first())
-var H2017_NS = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-NS").filterDate('2017-01-01','2017-12-31').first())
-var H2017_TI = ee.Image(ee.ImageCollection("projects/sat-io/open-datasets/GHM/SG-TI").filterDate('2017-01-01','2017-12-31').first())
+// 2022 agriculture modification at 90 m
+var ag2022_90 = HM_90M.filter(ee.Filter.eq('threat_code', 'AG')).first();
+Map.addLayer(ag2022_90, visParams, 'GHM-v3 2022 Agriculture (90m)', false);
 
-Map.addLayer(H2017_AG ,palette, 'HMv1.5: 2017 Agricultural stressor',false)
-Map.addLayer(H2017_BU ,palette, 'HMv1.5: 2017 Built-up stressor',false)
-Map.addLayer(H2017_EX ,palette, 'HMv1.5: 2017 Energy/mining stressor',false)
-Map.addLayer(H2017_HI ,palette, 'HMv1.5: 2017 Human intrusion stressor',false)
-Map.addLayer(H2017_NS ,palette, 'HMv1.5: 2017 Natural systems mod (reservoirs) stressor',false)
-Map.addLayer(H2017_TI ,palette, 'HMv1.5: 2017 Transportation & linear infrastructure stressor',false)
-
-// Visualize
-var nSteps = 10
-
-// Creates a color bar thumbnail image for use in legend from the given color palette
-function makeColorBarParams(palette) {
-  return {
-    bbox: [0, 0, nSteps, 0.1],
-    dimensions: '200x10',
-    format: 'png',
-    min: 0,
-    max: nSteps,
-    palette: palette,
-  };
-}
-
-// Create the colour bar for the legend
-var colorBar = ui.Thumbnail({
-  image: ee.Image.pixelLonLat().select(0).int(),
-  params: makeColorBarParams(palette.palette),
-  style: {stretch: 'horizontal', margin: '0px 8px', maxHeight: '24px',position:'bottom-left'},
-});
-
-// Create a panel with three numbers for the legend
-var legendLabels = ui.Panel({
-  widgets: [
-    ui.Label(0, {margin: '4px 8px'}),
-    ui.Label(
-        (0.5),
-        {margin: '4px 8px', textAlign: 'center', stretch: 'horizontal'}),
-    ui.Label(1, {margin: '4px 8px'})
-  ],
-  layout: ui.Panel.Layout.flow('horizontal')
-});
-
-// Add the legendPanel to the map
-var legendPanel = ui.Panel([colorBar, legendLabels]);
-legendPanel.style().set({
-  position: 'bottom-right',
-  shown: true
-});
-Map.add(legendPanel);
+// Print collection summaries
+print('HM_OVERALL (1990–2020 300m):', HM_OVERALL);
+print('HM_THREAT_GROUP (1990–2020 per threat 300m):', HM_THREAT_GROUP);
+print('HM_300M (2022 300m static):', HM_300M);
+print('HM_90M (2022 90m static):', HM_90M);

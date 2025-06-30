@@ -1,0 +1,386 @@
+// Import blend utilities
+var blend = require('users/jja/public:blend.js');
+
+// Create a hillshade layer once for reuse
+var terrain = ee.Terrain.products(ee.Image('USGS/SRTMGL1_003'));
+var hillshade = ee.Terrain.hillshade(terrain.select('elevation'));
+var hillshadeVis = hillshade.visualize({min: 0, max: 255});
+
+// Define available climate variables with their properties
+var VARIABLES = {
+  'ppt': {
+    name: 'Precipitation',
+    unit: 'mm',
+    min: 0,
+    max: 300,
+    palette:['ffffff', 'ffbbbb', '0000ff']
+  },
+  'tmean': {
+    name: 'Mean Temperature',
+    unit: '°C',
+    min: -15,
+    max: 35,
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tmax': {
+    name: 'Max Temperature',
+    unit: '°C',
+    min: -20,
+    max: 25,
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tmin': {
+    name: 'Min Temperature',
+    unit: '°C',
+    min: -25,
+    max: 25,
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tdmean': {
+    name: 'Dew Point',
+    unit: '°C',
+    min: -25,
+    max: 18,
+    palette: ['#8c510a', '#bf812d', '#dfc27d', '#f6e8c3', '#f5f5f5', '#c7eae5', '#80cdc1', '#35978f', '#01665e']
+  },
+  'vpdmin': {
+    name: 'Vapor Pressure Deficit (Min)',
+    unit: 'hPa',
+    min: 0,
+    max: 4,
+    palette: ['#f7fcfd', '#e5f5f9', '#ccece6', '#99d8c9', '#66c2a4', '#41ae76', '#238b45', '#006d2c', '#00441b']
+  },
+  'vpdmax': {
+    name: 'Vapor Pressure Deficit (Max)',
+    unit: 'hPa',
+    min: 0,
+    max: 17,
+    palette: ['#f7fcfd', '#e5f5f9', '#ccece6', '#99d8c9', '#66c2a4', '#41ae76', '#238b45', '#006d2c', '#00441b']
+  }
+};
+
+// Set default variable and date range
+var selectedVariable = 'tmean';
+var startYear = 1895;
+var endYear = 2025;
+var selectedYear = 2023;
+var selectedMonth = 6; // June as default
+
+// Function to load and prepare PRISM data
+function loadPrismData(variableName, year, month) {
+  var startDate = ee.Date.fromYMD(year, month, 1);
+  var endDate = startDate.advance(1, 'month');
+  
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_MONTHLY')
+    .filterDate(startDate, endDate)
+    .select(variableName);
+  
+  return collection.first();
+}
+
+// Function to update the map with the selected variable and time
+function updateMap() {
+  // Clear previous layers
+  Map.layers().reset();
+  
+  // Get variable info
+  var variableInfo = VARIABLES[selectedVariable];
+  
+  // Load the PRISM data
+  var image = loadPrismData(selectedVariable, yearSlider.getValue(), monthSlider.getValue());
+  
+  // Visualization parameters
+  var visParams = {
+    min: variableInfo.min,
+    max: variableInfo.max,
+    palette: variableInfo.palette
+  };
+  
+  // Visualize the climate data
+  var visClimate = image.visualize(visParams);
+  
+  // Apply multiply blend with hillshade
+  var blendedImage = blend.multiply(visClimate, hillshadeVis);
+  
+  // Add the blended image to the map
+  var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var layerName = selectedVariable.toUpperCase() + ' ' + 
+                  monthNames[monthSlider.getValue() - 1] + ' ' + 
+                  yearSlider.getValue() + ' with Terrain';
+  
+  Map.addLayer(blendedImage, {}, layerName);
+  
+  // Update the legend
+  updateLegend(variableInfo, visParams);
+  
+  return image;
+}
+
+// Function to handle click events
+function handleMapClick(coordinates) {
+  var variableInfo = VARIABLES[selectedVariable];
+  var currentYear = yearSlider.getValue();
+  var currentMonth = monthSlider.getValue();
+  
+  // Create a point geometry
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  
+  // Get current value
+  var currentImage = loadPrismData(selectedVariable, currentYear, currentMonth);
+  
+  var currentValue = currentImage.reduceRegion({
+    reducer: ee.Reducer.mean(),
+    geometry: point,
+    scale: 800,
+    maxPixels: 1e9
+  }).get(selectedVariable);
+  
+  currentValue.evaluate(function(value) {
+    infoPanel.clear();
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                     'July', 'August', 'September', 'October', 'November', 'December'];
+    
+    infoPanel.add(ui.Label({
+      value: 'Variable: ' + selectedVariable.toUpperCase(),
+      style: {fontWeight: 'bold', fontSize: '16px'}
+    }));
+    infoPanel.add(ui.Label('Description: ' + variableInfo.name));
+    infoPanel.add(ui.Label('Units: ' + variableInfo.unit));
+    infoPanel.add(ui.Label('Date: ' + monthNames[currentMonth - 1] + ' ' + currentYear));
+    infoPanel.add(ui.Label('Value at point: ' + (value ? value.toFixed(2) : 'No data') + ' ' + variableInfo.unit));
+    infoPanel.add(ui.Label('Coordinates: ' + coordinates.lat.toFixed(3) + '°, ' + coordinates.lon.toFixed(3) + '°'));
+  });
+  
+  // Create annual time series chart
+  createAnnualChart(coordinates, selectedVariable, currentMonth);
+}
+
+// Function to create annual time series chart
+function createAnnualChart(coordinates, variable, month) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  // Create a list of years
+  var years = ee.List.sequence(startYear, Math.min(endYear, 2024)); // Limit to available data
+  
+  // Get values for the selected month across all years
+  var timeSeries = years.map(function(year) {
+    var image = loadPrismData(variable, year, month);
+    
+    var value = image.reduceRegion({
+      reducer: ee.Reducer.mean(),
+      geometry: point,
+      scale: 800,
+      maxPixels: 1e9
+    }).get(variable);
+    
+    return ee.Feature(null, {
+      'year': year,
+      'value': value
+    });
+  });
+  
+  var timeSeriesFeatureCollection = ee.FeatureCollection(timeSeries);
+  
+  // Create a chart
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                   'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  var chart = ui.Chart.feature.byFeature(timeSeriesFeatureCollection, 'year', ['value'])
+    .setChartType('LineChart')
+    .setOptions({
+      title: variableInfo.name + ' in ' + monthNames[month - 1] + ' (' + startYear + '-2024)',
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Year',
+        format: '####'
+      },
+      pointSize: 3,
+      lineWidth: 1.5,
+      colors: ['#1f77b4']
+    });
+  
+  // Display the chart
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to update the legend
+function updateLegend(variableInfo, visParams) {
+  // Clear the legend panel
+  legendPanel.clear();
+  
+  // Create the title
+  legendPanel.add(ui.Label({
+    value: selectedVariable.toUpperCase() + ': ' + variableInfo.name,
+    style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+  }));
+  
+  legendPanel.add(ui.Label('Units: ' + variableInfo.unit));
+  
+  // Create the color bar for the legend
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '300x30',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: visParams.palette
+    },
+    style: {stretch: 'horizontal', margin: '8px 0px'}
+  });
+  legendPanel.add(colorBar);
+  
+  // Add min/max labels
+  var minMaxPanel = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {margin: '0px 0px 6px 0px'}
+  });
+  minMaxPanel.add(ui.Label(visParams.min.toString(), {margin: '0px 0px'}));
+  var midLabel = ui.Label(
+    ((visParams.max - visParams.min) / 2 + visParams.min).toFixed(1),
+    {margin: '0px 0px', textAlign: 'center', stretch: 'horizontal'}
+  );
+  minMaxPanel.add(midLabel);
+  minMaxPanel.add(ui.Label(visParams.max.toString(), {margin: '0px 0px'}));
+  legendPanel.add(minMaxPanel);
+}
+
+// Create the user interface panels
+var controlPanel = ui.Panel({
+  style: {
+    width: '320px',
+    padding: '10px'
+  }
+});
+
+var titleLabel = ui.Label({
+  value: 'PRISM Climate Data Viewer',
+  style: {fontWeight: 'bold', fontSize: '18px', margin: '0 0 10px 0'}
+});
+controlPanel.add(titleLabel);
+
+// Variable selector
+var variableSelector = ui.Select({
+  items: Object.keys(VARIABLES),
+  value: selectedVariable,
+  onChange: function(value) {
+    selectedVariable = value;
+    updateMap();
+  },
+  style: {stretch: 'horizontal'}
+});
+
+var variableLabel = ui.Label('Select Climate Variable:', {fontWeight: 'bold'});
+controlPanel.add(variableLabel);
+controlPanel.add(variableSelector);
+
+// Year slider
+var yearSlider = ui.Slider({
+  min: startYear,
+  max: Math.min(endYear, 2024),
+  value: 2023,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var yearLabel = ui.Label('Select Year:', {fontWeight: 'bold'});
+controlPanel.add(yearLabel);
+controlPanel.add(yearSlider);
+
+// Month slider
+var monthSlider = ui.Slider({
+  min: 1,
+  max: 12,
+  value: selectedMonth,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var monthLabel = ui.Label('Select Month:', {fontWeight: 'bold'});
+controlPanel.add(monthLabel);
+controlPanel.add(monthSlider);
+
+// Add month labels
+var monthLabels = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {margin: '0px 0px 10px 0px'}
+});
+monthLabels.add(ui.Label('Jan', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Mar', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('May', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Jul', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Sep', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Nov', {margin: '0px 8px', fontSize: '10px'}));
+controlPanel.add(monthLabels);
+
+// Information panel for clicked point
+var infoPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+var infoLabel = ui.Label('Click on map for point information:', {fontWeight: 'bold'});
+controlPanel.add(infoLabel);
+controlPanel.add(infoPanel);
+
+// Chart panel for time series
+var chartPanel = ui.Panel();
+controlPanel.add(ui.Label('Annual Time Series:', {fontWeight: 'bold', margin: '10px 0px 0px 0px'}));
+controlPanel.add(chartPanel);
+
+// Legend panel
+var legendPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+controlPanel.add(ui.Label('Legend:', {fontWeight: 'bold'}));
+controlPanel.add(legendPanel);
+
+// Terrain enhancement settings
+controlPanel.add(ui.Label({
+  value: 'Terrain Enhancement: Multiply Hillshade (Always On)',
+  style: {fontWeight: 'bold', margin: '10px 0px 5px 0px'}
+}));
+
+// Add the control panel to the map
+ui.root.add(controlPanel);
+
+// Set map properties
+Map.style().set('cursor', 'crosshair');
+Map.setCenter(-98, 40, 4); 
+
+// Add click event handler to the map
+Map.onClick(function(coords) {
+  handleMapClick(coords);
+});
+
+// Initialize the map with the default variable and time
+updateMap();
+
+// Add information about the dataset
+controlPanel.add(ui.Label({
+  value: 'Data Source: PRISM Climate Group, Oregon State University',
+  style: {margin: '20px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+controlPanel.add(ui.Label({
+  value: '800m Monthly Climate Data (1895-2024)',
+  style: {margin: '5px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+controlPanel.add(ui.Label({
+  value: 'https://prism.oregonstate.edu/',
+  style: {margin: '5px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

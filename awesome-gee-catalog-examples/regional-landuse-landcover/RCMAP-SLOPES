@@ -1,0 +1,274 @@
+// RCMAP v7 Slopes Segment Annual Collections Example
+// This script demonstrates how to work with RCMAP slope trend data
+// for rangeland vegetation components across the western United States
+
+// =============================================================================
+// 1. DEFINE TIME PERIOD AND MAP CENTER
+// =============================================================================
+
+// Define time period for analysis
+var startYear = 1985;
+var endYear = 2024;
+
+// Center map on western US (RCMAP coverage area)
+Map.setCenter(-110, 40, 5);
+
+// =============================================================================
+// 2. LOAD RCMAP SLOPES COLLECTIONS
+// =============================================================================
+
+// Load all RCMAP Slopes collections
+var slopesCollections = {
+  annualHerbaceous: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/ANNUAL_HERBACEOUS'),
+  bareGround: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/BARE_GROUND'),
+  herbaceous: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/HERBACEOUS'),
+  litter: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/LITTER'),
+  nonSagebrushShrub: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/NON_SAGEBRUSH_SHRUB'),
+  perennialHerbaceous: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/PERENNIAL_HERBACEOUS'),
+  sagebrush: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/SAGEBRUSH'),
+  shrub: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/SHRUB'),
+  shrubHeight: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/SHRUB_HEIGHT'),
+  tree: ee.ImageCollection('projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/SLOPES_SEGMENT_ANNUAL/TREE')
+};
+
+// Print collection information
+print('RCMAP Slopes Collections Info:');
+Object.keys(slopesCollections).forEach(function(key) {
+  print(key + ' collection:', slopesCollections[key]);
+});
+
+// =============================================================================
+// 3. EXTRACT AND VISUALIZE SPECIFIC SLOPES DATA
+// =============================================================================
+
+// Function to get the most recent slopes image from a collection
+var getMostRecentSlopes = function(collection, year) {
+  return collection
+    .filter(ee.Filter.calendarRange(year, year, 'year'))
+    .first();
+};
+
+// Get recent slopes data for key vegetation components
+var recentYear = 2023; // Adjust based on available data
+
+var sagebrushSlopes = getMostRecentSlopes(slopesCollections.sagebrush, recentYear);
+var bareGroundSlopes = getMostRecentSlopes(slopesCollections.bareGround, recentYear);
+var herbaceousSlopes = getMostRecentSlopes(slopesCollections.herbaceous, recentYear);
+var annualHerbaceousSlopes = getMostRecentSlopes(slopesCollections.annualHerbaceous, recentYear);
+
+// =============================================================================
+// 4. DEFINE VISUALIZATION PARAMETERS
+// =============================================================================
+
+// Visualization parameters for slopes (adjust ranges based on data)
+var slopesVis = {
+  min: -2,
+  max: 2,
+  palette: ['red', 'orange', 'yellow', 'white', 'lightblue', 'blue', 'darkblue']
+};
+
+// Alternative diverging palette for trends
+var trendVis = {
+  min: -1,
+  max: 1,
+  palette: ['#d73027', '#f46d43', '#fdae61', '#fee08b', 
+           '#e0f3f8', '#abd9e9', '#74add1', '#4575b4']
+};
+
+// =============================================================================
+// 5. ADD LAYERS TO MAP
+// =============================================================================
+
+// Add slopes layers to map
+Map.addLayer(sagebrushSlopes, slopesVis, 'Sagebrush Slopes', false);
+Map.addLayer(bareGroundSlopes, slopesVis, 'Bare Ground Slopes', false);
+Map.addLayer(herbaceousSlopes, slopesVis, 'Herbaceous Slopes', false);
+Map.addLayer(annualHerbaceousSlopes, trendVis, 'Annual Herbaceous Slopes', true);
+
+// Remove the study area boundary layer (no longer needed)
+// Map.addLayer(studyArea, {color: 'black', fillColor: '00000000'}, 'CONUS Boundary');
+
+// =============================================================================
+// 6. STATISTICAL ANALYSIS
+// =============================================================================
+
+// Function to calculate slope statistics
+var calculateSlopeStats = function(image, name) {
+  // Calculate each statistic separately for single-band images
+  var meanStats = image.reduceRegion({
+    reducer: ee.Reducer.mean(),
+    scale: 30,
+    maxPixels: 1e9,
+    bestEffort: true
+  });
+  
+  var minStats = image.reduceRegion({
+    reducer: ee.Reducer.min(),
+    scale: 30,
+    maxPixels: 1e9,
+    bestEffort: true
+  });
+  
+  var maxStats = image.reduceRegion({
+    reducer: ee.Reducer.max(),
+    scale: 30,
+    maxPixels: 1e9,
+    bestEffort: true
+  });
+  
+  var stdStats = image.reduceRegion({
+    reducer: ee.Reducer.stdDev(),
+    scale: 30,
+    maxPixels: 1e9,
+    bestEffort: true
+  });
+  
+  print(name + ' Mean:', meanStats);
+  print(name + ' Min:', minStats);
+  print(name + ' Max:', maxStats);
+  print(name + ' StdDev:', stdStats);
+  print('---');
+  
+  return {
+    mean: meanStats,
+    min: minStats,
+    max: maxStats,
+    stdDev: stdStats
+  };
+};
+
+// Calculate statistics for key components
+calculateSlopeStats(sagebrushSlopes, 'Sagebrush');
+calculateSlopeStats(bareGroundSlopes, 'Bare Ground');
+calculateSlopeStats(herbaceousSlopes, 'Herbaceous');
+calculateSlopeStats(annualHerbaceousSlopes, 'Annual Herbaceous');
+
+// =============================================================================
+// 7. CREATE COMPOSITE ANALYSIS
+// =============================================================================
+
+// Create a composite showing areas of significant vegetation change
+var vegetationChangeComposite = ee.Image.cat([
+  sagebrushSlopes.abs().multiply(100), // Red channel - sagebrush change magnitude
+  herbaceousSlopes.abs().multiply(100), // Green channel - herbaceous change magnitude  
+  bareGroundSlopes.abs().multiply(100)  // Blue channel - bare ground change magnitude
+]).rename(['sagebrush_change', 'herbaceous_change', 'bareground_change']);
+
+Map.addLayer(vegetationChangeComposite, {
+  min: 0,
+  max: 50,
+  bands: ['sagebrush_change', 'herbaceous_change', 'bareground_change']
+}, 'Vegetation Change Composite (RGB)', false);
+
+// =============================================================================
+// 8. TREND CLASSIFICATION
+// =============================================================================
+
+// Classify slopes into trend categories
+var classifySlopes = function(image, name) {
+  var classified = image
+    .where(image.lt(-0.5), 1)  // Strong decline
+    .where(image.gte(-0.5).and(image.lt(-0.1)), 2)  // Moderate decline
+    .where(image.gte(-0.1).and(image.lte(0.1)), 3)   // Stable
+    .where(image.gt(0.1).and(image.lte(0.5)), 4)     // Moderate increase
+    .where(image.gt(0.5), 5);  // Strong increase
+    
+  return classified.rename(name + '_trend_class');
+};
+
+// Classify sagebrush trends
+var sagebrushTrendClass = classifySlopes(sagebrushSlopes, 'sagebrush');
+
+// Visualization for classified trends
+var trendClassVis = {
+  min: 1,
+  max: 5,
+  palette: ['darkred', 'red', 'yellow', 'lightgreen', 'darkgreen']
+};
+
+Map.addLayer(sagebrushTrendClass, trendClassVis, 'Sagebrush Trend Classes', false);
+
+// =============================================================================
+// 9. EXPORT FUNCTIONS (UNCOMMENT TO USE)
+// =============================================================================
+
+// Function to export slopes data
+var exportSlopes = function(image, name, year) {
+  Export.image.toDrive({
+    image: image,
+    description: 'RCMAP_' + name + '_Slopes_' + year,
+    folder: 'RCMAP_Slopes',
+    scale: 30,
+    maxPixels: 1e9
+  });
+};
+
+// Uncomment to export data
+// exportSlopes(sagebrushSlopes, 'Sagebrush', recentYear);
+// exportSlopes(bareGroundSlopes, 'BareGround', recentYear);
+
+// =============================================================================
+// 10. TIME SERIES CHART
+// =============================================================================
+
+// Create a point for time series analysis
+var samplePoint = ee.Geometry.Point([-117.5, 40.5]);
+
+// Function to create time series chart
+var createTimeSeriesChart = function(collection, bandName, title, color) {
+  var chart = ui.Chart.image.series({
+    imageCollection: collection.select(bandName),
+    region: samplePoint,
+    reducer: ee.Reducer.mean(),
+    scale: 30
+  }).setOptions({
+    title: title + ' Slope Trends Over Time',
+    vAxis: {title: 'Slope Value'},
+    hAxis: {title: 'Year'},
+    colors: [color],
+    pointSize: 3
+  });
+  
+  print(chart);
+};
+
+// Create charts for key components
+createTimeSeriesChart(slopesCollections.sagebrush, 'sagebrush', 'Sagebrush', 'green');
+createTimeSeriesChart(slopesCollections.bareGround, 'bare_ground', 'Bare Ground', 'brown');
+createTimeSeriesChart(slopesCollections.annualHerbaceous, 'annual_herbaceous', 'Annual Herbaceous', 'red');
+
+// =============================================================================
+// LEGEND AND INSTRUCTIONS
+// =============================================================================
+
+// Create legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'RCMAP Slopes Legend',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '11px',
+    margin: '0 0 4px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+var legendText = ui.Label({
+  value: 'Blue: Increasing trend\n' +
+         'White: Stable\n' +
+         'Red: Decreasing trend\n\n' +
+         'Slopes represent rate of change\n' +
+         'in vegetation cover (%/year)',
+  style: {fontSize: '10px'}
+});
+
+legend.add(legendText);
+Map.add(legend);

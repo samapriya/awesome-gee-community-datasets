@@ -1,0 +1,964 @@
+// Import blend utilities
+var blend = require('users/jja/public:blend.js');
+
+// Create a hillshade layer once for reuse
+var terrain = ee.Terrain.products(ee.Image('USGS/SRTMGL1_003'));
+var hillshade = ee.Terrain.hillshade(terrain.select('elevation'));
+var hillshadeVis = hillshade.visualize({min: 0, max: 255});
+
+// Define available climate variables with their properties
+// Note: Adjusted ranges for daily data which can be more extreme than monthly averages
+var VARIABLES = {
+  'ppt': {
+    name: 'Precipitation',
+    unit: 'mm',
+    min: 0,
+    max: 100, // Daily max precipitation can be quite high
+    palette:['ffffff', 'ffbbbb', '0000ff']
+  },
+  'tmean': {
+    name: 'Mean Temperature',
+    unit: '°C',
+    min: -30,
+    max: 45, // Daily temperatures more extreme than monthly
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tmax': {
+    name: 'Max Temperature',
+    unit: '°C',
+    min: -25,
+    max: 50,
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tmin': {
+    name: 'Min Temperature',
+    unit: '°C',
+    min: -35,
+    max: 30,
+    palette: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  },
+  'tdmean': {
+    name: 'Dew Point',
+    unit: '°C',
+    min: -35,
+    max: 25,
+    palette: ['#8c510a', '#bf812d', '#dfc27d', '#f6e8c3', '#f5f5f5', '#c7eae5', '#80cdc1', '#35978f', '#01665e']
+  },
+  'vpdmin': {
+    name: 'Vapor Pressure Deficit (Min)',
+    unit: 'hPa',
+    min: 0,
+    max: 6,
+    palette: ['#f7fcfd', '#e5f5f9', '#ccece6', '#99d8c9', '#66c2a4', '#41ae76', '#238b45', '#006d2c', '#00441b']
+  },
+  'vpdmax': {
+    name: 'Vapor Pressure Deficit (Max)',
+    unit: 'hPa',
+    min: 0,
+    max: 25,
+    palette: ['#f7fcfd', '#e5f5f9', '#ccece6', '#99d8c9', '#66c2a4', '#41ae76', '#238b45', '#006d2c', '#00441b']
+  }
+};
+
+// Set default variable and date range
+var selectedVariable = 'tmean';
+var selectedYear = 2024;
+var selectedMonth = 6; // June as default
+var selectedDay = 15; // Mid-month as default
+var viewMode = 'single'; // 'single', 'weekly', 'monthly', 'seasonal'
+
+// Function to load and prepare PRISM daily data
+function loadPrismDailyData(variableName, year, month, day) {
+  var targetDate = ee.Date.fromYMD(year, month, day);
+  
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+    .filterDate(targetDate, targetDate.advance(1, 'day'))
+    .select(variableName);
+  
+  return collection.first();
+}
+
+// Function to load data for different time periods
+function loadDataForPeriod(variableName, year, month, day, mode) {
+  var startDate, endDate, reducer;
+  
+  switch(mode) {
+    case 'single':
+      return loadPrismDailyData(variableName, year, month, day);
+    
+    case 'weekly':
+      startDate = ee.Date.fromYMD(year, month, day).advance(-3, 'day');
+      endDate = ee.Date.fromYMD(year, month, day).advance(4, 'day');
+      reducer = ee.Reducer.mean();
+      break;
+    
+    case 'monthly':
+      startDate = ee.Date.fromYMD(year, month, 1);
+      endDate = startDate.advance(1, 'month');
+      reducer = ee.Reducer.mean();
+      break;
+    
+    case 'seasonal':
+      // Get 3-month season centered on selected month
+      var seasonStart = month <= 2 ? month + 10 : month - 2;
+      var seasonYear = month <= 2 ? year - 1 : year;
+      startDate = ee.Date.fromYMD(seasonYear, seasonStart, 1);
+      endDate = startDate.advance(3, 'month');
+      reducer = ee.Reducer.mean();
+      break;
+  }
+  
+  if (mode !== 'single') {
+    var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+      .filterDate(startDate, endDate)
+      .select(variableName);
+    
+    return collection.reduce(reducer).rename(variableName);
+  }
+}
+
+// Function to create animation for a time period
+function createAnimation() {
+  var startDate = ee.Date.fromYMD(yearSlider.getValue(), monthSlider.getValue(), 1);
+  var endDate = startDate.advance(1, 'month');
+  
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+    .filterDate(startDate, endDate)
+    .select(selectedVariable);
+  
+  var variableInfo = VARIABLES[selectedVariable];
+  var visParams = {
+    min: variableInfo.min,
+    max: variableInfo.max,
+    palette: variableInfo.palette
+  };
+  
+  // Create animation - smaller region for faster processing
+  var bounds = Map.getBounds(true);
+  var gifParams = {
+    'region': bounds,
+    'dimensions': 400, // Smaller for faster loading
+    'crs': 'EPSG:3857',
+    'framesPerSecond': 3,
+    'format': 'gif'
+  };
+  
+  var visualized = collection.map(function(img) {
+    var vis = img.visualize(visParams);
+    var blended = blend.multiply(vis, hillshadeVis);
+    return blended.set('system:time_start', img.get('system:time_start'));
+  });
+  
+  // Clear previous animation and show loading message
+  animationPanel.clear();
+  animationPanel.add(ui.Label('Creating animation...', {fontStyle: 'italic'}));
+  
+  // Create animated thumbnail that displays directly in the panel
+  var animatedThumbnail = ui.Thumbnail({
+    image: visualized,
+    params: gifParams,
+    style: {
+      width: '300px',
+      height: '200px',
+      margin: '10px 0px'
+    }
+  });
+  
+  // Add the animated thumbnail to the panel
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                   'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  animationPanel.clear();
+  animationPanel.add(ui.Label({
+    value: 'Daily ' + variableInfo.name + ' - ' + monthNames[monthSlider.getValue() - 1] + ' ' + yearSlider.getValue(),
+    style: {fontWeight: 'bold', margin: '5px 0px'}
+  }));
+  animationPanel.add(animatedThumbnail);
+  
+  // Also provide URL option for full resolution
+  var url = visualized.getVideoThumbURL(Object.assign(gifParams, {dimensions: 800}));
+  animationPanel.add(ui.Label({
+    value: 'View Full Resolution Animation',
+    targetUrl: url,
+    style: {color: 'blue', textDecoration: 'underline', fontSize: '12px', margin: '5px 0px'}
+  }));
+}
+
+// Function to create weekly animation (7 days centered on selected date)
+function createWeeklyAnimation() {
+  var centerDate = ee.Date.fromYMD(yearSlider.getValue(), monthSlider.getValue(), daySlider.getValue());
+  var startDate = centerDate.advance(-3, 'day');
+  var endDate = centerDate.advance(4, 'day');
+  
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+    .filterDate(startDate, endDate)
+    .select(selectedVariable);
+  
+  var variableInfo = VARIABLES[selectedVariable];
+  var visParams = {
+    min: variableInfo.min,
+    max: variableInfo.max,
+    palette: variableInfo.palette
+  };
+  
+  var bounds = Map.getBounds(true);
+  var gifParams = {
+    'region': bounds,
+    'dimensions': 400,
+    'crs': 'EPSG:3857',
+    'framesPerSecond': 1, // Slower for weekly view
+    'format': 'gif'
+  };
+  
+  var visualized = collection.map(function(img) {
+    var vis = img.visualize(visParams);
+    var blended = blend.multiply(vis, hillshadeVis);
+    return blended.set('system:time_start', img.get('system:time_start'));
+  });
+  
+  animationPanel.clear();
+  animationPanel.add(ui.Label('Creating weekly animation...', {fontStyle: 'italic'}));
+  
+  var animatedThumbnail = ui.Thumbnail({
+    image: visualized,
+    params: gifParams,
+    style: {
+      width: '300px',
+      height: '200px',
+      margin: '10px 0px'
+    }
+  });
+  
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                   'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  animationPanel.clear();
+  animationPanel.add(ui.Label({
+    value: 'Weekly ' + variableInfo.name + ' - Week of ' + monthNames[monthSlider.getValue() - 1] + ' ' + daySlider.getValue() + ', ' + yearSlider.getValue(),
+    style: {fontWeight: 'bold', margin: '5px 0px'}
+  }));
+  animationPanel.add(animatedThumbnail);
+  
+  var url = visualized.getVideoThumbURL(Object.assign(gifParams, {dimensions: 800}));
+  animationPanel.add(ui.Label({
+    value: 'View Full Resolution Animation',
+    targetUrl: url,
+    style: {color: 'blue', textDecoration: 'underline', fontSize: '12px', margin: '5px 0px'}
+  }));
+}
+
+// Function to create seasonal animation (every 5th day for 3 months)
+function createSeasonalAnimation() {
+  var month = monthSlider.getValue();
+  var year = yearSlider.getValue();
+  
+  // Get 3-month season centered on selected month
+  var seasonStart = month <= 2 ? month + 10 : month - 2;
+  var seasonYear = month <= 2 ? year - 1 : year;
+  var startDate = ee.Date.fromYMD(seasonYear, seasonStart, 1);
+  var endDate = startDate.advance(3, 'month');
+  
+  // Sample every 5th day to reduce frame count
+  var allDays = ee.List.sequence(0, endDate.difference(startDate, 'day').subtract(1), 5);
+  
+  var collection = allDays.map(function(dayOffset) {
+    var date = startDate.advance(dayOffset, 'day');
+    return ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+      .filterDate(date, date.advance(1, 'day'))
+      .select(selectedVariable)
+      .first()
+      .set('system:time_start', date.millis());
+  });
+  
+  collection = ee.ImageCollection.fromImages(collection);
+  
+  var variableInfo = VARIABLES[selectedVariable];
+  var visParams = {
+    min: variableInfo.min,
+    max: variableInfo.max,
+    palette: variableInfo.palette
+  };
+  
+  var bounds = Map.getBounds(true);
+  var gifParams = {
+    'region': bounds,
+    'dimensions': 400,
+    'crs': 'EPSG:3857',
+    'framesPerSecond': 4, // Faster for seasonal overview
+    'format': 'gif'
+  };
+  
+  var visualized = collection.map(function(img) {
+    var vis = img.visualize(visParams);
+    var blended = blend.multiply(vis, hillshadeVis);
+    return blended.set('system:time_start', img.get('system:time_start'));
+  });
+  
+  animationPanel.clear();
+  animationPanel.add(ui.Label('Creating seasonal animation...', {fontStyle: 'italic'}));
+  
+  var animatedThumbnail = ui.Thumbnail({
+    image: visualized,
+    params: gifParams,
+    style: {
+      width: '300px',
+      height: '200px',
+      margin: '10px 0px'
+    }
+  });
+  
+  var seasonNames = ['Winter-Spring', 'Spring-Summer', 'Summer-Fall', 'Fall-Winter', 
+                    'Fall-Winter', 'Winter-Spring', 'Spring-Summer', 'Summer-Fall', 
+                    'Summer-Fall', 'Fall-Winter', 'Fall-Winter', 'Winter-Spring'];
+  
+  animationPanel.clear();
+  animationPanel.add(ui.Label({
+    value: seasonNames[month - 1] + ' ' + variableInfo.name + ' - ' + year + ' (Every 5th Day)',
+    style: {fontWeight: 'bold', margin: '5px 0px'}
+  }));
+  animationPanel.add(animatedThumbnail);
+  
+  var url = visualized.getVideoThumbURL(Object.assign(gifParams, {dimensions: 800}));
+  animationPanel.add(ui.Label({
+    value: 'View Full Resolution Animation',
+    targetUrl: url,
+    style: {color: 'blue', textDecoration: 'underline', fontSize: '12px', margin: '5px 0px'}
+  }));
+}
+
+// Function to update the map with the selected variable and time
+function updateMap() {
+  // Clear previous layers
+  Map.layers().reset();
+  
+  // Get variable info
+  var variableInfo = VARIABLES[selectedVariable];
+  
+  // Load the PRISM data based on view mode
+  var image = loadDataForPeriod(selectedVariable, 
+                               yearSlider.getValue(), 
+                               monthSlider.getValue(), 
+                               daySlider.getValue(), 
+                               viewMode);
+  
+  // Visualization parameters
+  var visParams = {
+    min: variableInfo.min,
+    max: variableInfo.max,
+    palette: variableInfo.palette
+  };
+  
+  // Visualize the climate data
+  var visClimate = image.visualize(visParams);
+  
+  // Apply multiply blend with hillshade
+  var blendedImage = blend.multiply(visClimate, hillshadeVis);
+  
+  // Add the blended image to the map
+  var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+  var layerName = selectedVariable.toUpperCase() + ' ';
+  switch(viewMode) {
+    case 'single':
+      layerName += monthNames[monthSlider.getValue() - 1] + ' ' + 
+                   daySlider.getValue() + ', ' + yearSlider.getValue();
+      break;
+    case 'weekly':
+      layerName += 'Week of ' + monthNames[monthSlider.getValue() - 1] + ' ' + 
+                   daySlider.getValue() + ', ' + yearSlider.getValue();
+      break;
+    case 'monthly':
+      layerName += monthNames[monthSlider.getValue() - 1] + ' ' + 
+                   yearSlider.getValue() + ' (Monthly Avg)';
+      break;
+    case 'seasonal':
+      layerName += 'Seasonal Avg ' + yearSlider.getValue();
+      break;
+  }
+  layerName += ' with Terrain';
+  
+  Map.addLayer(blendedImage, {}, layerName);
+  
+  // Update the legend
+  updateLegend(variableInfo, visParams);
+  
+  return image;
+}
+
+// Function to handle click events
+function handleMapClick(coordinates) {
+  var variableInfo = VARIABLES[selectedVariable];
+  var currentYear = yearSlider.getValue();
+  var currentMonth = monthSlider.getValue();
+  var currentDay = daySlider.getValue();
+  
+  // Create a point geometry
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  
+  // Get current value
+  var currentImage = loadDataForPeriod(selectedVariable, currentYear, currentMonth, currentDay, viewMode);
+  
+  var currentValue = currentImage.reduceRegion({
+    reducer: ee.Reducer.mean(),
+    geometry: point,
+    scale: 800,
+    maxPixels: 1e9
+  }).get(selectedVariable);
+  
+  currentValue.evaluate(function(value) {
+    infoPanel.clear();
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                     'July', 'August', 'September', 'October', 'November', 'December'];
+    
+    infoPanel.add(ui.Label({
+      value: 'Variable: ' + selectedVariable.toUpperCase(),
+      style: {fontWeight: 'bold', fontSize: '16px'}
+    }));
+    infoPanel.add(ui.Label('Description: ' + variableInfo.name));
+    infoPanel.add(ui.Label('Units: ' + variableInfo.unit));
+    
+    var dateString = monthNames[currentMonth - 1] + ' ' + currentDay + ', ' + currentYear;
+    if (viewMode !== 'single') {
+      dateString += ' (' + viewMode + ')';
+    }
+    infoPanel.add(ui.Label('Date: ' + dateString));
+    infoPanel.add(ui.Label('Value at point: ' + (value ? value.toFixed(2) : 'No data') + ' ' + variableInfo.unit));
+    infoPanel.add(ui.Label('Coordinates: ' + coordinates.lat.toFixed(3) + '°, ' + coordinates.lon.toFixed(3) + '°'));
+  });
+  
+  // Create time series chart based on view mode
+  switch(viewMode) {
+    case 'single':
+      createDailyChart(coordinates, selectedVariable, currentYear, currentMonth);
+      break;
+    case 'weekly':
+      createWeeklyChart(coordinates, selectedVariable, currentYear, currentMonth);
+      break;
+    case 'monthly':
+      createMonthlyChart(coordinates, selectedVariable, currentYear);
+      break;
+    case 'seasonal':
+      createSeasonalChart(coordinates, selectedVariable, currentYear);
+      break;
+    default:
+      createAnnualChart(coordinates, selectedVariable, currentMonth);
+  }
+}
+
+// Function to create daily time series chart for a month
+function createDailyChart(coordinates, variable, year, month) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  var startDate = ee.Date.fromYMD(year, month, 1);
+  var endDate = startDate.advance(1, 'month');
+  
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+    .filterDate(startDate, endDate)
+    .select(variable);
+  
+  // Create a chart
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                   'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  var chart = ui.Chart.image.series(collection, point, ee.Reducer.mean(), 800)
+    .setOptions({
+      title: 'Daily ' + variableInfo.name + ' in ' + monthNames[month - 1] + ' ' + year,
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Date',
+        format: 'MMM dd'
+      },
+      pointSize: 2,
+      lineWidth: 1,
+      colors: ['#1f77b4']
+    });
+  
+  // Display the chart
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to create weekly chart - shows weekly averages for the year
+function createWeeklyChart(coordinates, variable, year, month) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  var startDate = ee.Date.fromYMD(year, 1, 1);
+  var endDate = ee.Date.fromYMD(year + 1, 1, 1);
+  
+  // Create weekly averages (every 7 days)
+  var weekStarts = ee.List.sequence(0, 364, 7); // 52 weeks
+  
+  var weeklyData = weekStarts.map(function(dayOfYear) {
+    var weekStart = startDate.advance(dayOfYear, 'day');
+    var weekEnd = weekStart.advance(7, 'day');
+    
+    var weekCollection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+      .filterDate(weekStart, weekEnd)
+      .select(variable);
+    
+    var weeklyMean = weekCollection.mean();
+    
+    var value = weeklyMean.reduceRegion({
+      reducer: ee.Reducer.mean(),
+      geometry: point,
+      scale: 800,
+      maxPixels: 1e9
+    }).get(variable);
+    
+    // Calculate week number
+    var weekNumber = ee.Number(dayOfYear).divide(7).add(1).int();
+    
+    return ee.Feature(null, {
+      'week': weekNumber,
+      'value': value,
+      'date': weekStart.millis()
+    });
+  });
+  
+  var weeklyFeatureCollection = ee.FeatureCollection(weeklyData);
+  
+  var chart = ui.Chart.feature.byFeature(weeklyFeatureCollection, 'week', ['value'])
+    .setChartType('LineChart')
+    .setOptions({
+      title: 'Weekly Average ' + variableInfo.name + ' in ' + year,
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Week of Year',
+        format: '##'
+      },
+      pointSize: 3,
+      lineWidth: 2,
+      colors: ['#2ca02c']
+    });
+  
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to create monthly chart - shows monthly averages for the year
+function createMonthlyChart(coordinates, variable, year) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  var months = ee.List.sequence(1, 12);
+  
+  var monthlyData = months.map(function(month) {
+    var startDate = ee.Date.fromYMD(year, month, 1);
+    var endDate = startDate.advance(1, 'month');
+    
+    var monthCollection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+      .filterDate(startDate, endDate)
+      .select(variable);
+    
+    var monthlyMean = monthCollection.mean();
+    
+    var value = monthlyMean.reduceRegion({
+      reducer: ee.Reducer.mean(),
+      geometry: point,
+      scale: 800,
+      maxPixels: 1e9
+    }).get(variable);
+    
+    return ee.Feature(null, {
+      'month': month,
+      'value': value
+    });
+  });
+  
+  var monthlyFeatureCollection = ee.FeatureCollection(monthlyData);
+  
+  var chart = ui.Chart.feature.byFeature(monthlyFeatureCollection, 'month', ['value'])
+    .setChartType('LineChart')
+    .setOptions({
+      title: 'Monthly Average ' + variableInfo.name + ' in ' + year,
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Month',
+        format: '##',
+        ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      },
+      pointSize: 4,
+      lineWidth: 2,
+      colors: ['#ff7f0e']
+    });
+  
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to create seasonal chart - shows seasonal averages across years
+function createSeasonalChart(coordinates, variable, year) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  // Define seasons (3-month periods)
+  var seasons = [
+    {name: 'Winter', months: [12, 1, 2], color: '#1f77b4'},
+    {name: 'Spring', months: [3, 4, 5], color: '#2ca02c'},
+    {name: 'Summer', months: [6, 7, 8], color: '#ff7f0e'},
+    {name: 'Fall', months: [9, 10, 11], color: '#d62728'}
+  ];
+  
+  var years = ee.List.sequence(year - 5, year); // Show 6 years including current
+  
+  var seasonalData = [];
+  
+  seasons.forEach(function(season, seasonIndex) {
+    var yearlySeasonData = years.map(function(yr) {
+      var seasonCollection = ee.ImageCollection([]);
+      
+      season.months.forEach(function(month) {
+        var actualYear = (month === 12 && seasonIndex === 0) ? ee.Number(yr).subtract(1) : yr;
+        var startDate = ee.Date.fromYMD(actualYear, month, 1);
+        var endDate = startDate.advance(1, 'month');
+        
+        var monthlyCollection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+          .filterDate(startDate, endDate)
+          .select(variable);
+        
+        seasonCollection = seasonCollection.merge(monthlyCollection);
+      });
+      
+      var seasonalMean = seasonCollection.mean();
+      
+      var value = seasonalMean.reduceRegion({
+        reducer: ee.Reducer.mean(),
+        geometry: point,
+        scale: 800,
+        maxPixels: 1e9
+      }).get(variable);
+      
+      return ee.Feature(null, {
+        'year': yr,
+        'season': season.name,
+        'value': value
+      });
+    });
+    
+    seasonalData = seasonalData.concat(yearlySeasonData);
+  });
+  
+  var seasonalFeatureCollection = ee.FeatureCollection(seasonalData);
+  
+  var chart = ui.Chart.feature.groups(seasonalFeatureCollection, 'year', 'value', 'season')
+    .setChartType('LineChart')
+    .setOptions({
+      title: 'Seasonal Average ' + variableInfo.name + ' (6-Year Comparison)',
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Year',
+        format: '####'
+      },
+      pointSize: 3,
+      lineWidth: 2,
+      colors: ['#1f77b4', '#d62728', '#2ca02c', '#ff7f0e'] // Winter, Fall, Spring, Summer
+    });
+  
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to create annual time series chart (keeping original for comparison)
+function createAnnualChart(coordinates, variable, month) {
+  var point = ee.Geometry.Point([coordinates.lon, coordinates.lat]);
+  var variableInfo = VARIABLES[variable];
+  
+  // Create a list of years
+  var years = ee.List.sequence(1981, 2025); // Daily data starts from 1981
+  
+  // Get monthly average values across all years
+  var timeSeries = years.map(function(year) {
+    var startDate = ee.Date.fromYMD(year, month, 1);
+    var endDate = startDate.advance(1, 'month');
+    
+    var monthlyCollection = ee.ImageCollection('projects/sat-io/open-datasets/OREGONSTATE/PRISM_800_DAILY')
+      .filterDate(startDate, endDate)
+      .select(variable);
+    
+    var monthlyMean = monthlyCollection.mean();
+    
+    var value = monthlyMean.reduceRegion({
+      reducer: ee.Reducer.mean(),
+      geometry: point,
+      scale: 800,
+      maxPixels: 1e9
+    }).get(variable);
+    
+    return ee.Feature(null, {
+      'year': year,
+      'value': value
+    });
+  });
+  
+  var timeSeriesFeatureCollection = ee.FeatureCollection(timeSeries);
+  
+  // Create a chart
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                   'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  var chart = ui.Chart.feature.byFeature(timeSeriesFeatureCollection, 'year', ['value'])
+    .setChartType('LineChart')
+    .setOptions({
+      title: variableInfo.name + ' in ' + monthNames[month - 1] + ' (1981-2025)',
+      vAxis: {title: variableInfo.unit},
+      hAxis: {
+        title: 'Year',
+        format: '####'
+      },
+      pointSize: 3,
+      lineWidth: 1.5,
+      colors: ['#1f77b4']
+    });
+  
+  // Display the chart
+  chartPanel.clear();
+  chartPanel.add(chart);
+}
+
+// Function to update the legend
+function updateLegend(variableInfo, visParams) {
+  // Clear the legend panel
+  legendPanel.clear();
+  
+  // Create the title
+  var titleText = selectedVariable.toUpperCase() + ': ' + variableInfo.name;
+  if (viewMode !== 'single') {
+    titleText += ' (' + viewMode + ')';
+  }
+  
+  legendPanel.add(ui.Label({
+    value: titleText,
+    style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+  }));
+  
+  legendPanel.add(ui.Label('Units: ' + variableInfo.unit));
+  
+  // Create the color bar for the legend
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '300x30',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: visParams.palette
+    },
+    style: {stretch: 'horizontal', margin: '8px 0px'}
+  });
+  legendPanel.add(colorBar);
+  
+  // Add min/max labels
+  var minMaxPanel = ui.Panel({
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {margin: '0px 0px 6px 0px'}
+  });
+  minMaxPanel.add(ui.Label(visParams.min.toString(), {margin: '0px 0px'}));
+  var midLabel = ui.Label(
+    ((visParams.max - visParams.min) / 2 + visParams.min).toFixed(1),
+    {margin: '0px 0px', textAlign: 'center', stretch: 'horizontal'}
+  );
+  minMaxPanel.add(midLabel);
+  minMaxPanel.add(ui.Label(visParams.max.toString(), {margin: '0px 0px'}));
+  legendPanel.add(minMaxPanel);
+}
+
+// Create the user interface panels
+var controlPanel = ui.Panel({
+  style: {
+    width: '350px',
+    padding: '10px'
+  }
+});
+
+var titleLabel = ui.Label({
+  value: 'PRISM Daily Climate Data Viewer',
+  style: {fontWeight: 'bold', fontSize: '18px', margin: '0 0 10px 0'}
+});
+controlPanel.add(titleLabel);
+
+// Variable selector
+var variableSelector = ui.Select({
+  items: Object.keys(VARIABLES),
+  value: selectedVariable,
+  onChange: function(value) {
+    selectedVariable = value;
+    updateMap();
+  },
+  style: {stretch: 'horizontal'}
+});
+
+var variableLabel = ui.Label('Select Climate Variable:', {fontWeight: 'bold'});
+controlPanel.add(variableLabel);
+controlPanel.add(variableSelector);
+
+// View mode selector
+var viewModeSelector = ui.Select({
+  items: [
+    {label: 'Single Day', value: 'single'},
+    {label: 'Weekly Average', value: 'weekly'},
+    {label: 'Monthly Average', value: 'monthly'},
+    {label: 'Seasonal Average', value: 'seasonal'}
+  ],
+  value: viewMode,
+  onChange: function(value) {
+    viewMode = value;
+    updateMap();
+  },
+  style: {stretch: 'horizontal'}
+});
+
+var viewModeLabel = ui.Label('View Mode:', {fontWeight: 'bold'});
+controlPanel.add(viewModeLabel);
+controlPanel.add(viewModeSelector);
+
+// Year slider
+var yearSlider = ui.Slider({
+  min: 1981,
+  max: 2025,
+  value: 2024,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var yearLabel = ui.Label('Select Year:', {fontWeight: 'bold'});
+controlPanel.add(yearLabel);
+controlPanel.add(yearSlider);
+
+// Month slider
+var monthSlider = ui.Slider({
+  min: 1,
+  max: 12,
+  value: selectedMonth,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var monthLabel = ui.Label('Select Month:', {fontWeight: 'bold'});
+controlPanel.add(monthLabel);
+controlPanel.add(monthSlider);
+
+// Day slider (new for daily data)
+var daySlider = ui.Slider({
+  min: 1,
+  max: 31,
+  value: selectedDay,
+  step: 1,
+  onChange: updateMap,
+  style: {stretch: 'horizontal'}
+});
+
+var dayLabel = ui.Label('Select Day:', {fontWeight: 'bold'});
+controlPanel.add(dayLabel);
+controlPanel.add(daySlider);
+
+// Add month labels
+var monthLabels = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {margin: '0px 0px 10px 0px'}
+});
+monthLabels.add(ui.Label('Jan', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Mar', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('May', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Jul', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Sep', {margin: '0px 8px', fontSize: '10px'}));
+monthLabels.add(ui.Label('Nov', {margin: '0px 8px', fontSize: '10px'}));
+controlPanel.add(monthLabels);
+
+// Animation controls
+var animationButton = ui.Button({
+  label: 'Create Monthly Animation',
+  onClick: createAnimation,
+  style: {stretch: 'horizontal'}
+});
+
+var weeklyAnimationButton = ui.Button({
+  label: 'Create Weekly Animation',
+  onClick: createWeeklyAnimation,
+  style: {stretch: 'horizontal'}
+});
+
+var seasonalAnimationButton = ui.Button({
+  label: 'Create Seasonal Animation',
+  onClick: createSeasonalAnimation,
+  style: {stretch: 'horizontal'}
+});
+
+controlPanel.add(ui.Label('Animation Controls:', {fontWeight: 'bold'}));
+controlPanel.add(animationButton);
+controlPanel.add(weeklyAnimationButton);
+controlPanel.add(seasonalAnimationButton);
+
+var animationPanel = ui.Panel();
+controlPanel.add(animationPanel);
+
+// Information panel for clicked point
+var infoPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+var infoLabel = ui.Label('Click on map for point information:', {fontWeight: 'bold'});
+controlPanel.add(infoLabel);
+controlPanel.add(infoPanel);
+
+// Chart panel for time series
+var chartPanel = ui.Panel();
+controlPanel.add(ui.Label('Time Series:', {fontWeight: 'bold', margin: '10px 0px 0px 0px'}));
+controlPanel.add(chartPanel);
+
+// Legend panel
+var legendPanel = ui.Panel({
+  style: {
+    padding: '8px',
+    margin: '10px 0px',
+    border: '1px solid gray'
+  }
+});
+controlPanel.add(ui.Label('Legend:', {fontWeight: 'bold'}));
+controlPanel.add(legendPanel);
+
+// Terrain enhancement settings
+controlPanel.add(ui.Label({
+  value: 'Terrain Enhancement: Multiply Hillshade (Always On)',
+  style: {fontWeight: 'bold', margin: '10px 0px 5px 0px'}
+}));
+
+// Add the control panel to the map
+ui.root.add(controlPanel);
+
+// Set map properties
+Map.style().set('cursor', 'crosshair');
+Map.setCenter(-98, 40, 4); 
+
+// Add click event handler to the map
+Map.onClick(function(coords) {
+  handleMapClick(coords);
+});
+
+// Initialize the map with the default variable and time
+updateMap();
+
+// Add information about the dataset
+controlPanel.add(ui.Label({
+  value: 'Data Source: PRISM Climate Group, Oregon State University',
+  style: {margin: '20px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+controlPanel.add(ui.Label({
+  value: '800m Daily Climate Data (1981-2025)',
+  style: {margin: '5px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+controlPanel.add(ui.Label({
+  value: 'https://prism.oregonstate.edu/',
+  style: {margin: '5px 0px 0px 0px', fontSize: '12px', color: 'gray'}
+}));
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

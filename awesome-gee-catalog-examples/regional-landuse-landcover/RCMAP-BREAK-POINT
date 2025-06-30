@@ -1,0 +1,184 @@
+// Break Point Presence collections for each component
+var breakpoint_collections = {
+  'annual_herbaceous': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/ANNUAL_HERBACEOUS"),
+  'bare_ground': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/BARE_GROUND"),
+  'herbaceous': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/HERBACEOUS"),
+  'litter': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/LITTER"),
+  'non_sagebrush_shrub': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/NON_SAGEBRUSH_SHRUB"),
+  'perennial_herbaceous': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/PERENNIAL_HERBACEOUS"),
+  'sagebrush': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SAGEBRUSH"),
+  'shrub': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SHRUB"),
+  'shrub_height': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/SHRUB_HEIGHT"),
+  'tree': ee.ImageCollection("projects/sat-io/open-datasets/USGS/RCMAP/V7/TIME_SERIES_TRENDS/BREAKPOINT_PRESENCE_ANNUAL/TREE")
+};
+
+// Enhanced visualization for break point presence with zero masking
+var breakVis = {
+  palette: ['red'],  // Only show break points (1s) in red
+  min: 1,
+  max: 1
+};
+
+// Function to mask zeros and enhance visibility
+function maskZeros(image) {
+  return image.updateMask(image.gt(0));
+}
+
+// Function to create time-enhanced breakpoint visualization
+function createTimeEnhancedVis(collection, componentName) {
+  // Get all images and mask zeros
+  var maskedCollection = collection.map(maskZeros);
+  
+  // Create frequency map (sum of all breakpoints over time)
+  var frequency = maskedCollection.sum();
+  
+  // Create temporal density (shows clustering of breakpoints in time)
+  var years = ee.List.sequence(1985, 2024);
+  var yearlyBreaks = years.map(function(year) {
+    var yearStart = ee.Date.fromYMD(year, 1, 1);
+    var yearEnd = yearStart.advance(1, 'year');
+    var yearlySum = maskedCollection
+      .filterDate(yearStart, yearEnd)
+      .sum();
+    return yearlySum.set('year', year);
+  });
+  
+  // Convert to ImageCollection
+  var yearlyCollection = ee.ImageCollection.fromImages(yearlyBreaks);
+  
+  return {
+    frequency: frequency,
+    yearly: yearlyCollection,
+    masked: maskedCollection
+  };
+}
+
+// Enhanced frequency visualization
+var freqVis = {
+  palette: ['white', 'lightblue', 'blue', 'orange', 'red', 'darkred'],
+  min: 0,
+  max: 15
+};
+
+// Very high contrast visualization for breakpoints
+var highContrastVis = {
+  palette: ['black', 'yellow', 'orange', 'red', 'magenta'],
+  min: 1,
+  max: 10
+};
+
+// Create enhanced visualizations for sagebrush
+var sagebrushVis = createTimeEnhancedVis(breakpoint_collections['sagebrush'], 'sagebrush');
+
+// Mask frequency to only show areas with breakpoints
+var maskedFrequency = sagebrushVis.frequency.updateMask(sagebrushVis.frequency.gt(0));
+
+// Add layers with improved visibility
+Map.addLayer(maskedFrequency, freqVis, 'Sagebrush Break Frequency (Zeros Masked)', true);
+Map.addLayer(maskedFrequency, highContrastVis, 'Sagebrush Breaks (High Contrast)', false);
+
+// Example: Recent breakpoints (2020-2024) with enhanced visibility
+var recentBreaks = breakpoint_collections['sagebrush']
+  .filterDate('2020-01-01', '2024-12-31')
+  .map(maskZeros)
+  .sum()
+  .updateMask(breakpoint_collections['sagebrush']
+    .filterDate('2020-01-01', '2024-12-31')
+    .map(maskZeros)
+    .sum().gt(0));
+
+Map.addLayer(recentBreaks, {
+  palette: ['lightgreen', 'yellow', 'orange', 'red', 'darkred'],
+  min: 1,
+  max: 5
+}, 'Recent Sagebrush Breaks (2020-2024)', false);
+
+// Create a temporal animation-ready collection (one image per year with zeros masked)
+var yearlyMaskedBreaks = sagebrushVis.yearly.map(function(img) {
+  return img.updateMask(img.gt(0));
+});
+
+// Add a specific year example with enhanced visibility
+var sagebrush_breaks_2020 = breakpoint_collections['sagebrush']
+  .filterDate('2020-01-01', '2020-12-31')
+  .first()
+  .updateMask(breakpoint_collections['sagebrush']
+    .filterDate('2020-01-01', '2020-12-31')
+    .first().gt(0));
+
+Map.addLayer(sagebrush_breaks_2020, breakVis, 'Sagebrush Breaks 2020 (Masked)', false);
+
+// Function to create comparison visualization between different time periods
+function createTemporalComparison(collection, period1, period2, name) {
+  var early = collection.filterDate(period1[0], period1[1]).map(maskZeros).sum();
+  var late = collection.filterDate(period2[0], period2[1]).map(maskZeros).sum();
+  
+  var earlyMasked = early.updateMask(early.gt(0));
+  var lateMasked = late.updateMask(late.gt(0));
+  
+  Map.addLayer(earlyMasked, {palette: ['blue'], min: 1, max: 5}, name + ' Early Period', false);
+  Map.addLayer(lateMasked, {palette: ['red'], min: 1, max: 5}, name + ' Late Period', false);
+  
+  // Change detection (areas with breaks in late period but not early)
+  var change = lateMasked.subtract(earlyMasked).updateMask(lateMasked.subtract(earlyMasked).gt(0));
+  Map.addLayer(change, {palette: ['yellow'], min: 1, max: 3}, name + ' New Break Areas', false);
+}
+
+// Compare early (1985-2004) vs late (2005-2024) periods
+createTemporalComparison(
+  breakpoint_collections['sagebrush'],
+  ['1985-01-01', '2004-12-31'],
+  ['2005-01-01', '2024-12-31'],
+  'Sagebrush'
+);
+
+// Create a multi-component breakpoint hotspot map
+// First, rename all bands to a common name and then combine
+var componentNames = Object.keys(breakpoint_collections);
+var multiComponentBreaks = componentNames.map(function(name) {
+  var freq = createTimeEnhancedVis(breakpoint_collections[name], name).frequency;
+  // Rename the band to a common name 'breaks'
+  return freq.rename('breaks').set('component', name);
+});
+
+// Now we can safely sum the images since they all have the same band name
+var combinedBreaks = ee.ImageCollection.fromImages(multiComponentBreaks)
+  .sum()
+  .updateMask(ee.ImageCollection.fromImages(multiComponentBreaks).sum().gt(0));
+
+Map.addLayer(combinedBreaks, {
+  palette: ['lightblue', 'blue', 'green', 'yellow', 'orange', 'red', 'darkred'],
+  min: 1,
+  max: 20
+}, 'All Component Break Hotspots', false);
+
+// Alternative approach: Add each component as separate bands in a single image
+var combinedBreaksBanded = multiComponentBreaks.reduce(function(acc, img, index) {
+  var componentName = componentNames[index];
+  var renamedImg = img.rename(componentName);
+  return ee.Algorithms.If(
+    ee.Number(index).eq(0),
+    renamedImg,
+    ee.Image(acc).addBands(renamedImg)
+  );
+}, ee.Image());
+
+// Cast to Image and create a total across all bands
+combinedBreaksBanded = ee.Image(combinedBreaksBanded);
+var totalBreaksAllComponents = combinedBreaksBanded.reduce(ee.Reducer.sum())
+  .updateMask(combinedBreaksBanded.reduce(ee.Reducer.sum()).gt(0));
+
+Map.addLayer(totalBreaksAllComponents, {
+  palette: ['lightblue', 'blue', 'green', 'yellow', 'orange', 'red', 'darkred'],
+  min: 1,
+  max: 20
+}, 'All Component Breaks (Alternative)', false);
+
+// Print information
+print('Available break point collections:', Object.keys(breakpoint_collections));
+print('Visualization layers added with zero masking and enhanced contrast');
+print('Frequency map shows total breakpoints over entire time series');
+print('Temporal comparison shows early vs late period differences');
+
+// Set a reasonable map center (adjust coordinates as needed for your study area)
+Map.setCenter(-108, 41, 6);

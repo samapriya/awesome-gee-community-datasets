@@ -1,0 +1,98 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var amazonCanopyHeight = ee.Image("projects/sat-io/open-datasets/CTREES/AMAZON-CANOPY-TREE-HT");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// The data is scaled by 2.5, so divide by 2.5 to get height in meters.
+var actualHeight = amazonCanopyHeight.divide(2.5);
+
+// Define visualization parameters
+var visParams = {
+  min: 0,    // Min height in meters
+  max: 35,   // Max height in meters
+  palette: [
+    '#000000', // black for 0m
+    '#1a0033',
+    '#330066', 
+    '#004d66', // dark teal
+    '#006666', // teal
+    '#009966', // teal-green
+    '#33cc66', // bright green
+    '#66ff33', // bright lime green
+    '#ccff00'  // bright yellow-green for 50m+
+  ]
+};
+
+// Add the layer to the map
+Map.setCenter(-62, -4, 4); // Centered on the Amazon
+Map.addLayer(actualHeight, visParams, 'Amazon Canopy Height (m)');
+
+// --- Legend ---
+// Create a panel to hold the legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)' // Semi-transparent white background
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Tree canopy height (m)',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '14px',
+    margin: '0 0 8px 0',
+    padding: '0',
+    textAlign: 'center'
+  }
+});
+legend.add(legendTitle);
+
+// Create horizontal color bar
+var colorBar = ui.Panel({
+  layout: ui.Panel.Layout.Flow('horizontal'),
+  style: {margin: '0 0 4px 0'}
+});
+
+// Add color segments to the horizontal bar
+var palette = visParams.palette;
+for (var i = 0; i < palette.length; i++) {
+  var colorSegment = ui.Label({
+    style: {
+      backgroundColor: palette[i],
+      padding: '12px 8px',
+      margin: '0',
+      border: '1px solid #ccc'
+    }
+  });
+  colorBar.add(colorSegment);
+}
+legend.add(colorBar);
+
+// Create horizontal labels panel
+var labelsPanel = ui.Panel({
+  layout: ui.Panel.Layout.Flow('horizontal'),
+  style: {margin: '0'}
+});
+
+// Add labels below the color bar
+var labels = ['0', '', '', '', '', '', '', '', '>40'];
+for (var j = 0; j < labels.length; j++) {
+  var labelWidget = ui.Label({
+    value: labels[j],
+    style: {
+      fontSize: '11px',
+      textAlign: 'center',
+      width: '24px',
+      margin: '0'
+    }
+  });
+  labelsPanel.add(labelWidget);
+}
+legend.add(labelsPanel);
+
+// Add legend to map
+Map.add(legend);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
