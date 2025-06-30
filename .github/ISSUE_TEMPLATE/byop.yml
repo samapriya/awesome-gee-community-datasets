@@ -1,0 +1,58 @@
+name: Submit a Publication that Used the Awesome GEE Community Catalog
+description: Share your research or publication that used datasets from the Awesome GEE Community Catalog
+title: "[Publication Title]: "
+labels: ["publication-submission"]
+assignees:
+  - samapriya
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your research! This helps us highlight the impact of the Awesome GEE Community Catalog.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Optional — provide your email in case we need to follow up
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: publication-link
+    attributes:
+      label: Link to Your Paper or Report
+      description: Include a link to your published paper, preprint, or project page
+      placeholder: ex. https://doi.org/xxxxx or https://arxiv.org/abs/xxxxx
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Brief Summary
+      description: Briefly describe your research and how the Awesome GEE Community Catalog was used
+      placeholder: ex. We used the community dataset on coastline change to train a model for shoreline prediction.
+    validations:
+      required: true
+  - type: input
+    id: datasets-used
+    attributes:
+      label: Datasets Used
+      description: List the dataset(s) from the catalog you used
+      placeholder: ex. World Cover 2020, Mangroves Global v2
+    validations:
+      required: true
+  - type: input
+    id: citation
+    attributes:
+      label: Citation (optional)
+      description: Add the formal citation or BibTeX if available
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://gee-community-catalog.org/code_of_conduct/)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
