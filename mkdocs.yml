@@ -163,7 +163,7 @@ nav:
       - Code of Conduct: code_of_conduct.md
       - License: license.md
   - Publications:
-      - publications/index.md
+      - publications/index_showcase.md
   - Data Catalog:
       - Data Themes:
           - projects/index.md

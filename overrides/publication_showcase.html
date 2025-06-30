@@ -1,0 +1,1082 @@
+{#-
+Publications Showcase landing page template for MkDocs Material.
+This file extends the main theme and injects a custom, full-page layout
+by overriding the 'tabs', 'content', and 'footer' blocks.
+-#}
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+
+<style>
+    /* --- Core MkDocs Integration Styles --- */
+    .md-header {
+        position: initial;
+        /* Allows the custom hero to sit at the top */
+    }
+
+    .md-main__inner {
+        margin: 0;
+        /* Removes default margins */
+    }
+
+    .md-content {
+        display: none;
+        /* Hides the default content block that would normally show markdown */
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+
+    /* --- Publications Showcase Styles (from original file) --- */
+    :root {
+        --primary-color: #667eea;
+        --secondary-color: #764ba2;
+        --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --hero-overlay: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+        --background-color: #f8fafc;
+        --surface-color: #ffffff;
+        --text-primary: #1a202c;
+        --text-secondary: #4a5568;
+        --text-muted: #718096;
+        --border-color: #e2e8f0;
+        --shadow-light: rgba(0, 0, 0, 0.05);
+        --shadow-heavy: rgba(102, 126, 234, 0.15);
+        --success-color: #10b981;
+        --info-color: #3b82f6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --shadow-light: rgba(0, 0, 0, 0.3);
+            --shadow-heavy: rgba(102, 126, 234, 0.3);
+        }
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .publications-body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+        line-height: 1.6;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+        max-width: 1800px;
+        /* Increased max-width for wide screens */
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* --- IMPROVED BACK BUTTON --- */
+    .back-button {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        padding: 1rem 1.75rem;
+        /* Increased padding */
+        border-radius: 14px;
+        /* Slightly larger border radius */
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.05rem;
+        /* Slightly larger font */
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        /* Increased gap */
+        box-shadow: 0 8px 32px var(--shadow-light);
+        min-width: 160px;
+        /* Minimum width for better appearance */
+        justify-content: center;
+    }
+
+    .back-button:hover {
+        background: white;
+        color: var(--primary-color);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px var(--shadow-heavy);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .back-button {
+            background: rgba(30, 41, 59, 0.95);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        .back-button:hover {
+            background: var(--surface-color);
+            color: var(--primary-color);
+        }
+    }
+    .icon-inline {
+    height: 1.25rem;   /* Match text line height */
+    width: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 4px; /* Optional: slight rounding like emojis */
+    }
+
+    /* --- IMPROVED HERO SECTION WITH REDUCED PADDING --- */
+    .hero {
+        position: relative;
+        padding: 4rem 0 3rem 0;
+        /* Significantly reduced padding */
+        text-align: center;
+        overflow: hidden;
+        background:
+            radial-gradient(ellipse at top, rgba(102, 126, 234, 0.3) 0%, transparent 70%),
+            radial-gradient(ellipse at bottom right, rgba(118, 75, 162, 0.3) 0%, transparent 70%),
+            linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        opacity: 0.7;
+        z-index: 0;
+    }
+
+    .hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+            radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+            radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2), transparent),
+            radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent),
+            radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.3), transparent),
+            radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.2), transparent);
+        background-repeat: repeat;
+        background-size: 200px 100px;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-logo {
+        width: auto;
+        height: 120px;
+        /* Slightly smaller logo */
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 24px;
+        margin-bottom: 2rem;
+        /* Reduced margin */
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 3px solid rgba(255, 255, 255, 0.8);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero-logo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-weight: 800;
+        color: white;
+        margin-bottom: 1rem;
+        /* Reduced margin */
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero .subtitle {
+        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 0.75rem;
+        /* Reduced margin */
+        max-width: 650px;
+        line-height: 1.5;
+    }
+
+    .hero .tagline {
+        font-size: clamp(0.95rem, 2vw, 1.1rem);
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+        /* Reduced margin */
+        max-width: 600px;
+        font-weight: 500;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .btn:hover::before {
+        left: 100%;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-primary {
+        background: var(--accent-gradient);
+        color: white;
+    }
+
+    .btn-primary:hover {
+        box-shadow: 0 14px 45px var(--shadow-heavy);
+    }
+
+    .btn-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: white;
+    }
+
+    /* --- MAIN CONTENT WITH REDUCED SPACING --- */
+    .main-content {
+        padding: 3rem 0;
+        /* Reduced padding */
+    }
+
+    .section {
+        margin-bottom: 3rem;
+        /* Reduced section margin */
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        /* Reduced margin */
+        position: relative;
+    }
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--accent-gradient);
+        border-radius: 2px;
+    }
+
+    /* --- IMPROVED STATS GRID FOR WIDE SCREENS --- */
+    .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Much larger minimum */
+    gap: 2rem;
+    max-width: 1800px; /* Much larger container */
+    margin: 0 auto;
+    }
+
+    /* For very wide screens, ensure stats cards don't get too wide */
+    @media (min-width: 1000px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr); */
+        /* max-width: 1000px; */
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .stats-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+        }
+    }
+
+    .stat-card {
+    background: var(--surface-color);
+    padding: 1.5rem 2rem; /* Increased horizontal padding from 1.5rem to 2rem */
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 40px var(--shadow-light);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    }
+
+    .stat-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--accent-gradient);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 80px var(--shadow-heavy);
+    }
+
+    .stat-number {
+    font-size: 1.25rem; /* Same size as label */
+    font-weight: 700;    /* Still bold but not super heavy */
+    color: var(--primary-color);
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+    .stat-label {
+        color: var(--text-secondary);
+        font-weight: 500;
+        font-size: 1.25rem; /* Same size as number */
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    /* --- IMPROVED CONTROLS LAYOUT --- */
+    .controls-card {
+        background: var(--surface-color);
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px var(--shadow-light);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .controls-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.2fr 1.5fr;  /* Give more space to dropdowns */
+    gap: 1.5rem;
+    align-items: stretch;
+    }
+
+    /* Responsive breakpoints for controls */
+    @media (max-width: 1024px) {
+        .controls-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .controls-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    .control-input,
+    .control-select {
+        padding: 1rem;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        font-size: 1.05rem;
+        width: 100%;
+        background: var(--surface-color);
+        color: var(--text-primary);
+        transition: all 0.3s ease;
+        min-height: 52px;
+        /* Consistent height */
+    }
+
+    /* Style date input placeholder text */
+    .control-input[type="date"] {
+        position: relative;
+    }
+
+    .control-input[type="date"]::-webkit-datetime-edit {
+        color: var(--text-primary);
+    }
+
+    .control-input[type="date"]:invalid::-webkit-datetime-edit {
+        color: var(--text-muted);
+    }
+
+    .control-input:focus,
+    .control-select:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .advanced-filter-toggle {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .toggle-btn {
+        background: none;
+        border: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+    .toggle-btn:hover {
+        background: rgba(102, 126, 234, 0.1);
+    }
+
+    .date-filter-panel {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        gap: 1.5rem;
+        align-items: end;
+    }
+
+    @media (max-width: 768px) {
+        .date-filter-panel {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    .date-filter-panel label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+        color: var(--text-secondary);
+    }
+
+    /* --- PUBLICATIONS LIST --- */
+    .publications-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .publication-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .publication-card {
+        background: var(--surface-color);
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .publication-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--accent-gradient);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .publication-link:hover .publication-card::before {
+        transform: scaleX(1);
+    }
+
+    .publication-link:hover .publication-card {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 80px var(--shadow-heavy);
+        border-color: var(--primary-color);
+    }
+
+    .pub-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .pub-authors {
+        color: var(--text-secondary);
+        font-weight: 600;
+        font-size: 0.95rem;
+        flex: 1;
+        line-height: 1.4;
+    }
+
+    .pub-date {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        background: var(--background-color);
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .pub-title {
+        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+        font-weight: 700;
+        color: var(--text-primary);
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .pub-abstract {
+        margin-top: 1.5rem;
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .pub-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .pub-tag {
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        color: var(--primary-color);
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    /* --- LOADING & FALLBACK STATES --- */
+    .loading-screen,
+    .infinite-loader {
+        text-align: center;
+    }
+
+    .loading-screen {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background-color);
+        z-index: 9999;
+    }
+
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid var(--border-color);
+        border-top-color: var(--primary-color);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .no-results {
+        background: var(--surface-color);
+        padding: 4rem 2rem;
+        border-radius: 20px;
+        text-align: center;
+        border: 2px dashed var(--border-color);
+    }
+
+    .no-results h3 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .no-results p {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    /* --- RESPONSIVE IMPROVEMENTS --- */
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 1rem;
+        }
+
+        .hero {
+            padding: 3rem 0 2rem 0;
+            /* Reduced mobile hero padding */
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 300px;
+            justify-content: center;
+        }
+
+        .publication-card {
+            padding: 2rem;
+        }
+
+        .pub-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .back-button {
+            padding: 0.75rem 1.25rem;
+            font-size: 0.95rem;
+            min-width: 140px;
+        }
+    }
+</style>
+
+<div class="publications-body">
+    <div id="initial-loading-screen" class="loading-screen">
+        <div>
+            <div class="loading-spinner"></div>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">Loading publications...</p>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <img src="https://i.imgur.com/IckHidT.jpeg" alt="Awesome GEE Community Catalog Logo" class="hero-logo">
+            <h1>Publications Showcase</h1>
+            <p class="subtitle">Discover research powered by the Awesome GEE Community Catalog</p>
+            <div class="hero-buttons">
+                <a href="#main-content" class="btn btn-primary">
+                    <img src="https://i.imgur.com/HjK8o2O.png" alt="Explore Research" class="icon-inline" />
+                    Explore Research
+                </a>
+                <a href="https://scholar.google.com/citations?hl=en&user=Y2R_C_oAAAAJ" target="_blank" class="btn btn-primary">
+                    <img src="https://i.imgur.com/gQXqMxE.png" alt="Google Scholar" class="icon-inline" />
+                    Google Scholar Profile
+                </a>
+                <a href="https://github.com/samapriya/awesome-gee-community-datasets/issues/new?assignees=samapriya&labels=publication-submission&template=byop.yml&title=%5BPublication+Title%5D%3A+" target="_blank" class="btn btn-primary">
+                    <img src="https://i.imgur.com/9GY0rKv.png" alt="GitHub Project" class="icon-inline" />
+                    Add Publication
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <section class="section">
+                <h2 class="section-title">At a Glance</h2>
+                <div id="stats-overview" class="stats-grid"></div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Search & Filter</h2>
+                <div class="controls-card">
+                    <div class="controls-grid">
+                        <input id="search-input" type="text" placeholder="Search titles, authors, abstracts..."
+                            class="control-input">
+                        <select id="journal-filter" class="control-select">
+                            <option value="all">All Journals</option>
+                        </select>
+                        <select id="year-filter" class="control-select">
+                            <option value="all">All Years</option>
+                        </select>
+                        <select id="group-by" class="control-select">
+                            <option value="none">No Grouping</option>
+                            <option value="journal">By Journal</option>
+                            <option value="year">By Year</option>
+                        </select>
+                    </div>
+                    <div class="advanced-filter-toggle">
+                        <button id="toggle-date-filter" class="toggle-btn">
+                            <span>📅</span> Advanced Date Filters
+                        </button>
+                    </div>
+                    <div id="date-filter-panel" class="hidden">
+                        <div class="date-filter-panel">
+                            <div>
+                                <label for="start-date">From Date</label>
+                                <input type="date" id="start-date" class="control-input" required>
+                            </div>
+                            <div>
+                                <label for="end-date">To Date</label>
+                                <input type="date" id="end-date" class="control-input" required>
+                            </div>
+                            <button id="clear-date-filters" class="toggle-btn" style="color:var(--text-muted)">
+                                Clear Dates
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                    <h2 class="section-title" style="margin-bottom:0; text-align:left;">Research Publications</h2>
+                    <div id="results-count" style="font-weight:600; color: var(--text-secondary);"></div>
+                </div>
+                <div id="publications-list-container"></div>
+                <div id="infinite-scroll-loader" class="infinite-loader hidden">
+                    <div class="loading-spinner"></div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">Loading more publications...</p>
+                </div>
+                <div id="no-results" class="no-results hidden">
+                    <h3>No publications found</h3>
+                    <p>Try adjusting your search criteria or filters.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+<script>
+    // --- 1. STATE & CONFIG ---
+    let allPubs = [], filteredPubs = [], searchTimeout = null, dateRange = { start: '', end: '' };
+    const ITEMS_PER_PAGE = 15;
+    let currentPage = 1, isLoadingMore = false, groupBy = 'none';
+
+    // --- 2. DOM ELEMENTS ---
+    const dom = {
+        searchInput: document.getElementById('search-input'),
+        journalFilter: document.getElementById('journal-filter'),
+        yearFilter: document.getElementById('year-filter'),
+        groupByFilter: document.getElementById('group-by'),
+        resultsCount: document.getElementById('results-count'),
+        publicationsContainer: document.getElementById('publications-list-container'),
+        noResults: document.getElementById('no-results'),
+        initialLoader: document.getElementById('initial-loading-screen'),
+        infiniteLoader: document.getElementById('infinite-scroll-loader'),
+        statsOverview: document.getElementById('stats-overview'),
+        dateFilterToggle: document.getElementById('toggle-date-filter'),
+        dateFilterPanel: document.getElementById('date-filter-panel'),
+        startDate: document.getElementById('start-date'),
+        endDate: document.getElementById('end-date'),
+        clearDateBtn: document.getElementById('clear-date-filters')
+    };
+
+    // --- 3. CORE LOGIC ---
+    async function initializeApp() {
+        try {
+            const response = await fetch('https://raw.githubusercontent.com/samapriya/catalog-publications/refs/heads/main/dimensions_filtered_results_latest.json');
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            allPubs = await response.json();
+            filteredPubs = [...allPubs];
+
+            populateFilters();
+            updateStatsOverview();
+            renderPublications();
+            setupEventListeners();
+        } catch (error) {
+            console.error('Failed to load publications:', error);
+            dom.publicationsContainer.innerHTML = `
+                    <div class="no-results">
+                        <h3>Failed to load publications</h3>
+                        <p>Please check your internet connection and try refreshing the page.</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Error: ${error.message}</p>
+                    </div>
+                `;
+        } finally {
+            if (dom.initialLoader) {
+                dom.initialLoader.classList.add('hidden');
+            }
+        }
+    }
+
+    // --- 4. FILTER HANDLING ---
+    function populateFilters() {
+        const journals = [...new Set(allPubs.map(p => p.journal_title).filter(Boolean))].sort();
+        journals.forEach(j => dom.journalFilter.add(new Option(j, j)));
+
+        const years = [...new Set(allPubs.map(p => p.publication_date?.substring(0, 4)).filter(Boolean))].sort((a, b) => b - a);
+        years.forEach(y => dom.yearFilter.add(new Option(y, y)));
+    }
+
+    function applyFilters() {
+        const searchTerm = dom.searchInput.value.toLowerCase().trim();
+        const selectedJournal = dom.journalFilter.value;
+        const selectedYear = dom.yearFilter.value;
+
+        filteredPubs = allPubs.filter(pub => {
+            const searchFields = [
+                pub.title, pub.author_list, pub.keywords,
+                pub.short_abstract, pub.abstract, pub.journal_title
+            ].join(' ').toLowerCase();
+
+            const matchesSearch = !searchTerm || searchFields.includes(searchTerm);
+            const matchesJournal = selectedJournal === 'all' || pub.journal_title === selectedJournal;
+            const matchesYear = selectedYear === 'all' || (pub.publication_date && pub.publication_date.startsWith(selectedYear));
+            const matchesDate = (!dateRange.start || (pub.publication_date && pub.publication_date >= dateRange.start)) &&
+                (!dateRange.end || (pub.publication_date && pub.publication_date <= dateRange.end));
+
+            return matchesSearch && matchesJournal && matchesYear && matchesDate;
+        });
+
+        currentPage = 1;
+        renderPublications();
+    }
+
+    // --- 5. UI RENDERING ---
+    function renderPublications() {
+        dom.noResults.classList.add('hidden');
+        dom.infiniteLoader.classList.add('hidden');
+
+        if (currentPage === 1) {
+            dom.publicationsContainer.innerHTML = '';
+        }
+
+        if (groupBy === 'none') {
+            let listEl = dom.publicationsContainer.querySelector('.publications-list');
+            if (!listEl) {
+                listEl = document.createElement('div');
+                listEl.className = 'publications-list';
+                dom.publicationsContainer.innerHTML = '';
+                dom.publicationsContainer.appendChild(listEl);
+            }
+            renderItems(filteredPubs, listEl);
+        } else {
+            renderGroupedItems();
+        }
+        updateResultsCount();
+    }
+
+    function renderItems(items, targetElement) {
+        const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+        const endIndex = currentPage * ITEMS_PER_PAGE;
+        const pageItems = items.slice(startIndex, endIndex);
+
+        if (items.length === 0 && currentPage === 1) {
+            dom.noResults.classList.remove('hidden');
+        } else {
+            const htmlContent = pageItems.map(createPublicationCard).join('');
+            targetElement.insertAdjacentHTML('beforeend', htmlContent);
+        }
+
+        isLoadingMore = false;
+        const hasMorePages = endIndex < items.length;
+        if (hasMorePages) {
+            dom.infiniteLoader.classList.remove('hidden');
+        } else {
+            dom.infiniteLoader.classList.add('hidden');
+        }
+    }
+
+    function renderGroupedItems() {
+        const groups = filteredPubs.reduce((acc, pub) => {
+            const key = groupBy === 'journal' ? (pub.journal_title || 'Unknown Journal') : (pub.publication_date || 'Unknown').substring(0, 4);
+            if (!acc[key]) acc[key] = [];
+            acc[key].push(pub);
+            return acc;
+        }, {});
+
+        const sortedKeys = Object.keys(groups).sort((a, b) => (groupBy === 'year' ? b.localeCompare(a) : a.localeCompare(b)));
+
+        dom.publicationsContainer.innerHTML = sortedKeys.map(key => `
+                <div class="section">
+                    <h3 class="section-title" style="font-size:1.8rem;margin-bottom:2rem;">${key}</h3>
+                    <div class="publications-list">
+                        ${groups[key].map(createPublicationCard).join('')}
+                    </div>
+                </div>
+            `).join('');
+        dom.infiniteLoader.classList.add('hidden');
+    }
+
+    function createPublicationCard(pub) {
+        const abstractText = pub.short_abstract || pub.abstract || 'No abstract available.';
+        const truncatedAbstract = abstractText.length > 300 ? abstractText.substring(0, 300) + '...' : abstractText;
+        const publicationUrl = pub.doi ? `https://doi.org/${pub.doi}` : '#';
+
+        return `
+                <a href="${publicationUrl}" target="_blank" rel="noopener noreferrer" class="publication-link">
+                    <article class="publication-card">
+                        <header class="pub-header">
+                            <div class="pub-authors">${pub.author_list || 'Unknown Authors'}</div>
+                            <time class="pub-date" datetime="${pub.publication_date || ''}">${pub.publication_date || 'N/A'}</time>
+                        </header>
+                        <h3 class="pub-title">${pub.title || 'No Title Available'}</h3>
+                        <p class="pub-abstract">${truncatedAbstract}</p>
+                        ${pub.journal_title ? `<div class="pub-tags"><span class="pub-tag">${pub.journal_title}</span></div>` : ''}
+                    </article>
+                </a>
+            `;
+    }
+
+    function updateStatsOverview() {
+        const uniqueJournals = new Set(allPubs.map(p => p.journal_title).filter(Boolean)).size;
+        const uniqueAuthors = new Set(allPubs.flatMap(p => (p.author_list || '').split(',').map(a => a.trim())).filter(Boolean)).size;
+        const latestYear = Math.max(...allPubs.map(p => parseInt((p.publication_date || '0').substring(0, 4))));
+
+        dom.statsOverview.innerHTML = `
+                <div class="stat-card"><div class="stat-number">${allPubs.length.toLocaleString()}</div><div class="stat-label">Publications</div></div>
+                <div class="stat-card"><div class="stat-number">${uniqueJournals.toLocaleString()}</div><div class="stat-label">Journals</div></div>
+                <div class="stat-card"><div class="stat-number">${uniqueAuthors.toLocaleString()}</div><div class="stat-label">Authors</div></div>
+                <div class="stat-card"><div class="stat-number">${latestYear}</div><div class="stat-label">Latest Year</div></div>
+            `;
+    }
+
+    function updateResultsCount() {
+        const count = filteredPubs.length;
+        dom.resultsCount.textContent = `${count.toLocaleString()} result${count !== 1 ? 's' : ''}`;
+    }
+
+    // --- 6. EVENT LISTENERS ---
+    function setupEventListeners() {
+        dom.searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(applyFilters, 300);
+        });
+
+        [dom.journalFilter, dom.yearFilter].forEach(el => el.addEventListener('change', applyFilters));
+
+        dom.groupByFilter.addEventListener('change', e => {
+            groupBy = e.target.value;
+            currentPage = 1;
+            renderPublications();
+        });
+
+        dom.dateFilterToggle.addEventListener('click', () => dom.dateFilterPanel.classList.toggle('hidden'));
+        dom.startDate.addEventListener('change', e => { dateRange.start = e.target.value; applyFilters(); });
+        dom.endDate.addEventListener('change', e => { dateRange.end = e.target.value; applyFilters(); });
+        dom.clearDateBtn.addEventListener('click', () => {
+            dateRange = { start: '', end: '' };
+            dom.startDate.value = '';
+            dom.endDate.value = '';
+            applyFilters();
+        });
+
+        setupIntersectionObserver();
+    }
+
+    function setupIntersectionObserver() {
+        const options = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !isLoadingMore && groupBy === 'none') {
+                    isLoadingMore = true;
+                    currentPage++;
+                    const listElement = document.querySelector('#publications-list-container .publications-list');
+                    if (listElement) renderItems(filteredPubs, listElement);
+                }
+            });
+        }, options);
+        if (dom.infiniteLoader) {
+            observer.observe(dom.infiniteLoader);
+        }
+    }
+
+    // --- 7. INITIALIZATION ---
+    document.addEventListener('DOMContentLoaded', initializeApp);
+</script>
+{% endblock %}
+
+{# --- Hide default content and footer --- #}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
