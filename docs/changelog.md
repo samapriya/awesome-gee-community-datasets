@@ -3,6 +3,9 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-06-29
+- Added [Global Human Settlement - Open Buildings Attribute Table (GHS-OBAT)](https://gee-community-catalog.org/projects/ghs_obat)
+
 #### Updated 2025-06-26
 - Added [Vulcan Fossil Fuel CO2 Emissions Dataset](https://gee-community-catalog.org/projects/vulcan)
 - Added [Industrial Land Maps across Global Cities](https://gee-community-catalog.org/projects/industrial)
