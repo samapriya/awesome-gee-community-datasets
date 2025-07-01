@@ -507,6 +507,7 @@ nav:
       - Population Trends with Landscan: tutorials/examples/landscan_extracts.md
       - Exploring Dynamic Surface Water Extent (DSWE): tutorials/examples/dswe_landsat.md
       - Creating Country-Level Boundaries from GAUL Dataset in Google Earth Engine: tutorials/examples/gaul_aggregate.md
+      - Performing Zonal Statistics on GHS-OBAT Building Data A Case Study in Amsterdam: tutorials/examples/ghs_obat_summaries.md
     #   - Assessing Brazil's Biodiversity and Conservation Needs: tutorials/examples/conservation_priorities.md
     #   - Forest Loss and Cost Surface Analysis for Brazil's Tall Forests: tutorials/examples/tree_canopy.md
   - Changelog:
