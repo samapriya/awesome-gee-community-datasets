@@ -2,7 +2,7 @@
 
 The USGS Land Cover program integrates methodologies from the National Land Cover Database (NLCD) and the Land Change Monitoring, Assessment, and Projection (LCMAP), along with advanced deep learning, to create Annual NLCD a dataset suite that includes six products, each representing various U.S. land cover and change characteristics. The U.S. Geological Survey’s (USGS) Annual NLCD Collection 1.0 leverages innovations from the National Land Cover Database (NLCD) and Land Change Monitoring, Assessment, and Projection (LCMAP) projects, incorporating modern deep learning techniques to deliver accurate, annual land cover and surface change data across the U.S.
 
-Since 1985, Annual NLCD provides six products covering land cover, change, confidence, impervious surfaces, and spectral changes based on Landsat data, facilitating resource management and decision-making.These products leverage Landsat satellite data and are intended for applications in science, resource management, and decision-making, spanning from 1985 to 2023. This dataset supports various environmental analyses, such as urban growth studies, wetland monitoring, agricultural management, and climate impact assessments. Its annual updates and classification confidence features provide essential insights for long-term land use planning and change detection. You can acces [User Guide here](https://www.mrlc.gov/sites/default/files/docs/LSDS-2103%20Annual%20National%20Land%20Cover%20Database%20(NLCD)%20Collection%201%20Science%20Product%20User%20Guide%20-v1.0%202024_10_15.pdf)
+Since 1985, Annual NLCD provides six products covering land cover, change, confidence, impervious surfaces, and spectral changes based on Landsat data, facilitating resource management and decision-making.These products leverage Landsat satellite data and are intended for applications in science, resource management, and decision-making, spanning from 1985 to 2024. This dataset supports various environmental analyses, such as urban growth studies, wetland monitoring, agricultural management, and climate impact assessments. Its annual updates and classification confidence features provide essential insights for long-term land use planning and change detection. You can acces [User Guide here](https://www.mrlc.gov/sites/default/files/docs/LSDS-2103%20Annual%20National%20Land%20Cover%20Database%20(NLCD)%20Collection%201%20Science%20Product%20User%20Guide%20-v1.0%202024_10_15.pdf)
 
 #### Dataset Products and Descriptions
 
@@ -48,7 +48,7 @@ Since 1985, Annual NLCD provides six products covering land cover, change, confi
 
 - **Data Type**: UINT8, UINT16 (product-dependent)
 - **Spatial Resolution**: Based on the Landsat 30m grid
-- **Temporal Coverage**: 1985–2023 (updated annually)
+- **Temporal Coverage**: 1985–2024 (updated annually)
 - **Access**: Products are accessible via multiple platforms, including MRLC Viewer and AWS S3.
 
 <center>
@@ -103,4 +103,7 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: Land Cover, Land Change, Landsat, Deep Learning, Annual NLCD, USGS, Environmental Monitoring
 
-Last updated in GEE: 2024-10-25
+#### Changelog
+- Added 2024 Annual NLCD layers
+
+Last updated in GEE: 2025-07-08

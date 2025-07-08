@@ -3,6 +3,10 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-07-08
+- Added & updated for Year 2024 [Annual NLCD Dataset Layers 2024](https://gee-community-catalog.org/projects/annual_nlcd)
+- Added & updated for Year 2024 [ESRI 10m Annual Land Use Land Cover (2017-2024)](https://gee-community-catalog.org/projects/S2TSLULC)
+
 #### Updated 2025-06-29
 - Added [Global Human Settlement - Open Buildings Attribute Table (GHS-OBAT)](https://gee-community-catalog.org/projects/ghs_obat)
 
