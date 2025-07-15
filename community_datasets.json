@@ -41677,7 +41677,7 @@
     "title": "Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/MERRA-2",
     "type": "image_collection",
-    "id": "projects/climate-engine/merra2/daily",
+    "id": "projects/climate-engine-pro/assets/ce-merra2",
     "provider": "NASA",
     "tags": "MERRA2, NASA, global, climate, reanalysis, temperature, precipitation, evapotranspiration, evaporative demand, wind",
     "license": "custom",

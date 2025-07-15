@@ -56,7 +56,7 @@ doi: 10.1175/JCLI-D-16-0758.1
 
 ```js
 // Read in Image Collection and get first image
-var merra2_ic = ee.ImageCollection('projects/earthengine-legacy/assets/projects/climate-engine/merra2/daily')
+var merra2_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-merra2')
 var merra2_i = merra2_ic.first()
 
 // Print first image to see bands
