@@ -39,7 +39,7 @@ Band information is preserved in the ingested image property with spectral calib
 #### Code Snippet
 
 ```js
-var tanager_collection = ee.ImageCollection('projects/sat-io/open-datasets/PLANET/TANAGER_HYPERSPECTRAL');
+var tanager = ee.ImageCollection('projects/sat-io/open-datasets/PLANET/TANAGER_HYPERSPECTRAL');
 var vis = {"opacity":1,"bands":["B100","B060","B040"],"min":14.014482498168945,"max":147.4988250732422,"gamma":1};
 
 Map.setCenter(-63.66,-22.19,12)
