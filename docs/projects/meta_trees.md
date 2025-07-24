@@ -24,7 +24,7 @@ High Resolution Canopy Height Maps (CHM). Source imagery for CHM © 2016 Maxar. 
 #### Earth Engine Snippet
 
 ```js
-var canopy_ht = ee.ImageCollection("projects/meta-forest-monitoring-okw37/assets/CanopyHeight")
+var canopy_ht = ee.ImageCollection("projects/sat-io/open-datasets/facebook/meta-canopy-height");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-1m-CANOPY-HEIGHT
@@ -36,7 +36,7 @@ This dataset is made available under a [Creative Commons Attribution 4.0 Interna
 
 Dataset provider: Meta and WRI, Tolan et al 2023
 
-Curated in GEE by: Meta & WRI
+Curated in GEE by: Meta, WRI and Samapriya Roy
 
 Keywords: DiNOv2, Maxar, Self Supervised Learning (SSL), Canopy height, Global dataset, Meta, WRI
 
