@@ -3,6 +3,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-08-06
+- Added [Copernicus Climate Change Service (C3S) Land Cover Classification Gridded Maps (1992 -2022)](https://gee-community-catalog.org/projects/c3slc)
+- Added [Global Soil Organic Carbon Map (GSOCmap)](https://gee-community-catalog.org/projects/gsoc)
+- Added [PEATGRIDS Global Peat Thickness and Carbon Stock](https://gee-community-catalog.org/projects/peatgrids)
+- Added [Mangrove Soil Organic Carbon Indus Delta, Pakistan](https://gee-community-catalog.org/projects/indus_soc)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-07-23
 - Added [Planet Tanager Hyperspectral Open Data](https://gee-community-catalog.org/projects/tanager)
 
