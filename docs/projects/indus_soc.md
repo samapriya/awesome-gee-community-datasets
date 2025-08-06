@@ -79,8 +79,6 @@ snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale")
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/INDUS-DELTA-MANGROVE-SOC
 
-![indus_delta_soc](https://github.com/user-attachments/assets/soc-preview-image.png)
-
 #### License
 
 This dataset is available under Creative Commons Attribution (CC-BY) 4.0 International License.
