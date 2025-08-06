@@ -24,6 +24,22 @@ With the first high-resolution SOC map for the Indus Delta, this study provides 
 
 </center>
 
+#### Citation
+
+```
+Gilani, H., Shah, M., Ijaz, S. S., Asif, M., Nazir, A., & Hanan, N. P. (2025). Spatial distribution of mangrove soil organic carbon in Indus Delta, Pakistan:
+A multi-sensor remote sensing and machine learning approach. Estuarine, Coastal and Shelf Science, 323, 109435.
+https://doi.org/10.1016/j.ecss.2025.109435
+```
+
+#### Dataset Citation
+
+```
+Gilani, H., Shah, M., Sohail, S., Asif, M., & Nazir, A. (2024). Mapping Soil Organic Carbon in the World's Largest Arid Mangrove Forest
+(Indus Delta, Pakistan): A Multi-Sensor Remote Sensing and Machine Learning Approach [Data set].
+Zenodo. https://doi.org/10.5281/zenodo.13824640
+```
+
 ![soc_layers](../images/indus_soc.gif)
 
 #### Earth Engine Snippet
@@ -62,22 +78,6 @@ snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale")
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/INDUS-DELTA-MANGROVE-SOC
-
-#### Citation
-
-```
-Gilani, H., Shah, M., Ijaz, S. S., Asif, M., Nazir, A., & Hanan, N. P. (2025). Spatial distribution of mangrove soil organic carbon in Indus Delta, Pakistan:
-A multi-sensor remote sensing and machine learning approach. Estuarine, Coastal and Shelf Science, 323, 109435.
-https://doi.org/10.1016/j.ecss.2025.109435
-```
-
-#### Dataset Citation
-
-```
-Gilani, H., Shah, M., Sohail, S., Asif, M., & Nazir, A. (2024). Mapping Soil Organic Carbon in the World's Largest Arid Mangrove Forest
-(Indus Delta, Pakistan): A Multi-Sensor Remote Sensing and Machine Learning Approach [Data set].
-Zenodo. https://doi.org/10.5281/zenodo.13824640
-```
 
 ![indus_delta_soc](https://github.com/user-attachments/assets/soc-preview-image.png)
 
