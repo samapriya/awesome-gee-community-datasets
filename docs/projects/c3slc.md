@@ -38,7 +38,7 @@ Defourny, P., Lamarche, C., Bontemps, S., De Maet, T., Van Bogaert, E., Moreau, 
 Copernicus Climate Change Service, Climate Data Store, (2019): Land cover classification gridded maps from 1992 to present derived from satellite observation. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.006f2c9a (Accessed on DD-MMM-YYYY)
 ```
 
-![gsocmap](../images/c3slc.gif)
+![gsocmap](../images/c3slc.png)
 
 #### Earth Engine Snippet
 
