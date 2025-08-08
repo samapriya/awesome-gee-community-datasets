@@ -36,7 +36,7 @@ Defourny, P., Lamarche, C., Bontemps, S., De Maet, T., Van Bogaert, E., Moreau, 
 
 ```
 Copernicus Climate Change Service, Climate Data Store, (2019): Land cover classification gridded maps from 1992 to present derived from satellite observation. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.006f2c9a (Accessed on DD-MMM-YYYY)
-````
+```
 
 ![gsocmap](../images/c3slc.gif)
 
@@ -87,7 +87,7 @@ var visParams = {
 // Add the layer to the map
 Map.setCenter(0, 0, 2);
 Map.addLayer(lccs, visParams, 'C3S Land Cover');
-````
+```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/C3S-LC
 
