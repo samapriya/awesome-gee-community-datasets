@@ -8,29 +8,30 @@ on:
       - 'awesome-gee-catalog-examples/**'
   workflow_dispatch: # Allows manual triggering
 
+# Prevent concurrent runs
+concurrency:
+  group: zip-update
+  cancel-in-progress: false
+
 jobs:
   zip-and-commit:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Zip awesome-gee-catalog-examples folder
         run: |
           zip -r awesome-gee-catalog-examples.zip awesome-gee-catalog-examples
-      - name: Commit and push if 
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-          git add awesome-gee-catalog-examples.zip
           
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Update awesome-gee-catalog-examples.zip after folder changes"
-          git push
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update awesome-gee-catalog-examples.zip after folder changes'
+          file_pattern: 'awesome-gee-catalog-examples.zip'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
