@@ -1,0 +1,294 @@
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38830/vector", "Subtle Grayscale");
+
+// =============================================================================
+// GLOBAL VARIABLES AND CONFIGURATION
+// =============================================================================
+
+var currentLayer = null;
+
+// Beautiful inferno/plasma color palette
+var beautifulPalette = [
+    '00262E', // Dark Teal/Green for very low density
+    '00596C', // Medium Teal
+    '008F8C', // Cyan
+    '62C36F', // Green
+    'F9F871'  // Bright Yellow for very high density
+  ];
+
+
+// Array of some major cities with coordinates for random zoom
+var majorCities = [
+  {name: "Tokyo, Japan", lat: 35.6762, lon: 139.6503, zoom: 10},
+  {name: "Delhi, India", lat: 28.7041, lon: 77.1025, zoom: 10},
+  {name: "Shanghai, China", lat: 31.2304, lon: 121.4737, zoom: 10},
+  {name: "São Paulo, Brazil", lat: -23.5505, lon: -46.6333, zoom: 10},
+  {name: "Mumbai, India", lat: 19.0760, lon: 72.8777, zoom: 10},
+  {name: "Beijing, China", lat: 39.9042, lon: 116.4074, zoom: 10},
+  {name: "Cairo, Egypt", lat: 30.0444, lon: 31.2357, zoom: 10},
+  {name: "Mexico City, Mexico", lat: 19.4326, lon: -99.1332, zoom: 10},
+  {name: "Dhaka, Bangladesh", lat: 23.8103, lon: 90.4125, zoom: 10},
+  {name: "Osaka, Japan", lat: 34.6937, lon: 135.5023, zoom: 10},
+  {name: "New York, USA", lat: 40.7128, lon: -74.0060, zoom: 10},
+  {name: "Karachi, Pakistan", lat: 24.8607, lon: 67.0011, zoom: 10},
+  {name: "Buenos Aires, Argentina", lat: -34.6118, lon: -58.3960, zoom: 10},
+  {name: "Chongqing, China", lat: 29.4316, lon: 106.9123, zoom: 10},
+  {name: "Istanbul, Turkey", lat: 41.0082, lon: 28.9784, zoom: 10},
+  {name: "Kolkata, India", lat: 22.5726, lon: 88.3639, zoom: 10},
+  {name: "Manila, Philippines", lat: 14.5995, lon: 120.9842, zoom: 10},
+  {name: "Lagos, Nigeria", lat: 6.5244, lon: 3.3792, zoom: 10},
+  {name: "Rio de Janeiro, Brazil", lat: -22.9068, lon: -43.1729, zoom: 10},
+  {name: "Tianjin, China", lat: 39.3434, lon: 117.3616, zoom: 10},
+  {name: "Kinshasa, DRC", lat: -4.4419, lon: 15.2663, zoom: 10},
+  {name: "Guangzhou, China", lat: 23.1291, lon: 113.2644, zoom: 10},
+  {name: "Los Angeles, USA", lat: 34.0522, lon: -118.2437, zoom: 10},
+  {name: "Moscow, Russia", lat: 55.7558, lon: 37.6173, zoom: 10},
+  {name: "Shenzhen, China", lat: 22.5431, lon: 114.0579, zoom: 10},
+  {name: "Lahore, Pakistan", lat: 31.5204, lon: 74.3587, zoom: 10},
+  {name: "Bangalore, India", lat: 12.9716, lon: 77.5946, zoom: 10},
+  {name: "Paris, France", lat: 48.8566, lon: 2.3522, zoom: 10},
+  {name: "Bogotá, Colombia", lat: 4.7110, lon: -74.0721, zoom: 10},
+  {name: "Jakarta, Indonesia", lat: -6.2088, lon: 106.8456, zoom: 10},
+  {name: "Chennai, India", lat: 13.0827, lon: 80.2707, zoom: 10},
+  {name: "Lima, Peru", lat: -12.0464, lon: -77.0428, zoom: 10},
+  {name: "Bangkok, Thailand", lat: 13.7563, lon: 100.5018, zoom: 10},
+  {name: "Seoul, South Korea", lat: 37.5665, lon: 126.9780, zoom: 10},
+  {name: "Nagoya, Japan", lat: 35.1815, lon: 136.9066, zoom: 10},
+  {name: "Hyderabad, India", lat: 17.3850, lon: 78.4867, zoom: 10},
+  {name: "London, UK", lat: 51.5074, lon: -0.1278, zoom: 10},
+  {name: "Tehran, Iran", lat: 35.6892, lon: 51.3890, zoom: 10},
+  {name: "Chicago, USA", lat: 41.8781, lon: -87.6298, zoom: 10},
+  {name: "Chengdu, China", lat: 30.5728, lon: 104.0668, zoom: 10}
+];
+
+// Function to select random city and zoom to it
+function zoomToRandomCity() {
+  var randomIndex = Math.floor(Math.random() * majorCities.length);
+  var selectedCity = majorCities[randomIndex];
+  
+  // Set map center and zoom
+  Map.setCenter(selectedCity.lon, selectedCity.lat, selectedCity.zoom);
+  
+  // Update info panel to show selected city
+  updateInfoPanelWithCity(2025, selectedCity.name);
+  
+  return selectedCity;
+}
+
+// Create global mosaic for a specific year
+function createGlobalMosaic(year) {
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/WORLDPOP/pop')
+    .filter(ee.Filter.stringContains('system:index', '_POP_' + year + '_'))
+    .select([0], ['population']);
+  
+  return collection.mosaic();
+}
+
+// Main function to update global visualization
+function updateGlobalVisualization(year) {
+  // Remove current layer
+  if (currentLayer) {
+    Map.remove(currentLayer);
+    currentLayer = null;
+  }
+  
+  try {
+    // Create global mosaic
+    var globalPopData = createGlobalMosaic(year);
+    
+    // Use fixed visualization parameters for global view
+    var vis = {
+      min: 0,
+      max: 50, // Adjusted for global scale
+      palette: beautifulPalette
+    };
+    
+    // Add global layer
+    currentLayer = ui.Map.Layer(globalPopData, vis, 'Global Population ' + year);
+    Map.layers().insert(0, currentLayer);
+    
+    // Update info display
+    updateInfoPanel(year);
+    
+  } catch(error) {
+    print('Error loading global data:', error);
+  }
+}
+
+// Function called by date slider
+function showPopulationForYear(dateRange) {
+  var startDate = ee.Date(dateRange.start());
+  var year = startDate.get('year').getInfo();
+  updateGlobalVisualization(year);
+}
+
+// Update information panel
+function updateInfoPanel(year) {
+  infoLabel.setValue([
+    'Global Population Density',
+    'Year: ' + year,
+    'Automatically filtered global mosaic',
+    'Scale: 0-50 people/pixel (100m resolution)',
+    '',
+    'Refresh page to zoom to a different city!'
+  ].join('\n'));
+}
+
+// Update information panel with city name
+function updateInfoPanelWithCity(year, cityName) {
+  infoLabel.setValue([
+    'Global Population Density',
+    'Year: ' + year,
+    'Currently viewing: ' + cityName,
+    'Scale: 0-50 people/pixel (100m resolution)',
+    '',
+    'Refresh page or click Random City to zoom to a different city!'
+  ].join('\n'));
+}
+
+// =============================================================================
+// USER INTERFACE SETUP
+// =============================================================================
+
+// Control panel (left side)
+var controlPanel = ui.Panel({
+  widgets: [
+    ui.Label({
+      value: 'Global WorldPop Viewer',
+      style: {
+        fontSize: '20px',
+        fontWeight: 'bold',
+        color: '#333',
+        margin: '0 0 15px 0'
+      }
+    })
+  ],
+  style: {
+    position: 'top-left',
+    width: '300px',
+    padding: '20px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '2px solid #ddd'
+  }
+});
+
+// Info panel
+var infoLabel = ui.Label({
+  value: 'Use the time slider below to explore global population',
+  style: {
+    fontSize: '12px',
+    color: '#666',
+    whiteSpace: 'pre-line',
+    margin: '0'
+  }
+});
+
+// Add to control panel
+controlPanel.add(infoLabel);
+
+// Add "New Random City" button
+var randomCityButton = ui.Button({
+  label: 'Random City',
+  onClick: function() {
+    var selectedCity = zoomToRandomCity();
+    print('Zoomed to: ' + selectedCity.name);
+  },
+  style: {
+    margin: '10px 0',
+    backgroundColor: '#4CAF50',
+    color: 'black'
+  }
+});
+
+controlPanel.add(randomCityButton);
+
+// Legend panel (bottom right)
+var legendPanel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '15px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '2px solid #ddd'
+  }
+});
+
+var legendTitle = ui.Label('Population Density', {
+  fontWeight: 'bold',
+  fontSize: '14px',
+  margin: '0 0 10px 0'
+});
+
+// Color bar
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '200x25',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: beautifulPalette
+  },
+  style: {stretch: 'horizontal', margin: '0 0 5px 0'}
+});
+
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label('0', {fontSize: '11px', margin: '0 5px'}),
+    ui.Label('← People per 100m grid →', {
+      textAlign: 'center',
+      stretch: 'horizontal',
+      fontSize: '11px',
+      margin: '0 10px'
+    }),
+    ui.Label('50+', {fontSize: '11px', margin: '0 5px'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+legendPanel.add(legendTitle);
+legendPanel.add(colorBar);
+legendPanel.add(legendLabels);
+
+// =============================================================================
+// ASYNC DATE SLIDER SETUP
+// =============================================================================
+
+// Create date range for WorldPop data (2015-2030)
+var start = ee.Date('2015-01-01');
+var end = ee.Date('2030-12-31');
+var now = ee.Date('2015-01-01');
+
+// Asynchronously compute the date range and show the slider
+var dateRange = ee.DateRange(start, end).evaluate(function(range) {
+  var dateSlider = ui.DateSlider({
+    start: range['dates'][0], 
+    end: range['dates'][1],
+    value: null,
+    period: 365, // Annual data
+    style: {
+      position: 'top-center',
+      width: '600px'
+    },
+    onChange: showPopulationForYear
+  });
+  
+  // Add the slider to map and set initial value
+  Map.add(dateSlider.setValue(now.millis().getInfo()));
+});
+
+// =============================================================================
+// MAP INITIALIZATION
+// =============================================================================
+
+// Clear map and set style
+Map.clear();
+
+// Add UI panels
+Map.add(controlPanel);
+Map.add(legendPanel);
+
+// Load initial visualization and zoom to random city
+updateGlobalVisualization(2025);
+var initialCity = zoomToRandomCity();
+print('Initial random city: ' + initialCity.name);

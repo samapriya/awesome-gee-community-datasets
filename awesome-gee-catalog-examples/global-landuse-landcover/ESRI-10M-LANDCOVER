@@ -1,127 +1,344 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
 var esri_lulc10 = ee.ImageCollection("projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS");
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
-// Define a dictionary which will be used to make legend and visualize image on map
-var dict = {
-  "names": [
-    "Water",
-    "Trees",
-    "Flooded Vegetation",
-    "Crops",
-    "Built Area",
-    "Bare Ground",
-    "Snow/Ice",
-    "Clouds",
-    "Rangeland"
-  ],
-  "colors": [
-    "#1A5BAB",
-    "#358221",
-    "#87D19E",
-    "#FFDB5C",
-    "#ED022A",
-    "#EDE9E4",
-    "#F2FAFF",
-    "#C8C8C8",
-    "#C6AD8D"
-  ]};
+// Optimized Earth Engine Land Use Land Cover (LULC) Visualization
+// ==============================================================
+
+// Configuration - Easy to modify
+var CONFIG = {
+  startYear: 2017,
+  endYear: 2024,  // Updated to include 2024
+  collection: 'projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m_TS',
   
-  function remapper(image){
-    var remapped = image.remap([1,2,4,5,7,8,9,10,11],[1,2,3,4,5,6,7,8,9])
-    return remapped
-  }
-
-// This is palette has '#000000' for value 3 and 6.
-var palette = [
-    "#1A5BAB",
-    "#358221",
-    "#000000",
-    "#87D19E",
-    "#FFDB5C",
-    "#000000",
-    "#ED022A",
-    "#EDE9E4",
-    "#F2FAFF",
-    "#C8C8C8",
-    "#C6AD8D",
-  ];
-
-// Create a panel to hold the legend widget
-var legend = ui.Panel({
-  style: {
-    position: 'bottom-left',
-    padding: '8px 15px'
-  }
-});
-
-// Function to generate the legend
-function addCategoricalLegend(panel, dict, title) {
+  // Land cover class definitions
+  landCover: {
+    names: [
+      "Water", "Trees", "Flooded Vegetation", "Crops", 
+      "Built Area", "Bare Ground", "Snow/Ice", "Clouds", "Rangeland"
+    ],
+    colors: [
+      "#1A5BAB", "#358221", "#87D19E", "#FFDB5C", 
+      "#ED022A", "#EDE9E4", "#F2FAFF", "#C8C8C8", "#C6AD8D"
+    ],
+    // Original to remapped value mapping
+    remapFrom: [1, 2, 4, 5, 7, 8, 9, 10, 11],
+    remapTo: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  },
   
-  // Create and add the legend title.
+  // Visualization parameters
+  visParams: {
+    min: 1,
+    max: 9
+  }
+};
+
+// Load the ESRI LULC collection
+var esriLulc = ee.ImageCollection(CONFIG.collection);
+
+// Utility Functions
+// =================
+
+/**
+ * Remaps land cover values to standardized classification
+ * @param {ee.Image} image - Input land cover image
+ * @returns {ee.Image} Remapped image
+ */
+function remapLandCover(image) {
+  return image.remap(CONFIG.landCover.remapFrom, CONFIG.landCover.remapTo)
+              .copyProperties(image, ['system:time_start', 'system:time_end']);
+}
+
+/**
+ * Creates annual composite for a given year
+ * @param {number} year - Year to create composite for
+ * @returns {ee.Image} Annual composite image
+ */
+function createAnnualComposite(year) {
+  var startDate = ee.Date.fromYMD(year, 1, 1);
+  var endDate = ee.Date.fromYMD(year, 12, 31);
+  
+  return esriLulc
+    .filterDate(startDate, endDate)
+    .mosaic()
+    .set('year', year)
+    .set('system:time_start', startDate.millis());
+}
+
+/**
+ * Generates a list of years from start to end (inclusive)
+ * @param {number} start - Start year
+ * @param {number} end - End year
+ * @returns {Array} Array of years
+ */
+function generateYearList(start, end) {
+  var years = [];
+  for (var i = start; i <= end; i++) {
+    years.push(i);
+  }
+  return years;
+}
+
+// Legend Creation
+// ===============
+
+/**
+ * Creates a categorical legend panel
+ * @param {Object} legendConfig - Configuration object with colors and names
+ * @param {string} title - Legend title
+ * @returns {ui.Panel} Legend panel
+ */
+function createCategoricalLegend(legendConfig, title) {
+  var panel = ui.Panel({
+    style: {
+      position: 'bottom-left',
+      padding: '8px 15px',
+      backgroundColor: 'rgba(255, 255, 255, 1)'
+    }
+  });
+  
+  // Add title
   var legendTitle = ui.Label({
     value: title,
     style: {
       fontWeight: 'bold',
       fontSize: '18px',
-      margin: '0 0 4px 0',
+      margin: '0 0 8px 0',
       padding: '0'
     }
   });
   panel.add(legendTitle);
   
-  var loading = ui.Label('Loading legend...', {margin: '2px 0 4px 0'});
-  panel.add(loading);
-  
-  // Creates and styles 1 row of the legend.
-  var makeRow = function(color, name) {
-    // Create the label that is actually the colored box.
+  // Create legend rows
+  legendConfig.names.forEach(function(name, index) {
     var colorBox = ui.Label({
       style: {
-        backgroundColor: color,
-        // Use padding to give the box height and width.
+        backgroundColor: legendConfig.colors[index],
         padding: '8px',
-        margin: '0 0 4px 0'
+        margin: '0 0 4px 0',
+        border: '1px solid #ccc'
       }
     });
-  
-    // Create the label filled with the description text.
+    
     var description = ui.Label({
       value: name,
-      style: {margin: '0 0 4px 6px'}
+      style: {
+        margin: '0 0 4px 6px',
+        fontSize: '14px'
+      }
     });
-  
-    return ui.Panel({
+    
+    var row = ui.Panel({
       widgets: [colorBox, description],
       layout: ui.Panel.Layout.Flow('horizontal')
     });
-  };
+    
+    panel.add(row);
+  });
   
-  // Get the list of palette colors and class names from the image.
-  var palette = dict['colors'];
-  var names = dict['names'];
-  loading.style().set('shown', false);
-  
-  for (var i = 0; i < names.length; i++) {
-    panel.add(makeRow(palette[i], names[i]));
-  }
-  
-  Map.add(panel);
-  
+  return panel;
 }
 
+/**
+ * Creates attribution panel for Impact Observatory
+ * @returns {ui.Panel} Attribution panel
+ */
+function createAttributionPanel() {
+  var panel = ui.Panel({
+    style: {
+      position: 'bottom-right',
+      padding: '8px 12px',
+      backgroundColor: 'rgba(255, 255, 255, 1)',
+      border: '1px solid #ccc',
+      maxWidth: '300px'
+    }
+  });
+  
+  var attributionText = ui.Label({
+    value: 'Provided by Impact Observatory under the Maps for Good Program',
+    style: {
+      fontSize: '12px',
+      margin: '0 0 4px 0',
+      fontWeight: 'bold'
+    }
+  });
+  
+  var linkLabel = ui.Label({
+    value: 'https://www.impactobservatory.com/maps-for-good/',
+    style: {
+      fontSize: '11px',
+      color: '#1f77b4',
+      margin: '0'
+    }
+  });
+  
+  panel.add(attributionText);
+  panel.add(linkLabel);
+  
+  return panel;
+}
 
-/*
-  // Display map and legend ///////////////////////////////////////////////////////////////////////////////
-*/
+// Layer Management
+// ================
 
-// Add the legend to the map
-addCategoricalLegend(legend, dict, 'Land Cover Class');
+/**
+ * Adds all annual LULC layers to the map
+ */
+function addLulcLayers() {
+  var years = generateYearList(CONFIG.startYear, CONFIG.endYear);
+  
+  years.forEach(function(year) {
+    var composite = createAnnualComposite(year);
+    var remapped = remapLandCover(composite);
+    
+    var visParams = {
+      min: CONFIG.visParams.min,
+      max: CONFIG.visParams.max,
+      palette: CONFIG.landCover.colors
+    };
+    
+    Map.addLayer(
+      ee.Image(remapped), 
+      visParams, 
+      year + ' LULC 10m',
+      false  // Start with layers turned off for better performance
+    );
+  });
+}
 
-// Add image to the map
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2017-01-01','2017-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2017 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2018-01-01','2018-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2018 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2019-01-01','2019-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2019 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2020-01-01','2020-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2020 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2021-01-01','2021-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2021 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2022-01-01','2022-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2022 LULC 10m')
-Map.addLayer(ee.ImageCollection(esri_lulc10.filterDate('2023-01-01','2023-12-31').mosaic()).map(remapper), {min:1, max:9, palette:dict['colors']}, '2023 LULC 10m')
+/**
+ * Sets up layer visibility - shows only the most recent year by default
+ */
+function setupLayerVisibility() {
+  var layers = Map.layers();
+  
+  // Turn off all layers first
+  for (var i = 0; i < layers.length(); i++) {
+    layers.get(i).setShown(false);
+  }
+  
+  // Show only the most recent year
+  if (layers.length() > 0) {
+    layers.get(layers.length() - 1).setShown(true);
+  }
+}
+
+// UI Controls
+// ===========
+
+/**
+ * Creates a year selector widget
+ */
+function createYearSelector() {
+  var years = generateYearList(CONFIG.startYear, CONFIG.endYear);
+  var yearStrings = years.map(function(year) { return year.toString(); });
+  
+  var selector = ui.Select({
+    items: yearStrings,
+    value: CONFIG.endYear.toString(),
+    placeholder: 'Select year...',
+    onChange: function(year) {
+      showOnlyYear(parseInt(year));
+    },
+    style: {
+      position: 'top-right',
+      width: '150px'
+    }
+  });
+  
+  var label = ui.Label({
+    value: 'Display Year:',
+    style: {
+      position: 'top-right',
+      fontWeight: 'bold',
+      margin: '0 0 5px 0'
+    }
+  });
+  
+  var panel = ui.Panel({
+    widgets: [label, selector],
+    style: {
+      position: 'top-right',
+      padding: '8px',
+      backgroundColor: 'rgba(255, 255, 255, 1)'
+    }
+  });
+  
+  return panel;
+}
+
+/**
+ * Shows only the layer for the specified year
+ * @param {number} year - Year to display
+ */
+function showOnlyYear(year) {
+  var layers = Map.layers();
+  var targetLayerName = year + ' LULC 10m';
+  
+  for (var i = 0; i < layers.length(); i++) {
+    var layer = layers.get(i);
+    var layerName = layer.getName();
+    layer.setShown(layerName === targetLayerName);
+  }
+}
+
+// Initialization
+// ==============
+
+/**
+ * Main initialization function
+ */
+function initialize() {
+  // Clear existing layers and UI
+  Map.clear();
+  
+  // Set default map view
+  Map.setCenter(0, 0, 2);
+  
+  // Add legend
+  var legend = createCategoricalLegend(CONFIG.landCover, 'Land Cover Classes');
+  Map.add(legend);
+  
+  // Add attribution panel
+  var attribution = createAttributionPanel();
+  Map.add(attribution);
+  
+  // Add year selector
+  var yearSelector = createYearSelector();
+  Map.add(yearSelector);
+  
+  // Add all LULC layers
+  addLulcLayers();
+  
+  // Setup initial visibility
+  setupLayerVisibility();
+  
+  // Add inspector for clicking on map
+  Map.onClick(function(coords) {
+    var point = ee.Geometry.Point(coords.lon, coords.lat);
+    var layers = Map.layers();
+    
+    // Find the currently visible layer
+    for (var i = 0; i < layers.length(); i++) {
+      var layer = layers.get(i);
+      if (layer.getShown()) {
+        var image = layer.getEeObject();
+        var value = image.sample(point, 10).first().get('remapped');
+        
+        ee.data.computeValue(value, function(result) {
+          if (result !== null && result >= 1 && result <= 9) {
+            var className = CONFIG.landCover.names[result - 1];
+            print('Land cover at clicked location: ' + className);
+          }
+        });
+        break;
+      }
+    }
+  });
+  
+  print('LULC Visualization initialized!');
+  print('Years available: ' + CONFIG.startYear + '-' + CONFIG.endYear);
+  print('Click on the map to identify land cover types');
+}
+
+// Run initialization
+initialize();

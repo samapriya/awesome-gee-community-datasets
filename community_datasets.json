@@ -39415,6 +39415,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/c3slc.png"
   },
   {
+    "title": "WorldPop Global Population Data 2015-2030",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-2015_2030",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/WORLDPOP/pop",
+    "provider": "WorldPop, University of Southampton",
+    "tags": "Population mapping, Demographics, Settlement patterns, Dasymetric mapping, Random Forest, Gridded population, Census data, Population projections, Human geography, Spatial analysis",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/worldpop/",
+    "thematic_group": "Population & Socioeconomic",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/worldpop.png"
+  },
+  {
     "title": "Carbon Mapper Data Portal Methane Emissions: Plume",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CARBON-MAPPER-METHANE-EMISSIONS",
     "type": "image_collection",

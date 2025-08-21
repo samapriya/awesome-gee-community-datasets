@@ -1,0 +1,85 @@
+// Peatlands Global Database: Peat Grids
+// This script visualizes multiple datasets from the PEATGRIDS collection.
+// Each layer is processed to mask out no-data values and is given a unique color palette for clarity.
+
+// Load each of the PEATGRIDS image collections.
+var bd_mean = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/BD_MEAN");
+var bd_stdev = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/BD_STDEV");
+var cc_mean = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/CC_MEAN");
+var cc_stdev = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/CC_STDEV");
+var cstock_mgc = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/C_STOCK_MGC");
+var cstock_mgc_per_m2 = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/C_STOCK_MGC_PER_M2");
+var thickness = ee.Image("projects/sat-io/open-datasets/PEATGRIDS/THICKNESS_CM");
+
+// Apply a mask to each layer to only show valid data (values >= 0).
+// This removes the -9999 no-data values.
+var thickness_mean = thickness.select('THICKNESS_CM_MEAN').mask(thickness.select('THICKNESS_CM_MEAN').gte(0));
+var bd_mean_0_15 = bd_mean.select('BD_000_015_MEAN').mask(bd_mean.select('BD_000_015_MEAN').gte(0));
+var cc_mean_0_15 = cc_mean.select('CC_000_015_MEAN').mask(cc_mean.select('CC_000_015_MEAN').gte(0));
+var cstock_total = cstock_mgc.select('C_STOCK_MgC_MEAN').mask(cstock_mgc.select('C_STOCK_MgC_MEAN').gte(0));
+var cstock_area = cstock_mgc_per_m2.select('C_STOCK_MgC_per_m2_MEAN').mask(cstock_mgc_per_m2.select('C_STOCK_MgC_per_m2_MEAN').gte(0));
+
+// Process standard deviation layers as well
+var thickness_stdev = thickness.select('THICKNESS_CM_STDEV').mask(thickness.select('THICKNESS_CM_STDEV').gte(0));
+var bd_stdev_0_15 = bd_stdev.select('BD_000_015_STDEV').mask(bd_stdev.select('BD_000_015_STDEV').gte(0));
+var cc_stdev_0_15 = cc_stdev.select('CC_000_015_STDEV').mask(cc_stdev.select('CC_000_015_STDEV').gte(0));
+
+
+// Use the 'gena' package for a variety of color palettes.
+var palettes = require('users/gena/packages:palettes');
+
+// Palette for Total Carbon Stock (Mg C)
+var carbonVisTotal = {
+  min: 0,
+  max: 500000,
+  palette: palettes.cmocean.Thermal[7].reverse(),
+};
+
+// Palette for Carbon Stock per m^2 (Mg C / m^2)
+var carbonVisArea = {
+  min: 0,
+  max: 1500,
+  palette: palettes.cmocean.Matter[7],
+};
+
+// Palette for Peat Thickness (cm)
+var thicknessVis = {
+  min: 0,
+  max: 1000,
+  palette: palettes.colorbrewer.YlGnBu[9],
+};
+
+// Palette for Bulk Density (ton/m^3) for 0-15cm layer
+var bdVis = {
+  min: 0,
+  max: 0.5,
+  palette: palettes.colorbrewer.OrRd[9],
+};
+
+// Palette for Carbon Content (g C / g dry soil) for 0-15cm layer
+var ccVis = {
+  min: 0.2,
+  max: 0.7,
+  palette: palettes.colorbrewer.Greens[7],
+};
+
+
+// Center the map on a region of interest, like Southeast Asia.
+Map.setCenter(110, 0, 4);
+
+// Add each processed layer to the map with its visualization parameters.
+// Most layers are set to not be shown by default to keep the view clean.
+Map.addLayer(cstock_total, carbonVisTotal, "Peat Carbon Stock (Mg C)", true);
+Map.addLayer(cstock_area, carbonVisArea, "Peat Carbon Stock (Mg C/m²)", false);
+Map.addLayer(thickness_mean, thicknessVis, "Peat Thickness Mean (cm)", false);
+Map.addLayer(bd_mean_0_15, bdVis, "Bulk Density Mean (0-15cm)", false);
+Map.addLayer(cc_mean_0_15, ccVis, "Carbon Content Mean (0-15cm)", false);
+
+// Add standard deviation layers, also hidden by default.
+Map.addLayer(thickness_stdev, {min: 0, max: 200, palette: palettes.cmocean.Gray[7]}, "Peat Thickness STDEV (cm)", false);
+Map.addLayer(bd_stdev_0_15, {min: 0, max: 0.2, palette: palettes.cmocean.Gray[7]}, "Bulk Density STDEV (0-15cm)", false);
+Map.addLayer(cc_stdev_0_15, {min: 0, max: 0.2, palette: palettes.cmocean.Gray[7]}, "Carbon Content STDEV (0-15cm)", false);
+
+// Apply a custom greyscale style to the base map for better data visualization.
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

@@ -1,0 +1,284 @@
+// Amsterdam Buildings Analysis by Neighborhood
+// Calculates zonal statistics for building height and construction epoch by neighborhood
+
+// Load the datasets
+var amsterdam_neighbourhoods = ee.FeatureCollection("projects/sat-io/open-datasets/INSIDE-AIRBNB/amsterdam_neighbourhoods");
+var GHS_OBAT_NLD = ee.FeatureCollection("projects/sat-io/open-datasets/JRC/GHS-OBAT/GHS_OBAT_GPKG_NLD_E2020_R2024A_V1_0");
+
+// Filter buildings to Amsterdam area
+var amsterdam_buildings = GHS_OBAT_NLD.filterBounds(amsterdam_neighbourhoods);
+
+// Clean the data - filter out null/invalid values
+var valid_buildings = amsterdam_buildings.filter(ee.Filter.and(
+  ee.Filter.neq('height', null),
+  ee.Filter.neq('epoch', null),
+  ee.Filter.gt('height', 0),
+  ee.Filter.gte('epoch', 0)
+));
+
+print('Total buildings in Amsterdam area:', valid_buildings.size());
+
+// Function to calculate zonal statistics for each neighborhood
+function calculateNeighborhoodStats(neighborhood) {
+  var neighborhood_buildings = valid_buildings.filterBounds(neighborhood.geometry());
+  
+  // Calculate statistics
+  var building_count = neighborhood_buildings.size();
+  var height_stats = neighborhood_buildings.aggregate_stats('height');
+  var epoch_stats = neighborhood_buildings.aggregate_stats('epoch');
+  
+  // Calculate epoch distribution (count by epoch)
+  var epoch_1_count = neighborhood_buildings.filter(ee.Filter.eq('epoch', 1)).size();
+  var epoch_2_count = neighborhood_buildings.filter(ee.Filter.eq('epoch', 2)).size();
+  var epoch_3_count = neighborhood_buildings.filter(ee.Filter.eq('epoch', 3)).size();
+  var epoch_4_count = neighborhood_buildings.filter(ee.Filter.eq('epoch', 4)).size();
+  var epoch_5_count = neighborhood_buildings.filter(ee.Filter.eq('epoch', 5)).size();
+  
+  // Calculate height distribution (count by height ranges)
+  var height_0_5_count = neighborhood_buildings.filter(ee.Filter.and(ee.Filter.gte('height', 0), ee.Filter.lt('height', 5))).size();
+  var height_5_10_count = neighborhood_buildings.filter(ee.Filter.and(ee.Filter.gte('height', 5), ee.Filter.lt('height', 10))).size();
+  var height_10_20_count = neighborhood_buildings.filter(ee.Filter.and(ee.Filter.gte('height', 10), ee.Filter.lt('height', 20))).size();
+  var height_20_plus_count = neighborhood_buildings.filter(ee.Filter.gte('height', 20)).size();
+  
+  // Add all statistics as properties with better names for charts
+  return neighborhood
+    .set('building_count', building_count)
+    .set('height_min', height_stats.get('min'))
+    .set('height_max', height_stats.get('max'))
+    .set('height_mean', height_stats.get('mean'))
+    .set('height_stdDev', height_stats.get('total_sd'))
+    .set('epoch_min', epoch_stats.get('min'))
+    .set('epoch_max', epoch_stats.get('max'))
+    .set('epoch_mean', epoch_stats.get('mean'))
+    .set('epoch_stdDev', epoch_stats.get('total_sd'))
+    // Raw property names for data processing
+    .set('epoch_1', epoch_1_count)
+    .set('epoch_2', epoch_2_count)
+    .set('epoch_3', epoch_3_count)
+    .set('epoch_4', epoch_4_count)
+    .set('epoch_5', epoch_5_count)
+    .set('height_0_5', height_0_5_count)
+    .set('height_5_10', height_5_10_count)
+    .set('height_10_20', height_10_20_count)
+    .set('height_20_plus', height_20_plus_count)
+    // Chart-friendly property names
+    .set('Before 1980', epoch_1_count)
+    .set('1980-1990', epoch_2_count)
+    .set('1990-2000', epoch_3_count)
+    .set('2000-2010', epoch_4_count)
+    .set('2010-2020', epoch_5_count)
+    .set('0-5m', height_0_5_count)
+    .set('5-10m', height_5_10_count)
+    .set('10-20m', height_10_20_count)
+    .set('20m+', height_20_plus_count);
+}
+
+// Calculate statistics for all neighborhoods
+print('Calculating neighborhood statistics...');
+var neighborhoods_with_stats = amsterdam_neighbourhoods.map(calculateNeighborhoodStats);
+
+// Print sample statistics
+print('Sample neighborhood with statistics:', neighborhoods_with_stats.first());
+
+// Set up the map
+Map.centerObject(amsterdam_neighbourhoods, 11);
+
+// Color palettes
+var epochColors = {
+  1: '#2166ac',  // Dark blue (before 1980)
+  2: '#5aae61',  // Green (1980-1990)
+  3: '#fee08b',  // Yellow (1990-2000)
+  4: '#f46d43',  // Orange (2000-2010)
+  5: '#d73027'   // Red (2010-2020)
+};
+
+var heightColors = {
+  '0-5': '#440154',   // Purple (< 5m)
+  '5-10': '#31688e',  // Blue (5-10m)
+  '10-20': '#35b779', // Green (10-20m)
+  '20+': '#fde725'    // Yellow (≥ 20m)
+};
+
+// Add neighborhood boundaries
+
+var amsterdam_visualized = amsterdam_neighbourhoods.style({fillColor: '00000000',color: 'FF5500'});
+Map.addLayer(amsterdam_visualized, {}, 'Neighborhoods');
+
+// Add building layers by epoch
+Object.keys(epochColors).forEach(function(epoch) {
+  var epochNum = parseInt(epoch);
+  var epochBuildings = valid_buildings.filter(ee.Filter.eq('epoch', epochNum));
+  Map.addLayer(
+    epochBuildings,
+    {color: epochColors[epoch], pointSize: 1},
+    'Epoch ' + epoch + ' - ' + getEpochLabel(epochNum) + ' Buildings',
+    false,  // initially hidden
+    0.7
+  );
+});
+
+// Add building layers by height
+var heightRanges = [
+  {min: 0, max: 5, key: '0-5', label: '< 5m'},
+  {min: 5, max: 10, key: '5-10', label: '5-10m'},
+  {min: 10, max: 20, key: '10-20', label: '10-20m'},
+  {min: 20, max: 999, key: '20+', label: '≥ 20m'}
+];
+
+heightRanges.forEach(function(range) {
+  var rangeFilter = ee.Filter.and(
+    ee.Filter.gte('height', range.min),
+    ee.Filter.lt('height', range.max)
+  );
+  var rangeBuildings = valid_buildings.filter(rangeFilter);
+  
+  Map.addLayer(
+    rangeBuildings,
+    {color: heightColors[range.key], pointSize: 1},
+    'Height ' + range.label + ' Buildings',
+    false,  // initially hidden
+    0.7
+  );
+});
+
+// Helper function to get epoch labels
+function getEpochLabel(epoch) {
+  var labels = {
+    1: 'Before 1980',
+    2: '1980-1990',
+    3: '1990-2000',
+    4: '2000-2010',
+    5: '2010-2020'
+  };
+  return labels[epoch] || 'Unknown';
+}
+
+// Create choropleth maps for different statistics
+
+// 1. Mean building height by neighborhood
+Map.addLayer(
+  neighborhoods_with_stats,
+  {
+    color: 'black',
+    width: 1,
+    fillColor: 'height_mean',
+    palette: ['#fee5d9', '#fcbba1', '#fc9272', '#fb6a4a', '#de2d26', '#a50f15'],
+    min: 3,
+    max: 15
+  },
+  'Mean Building Height by Neighborhood',
+  false
+);
+
+// 2. Building density (count) by neighborhood
+Map.addLayer(
+  neighborhoods_with_stats,
+  {
+    color: 'black',
+    width: 1,
+    fillColor: 'building_count',
+    palette: ['#f7fbff', '#c6dbef', '#6baed6', '#2171b5', '#08519c'],
+    min: 0,
+    max: 5000
+  },
+  'Building Count by Neighborhood',
+  false
+);
+
+// 3. Mean construction epoch by neighborhood
+Map.addLayer(
+  neighborhoods_with_stats,
+  {
+    color: 'black',
+    width: 1,
+    fillColor: 'epoch_mean',
+    palette: ['#2166ac', '#5aae61', '#fee08b', '#f46d43', '#d73027'],
+    min: 1,
+    max: 5
+  },
+  'Mean Construction Epoch by Neighborhood',
+  false
+);
+
+// Create and display summary statistics
+print('=== AMSTERDAM BUILDINGS SUMMARY ===');
+
+// Calculate city-wide statistics
+var city_building_count = valid_buildings.size();
+var city_height_stats = valid_buildings.aggregate_stats('height');
+var city_epoch_stats = valid_buildings.aggregate_stats('epoch');
+
+print('City-wide Statistics:');
+print('Total Buildings:', city_building_count);
+print('Height Stats:', city_height_stats);
+print('Epoch Stats:', city_epoch_stats);
+
+// Get top 10 neighborhoods by building count
+var top_neighborhoods = neighborhoods_with_stats
+  .sort('building_count', false)
+  .limit(10);
+
+print('Top 10 Neighborhoods by Building Count:');
+print(top_neighborhoods.select(['neighbourh', 'building_count', 'height_mean', 'epoch_mean']));
+
+// Create interactive charts
+var chart = ui.Chart.feature.byFeature(
+  neighborhoods_with_stats.limit(20),
+  'neighbourh',
+  ['building_count', 'height_mean']
+)
+.setOptions({
+  title: 'Building Count vs Mean Height by Neighborhood (Top 20)',
+  hAxis: {title: 'Building Count'},
+  vAxis: {title: 'Mean Height (m)'},
+  pointSize: 5
+});
+
+print(chart);
+
+// Height distribution chart
+var heightChart = ui.Chart.feature.byFeature(
+  neighborhoods_with_stats.limit(15),
+  'neighbourh',
+  // Use the chart-friendly names with units
+  ['0-5m', '5-10m', '10-20m', '20m+']
+)
+.setChartType('ColumnChart')
+.setOptions({
+  title: 'Building Height Distribution by Neighborhood (Top 15)',
+  hAxis: {title: 'Neighborhood'},
+  vAxis: {title: 'Number of Buildings'},
+  isStacked: true,
+  legend: {position: 'right'}
+});
+
+print(heightChart);
+
+// Epoch distribution chart
+var epochChart = ui.Chart.feature.byFeature(
+  neighborhoods_with_stats.limit(15),
+  'neighbourh',
+  // Use the chart-friendly names you already created
+  ['Before 1980', '1980-1990', '1990-2000', '2000-2010', '2010-2020']
+)
+.setChartType('ColumnChart')
+.setOptions({
+  title: 'Construction Epoch Distribution by Neighborhood (Top 15)',
+  hAxis: {title: 'Neighborhood'},
+  vAxis: {title: 'Number of Buildings'},
+  // The 'series' object can be removed unless you want to explicitly map colors by their new order
+  isStacked: true,
+  legend: {position: 'right'}
+});
+
+print(epochChart);
+
+
+// Export neighborhood statistics to Drive (optional)
+/*
+Export.table.toDrive({
+  collection: neighborhoods_with_stats,
+  description: 'Amsterdam_Neighborhoods_Building_Stats',
+  fileFormat: 'CSV'
+});
+*/

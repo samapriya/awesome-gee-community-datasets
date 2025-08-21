@@ -3,6 +3,10 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-08-20
+- Added [WorldPop Global Population Data 2015-2030](https://gee-community-catalog.org/projects/worldpop)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-08-06
 - Added [Copernicus Climate Change Service (C3S) Land Cover Classification Gridded Maps (1992 -2022)](https://gee-community-catalog.org/projects/c3slc)
 - Added [Global Soil Organic Carbon Map (GSOCmap)](https://gee-community-catalog.org/projects/gsoc)

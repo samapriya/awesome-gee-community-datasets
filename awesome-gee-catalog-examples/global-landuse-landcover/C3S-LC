@@ -1,0 +1,153 @@
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/ESA/C3S-LC-L4-LCCS");
+// Select the most recent image for visualization
+var recentImage = collection.sort('system:time_start', false).first();
+// Select the land cover classification band
+var lccs = recentImage;
+
+// Define the color palette based on the official C3S legend
+var lccs_palette = [
+  'ffff64', // 10: Cropland, rainfed
+  'aaf0f0', // 20: Cropland, irrigated or post-flooding
+  'dcf064', // 30: Mosaic cropland (>50%) / natural vegetation (<50%)
+  'c8c864', // 40: Mosaic natural vegetation (>50%) / cropland (<50%)
+  '006400', // 50: Tree cover, broadleaved, evergreen, closed to open (>15%)
+  '00a000', // 60: Tree cover, broadleaved, deciduous, closed to open (>15%)
+  '003c00', // 70: Tree cover, needleleaved, evergreen, closed to open (>15%)
+  '285000', // 80: Tree cover, needleleaved, deciduous, closed to open (>15%)
+  '788200', // 90: Tree cover, mixed leaf type
+  '8ca000', // 100: Mosaic tree and shrub (>50%) / herbaceous cover (<50%)
+  'be9600', // 110: Mosaic herbaceous cover (>50%) / tree and shrub (<50%)
+  '966400', // 120: Shrubland
+  'ffb432', // 130: Grassland
+  'ffdcd2', // 140: Lichens and mosses
+  'ffebaf', // 150: Sparse vegetation (<15%)
+  '00785a', // 160: Tree cover, flooded, fresh or brackish water
+  '009678', // 170: Tree cover, flooded, saline water
+  '00dc82', // 180: Shrub or herbaceous cover, flooded
+  'c31400', // 190: Urban areas
+  'fff5d7', // 200: Bare areas
+  '0046c8', // 210: Water bodies
+  'ffffff'  // 220: Permanent snow and ice
+];
+
+// Define class values and labels
+var classValues = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220];
+var classLabels = [
+  'Cropland, rainfed',
+  'Cropland, irrigated',
+  'Mosaic cropland/natural veg.',
+  'Mosaic natural veg./cropland',
+  'Tree cover, broadleaved, evergreen',
+  'Tree cover, broadleaved, deciduous',
+  'Tree cover, needleleaved, evergreen',
+  'Tree cover, needleleaved, deciduous',
+  'Tree cover, mixed leaf type',
+  'Mosaic tree and shrub/herbaceous',
+  'Mosaic herbaceous/tree and shrub',
+  'Shrubland',
+  'Grassland',
+  'Lichens and mosses',
+  'Sparse vegetation',
+  'Tree cover, flooded, fresh water',
+  'Tree cover, flooded, saline water',
+  'Shrub/herbaceous cover, flooded',
+  'Urban areas',
+  'Bare areas',
+  'Water bodies',
+  'Permanent snow and ice'
+];
+
+// Define visualization parameters
+var visParams = {
+  min: 10,
+  max: 220,
+  palette: lccs_palette
+};
+
+// Add the layer to the map
+Map.setCenter(0, 0, 2);
+Map.addLayer(lccs, visParams, 'C3S Land Cover');
+
+// Create legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid black',
+    maxHeight: '300px',
+    maxWidth: '500px'
+  }
+});
+
+// Add legend title
+var legendTitle = ui.Label({
+  value: 'C3S Land Cover Classification',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '12px',
+    margin: '0 0 8px 0',
+    textAlign: 'center',
+    stretch: 'horizontal'
+  }
+});
+legend.add(legendTitle);
+
+// Create a panel for the legend items with multiple columns
+var legendPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {stretch: 'horizontal'}
+});
+
+// Split items into two columns
+var itemsPerColumn = Math.ceil(classValues.length / 2);
+var column1 = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: {width: '240px', margin: '0 5px 0 0'}
+});
+var column2 = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: {width: '240px', margin: '0 0 0 5px'}
+});
+
+// Add legend items to columns
+for (var i = 0; i < classValues.length; i++) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: '#' + lccs_palette[i],
+      padding: '8px',
+      margin: '1px 8px 1px 1px',
+      border: '1px solid black'
+    }
+  });
+  
+  var description = ui.Label({
+    value: classLabels[i],
+    style: {
+      fontSize: '10px',
+      margin: '2px 0px 2px 0px',
+      stretch: 'horizontal'
+    }
+  });
+  
+  var legendItem = ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {margin: '1px 0px 1px 0px'}
+  });
+  
+  // Distribute items between columns
+  if (i < itemsPerColumn) {
+    column1.add(legendItem);
+  } else {
+    column2.add(legendItem);
+  }
+}
+
+// Add columns to legend panel
+legendPanel.add(column1);
+legendPanel.add(column2);
+legend.add(legendPanel);
+
+// Add legend to map
+Map.add(legend);

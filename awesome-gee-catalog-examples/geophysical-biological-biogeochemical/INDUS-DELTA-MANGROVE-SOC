@@ -1,0 +1,30 @@
+// Load the Indus Delta Mangrove SOC datasets
+var indus_delta_mangrove_soc = ee.Image('projects/sat-io/open-datasets/INDUS_DELTA_SOC/indusdelta_mangrove_soc2020');
+var indus_delta_mangrove_soc_uncertainty = ee.Image('projects/sat-io/open-datasets/INDUS_DELTA_SOC/indusdelta_mangrove_soc_uncertainity2020');
+
+// Center the map on the dataset
+Map.centerObject(indus_delta_mangrove_soc, 9);
+
+// Visualization parameters
+var socVis = {
+  min: 15, 
+  max: 138, 
+  palette: ['#d10019', '#ff8f51', '#fff6b6', '#a7d073', '#008134']
+};
+
+var uncertaintyVis = {
+  min: 0, 
+  max: 100, 
+  palette: ['#FFFFFF', '#d10019']
+};
+
+// Add layers to map
+Map.addLayer(indus_delta_mangrove_soc, socVis, 'Indus Delta Mangrove SOC (MgC ha⁻¹)');
+Map.addLayer(indus_delta_mangrove_soc_uncertainty, uncertaintyVis, 'Indus Delta Mangrove SOC Uncertainty (%)', false);
+
+// Print dataset information
+print('SOC Dataset:', indus_delta_mangrove_soc);
+print('Uncertainty Dataset:', indus_delta_mangrove_soc_uncertainty);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
