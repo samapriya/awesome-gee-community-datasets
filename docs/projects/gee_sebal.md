@@ -2,7 +2,7 @@
 
 The geeSEBAL-MODIS Version 0-02 Evapotranspiration (ET) product is an 8-day product produced at 500 meter pixel resolution. The algorithm for ET calculation is based on the SEBAL model and the FAO Penman-Monteith equation, which includes inputs of daily meteorological reanalysis data along with MODIS remotely sensed data products such as vegetation property dynamics, albedo, land cover and land surface temperature (LST).
 
-The pixel values for the layers are the average of all eight days within the period, multiplied by 1000. Images must be multiplied by 0.001 for the actual values. Note that the last 8-day period of each year is a 5 or 6-day composite period, depending on the year. The dataset is available from 2002-07-01 to 2022-12-31. Band information is the following
+The pixel values for the layers are the average of all eight days within the period, multiplied by 1000. Images must be multiplied by 0.001 for the actual values. Note that the last 8-day period of each year is a 5 or 6-day composite period, depending on the year. The dataset is available from 2002-07-01 to 2024-12-31. Band information is the following
 
 |Name       |Description                                                                                                                         |Min     |Max    |Units   |Scale|Offset|
 |-----------|------------------------------------------------------------------------------------------------------------------------------------|--------|-------|--------|-----|------|
