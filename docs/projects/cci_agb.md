@@ -1,8 +1,8 @@
 # ESA CCI Global Forest Above Ground Biomass
 
-This dataset updated to v5.01 provides estimates of forest above-ground biomass for the years 2010, 2015, 2016, 2017, 2018, 2019, 2020 and 2021. These estimates are derived from a combination of Earth observation data, depending on the year, obtained from the Copernicus Sentinel-1 mission, Envisat's ASAR instrument, and JAXA's Advanced Land Observing Satellite (ALOS-1 and ALOS-2), along with additional information from other Earth observation sources. The dataset has been generated as part of the European Space Agency's (ESA's) Climate Change Initiative (CCI) program by the Biomass CCI team.
+This dataset updated to v6.0 provides estimates of forest above-ground biomass for the years 2007, 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021, and 2022. These estimates are derived from a combination of Earth observation data, depending on the year, obtained from the Copernicus Sentinel-1 mission, Envisat’s ASAR (Advanced Synthetic Aperture Radar) instrument, and JAXA's Advanced Land Observing Satellite (ALOS-1 and ALOS-2), along with additional information from other Earth observation sources. The dataset has been generated as part of the European Space Agency's (ESA's) Climate Change Initiative (CCI) program by the Biomass CCI team.
 
-The dataset includes multi-temporal observations at L-band for all biomes and for each year. The above-ground biomass (AGB) maps utilize revised allometries, which are now based on a more extensive collection of spaceborne LiDAR data from the GEDI and ICESat-2 missions. The retrieval algorithm now incorporates temporal information to capture and preserve biomass dynamics as expressed in the remote sensing data.
+Compared to version 5, version 6 consists of updated AGB maps for the years 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and new AGB maps for 2007 and 2022. The dataset includes multi-temporal observations at L-band for all biomes and for each year. The above-ground biomass (AGB) maps utilize revised allometries, which are now based on a more extensive collection of spaceborne LiDAR data from the GEDI and ICESat-2 missions. The retrieval algorithm incorporates extended ICESat-2 observations to calibrate retrieval models and a refined cost function that preserves temporal features as expressed in the remote sensing data, limiting biases between the 2007-2010 and the 2015+ maps.
 
 The data products consist of two (2) global layers that include estimates of:
 
@@ -10,13 +10,15 @@ The data products consist of two (2) global layers that include estimates of:
 
 2. Per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)
 
-Also for this release I am including the change products which includes these two layers
+Additionally provided in this version release are aggregated data products. These aggregated products of the AGB and AGB change data layers are available at coarser resolutions (1, 10, 25 and 50km).
 
-1. Standard deviation of AGB change: Maps showing the uncertainty of AGB change for consecutive years (2015-2016) and the decade 2010-2020. Available for each time period (e.g., 2016-2017).
+Also included are the change products which include these layers:
 
-2. Quality flag of AGB change: Maps indicating the reliability of AGB change estimates for consecutive years (2015-2016) and the decade 2010-2020. Available for each time period (e.g., 2016-2017).
+1. Standard deviation of AGB change: Maps showing the uncertainty of AGB change for consecutive years (e.g., 2016-2015, 2017-2016, 2018-2017, 2019-2018, 2020-2019, 2021-2020, 2022-2021), over a decade (2020-2010), and over the interval 2010-2007.
 
-Note: AGB change values can be calculated by differencing the corresponding AGB maps.
+2. Quality flag of AGB change: Maps indicating the reliability of AGB change estimates for the same time periods mentioned above.
+
+Note: AGB change values can be calculated by differencing the corresponding AGB maps. Data are provided in both netcdf and geotiff format.
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
@@ -25,13 +27,13 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 * The same approach for a yearly composite was applied to the Standard deviations tiles as well to make sure they can be mapped on top of each other.
 * For ingestion a manifest file was created with Band 1 being AGB and Band 2 being SD so we could reduce the overall files for an image collection. The ingestion used a no data value of 0.
 * For change product Band 1 was AGB_DIFF_SD and Band 2 was AGB_DIFF_QF and these were to represent standard deviation of AGB biomass change and quality flag of AGB biomass change.
-* Metadata properties were copied over from AGB with some slight changes to fields and the dates were preproccessed and updated to v5.01.
+* Metadata properties were copied over from AGB with some slight changes to fields and the dates were preprocessed and updated to v6.0.
 
 #### Citation
 
 ```
-Santoro, M.; Cartus, O. (2024): ESA Biomass Climate Change Initiative (Biomass_cci): Global datasets of forest above-ground biomass for the years 2010, 2015, 2016, 2017, 2018,
-2019, 2020 and 2021, v5.01. NERC EDS Centre for Environmental Data Analysis, 22 August 2024. doi:10.5285/bf535053562141c6bb7ad831f5998d77.
+Santoro, M.; Cartus, O. (2025): ESA Biomass Climate Change Initiative (Biomass_cci): Global datasets of forest above-ground biomass for the years 2007, 2010, 2015, 2016, 2017, 2018,
+2019, 2020, 2021 and 2022, v6.0. NERC EDS Centre for Environmental Data Analysis, 17 April 2025. doi:10.5285/95913ffb6467447ca72c4e9d8cf30501.
 ```
 
 ![cci-biomass](https://github.com/aazuspan/snazzy/assets/6677629/f2269833-d283-4568-aba5-cadf928cb15c)
@@ -60,6 +62,26 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: satellite observation, forest, biomass
 
-Created: 2024-07-29
+Created: 2025-04-17
 
-Last updated in GEE: 2025-01-27
+Last updated in GEE: 2025-09-01
+
+#### Changelog
+
+**v6.0 (April 2025)**
+- **Extended temporal coverage**: Added new AGB maps for 2007 and 2022
+- **Updated existing maps**: Refreshed AGB estimates for 2010, 2015, 2016, 2017, 2018, 2019, 2020, and 2021
+- **Enhanced calibration**: Extended ICESat-2 observations used for retrieval model calibration
+- **Improved temporal consistency**: Refined cost function to limit biases between 2007-2010 and 2015+ maps
+- **New aggregated products**: Added coarser resolution data products (1, 10, 25, and 50km)
+- **Extended change products**: New AGB change maps for additional consecutive years (2022-2021) and 2010-2007 interval
+- **Multiple formats**: Data now available in both netcdf and geotiff formats
+- **Updated citation**: New DOI and publication details
+
+**v5.01 (August 2024)**
+- Initial release with AGB estimates for 2010, 2015, 2016, 2017, 2018, 2019, 2020, and 2021
+- Utilized revised allometries based on GEDI and ICESat-2 spaceborne LiDAR data
+- Incorporated temporal information to capture biomass dynamics
+- Provided AGB change products for consecutive years and decade (2010-2020)
+- Band 1: AGB, Band 2: Standard deviation for main collection
+- Band 1: AGB_DIFF_SD, Band 2: AGB_DIFF_QF for change collection
