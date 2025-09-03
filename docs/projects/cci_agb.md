@@ -69,6 +69,7 @@ Last updated in GEE: 2025-09-01
 #### Changelog
 
 **v6.0 (April 2025)**
+
 - **Extended temporal coverage**: Added new AGB maps for 2007 and 2022
 - **Updated existing maps**: Refreshed AGB estimates for 2010, 2015, 2016, 2017, 2018, 2019, 2020, and 2021
 - **Enhanced calibration**: Extended ICESat-2 observations used for retrieval model calibration
@@ -79,6 +80,7 @@ Last updated in GEE: 2025-09-01
 - **Updated citation**: New DOI and publication details
 
 **v5.01 (August 2024)**
+
 - Initial release with AGB estimates for 2010, 2015, 2016, 2017, 2018, 2019, 2020, and 2021
 - Utilized revised allometries based on GEDI and ICESat-2 spaceborne LiDAR data
 - Incorporated temporal information to capture biomass dynamics
