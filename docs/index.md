@@ -5,7 +5,7 @@
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@samapriyaroy)
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 [![Jetstream2](https://img.shields.io/badge/Supported%20by-Jetstream2-brightgreen)](https://jetstream-cloud.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15190103.svg)](https://doi.org/10.5281/zenodo.15190103)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17063591.svg)](https://doi.org/10.5281/zenodo.17063591)
 [![Static Badge](https://img.shields.io/badge/status-uptime-green)](https://uptime.gee-community-catalog.org/status/all)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
@@ -66,6 +66,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Samapriya Roy, Eric Jensen, Saah, A., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.5.0).
-Zenodo. https://doi.org/10.5281/zenodo.15587604
+Samapriya Roy, Sayantan (Monty) Majumdar, Ph.D., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.7.0).
+Zenodo. https://doi.org/10.5281/zenodo.17063591
 ```
