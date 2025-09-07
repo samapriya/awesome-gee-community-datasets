@@ -50,7 +50,7 @@
 - Release 3.5.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.7144933)
 - Added [Catalog publications section](https://gee-community-catalog.org/publications/)
 - Added [Rangeland Condition Monitoring Assessment and Projection (RCMAP)](https://gee-community-catalog.org/projects/rcmap/)
-- Updated [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm/)
+- Updated [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm-v3/)
 - Updated [Congo Basin Forest Roads](https://gee-community-catalog.org/projects/forest_roads/)
 - Updated [Rangeland Analysis Platform layers](https://gee-community-catalog.org/projects/rap)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
