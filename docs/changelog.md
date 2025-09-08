@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2025-09-07
-- Updated [Gridded Global GDP and HDI (1990-2015)](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
+- Updated [Gridded Global GDP and HDI from (1990-2015) to (1990-2022)](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 - Changed path for [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm-v3/)
 
