@@ -1,73 +1,118 @@
-# Gridded Global GDP and HDI (1990-2015)
+# Gridded Global GDP per capita (1990-2022)
 
-Two global key indicators of development are Gross Domestic Product (GDP) and Human Development Index (HDI). While ‘GDP measures the monetary value of final goods and services—that is, those that are bought by the final user—produced in a [given area] in a given period of time, HDI is a composite index of ‘average achievement in key dimensions of human development:
+Gross Domestic Product (GDP) measures the monetary value of final goods and services produced in a given area during a specific period. This dataset provides a comprehensive gridded GDP per capita dataset downscaled to multiple administrative levels covering 1990–2022, representing a substantial update to existing datasets which only used reported subnational data up to 2010.
 
-* a long and healthy life,
-* being knowledgeable and
-* have a decent standard of living’30.
+The dataset employs novel methods for extrapolation and downscaling, including machine learning algorithms that showed high performance (R²=0.79 for cross-validation, R²=0.80 for test dataset) and accuracy against reported datasets (Pearson R=0.88). The dataset includes reported and downscaled annual data for three administrative levels and provides higher spatial resolution and wider temporal range than existing datasets.
 
-Gap-filled multiannual datasets in gridded form for Gross Domestic Product (GDP) and Human Development Index (HDI). To provide a consistent product over time and space, the sub-national data were only used indirectly, scaling the reported national value and thus, remaining representative of the official statistics. This resulted in annual gridded datasets for GDP per capita (PPP), total GDP (PPP), and HDI, for the whole world at 5 arc-min resolution for the 25-year period of 1990–2015. Additionally, total GDP (PPP) is provided with 30 arc-sec resolution for three time steps (1990, 2000, 2015).
+#### Key Updates from Previous Version
 
-Disclaimer: Whole or parts of the dataset description was provided by the author(s) or their works.
+- **Extended temporal coverage**: 1990-2022 (vs. previous 1990-2015)
+- **More comprehensive subnational data**: Admin 1 level data for 89 countries (2,708 subnational units) vs. previous 83 countries (1,549 units)
+- **Finer spatial resolution**: Now includes admin 2 level (municipality) data for 43,501 administrative units
+- **Improved methodologies**: Novel extrapolation methods and machine learning-based downscaling
+- **Enhanced validation**: Validated against OECD regional data with high accuracy (R=0.88)
 
-|Dataset             |Dimensions   |Note                                                                                                                                  |
-|--------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-|GDP per capita (PPP)|Timesteps: 26|Gridded GDP per capita, derived from a combination of sub-national and national datasets                                              |
-|GDP (PPP)-5 arc-min |Timesteps: 26|Total GDP (PPP) of each grid cell, derived from GDP per capita (PPP) which is multiplied by gridded population data HYDE 3.2          |
-|GDP (PPP)-30 arc-sec|Timesteps: 3 |Total GDP (PPP) of each grid cell, derived from GDP per capita (PPP) which is multiplied by gridded population data GHS               |
-|Pedigree of GDP data|Timesteps: 26|Reports the scale (national, sub-national) and type (reported, interpolated, extrapolated) of each year of data                       |
-|HDI                 |Timesteps: 26|Gridded HDI, derived from a combination of sub-national and national datasets                                                         |
-|Pedigree of HDI data|Timesteps: 26|Reports the level (national, sub-national) and type (reported, interpolated, extrapolated) of each year of data                       |
-|Administrative units|Products: 2  |Represents the administrative units used for GDP per capita (PPP) and HDI. National admin units have id 1–999, sub-national ones 1001-|
+#### Dataset Components
+
+|Dataset|Administrative Level|Temporal Coverage|Resolution|Note|
+|-------|-------------------|-----------------|----------|-----|
+|GDP per capita (PPP) - Admin 0|National (237 countries)|1990-2022|5 arc-min|Reported national data from World Bank, IMF, CIA|
+|GDP per capita (PPP) - Admin 1|Provincial (2,708 units, 89 countries)|1990-2022|5 arc-min|Reported subnational data from OECD, Eurostat, national censuses|
+|GDP per capita (PPP) - Admin 2|Municipal (43,501 units)|1990-2022|5 arc-min, 30 arc-min|Downscaled using machine learning algorithms|
+|Total GDP (PPP)|All levels|1990-2022|30 arc-sec, 5 arc-min, 30 arc-min|GDP per capita multiplied by gridded population data|
+
+#### Methodology Highlights
+
+- **Gap-filling**: Novel extrapolation method using linear regression with geographically closest countries with similar economic patterns
+- **Downscaling**: Machine learning approach using ensemble trees with independent variables including urbanization level, travel time to cities, income inequality, and national GDP
+- **Data harmonization**: Ratio-based approach ensuring consistency between administrative levels and alignment with national statistics
+- **Validation**: Cross-validated against OECD subnational data and harmonized with national reported data
 
 #### Dataset notes
 
-* Units for GDP is US dollar
+* Units for GDP: US dollar (2017 international USD, PPP-adjusted)
+* All administrative levels are gap-filled and harmonized with national statistics
+* Machine learning downscaling achieved R²=0.80 on test dataset
+* Data harmonization ensures subnational totals match national reported values
 
-* Pedigree GDP:  Pedigree index numbers, coded as follows: 1-regional reported; 2-regional interpolated; 3-regional extrapolated; 5-national reported; 6-national interpolated; 7-national extrapolated
+#### Band Structure
+- Each administrative level dataset contains 33 bands (1990-2022)
+- Band names follow format: "PPP_YYYY" where YYYY is the year
+- Total GDP datasets have varying temporal coverage based on resolution:
+  - 30 arc-sec: 1990-2020 (every 5 years)
+  - 5 arc-min: 1990-2022 (annual)
+  - 30 arc-min: 1990-2022 (annual)
 
-* Pedigree HDI: Pedigree index numbers, coded as follows: 1-regional reported; 2-regional scaled; 4-national reported; 5-national interpolated; 6-national extrapolated; 7-no data, regional average used
+#### Data Quality and Limitations
+- Admin 2 level data are model predictions with validation R²=0.80
+- Accuracy varies by region: highest in Europe/North America, lower in Central Asia/Latin America
+- African continent has limited subnational data availability
+- Small island states may have interpolated values where data unavailable
 
 #### Paper citation
 
 ```
-Kummu, M., Taka, M. & Guillaume, J. Gridded global datasets for Gross Domestic Product and Human Development Index over 1990–2015. Sci Data 5, 180004 (2018).
-https://doi.org/10.1038/sdata.2018.4
+Kummu, M., Kosonen, M. & Masoumzadeh Sayyar, S. Downscaled gridded global dataset for gross domestic product (GDP) per capita PPP over 1990–2022.
+Sci Data 12, 178 (2025). https://doi.org/10.1038/s41597-025-04487-x
 ```
-
 
 #### Dataset citation
 
 ```
-Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A. (2020), Data from: Gridded global datasets for Gross Domestic Product and Human Development Index over 1990-2015,
-Dryad, Dataset, https://doi.org/10.5061/dryad.dk1j0
+Kummu, M., Kosonen, M., & Masoumzadeh Sayyar, S. (2025). Data for: Downscaled gridded global dataset for Gross Domestic Product (GDP) per capita at purchasing power parity (PPP)
+over 1990-2022 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16741980
 ```
 
 ![gdp_hdi](https://user-images.githubusercontent.com/6677629/168412311-8e1de844-298e-4c4f-8ffc-2ce38963f70c.gif)
 
-
 #### Earth Engine Snippet
 
 ```js
-var gdp_ppp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_1990_2015_5arcmin_v2");
-var gdp_ppp_30arc = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_30arcsec_v3");
-var gdp_per_capita = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_per_capita_PPP_1990_2015_v2");
-var hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/HDI_1990_2015_v2");
-var admin_areas = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/admin_areas_GDP_HDI");
-var pedigree_gdp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_GDP_per_capita_PPP_1990_2015_v2");
-var pedigree_hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2");
+// GDP per capita datasets by administrative level
+var gdp_adm0 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm0_gdp_perCapita_1990_2022");
+var gdp_adm1 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm1_gdp_perCapita_1990_2022");
+var gdp_adm2 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm2_gdp_perCapita_1990_2022");
+var gdp_adm2_30arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm2_gdp_perCapita_1990_2022_30arcmin");
+
+// Total GDP datasets by resolution
+var gdp_total_30arcsec = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/total_gdp_perCapita_1990_2020_30arcsec");
+var gdp_total_5arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/total_gdp_perCapita_1990_2022_5arcmin");
+var gdp_total_30arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/total_gdp_perCapita_1990_2022_30arcmin");
+
+//Feature Collections
+var gdp_adm0_poly = ee.FeatureCollection("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/poly_adm0_gdp_perCapita_1990_2022");
+var gdp_adm1_poly = ee.FeatureCollection("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/poly_adm1_gdp_perCapita_1990_2022");
+var gdp_adm2_poly = ee.FeatureCollection("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/poly_adm2_gdp_perCapita_1990_2022");
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-GDP-HDI
 
-
 #### License
-This work is licensed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication license.
+This work is licensed under a Creative Commons Attribution 4.0 International License.
 
-Produced by : Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.
+Created by: Kummu, M., Kosonen, M. & Masoumzadeh Sayyar, S
 
-Curated in GEE by : Samapriya Roy
+Curated in GEE by: Samapriya Roy
 
-Keywords: : Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)
+Keywords: Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Purchasing Power Parity (PPP), machine learning downscaling, administrative boundaries
 
-Last updated on GEE: 2022-04-30
+Last updated on GEE: 2025-09-07
+
+### Changelog
+
+#### Version 3.0 (2025)
+- **NEW**: Extended temporal coverage from 1990-2022 (vs. previous 1990-2015)
+- **NEW**: Added admin 2 level (municipal) GDP per capita data for 43,501 units
+- **IMPROVED**: Enhanced subnational data coverage: 89 countries (2,708 units) vs. previous 83 countries (1,549 units)
+- **NEW**: Machine learning-based downscaling methodology with validation R²=0.80
+- **NEW**: Multiple resolution total GDP products (30 arc-sec, 5 arc-min, 30 arc-min)
+- **IMPROVED**: Novel gap-filling methodology using geographic proximity and economic similarity
+- **NEW**: Comprehensive validation against OECD regional data (Pearson R=0.88)
+- **UPDATED**: License changed from CC0 to Creative Commons Attribution 4.0 International
+- **UPDATED**: New Zenodo DOI and 2025 Scientific Data publication
+
+#### Version 2.0 (2018)
+- Original gridded GDP and HDI dataset (1990-2015)
+- Admin 0 and Admin 1 level GDP per capita data
+- Regional trend-based extrapolation methodology
+- HDI dataset included

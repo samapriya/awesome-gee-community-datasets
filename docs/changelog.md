@@ -3,6 +3,11 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-09-07
+- Updated [Gridded Global GDP and HDI (1990-2015)](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+- Changed path for [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm-v3/)
+
 #### Updated 2025-09-03
 - Release 3.7.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.7144933)
 - Updated [ESA CCI Global Forest Above Ground Biomass Change Layers v6](https://gee-community-catalog.org/projects/cci_agb)
