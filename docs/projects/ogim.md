@@ -90,6 +90,7 @@ Last updated: 2025-09-08
 #### Version History
 
 **v2.7 Changes:**
+
 - Updated to approximately 6.7 million features (increased from ~6 million in v1)
 - Expanded to 4.5 million point locations of oil and gas wells (increased from 2.6 million in v1)
 - Increased pipeline coverage to over 1.2 million kilometers (expanded from 2.6×10⁶ km in v1)
