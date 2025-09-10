@@ -66,6 +66,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Samapriya Roy, Sayantan (Monty) Majumdar, Ph.D., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.7.0).
+Samapriya Roy, Majumdar, S., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.7.0).
 Zenodo. https://doi.org/10.5281/zenodo.17063591
 ```
