@@ -8,6 +8,8 @@ The time series reveals the ongoing evolution and refinement of this critical da
 
 #### Feature Count Evolution
 
+<center>
+
 | Year | Number of Road Features | Change from Previous Year |
 |------|------------------------|---------------------------|
 | 2012 | 19,889,811 | - |
@@ -25,6 +27,8 @@ The time series reveals the ongoing evolution and refinement of this critical da
 | 2024 | 17,813,006 | -87,576 |
 | 2025 | 16,438,449 | -1,374,557 |
 
+</center>
+
 **Total Change (2012-2025): -3,451,362 features (-17.4%)**
 
 The declining feature count reflects ongoing data quality improvements through conflation processes, where redundant or duplicate road segments are merged, topology is corrected, and the overall dataset structure is refined.
@@ -35,6 +39,8 @@ The declining feature count reflects ongoing data quality improvements through c
 
 Each road segment contains detailed attribute information that enables sophisticated address matching and routing operations:
 
+<center>
+  
 | Property | Description | Example Value |
 |----------|-------------|---------------|
 | **FULLNAME** | Complete concatenated road name with all components | "I- 395" |
@@ -49,10 +55,14 @@ Each road segment contains detailed attribute information that enables sophistic
 | **SUFQUAL** | Suffix qualifier | null |
 | **SUFTYP** | Suffix type (Street, Avenue, Road, etc.) | null |
 
+</center>
+
 #### Route Type (RTTYP) Classifications
 
 The route type code (RTTYP) describes the type of road for numbered highway systems:
 
+<center>
+  
 | Code | Description |
 |------|-------------|
 | **C** | County Road |
@@ -62,14 +72,20 @@ The route type code (RTTYP) describes the type of road for numbered highway syst
 | **S** | State Recognized Highway |
 | **U** | U.S. Highway |
 
+</center>
+
 ### MTFCC Road Classifications
 
+<center>
+  
 | Code | Description | Typical Use |
 |------|-------------|-------------|
 | S1100 | Primary Road | Interstate highways, major arterials |
 | S1200 | Secondary Road | State highways, major collectors |
 | S1400 | Local Neighborhood Road | Residential streets, local roads |
 | S1500 | Vehicular Trail | Unpaved roads, 4WD trails |
+
+</center>
 
 #### Earth Engine Assets
 
