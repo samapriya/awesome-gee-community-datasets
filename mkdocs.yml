@@ -401,6 +401,7 @@ nav:
               - Global Annual Simulated NPP-VIIRS Nighttime Light Dataset (1992-2023): projects/srunet_npp_viirs_ntl.md
               - GAN based Synthetic VIIRS (NTL) India: projects/syn_ntl.md
               - Global Roads Inventory Project: projects/grip.md
+              - TIGER Roads Time Series (2012-2025): projects/tiger_roads.md
               - Global Highres Mining Footprints: projects/global-mining.md
               - Global ML Building Footprints: projects/msbuildings.md
               - Global Google-Microsoft Open Buildings Dataset: projects/global_buildings.md
