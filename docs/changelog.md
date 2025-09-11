@@ -6,7 +6,7 @@
 #### Updated 2025-09-11
 - Added [TIGER Roads Time Series (2012-2025)]((https://gee-community-catalog.org/projects/tiger_roads)
 - Updated [Gridded Global GDP and HDI from (1990-2015) to (1990-2022)](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
-- Updated [ Oil and Gas Infrastructure Mapping (OGIM) database to v2.7](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
+- Updated [ Oil and Gas Infrastructure Mapping (OGIM) database to v2.7](https://gee-community-catalog.org/projects/ogim)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 - Changed path for [Global Human Modification dataset from v1.5 to v3](https://gee-community-catalog.org/projects/ghm-v3/)
 
