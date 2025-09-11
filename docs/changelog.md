@@ -3,7 +3,8 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
-#### Updated 2025-09-07
+#### Updated 2025-09-11
+- Added [TIGER Roads Time Series (2012-2025)]((https://gee-community-catalog.org/projects/tiger_roads)
 - Updated [Gridded Global GDP and HDI from (1990-2015) to (1990-2022)](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
 - Updated [ Oil and Gas Infrastructure Mapping (OGIM) database to v2.7](https://gee-community-catalog.org/projects/gridded_gdp_hdi)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
