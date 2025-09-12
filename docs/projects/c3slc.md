@@ -7,6 +7,7 @@ This dataset from the Copernicus Climate Change Service (C3S) provides global an
 The C3S LC maps are produced at a spatial resolution of approximately 300m (~0.00278°). The production methodology ensures temporal consistency across the entire series. A unique 10-year baseline LC map was first generated using the entire archive (2003-2012) of Medium Resolution Imaging Spectrometer (MERIS) data. This baseline is then annually updated (and was initially back-dated) by detecting land cover changes.
 
 Change detection is performed using a variety of satellite time series:
+
 * Advanced Very-High-Resolution Radiometer (AVHRR) for the period 1992-1999.
 * SPOT-Vegetation (SPOT-VGT) for 1999-2013.
 * PROBA-Vegetation (PROBA-V) for 2014-2019.
