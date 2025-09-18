@@ -1,7 +1,7 @@
-# AgERA5 (ECMWF) dataset
+# AgERA5 (ECMWF) dataset, version 2.0
 
 Daily surface meteorological data for the period from 1979 to present as input for agriculture and agro-ecological studies. This dataset is based on
-the hourly ECMWF ERA5 data at surface level and is referred to as AgERA5. Acquisition and pre-processing of the original ERA5 data is a complex and
+the hourly ECMWF ERA5 data at surface level and is referred to as AgERA5, version 2.0. Acquisition and pre-processing of the original ERA5 data is a complex and
 specialized job. By providing the AgERA5 dataset, users are freed from this work and can directly start with meaningful input for their analyses and
 modeling. To this end, the variables provided in this dataset match the input needs of most agriculture and agro-ecological models. Data were
 aggregated to daily time steps at the local time zone and corrected towards a finer topography at a 0.1° spatial resolution. The correction to the 0.
@@ -25,7 +25,7 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 
 | Variable                  | Details                              |
 |---------------------------|--------------------------------------|
-| Wind speed ('Wind_Speed_10m_Mean') | - Units: Meters/second            |
+| Wind speed ('Wind_Speed_10m_Mean_24h') | - Units: Meters/second            |
 |                           | - Scale factor: 1.0                |
 | Minimum temperature, 2m ('Temperature_Air_2m_Min_24h') | - Units: Degrees Kelvin   |
 |                           | - Scale factor: 1.0                |
@@ -41,7 +41,7 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 |                           | - Scale factor: 1.0                |
 | Mean temperature, 2m, nighttime ('Temperature_Air_2m_Mean_Night_Time') | - Units: Degrees Kelvin |
 |                           | - Scale factor: 1.0                |
-| Dewpoint temperature, 2m ('Dew_Point_Temperature_2m_Mean') | - Units: Degrees Kelvin |
+| Dewpoint temperature, 2m ('Dew_Point_Temperature_2m_Mean_24h') | - Units: Degrees Kelvin |
 |                           | - Scale factor: 1.0                |
 | Precipitation ('Precipitation_Flux') | - Units: Millimeters           |
 |                           | - Scale factor: 1.0                |
@@ -49,15 +49,19 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 |                           | - Scale factor: 1.0                |
 | Precipitation solid duration fraction ('Precipitation_Solid_Duration_Fraction') | - Units: Count |
 |                           | - Scale factor: 1.0                |
-| Snow depth ('Snow_Thickness_Mean') | - Units: Centimeters           |
+| FAO56 Reference ET ('ReferenceET_PenmanMonteith_FAO56') | - Units: Millimeters           |
 |                           | - Scale factor: 1.0                |
-| Snow water equivalent ('Snow_Thickness_LWE_Mean') | - Units: Centimeters        |
+| Snow depth ('Snow_Thickness_Mean_24h') | - Units: Centimeters           |
 |                           | - Scale factor: 1.0                |
-| Vapour pressure ('Vapour_Pressure_Mean') | - Units: hPa                |
+| Snow water equivalent ('Snow_Thickness_LWE_Mean_24h') | - Units: Centimeters        |
+|                           | - Scale factor: 1.0                |
+| Vapour pressure ('Vapour_Pressure_Mean_24h') | - Units: hPa                |
+|                           | - Scale factor: 1.0                |
+| Vapour pressure deficit ('VVapour_Pressure_Deficit_at_Maximum_Temperature') | - Units: hPa                |
 |                           | - Scale factor: 1.0                |
 | Downward solar radiation ('Solar_Radiation_Flux') | - Units: J m-2d-1         |
 |                           | - Scale factor: 1.0                |
-| Cloud cover ('Cloud_Cover_Mean') | - Units: Fraction               |
+| Cloud cover ('Cloud_Cover_Mean_24h') | - Units: Fraction               |
 |                           | - Scale factor: 1.0                |
 | Relative humidity, 2m 06h ('Relative_Humidity_2m_06h') | - Units: Percent        |
 |                           | - Scale factor: 1.0                |
@@ -78,7 +82,7 @@ https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agrometeorological-indica
 
 ```js
 // Read in Image Collection and get first image
-var agera5_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-ag-era5/daily')
+var agera5_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-ag-era5-v2/daily')
 var agera5_i = agera5_ic.first()
 
 // Print first image to see bands
@@ -91,9 +95,9 @@ Map.addLayer(agera5_i.select('Precipitation_Flux'), {min: 0, max: 1, palette: pr
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Max_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Max_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Min_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Min_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Mean_24h')
-Map.addLayer(agera5_i.select('Dew_Point_Temperature_2m_Mean').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Dew_Point_Temperature_2m_Mean')
-Map.addLayer(agera5_i.select('Snow_Thickness_Mean'), {min: 0, max: 100, palette: prec_palette}, 'Snow_Thickness_Mean')
-Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
+Map.addLayer(agera5_i.select('Dew_Point_Temperature_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Dew_Point_Temperature_2m_Mean')
+Map.addLayer(agera5_i.select('Snow_Thickness_Mean_24h'), {min: 0, max: 100, palette: prec_palette}, 'Snow_Thickness_Mean')
+Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean_24h'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/AGERA5-DATASETS
