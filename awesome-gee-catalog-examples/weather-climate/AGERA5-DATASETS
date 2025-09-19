@@ -1,5 +1,5 @@
 // Read in Image Collection and get first image
-var agera5_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-ag-era5/daily')
+var agera5_ic = ee.ImageCollection('projects/climate-engine-pro/assets/ce-ag-era5-v2/daily')
 var agera5_i = agera5_ic.first()
 
 // Print first image to see bands
@@ -12,6 +12,6 @@ Map.addLayer(agera5_i.select('Precipitation_Flux'), {min: 0, max: 1, palette: pr
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Max_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Max_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Min_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Min_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Mean_24h')
-Map.addLayer(agera5_i.select('Dew_Point_Temperature_2m_Mean').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Dew_Point_Temperature_2m_Mean')
-Map.addLayer(agera5_i.select('Snow_Thickness_Mean'), {min: 0, max: 100, palette: prec_palette}, 'Snow_Thickness_Mean')
-Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
+Map.addLayer(agera5_i.select('Dew_Point_Temperature_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Dew_Point_Temperature_2m_Mean')
+Map.addLayer(agera5_i.select('Snow_Thickness_Mean_24h'), {min: 0, max: 100, palette: prec_palette}, 'Snow_Thickness_Mean')
+Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean_24h'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
