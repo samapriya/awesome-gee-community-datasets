@@ -6,7 +6,7 @@ This dataset provides the most complete, asset-level view of solar installations
 
 #### Available Datasets
 
-The TZ-SAM data is provided as four files:
+The TZ-SAM data is provided as four files and is available in quarters starting from 2024Q4:
 
 - **Analysis Polygons (Full Geometry)**: The primary "analysis-ready" dataset containing complete geometries, capacity estimates, and construction date estimates.
 
@@ -46,13 +46,17 @@ Please use one of these suggested citation formats:
 #### Earth Engine Snippet
 
 ```js
-var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS");
-var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS_CENTROID");
-var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS");
-var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS_CENTROID");
+//Datasets are available from 2024Q4 simply replace TZ-SOLAR-YEARQ(Quarter) for example TZ-SOLAR-2025Q1
+
+var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS");
+var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS_CENTROID");
+var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS");
+var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS_CENTROID");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER
+
+TZ- Solar App: https://sat-io.earthengine.app/view/tz-solar
 
 #### License
 TZ-SAM is made available under a Creative Commons Attribution Non-Commercial 4.0 International License (CC-BY-NC-4.0). Attribution to TransitionZero is required. You must also clearly indicate if you have made any changes to the TZ-SAM dataset and what these are.
@@ -63,4 +67,4 @@ Provided by: Transition Zero
 
 Curated in GEE by: Samapriya Roy
 
-Last updated in GEE: 2025-02-04
+Last updated in GEE: 2025-08-07
