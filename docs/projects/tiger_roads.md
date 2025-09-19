@@ -131,6 +131,6 @@ Keywords : TIGER, Roads, Transportation, Infrastructure, Time Series, U.S. Censu
 
 Created by: U.S. Census Bureau
 
-Curated for GEE by: Noah Weidig and Samapriya Roy
+Curated for GEE by: Noah Weidig, Victoria Donovan and Samapriya Roy
 
 Last Updated :2025-09-11
