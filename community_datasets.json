@@ -43654,6 +43654,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/nsi.png"
   },
   {
+    "title": "Global Building Atlas Polygons Sample Tile e030_n40_e035_n35",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-BUILDING-ATLAS(GBA)",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GLOBAL_BUILDING_ATLAS/e030_n40_e035_n35",
+    "provider": "Technical University of Munich (TUM)",
+    "tags": "Building Footprint, Building Height, 3D Building Models, Urban Morphology, Global Coverage, PlanetScope",
+    "license": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+    "docs": "https://gee-community-catalog.org/projects/global_building_atlas/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/global_building_atlas.png"
+  },
+  {
     "title": "Global Human Settlement - Open Buildings Attribute Table (GHS-OBAT) Aruba (ABW)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GHS-OBAT-OPEN-BUILDINGS",
     "type": "table",
