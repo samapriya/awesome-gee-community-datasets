@@ -41643,7 +41643,7 @@
     "title": "AgERA5 (ECMWF) dataset",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/AGERA5-DATASETS",
     "type": "image_collection",
-    "id": "projects/climate-engine-pro/assets/ce-ag-era5/daily",
+    "id": "projects/climate-engine-pro/assets/ce-ag-era5-v2/daily",
     "provider": "Copernicus",
     "tags": "climate, reanalysis, near real-time, ECMWF, precipitation, temperature",
     "license": "custom",
