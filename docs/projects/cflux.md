@@ -34,7 +34,7 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 #### License
 
-The Global Forest Carbon Fluxes (2001-2023) products are provided free of charge, without restriction of use. For the full license information see the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following citation.
+The Global Forest Carbon Fluxes (2001-2024) products are provided free of charge, without restriction of use. For the full license information see the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following citation.
 
 Created by: Harris, N.L., Gibbs, D.A., Baccini, A. et al
 
