@@ -7,8 +7,8 @@ We encourage participation in our releases by contributing code examples, tutori
 ## Citation
 
 ```
-Samapriya Roy, Majumdar, S., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.7.0).
-Zenodo. https://doi.org/10.5281/zenodo.17063591
+Samapriya Roy, Eric Jensen, Majumdar, S., & Saah, A. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.8.0).
+Zenodo. https://doi.org/10.5281/zenodo.17248117
 ```
 
 ## Earn your place in the citation

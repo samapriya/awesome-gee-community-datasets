@@ -4,6 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 ### Updated 2025-10-01
+- Release 3.8.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.17248117)
 - Added [CropSuite 1.0 Crop Suitability for Africa](https://gee-community-catalog.org/projects/csa)
 - Updated [Global Forest Carbon Fluxes (2001-2024)](https://gee-community-catalog.org/projects/cflux) now includes 2024
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
