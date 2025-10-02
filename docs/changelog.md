@@ -8,7 +8,7 @@
 - Added [CropSuite 1.0 Crop Suitability for Africa](https://gee-community-catalog.org/projects/csa)
 - Updated [Global Forest Carbon Fluxes (2001-2024)](https://gee-community-catalog.org/projects/cflux) now includes 2024
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
--
+
 #### Updated 2025-09-23
 - Added [Global Building Atlas Polygons](https://gee-community-catalog.org/projects/gba)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
