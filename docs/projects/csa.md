@@ -36,6 +36,7 @@ Alfalfa, Arabica Coffee, Avocado, Banana, Barley, Beans, Cabbage, Carrot, Cashew
 The dataset is organized into 10 thematic ImageCollections, each containing 6 scenario images:
 
 **Collections:**
+
 1. `climate_suitability` - Climate suitability index for each crop
 2. `climate_suitability_mc` - Climate suitability for multiple cropping systems
 3. `crop_limiting_factor` - Primary limiting factor for crop growth
@@ -48,6 +49,7 @@ The dataset is organized into 10 thematic ImageCollections, each containing 6 sc
 10. `suitable_sowing_days` - Number of suitable days per year for sowing
 
 **Scenarios in each collection:**
+
 - `historical_1991-2010_ir_novar` - Irrigated without climate variability
 - `historical_1991-2010_ir_var` - Irrigated with climate variability
 - `historical_1991-2010_rf_novar` - Rainfed without climate variability
@@ -56,7 +58,10 @@ The dataset is organized into 10 thematic ImageCollections, each containing 6 sc
 - `historical_1991-2010_rfir_var` - Combined rainfed/irrigated with climate variability
 
 **Band Structure:**
+
 Each scenario image contains up to 48 bands, one per crop. Band names correspond to crop names (e.g., `maize`, `wheat`, `cassava`).
+
+<center>
 
 | Collection                      | Value Range | Data Type   | Pyramiding Policy |
 | ------------------------------- | ----------- | ----------- | ----------------- |
@@ -70,6 +75,8 @@ Each scenario image contains up to 48 bands, one per crop. Band names correspond
 | `optimal_sowing_date_mc_third`  | 1-365       | Discrete    | MODE              |
 | `multiple_cropping`             | 1-3         | Discrete    | MODE              |
 | `crop_limiting_factor`          | Categorical | Categorical | MODE              |
+
+</center>
 
 #### Citation
 
