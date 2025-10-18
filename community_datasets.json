@@ -23254,6 +23254,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/global_fertilizer.png"
   },
   {
+    "title": "NPKGRIDS: Global Fertilizer Application Rates",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NPKGRIDS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NPKGRIDS",
+    "provider": "Nguyen, Thu Ha; Tang, Fiona H.M.; Conchedda, Giulia; Casse, Leon; Obli-Laryea, Griffiths; Tubiello, Francesco N.; Maggi, Federico",
+    "tags": "fertilizer, nitrogen, phosphorus, potassium, NPK, agriculture, crop production, nutrient management, sustainable agriculture, environmental monitoring, food security",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/npk/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/npk.png"
+  },
+  {
     "title": "Global High Air Pollutants(GHAP) PM2.5 Concentrations (2017-2022): Daily",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GHAP-DATASETS",
     "type": "image_collection",
