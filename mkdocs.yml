@@ -378,6 +378,7 @@ nav:
               - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
               - Tile Drained Croplands (30m): projects/tile.md
               - Global crop production tillage practices: projects/tillage.md
+              - NPKGRIDS Global Fertilizer Application Rates Dataset: projects/npk.md
               - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
           - "Analysis Ready Data":
               - Highly Scalable Temporal Adaptive Reflectance Fusion Model (HISTARFM) database: projects/histarfm.md
@@ -420,6 +421,7 @@ nav:
               - Global offshore wind turbine dataset: projects/gowt.md
               - Harmonised global datasets of wind and solar farm locations and power: projects/energy_farms.md
               - TransitionZero Solar Asset Mapper: projects/tzero.md
+              - Ground-Mounted Solar Energy in the US (GM-SEUS): projects/gmseus.md
               - Global Database of Cement Production Assets: projects/gcd.md
               - Global database of cement production assets and upstream suppliers: projects/gcd_assets.md
               - Global Database of Iron and Steel Production Assets: projects/gid.md

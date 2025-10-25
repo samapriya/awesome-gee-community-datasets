@@ -23314,6 +23314,30 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/sarl.png"
   },
   {
+    "title": "Ground-Mounted Solar Energy in the US (GM-SEUS) Arrays",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GM-SEUS-SOLAR-ARRAYS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMSEUS/arrays_final",
+    "provider": "Stid et al. 2025, Michigan State University",
+    "tags": "solar energy, photovoltaic, renewable energy, infrastructure, land use, remote sensing, NAIP, Landsat, panel-rows, mount technology, ground cover ratio, installation year, capacity estimation, United States, open data, agrivoltaics",
+    "license": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gmseus/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gmseus.png"
+  },
+  {
+    "title": "Ground-Mounted Solar Energy in the US (GM-SEUS) Panels",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GM-SEUS-SOLAR-ARRAYS",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/GMSEUS/panels_final",
+    "provider": "Stid et al. 2025, Michigan State University",
+    "tags": "solar energy, photovoltaic, renewable energy, infrastructure, land use, remote sensing, NAIP, Landsat, panel-rows, mount technology, ground cover ratio, installation year, capacity estimation, United States, open data, agrivoltaics",
+    "license": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gmseus/",
+    "thematic_group": "Global Utilities, Assets and Amenities Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gmseus.png"
+  },
+  {
     "title": "TransitionZero Solar Asset Mapper 2025 Q1 Analysis Centroids",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER",
     "type": "table",
