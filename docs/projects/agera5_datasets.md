@@ -71,9 +71,7 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 #### Citation
 
 ```
-Copernicus Climate Change Service (C3S) (2017): ERA5 Ag: Agrometeorological indicators from 1979 to present derived from reanalysis. Copernicus
-Climate Change Service Climate Data Store (CDS), (date of access),
-https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agrometeorological-indicators?tab=overview
+Copernicus Climate Change Service (2020): Agrometeorological indicators from 1979 to present derived from reanalysis. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.6c68c9bb (Accessed on DD-MMM-YYYY)
 ```
 
 ![agera5](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/c93b3918-ff1e-4f0b-a3c3-18b12435f1e1)
