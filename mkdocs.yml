@@ -378,6 +378,7 @@ nav:
               - Global irrigation areas (2001 to 2015): projects/global_irrigation.md
               - Tile Drained Croplands (30m): projects/tile.md
               - Global crop production tillage practices: projects/tillage.md
+              - PEST-CHEMGRIDS Global Pesticide Application Rates: projects/pest_chemgrids.md
               - NPKGRIDS Global Fertilizer Application Rates Dataset: projects/npk.md
               - Global Fertilizer usage by crop & country: projects/global_fertilizer.md
           - "Analysis Ready Data":

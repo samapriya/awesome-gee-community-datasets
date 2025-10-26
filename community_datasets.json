@@ -23254,6 +23254,42 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/global_fertilizer.png"
   },
   {
+    "title": "PEST-CHEMGRIDS Global Appilcation Rates",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/PEST-CHEMGRIDS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/PEST-CHEMGRIDS/application_rates",
+    "provider": "Maggi et al 2020",
+    "tags": "agriculture, pesticides, herbicides, insecticides, fungicides, crop protection, environmental assessment, contamination, risk analysis, global agriculture, food security, water quality",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/pest_chemgrids",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/pest_chemgrids.png"
+  },
+  {
+    "title": "PEST-CHEMGRIDS Global Crop Harvested Area Distribution",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/PEST-CHEMGRIDS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/PEST-CHEMGRIDS/crops",
+    "provider": "Maggi et al 2020",
+    "tags": "agriculture, pesticides, herbicides, insecticides, fungicides, crop protection, environmental assessment, contamination, risk analysis, global agriculture, food security, water quality",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/pest_chemgrids",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/pest_chemgrids.png"
+  },
+  {
+    "title": "PEST-CHEMGRIDS Global Data quality indicators",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/PEST-CHEMGRIDS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/PEST-CHEMGRIDS/quality_index",
+    "provider": "Maggi et al 2020",
+    "tags": "agriculture, pesticides, herbicides, insecticides, fungicides, crop protection, environmental assessment, contamination, risk analysis, global agriculture, food security, water quality",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/pest_chemgrids",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/pest_chemgrids.png"
+  },
+  {
     "title": "NPKGRIDS: Global Fertilizer Application Rates",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NPKGRIDS",
     "type": "image_collection",
