@@ -3,6 +3,12 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+### Updated 2025-10-27
+- Added [PEST-CHEMGRIDS Global Pesticide Application Rates](https://gee-community-catalog.org/projects/pest_chemgrids)
+- Added [NPKGRIDS Global Fertilizer Application Rates Dataset](https://gee-community-catalog.org/projects/npk)
+- Added [ Ground-Mounted Solar Energy in the US (GM-SEUS)](https://gee-community-catalog.org/projects/gmseus)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 ### Updated 2025-10-01
 - Release 3.8.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.17248117)
 - Added [CropSuite 1.0 Crop Suitability for Africa](https://gee-community-catalog.org/projects/csa)
