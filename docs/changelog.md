@@ -7,6 +7,7 @@
 - Added [PEST-CHEMGRIDS Global Pesticide Application Rates](https://gee-community-catalog.org/projects/pest_chemgrids)
 - Added [NPKGRIDS Global Fertilizer Application Rates Dataset](https://gee-community-catalog.org/projects/npk)
 - Added [ Ground-Mounted Solar Energy in the US (GM-SEUS)](https://gee-community-catalog.org/projects/gmseus)
+- Added 2024 to Landscan global and updated [LandScan Global Population Data](https://gee-community-catalog.org/projects/landscan) 
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 ### Updated 2025-10-01
