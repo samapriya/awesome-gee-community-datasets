@@ -1,4 +1,4 @@
-# World Bank Official Boundaries
+# World Bank Global Administrative Divisions
 
 The World Bank Official Boundaries project publishes high-resolution, regularly updated global administrative boundaries as open data, designed and endorsed by the World Bank for robust, cross-sectoral geospatial analysis. Developed through collaboration between the Development Data Group's Space2Stats program and the Cartography Unit from Global Corporate Solutions Interactive Media, this dataset delivers detailed boundaries at the national (Admin 0), provincial (Admin 1), and district (Admin 2) levels. It improves upon former datasets by offering higher resolution, standardized formats, and more frequent updates, promoting transparency and inclusion by making these foundational data resources openly available to researchers, development organizations, and partners worldwide.
 
@@ -174,6 +174,8 @@ var WB_Boundaries_ADM2 = ee.FeatureCollection("rojects/sat-io/open-datasets/WORL
 ```
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WB-GAD-2025
+
+Explore the App here: https://sat-io.earthengine.app/view/wb-gad
 
 #### License
 

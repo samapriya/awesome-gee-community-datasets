@@ -5327,7 +5327,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/gaul.png"
   },
   {
-    "title": "World Bank Official Boundaries (WBGAD) - Level 0",
+    "title": "World Bank Global Administrative Divisions (WBGAD) - Level 0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WB-GAD-2025",
     "type": "table",
     "id": "projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM0",
@@ -5339,7 +5339,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/wb_gad.png"
   },
   {
-    "title": "World Bank Official Boundaries (WBGAD) - Level 1",
+    "title": "World Bank Global Administrative Divisions (WBGAD) - Level 1",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WB-GAD-2025",
     "type": "table",
     "id": "projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM1",
@@ -5351,7 +5351,7 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/wb_gad.png"
   },
   {
-    "title": "World Bank Official Boundaries (WBGAD) - Level 2",
+    "title": "World Bank Global Administrative Divisions (WBGAD) - Level 2",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WB-GAD-2025",
     "type": "table",
     "id": "projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM2",
