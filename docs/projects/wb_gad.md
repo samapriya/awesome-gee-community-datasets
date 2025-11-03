@@ -19,13 +19,13 @@ When referencing the World Bank Official Boundaries, follow these recommended ci
 
 **APA Style:**
 ```
-The World Bank. (2025). World Bank Official Boundaries [Data set]. 
+The World Bank. (2025). World Bank Official Boundaries [Data set].
 https://datacatalog.worldbank.org/search/dataset/0038272
 ```
 
 **Chicago Style:**
 ```
-The World Bank. 2025. "World Bank Official Boundaries." Washington, D.C.: 
+The World Bank. 2025. "World Bank Official Boundaries." Washington, D.C.:
 World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
 ```
 
@@ -161,6 +161,9 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
 
 !!! note
     If ADM2CD_c is the same as ADM1CD_c (and P_CODE_1_c is the same as P_CODE_2_c), the country does not distinguish between administrative level 1 and 2, and the polygon geometries are identical.
+
+
+![wb_gad](../images/wb_gad.png)
 
 #### Earth Engine Snippet
 
