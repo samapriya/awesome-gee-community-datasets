@@ -2,7 +2,7 @@
 
 Nature-based climate solutions (NBS) have become an important component of  strategies aiming to reduce atmospheric CO2 and mitigate climate change impacts. Carbon offsets have emerged as one of the most widely implemented NBS strategies, however, these projects have also been criticized for exaggerating offsets. Verifying the efficacy of NBS-derived carbon offset is complicated by a lack of readily available geospatial boundary data. Herein, we detail methods and present a database of nature-based offset project boundaries. This database provides the locations of 575 NBS projects distributed across 55 countries. Geospatial boundaries were aggregated using a combination of scraping data from carbon project registries  (n=433, 75.3%) as well as manual georeferencing and digitization (n=127, 22.1%). Database entries include three varieties of carbon projects: avoided deforestation, afforestation, reforestation and re-vegetation, and improved forest management. An accuracy assessment of the georeferencing and digitizing process indicated a high degree of accuracy (intersection over union score of 0.98 +/- 0.015).
 
-You can read the [preprint here](https://www.researchsquare.com/article/rs-4535931/v1) and find the [dataset here](https://zenodo.org/records/11459391).
+You can read the [dataset publication here](https://www.nature.com/articles/s41597-025-04868-2) and find the [dataset here](https://zenodo.org/records/11459391).
 
 #### Database notes
 
