@@ -3,6 +3,11 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2025-11-11
+- Added [Copernicus EMC-BUILT Global Built-up Surface R2025A](https://gee-community-catalog.org/projects/emc_built/)
+- Added [OpenBuildingMap Global Building Footprints with Semantic Information](https://gee-community-catalog.org/projects/obm/)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-10-31
 - Added [Hurricane Melissa High Resolution Imagery](https://gee-community-catalog.org/projects/maxar_opendata)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
@@ -11,7 +16,7 @@
 - Added [PEST-CHEMGRIDS Global Pesticide Application Rates](https://gee-community-catalog.org/projects/pest_chemgrids)
 - Added [NPKGRIDS Global Fertilizer Application Rates Dataset](https://gee-community-catalog.org/projects/npk)
 - Added [ Ground-Mounted Solar Energy in the US (GM-SEUS)](https://gee-community-catalog.org/projects/gmseus)
-- Added 2024 to Landscan global and updated [LandScan Global Population Data](https://gee-community-catalog.org/projects/landscan) 
+- Added 2024 to Landscan global and updated [LandScan Global Population Data](https://gee-community-catalog.org/projects/landscan)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2025-10-01
