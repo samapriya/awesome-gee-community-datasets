@@ -65,13 +65,13 @@ theme:
 plugins:
   - blog
   # - git-authors
-  # - git-committers:
-  #     repository: "samapriya/awesome-gee-community-datasets"
-  #     branch: master
-  #     token: !ENV GH_TOKEN
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: timeago
+  - git-committers:
+      repository: "samapriya/awesome-gee-community-datasets"
+      branch: master
+      token: !ENV GH_TOKEN
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
