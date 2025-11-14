@@ -17,9 +17,8 @@ The EMC-BUILT production workflow consists of six main steps:
 
 The greenness layer is derived from median NDVI values with a 300m buffer around built-up areas to capture vegetation in and around settlements.
 
-!!! info "Important Note"
-
-   EMC-BUILT and GHSL R2023 are incompatible data streams. Direct temporal comparisons or change detection between these releases are not supported due to substantial methodological differences.
+!!! info
+    EMC-BUILT and GHSL R2023 are incompatible data streams. Direct temporal comparisons or change detection between these releases are not supported due to substantial methodological differences.
 
 #### Dataset Characteristics
 
