@@ -66,6 +66,6 @@ Like, share and support the Github project. And you can now cite it too
 #### Citation
 
 ```
-Samapriya Roy, Eric Jensen, Majumdar, S., & Saah, A. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.8.0).
-Zenodo. https://doi.org/10.5281/zenodo.17248117
+Samapriya Roy, Majumdar, S., & Swetnam, T. (2025). samapriya/awesome-gee-community-datasets: Community Catalog (3.9.0).
+Zenodo. https://doi.org/10.5281/zenodo.17641528
 ```
