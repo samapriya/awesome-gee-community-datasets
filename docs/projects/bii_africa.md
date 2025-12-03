@@ -1,8 +1,5 @@
 # Biodiversity Intactness Index (BII) for sub-Saharan Africa
 
-!!! note
-    The associated paper has been accepted and is awaiting publication in a few hours.
-
 The Biodiversity Intactness Index (BII) is an indicator of ecosystem condition that assesses the impact of human land uses and activities on the abundance of a wide variety of species contributing diverse functions, capturing the multidimensional nature of biodiversity in a way that can be compared across multiple scales and time periods. It indicates the average remaining proportion of 'intact' populations of indigenous species in a particular area, relative to a pre-colonial/industrial reference state, on a scale from zero (nothing remains) to 1 (intact).
 
 Previous assessments of ecosystem condition are criticised for being 'top-down': based on global, decontextualised pressure-impact relationships that extrapolate across data-poor taxa and regions, such as sub-Saharan Africa. This novel bottom-up approach overcomes critical data gaps and limitations of top-down biodiversity models by quantifying biodiversity intactness using the 'bii4africa' expert-elicited dataset that was previously published based on the knowledge of 200 experts in African fauna and flora. The bii4africa dataset contains experts' standardised estimates of the impact of sub-Saharan Africa's predominant land uses on diverse functional groupings of species that represent ~50,000 terrestrial vertebrates and vascular plants. Ten spatial datasets were integrated to map these land uses, which were combined with bioregional lists of indigenous taxa and the associated bii4africa data to map the BII across sub-Saharan Africa.
@@ -12,8 +9,8 @@ The data can be interactively explored and downloaded for individual countries u
 #### Citation
 
 ```
-Clements, H et al. 2025. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
-Nature https://www.nature.com/articles/s41586-025-09781-7
+Clements, H.S., Biggs, R., De Vos, A. et al. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
+Nature (2025). https://doi.org/10.1038/s41586-025-09781-7
 ```
 
 
