@@ -1,7 +1,7 @@
 # Biodiversity Intactness Index (BII) for sub-Saharan Africa
 
 !!! note
-    The associated paper has been accepted and is awaiting publication. The citation will be updated accordingly upon publication.
+    The associated paper has been accepted and is awaiting publication in a few hours.
 
 The Biodiversity Intactness Index (BII) is an indicator of ecosystem condition that assesses the impact of human land uses and activities on the abundance of a wide variety of species contributing diverse functions, capturing the multidimensional nature of biodiversity in a way that can be compared across multiple scales and time periods. It indicates the average remaining proportion of 'intact' populations of indigenous species in a particular area, relative to a pre-colonial/industrial reference state, on a scale from zero (nothing remains) to 1 (intact).
 
@@ -9,18 +9,19 @@ Previous assessments of ecosystem condition are criticised for being 'top-down':
 
 The data can be interactively explored and downloaded for individual countries using this [Earth Engine app](https://geethensingh.users.earthengine.app/view/bii) and the fighshare repo.
 
+#### Citation
+
+```
+Clements, H et al. 2025. A place-based assessment of biodiversity intactness in sub-Saharan Africa.
+Nature https://www.nature.com/articles/s41586-025-09781-7
+```
+
+
 #### Dataset citation
 
 ```
 Clements, Hayley; Biggs, Reinette; De Vos, Alta; San, Emmanuel Do Linh; Hempson, Gareth; Linden, Birthe; et al. (2025). Data and R code for:
 A place-based assessment of Sub-Saharan Africa's biodiversity intactness. figshare. Dataset. https://doi.org/10.6084/m9.figshare.29773169.v1
-```
-
-#### Ancillary dataset citation
-
-```
-Clements, H. S., Do Linh San, E., Hempson, G., Linden, B., Maritz, B., Monadjem, A., et al. The bii4africa dataset of faunal and floral population
-intactness estimates across Africa's major land uses. Scientific data, 11(1), 191 (2024). https://doi.org/10.1038/s41597-023-02832-6
 ```
 
 ![bii_africa](../images/bii_africa.png)
