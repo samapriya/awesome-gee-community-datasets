@@ -1,0 +1,202 @@
+// Load the three EMC-BUILT products
+var builtUpSurface = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/ESA/CEMS/EMC-BUILT-S");
+var nonResidential = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/ESA/CEMS/EMC-BUILT-NRES");
+var greenness = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/ESA/CEMS/EMC-BUILT-GREENNESS");
+
+// Get the mosaic image from each collection
+var builtUp = builtUpSurface.mosaic();
+var nres = nonResidential.mosaic();
+var green = greenness.mosaic();
+
+// Center on Barcelona, Spain
+Map.setCenter(2.1734, 41.3851, 12);
+
+// Visualization parameters
+var builtUpVis = {
+  min: 0,
+  max: 100,
+  palette: ['white', 'yellow', 'orange', 'red', 'darkred']
+};
+
+var nresVis = {
+  min: 0,
+  max: 100,
+  palette: ['white', 'lightblue', 'blue', 'darkblue', 'purple']
+};
+
+var greennessVis = {
+  min: 50,
+  max: 100,
+  palette: ['brown', 'yellow', 'lightgreen', 'green', 'darkgreen']
+};
+
+// Add layers to map
+Map.addLayer(green.mask(green.neq(0)), greennessVis, 'Greenness (NDVI %)');
+Map.addLayer(builtUp.mask(builtUp.neq(0)), builtUpVis, 'Built-up Surface (sq m)');
+Map.addLayer(nres.mask(nres.neq(0)), nresVis, 'Non-residential Built-up (sq m)');
+
+// Calculate total built-up area in km² for the view
+var areaKm2 = builtUp.multiply(ee.Image.pixelArea()).divide(1e6);
+var stats = areaKm2.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: Map.getBounds(true),
+  scale: 100,
+  maxPixels: 1e9
+});
+
+print('Total built-up area (km²):', stats);
+
+// Function to interpolate between colors
+function interpolateColor(color1, color2, factor) {
+  var result = color1.slice();
+  for (var i = 0; i < 3; i++) {
+    result[i] = Math.round(result[i] + factor * (color2[i] - result[i]));
+  }
+  return result;
+}
+
+// Function to convert hex to RGB
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? [
+    parseInt(result[1], 16),
+    parseInt(result[2], 16),
+    parseInt(result[3], 16)
+  ] : null;
+}
+
+// Function to convert color name to hex (basic colors)
+function colorNameToHex(color) {
+  var colors = {
+    'white': '#FFFFFF', 'yellow': '#FFFF00', 'orange': '#FFA500', 
+    'red': '#FF0000', 'darkred': '#8B0000', 'lightblue': '#ADD8E6',
+    'blue': '#0000FF', 'darkblue': '#00008B', 'purple': '#800080',
+    'brown': '#A52A2A', 'lightgreen': '#90EE90', 'green': '#008000',
+    'darkgreen': '#006400'
+  };
+  return colors[color.toLowerCase()] || color;
+}
+
+// Function to create a continuous gradient legend
+function createContinuousLegend(title, min, max, palette) {
+  var legendPanel = ui.Panel({
+    style: {
+      padding: '8px 8px 4px 8px',
+      margin: '0 0 8px 0'
+    }
+  });
+  
+  // Title
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '13px',
+      margin: '0 0 4px 0',
+      padding: '0'
+    }
+  });
+  legendPanel.add(legendTitle);
+  
+  // Create gradient bar using many small panels
+  var gradientBar = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      height: '20px',
+      margin: '0 0 2px 0',
+      border: '1px solid black',
+      padding: '0'
+    }
+  });
+  
+  // Convert palette to RGB
+  var rgbPalette = palette.map(function(color) {
+    return hexToRgb(colorNameToHex(color));
+  });
+  
+  // Create 100 segments for smooth gradient
+  var numSegments = 100;
+  for (var i = 0; i < numSegments; i++) {
+    var position = i / (numSegments - 1);
+    var segmentIndex = position * (rgbPalette.length - 1);
+    var lowerIndex = Math.floor(segmentIndex);
+    var upperIndex = Math.ceil(segmentIndex);
+    var factor = segmentIndex - lowerIndex;
+    
+    var color = interpolateColor(rgbPalette[lowerIndex], rgbPalette[upperIndex], factor);
+    var hexColor = '#' + color.map(function(c) {
+      var hex = c.toString(16);
+      return hex.length === 1 ? '0' + hex : hex;
+    }).join('');
+    
+    var segment = ui.Panel({
+      style: {
+        backgroundColor: hexColor,
+        width: '2px',
+        height: '20px',
+        margin: '0',
+        padding: '0'
+      }
+    });
+    gradientBar.add(segment);
+  }
+  
+  legendPanel.add(gradientBar);
+  
+  // Labels panel
+  var labelsPanel = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      width: '202px',
+      margin: '0',
+      padding: '0'
+    }
+  });
+  
+  var minLabel = ui.Label({
+    value: min.toString(),
+    style: {
+      fontSize: '11px',
+      textAlign: 'left',
+      stretch: 'horizontal',
+      margin: '0',
+      padding: '0'
+    }
+  });
+  
+  var maxLabel = ui.Label({
+    value: max.toString(),
+    style: {
+      fontSize: '11px',
+      textAlign: 'right',
+      stretch: 'horizontal',
+      margin: '0',
+      padding: '0'
+    }
+  });
+  
+  labelsPanel.add(minLabel);
+  labelsPanel.add(maxLabel);
+  legendPanel.add(labelsPanel);
+  
+  return legendPanel;
+}
+
+// Create legends for each layer
+var greennessLegend = createContinuousLegend('EMC-BUILT-GREENNESS', 50, 100, greennessVis.palette);
+var builtUpLegend = createContinuousLegend('EMC-BUILT-S', 0, 100, builtUpVis.palette);
+var nresLegend = createContinuousLegend('EMC-BUILT-NRES', 0, 100, nresVis.palette);
+
+// Combine all legends into one panel
+var legendContainer = ui.Panel({
+  widgets: [greennessLegend, builtUpLegend, nresLegend],
+  layout: ui.Panel.Layout.Flow('vertical'),
+  style: {
+    position: 'bottom-right',
+    padding: '8px',
+    backgroundColor: 'white',
+    border: '1px solid black'
+  }
+});
+
+Map.add(legendContainer);

@@ -1,0 +1,105 @@
+// Load sample building polygon data - replace 'TILE_ID' with specific tile identifier
+// var gba_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/GLOBAL_BUILDING_ATLAS/TILE_ID");
+
+var gba_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/GLOBAL_BUILDING_ATLAS/e030_n25_e035_n20");
+
+// Filter buildings with height information
+var buildings_with_height = gba_polygons.filter(
+  ee.Filter.and(
+    ee.Filter.neq('height', null),
+    ee.Filter.gt('height', 0)
+  )
+);
+
+var heightRanges = [
+  {min: 0, max: 5, color: '440154', label: '< 5m (Low)'},
+  {min: 5, max: 10, color: '31688e', label: '5-10m (Medium-low)'},
+  {min: 10, max: 20, color: '35b779', label: '10-20m (Medium-high)'},
+  {min: 20, max: 999, color: 'fde725', label: '≥ 20m (Tall)'}
+];
+
+// Add layers for each height range
+heightRanges.forEach(function(range) {
+  var rangeFilter = ee.Filter.and(
+    ee.Filter.gte('height', range.min),
+    ee.Filter.lt('height', range.max)
+  );
+  
+  var rangeBuildings = buildings_with_height.filter(rangeFilter);
+  
+  Map.addLayer(
+    rangeBuildings,
+    {color: range.color, width: 1, fillColor: range.color},
+    'Height ' + range.label,
+    true,
+    0.8
+  );
+});
+
+// Calculate building statistics
+print('Total building polygons in tile:', gba_polygons.size());
+print('Buildings with height data:', buildings_with_height.size());
+
+// Filter large buildings by area and use simple style
+var large_buildings = gba_polygons.filter(ee.Filter.gt('area', 500));
+Map.addLayer(large_buildings.style({color: 'red'}), {}, 'Large Buildings (>500m²)');
+
+// Get height statistics
+var height_stats = buildings_with_height.aggregate_stats('height');
+print('Height statistics:', height_stats);
+
+// Create height legend panel
+function createLegendRow(color, text) {
+  return ui.Panel({
+    widgets: [
+      ui.Label({
+        value: '●', 
+        style: {
+          color: color, 
+          fontSize: '16px', 
+          margin: '0px 8px 0px 0px',
+          padding: '0px',
+          width: '16px',
+          textAlign: 'left'
+        }
+      }),
+      ui.Label({
+        value: text, 
+        style: {
+          fontSize: '12px', 
+          margin: '0px',
+          padding: '0px'
+        }
+      })
+    ],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {
+      margin: '2px 0px',
+      padding: '0px'
+    }
+  });
+}
+
+var legendPanel = ui.Panel({
+  widgets: [
+    ui.Label({
+      value: 'Building Heights Legend',
+      style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 8px 0'}
+    }),
+    createLegendRow('#440154', '< 5m (Low buildings)'),
+    createLegendRow('#31688e', '5-10m (Medium-low)'),
+    createLegendRow('#35b779', '10-20m (Medium-high)'),
+    createLegendRow('#fde725', '≥ 20m (Tall buildings)')
+  ],
+  style: {
+    position: 'bottom-right',
+    padding: '12px',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    border: '1px solid #ccc',
+    width: '200px'
+  }
+});
+
+Map.add(legendPanel);
+
+Map.setCenter(32.90,24.06, 15);

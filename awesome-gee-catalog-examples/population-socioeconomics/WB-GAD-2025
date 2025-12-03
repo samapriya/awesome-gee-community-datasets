@@ -1,0 +1,24 @@
+var WB_Boundaries_ADM0 = ee.FeatureCollection("projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM0");
+var WB_Boundaries_ADM1 = ee.FeatureCollection("projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM1");
+var WB_Boundaries_ADM2 = ee.FeatureCollection("projects/sat-io/open-datasets/WORLD-BANK/WBGAD/WB_GAD_ADM2");
+
+var level1Style = {
+  fillColor: '00000000',  
+  color: '000000',        
+  width: 1.5              
+};
+
+var level2Style = {
+  fillColor: '00000000',  
+  color: '000000',        
+  width: 1                
+};
+
+Map.addLayer(WB_Boundaries_ADM0.style(level1Style), {}, 'World Bank Global Admin Divisions Level 0');
+Map.addLayer(WB_Boundaries_ADM1.style(level1Style), {}, 'World Bank Global Admin Divisions Level 1');
+Map.addLayer(WB_Boundaries_ADM2.style(level1Style), {}, 'World Bank Global Admin Divisions Level 2');
+
+Map.setCenter(10.535, 39.465, 6);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");

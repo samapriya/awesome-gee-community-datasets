@@ -1,0 +1,69 @@
+// Import GM-SEUS feature collections
+var arrays = ee.FeatureCollection('projects/sat-io/open-datasets/GMSEUS/arrays_final');
+var panels = ee.FeatureCollection('projects/sat-io/open-datasets/GMSEUS/panels_final');
+
+// Print collection sizes
+print('Total Arrays:', arrays.size());
+print('Total Panel-Rows:', panels.size());
+
+// Example location: Burcham Solar Park, East Lansing, MI
+Map.setCenter(-84.4734, 42.7164, 16);
+
+// Visualize by mount technology
+var mountColors = ee.Dictionary({
+  'fixed_axis': '#FFA000',
+  'single_axis': '#00BFA5',
+  'dual_axis': '#D81B60',
+  'mixed_fs': '#7E57C2'
+});
+
+var styledArrays = arrays.map(function(f) {
+  var mount = f.get('mount');
+  var color = mountColors.get(mount, '#757575');
+  return f.set('style', {color: color, width: 2});
+});
+
+Map.addLayer(
+  styledArrays.style({styleProperty: 'style'}),
+  {},
+  'Mount Technology'
+);
+
+// Visualize arrays and panel-rows
+var arrayStyle = {color: '#2E7D32', width: 2, fillColor: '2E7D3220'};
+var panelStyle = {color: '#1565C0', width: 0.5};
+
+Map.addLayer(arrays.style(arrayStyle), {}, 'Solar Arrays');
+Map.addLayer(panels.style(panelStyle), {}, 'Panel-Rows');
+
+// Query specific array
+var exampleID = 1404; // Burcham Solar Park
+var exampleArray = arrays.filter(ee.Filter.eq('arrayID', exampleID));
+var examplePanels = panels.filter(ee.Filter.eq('arrayID', exampleID));
+
+print('Example Array Metadata:', exampleArray.first());
+print('Number of Panel-Rows:', examplePanels.size());
+
+// Filter examples
+var californiaArrays = arrays.filter(ee.Filter.eq('STATEFP', '06'));
+var fixedAxis = arrays.filter(ee.Filter.eq('mount', 'fixed_axis'));
+var recent = arrays.filter(ee.Filter.gte('instYr', 2020));
+var utility = arrays.filter(ee.Filter.gte('capMW', 1));
+
+print('California Arrays:', californiaArrays.size());
+print('Fixed-Axis Mount:', fixedAxis.size());
+print('Installed Since 2020:', recent.size());
+print('Utility-Scale (≥1 MW):', utility.size());
+
+// Calculate statistics
+var totalCapacity = arrays.aggregate_sum('capMW');
+var totalArea = arrays.aggregate_sum('totArea');
+var meanGCR = arrays.aggregate_mean('GCR1');
+
+print('Total Capacity (GW):', ee.Number(totalCapacity).divide(1000));
+print('Total Area (km²):', ee.Number(totalArea).divide(1e6));
+print('Mean Ground Cover Ratio:', meanGCR);
+
+// Create histogram of installation years
+var yearHistogram = arrays.aggregate_histogram('instYr');
+print('Arrays by Installation Year:', yearHistogram);

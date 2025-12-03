@@ -1,18 +1,337 @@
-/**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var gdp_ppp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_1990_2015_5arcmin_v2"),
-    gdp_ppp_30arc = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_30arcsec_v3"),
-    gdp_per_capita = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_per_capita_PPP_1990_2015_v2"),
-    hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/HDI_1990_2015_v2"),
-    admin_areas = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/admin_areas_GDP_HDI"),
-    pedigree_gdp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_GDP_per_capita_PPP_1990_2015_v2"),
-    pedigree_hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2");
-/***** End of imports. If edited, may not auto-convert in the playground. *****/
+/*
+Google Earth Engine Example: Gridded Global GDP per capita Dataset (1990-2022)
+This example demonstrates the use of the updated GDP dataset with extended temporal coverage,
+enhanced spatial resolution, and machine learning-based downscaling.
+
+Dataset: Kummu, M., Kosonen, M. & Masoumzadeh Sayyar, S. (2025)
+Downscaled gridded global dataset for GDP per capita PPP over 1990–2022
+*/
+
+// Import palette utilities
 var palettes = require('users/samapriya/utils:palettes');
 
-Map.addLayer(ee.Image(gdp_per_capita.select('b1')),{min:1600,max:50000,palette: palettes.extra.blkred},'GDP Per Capita 1990-2015')
-Map.addLayer(ee.Image(gdp_ppp.select('b1')),{min:-347969610,max:411755463,palette: palettes.extra.orngblue},'GDP PPP 1990-2015')
-Map.addLayer(ee.Image(hdi.select('b1')),{min:0.2,max:0.8,palette: palettes.extra.orngblue},'HDI')
+// =============================================================================
+// LOAD GDP DATASETS
+// =============================================================================
 
+// GDP per capita datasets by administrative level (1990-2022)
+var gdp_adm0 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm0_gdp_perCapita_1990_2022");
+var gdp_adm1 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm1_gdp_perCapita_1990_2022");
+var gdp_adm2 = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm2_gdp_perCapita_1990_2022");
+var gdp_adm2_30arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/adm2_gdp_perCapita_1990_2022_30arcmin");
 
+// Total GDP datasets by resolution
+var gdp_total_5arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/total_gdp_perCapita_1990_2022_5arcmin");
+var gdp_total_30arcmin = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/total_gdp_perCapita_1990_2022_30arcmin");
 
+// =============================================================================
+// DATASET INFORMATION
+// =============================================================================
 
+print('=== Dataset Information ===');
+print('Temporal Coverage: 1990-2022 (33 years)');
+print('Administrative Levels: National (Admin 0), Provincial (Admin 1), Municipal (Admin 2)');
+print('Countries with Admin 1 data: 89 countries, 2,708 subnational units');
+print('Admin 2 units: 43,501 municipal administrative units');
+print('Units: 2017 international USD, PPP-adjusted');
+print('Machine Learning Validation: R² = 0.80');
+print('OECD Validation: Pearson R = 0.88');
+print('');
+
+// Print band information for verification
+print('GDP Admin 0 bands (first 5):', gdp_adm0.bandNames().slice(0, 5));
+print('GDP Admin 0 bands (last 5):', gdp_adm0.bandNames().slice(-5));
+print('Total bands in Admin 0:', gdp_adm0.bandNames().size());
+
+// =============================================================================
+// VISUALIZATION PARAMETERS
+// =============================================================================
+
+// Color palettes for different visualizations
+var gdp_palette = palettes.extra.blkred;
+var gdp_growth_palette = ['red', 'orange', 'yellow', 'lightgreen', 'green', 'darkgreen'];
+var gdp_total_palette = palettes.extra.orngblue;
+
+// Visualization parameters for GDP per capita
+var vis_gdp_low = {
+  min: 500,
+  max: 25000,
+  palette: gdp_palette
+};
+
+var vis_gdp_high = {
+  min: 1000,
+  max: 80000,
+  palette: gdp_palette
+};
+
+var vis_total_gdp = {
+  min: 1e8,
+  max: 1e12,
+  palette: gdp_total_palette
+};
+
+// Growth visualization parameters
+var growth_vis = {
+  min: -20,
+  max: 200,
+  palette: gdp_growth_palette
+};
+
+// =============================================================================
+// TIME SERIES ANALYSIS
+// =============================================================================
+
+// Extract specific years for comparison
+var gdp_1990 = gdp_adm0.select('PPP_1990');
+var gdp_2000 = gdp_adm0.select('PPP_2000');
+var gdp_2010 = gdp_adm0.select('PPP_2010');
+var gdp_2022 = gdp_adm0.select('PPP_2022');
+
+// Calculate GDP growth over different periods
+var growth_1990_2022 = gdp_2022.subtract(gdp_1990).divide(gdp_1990).multiply(100);
+var growth_2010_2022 = gdp_2022.subtract(gdp_2010).divide(gdp_2010).multiply(100);
+var growth_2000_2022 = gdp_2022.subtract(gdp_2000).divide(gdp_2000).multiply(100);
+
+// Calculate decadal averages
+function calculateDecadalAverage(image, startYear, endYear) {
+  var years = ee.List.sequence(startYear, endYear);
+  var bands = years.map(function(year) {
+    return ee.String('PPP_').cat(ee.Number(year).format('%.0f'));
+  });
+  
+  var selectedBands = image.select(bands);
+  return selectedBands.reduce(ee.Reducer.mean());
+}
+
+var gdp_1990s_avg = calculateDecadalAverage(gdp_adm0, 1990, 1999);
+var gdp_2000s_avg = calculateDecadalAverage(gdp_adm0, 2000, 2009);
+var gdp_2010s_avg = calculateDecadalAverage(gdp_adm0, 2010, 2019);
+
+// =============================================================================
+// ADD LAYERS TO MAP
+// =============================================================================
+
+// Main GDP per capita layers
+Map.addLayer(gdp_1990, vis_gdp_low, 'GDP per Capita 1990 (National)', false);
+Map.addLayer(gdp_2000, vis_gdp_high, 'GDP per Capita 2000 (National)', false);
+Map.addLayer(gdp_2010, vis_gdp_high, 'GDP per Capita 2010 (National)', false);
+Map.addLayer(gdp_2022, vis_gdp_high, 'GDP per Capita 2022 (National)', true);
+
+// Administrative level comparison for 2022
+Map.addLayer(gdp_adm1.select('PPP_2022'), vis_gdp_high, 'GDP 2022 (Provincial - Admin 1)', false);
+Map.addLayer(gdp_adm2.select('PPP_2022'), vis_gdp_high, 'GDP 2022 (Municipal - Admin 2)', false);
+
+// Growth analysis layers
+Map.addLayer(growth_1990_2022, growth_vis, 'GDP Growth 1990-2022 (%)', false);
+Map.addLayer(growth_2000_2022, growth_vis, 'GDP Growth 2000-2022 (%)', false);
+Map.addLayer(growth_2010_2022, growth_vis, 'GDP Growth 2010-2022 (%)', false);
+
+// Decadal averages
+Map.addLayer(gdp_1990s_avg, vis_gdp_low, 'GDP Average 1990s', false);
+Map.addLayer(gdp_2000s_avg, vis_gdp_high, 'GDP Average 2000s', false);
+Map.addLayer(gdp_2010s_avg, vis_gdp_high, 'GDP Average 2010s', false);
+
+// Total GDP layers
+Map.addLayer(gdp_total_5arcmin.select('PPP_2022'), vis_total_gdp, 'Total GDP 2022 (5 arc-min)', false);
+Map.addLayer(gdp_total_30arcmin.select('PPP_2022'), vis_total_gdp, 'Total GDP 2022 (30 arc-min)', false);
+
+// =============================================================================
+// REGIONAL ANALYSIS (CORRECT IMPLEMENTATION FOR RASTERS)
+// =============================================================================
+
+// Define regions of interest as geometries
+var europe = ee.Geometry.Rectangle([-10, 35, 40, 70]);
+var africa = ee.Geometry.Rectangle([-20, -35, 55, 35]);
+var asia = ee.Geometry.Rectangle(60, -10, 150, 50);
+var northAmerica = ee.Geometry.Rectangle([-170, 25, -50, 75]);
+var southAmerica = ee.Geometry.Rectangle([-90, -60, -30, 15]);
+
+// Function to calculate regional statistics from raster data
+function calculateRegionalStats(image, region, regionName, scale) {
+  var stats = image.reduceRegion({
+    reducer: ee.Reducer.mean().combine({
+      reducer2: ee.Reducer.stdDev(),
+      sharedInputs: true
+    }).combine({
+      reducer2: ee.Reducer.min(),
+      sharedInputs: true
+    }).combine({
+      reducer2: ee.Reducer.max(),
+      sharedInputs: true
+    }),
+    geometry: region,
+    scale: scale || 10000,
+    maxPixels: 1e9,
+    bestEffort: true
+  });
+  
+  return stats;
+}
+
+// Calculate and print regional statistics for 2022
+print('=== Regional GDP per Capita Statistics 2022 ===');
+
+var europeStats = calculateRegionalStats(gdp_2022, europe, 'Europe', 5000);
+var africaStats = calculateRegionalStats(gdp_2022, africa, 'Africa', 10000);
+var asiaStats = calculateRegionalStats(gdp_2022, asia, 'Asia', 10000);
+
+europeStats.evaluate(function(stats) {
+  print('Europe 2022:');
+  print('  Mean: $' + Math.round(stats.PPP_2022_mean || 0));
+  print('  Std Dev: $' + Math.round(stats.PPP_2022_stdDev || 0));
+  print('  Min: $' + Math.round(stats.PPP_2022_min || 0));
+  print('  Max: $' + Math.round(stats.PPP_2022_max || 0));
+});
+
+africaStats.evaluate(function(stats) {
+  print('Africa 2022:');
+  print('  Mean: $' + Math.round(stats.PPP_2022_mean || 0));
+  print('  Std Dev: $' + Math.round(stats.PPP_2022_stdDev || 0));
+  print('  Min: $' + Math.round(stats.PPP_2022_min || 0));
+  print('  Max: $' + Math.round(stats.PPP_2022_max || 0));
+});
+
+asiaStats.evaluate(function(stats) {
+  print('Asia 2022:');
+  print('  Mean: $' + Math.round(stats.PPP_2022_mean || 0));
+  print('  Std Dev: $' + Math.round(stats.PPP_2022_stdDev || 0));
+  print('  Min: $' + Math.round(stats.PPP_2022_min || 0));
+  print('  Max: $' + Math.round(stats.PPP_2022_max || 0));
+});
+
+// =============================================================================
+// TIME SERIES CHART FOR SPECIFIC LOCATIONS
+// =============================================================================
+
+// Define points of interest for time series analysis
+var newYork = ee.Geometry.Point([-74, 40.7]);
+var london = ee.Geometry.Point([0, 51.5]);
+var tokyo = ee.Geometry.Point([139.7, 35.7]);
+var lagos = ee.Geometry.Point([3.4, 6.5]);
+
+// Function to extract time series for a point
+function extractTimeSeries(image, point, locationName) {
+  var timeSeries = image.sample({
+    region: point,
+    scale: 5000,
+    projection: 'EPSG:4326'
+  });
+  
+  // Get the time series values
+  var values = timeSeries.first();
+  
+  print('Time series for ' + locationName + ':');
+  print('1990: $' + values.get('PPP_1990'));
+  print('2000: $' + values.get('PPP_2000'));
+  print('2010: $' + values.get('PPP_2010'));
+  print('2022: $' + values.get('PPP_2022'));
+}
+
+// Extract time series for sample locations
+extractTimeSeries(gdp_adm0, newYork, 'New York');
+extractTimeSeries(gdp_adm0, london, 'London');
+extractTimeSeries(gdp_adm0, tokyo, 'Tokyo');
+extractTimeSeries(gdp_adm0, lagos, 'Lagos');
+
+// =============================================================================
+// MASKING AND FILTERING
+// =============================================================================
+
+// Create masks for different GDP ranges
+var lowGDP = gdp_2022.lt(5000);
+var midGDP = gdp_2022.gte(5000).and(gdp_2022.lt(25000));
+var highGDP = gdp_2022.gte(25000);
+
+// Apply masks to highlight different income categories
+var gdp_2022_low = gdp_2022.updateMask(lowGDP);
+var gdp_2022_mid = gdp_2022.updateMask(midGDP);
+var gdp_2022_high = gdp_2022.updateMask(highGDP);
+
+// Add masked layers
+Map.addLayer(gdp_2022_low, {palette: ['red'], min: 0, max: 5000}, 'Low GDP Countries (<$5,000)', false);
+Map.addLayer(gdp_2022_mid, {palette: ['yellow'], min: 5000, max: 25000}, 'Middle GDP Countries ($5,000-$25,000)', false);
+Map.addLayer(gdp_2022_high, {palette: ['green'], min: 25000, max: 80000}, 'High GDP Countries (>$25,000)', false);
+
+// =============================================================================
+// CREATE COMPACT LEGEND
+// =============================================================================
+
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '4px 6px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid gray'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'GDP per Capita (PPP)',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '11px',
+    margin: '0 0 2px 0',
+    padding: '0'
+  }
+});
+
+legend.add(legendTitle);
+
+var makeColorBarParams = function(palette) {
+  return {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '80x8',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: palette,
+  };
+};
+
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: makeColorBarParams(gdp_palette),
+  style: {stretch: 'horizontal', margin: '0px 4px'}
+});
+
+var legendLabels = ui.Panel({
+  widgets: [
+    ui.Label('$1K', {margin: '2px 4px', fontSize: '10px'}),
+    ui.Label('$80K+', {margin: '2px 4px', fontSize: '10px', textAlign: 'right'})
+  ],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+
+legend.add(colorBar);
+legend.add(legendLabels);
+Map.add(legend);
+
+// =============================================================================
+// COMPACT INFORMATION PANEL
+// =============================================================================
+
+var infoPanel = ui.Panel({
+  widgets: [
+    ui.Label('GDP Dataset 1990-2022', {fontSize: '12px', fontWeight: 'bold', margin: '0 0 1px 0'}),
+    ui.Label('Kummu et al. (2025)', {fontSize: '9px', margin: '0 0 1px 0'}),
+    ui.Label('ML R² = 0.80 | OECD R = 0.88', {fontSize: '9px', margin: '0 0 1px 0'}),
+    ui.Label('Admin 0/1/2 | 43.5K Municipal Units', {fontSize: '9px', margin: '0'})
+  ],
+  style: {
+    position: 'top-right',
+    padding: '4px 6px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '1px solid gray',
+    width: '180px'
+  }
+});
+
+Map.add(infoPanel);
+
+// =============================================================================
+// MAP SETTINGS
+// =============================================================================
+
+Map.setCenter(0, 20, 3);
+Map.setOptions('SATELLITE');

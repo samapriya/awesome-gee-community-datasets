@@ -1,0 +1,157 @@
+var application_rates = ee.ImageCollection("projects/sat-io/open-datasets/PEST-CHEMGRIDS/application_rates");
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+
+
+// Configuration
+var selectedCrop = 'Corn';
+var selectedIngredient = 'Glyphosate';
+var timePoints = [2015, 2020, 2025];
+
+// Limit dataset for charts to avoid heavy aggregation
+var limited = application_rates.limit(5000);
+
+// Load application rate layers for each year
+var layers = {};
+timePoints.forEach(function(year) {
+    layers[year] = application_rates
+        .filter(ee.Filter.eq('crop', selectedCrop))
+        .filter(ee.Filter.eq('ingredient', selectedIngredient))
+        .filter(ee.Filter.eq('year', year))
+        .filter(ee.Filter.eq('estimate', 'HIGH'))
+        .first()
+        .select(['application_rate']);
+});
+
+// Visualization parameters
+var aprVis = {
+    min: 0,
+    max: 2,
+    palette: ['#ffffcc', '#c7e9b4', '#7fcdbb', '#41b6c4', '#2c7fb8', '#253494']
+};
+
+// ============================================
+// ADD LAYERS (no getInfo, all server-side)
+// ============================================
+
+Map.addLayer(
+    layers[2015].updateMask(layers[2015].gte(0.01)),
+    aprVis,
+    selectedIngredient + ' on ' + selectedCrop + ' (2015)',
+    false
+);
+
+Map.addLayer(
+    layers[2020].updateMask(layers[2020].gte(0.01)),
+    aprVis,
+    selectedIngredient + ' on ' + selectedCrop + ' (2020)',
+    true
+);
+
+Map.addLayer(
+    layers[2025].updateMask(layers[2025].gte(0.01)),
+    aprVis,
+    selectedIngredient + ' on ' + selectedCrop + ' (2025)',
+    false
+);
+
+// ============================================
+// CHARTS (with limited dataset)
+// ============================================
+
+// Chart 1: Distribution by crop type
+var cropTypeChart = ui.Chart.array.values({
+        array: ee.Dictionary(limited.aggregate_histogram('crop_type')).values(),
+        axis: 0,
+        xLabels: ee.Dictionary(limited.aggregate_histogram('crop_type')).keys()
+    }).setChartType('PieChart')
+    .setOptions({
+        title: 'Images by Crop Type',
+        width: 400,
+        height: 300,
+        pieHole: 0.3
+    });
+print(cropTypeChart);
+
+// Chart 2: Distribution by pesticide class
+var classChart = ui.Chart.array.values({
+        array: ee.Dictionary(limited.aggregate_histogram('pesticide_class')).values(),
+        axis: 0,
+        xLabels: ee.Dictionary(limited.aggregate_histogram('pesticide_class')).keys()
+    }).setChartType('PieChart')
+    .setOptions({
+        title: 'Distribution by Pesticide Class',
+        pieHole: 0.3,
+        width: 400,
+        height: 300
+    });
+print(classChart);
+
+// Chart 3: Temporal distribution (by year)
+var yearChart = ui.Chart.array.values({
+        array: ee.Dictionary(limited.aggregate_histogram('year')).values(),
+        axis: 0,
+        xLabels: ee.Dictionary(limited.aggregate_histogram('year')).keys()
+    }).setChartType('ColumnChart')
+    .setOptions({
+        title: 'Images by Year',
+        hAxis: {
+            title: 'Year'
+        },
+        vAxis: {
+            title: 'Number of Images'
+        },
+        width: 400,
+        height: 300
+    });
+print(yearChart);
+
+// 4. Active ingredients
+
+var ingredientStats = application_rates.aggregate_histogram('ingredient');
+print('Top 10 Ingredients by Image Count:');
+var ingredientChart = ui.Chart.array.values({
+  array: ee.Dictionary(ingredientStats).values().slice(0, 10),
+  axis: 0,
+  xLabels: ee.Dictionary(ingredientStats).keys().slice(0, 10)
+}).setChartType('BarChart')
+  .setOptions({
+    title: 'Top 10 Active Ingredients',
+    hAxis: {title: 'Number of Images'},
+    width: 400,
+    height: 400,
+    colors: ['#FF6B6B']
+  });
+print(ingredientChart);
+
+// ============================================
+// MAP SETTINGS
+// ============================================
+
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px',
+    backgroundColor: 'rgba(255,255,255,0.95)'
+  }
+});
+
+legend.add(ui.Label('Application Rate (kg/ha)', {fontWeight: 'bold'}));
+
+var colors = ['#ffffcc', '#c7e9b4', '#7fcdbb', '#41b6c4', '#2c7fb8', '#253494'];
+var labels = ['0-0.33', '0.33-0.67', '0.67-1.0', '1.0-1.33', '1.33-1.67', '>1.67'];
+
+colors.forEach(function(color, i) {
+  var colorBox = ui.Label('', {
+    backgroundColor: color,
+    padding: '8px',
+    margin: '0 4px 0 0'
+  });
+  var label = ui.Label(labels[i], {margin: '0 0 4px 4px'});
+  legend.add(ui.Panel([colorBox, label], ui.Panel.Layout.Flow('horizontal')));
+});
+
+Map.add(legend);
+
+Map.setCenter(-26.49, 22.02, 3);

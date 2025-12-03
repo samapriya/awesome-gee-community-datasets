@@ -1,32 +1,176 @@
-/**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var agb_diff = ee.ImageCollection("projects/sat-io/open-datasets/ESA/ESA_CCI_AGB_DIFF");
-/***** End of imports. If edited, may not auto-convert in the playground. *****/
-var palette = ["#C6ECAE","#A1D490","#7CB970","#57A751","#348E32", "#267A29","#176520","#0C4E15","#07320D","#031807"];
+// Load the collections
+var agb = ee.ImageCollection("projects/sat-io/open-datasets/ESA/ESA_CCI_AGB");
+var agb_change = ee.ImageCollection("projects/sat-io/open-datasets/ESA/ESA_CCI_AGB_DIFF");
 
+// Add custom map styling
 var snazzy = require("users/aazuspan/snazzy:styles");
-snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+snazzy.addStyle("https://snazzymaps.com/style/232898/dark", "Dark");
 
-/*
-The standard deviation of the AGB change estimate is defined as the square root of the sum of the
-variances of the two individual AGB values. The standard deviation is expressed in Mg ha-1.
-*/
-Map.addLayer(agb_diff.sort('system:time_start').first().select(['AGB_DIFF_SD']),{min:1,max:315,palette:palette},'Above Ground Biomass Change Standard Deviation')
+// Function to get AGB image by year
+function getAGBByYear(year) {
+  return agb.filter(ee.Filter.eq('year', year)).first();
+}
 
+// Function to create a 3-band difference image using proper year matching
+function createDifferenceImage(changeImg) {
+  // Get start and end years from change image properties
+  var startYear = changeImg.get('start_year');
+  var endYear = changeImg.get('end_year');
+  
+  // Get corresponding AGB images
+  var agbStart = getAGBByYear(startYear);
+  var agbEnd = getAGBByYear(endYear);
+  
+  // Calculate the difference (end - start)
+  var agb_diff = agbEnd.select('AGB').subtract(agbStart.select('AGB')).rename('AGB_DIFF');
+  
+  // Get the SD and QF bands from the change image
+  var change_sd = changeImg.select('AGB_DIFF_SD');
+  var change_qf = changeImg.select('AGB_DIFF_QF');
+  
+  // Combine all three bands
+  return agb_diff.addBands(change_sd).addBands(change_qf)
+    .set('start_year', startYear)
+    .set('end_year', endYear)
+    .set('change_period', ee.String(endYear).cat('-').cat(startYear))
+    .set('system:time_start', agbEnd.get('system:time_start'));
+}
 
-/*
-The quality flag layer is stored in byte format and adopts the following legend:
-0: AGB=0 in both maps
-1: AGB loss
-2: Potential AGB loss
-3: Improbable change
-4: Potential AGB gain
-5: AGB gain
-*/
-var palette = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00']
+// Create difference images for all change images
+var differenceImages = agb_change.map(createDifferenceImage);
 
-// Update your layer with the new palette and correct min/max values
-Map.addLayer(
-  agb_diff.sort('system:time_start').first().select(['AGB_DIFF_QF']),
-  {min: 1, max: 5, palette: palette},
-  'Above Ground Biomass Change Quality Flag'
-);
+// Create the final 3-band collection
+var completeDifferenceCollection = differenceImages;
+print('Complete 3-band difference collection:', completeDifferenceCollection);
+
+// Test with the first image
+var testImage = completeDifferenceCollection.first();
+print('Test image bands:', testImage.bandNames());
+
+var biomassChangeVis = {
+  min: -50,
+  max: 50,
+  palette: ["#8B0000", "#CD5C5C", "#F08080", "#FFA07A", "#FFFAF0", 
+           "#98FB98", "#90EE90", "#32CD32", "#228B22", "#006400"]
+};
+
+var agbDiffSDVis = {
+  min: 0,
+  max: 100,
+  palette: ["#000080", "#191970", "#4169E1", "#6495ED", "#87CEEB", 
+           "#F0E68C", "#FFD700", "#FFA500", "#FF6347", "#DC143C"]
+};
+
+var qualityFlagVis = {
+  min: 1,
+  max: 5,
+  palette: ["#8B0000", "#FF4500", "#FFA500", "#FFD700", "#00FF00"]
+};
+
+// Add layers to map
+Map.addLayer(testImage.select('AGB_DIFF'), biomassChangeVis, 'AGB Difference (Mg/ha)', true, 0.8);
+Map.addLayer(testImage.select('AGB_DIFF_SD'), agbDiffSDVis, 'AGB Difference SD', false, 0.7);
+Map.addLayer(testImage.select('AGB_DIFF_QF'), qualityFlagVis, 'AGB Difference Quality Flag', false, 0.7);
+
+// Center on Amazon for better visualization
+Map.setCenter(-19.5472, 24.4358, 2);
+
+// Function to create a color bar legend
+function createColorBarLegend(vis, title, units) {
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '200x20',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: vis.palette,
+    },
+    style: {stretch: 'horizontal', margin: '8px 8px', maxHeight: '24px'},
+  });
+  
+  var legendLabels = ui.Panel({
+    widgets: [
+      ui.Label(vis.min + ' ' + units, {margin: '4px 10px', fontSize: '12px'}),
+      ui.Label((vis.max + vis.min) / 2 + ' ' + units, 
+        {margin: '4px 20px', textAlign: 'center', stretch: 'horizontal', fontSize: '12px'}),
+      ui.Label(vis.max + ' ' + units, {margin: '4px 10px', fontSize: '12px'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal')
+  });
+  
+  var legendTitle = ui.Label({
+    value: title,
+    style: {fontWeight: 'bold', fontSize: '14px', margin: '10px 5px 5px 5px'}
+  });
+  
+  return ui.Panel([legendTitle, colorBar, legendLabels]);
+}
+
+// Function to create categorical legend for quality flags
+function createCategoricalLegend() {
+  var legendTitle = ui.Label({
+    value: 'Quality Flag Legend',
+    style: {fontWeight: 'bold', fontSize: '14px', margin: '10px 5px 10px 5px'}
+  });
+  
+  var categories = [
+    {value: 1, color: '#8B0000', label: 'AGB Loss'},
+    {value: 2, color: '#FF4500', label: 'Potential AGB Loss'},
+    {value: 3, color: '#FFA500', label: 'Improbable Change'},
+    {value: 4, color: '#FFD700', label: 'Potential AGB Gain'},
+    {value: 5, color: '#00FF00', label: 'AGB Gain'}
+  ];
+  
+  var legendItems = categories.map(function(item) {
+    var colorBox = ui.Label({
+      value: '█',
+      style: {
+        color: item.color,
+        fontSize: '18px',
+        margin: '2px 6px 2px 10px'
+      }
+    });
+    
+    var description = ui.Label({
+      value: item.value + ': ' + item.label,
+      style: {
+        fontSize: '12px',
+        margin: '4px 6px 4px 0px'
+      }
+    });
+    
+    return ui.Panel([colorBox, description], ui.Panel.Layout.flow('horizontal'));
+  });
+  
+  return ui.Panel([legendTitle].concat(legendItems));
+}
+
+// Create legend panel
+var legendPanel = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    border: '1px solid black',
+    maxWidth: '320px'
+  }
+});
+
+// Add legends
+var agbDiffLegend = createColorBarLegend(biomassChangeVis, 'AGB Difference', 'Mg/ha');
+var sdLegend = createColorBarLegend(agbDiffSDVis, 'Standard Deviation', '');
+var qfLegend = createCategoricalLegend();
+
+// Add all components to legend panel
+legendPanel.add(agbDiffLegend);
+legendPanel.add(ui.Panel([ui.Label('', {height: '5px'})])); // Spacer
+legendPanel.add(sdLegend);
+legendPanel.add(ui.Panel([ui.Label('', {height: '5px'})])); // Spacer
+legendPanel.add(qfLegend);
+
+// Add legend to map
+Map.add(legendPanel);
+
+print('Legends added successfully!');

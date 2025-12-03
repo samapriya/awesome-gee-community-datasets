@@ -1,0 +1,139 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Geometry.Polygon(
+        [[[-78.48060782025162, 18.694051118134297],
+          [-78.48060782025162, 17.56122175378372],
+          [-75.77797110150162, 17.56122175378372],
+          [-75.77797110150162, 18.694051118134297]]], null, false);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Maxar OpenData Hurricane Melissa - Jamaica
+// Hurricane Melissa made landfall on Jamaica October 28th, 2025
+// WV01: Single band (pan) imagery
+// WV02/WV03/GE01: RGB imagery
+
+// Load the collection
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/hurricane_melissa_2025")
+  .filterBounds(geometry);
+
+// Print collection info
+print('=== COLLECTION INFO ===');
+print('Total images:', collection.size());
+print('Collection properties:', collection.first().propertyNames());
+print('Platform histogram:', collection.aggregate_histogram('platform'));
+print('Catalog ID histogram:', collection.aggregate_histogram('catalog_id'));
+
+// Add date property for easier filtering
+function addDate(image) {
+  var date = ee.Date(image.get('system:time_start')).format('YYYY-MM-dd');
+  return image.set('date', date);
+}
+
+// Get RGB only (exclude WV01 panchromatic)
+var rgbCollection = collection.filter(ee.Filter.neq('platform', 'WV01'));
+
+print('\n=== RGB COLLECTION (WV02/WV03/GE01) ===');
+print('RGB images:', rgbCollection.size());
+print('Dates histogram:', rgbCollection.map(addDate).aggregate_histogram('date'));
+
+// Hurricane landfall date
+var LANDFALL_DATE = '2025-10-28';
+
+// Pre-event collection (before October 28)
+var preEvent = rgbCollection.filterDate('2025-10-01', '2025-10-28');
+var preEventMosaic = preEvent.mosaic();
+
+// Post-event collection (October 28 and after)
+var postEvent = rgbCollection.filterDate('2025-10-28', '2025-10-31');
+var postEventMosaic = postEvent.mosaic();
+
+// === PRE-EVENT STATISTICS ===
+print('\n=== PRE-EVENT (before Oct 28) ===');
+print('Total images:', preEvent.size());
+
+var preCatalogIds = preEvent.aggregate_array('catalog_id').distinct();
+var preQuadCount = preEvent.size();
+var preCatalogCount = preCatalogIds.size();
+
+preCatalogIds.evaluate(function(ids) {
+  print('Unique Catalog IDs:', ids.length);
+  print('Total Quads:', preQuadCount.getInfo());
+  print('Catalog IDs:', ids);
+  
+  // Get quad count per catalog_id
+  ids.forEach(function(catalogId) {
+    var quadCount = preEvent.filter(ee.Filter.eq('catalog_id', catalogId)).size().getInfo();
+    print('  ' + catalogId + ': ' + quadCount + ' quads');
+  });
+});
+
+print('Platforms (Pre-event):', preEvent.aggregate_histogram('platform'));
+print('Dates (Pre-event):', preEvent.map(addDate).aggregate_histogram('date'));
+
+// === POST-EVENT STATISTICS ===
+print('\n=== POST-EVENT (Oct 28 and after) ===');
+print('Total images:', postEvent.size());
+
+var postCatalogIds = postEvent.aggregate_array('catalog_id').distinct();
+var postQuadCount = postEvent.size();
+var postCatalogCount = postCatalogIds.size();
+
+postCatalogIds.evaluate(function(ids) {
+  print('Unique Catalog IDs:', ids.length);
+  print('Total Quads:', postQuadCount.getInfo());
+  print('Catalog IDs:', ids);
+  
+  // Get quad count per catalog_id
+  ids.forEach(function(catalogId) {
+    var quadCount = postEvent.filter(ee.Filter.eq('catalog_id', catalogId)).size().getInfo();
+    print('  ' + catalogId + ': ' + quadCount + ' quads');
+  });
+});
+
+print('Platforms (Post-event):', postEvent.aggregate_histogram('platform'));
+print('Dates (Post-event):', postEvent.map(addDate).aggregate_histogram('date'));
+
+// === MOSAIC CREATION ===
+
+// Function to create mosaics grouped by catalog_id
+var createCatalogMosaics = function(imageCollection) {
+  var catalogIds = imageCollection.aggregate_array('catalog_id').distinct();
+  
+  var mosaics = catalogIds.map(function(catalogId) {
+    var catalogImages = imageCollection.filter(ee.Filter.eq('catalog_id', catalogId));
+    var mosaic = catalogImages.mosaic();
+    var firstImage = catalogImages.first();
+    return mosaic.copyProperties(firstImage, firstImage.propertyNames());
+  });
+  
+  return ee.ImageCollection.fromImages(mosaics);
+};
+
+// Create catalog-level mosaics
+var preMosaics = createCatalogMosaics(preEvent);
+var postMosaics = createCatalogMosaics(postEvent);
+
+print('\n=== MOSAICS ===');
+print('Pre-event catalog mosaics:', preMosaics.size());
+print('Post-event catalog mosaics:', postMosaics.size());
+
+// === VISUALIZATION ===
+
+// Visualization parameters for RGB
+var rgbVis = {
+  bands: ['R', 'G', 'B'],
+  min: 0,
+  max: 215,
+  gamma: 1.2
+};
+
+// Add layers to map
+Map.centerObject(geometry, 10);
+Map.addLayer(geometry, {color: 'red'}, 'Jamaica AOI', false);
+
+// Add pre-event mosaic
+Map.addLayer(preEventMosaic.clip(geometry), rgbVis, 'Pre-Event (before Oct 28)', true);
+
+// Add post-event mosaic
+Map.addLayer(postEventMosaic.clip(geometry), rgbVis, 'Post-Event (Oct 28+)', true);

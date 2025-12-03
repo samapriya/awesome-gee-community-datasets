@@ -8,10 +8,11 @@ print(agera5_i)
 // Visualize select bands from first image — additional bands are present in the Image Collection
 var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#0c2c84"]
 var temp_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
+var eto_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9cf", "#2166ac"].reverse()
 Map.addLayer(agera5_i.select('Precipitation_Flux'), {min: 0, max: 1, palette: prec_palette}, 'Precipitation_Flux')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Max_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Max_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Min_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Min_24h')
 Map.addLayer(agera5_i.select('Temperature_Air_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Temperature_Air_2m_Mean_24h')
 Map.addLayer(agera5_i.select('Dew_Point_Temperature_2m_Mean_24h').selfMask().subtract(273.15), {min: -10, max: 50, palette: temp_palette}, 'Dew_Point_Temperature_2m_Mean')
-Map.addLayer(agera5_i.select('Snow_Thickness_Mean_24h'), {min: 0, max: 100, palette: prec_palette}, 'Snow_Thickness_Mean')
 Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean_24h'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
+Map.addLayer(agera5_ic.select('ReferenceET_PenmanMonteith_FAO56').filterDate('2023-10-01', '2024-09-30').sum(), {min: 0, max: 2000, palette: eto_palette}, 'ReferenceET_PenmanMonteith_FAO56')

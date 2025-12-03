@@ -1,7 +1,7 @@
-var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS");
-var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_ANALYSIS_POLYGONS_CENTROID");
-var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS");
-var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q1_RAW_POLYGONS_CENTROID");
+var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS");
+var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS_CENTROID");
+var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS");
+var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS_CENTROID");
 
 // Define the visualization parameters
 var vizParams = {

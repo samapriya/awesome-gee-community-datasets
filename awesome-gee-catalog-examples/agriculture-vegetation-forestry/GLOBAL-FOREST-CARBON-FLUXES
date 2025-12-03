@@ -1,11 +1,10 @@
-//Visualize and load Global Forest Watch gross emissions, gross removals, and net flux from forests
-//Model version 1.2.3
-//Harris et al. 2021
+//Import and visualize Global Forest Watch gross emissions, gross removals, and net flux from forests
+//Model version 1.4.2 (2024 Tree Cover Loss)
+//Harris et al. 2021 and Gibbs et al. 2025
 
-//Mosaic imageCollection into a single image
-var emissions = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions").mosaic();
-var removals = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals").mosaic();
-var net_flux = ee.ImageCollection("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux").mosaic();
+var emissions = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions");
+var removals = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals");
+var net_flux = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux");
 
 // Set visualization parameters. Adjust `quantity` for breakpoints.
 var emissions_intervals =

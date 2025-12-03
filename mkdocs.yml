@@ -432,6 +432,7 @@ nav:
               - Global Photovoltaics Inventory (2016-2018): projects/global_pv.md
           - "Biodiversity, Ecosystems & Habitat Layers":
               - Biodiversity Intactness Index(BII): projects/bii.md
+              - Biodiversity Intactness Index (BII) for sub-Saharan Africa: projects/bii_africa.md
               - Global Consensus Landcover: projects/gcl.md
               - Global Freshwater Variables: projects/gfv.md
               - Global Habitat Heterogeneity: projects/ghh.md

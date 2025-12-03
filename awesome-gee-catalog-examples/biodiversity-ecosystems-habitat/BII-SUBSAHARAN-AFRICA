@@ -1,0 +1,46 @@
+var bii8km = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_8km");
+var bii1km = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_1km");
+var mask = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/BII/BII_Mask");
+
+var bands1km = ee.List(['Land Use', 'Land Use Intensity', 'BII All',
+'BII Amphibians', 'BII Birds', 'BII Forbs', 'BII Graminoids',
+'BII Mammals', 'BII All Plants', 'BII Reptiles', 'BII Trees',
+'BII All Vertebrates']);
+
+var bands8km = ee.List(['BII All',
+'BII Amphibians', 'BII Birds', 'BII Forbs', 'BII Graminoids',
+'BII Mammals', 'BII All Plants', 'BII Reptiles', 'BII Trees',
+'BII All Vertebrates', 'Land Use', 'Land Use Intensity']);
+
+// Process 1km dataset
+var bii1km = bii1km.toBands().rename(bands1km);
+var biionekm = bii1km.select('^BII.*').selfMask();
+var lcMask1km = bii1km.select('Land Use').neq(2).and(bii1km.select('Land Use').neq(5));
+var LUI1km = bii1km.select('Land Use Intensity').updateMask(lcMask1km);
+var bii1km_processed = biionekm.addBands([bii1km.select('Land Use'), LUI1km]).updateMask(mask);
+
+// Process 8km dataset
+var bii8km = bii8km.toBands().rename(bands8km);
+var biieightkm = bii8km.select('^BII.*').selfMask();
+var lcMask8km = bii8km.select('Land Use').neq(2).and(bii8km.select('Land Use').neq(5));
+var LUI8km = bii8km.select('Land Use Intensity').updateMask(lcMask8km);
+var bii8km_processed = biieightkm.addBands([bii8km.select('Land Use'), LUI8km]).updateMask(mask);
+
+// Visualization parameters for BII
+var biiVis = {
+  min: 0,
+  max: 1,
+  palette: ['#d73027', '#fee08b', '#d9ef8b', '#1a9850']
+};
+
+// Add layers to map
+Map.centerObject(bii8km_processed, 4);
+Map.addLayer(bii8km_processed.select('BII All'), biiVis, 'BII All (8km)');
+Map.addLayer(bii1km_processed.select('BII All'), biiVis, 'BII All (1km)', false);
+Map.addLayer(bii1km_processed.select('BII Mammals'), biiVis, 'BII Mammals (1km)', false);
+Map.addLayer(bii1km_processed.select('BII Birds'), biiVis, 'BII Birds (1km)', false);
+Map.addLayer(bii1km_processed.select('Land Use'), {min: 1, max: 9, palette: ['#1f78b4','#33a02c','#e31a1c','#ff7f00','#6a3d9a','#b15928','#a6cee3','#b2df8a','#fb9a99']}, 'Land Use', false);
+
+// Print band information
+print('BII 1km bands:', bii1km_processed.bandNames());
+print('BII 8km bands:', bii8km_processed.bandNames());

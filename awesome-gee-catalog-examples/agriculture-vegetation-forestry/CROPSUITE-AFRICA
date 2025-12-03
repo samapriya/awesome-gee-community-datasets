@@ -1,0 +1,67 @@
+// Load crop suitability collection
+var cropSuitability = ee.ImageCollection('projects/sat-io/open-datasets/CROP_SUITE/crop_suitability');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+
+// Select rainfed scenario with climate variability
+var rainfedVar = cropSuitability
+  .filter(ee.Filter.eq('scenario', 'historical_1991-2010_rf_var'))
+  .first();
+
+// Select maize suitability band
+var maizeSuitability = rainfedVar.select('maize');
+
+// Visualization parameters
+var suitabilityVis = {
+  min: 0,
+  max: 100,
+  palette: ['8B0000', 'FF4500', 'FFD700', 'ADFF2F', '006400']
+};
+
+// Center on Africa and display
+Map.setCenter(20, 0, 4);
+Map.addLayer(maizeSuitability, suitabilityVis, 'Maize Crop Suitability');
+
+// Add legend
+var legend = ui.Panel({
+  style: {position: 'bottom-left', padding: '8px 15px'}
+});
+var legendTitle = ui.Label({
+  value: 'Crop Suitability',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+});
+legend.add(legendTitle);
+
+var makeRow = function(color, name) {
+  var colorBox = ui.Label({
+    style: {
+      backgroundColor: color,
+      padding: '8px',
+      margin: '0 8px 0 0'
+    }
+  });
+  var description = ui.Label({value: name, style: {margin: '0'}});
+  return ui.Panel({
+    widgets: [colorBox, description],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+};
+
+legend.add(makeRow('8B0000', 'Unsuitable (0)'));
+legend.add(makeRow('FF4500', 'Marginally (1-32)'));
+legend.add(makeRow('FFD700', 'Moderately (33-74)'));
+legend.add(makeRow('006400', 'Highly (75-100)'));
+
+Map.add(legend);
+
+// Example: Compare scenarios
+print('Available scenarios:', cropSuitability.aggregate_array('scenario').distinct());
+
+// Example: Analyze multiple crops
+var crops = ['maize', 'wheat', 'cassava', 'sorghum'];
+var multiCrop = rainfedVar.select(crops);
+
+// Calculate average suitability across selected crops
+var avgSuitability = multiCrop.reduce(ee.Reducer.mean());
+Map.addLayer(avgSuitability, suitabilityVis, 'Average Suitability (4 crops)', false);

@@ -1,0 +1,15 @@
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/NPKGRIDS");
+var collection_wheat = collection.filter(ee.Filter.eq('crop','wheat'))
+
+// Load NPKGRIDS collections by nutrient type
+var wheat_nitrogen = collection_wheat.filter(ee.Filter.eq('nutrient','N'));
+var wheat_phosphorus = collection_wheat.filter(ee.Filter.eq('nutrient','P2O5'));
+var wheat_potassium = collection_wheat.filter(ee.Filter.eq('nutrient','K2O'));
+
+// Access individual bands
+var n_rate = wheat_nitrogen.select('Nrate');
+var n_quality = wheat_nitrogen.select('Nqual');
+var n_source = wheat_nitrogen.select('Nset');
+
+// Visualize nitrogen application rate
+Map.addLayer(n_rate, {min: 0, max: 200, palette: ['#2c7bb6', '#abd9e9', '#ffffbf', '#fdae61', '#d7191c']}, 'N Application Rate');

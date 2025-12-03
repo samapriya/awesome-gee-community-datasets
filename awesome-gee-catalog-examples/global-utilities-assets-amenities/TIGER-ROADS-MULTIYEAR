@@ -1,0 +1,62 @@
+var years = ee.List.sequence(2012, 2025);
+var road_codes = ee.Dictionary({
+  'S1100': 'FF0000',
+  'S1200': 'FFA500',
+  'S1400': '0000FF',
+  'S1500': '008000'
+});
+
+years.getInfo().forEach(function(y) {
+  var roads = ee.FeatureCollection("projects/sat-io/open-datasets/TIGER/" + y + "/Roads");
+  var styled = roads.map(function(f) {
+    var code = f.get('MTFCC');
+    var color = ee.Algorithms.If(road_codes.contains(code), road_codes.get(code), '999999');
+    return f.set('style', {color: color, width: 0.6});
+  }).style({styleProperty: 'style'});
+  
+  // Only turn 2025 on by default
+  Map.addLayer(styled, {}, y.toString(), y === 2025);
+});
+
+Map.setCenter(-87.26396241599491, 30.494407354800348, 10);
+
+// ---------- Legend ----------
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px'
+  }
+});
+
+legend.add(ui.Label({
+  value: 'Road Types',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+}));
+
+// Function to add legend items
+function makeLegend(color, label) {
+  var entry = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {margin: '2px 0'}
+  });
+  
+  var colorBox = ui.Label('', {
+    backgroundColor: '#' + color,
+    padding: '8px',
+    margin: '0 4px 0 0'
+  });
+  
+  var desc = ui.Label(label, {margin: '0'});
+  entry.add(colorBox);
+  entry.add(desc);
+  return entry;
+}
+
+// Add road type entries
+legend.add(makeLegend('FF0000', 'Primary Road'));
+legend.add(makeLegend('FFA500', 'Secondary Road'));
+legend.add(makeLegend('0000FF', 'Local Road'));
+legend.add(makeLegend('008000', 'Vehicular Trail'));
+legend.add(makeLegend('999999', 'Other Road'));
+
+Map.add(legend);
