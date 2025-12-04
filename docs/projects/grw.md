@@ -44,7 +44,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 This dataset is made available under the MIT License. Pre-trained models and inference code are available in the [GitHub repository](https://github.com/microsoft/global-renewables-watch).
 
-Created by: Robinson et al 2025, Microsoft AI for Good Research Lab & The Nature Conservancy
+Provided by: Robinson et al 2025, Microsoft AI for Good Research Lab & The Nature Conservancy
 
 Curatedin GEE by: Samapriya Roy
 
