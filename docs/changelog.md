@@ -5,10 +5,11 @@
 
 #### Updated 2025-12-03
 - Release 3.9.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.17641528)
+- Added [Global Renewables Watch Temporal Dataset of Solar and Wind Energy](https://gee-community-catalog.org/projects/grw/)
 - Added [Biodiversity Intactness Index (BII) for sub-Saharan Africa](https://gee-community-catalog.org/projects/bii_africa/)
 - Updated [Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2024](https://gee-community-catalog.org/projects/fpar/) added 2023 and 2024
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
-- 
+-
 #### Updated 2025-11-11
 - Added [Copernicus EMC-BUILT Global Built-up Surface R2025A](https://gee-community-catalog.org/projects/emc_built/)
 - Added [OpenBuildingMap Global Building Footprints with Semantic Information](https://gee-community-catalog.org/projects/obm/)
