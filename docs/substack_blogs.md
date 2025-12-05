@@ -3,6 +3,7 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [Release 3.9.0: Celebrating the Digital Commons and Our Five Millionth Query this Month](https://datacommons.substack.com/p/release-390-celebrating-the-digital)
 * [Installing &amp; Updating to GDAL 3.11.0 on Ubuntu: A Ground Up Rewrite](https://datacommons.substack.com/p/installing-and-updating-to-gdal-3110)
 * [Plug and Play Earth Engine Search Agents with Google’s Agent Development Kit](https://datacommons.substack.com/p/plug-and-play-earth-engine-search)
 * [Pixels, Petabytes, and People: The Five-Year Journey of the GEE Community Catalog](https://datacommons.substack.com/p/pixels-petabytes-and-people-the-five)
@@ -22,7 +23,6 @@ Find a list of associated blog posts related to GEE and community catalog here. 
 * [Mapping with the Flow: Rivers, Wells, and Obstruction Datasets in the Community Catalog](https://datacommons.substack.com/p/mapping-with-the-flow-rivers-wells)
 * [Jupyter Lab &amp; Linux on Windows: Level Up Your Data Science Setup](https://datacommons.substack.com/p/jupyter-lab-and-linux-on-windows)
 * [Catalog Data Refresh: Updates to GEE Community Catalog Release 2.5.0](https://datacommons.substack.com/p/catalog-data-refresh-updates-to-gee)
-* [A Weekly Pulse on Drought: Continuous Updates to US Drought Monitor in the Community Catalog](https://datacommons.substack.com/p/a-weekly-pulse-on-drought-bringing)
 <!-- END_MARKER -->
 
 <!-- Last updated: Mon May  5 06:32:44 UTC 2025 -->
