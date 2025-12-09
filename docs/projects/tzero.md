@@ -48,10 +48,10 @@ Please use one of these suggested citation formats:
 ```js
 //Datasets are available from 2024Q4 simply replace TZ-SOLAR-YEARQ(Quarter) for example TZ-SOLAR-2025Q1
 
-var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS");
-var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_ANALYSIS_POLYGONS_CENTROID");
-var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS");
-var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q2_RAW_POLYGONS_CENTROID");
+var tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_ANALYSIS_POLYGONS");
+var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_ANALYSIS_POLYGONS_CENTROID");
+var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_RAW_POLYGONS");
+var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_RAW_POLYGONS_CENTROID");
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/TZERO-GLOBAL-SOLAR-MAPPER
@@ -67,4 +67,10 @@ Provided by: Transition Zero
 
 Curated in GEE by: Samapriya Roy
 
-Last updated in GEE: 2025-08-07
+Last updated in GEE: 2025-12-09
+
+#### Changelog
+
+- Added 2025Q3
+- App and Example code updated to 2025Q3
+
