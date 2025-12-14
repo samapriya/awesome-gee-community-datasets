@@ -24070,6 +24070,19 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/ca_canopy_ht.png"
   },
   {
+    "title": "ICESat-2 Derived Canopy Height Model (IS2CHM)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/ICESAT2-CANOPY-HEIGHT-CONUS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/ICESAT/CHM_CONUS",
+    "provider": "Malambo, L., & Popescu, S.C. (2025), NASA National Snow and Ice Data Center DAAC",
+    "tags": "ICESat-2, canopy height, vegetation structure, biomass, CONUS, lidar, remote sensing, forest, regression modeling",
+    "license": "custom",
+    "license_text": "Most NSIDC data are government-funded and in the public domain. No explicit copyright or distribution restrictions are stated for this dataset in the official NSIDC documentation. Citation is requested as a condition of use.",
+    "docs": "https://gee-community-catalog.org/projects/is2chm/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/is2chm.png"
+  },
+  {
     "title": "Global tree allometry and crown architecture (Tallo) database",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/TREE-ALLOMETRY-CROWN-ARCH-DATABASE",
     "type": "table",
