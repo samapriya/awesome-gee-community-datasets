@@ -11,6 +11,7 @@ on:
     paths:
       - search.html
       - browse.html
+      - contributors.html
 
 jobs:
   deploy:
@@ -42,6 +43,10 @@ jobs:
       - name: Download browse.html
         run: |
           curl -o browse.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/browse.html
+
+      - name: Download browse.html
+        run: |
+          curl -o browse.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/contributors.html
 
       - name: Configure Git
         run: |
