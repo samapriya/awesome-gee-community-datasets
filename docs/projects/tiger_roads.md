@@ -1,10 +1,12 @@
-# TIGER Roads Time Series (2012-2025)
+# TIGER Roads Time Series
 
-The TIGER (Topologically Integrated Geographic Encoding and Referencing) Roads time series dataset provides a comprehensive collection of United States road networks from 2012 to 2025, representing one of the most important foundational geospatial datasets in the digital mapping ecosystem. Developed and maintained by the U.S. Census Bureau, this dataset forms the backbone of countless mapping applications, navigation systems, and geospatial analyses across the United States.
+The TIGER (Topologically Integrated Geographic Encoding and Referencing) Roads time series dataset provides a comprehensive collection of United States road networks from 2009 to 2025, representing one of the most important foundational geospatial datasets in the digital mapping ecosystem. Developed and maintained by the U.S. Census Bureau, this dataset forms the backbone of countless mapping applications, navigation systems, and geospatial analyses across the United States.
 
 TIGER Roads represents the most comprehensive, authoritative, and publicly available road network dataset for the United States. Each annual release contains millions of road segment features covering all 50 states, the District of Columbia, Puerto Rico, and U.S. Island Areas. The dataset's topological structure ensures that every road segment is properly connected to the broader network, enabling sophisticated routing and network analysis applications.
 
-The time series reveals the ongoing evolution and refinement of this critical dataset. Rather than simple growth, the data shows a story of quality improvement and methodological enhancement, with feature counts declining from nearly 20 million in 2012 to approximately 16.4 million in 2025 as the Census Bureau consolidates redundant features and improves data topology.
+The time series reveals the ongoing evolution and refinement of this critical dataset. The data shows a story of quality improvement and methodological enhancement, with feature counts stabilizing around 20 million from 2010-2012, then gradually declining to approximately 16.4 million in 2025 as the Census Bureau consolidates redundant features and improves data topology.
+
+**Note:** The 2009 dataset shows an anomalously high feature count (89.5 million) compared to all subsequent years. Users should verify this count and investigate potential data quality issues, duplicate features, or methodological differences in the 2009 release before using it for analysis.
 
 #### Feature Count Evolution
 
@@ -12,7 +14,10 @@ The time series reveals the ongoing evolution and refinement of this critical da
 
 | Year | Number of Road Features | Change from Previous Year |
 |------|------------------------|---------------------------|
-| 2012 | 19,889,811 | - |
+| 2009 | 89,503,682 | - |
+| 2010 | 20,279,763 | -69,223,919 |
+| 2011 | 20,186,771 | -92,992 |
+| 2012 | 19,889,811 | -296,960 |
 | 2013 | 19,655,632 | -234,179 |
 | 2014 | 19,609,146 | -46,486 |
 | 2015 | 19,531,817 | -77,329 |
@@ -29,9 +34,10 @@ The time series reveals the ongoing evolution and refinement of this critical da
 
 </center>
 
-**Total Change (2012-2025): -3,451,362 features (-17.4%)**
+**Total Change (2009-2025): -73,065,233 features (-81.6%)**
+**Total Change (2010-2025): -3,841,314 features (-18.9%)**
 
-The declining feature count reflects ongoing data quality improvements through conflation processes, where redundant or duplicate road segments are merged, topology is corrected, and the overall dataset structure is refined.
+The declining feature count from 2010 onward reflects ongoing data quality improvements through conflation processes, where redundant or duplicate road segments are merged, topology is corrected, and the overall dataset structure is refined.
 
 #### Technical Specifications
 
@@ -40,7 +46,7 @@ The declining feature count reflects ongoing data quality improvements through c
 Each road segment contains detailed attribute information that enables sophisticated address matching and routing operations:
 
 <center>
-  
+
 | Property | Description | Example Value |
 |----------|-------------|---------------|
 | **FULLNAME** | Complete concatenated road name with all components | "I- 395" |
@@ -62,7 +68,7 @@ Each road segment contains detailed attribute information that enables sophistic
 The route type code (RTTYP) describes the type of road for numbered highway systems:
 
 <center>
-  
+
 | Code | Description |
 |------|-------------|
 | **C** | County Road |
@@ -77,7 +83,7 @@ The route type code (RTTYP) describes the type of road for numbered highway syst
 ### MTFCC Road Classifications
 
 <center>
-  
+
 | Code | Description | Typical Use |
 |------|-------------|-------------|
 | S1100 | Primary Road | Interstate highways, major arterials |
@@ -95,7 +101,7 @@ The complete time series is available in Google Earth Engine under the following
 projects/sat-io/open-datasets/TIGER/[YEAR]/Roads
 ```
 
-Where [YEAR] ranges from 2012 to 2025.
+Where [YEAR] ranges from 2009 to 2025.
 
 ![tigerroads](../images/tiger_roads.png)
 
@@ -133,4 +139,8 @@ Created by: U.S. Census Bureau
 
 Curated for GEE by: Noah Weidig, Victoria Donovan and Samapriya Roy
 
-Last Updated :2025-09-11
+Last Updated: 2025-12-14
+
+#### Changelog
+
+* Added 2009-2011 years

@@ -3,6 +3,11 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### updated 2025-12-14
+- Added [ICESat-2 Derived Canopy Height Model (IS2CHM](https://gee-community-catalog.org/projects/is2chm/)
+- Updated [TIGER Roads Time Series now includes 2009-2025](https://gee-community-catalog.org/projects/tiger_roads)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2025-12-03
 - Release 3.9.0 for the [Awesome GEE Community Catalog](https://doi.org/10.5281/zenodo.17641528)
 - Added [Global Renewables Watch Temporal Dataset of Solar and Wind Energy](https://gee-community-catalog.org/projects/grw/)
