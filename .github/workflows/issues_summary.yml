@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate issues summary
         env:
-          ISSUES_TOKEN: ${{ secrets.ISSUES_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
           REPO: ${{ github.repository }}
         run: python scripts/issues_summary.py
 
