@@ -24341,6 +24341,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/maxar_opendata.png"
   },
   {
+    "title": "NOAA NGS Emergency Response Imagery: Hurricane Melissa 2025",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/NOAA-NGS-ERI-IMAGERY",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NOAA_EVENTS/2025_HURRICANE_MELISSA",
+    "provider": "NOAA National Geodetic Survey",
+    "tags": "Emergency Response, Hurricane, Aerial Imagery, Natural Disasters, NOAA, NGS, Coastal Zones, Jamaica, Caribbean",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/noaa_ngs_eri/",
+    "thematic_group": "Global Events Layers",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/noaa_ngs_eri.png"
+  },
+  {
     "title": "OpenBuildingMap Global Building Footprints with Semantic Information Sample Grid",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/OPEN-BUILDING-MAP",
     "type": "table",

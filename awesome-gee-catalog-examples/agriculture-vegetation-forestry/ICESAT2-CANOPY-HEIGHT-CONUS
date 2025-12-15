@@ -1,0 +1,83 @@
+// Load ICESAT CHM (Canopy Height Model) dataset
+var imageCollection = ee.ImageCollection("projects/sat-io/open-datasets/ICESAT/CHM_CONUS");
+
+// Get the first image to inspect properties
+var firstImage = imageCollection.first();
+
+// Print native resolution information
+print('Dataset Information:', {
+  'Band Names': firstImage.bandNames(),
+  'Projection': firstImage.projection(),
+  'Native Resolution (meters)': firstImage.projection().nominalScale(),
+  'Image Count': imageCollection.size()
+});
+
+// Create mosaic from collection
+var chmMosaic = imageCollection.mosaic();
+
+// Apply scale and offset
+var scale = 0.1;
+var offset = 0;
+var chmScaled = chmMosaic.multiply(scale).add(offset);
+
+// Define color palette (green scale for canopy height)
+var palette = [
+  "#ceecc7", "#aedea7", "#88cd86",
+  "#5fb96b", "#37a055", "#1d843f", "#00682a", "#00441b"
+];
+
+// Visualization parameters with 0-30m stretch
+var visParams = {
+  min: 0,
+  max: 30,
+  palette: palette
+};
+
+// Add layer to map
+Map.addLayer(chmScaled, visParams, 'Canopy Height Model');
+
+// Center map on the data
+Map.setCenter(-99.75, 39.73,4)
+
+// Add a legend with title
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'Canopy Height (m)',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 4px 0'}
+});
+legend.add(legendTitle);
+
+// Create horizontal continuous color bar
+var lon = ee.Image.pixelLonLat().select('latitude');
+var gradient = lon.multiply((palette.length - 1) / 180.0).add(palette.length / 2);
+var legendImage = gradient.visualize({min: 0, max: palette.length - 1, palette: palette});
+
+// Create thumbnail for the legend
+var thumbnail = ui.Thumbnail({
+  image: legendImage,
+  params: {bbox: [0, 0, 1, 0.1], dimensions: '200x20'},
+  style: {stretch: 'horizontal', margin: '0px 8px'}
+});
+
+legend.add(thumbnail);
+
+// Add min and max labels
+var labelPanel = ui.Panel({
+  widgets: [
+    ui.Label('0 m', {margin: '4px 8px', fontSize: '12px'}),
+    ui.Label('30 m', {margin: '4px 8px', fontSize: '12px', textAlign: 'right', stretch: 'horizontal'})
+  ],
+  layout: ui.Panel.Layout.Flow('horizontal')
+});
+
+legend.add(labelPanel);
+
+Map.add(legend);
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

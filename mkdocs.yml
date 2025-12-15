@@ -487,6 +487,7 @@ nav:
           - "Global Events Layers":
               - Global large flood events (1985-2016): projects/flood.md
               - Global Landslide Catalog (1970-2019): projects/landslide.md
+              - NOAA NGS Emergency Response Imagery: projects/noaa_ngs_eri.md
               - MAXAR Open Data Events: projects/maxar_opendata.md
               - Wyvern Open Data: projects/wyvern.md
               - Planet Tanager Open Data: projects/tanager.md

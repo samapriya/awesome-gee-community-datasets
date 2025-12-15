@@ -1,0 +1,95 @@
+// ===================================================================
+// Global Renewables Watch - Wind and Solar Energy Visualization
+// Dataset: Microsoft AI for Good & The Nature Conservancy
+// ===================================================================
+
+// Load the datasets
+var wind = ee.FeatureCollection("projects/sat-io/open-datasets/GRW/WIND_V1");
+var solar = ee.FeatureCollection("projects/sat-io/open-datasets/GRW/SOLAR_V1");
+
+// Print dataset information
+print('Wind Sample Property Names:', wind.first().propertyNames());
+print('Solar Sample Property Names:', solar.first().propertyNames());
+
+// Add layers to map
+Map.addLayer(wind, {color:'#00e5ff'}, 'Wind Turbines', true, 0.6);
+Map.addLayer(solar, {color: '#ff9100'}, 'Solar Installations', true);
+
+
+// Create a chart showing growth over time (approximate based on construction year)
+var windChart = ui.Chart.feature.histogram({
+  features: wind,
+  property: 'construction_year'
+}).setOptions({
+  title: 'Wind Turbine Construction Timeline',
+  hAxis: {title: 'Construction Date'},
+  vAxis: {title: 'Number of Turbines'},
+  colors: ['#00f5ff']
+});
+
+var solarChart = ui.Chart.feature.histogram({
+  features: solar,
+  property: 'construction_year'
+}).setOptions({
+  title: 'Solar Installation Construction Timeline',
+  hAxis: {title: 'Construction Date'},
+  vAxis: {title: 'Number of Installations'},
+  colors: ['#ffd700']
+});
+
+print(windChart);
+print(solarChart);
+
+// ===================================================================
+// MAP SETTINGS
+// ===================================================================
+
+// Center on global view
+Map.setCenter(-6.0242, 36.5312, 8);
+
+// Add layer control
+Map.setControlVisibility({all: true});
+
+// Create legend
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'white'
+  }
+});
+
+var legendTitle = ui.Label({
+  value: 'Global Renewables Watch',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '16px',
+    margin: '0 0 4px 0'
+  }
+});
+
+var windLegend = ui.Label({
+  value: '● Wind Turbines ('+wind.size().getInfo().toLocaleString()+')',
+  style: {color: '#00e5ff', margin: '2px 0'}
+});
+
+var solarLegend = ui.Label({
+  value: '■ Solar Installations ('+solar.size().getInfo().toLocaleString()+')',
+  style: {color: '#ff9100', margin: '2px 0'}
+});
+
+var dataInfo = ui.Label({
+  value: 'Data: 2017 Q4 - 2024 Q2',
+  style: {fontSize: '11px', color: '#666', margin: '4px 0 0 0'}
+});
+
+legend.add(legendTitle);
+legend.add(windLegend);
+legend.add(solarLegend);
+legend.add(dataInfo);
+
+Map.add(legend);
+
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

@@ -5,6 +5,7 @@
 
 #### updated 2025-12-14
 - Added [ICESat-2 Derived Canopy Height Model (IS2CHM](https://gee-community-catalog.org/projects/is2chm/)
+- Added [NOAA NGS Emergency Response Imagery](https://gee-community-catalog.org/projects/noaa_ngs_eri)
 - Updated [TIGER Roads Time Series now includes 2009-2025](https://gee-community-catalog.org/projects/tiger_roads)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 

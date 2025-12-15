@@ -1,0 +1,50 @@
+// NOAA NGS Emergency Response Imagery - Hurricane Melissa
+// 15cm aerial resolution, 8-bit RGB imagery
+// Dataset: Hurricane Melissa 2025 - Jamaica
+
+// Load the image collection
+var dataset = ee.ImageCollection('projects/sat-io/open-datasets/NOAA_EVENTS/2025_HURRICANE_MELISSA');
+
+// Select RGB bands (ignore b4 alpha band)
+var collection = dataset.select(['b1', 'b2', 'b3']);
+
+print('Total Images:', collection.size());
+
+// RGB visualization parameters
+var rgbVis = {
+  min: 0,
+  max: 255,
+  bands: ['b1', 'b2', 'b3']
+};
+
+// Center on the collection
+Map.setCenter(-77.357, 18.1256, 9);
+
+// Function to add date property
+function addDateProperty(image) {
+  var date = ee.Date(image.get('system:time_start'));
+  var dateString = date.format('YYYY-MM-dd');
+  return image.set('date', dateString);
+}
+
+var collectionWithDates = collection.map(addDateProperty);
+
+// Get unique dates
+var dates = collectionWithDates.aggregate_array('date').distinct().sort();
+
+print('Acquisition Dates:', dates);
+
+// Add one layer for each date
+dates.evaluate(function(dateList) {
+  dateList.forEach(function(date) {
+    var dailyImages = collectionWithDates.filter(ee.Filter.eq('date', date));
+    var mosaic = dailyImages.mosaic();
+    
+    dailyImages.size().evaluate(function(count) {
+      Map.addLayer(mosaic, rgbVis, date + ' (' + count + ' images)');
+    });
+  });
+});
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
