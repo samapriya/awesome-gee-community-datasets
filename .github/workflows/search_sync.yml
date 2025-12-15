@@ -44,9 +44,9 @@ jobs:
         run: |
           curl -o browse.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/browse.html
 
-      - name: Download browse.html
+      - name: Download contributors.html
         run: |
-          curl -o browse.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/contributors.html
+          curl -o contributors.html https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/contributors.html
 
       - name: Configure Git
         run: |
