@@ -1,4 +1,4 @@
-name: sync_searcher
+name: Sync Extra Pages
 on:
   workflow_dispatch:
   workflow_run:
@@ -55,8 +55,8 @@ jobs:
 
       - name: Commit files to gh-pages
         run: |
-          git add search.html browse.html
-          git commit -m "Add search.html and browse.html from external source"
+          git add search.html browse.html contributors.html
+          git commit -m "Add search.html, contributors.html and browse.html from external source"
 
       - name: Push changes to gh-pages
         env:
