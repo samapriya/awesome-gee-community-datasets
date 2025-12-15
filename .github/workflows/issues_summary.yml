@@ -26,19 +26,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
           REPO: ${{ github.repository }}
         run: python scripts/issues_summary.py
-
+      
       - name: Commit updated JSON
         run: |
           git config user.name "issues-bot"
           git config user.email "issues-bot@users.noreply.github.com"
-
-          git add issues-summary.json .issues-summary-status.txt
-
+      
+          git add issues-summary.json
+      
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-
-          STATUS=$(cat .issues-summary-status.txt)
-          git commit -m "Update issues summary (${STATUS})"
+      
+          git commit -m "Update issues summary"
           git push
