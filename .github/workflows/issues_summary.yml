@@ -3,8 +3,6 @@ name: Generate Issues Summary
 on:
   workflow_dispatch:
   schedule:
-    # Every 2 days at 03:00 UTC
-    # This is 9:00 PM US Central (CST/CDT-safe)
     - cron: "0 3 */2 * *"
 
 jobs:
@@ -20,6 +18,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Python dependencies
+        run: pip install requests
+
       - name: Generate issues summary
         env:
           ISSUES_TOKEN: ${{ secrets.ISSUES_TOKEN }}
@@ -31,12 +32,13 @@ jobs:
           git config user.name "issues-bot"
           git config user.email "issues-bot@users.noreply.github.com"
 
-          git add issues-summary.json
+          git add issues-summary.json .issues-summary-status.txt
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
 
-          git commit -m "Update issues summary ($(date))"
+          STATUS=$(cat .issues-summary-status.txt)
+          git commit -m "Update issues summary (${STATUS})"
           git push
