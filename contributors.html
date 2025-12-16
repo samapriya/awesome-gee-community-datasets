@@ -127,7 +127,43 @@
 
         // --- Components ---
 
-        const Hero = ({ totalContributors, totalContributions }) => {
+        const Hero = ({ totalContributors, totalContributions, repoStats }) => {
+            // Prepare Repo Stats Data
+            const repoStatItems = repoStats ? [
+                {
+                    label: "Stars",
+                    value: repoStats.total_stars,
+                    icon: "star",
+                    color: "text-yellow-500",
+                    bg: "bg-yellow-50 dark:bg-yellow-900/20",
+                    border: "border-yellow-200 dark:border-yellow-800"
+                },
+                {
+                    label: "Forks",
+                    value: repoStats.total_forks,
+                    icon: "call_split",
+                    color: "text-blue-500",
+                    bg: "bg-blue-50 dark:bg-blue-900/20",
+                    border: "border-blue-200 dark:border-blue-800"
+                },
+                {
+                    label: "Issues",
+                    value: repoStats.open_issues,
+                    icon: "bug_report",
+                    color: "text-red-500",
+                    bg: "bg-red-50 dark:bg-red-900/20",
+                    border: "border-red-200 dark:border-red-800"
+                }
+            ] : [];
+
+            const updatedTime = repoStats ? new Date(repoStats.updated_at).toLocaleString(undefined, {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            }) : null;
+
             return (
                 <div className="relative overflow-hidden bg-white dark:bg-gray-900 py-12 sm:py-16 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
                     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -150,14 +186,38 @@
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5, duration: 0.8 }}
-                            className="mt-8 flex justify-center gap-4 flex-wrap"
+                            className="mt-8 flex flex-wrap justify-center gap-3"
                         >
-                            <div className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-200 font-roboto transition-colors duration-300">
-                                <span className="text-green-600 dark:text-green-400 font-bold">{totalContributors}</span> Contributors
+                            {/* Contributors */}
+                            <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 shadow-sm whitespace-nowrap transition-transform hover:scale-105">
+                                <span className="text-green-600 dark:text-green-400 font-bold">{totalContributors}</span>
+                                <span className="text-gray-700 dark:text-gray-200 font-medium text-sm">Contributors</span>
                             </div>
-                            <div className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-200 font-roboto transition-colors duration-300">
-                                <span className="text-blue-600 dark:text-blue-400 font-bold">{totalContributions}</span> Total Contributions
+
+                            {/* Contributions */}
+                            <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 shadow-sm whitespace-nowrap transition-transform hover:scale-105">
+                                <span className="text-blue-600 dark:text-blue-400 font-bold">{totalContributions}</span>
+                                <span className="text-gray-700 dark:text-gray-200 font-medium text-sm">Total Contributions</span>
                             </div>
+
+                            {/* Repo Stats Loop */}
+                            {repoStatItems.map((item) => (
+                                <div key={item.label} className={`flex items-center gap-2 px-4 py-2 rounded-full border ${item.bg} ${item.border} shadow-sm whitespace-nowrap transition-transform hover:scale-105`}>
+                                    <span className={`material-symbols-outlined text-[18px] ${item.color}`}>
+                                        {item.icon}
+                                    </span>
+                                    <span className="font-bold text-gray-800 dark:text-gray-100">{item.value}</span>
+                                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">{item.label}</span>
+                                </div>
+                            ))}
+
+                            {/* Updated Badge */}
+                            {updatedTime && (
+                                <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap transition-transform hover:scale-105">
+                                    <span className="material-symbols-outlined text-[18px]">schedule</span>
+                                    <span>Updated: {updatedTime}</span>
+                                </div>
+                            )}
                         </motion.div>
                     </div>
                 </div>
@@ -223,6 +283,7 @@
 
         const App = () => {
             const [contributorsData, setContributorsData] = useState([]);
+            const [repoStats, setRepoStats] = useState(null);
             const [searchTerm, setSearchTerm] = useState('');
             const [selectedYear, setSelectedYear] = useState('All Time');
             const [sortType, setSortType] = useState('count'); // 'count', 'az', 'za', 'recent'
@@ -233,25 +294,28 @@
             useEffect(() => {
                 Promise.all([
                     fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/issues-summary.json').then(res => res.json()),
-                    fetch('https://api.github.com/repos/samapriya/awesome-gee-community-datasets/issues?state=all&per_page=100').then(res => res.json()) // Note: Using GitHub API directly might hit rate limits. Better to use your own processed JSON if possible.
-                    // If you have a processed issues.json like you uploaded, use that URL instead.
-                    // For now, I'll simulate the yearly processing based on the issues.json structure you shared.
-                    // Assuming you host issues.json at a URL, replace the second fetch above.
+                    fetch('https://api.github.com/repos/samapriya/awesome-gee-community-datasets/issues?state=all&per_page=100').then(res => res.json()),
+                    fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/repo-stats.json').then(res => res.json())
                 ])
-                    .then(([summary, issues]) => {
+                    .then(([summary, issues, stats]) => {
+                        // Set Repo Stats
+                        setRepoStats(stats);
+
                         // Process issues to calculate yearly stats per user
                         const yearlyData = {};
 
                         // Note: If 'issues' is the raw array of issue objects:
-                        issues.forEach(issue => {
-                            const user = issue.user.login;
-                            const date = new Date(issue.created_at);
-                            const year = date.getFullYear().toString();
+                        if (Array.isArray(issues)) {
+                            issues.forEach(issue => {
+                                const user = issue.user.login;
+                                const date = new Date(issue.created_at);
+                                const year = date.getFullYear().toString();
 
-                            if (!yearlyData[user]) yearlyData[user] = {};
-                            if (!yearlyData[user][year]) yearlyData[user][year] = 0;
-                            yearlyData[user][year]++;
-                        });
+                                if (!yearlyData[user]) yearlyData[user] = {};
+                                if (!yearlyData[user][year]) yearlyData[user][year] = 0;
+                                yearlyData[user][year]++;
+                            });
+                        }
 
                         // Merge yearly data into summary data
                         const mergedData = summary.map(user => ({
@@ -264,6 +328,7 @@
                     })
                     .catch(err => {
                         console.error("Failed to fetch data", err);
+                        // Even if stats fail, we might want to show partial data, but here we'll just stop loading
                         setLoading(false);
                     });
             }, []);
@@ -364,6 +429,7 @@
                     <Hero
                         totalContributors={contributorsData.length}
                         totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)}
+                        repoStats={repoStats}
                     />
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
