@@ -1,4 +1,4 @@
-name: Generate Issues Summary
+name: Generate Issues Summary & Stats
 
 on:
   workflow_dispatch:
@@ -26,18 +26,24 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
           REPO: ${{ github.repository }}
         run: python scripts/issues_summary.py
-      
+
+      - name: Generate issues summary
+        env:
+          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: python scripts/repo_stats.py
+
       - name: Commit updated JSON
         run: |
           git config user.name "issues-bot"
           git config user.email "issues-bot@users.noreply.github.com"
-      
-          git add issues-summary.json
-      
+
+          git add issues-summary.json repo-stats.json
+
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-      
-          git commit -m "Update issues summary"
+
+          git commit -m "Update issues summary and repo stats"
           git push
