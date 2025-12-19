@@ -4,10 +4,13 @@
     "display_name": "Eric Jensen",
     "avatar_url": "https://avatars.githubusercontent.com/u/33233973?v=4",
     "profile_url": "https://github.com/EricRJensen",
-    "total_contributions": 28,
+    "total_contributions": 31,
     "open_issues": 0,
     "closed_issues": 28,
-    "last_contribution_date": "2024-05-07T23:16:14Z"
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 1,
+    "last_contribution_date": "2025-09-26T17:30:04Z"
   },
   {
     "github_login": "samapriya",
@@ -17,7 +20,23 @@
     "total_contributions": 21,
     "open_issues": 2,
     "closed_issues": 19,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-16T13:41:24Z"
+  },
+  {
+    "github_login": "spatialthoughts",
+    "display_name": "Ujaval Gandhi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5227506?v=4",
+    "profile_url": "https://github.com/spatialthoughts",
+    "total_contributions": 11,
+    "open_issues": 0,
+    "closed_issues": 10,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2025-03-26T17:16:43Z"
   },
   {
     "github_login": "Geethen",
@@ -27,6 +46,9 @@
     "total_contributions": 11,
     "open_issues": 4,
     "closed_issues": 7,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-16T18:25:14Z"
   },
   {
@@ -37,17 +59,10 @@
     "total_contributions": 11,
     "open_issues": 4,
     "closed_issues": 7,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-11-20T11:17:33Z"
-  },
-  {
-    "github_login": "spatialthoughts",
-    "display_name": "Ujaval Gandhi",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5227506?v=4",
-    "profile_url": "https://github.com/spatialthoughts",
-    "total_contributions": 10,
-    "open_issues": 0,
-    "closed_issues": 10,
-    "last_contribution_date": "2025-03-26T17:16:43Z"
   },
   {
     "github_login": "S-Bronson",
@@ -57,6 +72,9 @@
     "total_contributions": 8,
     "open_issues": 0,
     "closed_issues": 8,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-10T21:13:59Z"
   },
   {
@@ -67,6 +85,9 @@
     "total_contributions": 8,
     "open_issues": 1,
     "closed_issues": 7,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-05-19T18:00:30Z"
   },
   {
@@ -77,6 +98,9 @@
     "total_contributions": 7,
     "open_issues": 4,
     "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-12-03T07:30:37Z"
   },
   {
@@ -87,7 +111,23 @@
     "total_contributions": 7,
     "open_issues": 1,
     "closed_issues": 6,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-07-31T00:24:16Z"
+  },
+  {
+    "github_login": "robitalec",
+    "display_name": "Alec L. Robitaille",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16324625?v=4",
+    "profile_url": "https://github.com/robitalec",
+    "total_contributions": 7,
+    "open_issues": 1,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 5,
+    "closed_prs": 0,
+    "last_contribution_date": "2024-03-27T18:42:27Z"
   },
   {
     "github_login": "giswqs",
@@ -97,6 +137,9 @@
     "total_contributions": 7,
     "open_issues": 0,
     "closed_issues": 7,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-02-16T18:17:16Z"
   },
   {
@@ -107,6 +150,9 @@
     "total_contributions": 6,
     "open_issues": 3,
     "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-15T06:38:53Z"
   },
   {
@@ -117,6 +163,9 @@
     "total_contributions": 6,
     "open_issues": 1,
     "closed_issues": 5,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-08-28T06:47:17Z"
   },
   {
@@ -127,6 +176,9 @@
     "total_contributions": 5,
     "open_issues": 1,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-06T23:45:34Z"
   },
   {
@@ -137,7 +189,36 @@
     "total_contributions": 5,
     "open_issues": 1,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-06-06T18:47:59Z"
+  },
+  {
+    "github_login": "schwehr",
+    "display_name": "Kurt Schwehr",
+    "avatar_url": "https://avatars.githubusercontent.com/u/389869?v=4",
+    "profile_url": "https://github.com/schwehr",
+    "total_contributions": 5,
+    "open_issues": 0,
+    "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 3,
+    "closed_prs": 0,
+    "last_contribution_date": "2023-10-11T18:00:35Z"
+  },
+  {
+    "github_login": "montimaj",
+    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
+    "profile_url": "https://github.com/montimaj",
+    "total_contributions": 4,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 1,
+    "last_contribution_date": "2025-11-26T19:46:56Z"
   },
   {
     "github_login": "gotEXP",
@@ -147,6 +228,9 @@
     "total_contributions": 4,
     "open_issues": 0,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-08-19T23:14:34Z"
   },
   {
@@ -157,6 +241,9 @@
     "total_contributions": 4,
     "open_issues": 0,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-08-19T17:24:32Z"
   },
   {
@@ -167,6 +254,9 @@
     "total_contributions": 4,
     "open_issues": 0,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-02-25T22:40:35Z"
   },
   {
@@ -177,6 +267,9 @@
     "total_contributions": 4,
     "open_issues": 0,
     "closed_issues": 4,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-01-17T02:39:50Z"
   },
   {
@@ -187,6 +280,9 @@
     "total_contributions": 3,
     "open_issues": 1,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-23T23:32:25Z"
   },
   {
@@ -197,6 +293,9 @@
     "total_contributions": 3,
     "open_issues": 1,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-08-26T13:29:34Z"
   },
   {
@@ -207,6 +306,9 @@
     "total_contributions": 3,
     "open_issues": 2,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-14T09:01:11Z"
   },
   {
@@ -217,6 +319,9 @@
     "total_contributions": 3,
     "open_issues": 0,
     "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-05-24T12:08:35Z"
   },
   {
@@ -227,7 +332,23 @@
     "total_contributions": 3,
     "open_issues": 0,
     "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-03-09T12:28:48Z"
+  },
+  {
+    "github_login": "lpaolini",
+    "display_name": "Luca Paolini",
+    "avatar_url": "https://avatars.githubusercontent.com/u/377807?v=4",
+    "profile_url": "https://github.com/lpaolini",
+    "total_contributions": 3,
+    "open_issues": 0,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 0,
+    "last_contribution_date": "2023-09-26T11:17:56Z"
   },
   {
     "github_login": "Yingjie4Science",
@@ -237,7 +358,36 @@
     "total_contributions": 3,
     "open_issues": 0,
     "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-07-02T16:13:32Z"
+  },
+  {
+    "github_login": "csaybar",
+    "display_name": "Cesar Aybar",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16768318?v=4",
+    "profile_url": "https://github.com/csaybar",
+    "total_contributions": 3,
+    "open_issues": 0,
+    "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2023-01-09T14:12:11Z"
+  },
+  {
+    "github_login": "nkeikon",
+    "display_name": "Keiko Nomura",
+    "avatar_url": "https://avatars.githubusercontent.com/u/45358635?v=4",
+    "profile_url": "https://github.com/nkeikon",
+    "total_contributions": 3,
+    "open_issues": 0,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 0,
+    "last_contribution_date": "2024-01-10T22:22:05Z"
   },
   {
     "github_login": "dadr94",
@@ -247,6 +397,9 @@
     "total_contributions": 2,
     "open_issues": 1,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-11-12T05:19:02Z"
   },
   {
@@ -257,6 +410,9 @@
     "total_contributions": 2,
     "open_issues": 1,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-16T21:43:36Z"
   },
   {
@@ -267,6 +423,9 @@
     "total_contributions": 2,
     "open_issues": 1,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-08T22:21:34Z"
   },
   {
@@ -277,6 +436,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-07T14:40:14Z"
   },
   {
@@ -287,6 +449,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-05-11T13:45:08Z"
   },
   {
@@ -297,6 +462,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-04-25T09:52:14Z"
   },
   {
@@ -307,6 +475,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-04-13T09:20:14Z"
   },
   {
@@ -317,6 +488,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-12T11:35:13Z"
   },
   {
@@ -327,6 +501,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-06T13:26:27Z"
   },
   {
@@ -337,6 +514,9 @@
     "total_contributions": 2,
     "open_issues": 1,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-02T00:18:42Z"
   },
   {
@@ -347,6 +527,9 @@
     "total_contributions": 2,
     "open_issues": 1,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-09-27T19:10:29Z"
   },
   {
@@ -357,6 +540,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-08-22T15:48:07Z"
   },
   {
@@ -367,6 +553,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-06-10T16:24:43Z"
   },
   {
@@ -377,17 +566,23 @@
     "total_contributions": 2,
     "open_issues": 2,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-05-30T11:08:01Z"
   },
   {
-    "github_login": "robitalec",
-    "display_name": "Alec L. Robitaille",
-    "avatar_url": "https://avatars.githubusercontent.com/u/16324625?v=4",
-    "profile_url": "https://github.com/robitalec",
+    "github_login": "Tschoun",
+    "display_name": "Joan Sturm",
+    "avatar_url": "https://avatars.githubusercontent.com/u/44976289?v=4",
+    "profile_url": "https://github.com/Tschoun",
     "total_contributions": 2,
-    "open_issues": 1,
+    "open_issues": 0,
     "closed_issues": 1,
-    "last_contribution_date": "2024-03-27T18:42:27Z"
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2025-03-18T15:01:10Z"
   },
   {
     "github_login": "Gonzairisarri",
@@ -397,6 +592,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-01-10T12:43:12Z"
   },
   {
@@ -407,6 +605,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-11-08T22:08:59Z"
   },
   {
@@ -417,6 +618,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-10-19T13:32:06Z"
   },
   {
@@ -427,6 +631,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-09-29T22:56:53Z"
   },
   {
@@ -437,6 +644,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-03-26T12:57:53Z"
   },
   {
@@ -447,6 +657,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-01-04T17:06:45Z"
   },
   {
@@ -457,6 +670,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-12-13T02:56:23Z"
   },
   {
@@ -467,27 +683,10 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-11-16T10:25:37Z"
-  },
-  {
-    "github_login": "schwehr",
-    "display_name": "Kurt Schwehr",
-    "avatar_url": "https://avatars.githubusercontent.com/u/389869?v=4",
-    "profile_url": "https://github.com/schwehr",
-    "total_contributions": 2,
-    "open_issues": 0,
-    "closed_issues": 2,
-    "last_contribution_date": "2022-11-08T01:54:46Z"
-  },
-  {
-    "github_login": "csaybar",
-    "display_name": "Cesar Aybar",
-    "avatar_url": "https://avatars.githubusercontent.com/u/16768318?v=4",
-    "profile_url": "https://github.com/csaybar",
-    "total_contributions": 2,
-    "open_issues": 0,
-    "closed_issues": 2,
-    "last_contribution_date": "2022-09-17T06:26:55Z"
   },
   {
     "github_login": "aazuspan",
@@ -497,6 +696,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-07-09T02:55:50Z"
   },
   {
@@ -507,6 +709,9 @@
     "total_contributions": 2,
     "open_issues": 0,
     "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-06-27T05:37:52Z"
   },
   {
@@ -517,6 +722,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-12-10T09:35:50Z"
   },
   {
@@ -527,6 +735,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-12-10T09:12:30Z"
   },
   {
@@ -537,17 +748,10 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-12-09T20:02:42Z"
-  },
-  {
-    "github_login": "montimaj",
-    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
-    "profile_url": "https://github.com/montimaj",
-    "total_contributions": 1,
-    "open_issues": 1,
-    "closed_issues": 0,
-    "last_contribution_date": "2025-11-26T19:46:56Z"
   },
   {
     "github_login": "larkinandy",
@@ -557,6 +761,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-11-12T18:04:09Z"
   },
   {
@@ -567,6 +774,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-11-10T22:23:20Z"
   },
   {
@@ -577,6 +787,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-11-09T21:32:52Z"
   },
   {
@@ -587,6 +800,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-11-03T19:57:59Z"
   },
   {
@@ -597,6 +813,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-30T02:04:26Z"
   },
   {
@@ -607,6 +826,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-23T21:18:36Z"
   },
   {
@@ -617,6 +839,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-21T18:50:57Z"
   },
   {
@@ -627,6 +852,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-10-02T21:42:41Z"
   },
   {
@@ -637,6 +865,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-09T23:31:24Z"
   },
   {
@@ -647,6 +878,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-09T21:08:35Z"
   },
   {
@@ -657,6 +891,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-09-02T13:15:10Z"
   },
   {
@@ -667,6 +904,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-08-25T14:51:18Z"
   },
   {
@@ -677,6 +917,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-08-18T21:44:08Z"
   },
   {
@@ -687,6 +930,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-07-17T14:55:53Z"
   },
   {
@@ -697,6 +943,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-07-14T23:11:21Z"
   },
   {
@@ -707,6 +956,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-07-11T02:31:55Z"
   },
   {
@@ -717,6 +969,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-30T01:12:24Z"
   },
   {
@@ -727,6 +982,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-28T15:40:06Z"
   },
   {
@@ -737,6 +995,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-24T18:50:08Z"
   },
   {
@@ -747,6 +1008,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-06-02T08:55:46Z"
   },
   {
@@ -757,6 +1021,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-05-27T12:57:14Z"
   },
   {
@@ -767,6 +1034,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-04-17T18:24:29Z"
   },
   {
@@ -777,6 +1047,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-04-16T22:37:30Z"
   },
   {
@@ -787,6 +1060,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-04-08T18:12:09Z"
   },
   {
@@ -797,6 +1073,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-03-25T13:01:38Z"
   },
   {
@@ -807,6 +1086,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-03-17T02:24:34Z"
   },
   {
@@ -817,6 +1099,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-02-20T21:25:23Z"
   },
   {
@@ -827,6 +1112,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-02-18T22:33:47Z"
   },
   {
@@ -837,6 +1125,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-02-03T20:54:18Z"
   },
   {
@@ -847,6 +1138,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-31T16:50:33Z"
   },
   {
@@ -857,6 +1151,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-23T22:40:16Z"
   },
   {
@@ -867,6 +1164,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-17T15:28:51Z"
   },
   {
@@ -877,6 +1177,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-14T14:48:23Z"
   },
   {
@@ -887,6 +1190,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-12T10:10:24Z"
   },
   {
@@ -897,6 +1203,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2025-01-03T01:31:08Z"
   },
   {
@@ -907,6 +1216,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-12-18T10:25:33Z"
   },
   {
@@ -917,6 +1229,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-11-20T15:25:58Z"
   },
   {
@@ -927,6 +1242,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-11-15T16:09:50Z"
   },
   {
@@ -937,6 +1255,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-11-04T22:26:14Z"
   },
   {
@@ -947,6 +1268,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-23T14:08:57Z"
   },
   {
@@ -957,6 +1281,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-15T08:09:27Z"
   },
   {
@@ -967,6 +1294,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-14T12:06:52Z"
   },
   {
@@ -977,6 +1307,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-09T21:18:57Z"
   },
   {
@@ -987,6 +1320,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-10-01T16:53:09Z"
   },
   {
@@ -997,6 +1333,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-09-27T12:07:15Z"
   },
   {
@@ -1007,6 +1346,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-09-12T20:32:23Z"
   },
   {
@@ -1017,6 +1359,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-09-03T22:24:23Z"
   },
   {
@@ -1027,6 +1372,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-09-03T22:10:23Z"
   },
   {
@@ -1037,6 +1385,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-08-20T08:14:50Z"
   },
   {
@@ -1047,6 +1398,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-07-18T06:07:38Z"
   },
   {
@@ -1057,6 +1411,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-07-17T15:43:16Z"
   },
   {
@@ -1067,6 +1424,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-07-03T16:56:40Z"
   },
   {
@@ -1077,6 +1437,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-06-25T17:55:43Z"
   },
   {
@@ -1087,6 +1450,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-06-11T11:47:04Z"
   },
   {
@@ -1097,6 +1463,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-06-10T17:25:14Z"
   },
   {
@@ -1107,6 +1476,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-05-21T10:21:20Z"
   },
   {
@@ -1117,6 +1489,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-05-09T11:23:04Z"
   },
   {
@@ -1127,17 +1502,10 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-05-01T11:46:19Z"
-  },
-  {
-    "github_login": "Tschoun",
-    "display_name": "Joan Sturm",
-    "avatar_url": "https://avatars.githubusercontent.com/u/44976289?v=4",
-    "profile_url": "https://github.com/Tschoun",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "last_contribution_date": "2024-04-10T11:55:23Z"
   },
   {
     "github_login": "adamnicholasprice",
@@ -1147,6 +1515,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-02-27T20:49:41Z"
   },
   {
@@ -1157,6 +1528,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-02-22T17:08:03Z"
   },
   {
@@ -1167,6 +1541,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-02-15T22:04:42Z"
   },
   {
@@ -1177,6 +1554,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-02-13T21:37:24Z"
   },
   {
@@ -1187,6 +1567,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-02-13T14:12:49Z"
   },
   {
@@ -1197,6 +1580,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-01-08T16:10:45Z"
   },
   {
@@ -1207,6 +1593,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-01-05T14:40:32Z"
   },
   {
@@ -1217,6 +1606,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2024-01-03T22:05:50Z"
   },
   {
@@ -1227,6 +1619,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-12-06T12:27:40Z"
   },
   {
@@ -1237,6 +1632,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-11-27T15:10:23Z"
   },
   {
@@ -1247,6 +1645,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-11-21T00:59:35Z"
   },
   {
@@ -1257,6 +1658,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-11-09T17:50:59Z"
   },
   {
@@ -1267,6 +1671,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-10-12T10:36:39Z"
   },
   {
@@ -1277,17 +1684,10 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-10-03T08:18:33Z"
-  },
-  {
-    "github_login": "lpaolini",
-    "display_name": "Luca Paolini",
-    "avatar_url": "https://avatars.githubusercontent.com/u/377807?v=4",
-    "profile_url": "https://github.com/lpaolini",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "last_contribution_date": "2023-09-26T11:17:56Z"
   },
   {
     "github_login": "smorf-ntsg",
@@ -1297,6 +1697,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-09-22T16:56:15Z"
   },
   {
@@ -1307,6 +1710,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-09-22T14:44:06Z"
   },
   {
@@ -1317,6 +1723,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-09-21T09:01:51Z"
   },
   {
@@ -1327,6 +1736,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-09-14T08:16:44Z"
   },
   {
@@ -1337,6 +1749,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-08-12T22:32:44Z"
   },
   {
@@ -1347,6 +1762,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-08-12T18:41:53Z"
   },
   {
@@ -1357,6 +1775,9 @@
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-07-10T08:34:21Z"
   },
   {
@@ -1367,6 +1788,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-07-06T12:41:49Z"
   },
   {
@@ -1377,6 +1801,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-06-30T08:52:23Z"
   },
   {
@@ -1387,6 +1814,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-06-08T07:13:03Z"
   },
   {
@@ -1397,6 +1827,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-05-18T04:58:38Z"
   },
   {
@@ -1407,6 +1840,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-05-12T12:51:56Z"
   },
   {
@@ -1417,6 +1853,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-04-09T18:48:04Z"
   },
   {
@@ -1427,6 +1866,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-04-07T22:01:25Z"
   },
   {
@@ -1437,6 +1879,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-04-04T12:12:46Z"
   },
   {
@@ -1447,6 +1892,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-03-29T06:40:55Z"
   },
   {
@@ -1457,6 +1905,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-03-27T18:18:21Z"
   },
   {
@@ -1467,6 +1918,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-02-21T18:25:19Z"
   },
   {
@@ -1477,6 +1931,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-02-08T08:53:00Z"
   },
   {
@@ -1487,6 +1944,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-01-27T12:37:45Z"
   },
   {
@@ -1497,6 +1957,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-01-16T10:30:56Z"
   },
   {
@@ -1507,6 +1970,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2023-01-12T09:33:24Z"
   },
   {
@@ -1517,6 +1983,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-12-28T00:01:36Z"
   },
   {
@@ -1527,6 +1996,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-12-07T16:04:00Z"
   },
   {
@@ -1537,6 +2009,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-12-07T03:42:17Z"
   },
   {
@@ -1547,6 +2022,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-12-01T19:57:17Z"
   },
   {
@@ -1557,6 +2035,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-11-11T07:24:44Z"
   },
   {
@@ -1567,6 +2048,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-10-26T09:39:59Z"
   },
   {
@@ -1577,6 +2061,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-10-11T18:07:48Z"
   },
   {
@@ -1587,6 +2074,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-10-06T18:22:18Z"
   },
   {
@@ -1597,6 +2087,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-09-26T03:25:44Z"
   },
   {
@@ -1607,6 +2100,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-09-22T13:21:23Z"
   },
   {
@@ -1617,6 +2113,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-09-08T03:08:49Z"
   },
   {
@@ -1627,6 +2126,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-08-22T14:28:30Z"
   },
   {
@@ -1637,6 +2139,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-08-17T08:56:16Z"
   },
   {
@@ -1647,6 +2152,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-08-11T18:53:32Z"
   },
   {
@@ -1657,6 +2165,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-07-18T18:43:24Z"
   },
   {
@@ -1667,6 +2178,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-07-03T10:37:49Z"
   },
   {
@@ -1677,6 +2191,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-06-19T18:52:52Z"
   },
   {
@@ -1687,6 +2204,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-05-25T10:54:45Z"
   },
   {
@@ -1697,6 +2217,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-05-03T12:07:23Z"
   },
   {
@@ -1707,6 +2230,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-03-04T10:45:28Z"
   },
   {
@@ -1717,6 +2243,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-03-01T20:58:29Z"
   },
   {
@@ -1727,17 +2256,10 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2022-01-21T07:40:45Z"
-  },
-  {
-    "github_login": "nkeikon",
-    "display_name": "Keiko Nomura",
-    "avatar_url": "https://avatars.githubusercontent.com/u/45358635?v=4",
-    "profile_url": "https://github.com/nkeikon",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "last_contribution_date": "2021-10-19T20:03:35Z"
   },
   {
     "github_login": "wanglancaster",
@@ -1747,6 +2269,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-08-07T13:41:04Z"
   },
   {
@@ -1757,6 +2282,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-07-10T00:47:19Z"
   },
   {
@@ -1767,6 +2295,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-07-03T15:04:41Z"
   },
   {
@@ -1777,6 +2308,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-06-29T20:33:18Z"
   },
   {
@@ -1787,6 +2321,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-05-24T17:07:56Z"
   },
   {
@@ -1797,6 +2334,9 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2021-05-16T04:49:38Z"
   },
   {
@@ -1807,6 +2347,165 @@
     "total_contributions": 1,
     "open_issues": 0,
     "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
     "last_contribution_date": "2020-05-28T20:17:17Z"
+  },
+  {
+    "github_login": "santanuremote",
+    "display_name": "Santanu Banerjee",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157551677?v=4",
+    "profile_url": "https://github.com/santanuremote",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2025-11-28T03:43:07Z"
+  },
+  {
+    "github_login": "JohnKilbride",
+    "display_name": "John Kilbride",
+    "avatar_url": "https://avatars.githubusercontent.com/u/27167315?v=4",
+    "profile_url": "https://github.com/JohnKilbride",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2025-11-11T20:52:00Z"
+  },
+  {
+    "github_login": "anjishnum",
+    "display_name": "Anjishnu Mahanta",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35238072?v=4",
+    "profile_url": "https://github.com/anjishnum",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2025-07-16T06:36:35Z"
+  },
+  {
+    "github_login": "sam-oceans",
+    "display_name": "Sam R",
+    "avatar_url": "https://avatars.githubusercontent.com/u/117795821?v=4",
+    "profile_url": "https://github.com/sam-oceans",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2025-05-27T03:57:36Z"
+  },
+  {
+    "github_login": "evetion",
+    "display_name": "Maarten Pronk",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8655030?v=4",
+    "profile_url": "https://github.com/evetion",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2024-11-20T20:44:41Z"
+  },
+  {
+    "github_login": "ejm714",
+    "display_name": "Emily (miller) Dorne",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22667367?v=4",
+    "profile_url": "https://github.com/ejm714",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2024-08-22T23:39:16Z"
+  },
+  {
+    "github_login": "MuhammedM294",
+    "display_name": "Muhammed Abdelaal",
+    "avatar_url": "https://avatars.githubusercontent.com/u/89984604?v=4",
+    "profile_url": "https://github.com/MuhammedM294",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2024-05-28T12:01:28Z"
+  },
+  {
+    "github_login": "cdanielw",
+    "display_name": "Daniel Wiell",
+    "avatar_url": "https://avatars.githubusercontent.com/u/149204?v=4",
+    "profile_url": "https://github.com/cdanielw",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2023-11-27T08:18:58Z"
+  },
+  {
+    "github_login": "jornada-jw",
+    "display_name": "Jeb Williamson",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108081891?v=4",
+    "profile_url": "https://github.com/jornada-jw",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2023-04-04T15:54:16Z"
+  },
+  {
+    "github_login": "edarin",
+    "display_name": "\u00c9dith Darin",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20658648?v=4",
+    "profile_url": "https://github.com/edarin",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2023-01-10T17:58:48Z"
+  },
+  {
+    "github_login": "7yl4r",
+    "display_name": "Tylar",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1051390?v=4",
+    "profile_url": "https://github.com/7yl4r",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2022-04-01T14:44:49Z"
+  },
+  {
+    "github_login": "jsta",
+    "display_name": "Jemma Stachelek",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7844578?v=4",
+    "profile_url": "https://github.com/jsta",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 1,
+    "last_contribution_date": "2021-12-22T17:32:46Z"
   }
 ]
