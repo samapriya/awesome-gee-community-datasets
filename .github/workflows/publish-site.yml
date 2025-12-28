@@ -33,8 +33,7 @@ jobs:
           uv pip install --system \
             wheel \
             lxml \
-            mkdocs \
-            mkdocs-material \
+            "mkdocs-material==9.7.0" \
             "mkdocs-material-extensions" \
             "mkdocs-get-deps" \
             "cairosvg>=2.5" \
