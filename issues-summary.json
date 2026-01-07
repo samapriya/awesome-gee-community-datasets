@@ -390,6 +390,19 @@
     "last_contribution_date": "2024-01-10T22:22:05Z"
   },
   {
+    "github_login": "lapuma",
+    "display_name": "Inga La Puma",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15912260?v=4",
+    "profile_url": "https://github.com/lapuma",
+    "total_contributions": 2,
+    "open_issues": 1,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-01-06T20:33:41Z"
+  },
+  {
     "github_login": "dadr94",
     "display_name": "Daniel",
     "avatar_url": "https://avatars.githubusercontent.com/u/30694630?v=4",
@@ -2182,19 +2195,6 @@
     "merged_prs": 0,
     "closed_prs": 0,
     "last_contribution_date": "2022-08-11T18:53:32Z"
-  },
-  {
-    "github_login": "lapuma",
-    "display_name": "Inga La Puma",
-    "avatar_url": "https://avatars.githubusercontent.com/u/15912260?v=4",
-    "profile_url": "https://github.com/lapuma",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2022-07-18T18:43:24Z"
   },
   {
     "github_login": "geo-ti",
