@@ -3,6 +3,10 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### updated 2025-01-13
+- Added [LandScan Mosaic](https://gee-community-catalog.org/projects/landscan_mosaic)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### updated 2025-12-14
 - Added [ICESat-2 Derived Canopy Height Model (IS2CHM](https://gee-community-catalog.org/projects/is2chm/)
 - Added [NOAA NGS Emergency Response Imagery](https://gee-community-catalog.org/projects/noaa_ngs_eri)

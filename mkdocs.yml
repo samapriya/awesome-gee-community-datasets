@@ -171,6 +171,7 @@ nav:
               - High Resolution Settlement Layers: projects/hrsl.md
               - WorldPop Global Population Data 2015-2030: projects/worldpop.md
               - LandScan Population Data: projects/landscan.md
+              - LandScan Mosaic Population Data (90m): projects/landscan_mosaic.md
               - GlobPOP Global Gridded Population Dataset: projects/globpop.md
               - POMELO Model Population Density Maps: projects/pomelo.md
               - POPCORN Scalable Population Mapping with Sentinel-1 & Sentinel-2: projects/popcorn.md
