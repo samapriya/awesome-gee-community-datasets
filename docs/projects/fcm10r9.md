@@ -41,66 +41,66 @@ at 10-m Resolution Using Geospatial Embeddings. Available at SSRN: https://ssrn.
 
 ??? example "Expand to show the list of species"
 
-   | Code | Scientific Name | Common Name |
-   |------|----------------|-------------|
-   | ABBA | *Abies balsamea* | Balsam fir |
-   | ACPE | *Acer pensylvanicum* | Striped maple |
-   | ACRU | *Acer rubrum* | Red maple |
-   | ACSA | *Acer saccharum* | Sugar maple |
-   | BEAL | *Betula alleghaniensis* | Yellow birch |
-   | BELE | *Betula lenta* | Sweet birch |
-   | BEPA | *Betula papyrifera* | Paper birch |
-   | BEPO | *Betula populifolia* | Gray birch |
-   | CAAL | *Carya alba* | Mockernut hickory |
-   | CACA | *Carpinus caroliniana* | American hornbeam |
-   | CAGL | *Carya glabra* | Pignut hickory |
-   | CAOV | *Carya ovata* | Shagbark hickory |
-   | COFL | *Cornus florida* | Flowering dogwood |
-   | FAGR | *Fagus grandifolia* | American beech |
-   | FRAM | *Fraxinus americana* | White ash |
-   | FRNI | *Fraxinus nigra* | Black ash |
-   | FRPE | *Fraxinus pennsylvanica* | Green ash |
-   | JUVI | *Juniperus virginiana* | Eastern redcedar |
-   | LALA | *Larix laricina* | Tamarack |
-   | LIST | *Liquidambar styraciflua* | Sweetgum |
-   | LITU | *Liriodendron tulipifera* | Tulip poplar |
-   | NYSY | *Nyssa sylvatica* | Black gum |
-   | OSVI | *Ostrya virginiana* | Eastern hophornbeam |
-   | OXAR | *Oxydendrum arboreum* | Sourwood |
-   | PIAB | *Picea abies* | Norway spruce |
-   | PIBA | *Picea mariana* | Black spruce |
-   | PIEC | *Picea glauca* | White spruce |
-   | PIGL | *Picea glauca* | White spruce |
-   | PIMA | *Picea mariana* | Black spruce |
-   | PIRE | *Picea rubens* | Red spruce |
-   | PIRI | *Pinus rigida* | Pitch pine |
-   | PIRU | *Picea rubens* | Red spruce |
-   | PIST | *Pinus strobus* | Eastern white pine |
-   | PITA | *Pinus taeda* | Loblolly pine |
-   | PIVI | *Pinus virginiana* | Virginia pine |
-   | POBA | *Populus balsamifera* | Balsam poplar |
-   | POBA2 | *Populus balsamifera* | Balsam poplar |
-   | POGR | *Populus grandidentata* | Bigtooth aspen |
-   | POTR | *Populus tremuloides* | Quaking aspen |
-   | PRPE2 | *Prunus pensylvanica* | Pin cherry |
-   | PRSE | *Prunus serotina* | Black cherry |
-   | QUAL | *Quercus alba* | White oak |
-   | QUCO | *Quercus coccinea* | Scarlet oak |
-   | QUFA | *Quercus falcata* | Southern red oak |
-   | QUMA | *Quercus macrocarpa* | Bur oak |
-   | QUNI | *Quercus nigra* | Water oak |
-   | QUPR | *Quercus prinus* | Chestnut oak |
-   | QURU | *Quercus rubra* | Northern red oak |
-   | QUST | *Quercus stellata* | Post oak |
-   | QUVE | *Quercus velutina* | Black oak |
-   | ROPS | *Robinia pseudoacacia* | Black locust |
-   | SAAL | *Salix alba* | White willow |
-   | THOC | *Thuja occidentalis* | Northern white-cedar |
-   | TIAM | *Tilia americana* | American basswood |
-   | TSCA | *Tsuga canadensis* | Eastern hemlock |
-   | ULAL | *Ulmus alata* | Winged elm |
-   | ULAM | *Ulmus americana* | American elm |
-   | ULRU | *Ulmus rubra* | Slippery elm |
+      | Code | Scientific Name | Common Name |
+      |------|----------------|-------------|
+      | ABBA | *Abies balsamea* | Balsam fir |
+      | ACPE | *Acer pensylvanicum* | Striped maple |
+      | ACRU | *Acer rubrum* | Red maple |
+      | ACSA | *Acer saccharum* | Sugar maple |
+      | BEAL | *Betula alleghaniensis* | Yellow birch |
+      | BELE | *Betula lenta* | Sweet birch |
+      | BEPA | *Betula papyrifera* | Paper birch |
+      | BEPO | *Betula populifolia* | Gray birch |
+      | CAAL | *Carya alba* | Mockernut hickory |
+      | CACA | *Carpinus caroliniana* | American hornbeam |
+      | CAGL | *Carya glabra* | Pignut hickory |
+      | CAOV | *Carya ovata* | Shagbark hickory |
+      | COFL | *Cornus florida* | Flowering dogwood |
+      | FAGR | *Fagus grandifolia* | American beech |
+      | FRAM | *Fraxinus americana* | White ash |
+      | FRNI | *Fraxinus nigra* | Black ash |
+      | FRPE | *Fraxinus pennsylvanica* | Green ash |
+      | JUVI | *Juniperus virginiana* | Eastern redcedar |
+      | LALA | *Larix laricina* | Tamarack |
+      | LIST | *Liquidambar styraciflua* | Sweetgum |
+      | LITU | *Liriodendron tulipifera* | Tulip poplar |
+      | NYSY | *Nyssa sylvatica* | Black gum |
+      | OSVI | *Ostrya virginiana* | Eastern hophornbeam |
+      | OXAR | *Oxydendrum arboreum* | Sourwood |
+      | PIAB | *Picea abies* | Norway spruce |
+      | PIBA | *Picea mariana* | Black spruce |
+      | PIEC | *Picea glauca* | White spruce |
+      | PIGL | *Picea glauca* | White spruce |
+      | PIMA | *Picea mariana* | Black spruce |
+      | PIRE | *Picea rubens* | Red spruce |
+      | PIRI | *Pinus rigida* | Pitch pine |
+      | PIRU | *Picea rubens* | Red spruce |
+      | PIST | *Pinus strobus* | Eastern white pine |
+      | PITA | *Pinus taeda* | Loblolly pine |
+      | PIVI | *Pinus virginiana* | Virginia pine |
+      | POBA | *Populus balsamifera* | Balsam poplar |
+      | POBA2 | *Populus balsamifera* | Balsam poplar |
+      | POGR | *Populus grandidentata* | Bigtooth aspen |
+      | POTR | *Populus tremuloides* | Quaking aspen |
+      | PRPE2 | *Prunus pensylvanica* | Pin cherry |
+      | PRSE | *Prunus serotina* | Black cherry |
+      | QUAL | *Quercus alba* | White oak |
+      | QUCO | *Quercus coccinea* | Scarlet oak |
+      | QUFA | *Quercus falcata* | Southern red oak |
+      | QUMA | *Quercus macrocarpa* | Bur oak |
+      | QUNI | *Quercus nigra* | Water oak |
+      | QUPR | *Quercus prinus* | Chestnut oak |
+      | QURU | *Quercus rubra* | Northern red oak |
+      | QUST | *Quercus stellata* | Post oak |
+      | QUVE | *Quercus velutina* | Black oak |
+      | ROPS | *Robinia pseudoacacia* | Black locust |
+      | SAAL | *Salix alba* | White willow |
+      | THOC | *Thuja occidentalis* | Northern white-cedar |
+      | TIAM | *Tilia americana* | American basswood |
+      | TSCA | *Tsuga canadensis* | Eastern hemlock |
+      | ULAL | *Ulmus alata* | Winged elm |
+      | ULAM | *Ulmus americana* | American elm |
+      | ULRU | *Ulmus rubra* | Slippery elm |
 
 #### Dataset Preprocessing for Earth Engine
 
