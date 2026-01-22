@@ -109,6 +109,7 @@ The FCM10R9 dataset consists of four main image collections representing differe
 **Metadata Properties:**
 
 All images include the following properties:
+
 - `spatial_resolution`: 10
 - `product`: "FCM10R9"
 - `version`: "R9"
@@ -117,6 +118,7 @@ All images include the following properties:
 - `unit`: Measurement unit (e.g., "Mg/Ha", "m2/Ha", "Trees/Ha")
 
 Species images additionally include:
+
 - `species_code`: Four-letter species code (e.g., "ACRU", "QURU")
 - `species_scientific_name`: Scientific name (e.g., "*Acer rubrum*")
 - `species_common_name`: Common name (e.g., "Red maple")
