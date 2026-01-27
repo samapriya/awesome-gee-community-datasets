@@ -313,6 +313,7 @@ nav:
               - High-resolution gridded precipitation dataset for Peruvian and Ecuadorian watersheds (1981-2015): projects/gridded_ppt.md
           - "Oceans and Shorelines":
               - Global Shoreline Dataset: projects/shoreline.md
+              - S2Coast-2023 Global 10-meter Resolution Coastline Dataset: projects/s2coast.md
               - Digital Earth Australia Coastlines: projects/dea_shorlines.md
               - Digital Earth Africa Coastlines: projects/deaf_shorlines.md
               - Argo Float Data(Subset): projects/argo.md
