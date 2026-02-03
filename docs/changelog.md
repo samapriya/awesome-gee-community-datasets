@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2026-02-03
-- Added [Worldpop Age Sex Population Data 2015-20230](https://gee-community-catalog.org/projects/s2coast)
+- Added [Worldpop Age Sex Population Data 2015-20230](https://gee-community-catalog.org/projects/worldpop)
 - Added [Global Surface Water Transitions (1984-2022)](https://gee-community-catalog.org/projects/swt)
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm)
 
