@@ -34,47 +34,87 @@ WorldPop employs two main modeling approaches but only the constrained datasets 
 
 The **WorldPop** collection provides population estimates at 100m resolution with the following characteristics:
 
+**Total Population Dataset**
+
 | Asset Name | Description | Band | Units |
 |------------|-------------|------|--------|
 | `pop` | Annual population estimates (2015-2030) | `population` | Number of people per grid cell |
 
-The dataset includes:
-- **Total Population**: Overall population counts per grid cell
+**Age-Sex Disaggregated Dataset**
+
+
+??? example "Expand to show the age-sex dataset provides population estimates broken down by gender and age groupings at 100m resolution"
+        | Band Name | Description |
+        |-----------|-------------|
+        | `f_00`/`m_00` | Female/male population under 1 year old |
+        | `f_01`/`m_01` | Female/male population aged 1-4 years |
+        | `f_05`/`m_05` | Female/male population aged 5-9 years |
+        | `f_10`/`m_10` | Female/male population aged 10-14 years |
+        | `f_15`/`m_15` | Female/male population aged 15-19 years |
+        | `f_20`/`m_20` | Female/male population aged 20-24 years |
+        | `f_25`/`m_25` | Female/male population aged 25-29 years |
+        | `f_30`/`m_30` | Female/male population aged 30-34 years |
+        | `f_35`/`m_35` | Female/male population aged 35-39 years |
+        | `f_40`/`m_40` | Female/male population aged 40-44 years |
+        | `f_45`/`m_45` | Female/male population aged 45-49 years |
+        | `f_50`/`m_50` | Female/male population aged 50-54 years |
+        | `f_55`/`m_55` | Female/male population aged 55-59 years |
+        | `f_60`/`m_60` | Female/male population aged 60-64 years |
+        | `f_65`/`m_65` | Female/male population aged 65-69 years |
+        | `f_70`/`m_70` | Female/male population aged 70-74 years |
+        | `f_75`/`m_75` | Female/male population aged 75-79 years |
+        | `f_80`/`m_80` | Female/male population aged 80-84 years |
+        | `f_85`/`m_85` | Female/male population aged 85-89 years |
+        | `f_90`/`m_90` | Female/male population aged 90 years and over |
 
 #### Citation
 
 ```
-WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton; Department of Geography and Geosciences, University of Louisville; Departement de Geographie,
-Universite de Namur) and Center for International Earth Science Information Network (CIESIN), Columbia University (2018). Global High Resolution Population Denominators Project - Funded by The Bill and
-Melinda Gates Foundation (OPP1134076).
+WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton; Department of Geography and Geosciences, University of Louisville; Departement de Geographie, Universite de Namur) and Center for International Earth Science Information Network (CIESIN), Columbia University (2018). Global High Resolution Population Denominators Project - Funded by The Bill and Melinda Gates Foundation (OPP1134076).
 ```
 
-#### Dataset Citation
+#### Dataset Citations
 
+**Total Population Dataset:**
 ```
-Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025 Constrained estimates of 2015-
-2030 total number of people per grid square at a resolution of 3 arc (approximately 100m at the equator) R2024B version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation
-(INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00803
+Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025 Constrained estimates of 2015- 2030 total number of people per grid square at a resolution of 3 arc (approximately 100m at the equator) R2024B version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00803
+```
+
+**Age-Sex Dataset:**
+```
+Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. The spatial distribution of population broken down by gender and age groupings in 2015-2030 at a resolution of 3 arc (approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton.
 ```
 
 ![worldpop](../images/worldpop.gif)
 
 #### Earth Engine Snippet
 
+**Total Population:**
 ```javascript
 var worldpop = ee.ImageCollection("projects/sat-io/open-datasets/WORLDPOP/pop");
 ```
 
-Sample Code:  https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-2015_2030
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-2015_2030
+
+**Age-Sex Dataset:**
+```javascript
+var ageSex = ee.ImageCollection("projects/sat-io/open-datasets/WORLDPOP/agesex");
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-AGESEX
 
 #### License
 
 This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
+#### Changelog
+
+**2026-02-03** Added Age-Sex 100m dataset to the WorldPop collections
+
 Provided by: WorldPop, University of Southampton
 
 Keywords: Population mapping, Demographics, Settlement patterns, Dasymetric mapping, Random Forest, Gridded population, Census data, Population projections, Human geography, Spatial analysis
 
-Curated in GEE by: Samapriya Roy
+Curated in GEE by: Samapriya Roy and Rhorom Priyatikanto
 
-Last updated: 2025-08-20
+Last updated: 2026-02-02

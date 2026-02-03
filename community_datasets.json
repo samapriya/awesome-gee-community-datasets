@@ -39882,6 +39882,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/worldpop.png"
   },
   {
+    "title": "WorldPop Global Population Data AGE SEX 2015-2030",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-AGESEX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/WORLDPOP/agesex",
+    "provider": "WorldPop, University of Southampton",
+    "tags": "Population mapping, Demographics, Settlement patterns, Dasymetric mapping, Random Forest, Gridded population, Census data, Population projections, Human geography, Spatial analysis",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/worldpop/",
+    "thematic_group": "Population & Socioeconomic",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/worldpop.png"
+  },
+  {
     "title": "Carbon Mapper Data Portal Methane Emissions: Plume",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CARBON-MAPPER-METHANE-EMISSIONS",
     "type": "image_collection",
@@ -50301,6 +50313,18 @@
     "docs": "https://gee-community-catalog.org/projects/globgm/",
     "thematic_group": "Hydrology",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/globgm.png"
+  },
+  {
+    "title": "Global Surface Water Transitions 1984-2022: Annual Resolution Water Advance and Recession",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-SURFACE-WATER-TRANSITIONS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/SURFACE_WATER_TRANSITIONS",
+    "provider": "Nagel et al. 2025",
+    "tags": "surface water,water dynamics,rivers,lakes,reservoirs,wetlands,erosion,sedimentation,dams,hydrology,coastal change,climate change,Landsat,time series,remote sensing,floodplains,deltas,river meandering,water resources",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/swt/",
+    "thematic_group": "Hydrology",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/swt.png"
   },
   {
     "title": "Annual rate of change of surface water area, by season Basins",
