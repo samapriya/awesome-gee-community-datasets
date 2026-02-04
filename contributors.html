@@ -9,21 +9,18 @@
     <!-- Fonts: Inter, JetBrains Mono, Montserrat -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Material Symbols (Keeping for existing icons) -->
+    <!-- Material Symbols -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Babel for JSX -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.23.5/babel.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
@@ -31,7 +28,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-G7SXDJEWXV');
     </script>
 
@@ -40,7 +36,7 @@
     {
         "imports": {
             "react": "https://esm.sh/react@18.2.0",
-            "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+            "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?deps=react@18.2.0",
             "framer-motion": "https://esm.sh/framer-motion@10.16.4?deps=react@18.2.0,react-dom@18.2.0"
         }
     }
@@ -53,17 +49,17 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Google', 'sans-serif'],
-                        mono: ['Google', 'sans-serif'],
-                        dashboard: ['Google', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        heading: ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        gray: {
-                            50: '#f9fafb',
-                            100: '#f3f4f6',
-                            800: '#1f2937',
-                            900: '#111827',
+                        slate: {
+                            850: '#151e2e',
                         }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 }
             }
@@ -72,53 +68,50 @@
 
     <style>
         body {
-            /* Use slightly off-white for less harshness in light mode */
-            background-color: #f1f3f5;
-            color: #1f2937;
+            background-color: #f8fafc;
+            color: #0f172a;
             font-family: "Inter", sans-serif;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .dark body {
-            background-color: #111827;
-            color: #f9fafb;
+            background-color: #0b1120;
+            color: #f1f5f9;
         }
 
-        .card-shadow {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            transition: all 0.3s ease;
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
-        .card-shadow:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transform: translateY(-2px);
+        .dark .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-sticky {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+        }
+
+        .dark .glass-sticky {
+            background: rgba(15, 23, 42, 0.85);
+            border-bottom: 1px solid rgba(51, 65, 85, 0.5);
         }
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
+            height: 6px;
         }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-
-        .dark ::-webkit-scrollbar-thumb {
-            background: #4b5563;
-        }
-
-        .dark ::-webkit-scrollbar-thumb:hover {
-            background: #6b7280;
-        }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .dark ::-webkit-scrollbar-thumb { background: #475569; }
     </style>
 </head>
 
@@ -126,193 +119,196 @@
     <div id="root"></div>
 
     <script type="text/babel" data-type="module">
-        import React, { useState, useMemo, useEffect } from 'react';
+        import React, { useState, useMemo, useEffect, Component } from 'react';
         import { createRoot } from 'react-dom/client';
         import { motion, AnimatePresence } from 'framer-motion';
+
+        // --- Error Boundary ---
+        class ErrorBoundary extends Component {
+            constructor(props) {
+                super(props);
+                this.state = { hasError: false, error: null };
+            }
+            static getDerivedStateFromError(error) { return { hasError: true, error }; }
+            componentDidCatch(error, errorInfo) { console.error("React Error:", error, errorInfo); }
+            render() {
+                if (this.state.hasError) return (
+                    <div className="min-h-screen flex items-center justify-center bg-red-50 text-red-900 p-8">
+                        <div className="max-w-lg text-center">
+                            <h1 className="text-2xl font-bold mb-4">Something went wrong.</h1>
+                            <div className="bg-white p-4 rounded shadow text-left overflow-auto text-xs font-mono border border-red-200">{this.state.error?.toString()}</div>
+                        </div>
+                    </div>
+                );
+                return this.props.children;
+            }
+        }
+
+        // --- Skeleton Loader ---
+        const SkeletonCard = () => (
+            <div className="rounded-2xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm animate-pulse">
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+                    <div className="flex-1">
+                        <div className="h-5 bg-slate-200 dark:bg-slate-700 rounded w-3/4 mb-2"></div>
+                        <div className="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/3"></div>
+                    </div>
+                </div>
+                <div className="h-8 bg-slate-100 dark:bg-slate-700/50 rounded mb-4"></div>
+                <div className="grid grid-cols-2 gap-4">
+                    <div className="h-12 bg-slate-100 dark:bg-slate-700/50 rounded"></div>
+                    <div className="h-12 bg-slate-100 dark:bg-slate-700/50 rounded"></div>
+                </div>
+            </div>
+        );
 
         // --- Components ---
 
         const Hero = ({ totalContributors, totalContributions, repoStats }) => {
-            // Prepare Repo Stats Data
             const repoStatItems = repoStats ? [
-                {
-                    label: "Stars",
-                    value: repoStats.total_stars,
-                    icon: "star",
-                    color: "text-yellow-500",
-                    bg: "bg-yellow-50 dark:bg-yellow-900/20",
-                    border: "border-yellow-200 dark:border-yellow-800"
-                },
-                {
-                    label: "Forks",
-                    value: repoStats.total_forks,
-                    icon: "call_split",
-                    color: "text-blue-500",
-                    bg: "bg-blue-50 dark:bg-blue-900/20",
-                    border: "border-blue-200 dark:border-blue-800"
-                },
-                {
-                    label: "Issues",
-                    value: repoStats.open_issues,
-                    icon: "adjust",
-                    color: "text-red-500",
-                    bg: "bg-red-50 dark:bg-red-900/20",
-                    border: "border-red-200 dark:border-red-800"
-                },
-                {
-                    label: "PRs",
-                    value: repoStats.total_prs,
-                    icon: "merge_type",
-                    color: "text-purple-500",
-                    bg: "bg-purple-50 dark:bg-purple-900/20",
-                    border: "border-purple-200 dark:border-purple-800"
-                }
+                { label: "Stars", value: repoStats.total_stars, icon: "star", color: "text-amber-500" },
+                { label: "Forks", value: repoStats.total_forks, icon: "call_split", color: "text-blue-500" },
+                { label: "Issues", value: repoStats.open_issues, icon: "adjust", color: "text-rose-500" },
+                { label: "PRs", value: repoStats.total_prs, icon: "merge_type", color: "text-violet-500" }
             ] : [];
 
-            const updatedTime = repoStats ? new Date(repoStats.updated_at).toLocaleString(undefined, {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            }) : null;
-
             return (
-                <div className="relative overflow-hidden bg-white dark:bg-gray-900 py-12 sm:py-16 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
-                    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <img src="https://i.imgur.com/FYPcTFF.png" alt="Awesome GEE Community Catalog"
-                            className="mx-auto h-20 w-auto mb-6" />
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}
-                        >
-                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4 transition-colors duration-300 font-dashboard">
-                                Community Leaderboard
+                <div className="relative pt-20 pb-16 overflow-hidden">
+                    {/* Background decoration */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 -z-10"></div>
+                    <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50"></div>
+                    
+                    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+                        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                            <div className="inline-block p-3 rounded-2xl bg-white dark:bg-slate-800 shadow-sm mb-6">
+                                <img src="https://i.imgur.com/FYPcTFF.png" alt="Awesome GEE Logo" className="h-16 w-auto" />
+                            </div>
+                            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4 font-heading">
+                                Community <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">Leaderboard</span>
                             </h1>
-                            <p className="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-sans transition-colors duration-300">
-                                Celebrating the contributors who make the dataset catalog possible.
+                            <p className="mt-4 text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                                Celebrating the minds behind the <span className="font-semibold text-slate-800 dark:text-slate-200">Awesome GEE Community Catalog</span>.
                             </p>
                         </motion.div>
 
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5, duration: 0.8 }}
-                            className="mt-8 flex flex-wrap justify-center gap-3"
+                        <motion.div 
+                            initial={{ opacity: 0 }} 
+                            animate={{ opacity: 1 }} 
+                            transition={{ delay: 0.3 }}
+                            className="mt-10 flex flex-wrap justify-center gap-4"
                         >
-                            {/* Contributors */}
-                            <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 shadow-sm whitespace-nowrap transition-transform hover:scale-105">
-                                <span className="text-green-600 dark:text-green-400 font-bold font-mono">{totalContributors}</span>
-                                <span className="text-gray-700 dark:text-gray-200 font-medium text-sm font-dashboard">Contributors</span>
+                            {/* Main Stats Pills */}
+                            <div className="glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
+                                <span className="text-2xl font-black text-slate-800 dark:text-white font-mono">{totalContributors || '...'}</span>
+                                <span className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Contributors</span>
                             </div>
-
-                            {/* Contributions */}
-                            <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 shadow-sm whitespace-nowrap transition-transform hover:scale-105">
-                                <span className="text-blue-600 dark:text-blue-400 font-bold font-mono">{totalContributions}</span>
-                                <span className="text-gray-700 dark:text-gray-200 font-medium text-sm font-dashboard">Total Contributions</span>
+                            <div className="glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
+                                <span className="text-2xl font-black text-slate-800 dark:text-white font-mono">{totalContributions || '...'}</span>
+                                <span className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Contributions</span>
                             </div>
+                        </motion.div>
 
-                            {/* Repo Stats Loop */}
+                        {/* Repo Stats Row */}
+                        <motion.div 
+                            initial={{ opacity: 0 }} 
+                            animate={{ opacity: 1 }} 
+                            transition={{ delay: 0.5 }}
+                            className="mt-8 flex flex-wrap justify-center gap-6 text-sm"
+                        >
                             {repoStatItems.map((item) => (
-                                <div key={item.label} className={`flex items-center gap-2 px-4 py-2 rounded-full border ${item.bg} ${item.border} shadow-sm whitespace-nowrap transition-transform hover:scale-105`}>
-                                    <span className={`material-symbols-outlined text-[18px] ${item.color}`}>
-                                        {item.icon}
-                                    </span>
-                                    <span className="font-bold text-gray-800 dark:text-gray-100 font-mono">{item.value}</span>
-                                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400 font-dashboard">{item.label}</span>
+                                <div key={item.label} className="flex items-center gap-2 text-slate-600 dark:text-slate-400 bg-white/50 dark:bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-200/50 dark:border-slate-700/50">
+                                    <span className={`material-symbols-rounded text-[20px] ${item.color}`}>{item.icon}</span>
+                                    <span className="font-bold text-slate-900 dark:text-white font-mono">{item.value}</span>
+                                    <span>{item.label}</span>
                                 </div>
                             ))}
-
-                            {/* Updated Badge */}
-                            {updatedTime && (
-                                <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap transition-transform hover:scale-105 font-mono">
-                                    <span className="material-symbols-outlined text-[18px]">schedule</span>
-                                    <span>Updated: {updatedTime}</span>
-                                </div>
-                            )}
                         </motion.div>
                     </div>
                 </div>
             );
         };
 
+        const StatRow = ({ icon, label, val1, label1, val2, label2, colorClass }) => (
+            <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 group-hover:border-slate-200 dark:group-hover:border-slate-600 transition-colors">
+                <div className="flex items-center gap-3">
+                    <div className={`p-1.5 rounded-md ${colorClass} bg-opacity-10`}>
+                        <span className={`material-symbols-rounded text-[18px] ${colorClass.replace('bg-', 'text-')}`}>{icon}</span>
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{label}</span>
+                        <div className="flex gap-3 text-xs font-medium text-slate-700 dark:text-slate-300">
+                             <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val1}</span> {label1}</span>
+                             <span className="text-slate-300 dark:text-slate-600">|</span>
+                             <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val2}</span> {label2}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+
         const ContributorCard = ({ user, count, label }) => {
             return (
                 <motion.div
                     layout
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                    className="relative group rounded-xl p-5 border bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 hover:border-gray-200 dark:hover:border-gray-600 hover:shadow-md card-shadow transition-all duration-300"
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                    className="group relative flex flex-col justify-between p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
                 >
-                    <div className="flex items-center space-x-4 mb-4">
-                        <div className="relative">
-                            <a href={user.profile_url} target="_blank" rel="noopener noreferrer">
+                    {/* Header */}
+                    <div className="flex items-start justify-between mb-6">
+                        <div className="flex gap-4">
+                            <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="relative">
                                 <img
                                     src={user.avatar_url}
                                     alt={user.github_login}
-                                    className="w-16 h-16 rounded-full border-2 border-gray-200 dark:border-gray-700 object-cover group-hover:border-blue-500 transition-colors bg-white dark:bg-gray-700"
+                                    className="w-16 h-16 rounded-2xl object-cover border-2 border-white dark:border-slate-700 shadow-sm group-hover:scale-105 transition-transform"
                                     onError={(e) => { e.target.onerror = null; e.target.src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" }}
                                 />
+                                <div className="absolute -bottom-2 -right-2 bg-white dark:bg-slate-800 rounded-lg p-1 shadow-sm border border-slate-100 dark:border-slate-700">
+                                    <span className="block text-xs font-black text-center min-w-[24px] text-blue-600 dark:text-blue-400 font-mono">
+                                        {count}
+                                    </span>
+                                </div>
                             </a>
-                        </div>
-
-                        <div className="flex-1 min-w-0">
-                            <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="hover:underline decoration-blue-500">
-                                <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate transition-colors duration-300 font-dashboard">
-                                    {user.display_name || user.github_login}
-                                </h3>
-                                {user.display_name && (
-                                    <p className="text-xs text-gray-500 dark:text-gray-400 truncate font-mono transition-colors duration-300">@{user.github_login}</p>
-                                )}
-                            </a>
-                            <div className="mt-2 flex items-center">
-                                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 transition-colors duration-300 font-mono">
-                                    {count} {label}
-                                </span>
+                            <div className="flex flex-col justify-center">
+                                <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                    <h3 className="text-lg font-bold text-slate-900 dark:text-white font-heading leading-tight line-clamp-1">
+                                        {user.display_name || user.github_login}
+                                    </h3>
+                                </a>
+                                <p className="text-xs font-medium text-slate-500 dark:text-slate-400 font-mono">@{user.github_login}</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Stats Grid */}
-                    <div className="grid grid-cols-2 gap-2 text-xs font-sans">
-                        {/* Issues */}
-                        <div title="Open Issues" className="bg-green-50 dark:bg-green-900/20 rounded p-2 text-center border border-green-100 dark:border-green-800 transition-colors duration-300">
-                            <div className="flex justify-center items-center gap-1 mb-1">
-                                <span className="material-symbols-outlined text-[14px] text-green-600 dark:text-green-400">adjust</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-[10px] uppercase font-semibold tracking-wider font-dashboard">Open</span>
-                            </div>
-                            <span className="block text-green-700 dark:text-green-300 font-bold text-sm font-mono">{user.open_issues || 0}</span>
-                        </div>
-                        <div title="Closed Issues" className="bg-purple-50 dark:bg-purple-900/20 rounded p-2 text-center border border-purple-100 dark:border-purple-800 transition-colors duration-300">
-                            <div className="flex justify-center items-center gap-1 mb-1">
-                                <span className="material-symbols-outlined text-[14px] text-purple-600 dark:text-purple-400">task_alt</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-[10px] uppercase font-semibold tracking-wider font-dashboard">Closed</span>
-                            </div>
-                            <span className="block text-purple-700 dark:text-purple-300 font-bold text-sm font-mono">{user.closed_issues || 0}</span>
-                        </div>
-
-                        {/* PRs */}
-                        <div title="Open PRs" className="bg-blue-50 dark:bg-blue-900/20 rounded p-2 text-center border border-blue-100 dark:border-blue-800 transition-colors duration-300">
-                            <div className="flex justify-center items-center gap-1 mb-1">
-                                <span className="material-symbols-outlined text-[14px] text-blue-600 dark:text-blue-400">call_split</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-[10px] uppercase font-semibold tracking-wider font-dashboard">PR Open</span>
-                            </div>
-                            <span className="block text-blue-700 dark:text-blue-300 font-bold text-sm font-mono">{user.open_prs || 0}</span>
-                        </div>
-                        <div title="Merged PRs" className="bg-indigo-50 dark:bg-indigo-900/20 rounded p-2 text-center border border-indigo-100 dark:border-indigo-800 transition-colors duration-300">
-                            <div className="flex justify-center items-center gap-1 mb-1">
-                                <span className="material-symbols-outlined text-[14px] text-indigo-600 dark:text-indigo-400">merge</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-[10px] uppercase font-semibold tracking-wider font-dashboard">Merged</span>
-                            </div>
-                            <span className="block text-indigo-700 dark:text-indigo-300 font-bold text-sm font-mono">{user.merged_prs || 0}</span>
-                        </div>
+                    {/* Stats */}
+                    <div className="space-y-2 mb-4">
+                        <StatRow 
+                            icon="adjust" 
+                            label="Issues"
+                            val1={user.open_issues || 0} label1="Open"
+                            val2={user.closed_issues || 0} label2="Closed"
+                            colorClass="bg-emerald-500 text-emerald-600"
+                        />
+                        <StatRow 
+                            icon="call_split" 
+                            label="Pull Requests"
+                            val1={user.open_prs || 0} label1="Open"
+                            val2={user.merged_prs || 0} label2="Merged"
+                            colorClass="bg-violet-500 text-violet-600"
+                        />
                     </div>
 
-                    <div className="mt-3 text-xs text-gray-400 dark:text-gray-500 text-right font-mono transition-colors duration-300">
-                        Last Active: {user.last_contribution_date ? new Date(user.last_contribution_date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'N/A'}
+                    {/* Footer */}
+                    <div className="pt-4 mt-auto border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs">
+                         <span className="font-semibold text-slate-400 dark:text-slate-500 font-mono uppercase tracking-wider">Last Active</span>
+                         <span className="font-medium text-slate-600 dark:text-slate-300">
+                             {user.last_contribution_date 
+                                ? new Date(user.last_contribution_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) 
+                                : 'N/A'}
+                         </span>
                     </div>
                 </motion.div>
             );
@@ -323,244 +319,189 @@
             const [repoStats, setRepoStats] = useState(null);
             const [searchTerm, setSearchTerm] = useState('');
             const [selectedYear, setSelectedYear] = useState('All Time');
-            const [sortType, setSortType] = useState('count'); // 'count', 'az', 'za', 'recent'
+            const [sortType, setSortType] = useState('count');
             const [darkMode, setDarkMode] = useState(false);
             const [loading, setLoading] = useState(true);
 
-            // Fetch Data
             useEffect(() => {
+                const fetchJson = async (url) => {
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.json();
+                };
+
                 Promise.all([
-                    fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/issues-summary.json').then(res => res.json()),
-                    fetch('https://api.github.com/repos/samapriya/awesome-gee-community-datasets/issues?state=all&per_page=100').then(res => res.json()),
-                    fetch('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/repo-stats.json').then(res => res.json())
-                ])
-                    .then(([summary, issues, stats]) => {
-                        // Set Repo Stats
-                        setRepoStats(stats);
-
-                        // Process issues to calculate yearly stats per user
-                        // Note: fetching issues?state=all returns both issues and PRs, so this correctly captures activity over time
-                        const yearlyData = {};
-
-                        if (Array.isArray(issues)) {
-                            issues.forEach(issue => {
-                                const user = issue.user.login;
-                                const date = new Date(issue.created_at);
-                                const year = date.getFullYear().toString();
-
-                                if (!yearlyData[user]) yearlyData[user] = {};
-                                if (!yearlyData[user][year]) yearlyData[user][year] = 0;
-                                yearlyData[user][year]++;
-                            });
-                        }
-
-                        // Merge yearly data into summary data
-                        const mergedData = summary.map(user => ({
-                            ...user,
-                            years: yearlyData[user.github_login] || {}
-                        }));
-
-                        setContributorsData(mergedData);
-                        setLoading(false);
-                    })
-                    .catch(err => {
-                        console.error("Failed to fetch data", err);
-                        setLoading(false);
-                    });
+                    fetchJson('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/issues-summary.json'),
+                    fetchJson('https://api.github.com/repos/samapriya/awesome-gee-community-datasets/issues?state=all&per_page=100'),
+                    fetchJson('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/repo-stats.json')
+                ]).then(([summary, issues, stats]) => {
+                    setRepoStats(stats);
+                    const yearlyData = {};
+                    if (Array.isArray(issues)) {
+                        issues.forEach(issue => {
+                            const user = issue.user.login;
+                            const year = new Date(issue.created_at).getFullYear().toString();
+                            if (!yearlyData[user]) yearlyData[user] = {};
+                            if (!yearlyData[user][year]) yearlyData[user][year] = 0;
+                            yearlyData[user][year]++;
+                        });
+                    }
+                    const mergedData = summary.map(user => ({
+                        ...user,
+                        years: yearlyData[user.github_login] || {}
+                    }));
+                    setContributorsData(mergedData);
+                    setLoading(false);
+                }).catch(err => {
+                    console.error("Failed to fetch data", err);
+                    setLoading(false);
+                });
             }, []);
 
             useEffect(() => {
-                if (darkMode) {
-                    document.documentElement.classList.add('dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                }
+                if (darkMode) document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
             }, [darkMode]);
 
-            // Extract available years from data
             const availableYears = useMemo(() => {
                 const years = new Set();
                 contributorsData.forEach(user => {
-                    if (user.years) {
-                        Object.keys(user.years).forEach(y => years.add(y));
-                    }
+                    if (user.years) Object.keys(user.years).forEach(y => years.add(y));
                 });
                 return ['All Time', ...Array.from(years).sort().reverse()];
             }, [contributorsData]);
 
-            // Memoize filtered and sorted data
             const filteredData = useMemo(() => {
                 let data = contributorsData.map(user => {
-                    // Calculate count based on selected year
-                    let count = 0;
-                    if (selectedYear === 'All Time') {
-                        count = user.total_contributions;
-                    } else {
-                        count = user.years && user.years[selectedYear] ? user.years[selectedYear] : 0;
-                    }
+                    let count = selectedYear === 'All Time' ? user.total_contributions : (user.years?.[selectedYear] || 0);
                     return { ...user, currentCount: count };
                 });
-
-                // Filter out users with 0 contributions for the selected year
                 data = data.filter(u => u.currentCount > 0);
-
-                // Filter by search term
                 if (searchTerm) {
                     const lowerTerm = searchTerm.toLowerCase();
                     data = data.filter(u =>
-                        (u.github_login && u.github_login.toLowerCase().includes(lowerTerm)) ||
-                        (u.display_name && u.display_name.toLowerCase().includes(lowerTerm))
+                        (u.github_login?.toLowerCase().includes(lowerTerm)) ||
+                        (u.display_name?.toLowerCase().includes(lowerTerm))
                     );
                 }
-
-                // Sort
                 data.sort((a, b) => {
-                    if (sortType === 'count') {
-                        if (b.currentCount !== a.currentCount) {
-                            return b.currentCount - a.currentCount;
-                        }
-                        return (a.display_name || a.github_login).localeCompare(b.display_name || b.github_login);
-                    } else if (sortType === 'az') {
-                        const nameA = a.display_name || a.github_login;
-                        const nameB = b.display_name || b.github_login;
-                        return nameA.localeCompare(nameB);
-                    } else if (sortType === 'za') {
-                        const nameA = a.display_name || a.github_login;
-                        const nameB = b.display_name || b.github_login;
-                        return nameB.localeCompare(nameA);
-                    } else if (sortType === 'recent') {
-                        return new Date(b.last_contribution_date) - new Date(a.last_contribution_date);
-                    }
+                    if (sortType === 'count') return b.currentCount - a.currentCount || (a.display_name || '').localeCompare(b.display_name || '');
+                    if (sortType === 'az') return (a.display_name || a.github_login).localeCompare(b.display_name || b.github_login);
+                    if (sortType === 'recent') return new Date(b.last_contribution_date) - new Date(a.last_contribution_date);
                     return 0;
                 });
-
                 return data;
             }, [contributorsData, searchTerm, selectedYear, sortType]);
 
-            if (loading) {
-                return (
-                    <div className="min-h-screen flex items-center justify-center dark:bg-gray-900 transition-colors duration-300">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
-                    </div>
-                );
-            }
-
             return (
-                <div className="min-h-screen pb-20 dark:bg-gray-900 transition-colors duration-300">
-                    <div className="absolute top-4 right-4 z-50">
-                        <button
-                            onClick={() => setDarkMode(!darkMode)}
-                            className="p-2 rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                            aria-label="Toggle Dark Mode"
-                        >
-                            {darkMode ? (
-                                <span className="material-symbols-outlined">light_mode</span>
-                            ) : (
-                                <span className="material-symbols-outlined">dark_mode</span>
-                            )}
-                        </button>
-                    </div>
+                <div className="min-h-screen dark:bg-slate-900 transition-colors duration-300">
+                    <Hero totalContributors={contributorsData.length} totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)} repoStats={repoStats} />
 
-                    <Hero
-                        totalContributors={contributorsData.length}
-                        totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)}
-                        repoStats={repoStats}
-                    />
-
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
-                        {/* Controls Bar */}
-                        <div className="bg-white dark:bg-gray-800 rounded-xl p-4 mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
-
-                            {/* Search */}
-                            <div className="relative w-full lg:w-96">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                    <span className="material-symbols-outlined text-gray-400">search</span>
+                    {/* Sticky Controls Bar */}
+                    <div className="sticky top-0 z-40 glass-sticky transition-colors duration-300">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                            <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
+                                {/* Search */}
+                                <div className="relative w-full lg:w-80 group">
+                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <span className="material-symbols-rounded text-slate-400 group-focus-within:text-blue-500 transition-colors">search</span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        className="block w-full pl-10 pr-3 py-2.5 bg-slate-100 dark:bg-slate-800 border-none rounded-xl text-slate-900 dark:text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-800 transition-all font-sans text-sm"
+                                        placeholder="Find a contributor..."
+                                        value={searchTerm}
+                                        onChange={(e) => setSearchTerm(e.target.value)}
+                                    />
                                 </div>
-                                <input
-                                    type="text"
-                                    className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg leading-5 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:text-sm transition-colors font-sans"
-                                    placeholder="Search contributors..."
-                                    value={searchTerm}
-                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                />
-                            </div>
 
-                            {/* Center: Year Filter */}
-                            <div className="flex items-center gap-2 overflow-x-auto max-w-full lg:max-w-md pb-2 lg:pb-0 scrollbar-hide">
-                                <span className="text-sm font-medium text-gray-600 dark:text-gray-300 font-dashboard whitespace-nowrap">Time Period:</span>
-                                <div className="flex bg-gray-100 dark:bg-gray-700 p-1 rounded-lg border border-gray-200 dark:border-gray-600">
-                                    {availableYears.map(year => (
-                                        <button
-                                            key={year}
-                                            onClick={() => setSelectedYear(year)}
-                                            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all whitespace-nowrap font-dashboard ${selectedYear === year ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}`}
-                                        >
-                                            {year}
-                                        </button>
-                                    ))}
+                                {/* Filters Row */}
+                                <div className="flex items-center gap-3 overflow-x-auto w-full lg:w-auto pb-1 scrollbar-hide">
+                                    {/* Year */}
+                                    <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
+                                        {availableYears.map(year => (
+                                            <button
+                                                key={year}
+                                                onClick={() => setSelectedYear(year)}
+                                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${selectedYear === year ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'}`}
+                                            >
+                                                {year}
+                                            </button>
+                                        ))}
+                                    </div>
+
+                                    <div className="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1"></div>
+
+                                    {/* Sort */}
+                                    <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
+                                        {[
+                                            { id: 'count', label: 'Activity' },
+                                            { id: 'recent', label: 'Recent' },
+                                            { id: 'az', label: 'A-Z' }
+                                        ].map(sort => (
+                                            <button
+                                                key={sort.id}
+                                                onClick={() => setSortType(sort.id)}
+                                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${sortType === sort.id ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'}`}
+                                            >
+                                                {sort.label}
+                                            </button>
+                                        ))}
+                                    </div>
+                                    
+                                    <div className="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1"></div>
+
+                                    {/* Dark Mode Toggle */}
+                                    <button
+                                        onClick={() => setDarkMode(!darkMode)}
+                                        className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                                    >
+                                        <span className="material-symbols-rounded text-[20px]">{darkMode ? 'light_mode' : 'dark_mode'}</span>
+                                    </button>
                                 </div>
-                            </div>
-
-                            {/* Right: Sort Buttons */}
-                            <div className="flex bg-gray-100 dark:bg-gray-700 p-1 rounded-lg border border-gray-200 dark:border-gray-600 overflow-x-auto max-w-full pb-2 lg:pb-0 scrollbar-hide">
-                                <button
-                                    onClick={() => setSortType('count')}
-                                    className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all whitespace-nowrap font-dashboard ${sortType === 'count' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}`}
-                                >
-                                    Most Activity
-                                </button>
-                                <button
-                                    onClick={() => setSortType('recent')}
-                                    className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all whitespace-nowrap font-dashboard ${sortType === 'recent' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}`}
-                                >
-                                    Most Recent
-                                </button>
-                                <button
-                                    onClick={() => setSortType('az')}
-                                    className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all whitespace-nowrap font-dashboard ${sortType === 'az' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}`}
-                                >
-                                    A-Z
-                                </button>
                             </div>
                         </div>
+                    </div>
 
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                         {/* Leaderboard Grid */}
-                        <motion.div
-                            layout
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-                        >
+                        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                             <AnimatePresence>
-                                {filteredData.map((user, index) => {
-                                    return (
+                                {loading ? (
+                                    // Skeleton Loading State
+                                    [...Array(8)].map((_, i) => <SkeletonCard key={i} />)
+                                ) : filteredData.length > 0 ? (
+                                    filteredData.map((user) => (
                                         <ContributorCard
                                             key={user.github_login}
                                             user={user}
                                             count={user.currentCount}
                                             label={selectedYear === 'All Time' ? 'Total' : `in ${selectedYear}`}
                                         />
-                                    );
-                                })}
+                                    ))
+                                ) : (
+                                    <div className="col-span-full py-20 text-center">
+                                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-4">
+                                            <span className="material-symbols-rounded text-slate-400 text-3xl">search_off</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">No contributors found</h3>
+                                        <p className="text-slate-500 dark:text-slate-400">Try adjusting your search or filters.</p>
+                                    </div>
+                                )}
                             </AnimatePresence>
                         </motion.div>
-
-                        {filteredData.length === 0 && (
-                            <div className="text-center py-20 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors duration-300">
-                                <p className="text-gray-500 dark:text-gray-400 text-lg font-sans">No contributors found matching criteria.</p>
-                            </div>
-                        )}
                     </div>
 
-                    <footer className="mt-20 text-center text-gray-500 dark:text-gray-400 text-sm pb-8 font-sans transition-colors duration-300">
+                    <footer className="text-center text-slate-400 dark:text-slate-500 text-xs py-10 font-mono">
                         <p>Data provided by Awesome GEE Community Catalog.</p>
-                        <p className="mt-2">Built with ❤️ for the GEE Community</p>
+                        <p className="mt-2 flex items-center justify-center gap-1">Built with <span className="text-red-500">❤</span> for the GEE Community</p>
                     </footer>
                 </div>
             );
         };
 
         const root = createRoot(document.getElementById('root'));
-        root.render(<App />);
+        root.render(<ErrorBoundary><App /></ErrorBoundary>);
     </script>
 </body>
-
 </html>
