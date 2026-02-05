@@ -5,7 +5,7 @@ The USGS earthquake dataset serves a multitude of purposes, including earthquake
 
 #### Dataset processing
 
-Since exports were allowed in specific chunks I wrote a program to fetch these over periods starting from 1923-2025. This can be updated since the records extend all the way to 1900 and only earthquakes greater than 2.5 and those reviewed were selected.
+Since exports were allowed in specific chunks I wrote a program to fetch these over periods starting from 1923-2026. This can be updated since the records extend all the way to 1900 and only earthquakes greater than 2.5 and those reviewed were selected.
 
 #### Dataset Citation
 
@@ -21,14 +21,14 @@ U.S. Geological Survey (USGS). (YEAR). Earthquake Hazards Program (EHP). Retriev
     |------|-----------------|
     | 1923 | 129 |
     | 1924 | 132 |
-    | 1925 | 162 |
-    | 1926 | 276 |
+    | 1925 | 166 |
+    | 1926 | 275 |
     | 1927 | 310 |
     | 1928 | 310 |
     | 1929 | 314 |
     | 1930 | 296 |
     | 1931 | 304 |
-    | 1932 | 513 |
+    | 1932 | 512 |
     | 1933 | 877 |
     | 1934 | 609 |
     | 1935 | 691 |
@@ -56,72 +56,73 @@ U.S. Geological Survey (USGS). (YEAR). Earthquake Hazards Program (EHP). Retriev
     | 1957 | 637 |
     | 1958 | 595 |
     | 1959 | 734 |
-    | 1960 | 1,147 |
+    | 1960 | 1147 |
     | 1961 | 884 |
-    | 1962 | 1,028 |
-    | 1963 | 1,308 |
-    | 1964 | 1,076 |
-    | 1965 | 1,225 |
-    | 1966 | 1,070 |
-    | 1967 | 1,202 |
-    | 1968 | 1,543 |
-    | 1969 | 1,685 |
-    | 1970 | 1,492 |
-    | 1971 | 2,129 |
-    | 1972 | 1,596 |
-    | 1973 | 5,386 |
-    | 1974 | 6,721 |
-    | 1975 | 8,823 |
-    | 1976 | 7,621 |
-    | 1977 | 6,808 |
-    | 1978 | 6,929 |
-    | 1979 | 8,207 |
-    | 1980 | 9,663 |
-    | 1981 | 7,831 |
-    | 1982 | 8,514 |
-    | 1983 | 10,402 |
-    | 1984 | 9,374 |
-    | 1985 | 10,312 |
-    | 1986 | 12,341 |
-    | 1987 | 10,896 |
-    | 1988 | 11,111 |
-    | 1989 | 12,307 |
-    | 1990 | 12,213 |
-    | 1991 | 12,713 |
-    | 1992 | 19,893 |
-    | 1993 | 16,333 |
-    | 1994 | 17,041 |
-    | 1995 | 18,667 |
-    | 1996 | 18,669 |
-    | 1997 | 17,459 |
-    | 1998 | 19,307 |
-    | 1999 | 19,594 |
-    | 2000 | 18,373 |
-    | 2001 | 20,627 |
-    | 2002 | 23,647 |
-    | 2003 | 24,515 |
-    | 2004 | 27,466 |
-    | 2005 | 31,323 |
-    | 2006 | 32,478 |
-    | 2007 | 30,997 |
-    | 2008 | 33,040 |
-    | 2009 | 15,582 |
-    | 2010 | 25,034 |
-    | 2011 | 23,281 |
-    | 2012 | 19,935 |
-    | 2013 | 20,562 |
-    | 2014 | 28,561 |
-    | 2015 | 27,018 |
-    | 2016 | 25,235 |
-    | 2017 | 22,859 |
-    | 2018 | 39,370 |
-    | 2019 | 26,601 |
-    | 2020 | 32,213 |
-    | 2021 | 28,651 |
-    | 2022 | 26,906 |
-    | 2023 | 27,290 |
-    | 2024 | 24,785 |
-    | 2025 | 10,755 |
+    | 1962 | 1028 |
+    | 1963 | 1308 |
+    | 1964 | 1174 |
+    | 1965 | 1304 |
+    | 1966 | 1163 |
+    | 1967 | 1282 |
+    | 1968 | 1677 |
+    | 1969 | 1777 |
+    | 1970 | 1549 |
+    | 1971 | 2415 |
+    | 1972 | 1836 |
+    | 1973 | 5401 |
+    | 1974 | 6729 |
+    | 1975 | 8844 |
+    | 1976 | 7636 |
+    | 1977 | 6815 |
+    | 1978 | 6931 |
+    | 1979 | 8215 |
+    | 1980 | 9680 |
+    | 1981 | 7846 |
+    | 1982 | 8519 |
+    | 1983 | 10409 |
+    | 1984 | 9374 |
+    | 1985 | 10312 |
+    | 1986 | 12342 |
+    | 1987 | 10897 |
+    | 1988 | 11112 |
+    | 1989 | 12308 |
+    | 1990 | 12215 |
+    | 1991 | 12713 |
+    | 1992 | 19893 |
+    | 1993 | 16333 |
+    | 1994 | 17042 |
+    | 1995 | 18667 |
+    | 1996 | 18669 |
+    | 1997 | 17459 |
+    | 1998 | 19308 |
+    | 1999 | 19594 |
+    | 2000 | 18373 |
+    | 2001 | 20627 |
+    | 2002 | 23650 |
+    | 2003 | 24515 |
+    | 2004 | 27467 |
+    | 2005 | 31323 |
+    | 2006 | 32478 |
+    | 2007 | 30999 |
+    | 2008 | 33041 |
+    | 2009 | 15582 |
+    | 2010 | 25040 |
+    | 2011 | 23288 |
+    | 2012 | 19960 |
+    | 2013 | 20577 |
+    | 2014 | 28581 |
+    | 2015 | 27034 |
+    | 2016 | 25250 |
+    | 2017 | 22876 |
+    | 2018 | 39948 |
+    | 2019 | 26645 |
+    | 2020 | 32232 |
+    | 2021 | 28662 |
+    | 2022 | 26892 |
+    | 2023 | 27283 |
+    | 2024 | 24798 |
+    | 2025 | 28457 |
+    | 2026 | 1151 |
 
     </center>
 
@@ -141,6 +142,7 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 These datasets are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion
 
 #### Changelog
+- Updated earthquake datasets till 2026-02-05
 - Updated earthquake datasets till 2025-06-06
 - Updated earthquake datasets till 2024-07-28
 
@@ -148,4 +150,4 @@ Provided by: USGS
 
 Curated in GEE by: Samapriya Roy
 
-Last updated: 2025-06-06
+Last updated: 2026-02-05
