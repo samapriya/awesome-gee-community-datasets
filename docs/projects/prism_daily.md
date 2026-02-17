@@ -1,13 +1,5 @@
 # PRISM Climate Dataset (800m Resolution) Daily
 
-<div class="result" markdown>
-
-???+ note
-
-    **The PRISM Daily dataset at 800m is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
-
-</div>
-
 The PRISM Climate Dataset provides high-resolution, spatially explicit climate information for the conterminous United States. It uses the Parameter-elevation Regressions on Independent Slopes Model (PRISM) to generate gridded estimates of key climate variables by leveraging weather station data and a digital elevation model. The 800m resolution dataset represents the native, highest-detail version, offering unparalleled insight into the complex influence of topography on local climate patterns.
 
 The PRISM dataset is developed and maintained by the PRISM Climate Group at Oregon State University. It offers a long-term, spatially continuous record of daily and monthly climate variables, including precipitation, temperature (minimum, maximum, mean), dewpoint temperature, and vapor pressure deficit. The underlying model, PRISM, is a hybrid statistical-geographic approach that uses point measurements of climate data and a digital elevation model (DEM) to generate gridded estimates. The model's key strength lies in its ability to account for complex climate-elevation relationships and topographical features like rain shadows, temperature inversions, and coastal effects, which are critical for accurate climate mapping, especially in mountainous regions.
@@ -90,4 +82,4 @@ Provided by: PRISM Climate Group, Oregon State University
 
 Keywords: climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model
 
-Last updated: 2025-06-16
+Last updated: 2026-02-16
