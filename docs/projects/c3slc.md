@@ -50,7 +50,7 @@ var collection = ee.ImageCollection("projects/sat-io/open-datasets/ESA/C3S-LC-L4
 var recentImage = collection.sort('system:time_start', false).first();
 
 // Select the land cover classification band
-var lccs = recentImage.select('lccs_class');
+var lccs = recentImage.select('b1').rename('lccs_class');
 
 // Define the color palette based on the official C3S legend
 var lccs_palette = [

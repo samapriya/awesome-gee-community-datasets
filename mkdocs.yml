@@ -548,7 +548,6 @@ nav:
           - Canada High Resolution Digital Elevation Model (HRDEM): projects/hrdem.md
           - swissSURFACE3D Raster Digital Surface Model (DSM): projects/swiss3d.md
           - Carbon Mapper Data Portal Methane Emissions: projects/cmapper.md
-          - PRISM Climate Dataset (800m Resolution) Daily: projects/prism_daily.md
   - Get Involved:
       - Community Actions (What you can do):
           - contributing/index.md
