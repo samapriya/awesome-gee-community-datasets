@@ -5,8 +5,8 @@
 
 #### Updated 2026-02-16
 - Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism)
-- Updated [PRISM 800m Daily Datasets to the insiders catalog](https://gee-community-catalog.org/projects/prism_daily)
-- [PRISM 800m Daily Datasets to the insiders catalog](https://gee-community-catalog.org/projects/prism_daily) is now generally available
+- Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
+- [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily) is now generally available
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm)
 - 
 #### Updated 2026-02-03
