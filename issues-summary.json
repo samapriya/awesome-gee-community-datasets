@@ -143,6 +143,19 @@
     "last_contribution_date": "2023-02-16T18:17:16Z"
   },
   {
+    "github_login": "montimaj",
+    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
+    "profile_url": "https://github.com/montimaj",
+    "total_contributions": 6,
+    "open_issues": 3,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 1,
+    "last_contribution_date": "2026-02-19T01:26:48Z"
+  },
+  {
     "github_login": "RSO9192",
     "display_name": "Riccardo Soldan",
     "avatar_url": "https://avatars.githubusercontent.com/u/40058235?v=4",
@@ -206,19 +219,6 @@
     "merged_prs": 3,
     "closed_prs": 0,
     "last_contribution_date": "2023-10-11T18:00:35Z"
-  },
-  {
-    "github_login": "montimaj",
-    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
-    "profile_url": "https://github.com/montimaj",
-    "total_contributions": 4,
-    "open_issues": 1,
-    "closed_issues": 0,
-    "open_prs": 0,
-    "merged_prs": 2,
-    "closed_prs": 1,
-    "last_contribution_date": "2025-11-26T19:46:56Z"
   },
   {
     "github_login": "gotEXP",
@@ -752,6 +752,32 @@
     "merged_prs": 0,
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z"
+  },
+  {
+    "github_login": "khegewisch",
+    "display_name": "Katherine Hegewisch",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7798273?v=4",
+    "profile_url": "https://github.com/khegewisch",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-02-18T21:05:28Z"
+  },
+  {
+    "github_login": "GITHUBAntoineDENIS",
+    "display_name": "GITHUBAntoineDENIS",
+    "avatar_url": "https://avatars.githubusercontent.com/u/44610746?v=4",
+    "profile_url": "https://github.com/GITHUBAntoineDENIS",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-02-17T04:51:24Z"
   },
   {
     "github_login": "sunwooy",
