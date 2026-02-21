@@ -4,11 +4,11 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
 #### Updated 2026-02-16
-- Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism)
+- Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
 - Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
 - [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily) is now generally available
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm)
-- 
+-
 #### Updated 2026-02-03
 - Added [Worldpop Age Sex Population Data 2015-20230](https://gee-community-catalog.org/projects/worldpop)
 - Added [Global Surface Water Transitions (1984-2022)](https://gee-community-catalog.org/projects/swt)
@@ -103,7 +103,7 @@
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
 
 #### Updated 2025-06-16
-- Added [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism)
+- Added [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
 - Added [PRISM 800m Daily Datasets to the insiders catalog](https://gee-community-catalog.org/projects/prism_daily)
 - Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
 - Updated [Nodes and ways datasets from Global Health sites Mapping Projects](https://gee-community-catalog.org/projects/health_sites/)

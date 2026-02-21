@@ -24275,7 +24275,7 @@
     "tags": "climate, meteorology, precipitation, temperature, CONUS, United States, gridded data, interpolation, weather, digital elevation model",
     "license": "custom",
     "license_text": "All data (gridded, polygon, tabular, graphical) retrieved from this website or otherwise provided on the website may be freely reproduced and distributed.",
-    "docs": "https://gee-community-catalog.org/projects/prism/",
+    "docs": "https://gee-community-catalog.org/projects/prism_monthly/",
     "thematic_group": "Weather and Climate Layers",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/prism.png"
   },
