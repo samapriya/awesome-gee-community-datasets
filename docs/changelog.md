@@ -8,7 +8,7 @@
 - Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
 - [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily) is now generally available
 - Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm)
--
+
 #### Updated 2026-02-03
 - Added [Worldpop Age Sex Population Data 2015-20230](https://gee-community-catalog.org/projects/worldpop)
 - Added [Global Surface Water Transitions (1984-2022)](https://gee-community-catalog.org/projects/swt)
