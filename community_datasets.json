@@ -53283,6 +53283,30 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/which.png"
   },
   {
+    "title": " Global Plant Functional Traits Shrub Tree",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-PLANT-TRAITS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-traits/Shrub_Tree",
+    "provider": "Lusk et al 2025",
+    "tags": "plant traits, functional traits, SLA, TRY database, GBIF, sPlot, global, leaf traits, wood traits, seed traits, plant height, leaf area, trait mapping",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/plant_traits/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/plant_traits.png"
+  },
+  {
+    "title": " Global Plant Functional Traits Shrub Tree Grass",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-PLANT-TRAITS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/global-traits/Shrub_Tree_Grass",
+    "provider": "Lusk et al 2025",
+    "tags": "plant traits, functional traits, SLA, TRY database, GBIF, sPlot, global, leaf traits, wood traits, seed traits, plant height, leaf area, trait mapping",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/plant_traits/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/plant_traits.png"
+  },
+  {
     "title": "DeltaDTM Global coastal digital terrain model",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/DELTA-DTM",
     "type": "image",

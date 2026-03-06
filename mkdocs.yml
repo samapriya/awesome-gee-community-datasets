@@ -340,6 +340,7 @@ nav:
               - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
               - WHiCH (Western Himalaya Canopy Height) Map 2020, Pakistan: projects/which.md
               - Global Forest Carbon Fluxes (2001-2024): projects/cflux.md
+              - Global Plant Functional Traits: projects/plant_traits.md
               - Field Boundaries of Agriculture (FIBOA) UK Fields: projects/fiboa_uk.md
               - GIMMS Normalized Difference Vegetation Index 1982-2022: projects/gimms_ndvi.md
               - CropSuite v1.0 Crop Suitability Assessment for Africa: projects/csa.md
