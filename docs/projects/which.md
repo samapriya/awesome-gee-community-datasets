@@ -22,6 +22,8 @@ International Journal of Applied Earth Observation and Geoinformation, 2025
 https://doi.org/10.1016/j.jag.2025.105030
 ```
 
+![which_layers](../images/which.png)
+
 #### Earth Engine Snippet
 
 ```js
