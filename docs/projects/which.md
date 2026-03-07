@@ -17,8 +17,7 @@ The dataset was produced using a deep convolution neural networks model, U-Net, 
 #### Citation
 
 ```
-Adeel Ahmad, Subhashree Sastry, Aashis Dhakal, Shishir Khanal, Alexander Levering, Hammad Gilani, Nathan Jacobs "Canopy Height Mapping in the Western Himalayas, Pakistan: A Deep Learning Approach using GEDI and Sentinel-2 Fusion"
-International Journal of Applied Earth Observation and Geoinformation, 2025
+Adeel Ahmad, Srikumar Sastry, Aayush Dhakal, Subash Khanal, Alex Levering, Hammad Gilani, Nathan Jacobs "Canopy Height Mapping in the Western Himalayas, Pakistan: A Deep Learning Approach using GEDI and Sentinel-2 Fusion" International Journal of Applied Earth Observation and Geoinformation, 2025
 https://doi.org/10.1016/j.jag.2025.105030
 ```
 
