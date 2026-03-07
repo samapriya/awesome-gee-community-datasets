@@ -62,6 +62,13 @@ Lusk, D., Wolf, S., Svidzinska, D., Kattenborn, T. "Crowdsourced biodiversity mo
 Nature Communications 17, 1203 (2026). https://doi.org/10.1038/s41467-026-68996-y
 ```
 
+#### Dataset Citation
+
+```
+Lusk, D., Wolf, S., Svidzinska, D., & Kattenborn, T. (2026). Global plant trait maps based on crowdsourced biodiversity monitoring and Earth observation - 1
+km - All PFTs [Data set]. In Nature Communications (1.0.0, Vol. 17, Number 1203). Zenodo. https://doi.org/10.5281/zenodo.14646322
+```
+
 #### Dataset Preprocessing for Earth Engine
 The dataset is ingested into Earth Engine with three bands per trait image: `b1` (Trait values), `b2` (Coefficient of variation), and `b3` (Area of applicability mask). The trait values and coefficient of variation bands must be rescaled using the `trait_scale`, `trait_offset`, `cov_scale`, and `cov_offset` properties available in the image metadata. The Area of Applicability mask (`b3`) can be used to mask out regions where the model is extrapolating beyond its training data. For the community catalog the images were moved out of a folder and into image collections for each of use while maintaing the metadata.
 
