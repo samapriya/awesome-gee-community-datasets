@@ -92,6 +92,6 @@ This dataset is licensed under a Creative Commons Attribution 4.0 International 
 
 Keywords: plant traits, functional traits, SLA, TRY database, citizen science, GBIF, sPlot, global, leaf traits, wood traits, seed traits, plant height, leaf area, trait mapping
 
-Curated in GEE by: Daniel Lusk
+Curated in GEE by: Daniel Lusk & Samapriya Roy
 
 Last updated in GEE: 2026-03-06

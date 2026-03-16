@@ -53464,6 +53464,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/era5_heat.png"
   },
   {
+    "title": "Soil Landscapes of the United States (SOLUS)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/SOLUS-SOIL-PROPERTIES",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/solus_collection",
+    "provider": "Nauman et al 2024",
+    "tags": "soil properties, digital soil mapping, SOLUS, USDA-NRCS, soil survey, prediction intervals, uncertainty, CONUS",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/solus/",
+    "thematic_group": "Soil Properties",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/solus.png"
+  },
+  {
     "title": "Vegetation Drought Response Index (VegDRI)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/VEGETATION-DROUGHT-RESPONSE-INDEX",
     "type": "image_collection",
