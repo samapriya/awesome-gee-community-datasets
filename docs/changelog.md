@@ -3,6 +3,15 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2026-03-19
+- Added [Groundsource: A Global Dataset of Flood Events from News](https://gee-community-catalog.org/projects/groundsource)
+- Added [Soil Landscapes of the United States (SOLUS)](https://gee-community-catalog.org/projects/solus)
+- Added [Global Plant Functional Traits](https://gee-community-catalog.org/projects/plant_traits)
+- Added [WHiCH (Western Himalaya Canopy Height) Map 2020, Pakistan](https://gee-community-catalog.org/projects/which)
+- Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
+- Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm)
+
 #### Updated 2026-02-16
 - Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
 - Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
