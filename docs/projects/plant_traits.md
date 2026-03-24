@@ -58,8 +58,8 @@ Each trait raster contains three bands: Trait values (scaled), Coefficient of va
 #### Citation
 
 ```
-Lusk, D., Wolf, S., Svidzinska, D., Kattenborn, T. "Crowdsourced biodiversity monitoring fills gaps in global plant trait mapping."
-Nature Communications 17, 1203 (2026). https://doi.org/10.1038/s41467-026-68996-y
+Lusk, D., Wolf, S., Svidzinska, D. et al. Crowdsourced biodiversity monitoring fills gaps in global plant trait mapping.
+Nat Commun 17, 1203 (2026). https://doi.org/10.1038/s41467-026-68996-y
 ```
 
 #### Dataset Citation
