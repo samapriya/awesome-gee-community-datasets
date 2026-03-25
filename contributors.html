@@ -109,9 +109,19 @@
             width: 6px;
             height: 6px;
         }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-        .dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
     </style>
 </head>
 
@@ -164,11 +174,15 @@
 
         // --- Components ---
 
-        const Hero = ({ totalContributors, totalContributions, repoStats }) => {
+        const Hero = ({ totalContributors, totalContributions, repoStats, contributorsData }) => {
+            // Calculate total closed issues from contributors if not explicitly in repoStats
+            const totalClosedIssues = contributorsData?.reduce((acc, curr) => acc + (curr.closed_issues || 0), 0) || 0;
+
             const repoStatItems = repoStats ? [
                 { label: "Stars", value: repoStats.total_stars, icon: "star", color: "text-amber-500" },
                 { label: "Forks", value: repoStats.total_forks, icon: "call_split", color: "text-blue-500" },
-                { label: "Issues", value: repoStats.open_issues, icon: "adjust", color: "text-rose-500" },
+                { label: "Open Issues", value: repoStats.open_issues, icon: "adjust", color: "text-rose-500" },
+                { label: "Closed Issues", value: repoStats.closed_issues ?? totalClosedIssues, icon: "task_alt", color: "text-emerald-500" },
                 { label: "PRs", value: repoStats.total_prs, icon: "merge_type", color: "text-violet-500" }
             ] : [];
 
@@ -177,7 +191,7 @@
                     {/* Background decoration */}
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 -z-10"></div>
                     <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50"></div>
-                    
+
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
                         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                             <div className="inline-block p-3 rounded-2xl bg-white dark:bg-slate-800 shadow-sm mb-6">
@@ -191,9 +205,9 @@
                             </p>
                         </motion.div>
 
-                        <motion.div 
-                            initial={{ opacity: 0 }} 
-                            animate={{ opacity: 1 }} 
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             transition={{ delay: 0.3 }}
                             className="mt-10 flex flex-wrap justify-center gap-4"
                         >
@@ -209,9 +223,9 @@
                         </motion.div>
 
                         {/* Repo Stats Row */}
-                        <motion.div 
-                            initial={{ opacity: 0 }} 
-                            animate={{ opacity: 1 }} 
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             transition={{ delay: 0.5 }}
                             className="mt-8 flex flex-wrap justify-center gap-6 text-sm"
                         >
@@ -237,9 +251,9 @@
                     <div className="flex flex-col">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{label}</span>
                         <div className="flex gap-3 text-xs font-medium text-slate-700 dark:text-slate-300">
-                             <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val1}</span> {label1}</span>
-                             <span className="text-slate-300 dark:text-slate-600">|</span>
-                             <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val2}</span> {label2}</span>
+                            <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val1}</span> {label1}</span>
+                            <span className="text-slate-300 dark:text-slate-600">|</span>
+                            <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val2}</span> {label2}</span>
                         </div>
                     </div>
                 </div>
@@ -285,15 +299,15 @@
 
                     {/* Stats */}
                     <div className="space-y-2 mb-4">
-                        <StatRow 
-                            icon="adjust" 
+                        <StatRow
+                            icon="adjust"
                             label="Issues"
                             val1={user.open_issues || 0} label1="Open"
                             val2={user.closed_issues || 0} label2="Closed"
                             colorClass="bg-emerald-500 text-emerald-600"
                         />
-                        <StatRow 
-                            icon="call_split" 
+                        <StatRow
+                            icon="call_split"
                             label="Pull Requests"
                             val1={user.open_prs || 0} label1="Open"
                             val2={user.merged_prs || 0} label2="Merged"
@@ -303,12 +317,12 @@
 
                     {/* Footer */}
                     <div className="pt-4 mt-auto border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs">
-                         <span className="font-semibold text-slate-400 dark:text-slate-500 font-mono uppercase tracking-wider">Last Active</span>
-                         <span className="font-medium text-slate-600 dark:text-slate-300">
-                             {user.last_contribution_date 
-                                ? new Date(user.last_contribution_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) 
+                        <span className="font-semibold text-slate-400 dark:text-slate-500 font-mono uppercase tracking-wider">Last Active</span>
+                        <span className="font-medium text-slate-600 dark:text-slate-300">
+                            {user.last_contribution_date
+                                ? new Date(user.last_contribution_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
                                 : 'N/A'}
-                         </span>
+                        </span>
                     </div>
                 </motion.div>
             );
@@ -318,7 +332,11 @@
             const [contributorsData, setContributorsData] = useState([]);
             const [repoStats, setRepoStats] = useState(null);
             const [searchTerm, setSearchTerm] = useState('');
-            const [selectedYear, setSelectedYear] = useState('All Time');
+
+            // Set default year to the current local year
+            const currentYear = new Date().getFullYear().toString();
+            const [selectedYear, setSelectedYear] = useState(currentYear);
+
             const [sortType, setSortType] = useState('count');
             const [darkMode, setDarkMode] = useState(false);
             const [loading, setLoading] = useState(true);
@@ -365,6 +383,10 @@
 
             const availableYears = useMemo(() => {
                 const years = new Set();
+
+                // Ensure current year is always an option in the menu
+                years.add(new Date().getFullYear().toString());
+
                 contributorsData.forEach(user => {
                     if (user.years) Object.keys(user.years).forEach(y => years.add(y));
                 });
@@ -395,7 +417,12 @@
 
             return (
                 <div className="min-h-screen dark:bg-slate-900 transition-colors duration-300">
-                    <Hero totalContributors={contributorsData.length} totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)} repoStats={repoStats} />
+                    <Hero
+                        totalContributors={contributorsData.length}
+                        totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)}
+                        repoStats={repoStats}
+                        contributorsData={contributorsData}
+                    />
 
                     {/* Sticky Controls Bar */}
                     <div className="sticky top-0 z-40 glass-sticky transition-colors duration-300">
@@ -448,7 +475,7 @@
                                             </button>
                                         ))}
                                     </div>
-                                    
+
                                     <div className="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1"></div>
 
                                     {/* Dark Mode Toggle */}
@@ -504,4 +531,5 @@
         root.render(<ErrorBoundary><App /></ErrorBoundary>);
     </script>
 </body>
+
 </html>
