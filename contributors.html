@@ -129,7 +129,7 @@
     <div id="root"></div>
 
     <script type="text/babel" data-type="module">
-        import React, { useState, useMemo, useEffect, Component } from 'react';
+        import React, { useState, useMemo, useEffect, useRef, Component } from 'react';
         import { createRoot } from 'react-dom/client';
         import { motion, AnimatePresence } from 'framer-motion';
 
@@ -261,6 +261,10 @@
         );
 
         const ContributorCard = ({ user, count, label }) => {
+            // Construct local avatar path, fallback to original if missing in dataset
+            const baseAssetUrl = "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/";
+            const imageSrc = user.avatar_local ? `${baseAssetUrl}${user.avatar_local}` : user.avatar_url;
+
             return (
                 <motion.div
                     layout
@@ -275,10 +279,23 @@
                         <div className="flex gap-4">
                             <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="relative">
                                 <img
-                                    src={user.avatar_url}
+                                    src={imageSrc}
                                     alt={user.github_login}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-16 h-16 rounded-2xl object-cover border-2 border-white dark:border-slate-700 shadow-sm group-hover:scale-105 transition-transform"
-                                    onError={(e) => { e.target.onerror = null; e.target.src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" }}
+                                    onError={(e) => {
+                                        const fallbackMark = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png";
+                                        // 1st Fallback: Try the original github API avatar URL if local fails
+                                        if (e.target.src !== user.avatar_url && user.avatar_url) {
+                                            e.target.src = user.avatar_url;
+                                        }
+                                        // 2nd Fallback: Try the general github logo if even the original avatar fails
+                                        else if (e.target.src !== fallbackMark) {
+                                            e.target.onerror = null;
+                                            e.target.src = fallbackMark;
+                                        }
+                                    }}
                                 />
                                 <div className="absolute -bottom-2 -right-2 bg-white dark:bg-slate-800 rounded-lg p-1 shadow-sm border border-slate-100 dark:border-slate-700">
                                     <span className="block text-xs font-black text-center min-w-[24px] text-blue-600 dark:text-blue-400 font-mono">
@@ -341,6 +358,11 @@
             const [darkMode, setDarkMode] = useState(false);
             const [loading, setLoading] = useState(true);
 
+            // Infinite Scroll Pagination State
+            const itemsPerPage = 24;
+            const [visibleCount, setVisibleCount] = useState(itemsPerPage);
+            const observerTarget = useRef(null);
+
             useEffect(() => {
                 const fetchJson = async (url) => {
                     const response = await fetch(url);
@@ -381,6 +403,11 @@
                 else document.documentElement.classList.remove('dark');
             }, [darkMode]);
 
+            // Reset infinite scroll whenever filters change
+            useEffect(() => {
+                setVisibleCount(itemsPerPage);
+            }, [searchTerm, selectedYear, sortType]);
+
             const availableYears = useMemo(() => {
                 const years = new Set();
 
@@ -414,6 +441,27 @@
                 });
                 return data;
             }, [contributorsData, searchTerm, selectedYear, sortType]);
+
+            // Visible slice for infinite scrolling
+            const visibleData = filteredData.slice(0, visibleCount);
+
+            // Set up Intersection Observer for Infinite Scroll
+            useEffect(() => {
+                const observer = new IntersectionObserver(
+                    entries => {
+                        if (entries[0].isIntersecting) {
+                            setVisibleCount(prev => Math.min(prev + itemsPerPage, filteredData.length));
+                        }
+                    },
+                    { rootMargin: '200px' } // Pre-fetch slightly before user hits the bottom
+                );
+
+                if (observerTarget.current) {
+                    observer.observe(observerTarget.current);
+                }
+
+                return () => observer.disconnect();
+            }, [filteredData.length]);
 
             return (
                 <div className="min-h-screen dark:bg-slate-900 transition-colors duration-300">
@@ -497,8 +545,8 @@
                                 {loading ? (
                                     // Skeleton Loading State
                                     [...Array(8)].map((_, i) => <SkeletonCard key={i} />)
-                                ) : filteredData.length > 0 ? (
-                                    filteredData.map((user) => (
+                                ) : visibleData.length > 0 ? (
+                                    visibleData.map((user) => (
                                         <ContributorCard
                                             key={user.github_login}
                                             user={user}
@@ -517,6 +565,13 @@
                                 )}
                             </AnimatePresence>
                         </motion.div>
+
+                        {/* Invisible Target for Intersection Observer (Infinite Scroll Sentinel) */}
+                        {visibleCount < filteredData.length && (
+                            <div ref={observerTarget} className="w-full h-20 flex items-center justify-center mt-8">
+                                <div className="w-8 h-8 rounded-full border-4 border-slate-200 dark:border-slate-700 border-t-blue-500 dark:border-t-blue-400 animate-spin"></div>
+                            </div>
+                        )}
                     </div>
 
                     <footer className="text-center text-slate-400 dark:text-slate-500 text-xs py-10 font-mono">
