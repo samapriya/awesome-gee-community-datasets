@@ -102,6 +102,52 @@ var pdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/DISTURBAN
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE
 
+#### Earth Engine Snippet: Annual Disturbance 2.4.0
+
+The LANDFIRE Annual Disturbance collection provides a continuous record of landscape disturbance across CONUS from 1999 to the present. Each image in this collection represents disturbance detected for a specific calendar year and is named using the convention `LF{release_year}_Dist{disturbance_year}_CONUS`, where `release_year` is the two-digit year of the LANDFIRE product release and `disturbance_year` is the two-digit year the disturbance was mapped. For example, `LF2001_Dist99_CONUS` captures disturbances from 1999, released as part of the LF 2001 product. A single LF release may bundle multiple disturbance years — for instance, the LF 2001 release includes annual disturbance rasters spanning 1999 through 2007. This means the LF release year and the disturbance year encoded in the filename are independent: users should refer to the `disturbance_year` portion of the filename to identify which year's landscape changes are represented.
+
+```js
+// LANDFIRE Annual Disturbance Collection (1999–present)
+var annualDist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/ANNUAL-DIST");
+
+// Example: filter to a specific disturbance year using the system:index property
+var dist2020 = annualDist.filter(ee.Filter.stringContains('system:index', 'Dist20'));
+```
+
+Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-ANNUAL-DISTURBANCE
+
+??? example "Expand to see Annual Disturbance image naming reference"
+
+    <center>
+
+    | Image Name | LF Release | Disturbance Year |
+    |------------|-----------|-----------------|
+    | LF2001_Dist99_CONUS | LF 2001 | 1999 |
+    | LF2001_Dist00_CONUS | LF 2001 | 2000 |
+    | LF2001_Dist01_CONUS | LF 2001 | 2001 |
+    | LF2001_Dist02_CONUS | LF 2001 | 2002 |
+    | LF2001_Dist03_CONUS | LF 2001 | 2003 |
+    | LF2001_Dist04_CONUS | LF 2001 | 2004 |
+    | LF2001_Dist05_CONUS | LF 2001 | 2005 |
+    | LF2001_Dist06_CONUS | LF 2001 | 2006 |
+    | LF2001_Dist07_CONUS | LF 2001 | 2007 |
+    | LF2008_Dist08_CONUS | LF 2008 | 2008 |
+    | LF2010_Dist09_CONUS | LF 2010 | 2009 |
+    | LF2010_Dist10_CONUS | LF 2010 | 2010 |
+    | LF2012_Dist11_CONUS | LF 2012 | 2011 |
+    | LF2012_Dist12_CONUS | LF 2012 | 2012 |
+    | LF2014_Dist13_CONUS | LF 2014 | 2013 |
+    | LF2014_Dist14_CONUS | LF 2014 | 2014 |
+    | LF2016_Dist15_CONUS | LF 2016 | 2015 |
+    | LF2016_Dist16_CONUS | LF 2016 | 2016 |
+    | LF2020_Dist17_CONUS | LF 2020 | 2017 |
+    | LF2020_Dist18_CONUS | LF 2020 | 2018 |
+    | LF2020_Dist19_CONUS | LF 2020 | 2019 |
+    | LF2020_Dist20_CONUS | LF 2020 | 2020 |
+    | LF2022_Dist21_CONUS | LF 2022 | 2021 |
+    | LF2022_Dist22_CONUS | LF 2022 | 2022 |
+    | LF2023_Dist23_CONUS | LF 2023 | 2023 |
+
 #### Earth Engine Snippet FIRE REGIME:  v2.4.0
 
 ```js
@@ -185,9 +231,10 @@ Curated in GEE by: Samapriya Roy
 
 Keywords: doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire
 
-Last updated: 2025-03-16
+Last updated: 2026-03-27
 
 #### Changelog
 
+* 2026-03-27 Added Annual Disturbance collection (ANNUAL-DIST) with coverage from 1999 to present
 * 2025-03-16 Updated to v2.4.0 for available collections
 * 2024-01-14 Updated to v2.2.3 for available collections

@@ -2206,6 +2206,19 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/wacvm.png"
   },
   {
+    "title": "Landfire Annual Disturbance",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-ANNUAL-DISTURBANCE",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/landfire/ANNUAL-DIST",
+    "provider": "U.S. Department of Agriculture's (USDA) U.S. Forest Service (USFS), U.S. Department of the Interior's Geological Survey (USGS), and The Nature Conservancy",
+    "tags": "doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire",
+    "license": "custom",
+    "license_text": "LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion",
+    "docs": "https://gee-community-catalog.org/projects/landfire/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/landfire.png"
+  },
+  {
     "title": "Vegetation Condition Class (VCC) LF v2.4.0",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION",
     "type": "image_collection",
@@ -53766,6 +53779,30 @@
     "docs": "https://gee-community-catalog.org/projects/groundsource/",
     "thematic_group": "Global Events Layers",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/groundsource.png"
+  },
+  {
+    "title": "Modeled Historical and Projected (1938–2100) Annual LULC CONUS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/USGS-LULC-HISTORICAL-PROJECTED",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USGS/LULC-CONUS",
+    "provider": "Sohl et al 2018",
+    "tags": "land cover, land use, CONUS, IPCC, scenario, future, projected, historical, FORE-SCE, forest stand age, forest disturbance, Census of Agriculture, ecoregion",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/usgs_lulc_conus/",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/usgs_lulc_conus.png"
+  },
+  {
+    "title": "Modeled Projected (1992–2100) Forest Stand Age CONUS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/USGS-FOREST-COMPARISONS",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USGS/CONUS-FOREST-HISTORY",
+    "provider": "Sohl et al 2018",
+    "tags": "land cover, land use, CONUS, IPCC, scenario, future, projected, historical, FORE-SCE, forest stand age, forest disturbance, Census of Agriculture, ecoregion",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/usgs_lulc_conus/",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/usgs_lulc_conus.png"
   },
   {
     "title": "USGS Historical Topo maps 1:24000 map index",
