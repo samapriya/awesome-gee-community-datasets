@@ -61,7 +61,9 @@ var forest_history = ee.ImageCollection("projects/sat-io/open-datasets/USGS/CONU
 ```
 
 Sample Code:
+
 - USGS LULC Comparisons:  https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/USGS-LULC-HISTORICAL-PROJECTED
+  
 - Forest Comparisons: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/USGS-FOREST-COMPARISONS
 
 #### Additional Links
