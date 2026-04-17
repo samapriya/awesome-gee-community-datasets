@@ -1,17 +1,17 @@
 {
   "repository": "samapriya/awesome-gee-community-datasets",
-  "total_stars": 1128,
-  "total_forks": 182,
-  "total_watchers": 1128,
-  "open_issues": 81,
+  "total_stars": 1132,
+  "total_forks": 183,
+  "total_watchers": 1132,
+  "open_issues": 82,
   "open_prs": 3,
   "merged_prs": 25,
   "closed_prs": 8,
   "total_prs": 36,
   "created_at": "2020-05-08T08:33:41Z",
-  "updated_at": "2026-04-15T00:19:45Z",
-  "pushed_at": "2026-04-15T00:19:42Z",
+  "updated_at": "2026-04-17T02:43:14Z",
+  "pushed_at": "2026-04-17T00:18:28Z",
   "description": "Community Datasets added by users and made available for use at large",
   "language": "HTML",
-  "fetched_at": "2026-04-15T04:02:00.238617Z"
+  "fetched_at": "2026-04-17T04:03:02.168851Z"
 }
