@@ -70,6 +70,20 @@
     "avatar_local": "assets/avatars/pinkychow1010_d3b6607f.png"
   },
   {
+    "github_login": "TC25",
+    "display_name": "Tc Chakraborty",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30564889?v=4",
+    "profile_url": "https://github.com/TC25",
+    "total_contributions": 8,
+    "open_issues": 2,
+    "closed_issues": 6,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-04-19T03:30:03Z",
+    "avatar_local": "assets/avatars/TC25_b2cb8751.png"
+  },
+  {
     "github_login": "S-Bronson",
     "display_name": "S-Bronson",
     "avatar_url": "https://avatars.githubusercontent.com/u/119918118?v=4",
@@ -124,20 +138,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2025-12-03T07:30:37Z",
     "avatar_local": "assets/avatars/harrybmwells_b6ba2ccb.png"
-  },
-  {
-    "github_login": "TC25",
-    "display_name": "Tc Chakraborty",
-    "avatar_url": "https://avatars.githubusercontent.com/u/30564889?v=4",
-    "profile_url": "https://github.com/TC25",
-    "total_contributions": 7,
-    "open_issues": 1,
-    "closed_issues": 6,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2024-07-31T00:24:16Z",
-    "avatar_local": "assets/avatars/TC25_b2cb8751.png"
   },
   {
     "github_login": "robitalec",
@@ -838,6 +838,20 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "BzGEO",
+    "display_name": "Emil Cherrington",
+    "avatar_url": "https://avatars.githubusercontent.com/u/61333058?v=4",
+    "profile_url": "https://github.com/BzGEO",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-04-17T18:29:48Z",
+    "avatar_local": "assets/avatars/BzGEO_a5ba638c.png"
   },
   {
     "github_login": "Stormchaser80",
