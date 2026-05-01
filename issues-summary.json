@@ -420,6 +420,20 @@
     "avatar_local": "assets/avatars/nkeikon_fc2bacf2.png"
   },
   {
+    "github_login": "isabel-hof",
+    "display_name": "isabel-hof",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
+    "profile_url": "https://github.com/isabel-hof",
+    "total_contributions": 2,
+    "open_issues": 1,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-04-30T15:18:33Z",
+    "avatar_local": "assets/avatars/isabel-hof_38b120a2.png"
+  },
+  {
     "github_login": "dluks",
     "display_name": "Daniel Lusk",
     "avatar_url": "https://avatars.githubusercontent.com/u/4911680?v=4",
@@ -838,6 +852,20 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "palubad",
+    "display_name": "Daniel Paluba",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33784015?v=4",
+    "profile_url": "https://github.com/palubad",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-04-30T05:53:47Z",
+    "avatar_local": "assets/avatars/palubad_5264baa7.png"
   },
   {
     "github_login": "celsohlsj",
@@ -1272,20 +1300,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2025-09-02T13:15:10Z",
     "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
-  },
-  {
-    "github_login": "isabel-hof",
-    "display_name": "isabel-hof",
-    "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
-    "profile_url": "https://github.com/isabel-hof",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2025-08-25T14:51:18Z",
-    "avatar_local": "assets/avatars/isabel-hof_38b120a2.png"
   },
   {
     "github_login": "stefaniaditom",
