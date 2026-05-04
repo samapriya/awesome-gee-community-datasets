@@ -24,10 +24,10 @@ Luiz E. O. C. Aragão. (2020). Benchmark maps of 33 years of secondary forest ag
 #### Earth Engine Snippet
 
 ```js
-var age       = ee.Image('users/ybyrabr/public/secondary_forest_age_collection10_1_v8_1');
-var extent    = ee.Image('users/ybyrabr/public/secondary_forest_extent_collection10_1_v8_1');
-var increment = ee.Image('users/ybyrabr/public/secondary_forest_increment_collection10_1_v8_1');
-var loss      = ee.Image('users/ybyrabr/public/secondary_forest_loss_collection10_1_v8_1');
+var age       = ee.Image('projects/sat-io/open-datasets/secondary_forest_baseline/secondary_forest_age_collection10_1_v8_1');
+var extent    = ee.Image('projects/sat-io/open-datasets/secondary_forest_baseline/secondary_forest_extent_collection10_1_v8_1');
+var increment = ee.Image('projects/sat-io/open-datasets/secondary_forest_baseline/secondary_forest_increment_collection10_1_v8_1');
+var loss      = ee.Image('projects/sat-io/open-datasets/secondary_forest_baseline/secondary_forest_loss_collection10_1_v8_1');
 print(age, extent, increment, loss);
 ```
 
@@ -45,11 +45,11 @@ Export Page for App: https://code.earthengine.google.com/13bfcedb77ac7bac9ea1fb9
 
 Zenodo Data download page: [https://zenodo.org/record/8190133](https://zenodo.org/records/8190133)
 
-Created and Curated by: Celso H. L. Silva Junior
+Created and Curated by: Celso H. L. Silva Junior and Samapriya Roy
 
 Keywords: Deforestation, MapBiomas, Climate Change, Forest Restoration, Carbon Sequestration
 
-Last updated: 2026-05-01
+Last updated: 2026-05-03
 
 #### Summary of updates (v8.1)
 - Updated processing based on MapBiomas Collection 10.1
@@ -58,4 +58,4 @@ Last updated: 2026-05-01
 - Harmonized methodology across all products (age, extent, increment, and loss)
 - Refinements in the detection of secondary forest dynamics
 - Improved spatial consistency and reduction of classification artifacts
-- New asset paths under `users/ybyrabr/public/` namespace
+- New asset paths under `projects/sat-io/open-datasets/secondary_forest_baseline/` namespace
