@@ -420,6 +420,20 @@
     "avatar_local": "assets/avatars/nkeikon_fc2bacf2.png"
   },
   {
+    "github_login": "stidjaco",
+    "display_name": "stidjaco",
+    "avatar_url": "https://avatars.githubusercontent.com/u/66275750?v=4",
+    "profile_url": "https://github.com/stidjaco",
+    "total_contributions": 2,
+    "open_issues": 0,
+    "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-03T20:14:30Z",
+    "avatar_local": "assets/avatars/stidjaco_09322031.png"
+  },
+  {
     "github_login": "isabel-hof",
     "display_name": "isabel-hof",
     "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
@@ -901,8 +915,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/215310319?v=4",
     "profile_url": "https://github.com/Stormchaser80",
     "total_contributions": 1,
-    "open_issues": 1,
-    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 1,
     "open_prs": 0,
     "merged_prs": 0,
     "closed_prs": 0,
@@ -1244,20 +1258,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2025-10-21T18:50:57Z",
     "avatar_local": "assets/avatars/MrJGao_cd4cefe3.png"
-  },
-  {
-    "github_login": "stidjaco",
-    "display_name": "stidjaco",
-    "avatar_url": "https://avatars.githubusercontent.com/u/66275750?v=4",
-    "profile_url": "https://github.com/stidjaco",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2025-10-02T21:42:41Z",
-    "avatar_local": "assets/avatars/stidjaco_09322031.png"
   },
   {
     "github_login": "nunosa-wwf",
