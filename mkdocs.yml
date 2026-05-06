@@ -280,6 +280,7 @@ nav:
           - "Hydrology":
               - OSM Water Layer Surface Waters in OpenStreetMap: projects/osm_water.md
               - Global 30m Height Above the Nearest Drainage: projects/hand.md
+              - High Resolution 30 m Water Table Depth for CONUS: projects/hres_wtd.md
               - Hydrography 90m Layers: projects/hydro90.md
               - HydroLAKES v1.0: projects/hydrolakes.md
               - Global Lakes and Wetlands Database (GLWD) Version 2: projects/glwd.md
@@ -329,6 +330,7 @@ nav:
           - "Agriculture, Vegetation and Forestry":
               - Sensor-Independent MODIS & VIIRS LAI/FPAR CDR 2000 to 2024: projects/fpar.md
               - Forest Communities Mapping with AlphaEarth Embeddings: projects/fcm10r9.md
+              - Global Satellite Embedding-based Map of Forests and Tree Crops: projects/gem_forest.md
               - Landfire Mosaics LF: projects/landfire.md
               - Vegetation dryness for western USA: projects/veg_dry.md
               - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md

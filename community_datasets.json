@@ -24019,7 +24019,7 @@
     "tags": "Forest Communities, Aboveground Carbon, Forest Structure, Deep Learning, Geospatial Embeddings, AlphaEarth Foundations, FIA, Remote Sensing, Northeastern US, Midwestern US",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/fcm10r9/",
-    "thematic_group": "Agriculture, Vegetation & Forestry",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/fcm10r9.png"
   },
   {
@@ -24031,7 +24031,7 @@
     "tags": "Forest Communities, Basal Area, Forest Structure, Deep Learning, Geospatial Embeddings, AlphaEarth Foundations, FIA, Remote Sensing, Northeastern US, Midwestern US",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/fcm10r9/",
-    "thematic_group": "Agriculture, Vegetation & Forestry",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/fcm10r9.png"
   },
   {
@@ -24043,7 +24043,7 @@
     "tags": "Forest Communities, Stem Density, Forest Structure, Deep Learning, Geospatial Embeddings, AlphaEarth Foundations, FIA, Remote Sensing, Northeastern US, Midwestern US",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/fcm10r9/",
-    "thematic_group": "Agriculture, Vegetation & Forestry",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/fcm10r9.png"
   },
   {
@@ -24055,7 +24055,7 @@
     "tags": "Forest Communities, Species Composition, Tree Species, Basal Area, kNN Imputation, Deep Learning, Geospatial Embeddings, AlphaEarth Foundations, FIA, Remote Sensing, Northeastern US, Midwestern US",
     "license": "Creative Commons Attribution 4.0 International",
     "docs": "https://gee-community-catalog.org/projects/fcm10r9/",
-    "thematic_group": "Agriculture, Vegetation & Forestry",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/fcm10r9.png"
   },
   {
@@ -39917,6 +39917,18 @@
     "docs": "https://gee-community-catalog.org/projects/worldpop/",
     "thematic_group": "Population & Socioeconomic",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/worldpop.png"
+  },
+  {
+    "title": "Global Satellite Embedding-based Map of Forests and Tree Crops",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GEM-FOREST-10M",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/GEM-Forest/GEM-Forest_2020",
+    "provider": "Paluba et al 2026",
+    "tags": "forest, non-forest, tree crop, embeddings, AlphaEarth Foundation, EUDR, oil palm, rubber, coconut, olives, fruit trees, deforestation, land cover",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/gem_forest/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gem_forest.png"
   },
   {
     "title": "Carbon Mapper Data Portal Methane Emissions: Plume",
