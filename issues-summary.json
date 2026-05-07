@@ -873,8 +873,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/33784015?v=4",
     "profile_url": "https://github.com/palubad",
     "total_contributions": 1,
-    "open_issues": 1,
-    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 1,
     "open_prs": 0,
     "merged_prs": 0,
     "closed_prs": 0,
@@ -952,10 +952,10 @@
     "avatar_local": "assets/avatars/ayazhankarabaeva-sketch_7c00ee57.png"
   },
   {
-    "github_login": "stuckvgn",
+    "github_login": "samtuckerdavis",
     "display_name": "Sam Tucker-davis",
     "avatar_url": "https://avatars.githubusercontent.com/u/126325182?v=4",
-    "profile_url": "https://github.com/stuckvgn",
+    "profile_url": "https://github.com/samtuckerdavis",
     "total_contributions": 1,
     "open_issues": 1,
     "closed_issues": 0,
@@ -963,7 +963,7 @@
     "merged_prs": 0,
     "closed_prs": 0,
     "last_contribution_date": "2026-02-25T09:27:59Z",
-    "avatar_local": "assets/avatars/stuckvgn_ce0787c2.png"
+    "avatar_local": "assets/avatars/samtuckerdavis_ce0787c2.png"
   },
   {
     "github_login": "LHarri5on",
@@ -2465,7 +2465,7 @@
   },
   {
     "github_login": "icrichmond",
-    "display_name": "Isabella Richmond",
+    "display_name": "Bella Richmond",
     "avatar_url": "https://avatars.githubusercontent.com/u/52459005?v=4",
     "profile_url": "https://github.com/icrichmond",
     "total_contributions": 1,
