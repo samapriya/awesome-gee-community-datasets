@@ -294,6 +294,20 @@
     "avatar_local": "assets/avatars/cmg777_7fa49092.png"
   },
   {
+    "github_login": "BzGEO",
+    "display_name": "Emil Cherrington",
+    "avatar_url": "https://avatars.githubusercontent.com/u/61333058?v=4",
+    "profile_url": "https://github.com/BzGEO",
+    "total_contributions": 3,
+    "open_issues": 2,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-17T14:47:06Z",
+    "avatar_local": "assets/avatars/BzGEO_a5ba638c.png"
+  },
+  {
     "github_login": "emackres",
     "display_name": "Eric Mackres",
     "avatar_url": "https://avatars.githubusercontent.com/u/29410948?v=4",
@@ -418,20 +432,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2024-01-10T22:22:05Z",
     "avatar_local": "assets/avatars/nkeikon_fc2bacf2.png"
-  },
-  {
-    "github_login": "BzGEO",
-    "display_name": "Emil Cherrington",
-    "avatar_url": "https://avatars.githubusercontent.com/u/61333058?v=4",
-    "profile_url": "https://github.com/BzGEO",
-    "total_contributions": 2,
-    "open_issues": 1,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2026-05-15T19:27:43Z",
-    "avatar_local": "assets/avatars/BzGEO_a5ba638c.png"
   },
   {
     "github_login": "noahweidig",
@@ -908,6 +908,20 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "pranavrajkumar11-collab",
+    "display_name": "pranavrajkumar11-collab",
+    "avatar_url": "https://avatars.githubusercontent.com/u/285784281?v=4",
+    "profile_url": "https://github.com/pranavrajkumar11-collab",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-18T18:32:40Z",
+    "avatar_local": "assets/avatars/pranavrajkumar11-collab_b14308d7.png"
   },
   {
     "github_login": "palubad",
