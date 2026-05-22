@@ -3,6 +3,7 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
+* [Earth Engine Community Exchange: How I Built an AI-Powered Archive of Community Discussions](https://datacommons.substack.com/p/earth-engine-community-exchange-how)
 * [Global Canopy Height Models: Extending Earth Engine Apps and Exploring Accessibility](https://datacommons.substack.com/p/global-canopy-height-models-extending)
 * [Release 3.9.0: Celebrating the Digital Commons and Our Five Millionth Query this Month](https://datacommons.substack.com/p/release-390-celebrating-the-digital)
 * [Installing &amp; Updating to GDAL 3.11.0 on Ubuntu: A Ground Up Rewrite](https://datacommons.substack.com/p/installing-and-updating-to-gdal-3110)
@@ -22,7 +23,6 @@ Find a list of associated blog posts related to GEE and community catalog here. 
 * [🌍 Community Catalog Summer Refresh: Land Cover, Forest Flux, and Field Boundaries Updates](https://datacommons.substack.com/p/community-catalog-summer-refresh)
 * [GEE Community Catalog Celebrates 4 Years: May 2024 Data Refresh](https://datacommons.substack.com/p/gee-community-catalog-celebrates)
 * [Mapping with the Flow: Rivers, Wells, and Obstruction Datasets in the Community Catalog](https://datacommons.substack.com/p/mapping-with-the-flow-rivers-wells)
-* [Jupyter Lab &amp; Linux on Windows: Level Up Your Data Science Setup](https://datacommons.substack.com/p/jupyter-lab-and-linux-on-windows)
 <!-- END_MARKER -->
 
 <!-- Last updated: Mon May  5 06:32:44 UTC 2025 -->
