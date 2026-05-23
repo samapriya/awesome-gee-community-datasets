@@ -196,6 +196,20 @@
     "avatar_local": "assets/avatars/puzhao8_c013dcff.png"
   },
   {
+    "github_login": "elijah-dalton",
+    "display_name": "Elijah Dalton",
+    "avatar_url": "https://avatars.githubusercontent.com/u/126804611?v=4",
+    "profile_url": "https://github.com/elijah-dalton",
+    "total_contributions": 5,
+    "open_issues": 5,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-21T15:57:32Z",
+    "avatar_local": "assets/avatars/elijah-dalton_d5dba790.png"
+  },
+  {
     "github_login": "Favioleiva",
     "display_name": "Favio Leiva",
     "avatar_url": "https://avatars.githubusercontent.com/u/14043740?v=4",
@@ -908,6 +922,20 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "nprovost-ctrees",
+    "display_name": "Naomi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/146263900?v=4",
+    "profile_url": "https://github.com/nprovost-ctrees",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-22T22:03:58Z",
+    "avatar_local": "assets/avatars/nprovost-ctrees_429efb95.png"
   },
   {
     "github_login": "pranavrajkumar11-collab",
