@@ -31,21 +31,31 @@ The resulting index ranges from -2 to +2 and allows for spatial comparisons of c
 #### Earth Engine Snippet
 
 ```js
-var carbonoffsetscol = ee.FeatureCollection('projects/sat-io/open-datasets/CARBON-OFFSET-PROJECTS-GLOBAL');
+var csi_great_basin = ee.ImageCollection("projects/sat-io/open-datasets/CSI/Great_Basin");
+
+var mosaic = csi_great_basin.mosaic();
+
+var palette = [
+  'FF0000',
+  'FFA500',
+  'FFFF00',
+  'ADFF2F',
+  '008000'
+];
 
 var visParams = {
-    palette: ['#9ab555'],
-    min: 0.0,
-    max: 1550000.0,
-    opacity: 0.8,
+  min: -1,
+  max: 1,
+  palette: palette
 };
-var carbonoffsets = ee.Image().float().paint(carbonoffsetscol, 'REP_AREA');
 
-Map.setCenter(-52.692,-2.628,6)
-Map.addLayer(carbonoffsets, visParams, 'Existing carbon projects area');
+Map.centerObject(csi_great_basin.first(),6)
+
+Map.addLayer(mosaic.select('CSI'), visParams, 'Great Basin Carbon Security Index');
 
 var snazzy = require("users/aazuspan/snazzy:styles");
 snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");
+
 ```
 
 Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CARBON-SECURITY-INDEX

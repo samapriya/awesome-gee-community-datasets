@@ -22478,6 +22478,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/cisi.png"
   },
   {
+    "title": "Carbon Security Index",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CARBON-SECURITY-INDEX",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/CSI/Great_Basin",
+    "provider": "Smith et al",
+    "tags": "rangelands, sagebrush steppe, Great Basin, ecosystem function, environmental assessment and monitoring, environmental management",
+    "license": "Creative Commons Attribution 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/csi/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/csi.png"
+  },
+  {
     "title": "Harmonized Global Critical Infrastructure 2021",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI)",
     "type": "image_collection",
@@ -44165,9 +44177,9 @@
     "provider": "Technical University of Munich (TUM)",
     "tags": "Building Footprint, Building Height, 3D Building Models, Urban Morphology, Global Coverage, PlanetScope",
     "license": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
-    "docs": "https://gee-community-catalog.org/projects/global_building_atlas/",
+    "docs": "https://gee-community-catalog.org/projects/gba/",
     "thematic_group": "Global Utilities, Assets and Amenities Layers",
-    "thumbnail": "https://gee-community-catalog.org/thumbnails/global_building_atlas.png"
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/gba.png"
   },
   {
     "title": "Global Human Settlement - Open Buildings Attribute Table (GHS-OBAT) Aruba (ABW)",
@@ -53499,6 +53511,18 @@
     "docs": "https://gee-community-catalog.org/projects/era5_heat/",
     "thematic_group": "Weather and Climate Layers",
     "thumbnail": "https://gee-community-catalog.org/thumbnails/era5_heat.png"
+  },
+  {
+    "title": "Enhanced National-Scale Urban Tree Canopy Cover",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USGS-US-TCC",
+    "type": "image",
+    "id": "projects/sat-op/open-datasets/USGS/EnhancedTCC2011",
+    "provider": " Corro et al. 2025",
+    "tags": "urban forests, tree canopy, ecosystem services, land cover, urban planning, census urban areas, random forest models, spatial data",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/us_tcc/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/us_tcc.png"
   },
   {
     "title": "Soil Landscapes of the United States (SOLUS)",
