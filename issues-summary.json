@@ -308,6 +308,20 @@
     "avatar_local": "assets/avatars/cmg777_7fa49092.png"
   },
   {
+    "github_login": "noahweidig",
+    "display_name": "Noah Weidig",
+    "avatar_url": "https://avatars.githubusercontent.com/u/136648711?v=4",
+    "profile_url": "https://github.com/noahweidig",
+    "total_contributions": 3,
+    "open_issues": 2,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-05-27T17:28:49Z",
+    "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
+  },
+  {
     "github_login": "BzGEO",
     "display_name": "Emil Cherrington",
     "avatar_url": "https://avatars.githubusercontent.com/u/61333058?v=4",
@@ -446,20 +460,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2024-01-10T22:22:05Z",
     "avatar_local": "assets/avatars/nkeikon_fc2bacf2.png"
-  },
-  {
-    "github_login": "noahweidig",
-    "display_name": "Noah Weidig",
-    "avatar_url": "https://avatars.githubusercontent.com/u/136648711?v=4",
-    "profile_url": "https://github.com/noahweidig",
-    "total_contributions": 2,
-    "open_issues": 1,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2026-05-15T15:50:58Z",
-    "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
   },
   {
     "github_login": "bartslagter",
@@ -929,8 +929,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/107322624?v=4",
     "profile_url": "https://github.com/XiangShawnZhang",
     "total_contributions": 1,
-    "open_issues": 1,
-    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 1,
     "open_prs": 0,
     "merged_prs": 0,
     "closed_prs": 0,
