@@ -1,7 +1,5 @@
 # STaPL: Annual 30-m Tillage Maps for the U.S. Midwest (2001–2023)
 
-![STaPL Tillage Maps](https://github.com/yuchima8/STaPL/blob/main/Fig4_STAPL_Tillage_Maps.png)
-
 Improved data on conservation practices in agriculture is critical for understanding their impacts on crop productivity, environmental outcomes, and climate resilience. Despite ongoing adoption of conservation tillage across the U.S. Midwest, public information has historically been limited to coarse estimates updated once or twice per decade. Here we present the STaPL (Scale Transfer with Pseudo-Labelling) tillage dataset annual 30-m resolution maps of tillage intensity (low-intensity and high-intensity) for corn and soybean cropland across twelve U.S. Midwestern states from 2001 to 2023. The STaPL framework combines Landsat earth observations, elevation data, and publicly available county-level tillage census statistics to generate pseudo-labels for field-level tillage classification without requiring any ground-truth field data. The dataset is the first of its kind to produce annual, field-scale tillage maps spanning more than two decades without reliance on proprietary ground records. Read the [paper and details here](https://doi.org/10.1016/j.rse.2026.115500).
 
 #### Citation
