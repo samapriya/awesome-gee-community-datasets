@@ -7027,9 +7027,9 @@
     "provider": "Ma et al.",
     "tags": "Tillage, Conservation Agriculture, Landsat, Crop Residue, Scale Transfer, Pseudo-Labelling, U.S. Midwest, Corn Belt, Random Forest",
     "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-    "docs": "https://gee-community-catalog.org/projects/tillage/",
+    "docs": "https://gee-community-catalog.org/projects/stapl_tillage/",
     "thematic_group": "Agriculture, Vegetation and Forestry",
-    "thumbnail": "https://gee-community-catalog.org/thumbnails/tillage.png"
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/stapl_tillage.png"
   },
   {
     "title": "Harmonised global datasets of wind farm locations",

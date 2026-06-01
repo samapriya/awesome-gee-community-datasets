@@ -32,6 +32,8 @@ When aggregated to the county level, STaPL maps show strong agreement with offic
 
 Classification accuracy improves with greater Landsat data availability — reaching approximately 78% when more than 13 cloud-free observations are available during the April–June window — underscoring the importance of temporal observation density for tillage detection.
 
+![stapl_tillage](../images/stapl_tillage.png)
+
 #### Earth Engine Snippet
 
 ```js
