@@ -340,7 +340,9 @@ nav:
               - Carbon Security Index: projects/csi.md
               - Gridded Livestock Density Kazakhstan (2000-2019): projects/gridded_livestock.md
               - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
+              - NAIP-CHM 0.6-meter Resolution Canopy Height Model for CONUS: projects/naip_chm_conus.md
               - High Resolution Amazon Canopy Tree Height Dataset: projects/ctrees_amazon.md
+              - CTrees Global Aboveground Biomass 100m (2000–2025): projects/ctrees_global.md
               - ETH Global Sentinel-2 10m Canopy Height (2020): projects/canopy.md
               - WHiCH (Western Himalaya Canopy Height) Map 2020, Pakistan: projects/which.md
               - Global Forest Carbon Fluxes (2001-2024): projects/cflux.md
