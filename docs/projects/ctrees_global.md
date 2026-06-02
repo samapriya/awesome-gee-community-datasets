@@ -50,7 +50,7 @@ CTrees. (2026). CTrees Global Aboveground Biomass 100m (2000–2025) [Data set].
 https://doi.org/10.82924/7vmb-zv66
 ```
 
-![ctrees_global](../images/ctrees_global.png)
+![ctrees_global](../images/ctrees_global.gif)
 
 #### Earth Engine Snippet
 

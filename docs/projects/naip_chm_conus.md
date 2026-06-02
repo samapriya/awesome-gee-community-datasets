@@ -38,7 +38,7 @@ Morford, S. L., Allred, B. W., Coons, S. P., Marcozzi, A. A., McCord, S. E., Smi
 United States. bioRxiv. https://doi.org/10.64898/2025.12.12.694075
 ```
 
-![naip_chm](../images/naip_chm_conus.png)
+![naip_chm](../images/naip_chm_conus.gif)
 
 #### Earth Engine Snippet
 
