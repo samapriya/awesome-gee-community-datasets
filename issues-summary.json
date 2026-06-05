@@ -252,6 +252,20 @@
     "avatar_local": "assets/avatars/schwehr_296d462b.png"
   },
   {
+    "github_login": "Yingjie4Science",
+    "display_name": "Yingjie Li",
+    "avatar_url": "https://avatars.githubusercontent.com/u/40079217?v=4",
+    "profile_url": "https://github.com/Yingjie4Science",
+    "total_contributions": 4,
+    "open_issues": 1,
+    "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-04T02:44:05Z",
+    "avatar_local": "assets/avatars/Yingjie4Science_98d514d4.png"
+  },
+  {
     "github_login": "gotEXP",
     "display_name": "Exp",
     "avatar_url": "https://avatars.githubusercontent.com/u/94803611?v=4",
@@ -418,20 +432,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2023-09-26T11:17:56Z",
     "avatar_local": "assets/avatars/lpaolini_31031fbd.png"
-  },
-  {
-    "github_login": "Yingjie4Science",
-    "display_name": "Yingjie Li",
-    "avatar_url": "https://avatars.githubusercontent.com/u/40079217?v=4",
-    "profile_url": "https://github.com/Yingjie4Science",
-    "total_contributions": 3,
-    "open_issues": 0,
-    "closed_issues": 3,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2023-07-02T16:13:32Z",
-    "avatar_local": "assets/avatars/Yingjie4Science_98d514d4.png"
   },
   {
     "github_login": "csaybar",
@@ -922,6 +922,34 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "willmacs",
+    "display_name": "willmacs",
+    "avatar_url": "https://avatars.githubusercontent.com/u/103065262?v=4",
+    "profile_url": "https://github.com/willmacs",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-04T13:16:30Z",
+    "avatar_local": "assets/avatars/willmacs_954c7725.png"
+  },
+  {
+    "github_login": "chiwweilin96-creator",
+    "display_name": "chiwweilin96-creator",
+    "avatar_url": "https://avatars.githubusercontent.com/u/290597761?v=4",
+    "profile_url": "https://github.com/chiwweilin96-creator",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-04T04:31:02Z",
+    "avatar_local": "assets/avatars/chiwweilin96-creator_dd3b54c6.png"
   },
   {
     "github_login": "yuchima8",
