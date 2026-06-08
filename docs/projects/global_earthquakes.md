@@ -122,7 +122,7 @@ U.S. Geological Survey (USGS). (YEAR). Earthquake Hazards Program (EHP). Retriev
     | 2023 | 27283 |
     | 2024 | 24798 |
     | 2025 | 28457 |
-    | 2026 | 1151 |
+    | 2026 | Ongoing |
 
     </center>
 
@@ -142,6 +142,7 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 These datasets are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion
 
 #### Changelog
+- Updated Daily Now
 - Updated earthquake datasets till 2026-02-05
 - Updated earthquake datasets till 2025-06-06
 - Updated earthquake datasets till 2024-07-28
@@ -150,4 +151,4 @@ Provided by: USGS
 
 Curated in GEE by: Samapriya Roy
 
-Last updated: 2026-02-05
+Last updated: Updated Daily Now
