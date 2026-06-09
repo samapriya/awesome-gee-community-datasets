@@ -196,6 +196,20 @@
     "avatar_local": "assets/avatars/puzhao8_c013dcff.png"
   },
   {
+    "github_login": "davidtheobald8",
+    "display_name": "Dave Theobald",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8890197?v=4",
+    "profile_url": "https://github.com/davidtheobald8",
+    "total_contributions": 5,
+    "open_issues": 0,
+    "closed_issues": 5,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-08T14:07:01Z",
+    "avatar_local": "assets/avatars/davidtheobald8_08794514.png"
+  },
+  {
     "github_login": "elijah-dalton",
     "display_name": "Elijah Dalton",
     "avatar_url": "https://avatars.githubusercontent.com/u/126804611?v=4",
@@ -292,20 +306,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2025-08-19T17:24:32Z",
     "avatar_local": "assets/avatars/KWB4484_c1eae69d.png"
-  },
-  {
-    "github_login": "davidtheobald8",
-    "display_name": "Dave Theobald",
-    "avatar_url": "https://avatars.githubusercontent.com/u/8890197?v=4",
-    "profile_url": "https://github.com/davidtheobald8",
-    "total_contributions": 4,
-    "open_issues": 0,
-    "closed_issues": 4,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2025-02-25T22:40:35Z",
-    "avatar_local": "assets/avatars/davidtheobald8_08794514.png"
   },
   {
     "github_login": "cmg777",
@@ -943,8 +943,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/290597761?v=4",
     "profile_url": "https://github.com/chiwweilin96-creator",
     "total_contributions": 1,
-    "open_issues": 1,
-    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_issues": 1,
     "open_prs": 0,
     "merged_prs": 0,
     "closed_prs": 0,
