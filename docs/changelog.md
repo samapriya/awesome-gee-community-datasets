@@ -3,6 +3,13 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2026-06-09
+- Updated [Rangeland Condition Monitoring Assessment and Projection (RCMAP)](https://gee-community-catalog.org/projects/rcmap/)
+- Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
+- Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
+- Updated [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2026-06-02
 - Added [NAIP Canopy Height Model at 0.6m for CONUS](https://gee-community-catalog.org/projects/naip_chm_conus)
 - Added [CTrees Global Aboveground Biomass 100m (2000–2025)](https://gee-community-catalog.org/projects/ctrees_global)
