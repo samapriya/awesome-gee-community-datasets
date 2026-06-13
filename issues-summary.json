@@ -826,6 +826,20 @@
     "avatar_local": "assets/avatars/edtrochim_c2559cca.png"
   },
   {
+    "github_login": "smorf-ntsg",
+    "display_name": "Scott Morford",
+    "avatar_url": "https://avatars.githubusercontent.com/u/61289670?v=4",
+    "profile_url": "https://github.com/smorf-ntsg",
+    "total_contributions": 2,
+    "open_issues": 0,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 1,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-12T21:39:27Z",
+    "avatar_local": "assets/avatars/smorf-ntsg_3a776e8b.png"
+  },
+  {
     "github_login": "wouellette",
     "display_name": "William Ouellette",
     "avatar_url": "https://avatars.githubusercontent.com/u/20474036?v=4",
@@ -922,6 +936,20 @@
     "closed_prs": 1,
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "pelsen-wcs",
+    "display_name": "pelsen-wcs",
+    "avatar_url": "https://avatars.githubusercontent.com/u/292241910?v=4",
+    "profile_url": "https://github.com/pelsen-wcs",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "last_contribution_date": "2026-06-11T09:08:03Z",
+    "avatar_local": "assets/avatars/pelsen-wcs_4973be5f.png"
   },
   {
     "github_login": "willmacs",
@@ -2224,20 +2252,6 @@
     "closed_prs": 0,
     "last_contribution_date": "2023-10-03T08:18:33Z",
     "avatar_local": "assets/avatars/benbutchart_d433499a.png"
-  },
-  {
-    "github_login": "smorf-ntsg",
-    "display_name": "Scott Morford",
-    "avatar_url": "https://avatars.githubusercontent.com/u/61289670?v=4",
-    "profile_url": "https://github.com/smorf-ntsg",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "last_contribution_date": "2023-09-22T16:56:15Z",
-    "avatar_local": "assets/avatars/smorf-ntsg_3a776e8b.png"
   },
   {
     "github_login": "chungkang",
