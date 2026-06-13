@@ -34,8 +34,8 @@ Unlike many canopy height products that mask infrastructure to support carbon-on
 
 ```
 Morford, S. L., Allred, B. W., Coons, S. P., Marcozzi, A. A., McCord, S. E., Smith, J. T.,
-& Naugle, D. E. (2025). A 0.6-meter resolution canopy height model for the contiguous
-United States. bioRxiv. https://doi.org/10.64898/2025.12.12.694075
+& Naugle, D. E. (2026). A 0.6-meter resolution canopy height model for the contiguous
+United States. Sci Data. https://doi.org/10.1038/s41597-026-07549-w
 ```
 
 ![naip_chm](../images/naip_chm_conus.gif)
