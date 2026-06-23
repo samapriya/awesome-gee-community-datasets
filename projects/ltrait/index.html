@@ -125,14 +125,8 @@ php#59">1</a>, <a href=https://www.try-db.org/TryWeb/Data.php#60>2</a>.</p> <h4 
     document.addEventListener("DOMContentLoaded", function () {
         // Set random banner content initially
         const rotatingBanner = document.getElementById("rotatingBanner");
-        let currentBannerIndex = Math.floor(Math.random() * 3); // Random number 0, 1, or 2
 
         const bannerContents = [
-            {
-                text: "Join the GEE Community Forum",
-                icon: "forum",
-                link: "https://forum.gee-community-catalog.org"
-            },
             {
                 text: "Browse the visual catalog",
                 icon: "camera",
@@ -144,6 +138,8 @@ php#59">1</a>, <a href=https://www.try-db.org/TryWeb/Data.php#60>2</a>.</p> <h4 
                 link: "https://gee-community-catalog.org/search"
             }
         ];
+
+        let currentBannerIndex = Math.floor(Math.random() * bannerContents.length);
 
         // Function to update the banner content
         function updateBanner() {
@@ -166,7 +162,7 @@ php#59">1</a>, <a href=https://www.try-db.org/TryWeb/Data.php#60>2</a>.</p> <h4 
         // Set interval to rotate banner every 12 seconds
         setInterval(function () {
             // Move to the next banner
-            currentBannerIndex = (currentBannerIndex + 1) % 3;
+            currentBannerIndex = (currentBannerIndex + 1) % bannerContents.length;
 
             // Update the banner with a fade effect
             rotatingBanner.style.opacity = "0";
