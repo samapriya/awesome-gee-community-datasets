@@ -82,34 +82,6 @@
         background-color: #333;
     }
 
-    /* Community Chat button styling */
-    .community-chat-button {
-        position: fixed;
-        bottom: 100px;
-        /* Position above Ask AI button with padding */
-        right: 30px;
-        padding: 10px 20px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-weight: bold;
-        color: #000 !important;
-        /* Black text color with !important to override any inheritance */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s;
-        cursor: pointer;
-    }
-
-    /* Ensure the span inside also has black text */
-    .community-chat-button span {
-        color: #000 !important;
-    }
-
-    .community-chat-button:hover {
-        opacity: 0.9;
-    }
-
     /* Custom styling to hide reCAPTCHA badge */
     .grecaptcha-badge {
         visibility: hidden;
@@ -166,12 +138,6 @@
 {% block content %}
 {{ super() }}
 
-<!-- Community Chat Button -->
-<a href="https://forum.gee-community-catalog.org" class="community-chat-button" id="communityChatButton"
-    target="_blank">
-    <span>Forum</span>
-</a>
-
 <!-- Floating Button -->
 <a href="https://gee-community-catalog.org/search" class="floating-button" id="searchRedirect" target="_blank">
     <img src="https://i.imgur.com/RJian8r.png" alt="Logo">
@@ -194,11 +160,6 @@
 
     // Set random color on page load
     document.addEventListener("DOMContentLoaded", function () {
-        // Set random color for community chat button
-        const communityChatButton = document.getElementById("communityChatButton");
-        const randomColor = googleColors[Math.floor(Math.random() * googleColors.length)];
-        communityChatButton.style.backgroundColor = randomColor;
-
         // Set random banner content initially
         const rotatingBanner = document.getElementById("rotatingBanner");
         let currentBannerIndex = Math.floor(Math.random() * 3); // Random number 0, 1, or 2
