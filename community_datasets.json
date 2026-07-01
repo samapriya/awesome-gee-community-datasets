@@ -43064,6 +43064,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap.png"
   },
   {
+    "title": "RCMAP Weekly Herbaceous and Exotic Annual Grass (RCMAP-EAG)",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RCMAP-EAG-COVER",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/USGS/RCMAP/EAG/TIME_SERIES/COVER",
+    "provider": "USGS Earth Resources Observation and Science (EROS) Center",
+    "tags": "Exotic Annual Grass, Invasive Annual Grass, Cheatgrass, Medusahead, Vegetation mapping, Fractional cover, Time series, Natural resources, Land management",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/rcmap-eag",
+    "thematic_group": "Regional Land Use and Land Cover",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/rcmap-eag.png"
+  },
+  {
     "title": "USGS Historical Imagery Western US Imagery",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY",
     "type": "image_collection",
