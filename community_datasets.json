@@ -7032,6 +7032,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/stapl_tillage.png"
   },
   {
+    "title": "Wildland-Urban Interface (WUI) CONUS",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CONUS_WUI",
+    "type": "table",
+    "id": "projects/sat-io/open-datasets/CONUS_WUI",
+    "provider": "Volker C. Radeloff, David P. Helmers, Miranda H. Mockrin, Amanda R. Carlson, Todd J. Hawbaker, and Sebastián Martinuzzi — SILVIS Lab (University of Wisconsin-Madison), USDA Forest Service Northern Research Station, and U.S. Geological Survey",
+    "tags": "WUI, Wildland-Urban Interface, Wildfire Risk, Fragmentation, Housing Growth, Wildland Fire, Sprawl",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/wui/",
+    "thematic_group": "Agriculture, Vegetation and Forestry",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/wui.png"
+  },
+  {
     "title": "Harmonised global datasets of wind farm locations",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS",
     "type": "table",

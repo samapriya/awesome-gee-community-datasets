@@ -3,6 +3,15 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2026-07-01
+- Added [RCMAP Weekly Herbaceous and Exotic Annual Grass (RCMAP-EAG)](https://gee-community-catalog.org/projects/rcmap-eag/)
+- Added [Wildfire Risk to Rangeland Carbon CONUS](https://gee-community-catalog.org/projects/rangeland_carbon/)
+- Added [Wildland-Urban Interface (WUI) CONUS](https://gee-community-catalog.org/projects/wui/)
+- Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
+- Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
+- Updated daily updates to [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2026-06-09
 - Updated [Rangeland Condition Monitoring Assessment and Projection (RCMAP)](https://gee-community-catalog.org/projects/rcmap/)
 - Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)

@@ -339,6 +339,7 @@ nav:
               - NOAA Evaporative Stress Index (ESI): projects/global_esi.md
               - Forecast Reference Crop Evapotranspiration (FRET): projects/fret.md
               - Carbon Security Index: projects/csi.md
+              - Wildland-Urban Interface (WUI) CONUS: projects/wui.md
               - Gridded Livestock Density Kazakhstan (2000-2019): projects/gridded_livestock.md
               - High Resolution 1m Global Canopy Height Maps: projects/meta_trees.md
               - NAIP-CHM 0.6-meter Resolution Canopy Height Model for CONUS: projects/naip_chm_conus.md

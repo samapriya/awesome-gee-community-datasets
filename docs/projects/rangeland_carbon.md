@@ -98,6 +98,8 @@ Users are strongly encouraged to read and fully comprehend the metadata prior to
 
 Created by: Scott N. Zimmer, Karin L. Riley, Matthew C. Reeves, Shawn P. Urbanski, and collaborators at USDA Forest Service, Rocky Mountain Research Station
 
+Curated in GEE by: Elijah Dalton and Samapriya Roy
+
 Keywords: Carbon, Rangeland Carbon, Emissions, Remaining, Carbon pre-burn, Carbon post-burn, Climate change, Ecology, Ecosystems, & Environment, Fire, Natural Resource Management & Use, Wildfire Risk, Rangelands, Conterminous United States
 
 Last updated: 2026-06-30
