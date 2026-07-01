@@ -71,6 +71,8 @@ Component products can be downloaded at the [MRLC website](https://www.mrlc.gov/
 Rigge, M., Postma, K., Dahal, D., Dornbierer, J., Megard, L., Benedict, T., and Bunde, B., 2026, Weekly Herbaceous and Exotic Annual Grass (EAG) Cover for western North America 2016 - 2026: U.S. Geological Survey database, https://doi.org/10.5066/P13QWBFH.
 ```
 
+![rcmap_eag](../images/rcmap-eag.png)
+
 #### Earth Engine Snippet
 
 ```javascript
