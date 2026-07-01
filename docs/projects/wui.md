@@ -106,7 +106,7 @@ This work is marked with CC0 1.0 Universal (Public Domain).
 
 Created by: Volker C. Radeloff, David P. Helmers, Miranda H. Mockrin, Amanda R. Carlson, Todd J. Hawbaker, and Sebastián Martinuzzi — SILVIS Lab (University of Wisconsin-Madison), USDA Forest Service Northern Research Station, and U.S. Geological Survey
 
-Curated in GEE by: Noah Weidig and Samapriya Roy
+Curated in GEE by: Noah Weidig, Victoria Donovan and Samapriya Roy
 
 Keywords: WUI, Wildland-Urban Interface, Wildfire Risk, Fragmentation, Housing Growth, Wildland Fire, Sprawl
 
