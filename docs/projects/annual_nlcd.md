@@ -104,6 +104,7 @@ Curated in GEE by: Samapriya Roy
 Keywords: Land Cover, Land Change, Landsat, Deep Learning, Annual NLCD, USGS, Environmental Monitoring
 
 #### Changelog
+- Added 2025 Annual NLCD updated layers to Collection 1.2
 - Added 2024 Annual NLCD layers
 
 Last updated in GEE: 2025-07-08
