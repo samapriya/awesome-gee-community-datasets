@@ -170,6 +170,7 @@ nav:
           - "Population & Socioeconomic":
               - High Resolution Settlement Layers: projects/hrsl.md
               - WorldPop Global Population Data 2015-2030: projects/worldpop.md
+              - LandScan Mosaic Annual Global Ambient Population Time Series: projects/landcast.md
               - LandScan Population Data: projects/landscan.md
               - LandScan Mosaic Population Data (90m): projects/landscan_mosaic.md
               - GlobPOP Global Gridded Population Dataset: projects/globpop.md
