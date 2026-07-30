@@ -5,7 +5,7 @@
 
 #### Updated 2026-07-30
 
-- Added Landscan Mosaic TimeSeries Dataset(https://gee-community-catalog.org/projects/landcast/)
+- Added [Landscan Mosaic TimeSeries Dataset](https://gee-community-catalog.org/projects/landcast/)
 - Added [RCMAP Weekly Herbaceous and Exotic Annual Grass (RCMAP-EAG)](https://gee-community-catalog.org/projects/rcmap-eag/)
 - Updated [PRISM 800m Monthly Datasets](https://gee-community-catalog.org/projects/prism_monthly)
 - Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
