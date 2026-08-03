@@ -1,8 +1,8 @@
 name: Upload File to GCS on Change
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 18 * * *"
+  # schedule:
+  #   - cron: "0 18 * * *"
 jobs:
   upload_to_gcs:
     runs-on: ubuntu-latest
