@@ -139,8 +139,6 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 
 Created by: Clara Chew, Eric Small, and Hannah Huelsing — University Corporation for Atmospheric Research (UCAR) and University of Colorado Boulder, with funding from the NASA Terrestrial Hydrology Program
 
-Contact: Clara.c.chew@gmail.com
-
 Curated in GEE by: Samapriya Roy
 
 Keywords: inundation, flooding, surface water, CYGNSS, GNSS-R, reflectometry, wetlands, hydrology
