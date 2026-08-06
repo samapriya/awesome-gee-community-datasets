@@ -3,7 +3,8 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
-#### Updated 2026-08-02
+#### Updated 2026-08-06
+- Added [CYGNSS Fractional Inundation](https://gee-community-catalog.org/projects/cygnss)
 - Updated [Global Daily near-surface air temperature](https://gee-community-catalog.org/projects/airtemp/) for 2021 to 2024
 - Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
 - Updated daily updates to [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
