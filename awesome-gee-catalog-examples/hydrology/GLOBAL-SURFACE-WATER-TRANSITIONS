@@ -1,0 +1,38 @@
+// Load the Surface Water Transitions ImageCollection and get median composite
+var waterTransitions = ee.ImageCollection('projects/sat-io/open-datasets/SURFACE_WATER_TRANSITIONS').median();
+
+// Extract individual bands
+var waterAdvance = waterTransitions.select('b1');  // Year of water advance
+var waterRecession = waterTransitions.select('b2'); // Year of water recession
+
+// Load color palettes
+var palettes = require('users/gena/packages:palettes');
+var advancePalette = palettes.kovesi.linear_blue_5_95_c73[7];
+var recessionPalette = palettes.kovesi.linear_kry_5_95_c72[7];
+
+// Visualization parameters
+var advanceViz = {
+  min: 1984,
+  max: 2022,
+  palette: advancePalette
+};
+
+var recessionViz = {
+  min: 1984,
+  max: 2022,
+  palette: recessionPalette
+};
+
+// Add layers to map
+Map.addLayer(waterAdvance, advanceViz, 'Water Advanced (Year of Transition)');
+Map.addLayer(waterRecession, recessionViz, 'Water Receded (Year of Transition)');
+
+// Center on area of interest (example: Ganges Delta)
+Map.setCenter(90.9074, 22.4508, 10);
+
+// Print information about the dataset
+print('Water Transitions Dataset:', waterTransitions);
+print('Bands:', waterTransitions.bandNames());
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38830/vector", "Subtle Grayscale");

@@ -1,0 +1,119 @@
+var groundsource = ee.FeatureCollection("projects/sat-io/open-datasets/groundsource_2026");
+
+// ============================================
+// PLASMA PALETTE — 27 evenly sampled stops
+// purple → pink → orange → yellow (old → recent)
+// ============================================
+var years = [
+  '2000','2001','2002','2003','2004','2005','2006','2007','2008','2009',
+  '2010','2011','2012','2013','2014','2015','2016','2017','2018','2019',
+  '2020','2021','2022','2023','2024','2025','2026'
+];
+
+var palette = [
+  '0d0887','2b0596','46039f','5b01a5',
+  '6f01a5','8305a7','9512a1','a62098',
+  'b5318d','c24281','cc5374','d4647a',
+  'dc7566','e38653','e99646','eda72f',
+  'f0b81c','f2c90e','f4d711','f5e425',
+  'f7f230','f8f54b','f9f871','fafa7f',
+  'fcfb8f','fefea0','f0f921'
+];
+
+// ============================================
+// ADD ONE LAYER PER YEAR
+// ============================================
+for (var i = 0; i < years.length; i++) {
+  var subset = groundsource.filter(
+    ee.Filter.stringStartsWith('start_date', years[i])
+  );
+  Map.addLayer(
+    subset,
+    { color: palette[i] },
+    'Floods ' + years[i],
+    true
+  );
+}
+
+// ============================================
+// MAP SETUP
+// ============================================
+Map.setCenter(20, 20, 3);
+Map.setOptions('HYBRID');
+
+// ============================================
+// LEGEND
+// ============================================
+var legend = ui.Panel({
+  style: {
+    position:        'bottom-left',
+    padding:         '8px',
+    backgroundColor: 'rgba(255,255,255,1)',
+    width:           '220px'
+  }
+});
+
+legend.add(ui.Label({
+  value: 'Groundsource flood events',
+  style: { fontWeight: 'bold', fontSize: '13px', margin: '0 0 4px 0' }
+}));
+legend.add(ui.Label({
+  value: 'Year of first reported flooding',
+  style: { fontSize: '11px', color: '#555', margin: '0 0 8px 0' }
+}));
+
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select('longitude')
+    .visualize({ min: 0, max: 1, palette: palette }),
+  params: { bbox: [0, 0, 1, 0.1], dimensions: '196x16' },
+  style: { stretch: 'horizontal', margin: '0 0 4px 0' }
+});
+legend.add(colorBar);
+
+legend.add(ui.Panel({
+  widgets: [
+    ui.Label('2000', { fontSize: '10px', color: '#555' }),
+    ui.Label('2013', { fontSize: '10px', color: '#555', textAlign: 'center', stretch: 'horizontal' }),
+    ui.Label('2026', { fontSize: '10px', color: '#555', textAlign: 'right' })
+  ],
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: { stretch: 'horizontal', margin: '0 0 10px 0' }
+}));
+
+legend.add(ui.Label({
+  value: 'Dataset overview',
+  style: { fontWeight: 'bold', fontSize: '11px', color: '#333', margin: '2px 0' }
+}));
+
+var statLabels = ['Total records','Countries','Coverage','Avg. footprint','Precision'];
+var statValues = ['2.6 million','150+','2000 – present','142 km²','82% practical'];
+
+for (var s = 0; s < statLabels.length; s++) {
+  legend.add(ui.Panel({
+    widgets: [
+      ui.Label(statLabels[s], { fontSize: '10px', color: '#555', margin: '1px 0', stretch: 'horizontal' }),
+      ui.Label(statValues[s], { fontSize: '10px', fontWeight: 'bold', color: '#222', margin: '1px 0' })
+    ],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: { stretch: 'horizontal' }
+  }));
+}
+
+legend.add(ui.Label({
+  value: 'Mayo et al. (2026) · Zenodo',
+  style: { fontSize: '9px', color: '#888', margin: '8px 0 0 0' },
+  targetUrl: 'https://doi.org/10.5281/zenodo.18647054'
+}));
+
+Map.add(legend);
+
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+
+// ============================================
+// PRINT SUMMARY
+// ============================================
+print('Total flood events:', groundsource.size());
+print('Sample record:', groundsource.first());

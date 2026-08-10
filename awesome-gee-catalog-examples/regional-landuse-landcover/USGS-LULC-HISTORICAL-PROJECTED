@@ -1,0 +1,209 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var nlcd = ee.ImageCollection("projects/sat-io/open-datasets/USGS/ANNUAL_NLCD/LANDCOVER"),
+    usgsLulc = ee.ImageCollection("projects/sat-io/open-datasets/USGS/LULC-CONUS");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// ============================================================
+// USGS CONUS LULC & NLCD Land Cover Comparison
+// Split-panel map with dataset + year selectors on both sides
+// ============================================================
+
+// ----- Data Sources -----
+
+
+
+// ----- Dataset definitions -----
+var datasets = {
+  'Historical (1938–2005)': {source: 'usgs', scenario: 'Historical', years: ee.List.sequence(1938, 2005).getInfo()},
+  'Projection B1 (2006–2100)': {source: 'usgs', scenario: 'B1', years: ee.List.sequence(2006, 2100).getInfo()},
+  'Projection B2 (2006–2100)': {source: 'usgs', scenario: 'B2', years: ee.List.sequence(2006, 2100).getInfo()},
+  'Projection A1B (2006–2100)': {source: 'usgs', scenario: 'A1B', years: ee.List.sequence(2006, 2100).getInfo()},
+  'Projection A2 (2006–2100)': {source: 'usgs', scenario: 'A2', years: ee.List.sequence(2006, 2100).getInfo()},
+  'NLCD (1985–2024)': {source: 'nlcd', scenario: null, years: ee.List.sequence(1985, 2024).getInfo()}
+};
+var datasetNames = Object.keys(datasets);
+
+// =============================================
+// USGS LULC Classes (1–17, 3/4/5 unused)
+// =============================================
+var lulcClassValues = [1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+var lulcPalette = [
+  '466b9f', //  1 - Open Water
+  'eb0000', //  2 - Urban/Developed
+  '000000', //  6 - Mining
+  'b3ac9f', //  7 - Barren
+  '68ab5f', //  8 - Deciduous Forest
+  '1c5f2c', //  9 - Evergreen Forest
+  'b5c58f', // 10 - Mixed Forest
+  'dfdfc2', // 11 - Grassland
+  'ccb879', // 12 - Shrubland
+  'ab6c28', // 13 - Cultivated Cropland
+  'dcd939', // 14 - Hay/Pasture
+  '6c9fb8', // 15 - Herbaceous Wetland
+  'b8d9eb', // 16 - Woody Wetland
+  'd1def8'  // 17 - Perennial Ice/Snow
+];
+var lulcClassNames = [
+  'Open Water',          //  1
+  'Urban/Developed',     //  2
+  'Mining',              //  6
+  'Barren',              //  7
+  'Deciduous Forest',    //  8
+  'Evergreen Forest',    //  9
+  'Mixed Forest',        // 10
+  'Grassland',           // 11
+  'Shrubland',           // 12
+  'Cultivated Cropland', // 13
+  'Hay/Pasture',         // 14
+  'Herbaceous Wetland',  // 15
+  'Woody Wetland',       // 16
+  'Perennial Ice/Snow'   // 17
+];
+
+// =============================================
+// NLCD → USGS LULC class mapping
+// =============================================
+var nlcdFromValues = [11, 12, 21, 22, 23, 24, 31, 41, 42, 43, 52, 71, 81, 82, 90, 95];
+var nlcdToValues   = [ 1, 17,  2,  2,  2,  2,  7,  8,  9, 10, 12, 11, 14, 13, 16, 15];
+
+// ----- Remap helpers -----
+function remapUsgs(image) {
+  return image.remap(
+    lulcClassValues,
+    ee.List.sequence(0, lulcClassValues.length - 1)
+  );
+}
+
+function remapNlcd(image) {
+  var unified = image.remap(nlcdFromValues, nlcdToValues);
+  return unified.remap(
+    lulcClassValues,
+    ee.List.sequence(0, lulcClassValues.length - 1)
+  );
+}
+
+var visParams = {
+  min: 0,
+  max: lulcClassValues.length - 1,
+  palette: lulcPalette
+};
+
+// ----- Get image for any dataset + year -----
+function getImage(datasetName, year) {
+  var ds = datasets[datasetName];
+  if (ds.source === 'nlcd') {
+    var nlcdImg = nlcd
+      .filter(ee.Filter.calendarRange(year, year, 'year'))
+      .first().rename('landcover');
+    return remapNlcd(nlcdImg);
+  } else {
+    var usgsImg = usgsLulc
+      .filter(ee.Filter.eq('scenario', ds.scenario))
+      .filter(ee.Filter.calendarRange(year, year, 'year'))
+      .first().rename('landcover');
+    return remapUsgs(usgsImg);
+  }
+}
+
+// ----- Build UI -----
+ui.root.clear();
+
+var leftMap = ui.Map();
+var rightMap = ui.Map();
+var linker = ui.Map.Linker([leftMap, rightMap]);
+
+var splitPanel = ui.SplitPanel({
+  firstPanel: leftMap,
+  secondPanel: rightMap,
+  orientation: 'horizontal',
+  wipe: true
+});
+ui.root.add(splitPanel);
+leftMap.setCenter(-98.5, 39.5, 4);
+
+// ----- Reusable panel builder for either side -----
+function buildControls(map, position, defaultDataset, defaultYear) {
+  var state = {dataset: defaultDataset, year: defaultYear};
+
+  var label = ui.Label('', {fontWeight: 'bold', fontSize: '13px', color: '#333'});
+
+  var yearSelect = ui.Select({items: [], style: {width: '100px'}});
+
+  function updateMap() {
+    map.layers().reset();
+    var remapped = getImage(state.dataset, state.year);
+    map.addLayer(remapped, visParams, state.dataset + ' ' + state.year);
+    label.setValue(state.dataset);
+  }
+
+  function setYears(datasetName) {
+    var years = datasets[datasetName].years;
+    yearSelect.items().reset(years.map(String));
+    // Pick closest valid year
+    var yr = state.year;
+    if (years.indexOf(yr) === -1) {
+      yr = years[0];
+    }
+    state.year = yr;
+    yearSelect.setValue(String(yr), false);
+  }
+
+  var datasetSelect = ui.Select({
+    items: datasetNames,
+    value: defaultDataset,
+    onChange: function(val) {
+      state.dataset = val;
+      setYears(val);
+      updateMap();
+    },
+    style: {width: '220px'}
+  });
+
+  yearSelect.onChange(function(val) {
+    state.year = parseInt(val, 10);
+    updateMap();
+  });
+
+  // Initialize
+  setYears(defaultDataset);
+  yearSelect.setValue(String(defaultYear), false);
+
+  var panel = ui.Panel({
+    widgets: [label, datasetSelect, yearSelect],
+    style: {position: position, padding: '8px'}
+  });
+  map.add(panel);
+
+  updateMap();
+}
+
+// Left panel: default to Historical 1985
+buildControls(leftMap, 'top-left', 'Historical (1938–2005)', 1985);
+
+// Right panel: default to NLCD 1985
+buildControls(rightMap, 'top-right', 'NLCD (1985–2024)', 1985);
+
+// ----- Legend -----
+function buildLegend(title, classValues, classNames, palette) {
+  var panel = ui.Panel({style: {padding: '6px 10px', width: '240px'}});
+  panel.add(ui.Label(title, {fontWeight: 'bold', fontSize: '13px'}));
+  for (var i = 0; i < classValues.length; i++) {
+    var colorBox = ui.Label('', {
+      backgroundColor: '#' + palette[i],
+      padding: '8px',
+      margin: '0 6px 2px 0',
+      border: '1px solid #ccc'
+    });
+    var lbl = ui.Label(classValues[i] + ' – ' + classNames[i], {
+      fontSize: '11px',
+      margin: '0 0 2px 0'
+    });
+    panel.add(ui.Panel([colorBox, lbl], ui.Panel.Layout.Flow('horizontal')));
+  }
+  return panel;
+}
+
+var legend = buildLegend('Land Cover Classes', lulcClassValues, lulcClassNames, lulcPalette);
+legend.style().set('position', 'bottom-left');
+leftMap.add(legend);
+
+print('Drag the center slider to compare. Use dropdowns to pick any dataset and year on either side.');

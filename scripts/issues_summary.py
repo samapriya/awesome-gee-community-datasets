@@ -86,12 +86,21 @@ for issue in issues:
             "open_prs": 0,
             "merged_prs": 0,
             "closed_prs": 0,
+            # Per-year issue counts for the contribution chart in
+            # contributors.html. Precomputed here so the page does not have to
+            # call api.github.com live — that call is unauthenticated and
+            # capped at 60 requests/hour/IP, so the chart silently vanished for
+            # anyone visiting from a busy network.
+            "years": {},
             "last_contribution_date": issue["created_at"]
         }
 
     u = users[login]
     u["total_contributions"] += 1
     u["open_issues" if issue["state"] == "open" else "closed_issues"] += 1
+
+    year = issue["created_at"][:4]
+    u["years"][year] = u["years"].get(year, 0) + 1
 
     if issue["created_at"] > u["last_contribution_date"]:
         u["last_contribution_date"] = issue["created_at"]
@@ -113,6 +122,8 @@ for pr in prs:
             "open_prs": 0,
             "merged_prs": 0,
             "closed_prs": 0,
+            "years": {},  # must be seeded here too: a PR-only contributor
+                          # never passes through the issues loop above
             "last_contribution_date": pr["created_at"]
         }
 
@@ -125,6 +136,9 @@ for pr in prs:
         u["merged_prs"] += 1
     else:
         u["closed_prs"] += 1
+
+    year = pr["created_at"][:4]
+    u["years"][year] = u["years"].get(year, 0) + 1
 
     if pr["created_at"] > u["last_contribution_date"]:
         u["last_contribution_date"] = pr["created_at"]

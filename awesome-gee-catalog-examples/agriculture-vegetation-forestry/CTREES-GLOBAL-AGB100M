@@ -1,0 +1,102 @@
+var collection = ee.ImageCollection("projects/sat-io/open-datasets/CTREES-GLOBAL-AGB-100M");
+print(collection);
+print(collection.size());
+
+// --- Rescale function: apply scale factor and mask pixels <= 0 ---
+function rescaleAGB(image) {
+  var scaled = image.multiply(image.getNumber('agb_scale_factor'));
+  return scaled.updateMask(scaled.gt(0)).copyProperties(image, image.propertyNames());
+}
+
+// --- Temporal window ---
+var startDate = '2000-01-01';
+var endDate   = '2025-12-31';
+
+var filtered = collection
+  .filterDate(startDate, endDate)
+  .map(rescaleAGB);
+
+var agb = filtered.sort('system:time_start',false);
+
+// --- Visualization parameters ---
+var visParams = {
+  bands: ['agb'],
+  min: 0,
+  max: 400,
+  palette: [
+    '#f7fcf5', // ~0    bare / non-forest
+    '#d9f0d3', // ~36
+    '#b2e0a8', // ~73
+    '#84ca7e', // ~109
+    '#5db96a', // ~145
+    '#38a152', // ~182
+    '#1f7f3b', // ~218
+    '#0d5c26', // ~255
+    '#00441b', // ~291  deep forest green
+    '#023640', // ~327
+    '#042864', // ~364
+    '#08306b'  // ~400+ deep blue — peak biomass
+  ]
+};
+
+// --- Add layers ---
+Map.setCenter(-62, -4, 4);
+Map.addLayer(agb, visParams, 'AGB 2025 (Mg/ha)');
+
+// --- Legend ---
+var palette = visParams.palette;
+// Labels aligned to 12 stops, evenly spaced 0-400
+var labels = ['0', '', '', '109', '', '', '218', '', '', '327', '', '>400'];
+
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 15px',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)'
+  }
+});
+
+legend.add(ui.Label({
+  value: 'Aboveground Biomass (Mg/ha)',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 8px 0'}
+}));
+
+var colorBar = ui.Panel({
+  layout: ui.Panel.Layout.Flow('horizontal'),
+  style: {margin: '0 0 4px 0'}
+});
+
+for (var i = 0; i < palette.length; i++) {
+  colorBar.add(ui.Label({
+    style: {
+      backgroundColor: palette[i],
+      padding: '12px 16px',
+      margin: '0',
+      border: '1px solid #ccc'
+    }
+  }));
+}
+legend.add(colorBar);
+
+var labelsPanel = ui.Panel({
+  layout: ui.Panel.Layout.Flow('horizontal'),
+  style: {margin: '0'}
+});
+
+for (var j = 0; j < labels.length; j++) {
+  labelsPanel.add(ui.Label({
+    value: labels[j],
+    style: {
+      fontSize: '11px',
+      textAlign: 'center',
+      width: '33px',
+      margin: '0'
+    }
+  }));
+}
+legend.add(labelsPanel);
+Map.add(legend);
+
+// --- Snazzy basemap ---
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Greyscale");

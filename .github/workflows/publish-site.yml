@@ -1,55 +1,139 @@
 name: publish_docs
+
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["daily_stats"]
-    types:
-      - completed
   push:
-    branches:
-      - master
+    branches: [master, main]
+
+permissions:
+  contents: write # to commit the refreshed committer cache
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    #if: github.actor == 'samapriya'
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
+          # REQUIRED. "Last update" dates and per-page authorship both come from
+          # git history; a shallow clone makes every page look like it was
+          # created at the shallow boundary.
           fetch-depth: 0
 
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v6
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
-      - name: Install uv
-        run: |
-          curl -LsSf https://astral.sh/uv/install.sh | sh
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+      - name: Install Zensical
+        run: pip install -r requirements.txt
 
-      - name: Install dependencies with uv
-        run: |
-          uv pip install --system \
-            wheel \
-            lxml \
-            "mkdocs-material==9.7.0" \
-            "mkdocs-material-extensions" \
-            "mkdocs-get-deps" \
-            "cairosvg>=2.5" \
-            "mkdocs-git-committers-plugin-2>=1.1.1" \
-            "mkdocs-git-revision-date-localized-plugin>=1.0" \
-            "mkdocs-git-authors-plugin" \
-            "mkdocs-minify-plugin>=0.3" \
-            "mkdocs-rss-plugin>=1.2" \
-            "mkdocs-redirects>=1.0" \
-            "mkdocs-open-in-new-tab" \
-            "pillow<10" \
-            "markdown==3.7"
-
-      - name: Deploy documentation
+      # ---------------------------------------------------------------------
+      # 1. Per-page contributors.
+      #
+      # Replaces mkdocs-git-committers-plugin-2, which has no Zensical
+      # equivalent (zensical/backlog#17). That plugin issued one GitHub API
+      # request PER PAGE — ~390 requests, ~131s, and a 403 rate limit part-way
+      # through. This repo has only ~18 distinct commit author emails, so the
+      # script resolves identities once per unseen email and joins to pages
+      # locally. Steady state: 0 API calls, ~0.2s.
+      # ---------------------------------------------------------------------
+      - name: Update per-page committers
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_committers.py --repo-root . --git-path docs --repo ${{ github.repository }}
+
+      - name: Commit committer cache
         run: |
-          mkdocs gh-deploy --force
-          mkdocs --version
+          if ! git diff --quiet -- page_committers.json; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add page_committers.json
+            git commit -m "chore: refresh per-page committers [skip ci]"
+            git push
+          else
+            echo "committer cache unchanged"
+          fi
+
+      # ---------------------------------------------------------------------
+      # 2. Stamp dates + committers into front matter.
+      #
+      # Zensical ships the footer renderer (templates/partials/source-file.html)
+      # but nothing populates it. It reads page.meta.git_revision_date_localized
+      # and .git_creation_date_localized directly; `committers` is fed by the
+      # overrides/partials/source-file.html shim.
+      #
+      # Runs against the WORKING COPY only — these stamps are deliberately never
+      # committed. Committing them would rewrite the very timestamps they
+      # describe and dirty all 390 files on every build.
+      # ---------------------------------------------------------------------
+      - name: Stamp git metadata into front matter
+        run: python scripts/stamp_git_metadata.py --docs docs --repo-root . --committers
+
+      - name: Build
+        run: zensical build --clean
+
+      # ---------------------------------------------------------------------
+      # 3. Standalone pages that are not part of the build.
+      #
+      # In the old repo these were layered onto gh-pages AFTER deploy by
+      # search_sync.yml, guarded by a hard-coded `sleep 120`. Copying them into
+      # site/ here removes that race entirely.
+      # ---------------------------------------------------------------------
+      - name: Add standalone pages
+        run: |
+          # Emit as directories so they match the rest of the site, which uses
+          # use_directory_urls. This is what makes /browse and /contributors
+          # work as directory URLs rather than relying on the host stripping
+          # ".html".
+          #
+          # Search is NOT here: it lives at search.gee-community-catalog.org,
+          # a separate Cloudflare-served assistant that the "Ask AI" button in
+          # overrides/main.html links to. The old static /search page was
+          # orphaned — nothing on the site linked to it — and was removed.
+          for page in browse contributors; do
+            mkdir -p "site/$page"
+            cp "$page.html" "site/$page/index.html"
+            cp "$page.html" "site/$page.html"   # keep the old URL working too
+          done
+          cp CNAME site/ 2>/dev/null || true
+
+          # contributors.html reads these same-origin (no raw.githubusercontent,
+          # no api.github.com), so they have to be in the built site.
+          cp issues-summary.json repo-stats.json site/
+          mkdir -p site/assets && cp -r assets/avatars site/assets/
+
+      - name: Verify critical URLs survived
+        run: |
+          set -e
+          test -f site/index.html                 # splash landing page
+          test -f site/about/index.html           # former homepage
+          test -f site/CNAME
+          test -d site/thumbnails
+          test -f site/browse/index.html          # /browse
+          test -f site/contributors/index.html    # /contributors
+          test -f site/issues-summary.json        # read same-origin by /contributors
+          test -f site/repo-stats.json
+          test -d site/assets/avatars
+          echo "thumbnails:    $(ls site/thumbnails | wc -l)"
+          echo "project pages: $(ls -d site/projects/*/ | wc -l)"
+          echo "avatars:       $(ls site/assets/avatars | wc -l)"
+
+      - # v4 excludes dotfiles by default; this build emits none (verified).
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

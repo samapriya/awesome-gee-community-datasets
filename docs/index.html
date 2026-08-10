@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Awesome GEE Community Catalog</title>
+<meta name="description" content="A community data commons: 585 TB of open geospatial data, analysis ready inside Google Earth Engine." />
+<meta name="theme-color" content="#fdfdfe" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="GEE Catalog" />
+<link rel="apple-touch-icon" href="https://gee-community-catalog.org/images/logo_cropped.jpg" />
+<link rel="manifest" href='data:application/manifest+json,{"name":"Awesome GEE Community Catalog","short_name":"GEE Catalog","start_url":".","display":"standalone","background_color":"%23fdfdfe","theme_color":"%23fdfdfe","icons":[{"src":"https://gee-community-catalog.org/images/logo_cropped.jpg","sizes":"512x512","type":"image/jpeg"}]}' />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Google Analytics. Same property as mkdocs.yml (extra.analytics.property)
+     and the other standalone pages (browse.html, contributors.html).
+     This page is served outside the site build, so the theme does not inject it. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-G7SXDJEWXV');
+</script>
+
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fdfdfe; }
+  body { font-family: 'Google Sans', 'Google Sans Text', 'DM Sans', Helvetica, sans-serif; color: #171528; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  @media (hover: hover) { a:hover { opacity: .78; } }
+
+  @keyframes cc-orbit { from { transform: rotateX(58deg) rotateZ(0deg); } to { transform: rotateX(58deg) rotateZ(360deg); } }
+  @keyframes cc-hover { 0%, 100% { transform: translateZ(-10px); } 50% { transform: translateZ(10px); } }
+  @keyframes cc-hover-lg { 0%, 100% { transform: translateZ(-22px); } 50% { transform: translateZ(22px); } }
+  @keyframes cc-drift { 0%, 100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(2%,-2%,0) scale(1.06); } }
+  @keyframes cc-pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @keyframes cc-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+  .stage {
+    position: relative; min-height: 100svh; overflow: hidden; display: flex; flex-direction: column;
+    --s: 1; --pad: clamp(22px, 4.2vw, 120px);
+    padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);
+  }
+  #frame { position: relative; flex: 1; display: flex; flex-direction: column; width: 100%; max-width: 2400px; margin: 0 auto; min-height: 100svh; }
+  .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+  #band { position: absolute; inset: 0; pointer-events: none; }
+  #cam { position: absolute; left: 72%; top: 51%; width: 1px; height: 1px; perspective: 1700px; perspective-origin: 50% 50%; transition: transform .5s cubic-bezier(.22,.61,.36,1); will-change: transform; }
+  #scaler { position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: scale(var(--s)); }
+  .plane { position: absolute; border-radius: 12px; overflow: hidden; }
+  .world { position: absolute; left: 0; top: 0; width: 2048px; height: 2048px; transform-origin: 0 0; will-change: transform; }
+  .world img { position: absolute; display: block; }
+  .vig { position: absolute; inset: 0; }
+
+  header { position: relative; z-index: 4; display: flex; flex-wrap: wrap; gap: 14px 20px; justify-content: space-between; align-items: center; padding: clamp(18px,2vw,44px) var(--pad); font-family: 'IBM Plex Mono', monospace; font-size: clamp(11px,.72vw,16px); letter-spacing: .08em; color: #5a5478; }
+  header nav { display: flex; align-items: center; gap: clamp(14px,1.4vw,24px); flex-wrap: wrap; }
+  header nav a { display: flex; align-items: center; gap: 8px; }
+
+  /* bottom padding has to clear #meta, which is absolutely positioned against
+     the bottom edge. --metaPad is measured from that block at runtime, since
+     its height moves with the composition row wrapping; the clamp is the
+     fallback for the moment before script runs. */
+  main { position: relative; flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: clamp(16px,1.4vw,24px); width: clamp(380px, 34vw, 1000px); padding: 0 0 var(--metaPad, clamp(200px,19vh,300px)) var(--pad); }
+  h1 { margin: 0; max-width: 13ch; font-size: clamp(36px, 4.4vw, 104px); font-weight: 400; line-height: 1; letter-spacing: -.03em; text-wrap: balance; }
+  main p { margin: 0; max-width: 46ch; font-size: clamp(16.5px, 1.15vw, 27px); line-height: 1.55; color: #4a4566; text-wrap: pretty; }
+  .cta { display: flex; align-items: center; gap: 12px; padding: clamp(15px,1.1vw,26px) clamp(28px,2.4vw,54px); border-radius: 999px; background: #211d3d; color: #fdfdfe; font-size: clamp(16.5px,1.1vw,26px); font-weight: 500; box-shadow: 0 24px 50px -24px rgba(33,29,61,.85); }
+  .logo { width: clamp(260px, 25vw, 620px); max-width: 100%; height: auto; mix-blend-mode: multiply; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(10.5px,.7vw,16px); letter-spacing: .2em; text-transform: uppercase; color: #4b3f8f; padding: 7px 15px; border-radius: 999px; border: 1px solid rgba(75,63,143,.2); background: rgba(255,255,255,.62); }
+
+  #meta { position: absolute; z-index: 4; left: var(--pad); bottom: clamp(26px,3.4vh,64px); display: flex; flex-direction: column; gap: clamp(11px,1vw,20px); }
+  .stats { display: flex; flex-wrap: wrap; gap: clamp(26px,3vw,74px); }
+  .stat b { display: block; font-size: clamp(24px, 1.8vw, 44px); font-weight: 400; letter-spacing: -.03em; }
+  .stat span { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .16em; text-transform: uppercase; color: #6f6a86; }
+  .cited { font-family: 'IBM Plex Mono', monospace; font-size: clamp(10px,.65vw,15px); letter-spacing: .1em; text-transform: uppercase; color: #5a5478; }
+
+  /* live numbers: a number swaps in with a soft lift instead of a jump */
+  .live { transition: opacity .35s ease, transform .35s ease; }
+  .live.swap { opacity: 0; transform: translateY(-4px); }
+
+  /* the composition line: images / image collections / feature collections,
+     one quiet mono row so the four headline stats stay the loud thing */
+  .breakdown { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .12em; text-transform: uppercase; color: #6f6a86; }
+  .breakdown b { font-weight: 500; color: #211d3d; letter-spacing: .06em; }
+  .breakdown .sep { width: 3px; height: 3px; border-radius: 50%; background: #c3bdd4; }
+  .freshness { display: inline-flex; align-items: center; gap: 7px; padding: 4px 11px; border-radius: 999px; border: 1px solid rgba(75,63,143,.18); background: rgba(255,255,255,.6); color: #4b3f8f; }
+  .freshness i { width: 5px; height: 5px; border-radius: 50%; background: #6f63e0; font-style: normal; animation: cc-pulse 2.6s ease-in-out infinite; }
+  .freshness.stale i { background: #b9b3cc; animation: none; }
+
+  /* star pill sits with the socials, top right: filled like the hero CTA so it
+     reads as the one action in that row, with the mark knocked out to white */
+  .star { position: relative; overflow: hidden; isolation: isolate; display: flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; border: 1px solid transparent; background: #211d3d; color: #fdfdfe; box-shadow: 0 10px 22px -12px rgba(33,29,61,.9); transition: background .25s ease, box-shadow .25s ease, transform .25s ease; }
+  .star > * { position: relative; z-index: 1; }
+  .star .count { font-family: 'IBM Plex Mono', monospace; letter-spacing: .04em; color: rgba(253,253,254,.66); }
+  /* the nudge: a sheen crosses the pill about once every nine seconds, so it
+     catches the eye in passing without ever asking for attention outright */
+  .star::after { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(104deg, transparent 38%, rgba(255,255,255,.2) 50%, transparent 62%); transform: translateX(-130%); animation: cc-sheen 9s ease-in-out 4s infinite; }
+  @keyframes cc-sheen { 0%, 86% { transform: translateX(-130%); } 100% { transform: translateX(130%); } }
+  @media (hover: hover) { .star:hover { opacity: 1; background: #2d2757; transform: translateY(-1px); box-shadow: 0 16px 28px -14px rgba(33,29,61,.95); } }
+  .ticker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+  .ticker .label { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .18em; text-transform: uppercase; color: #6f6a86; }
+  .ds { font-size: clamp(15.5px, 1.1vw, 26px); letter-spacing: -.01em; color: #211d3d; white-space: nowrap; transition: opacity .32s ease; }
+  .dot { width: 4px; height: 4px; border-radius: 50%; background: #b9b3cc; }
+
+  #place { position: absolute; z-index: 4; right: var(--pad); bottom: clamp(26px,3.4vh,64px); display: flex; flex-direction: column; align-items: flex-end; gap: 8px; max-width: min(430px, 30vw); text-align: right; }
+  #placeName { font-size: clamp(26px,2.3vw,52px); line-height: 1.1; letter-spacing: -.025em; color: #211d3d; white-space: nowrap; transition: opacity .5s ease; }
+  #sources { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9px,.58vw,13px); line-height: 1.9; letter-spacing: .1em; text-transform: uppercase; color: #6f6a86; }
+  #fade { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(200px, 20vh, 340px); background: linear-gradient(0deg, rgba(253,253,254,.94) 0%, rgba(253,253,254,0) 100%); pointer-events: none; }
+
+  /* phones and tablets: one column, the stack becomes a hero band */
+  @media (max-width: 1080px) {
+    .stage { --pad: clamp(20px, 5.5vw, 48px); }
+    #frame { min-height: 0; }
+    #band { position: relative; inset: auto; height: min(42vh, 340px); min-height: 210px; margin: 4px 0 clamp(6px,2vh,22px); pointer-events: auto; }
+    #cam { left: 50%; top: 52%; }
+    main { width: 100%; padding: 0 var(--pad) clamp(24px,4vh,44px); align-items: flex-start; justify-content: flex-start; }
+    h1 { font-size: clamp(34px, 8.6vw, 58px); max-width: 16ch; }
+    main p { font-size: clamp(16px, 4.1vw, 20px); max-width: 40ch; }
+    #meta { position: static; padding: 0 var(--pad); gap: 16px; }
+    .stats { gap: 22px 30px; }
+    .stat b { font-size: clamp(23px, 6vw, 32px); }
+    #place { position: static; align-items: flex-start; text-align: left; max-width: 100%; padding: clamp(18px,3vh,30px) var(--pad) clamp(30px,5vh,54px); gap: 6px; }
+    #placeName { font-size: clamp(24px, 6.4vw, 34px); }
+    #sources { font-size: 9.5px; line-height: 1.8; max-width: 46ch; }
+    #fade { display: none; }
+    .cta { width: auto; }
+    header { padding: clamp(14px,3vw,22px) var(--pad); font-size: 10.5px; }
+    header nav { gap: 14px; }
+  }
+  @media (max-width: 420px) {
+    .ticker { gap: 6px 10px; }
+    .ds { font-size: 15px; }
+    .star { padding: 7px 13px; gap: 7px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #scaler > div, .plane, .eyebrow span, .glow, .star::after, .freshness i { animation: none !important; }
+    .star { transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <div class="glow" style="width:78vmax; height:78vmax; left:26%; top:34%; background:radial-gradient(circle, rgba(233,165,198,.22) 0%, rgba(233,165,198,0) 62%); animation:cc-drift 20s ease-in-out infinite"></div>
+  <div class="glow" style="width:72vmax; height:72vmax; right:-16vmax; top:-26vmax; background:radial-gradient(circle, rgba(146,164,236,.28) 0%, rgba(146,164,236,0) 62%); animation:cc-drift 26s ease-in-out infinite reverse"></div>
+
+  <div id="frame">
+    <header>
+      <span style="letter-spacing:.2em; text-transform:uppercase">gee-community-catalog.org</span>
+      <nav>
+        <a href="https://github.com/samapriya"><img src="https://cdn.simpleicons.org/github/5a5478" alt="" width="14" height="14" />GitHub</a>
+        <a href="https://linkedin.com/in/samapriya"><span style="display:flex; align-items:center; justify-content:center; width:14px; height:14px; border-radius:3px; background:#5a5478; color:#fdfdfe; font-size:8.5px; font-weight:500">in</span>LinkedIn</a>
+        <a href="https://datacommons.substack.com"><img src="https://cdn.simpleicons.org/substack/5a5478" alt="" width="13" height="13" />Substack</a>
+        <a href="https://github.com/sponsors/samapriya" style="padding:8px 15px; border-radius:999px; border:1px solid rgba(111,99,224,.4); color:#4b3f8f; background:rgba(255,255,255,.7)"><img src="https://cdn.simpleicons.org/githubsponsors/6f63e0" alt="" width="13" height="13" />Sponsor</a>
+        <a class="star" href="https://github.com/samapriya/awesome-gee-community-datasets" rel="noopener"><img src="https://cdn.simpleicons.org/github/fdfdfe" alt="" width="13" height="13" /><span>Star the Repo</span><span class="count" id="starCount" hidden></span></a>
+      </nav>
+    </header>
+
+    <div id="band">
+      <div id="cam">
+        <div id="scaler">
+          <div style="position:absolute; left:-322px; top:-322px; width:644px; height:644px; transform-style:preserve-3d; animation:cc-orbit 150s linear infinite">
+            <div style="position:absolute; inset:-40px; transform:translateZ(-34px)">
+              <div style="position:absolute; inset:0; border-radius:50%; background:radial-gradient(60% 60% at 50% 50%, rgba(23,21,40,.3), rgba(23,21,40,0) 70%); filter:blur(14px)"></div>
+            </div>
+
+            <div style="position:absolute; inset:0; transform:translateZ(0px); transform-style:preserve-3d">
+              <div class="plane" style="inset:0; border-radius:14px; animation:cc-hover 13s ease-in-out infinite; background-color:#1d2b33; box-shadow:0 60px 90px -40px rgba(23,21,40,.55), inset 0 0 0 1px rgba(255,255,255,.55)">
+                <div class="world" id="w0"></div>
+                <div class="vig" style="box-shadow:inset 0 0 60px rgba(0,0,0,.3)"></div>
+              </div>
+            </div>
+
+            <div style="position:absolute; inset:20px; transform:translateZ(46px); transform-style:preserve-3d">
+              <div class="plane" style="inset:0; animation:cc-hover 11s ease-in-out infinite .6s; background-color:#05070f; box-shadow:0 40px 70px -34px rgba(23,21,40,.5), inset 0 0 0 1px rgba(255,255,255,.55)">
+                <div class="world" id="w1"></div>
+                <div class="vig" style="box-shadow:inset 0 0 40px rgba(0,0,0,.2)"></div>
+              </div>
+            </div>
+
+            <div style="position:absolute; inset:42px; transform:translateZ(96px); transform-style:preserve-3d">
+              <div class="plane" style="inset:0; animation:cc-hover-lg 15s ease-in-out infinite .3s; background-color:#233026; box-shadow:0 40px 70px -34px rgba(23,21,40,.45), inset 0 0 0 1px rgba(255,255,255,.55)">
+                <div class="world" id="w2"></div>
+                <div class="vig" style="box-shadow:inset 0 0 40px rgba(0,0,0,.2)"></div>
+              </div>
+            </div>
+
+            <div style="position:absolute; inset:66px; transform:translateZ(146px); transform-style:preserve-3d">
+              <div class="plane" style="inset:0; animation:cc-hover 12s ease-in-out infinite 1.1s; background-color:#eaf1f7; box-shadow:0 36px 60px -34px rgba(23,21,40,.45), inset 0 0 0 1px rgba(255,255,255,.55)">
+                <div class="world" id="w3"></div>
+                <div class="vig" style="box-shadow:inset 0 0 40px rgba(23,21,40,.12)"></div>
+              </div>
+            </div>
+
+            <div style="position:absolute; inset:94px; transform:translateZ(196px); transform-style:preserve-3d">
+              <div class="plane" style="inset:0; animation:cc-hover-lg 17s ease-in-out infinite .9s; background-color:#120f1c; box-shadow:0 30px 54px -32px rgba(23,21,40,.5), inset 0 0 0 1px rgba(255,255,255,.55)">
+                <div class="world" id="w4"></div>
+                <div class="vig" style="box-shadow:inset 0 0 40px rgba(0,0,0,.2)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fade"></div>
+
+    <main>
+      <div class="eyebrow" style="animation:cc-rise .7s ease both">
+        <span style="width:6px; height:6px; border-radius:50%; background:#6f63e0; animation:cc-pulse 2.6s ease-in-out infinite"></span>
+        Grassroots &amp; unfunded since 2020
+      </div>
+      <img class="logo" src="https://gee-community-catalog.org/images/logo_cropped.jpg" alt="Awesome GEE Community Catalog" style="animation:cc-rise .8s ease .05s both" />
+      <h1 style="animation:cc-rise .8s ease .1s both">A community data commons</h1>
+      <p style="animation:cc-rise .8s ease .16s both">Layer upon layer, contributed by the people who needed it first. <span id="heroSize">585 TB</span> of open geospatial data, analysis ready inside Google Earth Engine.</p>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:4px; animation:cc-rise .8s ease .22s both">
+        <a class="cta" href="/about/">Get started <span class="mono">&rarr;</span></a>
+        <span class="mono" style="font-size:clamp(10.5px,.7vw,15px); line-height:1.6; letter-spacing:.14em; text-transform:uppercase; color:#6f6a86">Straight into<br />the data catalog</span>
+      </div>
+    </main>
+
+    <div id="meta">
+      <div class="stats">
+        <span class="stat"><b class="live" id="statSize">585 TB</b><span>open data</span></span>
+        <span class="stat"><b class="live" id="statAssets">4,378</b><span>assets</span></span>
+        <span class="stat"><b>16</b><span>themes</span></span>
+        <span class="stat"><b>150</b><span>publications</span></span>
+      </div>
+      <div class="breakdown">
+        <span><b class="live" id="statImages">1,884,588</b> images</span>
+        <span class="sep"></span>
+        <span><b class="live" id="statIC">791</b> image collections</span>
+        <span class="sep"></span>
+        <span><b class="live" id="statFC">3,123</b> feature collections</span>
+        <span class="freshness" id="freshness" title="Catalog is scanned end to end on a schedule"><i></i><span id="lastRun">live</span></span>
+      </div>
+      <span class="cited">Cited across 91 journals by more than 3,000 authors</span>
+      <div class="ticker">
+        <span class="label">In the catalog</span>
+        <span class="ds" id="ds0">FABDEM</span>
+        <span class="dot"></span>
+        <span class="ds" id="ds1">HydroLAKES</span>
+        <span class="dot"></span>
+        <span class="ds" id="ds2">MapBiomas</span>
+      </div>
+    </div>
+
+    <div id="place">
+      <span id="placeName">Congo Basin</span>
+      <span id="sources">Live tiles &middot; NASA GIBS Blue Marble &amp; Black Marble &middot; Sentinel-2 cloudless (EOX) &middot; JRC Global Surface Water &middot; SEDAC GPW v4</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var SRC = [
+    function (z, x, y) { return 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/' + z + '/' + y + '/' + x + '.jpeg'; },
+    function (z, x, y) { return 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/' + z + '/' + y + '/' + x + '.png'; },
+    function (z, x, y) { return 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/' + z + '/' + y + '/' + x + '.jpg'; },
+    function (z, x, y) { return 'https://storage.googleapis.com/global-surface-water/tiles2021/occurrence/' + z + '/' + x + '/' + y + '.png'; },
+    function (z, x, y) { return 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/GPW_Population_Density_2020/default/GoogleMapsCompatible_Level7/' + z + '/' + y + '/' + x + '.png'; }
+  ];
+  var FALLBACK = [
+    'linear-gradient(125deg, rgba(255,255,255,.18), rgba(0,0,0,.3)), repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0 1px, transparent 1px 38px), repeating-linear-gradient(90deg, rgba(255,255,255,.07) 0 1px, transparent 1px 38px)',
+    'radial-gradient(rgba(255,214,140,.8) 1.4px, transparent 1.5px), radial-gradient(45% 40% at 30% 66%, rgba(255,214,140,.4), transparent 70%)',
+    'radial-gradient(circle at 22% 30%, #3f7d52 0 14%, transparent 14.5%), radial-gradient(circle at 68% 22%, #cfc06a 0 11%, transparent 11.5%), radial-gradient(circle at 78% 66%, #d9a15a 0 15%, transparent 15.5%), radial-gradient(circle at 34% 74%, #4f8a5c 0 13%, transparent 13.5%), linear-gradient(#7fa957, #7fa957)',
+    'repeating-linear-gradient(58deg, rgba(36,112,196,.55) 0 2px, transparent 2px 54px), repeating-linear-gradient(-34deg, rgba(36,112,196,.3) 0 1px, transparent 1px 88px)',
+    'radial-gradient(rgba(202,124,48,.85) 1.5px, transparent 1.6px), radial-gradient(45% 40% at 34% 62%, rgba(202,124,48,.4), transparent 70%), linear-gradient(#f2e6c9, #f2e6c9)'
+  ];
+  // fly-to targets in continuous z=3 tile units
+  var PLACES = [
+    { name: 'Congo Basin', cx: 4.45, cy: 4.0 }, { name: 'Ganges Basin', cx: 5.9, cy: 3.45 },
+    { name: 'Amazon Basin', cx: 2.7, cy: 4.05 }, { name: 'Mekong Delta', cx: 6.35, cy: 3.66 },
+    { name: 'Great Lakes', cx: 2.15, cy: 2.9 }, { name: 'The Alps', cx: 4.2, cy: 2.9 },
+    { name: 'Anatolia', cx: 4.78, cy: 3.05 }, { name: 'Nile Delta', cx: 4.75, cy: 3.4 },
+    { name: 'Caspian Sea', cx: 5.2, cy: 3.0 }, { name: 'The Andes', cx: 2.5, cy: 4.4 },
+    { name: 'The Sahel', cx: 4.0, cy: 3.66 }, { name: 'Yangtze', cx: 6.6, cy: 3.3 },
+    { name: 'Japan', cx: 7.07, cy: 3.14 }, { name: 'Mississippi', cx: 2.0, cy: 3.26 },
+    { name: 'Indonesia', cx: 6.5, cy: 4.05 }, { name: 'Australia', cx: 7.2, cy: 4.7 },
+    { name: 'Zambezi', cx: 4.65, cy: 4.35 }, { name: 'Black Sea', cx: 4.6, cy: 2.9 }
+  ];
+  var NAMES = ['FABDEM', 'HydroLAKES', 'GEBCO', 'SoilGrids 250m', 'MapBiomas', 'WorldPop', 'geoBoundaries',
+    'HydroATLAS', 'GLODAP v2', 'Global Wind Atlas', 'Global Solar Atlas', 'SWORD', 'GloRiC', 'GLOBathy',
+    'Tallo', 'RADD Alerts', 'GABAM', 'MTBS', 'SNODAS', 'PRISM Daily', 'AgERA5', 'MERRA2', 'VegDRI',
+    'USA Structures', 'Ookla 5G Map', 'GRIP Roads', 'Global Power Plants', 'ESA WorldCover', 'GLanCE',
+    'GISA', 'LandScan', 'GlobPOP', 'CISI', 'HiHydroSoil', 'Global Aridity Index', 'Global Fungi',
+    'CloudSEN12', 'HySpecNet 11K', 'Global Mangroves', 'ETH Canopy Height', 'ICESat-2 CHM', 'Landfire',
+    'GHS OBAT', 'HydroWaste', 'Global Fire Atlas', 'Argo Floats', 'Terraclimate'];
+
+  var stage = document.getElementById('stage');
+  var frameEl = document.getElementById('frame');
+  var band = document.getElementById('band');
+  var cam = document.getElementById('cam');
+  var worlds = [0, 1, 2, 3, 4].map(function (i) { return document.getElementById('w' + i); });
+  var placeName = document.getElementById('placeName');
+  var sources = document.getElementById('sources');
+
+  var wide = window.matchMedia('(min-width: 1081px)');
+  var dead = false, idx = 0, timer = null, pending = false, builtZ = 0;
+  var Z = 3, UNIT = 256;
+
+  function setZoomLevel() {
+    // phones and tablets get the lighter z=2 mosaic (16 tiles a layer instead of ~50)
+    Z = wide.matches ? 3 : 2;
+    UNIT = 256 * Math.pow(2, Z - 3);
+    var side = 256 * Math.pow(2, Z);
+    worlds.forEach(function (w) { w.style.width = side + 'px'; w.style.height = side + 'px'; });
+  }
+
+  function offlineMosaic() {
+    dead = true;
+    worlds.forEach(function (host, i) {
+      host.style.display = 'none';
+      host.parentElement.style.backgroundImage = FALLBACK[i];
+      host.parentElement.style.backgroundSize = i === 1 ? '22px 22px, 100% 100%' : i === 4 ? '22px 22px, 100% 100%, 100% 100%' : 'auto';
+    });
+    sources.textContent = 'Tile services unreachable, showing the offline layer mosaic';
+    placeName.textContent = 'Offline mosaic';
+  }
+
+  function build() {
+    if (builtZ === Z || dead) return;
+    builtZ = Z;
+    var span = Math.pow(2, Z) - 1;
+    var tile = 256;
+    var queue = [];
+    worlds.forEach(function (host, i) {
+      host.innerHTML = '';
+      host.dataset.failed = '0';
+      for (var y = 0; y <= span; y++) for (var x = 0; x <= span; x++) queue.push([i, host, x, y]);
+    });
+    (function pump() {
+      var batch = queue.splice(0, 16);
+      batch.forEach(function (t) {
+        var img = new Image();
+        img.src = SRC[t[0]](Z, t[2], t[3]);
+        img.alt = '';
+        img.decoding = 'async';
+        img.style.left = t[2] * tile + 'px';
+        img.style.top = t[3] * tile + 'px';
+        img.style.width = (tile + 1) + 'px';
+        img.style.height = (tile + 1) + 'px';
+        img.addEventListener('error', function () {
+          img.style.display = 'none';
+          var n = (+t[1].dataset.failed || 0) + 1;
+          t[1].dataset.failed = String(n);
+          if (n > Math.pow(2, Z * 2) * 0.7 && !dead) offlineMosaic();
+        });
+        t[1].appendChild(img);
+      });
+      if (queue.length) setTimeout(pump, 0);
+    })();
+  }
+
+  function frame(host, place, alt) {
+    var half = host.parentElement.clientWidth / 2;
+    if (!half) return host.style.transform || '';
+    var s = ((half * 2) / (2 * UNIT)) * (alt || 1);
+    return 'translate(' + (half - s * place.cx * UNIT).toFixed(1) + 'px, ' + (half - s * place.cy * UNIT).toFixed(1) + 'px) scale(' + s.toFixed(4) + ')';
+  }
+
+  function seed() {
+    worlds.forEach(function (host) {
+      host.getAnimations().forEach(function (a) { a.cancel(); });
+      var t = frame(host, PLACES[idx], 1);
+      if (t) host.style.transform = t;
+    });
+  }
+
+  function fit() {
+    var s;
+    if (wide.matches) {
+      s = Math.max(0.62, Math.min(frameEl.clientWidth / 1560, window.innerHeight / 1010, 2.1));
+    } else {
+      var b = band.getBoundingClientRect();
+      s = Math.max(0.26, Math.min(b.width / 930, b.height / 660));
+    }
+    stage.style.setProperty('--s', s.toFixed(3));
+  }
+
+  function hop() {
+    if (dead) return;
+    if (document.hidden) { pending = true; return; }
+    var from = PLACES[idx];
+    idx = (idx + 1) % PLACES.length;
+    var to = PLACES[idx];
+    var mid = { cx: (from.cx + to.cx) / 2, cy: (from.cy + to.cy) / 2 };
+    var dist = Math.sqrt(Math.pow(to.cx - from.cx, 2) + Math.pow(to.cy - from.cy, 2));
+    var cruise = Math.max(0.52, 0.88 - dist * 0.1);
+    var dur = 3400 + Math.min(2200, dist * 460);
+    worlds.forEach(function (host) {
+      if (host.animate) {
+        host.animate([
+          { transform: frame(host, from, 1), offset: 0 },
+          { transform: frame(host, mid, cruise), offset: 0.5 },
+          { transform: frame(host, to, 1), offset: 1 }
+        ], { duration: dur, easing: 'cubic-bezier(.42,0,.58,1)', fill: 'forwards' });
+      } else {
+        host.style.transform = frame(host, to, 1);
+      }
+    });
+    placeName.style.opacity = '0';
+    setTimeout(function () { placeName.textContent = to.name; placeName.style.opacity = '1'; }, dur * 0.45);
+    clearTimeout(timer);
+    timer = setTimeout(hop, dur + 7000);
+  }
+
+  function ticker() {
+    var slots = [0, 1, 2].map(function (i) { return document.getElementById('ds' + i); });
+    var cursor = [0, Math.floor(NAMES.length / 3), Math.floor((NAMES.length * 2) / 3)];
+    slots.forEach(function (el, s) { el.textContent = NAMES[cursor[s]]; });
+    var turn = 0;
+    setInterval(function () {
+      if (document.hidden) return;
+      var s = turn % 3; turn++;
+      cursor[s] = (cursor[s] + 3) % NAMES.length;
+      var el = slots[s];
+      el.style.opacity = '0';
+      setTimeout(function () { el.textContent = NAMES[cursor[s]]; el.style.opacity = '1'; }, 320);
+    }, 1500);
+  }
+
+  function pointerTilt() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    stage.addEventListener('mousemove', function (e) {
+      var r = stage.getBoundingClientRect();
+      var nx = (e.clientX - r.left) / r.width - 0.5, ny = (e.clientY - r.top) / r.height - 0.5;
+      var k = parseFloat(getComputedStyle(stage).getPropertyValue('--s')) || 1;
+      cam.style.transform = 'translate(' + (-nx * 26 * k).toFixed(1) + 'px, ' + (-ny * 16 * k).toFixed(1) + 'px) rotateX(' + (ny * 5).toFixed(2) + 'deg) rotateY(' + (-nx * 7).toFixed(2) + 'deg)';
+    });
+    stage.addEventListener('mouseleave', function () { cam.style.transform = ''; });
+  }
+
+  function tapToTravel() {
+    band.addEventListener('click', function () { if (!dead) hop(); });
+  }
+
+  function boot() {
+    setZoomLevel();
+    fit();
+    build();
+    seed();
+    clearTimeout(timer);
+    timer = setTimeout(hop, 2400);
+  }
+
+  function onWidthChange() {
+    setZoomLevel();
+    fit();
+    build();
+    seed();
+    pending = false;
+    clearTimeout(timer);
+    timer = setTimeout(hop, 900);
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden && pending) { pending = false; hop(); }
+  });
+  if (wide.addEventListener) wide.addEventListener('change', onWidthChange);
+  window.addEventListener('resize', function () { fit(); if (!dead) seed(); });
+  window.addEventListener('orientationchange', function () { setTimeout(function () { fit(); seed(); }, 250); });
+
+  boot();
+  ticker();
+  pointerTilt();
+  tapToTravel();
+})();
+
+/* ---------------------------------------------------------------------------
+   Live catalog numbers.
+
+   Two gists are the source of truth, both written by the scheduled catalog scan:
+     - community.json : shields.io style badge blob, "message" is the asset count
+     - stats gist     : size, images, image collections, feature collections, run date
+
+   Everything in the markup is a last-known-good fallback, so the page still
+   reads correctly if either endpoint is slow, blocked, or offline.
+--------------------------------------------------------------------------- */
+(function () {
+  var ASSETS_URL = 'https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json';
+  var STATS_URL = 'https://gist.githubusercontent.com/samapriya/c604537511cb7ef3b46376ee5aff22c4/raw';
+  var REPO_URL = 'https://api.github.com/repos/samapriya/awesome-gee-community-datasets';
+  var REFRESH_MS = 10 * 60 * 1000;
+
+  var byId = function (id) { return document.getElementById(id); };
+  var group = function (n) { return n.toLocaleString('en-US'); };
+  var num = function (v) {
+    var f = parseFloat(String(v == null ? '' : v).replace(/[^0-9.\-]/g, ''));
+    return isFinite(f) ? f : null;
+  };
+
+  function fetchJSON(url) {
+    // cache-bust so a pinned CDN copy does not freeze the page on an old run
+    var u = url + (url.indexOf('?') > -1 ? '&' : '?') + 'cb=' + Date.now();
+    return fetch(u, { cache: 'no-store', mode: 'cors' }).then(function (r) {
+      if (!r.ok) throw new Error(url + ' -> ' + r.status);
+      return r.json();
+    });
+  }
+
+  /* ---- odometer -----------------------------------------------------------
+     Every number on the page is driven through commit(). It keeps the element's
+     current numeric position, so a tween can be retargeted mid flight: if live
+     data lands while the landing count-up is still running, the number simply
+     bends toward the new target instead of snapping or double animating.
+  ------------------------------------------------------------------------- */
+  var still = function () {
+    // rAF is paused in a hidden tab, so a count there would freeze part way
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.hidden;
+  };
+
+  function tween(el, dur) {
+    var goal = el._goal;
+    if (!goal) return;
+    if (el._raf) cancelAnimationFrame(el._raf);
+
+    var from = el._v != null ? el._v : num(el.textContent);
+    if (still() || goal.target == null || from == null || !window.requestAnimationFrame) {
+      el._v = goal.target;
+      el.textContent = goal.text;
+      return;
+    }
+    if (from === goal.target) { el.textContent = goal.text; return; }
+
+    // the space before a unit belongs to the suffix, not the number, or every
+    // intermediate frame would read "246TB" and only the last one "585 TB"
+    var head = (goal.text.match(/^[\d.,]+/) || [''])[0];
+    var suffix = goal.text.slice(head.length);
+    var decimals = (head.split('.')[1] || '').length;
+    var t0 = null;
+    el._raf = requestAnimationFrame(function step(t) {
+      if (t0 === null) t0 = t;
+      var p = Math.min(1, (t - t0) / dur);
+      var v = from + (goal.target - from) * (1 - Math.pow(1 - p, 3));
+      el._v = v;
+      el.textContent = (decimals ? v.toFixed(decimals) : group(Math.round(v))) + suffix;
+      if (p < 1) el._raf = requestAnimationFrame(step);
+      else { el._raf = null; el._v = goal.target; el.textContent = goal.text; }
+    });
+  }
+
+  function commit(el, text, target, dur) {
+    if (!el || text == null) return;
+    el._goal = { text: text, target: target };
+    // a pending landing delay will pick up whatever the newest goal is
+    if (!el._delay) tween(el, dur || 900);
+  }
+
+  // legacy entry point for the non numeric bits: a soft fade swap
+  function render(el, text, target) {
+    if (!el || text == null || el.textContent === text) return;
+    if (target != null) return commit(el, text, target);
+    el.classList.add('swap');
+    setTimeout(function () { el.textContent = text; el.classList.remove('swap'); }, 180);
+  }
+
+  // On landing every stat rolls up from zero, left to right. The markup values
+  // seed it, so the count is meaningful even before the gists answer.
+  function land() {
+    var els = document.querySelectorAll('.stats b, .breakdown b');
+    Array.prototype.forEach.call(els, function (el, i) {
+      var text = el.textContent, target = num(text);
+      if (target == null) return;
+      el._goal = { text: text, target: target };
+      if (still()) return;
+      var suffix = text.replace(/^[\d.,]+/, '');
+      el._v = 0;
+      el.textContent = '0' + suffix;
+      el._delay = setTimeout(function () {
+        el._delay = null;
+        tween(el, 1500);
+      }, 260 + i * 90);
+    });
+  }
+
+  function relative(dateStr) {
+    var d = new Date(dateStr + 'T00:00:00Z');
+    if (isNaN(d)) return { label: dateStr, stale: false };
+    var days = Math.floor((Date.now() - d.getTime()) / 86400000);
+    var label = days <= 0 ? 'Updated today'
+      : days === 1 ? 'Updated yesterday'
+      : days < 30 ? 'Updated ' + days + ' days ago'
+      : 'Updated ' + dateStr;
+    return { label: label, stale: days > 45 };
+  }
+
+  function applyStats(s) {
+    var size = num(s['Total Size of catalog']);
+    var unit = String(s['Total Size of catalog'] || '').replace(/[\d.,\s]/g, '') || 'TB';
+    if (size != null) {
+      var rounded = size >= 100 ? Math.round(size) : parseFloat(size.toFixed(1));
+      var sizeText = rounded + ' ' + unit;
+      render(byId('statSize'), sizeText, rounded);
+      var hero = byId('heroSize');
+      if (hero) hero.textContent = sizeText;
+      var desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute('content', 'A community data commons: ' + sizeText + ' of open geospatial data, analysis ready inside Google Earth Engine.');
+    }
+
+    [['Total images in catalog', 'statImages'],
+     ['Total image collections in catalog', 'statIC'],
+     ['Total Feature collections in catalog', 'statFC']].forEach(function (pair) {
+      var v = num(s[pair[0]]);
+      if (v != null) render(byId(pair[1]), group(v), v);
+    });
+
+    if (s['Last Run Date']) {
+      var r = relative(s['Last Run Date']);
+      var el = byId('lastRun');
+      if (el) el.textContent = r.label;
+      var pill = byId('freshness');
+      if (pill) {
+        pill.classList.toggle('stale', r.stale);
+        pill.setAttribute('title', 'Last catalog scan: ' + s['Last Run Date']);
+      }
+    }
+    syncSoon();
+  }
+
+  function applyAssets(j) {
+    var v = num(j && j.message);
+    if (v != null) render(byId('statAssets'), group(v), v);
+  }
+
+  function applyStars(j) {
+    var v = j && j.stargazers_count;
+    var el = byId('starCount');
+    if (!el || typeof v !== 'number') return;
+    el.textContent = v >= 1000 ? (v / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : group(v);
+    el.hidden = false;
+  }
+
+  // force is used for the first paint: a tab restored in the background is
+  // still hidden, and it should not be left showing the baked in fallbacks
+  function refresh(force) {
+    if (document.hidden && !force) return;
+    fetchJSON(STATS_URL).then(applyStats).catch(function () {});
+    fetchJSON(ASSETS_URL).then(applyAssets).catch(function () {});
+  }
+
+  /* Keep the hero clear of #meta. On the wide layout #meta is pinned to the
+     bottom edge while the hero is centred in the same box, so the hero's bottom
+     padding has to reserve the measured height of #meta plus breathing room.
+     Re-run on resize and whenever a number changes, since either can rewrap. */
+  var stageEl = document.getElementById('stage');
+  var metaEl = byId('meta');
+  var wideMQ = window.matchMedia('(min-width: 1081px)');
+
+  var syncing = false;
+
+  function syncMeta() {
+    if (!stageEl || !metaEl || syncing) return;
+    if (!wideMQ.matches) { stageEl.style.removeProperty('--metaPad'); return; }
+    syncing = true;
+
+    var r = metaEl.getBoundingClientRect();
+    var clearance = Math.max(56, Math.min(window.innerHeight * 0.1, 130));
+    var pad = (window.innerHeight - r.bottom) + r.height + clearance;
+    stageEl.style.setProperty('--metaPad', Math.round(pad) + 'px');
+
+    // give back whatever the taller hero pushed past the fold, so a short
+    // window never gains a scrollbar just to hold the extra breathing room
+    var over = document.documentElement.scrollHeight - window.innerHeight;
+    if (over > 0) stageEl.style.setProperty('--metaPad', Math.round(Math.max(0, pad - over)) + 'px');
+
+    syncing = false;
+  }
+
+  var syncTimer = null;
+  function syncSoon() { clearTimeout(syncTimer); syncTimer = setTimeout(syncMeta, 60); }
+
+  syncMeta();
+  window.addEventListener('resize', syncSoon);
+  window.addEventListener('orientationchange', syncSoon);
+  if (wideMQ.addEventListener) wideMQ.addEventListener('change', syncSoon);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncMeta);
+
+  land();
+  refresh(true);
+  // star count is rate limited per IP, so ask once per page load only
+  fetchJSON(REPO_URL).then(applyStars).catch(function () {});
+  setInterval(refresh, REFRESH_MS);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38830/vector", "Subtle Grayscale");
+
+// =============================================================================
+// GLOBAL VARIABLES AND CONFIGURATION
+// =============================================================================
+
+var currentLayer = null;
+var currentVisualization = 'total'; // Options: 'total', 'youth', 'elderly', 'working', 'children', 'female', 'male', 'gender_ratio'
+
+// Color palettes for different visualizations
+var palettes = {
+  population: ['#fff7ec', '#fee8c8', '#fdd49e', '#fdbb84', '#fc8d59', '#ef6548', '#d7301f', '#b30000', '#7f0000'],
+  female: ['#f7f7f7', '#fddbc7', '#f4a582', '#d6604d', '#b2182b', '#67001f'],
+  male: ['#f7f7f7', '#d1e5f0', '#92c5de', '#4393c3', '#2166ac', '#053061'],
+  youth: ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026'],
+  elderly: ['#f7fcf5', '#e5f5e0', '#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c'],
+  gender_ratio: ['#8e0152', '#c51b7d', '#de77ae', '#f7f7f7', '#7fbc41', '#4d9221', '#276419']
+};
+
+// Visualization parameters
+var visParams = {
+  total: {min: 0, max: 500, palette: palettes.population, label: 'Total Population', unit: 'people'},
+  youth: {min: 0, max: 200, palette: palettes.youth, label: 'Youth Population (0-24)', unit: 'people'},
+  working: {min: 0, max: 300, palette: palettes.population, label: 'Working Age (25-64)', unit: 'people'},
+  elderly: {min: 0, max: 100, palette: palettes.elderly, label: 'Elderly Population (65+)', unit: 'people'},
+  children: {min: 0, max: 150, palette: palettes.youth, label: 'Children (0-14)', unit: 'people'},
+  female: {min: 0, max: 250, palette: palettes.female, label: 'Female Population', unit: 'people'},
+  male: {min: 0, max: 250, palette: palettes.male, label: 'Male Population', unit: 'people'},
+  gender_ratio: {min: 80, max: 120, palette: palettes.gender_ratio, label: 'Gender Ratio', unit: 'males per 100 females'}
+};
+
+// Array of major cities with coordinates
+var majorCities = [
+  {name: "Tokyo, Japan", lat: 35.6762, lon: 139.6503, zoom: 10},
+  {name: "Delhi, India", lat: 28.7041, lon: 77.1025, zoom: 10},
+  {name: "Shanghai, China", lat: 31.2304, lon: 121.4737, zoom: 10},
+  {name: "São Paulo, Brazil", lat: -23.5505, lon: -46.6333, zoom: 10},
+  {name: "Mumbai, India", lat: 19.0760, lon: 72.8777, zoom: 10},
+  {name: "Beijing, China", lat: 39.9042, lon: 116.4074, zoom: 10},
+  {name: "Cairo, Egypt", lat: 30.0444, lon: 31.2357, zoom: 10},
+  {name: "Mexico City, Mexico", lat: 19.4326, lon: -99.1332, zoom: 10},
+  {name: "Dhaka, Bangladesh", lat: 23.8103, lon: 90.4125, zoom: 10},
+  {name: "New York, USA", lat: 40.7128, lon: -74.0060, zoom: 10},
+  {name: "Karachi, Pakistan", lat: 24.8607, lon: 67.0011, zoom: 10},
+  {name: "Istanbul, Turkey", lat: 41.0082, lon: 28.9784, zoom: 10},
+  {name: "Lagos, Nigeria", lat: 6.5244, lon: 3.3792, zoom: 10},
+  {name: "London, UK", lat: 51.5074, lon: -0.1278, zoom: 10},
+  {name: "Los Angeles, USA", lat: 34.0522, lon: -118.2437, zoom: 10},
+  {name: "Bangkok, Thailand", lat: 13.7563, lon: 100.5018, zoom: 10},
+  {name: "Seoul, South Korea", lat: 37.5665, lon: 126.9780, zoom: 10},
+  {name: "Jakarta, Indonesia", lat: -6.2088, lon: 106.8456, zoom: 10},
+  {name: "Manila, Philippines", lat: 14.5995, lon: 120.9842, zoom: 10},
+  {name: "Rio de Janeiro, Brazil", lat: -22.9068, lon: -43.1729, zoom: 10}
+];
+
+// =============================================================================
+// DATA PROCESSING FUNCTIONS
+// =============================================================================
+
+// Load and process age-sex data for a specific year
+function loadAgeSexData(year) {
+  // Load the full collection
+  var collection = ee.ImageCollection('projects/sat-io/open-datasets/WORLDPOP/agesex');
+  
+  // Filter by year property instead of date range
+  var filtered = collection.filter(ee.Filter.eq('year', year));
+  
+  // Mosaic all country images for this year
+  var data = filtered.mosaic();
+  
+  // Define band lists
+  var femaleBands = ['f_00', 'f_01', 'f_05', 'f_10', 'f_15', 'f_20', 'f_25', 'f_30', 'f_35', 'f_40',
+                     'f_45', 'f_50', 'f_55', 'f_60', 'f_65', 'f_70', 'f_75', 'f_80', 'f_85', 'f_90'];
+  var maleBands = ['m_00', 'm_01', 'm_05', 'm_10', 'm_15', 'm_20', 'm_25', 'm_30', 'm_35', 'm_40',
+                   'm_45', 'm_50', 'm_55', 'm_60', 'm_65', 'm_70', 'm_75', 'm_80', 'm_85', 'm_90'];
+  
+  // Calculate female population
+  var femalePop = data.select(femaleBands).reduce(ee.Reducer.sum()).rename('female_population');
+  
+  // Calculate male population
+  var malePop = data.select(maleBands).reduce(ee.Reducer.sum()).rename('male_population');
+  
+  // Calculate total population by adding female and male
+  var totalPop = femalePop.add(malePop).rename('total_population');
+  
+  // Youth population (0-24 years)
+  var youthPop = data.select([
+    'f_00', 'f_01', 'f_05', 'f_10', 'f_15', 'f_20',
+    'm_00', 'm_01', 'm_05', 'm_10', 'm_15', 'm_20'
+  ]).reduce(ee.Reducer.sum()).rename('youth_population');
+  
+  // Working age population (25-64 years)
+  var workingPop = data.select([
+    'f_25', 'f_30', 'f_35', 'f_40', 'f_45', 'f_50', 'f_55', 'f_60',
+    'm_25', 'm_30', 'm_35', 'm_40', 'm_45', 'm_50', 'm_55', 'm_60'
+  ]).reduce(ee.Reducer.sum()).rename('working_population');
+  
+  // Elderly population (65+ years)
+  var elderlyPop = data.select([
+    'f_65', 'f_70', 'f_75', 'f_80', 'f_85', 'f_90',
+    'm_65', 'm_70', 'm_75', 'm_80', 'm_85', 'm_90'
+  ]).reduce(ee.Reducer.sum()).rename('elderly_population');
+  
+  // Children (0-14 years)
+  var childrenPop = data.select([
+    'f_00', 'f_01', 'f_05', 'f_10',
+    'm_00', 'm_01', 'm_05', 'm_10'
+  ]).reduce(ee.Reducer.sum()).rename('children_population');
+  
+  // Gender ratio (males per 100 females)
+  var genderRatio = malePop.divide(femalePop).multiply(100).rename('gender_ratio');
+  
+  return {
+    total: totalPop,
+    female: femalePop,
+    male: malePop,
+    youth: youthPop,
+    working: workingPop,
+    elderly: elderlyPop,
+    children: childrenPop,
+    gender_ratio: genderRatio,
+    raw: data
+  };
+}
+
+// =============================================================================
+// VISUALIZATION FUNCTIONS
+// =============================================================================
+
+// Main function to update visualization
+function updateVisualization(year, vizType) {
+  // Validate year
+  if (!year || isNaN(year) || year < 2000 || year > 2023) {
+    print('Invalid year: ' + year + '. Must be between 2000 and 2023.');
+    return;
+  }
+  
+  // Remove current layer
+  if (currentLayer) {
+    Map.remove(currentLayer);
+    currentLayer = null;
+  }
+  
+  try {
+    print('Loading data for year: ' + year);
+    
+    // Load data
+    var data = loadAgeSexData(year);
+    
+    // Select appropriate data and visualization parameters
+    var imageToShow = data[vizType];
+    var vis = visParams[vizType];
+    
+    // Add layer
+    currentLayer = ui.Map.Layer(imageToShow, vis, vis.label + ' ' + year);
+    Map.layers().insert(0, currentLayer);
+    
+    // Update info panel and legend
+    updateInfoPanel(year, vizType);
+    updateLegend(vis);
+    
+    print('Successfully loaded ' + vis.label + ' for ' + year);
+    
+  } catch(error) {
+    print('Error loading data:', error);
+  }
+}
+
+// Function called by date slider
+function showPopulationForYear(dateRange) {
+  // Check if dateRange exists
+  if (!dateRange) {
+    return;
+  }
+  
+  // Use start() method to get the date from the date range
+  var startDate = ee.Date(dateRange.start());
+  var year = startDate.get('year').getInfo();
+  
+  if (year && !isNaN(year) && year >= 2000 && year <= 2023) {
+    updateVisualization(year, currentVisualization);
+  }
+}
+
+// Update information panel
+function updateInfoPanel(year, vizType) {
+  var vis = visParams[vizType];
+  infoLabel.setValue([
+    'WorldPop Age-Sex Population Data',
+    'Year: ' + year,
+    'View: ' + vis.label,
+    'Resolution: 100m',
+    'Scale: ' + vis.min + '-' + vis.max + ' ' + vis.unit,
+    '',
+    'Zoom or select an area from the list below'
+  ].join('\n'));
+}
+
+// Update legend
+function updateLegend(vis) {
+  // Clear existing legend content
+  legendPanel.clear();
+  
+  var legendTitle = ui.Label(vis.label, {
+    fontWeight: 'bold',
+    fontSize: '14px',
+    margin: '0 0 10px 0'
+  });
+  
+  // Color bar
+  var colorBar = ui.Thumbnail({
+    image: ee.Image.pixelLonLat().select(0),
+    params: {
+      bbox: [0, 0, 1, 0.1],
+      dimensions: '200x25',
+      format: 'png',
+      min: 0,
+      max: 1,
+      palette: vis.palette
+    },
+    style: {stretch: 'horizontal', margin: '0 0 5px 0'}
+  });
+  
+  var legendLabels = ui.Panel({
+    widgets: [
+      ui.Label(vis.min.toString(), {fontSize: '11px', margin: '0 5px'}),
+      ui.Label(vis.unit, {
+        textAlign: 'center',
+        stretch: 'horizontal',
+        fontSize: '11px',
+        margin: '0 10px'
+      }),
+      ui.Label(vis.max.toString() + '+', {fontSize: '11px', margin: '0 5px'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal')
+  });
+  
+  legendPanel.add(legendTitle);
+  legendPanel.add(colorBar);
+  legendPanel.add(legendLabels);
+}
+
+// Function to zoom to random city
+function zoomToRandomCity() {
+  var randomIndex = Math.floor(Math.random() * majorCities.length);
+  var selectedCity = majorCities[randomIndex];
+  
+  Map.setCenter(selectedCity.lon, selectedCity.lat, selectedCity.zoom);
+  print('Zoomed to: ' + selectedCity.name);
+  
+  return selectedCity;
+}
+
+// =============================================================================
+// USER INTERFACE SETUP
+// =============================================================================
+
+// Control panel (left side)
+var controlPanel = ui.Panel({
+  style: {
+    position: 'top-left',
+    width: '320px',
+    padding: '20px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '2px solid #ddd'
+  }
+});
+
+var title = ui.Label({
+  value: 'WorldPop Age-Sex Viewer',
+  style: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    color: '#333',
+    margin: '0 0 15px 0'
+  }
+});
+
+var infoLabel = ui.Label({
+  value: 'Loading...',
+  style: {
+    fontSize: '12px',
+    color: '#666',
+    whiteSpace: 'pre-line',
+    margin: '0 0 15px 0'
+  }
+});
+
+controlPanel.add(title);
+controlPanel.add(infoLabel);
+
+// Visualization selector
+var vizLabel = ui.Label('Select Visualization:', {
+  fontWeight: 'bold',
+  fontSize: '13px',
+  margin: '10px 0 5px 0'
+});
+
+var vizSelector = ui.Select({
+  items: [
+    {label: 'Total Population', value: 'total'},
+    {label: 'Youth (0-24 years)', value: 'youth'},
+    {label: 'Working Age (25-64 years)', value: 'working'},
+    {label: 'Elderly (65+ years)', value: 'elderly'},
+    {label: 'Children (0-14 years)', value: 'children'},
+    {label: 'Female Population', value: 'female'},
+    {label: 'Male Population', value: 'male'},
+    {label: 'Gender Ratio', value: 'gender_ratio'}
+  ],
+  value: 'total',
+  onChange: function(value) {
+    currentVisualization = value;
+    if (dateSlider && dateSlider.getValue()) {
+      try {
+        var sliderValue = dateSlider.getValue();
+        var startDate = ee.Date(sliderValue.start());
+        var year = startDate.get('year').getInfo();
+        
+        if (year && !isNaN(year) && year >= 2000 && year <= 2023) {
+          updateVisualization(year, value);
+        } else {
+          updateVisualization(2020, value);
+        }
+      } catch(e) {
+        // If slider not properly initialized, use default
+        updateVisualization(2020, value);
+      }
+    } else {
+      // Use default year if slider not yet initialized
+      updateVisualization(2020, value);
+    }
+  },
+  style: {
+    width: '100%',
+    margin: '0 0 15px 0'
+  }
+});
+
+controlPanel.add(vizLabel);
+controlPanel.add(vizSelector);
+
+// Random city button
+var randomCityButton = ui.Button({
+  label: 'Zoom to Random City',
+  onClick: function() {
+    zoomToRandomCity();
+  },
+  style: {
+    margin: '5px 0',
+    width: '100%'
+  }
+});
+
+controlPanel.add(randomCityButton);
+
+// City selector
+var cityLabel = ui.Label('Or select a city:', {
+  fontWeight: 'bold',
+  fontSize: '13px',
+  margin: '15px 0 5px 0'
+});
+
+var citySelector = ui.Select({
+  items: majorCities.map(function(city) {
+    return {label: city.name, value: city};
+  }),
+  placeholder: 'Choose a city...',
+  onChange: function(city) {
+    Map.setCenter(city.lon, city.lat, city.zoom);
+    print('Zoomed to: ' + city.name);
+  },
+  style: {
+    width: '100%',
+    margin: '0 0 10px 0'
+  }
+});
+
+controlPanel.add(cityLabel);
+controlPanel.add(citySelector);
+
+// Inspector panel for click information
+var inspectorPanel = ui.Panel({
+  style: {
+    shown: false,
+    position: 'bottom-left',
+    width: '350px',
+    maxHeight: '400px',
+    padding: '15px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '2px solid #ddd'
+  }
+});
+
+// Legend panel
+var legendPanel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '15px',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    border: '2px solid #ddd'
+  }
+});
+
+// =============================================================================
+// MAP CLICK INSPECTOR
+// =============================================================================
+
+Map.onClick(function(coords) {
+  inspectorPanel.clear();
+  inspectorPanel.style().set('shown', true);
+  
+  var point = ee.Geometry.Point([coords.lon, coords.lat]);
+  
+  var loadingLabel = ui.Label('Loading population data...');
+  inspectorPanel.add(loadingLabel);
+  
+  // Get current year from slider
+  try {
+    var sliderValue = dateSlider.getValue();
+    var startDate = ee.Date(sliderValue.start());
+    var year = startDate.get('year').getInfo();
+    
+    var data = loadAgeSexData(year);
+    
+    data.raw.reduceRegion({
+      reducer: ee.Reducer.first(),
+      geometry: point,
+      scale: 100
+    }).evaluate(function(result) {
+      inspectorPanel.clear();
+      
+      var panelTitle = ui.Label({
+        value: 'Population at: ' + coords.lat.toFixed(4) + ', ' + coords.lon.toFixed(4),
+        style: {
+          fontSize: '14px',
+          fontWeight: 'bold',
+          margin: '0 0 10px 0',
+          color: '#333'
+        }
+      });
+      inspectorPanel.add(panelTitle);
+      
+      if (result && result.f_00 !== null) {
+        // Calculate totals
+        var femaleTotal = 0;
+        var maleTotal = 0;
+        
+        Object.keys(result).forEach(function(key) {
+          if (key.startsWith('f_')) femaleTotal += result[key];
+          if (key.startsWith('m_')) maleTotal += result[key];
+        });
+        
+        var grandTotal = femaleTotal + maleTotal;
+        
+        var summaryLabel = ui.Label({
+          value: 'TOTAL: ' + grandTotal.toFixed(1) + ' people\n' +
+                 'Female: ' + femaleTotal.toFixed(1) + ' (' + ((femaleTotal/grandTotal)*100).toFixed(1) + '%)\n' +
+                 'Male: ' + maleTotal.toFixed(1) + ' (' + ((maleTotal/grandTotal)*100).toFixed(1) + '%)',
+          style: {
+            fontSize: '13px',
+            fontWeight: 'bold',
+            margin: '5px 0 10px 0',
+            backgroundColor: '#e6f3ff',
+            padding: '8px',
+            whiteSpace: 'pre',
+            fontFamily: 'monospace'
+          }
+        });
+        inspectorPanel.add(summaryLabel);
+        
+        // Age group breakdown
+        var ageGroups = ['00', '01', '05', '10', '15', '20', '25', '30', '35', '40', 
+                         '45', '50', '55', '60', '65', '70', '75', '80', '85', '90'];
+        
+        var ageLabels = ['<1', '1-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', 
+                         '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', 
+                         '70-74', '75-79', '80-84', '85-89', '90+'];
+        
+        var breakdownLabel = ui.Label({
+          value: 'Age Group Breakdown:',
+          style: {
+            fontSize: '12px',
+            fontWeight: 'bold',
+            margin: '5px 0'
+          }
+        });
+        inspectorPanel.add(breakdownLabel);
+        
+        // Create scrollable panel for age groups
+        var agePanel = ui.Panel({
+          style: {
+            maxHeight: '200px',
+            backgroundColor: '#f9f9f9',
+            padding: '5px'
+          }
+        });
+        
+        ageGroups.forEach(function(age, idx) {
+          var female = result['f_' + age] || 0;
+          var male = result['m_' + age] || 0;
+          var total = female + male;
+          
+          if (total > 0.1) {
+            var rowLabel = ui.Label({
+              value: ageLabels[idx] + ': F=' + female.toFixed(1) + ' M=' + male.toFixed(1) + ' (Total=' + total.toFixed(1) + ')',
+              style: {
+                fontSize: '11px',
+                fontFamily: 'monospace',
+                margin: '2px 0',
+                padding: '3px',
+                backgroundColor: idx % 2 === 0 ? '#ffffff' : '#f0f0f0'
+              }
+            });
+            agePanel.add(rowLabel);
+          }
+        });
+        
+        inspectorPanel.add(agePanel);
+        
+      } else {
+        var noDataLabel = ui.Label({
+          value: 'No population data available at this location.',
+          style: {
+            fontSize: '12px',
+            color: '#999',
+            fontStyle: 'italic'
+          }
+        });
+        inspectorPanel.add(noDataLabel);
+      }
+      
+      var closeButton = ui.Button({
+        label: 'Close',
+        onClick: function() {
+          inspectorPanel.style().set('shown', false);
+        },
+        style: {
+          margin: '10px 0 0 0'
+        }
+      });
+      inspectorPanel.add(closeButton);
+    });
+  } catch(e) {
+    inspectorPanel.clear();
+    inspectorPanel.add(ui.Label('Error loading population data. Please try again.'));
+    print('Error in Map.onClick:', e);
+  }
+});
+
+// =============================================================================
+// DATE SLIDER SETUP
+// =============================================================================
+
+var start = ee.Date('2015-01-01');
+var end = ee.Date('2030-01-01');
+var now = ee.Date('2026-01-01');
+
+var dateSlider;
+
+var dateRange = ee.DateRange(start, end).evaluate(function(range) {
+  dateSlider = ui.DateSlider({
+    start: range['dates'][0], 
+    end: range['dates'][1],
+    value: null,
+    period: 365,
+    style: {
+      position: 'top-center',
+      width: '600px'
+    },
+    onChange: showPopulationForYear
+  });
+  
+  Map.add(dateSlider.setValue(now.millis().getInfo()));
+});
+
+// =============================================================================
+// MAP INITIALIZATION
+// =============================================================================
+
+Map.clear();
+Map.add(controlPanel);
+Map.add(legendPanel);
+Map.add(inspectorPanel);
+
+// Load initial visualization and zoom to random city
+updateVisualization(2020, 'total');
+var initialCity = zoomToRandomCity();
+print('Initial random city: ' + initialCity.name);

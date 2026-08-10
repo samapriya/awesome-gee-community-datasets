@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var chm = ee.ImageCollection("projects/naip-chm/assets/conus-structure-model"),
+    naip = ee.ImageCollection("USDA/NAIP/DOQQ");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+chm = chm.map(function(img) {
+  var rescaled = img.divide(100)
+  return img.select([]).addBands(rescaled).rename(['chm_meters'])
+})
+
+naip = naip.filterDate('2012','2024').sort('system:time_start',true)
+Map.addLayer(naip,{}, 'naip source', false)
+
+var viridis = [
+  '#440154', // deep purple
+  '#482777',
+  '#3f4a8a',
+  '#31688e',
+  '#26828e',
+  '#1f9e89',
+  '#35b779',
+  '#6ece58',
+  '#fde725'  // bright yellow
+]; 
+
+Map.addLayer(chm.mosaic(), {min:0, max: 15, palette: viridis}, 'chm_meters',true)
+

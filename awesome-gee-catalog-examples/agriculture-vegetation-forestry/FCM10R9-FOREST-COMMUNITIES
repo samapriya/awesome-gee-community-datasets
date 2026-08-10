@@ -1,0 +1,60 @@
+var agc = ee.ImageCollection("projects/sat-io/open-datasets/FCM10R9/AGC");
+var ba = ee.ImageCollection("projects/sat-io/open-datasets/FCM10R9/BA");
+var sd = ee.ImageCollection("projects/sat-io/open-datasets/FCM10R9/SD");
+var species = ee.ImageCollection("projects/sat-io/open-datasets/FCM10R9/SPEC");
+
+Map.setCenter(-84.787,41.238,5)
+
+// Create mosaics
+var agcMosaic = agc.mosaic();
+var baMosaic = ba.mosaic();
+var sdMosaic = sd.mosaic();
+
+print(species.aggregate_histogram("species_code"))
+
+// Aboveground Carbon Vis
+var agcVis = {
+  min: 0,
+  max: 150,
+  palette: ['fef0d9', 'fdd49e', 'fdbb84', 'fc8d59', 'e34a33', 'b30000', '7f0000']
+};
+
+// Basal Area Vis
+var baVis = {
+  min: 0,
+  max: 40,
+  palette: ['f7fbff', 'deebf7', 'c6dbef', '9ecae1', '6baed6', '4292c6', '2171b5', '08519c', '08306b']
+};
+
+// Stem Density Vis
+var sdVis = {
+  min: 0,
+  max: 1000,
+  palette: ['f7f4f9', 'e7e1ef', 'd4b9da', 'c994c7', 'df65b0', 'e7298a', 'ce1256', '980043', '67001f']
+};
+
+// Sugar Maple Vis
+var sugarMaple = species.filter(ee.Filter.eq('species_code', 'ACSA')).mosaic();
+var sugarMapleVis = {
+  min: 0,
+  max: 20,
+  palette: ['ffffd4', 'fee391', 'fec44f', 'fe9929', 'ec7014', 'cc4c02', '993404', '662506']
+};
+
+// Eastern Hemlock Vis
+var easternHemlock = species.filter(ee.Filter.eq('species_code', 'TSCA')).mosaic();
+var easternHemlockVis = {
+  min: 0,
+  max: 20,
+  palette: ['f7fcf5', 'e5f5e0', 'c7e9c0', 'a1d99b', '74c476', '41ab5d', '238b45', '006d2c', '00441b']
+};
+
+
+Map.addLayer(agcMosaic, agcVis, 'Aboveground Carbon (Mg C/ha)', true);
+Map.addLayer(baMosaic, baVis, 'Basal Area (m²/ha)', false);
+Map.addLayer(sdMosaic, sdVis, 'Stem Density (trees/ha)', false);
+Map.addLayer(sugarMaple, sugarMapleVis, 'Sugar Maple - Autumn Gradient', false);
+Map.addLayer(easternHemlock, easternHemlockVis, 'Eastern Hemlock - Forest Greens', false);
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/15/subtle-grayscale", "Subtle Gray");

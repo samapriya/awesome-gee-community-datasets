@@ -1,0 +1,8 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var which_map = ee.Image("projects/sat-io/open-datasets/WHICH_MAP");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(which_map, 8);
+Map.addLayer(which_map, {min: 0, max: 30, palette:['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']}, 'WHiCH Canopy Height 2020');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

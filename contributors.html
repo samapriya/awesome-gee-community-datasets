@@ -2,589 +2,840 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome GEE Community Leaderboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome GEE Community Leaderboard</title>
+  <meta name="description" content="Contributors to the Awesome GEE Community Catalog.">
+  <link rel="icon"
+    href="https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png">
 
-    <!-- Fonts: Inter, JetBrains Mono, Montserrat -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <!--
+    Original look and feel, rebuilt without the framework stack.
+    Previously this page loaded React, ReactDOM, framer-motion (esm.sh),
+    @babel/standalone and the Tailwind CDN — roughly a megabyte of JS, and two
+    build-time jobs run on the visitor's main thread before first paint:
+    Babel compiling the JSX, and Tailwind's JIT scanning the DOM to generate
+    CSS. All of it is gone; the design is unchanged.
+  -->
 
-    <!-- Material Symbols -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+  <!-- Same families as before, trimmed from 17 weights to 5. Material Symbols
+       is dropped entirely — the five icons it was loaded for are inline SVG. -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Montserrat:wght@700;800&display=swap">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Start both fetches during head parsing, not after the script runs. -->
+  <link rel="preload" href="/issues-summary.json" as="fetch">
+  <link rel="preload" href="/repo-stats.json" as="fetch">
 
-    <!-- Babel for JSX -->
-    <script src="https://unpkg.com/@babel/standalone@7.23.5/babel.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-G7SXDJEWXV');
+  </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7SXDJEWXV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-G7SXDJEWXV');
-    </script>
+  <script>
+    // Applied before first paint so dark mode never flashes light first.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    } catch (e) { }
+  </script>
 
-    <!-- Import Map -->
-    <script type="importmap">
-    {
-        "imports": {
-            "react": "https://esm.sh/react@18.2.0",
-            "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?deps=react@18.2.0",
-            "framer-motion": "https://esm.sh/framer-motion@10.16.4?deps=react@18.2.0,react-dom@18.2.0"
-        }
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --fg: #0f172a;
+      --muted: #64748b;
+      --faint: #94a3b8;
+      --card: #ffffff;
+      --line: #e2e8f0;
+      --line-soft: #f1f5f9;
+      --accent: #2563eb;
+      --emerald: #10b981;
+      --violet: #8b5cf6;
+      --panel: rgba(255, 255, 255, .7);
+      --panel-border: rgba(255, 255, 255, .5);
+      --sticky: rgba(255, 255, 255, .85);
+      --sticky-border: rgba(226, 232, 240, .6);
+      --shadow: 0 1px 3px rgba(15, 23, 42, .06), 0 1px 2px rgba(15, 23, 42, .04);
+      --shadow-lg: 0 12px 24px -10px rgba(15, 23, 42, .18);
     }
-    </script>
 
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                        heading: ['Montserrat', 'sans-serif'],
-                    },
-                    colors: {
-                        slate: {
-                            850: '#151e2e',
-                        }
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    }
-                }
-            }
-        }
-    </script>
+    html.dark {
+      --bg: #0b1120;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --faint: #64748b;
+      --card: #1e293b;
+      --line: #334155;
+      --line-soft: #172033;
+      --accent: #60a5fa;
+      --emerald: #34d399;
+      --violet: #a78bfa;
+      --panel: rgba(30, 41, 59, .7);
+      --panel-border: rgba(255, 255, 255, .05);
+      --sticky: rgba(15, 23, 42, .85);
+      --sticky-border: rgba(51, 65, 85, .5);
+      --shadow: 0 1px 3px rgba(0, 0, 0, .3);
+      --shadow-lg: 0 12px 24px -10px rgba(0, 0, 0, .55);
+    }
 
-    <style>
-        body {
-            background-color: #f8fafc;
-            color: #0f172a;
-            font-family: "Inter", sans-serif;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    * { box-sizing: border-box; }
 
-        .dark body {
-            background-color: #0b1120;
-            color: #f1f5f9;
-        }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color .3s ease, color .3s ease;
+    }
 
-        /* Glassmorphism Utilities */
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-        }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+    .heading { font-family: Montserrat, Inter, sans-serif; }
+    a { color: inherit; text-decoration: none; }
 
-        .dark .glass-panel {
-            background: rgba(30, 41, 59, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
+    .wrap { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
 
-        .glass-sticky {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
-        }
+    @media (min-width: 640px) { .wrap { padding: 0 1.5rem; } }
+    @media (min-width: 1024px) { .wrap { padding: 0 2rem; } }
 
-        .dark .glass-sticky {
-            background: rgba(15, 23, 42, 0.85);
-            border-bottom: 1px solid rgba(51, 65, 85, 0.5);
-        }
+    /* ---------- hero ---------- */
+    .hero {
+      max-width: 77.5rem;
+      margin: 2.5rem auto 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1.5rem;
+      padding: 3.5rem 3.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.4rem;
+      box-shadow: 0 24px 60px -30px rgba(15, 23, 42, .25);
+    }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
+    html.dark .hero { box-shadow: 0 24px 60px -30px rgba(0, 0, 0, .6); }
 
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
+    .hero__logo { width: 300px; max-width: 80%; height: auto; }
 
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
-        }
+    .hero__title {
+      margin: 0;
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 2.75rem;
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -.03em;
+      text-align: center;
+    }
 
-        .dark ::-webkit-scrollbar-thumb {
-            background: #475569;
-        }
-    </style>
+    .hero__title span {
+      background-image: linear-gradient(90deg, #2563eb, #7c3aed);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    html.dark .hero__title span {
+      background-image: linear-gradient(90deg, #60a5fa, #a78bfa);
+    }
+
+    .hero__sub {
+      margin: 0;
+      font-size: 1.06rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 35rem;
+    }
+
+    .hero__sub strong { font-weight: 700; color: var(--fg); }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem;
+      padding: .9rem 1.4rem;
+      border-radius: 1.25rem;
+      background: var(--bg);
+      border: 1px solid var(--line-soft);
+    }
+
+    .stat-card {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      padding: .5rem .9rem;
+      border-radius: .875rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      transition: border-color .2s ease;
+    }
+
+    .stat-card:hover { border-color: var(--accent); }
+
+    .stat-card__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.125rem;
+      height: 2.125rem;
+      border-radius: .625rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .stat-card__icon svg { width: 1.2rem; height: 1.2rem; }
+    .stat-card__text { display: flex; flex-direction: column; }
+
+    .stat-card__value { font-size: 1.25rem; line-height: 1.1; font-weight: 700; }
+
+    .stat-card__label {
+      font-size: .625rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    .stats__divider { width: 1px; height: 2.375rem; background: var(--line); }
+
+    .stat-inline { display: flex; align-items: center; gap: .5rem; transition: opacity .2s ease; }
+    .stat-inline:hover { opacity: .75; }
+    .stat-inline svg { width: 1.2rem; height: 1.2rem; flex-shrink: 0; }
+    .stat-inline b { font-size: 1rem; font-weight: 700; color: var(--fg); }
+    .stat-inline .lbl { font-size: .75rem; color: var(--faint); }
+
+    @media (max-width: 56rem) {
+      .hero { padding: 2.5rem 1.5rem 2rem; margin: 1.25rem; border-radius: 1.25rem; }
+      .hero__title { font-size: 2rem; }
+      .stats__divider { display: none; }
+    }
+
+    /* ---------- sticky toolbar ---------- */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      margin-top: 1.5rem;
+      background: var(--sticky);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--sticky-border);
+    }
+
+    .controls { padding-top: 1rem; }
+
+    /* ---------- controls ---------- */
+    .controls {
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 1rem;
+    }
+
+    .search { position: relative; flex: 1 1 16rem; min-width: 12rem; }
+
+    .search svg {
+      position: absolute;
+      left: .7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--faint);
+      pointer-events: none;
+    }
+
+    .search input {
+      width: 100%;
+      padding: .55rem .8rem .55rem 2.2rem;
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: var(--card);
+      color: var(--fg);
+      font: inherit;
+      font-size: .85rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search input:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: -1px;
+      border-color: transparent;
+    }
+
+    .group {
+      display: flex;
+      gap: .2rem;
+      background: var(--line-soft);
+      padding: .25rem;
+      border-radius: .75rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .group::-webkit-scrollbar { display: none; }
+
+    .group button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: .75rem;
+      font-weight: 700;
+      padding: .4rem .75rem;
+      border-radius: .5rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color .2s, background-color .2s;
+    }
+
+    .group button:hover { color: var(--fg); }
+
+    .group button[aria-pressed="true"] {
+      background: var(--card);
+      color: var(--accent);
+      box-shadow: var(--shadow);
+    }
+
+    .icon-btn {
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--muted);
+      border-radius: .75rem;
+      padding: .5rem;
+      cursor: pointer;
+      display: inline-flex;
+      line-height: 0;
+      box-shadow: var(--shadow);
+    }
+
+    .icon-btn:hover { color: var(--fg); }
+
+    /* ---------- cards ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    .card {
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--panel-border);
+      border-radius: 1rem;
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .25s ease, transform .25s ease;
+      /* Skips layout and paint for offscreen cards. With 200+ contributors
+         this is the single biggest scrolling win. */
+      content-visibility: auto;
+      contain-intrinsic-size: 16rem;
+    }
+
+    .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+    .who { display: flex; gap: .85rem; align-items: center; margin-bottom: 1rem; }
+
+    .av-wrap { position: relative; flex-shrink: 0; }
+
+    .av {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: .85rem;
+      object-fit: cover;
+      background: var(--line-soft);
+      display: block;
+    }
+
+    .badge {
+      position: absolute;
+      right: -.5rem;
+      bottom: -.5rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: .5rem;
+      padding: .1rem .35rem;
+      min-width: 1.5rem;
+      text-align: center;
+      font-size: .7rem;
+      font-weight: 800;
+      color: var(--accent);
+      box-shadow: var(--shadow);
+    }
+
+    .name {
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .who a:hover .name { color: var(--accent); }
+    .login { font-size: .72rem; font-weight: 500; color: var(--muted); margin: .1rem 0 0; }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .78rem;
+      padding: .3rem 0;
+    }
+
+    .dot { width: .5rem; height: .5rem; border-radius: 50%; flex-shrink: 0; }
+    .stat .label { color: var(--muted); flex: 1; font-weight: 500; }
+    .stat .v { font-weight: 700; }
+    .stat .k { color: var(--faint); font-size: .68rem; }
+
+    .foot {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line-soft);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .72rem;
+    }
+
+    .foot .k {
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      font-weight: 700;
+      font-size: .66rem;
+    }
+
+    /* ---------- states ---------- */
+    .skel { background: var(--line-soft); border-radius: .5rem; }
+    @keyframes pulse { 50% { opacity: .5; } }
+    .pulse { animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite; }
+
+    .empty { grid-column: 1/-1; text-align: center; padding: 5rem 1rem; }
+
+    .empty-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background: var(--line-soft);
+      color: var(--faint);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .empty h3 { font-family: Montserrat, Inter, sans-serif; margin: 0 0 .25rem; }
+    .empty p { color: var(--muted); margin: 0; }
+
+    #sentinel { min-height: 5rem; display: grid; place-items: center; }
+
+    .tail {
+      margin: 0;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--faint);
+      text-align: center;
+    }
+
+    .spinner {
+      width: 2rem;
+      height: 2rem;
+      border: 4px solid var(--line);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer {
+      text-align: center;
+      color: var(--faint);
+      font-size: .75rem;
+      padding: 2.5rem 1rem;
+    }
+
+    footer p { margin: .35rem 0; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="root"></div>
+  <header class="hero">
+    <img class="hero__logo" src="https://i.imgur.com/FYPcTFF.png"
+         alt="Awesome GEE Community Catalog" width="300" height="90" fetchpriority="high">
+    <h1 class="hero__title">Community <span>Leaderboard</span></h1>
+    <p class="hero__sub">Celebrating the minds behind the
+      <strong>Awesome GEE Community Catalog</strong>.</p>
 
-    <script type="text/babel" data-type="module">
-        import React, { useState, useMemo, useEffect, useRef, Component } from 'react';
-        import { createRoot } from 'react-dom/client';
-        import { motion, AnimatePresence } from 'framer-motion';
+    <div class="stats">
+      <div class="stat-card">
+        <span class="stat-card__icon" style="background:#2563eb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <span class="stat-card__text">
+          <span class="stat-card__value mono" id="stat-contributors">&mdash;</span>
+          <span class="stat-card__label">Contributors</span>
+        </span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__icon" style="background:#7c3aed">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </span>
+        <span class="stat-card__text">
+          <span class="stat-card__value mono" id="stat-contributions">&mdash;</span>
+          <span class="stat-card__label">Contributions</span>
+        </span>
+      </div>
 
-        // --- Error Boundary ---
-        class ErrorBoundary extends Component {
-            constructor(props) {
-                super(props);
-                this.state = { hasError: false, error: null };
-            }
-            static getDerivedStateFromError(error) { return { hasError: true, error }; }
-            componentDidCatch(error, errorInfo) { console.error("React Error:", error, errorInfo); }
-            render() {
-                if (this.state.hasError) return (
-                    <div className="min-h-screen flex items-center justify-center bg-red-50 text-red-900 p-8">
-                        <div className="max-w-lg text-center">
-                            <h1 className="text-2xl font-bold mb-4">Something went wrong.</h1>
-                            <div className="bg-white p-4 rounded shadow text-left overflow-auto text-xs font-mono border border-red-200">{this.state.error?.toString()}</div>
-                        </div>
-                    </div>
-                );
-                return this.props.children;
-            }
+      <div class="stats__divider"></div>
+
+      <div class="stat-inline">
+        <svg style="color:#f59e0b" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <b class="mono" id="stat-stars">&mdash;</b><span class="lbl">Stars</span>
+      </div>
+      <div class="stat-inline">
+        <svg style="color:#3b82f6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M6 9v6M18 9a9 9 0 0 1-9 9"/></svg>
+        <b class="mono" id="stat-forks">&mdash;</b><span class="lbl">Forks</span>
+      </div>
+      <div class="stat-inline">
+        <svg style="color:#f43f5e" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg>
+        <b class="mono" id="stat-open">&mdash;</b><span class="lbl">Open issues</span>
+      </div>
+      <div class="stat-inline">
+        <svg style="color:#10b981" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 13 4 4L14 7M13 16l2 2 7-9"/></svg>
+        <b class="mono" id="stat-closed">&mdash;</b><span class="lbl">Closed</span>
+      </div>
+      <div class="stat-inline">
+        <svg style="color:#8b5cf6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><path d="M2 12h6.5M15.5 12H22"/></svg>
+        <b class="mono" id="stat-prs">&mdash;</b><span class="lbl">PRs</span>
+      </div>
+    </div>
+  </header>
+
+  <header class="toolbar">
+    <div class="wrap">
+      <div class="controls">
+        <div class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          <input id="q" type="search" placeholder="Find a contributor…" autocomplete="off"
+            aria-label="Search contributors">
+        </div>
+        <div class="group" id="years" role="group" aria-label="Filter by year"></div>
+        <div class="group" id="sorts" role="group" aria-label="Sort by">
+          <button data-sort="count" aria-pressed="true">Activity</button>
+          <button data-sort="recent" aria-pressed="false">Recent</button>
+          <button data-sort="az" aria-pressed="false">A&ndash;Z</button>
+        </div>
+        <button class="icon-btn" id="theme" aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" id="grid"></div>
+    <div id="sentinel" hidden><div class="spinner"></div></div>
+  </main>
+
+  <footer>
+    <p>Data provided by Awesome GEE Community Catalog.</p>
+    <p>Built with <span style="color:#ef4444">&hearts;</span> for the GEE Community</p>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      function fatal(msg) {
+        var g = document.getElementById('grid');
+        var s = document.getElementById('sentinel');
+        if (s) s.hidden = true;
+        if (g) {
+          g.innerHTML = '<div class="empty"><h3>Could not load contributors</h3>' +
+            '<p style="font-family:monospace;font-size:.72rem">' +
+            String(msg).replace(/[<>&]/g, '') + '</p></div>';
+        }
+      }
+
+      // Anything thrown outside the promise chain — event handlers, the
+      // requestAnimationFrame loop — would otherwise vanish into the console
+      // and leave the spinner turning forever.
+      window.addEventListener('error', function (e) {
+        fatal((e.message || 'Script error') + (e.lineno ? ' @ line ' + e.lineno : ''));
+      });
+      window.addEventListener('unhandledrejection', function (e) {
+        fatal('Unhandled: ' + ((e.reason && e.reason.message) || e.reason));
+      });
+
+      var PAGE = 24;
+      var grid = document.getElementById('grid');
+      var sentinel = document.getElementById('sentinel');
+      var qEl = document.getElementById('q');
+      var yearsEl = document.getElementById('years');
+      var sortsEl = document.getElementById('sorts');
+
+      var all = [], view = [], shown = 0;
+      var state = { q: '', year: String(new Date().getFullYear()), sort: 'count' };
+
+      (function skeletons() {
+        var f = document.createDocumentFragment();
+        for (var i = 0; i < 8; i++) {
+          var c = document.createElement('div');
+          c.className = 'card pulse';
+          c.innerHTML =
+            '<div class="who"><div class="skel" style="width:3.5rem;height:3.5rem;border-radius:.85rem"></div>' +
+            '<div style="flex:1"><div class="skel" style="height:.85rem;width:70%;margin-bottom:.45rem"></div>' +
+            '<div class="skel" style="height:.7rem;width:45%"></div></div></div>' +
+            '<div class="skel" style="height:.75rem;margin-bottom:.45rem"></div>' +
+            '<div class="skel" style="height:.75rem;width:80%"></div>';
+          f.appendChild(c);
+        }
+        grid.appendChild(f);
+      })();
+
+      function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+
+      var DATE_FMT = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      function when(iso) {
+        if (!iso) return 'N/A';
+        var d = new Date(iso);
+        return isNaN(d) ? 'N/A' : DATE_FMT.format(d);
+      }
+
+      function countFor(u, year) {
+        return year === 'All Time' ? (u.total_contributions || 0)
+                                   : ((u.years && u.years[year]) || 0);
+      }
+
+      function card(u) {
+        var el = document.createElement('article');
+        el.className = 'card';
+        // Avatars lazy-load and decode off the main thread, with explicit
+        // dimensions so the grid never reflows as they arrive.
+        el.innerHTML =
+          '<div class="who">' +
+            '<a class="av-wrap" href="' + esc(u.profile_url) + '" target="_blank" rel="noopener noreferrer">' +
+              '<img class="av" src="' + esc(u._avatar) + '" alt="" width="56" height="56" loading="lazy" decoding="async">' +
+              '<span class="badge mono">' + u._n + '</span></a>' +
+            '<div style="min-width:0">' +
+              '<a href="' + esc(u.profile_url) + '" target="_blank" rel="noopener noreferrer">' +
+                '<h3 class="name">' + esc(u.display_name || u.github_login) + '</h3></a>' +
+              '<p class="login mono">@' + esc(u.github_login) + '</p></div></div>' +
+          '<div class="stat"><span class="dot" style="background:var(--emerald)"></span>' +
+            '<span class="label">Issues</span>' +
+            '<span class="v">' + (u.open_issues || 0) + '</span><span class="k">open</span>' +
+            '<span class="v">' + (u.closed_issues || 0) + '</span><span class="k">closed</span></div>' +
+          '<div class="stat"><span class="dot" style="background:var(--violet)"></span>' +
+            '<span class="label">Pull Requests</span>' +
+            '<span class="v">' + (u.open_prs || 0) + '</span><span class="k">open</span>' +
+            '<span class="v">' + (u.merged_prs || 0) + '</span><span class="k">merged</span></div>' +
+          '<div class="foot"><span class="k">Last Active</span><span>' + when(u.last_contribution_date) + '</span></div>';
+        return el;
+      }
+
+      function append(n) {
+        var f = document.createDocumentFragment();
+        var end = Math.min(shown + n, view.length);
+        for (var i = shown; i < end; i++) f.appendChild(card(view[i]));
+        grid.appendChild(f);          // one reflow per batch, not one per card
+        shown = end;
+        tail();
+      }
+
+      // The end of the list is now an explicit state rather than the spinner
+      // silently disappearing, so it is obvious you have seen everyone.
+      function tail() {
+        if (!view.length) { sentinel.hidden = true; return; }
+        sentinel.hidden = false;
+        if (shown >= view.length) {
+          sentinel.innerHTML = '<p class="tail">' +
+            (view.length === all.length
+              ? 'That’s everyone — all ' + view.length + ' contributors'
+              : 'Showing all ' + view.length + ' matching contributors') +
+            '</p>';
+        } else {
+          sentinel.innerHTML = '<div class="spinner"></div>';
+        }
+      }
+
+      // IntersectionObserver only fires on TRANSITIONS. After appending a
+      // batch the sentinel is often still inside the root margin — on a tall
+      // window, a short result set, or when you scroll to the bottom quickly —
+      // so no further callback arrives and loading stalls until you scroll up
+      // and back down. That was the "stuck" behaviour. Keep topping up until
+      // the sentinel is genuinely pushed out of range.
+      function fill() {
+        if (shown >= view.length) return;
+        append(PAGE);
+        requestAnimationFrame(function () {
+          var r = sentinel.getBoundingClientRect();
+          if (shown < view.length && r.top < window.innerHeight + 400) fill();
+        });
+      }
+
+      function apply() {
+        var q = state.q.toLowerCase();
+        view = all.filter(function (u) {
+          u._n = countFor(u, state.year);
+          if (state.year !== 'All Time' && u._n === 0) return false;
+          if (!q) return true;
+          return (u.github_login || '').toLowerCase().indexOf(q) > -1 ||
+                 (u.display_name || '').toLowerCase().indexOf(q) > -1;
+        });
+
+        view.sort(function (a, b) {
+          if (state.sort === 'az') return (a.display_name || a.github_login).localeCompare(b.display_name || b.github_login);
+          if (state.sort === 'recent') return new Date(b.last_contribution_date) - new Date(a.last_contribution_date);
+          return b._n - a._n || (a.display_name || '').localeCompare(b.display_name || '');
+        });
+
+        grid.textContent = '';
+        shown = 0;
+
+        if (!view.length) {
+          grid.innerHTML =
+            '<div class="empty"><div class="empty-icon">' +
+            '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">' +
+            '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 8l6 6"/></svg></div>' +
+            '<h3>No contributors found</h3><p>Try adjusting your search or filters.</p></div>';
+          sentinel.hidden = true;
+          return;
+        }
+        fill();
+      }
+
+      function press(container, attr, value) {
+        var b = container.querySelectorAll('button');
+        for (var i = 0; i < b.length; i++) {
+          b[i].setAttribute('aria-pressed', String(b[i].getAttribute(attr) === value));
+        }
+      }
+
+      var timer;
+      qEl.addEventListener('input', function () {
+        clearTimeout(timer);                 // debounced — re-filtering 200+
+        timer = setTimeout(function () {     // records per keystroke was waste
+          state.q = qEl.value.trim();
+          apply();
+        }, 120);
+      });
+
+      sortsEl.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        state.sort = b.getAttribute('data-sort');
+        press(sortsEl, 'data-sort', state.sort);
+        apply();
+      });
+
+      yearsEl.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        state.year = b.getAttribute('data-year');
+        press(yearsEl, 'data-year', state.year);
+        apply();
+      });
+
+      document.getElementById('theme').addEventListener('click', function () {
+        var dark = document.documentElement.classList.toggle('dark');
+        try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) { }
+      });
+
+      new IntersectionObserver(function (en) {
+        if (en[0].isIntersecting) fill();
+      }, { rootMargin: '400px' }).observe(sentinel);
+
+      function getJSON(u) {
+        return fetch(u, { cache: 'no-cache' }).then(function (r) {
+          if (!r.ok) throw new Error(u + ' -> ' + r.status);
+          return r.json();
+        });
+      }
+
+      Promise.all([
+        getJSON('/issues-summary.json'),
+        getJSON('/repo-stats.json').catch(function () { return null; })
+      ]).then(function (res) {
+        all = Array.isArray(res[0]) ? res[0] : [];
+        var stats = res[1];
+
+        all.forEach(function (u) {
+          // avatar_local is written by scripts/issues_summary.py and served
+          // same-origin; fall back to the GitHub CDN, then a neutral mark.
+          u._avatar = u.avatar_local ? '/' + u.avatar_local
+                    : (u.avatar_url || 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+        });
+
+        function setNum(id, v) {
+          var el = document.getElementById(id);
+          if (el) el.textContent = (v == null ? 0 : v).toLocaleString();
         }
 
-        // --- Skeleton Loader ---
-        const SkeletonCard = () => (
-            <div className="rounded-2xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm animate-pulse">
-                <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-full bg-slate-200 dark:bg-slate-700"></div>
-                    <div className="flex-1">
-                        <div className="h-5 bg-slate-200 dark:bg-slate-700 rounded w-3/4 mb-2"></div>
-                        <div className="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/3"></div>
-                    </div>
-                </div>
-                <div className="h-8 bg-slate-100 dark:bg-slate-700/50 rounded mb-4"></div>
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="h-12 bg-slate-100 dark:bg-slate-700/50 rounded"></div>
-                    <div className="h-12 bg-slate-100 dark:bg-slate-700/50 rounded"></div>
-                </div>
-            </div>
-        );
+        function sum(field) {
+          return all.reduce(function (s, u) { return s + (u[field] || 0); }, 0);
+        }
 
-        // --- Components ---
+        setNum('stat-contributors', all.length);
+        setNum('stat-contributions', sum('total_contributions'));
+        // repo-stats.json has open_issues but no closed_issues, so derive it
+        // from the per-contributor totals.
+        setNum('stat-closed', sum('closed_issues'));
 
-        const Hero = ({ totalContributors, totalContributions, repoStats, contributorsData }) => {
-            // Calculate total closed issues from contributors if not explicitly in repoStats
-            const totalClosedIssues = contributorsData?.reduce((acc, curr) => acc + (curr.closed_issues || 0), 0) || 0;
+        if (stats) {
+          setNum('stat-stars', stats.total_stars);
+          setNum('stat-forks', stats.total_forks);
+          setNum('stat-open', stats.open_issues);
+          setNum('stat-prs', stats.total_prs);
+        }
 
-            const repoStatItems = repoStats ? [
-                { label: "Stars", value: repoStats.total_stars, icon: "star", color: "text-amber-500" },
-                { label: "Forks", value: repoStats.total_forks, icon: "call_split", color: "text-blue-500" },
-                { label: "Open Issues", value: repoStats.open_issues, icon: "adjust", color: "text-rose-500" },
-                { label: "Closed Issues", value: repoStats.closed_issues ?? totalClosedIssues, icon: "task_alt", color: "text-emerald-500" },
-                { label: "PRs", value: repoStats.total_prs, icon: "merge_type", color: "text-violet-500" }
-            ] : [];
+        // Year buttons come from the data. `years` only exists once
+        // issues_summary.yml has run with the updated script; until then this
+        // collapses to a single "All Time" filter rather than rendering empty.
+        var seen = {};
+        all.forEach(function (u) { for (var y in (u.years || {})) seen[y] = 1; });
+        var years = Object.keys(seen).sort().reverse();
+        if (years.indexOf(state.year) === -1) state.year = years[0] || 'All Time';
 
-            return (
-                <div className="relative pt-20 pb-16 overflow-hidden">
-                    {/* Background decoration */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 -z-10"></div>
-                    <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50"></div>
+        yearsEl.innerHTML = ['All Time'].concat(years).map(function (y) {
+          return '<button data-year="' + y + '" aria-pressed="' + (y === state.year) + '">' + y + '</button>';
+        }).join('');
 
-                    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-                        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                            <div className="inline-block p-3 rounded-2xl bg-white dark:bg-slate-800 shadow-sm mb-6">
-                                <img src="https://i.imgur.com/FYPcTFF.png" alt="Awesome GEE Logo" className="h-16 w-auto" />
-                            </div>
-                            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4 font-heading">
-                                Community <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">Leaderboard</span>
-                            </h1>
-                            <p className="mt-4 text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
-                                Celebrating the minds behind the <span className="font-semibold text-slate-800 dark:text-slate-200">Awesome GEE Community Catalog</span>.
-                            </p>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.3 }}
-                            className="mt-10 flex flex-wrap justify-center gap-4"
-                        >
-                            {/* Main Stats Pills */}
-                            <div className="glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
-                                <span className="text-2xl font-black text-slate-800 dark:text-white font-mono">{totalContributors || '...'}</span>
-                                <span className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Contributors</span>
-                            </div>
-                            <div className="glass-panel px-6 py-3 rounded-full flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
-                                <span className="text-2xl font-black text-slate-800 dark:text-white font-mono">{totalContributions || '...'}</span>
-                                <span className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Contributions</span>
-                            </div>
-                        </motion.div>
-
-                        {/* Repo Stats Row */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5 }}
-                            className="mt-8 flex flex-wrap justify-center gap-6 text-sm"
-                        >
-                            {repoStatItems.map((item) => (
-                                <div key={item.label} className="flex items-center gap-2 text-slate-600 dark:text-slate-400 bg-white/50 dark:bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-200/50 dark:border-slate-700/50">
-                                    <span className={`material-symbols-rounded text-[20px] ${item.color}`}>{item.icon}</span>
-                                    <span className="font-bold text-slate-900 dark:text-white font-mono">{item.value}</span>
-                                    <span>{item.label}</span>
-                                </div>
-                            ))}
-                        </motion.div>
-                    </div>
-                </div>
-            );
-        };
-
-        const StatRow = ({ icon, label, val1, label1, val2, label2, colorClass }) => (
-            <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 group-hover:border-slate-200 dark:group-hover:border-slate-600 transition-colors">
-                <div className="flex items-center gap-3">
-                    <div className={`p-1.5 rounded-md ${colorClass} bg-opacity-10`}>
-                        <span className={`material-symbols-rounded text-[18px] ${colorClass.replace('bg-', 'text-')}`}>{icon}</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{label}</span>
-                        <div className="flex gap-3 text-xs font-medium text-slate-700 dark:text-slate-300">
-                            <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val1}</span> {label1}</span>
-                            <span className="text-slate-300 dark:text-slate-600">|</span>
-                            <span><span className="font-bold font-mono text-slate-900 dark:text-white">{val2}</span> {label2}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-
-        const ContributorCard = ({ user, count, label }) => {
-            // Construct local avatar path, fallback to original if missing in dataset
-            const baseAssetUrl = "https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/refs/heads/master/";
-            const imageSrc = user.avatar_local ? `${baseAssetUrl}${user.avatar_local}` : user.avatar_url;
-
-            return (
-                <motion.div
-                    layout
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                    className="group relative flex flex-col justify-between p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
-                >
-                    {/* Header */}
-                    <div className="flex items-start justify-between mb-6">
-                        <div className="flex gap-4">
-                            <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="relative">
-                                <img
-                                    src={imageSrc}
-                                    alt={user.github_login}
-                                    loading="lazy"
-                                    decoding="async"
-                                    className="w-16 h-16 rounded-2xl object-cover border-2 border-white dark:border-slate-700 shadow-sm group-hover:scale-105 transition-transform"
-                                    onError={(e) => {
-                                        const fallbackMark = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png";
-                                        // 1st Fallback: Try the original github API avatar URL if local fails
-                                        if (e.target.src !== user.avatar_url && user.avatar_url) {
-                                            e.target.src = user.avatar_url;
-                                        }
-                                        // 2nd Fallback: Try the general github logo if even the original avatar fails
-                                        else if (e.target.src !== fallbackMark) {
-                                            e.target.onerror = null;
-                                            e.target.src = fallbackMark;
-                                        }
-                                    }}
-                                />
-                                <div className="absolute -bottom-2 -right-2 bg-white dark:bg-slate-800 rounded-lg p-1 shadow-sm border border-slate-100 dark:border-slate-700">
-                                    <span className="block text-xs font-black text-center min-w-[24px] text-blue-600 dark:text-blue-400 font-mono">
-                                        {count}
-                                    </span>
-                                </div>
-                            </a>
-                            <div className="flex flex-col justify-center">
-                                <a href={user.profile_url} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                                    <h3 className="text-lg font-bold text-slate-900 dark:text-white font-heading leading-tight line-clamp-1">
-                                        {user.display_name || user.github_login}
-                                    </h3>
-                                </a>
-                                <p className="text-xs font-medium text-slate-500 dark:text-slate-400 font-mono">@{user.github_login}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Stats */}
-                    <div className="space-y-2 mb-4">
-                        <StatRow
-                            icon="adjust"
-                            label="Issues"
-                            val1={user.open_issues || 0} label1="Open"
-                            val2={user.closed_issues || 0} label2="Closed"
-                            colorClass="bg-emerald-500 text-emerald-600"
-                        />
-                        <StatRow
-                            icon="call_split"
-                            label="Pull Requests"
-                            val1={user.open_prs || 0} label1="Open"
-                            val2={user.merged_prs || 0} label2="Merged"
-                            colorClass="bg-violet-500 text-violet-600"
-                        />
-                    </div>
-
-                    {/* Footer */}
-                    <div className="pt-4 mt-auto border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs">
-                        <span className="font-semibold text-slate-400 dark:text-slate-500 font-mono uppercase tracking-wider">Last Active</span>
-                        <span className="font-medium text-slate-600 dark:text-slate-300">
-                            {user.last_contribution_date
-                                ? new Date(user.last_contribution_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-                                : 'N/A'}
-                        </span>
-                    </div>
-                </motion.div>
-            );
-        };
-
-        const App = () => {
-            const [contributorsData, setContributorsData] = useState([]);
-            const [repoStats, setRepoStats] = useState(null);
-            const [searchTerm, setSearchTerm] = useState('');
-
-            // Set default year to the current local year
-            const currentYear = new Date().getFullYear().toString();
-            const [selectedYear, setSelectedYear] = useState(currentYear);
-
-            const [sortType, setSortType] = useState('count');
-            const [darkMode, setDarkMode] = useState(false);
-            const [loading, setLoading] = useState(true);
-
-            // Infinite Scroll Pagination State
-            const itemsPerPage = 24;
-            const [visibleCount, setVisibleCount] = useState(itemsPerPage);
-            const observerTarget = useRef(null);
-
-            useEffect(() => {
-                const fetchJson = async (url) => {
-                    const response = await fetch(url);
-                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                    return response.json();
-                };
-
-                Promise.all([
-                    fetchJson('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/issues-summary.json'),
-                    fetchJson('https://api.github.com/repos/samapriya/awesome-gee-community-datasets/issues?state=all&per_page=100'),
-                    fetchJson('https://raw.githubusercontent.com/samapriya/awesome-gee-community-datasets/master/repo-stats.json')
-                ]).then(([summary, issues, stats]) => {
-                    setRepoStats(stats);
-                    const yearlyData = {};
-                    if (Array.isArray(issues)) {
-                        issues.forEach(issue => {
-                            const user = issue.user.login;
-                            const year = new Date(issue.created_at).getFullYear().toString();
-                            if (!yearlyData[user]) yearlyData[user] = {};
-                            if (!yearlyData[user][year]) yearlyData[user][year] = 0;
-                            yearlyData[user][year]++;
-                        });
-                    }
-                    const mergedData = summary.map(user => ({
-                        ...user,
-                        years: yearlyData[user.github_login] || {}
-                    }));
-                    setContributorsData(mergedData);
-                    setLoading(false);
-                }).catch(err => {
-                    console.error("Failed to fetch data", err);
-                    setLoading(false);
-                });
-            }, []);
-
-            useEffect(() => {
-                if (darkMode) document.documentElement.classList.add('dark');
-                else document.documentElement.classList.remove('dark');
-            }, [darkMode]);
-
-            // Reset infinite scroll whenever filters change
-            useEffect(() => {
-                setVisibleCount(itemsPerPage);
-            }, [searchTerm, selectedYear, sortType]);
-
-            const availableYears = useMemo(() => {
-                const years = new Set();
-
-                // Ensure current year is always an option in the menu
-                years.add(new Date().getFullYear().toString());
-
-                contributorsData.forEach(user => {
-                    if (user.years) Object.keys(user.years).forEach(y => years.add(y));
-                });
-                return ['All Time', ...Array.from(years).sort().reverse()];
-            }, [contributorsData]);
-
-            const filteredData = useMemo(() => {
-                let data = contributorsData.map(user => {
-                    let count = selectedYear === 'All Time' ? user.total_contributions : (user.years?.[selectedYear] || 0);
-                    return { ...user, currentCount: count };
-                });
-                data = data.filter(u => u.currentCount > 0);
-                if (searchTerm) {
-                    const lowerTerm = searchTerm.toLowerCase();
-                    data = data.filter(u =>
-                        (u.github_login?.toLowerCase().includes(lowerTerm)) ||
-                        (u.display_name?.toLowerCase().includes(lowerTerm))
-                    );
-                }
-                data.sort((a, b) => {
-                    if (sortType === 'count') return b.currentCount - a.currentCount || (a.display_name || '').localeCompare(b.display_name || '');
-                    if (sortType === 'az') return (a.display_name || a.github_login).localeCompare(b.display_name || b.github_login);
-                    if (sortType === 'recent') return new Date(b.last_contribution_date) - new Date(a.last_contribution_date);
-                    return 0;
-                });
-                return data;
-            }, [contributorsData, searchTerm, selectedYear, sortType]);
-
-            // Visible slice for infinite scrolling
-            const visibleData = filteredData.slice(0, visibleCount);
-
-            // Set up Intersection Observer for Infinite Scroll
-            useEffect(() => {
-                const observer = new IntersectionObserver(
-                    entries => {
-                        if (entries[0].isIntersecting) {
-                            setVisibleCount(prev => Math.min(prev + itemsPerPage, filteredData.length));
-                        }
-                    },
-                    { rootMargin: '200px' } // Pre-fetch slightly before user hits the bottom
-                );
-
-                if (observerTarget.current) {
-                    observer.observe(observerTarget.current);
-                }
-
-                return () => observer.disconnect();
-            }, [filteredData.length]);
-
-            return (
-                <div className="min-h-screen dark:bg-slate-900 transition-colors duration-300">
-                    <Hero
-                        totalContributors={contributorsData.length}
-                        totalContributions={contributorsData.reduce((acc, curr) => acc + curr.total_contributions, 0)}
-                        repoStats={repoStats}
-                        contributorsData={contributorsData}
-                    />
-
-                    {/* Sticky Controls Bar */}
-                    <div className="sticky top-0 z-40 glass-sticky transition-colors duration-300">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                            <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
-                                {/* Search */}
-                                <div className="relative w-full lg:w-80 group">
-                                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <span className="material-symbols-rounded text-slate-400 group-focus-within:text-blue-500 transition-colors">search</span>
-                                    </div>
-                                    <input
-                                        type="text"
-                                        className="block w-full pl-10 pr-3 py-2.5 bg-slate-100 dark:bg-slate-800 border-none rounded-xl text-slate-900 dark:text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-800 transition-all font-sans text-sm"
-                                        placeholder="Find a contributor..."
-                                        value={searchTerm}
-                                        onChange={(e) => setSearchTerm(e.target.value)}
-                                    />
-                                </div>
-
-                                {/* Filters Row */}
-                                <div className="flex items-center gap-3 overflow-x-auto w-full lg:w-auto pb-1 scrollbar-hide">
-                                    {/* Year */}
-                                    <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
-                                        {availableYears.map(year => (
-                                            <button
-                                                key={year}
-                                                onClick={() => setSelectedYear(year)}
-                                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${selectedYear === year ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'}`}
-                                            >
-                                                {year}
-                                            </button>
-                                        ))}
-                                    </div>
-
-                                    <div className="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1"></div>
-
-                                    {/* Sort */}
-                                    <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
-                                        {[
-                                            { id: 'count', label: 'Activity' },
-                                            { id: 'recent', label: 'Recent' },
-                                            { id: 'az', label: 'A-Z' }
-                                        ].map(sort => (
-                                            <button
-                                                key={sort.id}
-                                                onClick={() => setSortType(sort.id)}
-                                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${sortType === sort.id ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'}`}
-                                            >
-                                                {sort.label}
-                                            </button>
-                                        ))}
-                                    </div>
-
-                                    <div className="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1"></div>
-
-                                    {/* Dark Mode Toggle */}
-                                    <button
-                                        onClick={() => setDarkMode(!darkMode)}
-                                        className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-                                    >
-                                        <span className="material-symbols-rounded text-[20px]">{darkMode ? 'light_mode' : 'dark_mode'}</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                        {/* Leaderboard Grid */}
-                        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            <AnimatePresence>
-                                {loading ? (
-                                    // Skeleton Loading State
-                                    [...Array(8)].map((_, i) => <SkeletonCard key={i} />)
-                                ) : visibleData.length > 0 ? (
-                                    visibleData.map((user) => (
-                                        <ContributorCard
-                                            key={user.github_login}
-                                            user={user}
-                                            count={user.currentCount}
-                                            label={selectedYear === 'All Time' ? 'Total' : `in ${selectedYear}`}
-                                        />
-                                    ))
-                                ) : (
-                                    <div className="col-span-full py-20 text-center">
-                                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-4">
-                                            <span className="material-symbols-rounded text-slate-400 text-3xl">search_off</span>
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">No contributors found</h3>
-                                        <p className="text-slate-500 dark:text-slate-400">Try adjusting your search or filters.</p>
-                                    </div>
-                                )}
-                            </AnimatePresence>
-                        </motion.div>
-
-                        {/* Invisible Target for Intersection Observer (Infinite Scroll Sentinel) */}
-                        {visibleCount < filteredData.length && (
-                            <div ref={observerTarget} className="w-full h-20 flex items-center justify-center mt-8">
-                                <div className="w-8 h-8 rounded-full border-4 border-slate-200 dark:border-slate-700 border-t-blue-500 dark:border-t-blue-400 animate-spin"></div>
-                            </div>
-                        )}
-                    </div>
-
-                    <footer className="text-center text-slate-400 dark:text-slate-500 text-xs py-10 font-mono">
-                        <p>Data provided by Awesome GEE Community Catalog.</p>
-                        <p className="mt-2 flex items-center justify-center gap-1">Built with <span className="text-red-500">❤</span> for the GEE Community</p>
-                    </footer>
-                </div>
-            );
-        };
-
-        const root = createRoot(document.getElementById('root'));
-        root.render(<ErrorBoundary><App /></ErrorBoundary>);
-    </script>
+        apply();
+      }).catch(function (err) {
+        fatal(err && err.message ? err.message : err);
+      });
+    })();
+  </script>
 </body>
 
 </html>

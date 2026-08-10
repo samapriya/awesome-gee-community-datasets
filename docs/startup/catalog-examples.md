@@ -5,7 +5,7 @@ The awesome GEE catalog dataset examples are now part of a repo. Add this to you
 ![repository_add](https://i.imgur.com/hcbHHM2.gif)
 
 
-<center>
+<center markdown>
 
 <div class="result" markdown>
 
@@ -22,7 +22,7 @@ The awesome GEE catalog dataset examples are now part of a repo. Add this to you
 
 
 
-<center>
+<center markdown>
 
 <div class="result" markdown>
 

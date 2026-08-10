@@ -1,0 +1,14 @@
+var rangeland_total_initial_carbon = ee.Image("projects/sat-io/open-datasets/USFS/RANGELAND_CARBON/RANGELAND_TOTAL_INITIAL_CARBON");
+Map.addLayer(rangeland_total_initial_carbon, {bands: ["b1"], min: 0, max: 2.34, palette: ["3e1f0d","5a2e15","783f1f","97542b","b66c3b","d1864e","e6a062","f2ba7a","f9d395","e1e9a5","b4da90","84c87c","53b069","2b8c52","0a643a","166e5c","105a80","0a449e"]}, "Total Initial Rangeland Carbon 2014");
+
+var rangeland_total_conditional_carbon_remaining = ee.Image("projects/sat-io/open-datasets/USFS/RANGELAND_CARBON/RANGELAND_TOTAL_CONDITIONAL_CARBON_REMAINING");
+Map.addLayer(rangeland_total_conditional_carbon_remaining, {bands: ["b1"], min: 0, max: 0.95, palette: ["4D2610","5A2E15","783F1F","F9D395","2B8C52","0A449E"]}, "Total Conditional Rangeland Carbon Remaining 2014");
+
+var rangeland_total_conditional_carbon_emissions = ee.Image("projects/sat-io/open-datasets/USFS/RANGELAND_CARBON/RANGELAND_TOTAL_CARBON_EMISSIONS");
+Map.addLayer(rangeland_total_conditional_carbon_emissions, {bands: ["b1"], min: 0, max: 1.61, palette: ["ffffcc","fbec9a","f4cc68","eca855","e48751","d2624d","a54742","73382f","422818","1a1a01"]}, "Total Conditional Rangeland Carbon Emission 2014");
+
+var rangeland_annual_expected_carbon = ee.Image("projects/sat-io/open-datasets/USFS/RANGELAND_CARBON/RANGELAND_ANNUAL_EXPECTED_CARBON");
+Map.addLayer(rangeland_annual_expected_carbon, {bands: ["b1"], min: 0, max: 2.35, palette: ["3e1f0d","5a2e15","783f1f","97542b","b66c3b","d1864e","e6a062","f2ba7a","f9d395","e1e9a5","b4da90","84c87c","53b069","2b8c52","0a643a","166e5c","105a80","0a449e"]}, "Total Annual Expected Rangeland Carbon 2014");
+
+var rangeland_annual_expected_carbon_emissions = ee.Image("projects/sat-io/open-datasets/USFS/RANGELAND_CARBON/RANGELAND_ANNUAL_EXPECTED_CARBON_EMISSIONS");
+Map.addLayer(rangeland_annual_expected_carbon_emissions, {bands: ["b1"], min: 0, max: 0.011, palette: ["ffffcc","fbec9a","f4cc68","eca855","e48751","d2624d","a54742","73382f","422818","1a1a01"]}, "Total Annual Expected Rangeland Carbon Emissions 2014");

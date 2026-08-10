@@ -1,0 +1,6946 @@
+{
+ "_meta": {
+  "last_commit": "dc8d03f2e8e6bc2e9eaaa94cebcbdb82bca1f833",
+  "generated": "2026-08-10T16:04:48Z",
+  "unresolved": [],
+  "api_calls_this_run": 0
+ },
+ "authors": {
+  "108081891+jornada-jw@users.noreply.github.com": {
+   "login": "jornada-jw",
+   "name": "jornada-jw",
+   "url": "https://github.com/jornada-jw",
+   "avatar": "https://avatars.githubusercontent.com/u/108081891?v=4"
+  },
+  "20658648+edarin@users.noreply.github.com": {
+   "login": "edarin",
+   "name": "\u00c9dith Darin",
+   "url": "https://github.com/edarin",
+   "avatar": "https://avatars.githubusercontent.com/u/20658648?v=4"
+  },
+  "33233973+ericrjensen@users.noreply.github.com": {
+   "login": "EricRJensen",
+   "name": "Eric Jensen",
+   "url": "https://github.com/EricRJensen",
+   "avatar": "https://avatars.githubusercontent.com/u/33233973?v=4"
+  },
+  "44976289+tschoun@users.noreply.github.com": {
+   "login": "Tschoun",
+   "name": "Joan Sturm",
+   "url": "https://github.com/Tschoun",
+   "avatar": "https://avatars.githubusercontent.com/u/44976289?v=4"
+  },
+  "45358635+nkeikon@users.noreply.github.com": {
+   "login": "nkeikon",
+   "name": "Keiko Nomura",
+   "url": "https://github.com/nkeikon",
+   "avatar": "https://avatars.githubusercontent.com/u/45358635?v=4"
+  },
+  "61289670+smorf-ntsg@users.noreply.github.com": {
+   "login": "smorf-ntsg",
+   "name": "Scott Morford",
+   "url": "https://github.com/smorf-ntsg",
+   "avatar": "https://avatars.githubusercontent.com/u/61289670?v=4"
+  },
+  "89984604+muhammedm294@users.noreply.github.com": {
+   "login": "MuhammedM294",
+   "name": "Muhammed Abdelaal",
+   "url": "https://github.com/MuhammedM294",
+   "avatar": "https://avatars.githubusercontent.com/u/89984604?v=4"
+  },
+  "action@github.com": {
+   "login": "actions-user",
+   "name": "GitHub Action",
+   "url": "https://github.com/actions-user",
+   "avatar": "https://avatars.githubusercontent.com/u/65916846?v=4"
+  },
+  "anjishnumahanta@gmail.com": {
+   "login": "anjishnum",
+   "name": "anjishnum",
+   "url": "https://github.com/anjishnum",
+   "avatar": "https://avatars.githubusercontent.com/u/35238072?v=4"
+  },
+  "emily@drivendata.org": {
+   "login": "ejm714",
+   "name": "ejm714",
+   "url": "https://github.com/ejm714",
+   "avatar": "https://avatars.githubusercontent.com/u/22667367?v=4"
+  },
+  "git@evetion.nl": {
+   "login": "evetion",
+   "name": "Maarten Pronk",
+   "url": "https://github.com/evetion",
+   "avatar": "https://avatars.githubusercontent.com/u/8655030?v=4"
+  },
+  "john.b.kilbride@gmail.com": {
+   "login": "JohnKilbride",
+   "name": "John Kilbride",
+   "url": "https://github.com/JohnKilbride",
+   "avatar": "https://avatars.githubusercontent.com/u/27167315?v=4"
+  },
+  "monti.majumdar@gmail.com": {
+   "login": "montimaj",
+   "name": "Sayantan (Monty) Majumdar, Ph.D.",
+   "url": "https://github.com/montimaj",
+   "avatar": "https://avatars.githubusercontent.com/u/5908368?v=4"
+  },
+  "robit.alec@gmail.com": {
+   "login": "robitalec",
+   "name": "Alec L. Robitaille",
+   "url": "https://github.com/robitalec",
+   "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+  },
+  "samapriya.roy@gmail.com": {
+   "login": "samapriya",
+   "name": "Samapriya Roy",
+   "url": "https://github.com/samapriya",
+   "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+  },
+  "schwehr@google.com": {
+   "login": "schwehr",
+   "name": "Kurt Schwehr",
+   "url": "https://github.com/schwehr",
+   "avatar": "https://avatars.githubusercontent.com/u/389869?v=4"
+  },
+  "ujaval@spatialthoughts.com": {
+   "login": "spatialthoughts",
+   "name": "Ujaval Gandhi",
+   "url": "https://github.com/spatialthoughts",
+   "avatar": "https://avatars.githubusercontent.com/u/5227506?v=4"
+  },
+  "valerie.pasquarella@gmail.com": {
+   "login": "valpasq",
+   "name": "Valerie Pasquarella",
+   "url": "https://github.com/valpasq",
+   "avatar": "https://avatars.githubusercontent.com/u/7560906?v=4"
+  }
+ },
+ "pages": {
+  "docs/changelog.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 210
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cygnss.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/substack_blogs.md": {
+   "counts": {
+    "action@github.com": 476,
+    "samapriya.roy@gmail.com": 8
+   },
+   "committers": [
+    "actions-user",
+    "samapriya"
+   ]
+  },
+  "docs/projects/groundsource.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/stats.md": {
+   "counts": {
+    "action@github.com": 647,
+    "samapriya.roy@gmail.com": 39
+   },
+   "committers": [
+    "actions-user",
+    "samapriya"
+   ]
+  },
+  "docs/projects/airtemp.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/landcast.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/annual_nlcd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 11
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wui.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rangeland_carbon.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rcmap-eag.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/naip_chm_conus.md": {
+   "counts": {
+    "61289670+smorf-ntsg@users.noreply.github.com": 1,
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya",
+    "smorf-ntsg"
+   ]
+  },
+  "docs/projects/rcmap.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_earthquakes.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ctrees_global.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/stapl_tillage.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/S2TSLULC.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 11
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/csi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gem_forest.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hres_wtd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gmseus.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/secondary_forest.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usgs_lulc_conus.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/landfire.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 15
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/plant_traits.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/solus.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/which.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/prism_monthly.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/c3slc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/prism.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/prism_daily.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/swt.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/worldpop.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/dea_shorlines.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/s2coast.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/fcm10r9.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/landscan_mosaic.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/noaa_ngs_eri.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tiger_roads.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/is2chm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tzero.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/grw.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/bii_africa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/fpar.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ctrees_amazon.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 63
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/reference/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 14
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/emc_built.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/carbon_projects.md": {
+   "counts": {
+    "john.b.kilbride@gmail.com": 1,
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya",
+    "JohnKilbride"
+   ]
+  },
+  "docs/projects/obm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wb_gad.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/landscan.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/pest_chemgrids.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/npk.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/agera5_datasets.md": {
+   "counts": {
+    "monti.majumdar@gmail.com": 1,
+    "samapriya.roy@gmail.com": 4,
+    "33233973+ericrjensen@users.noreply.github.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "montimaj",
+    "EricRJensen"
+   ]
+  },
+  "docs/projects/csa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cflux.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 8
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gba.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ogim.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gridded_gdp_hdi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghm-v3.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cci_agb.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gee_sebal.md": {
+   "counts": {
+    "monti.majumdar@gmail.com": 1,
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya",
+    "montimaj"
+   ]
+  },
+  "docs/projects/gsoc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/indus_soc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/peatgrids.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usdm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 8
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tanager.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/meta_trees.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_mining.md": {
+   "counts": {
+    "anjishnumahanta@gmail.com": 1,
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya",
+    "anjishnum"
+   ]
+  },
+  "docs/projects/merrav2.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/ghs_obat_summaries.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/publications/index_showcase.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghs_obat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/industrial.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/vulcan.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/publications/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glwd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/health_sites.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 9
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/forest_roads.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rap.md": {
+   "counts": {
+    "33233973+ericrjensen@users.noreply.github.com": 3,
+    "108081891+jornada-jw@users.noreply.github.com": 1,
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya",
+    "EricRJensen",
+    "jornada-jw"
+   ]
+  },
+  "docs/startup/catalog-assets.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/poi_lu.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gaul.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gisa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4,
+    "20658648+edarin@users.noreply.github.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "edarin"
+   ]
+  },
+  "docs/projects/globpop.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/gaul_aggregate.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/dswe_landsat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tinitaly.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/us_tcc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/daily_lst.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/browser/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/forum/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/browse/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/s2hswiss.md": {
+   "counts": {
+    "44976289+tschoun@users.noreply.github.com": 1,
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya",
+    "Tschoun"
+   ]
+  },
+  "docs/contributing/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/search_features/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tdep.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/involved.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mslsp.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nbac.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ladem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/urbansky.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wyvern.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/vodca_v2.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/vodca.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/srunet_npp_viirs_ntl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/utglobus.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/npp_viirs_ntl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/globutci.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/delta_dtm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3,
+    "git@evetion.nl": 2
+   },
+   "committers": [
+    "samapriya",
+    "evetion"
+   ]
+  },
+  "docs/projects/pk_lulc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_ftype.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gdat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gdw.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/survey_checkpoints.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gnatsgo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gridded_livestock.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/amazon_peat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/floodplain_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glance.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_species_ts.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gci30.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/qdann.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mangrove.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/popcorn.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/peatland.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/peatland_ml.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/uhii.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/spring_indices.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_fires.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7,
+    "robit.alec@gmail.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "robitalec"
+   ]
+  },
+  "docs/projects/ca_sbfi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gde.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/caml.md": {
+   "counts": {
+    "emily@drivendata.org": 1,
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya",
+    "ejm714"
+   ]
+  },
+  "docs/insiders/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nsi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/overture_buildings.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mlab_extracts.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ookla_5g.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/speedtest.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 10
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/about_us.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/blog/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/contributing/bug.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/contributing/example.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/contributing/submit.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/contributing/update.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/history.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/insiders/insiders_program.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/medium_blogs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/startup/catalog-examples.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/startup/navigation.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/glc_fcs30d_lulc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/global_shorelines.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/examples/landscan_extracts.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/tutorials/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mangrove_ht_tandemx.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gwl_fcs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/blogs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 11
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/pwplants.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_pm25.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rai.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/syn_ntl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/license.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghap.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sarl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/csb.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/s1gbm.md": {
+   "counts": {
+    "89984604+muhammedm294@users.noreply.github.com": 1,
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya",
+    "MuhammedM294"
+   ]
+  },
+  "docs/projects/era5_heat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/fiboa_uk.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_palm_oil.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/veg_dri.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glc_fcs.md": {
+   "counts": {
+    "ujaval@spatialthoughts.com": 1,
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya",
+    "spatialthoughts"
+   ]
+  },
+  "docs/projects/glacier.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/grod.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sword.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usgwd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/avhrr-ltdr.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/pk_nssed.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/insiders.md": {
+   "counts": {
+    "robit.alec@gmail.com": 1,
+    "samapriya.roy@gmail.com": 5,
+    "valerie.pasquarella@gmail.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "robitalec",
+    "valpasq"
+   ]
+  },
+  "docs/projects/dynqual.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cloudsen12.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ccap_mlc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/india_river_trends.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/bug.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/example.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/submit.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/update.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/salinity.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/globgm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/af_trees.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glance_training.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gabam.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gshtd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/climate_trace.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/japan_eq2024.md": {
+   "counts": {
+    "45358635+nkeikon@users.noreply.github.com": 2,
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya",
+    "nkeikon"
+   ]
+  },
+  "docs/projects/umbra_opendata.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rgi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/native.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_buildings.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usgs_topo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/isric.md": {
+   "counts": {
+    "robit.alec@gmail.com": 1,
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya",
+    "robitalec"
+   ]
+  },
+  "docs/projects/land_subsidence.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/aces_bhutan.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gid.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glodap.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/giulu.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gci.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/startup/bug.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/startup/example.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3,
+    "schwehr@google.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "schwehr"
+   ]
+  },
+  "docs/startup/submit.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/startup/update.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3,
+    "schwehr@google.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "schwehr"
+   ]
+  },
+  "docs/projects/daylight_maps.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcd_assets.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/streamflow_india.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mapbiomas.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gimms_ndvi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/bii.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/fabdem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ussdo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cpc_morph.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hrdpa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hrdps.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rdpa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rdps.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/anusplin.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/can_drought_outlook.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/chirps_prelim.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/fret.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_esi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gpm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nclim_grid.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/noaa_acis.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/historical_us.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hntl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/pomelo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usgs_modis_et.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_forest_fire.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cems_fire.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/firms_vector.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfwed.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mtbs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wrc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gisd30.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nadm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/snodas.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usgs_viirs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sa_nlc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghsl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/br_dwgd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gebco.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cmapper.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/eog_viirs_ntl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hrdem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/msroads.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/swiss3d.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/code_of_conduct.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_tcc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/aogcm_cmip6.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 8
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/modis_8day_snow.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/snow_cover.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_fungi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hyspecnet.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/habitat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global-mining.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/heat-hazard.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/oam.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/srer_drone.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/af_cmask.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hwsd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_fao.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcb.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfch.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfm_100.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cci_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/globcover_esa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/lcmap.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 10
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/maxar_opendata.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3,
+    "schwehr@google.com": 1
+   },
+   "committers": [
+    "samapriya",
+    "schwehr"
+   ]
+  },
+  "docs/projects/geomorpho90.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/deaf_shorlines.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_fa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/geoboundary.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/dea_croplands.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/histarfm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/mpw.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcep30.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/lgrip30.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nawbd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/aster.md": {
+   "counts": {
+    "robit.alec@gmail.com": 1,
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya",
+    "robitalec"
+   ]
+  },
+  "docs/projects/soil_bioclim.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_forest_harvest.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_harvest_fire.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/caf_harvest_fire.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/radd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ltrait.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usa_structures.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hydro90.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/urban_projection.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/edge_matched.md": {
+   "counts": {
+    "schwehr@google.com": 1,
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya",
+    "schwehr"
+   ]
+  },
+  "docs/projects/tallo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/us_ftype_fgroup.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_canopy_ht.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ca_species.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/flood.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cisi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/esrilc2020.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hitisae.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hydrowaste.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/lcnet.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rwi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/slrdem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/soilprop.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tbdem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/elc_gdp.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/GPWv4.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/cc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ccap_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ccap_wpotential.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/dea_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/elc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcn250.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfplain250.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/globathy.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gloric.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/goodd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gridded_ppt.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/grn_wrz.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/grwl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hand.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hrsl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hydra_water.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hydroatlas.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hydrolakes.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/isda.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/msbuildings.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nhd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nwi.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/oil-palm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/osm_water.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/realsat.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/river_deltas.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/rivermouth.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sa_nlc2018.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sci.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/urban-watch.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/usbuild_raster.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/vt_lc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wa_lulc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wacvm.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wpschool.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/aqualink.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/argo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 7
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/electric_grid.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/energy_farms.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_power.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_pv.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gowt.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/grip.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gssr.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/plastic.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/shoreline.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/sstg.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ai0.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/esa_iq.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/et0.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gdis.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glc10.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_salinity.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gmd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gsa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gue.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gwa.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hihydro_soil.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/isccp_hxg.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/landslide.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/lba.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/lghap.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/piscoeo.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/polaris.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/terraclim.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wsf.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/astwbd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/bss.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/france5m.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/glo30.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 6
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/iceland_dem.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/irc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/scs.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3,
+    "robit.alec@gmail.com": 2
+   },
+   "committers": [
+    "samapriya",
+    "robitalec"
+   ]
+  },
+  "docs/projects/soc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/soil_nematode.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcl.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gfv.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/ghh.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/harvest.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 5
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/nafd.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tile.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/veg_dry.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 4
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/canopy.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_fertilizer.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/global_irrigation.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/shd_sun_gpp.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/tillage.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/monoculture.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/wsf2015.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/gcc.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/image_upload.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/earthenv.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/geomorph90.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/about.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  }
+ },
+ "committers_by_page": {
+  "docs/changelog.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cygnss.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/substack_blogs.md": [
+   {
+    "login": "actions-user",
+    "name": "GitHub Action",
+    "url": "https://github.com/actions-user",
+    "avatar": "https://avatars.githubusercontent.com/u/65916846?v=4"
+   },
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/groundsource.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/stats.md": [
+   {
+    "login": "actions-user",
+    "name": "GitHub Action",
+    "url": "https://github.com/actions-user",
+    "avatar": "https://avatars.githubusercontent.com/u/65916846?v=4"
+   },
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/airtemp.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/landcast.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/annual_nlcd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wui.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rangeland_carbon.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rcmap-eag.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/naip_chm_conus.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "smorf-ntsg",
+    "name": "Scott Morford",
+    "url": "https://github.com/smorf-ntsg",
+    "avatar": "https://avatars.githubusercontent.com/u/61289670?v=4"
+   }
+  ],
+  "docs/projects/rcmap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_earthquakes.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ctrees_global.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/stapl_tillage.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/S2TSLULC.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/csi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gem_forest.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hres_wtd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gmseus.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/secondary_forest.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usgs_lulc_conus.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/landfire.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/plant_traits.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/solus.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/which.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/prism_monthly.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/c3slc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/prism.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/prism_daily.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/swt.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/worldpop.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/dea_shorlines.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/s2coast.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/fcm10r9.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/landscan_mosaic.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/noaa_ngs_eri.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tiger_roads.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/is2chm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tzero.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/grw.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/bii_africa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/fpar.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ctrees_amazon.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/reference/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/emc_built.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/carbon_projects.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "JohnKilbride",
+    "name": "John Kilbride",
+    "url": "https://github.com/JohnKilbride",
+    "avatar": "https://avatars.githubusercontent.com/u/27167315?v=4"
+   }
+  ],
+  "docs/projects/obm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wb_gad.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/landscan.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/pest_chemgrids.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/npk.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/agera5_datasets.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "montimaj",
+    "name": "Sayantan (Monty) Majumdar, Ph.D.",
+    "url": "https://github.com/montimaj",
+    "avatar": "https://avatars.githubusercontent.com/u/5908368?v=4"
+   },
+   {
+    "login": "EricRJensen",
+    "name": "Eric Jensen",
+    "url": "https://github.com/EricRJensen",
+    "avatar": "https://avatars.githubusercontent.com/u/33233973?v=4"
+   }
+  ],
+  "docs/projects/csa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cflux.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gba.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ogim.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gridded_gdp_hdi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghm-v3.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cci_agb.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gee_sebal.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "montimaj",
+    "name": "Sayantan (Monty) Majumdar, Ph.D.",
+    "url": "https://github.com/montimaj",
+    "avatar": "https://avatars.githubusercontent.com/u/5908368?v=4"
+   }
+  ],
+  "docs/projects/gsoc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/indus_soc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/peatgrids.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usdm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tanager.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/meta_trees.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_mining.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "anjishnum",
+    "name": "anjishnum",
+    "url": "https://github.com/anjishnum",
+    "avatar": "https://avatars.githubusercontent.com/u/35238072?v=4"
+   }
+  ],
+  "docs/projects/merrav2.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/ghs_obat_summaries.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/publications/index_showcase.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghs_obat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/industrial.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/vulcan.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/publications/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glwd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/health_sites.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/forest_roads.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "EricRJensen",
+    "name": "Eric Jensen",
+    "url": "https://github.com/EricRJensen",
+    "avatar": "https://avatars.githubusercontent.com/u/33233973?v=4"
+   },
+   {
+    "login": "jornada-jw",
+    "name": "jornada-jw",
+    "url": "https://github.com/jornada-jw",
+    "avatar": "https://avatars.githubusercontent.com/u/108081891?v=4"
+   }
+  ],
+  "docs/startup/catalog-assets.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/poi_lu.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gaul.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gisa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "edarin",
+    "name": "\u00c9dith Darin",
+    "url": "https://github.com/edarin",
+    "avatar": "https://avatars.githubusercontent.com/u/20658648?v=4"
+   }
+  ],
+  "docs/projects/globpop.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/gaul_aggregate.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/dswe_landsat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tinitaly.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/us_tcc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/daily_lst.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/browser/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/forum/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/browse/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/s2hswiss.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "Tschoun",
+    "name": "Joan Sturm",
+    "url": "https://github.com/Tschoun",
+    "avatar": "https://avatars.githubusercontent.com/u/44976289?v=4"
+   }
+  ],
+  "docs/contributing/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/search_features/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tdep.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/involved.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mslsp.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nbac.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ladem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/urbansky.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wyvern.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/vodca_v2.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/vodca.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/srunet_npp_viirs_ntl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/utglobus.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/npp_viirs_ntl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/globutci.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/delta_dtm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "evetion",
+    "name": "Maarten Pronk",
+    "url": "https://github.com/evetion",
+    "avatar": "https://avatars.githubusercontent.com/u/8655030?v=4"
+   }
+  ],
+  "docs/projects/pk_lulc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_ftype.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gdat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gdw.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/survey_checkpoints.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gnatsgo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gridded_livestock.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/amazon_peat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/floodplain_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glance.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_species_ts.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gci30.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/qdann.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mangrove.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/popcorn.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/peatland.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/peatland_ml.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/uhii.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/spring_indices.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_fires.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "robitalec",
+    "name": "Alec L. Robitaille",
+    "url": "https://github.com/robitalec",
+    "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   }
+  ],
+  "docs/projects/ca_sbfi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gde.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/caml.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "ejm714",
+    "name": "ejm714",
+    "url": "https://github.com/ejm714",
+    "avatar": "https://avatars.githubusercontent.com/u/22667367?v=4"
+   }
+  ],
+  "docs/insiders/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nsi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/overture_buildings.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mlab_extracts.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ookla_5g.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/speedtest.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/about_us.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/blog/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/contributing/bug.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/contributing/example.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/contributing/submit.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/contributing/update.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/history.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/insiders/insiders_program.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/medium_blogs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/startup/catalog-examples.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/startup/navigation.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/glc_fcs30d_lulc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/global_shorelines.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/examples/landscan_extracts.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/tutorials/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mangrove_ht_tandemx.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gwl_fcs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/blogs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/pwplants.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_pm25.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rai.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/syn_ntl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/license.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sarl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/csb.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/s1gbm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "MuhammedM294",
+    "name": "Muhammed Abdelaal",
+    "url": "https://github.com/MuhammedM294",
+    "avatar": "https://avatars.githubusercontent.com/u/89984604?v=4"
+   }
+  ],
+  "docs/projects/era5_heat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/fiboa_uk.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_palm_oil.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/veg_dri.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glc_fcs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "spatialthoughts",
+    "name": "Ujaval Gandhi",
+    "url": "https://github.com/spatialthoughts",
+    "avatar": "https://avatars.githubusercontent.com/u/5227506?v=4"
+   }
+  ],
+  "docs/projects/glacier.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/grod.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sword.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usgwd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/avhrr-ltdr.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/pk_nssed.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/insiders.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "robitalec",
+    "name": "Alec L. Robitaille",
+    "url": "https://github.com/robitalec",
+    "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   },
+   {
+    "login": "valpasq",
+    "name": "Valerie Pasquarella",
+    "url": "https://github.com/valpasq",
+    "avatar": "https://avatars.githubusercontent.com/u/7560906?v=4"
+   }
+  ],
+  "docs/projects/dynqual.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cloudsen12.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ccap_mlc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/india_river_trends.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/bug.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/example.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/submit.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/update.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/salinity.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/globgm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/af_trees.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glance_training.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gabam.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gshtd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/climate_trace.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/japan_eq2024.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "nkeikon",
+    "name": "Keiko Nomura",
+    "url": "https://github.com/nkeikon",
+    "avatar": "https://avatars.githubusercontent.com/u/45358635?v=4"
+   }
+  ],
+  "docs/projects/umbra_opendata.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rgi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/native.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_buildings.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usgs_topo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/isric.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "robitalec",
+    "name": "Alec L. Robitaille",
+    "url": "https://github.com/robitalec",
+    "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   }
+  ],
+  "docs/projects/land_subsidence.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/aces_bhutan.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gid.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glodap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/giulu.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gci.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/startup/bug.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/startup/example.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "schwehr",
+    "name": "Kurt Schwehr",
+    "url": "https://github.com/schwehr",
+    "avatar": "https://avatars.githubusercontent.com/u/389869?v=4"
+   }
+  ],
+  "docs/startup/submit.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/startup/update.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "schwehr",
+    "name": "Kurt Schwehr",
+    "url": "https://github.com/schwehr",
+    "avatar": "https://avatars.githubusercontent.com/u/389869?v=4"
+   }
+  ],
+  "docs/projects/daylight_maps.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcd_assets.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/streamflow_india.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mapbiomas.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gimms_ndvi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/bii.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/fabdem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ussdo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cpc_morph.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hrdpa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hrdps.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rdpa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rdps.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/anusplin.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/can_drought_outlook.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/chirps_prelim.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/fret.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_esi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gpm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nclim_grid.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/noaa_acis.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/historical_us.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hntl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/pomelo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usgs_modis_et.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_forest_fire.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cems_fire.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/firms_vector.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfwed.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mtbs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wrc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gisd30.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nadm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/snodas.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usgs_viirs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sa_nlc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghsl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/br_dwgd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gebco.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cmapper.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/eog_viirs_ntl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hrdem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/msroads.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/swiss3d.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/code_of_conduct.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_tcc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/aogcm_cmip6.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/modis_8day_snow.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/snow_cover.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_fungi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hyspecnet.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/habitat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global-mining.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/heat-hazard.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/oam.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/srer_drone.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/af_cmask.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hwsd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_fao.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcb.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfch.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfm_100.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cci_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/globcover_esa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/lcmap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/maxar_opendata.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "schwehr",
+    "name": "Kurt Schwehr",
+    "url": "https://github.com/schwehr",
+    "avatar": "https://avatars.githubusercontent.com/u/389869?v=4"
+   }
+  ],
+  "docs/projects/geomorpho90.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/deaf_shorlines.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_fa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/geoboundary.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/dea_croplands.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/histarfm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/mpw.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcep30.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/lgrip30.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nawbd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/aster.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "robitalec",
+    "name": "Alec L. Robitaille",
+    "url": "https://github.com/robitalec",
+    "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   }
+  ],
+  "docs/projects/soil_bioclim.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_forest_harvest.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_harvest_fire.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/caf_harvest_fire.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/radd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ltrait.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usa_structures.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hydro90.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/urban_projection.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/edge_matched.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "schwehr",
+    "name": "Kurt Schwehr",
+    "url": "https://github.com/schwehr",
+    "avatar": "https://avatars.githubusercontent.com/u/389869?v=4"
+   }
+  ],
+  "docs/projects/tallo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/us_ftype_fgroup.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_canopy_ht.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ca_species.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/flood.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cisi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/esrilc2020.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hitisae.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hydrowaste.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/lcnet.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rwi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/slrdem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/soilprop.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tbdem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/elc_gdp.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/GPWv4.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/cc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ccap_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ccap_wpotential.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/dea_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/elc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcn250.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfplain250.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/globathy.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gloric.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/goodd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gridded_ppt.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/grn_wrz.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/grwl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hand.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hrsl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hydra_water.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hydroatlas.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hydrolakes.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/isda.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/msbuildings.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nhd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nwi.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/oil-palm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/osm_water.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/realsat.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/river_deltas.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/rivermouth.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sa_nlc2018.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sci.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/urban-watch.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/usbuild_raster.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/vt_lc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wa_lulc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wacvm.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wpschool.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/aqualink.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/argo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/electric_grid.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/energy_farms.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_power.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_pv.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gowt.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/grip.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gssr.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/plastic.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/shoreline.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/sstg.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ai0.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/esa_iq.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/et0.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gdis.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glc10.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_salinity.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gmd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gsa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gue.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gwa.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hihydro_soil.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/isccp_hxg.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/landslide.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/lba.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/lghap.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/piscoeo.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/polaris.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/terraclim.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wsf.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/astwbd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/bss.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/france5m.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/glo30.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/iceland_dem.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/irc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/scs.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   },
+   {
+    "login": "robitalec",
+    "name": "Alec L. Robitaille",
+    "url": "https://github.com/robitalec",
+    "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   }
+  ],
+  "docs/projects/soc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/soil_nematode.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcl.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gfv.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/ghh.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/harvest.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/nafd.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tile.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/veg_dry.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/canopy.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_fertilizer.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/global_irrigation.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/shd_sun_gpp.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/tillage.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/monoculture.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/wsf2015.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/gcc.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/image_upload.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/earthenv.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/geomorph90.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/about.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ]
+ }
+}

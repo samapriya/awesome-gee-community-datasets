@@ -1,0 +1,4 @@
+# Pinned to the version the migration was verified against.
+# The old repo had no dependency file at all — the only pinning lived inline in
+# the `uv pip install --system` block of .github/workflows/publish-site.yml.
+zensical==0.0.53

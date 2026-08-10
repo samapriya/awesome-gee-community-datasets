@@ -55,6 +55,19 @@
         transform: translateX(3px);
     }
 
+    /* Phones: drop the rotating banner. On a narrow announce bar it collides
+       with the social links and the dismiss control, and the two destinations
+       it cycles through are both reachable from the nav drawer anyway. */
+    @media screen and (max-width: 44.9375em) {
+        .center-container {
+            display: none;
+        }
+
+        .content-container {
+            gap: 8px;
+        }
+    }
+
     .floating-button {
         position: fixed;
         bottom: 30px;
@@ -162,6 +175,12 @@
     document.addEventListener("DOMContentLoaded", function () {
         // Set random banner content initially
         const rotatingBanner = document.getElementById("rotatingBanner");
+
+        // The banner is hidden on phones by CSS, so skip the work entirely there
+        // rather than rotating content nobody can see.
+        if (!rotatingBanner || window.matchMedia("(max-width: 44.9375em)").matches) {
+            return;
+        }
 
         const bannerContents = [
             {

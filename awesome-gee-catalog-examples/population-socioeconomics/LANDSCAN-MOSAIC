@@ -1,0 +1,170 @@
+var landscan_mosaic = ee.ImageCollection('projects/sat-io/open-datasets/ORNL/LANDSCAN_MOSAIC');
+
+// Filter to a specific country (example: Uganda)
+var uganda = landscan_mosaic.filter(ee.Filter.eq('country_name', 'Uganda')).first();
+
+// Extract the two bands
+var population = uganda.select('population');
+var confidence = uganda.select('confidence_interval');
+
+// Mask out zero and negative population values
+var popMask = population.gt(0);
+var maskedPopulation = population.updateMask(popMask);
+
+// Visualization parameters
+var populationVis = {
+  min: 1,
+  max: 500,
+  palette: ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', 
+            '#fc4e2a', '#e31a1c', '#bd0026', '#800026']
+};
+
+var confidenceVis = {
+  min: 0,
+  max: 1,
+  palette: ['#d73027', '#f46d43', '#fdae61', '#fee08b', '#ffffbf',
+            '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850']
+};
+
+// Add layers to map
+Map.addLayer(maskedPopulation, populationVis, 'Population Density');
+Map.addLayer(confidence, confidenceVis, 'Model Confidence');
+
+// Center on Uganda
+Map.centerObject(uganda.geometry(), 7);
+
+// Create combined legend
+function createCombinedLegend() {
+  var legendPanel = ui.Panel({
+    style: {
+      padding: '12px',
+      position: 'bottom-right'
+    }
+  });
+  
+  // Population Density Section
+  var popTitle = ui.Label({
+    value: 'Population Density',
+    style: {
+      fontWeight: 'bold',
+      fontSize: '13px',
+      margin: '0 0 8px 0'
+    }
+  });
+  legendPanel.add(popTitle);
+  
+  // Population gradient bar
+  var popGradient = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      height: '20px',
+      width: '240px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var popColors = ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', 
+                   '#fc4e2a', '#e31a1c', '#bd0026', '#800026'];
+  
+  popColors.forEach(function(color) {
+    var segment = ui.Label({
+      style: {
+        backgroundColor: color,
+        padding: '10px 0',
+        margin: '0',
+        border: 'none',
+        stretch: 'horizontal'
+      }
+    });
+    popGradient.add(segment);
+  });
+  legendPanel.add(popGradient);
+  
+  // Population labels
+  var popLabels = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      width: '240px',
+      margin: '0 0 16px 0'
+    }
+  });
+  
+  popLabels.add(ui.Label({
+    value: '1', 
+    style: {fontSize: '10px', margin: '0', stretch: 'horizontal', textAlign: 'left'}
+  }));
+  popLabels.add(ui.Label({
+    value: '← People per pixel →', 
+    style: {fontSize: '10px', margin: '0', stretch: 'horizontal', textAlign: 'center'}
+  }));
+  popLabels.add(ui.Label({
+    value: '500+', 
+    style: {fontSize: '10px', margin: '0', stretch: 'horizontal', textAlign: 'right'}
+  }));
+  legendPanel.add(popLabels);
+  
+  // Model Confidence Section
+  var confTitle = ui.Label({
+    value: 'Model Confidence',
+    style: {
+      fontWeight: 'bold',
+      fontSize: '13px',
+      margin: '0 0 8px 0'
+    }
+  });
+  legendPanel.add(confTitle);
+  
+  // Confidence gradient bar
+  var confGradient = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      height: '20px',
+      width: '240px',
+      margin: '0 0 4px 0'
+    }
+  });
+  
+  var confColors = ['#d73027', '#f46d43', '#fdae61', '#fee08b', '#ffffbf',
+                    '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850'];
+  
+  confColors.forEach(function(color) {
+    var segment = ui.Label({
+      style: {
+        backgroundColor: color,
+        padding: '10px 0',
+        margin: '0',
+        border: 'none',
+        stretch: 'horizontal'
+      }
+    });
+    confGradient.add(segment);
+  });
+  legendPanel.add(confGradient);
+  
+  // Confidence labels
+  var confLabels = ui.Panel({
+    layout: ui.Panel.Layout.Flow('horizontal'),
+    style: {
+      width: '240px',
+      margin: '0'
+    }
+  });
+  
+  confLabels.add(ui.Label({
+    value: 'Low (0.0)', 
+    style: {fontSize: '10px', margin: '0', stretch: 'horizontal', textAlign: 'left'}
+  }));
+  confLabels.add(ui.Label({
+    value: 'Very High (1.0)', 
+    style: {fontSize: '10px', margin: '0', stretch: 'horizontal', textAlign: 'right'}
+  }));
+  legendPanel.add(confLabels);
+  
+  return legendPanel;
+}
+
+// Add the combined legend to the map
+Map.add(createCombinedLegend());
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/128993/dark", "Dark");

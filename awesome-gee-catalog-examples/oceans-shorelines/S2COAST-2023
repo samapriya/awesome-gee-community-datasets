@@ -1,0 +1,69 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var s2Coast = ee.FeatureCollection("projects/sat-io/open-datasets/S2COAST-2023");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.addLayer(s2Coast.style({
+  color: 'gold',
+  width: 2
+}), {}, 'S2Coast-2023 Global Coastline');
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+// Center the map on a specific region (optional)
+Map.setCenter(79.5395, 8.6931, 8); // You can adjust the coordinates and zoom level as needed
+
+/* to get random coastlines
+// Array of amazing and complex coastline locations
+var coastlineLocations = [
+  {name: "Lofoten Islands, Norway", lon: 13.8, lat: 68.2, zoom: 9},
+  {name: "Halong Bay, Vietnam", lon: 107.1, lat: 20.9, zoom: 10},
+  {name: "Twelve Apostles, Australia", lon: 143.1, lat: -38.7, zoom: 11},
+  {name: "Amalfi Coast, Italy", lon: 14.6, lat: 40.6, zoom: 11},
+  {name: "Na Pali Coast, Hawaii", lon: -159.6, lat: 22.2, zoom: 11},
+  {name: "Cinque Terre, Italy", lon: 9.7, lat: 44.1, zoom: 12},
+  {name: "Big Sur, California", lon: -121.8, lat: 36.3, zoom: 10},
+  {name: "Milford Sound, New Zealand", lon: 167.9, lat: -44.7, zoom: 11},
+  {name: "Skellig Islands, Ireland", lon: -10.5, lat: 51.8, zoom: 11},
+  {name: "Cape of Good Hope, South Africa", lon: 18.5, lat: -34.4, zoom: 11},
+  {name: "Cliffs of Moher, Ireland", lon: -9.4, lat: 52.9, zoom: 12},
+  {name: "Santorini Caldera, Greece", lon: 25.4, lat: 36.4, zoom: 12},
+  {name: "Los Gigantes, Tenerife", lon: -16.8, lat: 28.2, zoom: 12},
+  {name: "Tasman Peninsula, Tasmania", lon: 148.0, lat: -43.1, zoom: 10},
+  {name: "Normandy Cliffs, France", lon: 0.2, lat: 49.7, zoom: 11}
+];
+
+// Function to shuffle and select random locations
+function getRandomCoastlines(count) {
+  var shuffled = coastlineLocations.slice(); // Create a copy
+  // Fisher-Yates shuffle algorithm
+  for (var i = shuffled.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = shuffled[i];
+    shuffled[i] = shuffled[j];
+    shuffled[j] = temp;
+  }
+  return shuffled.slice(0, count);
+}
+
+// Get 5 random coastline locations
+var selectedLocations = getRandomCoastlines(5);
+
+// Print the selected locations
+print("Today's Amazing Coastlines:");
+for (var i = 0; i < selectedLocations.length; i++) {
+  print((i + 1) + ". " + selectedLocations[i].name);
+}
+
+// Center on the first random location
+var firstLocation = selectedLocations[0];
+Map.setCenter(firstLocation.lon, firstLocation.lat, firstLocation.zoom);
+
+// Add the coastline layer
+Map.addLayer(s2Coast.style({
+  color: 'gold',
+  width: 2
+}), {}, 'S2Coast-2023 Global Coastline');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+*/

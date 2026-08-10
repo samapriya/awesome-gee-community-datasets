@@ -1,0 +1,175 @@
+/* Brand + responsive fixes for Zensical's `modern` variant.
+ *
+ * Two independent things live here; keep or drop them separately.
+ *
+ *   PART 1 — restore the yellow header (the "option 2" hybrid: modern's layout
+ *            and mobile nav, but your brand colour on the header bar).
+ *            Delete this block if you cut over on `variant: classic`, which
+ *            already paints the header with the primary colour.
+ *
+ *   PART 2 — make the announcement bar survive narrow screens. This is a fix
+ *            for `overrides/main.html`, NOT a Zensical issue: that banner is a
+ *            three-column flex row with no wrap rules and no media queries, so
+ *            below ~900px the columns collapse into an overlapping stack.
+ *            Worth applying to the current MkDocs site too.
+ */
+
+/* ================= PART 1 — yellow header under `modern` ================= */
+/* classic:  .md-header { background-color: var(--md-primary-fg-color) }
+   modern:   .md-header { background-color: var(--md-default-bg-color--light) }
+   Modern deliberately drops the primary colour here; this puts it back. */
+
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* The search field sits in the header, so it has to follow it. */
+.md-header .md-search__form {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.md-header .md-search__form:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Nav tabs sit directly under the header and share its bar in classic. */
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Modern's separator is a 1px hairline in near-white:
+     .md-header--shadow { box-shadow: 0 .05rem 0 var(--md-default-fg-color--lightest) }
+   That reads fine when the header is white against white content, but it
+   disappears entirely against a saturated header. Use classic's real drop
+   shadow instead. `.md-tabs` is nested INSIDE `.md-header`, so the shadow on
+   the header casts below the whole bar — do not add a second one to the tabs. */
+.md-header--shadow {
+  box-shadow: 0 0 0.2rem #0000001a, 0 0.2rem 0.4rem #0003;
+}
+
+/* Modern's inset top-line on the tabs is invisible once the bar is coloured,
+   and would only muddy the edge. */
+.md-tabs {
+  box-shadow: none;
+}
+
+/* The site name becomes a link (see setup.py header override) — it should look
+   exactly like the text it replaced, not like a link. */
+.md-header__home {
+  color: inherit;
+  text-decoration: none;
+}
+
+.md-header__home:hover,
+.md-header__home:focus {
+  color: inherit;
+  opacity: 0.75;
+}
+
+/* ============== PART 1b — announcement bar colour ======================= */
+/* modern:  .md-banner { background-color: var(--md-accent-fg-color--transparent) }
+   With a deep-orange accent that renders pale pink, which clashes badly sitting
+   directly above a yellow header. Use a deeper shade of the PRIMARY colour
+   instead, so the bar reads as a deliberate two-tone with the header.
+
+   Alternative, closer to Material classic — a dark strip above the yellow:
+     .md-banner { background-color: var(--md-footer-bg-color);
+                  color: var(--md-footer-fg-color); }                        */
+
+.md-banner {
+  background-color: var(--md-primary-fg-color--dark);
+  color: var(--md-primary-bg-color);
+}
+
+/* The dismiss (X) button has to follow the bar's foreground colour. */
+.md-banner .md-banner__button {
+  color: var(--md-primary-bg-color);
+}
+
+/* ============== PART 2 — responsive announcement bar ==================== */
+
+/* Let the row wrap instead of squeezing its columns to nothing. */
+.content-container {
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* `overrides/main.html` hardcodes `.right-content { color: #fff }` in an inline
+   <style>. That was fine on classic's dark banner, but it is invisible on a
+   light one — and because the inline block is emitted AFTER extra_css, a plain
+   `.right-content` rule here loses the tie. Scoping to `.md-banner` raises
+   specificity to (0,2,0) so it wins regardless of order. */
+.md-banner .right-content,
+.md-banner .right-content a,
+.md-banner .left-content,
+.md-banner .left-content a {
+  color: var(--md-primary-bg-color);
+}
+
+/* Same problem: the centre pill is `rgba(255,255,255,.1)`, designed for a dark
+   banner and invisible on a light one. */
+.md-banner .center-container a {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.md-banner .center-container a:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+}
+
+.left-content,
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+/* --- tablet and below: drop the rotating centre banner ---
+   It is the widest, least essential element and the one that overlaps first. */
+@media screen and (max-width: 76.1875em) {
+  .center-container {
+    display: none;
+  }
+}
+
+/* --- phone: icons only ---
+   `font-size: 0` on the container collapses the bare text nodes ("Follow me",
+   " on ", "Support") that have no element of their own to target, then the
+   icons get their size back explicitly. */
+@media screen and (max-width: 44.9375em) {
+  .left-content {
+    font-size: 0;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .left-content strong {
+    display: none;           /* LinkedIn / GitHub / Substack word labels */
+  }
+
+  .left-content a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .left-content .twemoji svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    vertical-align: middle;
+  }
+
+  /* Sponsor link is secondary on a phone; the icons are the point. */
+  .right-content {
+    display: none;
+  }
+
+  /* Keep the bar to a single compact line. */
+  .content-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    min-height: 1.6rem;
+  }
+}

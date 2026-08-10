@@ -1,0 +1,155 @@
+// Load the SOLUS ImageCollection
+var solus = ee.ImageCollection("projects/sat-io/open-datasets/solus_collection");
+
+// ============================================
+// PROPER SCALING FUNCTION
+// ============================================
+// Each band has its own scalar - must scale each band separately!
+
+function scaleSolusProperty(image) {
+  // Get band-specific scalars from image properties
+  var scalar_prediction = ee.Number(image.get('scalar_prediction'));
+  var scalar_high_95_pi = ee.Number(image.get('scalar_high_95_pi'));
+  var scalar_low_95_pi = ee.Number(image.get('scalar_low_95_pi'));
+  var scalar_relative_pi = ee.Number(image.get('scalar_relative_pi'));
+  
+  // Apply band-specific scaling
+  var prediction = image.select('prediction').divide(scalar_prediction);
+  var high_pi = image.select('high_95_pi').divide(scalar_high_95_pi);
+  var low_pi = image.select('low_95_pi').divide(scalar_low_95_pi);
+  var rpi = image.select('relative_pi').divide(scalar_relative_pi);
+  
+  // Combine bands and preserve metadata
+  return prediction.addBands(high_pi).addBands(low_pi).addBands(rpi)
+    .copyProperties(image, image.propertyNames());
+}
+
+// Apply scaling to entire collection
+var collection = solus.map(scaleSolusProperty);
+
+// ============================================
+// FILTERING AND SELECTION EXAMPLES
+// ============================================
+
+// Clay content at 30 cm depth
+var clay30 = collection
+  .filter(ee.Filter.eq('property', 'claytotal'))
+  .filter(ee.Filter.eq('depth_cm', 30))
+  .first();
+
+// Soil organic carbon at surface (0 cm)
+var soc0 = collection
+  .filter(ee.Filter.eq('property', 'soc'))
+  .filter(ee.Filter.eq('depth_cm', 0))
+  .first();
+
+// pH at 15 cm
+var ph15 = collection
+  .filter(ee.Filter.eq('property', 'ph1to1h2o'))
+  .filter(ee.Filter.eq('depth_cm', 15))
+  .first();
+
+// Bulk density at 5 cm
+var bd5 = collection
+  .filter(ee.Filter.eq('property', 'dbovendry'))
+  .filter(ee.Filter.eq('depth_cm', 5))
+  .first();
+
+// Depth to bedrock (no depth filter needed)
+var bedrock = collection
+  .filter(ee.Filter.eq('property', 'anylithicdpt'))
+  .first();
+
+// ============================================
+// VISUALIZATION WITH BEAUTIFUL PALETTES
+// ============================================
+
+Map.setCenter(-95, 38, 5); // Center on central US
+
+// Clay Content
+var clayPalette = ['#FFF8DC', '#F5DEB3', '#DEB887', '#D2691E', '#8B4513', '#654321'];
+Map.addLayer(clay30.select('prediction'), 
+  {min: 5, max: 50, palette: clayPalette}, 
+  'Clay Content (%) - 30cm');
+
+// Soil Organic Carbon
+var socPalette = ['#FFFACD', '#F0E68C', '#DAA520', '#B8860B', '#654321', '#2F1F10'];
+Map.addLayer(soc0.select('prediction'), 
+  {min: 0, max: 8, palette: socPalette}, 
+  'Soil Organic Carbon (%) - 0cm');
+
+// pH
+var phPalette = ['#D73027', '#F46D43', '#FDAE61', '#FEE08B', '#D9EF8B', 
+                 '#A6D96A', '#66BD63', '#1A9850'];
+Map.addLayer(ph15.select('prediction'), 
+  {min: 4.5, max: 8.5, palette: phPalette}, 
+  'pH (1:1 H2O) - 15cm');
+
+// Prediction Uncertainty (Relative PI)
+var uncertaintyPalette = ['#006837', '#31A354', '#78C679', '#C2E699', 
+                          '#FFFFCC', '#FED98E', '#FE9929', '#D95F0E', '#993404'];
+Map.addLayer(clay30.select('relative_pi'), 
+  {min: 0, max: 2, palette: uncertaintyPalette}, 
+  'Clay Uncertainty (Relative PI)', false);
+
+// ============================================
+// WORKING WITH PREDICTION INTERVALS
+// ============================================
+
+// Get prediction with confidence bounds
+var clay_prediction = clay30.select('prediction');
+var clay_upper = clay30.select('high_95_pi');
+var clay_lower = clay30.select('low_95_pi');
+var clay_uncertainty = clay30.select('relative_pi');
+
+// Calculate prediction interval width
+var clay_interval_width = clay_upper.subtract(clay_lower);
+Map.addLayer(clay_interval_width, 
+  {min: 0, max: 20, palette: ['green', 'yellow', 'red']}, 
+  'Clay PI Width (%)', false);
+
+// ============================================
+// INFORMATION OUTPUTS
+// ============================================
+
+print('========================================');
+print('SOLUS Soil Properties Collection');
+print('========================================');
+print('Total Images:', collection.size());
+
+// Available properties
+var properties = collection.aggregate_array('property').distinct().sort();
+print('Available Properties:', properties);
+
+// Available depths (using clay as example)
+var clayDepths = collection
+  .filter(ee.Filter.eq('property', 'claytotal'))
+  .aggregate_array('depth_cm')
+  .distinct()
+  .sort();
+print('Available Depths (clay example):', clayDepths);
+
+// Print metadata to verify scaling
+print('========================================');
+print('Clay 30cm Image Properties:');
+print('Property name:', clay30.get('property'));
+print('Depth:', clay30.get('depth_cm'), 'cm');
+print('Units:', clay30.get('units'));
+print('Scalar (prediction):', clay30.get('scalar_prediction'));
+print('Scalar (high PI):', clay30.get('scalar_high_95_pi'));
+print('Scalar (low PI):', clay30.get('scalar_low_95_pi'));
+print('Scalar (relative PI):', clay30.get('scalar_relative_pi'));
+
+// Example: Get multiple depths for one property
+var clayAllDepths = collection
+  .filter(ee.Filter.eq('property', 'claytotal'))
+  .sort('depth_cm');
+print('Clay at all depths:', clayAllDepths);
+
+// Example: Get multiple properties at one depth
+var properties30cm = collection
+  .filter(ee.Filter.eq('depth_cm', 30))
+  .aggregate_array('property')
+  .distinct()
+  .sort();
+print('Properties available at 30cm:', properties30cm);

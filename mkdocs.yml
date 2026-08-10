@@ -56,27 +56,14 @@ theme:
         name: Switch to light mode
   font:
     text: Google Sans
-    code: Regular
-  favicon: assets/favicon.png
   logo: "https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png"
   favicon: "https://user-images.githubusercontent.com/6677629/193518988-956b9571-169d-4a79-89a8-d347d46c1af7.png"
 
 # Plugins
 plugins:
-  - blog
   # - git-authors
-  - git-committers:
-      repository: "samapriya/awesome-gee-community-datasets"
-      branch: master
-      token: !ENV GH_TOKEN
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
-  - open-in-new-tab
 # Hooks
 # hooks:
 #   - material/overrides/hooks/shortcodes.py
@@ -99,6 +86,13 @@ extra:
     provider: google
     property: G-G7SXDJEWXV
 
+extra_css:
+  - stylesheets/committers.css
+  - stylesheets/theme.css
+
+extra_javascript:
+  - javascripts/external-links.js
+
 markdown_extensions:
   - abbr
   - admonition
@@ -108,31 +102,21 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -151,7 +135,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Home:
-      - index.md
+      - about.md
       - History of the Community Catalog: history.md
       - Stay updated & contribute: involved.md
       - About Us: about_us.md

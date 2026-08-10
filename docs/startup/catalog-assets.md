@@ -4,7 +4,7 @@
 
 It is feasible to sometimes use a machine readable list of catalog assets. While we are going to introduce a STAC catalog again at some point the assets are also available in two specific formats with the total running count above.
 
-<center>
+<center markdown>
 
 <div class="result" markdown>
 
@@ -64,7 +64,7 @@ This holds information about the datasets in this structure as a JSON list. If t
 ## CSV Format
 The CSV file is created using a Github action within the repository and contains all fields in the JSON representation. Fields like license_text if empty for a specific license are left empty.
 
-<center>
+<center markdown>
 
 <div class="result" markdown>
 

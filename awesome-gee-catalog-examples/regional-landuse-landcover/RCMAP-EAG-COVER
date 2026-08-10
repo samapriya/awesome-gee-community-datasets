@@ -1,0 +1,150 @@
+// ============================================================
+// RCMAP-EAG (Weekly Herbaceous and Exotic Annual Grass Cover)
+// Example script for the Google Earth Engine Code Editor
+// ============================================================
+
+// Load the RCMAP-EAG collection
+var rcmapEag = ee.ImageCollection(
+  "projects/sat-io/open-datasets/USGS/RCMAP/EAG/TIME_SERIES/COVER"
+);
+
+// Actual bands in each image (confirmed in Code Editor):
+//   total_herbaceous
+//   green_herbaceous
+//   senesced_herbaceous
+//   eag
+//   cheatgrass
+//   medusahead
+//   fieldbrome
+//   sandbergs_bluegrass
+//
+// Images are indexed as "YYYY_wkWW", e.g. "2023_wk24"
+
+print("RCMAP-EAG collection size:", rcmapEag.size());
+print("First image band names:", rcmapEag.first().bandNames());
+
+// ------------------------------------------------------------
+// 1. Define an area of interest (example: a point in the
+//    Great Basin, Nevada). Replace with your own geometry.
+// ------------------------------------------------------------
+var aoi = ee.Geometry.Point([-116.5, 40.5]).buffer(50000).bounds(); // 50 km buffer
+
+Map.centerObject(aoi, 8);
+
+// ------------------------------------------------------------
+// 2. Grab a single year/week snapshot using the "YYYY_wkWW"
+//    system:index naming convention
+// ------------------------------------------------------------
+var year = 2023;
+var week = 24; // approx. mid-June
+var weekId = year + "_wk" + week;
+
+var weeklyImage = rcmapEag
+  .filter(ee.Filter.eq("system:index", weekId))
+  .first();
+
+// Visualization parameters for percent cover (0-100).
+// High-contrast diverging ramp (blue -> yellow -> red) reads clearly
+// against both light and dark basemaps.
+var coverVis = {
+  min: 0,
+  max: 100,
+  palette: ["313695", "4575b4", "74add1", "abd9e9", "fee090",
+            "fdae61", "f46d43", "d73027", "a50026"]
+};
+
+// Warning-toned ramp for invasive species layers (yellow -> orange -> red
+// -> near-black), so high invasive cover reads as an alarm color rather
+// than blending into the basemap.
+var invasiveVis = {
+  min: 0,
+  max: 100,
+  palette: ["ffffcc", "ffeda0", "fed976", "feb24c",
+            "fd8d3c", "fc4e2a", "e31a1c", "b10026"]
+};
+
+Map.addLayer(
+  weeklyImage.select("eag").clip(aoi),
+  invasiveVis,
+  "Total EAG cover (" + weekId + ")"
+);
+
+Map.addLayer(
+  weeklyImage.select("cheatgrass").clip(aoi),
+  invasiveVis,
+  "Cheatgrass cover (" + weekId + ")",
+  false // off by default
+);
+
+Map.addLayer(
+  weeklyImage.select("medusahead").clip(aoi),
+  invasiveVis,
+  "Medusahead cover (" + weekId + ")",
+  false
+);
+
+// ------------------------------------------------------------
+// 3. Derive an annual maximum cover composite for a component
+//    (mirrors how RCMAP-EAG's annual products are generated:
+//    the maximum weekly value per pixel per year)
+// ------------------------------------------------------------
+var annualMaxEag = rcmapEag
+  .filter(ee.Filter.calendarRange(year, year, "year"))
+  .select("eag")
+  .max()
+  .clip(aoi);
+
+Map.addLayer(
+  annualMaxEag,
+  invasiveVis,
+  "Annual max Total EAG cover (" + year + ")",
+  false
+);
+
+// ------------------------------------------------------------
+// 4. Chart a multi-year time series of Total EAG cover
+//    at a single point (weekly values, all available weeks)
+// ------------------------------------------------------------
+var samplePoint = ee.Geometry.Point([-116.5, 40.5]);
+
+var timeSeriesChart = ui.Chart.image.series({
+  imageCollection: rcmapEag.select("eag"),
+  region: samplePoint,
+  reducer: ee.Reducer.mean(),
+  scale: 30
+}).setOptions({
+  title: "Weekly Total EAG Cover Time Series",
+  vAxis: { title: "Percent Cover" },
+  hAxis: { title: "Date" },
+  lineWidth: 1,
+  pointSize: 3
+});
+
+print(timeSeriesChart);
+
+// ------------------------------------------------------------
+// 5. Compare multiple components for the same point over time
+// ------------------------------------------------------------
+var componentsChart = ui.Chart.image.series({
+  imageCollection: rcmapEag.select([
+    "total_herbaceous",
+    "eag",
+    "cheatgrass",
+    "medusahead"
+  ]),
+  region: samplePoint,
+  reducer: ee.Reducer.mean(),
+  scale: 30
+}).setOptions({
+  title: "Rangeland Component Comparison Over Time",
+  vAxis: { title: "Percent Cover" },
+  hAxis: { title: "Date" },
+  lineWidth: 1,
+  pointSize: 2
+});
+
+print(componentsChart);
+
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

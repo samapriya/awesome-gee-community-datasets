@@ -1,0 +1,194 @@
+// =====================================================================
+// HRES-WTD: High-resolution (~30 m) Water Table Depth for CONUS
+// Source: Ma et al. 2026, Commun. Earth Environ.
+// https://doi.org/10.1038/s43247-025-03094-3
+// License: CC BY-NC-ND 4.0 (data)
+// =====================================================================
+
+var wtdCol = ee.ImageCollection("projects/sat-io/open-datasets/HRES-WTD");
+print('Collection:', wtdCol);
+print('First image:', wtdCol.first());
+
+var wtd = wtdCol.mosaic().select(0);
+
+// log10 helper (Code Editor sandbox lacks Math.log10)
+var log10 = function(x) { return Math.log(x) / Math.LN10; };
+
+var palette = [
+  '#081d58', '#253494', '#225ea8', '#1d91c0', '#41b6c4',
+  '#7fcdbb', '#c7e9b4', '#edf8b1', '#ffffd9', '#ffffec'
+];
+var breaks = [0.1, 0.2, 0.6, 1.5, 5, 10, 20, 50, 100, 300];
+
+// ---------------------------------------------------------------------
+// Log transformation (visualization only)
+// ---------------------------------------------------------------------
+// Water table depth ranges from ~0.1 m to ~300 m across CONUS — about
+// 3.5 orders of magnitude. A linear color stretch would compress all
+// the shallow-groundwater detail (the part most connected to streams,
+// roots, and irrigation) into a tiny slice of the colorbar.
+//
+// We address this in two coordinated steps:
+//   1. Transform the image with ee.Image.log10()  (server-side, per pixel).
+//   2. Express visParams min/max in log10 units so the stretch lines up.
+//
+// The legend ticks (0.1, 0.2, 0.6, 1.5, 5, 10, 20, 50, 100, 300) are
+// also roughly log-spaced, matching Fig. 2 of Ma et al. 2026.
+//
+// Note: click-to-query values are read from the *original* wtd image,
+// not wtdLog — users see real meters, not log(meters).
+//
+// log10 helper — Code Editor's JS sandbox lacks Math.log10, so we use
+// the identity log10(x) = ln(x) / ln(10).
+// ---------------------------------------------------------------------
+var wtdLog = wtd.log10();
+var visParams = {
+  min: log10(0.1),   // -1.0
+  max: log10(300),   //  ~2.477
+  palette: palette
+};
+
+Map.setCenter(-98, 39, 5);
+Map.addLayer(wtdLog, visParams, 'Water Table Depth (m, log)');
+
+// ---------------------------------------------------------------------
+// Legend (bottom-left)
+// ---------------------------------------------------------------------
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '8px 10px',
+    backgroundColor: 'rgba(255,255,255,1)'
+  }
+});
+
+legend.add(ui.Label({
+  value: 'Water Table Depth (m)',
+  style: {fontWeight: 'bold', fontSize: '13px', margin: '0 0 6px 0'}
+}));
+
+var swatchRow = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {margin: '0'}
+});
+palette.forEach(function(c) {
+  swatchRow.add(ui.Label({
+    style: {
+      backgroundColor: c,
+      padding: '10px 14px',
+      margin: '0',
+      border: '1px solid #bbb'
+    }
+  }));
+});
+legend.add(swatchRow);
+
+var tickRow = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: {margin: '2px 0 0 0'}
+});
+breaks.forEach(function(b) {
+  tickRow.add(ui.Label({
+    value: String(b),
+    style: {
+      margin: '0',
+      padding: '0',
+      fontSize: '10px',
+      width: '30px',
+      textAlign: 'center'
+    }
+  }));
+});
+legend.add(tickRow);
+
+legend.add(ui.Label({
+  value: 'Ma et al. 2026  •  CC BY-NC-ND 4.0',
+  style: {fontSize: '10px', color: '#1a73e8', margin: '6px 0 0 0'},
+  targetUrl: 'https://doi.org/10.1038/s43247-025-03094-3'
+}));
+
+Map.add(legend);
+
+
+var infoPanel = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '10px 12px',
+    width: '260px',
+    backgroundColor: 'rgba(255,255,255,1)'
+  }
+});
+
+infoPanel.add(ui.Label({
+  value: 'Click the map to query WTD',
+  style: {fontWeight: 'bold', fontSize: '13px', margin: '0 0 4px 0'}
+}));
+
+var infoLabel = ui.Label({
+  value: '(no point selected)',
+  style: {fontSize: '12px', whiteSpace: 'pre', fontFamily: 'monospace'}
+});
+infoPanel.add(infoLabel);
+
+var clearBtn = ui.Button({
+  label: 'Clear',
+  onClick: function() {
+    infoLabel.setValue('(no point selected)');
+    var layers = Map.layers();
+    for (var i = layers.length() - 1; i >= 0; i--) {
+      if (layers.get(i).getName() === 'Click point') {
+        layers.remove(layers.get(i));
+      }
+    }
+  },
+  style: {margin: '6px 0 0 0', padding: '0'}
+});
+infoPanel.add(clearBtn);
+
+Map.add(infoPanel);
+Map.style().set('cursor', 'crosshair');
+
+var zoomToScale = function(zoom, lat) {
+  var latRad = lat * Math.PI / 180;
+  return 156543.03392 * Math.cos(latRad) / Math.pow(2, zoom);
+};
+
+Map.onClick(function(coords) {
+  infoLabel.setValue('querying...');
+
+  // Remove any previous click marker
+  var layers = Map.layers();
+  for (var i = layers.length() - 1; i >= 0; i--) {
+    if (layers.get(i).getName() === 'Click point') {
+      layers.remove(layers.get(i));
+    }
+  }
+
+  var pt = ee.Geometry.Point([coords.lon, coords.lat]);
+  Map.addLayer(pt, {color: 'FF0000'}, 'Click point');
+
+  var zoom = Map.getZoom();
+  var scale = zoomToScale(zoom, coords.lat);
+
+  wtd.reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: pt,
+    scale: 30,
+    maxPixels: 1
+  }).evaluate(function(result) {
+    var keys = result ? Object.keys(result) : [];
+    var val = (keys.length && result[keys[0]] !== null)
+      ? result[keys[0]].toFixed(2) + ' m'
+      : 'no data (outside CONUS?)';
+    infoLabel.setValue(
+      'Lat:    ' + coords.lat.toFixed(5) + '\n' +
+      'Lon:    ' + coords.lon.toFixed(5) + '\n' +
+      'WTD:    ' + val + '\n' +
+      'Zoom:   ' + zoom + '\n' +
+      'Scale:  ' + scale.toFixed(2) + ' m/px'
+    );
+  });
+});
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

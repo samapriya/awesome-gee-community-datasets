@@ -1,0 +1,30 @@
+// ============================================================
+//  LANDFIRE Cumulative Disturbance Heatmap (Simplified)
+// ============================================================
+
+// Load collection
+var collection = ee.ImageCollection(
+  'projects/sat-io/open-datasets/landfire/ANNUAL-DIST'
+);
+
+// Convert each year to binary disturbance (1 = disturbed, 0 = not)
+var disturbanceCount = collection.map(function(img) {
+  return img.select('b1').gt(0);
+}).sum();
+
+// Visualization
+var vis = {
+  min: 0,
+  max: 8,
+  palette: [
+    '0d0221', '1a0533', '6b0f1a',
+    'b91372', 'f9320c', 'fbb03b', 'fff200'
+  ]
+};
+
+// Add to map
+
+Map.setCenter(-98.5, 39.5, 5);
+
+//Masking to remove artifacts ignore while actually using for calculations
+Map.addLayer(disturbanceCount.mask(disturbanceCount.select('b1').neq(4)), vis, 'Cumulative Disturbance (1999–2023)');

@@ -1,0 +1,141 @@
+// ============================================================
+// Wildland-Urban Interface (WUI), CONUS 1990-2020
+// Example script for the Google Earth Engine Code Editor
+// ============================================================
+
+// Load the WUI FeatureCollection
+var wui = ee.FeatureCollection("projects/sat-io/open-datasets/CONUS_WUI");
+
+// Key properties per feature (36 total):
+//   BLK20            - unique Census block ID
+//   STATE            - 2-letter state abbreviation
+//   HU1990/2000/2010/2020       - total housing units per decade
+//   HUDEN1990/2000/2010/2020    - housing density (units/km^2) per decade
+//   POP2020, POPDEN2020         - 2020 population and population density
+//   VEG1992PC/2001PC/2011PC/2019PC - wildland vegetation % per decade
+//   WUIFLAG1990/2000/2010/2020  - 0 = non-WUI, 1 = intermix, 2 = interface
+//   WUICLASS1990/2000/2010/2020 - WUI class string (see below)
+//   PUBFLAG          - 1 = public/protected land
+//   BUFVEG           - 1 = inside potential interface buffer
+//   WATER20, AWATER20PC         - water body flag / % water
+
+print("Total WUI features (CONUS):", wui.size());
+print("First feature properties:", wui.first());
+
+// ------------------------------------------------------------
+// 1. Filter to a single state to keep things responsive.
+//    Replace with any 2-letter state abbreviation.
+// ------------------------------------------------------------
+var stateAbbrev = "ME";
+var wuiState = wui.filter(ee.Filter.eq("STATE", stateAbbrev));
+
+// Use a lightweight state boundary (not the WUI polygons themselves) to
+// center the map. Dissolving all WUI polygons in a state to compute a
+// bounding geometry can exceed Earth Engine's edge limit for large states.
+var stateBoundary = ee
+  .FeatureCollection("TIGER/2018/States")
+  .filter(ee.Filter.eq("STUSPS", stateAbbrev));
+
+Map.centerObject(stateBoundary, 8);
+print("Feature count for " + stateAbbrev + ":", wuiState.size());
+
+// ------------------------------------------------------------
+// 2. Style polygons by 2020 WUI class using a categorical
+//    color map (fillColor keyed by WUICLASS2020 string)
+// ------------------------------------------------------------
+var classColors = ee.Dictionary({
+  "Water": "419bdf",
+  "Uninhabited_Veg": "1a9850",
+  "Uninhabited_NoVeg": "d9d9d9",
+  "Very_Low_Dens_Veg": "66bd63",
+  "Very_Low_Dens_NoVeg": "bfbfbf",
+  "Low_Dens_Intermix": "a6d96a",
+  "Low_Dens_Interface": "fee08b",
+  "Low_Dens_NoVeg": "969696",
+  "Med_Dens_Intermix": "fdae61",
+  "Med_Dens_Interface": "f46d43",
+  "Med_Dens_NoVeg": "737373",
+  "High_Dens_Intermix": "d73027",
+  "High_Dens_Interface": "a50026",
+  "High_Dens_NoVeg": "525252"
+});
+
+var styledWui = wuiState.map(function (feature) {
+  var wuiClass = feature.get("WUICLASS2020");
+  var color = classColors.get(wuiClass, "000000");
+  return feature.set("style", {color: "00000088", fillColor: color, width: 0.5});
+});
+
+Map.addLayer(
+  styledWui.style({styleProperty: "style"}),
+  {},
+  stateAbbrev + " - WUI Class (2020)"
+);
+
+// Highlight only the intermix/interface (actual WUI) polygons
+var wuiOnly2020 = wuiState.filter(ee.Filter.gt("WUIFLAG2020", 0));
+Map.addLayer(wuiOnly2020, {color: "d73027"}, "WUI Only (2020)", false);
+
+// ------------------------------------------------------------
+// 3. Identify polygons that became WUI between 1990 and 2020
+//    (non-WUI in 1990, WUI in 2020) - useful for growth analysis
+// ------------------------------------------------------------
+var newWui = wuiState.filter(
+  ee.Filter.and(
+    ee.Filter.eq("WUIFLAG1990", 0),
+    ee.Filter.gt("WUIFLAG2020", 0)
+  )
+);
+
+Map.addLayer(newWui, {color: "ff00ff"}, "New WUI since 1990", false);
+print("Polygons newly classified as WUI since 1990:", newWui.size());
+
+// ------------------------------------------------------------
+// 4. Chart: distribution of 2020 WUI classes (feature counts)
+// ------------------------------------------------------------
+var classHistogram = wuiState.aggregate_histogram("WUICLASS2020");
+
+var histogramFeatures = ee.FeatureCollection(
+  classHistogram.keys().map(function (key) {
+    key = ee.String(key);
+    return ee.Feature(null, {
+      wui_class: key,
+      count: classHistogram.get(key)
+    });
+  })
+);
+
+var classChart = ui.Chart.feature
+  .byFeature(histogramFeatures, "wui_class", ["count"])
+  .setChartType("ColumnChart")
+  .setOptions({
+    title: stateAbbrev + " - WUI Class Distribution (2020)",
+    hAxis: {title: "WUI Class", slantedText: true, slantedTextAngle: 45},
+    vAxis: {title: "Number of Polygons"},
+    legend: {position: "none"}
+  });
+
+print(classChart);
+
+// ------------------------------------------------------------
+// 5. Chart: total housing units by decade (1990-2020)
+// ------------------------------------------------------------
+var decadeFeatures = ee.FeatureCollection([
+  ee.Feature(null, {year: 1990, housing_units: wuiState.aggregate_sum("HU1990")}),
+  ee.Feature(null, {year: 2000, housing_units: wuiState.aggregate_sum("HU2000")}),
+  ee.Feature(null, {year: 2010, housing_units: wuiState.aggregate_sum("HU2010")}),
+  ee.Feature(null, {year: 2020, housing_units: wuiState.aggregate_sum("HU2020")})
+]);
+
+var housingTrendChart = ui.Chart.feature
+  .byFeature(decadeFeatures, "year", ["housing_units"])
+  .setChartType("LineChart")
+  .setOptions({
+    title: stateAbbrev + " - Total Housing Units by Decade",
+    hAxis: {title: "Year", format: "####"},
+    vAxis: {title: "Housing Units"},
+    pointSize: 5,
+    lineWidth: 2
+  });
+
+print(housingTrendChart);

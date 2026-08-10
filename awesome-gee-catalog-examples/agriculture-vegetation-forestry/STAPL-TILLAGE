@@ -1,0 +1,7 @@
+var stapl_collection = ee.ImageCollection('projects/sat-io/open-datasets/lobell-lab/STAPL-TILLAGE');
+var tillage_2023= stapl_collection.filterDate('2023-01-01','2023-12-31')
+Map.setCenter(-93.5, 42.0, 6);
+Map.addLayer(tillage_2023.select('Tillage'), {min: 0, max: 1, palette: ['#3b0764', '#fde047']}, 'Tillage 2023');
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");

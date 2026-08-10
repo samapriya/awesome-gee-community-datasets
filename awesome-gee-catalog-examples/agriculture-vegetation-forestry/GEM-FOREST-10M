@@ -1,0 +1,222 @@
+// =====================================================================
+// GEM-Forest 2020: Global Forests & Tree Crops at 10 m
+// Source: Paluba et al. 2026, EGUsphere preprint
+// https://doi.org/10.5194/egusphere-2026-1401
+// License: CC BY 4.0
+// =====================================================================
+
+var GEM_Forest = ee.ImageCollection("projects/sat-io/open-datasets/GEM-Forest/GEM-Forest_2020")
+                   .mosaic()
+                   .rename('class');
+
+// ---------------------------------------------------------------------
+// Class definitions
+//   0 = Non-forest (other)   — masked out (transparent)
+//   1 = Forest               — green
+//   2 = Tree crops           — amber/orange (only in GEM-TC2020)
+// ---------------------------------------------------------------------
+var COLORS = {
+  forest:   '#2e7d32',   // deep green
+  treecrop: '#f57c00'    // amber, distinct from forest
+};
+
+// Forest / Non-Forest product (binary): mask out class 0
+var FnF = GEM_Forest.updateMask(GEM_Forest.eq(1));
+
+// Forest / Non-Forest / Tree Crops product: keep classes 1 and 2
+var FnF_TC = GEM_Forest.updateMask(GEM_Forest.gte(1));
+
+Map.setOptions('HYBRID');
+Map.setCenter(15, 10, 3);  // global view, slightly off-equator
+
+Map.addLayer(FnF,
+  {min: 1, max: 1, palette: [COLORS.forest]},
+  'GEM-FnF2020 (Forest only)',
+  false  // off by default — TC layer is more informative
+);
+
+Map.addLayer(FnF_TC,
+  {min: 1, max: 2, palette: [COLORS.forest, COLORS.treecrop]},
+  'GEM-TC2020 (Forest + Tree Crops)',
+  true
+);
+
+// ---------------------------------------------------------------------
+// Legend (bottom-left)
+// ---------------------------------------------------------------------
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-left',
+    padding: '10px 12px',
+    backgroundColor: 'rgba(255,255,255,1)'
+  }
+});
+
+legend.add(ui.Label({
+  value: 'GEM-Forest 2020',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '0 0 2px 0'}
+}));
+legend.add(ui.Label({
+  value: '10 m global forest & tree crop map',
+  style: {fontSize: '11px', color: '#555', margin: '0 0 8px 0'}
+}));
+
+var legendRow = function(color, label, sublabel) {
+  var swatch = ui.Label({
+    style: {
+      backgroundColor: color,
+      padding: '8px',
+      margin: '0 6px 0 0',
+      border: '1px solid #999'
+    }
+  });
+  var textPanel = ui.Panel({
+    layout: ui.Panel.Layout.flow('vertical'),
+    style: {margin: '0', padding: '0'}
+  });
+  textPanel.add(ui.Label({
+    value: label,
+    style: {margin: '0', padding: '0', fontSize: '12px', fontWeight: 'bold'}
+  }));
+  if (sublabel) {
+    textPanel.add(ui.Label({
+      value: sublabel,
+      style: {margin: '0', padding: '0', fontSize: '10px', color: '#666'}
+    }));
+  }
+  return ui.Panel({
+    widgets: [swatch, textPanel],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: {margin: '0 0 4px 0'}
+  });
+};
+
+legend.add(legendRow(COLORS.forest,   'Forest',     '>0.5 ha, >5 m, >10% cover'));
+legend.add(legendRow(COLORS.treecrop, 'Tree crops', 'oil palm, rubber, olives, etc.'));
+
+legend.add(ui.Label({
+  value: 'Paluba et al. 2026  •  CC BY 4.0',
+  style: {fontSize: '10px', color: '#1a73e8', margin: '6px 0 0 0'},
+  targetUrl: 'https://doi.org/10.5194/egusphere-2026-1401'
+}));
+
+Map.add(legend);
+
+// ---------------------------------------------------------------------
+// Click-to-query panel (top-right)
+// ---------------------------------------------------------------------
+var infoPanel = ui.Panel({
+  style: {
+    position: 'top-right',
+    padding: '10px 12px',
+    width: '260px',
+    backgroundColor: 'rgba(255,255,255,1)'
+  }
+});
+
+infoPanel.add(ui.Label({
+  value: 'Click the map to query class',
+  style: {fontWeight: 'bold', fontSize: '13px', margin: '0 0 4px 0'}
+}));
+
+var infoLabel = ui.Label({
+  value: '(no point selected)',
+  style: {fontSize: '12px', whiteSpace: 'pre', fontFamily: 'monospace'}
+});
+infoPanel.add(infoLabel);
+
+var clearBtn = ui.Button({
+  label: 'Clear',
+  onClick: function() {
+    infoLabel.setValue('(no point selected)');
+    var layers = Map.layers();
+    for (var i = layers.length() - 1; i >= 0; i--) {
+      if (layers.get(i).getName() === 'Click point') {
+        layers.remove(layers.get(i));
+      }
+    }
+  },
+  style: {margin: '6px 0 0 0', padding: '0'}
+});
+infoPanel.add(clearBtn);
+
+Map.add(infoPanel);
+Map.style().set('cursor', 'crosshair');
+
+// Web Mercator m/px at given latitude
+var zoomToScale = function(zoom, lat) {
+  var latRad = lat * Math.PI / 180;
+  return 156543.03392 * Math.cos(latRad) / Math.pow(2, zoom);
+};
+
+// Map class code -> label
+var CLASS_LABELS = {
+  0: 'Non-forest (other)',
+  1: 'Forest',
+  2: 'Tree crop'
+};
+
+Map.onClick(function(coords) {
+  infoLabel.setValue('querying...');
+
+  var layers = Map.layers();
+  for (var i = layers.length() - 1; i >= 0; i--) {
+    if (layers.get(i).getName() === 'Click point') {
+      layers.remove(layers.get(i));
+    }
+  }
+
+  var pt = ee.Geometry.Point([coords.lon, coords.lat]);
+  Map.addLayer(pt, {color: 'FF0000'}, 'Click point');
+
+  var zoom = Map.getZoom();
+  var scale = zoomToScale(zoom, coords.lat);
+
+  // Sample at native 10 m resolution; .unmask(0) so a click on
+  // masked non-forest still returns class 0 instead of null.
+  GEM_Forest.unmask(0).reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: pt,
+    scale: 10,
+    maxPixels: 1
+  }).evaluate(function(result) {
+    var classVal = (result && result.class !== null && result.class !== undefined)
+      ? result.class
+      : null;
+    var classLabel = (classVal !== null)
+      ? (CLASS_LABELS[classVal] !== undefined
+          ? CLASS_LABELS[classVal] + ' (' + classVal + ')'
+          : 'Unknown (' + classVal + ')')
+      : 'no data';
+
+    infoLabel.setValue(
+      'Lat:    ' + coords.lat.toFixed(5) + '\n' +
+      'Lon:    ' + coords.lon.toFixed(5) + '\n' +
+      'Class:  ' + classLabel + '\n' +
+      'Zoom:   ' + zoom + '\n' +
+      'Scale:  ' + scale.toFixed(2) + ' m/px'
+    );
+  });
+});
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+// Center the map on a specific region (optional)
+Map.setCenter(0, 0, 2); // You can adjust the coordinates and zoom level as neededvar tzero_solar_analysis = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_ANALYSIS_POLYGONS");
+var tzero_solar_analysis_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_ANALYSIS_POLYGONS_CENTROID");
+var tzero_solar_raw = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_RAW_POLYGONS");
+var tzero_solar_raw_centroid = ee.FeatureCollection("projects/sat-io/open-datasets/TZERO/TZ-SOLAR-2025Q3_RAW_POLYGONS_CENTROID");
+
+// Define the visualization parameters
+var vizParams = {
+  color: 'FFD700',
+  fillColor: '00000000'
+};
+
+
+var snazzy = require("users/aazuspan/snazzy:styles");
+snazzy.addStyle("https://snazzymaps.com/style/38/shades-of-grey", "Greyscale");
+
+// Center the map on a specific region (optional)
+Map.setCenter(0, 0, 2); // You can adjust the coordinates and zoom level as needed

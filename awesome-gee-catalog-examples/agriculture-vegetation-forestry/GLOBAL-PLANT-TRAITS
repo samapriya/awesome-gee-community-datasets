@@ -1,0 +1,523 @@
+var raster = null;
+var currentTraitName = null;
+var metadata = null;
+var locatorContent = null;
+var traitInfoPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: {
+    padding: '4px 0px 0px 8px',
+    margin: '0px'
+  }
+});
+
+var currentTraitIds = [];
+var currentTraitNames = [];
+var clickMarker = null;
+
+// ── Asset paths ──────────────────────────────────────────────────────────────
+var PATH_STG = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global-traits/Shrub_Tree_Grass";
+var PATH_ST  = "projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global-traits/Shrub_Tree";
+
+// ── TEXT ─────────────────────────────────────────────────────────────────────
+
+var title = ui.Label({
+  value: 'Global plant trait maps based on crowdsourced biodiversity monitoring and Earth observation',
+  style: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    margin: '10px',
+    textAlign: 'left',
+    color: '#444'
+  }
+});
+
+var abstract = ui.Label({
+  value: "Plant functional traits are fundamental to ecosystem dynamics and Earth system processes, but their global characterization is limited by the availability of field surveys and trait measurements. Recent expansions in biodiversity data aggregation, including large collections of vegetation surveys, citizen science observations, and trait measurements, offer new opportunities to overcome these constraints. Here we demonstrate that combining these diverse data sources with high-resolution Earth observation data enables accurate modeling of key plant traits at up to 1 km resolution. Our approach achieves high predictive power, reaching correlations up to 0.63 (15 of 31 traits exceeding 0.50) and improved spatial transferability, effectively bridging gaps in under-sampled regions. By capturing a broad range of traits with high spatial coverage, these maps can enhance our understanding of plant community properties and ecosystem functioning globally, and can serve as useful tools in modeling global biogeochemical processes and informing worldwide conservation efforts. Ultimately, our framework highlights the power and necessity of crowdsourced biodiversity data in high-resolution plant trait modeling. We anticipate that advancements in biodiversity data collection and remote sensing capabilities will further refine global trait mapping, fostering a dynamic trait-based understanding of the biosphere.",
+  style: { fontSize: "12px" }
+});
+
+var bold_aoa = ui.Label({
+  value: "Area of applicability",
+  style: { fontWeight: 'bold', fontSize: "12px", margin: '0 8px 0 8px' }
+});
+var value_aoa = ui.Label({
+  value: "An indicator of model uncertainty. The area of applicability indicates regions where predictor data used for extrapolation differs significantly from predictor values seen during model training (see Meyer and Pebesma, 2021).",
+  style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', fontSize: "12px", padding: "2px 0px 15px 8px", margin: "0", maxWidth: "100%" }
+});
+var def_aoa = ui.Panel({
+  widgets: [bold_aoa, value_aoa],
+  layout: ui.Panel.Layout.flow({ direction: 'vertical', wrap: true }),
+  style: { width: '100%', margin: '0', padding: '0', maxWidth: "100%" }
+});
+
+var bold_cov = ui.Label({
+  value: "Coefficient of variation",
+  style: { fontWeight: 'bold', fontSize: "12px", margin: '0 8px 0 8px' }
+});
+var value_cov = ui.Label({
+  value: "Another indicator of model uncertainty derived by comparing the predictions made during model cross-validation.",
+  style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', fontSize: "12px", padding: "2px 0px 15px 8px", margin: "0", maxWidth: "100%" }
+});
+var def_cov = ui.Panel({
+  widgets: [bold_cov, value_cov],
+  layout: ui.Panel.Layout.flow({ direction: 'vertical', wrap: true }),
+  style: { width: '100%', margin: '0', padding: '0', maxWidth: "100%" }
+});
+
+var bold_un = ui.Label({
+  value: "Usage notes",
+  style: { fontWeight: 'bold', fontSize: "12px", margin: '0 8px 0 8px' }
+});
+var value_un = ui.Label({
+  value: "Here you can find maps of 37 plant functional traits as defined in the TRY Plant Trait Database with a resolution of 1 km and a global extent.\n\n* Experimental traits — model performance below the heuristic threshold of r=0.5 and reliability is reduced. Please consider your use case before incorporating these trait maps into your analysis.\n\nThe maps are extrapolations by ensemble models trained on ~40 million citizen science species observations from the Global Biodiversity Information Facility as well as scientific species abundances recorded in the sPlot database in combination with TRY trait data and global Earth observation datasets.\n\nIn addition to using the coefficient of variation and area of applicability layers of the maps, we encourage all who wish to use these maps to take particular note of the model performance for the traits of interest, which can be found both in the raster metadata as well as in Table A.1. of the manuscript.\n\nThe model performance varies significantly across the traits, and so care should be used. The current iteration of the trait maps includes traits sourced from plants across three major plant functional types (PFTs): shrubs, trees, and grasses. PFT-specific maps are in progress and will be available in the future. For questions, please contact daniel.lusk@geosense.uni-freiburg.de.\n\nThese products have been created in the framework of the PANOPS project. More information on this project is available at:",
+  style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', padding: "2px 0px 10px 8px", margin: "0", maxWidth: "100%", fontSize: "12px" }
+});
+
+var un_link1 = ui.Label({ value: "# University of Freiburg: PANOPS", style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', fontSize: "12px", maxWidth: "100%", margin: "0px 0px 3px 8px" } }).setUrl("https://uni-freiburg.de/enr-geosense/research/panops/");
+var un_link2 = ui.Label({ value: "# German Research Foundation: PANOPS", style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', fontSize: "12px", maxWidth: "100%", margin: "0px 0px 3px 8px" } }).setUrl("https://gepris.dfg.de/gepris/projekt/504978936?language=en");
+var un_link3 = ui.Label({ value: "# Website: planttraits.earth", style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', maxWidth: "100%", fontSize: "12px", margin: "0px 0px 3px 8px" } }).setUrl("https://planttraits.earth/");
+var un_link4 = ui.Label({ value: "# Dataset: Access via Zenodo", style: { whiteSpace: 'pre-wrap', fontWeight: 'normal', maxWidth: "100%", fontSize: "12px", margin: "0px 0px 3px 8px" } }).setUrl("https://zenodo.org/records/14646322");
+
+var un_links = ui.Panel({
+  widgets: [un_link3, un_link4, un_link1, un_link2],
+  layout: ui.Panel.Layout.flow({ direction: 'vertical', wrap: true }),
+  style: { width: '100%', margin: '0', padding: '0', maxWidth: "100%" }
+});
+var un_usagenotes = ui.Panel({
+  widgets: [bold_un, value_un, un_links],
+  layout: ui.Panel.Layout.flow({ direction: 'vertical', wrap: true }),
+  style: { width: '100%', margin: '0', padding: '0', maxWidth: "100%" }
+});
+
+var pftLabel = ui.Label({
+  value: '1. Select growth forms',
+  style: { fontWeight: 'bold', fontSize: '12px', padding: '0px 0px 0px 8px', margin: '1px 0', textDecoration: 'underline' }
+});
+
+var layercontrol = ui.Label({ value: 'Layer selection', style: { fontWeight: 'bold', fontSize: "12px", textDecoration: 'underline' } });
+var spacer3 = ui.Panel([], null, { stretch: 'horizontal' });
+var transparencycontrol = ui.Label({ value: 'Transparency control', style: { fontWeight: 'bold', fontSize: "12px", textDecoration: 'underline' } });
+var spacer4 = ui.Panel([], null, { width: "30px", stretch: 'horizontal' });
+var layerControlPanel = ui.Panel({
+  widgets: [layercontrol, spacer3, transparencycontrol, spacer4],
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: { width: '100%', margin: '0px', padding: '0px' }
+});
+
+var plantTraitLabel = ui.Label({
+  value: '2. Select plant trait',
+  style: { fontWeight: 'bold', padding: '0px 0px 0px 8px', fontSize: '12px', margin: '1px 0', textDecoration: 'underline' }
+});
+
+var sep1 = ui.Label({ value: '___________________________________________________________', style: { fontWeight: 'bold', color: '#413d7b' } });
+var sep2 = ui.Label({ value: '___________________________________________________________', style: { fontWeight: 'bold', color: '#413d7b' } });
+var sep3 = ui.Label({ value: '___________________________________________________________', style: { fontWeight: 'bold', color: '#413d7b' } });
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+function formatUnit(unitStr) {
+  if (!unitStr) return "";
+  unitStr = String(unitStr)
+    .replace(/[\u200B-\u200D\uFEFF\u00A0]/g, '')
+    .replace(/\u2212/g, '-')
+    .trim();
+  var superscriptMap = { '0':'\u2070','1':'\u00B9','2':'\u00B2','3':'\u00B3','4':'\u2074','5':'\u2075','6':'\u2076','7':'\u2077','8':'\u2078','9':'\u2079','-':'\u207B' };
+  return unitStr.split(/\s+/).map(function(part) {
+    var match = part.match(/^([a-zA-Zμµ]+)(-?\d+)$/);
+    if (match) {
+      var sup = '';
+      for (var i = 0; i < match[2].length; i++) sup += superscriptMap[match[2][i]] || match[2][i];
+      return match[1] + sup;
+    }
+    return part;
+  }).join(' ');
+}
+
+function makeHorizontalColorbar(visParams) {
+  var lon = ee.Image.pixelLonLat().select('longitude');
+  var gradient = lon.multiply((visParams.max - visParams.min) / 200.0).add(visParams.min);
+  var legendImage = gradient.visualize(visParams);
+  var thumb = ui.Thumbnail({ image: legendImage, params: { bbox: '0,0,400,20', dimensions: '200x20' }, style: { margin: '0px', padding: "0px" } });
+  var spacer = ui.Panel([], null, { stretch: 'horizontal' });
+  var tick_labels = ui.Panel({
+    widgets: [ui.Label("< " + visParams.min.toFixed(2), { fontSize: '12px', margin: '0px' }), spacer, ui.Label("> " + visParams.max.toFixed(2), { fontSize: '12px', margin: '0px' })],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: { width: '100%', margin: '0px', padding: "0px" }
+  });
+  return ui.Panel({ widgets: [thumb, tick_labels], layout: ui.Panel.Layout.flow('vertical'), style: { width: '100%', margin: '0px', padding: '0px 0px 0px 8px' } });
+}
+
+function makeHorizontalColorbarB2(visParams) {
+  var lon = ee.Image.pixelLonLat().select('longitude');
+  var gradient = lon.multiply((visParams.max - visParams.min) / 200.0).add(visParams.min);
+  var legendImage = gradient.visualize(visParams);
+  var thumb = ui.Thumbnail({ image: legendImage, params: { bbox: '0,0,400,20', dimensions: '200x20' }, style: { margin: '0px', padding: '0px' } });
+  var spacer = ui.Panel([], null, { stretch: 'horizontal' });
+  var tick_labels = ui.Panel({
+    widgets: [ui.Label(visParams.min.toFixed(0), { fontSize: '12px', margin: '0px' }), spacer, ui.Label("> " + visParams.max.toFixed(2), { fontSize: '12px', margin: '0px' })],
+    layout: ui.Panel.Layout.flow('horizontal'),
+    style: { width: '100%', margin: '0px', padding: '0px' }
+  });
+  return ui.Panel({ widgets: [thumb, tick_labels], layout: ui.Panel.Layout.flow('vertical'), style: { width: '100%', margin: '0px', padding: '0px 0px 0px 8px' } });
+}
+
+function makeBoxColorbarB3(visParams) {
+  var boxImage = ee.Image(1).visualize(visParams);
+  var thumb = ui.Thumbnail({ image: boxImage, params: { bbox: '0,0,40,20', dimensions: '40x20' }, style: { margin: '0px', padding: '0px' } });
+  var label = ui.Label("Outside of AOA", { fontSize: '12px', margin: '4px' });
+  return ui.Panel({ widgets: [thumb, label], layout: ui.Panel.Layout.flow('horizontal'), style: { margin: '0px', padding: '0px 0px 0px 8px' } });
+}
+
+function getMetadata(image) {
+  var keys = ["cov_min","cov_max","cov_offset","cov_scale","trait_long_name","trait_max","trait_min","trait_offset","trait_scale","trait_short_name","try_id","unit"];
+  return image.toDictionary(keys).getInfo();
+}
+
+// ── Map setup ─────────────────────────────────────────────────────────────────
+
+Map.setControlVisibility({ layerList: false });
+
+var controlPanel = ui.Panel({
+  style: { width: '400px', padding: '8px', backgroundColor: 'rgba(255,255,255,0.7)' }
+});
+ui.root.add(controlPanel);
+controlPanel.add(title);
+controlPanel.add(abstract);
+
+var layerPanel = ui.Panel({ style: { margin: '0px 0 0 0', width: "100%" } });
+
+var currentTraitLayers = [];
+
+// ── Colormaps ─────────────────────────────────────────────────────────────────
+var makoColormap  = ['#2e1e3b','#413d7b','#37659e','#348fa7','#40b7ad','#8bdab2'];
+var magmaColormap = ['#221150','#5f187f','#982d80','#d3436e','#f8765c','#febb81'];
+var transColormap = ["#d7b509"];
+
+// ── Trait name dictionary ─────────────────────────────────────────────────────
+var id_name = ee.Dictionary({
+  "289":"Wood fiber lengths*","3120":"Leaf water content*","3106":"Plant height (veg.)*",
+  "13":"Leaf C","3117":"SLA","95":"Seed germination rate*","237":"Dispersal unit length*",
+  "1080":"SRL*","281":"Stem conduit diameter","169":"Stem conduit density",
+  "224":"Chromosome cDNA content*","26":"Seed mass*","138":"Seed number (repr.)*",
+  "78":"Leaf delta 15N","3107":"Plant height (gen.)*","223":"Chromosome number*",
+  "27":"Seed length*","50":"Leaf N (area)","3112":"Leaf area (3112)","14":"Leaf N (mass)",
+  "614":"SRL (fine)*","145":"Leaf width","3114":"Leaf area (3114)","144":"Leaf length*",
+  "21":"Stem diameter*","351":"Seed number (disp.)*","47":"LDMC*","4":"SSD","6":"RRD",
+  "146":"Leaf C/N ratio","46":"Leaf thickness","3113":"Leaf area (3113)",
+  "163":"Leaf fresh mass*","55":"Leaf dry mass","297":"Wood ray density*",
+  "282":"Conduit element length*","15":"Leaf P"
+});
+var idNameDict = id_name.getInfo();
+
+// ── Load image collections (replaces listAssets + reduce) ────────────────────
+// Each image in the collection is expected to have a 'try_id' property,
+// OR we fall back to parsing the asset ID for the X<id> pattern.
+
+var col_STG = ee.ImageCollection(PATH_STG);
+var col_ST  = ee.ImageCollection(PATH_ST);
+
+/**
+ * Build a try_id → asset-path dict from an ImageCollection.
+ * We list the collection's assets client-side (one call) instead of
+ * iterating over a folder.
+ */
+function buildTraitListFromCollection(path) {
+  var assets = ee.data.listAssets(path).assets;
+  return assets.reduce(function(dict, asset) {
+    var m = asset.name.match(/X(\d+)/);
+    if (m) dict[m[1]] = asset.name;
+    return dict;
+  }, {});
+}
+
+var traitList_STG = buildTraitListFromCollection(PATH_STG);
+var traitList_ST  = buildTraitListFromCollection(PATH_ST);
+
+// ── UI helpers ────────────────────────────────────────────────────────────────
+
+function filterTraitNameDict(traitDict) {
+  var filtered = [];
+  for (var id in traitDict) {
+    var cleanId = id.trim();
+    if (idNameDict.hasOwnProperty(cleanId)) {
+      filtered.push({ key: cleanId, value: idNameDict[cleanId] });
+    }
+  }
+  return filtered;
+}
+
+function updateLayerPanel() {
+  layerPanel.clear();
+  layerPanel.add(layerControlPanel);
+  var layers = Map.layers();
+  for (var i = 0; i < layers.length(); i++) {
+    (function(layer, label) {
+      var checkboxLabel = (label !== "Coefficient of variation" && label !== "Area of applicability (AOA)")
+        ? label + " [" + formatUnit(metadata.unit) + "]"
+        : label;
+
+      var checkbox = ui.Checkbox({ label: checkboxLabel, value: layer.getShown(), onChange: function(v) { layer.setShown(v); } });
+      checkbox.style().set({ fontSize: "12px", fontWeight: "bold" });
+
+      var opacitySlider = ui.Slider(0, 1, layer.getOpacity(), 0.01);
+      opacitySlider.style().set({ width: "100%", margin: "0px", padding: "12% 0% 0px 30%", fontSize: "0px" });
+      opacitySlider.onChange(function(val) { layer.setOpacity(val); });
+
+      var colorbar = null;
+      if (layer.visParams) {
+        if (label === "Area of applicability (AOA)") colorbar = makeBoxColorbarB3(layer.visParams);
+        else if (label === "Coefficient of variation")  colorbar = makeHorizontalColorbarB2(layer.visParams);
+        else                                            colorbar = makeHorizontalColorbar(layer.visParams);
+      }
+
+      var leftCol = ui.Panel({ layout: ui.Panel.Layout.flow("vertical"), style: { width: "50%" } });
+      leftCol.add(checkbox);
+      if (colorbar) leftCol.add(colorbar);
+
+      var rightCol = ui.Panel({ layout: ui.Panel.Layout.flow("vertical", { alignment: "center" }), style: { width: "50%" } });
+      rightCol.add(opacitySlider);
+
+      layerPanel.add(ui.Panel({ widgets: [leftCol, rightCol], layout: ui.Panel.Layout.flow("horizontal"), style: { width: "100%", margin: "0px", padding: "0px" } }));
+    })(layers.get(i), layers.get(i).get('name') || ('Layer ' + i));
+  }
+}
+
+var GRAYMAP = [
+  { stylers: [{ saturation: -100 }, { lightness: -50 }] },
+  { elementType: 'labels', stylers: [{ lightness: 20 }] },
+  { featureType: 'road', elementType: 'geometry', stylers: [{ visibility: 'simplified' }] },
+  { featureType: 'all', elementType: 'labels', stylers: [{ visibility: 'off' }] },
+  { elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
+  { featureType: 'poi', elementType: 'all', stylers: [{ visibility: 'off' }] }
+];
+Map.setOptions('Gray', { 'Gray': GRAYMAP });
+
+// ── show_raster ───────────────────────────────────────────────────────────────
+
+function removeExistingTraitLayers() {
+  currentTraitLayers.forEach(function(layer) { Map.layers().remove(layer); });
+  currentTraitLayers = [];
+}
+
+function show_raster(trait_id) {
+  removeExistingTraitLayers();
+
+  // Load the image directly from the collection using its asset path
+  var image = ee.Image(currentTraitDict[trait_id]);
+  var traitName = idNameDict[trait_id];
+  var bandNames = image.bandNames().getInfo();
+  metadata = getMetadata(image);
+
+  bandNames.forEach(function(bandName) {
+    var bandImage = image.select(bandName);
+    var visParams;
+    var bn = bandName.toUpperCase();
+
+    if (bn === 'B1') {
+      bandImage = bandImage.multiply(metadata.trait_scale).add(metadata.trait_offset);
+      visParams = { min: metadata.trait_min, max: metadata.trait_max, palette: makoColormap };
+      var l = ui.Map.Layer(bandImage, visParams, traitName, true);
+      l.visParams = visParams;
+      Map.layers().add(l);
+      currentTraitLayers.push(l);
+
+    } else if (bn === 'B2') {
+      bandImage = bandImage.multiply(metadata.cov_scale).add(metadata.cov_offset);
+      visParams = { min: metadata.cov_min, max: metadata.cov_max, palette: magmaColormap };
+      var l = ui.Map.Layer(bandImage, visParams, "Coefficient of variation", false);
+      l.visParams = visParams;
+      Map.layers().add(l);
+      currentTraitLayers.push(l);
+
+    } else if (bn === 'B3') {
+      bandImage = bandImage.updateMask(bandImage.neq(0));
+      visParams = { min: 0, max: 1, palette: transColormap };
+      var l = ui.Map.Layer(bandImage, visParams, "Area of applicability (AOA)", true);
+      l.visParams = visParams;
+      Map.layers().add(l);
+      currentTraitLayers.push(l);
+    }
+  });
+
+  updateLayerPanel();
+  return image;
+}
+
+// ── Dropdowns ─────────────────────────────────────────────────────────────────
+
+var pftOptions = ["Shrub, Tree, Grass", "Shrub, Tree"];
+var currentTraitDict = {};
+
+var pftDropdown = ui.Select({
+  items: pftOptions,
+  value: pftOptions[0],
+  placeholder: 'Select a PFT',
+  onChange: updateTraitDropdown
+});
+
+var traitDropdown = ui.Select({
+  items: [],
+  placeholder: 'Select a Trait',
+  onChange: function(selected) {
+    var index = currentTraitNames.indexOf(selected);
+    var trait_id = currentTraitIds[index];
+    currentTraitName = idNameDict[trait_id];
+    raster = show_raster(trait_id);
+    updateTraitInfoPanel();
+  }
+});
+
+function updateTraitDropdown(selectedPft) {
+  currentTraitDict = (selectedPft === "Shrub, Tree") ? traitList_ST : traitList_STG;
+  var filteredEntries = filterTraitNameDict(currentTraitDict);
+  currentTraitIds   = filteredEntries.map(function(e) { return e.key; });
+  currentTraitNames = filteredEntries.map(function(e) { return e.value; });
+  traitDropdown.items().reset(currentTraitNames);
+  traitDropdown.setValue(null, false);
+}
+
+// ── Dropdown layout ───────────────────────────────────────────────────────────
+
+var dropdownPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('horizontal'),
+  style: { padding: '0px', width: '100%', stretch: 'horizontal' }
+});
+var pftColumn   = ui.Panel({ widgets: [pftLabel, pftDropdown], layout: ui.Panel.Layout.flow('vertical'), style: { margin: '0px 90px 0px 0px' } });
+var traitColumn = ui.Panel({ widgets: [plantTraitLabel, traitDropdown], layout: ui.Panel.Layout.flow('vertical') });
+dropdownPanel.add(pftColumn);
+dropdownPanel.add(traitColumn);
+
+controlPanel.add(dropdownPanel);
+controlPanel.add(sep1);
+
+// ── Trait info panel ──────────────────────────────────────────────────────────
+
+function updateTraitInfoPanel() {
+  traitInfoPanel.clear();
+  if (metadata) {
+    traitInfoPanel.add(ui.Panel([
+      ui.Label("Full trait name:", { fontSize:"12px", margin:"2px 0", fontWeight:"bold", width:"95px" }),
+      ui.Label(metadata.trait_long_name, { fontSize:"12px", margin:"2px 0", width:"71%" })
+    ], ui.Panel.Layout.flow("horizontal")));
+    traitInfoPanel.add(ui.Panel([
+      ui.Label("TRY ID:", { fontSize:"12px", margin:"2px 0", fontWeight:"bold", width:"95px" }),
+      ui.Label(metadata.try_id, { fontSize:"12px", margin:"2px 0", width:"165px" })
+    ], ui.Panel.Layout.flow("horizontal")));
+    traitInfoPanel.add(ui.Panel([
+      ui.Label("Unit:", { fontSize:"12px", margin:"2px 0", fontWeight:"bold", width:"95px" }),
+      ui.Label("[" + formatUnit(metadata.unit) + "]", { fontSize:"12px", margin:"2px 0", width:"165px" })
+    ], ui.Panel.Layout.flow("horizontal")));
+  } else {
+    traitInfoPanel.add(ui.Label("No trait info available", { fontSize:"12px", margin:"2px 0" }));
+  }
+}
+
+controlPanel.add(layerPanel);
+controlPanel.add(sep2);
+controlPanel.add(traitInfoPanel);
+
+// ── Click handler ─────────────────────────────────────────────────────────────
+
+var tableBox = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: { position:'bottom-right', width:'250px', padding:'8px', border:'1px solid black', maxHeight:'400px', backgroundColor:'rgba(255,255,255,0)', shown: false }
+});
+Map.add(tableBox);
+
+var closeButton = ui.Button('x', function() {
+  tableBox.style().set('shown', false);
+  if (clickMarker !== null) { Map.layers().remove(clickMarker); clickMarker = null; }
+});
+closeButton.style().set({ margin:'0px', padding:'0px', backgroundColor:'rgba(255,255,255,0)' });
+
+var header = ui.Panel({
+  widgets: [ui.Panel([], null, { stretch:'horizontal', backgroundColor:'rgba(255,255,255,0)' }), closeButton],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+header.style().set({ width:'100%', backgroundColor:'rgba(255,255,255,0)' });
+
+locatorContent = ui.Panel([], ui.Panel.Layout.flow('vertical'), { margin:'0px', padding:'0px', backgroundColor:'rgba(255,255,255,0)' });
+tableBox.add(header);
+tableBox.add(locatorContent);
+
+Map.onClick(function(clickEvent) {
+  if (clickMarker !== null) Map.layers().remove(clickMarker);
+
+  var clickPoint = ee.Geometry.Point(clickEvent.lon, clickEvent.lat);
+  var markerCollection = ee.FeatureCollection([ee.Feature(clickPoint)]);
+  var markerLayer = ui.Map.Layer(
+    markerCollection.style({ color:'#000000', pointSize:7, pointShape:'circle', fillColor:'#00000000' }),
+    {}, 'Click Marker'
+  );
+  clickMarker = markerLayer;
+  Map.layers().add(clickMarker);
+
+  if (!raster) {
+    locatorContent.clear();
+    locatorContent.add(ui.Label("No active raster image available."));
+    tableBox.style().set('shown', true);
+    return;
+  }
+
+  var pt = ee.Geometry.Point(clickEvent.lon, clickEvent.lat);
+  var scale = Map.getScale();
+  var meta = getMetadata(raster);
+
+  raster.sample({ region: pt, scale: scale, numPixels: 1, seed: 42, dropNulls: false }).evaluate(function(result) {
+    locatorContent.clear();
+    if (!result.features || result.features.length === 0) {
+      locatorContent.add(ui.Label("No data at clicked location."));
+      tableBox.style().set('shown', true);
+      return;
+    }
+    var props = result.features[0].properties;
+    var b1Value = (props.b1 !== null) ? props.b1 * meta.trait_scale + meta.trait_offset : null;
+    var b2Value = (props.b2 !== null) ? props.b2 * meta.cov_scale  + meta.cov_offset  : null;
+
+    var lat = clickEvent.lat, lon = clickEvent.lon;
+    var latStr = Math.abs(lat).toFixed(3) + "° " + (lat >= 0 ? 'N' : 'S');
+    var lonStr = Math.abs(lon).toFixed(3) + "° " + (lon >= 0 ? 'E' : 'W');
+
+    var infoTable = ui.Panel([
+      ui.Label("Location: " + latStr + ", " + lonStr, { fontWeight:'bold', backgroundColor:'rgba(255,255,255,0)' }),
+      ui.Label(currentTraitName + ": " + (isFinite(b1Value) ? b1Value.toFixed(3) : "N/A"), { backgroundColor:'rgba(255,255,255,0)', margin:"0", padding:"0px 0px 0px 8px" }),
+      ui.Label("Coeff. of Variation: " + (isFinite(b2Value) ? b2Value.toFixed(3) : "N/A"), { backgroundColor:'rgba(255,255,255,0)' })
+    ], ui.Panel.Layout.flow('vertical'));
+    infoTable.style().set("backgroundColor", 'rgba(255,255,255,0)');
+
+    locatorContent.add(infoTable);
+    tableBox.style().set('shown', true);
+    tableBox.style().set('backgroundColor', 'rgba(255,255,255,0.9)');
+  });
+});
+
+// ── Floating instructions panel ───────────────────────────────────────────────
+
+var infoFloatingPanel = ui.Panel({
+  layout: ui.Panel.Layout.flow('vertical'),
+  style: { position:'top-right', margin:'10px', padding:'10px', border:'1px solid #000', backgroundColor:'rgba(255,255,255,0.9)', maxWidth:'300px' }
+});
+var infoCloseButton = ui.Button('x', function() { infoFloatingPanel.style().set('shown', false); });
+infoCloseButton.style().set({ margin:'0px', padding:'0px', textAlign:"left", backgroundColor:'rgba(255,255,255,0)' });
+var infoHeader = ui.Panel({
+  widgets: [ui.Panel([], null, { stretch:'horizontal', backgroundColor:'rgba(255,255,255,0)' }), infoCloseButton],
+  layout: ui.Panel.Layout.flow('horizontal')
+});
+infoHeader.style().set({ width:'100%', backgroundColor:'rgba(255,255,255,0)' });
+var infoLabel = ui.Label({ value:"Click any location on the map to reveal detailed trait information!", style:{ fontSize:"12px", margin:"5px 0px 0px 0px", backgroundColor:'rgba(255,255,255,0)' } });
+infoFloatingPanel.add(infoHeader);
+infoFloatingPanel.add(infoLabel);
+Map.add(infoFloatingPanel);
+
+controlPanel.add(sep3);
+controlPanel.add(def_aoa);
+controlPanel.add(def_cov);
+controlPanel.add(un_usagenotes);
+
+// ── Initialise with defaults ──────────────────────────────────────────────────
+
+updateTraitDropdown("Shrub, Tree, Grass");
+
+var defaultTraitName = "SLA";
+var idx = currentTraitNames.indexOf(defaultTraitName);
+traitDropdown.setValue(idx !== -1 ? defaultTraitName : currentTraitNames[0], true);

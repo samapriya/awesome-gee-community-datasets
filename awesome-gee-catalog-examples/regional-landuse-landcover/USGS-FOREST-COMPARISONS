@@ -1,0 +1,455 @@
+/**
+ * CONUS Forest Disturbance History Viewer
+ * Compares historical (1992-2005) and projected (2006-2100) forest disturbance
+ * Scenarios: A1B, A2, B1, B2 (SRES emission scenarios)
+ * 
+ * Pixel values represent the number of years since that pixel last 
+ * experienced a land-use or land-cover change.
+ * 
+ * Data source: USGS CONUS Forest History
+ * Asset: projects/nwi-usgs/assets/USGS-CONUS-ForestHistory
+ */
+
+// ============================================================================
+// Configuration
+// ============================================================================
+var ASSET_PATH = 'projects/sat-io/open-datasets/USGS/CONUS-FOREST-HISTORY';
+var HISTORICAL_START = 1992;
+var HISTORICAL_END = 2005;
+var PROJECTED_START = 2006;
+var PROJECTED_END = 2100;
+
+// ============================================================================
+// Load Image Collection
+// ============================================================================
+var forestHistory = ee.ImageCollection(ASSET_PATH);
+
+// Print collection info
+print('Forest History Collection:', forestHistory.size());
+
+// ============================================================================
+// Helper Functions
+// ============================================================================
+
+/**
+ * Get image by scenario and year
+ */
+function getImage(scenario, year) {
+  var assetName;
+  if (scenario === 'historical') {
+    assetName = 'historical_forest_history_y' + year;
+  } else {
+    assetName = scenario + '_forest_history_y' + year;
+  }
+  var image = ee.Image(ASSET_PATH + '/' + assetName);
+  // Mask out zero pixels (no data/background)
+  return image.updateMask(image.neq(0));
+}
+
+/**
+ * Get scenario label for display
+ */
+function getScenarioLabel(scenario) {
+  var labels = {
+    'historical': 'Historical',
+    'a1b': 'A1B (Balanced Growth)',
+    'a2': 'A2 (Regional Development)',
+    'b1': 'B1 (Environmental Focus)',
+    'b2': 'B2 (Local Solutions)'
+  };
+  return labels[scenario] || scenario;
+}
+
+// ============================================================================
+// Visualization Parameters
+// ============================================================================
+
+// Years since last land-use/land-cover change visualization
+var visParams = {
+  min: 1,
+  max: 100,
+  palette: [
+    '#d73027',  // Recent change (1 year)
+    '#f46d43',
+    '#fdae61',
+    '#fee08b',
+    '#ffffbf',  // Mid-range
+    '#d9ef8b',
+    '#a6d96a',
+    '#66bd63',
+    '#1a9850'   // Long time since change (100+ years)
+  ]
+};
+
+// ============================================================================
+// UI Setup
+// ============================================================================
+
+// Clear default map
+ui.root.clear();
+
+// Create split panel layout
+var leftMap = ui.Map();
+var rightMap = ui.Map();
+
+// Link the maps
+var linker = ui.Map.Linker([leftMap, rightMap]);
+
+// Create split panel
+var splitPanel = ui.SplitPanel({
+  firstPanel: leftMap,
+  secondPanel: rightMap,
+  orientation: 'horizontal',
+  wipe: true
+});
+
+// ============================================================================
+// Control Panel
+// ============================================================================
+
+var controlPanel = ui.Panel({
+  style: {
+    width: '320px',
+    padding: '10px',
+    backgroundColor: '#f8f9fa'
+  }
+});
+
+// Title
+controlPanel.add(ui.Label({
+  value: '🌲 Forest Disturbance Viewer',
+  style: {
+    fontSize: '20px',
+    fontWeight: 'bold',
+    margin: '0 0 10px 0'
+  }
+}));
+
+// Description
+controlPanel.add(ui.Label({
+  value: 'Compare historical and projected CONUS forest disturbance patterns.',
+  style: {fontSize: '12px', color: '#666', margin: '0 0 15px 0'}
+}));
+
+// ---- Left Panel Controls ----
+controlPanel.add(ui.Label({
+  value: '◀ LEFT PANEL',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '10px 0 5px 0'}
+}));
+
+// Left scenario selector
+var leftScenarioSelect = ui.Select({
+  items: [
+    {label: 'Historical (1992-2005)', value: 'historical'},
+    {label: 'A1B - Balanced Growth', value: 'a1b'},
+    {label: 'A2 - Regional Development', value: 'a2'},
+    {label: 'B1 - Environmental Focus', value: 'b1'},
+    {label: 'B2 - Local Solutions', value: 'b2'}
+  ],
+  value: 'historical',
+  style: {stretch: 'horizontal'}
+});
+controlPanel.add(ui.Label('Scenario:', {fontSize: '12px'}));
+controlPanel.add(leftScenarioSelect);
+
+// Left year slider
+var leftYearSlider = ui.Slider({
+  min: HISTORICAL_START,
+  max: HISTORICAL_END,
+  value: 2000,
+  step: 1,
+  style: {stretch: 'horizontal'}
+});
+var leftYearLabel = ui.Label('Year: 2000', {fontSize: '12px'});
+controlPanel.add(leftYearLabel);
+controlPanel.add(leftYearSlider);
+
+// ---- Right Panel Controls ----
+controlPanel.add(ui.Label({
+  value: '▶ RIGHT PANEL',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '20px 0 5px 0'}
+}));
+
+// Right scenario selector
+var rightScenarioSelect = ui.Select({
+  items: [
+    {label: 'Historical (1992-2005)', value: 'historical'},
+    {label: 'A1B - Balanced Growth', value: 'a1b'},
+    {label: 'A2 - Regional Development', value: 'a2'},
+    {label: 'B1 - Environmental Focus', value: 'b1'},
+    {label: 'B2 - Local Solutions', value: 'b2'}
+  ],
+  value: 'a1b',
+  style: {stretch: 'horizontal'}
+});
+controlPanel.add(ui.Label('Scenario:', {fontSize: '12px'}));
+controlPanel.add(rightScenarioSelect);
+
+// Right year slider
+var rightYearSlider = ui.Slider({
+  min: PROJECTED_START,
+  max: PROJECTED_END,
+  value: 2050,
+  step: 1,
+  style: {stretch: 'horizontal'}
+});
+var rightYearLabel = ui.Label('Year: 2050', {fontSize: '12px'});
+controlPanel.add(rightYearLabel);
+controlPanel.add(rightYearSlider);
+
+// ---- Difference Mode ----
+controlPanel.add(ui.Label({
+  value: '⚡ ANALYSIS',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '20px 0 5px 0'}
+}));
+
+var showDifferenceCheck = ui.Checkbox('Show Change Detection', false);
+controlPanel.add(showDifferenceCheck);
+
+// ============================================================================
+// Legend
+// ============================================================================
+
+controlPanel.add(ui.Label({
+  value: '📊 LEGEND',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '20px 0 5px 0'}
+}));
+
+controlPanel.add(ui.Label({
+  value: 'Years Since Last Change',
+  style: {fontSize: '11px', fontWeight: 'bold', margin: '5px 0 2px 0'}
+}));
+
+// Create colorbar
+var colorbarPanel = ui.Panel({
+  style: {margin: '5px 0'}
+});
+
+// Gradient bar using multiple color segments
+var gradientColors = ['#d73027', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850'];
+var colorBar = ui.Thumbnail({
+  image: ee.Image.pixelLonLat().select(0),
+  params: {
+    bbox: [0, 0, 1, 0.1],
+    dimensions: '250x15',
+    format: 'png',
+    min: 0,
+    max: 1,
+    palette: gradientColors
+  },
+  style: {stretch: 'horizontal', margin: '0 0 4px 0'}
+});
+colorbarPanel.add(colorBar);
+
+// Labels for colorbar
+var labelPanel = ui.Panel({
+  widgets: [
+    ui.Label('1', {fontSize: '10px', margin: '0'}),
+    ui.Label('25', {fontSize: '10px', margin: '0 auto'}),
+    ui.Label('50', {fontSize: '10px', margin: '0 auto'}),
+    ui.Label('75', {fontSize: '10px', margin: '0 auto'}),
+    ui.Label('100+', {fontSize: '10px', margin: '0'})
+  ],
+  layout: ui.Panel.Layout.Flow('horizontal'),
+  style: {stretch: 'horizontal'}
+});
+colorbarPanel.add(labelPanel);
+
+controlPanel.add(colorbarPanel);
+
+controlPanel.add(ui.Label({
+  value: 'Lower values = recent change\nHigher values = stable over time',
+  style: {fontSize: '10px', color: '#666', whiteSpace: 'pre', margin: '5px 0'}
+}));
+
+// Change detection legend
+var changeLegendPanel = ui.Panel({
+  style: {margin: '5px 0', shown: false}
+});
+changeLegendPanel.add(ui.Label('Change Detection:', {fontWeight: 'bold', fontSize: '12px'}));
+
+var changeItems = [
+  {color: '#d73027', label: 'Forest Loss'},
+  {color: '#fee090', label: 'No Change'},
+  {color: '#1a9850', label: 'Forest Gain'}
+];
+
+changeItems.forEach(function(item) {
+  var row = ui.Panel({
+    widgets: [
+      ui.Label({
+        style: {
+          backgroundColor: item.color,
+          padding: '8px',
+          margin: '2px 8px 2px 0'
+        }
+      }),
+      ui.Label(item.label, {fontSize: '11px'})
+    ],
+    layout: ui.Panel.Layout.Flow('horizontal')
+  });
+  changeLegendPanel.add(row);
+});
+
+controlPanel.add(changeLegendPanel);
+
+// ============================================================================
+// Info Panel
+// ============================================================================
+
+controlPanel.add(ui.Label({
+  value: 'ℹ️ INFO',
+  style: {fontWeight: 'bold', fontSize: '14px', margin: '20px 0 5px 0'}
+}));
+
+controlPanel.add(ui.Label({
+  value: 'SRES Scenarios:\n• A1B: Rapid economic growth, balanced energy\n• A2: Regional development, slower growth\n• B1: Environmental sustainability focus\n• B2: Local solutions, heterogeneous world',
+  style: {fontSize: '10px', color: '#666', whiteSpace: 'pre'}
+}));
+
+// ============================================================================
+// Update Functions
+// ============================================================================
+
+function updateLeftYearRange() {
+  var scenario = leftScenarioSelect.getValue();
+  if (scenario === 'historical') {
+    leftYearSlider.setMin(HISTORICAL_START);
+    leftYearSlider.setMax(HISTORICAL_END);
+    if (leftYearSlider.getValue() > HISTORICAL_END) {
+      leftYearSlider.setValue(HISTORICAL_END);
+    }
+    if (leftYearSlider.getValue() < HISTORICAL_START) {
+      leftYearSlider.setValue(HISTORICAL_START);
+    }
+  } else {
+    leftYearSlider.setMin(PROJECTED_START);
+    leftYearSlider.setMax(PROJECTED_END);
+    if (leftYearSlider.getValue() < PROJECTED_START) {
+      leftYearSlider.setValue(PROJECTED_START);
+    }
+  }
+}
+
+function updateRightYearRange() {
+  var scenario = rightScenarioSelect.getValue();
+  if (scenario === 'historical') {
+    rightYearSlider.setMin(HISTORICAL_START);
+    rightYearSlider.setMax(HISTORICAL_END);
+    if (rightYearSlider.getValue() > HISTORICAL_END) {
+      rightYearSlider.setValue(HISTORICAL_END);
+    }
+    if (rightYearSlider.getValue() < HISTORICAL_START) {
+      rightYearSlider.setValue(HISTORICAL_START);
+    }
+  } else {
+    rightYearSlider.setMin(PROJECTED_START);
+    rightYearSlider.setMax(PROJECTED_END);
+    if (rightYearSlider.getValue() < PROJECTED_START) {
+      rightYearSlider.setValue(PROJECTED_START);
+    }
+  }
+}
+
+function updateMaps() {
+  var leftScenario = leftScenarioSelect.getValue();
+  var leftYear = Math.round(leftYearSlider.getValue());
+  var rightScenario = rightScenarioSelect.getValue();
+  var rightYear = Math.round(rightYearSlider.getValue());
+  
+  // Update labels
+  leftYearLabel.setValue('Year: ' + leftYear);
+  rightYearLabel.setValue('Year: ' + rightYear);
+  
+  // Get images
+  var leftImage = getImage(leftScenario, leftYear);
+  var rightImage = getImage(rightScenario, rightYear);
+  
+  // Clear layers
+  leftMap.layers().reset();
+  rightMap.layers().reset();
+  
+  // Check if showing difference
+  var showDiff = showDifferenceCheck.getValue();
+  
+  if (showDiff) {
+    // Change detection visualization
+    var changeVisParams = {
+      min: -5,
+      max: 5,
+      palette: ['#d73027', '#fc8d59', '#fee090', '#e0f3f8', '#91bfdb', '#4575b4', '#1a9850']
+    };
+    
+    var difference = rightImage.subtract(leftImage);
+    
+    leftMap.addLayer(leftImage, visParams, getScenarioLabel(leftScenario) + ' ' + leftYear);
+    rightMap.addLayer(difference, changeVisParams, 'Change: ' + leftYear + ' → ' + rightYear);
+    
+    changeLegendPanel.style().set('shown', true);
+  } else {
+    leftMap.addLayer(leftImage, visParams, getScenarioLabel(leftScenario) + ' ' + leftYear);
+    rightMap.addLayer(rightImage, visParams, getScenarioLabel(rightScenario) + ' ' + rightYear);
+    
+    changeLegendPanel.style().set('shown', false);
+  }
+}
+
+// ============================================================================
+// Event Handlers
+// ============================================================================
+
+leftScenarioSelect.onChange(function() {
+  updateLeftYearRange();
+  updateMaps();
+});
+
+rightScenarioSelect.onChange(function() {
+  updateRightYearRange();
+  updateMaps();
+});
+
+leftYearSlider.onChange(updateMaps);
+rightYearSlider.onChange(updateMaps);
+showDifferenceCheck.onChange(updateMaps);
+
+// ============================================================================
+// Initialize
+// ============================================================================
+
+// Set up UI layout
+ui.root.add(controlPanel);
+ui.root.add(splitPanel);
+
+// Center on CONUS
+leftMap.setCenter(-98.5, 39.8, 4);
+rightMap.setCenter(-98.5, 39.8, 4);
+
+// Initial update
+updateMaps();
+
+// Add map titles
+leftMap.add(ui.Label({
+  value: '◀ Historical / Reference',
+  style: {
+    position: 'top-center',
+    backgroundColor: 'rgba(255,255,255,0.8)',
+    padding: '5px 10px',
+    fontSize: '14px',
+    fontWeight: 'bold'
+  }
+}));
+
+rightMap.add(ui.Label({
+  value: '▶ Projected / Comparison',
+  style: {
+    position: 'top-center',
+    backgroundColor: 'rgba(255,255,255,0.8)',
+    padding: '5px 10px',
+    fontSize: '14px',
+    fontWeight: 'bold'
+  }
+}));
+
+print('Forest Disturbance Viewer loaded successfully!');
+print('Historical data: ' + HISTORICAL_START + '-' + HISTORICAL_END);
+print('Projected data: ' + PROJECTED_START + '-' + PROJECTED_END);
