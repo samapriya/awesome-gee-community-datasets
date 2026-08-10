@@ -49,15 +49,38 @@ jobs:
 
       - name: Commit committer cache
         run: |
-          if ! git diff --quiet -- page_committers.json; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add page_committers.json
-            git commit -m "chore: refresh per-page committers [skip ci]"
-            git push
-          else
+          if git diff --quiet -- page_committers.json; then
             echo "committer cache unchanged"
+            exit 0
           fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add page_committers.json
+          git commit -m "chore: refresh per-page committers [skip ci]"
+
+          # Sibling workflows (examples_zip, catalog-stats, json_sync, ...) also
+          # push to master, and they can land between this run's checkout and
+          # this push -- the ref moves underneath us and the push is rejected
+          # with "cannot lock ref ... expected <our stale sha>".
+          #
+          # Rebase onto whatever landed and retry. No sibling workflow touches
+          # page_committers.json, so the rebase never conflicts in practice;
+          # if it somehow does, abort rather than guess.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              echo "pushed committer cache (attempt $attempt)"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) - rebasing onto origin/master"
+            git fetch origin master
+            git rebase --autostash origin/master || { git rebase --abort; break; }
+            sleep $((attempt * 5))
+          done
+
+          # A stale cache is not worth failing a docs deploy over -- the next
+          # run regenerates it. Warn loudly and carry on to the build.
+          echo "::warning::could not push refreshed page_committers.json; continuing with the local copy"
 
       # ---------------------------------------------------------------------
       # 2. Stamp dates + committers into front matter.
