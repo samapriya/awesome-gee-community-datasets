@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "9e2e85d9b94de22669e81d330f7f3a24d6bca888",
-  "generated": "2026-08-10T21:20:53Z",
+  "last_commit": "90448dc7098dd614a93388aa3683159f03bf6051",
+  "generated": "2026-08-11T21:51:21Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -134,7 +134,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 949,
+    "action@github.com": 950,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -152,7 +152,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1292,
+    "action@github.com": 1293,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -492,7 +492,7 @@
   },
   "docs/reference/index.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 27
+    "samapriya.roy@gmail.com": 28
    },
    "committers": [
     "samapriya"
@@ -3468,7 +3468,7 @@
   },
   "docs/about.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 2
+    "samapriya.roy@gmail.com": 3
    },
    "committers": [
     "samapriya"
