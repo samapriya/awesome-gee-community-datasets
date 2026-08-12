@@ -1,6 +1,6 @@
 # Stay updated & contribute
 
-The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](https://www.linkedin.com/in/samapriya/) with data, examples, tutorial contributions from our community. This is a community common meaning it needs involvement to survive as a grassroots open source project. Here are some ways in which you can get involved with this project and check out examples on how you can bring data, examples, bug reports and pull requests to the catalog here. Open up a Github discussion and create a pull request if you notice any issues so I can fix them. **Sign Up for Updates:** Never miss the latest catalog additions and in-depth explorations by subscribing to catalog updates [through out datacommons blog](https://datacommons.substack.com).
+The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](https://www.linkedin.com/in/samapriya/), with data, examples, and tutorials contributed by our community. It's a commons: as a grassroots, open-source project, it survives only through the involvement of people like you. Below are a few ways to pitch in — bring a dataset, share an example, file a bug report, or open a pull request when you spot something to fix. **Want updates?** Never miss a new addition or an in-depth exploration — subscribe [through our datacommons blog](https://datacommons.substack.com).
 
 ### Choose your adventure
 
@@ -11,7 +11,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    Visit the [website](https://gee-community-catalog.org) and star the [Github Repo](https://github.com/samapriya/awesome-gee-community-datasets) so it's easily discovered & you get updates.
+    Visit the [website](https://gee-community-catalog.org) and star the [Github Repo](https://github.com/samapriya/awesome-gee-community-datasets) so it's easier to discover & you stay in the loop on updates.
 
     ---
 
@@ -22,7 +22,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    Build with the datasets in your GEE projects, use example code and [cite the project](https://gee-community-catalog.org/citation/)
+    Build with the catalog's datasets in your GEE projects, reuse the example code, and [cite the project](https://gee-community-catalog.org/citation/).
 
     ---
 
@@ -33,7 +33,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    Bring datasets of value to the community catalog. Share it with the community by contributing new datasets
+    Know a dataset the community would value? Share it by contributing it to the catalog.
 
     ---
 
@@ -44,7 +44,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    Create and share examples demonstrating how you've leveraged the catalog's data in your projects.
+    Create and share examples that show how you've put the catalog's data to work in your own projects.
 
     ---
 
@@ -55,7 +55,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    We are an unfunded project so community donors and sponors make a world of difference to the project.
+    We're an unfunded project, so community donors and sponsors make a world of difference.
 
     ---
 
@@ -66,7 +66,7 @@ The Awesome GEE Community Catalog is created and maintained by [Samapriya Roy](h
 
     ---
 
-    Creating a new pull request means you fixed something that I missed & I and the community apppreciate it.
+    Opening a pull request means you fixed something I missed — and the whole community appreciates it.
 
     ---
 

@@ -10,7 +10,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/samapriya)
 
-The awesome-gee-community-catalog is an **unfunded open source grassroots project** with a mission to help collect **community sourced** and **community generated** geospatial datasets. Our goal is to make data **accessible** and tie it to an analysis platform **fostering accessibility** and **reducing digital divide**. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog).
+The awesome-gee-community-catalog is an **unfunded, open-source, grassroots project** with a simple mission: to collect **community-sourced** and **community-generated** geospatial datasets and make them **accessible** — tied directly to an analysis platform, so that finding good data is never the bottleneck and the **digital divide** keeps narrowing. It lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog).
 
 <div style="
     background-color: var(--md-code-bg-color, #f8fafc);
@@ -42,26 +42,22 @@ The awesome-gee-community-catalog is an **unfunded open source grassroots projec
     </p>
 </div>
 
- **Stay updated by signing up for email updates and joining our community forum, ensuring you receive the latest catalog news, connect with other users, and more.**
+ **Stay in the loop — sign up for email updates to get the latest catalog news and more.**
 
 <center>
 
 <iframe src="https://datacommons.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
-<div style="margin-top: 20px; margin-bottom: 20px;">
-    <a href="https://forum.gee-community-catalog.org" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4285F4; color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px;">Join our Community Forum</a>
-    <p style="margin-top: 10px; font-size: 0.9em;">Connect with other GEE users, ask questions, and share your insights!</p>
-</div>
 </center>
 
 
-You can read about the history and how this project started in the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
+Curious how it all began? Read the story of how this project started in [this Medium article](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f).
 
 ![logo_cropped](images/logo_cropped.jpg)
 
-Community Datasets added by users and made available for use at large
+Community datasets, added by users and made available for everyone to use.
 
-Like, share and support the Github project. And you can now cite it too
+Like, share, and support the GitHub project — and now you can cite it, too.
 
 #### Citation
 

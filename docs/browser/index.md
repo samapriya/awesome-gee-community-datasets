@@ -6,8 +6,6 @@ The Google Earth Engine (GEE) Community Catalog Browser is a revolutionary visua
 
 **Visit:** [gee-community-catalog.org/browse](https://gee-community-catalog.org/browse)
 
-**Join the conversation:** [forum.gee-community-catalog.org](https://forum.gee-community-catalog.org)
-
 #### Streamline Your Data Discovery Journey
 
 Finding the perfect dataset among thousands shouldn't feel like searching for a needle in a digital haystack. The GEE Community Catalog now hosts over 4,000 datasets encompassing over half a petabyte of information. Our visual browser addresses this data discovery dilemma by providing thumbnail previews that allow you to quickly scan and identify relevant datasets, drastically reducing search time and allowing you to focus on what matters most – your analysis and research

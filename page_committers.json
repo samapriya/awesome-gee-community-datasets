@@ -882,14 +882,6 @@
     "samapriya"
    ]
   },
-  "docs/forum/index.md": {
-   "counts": {
-    "samapriya.roy@gmail.com": 7
-   },
-   "committers": [
-    "samapriya"
-   ]
-  },
   "docs/browse/index.md": {
    "counts": {
     "samapriya.roy@gmail.com": 2
@@ -4279,14 +4271,6 @@
    }
   ],
   "docs/browser/index.md": [
-   {
-    "login": "samapriya",
-    "name": "Samapriya Roy",
-    "url": "https://github.com/samapriya",
-    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
-   }
-  ],
-  "docs/forum/index.md": [
    {
     "login": "samapriya",
     "name": "Samapriya Roy",

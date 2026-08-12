@@ -115,7 +115,7 @@ jobs:
           # ".html".
           #
           # Search is NOT here: it lives at search.gee-community-catalog.org,
-          # a separate Cloudflare-served assistant that the "Ask AI" button in
+          # a separate Cloudflare-served assistant that the "Catalog Assistant" button in
           # overrides/main.html links to. The old static /search page was
           # orphaned — nothing on the site linked to it — and was removed.
           for page in browse contributors; do

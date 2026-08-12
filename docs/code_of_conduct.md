@@ -1,12 +1,10 @@
-Creating a code of conduct for any community, including the Awesome GEE community catalog on GitHub, is essential to promote a positive and inclusive environment for all participants. Below is a suggested code of conduct that you can use as a starting point:
+# Code of Conduct
 
-## Awesome GEE Community Catalog Code of Conduct
-
-The awesome-gee-community-catalog consists of community sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that a lot of research datasets are often unavailable for direct use and require preprocessing before use. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are often requested by the community and under a variety of open license.
+The awesome-gee-community-catalog consists of community-sourced geospatial datasets made available for use by the larger Google Earth Engine community and shared publicly as Earth Engine assets. The project was started with the idea that many research datasets are often unavailable for direct use and require preprocessing beforehand. This catalog lives and serves alongside the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets/catalog) and also houses datasets that are frequently requested by the community, under a variety of open licenses.
 
 You can read about the history and how this project started in the [Medium Post article here](https://medium.com/geospatial-processing-at-scale/community-datasets-data-commons-in-google-earth-engine-8585d8baef1f)
 
-Community Datasets added by users and made available for use at large. 
+Community Datasets added by users and made available for use at large.
 
 ### Please Cite and Acknowledge Use
 Users of the Awesome GEE Community catalog must cite the work which allows the community and the project to grow. You can always find the latest [citation here](https://doi.org/10.5281/zenodo.7144933)
@@ -37,7 +35,7 @@ Use inclusive language in all interactions. Avoid using offensive or exclusionar
 
 ### Report Inappropriate Behavior
 
-If you witness or experience any behavior that violates this code of conduct, please report it to the project maintainers at [email address or contact information]. All reports will be treated confidentially, and appropriate action will be taken as necessary.
+If you witness or experience any behavior that violates this code of conduct, please report it to the project maintainers by [reaching out on LinkedIn](https://www.linkedin.com/in/samapriya/). All reports will be treated confidentially, and appropriate action will be taken as necessary.
 
 ### Compliance
 
@@ -54,7 +52,3 @@ In the interest of fostering an open and welcoming environment, we, as contribut
 ### Acknowledgment
 
 This code of conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.0.
-
----
-
-This code of conduct is based on the Contributor Covenant, which is a widely used standard for open-source projects. You can include this code of conduct in the README or CONTRIBUTING.md file of your Awesome GEE Community Catalog repository on GitHub. Remember to adapt the [email address or contact information] section to include the appropriate contact details for the project maintainers. It is essential to communicate the code of conduct to all community members and ensure its enforcement to maintain a healthy and respectful community environment.

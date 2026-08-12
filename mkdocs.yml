@@ -557,9 +557,7 @@ nav:
   - Blogs:
       - Substack Blogs: substack_blogs.md
       - Medium Blogs: medium_blogs.md
-  - AI Search:
+  - Catalog Assistant:
     - search_features/index.md
-  - Forum:
-    - forum/index.md
   - Browser:
     - browser/index.md
