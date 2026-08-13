@@ -7,7 +7,7 @@ SoilGrids is designed as a globally consistent, data-driven system that predicts
 |----------|------------------------------------------------------------------------------------|----------------|-------------------|--------------------|--------|
 | bdod | Bulk density of the fine earth fraction | cg/cm³ | 100 | kg/dm³ |[bdod_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/bdod_mean)|
 | cec | Cation Exchange Capacity of the soil | mmol(c)/kg | 10 | cmol(c)/kg |[cec_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/cec_mean) |
-| cfvo | Volumetric fraction of coarse fragments (> 2 mm) | cm3/dm3 (vol‰) | 10 | cm3/100cm3 (vol%) |[cfvo_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/cfvo_mean) |
+| cfvo | Volumetric fraction of coarse fragments (> 2 mm) | cm3/dm3 (vol‰) | 100 | cm3/100cm3 (vol%) |[cfvo_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/cfvo_mean) |
 | clay | Proportion of clay particles (< 0.002 mm) in the fine earth fraction | g/kg | 10 | g/100g (%) |[clay_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/clay_mean) |
 | nitrogen | Total nitrogen (N) | cg/kg | 100 | g/kg |[nitrogen_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/nitrogen_mean) |
 | phh2o | Soil pH | pHx10 | 10 | pH |[phh2o_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/phh2o_mean) |
