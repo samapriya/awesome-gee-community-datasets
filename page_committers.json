@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "last_commit": "4095ff721aa997871f3e9123ede8d355d6312b1f",
-  "generated": "2026-08-12T06:58:46Z",
+  "last_commit": "2ee9e4c943c5294d1ab89b76670a60dc7bfaf906",
+  "generated": "2026-08-13T16:45:07Z",
   "unresolved": [],
-  "api_calls_this_run": 0
+  "api_calls_this_run": 1
  },
  "authors": {
   "108081891+jornada-jw@users.noreply.github.com": {
@@ -113,6 +113,12 @@
    "name": "Valerie Pasquarella",
    "url": "https://github.com/valpasq",
    "avatar": "https://avatars.githubusercontent.com/u/7560906?v=4"
+  },
+  "108701137+mrbourriz@users.noreply.github.com": {
+   "login": "MrBourriz",
+   "name": "MrBourriz",
+   "url": "https://github.com/MrBourriz",
+   "avatar": "https://avatars.githubusercontent.com/u/108701137?v=4"
   }
  },
  "pages": {
@@ -134,7 +140,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 951,
+    "action@github.com": 952,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -152,7 +158,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1293,
+    "action@github.com": 1295,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -1775,11 +1781,13 @@
   "docs/projects/isric.md": {
    "counts": {
     "robit.alec@gmail.com": 2,
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 7,
+    "108701137+mrbourriz@users.noreply.github.com": 1
    },
    "committers": [
     "samapriya",
-    "robitalec"
+    "robitalec",
+    "MrBourriz"
    ]
   },
   "docs/projects/land_subsidence.md": {
@@ -5224,6 +5232,12 @@
     "name": "Alec L. Robitaille",
     "url": "https://github.com/robitalec",
     "avatar": "https://avatars.githubusercontent.com/u/16324625?v=4"
+   },
+   {
+    "login": "MrBourriz",
+    "name": "MrBourriz",
+    "url": "https://github.com/MrBourriz",
+    "avatar": "https://avatars.githubusercontent.com/u/108701137?v=4"
    }
   ],
   "docs/projects/land_subsidence.md": [
