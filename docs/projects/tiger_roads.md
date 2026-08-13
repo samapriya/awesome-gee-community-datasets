@@ -10,8 +10,6 @@ The time series reveals the ongoing evolution and refinement of this critical da
 
 #### Feature Count Evolution
 
-<center>
-
 | Year | Number of Road Features | Change from Previous Year |
 |------|------------------------|---------------------------|
 | 2009 | 89,503,682 | - |
@@ -32,8 +30,6 @@ The time series reveals the ongoing evolution and refinement of this critical da
 | 2024 | 17,813,006 | -87,576 |
 | 2025 | 16,438,449 | -1,374,557 |
 
-</center>
-
 **Total Change (2009-2025): -73,065,233 features (-81.6%)**
 **Total Change (2010-2025): -3,841,314 features (-18.9%)**
 
@@ -44,8 +40,6 @@ The declining feature count from 2010 onward reflects ongoing data quality impro
 #### Feature Properties
 
 Each road segment contains detailed attribute information that enables sophisticated address matching and routing operations:
-
-<center>
 
 | Property | Description | Example Value |
 |----------|-------------|---------------|
@@ -61,13 +55,9 @@ Each road segment contains detailed attribute information that enables sophistic
 | **SUFQUAL** | Suffix qualifier | null |
 | **SUFTYP** | Suffix type (Street, Avenue, Road, etc.) | null |
 
-</center>
-
 #### Route Type (RTTYP) Classifications
 
 The route type code (RTTYP) describes the type of road for numbered highway systems:
-
-<center>
 
 | Code | Description |
 |------|-------------|
@@ -78,11 +68,7 @@ The route type code (RTTYP) describes the type of road for numbered highway syst
 | **S** | State Recognized Highway |
 | **U** | U.S. Highway |
 
-</center>
-
 ### MTFCC Road Classifications
-
-<center>
 
 | Code | Description | Typical Use |
 |------|-------------|-------------|
@@ -90,8 +76,6 @@ The route type code (RTTYP) describes the type of road for numbered highway syst
 | S1200 | Secondary Road | State highways, major collectors |
 | S1400 | Local Neighborhood Road | Residential streets, local roads |
 | S1500 | Vehicular Trail | Unpaved roads, 4WD trails |
-
-</center>
 
 #### Earth Engine Assets
 
