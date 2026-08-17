@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "4f985ee1136fe9a6dc9f8a7f24822cc1d86d0691",
-  "generated": "2026-08-17T07:17:59Z",
+  "last_commit": "4953fd2f17ef6dd8f42f96229d3e72923cd9bd30",
+  "generated": "2026-08-17T14:05:31Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -164,7 +164,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1298,
+    "action@github.com": 1299,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -3492,7 +3492,7 @@
   },
   "docs/projects/colombia_eq_2026.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 1
+    "samapriya.roy@gmail.com": 2
    },
    "committers": [
     "samapriya"
