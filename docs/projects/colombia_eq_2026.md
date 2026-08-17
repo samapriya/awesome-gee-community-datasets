@@ -1,4 +1,4 @@
-# 2026 Colombia Earthquake (Choco)
+# Colombia Earthquake (Choco) 2026
 
 On 10 August 2026 at 07:34 local time (12:34 UTC), a Mw 7.4 earthquake struck western Colombia, with an epicenter about 5 to 20 km south of San Jose del Palmar in Choco department (USGS puts it at Mw 7.4 and roughly 110 km depth, while the Global CMT project and the Colombian Geological Survey both report Mw 7.5). The rupture was an intermediate depth strike slip event within the subducting Nazca plate, and strong shaking (MMI VI to VII) was felt across a wide swath of western and central Colombia, reaching Cali, Pereira, Manizales, Armenia and Quibdo, as well as parts of Ecuador and Panama. Two independent commercial disaster response programs, Vantor's (formerly Maxar) open data program and Planet Labs' disaster data program, tasked satellite collections over the affected departments, and both are catalogued here as separate Earth Engine collections.
 
