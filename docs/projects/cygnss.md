@@ -96,13 +96,14 @@ Chew, C., Small, E., Huelsing, H. 2023. Flooding and inundation maps using inter
 * Chew, C.; Small, E. 2020. Description of the UCAR/CU Soil Moisture Product. Remote Sensing 12(10): 1558. https://doi.org/10.3390/rs12101558
 * Chew, C.; Reager, J.T.; Small, E. 2018. CYGNSS data map flood inundation during the 2017 Atlantic hurricane season. Scientific Reports 8. https://doi.org/10.1038/s41598-018-27673-x
 * Chew, C.; Small, E. 2018. Soil moisture sensing using spaceborne GNSS reflections: comparison of CYGNSS reflectivity to SMAP soil moisture. Geophysical Research Letters 45: 4049-4057. https://doi.org/10.1029/2018GL077905
+* Baldysz, Z.; Baranowski, D. B.; Flatau, P. J.; Flatau, M. K.; Chew, C. 2025. Detecting localized floods in tropical regions with CYGNSS SmallSat constellation: A proof of concept from the Maritime Continent. Geophysical Research Letters 52: e2025GL118111. https://doi.org/10.1029/2025GL118111
 
 ![cygnss_inundation](../images/cygnss.png)
 
 #### Earth Engine Snippet
 
 ```javascript
-var cygnss = ee.ImageCollection("projects/sat-io/open-datasets/CYGNSS/INUNDATION");
+var cygnss = ee.ImageCollection("projects/sat-io/open-datasets/CYGNSS/inundation");
 
 // Scale to fractional inundation and mask fill values
 var toFraction = function(image) {
@@ -137,7 +138,7 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0).
 
-Created by: Clara Chew, Eric Small, and Hannah Huelsing — University Corporation for Atmospheric Research (UCAR) and University of Colorado Boulder, with funding from the NASA Terrestrial Hydrology Program
+Created by: Clara Chew, Zofia Baldysz, Eric Small, and Hannah Huelsing — University Corporation for Atmospheric Research (UCAR) and University of Colorado Boulder, with funding from the NASA Terrestrial Hydrology Program
 
 Curated in GEE by: Samapriya Roy
 
