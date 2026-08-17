@@ -32,7 +32,6 @@ POLARIS provides a spatially continuous, internally consistent, quantitative pre
 
 The dataset is available at varying depth from surface, while the statistics provided include mean, mode , median and percentile values, only median values have been included as part of the collection created.
 
-<center>
 
 |Depth from Surface|
 |:----------------:|
@@ -43,7 +42,6 @@ The dataset is available at varying depth from surface, while the statistics pro
 |60-100 cm         |
 |100-200 cm        |
 
-</center>
 
 Overall datasets include processing approximately 80,000 files which have been converted into individual images within a collection per property at varying depth. So for example collection bd_mean includes bd_0_5 and represents a single image for contiguous US with bd value at surface depth of 0-5 cm from surface.
 

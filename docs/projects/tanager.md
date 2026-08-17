@@ -4,7 +4,6 @@ Planet's Tanager Open Data Program provides free hyperspectral satellite imagery
 
 #### Technical Specifications
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -18,7 +17,6 @@ Planet's Tanager Open Data Program provides free hyperspectral satellite imagery
 | Geographic Coverage | Global |
 | Radiometric Units | W/(m²·sr·μm) |
 
-</center>
 
 #### Product Description
 

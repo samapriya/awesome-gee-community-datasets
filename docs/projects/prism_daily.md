@@ -33,7 +33,6 @@ The PRISM methodology has been extensively validated and is considered a benchma
 
 Each data file or layer corresponds to a single climate variable.
 
-<center>
 
 | Band / Parameter Code | Description                    | Data Type | Units           |
 | :-------------------- | :----------------------------- | :-------- | :-------------- |
@@ -45,7 +44,6 @@ Each data file or layer corresponds to a single climate variable.
 | **vpdmin**            | Minimum Vapor Pressure Deficit | Float32   | hPa             |
 | **vpdmax**            | Maximum Vapor Pressure Deficit | Float32   | hPa             |
 
-</center>
 
 #### Citation
 

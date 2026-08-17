@@ -22,7 +22,6 @@ The dataset provides structured building information using the Global Earthquake
 
 ??? example "Expand to show height and occupancy attributes"
 
-    <center>
 
     | Category      | Code   | Description |
     |:---------------|:-------|:-------------|
@@ -42,7 +41,6 @@ The dataset provides structured building information using the Global Earthquake
     |                | **UNK**    | Unknown |
     |                | **OCO**    | Other occupancy |
 
-    </center>
 
 #### Citation
 

@@ -27,7 +27,6 @@ https://doi.org/10.5194/essd-15-265-2023
 Liangyun, L., & Xiao, Z. (2023). Time-series global 30 m wetland maps from 2000 to 2022 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10068479
 ```
 
-<center>
 
 | Class Code   | Wetland Subcategory   |
 |--------------|-----------------------|
@@ -41,7 +40,6 @@ Liangyun, L., & Xiao, Z. (2023). Time-series global 30 m wetland maps from 2000 
 | 186          | Salt Marsh            |
 | 187          | Tidal Flat            |
 
-</center>
 
 ![global_wetland_map](https://github.com/user-attachments/assets/5902c902-9a33-497b-83ac-ec34b2ab7990)
 

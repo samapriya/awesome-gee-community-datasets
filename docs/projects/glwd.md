@@ -52,7 +52,6 @@ The dataset uses band values from 0 to 33 to classify different types of wetland
 
 ??? example "Expand to show Band Value and Corresponding Class information"
 
-    <center>
 
     | Band Value | Class Name                                     | Description                                                     |
     | ---------- | ---------------------------------------------- | --------------------------------------------------------------- |

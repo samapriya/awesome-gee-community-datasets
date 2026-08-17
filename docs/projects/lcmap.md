@@ -4,7 +4,6 @@ Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new gene
 
 LCMAP science product documentation contain details, descriptions and caveats for the products and it can be [downloaded here](https://www.usgs.gov/media/files/lcmap-collection-13-science-product-guide). Collection 1.0 for Hawaii was made available Jan 19 and [more information can be found here](https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products)
 
-<center>
 
 |Additional Resources| Links |
 |---------------------------|-------|
@@ -15,7 +14,6 @@ LCMAP science product documentation contain details, descriptions and caveats fo
 |Reference data (these are points)|https://www.sciencebase.gov/catalog/item/5e42e54be4b0edb47be84535|
 |USGS LCMAP Publications|https://www.usgs.gov/core-science-systems/eros/lcmap/publications   |
 
-</center>
 
 
 #### LCMAP Products

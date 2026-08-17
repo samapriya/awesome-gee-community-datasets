@@ -21,7 +21,6 @@ An automated script was created to fetch all datasets, which contains 31 annual 
 
 Terraclimate variables and units can be found in the table below. As noted from their webpage these datasets have associated scales and offset value which has to be used to generate a correct representation of the variable data in the intended units. As part of data processing, the variable scale and offset values were included as metadata for each variable which can then be applied in computations directly.
 
-<center>
 
 |variable                                              |units    |
 |------------------------------------------------------|---------|
@@ -41,7 +40,6 @@ Terraclimate variables and units can be found in the table below. As noted from 
 |PDSI (Palmer Drought Severity Index, at end of month) | unitless|
 |PDSI (Palmer Drought Severity Index, at end of month) |unitless |
 
-</center>
 
 ![terraclimate](https://user-images.githubusercontent.com/6677629/165516012-0a573b1e-3cee-44f5-a515-1a02da419c6b.gif)
 

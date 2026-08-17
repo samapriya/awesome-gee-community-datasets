@@ -34,7 +34,6 @@ Franceschini, G., Khan, A., Moretti, L., Nyabuti, K., Asif, M., Bezuidenhoudt, E
 
 ??? example "Expand to show attribute information for geometries"
 
-    <center>
 
     | Field name   | Description                                          | Data type | Length |
     |--------------|------------------------------------------------------|-----------|--------|

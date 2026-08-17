@@ -7,7 +7,6 @@ This dataset description provides a comprehensive overview of SNODAS, emphasizin
 
 #### Dataset details
 
-<center>
 
 | **Spatial extent**   | Conterminous US                             |
 |----------------------|--------------------------------------------|
@@ -16,18 +15,15 @@ This dataset description provides a comprehensive overview of SNODAS, emphasizin
 | **Time span**        | 2003-10-01 to present                     |
 | **Update frequency** | Updated daily with 1 day lag             |
 
-</center>
 
 **Variables**
 
-<center>
 
 | Variable                | Units          | Scale Factor  |
 |------------------------|-----------------|---------------|
 | Snow Water Equivalent   | Meters          | 1.0           |
 | Snow Depth              | Meters          | 1.0           |
 
-</center>
 
 #### Citation
 

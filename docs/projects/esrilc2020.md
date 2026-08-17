@@ -54,7 +54,6 @@ No land cover information due to persistent cloud cover.
 
 For Accuracy Assessment information visit the [ESRI release page](https://www.arcgis.com/home/item.html?id=d6642f8a4f6d4685a24ae2dc0c73d4ac)
 
-<center>
 
 |Category|Land Cover Class  |Hex Code|
 |:------:|:----------------:|:------:|
@@ -70,7 +69,6 @@ For Accuracy Assessment information visit the [ESRI release page](https://www.ar
 |10      |Snow/Ice          |#F2FAFF |
 |11      |Clouds            |#C8C8C8 |
 
-</center>
 
 
 #### Earth Engine Snippet

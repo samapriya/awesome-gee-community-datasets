@@ -8,7 +8,6 @@ The 2025 v2.0 update introduces two new input polygon datasets (California Energ
 
 By addressing gaps in existing databases—particularly the inclusion of commercial-scale installations and standardized panel-row geometries—GM-SEUS supports diverse applications in renewable energy modeling, grid planning, ecosystem service assessment, stormwater management, and infrastructure planning. The dataset follows FAIR principles and is updated annually to track the rapidly evolving solar energy landscape. You can read the [full paper in Nature Scientific Data](https://www.nature.com/articles/s41597-025-05862-4)
 
-<center>
 
 | Characteristic | Details |
 |:---:|:---|
@@ -23,7 +22,6 @@ By addressing gaps in existing databases—particularly the inclusion of commerc
 | **Update Frequency** | Annual |
 | **Version** | v2.0 (2025 release) |
 
-</center>
 
 #### Dataset Description
 

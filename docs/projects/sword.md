@@ -16,7 +16,6 @@ SWORD integrates data from several existing global hydrography datasets, includi
 
 ??? example "Expand to show Node attribute descriptions"
 
-    <center>
 
     | Attribute    | Description                                                                                                                       | Units                    |
     |--------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -47,7 +46,6 @@ SWORD integrates data from several existing global hydrography datasets, includi
 
 ??? example "Expand to show Reach attribute descriptions"
 
-    <center>
 
     | Attribute   | Description                                                                                                                         | Units             |
     |-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------|

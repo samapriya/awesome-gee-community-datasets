@@ -61,7 +61,6 @@ The dataset is organized into 10 thematic ImageCollections, each containing 6 sc
 
 Each scenario image contains up to 48 bands, one per crop. Band names correspond to crop names (e.g., `maize`, `wheat`, `cassava`).
 
-<center>
 
 | Collection                      | Value Range | Data Type   | Pyramiding Policy |
 | ------------------------------- | ----------- | ----------- | ----------------- |
@@ -76,7 +75,6 @@ Each scenario image contains up to 48 bands, one per crop. Band names correspond
 | `multiple_cropping`             | 1-3         | Discrete    | MODE              |
 | `crop_limiting_factor`          | Categorical | Categorical | MODE              |
 
-</center>
 
 #### Citation
 

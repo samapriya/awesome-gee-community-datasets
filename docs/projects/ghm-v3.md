@@ -37,7 +37,6 @@ series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://d
 
 #### Threat Code Legend
 
-<center>
 
 |  Code  | Description                                          |
 | :----: | :--------------------------------------------------- |
@@ -51,13 +50,11 @@ series is archived at Zenodo [https://doi.org/10.5281/zenodo.14449495](https://d
 | **PO** | Pollution                                            |
 | **TI** | Transportation and service corridors                 |
 
-</center>
 
 #### Bands / Layers Metadata
 
 Each `ee.Image` within the collections contains a single band named after its `threat_code`. Units are unitless floats in \[0.0, 1.0].
 
-<center>
 
 | Band / Threat Code | Description                                                | Data Type | Value Range |
 | :----------------: | :--------------------------------------------------------- | :-------: | :---------: |
@@ -71,7 +68,6 @@ Each `ee.Image` within the collections contains a single band named after its `t
 |       **PO**       | Pollution                                                  |  Float32  | \[0.0, 1.0] |
 |       **TI**       | Transportation and service corridors                       |  Float32  | \[0.0, 1.0] |
 
-</center>
 
 
 #### Citation

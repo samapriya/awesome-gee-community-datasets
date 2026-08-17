@@ -18,7 +18,6 @@ Each overpass is mosaiced and there are two assets per overpass for the 10m and 
 
 ??? example "Expand to show asset resolution and band list"
 
-    <center>
 
     | **Asset Resolution** | **Bands**                            |
     |------------------|----------------------------------|

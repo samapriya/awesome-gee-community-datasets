@@ -27,7 +27,6 @@ Zenodo. https://doi.org/10.5281/zenodo.15103476
 
 ??? example "Expand to show OGIM geospatial layers"
 
-    <center>
 
     | OGIM geospatial data layer                              | Additional information                                                                                                                       | Geometry type |
     |---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -48,7 +47,6 @@ Zenodo. https://doi.org/10.5281/zenodo.15103476
     | Oil and natural gas fields                              | Defined oil and natural gas production fields.                                                                                               | POLYGON       |
     | Oil and natural gas license blocks                      | Licensed areas for oil and natural gas exploration and production.                                                                           | POLYGON       |
 
-    <center>
 
 ![ogim_v11](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/11cbe7b9-ae51-413a-adfa-cd85c05d278e)
 

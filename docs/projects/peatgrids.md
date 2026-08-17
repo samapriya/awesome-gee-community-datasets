@@ -10,7 +10,6 @@ The global peatlands are estimated to store 942 ± 312 Pg C over an area of 6.75
 
 #### Dataset Characteristics
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -23,7 +22,6 @@ The global peatlands are estimated to store 942 ± 312 Pg C over an area of 6.75
 | Carbon Content Range | 0.1 - 0.58 g g⁻¹ |
 | Model Performance | R² = 0.21-0.61 (thickness), 0.30-0.52 (BD), 0.06-0.33 (CC) |
 
-</center>
 
 #### Available Layers
 

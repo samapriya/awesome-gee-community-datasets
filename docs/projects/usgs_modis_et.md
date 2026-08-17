@@ -5,7 +5,6 @@ The global ET estimates are meticulously derived by integrating MODIS-based land
 
 #### Dataset details
 
-<center>
 
 | **Spatial extent**   | Global                                           |
 |----------------------|-------------------------------------------------|
@@ -14,18 +13,15 @@ The global ET estimates are meticulously derived by integrating MODIS-based land
 | **Time span**        | 2003 to Present                                 |
 | **Update frequency** | Updated every 10-12 days                         |
 
-</center>
 
 **Variables**
 
-<center>
 
 | Variable                | Evapotranspiration (ETa) ('et')                  |
 |------------------------|-------------------------------------------------|
 | Units                  | Millimeters                                     |
 | Scale factor           | 1.0                                             |
 
-</center>
 
 #### Citation
 

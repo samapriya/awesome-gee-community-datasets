@@ -12,7 +12,6 @@ The National Structure Inventory Base layer was created and is maintained by the
 
 ??? example "The NSI attributes available to the general public are"
 
-    <center>
 
     | Field Name    | Description                                                                                       | Attribute Type | Limits              |
     |---------------|---------------------------------------------------------------------------------------------------|----------------|---------------------|
@@ -46,7 +45,6 @@ The National Structure Inventory Base layer was created and is maintained by the
     | grnd_elv_m  | Ground elevation (in meters, NAVD88) at the structure.                                              | Double          |                     |
     | ground_elv  | Ground elevation (in feet, NAVD88) at the structure.                                                | Double          |                     |
 
-    </center>
 
 #### Structure Processing and Valuation
 The National Structure Inventory (NSI) involves several key processes for managing and analyzing structures:
@@ -63,7 +61,6 @@ Occupancy types help determine structure valuation and damage criteria. They are
 
 ??? example "The table below shows occupancy types and their content-to-structure value ratios"
 
-    <center>
 
     | Damage Category | Occupancy Type Name | Description                                      | Content to Structure Value Ratio |
     |-----------------|----------------------|--------------------------------------------------|---------------------------------|
@@ -91,13 +88,11 @@ Occupancy types help determine structure valuation and damage criteria. They are
     | Public           | PUB3                 | Healthcare                                      | 1.0                             |
     | Public           | PUB4                 | Government                                       | 1.0                             |
 
-    </center>
 
 #### Main Data Sources
 
 ??? example "The table contains main data sources of data"
 
-    <center>
 
     | **Source** | **Database**                 | **Dataset**               | **Description**                                                                                           |
     |------------|------------------------------|---------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -119,7 +114,6 @@ Occupancy types help determine structure valuation and damage criteria. They are
     | NCES       | Schools Database             | School Data               | Contains the locations of schools, number of teachers and students per school.                            |
     | U.S. Geological Survey | National Elevation Dataset | 10 Meter Dataset        | Provides raster ground elevation data.                                                                    |
 
-    </center>
 
 #### Citation
 

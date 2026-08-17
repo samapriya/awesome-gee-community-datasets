@@ -9,7 +9,6 @@ We preprocessed the imagery in MATLAB to reduce image vignetting and improve ima
 #### Additional Preprocessing
 The feature collection had Dates in different formats everything from simply
 
-<center>
 
 | Format      |
 |-------------|
@@ -18,11 +17,9 @@ The feature collection had Dates in different formats everything from simply
 | YYYYs       |
 | YYYY-MM-dd  |
 
-</center>
 
 An approach was taken to convert and standardize these dates and add the corresponding dates as epoch system:time_start to features in the overall feature collection. This was then merged back into a feature collection with additional properties system:time_start, year, standardized_date. Based on the year metadata you can now get counts across multiple time periods I am summarizing a 5 year range distribution
 
-<center>
 
 | Year Range | Data Total |
 |------------|------------|
@@ -38,7 +35,6 @@ An approach was taken to convert and standardize these dates and add the corresp
 | 1980-1984  | 675        |
 | 1985-1989  | 67         |
 
-</center>
 
 #### Citation
 

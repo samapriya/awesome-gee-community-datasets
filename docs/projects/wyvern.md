@@ -5,7 +5,6 @@ Wyvern's Open Data Program provides free medium resolution (5.30 m) hyperspectra
 
 #### Technical Specifications
 
-<center>
 
 | Parameter           | Value                        |
 | ------------------- | ---------------------------- |
@@ -17,7 +16,6 @@ Wyvern's Open Data Program provides free medium resolution (5.30 m) hyperspectra
 | Swath Width         | 20 km                        |
 | Geographic Coverage | Global                       |
 
-</center>
 
 #### Spectral Band Information
 
@@ -25,7 +23,6 @@ Band information is preserved in the ingested image and bands are named as Band_
 
 ??? example "Expand to show Band information for Wyvern Datasets"
 
-    <center>
 
     | Band Number | Band Center (nm) | Wavelength Range (nm) | Spectral Region |
     | ----------- | ---------------- | --------------------- | --------------- |

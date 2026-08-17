@@ -12,7 +12,6 @@ Version 1 data includes seven layers and their  corresponding band names. Note t
 
 This table shows the layer names and their corresponding band names from Version 1 data.
 
-<center>
 
 | **Layer Name**        | **Band Name**     |
 |-----------------------|-------------------|
@@ -24,7 +23,6 @@ This table shows the layer names and their corresponding band names from Version
 | EVI2 Rate              | EVI2rate          |
 | Change EVI2 Median     | changeMag         |
 
-</center>
 
 The user manual with more detailed information about each data layer can be found [here.](https://lpdaac.usgs.gov/documents/1567/GLanCE_User_Guide_v1.pdf)
 

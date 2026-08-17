@@ -6,7 +6,6 @@ Full descriptions of feature attributes are found within the attached data dicti
 
 ??? example "CA SBFI feature attributes"
 
-    <center>
 
     | Group        | Field                              | Description                                                         | Units                |
     |--------------|------------------------------------|---------------------------------------------------------------------|----------------------|
@@ -123,7 +122,6 @@ Full descriptions of feature attributes are found within the attached data dicti
     |              | SYMB_RECOVERY                     | Simplified coding for spectral recovery                             |                      |
     |              | SYMB_AGE                          | Simplified coding for forest age                                    |                      |
 
-    <center>
 
 #### Dataset postprocessing
 

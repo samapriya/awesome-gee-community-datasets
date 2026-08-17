@@ -14,14 +14,12 @@ This study illustrates the efficacy of the QDANN framework for reliable yield ma
 
 The datasets were originally ingested by the authors as images into folders with State abbreviation and year to get to a specific image. These were now moved into two separate collections for corn-soybean and winter-wheat. State abbreviations were added as a property called "state_abbv" and dates are added to represent the time period. This allows for easy filtering of the collection by state and date.
 
-<center>
 
 | **Raster**       | **Band Info**        | **Unit** |
 |------------------|----------------------|----------|
 | Corn & Soybean   | b1: corn, b2: soybean| kg/ha    |
 | Winter Wheat     | b1: winter wheat     | kg/ha    |
 
-</center>
 
 #### Citation
 

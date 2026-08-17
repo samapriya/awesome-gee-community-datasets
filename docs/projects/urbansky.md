@@ -6,7 +6,6 @@ Urban Sky recently provided open and freely available high-resolution aerial and
 
 #### RGB Imagery Specifications
 
-<center>
 
 | Parameter | Value |
 |-----------|--------|
@@ -23,11 +22,9 @@ Urban Sky recently provided open and freely available high-resolution aerial and
 | Processing | Non-uniformity correction, Edge preserving noise reduction, Adaptive tonal curves |
 | Compression | High-quality YCbCr JPEG |
 
-</center>
 
 ### LWIR Thermal Imagery Specifications
 
-<center>
 
 | Parameter | Value |
 |-----------|--------|
@@ -41,7 +38,6 @@ Urban Sky recently provided open and freely available high-resolution aerial and
 | Thermal Sensitivity | 60 mK |
 | Compatible Wind Speeds | 5-90 km/hr |
 
-</center>
 
 Note: STAC metadata was provided with the two images but there href links to the data were missing.
 

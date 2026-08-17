@@ -34,7 +34,6 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 
 The dataset were provided as zipped NetCDF files with subdatasets for VOD, Sensor flags and processing flags. The datasets including the subdatasets were exported as individual tif files and then stacked with the band order VOD, Sensor Flag and Processing Flag.
 
-<center>
 
 |Bands|Band Name      |Unit                         |
 |-----|---------------|-----------------------------|
@@ -42,7 +41,6 @@ The dataset were provided as zipped NetCDF files with subdatasets for VOD, Senso
 |b2   |Sensor Flag    |Refer to variable description|
 |b3   |Processing Flag|Refer to variable description|
 
-</center>
 
 
 #### Dataset citation

@@ -4,7 +4,6 @@ The Wildfire Risk to Communities dataset was created by the USDA Forest Service 
 
 The Wildfire Risk to Communities dataset can be used to assess wildfire risk at the community level and to develop wildfire mitigation plans. It can also be used to identify communities that are most in need of assistance. The Wildfire Risk to Communities dataset was created by USDA Forest Service to help assess risk to homes, businesses, and other valued resources. The dataset contains nationally-consistent information for the purpose of comparing relative wildfire risk among communities nationally or within a state or county. In situ risk (risk at the location where the adverse effects take place on the landscape) are modeled using the large fire simulation system (FSim) and LANDFIRE fuel loading datasets from 2014. The original data at 250m has been upsampled to 30m for this dataset on Climate Engine. You can find additional information about [the dataset here](https://www.fs.usda.gov/managing-land/fire/wildfirerisk) and read more [about this on climate engine org page here](https://support.climateengine.org/article/92-wrc). Here is a link to the [report documentation](https://www.fs.usda.gov/rds/archive/catalog/RDS-2020-0016)
 
-<center>
 
 | **Spatial Extent**                      | United States                                        |
 |-----------------------------------------|------------------------------------------------------|
@@ -13,9 +12,7 @@ The Wildfire Risk to Communities dataset can be used to assess wildfire risk at 
 | **Time Span**                           | 2014                                                 |
 | **Update Frequency**                    | Static                                               |
 
-</center>
 
-<center>
 
 | **Variables**                           |                                                      |
 |-----------------------------------------|------------------------------------------------------|
@@ -36,7 +33,6 @@ The Wildfire Risk to Communities dataset can be used to assess wildfire risk at 
 | Wildfire hazard potential index ('WHP') | - Units: Unitless                                   |
 |                                         | - Scale Factor: 1.0                                 |
 
-</center>
 
 #### Citation
 

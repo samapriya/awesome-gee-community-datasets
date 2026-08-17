@@ -22,7 +22,6 @@ Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, a
 ![glc10_LC](https://user-images.githubusercontent.com/6677629/189573190-7e0fa889-47d8-448e-80e1-db71eae8e5aa.gif)
 
 
-<center>
 
 |Class     |Value|Remapped|Hex code   |
 |----------|-----|--------|-----------|
@@ -38,7 +37,6 @@ Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, a
 |Cloud     |120  |9       |    #ffffff|
 
 
-</center>
 
 
 #### Earth Engine Snippet

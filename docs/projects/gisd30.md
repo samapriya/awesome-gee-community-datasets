@@ -6,7 +6,6 @@ In the dataset creation process, global training samples and corresponding refle
 
 The global dynamic dataset was used to label the expansion information in a single band; specifically, the pervious surface and the impervious surface before 1985 were, respectively, labeled 0 and 1, and the expanded impervious surfaces in the periods 1985–1990, 1990–1995, 1995–2000, 2000–2005, 2005–2010, 2010–2015 and 2015–2020 were labeled 2, 3, 4, 5, 6, 7 and 8.
 
-<center>
 
 | Years           | Impervious Surface Labels |
 |-----------------|---------------------------|
@@ -19,7 +18,6 @@ The global dynamic dataset was used to label the expansion information in a sing
 | 2010–2015       | 7                         |
 | 2015–2020       | 8                         |
 
-</center>
 
 #### Citation
 

@@ -14,7 +14,6 @@ _SSCGS_  - Simplified Single Country Globally Standardized. A version of geoBoun
 
 _CGAZ_  - Comprehensive Global Administrative Zones. A global composite of the SSCGS ADM0, ADM1 and ADM2, with gaps filled between borders.  Also available at higher levels of simplification.
 
-<center>
 
 |Feature Collection|Admin Levels|
 |------------------|------------|
@@ -25,7 +24,6 @@ _CGAZ_  - Comprehensive Global Administrative Zones. A global composite of the S
 |CGAZ              |ADM0,ADM1,ADM2|
 
 
-</center>
 
 #### Citation
 You can [read the paper here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231866) and cite using citation below

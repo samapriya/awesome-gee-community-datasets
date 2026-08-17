@@ -33,7 +33,6 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
 
 ??? example "Expand to show ADM0 (Country Level) attributes"
 
-    <center>
 
     | Field Name  | Description                                                      |
     |-------------|------------------------------------------------------------------|
@@ -47,13 +46,11 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
     | SOVEREIGN   | Sovereign countries of the entity (state or territory)          |
     | NAM_0       | Country name in long form (English)                             |
 
-    </center>
 
     **Note**: ADM0_complete contains both ADM0 and NDLSA (Non-Determined Legal Status Area) polygons, while the standard ADM0 file excludes NDLSA polygons.
 
 ??? example "Expand to show ADM1 (Provincial Level) attributes"
 
-    <center>
 
     | Field Name  | Description                                                      |
     |-------------|------------------------------------------------------------------|
@@ -67,11 +64,9 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
     | ADM1CD_c    | Complete list of Adm1 codes (primary key)                       |
     | GEOM_SRCE   | Source of geometry (SALB dataset or original WB GAD)            |
 
-    </center>
 
 ??? example "Expand to show ADM1 additional attributes"
 
-    <center>
 
     | Field Name    | Description                                                    |
     |---------------|----------------------------------------------------------------|
@@ -95,11 +90,9 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
     | P_DATE        | "Valid from" date accompanying P-Code and name                |
     | SALB_DATE     | Temporal validity for codes/geometry from SALB dataset        |
 
-    </center>
 
 ??? example "Expand to show ADM2 (District Level) attributes"
 
-    <center>
 
     | Field Name  | Description                                                      |
     |-------------|------------------------------------------------------------------|
@@ -115,11 +108,9 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
     | ADM2CD_c    | Complete list of Adm2 codes (primary key)                       |
     | GEOM_SRCE   | Source of geometry (SALB dataset or original WB GAD)            |
 
-    </center>
 
 ??? example "Expand to show ADM2 additional attributes"
 
-    <center>
 
     | Field Name    | Description                                                    |
     |---------------|----------------------------------------------------------------|
@@ -157,7 +148,6 @@ World Bank. https://datacatalog.worldbank.org/search/dataset/0038272
     | P_DATE        | "Valid from" date accompanying P-Code and name                |
     | SALB_DATE     | Temporal validity for codes/geometry from SALB dataset        |
 
-    </center>
 
 !!! note
     If ADM2CD_c is the same as ADM1CD_c (and P_CODE_1_c is the same as P_CODE_2_c), the country does not distinguish between administrative level 1 and 2, and the polygon geometries are identical.

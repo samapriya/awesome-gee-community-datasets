@@ -15,7 +15,6 @@ Additional [details can be found here](https://www.ncdc.noaa.gov/temp-and-precip
 
 #### Dataset details
 
-<center>
 
 | **Spatial extent**   | North America                             |
 |----------------------|-------------------------------------------|
@@ -24,18 +23,15 @@ Additional [details can be found here](https://www.ncdc.noaa.gov/temp-and-precip
 | **Time span**        | 2001-11-01 to present                     |
 | **Update frequency** | Updated Monthly                           |
 
-</center>
 
 **Variables**
 
-<center>
 
 | Variable                | Drought category ('nadm')                   |
 |------------------------|--------------------------------------------|
 | Units                  | Drought classification                      |
 | Scale factor           | 1.0                                        |
 
-</center>
 
 
 #### Citation

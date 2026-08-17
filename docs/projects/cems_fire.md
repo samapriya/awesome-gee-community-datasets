@@ -30,7 +30,6 @@ Fire danger indices from the ECMWF, calculated using weather forecasts from hist
 
 - Spread Component: The Spread component is a measure of the spead at which a headfire would spread. The spread component is numerically equal to the theoretical ideal rate of spread expressed in feet-per-minute however is considered as a dimensionless variable. The Spread component is expressed on an open-ended scale; thus it has no upper limit.
 
-<center>
 
 | **Spatial Extent**               | Global                                                  |
 |----------------------------------|---------------------------------------------------------|
@@ -39,9 +38,7 @@ Fire danger indices from the ECMWF, calculated using weather forecasts from hist
 | **Time Span**                    | 1940-01-01 to Present                                   |
 | **Update Frequency**             | Updated daily with one week lag                         |
 
-</center>
 
-<center>
 
 | **Variables**                    |                                                           |
 |----------------------------------|---------------------------------------------------------|
@@ -74,7 +71,6 @@ Fire danger indices from the ECMWF, calculated using weather forecasts from hist
 | Spread Component ('spread_component') | - Units: Dimensionless                                |
 |                                  | - Scale Factor: 1.0                                    |
 
-</center>
 
 #### Citation
 

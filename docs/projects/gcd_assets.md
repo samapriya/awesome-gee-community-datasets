@@ -20,7 +20,6 @@ The datasets were renamed to end with the date of [dataset upload to Dryad Repos
 
 ??? example "Expand to show field names and description for primary asset database"
 
-    <center>
 
     | Field              | Description                                                      |
     |--------------------|------------------------------------------------------------------|
@@ -63,13 +62,11 @@ The datasets were renamed to end with the date of [dataset upload to Dryad Repos
     | raw_mtrl           | Typology of raw input materials (limestone, clay, gypsum, sand, coal) |
     | clinker            | Whether clinker was used as an input material                      |
 
-    </center>
 
 The second dataset provides facility and supplier information
 
 ??? example "Expand to show field names and description for facility and supplier information"
 
-    <center>
 
     | Field                | Description                                                        |
     |----------------------|--------------------------------------------------------------------|
@@ -79,7 +76,6 @@ The second dataset provides facility and supplier information
     | supplier.latitude    | Latitude for the geolocation of the facility-supplier (based on WGS84 (EPSG:4326)) |
     | supplier.longitude   | Longitude for the geolocation of the facility-supplier (based on WGS84 (EPSG:4326)) |
 
-    </center>
 
 #### Citation
 

@@ -25,7 +25,6 @@ The collection consists of three main components:
 
 #### Technical Specifications
 
-<center>
 
 | Parameter | Emergency Response Collections | Differencing Analysis |
 |-----------|------------------------------|---------------------|
@@ -38,7 +37,6 @@ The collection consists of three main components:
 | Horizontal CRS | NAD83 (2011) / UTM Zone 11N [EPSG: 6340] | WGS 84 / UTM zone 11N [EPSG: 32611] |
 | Vertical Datum | NAVD88 (GEOID 18) [EPSG: 5703] | NAVD88 (GEOID 18) [EPSG: 5703] |
 
-</center>
 
 #### Data Products
 

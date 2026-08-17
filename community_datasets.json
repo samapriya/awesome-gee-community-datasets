@@ -53973,5 +53973,29 @@
         "docs": "https://gee-community-catalog.org/projects/usgs_topo/",
         "thematic_group": "Analysis Ready Data",
         "thumbnail": "https://gee-community-catalog.org/thumbnails/usgs_topo.png"
+    },
+    {
+        "title": "Vantor (Maxar) Open Data: 2026 Colombia Earthquake (Choco)",
+        "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/VANTOR-OPEN-DATA",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/VANTOR-DISASTER-DATA/COLOMBIA_EQ_2026",
+        "provider": "Vantor (Maxar)",
+        "tags": "disaster, vantor, maxar, high resolution, earthquake, Colombia, Choco",
+        "license": "Creative Commons Attribution Non Commercial 4.0 International",
+        "docs": "https://gee-community-catalog.org/projects/colombia_eq_2026/",
+        "thematic_group": "Global Events Layers",
+        "thumbnail": "https://gee-community-catalog.org/thumbnails/colombia_eq_2026.png"
+    },
+    {
+        "title": "Planet Labs Disaster Data: 2026 Colombia Earthquake (Choco)",
+        "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/PLANET-DISASTER-DATA",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/PLANET-DISASTER-DATA/COLOMBIA_EQ_2026",
+        "provider": "Planet Labs PBC",
+        "tags": "disaster, planet labs, planetscope, skysat, earthquake, Colombia, Choco",
+        "license": "Creative Commons Attribution Non Commercial 4.0 International",
+        "docs": "https://gee-community-catalog.org/projects/colombia_eq_2026/",
+        "thematic_group": "Global Events Layers",
+        "thumbnail": "https://gee-community-catalog.org/thumbnails/colombia_eq_2026.png"
     }
 ]

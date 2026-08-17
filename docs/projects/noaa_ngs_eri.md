@@ -11,7 +11,6 @@ Aerial imagery was acquired following Hurricane Melissa in targeted areas in Jam
 
 #### Sample Dataset Details (Hurricane Melissa)
 
-<center>
 
 | **Parameter**                | **Details**                                      |
 |------------------------------|--------------------------------------------------|
@@ -24,7 +23,6 @@ Aerial imagery was acquired following Hurricane Melissa in targeted areas in Jam
 | **Horizontal Accuracy**      | Estimated 3–5 meters (minimal topographic relief)|
 | **Temporal Coverage**        | 31 October 2025 - 6 November 2025                |
 
-</center>
 
 #### Citation
 

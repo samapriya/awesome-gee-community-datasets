@@ -22,7 +22,6 @@ The greenness layer is derived from median NDVI values with a 300m buffer around
 
 #### Dataset Characteristics
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -35,7 +34,6 @@ The greenness layer is derived from median NDVI values with a 300m buffer around
 | Methodology | U-Net CNN with Random Forest dasymetric approach |
 | Update Frequency | Biennial (operational production every 2 years) |
 
-</center>
 
 #### Available Data Products
 

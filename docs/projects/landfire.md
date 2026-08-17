@@ -12,7 +12,6 @@ The LANDFIRE 2023 Update (LF 2023) represents the final step in the ongoing goal
 
 ??? example "Expand to show theme, product and abbreviations"
 
-    <center>
 
     | Theme | Product Name | Abbreviation |
     |-------|-------------|--------------|
@@ -52,7 +51,6 @@ The LANDFIRE 2023 Update (LF 2023) represents the final step in the ongoing goal
 
 ??? example "Improvements were made to these layers and you can find the category and improvements information below."
 
-    <center>
 
     | Category | Improvement |
     |----------|-------------|
@@ -72,7 +70,6 @@ To provide sooner delivery of LANDFIRE Annual Disturbance data and ensure a more
 
 ??? example "Expand to see Disturbance products in a single version"
 
-    <center>
 
     | Product | Abbreviation | Description | Features |
     |---------|--------------|-------------|----------|
@@ -118,7 +115,6 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ??? example "Expand to see Annual Disturbance image naming reference"
 
-    <center>
 
     | Image Name | LF Release | Disturbance Year |
     |------------|-----------|-----------------|

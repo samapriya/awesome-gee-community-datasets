@@ -26,7 +26,6 @@ The TDep MMF combines multiple data sources:
 
 ??? example "Expand to show Variable information. The following variables are available in the TDEP dataset"
 
-    <center>
 
     | Variable   | Description                                                                  | Units    |
     | ---------- | ---------------------------------------------------------------------------- | -------- |

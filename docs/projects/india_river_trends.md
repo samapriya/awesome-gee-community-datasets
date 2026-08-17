@@ -19,7 +19,6 @@ These are available as the following GEE assets
 
 ??? example "Expand to show Attributes for Annual rate of change of surface water area feature collections"
 
-    <center>
 
     | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                        |
     |---------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -39,7 +38,6 @@ These are available as the following GEE assets
 
 ??? example "Expand to show Attributes for Time series of annual surface water area feature collections"
 
-    <center>
 
     | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                        |
     |---------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,7 +54,6 @@ These are available as the following GEE assets
 
 ??? example "Expand to show band information for Time series of annual surface water image collection"
 
-    <center>
 
     | Bands             | Description                                                                                                       |
     |------------------:|:------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +65,6 @@ These are available as the following GEE assets
 
 ??? example "Expand to show attributes for Time series of annual surface water image collection"
 
-    <center>
 
     | Properties | Description |
     |----------:|:------------|

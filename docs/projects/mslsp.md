@@ -21,7 +21,6 @@ Version 1.1 includes:
 
 ??? example "Expand to show layer information"
 
-    <center>
 
     | Layer Name | Description | Units | Data Type | Fill Value | Valid Range | Scale Factor |
     |------------|-------------|--------|------------|------------|--------------|--------------|
@@ -57,7 +56,6 @@ Version 1.1 includes:
 
 ??? example "Expand to show Quality Assurance Band Values"
 
-    <center>
 
     | QA Value | Description |
     |----------|-------------|

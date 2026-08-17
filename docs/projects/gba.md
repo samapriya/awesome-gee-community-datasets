@@ -6,7 +6,6 @@ The GlobalBuildingAtlas addresses critical gaps in existing global building data
 
 #### Dataset Details
 
-<center>
 
 | Characteristic | Description |
 |----------------|-------------|
@@ -19,7 +18,6 @@ The GlobalBuildingAtlas addresses critical gaps in existing global building data
 | Coordinate System | WGS84 (EPSG:4326) |
 | Source Data | PlanetScope Surface Reflectance imagery + Multiple building footprint sources |
 
-</center>
 
 #### Citation
 

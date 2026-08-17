@@ -33,7 +33,6 @@ water resources zones divisions. figshare. Dataset. https://doi.org/10.6084/m9.f
 #### Data preprocessing
 The river networks are ingested for each continent and as provided by the author. The water resources zone on the other hands were available as level based subsets for each continent so a total of 24 files. To make this accessible as large feature collections Levels across multiple continents were merged into single feature collections.
 
-<center>
 
 |Global River Network          |Levels        |
 |------------------------------|--------------|
@@ -60,7 +59,6 @@ The river networks are ingested for each continent and as provided by the author
 |Level 3                       |All Continents|
 |Level 4                       |All Continents|
 
-</center>
 
 ![grn_comp](https://user-images.githubusercontent.com/6677629/150692409-84388d28-aa87-48cb-8603-f290c60677ca.gif)
 
@@ -89,7 +87,6 @@ The Water Resources Zones are also available as level based extracts for each co
 
 Here are the prefix list and some examples
 
-<center>
 
 |Country                       |Prefix        |Path                                        |
 |------------------------------|--------------|--------------------------------------------|
@@ -100,7 +97,6 @@ Here are the prefix list and some examples
 |North America                 |na            |projects/sat-io/open-datasets/WRZ/L1/na_wrz1|
 |South America                 |sa            |projects/sat-io/open-datasets/WRZ/L3/sa_wrz3|
 
-</center>
 
 
 #### License

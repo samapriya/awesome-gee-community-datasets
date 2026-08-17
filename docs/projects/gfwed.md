@@ -2,7 +2,6 @@
 
 The Global Fire WEather Database (GFWED) integrates different weather factors influencing the likelihood of a vegetation fire starting and spreading at daily temporal resolution and a ~50-km (0.5-deg x 0.625-deg) spatial resolution from 1980-present. It is based on the Fire Weather Index (FWI) System, the most widely used fire weather system in the world. The FWI System was developed in Canada, and is composed of three moisture codes and three fire behavior indices. The moisture codes capture the moisture content of three generalized fuel classes and the behavior indices reflect the spread rate, fuel consumption and intensity of a fire if it were to start. Details on the development and testing of GFWED can be found in Field et al. (2015) and the evaluation of GFWED products in Field (2020a). Applications of the FWI System can be found in Taylor and Alexander (2006) and technical descriptions are provided by van Wagner (1987) and Dowdy et al. (2009). Additional information about this dataset can [be found here](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/) and [here](Global Fire WEather Database (GFWED)). You can also find this dataset [at the climate engine org page here](https://support.climateengine.org/article/71-merra2-fwi).
 
-<center>
 
 | **Spatial Extent**               | Global                                              |
 |----------------------------------|-----------------------------------------------------|
@@ -16,7 +15,6 @@ The Global Fire WEather Database (GFWED) integrates different weather factors in
 | Fire Weather Index ('FWI')       | - Units: Unitless                                   |
 |                                  | - Scale Factor: 1.0                                 |
 
-</center>
 
 #### Citation
 

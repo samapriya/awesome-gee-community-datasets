@@ -47,7 +47,6 @@ The `GEDI_MANGROVE_HT`, layer contains mangrove heights for individual GEDI L2A 
 
 ??? example "Expand to show Properties for Data Dictionary for GEDI_MANGROVE_HT feature collections"
 
-    <center>
 
     | Variable | GEDI L2A variable name | Units | Description |
     |---|---|---|---|
@@ -84,7 +83,6 @@ The `GEDI_MANGROVE_HT`, layer contains mangrove heights for individual GEDI L2A 
     | tdx_min |  | m | Minimum TanDEM-X DEM value from the pixels overlapping the GEDI footprint |
     | pixel_count |  | 1 | Number of TanDEM-X pixels overlapping the GEDI footprint |
 
-    </center>
 
 ![mangrove_tandemx](https://github.com/user-attachments/assets/36fcc005-0a4f-4dac-88eb-3194977281f0)
 

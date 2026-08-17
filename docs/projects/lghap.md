@@ -33,7 +33,6 @@ Zenodo. https://doi.org/10.5281/zenodo.5655807
 #### Data preprocessing
 All datasets were provided as netCDF file formats and the authors did provide some code for conversation to geotiff. Their code was modified to support multithreaded batch processing along with the addition of LZW compression. Overall uncompressed size was approximately 4 TB which post ingestion across all assets was brought down to 246.65 GB. The code was also adjusted to handle tiling for optimizing output files. Additionally date were added to the GEE assets for quick filter and sorting.
 
-<center>
 
 
 |Collection Name |Collection Path                                     |
@@ -49,7 +48,6 @@ All datasets were provided as netCDF file formats and the authors did provide so
 |PM25_yearly_avg |projects/sat-io/open-datasets/LGHAP/PM25_yearly_avg |
 
 
-</center>
 
 ![lghap](https://user-images.githubusercontent.com/6677629/151752288-4c75daf9-4e4c-44e8-9d35-149d562fd687.gif)
 

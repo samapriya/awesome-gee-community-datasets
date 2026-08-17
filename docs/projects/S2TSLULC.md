@@ -48,7 +48,6 @@ Open areas covered in homogeneous grasses with little to no taller vegetation; w
 
 For Accuracy Assessment information visit the [ESRI release page](https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d)
 
-<center>
 
 |Class Value|Remapped Value|Land Cover Class  |Hex Code|
 |-----------|--------------|------------------|--------|
@@ -62,7 +61,6 @@ For Accuracy Assessment information visit the [ESRI release page](https://www.ar
 |10         |8             |Clouds            |#C8C8C8 |
 |11         |9             |Rangeland         |#C6AD8D |
 
-</center>
 
 
 #### Earth Engine Snippet

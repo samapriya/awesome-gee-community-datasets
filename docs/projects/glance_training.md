@@ -27,7 +27,6 @@ The GLanCE training dataset, available to the public, is designed for regional-t
 
 ??? example "Expand to show Glance Training Level descriptors"
 
-    <center>
 
     | Level 1                       | Level 2          | Description                                                                                                                                                                           |
     | ----------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,7 +47,6 @@ The GLanCE training dataset, available to the public, is designed for regional-t
     |                               | Agriculture (12) | Herbaceous land covered with cultivated cropland.                                                                                                                                     |
     |                               | Moss/lichen (13) | Herbaceous land covered with lichen and/or moss.                                                                                                                                      |
 
-    <center>
 
 #### Citation
 

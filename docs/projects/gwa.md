@@ -20,7 +20,6 @@ AEP = P<sub>rated</sub> * CF * 8760 hr/year,
 
 where AEP is annual energy production, Prated is rated power, and CF is capacity factor.
 
-<center>
 
 |Variable Name       |Version|Heights(in m)    |
 |--------------------|-------|-----------------|
@@ -33,7 +32,6 @@ where AEP is annual energy production, Prated is rated power, and CF is capacity
 |Ruggedness Index    |3      |NA               |
 
 
-</center>
 
 #### Attribution and License
 If you get the data or use the dataset within the GWA app attribution below, the Works (datasets) themselves are under are licensed under the Creative Commons Attribution 4.0 International license, CC BY 4.0, except where expressly stated that another license applies.

@@ -14,7 +14,6 @@ WorldPop employs two main modeling approaches but only the constrained datasets 
 
 #### Dataset Characteristics
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -28,7 +27,6 @@ WorldPop employs two main modeling approaches but only the constrained datasets 
 | Sex Disaggregation | Male, Female, Total |
 | Methodology | Random Forest dasymetric mapping |
 
-</center>
 
 #### Available Data
 

@@ -21,7 +21,6 @@ Since 1985, Annual NLCD provides six products covering land cover, change, confi
 
 ??? example "Expand to show Land Cover Classes"
 
-    <center>
 
     | Class Value | Class Name                   | RGB Color |
     | ----------- | ---------------------------- | --------- |
@@ -42,7 +41,6 @@ Since 1985, Annual NLCD provides six products covering land cover, change, confi
     | 90          | Woody Wetlands               | `#b8d9eb` |
     | 95          | Emergent Herbaceous Wetlands | `#6c9fb8` |
 
-    </center>
 
 #### Key Information
 
@@ -51,7 +49,6 @@ Since 1985, Annual NLCD provides six products covering land cover, change, confi
 - **Temporal Coverage**: 1985–2024 (updated annually)
 - **Access**: Products are accessible via multiple platforms, including MRLC Viewer and AWS S3.
 
-<center>
 
 | Layer Name                    | Class Values (Range)         | Min | Max | NoData Value |
 |-------------------------------|------------------------------|-----|-----|--------------|
@@ -62,7 +59,6 @@ Since 1985, Annual NLCD provides six products covering land cover, change, confi
 | Impervious Descriptor          | Impervious surface types (0: Non-Urban, 1: Roads, 2: Urban) | N/A | N/A | 250        |
 | Spectral Change Day of Year    | Julian days of change       | 1   | 366 | 9999        |
 
-</center>
 
 #### Citation
 

@@ -31,7 +31,6 @@ var aridity_index_monthly = ee.Image("projects/sat-io/open-datasets/global_ai/gl
 
 Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX
 
-<center>
 
 |Aridity Index Value|Climate Class|
 |:------------------|:------------|
@@ -41,7 +40,6 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |0.5-0.65           |Dry sub-humid|
 |>0.65              |Humid        |
 
-</center>
 
 #### License
 

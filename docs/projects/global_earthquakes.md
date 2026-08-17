@@ -15,7 +15,6 @@ U.S. Geological Survey (USGS). (YEAR). Earthquake Hazards Program (EHP). Retriev
 
 ??? example "Expand to show yearly counts"
 
-    <center>
 
     | Year | Earthquake Count |
     |------|-----------------|
@@ -124,7 +123,6 @@ U.S. Geological Survey (USGS). (YEAR). Earthquake Hazards Program (EHP). Retriev
     | 2025 | 28457 |
     | 2026 | Ongoing |
 
-    </center>
 
 
 ![usgs_eq](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/d5c9496c-1797-4466-bfd1-62edcef5053a)

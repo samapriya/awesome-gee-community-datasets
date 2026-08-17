@@ -10,7 +10,6 @@ With the first high-resolution SOC map for the Indus Delta, this study provides 
 
 #### Dataset Characteristics
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -22,7 +21,6 @@ With the first high-resolution SOC map for the Indus Delta, this study provides 
 | Total Carbon Stock | 0.91 PgC |
 | Model Accuracy | R² = 0.95, RMSE = 9.18 MgC ha⁻¹ |
 
-</center>
 
 #### Citation
 

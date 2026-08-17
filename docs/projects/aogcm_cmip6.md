@@ -4,7 +4,6 @@ Atmosphere-Ocean General Circulation Model (AOGCM) were developed to simulate cl
 
 Ensemble projections are average projections from 8 CMIP5 models (table below) that were chosen to represent all major clusters of similar AOGCMs. In addition to the ensemble projections, data are also provided from 9 individual AOGCMs (table below) that are representative of the larger ensemble. Nine individual models were selected to represent all major clusters of similar AOGCMs. A broader set of 8 AOGCMs were used to create the ensemble data. Ensemble projections are also provided here for a greater range of time periods and scenarios than are the projections from individual AOGCMs.
 
-<center>
 
 |AOGCM Ensemble Models|AOGCM Individual Models                   |
 |---------------------|------------------------------------------|
@@ -22,7 +21,6 @@ Ensemble projections are average projections from 8 CMIP5 models (table below) t
 |MRI-ESM2-0           |MRI-ESM2-0                                |
 |UKESM1-0-LL          |UKESM1-0-LL                               |
 
-</center>
 
 
 #### Data citation
@@ -47,7 +45,6 @@ Mahony, C.R., T. Wang, A. Hamann, and A.J. Cannon. 2022. A global climate model 
 
 The current climatic variables included in the datasets for climate normals, AOGCM models and AOGCM ensemble model are listed below
 
-<center>
 
 |Monthly Variables|Description                               |
 |-----------------|------------------------------------------|
@@ -56,7 +53,6 @@ The current climatic variables included in the datasets for climate normals, AOG
 |tave             |mean temperature for a given month (°C)   |
 |ppt              |total precipitation for a given month (mm)|
 
-</center>
 
 ![cimp6_scenario3-70](https://user-images.githubusercontent.com/6677629/122656133-8fb20f00-d11d-11eb-80eb-b21dc41106b4.gif)
 

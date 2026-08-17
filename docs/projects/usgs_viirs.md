@@ -5,7 +5,6 @@ Notably, recent assessments of the global ETa product indicate its promising per
 
 #### Dataset details
 
-<center>
 
 | **Spatial extent**   | Global                                           |
 |----------------------|-------------------------------------------------|
@@ -14,18 +13,15 @@ Notably, recent assessments of the global ETa product indicate its promising per
 | **Time span**        | 2012 to Present                                 |
 | **Update frequency** | Updated every 10-12 days                         |
 
-</center>
 
 **Variables**
 
-<center>
 
 | Variable                | Evapotranspiration (ETa) ('et')                  |
 |------------------------|-------------------------------------------------|
 | Units                  | Millimeters                                     |
 | Scale factor           | 1.0                                             |
 
-</center>
 
 ### Additional information
 You can find additional information on these datasets in the links below

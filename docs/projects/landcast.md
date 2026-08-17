@@ -40,7 +40,6 @@ Sub-national distributions are derived from historical LandScan Global versions;
 
 #### Dataset Characteristics
 
-<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -55,7 +54,6 @@ Sub-national distributions are derived from historical LandScan Global versions;
 | Methodology | Built-surface backcasting from a building-level benchmark |
 | Version | 1.0 |
 
-</center>
 
 #### Available Data
 

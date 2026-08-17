@@ -20,7 +20,6 @@ For individual sectors refer to citation information from the downloads page.
 
 ??? example "Expand to show data attributes and definitions for the emissions database"
 
-    <center>
 
     | Data-attribute            | Definition                                                                                                        |
     | ------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +67,6 @@ For individual sectors refer to citation information from the downloads page.
     | created_date              | Date emissions source was added to the Climate TRACE database.                                                    |
     | modified_date             | Last date on which any updates were made to the dataset for the specific source.                                  |
 
-    </center>
 
 ![carbon_trace](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/a1adee01-d0a4-435a-8fcc-c923ae7e853c)
 

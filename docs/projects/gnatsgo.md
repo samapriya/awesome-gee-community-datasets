@@ -8,7 +8,6 @@ STATSGO2 is a general soil map that has soils data for all of the United States 
 
 ??? example "Expand to show current asset collections"
 
-    <center>
 
     | Titles | STAC Key | Roles | Description |
     |---|---|---|---|
@@ -63,7 +62,6 @@ STATSGO2 is a general soil map that has soils data for all of the United States 
     | Tk150_999a | tk150_999a | Data | Thickness of soil components used in standard layer 6 (150 cm to the reported depth of the soil profile) expressed in cm (weighted average) for the available water storage calculation. NULL values are presented where data are incomplete or not available. |
     | Tk150_999s | tk150_999s | Data | Thickness of soil components used in standard layer 6 (150 cm to the reported depth of the soil profile) expressed in cm (weighted average) for the Soil Organic Carbon calculation. NULL values are presented where data are incomplete or not available. |
 
-    </center>
 
 ![gnatsgo](https://github.com/user-attachments/assets/ac9e4dc1-2b05-48cd-aaf7-914120a865ca)
 
