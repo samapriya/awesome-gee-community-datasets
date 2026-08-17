@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "last_commit": "3014511b8b74a4408fb37fe1bdcb33a6ab57c0fb",
-  "generated": "2026-08-13T18:29:57Z",
+  "last_commit": "4f985ee1136fe9a6dc9f8a7f24822cc1d86d0691",
+  "generated": "2026-08-17T07:17:59Z",
   "unresolved": [],
-  "api_calls_this_run": 1
+  "api_calls_this_run": 0
  },
  "authors": {
   "108081891+jornada-jw@users.noreply.github.com": {
@@ -146,7 +146,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 952,
+    "action@github.com": 956,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -164,7 +164,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1295,
+    "action@github.com": 1298,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -182,7 +182,7 @@
   },
   "docs/projects/landcast.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -190,7 +190,7 @@
   },
   "docs/projects/annual_nlcd.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 21
+    "samapriya.roy@gmail.com": 22
    },
    "committers": [
     "samapriya"
@@ -240,7 +240,7 @@
   },
   "docs/projects/global_earthquakes.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 13
+    "samapriya.roy@gmail.com": 14
    },
    "committers": [
     "samapriya"
@@ -264,7 +264,7 @@
   },
   "docs/projects/S2TSLULC.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 21
+    "samapriya.roy@gmail.com": 22
    },
    "committers": [
     "samapriya"
@@ -296,7 +296,7 @@
   },
   "docs/projects/gmseus.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -320,7 +320,7 @@
   },
   "docs/projects/landfire.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 29
+    "samapriya.roy@gmail.com": 30
    },
    "committers": [
     "samapriya"
@@ -376,7 +376,7 @@
   },
   "docs/projects/prism_daily.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya"
@@ -392,7 +392,7 @@
   },
   "docs/projects/worldpop.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya"
@@ -432,7 +432,7 @@
   },
   "docs/projects/noaa_ngs_eri.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -514,7 +514,7 @@
   },
   "docs/projects/emc_built.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -532,7 +532,7 @@
   },
   "docs/projects/obm.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -540,7 +540,7 @@
   },
   "docs/projects/wb_gad.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -584,7 +584,7 @@
   },
   "docs/projects/csa.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -600,7 +600,7 @@
   },
   "docs/projects/gba.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -608,7 +608,7 @@
   },
   "docs/projects/ogim.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -624,7 +624,7 @@
   },
   "docs/projects/ghm-v3.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -658,7 +658,7 @@
   },
   "docs/projects/indus_soc.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -666,7 +666,7 @@
   },
   "docs/projects/peatgrids.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -682,7 +682,7 @@
   },
   "docs/projects/tanager.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -764,7 +764,7 @@
   },
   "docs/projects/glwd.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -824,7 +824,7 @@
   },
   "docs/projects/gaul.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -907,7 +907,7 @@
   "docs/projects/s2hswiss.md": {
    "counts": {
     "44976289+tschoun@users.noreply.github.com": 2,
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya",
@@ -932,7 +932,7 @@
   },
   "docs/projects/tdep.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -948,7 +948,7 @@
   },
   "docs/projects/mslsp.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -964,7 +964,7 @@
   },
   "docs/projects/ladem.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -972,7 +972,7 @@
   },
   "docs/projects/urbansky.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -980,7 +980,7 @@
   },
   "docs/projects/wyvern.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -996,7 +996,7 @@
   },
   "docs/projects/vodca.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -1086,7 +1086,7 @@
   },
   "docs/projects/gnatsgo.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -1118,7 +1118,7 @@
   },
   "docs/projects/glance.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -1142,7 +1142,7 @@
   },
   "docs/projects/qdann.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1216,7 +1216,7 @@
   },
   "docs/projects/ca_sbfi.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -1250,7 +1250,7 @@
   },
   "docs/projects/nsi.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1418,7 +1418,7 @@
   },
   "docs/projects/mangrove_ht_tandemx.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1426,7 +1426,7 @@
   },
   "docs/projects/gwl_fcs.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1574,7 +1574,7 @@
   },
   "docs/projects/sword.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1642,7 +1642,7 @@
   },
   "docs/projects/india_river_trends.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya"
@@ -1706,7 +1706,7 @@
   },
   "docs/projects/glance_training.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1730,7 +1730,7 @@
   },
   "docs/projects/climate_trace.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -1900,7 +1900,7 @@
   },
   "docs/projects/gcd_assets.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2060,7 +2060,7 @@
   },
   "docs/projects/historical_us.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2084,7 +2084,7 @@
   },
   "docs/projects/usgs_modis_et.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -2100,7 +2100,7 @@
   },
   "docs/projects/cems_fire.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2124,7 +2124,7 @@
   },
   "docs/projects/gfwed.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2140,7 +2140,7 @@
   },
   "docs/projects/wrc.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2148,7 +2148,7 @@
   },
   "docs/projects/gisd30.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2156,7 +2156,7 @@
   },
   "docs/projects/nadm.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2164,7 +2164,7 @@
   },
   "docs/projects/snodas.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2172,7 +2172,7 @@
   },
   "docs/projects/usgs_viirs.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 3
+    "samapriya.roy@gmail.com": 4
    },
    "committers": [
     "samapriya"
@@ -2268,7 +2268,7 @@
   },
   "docs/projects/aogcm_cmip6.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 15
+    "samapriya.roy@gmail.com": 16
    },
    "committers": [
     "samapriya"
@@ -2412,7 +2412,7 @@
   },
   "docs/projects/lcmap.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 19
+    "samapriya.roy@gmail.com": 20
    },
    "committers": [
     "samapriya"
@@ -2454,7 +2454,7 @@
   },
   "docs/projects/geoboundary.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 11
+    "samapriya.roy@gmail.com": 12
    },
    "committers": [
     "samapriya"
@@ -2650,7 +2650,7 @@
   },
   "docs/projects/esrilc2020.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya"
@@ -2818,7 +2818,7 @@
   },
   "docs/projects/grn_wrz.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -3018,7 +3018,7 @@
   },
   "docs/projects/argo.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 13
+    "samapriya.roy@gmail.com": 14
    },
    "committers": [
     "samapriya"
@@ -3106,7 +3106,7 @@
   },
   "docs/projects/ai0.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -3138,7 +3138,7 @@
   },
   "docs/projects/glc10.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -3178,7 +3178,7 @@
   },
   "docs/projects/gwa.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 7
+    "samapriya.roy@gmail.com": 8
    },
    "committers": [
     "samapriya"
@@ -3218,7 +3218,7 @@
   },
   "docs/projects/lghap.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
@@ -3234,7 +3234,7 @@
   },
   "docs/projects/polaris.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 11
+    "samapriya.roy@gmail.com": 12
    },
    "committers": [
     "samapriya"
@@ -3242,7 +3242,7 @@
   },
   "docs/projects/terraclim.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 9
+    "samapriya.roy@gmail.com": 10
    },
    "committers": [
     "samapriya"
@@ -3483,6 +3483,14 @@
    ]
   },
   "docs/forum/index.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/colombia_eq_2026.md": {
    "counts": {
     "samapriya.roy@gmail.com": 1
    },
@@ -6963,6 +6971,14 @@
    }
   ],
   "docs/forum/index.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/colombia_eq_2026.md": [
    {
     "login": "samapriya",
     "name": "Samapriya Roy",
