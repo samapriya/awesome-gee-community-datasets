@@ -19,17 +19,12 @@ Casualty and damage figures for an event this recent continue to move as recover
 
 ![colombia_eq_2026](../images/colombia_eq_2026.gif)
 
-*Placeholder path. A real screenshot of the collection footprints has not been added yet, drop one at `docs/images/colombia_eq_2026.png` to replace this.*
-
 #### Vantor (Maxar) Open Data
 
 Vantor's open data program released a pre-event baseline collection over the earthquake affected region, 19 images across 2 ingestion runs, all captured before the event (earliest scene 16 July 2026, no post-event imagery in this collection as of ingestion). Sensors are WorldView-2, WorldView-3, WorldView Legion (three separate satellites in the constellation) and GeoEye-1, at native resolutions from 0.35 to 3.26 m. Assets are full-strip cloud optimized GeoTIFFs with a visual band and a thumbnail per acquisition.
 
-Note: the source asset path spells the country "COLUMBIA" rather than "Colombia". That is the real, already ingested Earth Engine asset ID and is reproduced exactly below so the snippet works.
-
 ```js
 // Vantor (Maxar) open data, pre-event baseline imagery.
-// Asset path preserves the source program's own spelling, "COLUMBIA_EQ_2026".
 var vantorColombiaEq2026 = ee.ImageCollection("projects/sat-io/open-datasets/VANTOR-DISASTER-DATA/COLOMBIA_EQ_2026");
 ```
 
@@ -39,11 +34,8 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 Planet Labs' disaster data program released 157 images across 6 ingestion runs, combining a pre-event basemap with two distinct post-event collection phases. The pre-event baseline is drawn from Planet's Q2 2026 global quarterly basemap (1 April to 1 July 2026, roughly 4.8 m resolution). Post-event coverage was collected the same day and the following day as the earthquake: 57 PlanetScope scenes (approximately 3 m, collected the afternoon of 10 August 2026) spanning the cordillera from Risaralda south to Cauca, and skySat collects (approximately 0.66 m) over Quibdo, the Choco departmental capital, on 10 and 11 August 2026. Sensors are PlanetScope and SkySat, at resolutions from 0.66 to 4.78 m.
 
-Note: like the Vantor collection above, the source asset path spells the country "COLUMBIA" rather than "Colombia". Reproduced exactly below so the snippet works.
-
 ```js
 // Planet Labs disaster data, pre-event basemap plus two post-event phases.
-// Asset path preserves the source program's own spelling, "COLUMBIA_EQ_2026".
 var planetColombiaEq2026 = ee.ImageCollection("projects/sat-io/open-datasets/PLANET-DISASTER-DATA/COLOMBIA_EQ_2026");
 ```
 
