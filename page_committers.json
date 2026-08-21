@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "48999c2abc09f0d06d51f7fb8babc9f7fd77ac47",
-  "generated": "2026-08-17T19:52:07Z",
+  "last_commit": "cf72c0e59b903d3803255132a403da5c583cf660",
+  "generated": "2026-08-21T04:34:20Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -146,7 +146,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 956,
+    "action@github.com": 960,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -164,7 +164,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1299,
+    "action@github.com": 1302,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -3493,6 +3493,14 @@
   "docs/projects/colombia_eq_2026.md": {
    "counts": {
     "samapriya.roy@gmail.com": 3
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/reitz_ensemble.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
    },
    "committers": [
     "samapriya"
@@ -6979,6 +6987,14 @@
    }
   ],
   "docs/projects/colombia_eq_2026.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/reitz_ensemble.md": [
    {
     "login": "samapriya",
     "name": "Samapriya Roy",
