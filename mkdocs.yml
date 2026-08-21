@@ -116,6 +116,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      user: samapriya
+      repo: awesome-gee-community-datasets
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
@@ -319,6 +324,7 @@ nav:
               # - Forest Communities Mapping with AlphaEarth Embeddings: projects/fcm10r9.md
               - Global Satellite Embedding-based Map of Forests and Tree Crops: projects/gem_forest.md
               - Landfire Mosaics LF: projects/landfire.md
+              - Historical Evapotranspiration for the Conterminous U.S. (Reitz Ensemble ET): projects/reitz_ensemble.md
               - Vegetation dryness for western USA: projects/veg_dry.md
               - USGS VIIRS Evapotranspiration: projects/usgs_viirs.md
               - USGS MODIS Evapotranspiration: projects/usgs_modis_et.md

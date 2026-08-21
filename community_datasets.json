@@ -53997,5 +53997,17 @@
         "docs": "https://gee-community-catalog.org/projects/colombia_eq_2026/",
         "thematic_group": "Global Events Layers",
         "thumbnail": "https://gee-community-catalog.org/thumbnails/colombia_eq_2026.png"
+    },
+    {
+        "title": "Historical Evapotranspiration for the Conterminous U.S. (Reitz Ensemble ET)",
+        "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/REITZ_ENSEMBLE_ET",
+        "type": "image_collection",
+        "id": "projects/sat-io/open-datasets/USGS/REITZ-ENSEMBLE-ET",
+        "provider": "USGS, Reitz et al. 2023",
+        "tags": "evapotranspiration, irrigation, groundwater, hydrology, conus, water balance, ensemble",
+        "license": "Creative Commons Zero v1.0 Universal",
+        "docs": "https://gee-community-catalog.org/projects/reitz_ensemble/",
+        "thematic_group": "Agriculture, Vegetation and Forestry",
+        "thumbnail": "https://gee-community-catalog.org/thumbnails/reitz_ensemble.png"
     }
 ]
