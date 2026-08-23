@@ -179,8 +179,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
     "profile_url": "https://github.com/montimaj",
     "total_contributions": 7,
-    "open_issues": 2,
-    "closed_issues": 2,
+    "open_issues": 1,
+    "closed_issues": 3,
     "open_prs": 0,
     "merged_prs": 2,
     "closed_prs": 1,
@@ -624,6 +624,23 @@
     },
     "last_contribution_date": "2024-01-10T22:22:05Z",
     "avatar_local": "assets/avatars/nkeikon_fc2bacf2.png"
+  },
+  {
+    "github_login": "zimmermaps",
+    "display_name": "Andy Zimmer",
+    "avatar_url": "https://avatars.githubusercontent.com/u/43221144?v=4",
+    "profile_url": "https://github.com/zimmermaps",
+    "total_contributions": 2,
+    "open_issues": 1,
+    "closed_issues": 1,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 2
+    },
+    "last_contribution_date": "2026-08-21T11:23:11Z",
+    "avatar_local": "assets/avatars/zimmermaps_705384b8.png"
   },
   {
     "github_login": "bartslagter",
@@ -1206,23 +1223,6 @@
     },
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
-  },
-  {
-    "github_login": "zimmermaps",
-    "display_name": "Andy Zimmer",
-    "avatar_url": "https://avatars.githubusercontent.com/u/43221144?v=4",
-    "profile_url": "https://github.com/zimmermaps",
-    "total_contributions": 1,
-    "open_issues": 0,
-    "closed_issues": 1,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "years": {
-      "2026": 1
-    },
-    "last_contribution_date": "2026-07-29T12:19:48Z",
-    "avatar_local": "assets/avatars/zimmermaps_705384b8.png"
   },
   {
     "github_login": "prevelle",
