@@ -4,22 +4,24 @@ On 26 August 2026 at about 08:37 local time (02:52 UTC), a mass of ice and rock 
 
 #### Event Summary
 
-| Field | Value |
-|---|---|
-| Date / time | 26 August 2026, approximately 08:37 to 08:40 NPT (02:52 to 02:55 UTC) |
-| Event type | Ice and rock avalanche or glacier collapse, mobilised into a debris flow and outburst flood |
-| Source area | North flank of the Langtang Himal near Langtang Lirung, approximately 5,600 m, Langtang National Park, Rasuwa |
-| Seismic signature | Mw 5.2 equivalent, catalogued by USGS as a landslide (us7000tbwb); secondary Mw 4.2 equivalent about 3 hours later (us7000tc90) |
-| Flow path | Lhende (Lende) Khola to Bhote Koshi to Trishuli, runout approximately 100 km, with settlements struck along a 72 km reach of the Trishuli |
-| Peak stage | Trishuli rose by up to 9 m in 30 minutes |
-| Front velocity | Approximately 193 km/h averaged over the first 22 km (Planetary Science Institute analysis of the seismic record) |
-| Affected districts (Nepal) | Rasuwa, Nuwakot, Dhading, Gorkha, Tanahun, Nawalparasi (east and west), Chitwan |
-| Affected area (China) | Gyirong Port and Gyirong County, Shigatse, Tibet Autonomous Region |
-| Deaths | Provisional and rising steeply through the reporting period. Nepal figures moved from at least 160 (27 Aug) to 289 (28 Aug) to 469 (29 Aug) to at least 734 by 31 Aug; Tibet reported 16 dead over the same window |
-| Missing | Approximately 2,500 in Nepal and approximately 550 in Tibet as of 31 August 2026 |
-| Infrastructure | 32 bridges and roughly 40 km of road swept away; the Gyirong Port complex on the China–Nepal border destroyed; the Rasuwagadhi customs complex, bridge and hydropower intake destroyed |
-| Damage assessment | Copernicus EMS (EMSR927) mapped more than 240 buildings destroyed and 32 damaged in the Syapru Besi area alone |
-| Response activations | Copernicus EMS EMSR927, International Disasters Charter activation 1052, UNOSAT/GDACS SMCS event 421, HOT/NAXA OSM Tasking Manager campaign |
+??? example "This is being update constantly so please check online resources for latest"
+
+    | Field | Value |
+    |---|---|
+    | Date / time | 26 August 2026, approximately 08:37 to 08:40 NPT (02:52 to 02:55 UTC) |
+    | Event type | Ice and rock avalanche or glacier collapse, mobilised into a debris flow and outburst flood |
+    | Source area | North flank of the Langtang Himal near Langtang Lirung, approximately 5,600 m, Langtang National Park, Rasuwa |
+    | Seismic signature | Mw 5.2 equivalent, catalogued by USGS as a landslide (us7000tbwb); secondary Mw 4.2 equivalent about 3 hours later (us7000tc90) |
+    | Flow path | Lhende (Lende) Khola to Bhote Koshi to Trishuli, runout approximately 100 km, with settlements struck along a 72 km reach of the Trishuli |
+    | Peak stage | Trishuli rose by up to 9 m in 30 minutes |
+    | Front velocity | Approximately 193 km/h averaged over the first 22 km (Planetary Science Institute analysis of the seismic record) |
+    | Affected districts (Nepal) | Rasuwa, Nuwakot, Dhading, Gorkha, Tanahun, Nawalparasi (east and west), Chitwan |
+    | Affected area (China) | Gyirong Port and Gyirong County, Shigatse, Tibet Autonomous Region |
+    | Deaths | Provisional and rising steeply through the reporting period. Nepal figures moved from at least 160 (27 Aug) to 289 (28 Aug) to 469 (29 Aug) to at least 734 by 31 Aug; Tibet reported 16 dead over the same window |
+    | Missing | Approximately 2,500 in Nepal and approximately 550 in Tibet as of 31 August 2026 |
+    | Infrastructure | 32 bridges and roughly 40 km of road swept away; the Gyirong Port complex on the China–Nepal border destroyed; the Rasuwagadhi customs complex, bridge and hydropower intake destroyed |
+    | Damage assessment | Copernicus EMS (EMSR927) mapped more than 240 buildings destroyed and 32 damaged in the Syapru Besi area alone |
+    | Response activations | Copernicus EMS EMSR927, International Disasters Charter activation 1052, UNOSAT/GDACS SMCS event 421, HOT/NAXA OSM Tasking Manager campaign |
 
 Casualty figures for this event moved by an order of magnitude over five days as search operations extended downstream, and bodies were recovered as far as 240 km away across the Indian border. Any number quoted here is provisional. Check the sources below before citing one.
 
@@ -32,6 +34,20 @@ Vantor activated its Open Data Program on 27 August 2026, following a request fr
 ```js
 // Vantor (Maxar) open data, pre-event baseline and post-event imagery.
 var vantorNepalFlood2026 = ee.ImageCollection("projects/sat-io/open-datasets/VANTOR-DISASTER-DATA/NEPAL_FLOOD_2026");
+```
+
+#### Preprocessing
+
+Vantor's open data strips ship without a cloud mask of any kind — no UDM, no QA band, no per-pixel cloud flag. Since 2026, every scene entering a Vantor disaster collection is therefore passed through OmniCloudMask during ingestion, and two derived bands are appended to the imagery bands automatically:
+
+Band	Type	Values
+cloud_mask	Binary	0 = clear, 1 = cloud or cloud shadow
+cloud_probability	Continuous	0 to 100
+
+OmniCloudMask is a sensor-agnostic deep learning model for cloud and cloud shadow segmentation, validated on Maxar imagery alongside Sentinel-2, Landsat 8 and PlanetScope, which is why it transfers to WorldView without a sensor-specific retrain. It takes Red, Green and NIR and returns per-pixel labels for clear, thin cloud, thick cloud and cloud shadow. The binary band collapses those four classes; the probability band preserves the model's confidence, so borderline pixels can be thresholded rather than accepted or discarded outright. Because the model is trained for 10 to 50 m and WorldView is sub-metre, scenes are resampled to 10 m for inference and the mask is resampled back onto the native grid.
+
+```
+Wright, N., Duncan, J.M.A., Callow, J.N., Thompson, S.E., & George, R.J. (2025). Training sensor-agnostic deep learning models for remote sensing: Achieving state-of-the-art cloud and cloud shadow identification with OmniCloudMask. Remote Sensing of Environment, 322, 114694. https://doi.org/10.1016/j.rse.2025.114694
 ```
 
 Masking, with the cloud threshold passed in as a percentage and 0 treated as no data:
