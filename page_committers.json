@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "197a013527581402ee6f3b341e40274dc522bf57",
-  "generated": "2026-08-31T07:54:28Z",
+  "last_commit": "024ab199d358c591e41189db6b624dae8e483659",
+  "generated": "2026-08-31T14:26:41Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -3508,7 +3508,7 @@
   },
   "docs/projects/nepal_floods_2026.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 1
+    "samapriya.roy@gmail.com": 2
    },
    "committers": [
     "samapriya"
