@@ -496,18 +496,20 @@ nav:
               - Global large flood events (1985-2016): projects/flood.md
               - Global Landslide Catalog (1970-2019): projects/landslide.md
               - Groundsource Global Dataset of Flood Events from News: projects/groundsource.md
-              - NOAA NGS Emergency Response Imagery: projects/noaa_ngs_eri.md
-              - MAXAR Open Data Events: projects/maxar_opendata.md
               - Wyvern Open Data: projects/wyvern.md
               - Planet Tanager Open Data: projects/tanager.md
               - Umbra SAR Open Data: projects/umbra_opendata.md
               - Urban Sky Open Data: projects/urbansky.md
-              - Los Angeles Fires 2025 Lidar Collections and Change Analysis: projects/ladem.md
               - RADD Forest Disturbance Alert: projects/radd.md
               - Geocoded Disasters (GDIS) Dataset (1960 – 2018): projects/gdis.md
               - USGS Global Earthquake dataset: projects/global_earthquakes.md
+          - "Disaster Response":
+              - MAXAR Open Data Events: projects/maxar_opendata.md
+              - NOAA NGS Emergency Response Imagery: projects/noaa_ngs_eri.md
               - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
               - Colombia Earthquake (Choco) 2026: projects/colombia_eq_2026.md
+              - Nepal Floods (Bhote Koshi / Trishuli) 2026: projects/nepal_floods_2026.md
+              - Los Angeles Fires 2025 Lidar Collections and Change Analysis: projects/ladem.md
           - "Fire Monitoring and Analysis":
               - CEMS Fire Danger Indices: projects/cems_fire.md
               - Canada National Burned Area Composite (NBAC): projects/nbac.md
@@ -565,6 +567,6 @@ nav:
       - Substack Blogs: substack_blogs.md
       - Medium Blogs: medium_blogs.md
   - Catalog Assistant:
-    - search_features/index.md
+      - search_features/index.md
   - Browser:
-    - browser/index.md
+      - browser/index.md
