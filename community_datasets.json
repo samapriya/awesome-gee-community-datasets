@@ -54023,6 +54023,18 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/nepal_floods_2026.png"
   },
   {
+    "title": "Vantor (Maxar) Open Data: Indonesia Earthquake (Flores) 2026",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:disaster-response/VANTOR-OPEN-DATA-INDONESIA-FLORES-EQ-2026",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/VANTOR-DISASTER-DATA/INDONESIA_FLORES_EQ_2026",
+    "provider": "Vantor (Maxar)",
+    "tags": "earthquake, tsunami, Indonesia, Flores, East Nusa Tenggara, Manggarai, Nagekeo, Ende, Sikka, Flores Back-Arc Thrust",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/indonesia_eq_2026",
+    "thematic_group": "Disaster Response",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/indonesia_eq_2026.png"
+  },
+  {
     "title": "Historical Evapotranspiration for the Conterminous U.S. (Reitz Ensemble ET)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/REITZ_ENSEMBLE_ET",
     "type": "image_collection",
