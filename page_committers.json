@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "024ab199d358c591e41189db6b624dae8e483659",
-  "generated": "2026-08-31T14:26:41Z",
+  "last_commit": "0e1ba68915e693b08d929ab64fc9cfb904415ee1",
+  "generated": "2026-09-01T03:34:16Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -146,7 +146,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 970,
+    "action@github.com": 971,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -164,7 +164,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1312,
+    "action@github.com": 1313,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -3509,6 +3509,14 @@
   "docs/projects/nepal_floods_2026.md": {
    "counts": {
     "samapriya.roy@gmail.com": 2
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/indonesia_eq_2026.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
    },
    "committers": [
     "samapriya"
@@ -7011,6 +7019,14 @@
    }
   ],
   "docs/projects/nepal_floods_2026.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/indonesia_eq_2026.md": [
    {
     "login": "samapriya",
     "name": "Samapriya Roy",
