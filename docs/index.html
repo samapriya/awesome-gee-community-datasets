@@ -30,8 +30,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <meta name="apple-mobile-web-app-title" content="GEE Catalog" />
-<link rel="apple-touch-icon" href="https://gee-community-catalog.org/images/logo_cropped.jpg" />
-<link rel="manifest" href='data:application/manifest+json,{"name":"Awesome GEE Community Catalog","short_name":"GEE Catalog","start_url":".","display":"standalone","background_color":"%23fdfdfe","theme_color":"%23fdfdfe","icons":[{"src":"https://gee-community-catalog.org/images/logo_cropped.jpg","sizes":"512x512","type":"image/jpeg"}]}' />
+<link rel="apple-touch-icon" href="https://gee-community-catalog.org/images/pwa-icon-192.png" />
+<!-- Manifest icons must be square PNGs at 192 and 512 for Chrome's install
+     criteria; URLs are absolute because a data: manifest has no base URL. -->
+<link rel="manifest" href='data:application/manifest+json,{"name":"Awesome GEE Community Catalog","short_name":"GEE Catalog","id":"https://gee-community-catalog.org/","start_url":"https://gee-community-catalog.org/","scope":"https://gee-community-catalog.org/","display":"standalone","background_color":"%23fdfdfe","theme_color":"%23fdfdfe","icons":[{"src":"https://gee-community-catalog.org/images/pwa-icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"https://gee-community-catalog.org/images/pwa-icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},{"src":"https://gee-community-catalog.org/images/pwa-icon-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]}' />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -80,19 +82,32 @@
   header nav { display: flex; align-items: center; gap: clamp(14px,1.4vw,24px); flex-wrap: wrap; }
   header nav a { display: flex; align-items: center; gap: 8px; }
 
-  /* bottom padding has to clear #meta, which is absolutely positioned against
-     the bottom edge. --metaPad is measured from that block at runtime, since
-     its height moves with the composition row wrapping; the clamp is the
-     fallback for the moment before script runs. */
-  main { position: relative; flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: clamp(16px,1.4vw,24px); width: clamp(380px, 34vw, 1000px); padding: 0 0 var(--metaPad, clamp(200px,19vh,300px)) var(--pad); }
+  /* the hero lives entirely in normal flow: nothing is measured at runtime and
+     nothing absolutely positioned can ever sit on top of the CTA. The catalog
+     stats moved behind the "Catalog stats" disclosure button (see #meta). */
+  main { position: relative; z-index: 4; flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: clamp(16px,1.4vw,24px); width: clamp(380px, 34vw, 1000px); padding: clamp(24px,4vh,60px) 0 clamp(48px,8vh,130px) var(--pad); }
   h1 { margin: 0; max-width: 13ch; font-size: clamp(36px, 4.4vw, 104px); font-weight: 400; line-height: 1; letter-spacing: -.03em; text-wrap: balance; }
   main p { margin: 0; max-width: 46ch; font-size: clamp(16.5px, 1.15vw, 27px); line-height: 1.55; color: #4a4566; text-wrap: pretty; }
   .cta { display: flex; align-items: center; gap: 12px; padding: clamp(15px,1.1vw,26px) clamp(28px,2.4vw,54px); border-radius: 999px; background: #211d3d; color: #fdfdfe; font-size: clamp(16.5px,1.1vw,26px); font-weight: 500; box-shadow: 0 24px 50px -24px rgba(33,29,61,.85); }
+  /* secondary disclosure button: opens the stats sheet, sits beside the CTA so
+     it is always reachable in flow on every screen size */
+  .statsBtn { display: inline-flex; align-items: center; gap: 10px; padding: clamp(14px,1vw,24px) clamp(22px,1.9vw,42px); border-radius: 999px; border: 1px solid rgba(75,63,143,.32); background: rgba(255,255,255,.72); color: #4b3f8f; font-family: inherit; font-size: clamp(15px,1vw,23px); font-weight: 500; letter-spacing: 0; cursor: pointer; transition: background .25s ease; }
+  .statsBtn .chev { display: inline-block; font-size: .9em; line-height: 1; transition: transform .25s ease; }
+  .statsBtn[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  @media (hover: hover) { .statsBtn:hover { background: rgba(255,255,255,.96); } }
   .logo { width: clamp(260px, 25vw, 620px); max-width: 100%; height: auto; mix-blend-mode: multiply; }
   .mono { font-family: 'IBM Plex Mono', monospace; }
   .eyebrow { display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(10.5px,.7vw,16px); letter-spacing: .2em; text-transform: uppercase; color: #4b3f8f; padding: 7px 15px; border-radius: 999px; border: 1px solid rgba(75,63,143,.2); background: rgba(255,255,255,.62); }
 
-  #meta { position: absolute; z-index: 4; left: var(--pad); bottom: clamp(26px,3.4vh,64px); display: flex; flex-direction: column; gap: clamp(11px,1vw,20px); }
+  /* the stats sheet: hidden until the "Catalog stats" button opens it, so it can
+     never intercept a click meant for the hero. Fixed to the bottom-left, above
+     everything, scrollable if a short window can't fit it. */
+  #meta { position: fixed; z-index: 9; left: var(--pad); bottom: clamp(20px,3vh,52px); display: flex; flex-direction: column; gap: clamp(12px,1.2vh,20px); width: min(700px, calc(100vw - 2 * var(--pad))); max-height: min(72vh, 620px); overflow-y: auto; padding: clamp(20px,1.8vw,32px); border-radius: 20px; border: 1px solid rgba(75,63,143,.16); background: rgba(253,253,254,.94); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 30px 70px -30px rgba(23,21,40,.5); opacity: 0; transform: translateY(12px); visibility: hidden; transition: opacity .28s ease, transform .28s ease, visibility 0s linear .28s; }
+  #meta.open { opacity: 1; transform: translateY(0); visibility: visible; transition: opacity .28s ease, transform .28s ease, visibility 0s; }
+  .metaHead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .metaHead .label { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .18em; text-transform: uppercase; color: #6f6a86; }
+  #metaClose { border: 0; background: transparent; color: #6f6a86; font-size: 20px; line-height: 1; padding: 4px 9px; border-radius: 8px; cursor: pointer; }
+  @media (hover: hover) { #metaClose:hover { background: rgba(75,63,143,.1); color: #211d3d; } }
   .stats { display: flex; flex-wrap: wrap; gap: clamp(26px,3vw,74px); }
   .stat b { display: block; font-size: clamp(24px, 1.8vw, 44px); font-weight: 400; letter-spacing: -.03em; }
   .stat span { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .16em; text-transform: uppercase; color: #6f6a86; }
@@ -121,26 +136,25 @@
   .star::after { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(104deg, transparent 38%, rgba(255,255,255,.2) 50%, transparent 62%); transform: translateX(-130%); animation: cc-sheen 9s ease-in-out 4s infinite; }
   @keyframes cc-sheen { 0%, 86% { transform: translateX(-130%); } 100% { transform: translateX(130%); } }
   @media (hover: hover) { .star:hover { opacity: 1; background: #2d2757; transform: translateY(-1px); box-shadow: 0 16px 28px -14px rgba(33,29,61,.95); } }
-  .ticker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
-  .ticker .label { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9.5px,.62vw,14px); letter-spacing: .18em; text-transform: uppercase; color: #6f6a86; }
-  .ds { font-size: clamp(15.5px, 1.1vw, 26px); letter-spacing: -.01em; color: #211d3d; white-space: nowrap; transition: opacity .32s ease; }
-  .dot { width: 4px; height: 4px; border-radius: 50%; background: #b9b3cc; }
-
-  #place { position: absolute; z-index: 4; right: var(--pad); bottom: clamp(26px,3.4vh,64px); display: flex; flex-direction: column; align-items: flex-end; gap: 8px; max-width: min(430px, 30vw); text-align: right; }
+  /* pure caption, no links: pointer-events off so it can never block a click */
+  #place { position: absolute; z-index: 4; right: var(--pad); bottom: clamp(26px,3.4vh,64px); display: flex; flex-direction: column; align-items: flex-end; gap: 8px; max-width: min(430px, 30vw); text-align: right; pointer-events: none; }
   #placeName { font-size: clamp(26px,2.3vw,52px); line-height: 1.1; letter-spacing: -.025em; color: #211d3d; white-space: nowrap; transition: opacity .5s ease; }
   #sources { font-family: 'IBM Plex Mono', monospace; font-size: clamp(9px,.58vw,13px); line-height: 1.9; letter-spacing: .1em; text-transform: uppercase; color: #6f6a86; }
   #fade { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(200px, 20vh, 340px); background: linear-gradient(0deg, rgba(253,253,254,.94) 0%, rgba(253,253,254,0) 100%); pointer-events: none; }
 
-  /* phones and tablets: one column, the stack becomes a hero band */
+  /* phones and tablets: one column, the stack becomes a hero band. Sized so
+     header + band + full hero (through the CTA row) fit inside 100svh on a
+     typical phone: nothing important sits under the fold or gets clipped. */
   @media (max-width: 1080px) {
     .stage { --pad: clamp(20px, 5.5vw, 48px); }
     #frame { min-height: 0; }
-    #band { position: relative; inset: auto; height: min(42vh, 340px); min-height: 210px; margin: 4px 0 clamp(6px,2vh,22px); pointer-events: auto; }
+    #band { position: relative; inset: auto; height: min(30svh, 280px); min-height: 160px; margin: 2px 0 clamp(4px,1.5vh,16px); pointer-events: auto; }
     #cam { left: 50%; top: 52%; }
-    main { width: 100%; padding: 0 var(--pad) clamp(24px,4vh,44px); align-items: flex-start; justify-content: flex-start; }
+    main { width: 100%; padding: 0 var(--pad) clamp(24px,4vh,44px); align-items: flex-start; justify-content: flex-start; gap: 14px; }
+    .logo { width: clamp(190px, 46vw, 250px); }
     h1 { font-size: clamp(34px, 8.6vw, 58px); max-width: 16ch; }
     main p { font-size: clamp(16px, 4.1vw, 20px); max-width: 40ch; }
-    #meta { position: static; padding: 0 var(--pad); gap: 16px; }
+    #meta { left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); width: auto; bottom: max(12px, env(safe-area-inset-bottom)); gap: 16px; }
     .stats { gap: 22px 30px; }
     .stat b { font-size: clamp(23px, 6vw, 32px); }
     #place { position: static; align-items: flex-start; text-align: left; max-width: 100%; padding: clamp(18px,3vh,30px) var(--pad) clamp(30px,5vh,54px); gap: 6px; }
@@ -148,17 +162,32 @@
     #sources { font-size: 9.5px; line-height: 1.8; max-width: 46ch; }
     #fade { display: none; }
     .cta { width: auto; }
-    header { padding: clamp(14px,3vw,22px) var(--pad); font-size: 10.5px; }
-    header nav { gap: 14px; }
+    header { padding: clamp(10px,2.4vw,18px) var(--pad); font-size: 10.5px; gap: 10px 16px; }
+    header nav { gap: 12px 14px; }
+  }
+  /* phones: the "straight into the data catalog" caption is decoration, and on
+     a narrow screen it is the first thing the fold clips - drop it */
+  @media (max-width: 600px) {
+    .ctaNote { display: none; }
   }
   @media (max-width: 420px) {
-    .ticker { gap: 6px 10px; }
-    .ds { font-size: 15px; }
     .star { padding: 7px 13px; gap: 7px; }
+  }
+  /* short phone viewports (small phones, or large phones with browser UI up)
+     and phone landscape: shrink the band first, then the logo, so the message
+     and both buttons stay on the first screen */
+  @media (max-width: 1080px) and (max-height: 760px) {
+    #band { height: min(24svh, 210px); min-height: 130px; }
+    .logo { width: clamp(160px, 40vw, 210px); }
+    main { gap: 12px; }
+  }
+  @media (max-width: 1080px) and (max-height: 480px) {
+    #band { height: 120px; min-height: 100px; }
+    h1 { font-size: clamp(28px, 6vw, 40px); }
   }
   @media (prefers-reduced-motion: reduce) {
     #scaler > div, .plane, .eyebrow span, .glow, .star::after, .freshness i { animation: none !important; }
-    .star { transition: none; }
+    .star, #meta, .statsBtn .chev { transition: none; }
   }
 </style>
 </head>
@@ -238,11 +267,20 @@
       <p style="animation:cc-rise .8s ease .16s both">Layer upon layer, contributed by the people who needed it first. <span id="heroSize">585 TB</span> of open geospatial data, analysis ready inside Google Earth Engine.</p>
       <div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:4px; animation:cc-rise .8s ease .22s both">
         <a class="cta" href="/about/">Get started <span class="mono">&rarr;</span></a>
-        <span class="mono" style="font-size:clamp(10.5px,.7vw,15px); line-height:1.6; letter-spacing:.14em; text-transform:uppercase; color:#6f6a86">Straight into<br />the data catalog</span>
+        <button class="statsBtn" id="statsToggle" type="button" aria-expanded="false" aria-controls="meta">
+          <span style="width:6px; height:6px; border-radius:50%; background:#6f63e0; animation:cc-pulse 2.6s ease-in-out infinite" aria-hidden="true"></span>
+          Catalog stats
+          <span class="chev" aria-hidden="true">&#9662;</span>
+        </button>
+        <span class="mono ctaNote" style="font-size:clamp(10.5px,.7vw,15px); line-height:1.6; letter-spacing:.14em; text-transform:uppercase; color:#6f6a86">Straight into<br />the data catalog</span>
       </div>
     </main>
 
-    <div id="meta">
+    <div id="meta" role="region" aria-label="Catalog statistics">
+      <div class="metaHead">
+        <span class="label">Catalog stats</span>
+        <button id="metaClose" type="button" aria-label="Close catalog stats">&times;</button>
+      </div>
       <div class="stats">
         <span class="stat"><b class="live" id="statSize">585 TB</b><span>open data</span></span>
         <span class="stat"><b class="live" id="statAssets">4,378</b><span>assets</span></span>
@@ -258,14 +296,6 @@
         <span class="freshness" id="freshness" title="Catalog is scanned end to end on a schedule"><i></i><span id="lastRun">live</span></span>
       </div>
       <span class="cited">Cited across 91 journals by more than 3,000 authors</span>
-      <div class="ticker">
-        <span class="label">In the catalog</span>
-        <span class="ds" id="ds0">FABDEM</span>
-        <span class="dot"></span>
-        <span class="ds" id="ds1">HydroLAKES</span>
-        <span class="dot"></span>
-        <span class="ds" id="ds2">MapBiomas</span>
-      </div>
     </div>
 
     <div id="place">
@@ -303,14 +333,6 @@
     { name: 'Indonesia', cx: 6.5, cy: 4.05 }, { name: 'Australia', cx: 7.2, cy: 4.7 },
     { name: 'Zambezi', cx: 4.65, cy: 4.35 }, { name: 'Black Sea', cx: 4.6, cy: 2.9 }
   ];
-  var NAMES = ['FABDEM', 'HydroLAKES', 'GEBCO', 'SoilGrids 250m', 'MapBiomas', 'WorldPop', 'geoBoundaries',
-    'HydroATLAS', 'GLODAP v2', 'Global Wind Atlas', 'Global Solar Atlas', 'SWORD', 'GloRiC', 'GLOBathy',
-    'Tallo', 'RADD Alerts', 'GABAM', 'MTBS', 'SNODAS', 'PRISM Daily', 'AgERA5', 'MERRA2', 'VegDRI',
-    'USA Structures', 'Ookla 5G Map', 'GRIP Roads', 'Global Power Plants', 'ESA WorldCover', 'GLanCE',
-    'GISA', 'LandScan', 'GlobPOP', 'CISI', 'HiHydroSoil', 'Global Aridity Index', 'Global Fungi',
-    'CloudSEN12', 'HySpecNet 11K', 'Global Mangroves', 'ETH Canopy Height', 'ICESat-2 CHM', 'Landfire',
-    'GHS OBAT', 'HydroWaste', 'Global Fire Atlas', 'Argo Floats', 'Terraclimate'];
-
   var stage = document.getElementById('stage');
   var frameEl = document.getElementById('frame');
   var band = document.getElementById('band');
@@ -429,21 +451,6 @@
     timer = setTimeout(hop, dur + 7000);
   }
 
-  function ticker() {
-    var slots = [0, 1, 2].map(function (i) { return document.getElementById('ds' + i); });
-    var cursor = [0, Math.floor(NAMES.length / 3), Math.floor((NAMES.length * 2) / 3)];
-    slots.forEach(function (el, s) { el.textContent = NAMES[cursor[s]]; });
-    var turn = 0;
-    setInterval(function () {
-      if (document.hidden) return;
-      var s = turn % 3; turn++;
-      cursor[s] = (cursor[s] + 3) % NAMES.length;
-      var el = slots[s];
-      el.style.opacity = '0';
-      setTimeout(function () { el.textContent = NAMES[cursor[s]]; el.style.opacity = '1'; }, 320);
-    }, 1500);
-  }
-
   function pointerTilt() {
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
     stage.addEventListener('mousemove', function (e) {
@@ -486,7 +493,6 @@
   window.addEventListener('orientationchange', function () { setTimeout(function () { fit(); seed(); }, 250); });
 
   boot();
-  ticker();
   pointerTilt();
   tapToTravel();
 })();
@@ -567,8 +573,7 @@
   function commit(el, text, target, dur) {
     if (!el || text == null) return;
     el._goal = { text: text, target: target };
-    // a pending landing delay will pick up whatever the newest goal is
-    if (!el._delay) tween(el, dur || 900);
+    tween(el, dur || 900);
   }
 
   // legacy entry point for the non numeric bits: a soft fade swap
@@ -577,25 +582,6 @@
     if (target != null) return commit(el, text, target);
     el.classList.add('swap');
     setTimeout(function () { el.textContent = text; el.classList.remove('swap'); }, 180);
-  }
-
-  // On landing every stat rolls up from zero, left to right. The markup values
-  // seed it, so the count is meaningful even before the gists answer.
-  function land() {
-    var els = document.querySelectorAll('.stats b, .breakdown b');
-    Array.prototype.forEach.call(els, function (el, i) {
-      var text = el.textContent, target = num(text);
-      if (target == null) return;
-      el._goal = { text: text, target: target };
-      if (still()) return;
-      var suffix = text.replace(/^[\d.,]+/, '');
-      el._v = 0;
-      el.textContent = '0' + suffix;
-      el._delay = setTimeout(function () {
-        el._delay = null;
-        tween(el, 1500);
-      }, 260 + i * 90);
-    });
   }
 
   function relative(dateStr) {
@@ -639,7 +625,6 @@
         pill.setAttribute('title', 'Last catalog scan: ' + s['Last Run Date']);
       }
     }
-    syncSoon();
   }
 
   function applyAssets(j) {
@@ -663,44 +648,34 @@
     fetchJSON(ASSETS_URL).then(applyAssets).catch(function () {});
   }
 
-  /* Keep the hero clear of #meta. On the wide layout #meta is pinned to the
-     bottom edge while the hero is centred in the same box, so the hero's bottom
-     padding has to reserve the measured height of #meta plus breathing room.
-     Re-run on resize and whenever a number changes, since either can rewrap. */
-  var stageEl = document.getElementById('stage');
+  /* The stats sheet is a disclosure: hidden until the "Catalog stats" button in
+     the hero opens it, so it can never overlap or intercept the CTA. Numbers
+     are simply shown as they are - no count-up on open - and keep refreshing
+     from the gists in the background. */
   var metaEl = byId('meta');
-  var wideMQ = window.matchMedia('(min-width: 1081px)');
+  var toggleBtn = byId('statsToggle');
+  var closeBtn = byId('metaClose');
 
-  var syncing = false;
-
-  function syncMeta() {
-    if (!stageEl || !metaEl || syncing) return;
-    if (!wideMQ.matches) { stageEl.style.removeProperty('--metaPad'); return; }
-    syncing = true;
-
-    var r = metaEl.getBoundingClientRect();
-    var clearance = Math.max(56, Math.min(window.innerHeight * 0.1, 130));
-    var pad = (window.innerHeight - r.bottom) + r.height + clearance;
-    stageEl.style.setProperty('--metaPad', Math.round(pad) + 'px');
-
-    // give back whatever the taller hero pushed past the fold, so a short
-    // window never gains a scrollbar just to hold the extra breathing room
-    var over = document.documentElement.scrollHeight - window.innerHeight;
-    if (over > 0) stageEl.style.setProperty('--metaPad', Math.round(Math.max(0, pad - over)) + 'px');
-
-    syncing = false;
+  function setStatsOpen(open) {
+    if (!metaEl || !toggleBtn) return;
+    metaEl.classList.toggle('open', open);
+    toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
 
-  var syncTimer = null;
-  function syncSoon() { clearTimeout(syncTimer); syncTimer = setTimeout(syncMeta, 60); }
+  if (toggleBtn && metaEl) {
+    toggleBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setStatsOpen(!metaEl.classList.contains('open'));
+    });
+    if (closeBtn) closeBtn.addEventListener('click', function () { setStatsOpen(false); toggleBtn.focus(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && metaEl.classList.contains('open')) { setStatsOpen(false); toggleBtn.focus(); }
+    });
+    document.addEventListener('click', function (e) {
+      if (metaEl.classList.contains('open') && !metaEl.contains(e.target) && !toggleBtn.contains(e.target)) setStatsOpen(false);
+    });
+  }
 
-  syncMeta();
-  window.addEventListener('resize', syncSoon);
-  window.addEventListener('orientationchange', syncSoon);
-  if (wideMQ.addEventListener) wideMQ.addEventListener('change', syncSoon);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncMeta);
-
-  land();
   refresh(true);
   // star count is rate limited per IP, so ask once per page load only
   fetchJSON(REPO_URL).then(applyStars).catch(function () {});
