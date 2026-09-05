@@ -466,6 +466,24 @@
     "avatar_local": "assets/avatars/cmg777_7fa49092.png"
   },
   {
+    "github_login": "isabel-hof",
+    "display_name": "isabel-hof",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
+    "profile_url": "https://github.com/isabel-hof",
+    "total_contributions": 3,
+    "open_issues": 1,
+    "closed_issues": 2,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 2,
+      "2025": 1
+    },
+    "last_contribution_date": "2026-09-03T10:15:11Z",
+    "avatar_local": "assets/avatars/isabel-hof_38b120a2.png"
+  },
+  {
     "github_login": "12rambau",
     "display_name": "Rambaud Pierrick",
     "avatar_url": "https://avatars.githubusercontent.com/u/12596392?v=4",
@@ -677,24 +695,6 @@
     },
     "last_contribution_date": "2026-05-03T20:14:30Z",
     "avatar_local": "assets/avatars/stidjaco_09322031.png"
-  },
-  {
-    "github_login": "isabel-hof",
-    "display_name": "isabel-hof",
-    "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
-    "profile_url": "https://github.com/isabel-hof",
-    "total_contributions": 2,
-    "open_issues": 0,
-    "closed_issues": 2,
-    "open_prs": 0,
-    "merged_prs": 0,
-    "closed_prs": 0,
-    "years": {
-      "2026": 1,
-      "2025": 1
-    },
-    "last_contribution_date": "2026-04-30T15:18:33Z",
-    "avatar_local": "assets/avatars/isabel-hof_38b120a2.png"
   },
   {
     "github_login": "dluks",
