@@ -1225,6 +1225,23 @@
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
   },
   {
+    "github_login": "JeffreyRVincent",
+    "display_name": "JeffreyRVincent",
+    "avatar_url": "https://avatars.githubusercontent.com/u/101469203?v=4",
+    "profile_url": "https://github.com/JeffreyRVincent",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 1
+    },
+    "last_contribution_date": "2026-09-09T01:09:03Z",
+    "avatar_local": "assets/avatars/JeffreyRVincent_e8797eeb.png"
+  },
+  {
     "github_login": "prevelle",
     "display_name": "Peter Revelle",
     "avatar_url": "https://avatars.githubusercontent.com/u/20410638?v=4",
@@ -3722,6 +3739,23 @@
     },
     "last_contribution_date": "2020-05-28T20:17:17Z",
     "avatar_local": "assets/avatars/gena_33e1118e.png"
+  },
+  {
+    "github_login": "Wikidepia",
+    "display_name": "Akmal",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72781956?v=4",
+    "profile_url": "https://github.com/Wikidepia",
+    "total_contributions": 1,
+    "open_issues": 0,
+    "closed_issues": 0,
+    "open_prs": 1,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 1
+    },
+    "last_contribution_date": "2026-09-07T13:06:35Z",
+    "avatar_local": "assets/avatars/Wikidepia_a5253737.png"
   },
   {
     "github_login": "MrBourriz",
