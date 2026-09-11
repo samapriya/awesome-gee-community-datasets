@@ -1,4 +1,5 @@
 # CYGNSS Fractional Inundation
+Data span August 2018 to December 2025 at 3 km resolution, with daily files representing either daily or 3-daily aggregated interpolated data. Coverage is limited to ±38 degrees latitude by the CYGNSS orbital inclination.
 
 The UCAR/CU CYGNSS inundation maps provide fractional surface water extent derived from NASA's Cyclone Global Navigation Satellite System (CYGNSS), a constellation of eight microsatellites launched in December 2016. Each satellite carries a GNSS-Reflectometry (GNSS-R) receiver that records L-band GPS signals reflected from the Earth's surface. Because the transmitters are already on orbit, GNSS-R receivers are inexpensive to build and fly, which makes constellations — and therefore short revisit times — practical in a way that single-satellite radars are not. Surface reflectivity (Γ) at L-band is sensitive to the dielectric constant and micro-scale roughness of the reflecting surface, both of which change sharply when a landscape floods.
 
@@ -6,13 +7,13 @@ Inundation fraction is retrieved by treating the observed reflectivity of a 3 km
 
 Because the eight satellites sample the surface pseudo-randomly and cannot completely cover it within a few days, observations are aggregated over 3-day windows and spatially interpolated using the Previously-Observed Behavior Interpolation (POBI) method, which derives historical relationships between reflectivity in neighboring grid cells and applies them to unobserved cells. POBI is an exact interpolator — observed values are unchanged — so users who prefer to avoid interpolated data can restrict their analysis to observed cells using the interpolation flag band.
 
-Data span March 2017 to present at 3 km resolution, with daily files representing the mean inundation fraction for the current day and previous two days. Coverage is limited to ±38 degrees latitude by the CYGNSS orbital inclination.
+Data span August 2018 to December 2025 present at 3 km resolution, with daily files representing the mean inundation fraction for the current day and previous two days. Coverage is limited to ±38 degrees latitude by the CYGNSS orbital inclination.
 
 #### Available Datasets
 
 | Dataset Type | Description | Status | Earth Engine Collection |
 | --- | --- | --- | --- |
-| **CYGNSS Inundation** | Daily 5-band fractional inundation, anomalies, and interpolation flag (2017-present) | Ongoing | `projects/sat-io/open-datasets/CYGNSS/INUNDATION` |
+| **CYGNSS Inundation** | Daily 5-band fractional inundation, anomalies, and interpolation flag (2018-2025) | Ongoing | `projects/sat-io/open-datasets/CYGNSS/INUNDATION` |
 
 #### Dataset Details
 
@@ -25,7 +26,7 @@ Data span March 2017 to present at 3 km resolution, with daily files representin
       | Funding | NASA Terrestrial Hydrology Program (awards 80NSSC19K0046, 80NSSC18K1430) |
       | Data Type | Raster (5-band, UInt8) |
       | Coverage | Global, ±38 degrees latitude (CYGNSS orbital inclination) |
-      | Temporal Range | March 2017 - present |
+      | Temporal Range | August 2018 - December 2025 |
       | Temporal Resolution | Daily files; 3-day aggregation window |
       | Spatial Resolution | 3 km x 3 km |
       | Coordinate System | WGS 84 / NSIDC EASE-Grid 2.0 Global (EPSG:6933) |
