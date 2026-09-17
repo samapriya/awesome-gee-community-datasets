@@ -471,8 +471,8 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/137090738?v=4",
     "profile_url": "https://github.com/isabel-hof",
     "total_contributions": 3,
-    "open_issues": 1,
-    "closed_issues": 2,
+    "open_issues": 0,
+    "closed_issues": 3,
     "open_prs": 0,
     "merged_prs": 0,
     "closed_prs": 0,
@@ -1223,6 +1223,40 @@
     },
     "last_contribution_date": "2025-12-26T05:01:23Z",
     "avatar_local": "assets/avatars/santanuremote_78add921.png"
+  },
+  {
+    "github_login": "radwinskis",
+    "display_name": "Mark Radwin",
+    "avatar_url": "https://avatars.githubusercontent.com/u/78708345?v=4",
+    "profile_url": "https://github.com/radwinskis",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 1
+    },
+    "last_contribution_date": "2026-09-16T16:27:16Z",
+    "avatar_local": "assets/avatars/radwinskis_4066249d.png"
+  },
+  {
+    "github_login": "TreeRingCo",
+    "display_name": "TreeRingCo",
+    "avatar_url": "https://avatars.githubusercontent.com/u/140016492?v=4",
+    "profile_url": "https://github.com/TreeRingCo",
+    "total_contributions": 1,
+    "open_issues": 1,
+    "closed_issues": 0,
+    "open_prs": 0,
+    "merged_prs": 0,
+    "closed_prs": 0,
+    "years": {
+      "2026": 1
+    },
+    "last_contribution_date": "2026-09-16T16:08:40Z",
+    "avatar_local": "assets/avatars/TreeRingCo_1c9b75f7.png"
   },
   {
     "github_login": "JeffreyRVincent",
