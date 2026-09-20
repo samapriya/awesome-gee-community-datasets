@@ -3,7 +3,7 @@
 Find a list of associated blog posts related to GEE and community catalog here. To get post subscribe to our [![Substack](https://img.shields.io/badge/Substack-FF6719.svg?style=flat&logo=Substack&logoColor=white)](https://datacommons.substack.com/)
 
 <!-- START_MARKER -->
-* [Fetch failed - 2026-09-19 02:14:37](https://datacommons.substack.com/feed)
+* [Fetch failed - 2026-09-20 02:22:14](https://datacommons.substack.com/feed)
 <!-- END_MARKER -->
 
 <!-- Last updated: Mon May  5 06:32:44 UTC 2025 -->
