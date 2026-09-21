@@ -7,6 +7,13 @@ We encourage participation in our releases by contributing code examples, tutori
 ## Citation
 
 ```
+Roy, S., Majumdar, S., & Swetnam, T. (2026). A community data commons for equitable Earth Science. Under review in AGU Earth's Future.
+EarthArXiv preprint: https://doi.org/10.31223/X5WN4J
+```
+
+## Catalog Release Citation
+
+```
 Roy, S., Majumdar, S.& Swetnam, T. (2026). samapriya/awesome-gee-community-datasets: Community Catalog (Version 4.0.0) [Computer software].
 Zenodo. https://doi.org/10.5281/zenodo.21876800
 ```
