@@ -100,6 +100,24 @@
     "avatar_local": "assets/avatars/pinkychow1010_d3b6607f.png"
   },
   {
+    "github_login": "montimaj",
+    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
+    "profile_url": "https://github.com/montimaj",
+    "total_contributions": 8,
+    "open_issues": 2,
+    "closed_issues": 3,
+    "open_prs": 0,
+    "merged_prs": 2,
+    "closed_prs": 1,
+    "years": {
+      "2026": 4,
+      "2025": 4
+    },
+    "last_contribution_date": "2026-10-05T19:14:27Z",
+    "avatar_local": "assets/avatars/montimaj_5abe5bcd.png"
+  },
+  {
     "github_login": "TC25",
     "display_name": "Tc Chakraborty",
     "avatar_url": "https://avatars.githubusercontent.com/u/30564889?v=4",
@@ -172,24 +190,6 @@
     },
     "last_contribution_date": "2026-08-14T21:03:11Z",
     "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
-  },
-  {
-    "github_login": "montimaj",
-    "display_name": "Sayantan (monty) Majumdar, Ph.d.",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5908368?v=4",
-    "profile_url": "https://github.com/montimaj",
-    "total_contributions": 7,
-    "open_issues": 1,
-    "closed_issues": 3,
-    "open_prs": 0,
-    "merged_prs": 2,
-    "closed_prs": 1,
-    "years": {
-      "2026": 3,
-      "2025": 4
-    },
-    "last_contribution_date": "2026-04-17T00:17:36Z",
-    "avatar_local": "assets/avatars/montimaj_5abe5bcd.png"
   },
   {
     "github_login": "harrybmwells",
