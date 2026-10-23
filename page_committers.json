@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "d7107e63a38a9259570ecc9bf29120549a7c8082",
-  "generated": "2026-09-21T15:59:00Z",
+  "last_commit": "0f75e040280c64406c6e598936d0d35bcef7e2c5",
+  "generated": "2026-10-23T15:55:16Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -130,7 +130,7 @@
  "pages": {
   "docs/changelog.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 418
+    "samapriya.roy@gmail.com": 419
    },
    "committers": [
     "samapriya"
@@ -146,7 +146,7 @@
   },
   "docs/substack_blogs.md": {
    "counts": {
-    "action@github.com": 991,
+    "action@github.com": 1023,
     "samapriya.roy@gmail.com": 15
    },
    "committers": [
@@ -164,7 +164,7 @@
   },
   "docs/stats.md": {
    "counts": {
-    "action@github.com": 1333,
+    "action@github.com": 1364,
     "samapriya.roy@gmail.com": 77
    },
    "committers": [
@@ -3515,6 +3515,30 @@
    ]
   },
   "docs/projects/indonesia_eq_2026.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hurricane_isaias_2026.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/hurricane_simon_2026.md": {
+   "counts": {
+    "samapriya.roy@gmail.com": 1
+   },
+   "committers": [
+    "samapriya"
+   ]
+  },
+  "docs/projects/panama_earthquake_2026.md": {
    "counts": {
     "samapriya.roy@gmail.com": 1
    },
@@ -7027,6 +7051,30 @@
    }
   ],
   "docs/projects/indonesia_eq_2026.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hurricane_isaias_2026.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/hurricane_simon_2026.md": [
+   {
+    "login": "samapriya",
+    "name": "Samapriya Roy",
+    "url": "https://github.com/samapriya",
+    "avatar": "https://avatars.githubusercontent.com/u/6677629?v=4"
+   }
+  ],
+  "docs/projects/panama_earthquake_2026.md": [
    {
     "login": "samapriya",
     "name": "Samapriya Roy",
