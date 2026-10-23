@@ -509,6 +509,9 @@ nav:
               - Emergency Observation Data for the 2024 Sea of Japan Earthquake: projects/japan_eq2024.md
               - Colombia Earthquake (Choco) 2026: projects/colombia_eq_2026.md
               - Nepal Floods (Bhote Koshi / Trishuli) 2026: projects/nepal_floods_2026.md
+              - Panama Earthquake (Azuero Peninsula) 2026: projects/panama_earthquake_2026.md
+              - Hurricane Simon 2026 (Mexico): projects/hurricane_simon_2026.md
+              - Hurricane Isaias 2026 (NOAA Emergency Response Imagery): projects/hurricane_isaias_2026.md
               - Los Angeles Fires 2025 Lidar Collections and Change Analysis: projects/ladem.md
           - "Fire Monitoring and Analysis":
               - CEMS Fire Danger Indices: projects/cems_fire.md
