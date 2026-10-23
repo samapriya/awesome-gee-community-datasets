@@ -3,6 +3,14 @@
 ![GEE Community Datasets](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/samapriya/34bc0c1280d475d3a69e3b60a706226e/raw/community.json)
 ![GitHub Release](https://img.shields.io/github/v/release/samapriya/awesome-gee-community-datasets)
 
+#### Updated 2026-10-23
+- Added [Vantor (Maxar) Open Data: Hurricane Simon (Mexico) 2026](https://gee-community-catalog.org/projects/hurricane_simon_2026)
+- Added [Planet Labs Disaster Data: Panama Earthquake (Azuero Peninsula) 2026](https://gee-community-catalog.org/projects/panama_earthquake_2026)
+- Added [NOAA Emergency Response Imagery: Hurricane Isaias 2026](https://gee-community-catalog.org/projects/hurricane_isaias_2026)
+- Updated [PRISM 800m Daily Datasets](https://gee-community-catalog.org/projects/prism_daily)
+- Updated daily updates to [USGS Global Earthquake dataset](https://gee-community-catalog.org/projects/global_earthquakes)
+- Updated Weekly updates to [USDM drought monitor](https://gee-community-catalog.org/projects/usdm/)
+
 #### Updated 2026-08-10
 - Added a landing page for awesome-gee-community-catalog.org
 - Moved from Mkdocs Material to Zensical to mitigate for Mkdocs Material EOL

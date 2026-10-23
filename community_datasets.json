@@ -54035,6 +54035,42 @@
     "thumbnail": "https://gee-community-catalog.org/thumbnails/indonesia_eq_2026.png"
   },
   {
+    "title": "Vantor (Maxar) Open Data: Hurricane Simon (Mexico) 2026",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:disaster-response/VANTOR-OPEN-DATA-HURRICANE-SIMON-2026",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/VANTOR-DISASTER-DATA/HURRICANE_SIMON_2026",
+    "provider": "Vantor (Maxar)",
+    "tags": "hurricane, tropical cyclone, eastern Pacific, Mexico, Jalisco, Colima, Michoacán, Guerrero, Puerto Vallarta, Manzanillo, Lázaro Cárdenas, Vantor, Maxar, WorldView Legion, WorldView, GeoEye",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/hurricane_simon_2026",
+    "thematic_group": "Disaster Response",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/hurricane_simon_2026.png"
+  },
+  {
+    "title": "Planet Labs Disaster Data: Panama Earthquake (Azuero Peninsula) 2026",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:disaster-response/PLANET-OPEN-DATA-PANAMA-EARTHQUAKE-2026",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/PLANET-DISASTER-DATA/PANAMA_EQ_2026",
+    "provider": "Planet Labs PBC",
+    "tags": "earthquake, landslide, Panama, Azuero, Los Santos, Herrera, Veraguas, Coclé, Tonosí, Chitré, Santiago de Veraguas, Soná, Planet Labs, PlanetScope, SkySat, Pelican",
+    "license": "Creative Commons Attribution Non Commercial 4.0 International",
+    "docs": "https://gee-community-catalog.org/projects/panama_earthquake_2026",
+    "thematic_group": "Disaster Response",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/panama_earthquake_2026.png"
+  },
+  {
+    "title": "NOAA Emergency Response Imagery: Hurricane Isaias 2026",
+    "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:disaster-response/NOAA-ERI-HURRICANE-ISAIAS-2026",
+    "type": "image_collection",
+    "id": "projects/sat-io/open-datasets/NOAA-EMERGENCY-RESPONSE/HURRICANE_ISAIAS_2026",
+    "provider": "NOAA National Geodetic Survey",
+    "tags": "hurricane, tropical cyclone, storm surge, aerial imagery, NOAA, NGS, emergency response imagery, Florida, Alabama, Mississippi, Pensacola, Destin, Mobile Bay, Gulf Coast",
+    "license": "Creative Commons Zero v1.0 Universal",
+    "docs": "https://gee-community-catalog.org/projects/hurricane_isaias_2026",
+    "thematic_group": "Disaster Response",
+    "thumbnail": "https://gee-community-catalog.org/thumbnails/hurricane_isaias_2026.png"
+  },
+  {
     "title": "Historical Evapotranspiration for the Conterminous U.S. (Reitz Ensemble ET)",
     "sample_code": "https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/REITZ_ENSEMBLE_ET",
     "type": "image_collection",
