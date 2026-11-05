@@ -118,6 +118,24 @@
     "avatar_local": "assets/avatars/montimaj_5abe5bcd.png"
   },
   {
+    "github_login": "noahweidig",
+    "display_name": "Noah Weidig",
+    "avatar_url": "https://avatars.githubusercontent.com/u/136648711?v=4",
+    "profile_url": "https://github.com/noahweidig",
+    "total_contributions": 8,
+    "open_issues": 2,
+    "closed_issues": 3,
+    "open_prs": 1,
+    "merged_prs": 1,
+    "closed_prs": 1,
+    "years": {
+      "2026": 7,
+      "2025": 1
+    },
+    "last_contribution_date": "2026-11-03T16:27:00Z",
+    "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
+  },
+  {
     "github_login": "TC25",
     "display_name": "Tc Chakraborty",
     "avatar_url": "https://avatars.githubusercontent.com/u/30564889?v=4",
@@ -172,24 +190,6 @@
     },
     "last_contribution_date": "2023-05-19T18:00:30Z",
     "avatar_local": "assets/avatars/hannah-rae_c66ee354.png"
-  },
-  {
-    "github_login": "noahweidig",
-    "display_name": "Noah Weidig",
-    "avatar_url": "https://avatars.githubusercontent.com/u/136648711?v=4",
-    "profile_url": "https://github.com/noahweidig",
-    "total_contributions": 7,
-    "open_issues": 2,
-    "closed_issues": 3,
-    "open_prs": 0,
-    "merged_prs": 1,
-    "closed_prs": 1,
-    "years": {
-      "2026": 6,
-      "2025": 1
-    },
-    "last_contribution_date": "2026-08-14T21:03:11Z",
-    "avatar_local": "assets/avatars/noahweidig_783cf1ea.png"
   },
   {
     "github_login": "harrybmwells",
