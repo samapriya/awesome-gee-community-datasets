@@ -7,8 +7,8 @@ We encourage participation in our releases by contributing code examples, tutori
 ## Citation
 
 ```
-Roy, S., Majumdar, S., & Swetnam, T. (2026). A community data commons for equitable Earth Science. Under review in AGU Earth's Future.
-EarthArXiv preprint: https://doi.org/10.31223/X5WN4J
+Roy, S., Majumdar, S., & Swetnam, T. (2026). A community data commons for equitable Earth Science. AGU Earth’s Future (accepted).
+Preprint: https://doi.org/10.31223/X5WN4J
 ```
 
 ## Catalog Release Citation
