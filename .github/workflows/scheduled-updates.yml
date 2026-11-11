@@ -1,0 +1,131 @@
+# Replaces: catalog-stats.yml (daily_stats), substack_simple.yml, issues_summary.yml
+#
+# One daily job refreshes everything that comes from outside the repo, makes ONE
+# commit, pushes once, and then asks publish_docs to redeploy.
+#
+# Why the explicit redeploy: commits pushed with GITHUB_TOKEN do not trigger
+# `on: push` workflows, so on their own these refreshes would sit in master
+# unpublished until the next human push.
+name: scheduled_updates
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 13 * * *" # daily, off the hour (top-of-hour schedules get delayed)
+
+permissions:
+  contents: write
+  actions: write # to dispatch publish-site.yml
+
+concurrency:
+  group: scheduled-updates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: master
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12" # same as publish-site.yml
+
+      - name: Install dependencies
+        run: pip install requests # only scripts/gh_api.py needs it
+
+      # Each source is independent: one failing must not block the others.
+      # continue-on-error keeps the job going; the last step turns any failure
+      # back into a red run so it is never silently swallowed.
+      - name: Catalog stats -> docs/stats.md
+        id: stats
+        continue-on-error: true
+        run: python scripts/update_stats.py
+
+      - name: Substack posts -> docs/substack_blogs.md
+        id: substack
+        continue-on-error: true
+        env:
+          RSS2JSON_API_KEY: ${{ secrets.RSS2JSON_KEY }}
+        run: python scripts/fetch_substack.py
+
+      # Both scripts retry each request themselves (scripts/gh_api.py).
+      - name: Issues summary -> issues-summary.json, assets/avatars/
+        id: issues
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: python scripts/issues_summary.py
+
+      - name: Repo stats -> repo-stats.json
+        id: repo_stats
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.ISSUES_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: python scripts/repo_stats.py
+
+      - name: Commit and push
+        id: commit
+        env:
+          STATS: ${{ steps.stats.outcome }}
+          SUBSTACK: ${{ steps.substack.outcome }}
+          ISSUES: ${{ steps.issues.outcome }}
+          REPO_STATS: ${{ steps.repo_stats.outcome }}
+        run: |
+          # Only stage the output of steps that succeeded, so a half-finished
+          # run of one script can never be committed.
+          if [ "$STATS" = success ];      then git add docs/stats.md; fi
+          if [ "$SUBSTACK" = success ];   then git add docs/substack_blogs.md; fi
+          if [ "$ISSUES" = success ];     then git add issues-summary.json assets/avatars/; fi
+          if [ "$REPO_STATS" = success ]; then git add repo-stats.json; fi
+
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: scheduled data refresh $(date -u +%Y-%m-%d)"
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) - rebasing onto origin/master"
+            git fetch origin master
+            git rebase --autostash origin/master || { git rebase --abort; break; }
+            sleep $((attempt * 5))
+          done
+          echo "::error::could not push refreshed data"
+          exit 1
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run publish-site.yml --ref master
+
+      - name: Fail the run if any source failed
+        if: always()
+        env:
+          STATS: ${{ steps.stats.outcome }}
+          SUBSTACK: ${{ steps.substack.outcome }}
+          ISSUES: ${{ steps.issues.outcome }}
+          REPO_STATS: ${{ steps.repo_stats.outcome }}
+        run: |
+          failed=0
+          for pair in "stats:$STATS" "substack:$SUBSTACK" "issues:$ISSUES" "repo_stats:$REPO_STATS"; do
+            if [ "${pair#*:}" = failure ]; then
+              echo "::error::${pair%%:*} refresh failed - see that step's log"
+              failed=1
+            fi
+          done
+          exit $failed

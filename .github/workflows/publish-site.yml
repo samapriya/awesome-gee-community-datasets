@@ -59,7 +59,7 @@ jobs:
           git add page_committers.json
           git commit -m "chore: refresh per-page committers [skip ci]"
 
-          # Sibling workflows (examples_zip, catalog-stats, json_sync, ...) also
+          # Sibling workflows (catalog_sync, scheduled_updates) also
           # push to master, and they can land between this run's checkout and
           # this push -- the ref moves underneath us and the push is rejected
           # with "cannot lock ref ... expected <our stale sha>".
@@ -107,6 +107,15 @@ jobs:
       # search_sync.yml, guarded by a hard-coded `sleep 120`. Copying them into
       # site/ here removes that race entirely.
       # ---------------------------------------------------------------------
+      # browse.html and contributors.html are copied in verbatim below, so
+      # nothing else looks at them. One unescaped apostrophe in their inline JS
+      # leaves the whole page spinning. Warning-only for now: change the
+      # `|| echo` into a hard failure once you have seen it pass on a real run.
+      - name: Check inline JS in standalone pages
+        run: |
+          python scripts/check_html_js.py browse.html contributors.html \
+            || echo "::warning::check_html_js.py reported problems in a standalone page - see this step's log"
+
       - name: Add standalone pages
         run: |
           # Emit as directories so they match the rest of the site, which uses

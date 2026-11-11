@@ -112,6 +112,25 @@ def load_token(token_file: str | None) -> str | None:
     return os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
 
+class ApiError(Exception):
+    """The API could not be asked (network error, rate limit, 5xx).
+
+    Distinct from "the API answered and there is no such account": a failed
+    call must be retried on a later run, never recorded as permanently
+    unresolvable.
+    """
+
+
+def is_bot(email: str) -> bool:
+    """Automation identities. Their commits (daily stats, Substack links, ...)
+    are not page authorship, and counting them would rewrite the cache - and
+    so trigger a cache commit - after every scheduled refresh."""
+    return email.endswith("[bot]@users.noreply.github.com") or email in (
+        "action@github.com",
+        "actions@github.com",
+    )
+
+
 def api_get(url: str, token: str | None) -> object | None:
     headers = {
         "Accept": "application/vnd.github+json",
@@ -126,10 +145,12 @@ def api_get(url: str, token: str | None) -> object | None:
             return json.load(r)
     except urllib.error.HTTPError as e:
         print(f"    ! HTTP {e.code} for {url.split('?')[0]}", file=sys.stderr)
-        return None
+        if e.code in (404, 422):  # a real answer: nothing matches
+            return None
+        raise ApiError(f"HTTP {e.code}") from e
     except Exception as e:  # noqa: BLE001 - network flakiness shouldn't abort the build
         print(f"    ! {type(e).__name__}: {e}", file=sys.stderr)
-        return None
+        raise ApiError(str(e)) from e
 
 
 def resolve_email(repo: str, email: str, token: str | None) -> dict | None:
@@ -164,6 +185,8 @@ def page_authorship(repo_root: Path, git_path: str, since: str | None) -> dict:
     for commit in raw.split("\x00")[1:]:
         email, _, files = commit.partition("\n")
         email = email.strip().lower()
+        if is_bot(email):
+            continue
         for f in filter(None, (ln.strip() for ln in files.splitlines())):
             if f.endswith(".md"):
                 pages.setdefault(f, Counter())[email] += 1
@@ -224,9 +247,11 @@ def main() -> int:
 
     # Resolve only emails we have never seen. This is the only API cost.
     known = cache["authors"]
-    unseen = {e for c in delta.values() for e in c} - set(known) - set(
-        cache["_meta"].get("unresolved", [])
-    )
+    # Taken from the whole cache, not just this run's delta, so an email whose
+    # lookup failed last time (network error, no token) is tried again.
+    unseen = {
+        e for info in cache["pages"].values() for e in info.get("counts", {})
+    } - set(known) - set(cache["_meta"].get("unresolved", []))
     print(f"  distinct new emails needing resolution: {len(unseen)}")
 
     token = load_token(args.token_file)
@@ -234,17 +259,32 @@ def main() -> int:
         print("  ! no token — skipping resolution (set GH_TOKEN or --token-file)")
     unresolved = set(cache["_meta"].get("unresolved", []))
     calls = 0
+    changed = bool(delta)
     for email in sorted(unseen):
         if not token:
             break
-        who = resolve_email(args.repo, email, token)
+        try:
+            who = resolve_email(args.repo, email, token)
+        except ApiError as e:
+            print(f"    {email[:38]:<38} -> lookup failed ({e}); will retry next run")
+            continue
         calls += 1
+        changed = True
         if who:
             known[email] = who
             print(f"    {email[:38]:<38} -> @{who['login']}")
         else:
             unresolved.add(email)  # never retry a permanently unlinkable email
             print(f"    {email[:38]:<38} -> (no GitHub account)")
+
+    # Nothing new to record: leave the file byte-identical. Rewriting it just to
+    # advance `last_commit` made EVERY push to master produce a follow-up
+    # "refresh per-page committers" commit. Leaving `last_commit` where it is
+    # only means the next run's `git log` covers a slightly longer range.
+    if not changed:
+        print("  no page authorship changes - cache left untouched")
+        print(f"elapsed: {time.perf_counter() - t0:.2f}s")
+        return 0
 
     # Materialise per-page committer lists, most commits first.
     pages_out = {}

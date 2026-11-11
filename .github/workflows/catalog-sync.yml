@@ -1,0 +1,139 @@
+# Replaces: community_data_parse.yml (gee_catalog), badges.yml, examples_zip.yml, json_sync.yml
+#
+# Everything derived from files a human edits is rebuilt here, in one job, with
+# one commit and one push:
+#   community_datasets.json          -> community_datasets.jsonl / .csv
+#                                    -> "Community Datasets" badge (gist)
+#                                    -> GCS copy of the .jsonl
+#   awesome-gee-catalog-examples/    -> awesome-gee-catalog-examples.zip
+name: catalog_sync
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - community_datasets.json
+      - awesome-gee-catalog-examples/**
+      - scripts/build_catalog_exports.py
+      - .github/workflows/catalog-sync.yml
+
+permissions:
+  contents: write
+
+# Queue runs instead of racing each other on the push.
+concurrency:
+  group: catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: master # always build from the tip, so a queued run never works on a stale tree
+
+      # Standard library only, so the runner's own python3 is enough:
+      # no setup-python, no pip, nothing to go stale.
+      - name: Build JSONL and CSV
+        run: python3 scripts/build_catalog_exports.py
+
+      # Built reproducibly (sorted entries, fixed timestamps, no extra attributes)
+      # so the archive only changes when the folder's contents change. Rebuilt from
+      # scratch each time: `zip -r` onto an existing archive never removes files
+      # that were deleted from the folder.
+      - name: Zip examples folder
+        env:
+          TZ: UTC
+        run: |
+          rm -f awesome-gee-catalog-examples.zip
+          find awesome-gee-catalog-examples -exec touch -h -d '2020-01-01T00:00:00Z' {} +
+          find awesome-gee-catalog-examples -type f | LC_ALL=C sort \
+            | zip -X -q -@ awesome-gee-catalog-examples.zip
+
+      - name: Commit and push
+        id: commit
+        run: |
+          git add community_datasets.jsonl community_datasets.csv awesome-gee-catalog-examples.zip
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            echo "jsonl_changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git diff --cached --name-only | grep -qx community_datasets.jsonl; then
+            echo "jsonl_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "jsonl_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: rebuild catalog exports ($(git diff --cached --name-only | paste -sd, - | sed 's/,/, /g'))"
+
+          # publish_docs is triggered by the same push and may land its own commit
+          # first; rebase and retry rather than fail.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) - rebasing onto origin/master"
+            git fetch origin master
+            git rebase --autostash origin/master || { git rebase --abort; break; }
+            sleep $((attempt * 5))
+          done
+          echo "::error::could not push rebuilt catalog exports"
+          exit 1
+
+      # Writes the shields.io endpoint JSON straight to the gist. Replaces
+      # schneegans/dynamic-badges-action@v1.1.0 and the apt-get install of jq
+      # (jq and gh are both preinstalled on the runner).
+      - name: Update dataset count badge
+        env:
+          GH_TOKEN: ${{ secrets.GIST_SECRET }}
+          GIST_ID: 34bc0c1280d475d3a69e3b60a706226e
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::notice::GIST_SECRET not set - skipping badge update"
+            exit 0
+          fi
+          count=$(jq length community_datasets.json)
+          jq -n --arg count "$count" '{
+            files: {
+              "community.json": {
+                content: ({schemaVersion: 1, label: "Community Datasets", message: $count, color: "orange"} | tojson)
+              }
+            }
+          }' | gh api --method PATCH "/gists/$GIST_ID" --input - --silent
+          echo "Badge set to $count"
+
+      # Runs when the .jsonl actually changed, or on a manual run (which is how
+      # the old json_sync.yml worked). Remove the jsonl_changed condition below
+      # to go back to manual-only uploads.
+      - name: Decide whether to upload to GCS
+        id: gcs
+        env:
+          HAS_CREDS: ${{ secrets.GCP_CREDENTIALS != '' }}
+          WANTED: ${{ steps.commit.outputs.jsonl_changed == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: |
+          if [ "$HAS_CREDS" = "true" ] && [ "$WANTED" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping GCS upload (creds present: $HAS_CREDS, upload wanted: $WANTED)"
+          fi
+
+      - if: steps.gcs.outputs.run == 'true'
+        uses: google-github-actions/auth@v3
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - if: steps.gcs.outputs.run == 'true'
+        uses: google-github-actions/setup-gcloud@v3
+
+      - name: Upload JSONL to GCS
+        if: steps.gcs.outputs.run == 'true'
+        env:
+          GCS_FILE_PATH: ${{ secrets.GCS_FILE_PATH }}
+        run: gcloud storage cp community_datasets.jsonl "$GCS_FILE_PATH"
