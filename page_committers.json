@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "last_commit": "4c4313371e73b59777e66e38c74fc71f1e299f3b",
-  "generated": "2026-10-23T15:58:34Z",
+  "last_commit": "14ecaf0fe64f5156a1fbe6d9ef485b34cbcc777b",
+  "generated": "2026-11-11T09:14:02Z",
   "unresolved": [],
   "api_calls_this_run": 0
  },
@@ -506,7 +506,7 @@
   },
   "docs/reference/index.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 29
+    "samapriya.roy@gmail.com": 30
    },
    "committers": [
     "samapriya"
@@ -3476,7 +3476,7 @@
   },
   "docs/about.md": {
    "counts": {
-    "samapriya.roy@gmail.com": 5
+    "samapriya.roy@gmail.com": 6
    },
    "committers": [
     "samapriya"
