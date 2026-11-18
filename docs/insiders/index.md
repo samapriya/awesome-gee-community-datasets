@@ -6,11 +6,7 @@ The **GEE Community Catalog** is an Open Source and unfunded project that is dev
 
 The **Insiders program** is designed for those who are helping keep open source projects sustainable and support the growth and curation of the catalog. As such this program is for sponsors and data contributors to the project you can sponsor the project by clicking on the sponsor button above ☝ or submit a [new dataset or tutorial request](https://gee-community-catalog.org/contributing/). If you fit under any of those categories fill this form to [get insiders access](https://web.archive.org/web/20240416082114/https://forms.gle/VPmETGKyvMAd37MV6). As an Insider, you'll be added to the "catalog-contributors" Google Group, giving you early access to datasets as they are processed, reviewed, and even those not yet released. You'll also receive occasional changelog and update emails, and have the ability to post questions, concerns, and thoughts to the group. And if we meet ask me for stickers to help spread the word 😊.
 
-<center>
-
 ![logo](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/0f4929a1-0176-4c2b-b182-ff7c8d173649)
-
-</center>
 
 Over the last 4 years the project backend now includes over 100,000+ lines of code to often preprocess the dataset or make it ingest ready for Google Earth Engine and making it available for the geospatial community of GEE users. Currently the site serves over 500,000 requests from over 160+ countries. This work is built around creating a **Community Data Commons** and if you can and wish to support and donate to the project which goes towards simple things like cost of hosting, preprocessing feel free to do so using Github Sponsorship Tier setup for this project.
 
