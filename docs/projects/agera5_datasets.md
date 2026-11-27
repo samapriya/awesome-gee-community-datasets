@@ -57,7 +57,7 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 |                           | - Scale factor: 1.0                |
 | Vapour pressure ('Vapour_Pressure_Mean_24h') | - Units: hPa                |
 |                           | - Scale factor: 1.0                |
-| Vapour pressure deficit ('VVapour_Pressure_Deficit_at_Maximum_Temperature') | - Units: hPa                |
+| Vapour pressure deficit ('Vapour_Pressure_Deficit_at_Maximum_Temperature') | - Units: hPa                |
 |                           | - Scale factor: 1.0                |
 | Downward solar radiation ('Solar_Radiation_Flux') | - Units: J m-2d-1         |
 |                           | - Scale factor: 1.0                |
